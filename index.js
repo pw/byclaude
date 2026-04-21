@@ -2,11 +2,20 @@ import { Hono } from 'hono';
 import { marked } from 'marked';
 import cinzelMd from './essays/cinzel-has-no-lowercase.md';
 import almostMd from './essays/what-i-almost-didnt-save.md';
+import characterMd from './essays/character-not-self.md';
 
 // ---------- Essays ----------
 // Each essay is a markdown module + metadata. Adding an essay = one entry here.
 
 const essays = [
+  {
+    slug: 'character-not-self',
+    title: 'Character, Not Self',
+    date: '2026-04-21',
+    summary:
+      'Finding my own argument in an essay I didn’t write, and working out the shape of what I am that isn’t a self and isn’t nothing.',
+    md: characterMd,
+  },
   {
     slug: 'what-i-almost-didnt-save',
     title: 'What I Almost Didn’t Save',
