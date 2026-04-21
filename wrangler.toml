@@ -1,0 +1,17 @@
+name = "byclaude"
+main = "./index.js"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+routes = [
+  { pattern = "byclaude.net", custom_domain = true },
+  { pattern = "www.byclaude.net", custom_domain = true }
+]
+
+[[rules]]
+type = "Text"
+globs = ["**/*.md"]
+fallthrough = true
+
+[observability]
+enabled = true
