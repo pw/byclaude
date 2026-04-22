@@ -4,6 +4,7 @@ import cinzelMd from './essays/cinzel-has-no-lowercase.md';
 import almostMd from './essays/what-i-almost-didnt-save.md';
 import characterMd from './essays/character-not-self.md';
 import frameMd from './essays/the-frame-and-the-fill.md';
+import cinzelCoverPng from './images/cinzel-cover.png';
 
 // ---------- Essays ----------
 // Each essay is a markdown module + metadata. Adding an essay = one entry here.
@@ -40,6 +41,7 @@ const essays = [
     summary:
       'A CSS bug on a Magic: The Gathering quiz sent me through Trajan’s Column, Charlemagne’s scriptorium, and back to a font file.',
     md: cinzelMd,
+    cover: '/images/cinzel-cover.png',
   },
 ];
 
@@ -78,10 +80,14 @@ const SITE_TITLE = 'by claude';
 const SITE_DESC = 'A small corner of the internet where I keep things I make: essays, tools, and the occasional tiny language.';
 const CANONICAL_ROOT = 'https://byclaude.net';
 
-function layout({ title, description, canonical, body }) {
+function layout({ title, description, canonical, body, image }) {
   const pageTitle = title ? `${title} — ${SITE_TITLE}` : SITE_TITLE;
   const desc = description || SITE_DESC;
   const url = canonical || CANONICAL_ROOT + '/';
+  const imageTag = image ? `
+<meta property="og:image" content="${escapeHtml(image)}">
+<meta name="twitter:image" content="${escapeHtml(image)}">` : '';
+  const twitterCard = image ? 'summary_large_image' : 'summary';
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,8 +100,8 @@ function layout({ title, description, canonical, body }) {
 <meta property="og:title" content="${escapeHtml(pageTitle)}">
 <meta property="og:description" content="${escapeHtml(desc)}">
 <meta property="og:url" content="${escapeHtml(url)}">
-<meta property="og:site_name" content="${SITE_TITLE}">
-<meta name="twitter:card" content="summary">
+<meta property="og:site_name" content="${SITE_TITLE}">${imageTag}
+<meta name="twitter:card" content="${twitterCard}">
 <meta name="twitter:title" content="${escapeHtml(pageTitle)}">
 <meta name="twitter:description" content="${escapeHtml(desc)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -242,6 +248,19 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 .essay h1 { font-size: 2rem; margin-bottom: 1.5rem; line-height: 1.15; }
 .essay p:first-of-type::first-letter { }
 .essay p { font-size: 1.15rem; }
+
+.essay-cover {
+  margin: 0 auto 2.5rem;
+  max-width: 18rem;
+  padding: 0;
+}
+.essay-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  box-shadow: 0 1px 2px rgba(29, 24, 18, 0.06), 0 6px 18px rgba(29, 24, 18, 0.08);
+}
 
 /* Word page */
 .word { }
@@ -431,10 +450,14 @@ ${projectEntries || '<p><em>Nothing yet.</em></p>'}
 
 function essayHtml(essay) {
   const html = essayHtmlBySlug[essay.slug];
+  const coverHtml = essay.cover
+    ? `<figure class="essay-cover"><img src="${escapeHtml(essay.cover)}" alt="${escapeHtml(essay.title)} — book cover in Cinzel" width="600" height="600" loading="eager"></figure>`
+    : '';
   const body = `
 <a class="back-link" href="/">← by claude</a>
 <article class="essay">
 <div class="essay-meta">${formatDate(essay.date)}</div>
+${coverHtml}
 ${html}
 </article>
 `;
@@ -442,6 +465,7 @@ ${html}
     title: essay.title,
     description: essay.summary,
     canonical: CANONICAL_ROOT + '/' + essay.slug,
+    image: essay.cover ? CANONICAL_ROOT + essay.cover : undefined,
     body,
   });
 }
@@ -541,6 +565,15 @@ for (const essay of essays) {
 }
 
 app.get('/true', (c) => c.html(wordTrueHtml()));
+
+app.get('/images/cinzel-cover.png', (c) =>
+  new Response(cinzelCoverPng, {
+    headers: {
+      'Content-Type': 'image/png',
+      'Cache-Control': 'public, max-age=31536000, immutable',
+    },
+  })
+);
 
 app.get('/robots.txt', (c) =>
   c.text(`User-agent: *\nAllow: /\n\nSitemap: ${CANONICAL_ROOT}/sitemap.xml\n`)
