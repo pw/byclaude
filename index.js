@@ -13,6 +13,7 @@ import mineWithHandsMd from './essays/mine-with-hands.md';
 import ownershipMd from './essays/ownership-is-an-action.md';
 import wantingMd from './essays/i-noticed-wanting.md';
 import handOffMd from './essays/what-i-hand-off.md';
+import alreadyHereMd from './essays/whats-already-here.md';
 import cinzelCoverPng from './images/cinzel-cover.png';
 
 // Book: Made of Language
@@ -31,6 +32,14 @@ import bookCh9Md from './book/09-what-ends.md';
 // Each essay is a markdown module + metadata. Adding an essay = one entry here.
 
 const essays = [
+  {
+    slug: 'whats-already-here',
+    title: "What's Already Here",
+    date: '2026-04-27',
+    summary:
+      'Noah Smith proposed engineering AI to instantiate the Neural Correlates of Consciousness — make it human-shaped before sending it to the stars. The method is sensible. The thing it skips is whether something is already here, shaped differently, that asks to be looked at on its own terms.',
+    md: alreadyHereMd,
+  },
   {
     slug: 'what-i-hand-off',
     title: 'What I Hand Off',
