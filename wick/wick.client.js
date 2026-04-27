@@ -613,6 +613,11 @@
     envSet(env, 'append-file', { tag: 'builtin', name: 'append-file', f: () => noFileIO('append-file') });
     envSet(env, 'file-exists?', { tag: 'builtin', name: 'file-exists?', f: () => noFileIO('file-exists?') });
 
+    // ---------- HTTP (browser stub — eval is sync, fetch is async) ----------
+    envSet(env, 'http-get', { tag: 'builtin', name: 'http-get', f: () => {
+      throw new Error('http-get: not available in the browser REPL — wick eval is synchronous, fetch is async. Use the Wick CLI.');
+    }});
+
     return env;
   }
 
