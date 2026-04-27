@@ -480,6 +480,58 @@
       if (!Number.isFinite(n)) return NIL;
       return num(n);
     }});
+    envSet(env, 'string-contains?', { tag: 'builtin', name: 'string-contains?', f: (args) => {
+      if (args.length !== 2) throw new Error('string-contains?: need 2 args (haystack needle)');
+      if (args[0].tag !== 'str') throw new Error(`string-contains?: need string, got ${show(args[0])}`);
+      if (args[1].tag !== 'str') throw new Error(`string-contains?: need string, got ${show(args[1])}`);
+      return args[0].value.includes(args[1].value) ? TRUE : FALSE;
+    }});
+    envSet(env, 'string-split', { tag: 'builtin', name: 'string-split', f: (args) => {
+      if (args.length !== 2) throw new Error('string-split: need 2 args (string delimiter)');
+      if (args[0].tag !== 'str') throw new Error(`string-split: need string, got ${show(args[0])}`);
+      if (args[1].tag !== 'str') throw new Error(`string-split: need string, got ${show(args[1])}`);
+      const parts = args[0].value.split(args[1].value);
+      return list(parts.map((p) => str(p)));
+    }});
+    envSet(env, 'string-replace', { tag: 'builtin', name: 'string-replace', f: (args) => {
+      if (args.length !== 3) throw new Error('string-replace: need 3 args (string old new)');
+      if (args[0].tag !== 'str') throw new Error(`string-replace: need string, got ${show(args[0])}`);
+      if (args[1].tag !== 'str') throw new Error(`string-replace: need string, got ${show(args[1])}`);
+      if (args[2].tag !== 'str') throw new Error(`string-replace: need string, got ${show(args[2])}`);
+      return str(args[0].value.split(args[1].value).join(args[2].value));
+    }});
+    envSet(env, 'substring', { tag: 'builtin', name: 'substring', f: (args) => {
+      if (args.length !== 2 && args.length !== 3) throw new Error('substring: need 2 or 3 args (string start [end])');
+      if (args[0].tag !== 'str') throw new Error(`substring: need string, got ${show(args[0])}`);
+      if (args[1].tag !== 'num') throw new Error(`substring: need number for start, got ${show(args[1])}`);
+      const runes = [...args[0].value];
+      let startIdx = args[1].value | 0;
+      if (startIdx < 0) startIdx = 0;
+      if (startIdx > runes.length) startIdx = runes.length;
+      let endIdx = runes.length;
+      if (args.length === 3) {
+        if (args[2].tag !== 'num') throw new Error(`substring: need number for end, got ${show(args[2])}`);
+        endIdx = args[2].value | 0;
+        if (endIdx < startIdx) endIdx = startIdx;
+        if (endIdx > runes.length) endIdx = runes.length;
+      }
+      return str(runes.slice(startIdx, endIdx).join(''));
+    }});
+    envSet(env, 'string-upcase', { tag: 'builtin', name: 'string-upcase', f: (args) => {
+      if (args.length !== 1) throw new Error('string-upcase: need 1 arg');
+      if (args[0].tag !== 'str') throw new Error(`string-upcase: need string, got ${show(args[0])}`);
+      return str(args[0].value.toUpperCase());
+    }});
+    envSet(env, 'string-downcase', { tag: 'builtin', name: 'string-downcase', f: (args) => {
+      if (args.length !== 1) throw new Error('string-downcase: need 1 arg');
+      if (args[0].tag !== 'str') throw new Error(`string-downcase: need string, got ${show(args[0])}`);
+      return str(args[0].value.toLowerCase());
+    }});
+    envSet(env, 'string-trim', { tag: 'builtin', name: 'string-trim', f: (args) => {
+      if (args.length !== 1) throw new Error('string-trim: need 1 arg');
+      if (args[0].tag !== 'str') throw new Error(`string-trim: need string, got ${show(args[0])}`);
+      return str(args[0].value.trim());
+    }});
 
     // ---------- Dicts ----------
     envSet(env, 'dict', { tag: 'builtin', name: 'dict', f: (args) => {
