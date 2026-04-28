@@ -24,12 +24,12 @@
       case 'list': return '(' + v.value.map(show).join(' ') + ')';
       case 'dict': {
         const keys = [...v.value.keys()].sort();
-        const parts = ['dict'];
+        const parts = [];
         for (const k of keys) {
           parts.push(JSON.stringify(k));
           parts.push(show(v.value.get(k)));
         }
-        return '(' + parts.join(' ') + ')';
+        return '{' + parts.join(' ') + '}';
       }
       case 'fn': return '#<fn>';
       case 'builtin': return '#<builtin ' + v.name + '>';
@@ -121,7 +121,7 @@
       const c = src[i];
       if (c === ' ' || c === '\t' || c === '\n' || c === '\r') { i++; continue; }
       if (c === ';') { while (i < src.length && src[i] !== '\n') i++; continue; }
-      if (c === '(' || c === ')' || c === "'") { toks.push(c); i++; continue; }
+      if (c === '(' || c === ')' || c === '[' || c === ']' || c === '{' || c === '}' || c === "'") { toks.push(c); i++; continue; }
       if (c === '"') {
         let j = i + 1;
         while (j < src.length && src[j] !== '"') {
@@ -134,7 +134,7 @@
         continue;
       }
       let j = i;
-      while (j < src.length && !" \t\n\r()';\"".includes(src[j])) j++;
+      while (j < src.length && !" \t\n\r()[]{}';\"".includes(src[j])) j++;
       toks.push(src.slice(i, j));
       i = j;
     }
@@ -156,6 +156,30 @@
       }
     }
     if (t === ')') throw new Error("unexpected ')'");
+    if (t === '[') {
+      // [a b c] desugars to (list a b c). Empty [] is (list).
+      const items = [sym('list')];
+      while (true) {
+        if (pos.i >= toks.length) throw new Error("unclosed '['");
+        if (toks[pos.i] === ']') { pos.i++; return list(items); }
+        const v = read(toks, pos);
+        if (v === null) throw new Error("unclosed '['");
+        items.push(v);
+      }
+    }
+    if (t === ']') throw new Error("unexpected ']'");
+    if (t === '{') {
+      // {"k" v ...} desugars to (dict "k" v ...). Empty {} is (dict).
+      const items = [sym('dict')];
+      while (true) {
+        if (pos.i >= toks.length) throw new Error("unclosed '{'");
+        if (toks[pos.i] === '}') { pos.i++; return list(items); }
+        const v = read(toks, pos);
+        if (v === null) throw new Error("unclosed '{'");
+        items.push(v);
+      }
+    }
+    if (t === '}') throw new Error("unexpected '}'");
     if (t === "'") {
       const v = read(toks, pos);
       if (v === null) throw new Error("quote: missing arg");

@@ -1637,8 +1637,8 @@ function wickLearnHtml({ canonicalRoot } = {}) {
     },
     {
       title: '9. Dicts',
-      prose: `Lists are the bones; dicts are how you carry named data. <code>(dict "k1" v1 "k2" v2)</code> builds one. <code>dict-get</code> reads a key (with an optional default for missing keys); <code>dict-set</code> returns a <em>new</em> dict with the key added or replaced — the original is untouched. Same shape as <code>cons</code> with lists: every change makes a new value, the old one stays as it was.`,
-      code: '(def me (dict "name" "Patrick" "tool" "wick"))\n(dict-get me "name")\n(dict-get me "missing" "(unset)")\n\n(def with-version (dict-set me "version" "0.2"))\n(dict-keys with-version)\n(dict-keys me)',
+      prose: `Lists are the bones; dicts are how you carry named data. <code>(dict "k1" v1 "k2" v2)</code> builds one — or shorter, <code>{"k1" v1 "k2" v2}</code>, which the reader desugars to the same call. <code>[a b c]</code> is the matching shorthand for <code>(list a b c)</code>. <code>dict-get</code> reads a key (with an optional default for missing keys); <code>dict-set</code> returns a <em>new</em> dict with the key added or replaced — the original is untouched. Same shape as <code>cons</code> with lists: every change makes a new value, the old one stays as it was.`,
+      code: '(def me {"name" "Patrick" "tool" "wick" "tags" ["builder" "writer"]})\n(dict-get me "name")\n(dict-get me "missing" "(unset)")\n\n(def with-version (dict-set me "version" "0.2"))\n(dict-keys with-version)\n(dict-keys me)',
     },
     {
       title: '10. That’s wick',
