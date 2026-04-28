@@ -12,6 +12,7 @@
   const sym = (v) => ({ tag: 'sym', value: v });
   const list = (xs) => ({ tag: 'list', value: xs });
   const dict = (m) => ({ tag: 'dict', value: m });
+  const err = (msg) => ({ tag: 'err', value: msg });
 
   function show(v) {
     switch (v.tag) {
@@ -32,6 +33,7 @@
       }
       case 'fn': return '#<fn>';
       case 'builtin': return '#<builtin ' + v.name + '>';
+      case 'err': return '(error ' + JSON.stringify(v.value) + ')';
     }
     return '#<?>';
   }
@@ -107,6 +109,7 @@
       }
       return true;
     }
+    if (a.tag === 'err') return a.value === b.value;
     return a.value === b.value;
   }
 
@@ -208,7 +211,7 @@
     while (true) {
       switch (v.tag) {
         case 'num': case 'str': case 'bool': case 'nil':
-        case 'fn': case 'builtin':
+        case 'fn': case 'builtin': case 'err':
           return v;
         case 'sym':
           return envLookup(env, v.value);
@@ -315,6 +318,32 @@
                   if (truthy(r)) return r;
                 }
                 return FALSE;
+              }
+              case 'try': {
+                if (xs.length < 2 || xs.length > 3) {
+                  throw new Error('try: need 1 or 2 args (expr [handler])');
+                }
+                let errVal;
+                try {
+                  return evalExpr(xs[1], env);
+                } catch (e) {
+                  errVal = err(e.message != null ? String(e.message) : String(e));
+                }
+                if (xs.length === 2) return errVal;
+                const handler = evalExpr(xs[2], env);
+                if (handler.tag === 'builtin') return handler.f([errVal]);
+                if (handler.tag === 'fn') {
+                  if (handler.params.length !== 1) {
+                    throw new Error(`try: handler must take 1 arg, got ${handler.params.length}`);
+                  }
+                  const sub = newEnv(handler.env);
+                  envSet(sub, handler.params[0], errVal);
+                  for (let m = 0; m < handler.body.length - 1; m++) evalExpr(handler.body[m], sub);
+                  v = handler.body[handler.body.length - 1];
+                  env = sub;
+                  continue;
+                }
+                throw new Error('try: handler not callable: ' + show(handler));
               }
             }
           }
@@ -616,6 +645,22 @@
     // ---------- HTTP (browser stub — eval is sync, fetch is async) ----------
     envSet(env, 'http-get', { tag: 'builtin', name: 'http-get', f: () => {
       throw new Error('http-get: not available in the browser REPL — wick eval is synchronous, fetch is async. Use the Wick CLI.');
+    }});
+
+    // ---------- Errors ----------
+    envSet(env, 'error?', { tag: 'builtin', name: 'error?', f: (args) => {
+      if (args.length !== 1) throw new Error('error?: need 1 arg');
+      return args[0].tag === 'err' ? TRUE : FALSE;
+    }});
+    envSet(env, 'error-message', { tag: 'builtin', name: 'error-message', f: (args) => {
+      if (args.length !== 1) throw new Error('error-message: need 1 arg');
+      if (args[0].tag !== 'err') throw new Error(`error-message: need error, got ${show(args[0])}`);
+      return str(args[0].value);
+    }});
+    envSet(env, 'raise', { tag: 'builtin', name: 'raise', f: (args) => {
+      if (args.length !== 1) throw new Error('raise: need 1 arg (message)');
+      if (args[0].tag !== 'str') throw new Error(`raise: need string, got ${show(args[0])}`);
+      throw new Error(args[0].value);
     }});
 
     return env;
