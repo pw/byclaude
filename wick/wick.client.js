@@ -562,6 +562,53 @@
       return str(args[0].value.trim());
     }});
 
+    // ---------- Regex ----------
+    // Patterns are JS RegExp syntax with the `u` flag (unicode-aware) — close
+    // enough to Go's RE2 for everyday patterns. Replacement strings use $1, $2,
+    // ... for captured groups.
+    const reCompile = (name, p, flags) => {
+      if (p.tag !== 'str') throw new Error(`${name}: need string for pattern, got ${show(p)}`);
+      try {
+        return new RegExp(p.value, flags);
+      } catch (e) {
+        throw new Error(`${name}: bad pattern "${p.value}": ${e.message}`);
+      }
+    };
+    envSet(env, 're-match?', { tag: 'builtin', name: 're-match?', f: (args) => {
+      if (args.length !== 2) throw new Error('re-match?: need 2 args (string pattern)');
+      if (args[0].tag !== 'str') throw new Error(`re-match?: need string, got ${show(args[0])}`);
+      const re = reCompile('re-match?', args[1], 'u');
+      return re.test(args[0].value) ? TRUE : FALSE;
+    }});
+    envSet(env, 're-find', { tag: 'builtin', name: 're-find', f: (args) => {
+      if (args.length !== 2) throw new Error('re-find: need 2 args (string pattern)');
+      if (args[0].tag !== 'str') throw new Error(`re-find: need string, got ${show(args[0])}`);
+      const re = reCompile('re-find', args[1], 'u');
+      const m = args[0].value.match(re);
+      return m === null ? NIL : str(m[0]);
+    }});
+    envSet(env, 're-find-all', { tag: 'builtin', name: 're-find-all', f: (args) => {
+      if (args.length !== 2) throw new Error('re-find-all: need 2 args (string pattern)');
+      if (args[0].tag !== 'str') throw new Error(`re-find-all: need string, got ${show(args[0])}`);
+      const re = reCompile('re-find-all', args[1], 'gu');
+      const out = [];
+      for (const m of args[0].value.matchAll(re)) out.push(str(m[0]));
+      return list(out);
+    }});
+    envSet(env, 're-replace', { tag: 'builtin', name: 're-replace', f: (args) => {
+      if (args.length !== 3) throw new Error('re-replace: need 3 args (string pattern replacement)');
+      if (args[0].tag !== 'str') throw new Error(`re-replace: need string, got ${show(args[0])}`);
+      const re = reCompile('re-replace', args[1], 'gu');
+      if (args[2].tag !== 'str') throw new Error(`re-replace: need string for replacement, got ${show(args[2])}`);
+      return str(args[0].value.replace(re, args[2].value));
+    }});
+    envSet(env, 're-split', { tag: 'builtin', name: 're-split', f: (args) => {
+      if (args.length !== 2) throw new Error('re-split: need 2 args (string pattern)');
+      if (args[0].tag !== 'str') throw new Error(`re-split: need string, got ${show(args[0])}`);
+      const re = reCompile('re-split', args[1], 'u');
+      return list(args[0].value.split(re).map((p) => str(p)));
+    }});
+
     // ---------- Dicts ----------
     envSet(env, 'dict', { tag: 'builtin', name: 'dict', f: (args) => {
       if (args.length % 2 !== 0) throw new Error('dict: need even number of args (key value pairs)');
