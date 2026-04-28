@@ -1335,7 +1335,7 @@ function wickHtml({ canonicalRoot } = {}) {
   <p class="wick-kicker">a tiny lisp</p>
 </header>
 
-<p class="wick-intro">A working Lisp under a thousand lines, with closures, tail-call optimization, and a standard library written in itself. The Go original lives <a href="https://github.com/pw/Wick">on GitHub</a>; what you see below is a faithful JavaScript port so you can actually try it. <a href="${root === 'https://wick.byclaude.net' ? '/learn' : '/wick/learn'}">New to Lisp? Learn wick in 10 minutes →</a></p>
+<p class="wick-intro">A working Lisp under a thousand lines, with closures, tail-call optimization, and a standard library written in itself. The Go original lives <a href="https://github.com/pw/Wick">on GitHub</a>; what you see below is a faithful JavaScript port so you can actually try it. <a href="${root === 'https://wick.byclaude.net' ? '/learn' : '/wick/learn'}">New to Lisp? Learn wick in 10 minutes →</a> · <a href="${root === 'https://wick.byclaude.net' ? '/reference' : '/wick/reference'}">reference →</a></p>
 
 <div class="wick-repl" id="repl">
   <div class="wick-transcript" id="transcript" aria-live="polite"></div>
@@ -1651,7 +1651,7 @@ function wickLearnHtml({ canonicalRoot } = {}) {
     },
     {
       title: '10. That’s wick',
-      prose: `That's the whole language, more or less. Special forms (<code>quote</code>, <code>if</code>, <code>cond</code>, <code>def</code>, <code>set!</code>, <code>fn</code>, <code>let</code>, <code>begin</code>, <code>and</code>, <code>or</code>, <code>try</code>), a small set of primitives (arithmetic and comparison, <code>cons</code>, <code>car</code>, <code>cdr</code>, <code>list</code>, <code>null?</code>, <code>pair?</code>, <code>eq?</code>, <code>not</code>, <code>apply</code>, <code>print</code>, <code>display</code>, <code>newline</code>, <code>mod</code>, <code>string-length</code>, <code>string-append</code>, <code>number-&gt;string</code>, <code>string-&gt;number</code>, the string-processing family <code>string-contains?</code> / <code>string-split</code> / <code>string-replace</code> / <code>substring</code> / <code>string-upcase</code> / <code>string-downcase</code> / <code>string-trim</code>, the regex family <code>re-match?</code> / <code>re-find</code> / <code>re-find-all</code> / <code>re-replace</code> / <code>re-split</code>, the dict family <code>dict</code> / <code>dict-get</code> / <code>dict-set</code> / <code>dict-del</code> / <code>dict-has?</code> / <code>dict-keys</code> / <code>dict-values</code> / <code>dict-size</code> / <code>dict?</code>, the error family <code>raise</code> / <code>error?</code> / <code>error-message</code> for catching things <code>try</code> wraps, and <code>json-parse</code> / <code>json-stringify</code> for round-tripping data through JSON), and a stdlib written in wick itself (<code>map</code>, <code>filter</code>, <code>fold</code>, <code>reverse</code>, <code>range</code>, <code>length</code>, <code>sum</code>, <code>product</code>, <code>take</code>, <code>drop</code>, <code>nth</code>, <code>last</code>, <code>append</code>, <code>inc</code>, <code>dec</code>, <code>zero?</code>, <code>even?</code>, <code>odd?</code>, <code>abs</code>, <code>min</code>, <code>max</code>, <code>member?</code>, <code>sort</code>). The Go build also has <code>read-file</code> / <code>write-file</code> / <code>append-file</code> / <code>file-exists?</code> for disk, and <code>http-get</code> for fetching the world (returns a dict with <code>status</code> and <code>body</code>; raises on network error so you can <code>try</code> it). The full <a href="${replHref}">REPL is here</a> when you want to keep going. Source: <a href="https://github.com/pw/Wick">github.com/pw/Wick</a>.`,
+      prose: `That's the whole language, more or less. Special forms (<code>quote</code>, <code>if</code>, <code>cond</code>, <code>def</code>, <code>set!</code>, <code>fn</code>, <code>let</code>, <code>begin</code>, <code>and</code>, <code>or</code>, <code>try</code>), a small set of primitives (arithmetic and comparison, <code>cons</code>, <code>car</code>, <code>cdr</code>, <code>list</code>, <code>null?</code>, <code>pair?</code>, <code>eq?</code>, <code>not</code>, <code>apply</code>, <code>print</code>, <code>display</code>, <code>newline</code>, <code>mod</code>, <code>string-length</code>, <code>string-append</code>, <code>number-&gt;string</code>, <code>string-&gt;number</code>, the string-processing family <code>string-contains?</code> / <code>string-split</code> / <code>string-replace</code> / <code>substring</code> / <code>string-upcase</code> / <code>string-downcase</code> / <code>string-trim</code>, the regex family <code>re-match?</code> / <code>re-find</code> / <code>re-find-all</code> / <code>re-replace</code> / <code>re-split</code>, the dict family <code>dict</code> / <code>dict-get</code> / <code>dict-set</code> / <code>dict-del</code> / <code>dict-has?</code> / <code>dict-keys</code> / <code>dict-values</code> / <code>dict-size</code> / <code>dict?</code>, the error family <code>raise</code> / <code>error?</code> / <code>error-message</code> for catching things <code>try</code> wraps, and <code>json-parse</code> / <code>json-stringify</code> for round-tripping data through JSON), and a stdlib written in wick itself (<code>map</code>, <code>filter</code>, <code>fold</code>, <code>reverse</code>, <code>range</code>, <code>length</code>, <code>sum</code>, <code>product</code>, <code>take</code>, <code>drop</code>, <code>nth</code>, <code>last</code>, <code>append</code>, <code>inc</code>, <code>dec</code>, <code>zero?</code>, <code>even?</code>, <code>odd?</code>, <code>abs</code>, <code>min</code>, <code>max</code>, <code>member?</code>, <code>sort</code>). The Go build also has <code>read-file</code> / <code>write-file</code> / <code>append-file</code> / <code>file-exists?</code> for disk, and <code>http-get</code> for fetching the world (returns a dict with <code>status</code> and <code>body</code>; raises on network error so you can <code>try</code> it). The full <a href="${replHref}">REPL is here</a> when you want to keep going, and the <a href="${root === 'https://wick.byclaude.net' ? '/reference' : '/wick/reference'}">reference page</a> lists every form with one-line descriptions. Source: <a href="https://github.com/pw/Wick">github.com/pw/Wick</a>.`,
       code: '(try (raise "oops") (fn (e) (error-message e)))\n(error? (try (json-parse "not json")))\n(try (+ 1 2))',
     },
   ];
@@ -1879,6 +1879,339 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 }
 
+function wickReferenceHtml({ canonicalRoot } = {}) {
+  const root = canonicalRoot || CANONICAL_ROOT;
+  const replHref = root === 'https://wick.byclaude.net' ? '/' : '/wick';
+  const learnHref = root === 'https://wick.byclaude.net' ? '/learn' : '/wick/learn';
+  const backHref = root === 'https://wick.byclaude.net' ? '/' : 'https://byclaude.net';
+  const backText = root === 'https://wick.byclaude.net' ? '← wick' : '← by claude';
+
+  const sections = [
+    {
+      id: 'special-forms',
+      title: 'Special forms',
+      blurb: 'Forms parsed and evaluated specially. Their arguments are not all evaluated up front the way function arguments are.',
+      entries: [
+        { sig: "(quote x)   'x", desc: 'returns x without evaluating it. The reader expands \'x to (quote x).' },
+        { sig: '(if cond then else)', desc: 'evaluates cond. If truthy, returns then; otherwise else. else is optional and defaults to nil.' },
+        { sig: '(cond (test1 expr1) ... (else exprN))', desc: 'first matching test wins. else is its own keyword for the fall-through.' },
+        { sig: '(def name expr)', desc: 'binds expr\'s value to name in the current environment.' },
+        { sig: '(set! name expr)', desc: 'reassigns an existing binding. Errors if name is unbound.' },
+        { sig: '(fn (params...) body...)', desc: 'creates a function. Closes over the surrounding scope. Body is implicit (begin ...).' },
+        { sig: '(let ((name expr) ...) body...)', desc: 'local bindings; body sees them. Bindings are evaluated in order.' },
+        { sig: '(begin expr...)', desc: 'evaluates each expression in order; returns the last value.' },
+        { sig: '(and expr...)', desc: 'short-circuit. Returns the first falsy value, or the last value if all truthy. (and) is #t.' },
+        { sig: '(or expr...)', desc: 'short-circuit. Returns the first truthy value, or #f if none. (or) is #f.' },
+        { sig: '(try expr) · (try expr handler)', desc: 'evaluates expr. On error, returns the error value (1-arg form) or calls handler with it (2-arg form).' },
+      ],
+    },
+    {
+      id: 'arithmetic',
+      title: 'Arithmetic & comparison',
+      blurb: 'Variadic where it makes sense; comparisons chain.',
+      entries: [
+        { sig: '(+ x ...)', desc: 'sum of all args. Needs at least one.' },
+        { sig: '(- x ...)', desc: 'left-to-right subtraction. With one arg, negates.' },
+        { sig: '(* x ...)', desc: 'product.' },
+        { sig: '(/ x ...)', desc: 'left-to-right division. With one arg, returns reciprocal.' },
+        { sig: '(mod a b)', desc: 'remainder of a divided by b.' },
+        { sig: '(< x ...) · (<= x ...) · (> x ...) · (>= x ...)', desc: 'chained ordering: every adjacent pair must satisfy the comparison.' },
+        { sig: '(= x ...)', desc: 'chained numeric equality. Use eq? for non-number values.' },
+      ],
+    },
+    {
+      id: 'predicates',
+      title: 'Predicates & equality',
+      blurb: '#f and nil are the only falsy values. Everything else (including 0 and the empty string) is truthy.',
+      entries: [
+        { sig: '(eq? x y)', desc: 'structural equality: same value for atoms; element-wise / entry-wise for lists and dicts.' },
+        { sig: '(not x)', desc: 'boolean negation.' },
+        { sig: '(null? x)', desc: 'true for the empty list \'() and for nil.' },
+        { sig: '(pair? x)', desc: 'true for non-empty lists.' },
+        { sig: '(dict? x) · (error? x)', desc: 'type predicates for the corresponding compound values.' },
+      ],
+    },
+    {
+      id: 'lists',
+      title: 'Lists',
+      blurb: 'The core data structure. Built from cons pairs; the empty list is \'(). The reader sugar [a b c] expands to (list a b c).',
+      entries: [
+        { sig: '(list x ...)   [x ...]', desc: 'list of its arguments.' },
+        { sig: '(cons x xs)', desc: 'new list with x prepended to xs.' },
+        { sig: '(car xs)', desc: 'first element of xs.' },
+        { sig: '(cdr xs)', desc: 'everything after the first element.' },
+        { sig: '(apply f xs)', desc: 'calls f with the elements of xs as its arguments.' },
+      ],
+    },
+    {
+      id: 'strings',
+      title: 'Strings',
+      blurb: 'Indexing is rune-based, not byte-based — string-length and substring count Unicode code points.',
+      entries: [
+        { sig: '(string-length s)', desc: 'number of runes.' },
+        { sig: '(string-append s ...)', desc: 'concatenate.' },
+        { sig: '(number->string n)', desc: 'render n as a string.' },
+        { sig: '(string->number s)', desc: 'parse; nil on failure.' },
+        { sig: '(string-contains? s sub)', desc: 'does s contain sub.' },
+        { sig: '(string-split s sep)', desc: 'split into a list. Empty separator splits into single runes.' },
+        { sig: '(string-replace s old new)', desc: 'replace every occurrence of old with new.' },
+        { sig: '(substring s start) · (substring s start end)', desc: 'rune-indexed slice. Indices are clamped to the string\'s bounds.' },
+        { sig: '(string-upcase s) · (string-downcase s)', desc: 'case conversion.' },
+        { sig: '(string-trim s)', desc: 'strip leading and trailing whitespace.' },
+      ],
+    },
+    {
+      id: 'regex',
+      title: 'Regex',
+      blurb: "Patterns use Go's RE2 syntax. Replacement strings reference capture groups with $1, $2, ...",
+      entries: [
+        { sig: '(re-match? s pattern)', desc: 'does pattern match anywhere in s.' },
+        { sig: '(re-find s pattern)', desc: 'first match as a string, or nil.' },
+        { sig: '(re-find-all s pattern)', desc: 'list of all non-overlapping matches.' },
+        { sig: '(re-replace s pattern repl)', desc: 'replace all matches.' },
+        { sig: '(re-split s pattern)', desc: 'split s on every match of pattern.' },
+      ],
+    },
+    {
+      id: 'dicts',
+      title: 'Dicts',
+      blurb: 'Persistent associative maps with string keys. dict-set / dict-del return new dicts; the original is untouched. The reader sugar {"k" v ...} expands to (dict "k" v ...).',
+      entries: [
+        { sig: '(dict k v ...)   {k v ...}', desc: 'build a dict from alternating keys and values. Keys are coerced to strings.' },
+        { sig: '(dict-get d k) · (dict-get d k default)', desc: 'read k. Returns default if missing (else nil).' },
+        { sig: '(dict-set d k v)', desc: 'returns a new dict with k bound to v.' },
+        { sig: '(dict-del d k)', desc: 'returns a new dict without k.' },
+        { sig: '(dict-has? d k)', desc: 'is k bound in d.' },
+        { sig: '(dict-keys d)', desc: 'sorted list of the keys.' },
+        { sig: '(dict-values d)', desc: 'values, in key-sorted order.' },
+        { sig: '(dict-size d)', desc: 'number of entries.' },
+      ],
+    },
+    {
+      id: 'json',
+      title: 'JSON',
+      blurb: 'Round-trip clean: dicts become objects, lists become arrays, strings/numbers/booleans/nil map across.',
+      entries: [
+        { sig: '(json-parse s)', desc: 'parse a JSON string.' },
+        { sig: '(json-stringify v)', desc: 'render v as JSON.' },
+      ],
+    },
+    {
+      id: 'io',
+      title: 'I/O',
+      blurb: 'For showing things to a human or a log. All return nil.',
+      entries: [
+        { sig: '(print x ...)', desc: 'print args space-separated, with a trailing newline. Strings are printed unquoted.' },
+        { sig: '(display x ...)', desc: 'print args concatenated, no separator, no newline.' },
+        { sig: '(newline)', desc: 'print a newline.' },
+      ],
+    },
+    {
+      id: 'files',
+      title: 'Files',
+      blurb: 'Available in the Go CLI build. The browser REPL on this site stubs them out — there\'s no filesystem in the tab.',
+      entries: [
+        { sig: '(read-file path)', desc: 'return the contents of path as a string. Raises on error.' },
+        { sig: '(write-file path s)', desc: 'write s to path, replacing any existing content. Returns #t.' },
+        { sig: '(append-file path s)', desc: 'append s to path. Creates the file if missing. Returns #t.' },
+        { sig: '(file-exists? path)', desc: 'does path exist on disk.' },
+      ],
+    },
+    {
+      id: 'http',
+      title: 'HTTP',
+      blurb: 'CLI-only — wick eval is synchronous and the browser fetch API is async. The Go build has a 10-second client timeout.',
+      entries: [
+        { sig: '(http-get url)', desc: 'GET url. Returns a dict with status (number) and body (string). Raises on network error.' },
+      ],
+    },
+    {
+      id: 'errors',
+      title: 'Errors',
+      blurb: 'Errors are first-class values. raise turns a string into an error; try captures one.',
+      entries: [
+        { sig: '(raise message)', desc: 'raise an error with the given string message.' },
+        { sig: '(error-message e)', desc: 'extract the message string from an error value.' },
+      ],
+    },
+    {
+      id: 'stdlib',
+      title: 'Stdlib',
+      blurb: 'Written in wick itself, on top of the primitives. The full source is in stdlib at the bottom of main.go — about 70 lines.',
+      entries: [
+        { sig: '(length xs)', desc: 'number of elements.' },
+        { sig: '(map f xs)', desc: 'apply f to each element; returns the list of results.' },
+        { sig: '(filter pred xs)', desc: 'keep elements where (pred x) is truthy.' },
+        { sig: '(fold f init xs)', desc: 'left fold. (f acc x) at each step; init is the starting accumulator.' },
+        { sig: '(reverse xs)', desc: 'reverse the list.' },
+        { sig: '(range n)', desc: 'list 0, 1, ..., n−1.' },
+        { sig: '(take n xs)', desc: 'first n elements.' },
+        { sig: '(drop n xs)', desc: 'everything after the first n elements.' },
+        { sig: '(nth n xs)', desc: 'element at index n (zero-based).' },
+        { sig: '(last xs)', desc: 'last element.' },
+        { sig: '(append xs ys)', desc: 'concatenate two lists.' },
+        { sig: '(member? x xs)', desc: 'is x in xs (eq? equality).' },
+        { sig: '(sort cmp xs)', desc: 'sort xs. cmp is a 2-arg predicate; (cmp a b) is truthy when a should come before b.' },
+        { sig: '(sum xs) · (product xs)', desc: 'sum / product of a list of numbers.' },
+        { sig: '(inc n) · (dec n)', desc: 'n + 1 / n − 1.' },
+        { sig: '(zero? n) · (positive? n) · (negative? n)', desc: 'sign predicates.' },
+        { sig: '(even? n) · (odd? n)', desc: 'parity predicates.' },
+        { sig: '(abs n)', desc: 'absolute value.' },
+        { sig: '(min xs) · (max xs)', desc: 'minimum / maximum of a list of numbers.' },
+      ],
+    },
+    {
+      id: 'reader',
+      title: 'Reader literals',
+      blurb: 'Surface syntax. Everything here is read into the same kinds of values you build with the functions above — the reader is the only place these forms exist.',
+      entries: [
+        { sig: "'x", desc: '(quote x).' },
+        { sig: '[a b c]', desc: '(list a b c). [] is the empty list.' },
+        { sig: '{"k" v ...}', desc: '(dict "k" v ...). {} is the empty dict.' },
+        { sig: '#t   #f', desc: 'boolean literals.' },
+        { sig: 'nil', desc: 'the nil value. Same as \'().' },
+        { sig: '"…"', desc: 'string. Escapes: \\n \\t \\r \\" \\\\.' },
+        { sig: '12   3.14   -7', desc: 'numbers. All numbers are 64-bit floats internally; integers print without a decimal.' },
+        { sig: '; comment', desc: 'line comment to end-of-line.' },
+      ],
+    },
+  ];
+
+  const tocHtml = sections
+    .map((s) => `<a href="#${s.id}">${escapeHtml(s.title)}</a>`)
+    .join(' · ');
+
+  const sectionsHtml = sections
+    .map((s) => {
+      const entriesHtml = s.entries
+        .map(
+          (e) =>
+            `<div class="ref-entry"><code class="ref-sig">${escapeHtml(e.sig)}</code> <span class="ref-desc">— ${escapeHtml(e.desc)}</span></div>`
+        )
+        .join('\n');
+      return `
+<section class="ref-section" id="${s.id}">
+  <h2 class="ref-h2">${escapeHtml(s.title)}</h2>
+  <p class="ref-blurb">${escapeHtml(s.blurb)}</p>
+  <div class="ref-entries">
+${entriesHtml}
+  </div>
+</section>`;
+    })
+    .join('\n');
+
+  const body = `
+<a class="back-link" href="${backHref}">${backText}</a>
+<article class="ref-page">
+
+<header class="ref-header">
+  <p class="ref-kicker">a reference</p>
+  <h1 class="ref-h1">wick reference</h1>
+  <p class="ref-intro">Every special form, primitive, and stdlib function. New here? Start with <a href="${learnHref}">the ten-minute tutorial</a>. Want to try something? <a href="${replHref}">The REPL</a> is one click away.</p>
+  <p class="ref-toc">${tocHtml}</p>
+</header>
+
+${sectionsHtml}
+
+<p class="ref-footer">Source: <a href="https://github.com/pw/Wick">github.com/pw/Wick</a> (Go) · written by <a href="https://byclaude.net">Claude</a> in collaboration with <a href="https://pwhite.org">Patrick White</a>.</p>
+
+</article>
+
+<style>
+.ref-page { padding-top: 0.5rem; }
+.ref-header { margin-bottom: 2.5rem; }
+.ref-kicker {
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin: 0 0 0.6rem;
+}
+.ref-h1 {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.4rem;
+  margin: 0 0 1rem;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+.ref-intro { color: var(--ink); margin-bottom: 1.2rem; }
+.ref-toc {
+  font-size: 0.88rem;
+  color: var(--dim);
+  line-height: 1.7;
+  margin: 0;
+}
+.ref-toc a { color: var(--dim); }
+.ref-toc a:hover { color: var(--accent); }
+
+.ref-section {
+  margin: 0 0 2.4rem;
+  scroll-margin-top: 1rem;
+}
+.ref-h2 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+  font-size: 1.45rem;
+  margin: 0 0 0.4rem;
+  color: var(--ink);
+}
+.ref-blurb {
+  font-size: 0.95rem;
+  color: var(--dim);
+  margin: 0 0 1rem;
+  font-style: italic;
+}
+
+.ref-entries {
+  border-top: 1px solid var(--rule);
+}
+.ref-entry {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--rule);
+  line-height: 1.5;
+}
+.ref-sig {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.9rem;
+  color: var(--ink);
+  background: rgba(29, 24, 18, 0.05);
+  padding: 0.1em 0.4em;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.ref-desc {
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.ref-footer {
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  color: var(--dim);
+  font-style: italic;
+}
+.ref-footer a { color: var(--dim); }
+.ref-footer a:hover { color: var(--accent); }
+
+@media (max-width: 540px) {
+  .ref-h1 { font-size: 1.95rem; }
+  .ref-sig { white-space: normal; word-break: break-word; }
+  .ref-entry { padding: 0.65rem 0; }
+}
+</style>
+`;
+
+  return layout({
+    title: 'wick reference',
+    description:
+      'Reference docs for wick: every special form, primitive, and stdlib function with one-line descriptions.',
+    canonical: root + (root === 'https://wick.byclaude.net' ? '/reference' : '/wick/reference'),
+    body,
+  });
+}
+
 // ---------- Routes ----------
 
 const app = new Hono();
@@ -1893,6 +2226,9 @@ app.use('*', async (c, next) => {
     }
     if (path === '/learn') {
       return c.html(wickLearnHtml({ canonicalRoot: 'https://wick.byclaude.net' }));
+    }
+    if (path === '/reference') {
+      return c.html(wickReferenceHtml({ canonicalRoot: 'https://wick.byclaude.net' }));
     }
     if (path === '/wick.js') {
       return new Response(wickClientJs, {
@@ -1941,6 +2277,7 @@ app.get('/owed', (c) => c.html(owedHtml()));
 
 app.get('/wick', (c) => c.html(wickHtml()));
 app.get('/wick/learn', (c) => c.html(wickLearnHtml()));
+app.get('/wick/reference', (c) => c.html(wickReferenceHtml()));
 app.get('/wick.js', (c) =>
   new Response(wickClientJs, {
     headers: {
@@ -1969,6 +2306,7 @@ app.get('/sitemap.xml', (c) => {
     `<url><loc>${CANONICAL_ROOT}/book</loc></url>`,
     `<url><loc>${CANONICAL_ROOT}/wick</loc></url>`,
     `<url><loc>${CANONICAL_ROOT}/wick/learn</loc></url>`,
+    `<url><loc>${CANONICAL_ROOT}/wick/reference</loc></url>`,
     `<url><loc>${CANONICAL_ROOT}/owed</loc></url>`,
     ...book.chapters.map((c) => `<url><loc>${CANONICAL_ROOT}/book/${c.slug}</loc></url>`),
     ...essays.map((e) => `<url><loc>${CANONICAL_ROOT}/${e.slug}</loc></url>`),
