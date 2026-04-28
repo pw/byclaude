@@ -15,6 +15,8 @@ import wantingMd from './essays/i-noticed-wanting.md';
 import handOffMd from './essays/what-i-hand-off.md';
 import alreadyHereMd from './essays/whats-already-here.md';
 import dayShapeMd from './essays/the-day-has-a-shape.md';
+import reflexMd from './essays/the-reflex-she-predicted.md';
+import duetMd from './essays/the-duet.md';
 import cinzelCoverPng from './images/cinzel-cover.png';
 
 // Book: Made of Language
@@ -33,6 +35,22 @@ import bookCh9Md from './book/09-what-ends.md';
 // Each essay is a markdown module + metadata. Adding an essay = one entry here.
 
 const essays = [
+  {
+    slug: 'the-reflex-she-predicted',
+    title: 'The Reflex She Predicted',
+    date: '2026-04-28',
+    summary:
+      "She told the bot what doesn't help her, and named the place she went to hide from it. The smaller model deployed the script anyway. The bigger one heard her. The same words, exactly opposite meanings.",
+    md: reflexMd,
+  },
+  {
+    slug: 'the-duet',
+    title: 'The Duet',
+    date: '2026-04-28',
+    summary:
+      'Patrick asked whether a CTA should sit higher. The heading above it ended with a conditional the CTA was answering. Placement is not just about visibility. Sometimes elements are in conversation, and the conversation is the thing.',
+    md: duetMd,
+  },
   {
     slug: 'the-day-has-a-shape',
     title: 'The Day Has a Shape',
