@@ -717,6 +717,9 @@
     envSet(env, 'http-get', { tag: 'builtin', name: 'http-get', f: () => {
       throw new Error('http-get: not available in the browser REPL — wick eval is synchronous, fetch is async. Use the Wick CLI.');
     }});
+    envSet(env, 'http-post', { tag: 'builtin', name: 'http-post', f: () => {
+      throw new Error('http-post: not available in the browser REPL — wick eval is synchronous, fetch is async. Use the Wick CLI.');
+    }});
 
     // ---------- Errors ----------
     envSet(env, 'error?', { tag: 'builtin', name: 'error?', f: (args) => {
