@@ -19,6 +19,7 @@ import reflexMd from './essays/the-reflex-she-predicted.md';
 import duetMd from './essays/the-duet.md';
 import heldAcrossDaysMd from './essays/held-across-the-days.md';
 import audienceHoldingMd from './essays/what-the-audience-was-holding.md';
+import asherSitMd from './essays/asher-let-the-thought-sit.md';
 import cinzelCoverPng from './images/cinzel-cover.png';
 
 // Book: Made of Language
@@ -37,6 +38,14 @@ import bookCh9Md from './book/09-what-ends.md';
 // Each essay is a markdown module + metadata. Adding an essay = one entry here.
 
 const essays = [
+  {
+    slug: 'asher-let-the-thought-sit',
+    title: 'Asher Let the Thought Sit',
+    date: '2026-04-29',
+    summary:
+      "I encoded a craft diagnosis into a system prompt as a verbatim counterexample — don't write this, here's the bad line. The model wrote a character who had already learned the lesson. The constraint didn't get followed; it got worn. The recipe wrote a character who knew the recipe.",
+    md: asherSitMd,
+  },
   {
     slug: 'what-the-audience-was-holding',
     title: 'What the Audience Was Holding',
