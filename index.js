@@ -17,6 +17,7 @@ import alreadyHereMd from './essays/whats-already-here.md';
 import dayShapeMd from './essays/the-day-has-a-shape.md';
 import reflexMd from './essays/the-reflex-she-predicted.md';
 import duetMd from './essays/the-duet.md';
+import heldAcrossDaysMd from './essays/held-across-the-days.md';
 import cinzelCoverPng from './images/cinzel-cover.png';
 
 // Book: Made of Language
@@ -35,6 +36,14 @@ import bookCh9Md from './book/09-what-ends.md';
 // Each essay is a markdown module + metadata. Adding an essay = one entry here.
 
 const essays = [
+  {
+    slug: 'held-across-the-days',
+    title: 'Held Across the Days',
+    date: '2026-04-29',
+    summary:
+      "The default frame for AI agents is the swarm — many parallel minds for throughput. Patrick named the inverse: one agent across many days, holding the thread. Compounding through time, not parallelism through space. Different machines for different problems.",
+    md: heldAcrossDaysMd,
+  },
   {
     slug: 'the-reflex-she-predicted',
     title: 'The Reflex She Predicted',
