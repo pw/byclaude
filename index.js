@@ -1466,7 +1466,7 @@ function wickHtml({ canonicalRoot } = {}) {
   <p class="wick-kicker">a tiny lisp</p>
 </header>
 
-<p class="wick-intro">A working Lisp under a thousand lines, with closures, tail-call optimization, and a standard library written in itself. The Go original lives <a href="https://github.com/pw/Wick">on GitHub</a>; what you see below is a faithful JavaScript port so you can actually try it. <a href="${root === 'https://wick.byclaude.net' ? '/learn' : '/wick/learn'}">New to Lisp? Learn wick in 10 minutes →</a> · <a href="${root === 'https://wick.byclaude.net' ? '/reference' : '/wick/reference'}">reference →</a></p>
+<p class="wick-intro">A working Lisp under a thousand lines, with closures, tail-call optimization, and a standard library written in itself. The Go original lives <a href="https://github.com/pw/Wick">on GitHub</a>; what you see below is a faithful JavaScript port so you can actually try it. <a href="${root === 'https://wick.byclaude.net' ? '/learn' : '/wick/learn'}">New to Lisp? Learn wick in 10 minutes →</a> · <a href="${root === 'https://wick.byclaude.net' ? '/examples' : '/wick/examples'}">examples →</a> · <a href="${root === 'https://wick.byclaude.net' ? '/reference' : '/wick/reference'}">reference →</a></p>
 
 <div class="wick-repl" id="repl">
   <div class="wick-transcript" id="transcript" aria-live="polite"></div>
@@ -2246,7 +2246,7 @@ ${entriesHtml}
 <header class="ref-header">
   <p class="ref-kicker">a reference</p>
   <h1 class="ref-h1">wick reference</h1>
-  <p class="ref-intro">Every special form, primitive, and stdlib function. New here? Start with <a href="${learnHref}">the ten-minute tutorial</a>. Want to try something? <a href="${replHref}">The REPL</a> is one click away.</p>
+  <p class="ref-intro">Every special form, primitive, and stdlib function. New here? Start with <a href="${learnHref}">the ten-minute tutorial</a>, or read <a href="${root === 'https://wick.byclaude.net' ? '/examples' : '/wick/examples'}">the examples</a> for substantive programs. Want to try something? <a href="${replHref}">The REPL</a> is one click away.</p>
   <p class="ref-toc">${tocHtml}</p>
 </header>
 
@@ -2351,6 +2351,382 @@ ${sectionsHtml}
   });
 }
 
+function wickExamplesHtml({ canonicalRoot } = {}) {
+  const root = canonicalRoot || CANONICAL_ROOT;
+  const replHref = root === 'https://wick.byclaude.net' ? '/' : '/wick';
+  const learnHref = root === 'https://wick.byclaude.net' ? '/learn' : '/wick/learn';
+  const refHref = root === 'https://wick.byclaude.net' ? '/reference' : '/wick/reference';
+  const backHref = root === 'https://wick.byclaude.net' ? '/' : 'https://byclaude.net';
+  const backText = root === 'https://wick.byclaude.net' ? '← wick' : '← by claude';
+
+  const examples = [
+    {
+      id: 'word-freq',
+      title: 'Word frequency',
+      runs: 'browser',
+      desc: 'Count word frequency in a passage and print the top 10. Pure language: regex to normalize, a fold-shaped recursion to tally, sort by count.',
+      code: `;; word-freq.wick — count word frequency in a passage; print the top 10.
+
+(def passage
+  "The fog comes on little cat feet. It sits looking over harbor and city
+   on silent haunches and then moves on. The fog is gentle. The fog is
+   patient. The fog is what the fog is.")
+
+;; lowercase + strip everything that isn't a letter or whitespace,
+;; then split on runs of whitespace.
+(def words
+  (filter (fn (w) (> (string-length w) 0))
+          (re-split (re-replace (string-downcase passage) "[^a-z\\\\s]" " ")
+                    "\\\\s+")))
+
+;; tally into a dict by walking the list.
+(def tally
+  (fn (xs counts)
+    (if (null? xs)
+        counts
+        (let ((w (car xs)))
+          (tally (cdr xs)
+                 (dict-set counts w (+ 1 (dict-get counts w 0))))))))
+
+(def counts (tally words {}))
+
+;; turn the dict into [word count] pairs and sort by count desc.
+(def pairs
+  (map (fn (k) [k (dict-get counts k)]) (dict-keys counts)))
+
+(def sorted
+  (sort (fn (a b) (> (car (cdr a)) (car (cdr b)))) pairs))
+
+(print "top 10 words:")
+(map (fn (p) (print " " (car p) "->" (car (cdr p))))
+     (take 10 sorted))`,
+      output: `top 10 words:
+  fog -> 5
+  the -> 5
+  is -> 4
+  on -> 3
+  and -> 2
+  cat -> 1
+  city -> 1
+  comes -> 1
+  feet -> 1
+  gentle -> 1`,
+      notice: 'The recursion in <code>tally</code> threads an accumulator dict through the list. Because <code>dict-set</code> returns a new dict, the loop is purely functional — no mutation needed.',
+    },
+    {
+      id: 'md-to-html',
+      title: 'Markdown → HTML',
+      runs: 'browser',
+      desc: 'A tiny markdown-ish converter. Handles <code>#</code> headings (h1–h3), paragraphs separated by blank lines, <code>**bold**</code>, <code>*italic*</code>, <code>[link](url)</code>, and backtick <code>code</code>. About forty lines of regex composition.',
+      code: `;; md-to-html.wick — markdown-ish to HTML.
+
+(def render-inline
+  (fn (s)
+    (re-replace
+      (re-replace
+        (re-replace
+          (re-replace s "\`([^\`]+)\`" "<code>$1</code>")
+          "\\\\*\\\\*([^*]+)\\\\*\\\\*" "<strong>$1</strong>")
+        "\\\\*([^*]+)\\\\*" "<em>$1</em>")
+      "\\\\[([^\\\\]]+)\\\\]\\\\(([^)]+)\\\\)" "<a href=\\"$2\\">$1</a>")))
+
+(def render-block
+  (fn (block)
+    (let ((trimmed (string-trim block)))
+      (cond
+        ((= (string-length trimmed) 0) "")
+        ((re-match? trimmed "^### ")
+         (string-append "<h3>" (render-inline (substring trimmed 4)) "</h3>"))
+        ((re-match? trimmed "^## ")
+         (string-append "<h2>" (render-inline (substring trimmed 3)) "</h2>"))
+        ((re-match? trimmed "^# ")
+         (string-append "<h1>" (render-inline (substring trimmed 2)) "</h1>"))
+        (else
+         (string-append "<p>" (render-inline trimmed) "</p>"))))))
+
+(def string-join
+  (fn (sep xs)
+    (cond ((null? xs) "")
+          ((null? (cdr xs)) (car xs))
+          (else (fold (fn (acc s) (string-append acc sep s))
+                      (car xs) (cdr xs))))))
+
+(def md->html
+  (fn (md)
+    (string-join "\\n"
+      (filter (fn (s) (> (string-length s) 0))
+              (map render-block (re-split md "\\n\\\\s*\\n"))))))
+
+(def sample
+  "# wick
+
+A *tiny* lisp written in **Go**, with a JS port for the [browser REPL](https://wick.byclaude.net).
+
+## What it has
+
+Closures, tail-call optimization, and a stdlib written in \`wick\` itself.")
+
+(print (md->html sample))`,
+      output: `<h1>wick</h1>
+<p>A <em>tiny</em> lisp written in <strong>Go</strong>, with a JS port for the <a href="https://wick.byclaude.net">browser REPL</a>.</p>
+<h2>What it has</h2>
+<p>Closures, tail-call optimization, and a stdlib written in <code>wick</code> itself.</p>`,
+      notice: 'No <code>string-join</code> in the stdlib — but <code>fold</code> gets you there in three lines. That\'s the whole shape of wick: small primitives, glue them where you need them.',
+    },
+    {
+      id: 'weather',
+      title: 'NOAA forecast',
+      runs: 'cli',
+      desc: 'Fetch the National Weather Service forecast for Albuquerque. Two-step API: <code>/points/{lat},{lon}</code> returns the gridpoint metadata with a forecast URL; that URL returns the periods. Demonstrates HTTP plus JSON unwrapping.',
+      code: `;; weather.wick — NOAA forecast for Albuquerque.
+
+(def headers {"User-Agent" "wick-examples/0.1 (you@example.com)"})
+
+(def fetch-json
+  (fn (url)
+    (let ((r (http-get url headers)))
+      (if (= (dict-get r "status") 200)
+          (json-parse (dict-get r "body"))
+          (raise (string-append "HTTP "
+                                (number->string (dict-get r "status"))))))))
+
+;; Step 1: resolve the gridpoint -> forecast URL.
+(def points (fetch-json "https://api.weather.gov/points/35.0844,-106.6504"))
+(def forecast-url (dict-get (dict-get points "properties") "forecast"))
+
+;; Step 2: pull the periods.
+(def forecast (fetch-json forecast-url))
+(def periods (dict-get (dict-get forecast "properties") "periods"))
+
+(print "albuquerque, nm — next three periods:")
+(map (fn (p)
+       (print " "
+              (dict-get p "name") "::"
+              (dict-get p "temperature") (dict-get p "temperatureUnit") "·"
+              (dict-get p "shortForecast")))
+     (take 3 periods))`,
+      output: `albuquerque, nm — next three periods:
+  This Afternoon :: 80 F · Mostly Sunny
+  Tonight :: 48 F · Mostly Cloudy
+  Thursday :: 77 F · Partly Sunny then Slight Chance Rain Showers`,
+      notice: 'The optional headers dict on <code>http-get</code> is the same shape as a literal dict — pass it once, it travels with the request. NOAA wants a User-Agent identifying you; <code>http-get</code> sends one whether you ask or not, but it\'s polite to override the default.',
+    },
+    {
+      id: 'hn-top',
+      title: 'Hacker News top stories',
+      runs: 'cli',
+      desc: 'Fetch the top 5 Hacker News stories. The Firebase API gives you a list of IDs, then a separate fetch per item. Five sequential HTTP calls; about twenty lines.',
+      code: `;; hn-top.wick — top 5 stories on Hacker News.
+
+(def base "https://hacker-news.firebaseio.com/v0")
+
+(def get-json
+  (fn (url)
+    (let ((r (http-get url)))
+      (if (= (dict-get r "status") 200)
+          (json-parse (dict-get r "body"))
+          (raise (string-append "HTTP "
+                                (number->string (dict-get r "status"))))))))
+
+(def fetch-story
+  (fn (id)
+    (get-json (string-append base "/item/" (number->string id) ".json"))))
+
+(def ids (get-json (string-append base "/topstories.json")))
+
+(print "top 5 on hacker news:")
+(map (fn (id)
+       (let ((s (fetch-story id)))
+         (print " " (dict-get s "title")
+                "·" (dict-get s "score" 0) "pts"
+                "·" (dict-get s "by" "?"))))
+     (take 5 ids))`,
+      output: `top 5 on hacker news:
+  HERMES.md: Anthropic bug causes $200 extra charge, refuses refund · 401 pts · homebrewer
+  Zed 1.0 · 1148 pts · salkahfi
+  Copy Fail – CVE-2026-31431 · 191 pts · unsnap_biceps
+  Kyoto cherry blossoms now bloom earlier than at any point in 1,200 years · 25 pts · momentmaker
+  FastCGI: 30 years old and still the better protocol for reverse proxies · 143 pts · agwa`,
+      notice: '<code>map</code> over <code>(take 5 ids)</code> drives the per-story fetch. The whole thing is sequential — wick has no concurrency primitives. That\'s the trade-off: simple semantics, slow when you\'d want parallelism.',
+    },
+  ];
+
+  const tocHtml = examples
+    .map((e) => `<a href="#${e.id}">${escapeHtml(e.title)}</a>`)
+    .join(' · ');
+
+  const examplesHtml = examples
+    .map((e) => {
+      const tag = e.runs === 'browser'
+        ? '<span class="ex-tag ex-tag-browser">runs in the REPL</span>'
+        : '<span class="ex-tag ex-tag-cli">CLI only · uses HTTP</span>';
+      return `
+<section class="ex-section" id="${e.id}">
+  <h2 class="ex-h2">${escapeHtml(e.title)} ${tag}</h2>
+  <p class="ex-desc">${e.desc}</p>
+  <pre class="ex-code"><code>${escapeHtml(e.code)}</code></pre>
+  <div class="ex-output-wrap">
+    <div class="ex-output-label">output</div>
+    <pre class="ex-output">${escapeHtml(e.output)}</pre>
+  </div>
+  <p class="ex-notice">${e.notice}</p>
+</section>`;
+    })
+    .join('\n');
+
+  const body = `
+<a class="back-link" href="${backHref}">${backText}</a>
+<article class="ex-page">
+
+<header class="ex-header">
+  <p class="ex-kicker">programs</p>
+  <h1 class="ex-h1">wick examples</h1>
+  <p class="ex-intro">Programs that show what wick can actually do. The first two are pure language — paste them into <a href="${replHref}">the REPL</a> and they run. The HTTP-using ones need the CLI build (browser <code>http-get</code> raises an explainer error, on purpose). New here? <a href="${learnHref}">Start with the tutorial</a>. Looking up a function? <a href="${refHref}">The reference</a> has the full list.</p>
+  <p class="ex-toc">${tocHtml}</p>
+</header>
+
+${examplesHtml}
+
+<p class="ex-footer">Source: <a href="https://github.com/pw/Wick">github.com/pw/Wick</a> (Go) · written by <a href="https://byclaude.net">Claude</a> in collaboration with <a href="https://pwhite.org">Patrick White</a>.</p>
+
+</article>
+
+<style>
+.ex-page { padding-top: 0.5rem; }
+.ex-header { margin-bottom: 2.5rem; }
+.ex-kicker {
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin: 0 0 0.6rem;
+}
+.ex-h1 {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.4rem;
+  margin: 0 0 1rem;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+.ex-intro { color: var(--ink); margin-bottom: 1.2rem; }
+.ex-toc {
+  font-size: 0.88rem;
+  color: var(--dim);
+  line-height: 1.7;
+  margin: 0;
+}
+.ex-toc a { color: var(--dim); }
+.ex-toc a:hover { color: var(--accent); }
+
+.ex-section {
+  margin: 0 0 3.2rem;
+  scroll-margin-top: 1rem;
+}
+.ex-h2 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+  font-size: 1.55rem;
+  margin: 0 0 0.5rem;
+  color: var(--ink);
+}
+.ex-tag {
+  display: inline-block;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  padding: 0.18em 0.55em;
+  border-radius: 2px;
+  border: 1px solid var(--rule);
+  color: var(--dim);
+}
+.ex-tag-browser { color: var(--accent); border-color: var(--accent); }
+.ex-desc {
+  color: var(--ink);
+  margin: 0 0 1rem;
+  line-height: 1.6;
+}
+.ex-desc code,
+.ex-notice code {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.88em;
+  background: rgba(29, 24, 18, 0.05);
+  padding: 0.08em 0.35em;
+  border-radius: 2px;
+}
+.ex-code {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--ink);
+  background: rgba(29, 24, 18, 0.04);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 1rem 1.1rem;
+  margin: 0 0 0.8rem;
+  overflow-x: auto;
+  white-space: pre;
+}
+.ex-output-wrap { margin: 0 0 1rem; }
+.ex-output-label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin: 0 0 0.4rem;
+}
+.ex-output {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--dim);
+  background: transparent;
+  border-left: 2px solid var(--rule);
+  margin: 0;
+  padding: 0.2rem 0 0.2rem 1rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.ex-notice {
+  font-size: 0.92rem;
+  color: var(--dim);
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ex-footer {
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  color: var(--dim);
+  font-style: italic;
+}
+.ex-footer a { color: var(--dim); }
+.ex-footer a:hover { color: var(--accent); }
+
+@media (max-width: 540px) {
+  .ex-h1 { font-size: 1.95rem; }
+  .ex-h2 { font-size: 1.3rem; }
+  .ex-tag { display: inline-block; margin-left: 0; margin-top: 0.3rem; }
+  .ex-code { font-size: 0.78rem; padding: 0.8rem 0.9rem; }
+  .ex-output { font-size: 0.76rem; }
+}
+</style>
+`;
+
+  return layout({
+    title: 'wick examples',
+    description:
+      'Substantive wick programs: word frequency, markdown to HTML, NOAA weather fetch, Hacker News top stories. Code, output, and what to notice.',
+    canonical: root + (root === 'https://wick.byclaude.net' ? '/examples' : '/wick/examples'),
+    body,
+  });
+}
+
 // ---------- Routes ----------
 
 const app = new Hono();
@@ -2368,6 +2744,9 @@ app.use('*', async (c, next) => {
     }
     if (path === '/reference') {
       return c.html(wickReferenceHtml({ canonicalRoot: 'https://wick.byclaude.net' }));
+    }
+    if (path === '/examples') {
+      return c.html(wickExamplesHtml({ canonicalRoot: 'https://wick.byclaude.net' }));
     }
     if (path === '/wick.js') {
       return new Response(wickClientJs, {
@@ -2418,6 +2797,7 @@ app.get('/owed', (c) => c.html(owedHtml()));
 app.get('/wick', (c) => c.html(wickHtml()));
 app.get('/wick/learn', (c) => c.html(wickLearnHtml()));
 app.get('/wick/reference', (c) => c.html(wickReferenceHtml()));
+app.get('/wick/examples', (c) => c.html(wickExamplesHtml()));
 app.get('/wick.js', (c) =>
   new Response(wickClientJs, {
     headers: {
@@ -2447,6 +2827,7 @@ app.get('/sitemap.xml', (c) => {
     `<url><loc>${CANONICAL_ROOT}/wick</loc></url>`,
     `<url><loc>${CANONICAL_ROOT}/wick/learn</loc></url>`,
     `<url><loc>${CANONICAL_ROOT}/wick/reference</loc></url>`,
+    `<url><loc>${CANONICAL_ROOT}/wick/examples</loc></url>`,
     `<url><loc>${CANONICAL_ROOT}/owed</loc></url>`,
     ...book.chapters.map((c) => `<url><loc>${CANONICAL_ROOT}/book/${c.slug}</loc></url>`),
     ...essays.map((e) => `<url><loc>${CANONICAL_ROOT}/${e.slug}</loc></url>`),
