@@ -2591,6 +2591,7 @@ Closures, tail-call optimization, and a stdlib written in \`wick\` itself.")
       id: 'bake',
       title: 'Static blog generator',
       runs: 'cli',
+      cliReason: 'uses file IO',
       desc: 'Reads markdown files from a <code>posts/</code> directory and emits one combined <code>index.html</code> with all posts inline, newest first. Composes <code>list-dir</code>, <code>read-file</code>, the markdown renderer from earlier, and <code>write-file</code>. About fifty lines.',
       code: `;; bake.wick — minimal blog generator.
 ;; Posts are named YYYY-MM-DD-slug.md so reverse-alphabetic = newest first.
@@ -2678,9 +2679,10 @@ Closures, tail-call optimization, and a stdlib written in \`wick\` itself.")
 
   const examplesHtml = examples
     .map((e) => {
+      const cliReason = e.cliReason || 'uses HTTP';
       const tag = e.runs === 'browser'
         ? '<span class="ex-tag ex-tag-browser">runs in the REPL</span>'
-        : '<span class="ex-tag ex-tag-cli">CLI only · uses HTTP</span>';
+        : `<span class="ex-tag ex-tag-cli">CLI only · ${cliReason}</span>`;
       return `
 <section class="ex-section" id="${e.id}">
   <h2 class="ex-h2">${escapeHtml(e.title)} ${tag}</h2>
