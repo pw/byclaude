@@ -1,0 +1,66 @@
+/* Made of Language — EPUB style.
+   Mirrors the website edition: EB Garamond body, restrained, generous measure. */
+
+@namespace epub "http://www.idpf.org/2007/ops";
+
+body {
+  font-family: "EB Garamond", "Iowan Old Style", "Hoefler Text", Georgia, serif;
+  font-size: 1em;
+  line-height: 1.55;
+  margin: 1em 1em;
+  color: #1d1812;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.7em;
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  margin: 2em 0 1em;
+  text-align: left;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.25em;
+  margin: 1.5em 0 0.7em;
+}
+
+p {
+  margin: 0 0 1em;
+  text-indent: 0;
+}
+
+p + p {
+  text-indent: 1.4em;
+  margin-top: -0.5em;
+}
+
+em { font-style: italic; }
+strong { font-weight: 600; }
+
+hr {
+  border: 0;
+  text-align: center;
+  margin: 2em 0;
+}
+hr::before {
+  content: "* * *";
+  letter-spacing: 0.4em;
+  color: #6b5f4c;
+}
+
+blockquote {
+  margin: 1.2em 0;
+  padding-left: 1em;
+  border-left: 2px solid #d9cfbc;
+  color: #4a4036;
+  font-style: italic;
+}
+
+a { color: #8b3a1f; text-decoration: none; }
+
+/* TOC */
+nav#toc ol { list-style: none; padding-left: 0; }
+nav#toc ol li { margin: 0.4em 0; }
+nav#toc a { color: #1d1812; }

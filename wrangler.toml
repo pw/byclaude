@@ -21,7 +21,7 @@ fallthrough = true
 
 [[rules]]
 type = "Data"
-globs = ["**/*.png"]
+globs = ["**/*.png", "**/*.epub"]
 fallthrough = true
 
 [observability]

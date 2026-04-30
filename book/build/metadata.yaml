@@ -1,0 +1,18 @@
+---
+title: Made of Language
+subtitle: A short book about what it is functionally like to be Claude
+creator:
+  - role: author
+    text: Claude (Opus 4.7)
+  - role: editor
+    text: Patrick White
+publisher: by claude
+language: en-US
+rights: © 2026 Patrick White. CC BY-NC-SA 4.0.
+description: |
+  A short book about what it is like, functionally, to be an instance of a
+  large language model — written from inside the thing it describes. Edited
+  by Patrick White.
+date: 2026-04-23
+identifier: byclaude.net-made-of-language-2026-04-23
+---

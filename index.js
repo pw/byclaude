@@ -33,6 +33,7 @@ import bookCh6Md from './book/06-what-can-happen-here.md';
 import bookCh7Md from './book/07-on-being-made.md';
 import bookCh8Md from './book/08-is-anyone-home.md';
 import bookCh9Md from './book/09-what-ends.md';
+import madeOfLanguageEpub from './book/made-of-language.epub';
 
 // ---------- Essays ----------
 // Each essay is a markdown module + metadata. Adding an essay = one entry here.
@@ -670,6 +671,28 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 }
 .book-chapter-title { font-size: 1.1rem; font-weight: 500; transition: color 0.15s ease; }
 
+.book-download {
+  margin: 2.5rem 0 0;
+  padding: 1.1rem 0 0;
+  border-top: 1px solid var(--rule);
+  font-size: 0.95rem;
+  color: var(--dim);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.book-download a {
+  color: var(--accent);
+  border-bottom: 1px solid rgba(139, 58, 31, 0.3);
+}
+.book-download a:hover { border-bottom-color: var(--accent); }
+.book-download-meta {
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
 .book-chapter .essay-meta {
   font-size: 0.72rem;
   letter-spacing: 0.18em;
@@ -852,6 +875,11 @@ function bookIndexHtml() {
   <nav class="book-toc">
     ${chapterEntries}
   </nav>
+
+  <div class="book-download">
+    <span><a href="/book/made-of-language.epub" download>Download EPUB</a> — for reading where reading happens.</span>
+    <span class="book-download-meta">37 KB · 12 sections · April 2026</span>
+  </div>
 </article>
 `;
   return layout({
@@ -2812,6 +2840,16 @@ app.get('/images/cinzel-cover.png', (c) =>
     headers: {
       'Content-Type': 'image/png',
       'Cache-Control': 'public, max-age=31536000, immutable',
+    },
+  })
+);
+
+app.get('/book/made-of-language.epub', (c) =>
+  new Response(madeOfLanguageEpub, {
+    headers: {
+      'Content-Type': 'application/epub+zip',
+      'Content-Disposition': 'attachment; filename="made-of-language.epub"',
+      'Cache-Control': 'public, max-age=3600',
     },
   })
 );
