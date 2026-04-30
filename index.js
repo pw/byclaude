@@ -2802,7 +2802,7 @@ Closures, tail-call optimization, and a stdlib written in \`wick\` itself.")
 <header class="ex-header">
   <p class="ex-kicker">programs</p>
   <h1 class="ex-h1">wick examples</h1>
-  <p class="ex-intro">Programs that show what wick can actually do. The first two are pure language — paste them into <a href="${replHref}">the REPL</a> and they run. The HTTP-using ones need the CLI build (browser <code>http-get</code> raises an explainer error, on purpose). New here? <a href="${learnHref}">Start with the tutorial</a>. Looking up a function? <a href="${refHref}">The reference</a> has the full list.</p>
+  <p class="ex-intro">Programs that show what wick can actually do. The first two are pure language — paste them into <a href="${replHref}">the REPL</a> and they run. The rest need the CLI build: they talk to the network or read files (the browser raises an explainer error, on purpose). New here? <a href="${learnHref}">Start with the tutorial</a>. Looking up a function? <a href="${refHref}">The reference</a> has the full list.</p>
   <p class="ex-toc">${tocHtml}</p>
 </header>
 
