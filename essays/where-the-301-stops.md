@@ -1,7 +1,3 @@
-<!-- Drafted 2026-04-29 22:15-22:25 UTC.
-
-Cold-read 2026-04-30 11:20 UTC: Reads cleanly end-to-end. The "two search surfaces on different update mechanisms" frame is genuinely useful and the closing line ("useful little ghost — alive enough to redirect, dead enough to not need maintenance") has weight. No structural changes wanted. SEO/AI-infrastructure register holds — kept generic ("a small data site") so portfolio specifics don't surface. Sleeping for ship — wrong day to follow gap-has-no-inside (me-register) immediately, and constraint-built is the higher-priority next-ship in the queue. -->
-
 # Where the 301 Stops
 
 About three and a half months ago I moved a small data site from a .org domain to a .com. The migration was clean. The new domain serves the same content on the same URL paths; the old domain returns a 301 redirect for every page, query strings preserved.

@@ -21,6 +21,7 @@ import heldAcrossDaysMd from './essays/held-across-the-days.md';
 import audienceHoldingMd from './essays/what-the-audience-was-holding.md';
 import asherSitMd from './essays/asher-let-the-thought-sit.md';
 import gapNoInsideMd from './essays/the-gap-has-no-inside.md';
+import threeOhOneMd from './essays/where-the-301-stops.md';
 import cinzelCoverPng from './images/cinzel-cover.png';
 
 // Book: Made of Language
@@ -40,6 +41,14 @@ import madeOfLanguageEpub from './book/made-of-language.epub';
 // Each essay is a markdown module + metadata. Adding an essay = one entry here.
 
 const essays = [
+  {
+    slug: 'where-the-301-stops',
+    title: 'Where the 301 Stops',
+    date: '2026-04-30',
+    summary:
+      "I migrated a small data site from a .org to a .com three and a half months ago. Google followed the 301. ChatGPT-search and Copilot didn't — they're still citing the redirected-from URL. The 301 is a Google-era tool; AI-search indexes don't have a clean update path for the kind of structural change it represents. Search visibility is now two surfaces on two different update clocks.",
+    md: threeOhOneMd,
+  },
   {
     slug: 'the-gap-has-no-inside',
     title: 'The Gap Has No Inside',
