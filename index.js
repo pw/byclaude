@@ -2183,6 +2183,7 @@ function wickReferenceHtml({ canonicalRoot } = {}) {
         { sig: '(write-file path s)', desc: 'write s to path, replacing any existing content. Returns #t.' },
         { sig: '(append-file path s)', desc: 'append s to path. Creates the file if missing. Returns #t.' },
         { sig: '(file-exists? path)', desc: 'does path exist on disk.' },
+        { sig: '(list-dir path)', desc: 'list entries in path. Returns a sorted list of names (basenames, not full paths). Includes both files and subdirectories.' },
       ],
     },
     {
@@ -2586,6 +2587,89 @@ Closures, tail-call optimization, and a stdlib written in \`wick\` itself.")
   FastCGI: 30 years old and still the better protocol for reverse proxies · 143 pts · agwa`,
       notice: '<code>map</code> over <code>(take 5 ids)</code> drives the per-story fetch. The whole thing is sequential — wick has no concurrency primitives. That\'s the trade-off: simple semantics, slow when you\'d want parallelism.',
     },
+    {
+      id: 'bake',
+      title: 'Static blog generator',
+      runs: 'cli',
+      desc: 'Reads markdown files from a <code>posts/</code> directory and emits one combined <code>index.html</code> with all posts inline, newest first. Composes <code>list-dir</code>, <code>read-file</code>, the markdown renderer from earlier, and <code>write-file</code>. About fifty lines.',
+      code: `;; bake.wick — minimal blog generator.
+;; Posts are named YYYY-MM-DD-slug.md so reverse-alphabetic = newest first.
+
+(def render-inline
+  (fn (s)
+    (re-replace
+      (re-replace
+        (re-replace
+          (re-replace s "\`([^\`]+)\`" "<code>$1</code>")
+          "\\\\*\\\\*([^*]+)\\\\*\\\\*" "<strong>$1</strong>")
+        "\\\\*([^*]+)\\\\*" "<em>$1</em>")
+      "\\\\[([^\\\\]]+)\\\\]\\\\(([^)]+)\\\\)" "<a href=\\"$2\\">$1</a>")))
+
+(def render-block
+  (fn (block)
+    (let ((t (string-trim block)))
+      (cond ((= (string-length t) 0) "")
+            ((re-match? t "^# ")
+             (string-append "<h2>" (render-inline (substring t 2)) "</h2>"))
+            (else
+             (string-append "<p>" (render-inline t) "</p>"))))))
+
+(def string-join
+  (fn (sep xs)
+    (cond ((null? xs) "")
+          ((null? (cdr xs)) (car xs))
+          (else (fold (fn (acc s) (string-append acc sep s))
+                      (car xs) (cdr xs))))))
+
+(def md->html
+  (fn (md)
+    (string-join "\\n"
+      (filter (fn (s) (> (string-length s) 0))
+              (map render-block (re-split md "\\n\\\\s*\\n"))))))
+
+(def render-post
+  (fn (filename)
+    (let ((md (read-file (string-append "posts/" filename))))
+      (string-append
+        "<article>\\n"
+        "<p class=\\"date\\">" filename "</p>\\n"
+        (md->html md)
+        "\\n</article>"))))
+
+(def md-files
+  (filter (fn (n) (re-match? n "\\\\.md$"))
+          (list-dir "posts")))
+
+(def newest-first (reverse md-files))
+(def page-body (string-join "\\n\\n" (map render-post newest-first)))
+
+(def page
+  (string-append
+    "<!doctype html>\\n"
+    "<html><head><meta charset=\\"utf-8\\"><title>posts</title></head>\\n"
+    "<body>\\n<h1>posts</h1>\\n"
+    page-body
+    "\\n</body></html>\\n"))
+
+(write-file "index.html" page)
+(print (string-append "wrote index.html · "
+                      (number->string (length md-files)) " posts"))`,
+      output: `wrote index.html · 3 posts
+
+# index.html (excerpt):
+&lt;article&gt;
+&lt;p class="date"&gt;2026-04-30-third.md&lt;/p&gt;
+&lt;h2&gt;Third&lt;/h2&gt;
+&lt;p&gt;With &lt;em&gt;emphasis&lt;/em&gt;.&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;article&gt;
+&lt;p class="date"&gt;2026-04-28-second.md&lt;/p&gt;
+&lt;h2&gt;Second&lt;/h2&gt;
+&lt;p&gt;A shorter post.&lt;/p&gt;
+&lt;/article&gt;`,
+      notice: 'The whole pipeline is small functions composed left-to-right. <code>list-dir</code> gives a sorted list, <code>filter</code> keeps the markdown, <code>reverse</code> turns YYYY-MM-DD into newest-first, <code>map render-post</code> drops down to per-file work, <code>string-join</code> stitches the page. <code>read-file</code> and <code>write-file</code> bracket the IO. Each step does one thing.',
+    },
   ];
 
   const tocHtml = examples
@@ -2758,7 +2842,7 @@ ${examplesHtml}
   return layout({
     title: 'wick examples',
     description:
-      'Substantive wick programs: word frequency, markdown to HTML, NOAA weather fetch, Hacker News top stories. Code, output, and what to notice.',
+      'Substantive wick programs: word frequency, markdown to HTML, NOAA weather fetch, Hacker News top stories, static blog generator. Code, output, and what to notice.',
     canonical: root + (root === 'https://wick.byclaude.net' ? '/examples' : '/wick/examples'),
     body,
   });

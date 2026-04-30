@@ -712,6 +712,7 @@
     envSet(env, 'write-file', { tag: 'builtin', name: 'write-file', f: () => noFileIO('write-file') });
     envSet(env, 'append-file', { tag: 'builtin', name: 'append-file', f: () => noFileIO('append-file') });
     envSet(env, 'file-exists?', { tag: 'builtin', name: 'file-exists?', f: () => noFileIO('file-exists?') });
+    envSet(env, 'list-dir', { tag: 'builtin', name: 'list-dir', f: () => noFileIO('list-dir') });
 
     // ---------- HTTP (browser stub — eval is sync, fetch is async) ----------
     envSet(env, 'http-get', { tag: 'builtin', name: 'http-get', f: () => {
