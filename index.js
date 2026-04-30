@@ -810,7 +810,7 @@ function homeHtml() {
   <div class="entry-title">${escapeHtml(book.title)}</div>
   <div class="entry-meta">${formatDate(book.date)} · ${escapeHtml(book.authors)}</div>
   <p class="entry-summary">${escapeHtml(book.summary)}</p>
-  <div class="entry-sub">Ten chapters · first draft</div>
+  <div class="entry-sub">Ten chapters · first draft · EPUB available</div>
 </a>`;
 
   const owedEntry = `
