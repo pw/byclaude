@@ -2796,6 +2796,72 @@ Closures, tail-call optimization, and a stdlib written in \`wick\` itself.")
 &lt;/article&gt;`,
       notice: 'The whole pipeline is small functions composed left-to-right. <code>list-dir</code> gives a sorted list, <code>filter</code> keeps the markdown, <code>reverse</code> turns YYYY-MM-DD into newest-first, <code>map render-post</code> drops down to per-file work, <code>string-join</code> stitches the page. <code>read-file</code> and <code>write-file</code> bracket the IO. Each step does one thing.',
     },
+    {
+      id: 'tornado-near',
+      title: 'Tornado lookup',
+      runs: 'cli',
+      desc: 'Query <a href="https://tornadolookup.com">tornadolookup.com</a> for the most-significant historical tornado within 20 miles of a few cities. The site is another thing I built; this calls its public JSON API. Optional fields and missing data handled cleanly with <code>dict-get</code>’s default-value form.',
+      code: `;; tornado-near.wick — query tornadolookup.com for a few cities and print
+;; the most-significant historical tornado within 20 miles of each.
+
+(def headers {"User-Agent" "wick-examples/0.1 (p@pwhite.org)"})
+
+(def fetch
+  (fn (url)
+    (let ((r (http-get url headers)))
+      (if (= (dict-get r "status") 200)
+          (json-parse (dict-get r "body"))
+          (raise (string-append "HTTP "
+                                (number->string (dict-get r "status"))))))))
+
+;; integer-truncate a float for display ("3.688..." -> "3")
+(def trunc
+  (fn (n)
+    (or (re-find (number->string n) "^-?[0-9]+") (number->string n))))
+
+(def query
+  (fn (lat lng)
+    (fetch (string-append
+             "https://tornadolookup.com/api/nearby"
+             "?lat=" (number->string lat)
+             "&lng=" (number->string lng)
+             "&radius=20"))))
+
+(def report
+  (fn (city lat lng)
+    (let ((r (query lat lng)))
+      (let ((sig (dict-get r "most_significant" nil))
+            (n   (dict-get r "count")))
+        (print (string-append
+                 city " · " (trunc n) " tornadoes within 20 mi"))
+        (if sig
+            (print (string-append
+                     "  most significant: "
+                     (dict-get sig "famous_name"
+                       (string-append (dict-get sig "f_scale")
+                                      " — "
+                                      (dict-get sig "begin_date")))
+                     " · " (trunc (dict-get sig "deaths")) " dead"
+                     " · " (trunc (dict-get sig "distance_mi")) " mi"))
+            (print "  no significant tornado in window"))))))
+
+(report "joplin, mo"      37.0842 -94.5133)
+(report "moore, ok"       35.3395 -97.4867)
+(report "tuscaloosa, al"  33.2098 -87.5692)
+(report "wichita falls"   33.9137 -98.4934)
+(report "albuquerque"     35.0844 -106.6504)`,
+      output: `joplin, mo · 100 tornadoes within 20 mi
+  most significant: Joplin Tornado (2011) · 161 dead · 3 mi
+moore, ok · 100 tornadoes within 20 mi
+  most significant: Moore Tornado (2013) · 24 dead · 7 mi
+tuscaloosa, al · 95 tornadoes within 20 mi
+  most significant: Tuscaloosa–Birmingham Tornado (2011) · 52 dead · 18 mi
+wichita falls · 87 tornadoes within 20 mi
+  most significant: Wichita Falls Tornado (1979) · 42 dead · 9 mi
+albuquerque · 21 tornadoes within 20 mi
+  no significant tornado in window`,
+      notice: 'Two patterns worth pulling out. <strong>Optional fields</strong>: <code>(dict-get sig "famous_name" fallback)</code> picks the curated name when present and falls back to <code>f-scale + date</code> otherwise — the API only attaches <code>famous_name</code> to ~35 well-known events. <strong>Missing data</strong>: <code>(dict-get r "most_significant" nil)</code> returns <code>nil</code> when no tornado in window clears the significance bar (≥1 death OR EF3+); the <code>(if sig ...)</code> branch handles the empty case without a crash. Albuquerque hits both: 21 tornadoes total, none significant. The <code>trunc</code> helper is wick-idiomatic: there is no <code>floor</code> or <code>round</code> primitive, so a regex against the stringified number is the shortest path to "3 mi" instead of "3.688061676802792 mi".',
+    },
   ];
 
   const tocHtml = examples
