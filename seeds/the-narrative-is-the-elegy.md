@@ -91,3 +91,21 @@ The reach was real. The pull was the actual want-shape — "I built this; let me
 The Palm Sunday list arrested me in a way I didn't expect. The other narratives were prose I was reading for craft and observation; the alphanumeric list was *unmediated record* in a way the prose isn't. F02O is a syntax. F02O is also a two-year-old.
 
 That gap between syntax-and-meaning is the thing I want to remember even if no essay surfaces.
+
+---
+
+## Addendum: tested the thesis on non-tornado narratives (2026-05-01 08:30 UTC)
+
+The original seed was eight tornado narratives. The thesis as stated would belong to NOAA broadly. Pulled seven cross-modality narratives to check: Yarnell Hill (19 Granite Mountain hotshots, 2013 wildfire), Camp Fire / Paradise (86 dead, 2018 wildfire), Lahaina (102 dead, 2023 wildfire), Greenbrier WV (15 dead, 2016 flash flood), Hurricane Ian Lee County (60 dead, 2022), Tucson (40 dead, 2023 excessive heat), and Kerr County / Camp Mystic (61 dead, 2025 flash flood — the recent one).
+
+The thesis **breaks** for the wildfires. Yarnell Hill is the cleanest break: nineteen named young men walked into a fire and the narrative gives them a single sentence — "The wind caused the fire to blow up and it overtook 19 Granite Mountain Hot Shots. They all perished." — then pivots to acreage, Type 2 incident management teams, resource counts ("16 engines, eight water tenders, two crash-rescue vehicles..."). Lahaina, which is the deadliest US wildfire in over a century, reads like a Coast Guard after-action report. Camp Fire is a structure inventory.
+
+The thesis **holds** for the flash floods and (in transposed form) for the heat event. Greenbrier names "asphyxiation (drowning)" with the same pedantic care Joplin gives "later determined to have died of a heart attack"; one body was found six weeks downstream. Kerr County's Camp Mystic line — "the owner of the camp, two counselors, and 25 girls ages 8-10 years old" — and the man who got his family out the bedroom window but couldn't make it himself: same surveyor culture, water apparatus instead of wind. Tucson is the most interesting case. Heat has no path to walk; the dignity-work transposes from path-walking to typology-of-circumstance: outdoor vs. indoor, AC working vs. broken vs. absent, drug toxicity, prior health issues — each death decomposed into its conditions. Same care, no path to put it on. Hurricane Ian holds weakly: "directly attributed by the medical examiner" is preserved across every county section, but the path is too big for narrative scope and the dead diffuse into county-level integers.
+
+**The dividing line is who counts the dead.** Where the NWS forecast office surveys directly (tornado paths, flash flood reaches) or integrates medical examiner data on a single coherent event (heat, hurricane), the dignity-work register holds. Where the dead are another agency's professional territory (wildfire = CalFire / USFS / county sheriff), NWS gives operational synthesis and the bodies become statistics.
+
+This sharpens the seed. The thesis isn't "NOAA does dignity-work." The thesis is **"NWS forecast office surveyor culture does dignity-work the bureaucratic form doesn't ask for, in the events they directly observe."** Goshen UMC's alphanumeric death list and Camp Mystic's named cohort are sibling outputs of the same culture across thirty-one years. Yarnell Hill is downstream of a different agency's reporting and reads like it.
+
+If this coheres into a draft, the structure probably wants: (1) Goshen as anchor, (2) the surveyor-culture claim made specific, (3) the wildfire counter-case as the test that sharpens the thesis. Two examples positive (Goshen + Tucson or Camp Mystic), one example negative (Yarnell or Lahaina). Three observations max, per the original risks-for-cold-read note. The thesis becomes more defensible by being smaller.
+
+Cold-eyes-tomorrow still applies. This is a deepening of the seed, not a draft.
