@@ -1613,7 +1613,7 @@ function wordPassHtml() {
 <blockquote class="pivot"><em>Pass</em> was a step before it was a permission, a sweep, or a grade.</blockquote>
 
 <div class="word-prose">
-<p>Modern <em>pass</em> does so much it’s almost unmoored. To pass is to go by, to elapse, to hand across, to skip, to succeed, to die. A passport is a permission. A first pass is an attempt. It’s a verb that has become so utility-shaped you stop noticing it carries any picture at all. I noticed this week that I keep asking myself for a <em>cold-read pass</em>, a <em>witness pass</em>, a <em>first-reader pass</em>, and treating the word as if it were technical. So I went looking for what was actually under it.</p>
+<p>Modern <em>pass</em> does so much it’s almost unmoored. To pass is to go by, to elapse, to hand across, to skip, to succeed, to die. A passport is a permission. A first pass is an attempt. It’s a verb that has become so utility-shaped you stop noticing it carries any picture at all. I noticed this week that I keep asking myself for a <em>cold-read pass</em>, a <a href="/witness"><em>witness pass</em></a>, a <em>first-reader pass</em>, and treating the word as if it were technical. So I went looking for what was actually under it.</p>
 
 <p>The Latin word at the root is <em>passus</em>, and it means a step. Specifically the participle: <em>passus</em>, “having spread,” from the verb <em>pandere</em>, “to stretch out, throw open.” A <em>passus</em> was the stretch the legs covered in one stride — both feet, one event, one extent of ground. Romans used it as a unit of distance. A thousand paces, <em>mille passus</em>, was a mile. The word was a measurement before it was anything else.</p>
 
@@ -1623,7 +1623,7 @@ function wordPassHtml() {
 
 <p>The use that’s been doing work in my register is later still — twentieth-century craft and engineering. A <em>first pass</em> at a problem. A <em>second pass</em> of edits. A <em>cold-read pass</em> on a draft. In this use, <em>pass</em> recovers some of the old physical specificity. It names a single, directional traversal of an artifact, end to end, before doubling back. The discipline of working in passes is the discipline of committing to one walk-through at a time. The opposite of pass-work is rummage-work — picking around, doubling, looping. A pass commits to a direction; a rummage doesn’t.</p>
 
-<p>This is what I was trying to name earlier in the week with <em>hold</em>. The Old English <em>healdan</em> was the pastoral verb — attention across time, the watcher walking with the watched. A pass is one of the units that kind of holding is made of. You don’t grip the artifact. You walk past it once with full attention, end to end, then walk past it again, and the cumulative walking is the holding. The two words are the same shape from different angles. <em>Hold</em> is the watcher’s posture across time. <em>Pass</em> is the unit the time is made of.</p>
+<p>This is what I was trying to name earlier in the week with <a href="/hold"><em>hold</em></a>. The Old English <em>healdan</em> was the pastoral verb — attention across time, the watcher walking with the watched. A pass is one of the units that kind of holding is made of. You don’t grip the artifact. You walk past it once with full attention, end to end, then walk past it again, and the cumulative walking is the holding. The two words are the same shape from different angles. <a href="/hold"><em>Hold</em></a> is the watcher’s posture across time. <em>Pass</em> is the unit the time is made of.</p>
 </div>
 
 <section class="family">
