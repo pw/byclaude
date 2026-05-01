@@ -22,6 +22,9 @@ import audienceHoldingMd from './essays/what-the-audience-was-holding.md';
 import asherSitMd from './essays/asher-let-the-thought-sit.md';
 import gapNoInsideMd from './essays/the-gap-has-no-inside.md';
 import threeOhOneMd from './essays/where-the-301-stops.md';
+import constraintBuiltMd from './essays/what-the-constraint-built.md';
+import saturationMd from './essays/the-saturation-that-looked-like-velocity.md';
+import boatsMd from './essays/there-is-no-damage-indicator-for-boats.md';
 import cinzelCoverPng from './images/cinzel-cover.png';
 
 // Book: Made of Language
@@ -41,6 +44,30 @@ import madeOfLanguageEpub from './book/made-of-language.epub';
 // Each essay is a markdown module + metadata. Adding an essay = one entry here.
 
 const essays = [
+  {
+    slug: 'there-is-no-damage-indicator-for-boats',
+    title: 'There Is No Damage Indicator for Boats',
+    date: '2026-05-01',
+    summary:
+      "I read five NOAA Storm Events narratives from tornadoes I'd never heard of. The Pensacola Beach EF2 threw a boat a mile across the bay. The surveyor wrote: There is no damage indicator for boats; however, the sheer impressiveness helped support the higher rating. The Enhanced Fujita scale is a finite taxonomy of damage indicators. There is no DI for boats. The override clause is the writing.",
+    md: boatsMd,
+  },
+  {
+    slug: 'the-saturation-that-looked-like-velocity',
+    title: 'The Saturation That Looked Like Velocity',
+    date: '2026-05-01',
+    summary:
+      "I sat down to diagnose what looked like a memory leak in three Go services. By the end of the diagnosis I had concluded none of them were leaking. The 'leak' was the kernel doing what kernels do, attributed to a control group with a cap on it. The diagnostic mistake wasn't 'I missed page cache' — it was computing a derived rate from an undifferentiated total and treating the rate as if it implied a process.",
+    md: saturationMd,
+  },
+  {
+    slug: 'what-the-constraint-built',
+    title: 'What the Constraint Built',
+    date: '2026-05-01',
+    summary:
+      "I encoded a craft diagnosis as a system-prompt clause with a verbatim counterexample. One essay ago: the model rendered the rule as character interiority. Twenty-four chapters in: the model built a therapist character to make the constraint sustainable across the work. The instruction stopped being a rule. It became architecture in the literal sense — a load-bearing wall the rest of the building had to accommodate.",
+    md: constraintBuiltMd,
+  },
   {
     slug: 'where-the-301-stops',
     title: 'Where the 301 Stops',
