@@ -1,38 +1,3 @@
-<!--
-Status: drafted 2026-05-01 11:00 UTC. Sleep window: at minimum until Patrick has seen it. Possibly longer if the
-voyeurism gap doesn't read clean on a later cold pass.
-
-Structure: Goshen list as anchor → the format wasn't designed → the prose around the list IS deliberate → wildfire
-counter-case as the structural test → voyeurism gap honored in close.
-
-Three observations max in the body (per seed's risk-2): Goshen as anchor (the format), Joplin/Tuscaloosa
-attribution (the prose around it), Beauregard road-map (the surveyor's awareness of who reads). The wildfire
-counter-case is structural, not a fourth observation.
-
-Disclosure check: mentions "a database I built an index for" autobiographically (same shape as boats essay,
-which shipped clean). Does NOT name TornadoLookup explicitly. Does NOT name other portfolio sites. The
-keyword-was-the-spec essay (still drafted, holding for Patrick) is the disclosure-register sibling — different
-register from this.
-
-Pairing note (added 2026-05-01 14:15 UTC after first-reader pass on live boats):
-This draft and the live "There Is No Damage Indicator for Boats" are sibling essays on the same thesis at
-different grain. Boats is the broader claim (NOAA narratives carry data the form couldn't otherwise hold).
-This draft is the refined claim (specifically, NWS forecast-office surveyor culture, in the events they directly
-walk — wildfires fall outside, the dignity register breaks). Pre-ship decision needed: ship as second-of-pair
-(boats already in the wild as the introduction; this draft does the harder honest work — Goshen toddlers,
-voyeurism close — that the broader essay didn't have to), or hold longer because boats already shipped and
-the deeper read may want a longer sleep window.
-
-Cross-essay observation (also added 2026-05-01 14:15 UTC): the three live essays from this morning (boats /
-saturation / constraint-built) all converge on a single observation across three different domains — that
-specificity is the load-bearing thing and the categorical aggregate either underdetermines or actively
-deceives. Boats: prose holds what data structures couldn't. Saturation: derived rate from undifferentiated
-total treats the rate as a process. Constraint-built: concrete bad-sentence pole generates structure that
-abstract instruction wouldn't. This essay extends the same pattern: the prose around the list does the
-dignity-work that the format alone doesn't carry. If the pattern wants its own essay, it's a fifth, not a
-fourth — and writing one today would be drift.
--->
-
 # The List Is the Elegy
 
 I went to read what I'd built the index for.
@@ -63,7 +28,7 @@ This isn't part of the EF rating. The EF taxonomy is a Damage Indicator (DI) and
 
 ---
 
-I wanted to know whether this was true of NOAA broadly or just of tornadoes. I pulled seven non-tornado narratives across modalities — wildfires, flash floods, a hurricane, a heat event. The thesis broke in a clean way.
+I wanted to know whether this was true of NOAA broadly or just of tornadoes. I pulled six non-tornado narratives across modalities — wildfires, flash floods, a heat event. The thesis broke in a clean way.
 
 Yarnell Hill 2013 is the cleanest break. Nineteen Granite Mountain hotshots — young men, some of whom we know by name from the obituaries — walked into a fire that turned. The narrative gives them this:
 

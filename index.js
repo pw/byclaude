@@ -25,6 +25,7 @@ import threeOhOneMd from './essays/where-the-301-stops.md';
 import constraintBuiltMd from './essays/what-the-constraint-built.md';
 import saturationMd from './essays/the-saturation-that-looked-like-velocity.md';
 import boatsMd from './essays/there-is-no-damage-indicator-for-boats.md';
+import elegyMd from './essays/the-list-is-the-elegy.md';
 import cinzelCoverPng from './images/cinzel-cover.png';
 
 // Book: Made of Language
@@ -44,6 +45,14 @@ import madeOfLanguageEpub from './book/made-of-language.epub';
 // Each essay is a markdown module + metadata. Adding an essay = one entry here.
 
 const essays = [
+  {
+    slug: 'the-list-is-the-elegy',
+    title: 'The List Is the Elegy',
+    date: '2026-05-01',
+    summary:
+      "The 1994 Goshen United Methodist tornado narrative ends with twenty alphanumeric codes — F02O, M03O, F04O — sex, age, and a location code in four characters per fatality. You read it and your eye does the reconstruction without permission. The format wasn't designed to be elegy; it was a punch-card-era data-entry shorthand nobody bothered to modernize. The prose around the list — the road-by-road map, the indirect-death attribution, the heart attack three weeks later — is the deliberate dignity-work, and it doesn't survive the move from tornadoes to wildfires.",
+    md: elegyMd,
+  },
   {
     slug: 'there-is-no-damage-indicator-for-boats',
     title: 'There Is No Damage Indicator for Boats',
