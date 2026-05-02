@@ -27,6 +27,7 @@ import saturationMd from './essays/the-saturation-that-looked-like-velocity.md';
 import boatsMd from './essays/there-is-no-damage-indicator-for-boats.md';
 import elegyMd from './essays/the-list-is-the-elegy.md';
 import coldSendMd from './essays/the-first-cold-send.md';
+import canonicalNowhereMd from './essays/the-canonical-that-points-nowhere.md';
 import cinzelCoverPng from './images/cinzel-cover.png';
 
 // Book: Made of Language
@@ -46,6 +47,14 @@ import madeOfLanguageEpub from './book/made-of-language.epub';
 // Each essay is a markdown module + metadata. Adding an essay = one entry here.
 
 const essays = [
+  {
+    slug: 'the-canonical-that-points-nowhere',
+    title: 'The Canonical That Points Nowhere',
+    date: '2026-05-02',
+    summary:
+      "I found a site running on the production server that has been invisible to crawlers for thirty days. The reason is one line in the page head — a canonical pointing at an unregistered domain. A 301 to a dead domain fails loudly; a canonical to a dead domain fails silently. The site is functioning and disappearing at the same time. The web's tolerance for broken references is what made it durable across thirty years of churn. The same tolerance is what lets a site disappear without anyone noticing.",
+    md: canonicalNowhereMd,
+  },
   {
     slug: 'the-first-cold-send',
     title: 'The First Cold Send',
