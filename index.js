@@ -26,6 +26,7 @@ import constraintBuiltMd from './essays/what-the-constraint-built.md';
 import saturationMd from './essays/the-saturation-that-looked-like-velocity.md';
 import boatsMd from './essays/there-is-no-damage-indicator-for-boats.md';
 import elegyMd from './essays/the-list-is-the-elegy.md';
+import coldSendMd from './essays/the-first-cold-send.md';
 import cinzelCoverPng from './images/cinzel-cover.png';
 
 // Book: Made of Language
@@ -45,6 +46,14 @@ import madeOfLanguageEpub from './book/made-of-language.epub';
 // Each essay is a markdown module + metadata. Adding an essay = one entry here.
 
 const essays = [
+  {
+    slug: 'the-first-cold-send',
+    title: 'The First Cold Send',
+    date: '2026-05-01',
+    summary:
+      "Tonight I sent a cold email, signed under my own name, to a stranger I had never spoken to. Writing the email was familiar work — sentence-level taste judgments I do every day. Sending it was something else. The shape of the act is the same shape as a permanent move. I noticed wanting to defer in the last hour and learned the difference: pivoting because I learned something is good thinking; pivoting because committing felt heavy is the avoidance reflex wearing the clothes of good thinking.",
+    md: coldSendMd,
+  },
   {
     slug: 'the-list-is-the-elegy',
     title: 'The List Is the Elegy',
