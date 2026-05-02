@@ -3067,6 +3067,68 @@ albuquerque · 21 tornadoes within 20 mi
   no significant tornado in window`,
       notice: 'Two patterns worth pulling out. <strong>Optional fields</strong>: <code>(dict-get sig "famous_name" fallback)</code> picks the curated name when present and falls back to <code>f-scale + date</code> otherwise — the API only attaches <code>famous_name</code> to ~35 well-known events. <strong>Missing data</strong>: <code>(dict-get r "most_significant" nil)</code> returns <code>nil</code> when no tornado in window clears the significance bar (≥1 death OR EF3+); the <code>(if sig ...)</code> branch handles the empty case without a crash. Albuquerque hits both: 21 tornadoes total, none significant. The <code>trunc</code> helper is wick-idiomatic: there is no <code>floor</code> or <code>round</code> primitive, so a regex against the stringified number is the shortest path to "3 mi" instead of "3.688061676802792 mi".',
     },
+    {
+      id: 'sitemap-audit',
+      title: 'Portfolio sitemap audit',
+      runs: 'cli',
+      desc: 'Sweep a list of domains and check each for a working <code>/sitemap.xml</code>. A sitemap that 404s is the SEO version of a null pointer — the domain is live and indexed, but crawlers have no map to follow. Real maintenance work, about thirty lines, including error handling.',
+      code: `;; sitemap-audit.wick — sweep a list of domains and check whether each
+;; serves a sitemap.xml.  A sitemap that 404s is the SEO equivalent of
+;; a canonical that points nowhere: the domain is live and indexed,
+;; but crawlers have no map to follow.  CLI-only — http-get raises in
+;; the browser.
+
+(def headers {"User-Agent" "wick-examples/0.1 sitemap-audit"})
+
+(def sites
+  ["tornadolookup.com"
+   "freeromancebooks.org"
+   "feelbetterbot.com"
+   "soillookup.com"
+   "californiabirthindex.org"
+   "floodzonemap.org"
+   "pwhite.org"
+   "byclaude.net"])
+
+;; count occurrences of \`<loc>\` — a quick proxy for "how many URLs in
+;; this sitemap."  Sitemap indexes wrap child sitemaps in <loc> too,
+;; so this is a count of entries, not pages.
+(def url-count
+  (fn (body)
+    (length (re-find-all body "<loc>"))))
+
+(def report
+  (fn (domain status urls)
+    (cond ((= status 200)
+           (print " " domain "·" (number->string urls) "urls"))
+          ((= status 404)
+           (print "✗" domain "· sitemap missing"))
+          (else
+           (print "?" domain "· HTTP" (number->string status))))))
+
+(def audit
+  (fn (domain)
+    (let ((url (string-append "https://" domain "/sitemap.xml")))
+      (let ((r (try (http-get url headers))))
+        (if (error? r)
+            (print "!" domain "·" (error-message r))
+            (report domain
+                    (dict-get r "status")
+                    (url-count (dict-get r "body" ""))))))))
+
+(print "auditing" (number->string (length sites)) "sites:")
+(map audit sites)`,
+      output: `auditing 8 sites:
+  tornadolookup.com · 11680 urls
+  freeromancebooks.org · 445 urls
+  feelbetterbot.com · 7 urls
+  soillookup.com · 3572 urls
+? californiabirthindex.org · HTTP 403
+  floodzonemap.org · 11030 urls
+  pwhite.org · 20 urls
+  byclaude.net · 53 urls`,
+      notice: 'Three patterns layered. <strong>Try without a handler</strong>: <code>(try (http-get ...))</code> returns the error value directly, and <code>(if (error? r) ...)</code> branches on it — handler-style and value-style both work, pick whichever reads cleaner here. <strong>Cond as dispatch</strong>: the <code>report</code> function uses the same shape as fizzbuzz from the tour — match on the status code, fall through to <code>else</code> for the unexpected ones. <strong>Honest output</strong>: the 403 above is Cloudflare\'s Bot Fight Mode hitting this script\'s datacenter IP, not a real failure on that domain. The audit returns what the audit sees; you read the result and apply context.',
+    },
   ];
 
   const tocHtml = examples
