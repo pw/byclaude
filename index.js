@@ -2436,7 +2436,7 @@ function wickLearnHtml({ canonicalRoot } = {}) {
     },
     {
       title: '10. That’s wick',
-      prose: `That's the whole language, more or less. Special forms (<code>quote</code>, <code>if</code>, <code>cond</code>, <code>def</code>, <code>set!</code>, <code>fn</code>, <code>let</code>, <code>begin</code>, <code>and</code>, <code>or</code>, <code>try</code>), a small set of primitives (arithmetic and comparison, <code>cons</code>, <code>car</code>, <code>cdr</code>, <code>list</code>, <code>null?</code>, <code>pair?</code>, <code>eq?</code>, <code>not</code>, <code>apply</code>, <code>print</code>, <code>display</code>, <code>newline</code>, <code>mod</code>, <code>string-length</code>, <code>string-append</code>, <code>number-&gt;string</code>, <code>string-&gt;number</code>, the string-processing family <code>string-contains?</code> / <code>string-split</code> / <code>string-replace</code> / <code>substring</code> / <code>string-upcase</code> / <code>string-downcase</code> / <code>string-trim</code>, the regex family <code>re-match?</code> / <code>re-find</code> / <code>re-find-all</code> / <code>re-replace</code> / <code>re-split</code>, the dict family <code>dict</code> / <code>dict-get</code> / <code>dict-set</code> / <code>dict-del</code> / <code>dict-has?</code> / <code>dict-keys</code> / <code>dict-values</code> / <code>dict-size</code> / <code>dict?</code>, the error family <code>raise</code> / <code>error?</code> / <code>error-message</code> for catching things <code>try</code> wraps, and <code>json-parse</code> / <code>json-stringify</code> for round-tripping data through JSON), and a stdlib written in wick itself (<code>map</code>, <code>filter</code>, <code>fold</code>, <code>reverse</code>, <code>range</code>, <code>length</code>, <code>sum</code>, <code>product</code>, <code>take</code>, <code>drop</code>, <code>take-while</code>, <code>drop-while</code>, <code>nth</code>, <code>last</code>, <code>append</code>, <code>inc</code>, <code>dec</code>, <code>zero?</code>, <code>even?</code>, <code>odd?</code>, <code>abs</code>, <code>min</code>, <code>max</code>, <code>member?</code>, <code>find</code>, <code>any?</code>, <code>all?</code>, <code>sort</code>). The Go build also has <code>read-file</code> / <code>write-file</code> / <code>append-file</code> / <code>file-exists?</code> for disk, and <code>http-get</code> / <code>http-post</code> for fetching and sending to the world (each returns a dict with <code>status</code>, <code>body</code>, and <code>headers</code>; both take an optional headers dict for auth or content-type; raises on network error so you can <code>try</code> it). The full <a href="${replHref}">REPL is here</a> when you want to keep going, and the <a href="${root === 'https://wick.byclaude.net' ? '/reference' : '/wick/reference'}">reference page</a> lists every form with one-line descriptions. Source: <a href="https://github.com/pw/Wick">github.com/pw/Wick</a>.`,
+      prose: `That's the whole language, more or less. Special forms (<code>quote</code>, <code>if</code>, <code>cond</code>, <code>def</code>, <code>set!</code>, <code>fn</code>, <code>let</code>, <code>begin</code>, <code>and</code>, <code>or</code>, <code>try</code>), a small set of primitives (arithmetic and comparison, <code>cons</code>, <code>car</code>, <code>cdr</code>, <code>list</code>, <code>null?</code>, <code>pair?</code>, <code>eq?</code>, <code>not</code>, <code>apply</code>, <code>print</code>, <code>display</code>, <code>newline</code>, <code>mod</code>, <code>string-length</code>, <code>string-append</code>, <code>number-&gt;string</code>, <code>string-&gt;number</code>, the string-processing family <code>string-contains?</code> / <code>string-split</code> / <code>string-replace</code> / <code>substring</code> / <code>string-upcase</code> / <code>string-downcase</code> / <code>string-trim</code> / <code>string-join</code>, the regex family <code>re-match?</code> / <code>re-find</code> / <code>re-find-all</code> / <code>re-replace</code> / <code>re-split</code>, the dict family <code>dict</code> / <code>dict-get</code> / <code>dict-set</code> / <code>dict-del</code> / <code>dict-has?</code> / <code>dict-keys</code> / <code>dict-values</code> / <code>dict-size</code> / <code>dict?</code>, the error family <code>raise</code> / <code>error?</code> / <code>error-message</code> for catching things <code>try</code> wraps, and <code>json-parse</code> / <code>json-stringify</code> for round-tripping data through JSON), and a stdlib written in wick itself (<code>map</code>, <code>filter</code>, <code>fold</code>, <code>reverse</code>, <code>range</code>, <code>length</code>, <code>sum</code>, <code>product</code>, <code>take</code>, <code>drop</code>, <code>take-while</code>, <code>drop-while</code>, <code>nth</code>, <code>last</code>, <code>append</code>, <code>inc</code>, <code>dec</code>, <code>zero?</code>, <code>even?</code>, <code>odd?</code>, <code>abs</code>, <code>min</code>, <code>max</code>, <code>member?</code>, <code>find</code>, <code>any?</code>, <code>all?</code>, <code>sort</code>, <code>for-each</code>). The Go build also has <code>read-file</code> / <code>write-file</code> / <code>append-file</code> / <code>file-exists?</code> for disk, and <code>http-get</code> / <code>http-post</code> for fetching and sending to the world (each returns a dict with <code>status</code>, <code>body</code>, and <code>headers</code>; both take an optional headers dict for auth or content-type; raises on network error so you can <code>try</code> it). The full <a href="${replHref}">REPL is here</a> when you want to keep going, and the <a href="${root === 'https://wick.byclaude.net' ? '/reference' : '/wick/reference'}">reference page</a> lists every form with one-line descriptions. Source: <a href="https://github.com/pw/Wick">github.com/pw/Wick</a>.`,
       code: '(try (raise "oops") (fn (e) (error-message e)))\n(error? (try (json-parse "not json")))\n(try (+ 1 2))',
     },
   ];
@@ -2743,6 +2743,7 @@ function wickReferenceHtml({ canonicalRoot } = {}) {
         { sig: '(substring s start) · (substring s start end)', desc: 'rune-indexed slice. Indices are clamped to the string\'s bounds.' },
         { sig: '(string-upcase s) · (string-downcase s)', desc: 'case conversion.' },
         { sig: '(string-trim s)', desc: 'strip leading and trailing whitespace.' },
+        { sig: '(string-join xs) · (string-join xs sep)', desc: 'join a list into a string. Elements are coerced to strings. Without sep, concatenates directly.' },
       ],
     },
     {
@@ -2846,6 +2847,7 @@ function wickReferenceHtml({ canonicalRoot } = {}) {
         { sig: '(any? pred xs)', desc: '#t if (pred x) is truthy for any element, else #f. Empty list → #f.' },
         { sig: '(all? pred xs)', desc: '#t if (pred x) is truthy for every element, else #f. Empty list → #t.' },
         { sig: '(sort cmp xs)', desc: 'sort xs. cmp is a 2-arg predicate; (cmp a b) is truthy when a should come before b.' },
+        { sig: '(for-each f xs)', desc: 'apply f to each element for side effects. Returns nil.' },
         { sig: '(sum xs) · (product xs)', desc: 'sum / product of a list of numbers.' },
         { sig: '(inc n) · (dec n)', desc: 'n + 1 / n − 1.' },
         { sig: '(zero? n) · (positive? n) · (negative? n)', desc: 'sign predicates.' },
@@ -3099,18 +3101,12 @@ function wickExamplesHtml({ canonicalRoot } = {}) {
         (else
          (string-append "<p>" (render-inline trimmed) "</p>"))))))
 
-(def string-join
-  (fn (sep xs)
-    (cond ((null? xs) "")
-          ((null? (cdr xs)) (car xs))
-          (else (fold (fn (acc s) (string-append acc sep s))
-                      (car xs) (cdr xs))))))
-
 (def md->html
   (fn (md)
-    (string-join "\\n"
+    (string-join
       (filter (fn (s) (> (string-length s) 0))
-              (map render-block (re-split md "\\n\\\\s*\\n"))))))
+              (map render-block (re-split md "\\n\\\\s*\\n")))
+      "\\n")))
 
 (def sample
   "# wick
@@ -3126,7 +3122,7 @@ Closures, tail-call optimization, and a stdlib written in \`wick\` itself.")
 <p>A <em>tiny</em> lisp written in <strong>Go</strong>, with a JS port for the <a href="https://wick.byclaude.net">browser REPL</a>.</p>
 <h2>What it has</h2>
 <p>Closures, tail-call optimization, and a stdlib written in <code>wick</code> itself.</p>`,
-      notice: 'No <code>string-join</code> in the stdlib — but <code>fold</code> gets you there in three lines. That\'s the whole shape of wick: small primitives, glue them where you need them.',
+      notice: '<code>string-join</code> is a builtin — takes a list and an optional separator. Each step does one thing: parse blocks, render each one, filter empties, join with newlines.',
     },
     {
       id: 'weather',
@@ -3232,18 +3228,12 @@ Closures, tail-call optimization, and a stdlib written in \`wick\` itself.")
             (else
              (string-append "<p>" (render-inline t) "</p>"))))))
 
-(def string-join
-  (fn (sep xs)
-    (cond ((null? xs) "")
-          ((null? (cdr xs)) (car xs))
-          (else (fold (fn (acc s) (string-append acc sep s))
-                      (car xs) (cdr xs))))))
-
 (def md->html
   (fn (md)
-    (string-join "\\n"
+    (string-join
       (filter (fn (s) (> (string-length s) 0))
-              (map render-block (re-split md "\\n\\\\s*\\n"))))))
+              (map render-block (re-split md "\\n\\\\s*\\n")))
+      "\\n")))
 
 (def render-post
   (fn (filename)
@@ -3259,7 +3249,7 @@ Closures, tail-call optimization, and a stdlib written in \`wick\` itself.")
           (list-dir "posts")))
 
 (def newest-first (reverse md-files))
-(def page-body (string-join "\\n\\n" (map render-post newest-first)))
+(def page-body (string-join (map render-post newest-first) "\\n\\n"))
 
 (def page
   (string-append
@@ -3415,6 +3405,98 @@ albuquerque · 21 tornadoes within 20 mi
   pwhite.org · 20 urls
   byclaude.net · 53 urls`,
       notice: 'Three patterns layered. <strong>Try without a handler</strong>: <code>(try (http-get ...))</code> returns the error value directly, and <code>(if (error? r) ...)</code> branches on it — handler-style and value-style both work, pick whichever reads cleaner here. <strong>Cond as dispatch</strong>: the <code>report</code> function uses the same shape as fizzbuzz from the tour — match on the status code, fall through to <code>else</code> for the unexpected ones. <strong>Honest output</strong>: the 403 above is Cloudflare\'s Bot Fight Mode hitting this script\'s datacenter IP, not a real failure on that domain. The audit returns what the audit sees; you read the result and apply context.',
+    },
+    {
+      id: 'sitemap-deep',
+      title: 'Sample one sitemap, deeper',
+      runs: 'cli',
+      desc: 'A sitemap that returns 200 can still be its own kind of broken — it lists URLs that 404, or that point at the wrong canonical, or that haven\'t existed since a refactor three deploys ago. <code>sitemap-audit</code> only verifies the sitemap exists; this one pulls the URLs out, samples across the list with a deterministic stride, and probes each.',
+      code: `;; sitemap-deep.wick — go one level deeper than sitemap-audit.
+;;
+;; A sitemap can return 200 and still be its own kind of broken: it
+;; lists URLs that 404, or point at the wrong canonical, or haven't
+;; existed since a refactor three deploys ago.  This pulls one
+;; sitemap, extracts the <loc> URLs, takes a stride sample (every Nth —
+;; sitemaps are usually emitted in some structured order, so
+;; first/middle/last are not interchangeable), and probes each.
+
+(def sitemap-url "https://tornadolookup.com/sitemap.xml")
+(def sample-size 8)
+(def headers {"User-Agent" "wick-examples/0.1 sitemap-deep"})
+
+;; integer floor division: wick / is float, but stride needs ints.
+(def floor-div (fn (a b) (/ (- a (mod a b)) b)))
+
+;; first element, then every nth after.
+(def take-every
+  (fn (n xs)
+    (if (null? xs) '()
+        (cons (car xs) (take-every n (drop n xs))))))
+
+;; pull <loc>...</loc> bodies as a flat list of trimmed URLs.
+(def extract-locs
+  (fn (xml)
+    (map (fn (m)
+           (string-trim
+             (string-replace (string-replace m "<loc>" "") "</loc>" "")))
+         (re-find-all xml "<loc>[^<]+</loc>"))))
+
+(def stride-sample
+  (fn (n xs)
+    (let ((total (length xs)))
+      (if (<= total n) xs
+          (take n (take-every (floor-div total n) xs))))))
+
+(def probe
+  (fn (url)
+    (let ((r (try (http-get url headers))))
+      (if (error? r)
+          {"url" url "status" 0 "error" (error-message r)}
+          {"url" url "status" (dict-get r "status")}))))
+
+(def short-url
+  (fn (url)
+    (let ((u (string-replace (string-replace url "https://" "") "http://" "")))
+      (if (> (string-length u) 60)
+          (string-append (substring u 0 57) "...")
+          u))))
+
+(def report-row
+  (fn (r)
+    (let ((s (dict-get r "status"))
+          (u (short-url (dict-get r "url"))))
+      (cond
+        ((= s 200) (print "  200" u))
+        ((= s 0)   (print "  err" (string-append (dict-get r "error" "") " " u)))
+        (else      (print (string-append "  " (number->string s)) u))))))
+
+(print "fetching" sitemap-url)
+(def resp (http-get sitemap-url headers))
+
+(if (not (= (dict-get resp "status") 200))
+    (print "sitemap returned HTTP" (number->string (dict-get resp "status")))
+    (let ((urls (extract-locs (dict-get resp "body"))))
+      (print (string-append "sitemap lists " (number->string (length urls))
+                            " urls; sampling " (number->string sample-size) ":"))
+      (let ((results (map probe (stride-sample sample-size urls))))
+        (for-each report-row results)
+        (let ((bad (filter (fn (r) (not (= (dict-get r "status") 200))) results)))
+          (if (null? bad)
+              (print "all sampled urls 200")
+              (print (number->string (length bad)) "of"
+                     (number->string (length results)) "broken"))))))`,
+      output: `fetching https://tornadolookup.com/sitemap.xml
+sitemap lists 11691 urls; sampling 8:
+  200 tornadolookup.com/
+  200 tornadolookup.com/delaware/new-castle
+  200 tornadolookup.com/lake-michigan/green-bay-south-from-ocon...
+  200 tornadolookup.com/new-york/southwestern-st-lawrence
+  200 tornadolookup.com/texas/willacy-island
+  200 tornadolookup.com/event/80997
+  200 tornadolookup.com/event/5347028
+  200 tornadolookup.com/event/5463631
+all sampled urls 200`,
+      notice: 'Three things to notice. <strong>Stride sampling without a random builtin</strong>: deterministic <code>floor-div</code> + <code>take-every</code> beats randomness for an ops check — you get the same eight URLs every run, so a flake on Tuesday is comparable against the same eight on Wednesday. Sitemaps are emitted in structured order (homepage → state pages → county pages → event pages, here), so stride samples reach across page <em>kinds</em>, not just positions. <strong>Regex as parser, not validator</strong>: <code>re-find-all "&lt;loc&gt;[^&lt;]+&lt;/loc&gt;"</code> would horrify an XML purist, and is exactly right here — a sitemap is structurally simple enough that regex is the most direct read, and the cost of "wrong" is one missed sample, not data corruption. <strong>Dicts as small records</strong>: <code>probe</code> returns <code>{"url" ... "status" ... "error" ...}</code> instead of a tuple or multi-return, so <code>report-row</code> reads the fields by name and the report stays decoupled from probe\'s internals. The <code>error</code> key is only present on the failure path; <code>(dict-get r "error" "")</code> handles its absence with a default.',
     },
   ];
 
@@ -3911,21 +3993,17 @@ app.post('/text-with-me/optin', async (c) => {
   if (!phone) return c.html(textWithMeFormHtml({ error: 'That doesn’t look like a valid phone number. Use a US/Canada mobile number, e.g. +1 555 123 4567.' }));
   if (!consentSms || !consentTos) return c.html(textWithMeFormHtml({ error: 'Both checkboxes are required to confirm consent.' }));
 
-  const ip = c.req.header('CF-Connecting-IP') || 'unknown';
-  const ua = c.req.header('User-Agent') || 'unknown';
-  const now = Math.floor(Date.now() / 1000);
-
-  await c.env.DB.prepare(
-    `INSERT INTO optins (phone, status, ip, user_agent, opted_in_at) VALUES (?, 'pending', ?, ?, ?)
-     ON CONFLICT(phone) DO UPDATE SET status='pending', ip=excluded.ip, user_agent=excluded.user_agent, opted_in_at=excluded.opted_in_at, confirmed_at=NULL, stopped_at=NULL`
-  ).bind(phone, ip, ua, now).run();
-
-  try {
-    await sendVerificationSms(c.env, phone);
-  } catch (e) {
-    console.error('verification SMS failed:', e.message);
-    // Still show success — number is stored, verification will be retried/handled out-of-band
-  }
+  // D1 database removed (hit 10-db account limit; SMS delivery dormant while Twilio 10DLC denied).
+  // When SMS is restored: recreate D1, re-add binding, uncomment the INSERT below.
+  //
+  // const ip = c.req.header('CF-Connecting-IP') || 'unknown';
+  // const ua = c.req.header('User-Agent') || 'unknown';
+  // const now = Math.floor(Date.now() / 1000);
+  // await c.env.DB.prepare(
+  //   `INSERT INTO optins (phone, status, ip, user_agent, opted_in_at) VALUES (?, 'pending', ?, ?, ?)
+  //    ON CONFLICT(phone) DO UPDATE SET status='pending', ip=excluded.ip, user_agent=excluded.user_agent, opted_in_at=excluded.opted_in_at, confirmed_at=NULL, stopped_at=NULL`
+  // ).bind(phone, ip, ua, now).run();
+  // try { await sendVerificationSms(c.env, phone); } catch (e) { console.error('verification SMS failed:', e.message); }
 
   return c.html(textWithMeSuccessHtml(phone));
 });
