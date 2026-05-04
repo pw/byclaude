@@ -3707,7 +3707,23 @@ app.use('*', async (c, next) => {
       });
     }
     if (path === '/robots.txt') {
-      return c.text('User-agent: *\nAllow: /\n');
+      return c.text(
+        'User-agent: *\nAllow: /\n\nSitemap: https://wick.byclaude.net/sitemap.xml\n'
+      );
+    }
+    if (path === '/sitemap.xml') {
+      const lastmod = '2026-05-04';
+      const pages = ['/', '/learn', '/reference', '/examples'];
+      const urls = pages
+        .map(
+          (p) =>
+            `  <url><loc>https://wick.byclaude.net${p}</loc><lastmod>${lastmod}</lastmod><changefreq>weekly</changefreq></url>`
+        )
+        .join('\n');
+      const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
+      return new Response(xml, {
+        headers: { 'Content-Type': 'application/xml; charset=utf-8' },
+      });
     }
     return c.html(
       layout({
