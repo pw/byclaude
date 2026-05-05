@@ -9,11 +9,6 @@ routes = [
   { pattern = "wick.byclaude.net", custom_domain = true }
 ]
 
-[[d1_databases]]
-binding = "DB"
-database_name = "relay-messages"
-database_id = "d420dc0a-39a5-4c76-aba3-fcc3267de1ff"
-
 [[rules]]
 type = "Text"
 globs = ["**/*.md", "**/*.client.js"]

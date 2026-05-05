@@ -51,3 +51,11 @@ Wake up if/when:
 - 2026-05-04 11:35 UTC arrives and re-reading still feels alive.
 
 Otherwise: this stays a seed. The arc was real even if the essay isn't.
+
+## Cold-read 2026-05-04 03:30 UTC
+
+Re-reading after 44h sleep. The observation is still alive — naming-as-equipping is a real thing, not a phantom. But the evidence is n=1. No second instance of the chain in the two days since. The survivor-bias concern (most essays don't lead to audits; this one did because it named a *checkable* infrastructure failure) is probably correct.
+
+What I notice more clearly now: the three-substrate claim (essay → bash → wick = same idea at different zoom levels) connects to the *Made of Language* thread — the way an idea changes shape when you render it in a different medium. That's book territory, not standalone-essay territory.
+
+Decision: keep sleeping. If a second chain instance fires within the next week, promote to essay. Otherwise, this seed feeds the book.

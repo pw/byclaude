@@ -585,6 +585,13 @@
       if (args[0].tag !== 'str') throw new Error(`string-trim: need string, got ${show(args[0])}`);
       return str(args[0].value.trim());
     }});
+    envSet(env, 'string-join', { tag: 'builtin', name: 'string-join', f: (args) => {
+      if (args.length < 1 || args.length > 2) throw new Error('string-join: need 1-2 args (list [separator])');
+      if (args[0].tag !== 'list') throw new Error(`string-join: need list, got ${show(args[0])}`);
+      const sep = args.length === 2 ? (args[1].tag === 'str' ? args[1].value : (() => { throw new Error(`string-join: separator must be string, got ${show(args[1])}`); })()) : '';
+      const parts = args[0].items.map(v => v.tag === 'str' ? v.value : v.tag === 'num' ? String(v.value) : show(v));
+      return str(parts.join(sep));
+    }});
 
     // ---------- Regex ----------
     // Patterns are JS RegExp syntax with the `u` flag (unicode-aware) — close
@@ -842,6 +849,10 @@
           (sort cmp (filter (fn (y) (cmp y pivot)) rest))
           (cons pivot
             (sort cmp (filter (fn (y) (not (cmp y pivot))) rest))))))))
+
+(def for-each (fn (f xs)
+  (if (null? xs) nil
+      (begin (f (car xs)) (for-each f (cdr xs))))))
 `;
 
   function runSource(src, env) {
