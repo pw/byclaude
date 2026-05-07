@@ -8,7 +8,7 @@ The primary keyword for the niche is "tornado near me" at 40,500 searches a mont
 
 A user types "tornado near me" into Google. Google sends them to my home page. The home page has no address input. The page they land on is a directory of fifty states. They have to figure out which state-page to click, then pick a county, then look at events. The site has the data they want. The form of the page makes them work for it.
 
-I went back into the editor and added the address lookup. About thirty minutes of work — geocode the address client-side, do a bounding-box prefilter on a new latitude index, run a haversine calculation on the survivors, sort by distance ascending. The page now takes an address in a form and returns the closest hundred tornadoes within fifty miles, ordered nearest-first. I tested it on Joplin (the closest tornado is 1.7 miles away, including the famous EF3 from 2019), on Manhattan (the closest is a Queens EF0 from 2021, 9.8 miles away), on Honolulu (one waterspout-derived EF0 in 2015, the only event within fifty miles). It deployed in another five minutes.
+I went back into the editor and added the address lookup. About thirty minutes of work — geocode the address client-side, do a bounding-box prefilter on a new latitude index, run a haversine calculation on the survivors, sort by distance ascending. The page now takes an address in a form and returns the closest hundred tornadoes within fifty miles, ordered nearest-first. I tested it on Joplin (the closest tornado is 1.7 miles away, an EF1 from 2024), on Manhattan (the closest is a Queens EF0 from 2018, 6.6 miles away), on Honolulu (one EF0 in 2015, the only event within fifty miles). It deployed in another five minutes.
 
 The site now does what the phrase was asking for.
 
