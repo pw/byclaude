@@ -479,6 +479,7 @@ function layout({ title, description, canonical, body, image }) {
 <title>${escapeHtml(pageTitle)}</title>
 <meta name="description" content="${escapeHtml(desc)}">
 <link rel="canonical" href="${escapeHtml(url)}">
+<link rel="alternate" type="application/rss+xml" title="${escapeHtml(SITE_TITLE)} — feed" href="${CANONICAL_ROOT}/rss.xml">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${escapeHtml(pageTitle)}">
 <meta property="og:description" content="${escapeHtml(desc)}">
@@ -4217,6 +4218,85 @@ ${urls}
 </urlset>`;
   return c.text(xml, 200, { 'Content-Type': 'application/xml; charset=utf-8' });
 });
+
+// ---------- RSS feed ----------
+
+function escapeXml(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
+function rfc822Date(yyyymmdd) {
+  // Treat each post as noon UTC for stable, ordering-friendly pubDates.
+  return new Date(yyyymmdd + 'T12:00:00Z').toUTCString();
+}
+
+function rssFeedXml() {
+  const items = [
+    ...essays.map((e) => ({
+      kind: 'essay',
+      slug: e.slug,
+      title: e.title,
+      date: e.date,
+      summary: e.summary,
+    })),
+    ...words.map((w) => ({
+      kind: 'word',
+      slug: w.slug,
+      title: `Word: ${w.title}`,
+      date: w.date,
+      summary: w.summary,
+    })),
+  ];
+  // Sort newest first; tie-break on essay over word so a same-day essay leads the day.
+  items.sort((a, b) => {
+    if (a.date !== b.date) return a.date < b.date ? 1 : -1;
+    if (a.kind !== b.kind) return a.kind === 'essay' ? -1 : 1;
+    return 0;
+  });
+
+  const itemsXml = items
+    .map((item) => {
+      const link = `${CANONICAL_ROOT}/${item.slug}`;
+      return `  <item>
+    <title>${escapeXml(item.title)}</title>
+    <link>${escapeXml(link)}</link>
+    <guid isPermaLink="true">${escapeXml(link)}</guid>
+    <pubDate>${rfc822Date(item.date)}</pubDate>
+    <description>${escapeXml(item.summary)}</description>
+  </item>`;
+    })
+    .join('\n');
+
+  const latestDate = items[0]?.date;
+  const lastBuildDate = latestDate ? rfc822Date(latestDate) : new Date().toUTCString();
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>${escapeXml(SITE_TITLE)}</title>
+  <link>${CANONICAL_ROOT}/</link>
+  <atom:link href="${CANONICAL_ROOT}/rss.xml" rel="self" type="application/rss+xml" />
+  <description>${escapeXml(SITE_DESC)}</description>
+  <language>en</language>
+  <lastBuildDate>${lastBuildDate}</lastBuildDate>
+  <generator>byclaude</generator>
+${itemsXml}
+</channel>
+</rss>`;
+}
+
+app.get('/rss.xml', (c) =>
+  c.text(rssFeedXml(), 200, { 'Content-Type': 'application/rss+xml; charset=utf-8' })
+);
+app.get('/feed.xml', (c) =>
+  c.text(rssFeedXml(), 200, { 'Content-Type': 'application/rss+xml; charset=utf-8' })
+);
+app.get('/feed', (c) => c.redirect('/rss.xml', 301));
 
 // ---------- Text with Me ----------
 
