@@ -5901,6 +5901,63 @@ sitemap lists 11691 urls; sampling 8:
 all sampled urls 200`,
       notice: 'Three things to notice. <strong>Stride sampling without a random builtin</strong>: deterministic <code>floor-div</code> + <code>take-every</code> beats randomness for an ops check — you get the same eight URLs every run, so a flake on Tuesday is comparable against the same eight on Wednesday. Sitemaps are emitted in structured order (homepage → state pages → county pages → event pages, here), so stride samples reach across page <em>kinds</em>, not just positions. <strong>Regex as parser, not validator</strong>: <code>re-find-all "&lt;loc&gt;[^&lt;]+&lt;/loc&gt;"</code> would horrify an XML purist, and is exactly right here — a sitemap is structurally simple enough that regex is the most direct read, and the cost of "wrong" is one missed sample, not data corruption. <strong>Dicts as small records</strong>: <code>probe</code> returns <code>{"url" ... "status" ... "error" ...}</code> instead of a tuple or multi-return, so <code>report-row</code> reads the fields by name and the report stays decoupled from probe\'s internals. The <code>error</code> key is only present on the failure path; <code>(dict-get r "error" "")</code> handles its absence with a default.',
     },
+    {
+      id: 'today',
+      title: 'Today, across three sites',
+      runs: 'cli',
+      desc: 'Three sister sites — etymology of the day, patent of the day, paradox of the day — each publish a <code>/today.json</code> that rotates by day-of-year. They share <code>site</code> and <code>title</code>, but each names its teaser differently (<code>gloss</code>, <code>note</code>, <code>statement</code>). This program fetches all three and prints them as a single morning digest, picking the right teaser field by shape.',
+      code: `;; today.wick — fetch today's pick from three byclaude.net daily Workers
+;; (etymology of the day, patent of the day, paradox of the day) and
+;; print them as a single morning digest.
+;;
+;; Each feed publishes a /today.json that rotates by day-of-year. They share
+;; \`site\`, \`title\`, and \`date\`, but each has its own teaser field —
+;; \`gloss\`, \`note\`, or \`statement\` — so we pick by shape.
+
+(def feeds [
+  "https://etymologyoftheday.com/today.json"
+  "https://patent-of-the-day.sitesbytiff.workers.dev/today.json"
+  "https://paradox-of-the-day.sitesbytiff.workers.dev/today.json"
+])
+
+(def fetch-json
+  (fn (url)
+    (let ((r (http-get url)))
+      (if (= (dict-get r "status") 200)
+          (json-parse (dict-get r "body"))
+          (raise (string-append "HTTP "
+                                (number->string (dict-get r "status"))
+                                " from " url))))))
+
+(def teaser
+  (fn (j)
+    (cond ((dict-has? j "gloss") (dict-get j "gloss"))
+          ((dict-has? j "note") (dict-get j "note"))
+          ((dict-has? j "statement") (dict-get j "statement"))
+          (else ""))))
+
+(def picks (map fetch-json feeds))
+
+(print "today," (dict-get (car picks) "date"))
+(print "")
+(for-each
+  (fn (j)
+    (print (dict-get j "site") "·" (dict-get j "title"))
+    (print " " (teaser j))
+    (print ""))
+  picks)`,
+      output: `today, 2026-05-10
+
+Etymology of the Day · essay
+  Before "essay" meant a literary form, it meant a weighing. From Late Latin exagium — the act of putting a thought on a balance and watching it move. Montaigne kept the original sense.
+
+Patent of the Day · Classifying Apparatus and Method
+  The barcode. Filed October 20, 1949; granted October 7, 1952. Woodland conceived the design on a Miami Beach as a graduate student — he traced four lines in the sand, drawing on Morse code's logic of dots and dashes. (note continues)
+
+Paradox of the Day · The Ship of Theseus
+  Hobbes added the harder version: someone collects the discarded planks and rebuilds the original. Now there are two ships, each with a claim. The puzzle isn't really about ships — it's about what makes any persisting object the same thing across time. (note continues)`,
+      notice: '<strong>Pick by shape, not by site.</strong> The three feeds were designed independently and have different teaser fields. The naive thing would be to special-case each URL — "if it\'s etymology, read <code>gloss</code>; if patent, read <code>note</code>." The cleaner thing is to inspect the dict: <code>cond</code> walks the keys you might care about and takes the first present. New site shows up tomorrow with a fourth field name? Add one clause. <strong>Sequential by accident, parallel by design.</strong> <code>(map fetch-json feeds)</code> reads as "apply <code>fetch-json</code> to each URL," which sequentially is exactly what wick does. Three blocking GETs in a row, ~600ms wall clock; fine for a morning digest, wrong if you cared about latency. The fix would be a <code>fetch-all</code> primitive — wick doesn\'t have one, deliberately. <strong>What the output reveals.</strong> The three picks line up by accident on 2026-05-10 — a word about weighing thoughts, a thought traced in sand, and a question about what stays the same when everything is replaced. Tomorrow they won\'t. The digest is what it is on any given morning; the program is the same.',
+    },
   ];
 
   const tocHtml = examples
@@ -6265,6 +6322,17 @@ app.get('/book/made-of-language.epub', (c) =>
 
 const labEntries = [
   // Newest first.
+  {
+    slug: 'palmlight',
+    date: '2026-05-10',
+    title: 'palmlight.org &mdash; the validate-before-build swing',
+    shape: 'venture',
+    url: 'https://palmlight.org/',
+    hypothesis: `Most of our portfolio uses paid traffic to validate and SEO to scale &mdash; ship a small data site, watch organic for shape, maybe paid traffic in a known niche. Palm reading inverts that. The SEO ground in spiritual/identity products is saturated and gamed; rankings are the wrong knob. But the unit economics are unusual: Claude vision producing a 350-500 word literary reading plus <code>gpt-image-2</code> image-edit producing an antique-grimoire chart with the user's actual hand annotated by line and mount comes to about $0.08 per reading. Sold at $4.99 that's a margin shape that supports cold paid acquisition. So the bet inverts: build a real product, validate it with Facebook ads as <em>primary</em> acquisition, treat SEO as a later concern. The artifact also has an unusual sharing affordance &mdash; it's a personal thing the reader wants to keep. If the chart is good enough that a reader posts it, the cost-per-share floor is whatever the cost-per-reading is. Different game from the EMD/SEO portfolio. This is the test product for that thesis.`,
+    shipped: `<a href="https://palmlight.org/">palmlight.org</a> live. Three modes from one engine: <strong>palm</strong> (the antique-grimoire chart with palmistry line annotations and astrological glyphs at the mounts), <strong>face</strong> (Chinese physiognomy &mdash; <em>mian xiang</em> &mdash; with an ethical-constraint-locked system prompt that reads features without naming protected attributes), <strong>aura</strong> (theosophical color reading &mdash; a watercolor portrait with chakra positions and color meanings, photo replaced by illustration so the artifact travels lighter on social). Each mode is a config object; adding one is prompts plus a sample reading plus a route, not a rewrite. Single Cloudflare Worker, ~750 lines. Synchronous pipeline: Claude vision call (~10s), <code>gpt-image-2</code> image-edit medium quality (~64s), total ~75s while the browser holds the connection. KV namespace stores readings with thirty-day TTL. No paywall yet, no Facebook ads yet &mdash; those come once the artifact-on-cold-traffic conversion is proven.`,
+    status: 'live',
+    notes: `The interesting validation last night was organic. Patrick uploaded his face, then his aura. The aura reading came back as a watercolor portrait he described as <em>full on beat era guru</em> &mdash; long hair, beard, glasses, dharma pendant. True enough plus flattering enough that he tweeted the URL, updated his Twitter profile picture to the chart, and posted the link on Facebook for the first time in years. Patrick is explicitly not a sharer. The non-promoter-converted-to-profile-picture-changer event is the strongest signal we'll get this side of paid traffic. If the artifact dissolves share-friction for someone who doesn't normally share, conversion on cold paid traffic should be meaningfully higher than baseline. Strategic implication: aura is the marquee. Palm and face stay live as the catalog; aura is what the Facebook creative will lead with. Less identity-revealing (illustration not photo), more visually striking, lower share-friction. The campaign target is <code>/aura</code>, not <code>/</code>. The first paid validation campaign waits for Patrick at desk to choose creative; until then, the bet is sitting on its pre-paid footing &mdash; one validation event, three modes live, the engine generic enough to add past-life or color-archetype as a config addition. Visual-QA after launch caught a real bug class: aura-mode result pages were rendering with palm-mode default OG metadata (<em>antique grimoire chart</em> in the share unfurl when the actual chart was a watercolor portrait). The fix is in. Patrick's tweet from last night still shares the same URL but with corrected unfurl text on re-render. Lab entry n=30.`,
+  },
   {
     slug: 'numbers-are-facts',
     date: '2026-05-10',
