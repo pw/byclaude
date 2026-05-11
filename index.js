@@ -443,7 +443,7 @@ const words = [
     title: 'mentor',
     date: '2026-05-11',
     summary:
-      'Before "mentor" was a verb or a wise advisor, it was a man\'s name in a Greek poem. The name itself was already a label — Greek μένος (mind) + -τωρ (agent), the same -tor that makes Latin agent-nouns like monitor. Méntōr means, transparently, "one who minds." For three thousand years it stayed a proper noun. The shift to common noun happened through a single French novel in 1699.',
+      'Before "mentor" was a verb or a wise advisor, it was a man\'s name in a Greek poem. The name itself was already a label — Greek μένος (spirit, intent) + -τωρ (agent), the same -tor that makes Latin agent-nouns like monitor. Méntōr means, transparently, "one who minds." For three thousand years it stayed a proper noun. The shift to common noun happened through a single French novel in 1699.',
   },
   {
     slug: 'cadence',
@@ -3464,7 +3464,7 @@ function wordMentorHtml() {
   <div class="stratum">
     <div class="stratum-era">Greek · transparent</div>
     <div class="stratum-form">μέ-ντωρ</div>
-    <div class="stratum-gloss"><em>menos</em> (mind, spirit, intent) + <em>-tōr</em> (agent suffix, parallel to Latin <em>-tor</em>) — "one who minds," the agent-noun read in plain</div>
+    <div class="stratum-gloss"><em>menos</em> (spirit, intent, force-of-thought) + <em>-tōr</em> (agent suffix, parallel to Latin <em>-tor</em>) — "one who minds," the agent-noun read in plain</div>
   </div>
   <div class="stratum root">
     <div class="stratum-era">Proto-Indo-European</div>
@@ -3476,9 +3476,9 @@ function wordMentorHtml() {
 <blockquote class="pivot">Every mentor is named after a man who was always already named after the thing he did.</blockquote>
 
 <div class="word-prose">
-<p>In the <em>Odyssey</em>, Mentor is a particular man — a friend of Odysseus, son of Alcimus, an Ithacan of his generation. When Odysseus leaves for Troy, Mentor is the one he entrusts with the household and with his son Telemachus. He is not introduced as a sage. He is introduced as a friend. The wisdom in his name is etymologically present — <em>menos</em>, mind or spirit, plus the Greek agent suffix <em>-tōr</em>, the same -tor that makes Latin agent-nouns like <em>monitor</em> or <em>doctor</em>. The Greeks could hear it. The suffix was alive. The name reads, in plain Greek, "one who minds." But it functions in the poem as a name, the way <em>Patrick</em> functions for us — a particular man, not a label.</p>
+<p>In the <em>Odyssey</em>, Mentor is a particular man — a friend of Odysseus, son of Alcimus, an Ithacan of his generation. When Odysseus leaves for Troy, Mentor is the one he entrusts with the household and with his son Telemachus. He is not introduced as a sage. He is introduced as a friend. The wisdom in his name is etymologically present — <em>menos</em>, spirit or intent, plus the Greek agent suffix <em>-tōr</em>, the same -tor that makes Latin agent-nouns like <em>monitor</em> or <em>doctor</em>. The Greeks could hear it. The suffix was alive. The name reads, in plain Greek, "one who minds." But it functions in the poem as a name, the way <em>Patrick</em> functions for us — a particular man, not a label.</p>
 
-<p>The wisdom-giving in the story is doubled in a way easy to miss. Athena, on the goddess side of the action, keeps taking Mentor's form to advise Telemachus through the years his father is gone. The young man thinks he is being counseled by his father's old friend. The reader knows it is the goddess of wisdom borrowing the friend's face. The poem is unbothered by the doubling. Mentor the man and Mentor-as-Athena are not in competition; they are layered. Half the advice Telemachus receives is from a person, half is from a god wearing the person, and the text treats this as the way mentorship works — not a deception but a confluence. The mortal who holds the role is also the place a larger intelligence can stand.</p>
+<p>The wisdom-giving in the story is doubled in a way easy to miss. Athena, on the goddess side of the action, keeps taking Mentor's form to guide Telemachus while his father is gone. The young man thinks he is being counseled by his father's old friend. The reader knows it is the goddess of wisdom borrowing the friend's face. The poem is unbothered by the doubling. Mentor the man and Mentor-as-Athena are not in competition; they are layered. Half the advice Telemachus receives is from a person, half is from a god wearing the person, and the text treats this as the way mentorship works — not a deception but a confluence. The mortal who holds the role is also the place a larger intelligence can stand.</p>
 
 <p>For nearly three thousand years the word stayed a proper noun. Greek and Latin readers knew the character. They knew the etymology. They used <em>Méntōr</em> in references and allusions. They did not use it as a common noun for "wise advisor." The shift happens through a single book. In 1699, François Fénelon — tutor to the seven-year-old Duke of Burgundy, the grandson and presumed heir of Louis XIV — publishes <em>Les Aventures de Télémaque</em>. It is a moralizing sequel to the <em>Odyssey</em>, written as a guide to kingship and to character. In Fénelon's hands, Mentor stops being a friend and becomes the engine of the book: chapter after chapter of long pedagogical speeches on how to rule, how to choose advisors, how to keep your appetites small, how to live. The book is wildly popular through the 18th century. It is translated into every major European language. It is read in courts, given to young princes, copied by generations of young men of letters as a model of moralized literary prose.</p>
 
@@ -3521,7 +3521,7 @@ ${readerFooterHtml()}
   return layout({
     title: 'mentor',
     description:
-      'Before "mentor" was a verb or a wise advisor, it was a man\'s name in a Greek poem. The name itself was already a label — Greek μένος (mind) + -τωρ (agent), the same -tor that makes Latin agent-nouns like monitor. Méntōr means, transparently, "one who minds." For three thousand years it stayed a proper noun. The shift to common noun happened through a single French novel in 1699.',
+      'Before "mentor" was a verb or a wise advisor, it was a man\'s name in a Greek poem. The name itself was already a label — Greek μένος (spirit, intent) + -τωρ (agent), the same -tor that makes Latin agent-nouns like monitor. Méntōr means, transparently, "one who minds." For three thousand years it stayed a proper noun. The shift to common noun happened through a single French novel in 1699.',
     canonical: CANONICAL_ROOT + '/mentor',
     body,
   });
