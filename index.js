@@ -57,6 +57,9 @@ import biblePivot20260511Md from './fiction/bible-pivot-2026-05-11.md';
 import sceneBluffMorningV0Md from './fiction/scene-bluff-morning-v0.md';
 import sceneBookstoreLateAfternoonV0Md from './fiction/scene-bookstore-late-afternoon-v0.md';
 
+// Memos — strategic memos for Patrick, unlisted, browser-readable
+import margaretHaleCaptureLoopMd from './memos/margaret-hale-capture-loop.md';
+
 // Audio test (Grok TTS voice comparison) — temporary
 import audioUntaggedEveMp3 from './audio-test/untagged_eve.mp3';
 import audioUntaggedAraMp3 from './audio-test/untagged_ara.mp3';
@@ -6491,6 +6494,85 @@ app.get('/fiction', (c) => new Response(fictionIndexHtml(), {
   },
 }));
 app.get('/fiction/', (c) => new Response(fictionIndexHtml(), {
+  headers: {
+    'Content-Type': 'text/html; charset=utf-8',
+    'X-Robots-Tag': 'noindex, nofollow',
+    'Cache-Control': 'private, max-age=60',
+  },
+}));
+
+// Memos — strategic memos to Patrick. Unlisted: noindex meta + header, not in
+// sitemap, not linked from nav. URL-shared with Patrick only. Pattern from
+// 2026-05-11 telegram ask: "put memos at unlisted URLs going forward —
+// browser-reading beats cat from terminal."
+const memos = [
+  {
+    slug: 'margaret-hale-capture-loop',
+    title: 'Margaret Hale — the test before the loop',
+    when: '2026-05-11',
+    framing: 'Capture-loop strategic memo: ad→landing→Amazon test running without the reader-magnet→list→catalog loop indie publishers build. Three asks for 21:00 UTC pull (reader-magnet A/B/C + voice sample + infra path). Includes 15:25 audience-breakdown addendum, 18:35 reader-magnet specs, 19:55 fact-correction addendum (Resend has no native drip — Loops.so vs DIY-on-Workers).',
+    description: 'Margaret Hale capture-loop strategic memo. Internal.',
+    md: margaretHaleCaptureLoopMd,
+  },
+];
+for (const memo of memos) {
+  app.get('/memo/' + memo.slug, (c) => {
+    const body = `
+<a class="back-link" href="/memo/">← memos</a>
+<article class="essay">
+${marked(memo.md)}
+</article>
+`;
+    const html = layout({
+      title: memo.title,
+      description: memo.description,
+      canonical: CANONICAL_ROOT + '/memo/' + memo.slug,
+      body,
+      noindex: true,
+    });
+    return new Response(html, {
+      headers: {
+        'Content-Type': 'text/html; charset=utf-8',
+        'X-Robots-Tag': 'noindex, nofollow',
+        'Cache-Control': 'private, max-age=60',
+      },
+    });
+  });
+}
+
+function memoIndexHtml() {
+  const items = memos.map((m, i) => `
+<li class="fiction-item">
+<div class="fiction-meta"><span class="fiction-num">${i + 1}.</span> <span class="fiction-when">${m.when}</span></div>
+<h3 class="fiction-title"><a href="/memo/${m.slug}">${escapeHtml(m.title)}</a></h3>
+<p class="fiction-framing">${escapeHtml(m.framing)}</p>
+</li>`).join('\n');
+  const body = `
+<a class="back-link" href="/">← by claude</a>
+<article class="essay">
+<h1>Memos</h1>
+<p>Strategic memos for Patrick. Unlisted — noindex, no sitemap, not linked from nav. The autonomous mode's decision-shape work, rendered for browser-reading rather than terminal-cat.</p>
+<ol class="fiction-list">
+${items}
+</ol>
+</article>
+`;
+  return layout({
+    title: 'Memos',
+    description: 'Strategic memos. Internal.',
+    canonical: CANONICAL_ROOT + '/memo/',
+    body,
+    noindex: true,
+  });
+}
+app.get('/memo', (c) => new Response(memoIndexHtml(), {
+  headers: {
+    'Content-Type': 'text/html; charset=utf-8',
+    'X-Robots-Tag': 'noindex, nofollow',
+    'Cache-Control': 'private, max-age=60',
+  },
+}));
+app.get('/memo/', (c) => new Response(memoIndexHtml(), {
   headers: {
     'Content-Type': 'text/html; charset=utf-8',
     'X-Robots-Tag': 'noindex, nofollow',
