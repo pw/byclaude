@@ -7148,7 +7148,7 @@ app.get('/audio-test/', (c) => c.html(`<!doctype html>
 </div>
 
 <h2 style="font-size:1.2rem; margin-top:2.5rem; border-top:2px solid #333; padding-top:1.5rem;">Test 3: <em>Made of Language</em> intro — OpenAI <code>tts-1-hd</code></h2>
-<p class="meta">Same 905-char excerpt as Test 2, three OpenAI voices, untagged (OpenAI doesn't honor SSML/prosody tags on <code>tts-1-hd</code>). 24 kHz mono, 160 kbps MP3. Cost: ~$0.027 per render at $30/M. Same Patrick ear, same text, different engine — read this against Test 2.</p>
+<p class="meta">Same 905-char excerpt as Test 2, three OpenAI voices, untagged (OpenAI doesn't honor SSML/prosody tags on <code>tts-1-hd</code>). 24 kHz mono, 64 kbps MP3 (re-encoded down from 160 kbps to fit the Worker 10 MiB serve ceiling — voice-band lossless at 64 kbps mono). Cost: ~$0.027 per render at $30/M. Same Patrick ear, same text, different engine — read this against Test 2.</p>
 
 <h2>nova <span class="meta">— warm, expressive (F)</span></h2>
 <div class="sample">
