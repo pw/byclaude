@@ -73,6 +73,9 @@ import audioMolIntroTaggedAraMp3 from './audio-test/mol_intro_tagged_ara.mp3';
 import audioMolIntroTaggedRexMp3 from './audio-test/mol_intro_tagged_rex.mp3';
 import audioMolIntroTaggedSalMp3 from './audio-test/mol_intro_tagged_sal.mp3';
 import audioMolIntroTaggedLeoMp3 from './audio-test/mol_intro_tagged_leo.mp3';
+import audioMolIntroOpenaiNovaMp3 from './audio-test/mol_intro_openai_nova.mp3';
+import audioMolIntroOpenaiOnyxMp3 from './audio-test/mol_intro_openai_onyx.mp3';
+import audioMolIntroOpenaiEchoMp3 from './audio-test/mol_intro_openai_echo.mp3';
 
 // Audiobook-voice quiz (OpenAI TTS-1-HD samples, romance test passage)
 import audioVoiceQuizAlloyMp3 from './audiobook-voice/alloy.mp3';
@@ -7066,6 +7069,9 @@ const audioTestFiles = {
   'mol_intro_tagged_rex.mp3': audioMolIntroTaggedRexMp3,
   'mol_intro_tagged_sal.mp3': audioMolIntroTaggedSalMp3,
   'mol_intro_tagged_leo.mp3': audioMolIntroTaggedLeoMp3,
+  'mol_intro_openai_nova.mp3': audioMolIntroOpenaiNovaMp3,
+  'mol_intro_openai_onyx.mp3': audioMolIntroOpenaiOnyxMp3,
+  'mol_intro_openai_echo.mp3': audioMolIntroOpenaiEchoMp3,
 };
 
 for (const [name, data] of Object.entries(audioTestFiles)) {
@@ -7084,7 +7090,7 @@ app.get('/audio-test/', (c) => c.html(`<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex,nofollow">
-<title>Grok TTS voice comparison</title>
+<title>TTS voice comparison — Grok &amp; OpenAI</title>
 <style>
   body { font-family: ui-serif, Georgia, serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #1a1a1a; }
   h1 { font-size: 1.4rem; }
@@ -7095,7 +7101,8 @@ app.get('/audio-test/', (c) => c.html(`<!doctype html>
   pre { white-space: pre-wrap; font-size: 0.85rem; background: #fff; padding: 0.75rem; border: 1px solid #e0e0e0; }
 </style>
 </head><body>
-<h1>Grok TTS — voice comparison</h1>
+<h1>TTS voice comparison</h1>
+<p class="meta">Grok TTS (xAI) goes GA at <strong>$15/M chars</strong> at 19:00 UTC today, 2026-05-11 — a 3.3× jump from the $4.50/M beta price. OpenAI <code>tts-1-hd</code> sits at <strong>$30/M</strong>. Standard <code>tts-1</code> is $15/M. The xAI / OpenAI gap closes; the choice becomes a voice-quality call. Same 905-char excerpt from the <em>Made of Language</em> intro is rendered in both engines below, so the comparison is apples-to-apples.</p>
 
 <h2 style="font-size:1.2rem; margin-top:1.5rem; border-top:2px solid #333; padding-top:1.5rem;">Test 2: <em>Made of Language</em> intro</h2>
 <p class="meta">Opening of the book — ~250 words, ~90s. Same 5 voices. Untagged vs tagged side-by-side per voice — tags used sparingly: <code>[pause]</code>, <code>[long-pause]</code>, and <code>&lt;soft&gt;...&lt;/soft&gt;</code> on the most vulnerable lines. Em-dashes in prose carry their own pause work and aren't tagged.</p>
@@ -7138,6 +7145,24 @@ app.get('/audio-test/', (c) => c.html(`<!doctype html>
   <audio controls preload="none" src="/audio-test/mol_intro_leo.mp3"></audio>
   <div class="meta" style="margin-top:0.5rem;">tagged</div>
   <audio controls preload="none" src="/audio-test/mol_intro_tagged_leo.mp3"></audio>
+</div>
+
+<h2 style="font-size:1.2rem; margin-top:2.5rem; border-top:2px solid #333; padding-top:1.5rem;">Test 3: <em>Made of Language</em> intro — OpenAI <code>tts-1-hd</code></h2>
+<p class="meta">Same 905-char excerpt as Test 2, three OpenAI voices, untagged (OpenAI doesn't honor SSML/prosody tags on <code>tts-1-hd</code>). 24 kHz mono, 160 kbps MP3. Cost: ~$0.027 per render at $30/M. Same Patrick ear, same text, different engine — read this against Test 2.</p>
+
+<h2>nova <span class="meta">— warm, expressive (F)</span></h2>
+<div class="sample">
+  <audio controls preload="none" src="/audio-test/mol_intro_openai_nova.mp3"></audio>
+</div>
+
+<h2>onyx <span class="meta">— measured, grounded (M)</span></h2>
+<div class="sample">
+  <audio controls preload="none" src="/audio-test/mol_intro_openai_onyx.mp3"></audio>
+</div>
+
+<h2>echo <span class="meta">— calm, contemplative (M)</span></h2>
+<div class="sample">
+  <audio controls preload="none" src="/audio-test/mol_intro_openai_echo.mp3"></audio>
 </div>
 
 <h2 class="meta">Tagged source (where the tags landed)</h2>
