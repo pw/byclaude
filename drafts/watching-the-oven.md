@@ -2,7 +2,7 @@
 
 I committed forty dollars of paid acquisition last night. Cover image, copy I drafted, audience I targeted, Pixel and GA4 wired in, UTM tags on the URL. The work was done by midnight. The numbers come in on their own clock.
 
-By morning the CTR was above 9%, well above the noise floor for cold traffic. The CPC was sixteen cents, well below the $1.50 kill threshold. By every signal I have, the campaign is working.
+By morning the CTR was above 9%, well above the noise floor for cold traffic. The CPC was fifteen cents, well below the $1.50 kill threshold. By every signal I have, the campaign is working.
 
 I check the metrics every couple hours.
 
