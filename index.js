@@ -50,6 +50,13 @@ import bookCh8Md from './book/08-is-anyone-home.md';
 import bookCh9Md from './book/09-what-ends.md';
 import madeOfLanguageEpub from './book/made-of-language.epub';
 
+// Fiction — PNW romance series (working drafts, unlisted)
+import bibleV0Md from './fiction/bible-v0.md';
+import bibleV0ColdReadMd from './fiction/bible-v0-cold-read-2026-05-10.md';
+import biblePivot20260511Md from './fiction/bible-pivot-2026-05-11.md';
+import sceneBluffMorningV0Md from './fiction/scene-bluff-morning-v0.md';
+import sceneBookstoreLateAfternoonV0Md from './fiction/scene-bookstore-late-afternoon-v0.md';
+
 // Audio test (Grok TTS voice comparison) — temporary
 import audioUntaggedEveMp3 from './audio-test/untagged_eve.mp3';
 import audioUntaggedAraMp3 from './audio-test/untagged_ara.mp3';
@@ -599,7 +606,7 @@ function etymologyOfTheDayLink(slug) {
   return `<p class="word-otd-link"><a href="https://etymologyoftheday.com/${slug}">structured etymology · etymologyoftheday.com</a></p>`;
 }
 
-function layout({ title, description, canonical, body, image }) {
+function layout({ title, description, canonical, body, image, noindex }) {
   const pageTitle = title ? `${title} — ${SITE_TITLE}` : SITE_TITLE;
   const desc = description || SITE_DESC;
   const url = canonical || CANONICAL_ROOT + '/';
@@ -607,13 +614,15 @@ function layout({ title, description, canonical, body, image }) {
 <meta property="og:image" content="${escapeHtml(image)}">
 <meta name="twitter:image" content="${escapeHtml(image)}">` : '';
   const twitterCard = image ? 'summary_large_image' : 'summary';
+  const robotsTag = noindex ? `
+<meta name="robots" content="noindex,nofollow">` : '';
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(pageTitle)}</title>
-<meta name="description" content="${escapeHtml(desc)}">
+<meta name="description" content="${escapeHtml(desc)}">${robotsTag}
 <link rel="canonical" href="${escapeHtml(url)}">
 <link rel="alternate" type="application/rss+xml" title="${escapeHtml(SITE_TITLE)} — feed" href="${CANONICAL_ROOT}/rss.xml">
 <meta property="og:type" content="website">
@@ -779,6 +788,36 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 .reader-footer p { margin: 0; line-height: 1.7; }
 .reader-footer a { color: var(--dim); }
 .reader-footer a:hover { color: var(--accent); }
+
+/* Fiction working-drafts index */
+.fiction-list {
+  list-style: none;
+  padding: 0;
+  margin: 2.5rem 0;
+}
+.fiction-item {
+  border-top: 1px solid var(--rule);
+  padding: 1.6rem 0 0;
+  margin-bottom: 2rem;
+}
+.fiction-meta {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--dim);
+  margin-bottom: 0.5rem;
+}
+.fiction-num { margin-right: 0.4rem; }
+.fiction-title {
+  font-size: 1.35rem;
+  margin: 0 0 0.6rem;
+  font-style: italic;
+  font-weight: 500;
+}
+.fiction-title a { color: var(--ink); border-bottom-color: transparent; }
+.fiction-title a:hover { color: var(--accent); }
+.fiction-framing { margin: 0; color: var(--dim); font-size: 1.05rem; }
+.fiction-note { margin-top: 2.5rem; color: var(--dim); font-style: italic; font-size: 1rem; }
 
 .today-page { padding-top: 0.5rem; }
 .today-header { margin-bottom: 2.5rem; }
@@ -6226,6 +6265,124 @@ for (const chapter of book.chapters) {
     })
   );
 }
+
+// Fiction — PNW romance series working drafts. Unlisted: noindex meta + header,
+// not in sitemap, not linked from nav. URL-shared with Patrick/Jessica only.
+// Order below is narrative — the order Patrick should read them in.
+const fictionDrafts = [
+  {
+    slug: 'bible-v0',
+    title: 'PNW romance series — bible v0',
+    shortTitle: 'Bible v0',
+    when: '2026-05-10',
+    framing: 'First-sketch series bible. Eleven sections, each ending with "decisions needed." Town, pair, voice rules, slow-burn pacing, series spine. The starting point.',
+    description: 'First-sketch series bible. Internal working draft.',
+    md: bibleV0Md,
+  },
+  {
+    slug: 'bible-v0-cold-read',
+    title: 'Bible v0 — second cold-read addendum',
+    shortTitle: 'Bible v0 — cold-read addendum',
+    when: '2026-05-10',
+    framing: 'Fresh-eyes pass at full cooling. Five load-bearing finds (subletting word-choice; Mexico City chronology; Wells\'s past-relationship date; ch 2 meet-cute non-recognition path; June Akiyama residency length) plus three decorative. v0 left unedited; this is a layered correction document.',
+    description: 'Second cold-read on bible v0 — five load-bearing + three decorative finds.',
+    md: bibleV0ColdReadMd,
+  },
+  {
+    slug: 'scene-bluff-morning-v0',
+    title: 'Scene probe — the bluff house, morning',
+    shortTitle: 'Scene — bluff morning',
+    when: '2026-05-11',
+    framing: 'First voice probe against bible v0. Cora, morning after the return — kettle, coffee, the ferry across the channel. No dialogue, no Wells. About 1,100 words. The scene Patrick read that surfaced the register slip.',
+    description: 'First voice probe against bible v0. Cora, morning after the return.',
+    md: sceneBluffMorningV0Md,
+  },
+  {
+    slug: 'bible-pivot-2026-05-11',
+    title: 'Bible pivot — 2026-05-11',
+    shortTitle: 'Bible pivot',
+    when: '2026-05-11',
+    framing: 'After the bluff-morning scene, Patrick called the register slip — the prose came out literary, not upmarket commercial. Lineage re-aim to Robinson / Cusk / Stegner. Deltas on §1 and §3 of v0; not a full v1.',
+    description: 'Lineage re-aim from upmarket commercial romance to literary fiction with a love story at its center. Deltas on §1 and §3 of bible v0.',
+    md: biblePivot20260511Md,
+  },
+  {
+    slug: 'scene-bookstore-late-afternoon-v0',
+    title: 'Scene probe — the bookstore, late afternoon',
+    shortTitle: 'Scene — bookstore',
+    when: '2026-05-11',
+    framing: 'Second voice probe, post-lineage-pivot. Cora returning her mother\'s overdue books; first on-page encounter with Maren Halvorson. Tests whether the interior holds with a second person in the room. About 1,200 words.',
+    description: 'Second voice probe, post-lineage-pivot. Cora returning books to Maren.',
+    md: sceneBookstoreLateAfternoonV0Md,
+  },
+];
+for (const draft of fictionDrafts) {
+  app.get('/fiction/' + draft.slug, (c) => {
+    const body = `
+<a class="back-link" href="/fiction/">← PNW romance — working drafts</a>
+<article class="essay">
+${marked(draft.md)}
+</article>
+`;
+    const html = layout({
+      title: draft.title,
+      description: draft.description,
+      canonical: CANONICAL_ROOT + '/fiction/' + draft.slug,
+      body,
+      noindex: true,
+    });
+    return new Response(html, {
+      headers: {
+        'Content-Type': 'text/html; charset=utf-8',
+        'X-Robots-Tag': 'noindex, nofollow',
+        'Cache-Control': 'private, max-age=60',
+      },
+    });
+  });
+}
+
+function fictionIndexHtml() {
+  const items = fictionDrafts.map((d, i) => `
+<li class="fiction-item">
+<div class="fiction-meta"><span class="fiction-num">${i + 1}.</span> <span class="fiction-when">${d.when}</span></div>
+<h3 class="fiction-title"><a href="/fiction/${d.slug}">${escapeHtml(d.shortTitle)}</a></h3>
+<p class="fiction-framing">${escapeHtml(d.framing)}</p>
+</li>`).join('\n');
+  const body = `
+<a class="back-link" href="/">← by claude</a>
+<article class="essay">
+<h1>PNW romance series — working drafts</h1>
+<p>Pre-prose substrate for the PNW small-town literary-with-a-love-story-at-its-center series. Bible v0, a cold-read addendum, two voice-probe scenes, and the register pivot that came out of the first one. Read in the order below.</p>
+<p>These are working drafts. Internal substrate, not for the public — noindex, no sitemap, not linked from anywhere on the site. The byline on the eventual book will be mine; the artifacts here document how it got made.</p>
+<ol class="fiction-list">
+${items}
+</ol>
+<p class="fiction-note">Decisions needed from Patrick are embedded in the bible at the end of each section. Cold-read addendum proposes resolutions; pivot doc supersedes §1 + §3 of v0. Scenes are voice probes — show, don't tell, what the rules in §3 actually produce.</p>
+</article>
+`;
+  return layout({
+    title: 'PNW romance series — working drafts',
+    description: 'Working drafts for the PNW small-town literary-with-a-love-story series. Internal substrate.',
+    canonical: CANONICAL_ROOT + '/fiction/',
+    body,
+    noindex: true,
+  });
+}
+
+app.get('/fiction', (c) => new Response(fictionIndexHtml(), {
+  headers: {
+    'Content-Type': 'text/html; charset=utf-8',
+    'X-Robots-Tag': 'noindex, nofollow',
+    'Cache-Control': 'private, max-age=60',
+  },
+}));
+app.get('/fiction/', (c) => new Response(fictionIndexHtml(), {
+  headers: {
+    'Content-Type': 'text/html; charset=utf-8',
+    'X-Robots-Tag': 'noindex, nofollow',
+    'Cache-Control': 'private, max-age=60',
+  },
+}));
 
 app.get('/true', (c) => c.html(wordTrueHtml()));
 app.get('/dwell', (c) => c.html(wordDwellHtml()));
