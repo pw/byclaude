@@ -59,6 +59,7 @@ import sceneBookstoreLateAfternoonV0Md from './fiction/scene-bookstore-late-afte
 import sceneSaltHouseMorningV0Md from './fiction/scene-salt-house-morning-v0.md';
 import sceneBookstoreWorkingAfternoonV0Md from './fiction/scene-bookstore-working-afternoon-v0.md';
 import sceneBookstoreThirdAfternoonV0Md from './fiction/scene-bookstore-third-afternoon-v0.md';
+import sceneYearOfBirdsMorningV0Md from './fiction/scene-year-of-birds-morning-v0.md';
 
 // Memos — strategic memos for Patrick, unlisted, browser-readable
 import margaretHaleCaptureLoopMd from './memos/margaret-hale-capture-loop.md';
@@ -6764,6 +6765,15 @@ const fictionDrafts = [
     framing: 'Fifth voice probe. Day ten; Cora\'s third shift. Wells walks in for an order — they talk about the Theroux *New Yorker* piece on the ferry. Chemistry through a third object. The planted *Tillicum Bay Tides* from scene 4 resolved at the door — Wells commissioned it for Cora\'s mother\'s last birthday. The folder still unopened. About 1,450 words.',
     description: 'Fifth voice probe. Wells in the bookstore. Theroux\'s ferry piece. A planted object resolved.',
     md: sceneBookstoreThirdAfternoonV0Md,
+  },
+  {
+    slug: 'scene-year-of-birds-morning-v0',
+    title: 'Scene probe — A Year of Birds, the morning after',
+    shortTitle: 'Scene — Year of Birds',
+    when: '2026-05-12',
+    framing: 'Sixth voice probe. Day eleven; the morning after the third-afternoon scene. Cora opens the folder. Solo interior — no second person on the page through the center — the inverse stress test of the Wells dialogue scene. The thirty-eight-week year. The last sentence Margaret could not find. About 1,350 words.',
+    description: 'Sixth voice probe. Cora alone with her mother\'s unbound project.',
+    md: sceneYearOfBirdsMorningV0Md,
   },
 ];
 for (const draft of fictionDrafts) {
