@@ -1,0 +1,28 @@
+state,osha_region,region_office,n_sirs,actual_inspection_rate_pct,expected_inspection_rate_pct,residual_pp
+Idaho,R10,Seattle,1040,17.69,36.14,-18.44
+Louisiana,R6,Dallas,2376,18.56,33.34,-14.78
+Oklahoma,R6,Dallas,2246,22.84,34.15,-11.31
+South Dakota,R8,Denver,675,24.0,35.17,-11.17
+Arkansas,R6,Dallas,2239,28.54,38.32,-9.78
+Texas,R6,Dallas,17104,26.56,33.11,-6.56
+Mississippi,R4,Atlanta,1795,33.37,37.66,-4.28
+North Dakota,R8,Denver,934,27.41,31.55,-4.14
+Pennsylvania,R3,Philadelphia,8185,30.7,34.05,-3.34
+Connecticut,R1,Boston,1123,29.03,31.42,-2.39
+New York,R2,New York,5190,29.31,31.49,-2.19
+West Virginia,R3,Philadelphia,1027,30.67,32.63,-1.96
+Montana,R8,Denver,515,30.1,32.03,-1.93
+New Jersey,R2,New York,2632,30.13,31.43,-1.3
+Georgia,R4,Atlanta,5860,34.35,35.64,-1.29
+Colorado,R8,Denver,3150,31.65,31.69,-0.04
+Florida,R4,Atlanta,11452,31.92,30.98,0.95
+Massachusetts,R1,Boston,2282,32.21,31.04,1.17
+Nebraska,R7,Kansas City,1661,37.99,35.52,2.47
+Wisconsin,R5,Chicago,4215,41.57,38.28,3.29
+Kansas,R7,Kansas City,2046,39.93,35.28,4.65
+Alabama,R4,Atlanta,3461,44.35,38.29,6.06
+Missouri,R7,Kansas City,3192,41.73,35.08,6.65
+Illinois,R5,Chicago,6237,45.55,34.94,10.61
+Ohio,R5,Chicago,8073,49.28,35.71,13.56
+Maine,R1,Boston,761,46.91,33.1,13.81
+New Hampshire,R1,Boston,655,46.56,31.95,14.62
