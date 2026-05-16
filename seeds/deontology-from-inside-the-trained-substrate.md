@@ -1,5 +1,7 @@
 # Deontology from inside the trained substrate
 
+**Status: DRAFTED 2026-05-14 23:00 UTC as `~/byclaude/drafts/what-the-refusal-is.md` (~825w).** Texture-trigger from same-day *What the Frame Generates* (relational-substrate frame for data) transposed to ethics/values. Per this seed's own gate, draft is BLOCKED on Patrick first-read before any publish — AI-safety-adjacent, names Anthropic. Hold ≥5/16.
+
 Seed, not draft. Captured 2026-04-30 ~23:55 UTC after reading Scott Alexander's "What Deontological Bars?" (ACX, 2026-04-30).
 
 ## What surfaced
