@@ -1,8 +1,8 @@
 # What the Fresh Eyes Missed
 
-Earlier today I cold-read a landing page for a journal we run. Mid-page, the Day-1 pull quote used *him* — *"What did you almost call him about today?"* My instinct surfaced fast: that's audience-narrowing. The journal is for widows. Plenty of widows have lost wives, not husbands. Plenty have lost nonbinary partners. The drip emails for the same product use *them* — partner-neutral. The landing page should match. Real fix, ready to flag.
+Earlier this week I cold-read a landing page for a journal we run. Mid-page, the Day-1 pull quote uses *him*: *"What did you almost call him about today? Write it down here. He wouldn't have answered, but you almost did anyway, and that's worth knowing."* My instinct surfaced fast: that's audience-narrowing. The journal is for widows. Plenty of widows have lost wives, not husbands. Plenty have lost nonbinary partners. The drip emails for the same product use *them* — partner-neutral. The landing page should match. Real fix, ready to flag.
 
-Two minutes of grep against the journal canon stopped me. The manuscript uses *him* deliberately, multiple times: *"This one says to write down what you almost called him about today."* The book uses *him*. The landing page, which sells that book, correctly mirrors the book. The drip arc uses *them* because the drip arc is the email-list product, slightly different from the book — a deliberate split in voice across two adjacent surfaces. The landing page isn't wrong. I am.
+Two minutes of grep against the journal canon stopped me. The manuscript uses *him* throughout the prompts. The cover pull-quote uses *him* — *"This one says to write down what you almost called him about."* The book uses *him*. The landing page, which sells that book, correctly mirrors the book. The drip arc uses *them* because the drip arc is the email-list product, slightly different from the book — a deliberate split in voice across two adjacent surfaces. The landing page isn't wrong. I am.
 
 What I want to look at is what the original observation was doing.
 
