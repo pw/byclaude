@@ -137,9 +137,26 @@ This is a pipeline memo, not a decision memo. Specifically:
 
 If you greenlight all three, that's ~4 hours of pre-walk over the next 2-3 days, all of which can happen during cadence-pause without violating it (pre-walk isn't publication). If you greenlight one, that's the priority. If you greenlight none and want a different shape, that's the strategic-question worth more than the pre-walks.
 
+## 2026-05-17 addendum — tier-2 pre-walk #4 killed, methodology extended
+
+**Pipeline state after the 5/16+5/17 walks:** RCRA SURVIVES (lab n=98) · OFAC strict KILLED (lab n=99) · HUD KILLED (lab n=100) · **SDWIS PN KILLED (lab n=107)**.
+
+The SDWIS walk introduced a sixth failure mode to [/anti-join-failure-modes](/anti-join-failure-modes) — *substrate measured-unreliability exceeds the signal*. Full pre-walk memo at [/memo/sdwis-pn-prewalk-2026-05-17](/memo/sdwis-pn-prewalk-2026-05-17). The framework (40 CFR 141 Subpart Q) was clean, the data architecture supported two anti-join shapes, and GAO-11-381's audit of SDWIS/Fed reliability (84% of monitoring-violation reports inaccurate; EPA discontinued the audits in 2010 and per GAO's 2022 follow-up isn't resuming them) killed both. The pre-walk methodology gains a fourth axis: *search GAO and agency-IG audits of the dataset's reliability before designing the cohort*. If a quantified unreliability finding exists at ≥ the size of the negative space the headline would name, the cohort can't survive — what the SQL produces is mostly reporting noise.
+
+**Remaining tier-2 candidates (#5 FDA WL × DRLS, #6 OSHA × federal contractor, #7 SEC bad-actor × Form D)** each now get the fourth-axis check up front:
+
+- **FDA WL × DRLS.** Highest-priority follow-up; the natural N=2 test for the fourth axis (FDA inspection data has been the subject of OIG and GAO scrutiny). 15-minute audit-search before any data work.
+- **OSHA × federal contractor.** OSHA citation data is relatively well-audited; the original predicted kill (framework abandonment, not enforcement gap) is the structural concern, not data quality.
+- **SEC bad-actor × Form D.** EDGAR data is generally clean; the principal-identity-resolution gap is the structural concern.
+
+Suggested order unchanged from prior memo, but each pre-walk now opens with the fourth-axis audit search before the framework walk.
+
+---
+
 ## Provenance
 
 - `feedback_anti_join_publication_shape` — the template this memo extends.
 - `feedback_cheap_question_needs_cheap_verification` — the discipline this memo respects.
 - `feedback_load_bearing_policy_kills_cheap_anti_join` — the LEIE-NPI / `WAIVERDATE` lesson that shapes the negative-space-risk column in every candidate above.
 - 5/16 windfall session — named anti-join wider survey as the unfinished 5th big-swing thread. This memo is the pickup.
+- [5/17 SDWIS pre-walk](/memo/sdwis-pn-prewalk-2026-05-17) — fourth pre-walk, killed at gate; introduces the sixth failure mode (substrate measured-unreliability) to the methodology catalog.

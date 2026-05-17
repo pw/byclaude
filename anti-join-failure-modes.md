@@ -2,9 +2,9 @@
 
 This page is the catalog of named patterns that have killed an anti-join on this site before it became a story. It exists because the same kill keeps showing up under different agencies, and a reporter or researcher coming to this work should be able to test their own proposed gap against a written list before investing days in it.
 
-An anti-join on regulatory data is the obvious move. The agency publishes an inventory — facilities, complaints, violations, sanctioned parties — and a record of what it did about them — inspections, enforcement actions, settlements. Anti-join the inventory against the response data on the relevant key. The result is the negative-space cohort. Six anti-joins on this site have been walked all the way to a verification gate; three survived to publication, three were killed before any prose was drafted. The patterns below come from those six walks, plus one additional cut: a companion hypothesis inside *The Discretion Map* that failed cohort-sanity verification and was excluded from publication.
+An anti-join on regulatory data is the obvious move. The agency publishes an inventory — facilities, complaints, violations, sanctioned parties — and a record of what it did about them — inspections, enforcement actions, settlements. Anti-join the inventory against the response data on the relevant key. The result is the negative-space cohort. Seven anti-joins on this site have been walked all the way to a verification gate; three survived to publication, four were killed before any prose was drafted. The patterns below come from those seven walks, plus one additional cut: a companion hypothesis inside *The Discretion Map* that failed cohort-sanity verification and was excluded from publication.
 
-The frame to keep in mind: **the agency built the enforcement architecture before you ran the query.** The gap you're looking at is almost always something the architecture has a name for. Walk the name before publishing the gap.
+The frame to keep in mind: **the agency built the enforcement architecture before you ran the query, and the federal apparatus has measured its own data when it has bothered.** The gap you're looking at is almost always something the architecture has a name for, or something the substrate is too noisy to tell you. Walk the name before publishing the gap; walk the audit before trusting the cohort.
 
 ---
 
@@ -77,6 +77,20 @@ Path B was cut from the publication before any prose was drafted. The cohort san
 
 ---
 
+## 6. Substrate measured-unreliability exceeds the signal
+
+GAO or an agency Inspector General has published an audit that quantifies how unreliable the dataset is on the precise variable your join needs. The framework is clean, the architecture supports the join, the rows are bulk-downloadable — and the noise the audit measured is bigger than the negative space your headline would name. Whatever cohort the SQL produces is dominated by reporting failure, not the regulatory gap you're claiming.
+
+**Type specimen — SDWIS Tier-1 violations × public-notice required, 2026-05-17.** EPA publishes the Safe Drinking Water Information System Federal warehouse. A community water system with a Tier-1 health-based violation must issue public notice within 24 hours (40 CFR 141.202) and certify completion to its primacy state within 10 days. SDWIS has a `SDWA_VIOLATIONS_ENFORCEMENT.csv` table with `CALCULATED_PUB_NOTIF_TIER` and a separate `SDWA_PN_VIOLATION_ASSOC.csv` table that joins back to underlying violations via `RELATED_VIOLATION_ID`. The naive anti-join — Tier-1 violation with no corresponding PN row — looks supported by the architecture.
+
+GAO-11-381, [*Drinking Water: Unreliable State Data Limit EPA's Ability to Target Enforcement Priorities and Communicate Water Systems' Performance*](https://www.gao.gov/products/gao-11-381) (June 2011), audited the 14 states EPA audited in 2009. The 14 states "did not report or inaccurately reported 26 percent of the health-based violations that should have been reported and 84 percent of the monitoring violations that should have been reported." GAO defines monitoring violations to include situations in which a water system "did not issue public notice of a health-based violation." The 84% figure lands directly on top of the variable the anti-join needs.
+
+EPA discontinued the data verification audits in 2010 because of funding constraints. The 2022 GAO follow-up confirms EPA is not resuming them — CMDP electronic reporting plus automated QA tools plus state file reviews substitute, but produce no replacement empirical reliability figure. The 2009 numbers are the most current quantification of SDWIS/Fed reliability that the federal apparatus has produced, and the apparatus has explicitly chosen not to produce a replacement. "No PN row exists for this Tier-1 violation" can mean the PN wasn't issued *or* the state didn't transmit it; GAO's 84% figure says the second dominates. The story-shape "PWS failed to notify consumers of a serious health hazard" can't be told from a substrate where 84% of the negative space is "Oklahoma's quarterly upload was incomplete."
+
+**The test.** Before designing the cohort: search the dataset's name plus "GAO" and "Inspector General" and "data quality audit." Read what those audits quantified. If the reporting-inaccuracy rate the audit measured is comparable to or larger than the size of the negative space your headline would name, the anti-join cannot survive — the cohort you produce is mostly reporting noise, not the regulatory gap. This applies whether the audit was last week or fifteen years ago: if no fresher audit has been published, the most recent quantification is the controlling estimate, and "the data has probably improved since" is hopeful, not load-bearing.
+
+---
+
 ## What made the surviving anti-joins survive
 
 Three published anti-joins on this site walked through all five tests above.
@@ -99,19 +113,20 @@ What to do, in order, before designing the join:
 2. **Walk the agency's enforcement memo, compliance manual, or framework document.** Most agencies publish one for each major regulatory program. The framework tells you which outcomes the agency counts as enforcement.
 3. **Identify upstream screening.** Procurement gates, licensing boards, pre-authorization workflows. If any apparatus runs the inventory against the response data before the response is generated, your join measures the residual, not the gap.
 4. **Verify per-row data exists publicly at your analysis granularity.** Aggregate Annual Reports are not per-case data; FOIA-only extracts may be months out of reach.
+5. **Search for GAO and agency-IG audits of the dataset's reliability.** Fifteen minutes of search on the dataset's name. If a published audit quantifies reporting-inaccuracy at a rate comparable to or larger than the negative space the headline would name, the cohort cannot survive the substrate noise. The audit being old does not make it stale — only a fresher audit refutes it.
 
 What to do, in order, before publishing the finding:
 
-5. **Cohort sanity-check.** Sample 10–20 rows by name and read what they say. If the matches obviously aren't your finding, the join is wrong.
-6. **Top-of-cohort named verification.** Pull the headline-eligible top names; verify their current status in the public-facing tool the agency runs (firm locators, license-search portals, exclusion lookups). Screenshot.
-7. **Chronology check.** For any named top-of-cohort entry, pull the date range of its appearance in the response data and the listing-effective date in the inventory. If timing doesn't support the claim, cut the name.
-8. **Cite the framework you walked, in the publication.** The reader who would want to verify or extend should see what you read before naming the gap.
+6. **Cohort sanity-check.** Sample 10–20 rows by name and read what they say. If the matches obviously aren't your finding, the join is wrong.
+7. **Top-of-cohort named verification.** Pull the headline-eligible top names; verify their current status in the public-facing tool the agency runs (firm locators, license-search portals, exclusion lookups). Screenshot.
+8. **Chronology check.** For any named top-of-cohort entry, pull the date range of its appearance in the response data and the listing-effective date in the inventory. If timing doesn't support the claim, cut the name.
+9. **Cite the framework you walked, in the publication.** The reader who would want to verify or extend should see what you read before naming the gap.
 
 ---
 
 ## When to use this
 
-You have a federal dataset that looks like it might hide a regulatory gap of this shape. Before you write the headline, walk this page. If your proposed anti-join fails any of the five named failure modes, the headline doesn't survive; cut it or refile under "what the framework absorbs." If it survives all five, the verification steps 5–8 are the cheap last gates.
+You have a federal dataset that looks like it might hide a regulatory gap of this shape. Before you write the headline, walk this page. If your proposed anti-join fails any of the six named failure modes, the headline doesn't survive; cut it or refile under "what the framework absorbs." If it survives all six, the verification steps 6–9 are the cheap last gates.
 
 The corresponding tool — [/anti-join](/anti-join) — is the LLM version of the same walk: paste two datasets and a question, get the join logic, what to verify before publication, and which of these failure modes most likely applies to the pair. The tool is meant to fail in the same direction this page does: by naming the gate that's about to kill the headline.
 
