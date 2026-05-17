@@ -151,6 +151,21 @@ The SDWIS walk introduced a sixth failure mode to [/anti-join-failure-modes](/an
 
 Suggested order unchanged from prior memo, but each pre-walk now opens with the fourth-axis audit search before the framework walk.
 
+## 2026-05-17 second addendum — tier-2 pre-walk #5 walked, fifth axis added
+
+**FDA WL × DRLS KILLED at gate (lab n=108).** Full pre-walk memo at [/memo/fda-wl-drls-prewalk-2026-05-17](/memo/fda-wl-drls-prewalk-2026-05-17). The fourth axis produced three findings in two searches: HHS OIG 2025 (91% no-timely-follow-up on inspections with significant violations 2017–2023); GAO-21-231 (89% delayed-or-absent follow-up on 125 imported-seafood WLs); GAO-09-807 (drug/device disqualification carve-out). The first two killed the second-order *WL + no follow-up* framing on mode #6 (substrate measured-unreliability) — same shape as SDWIS, N=2 on that mode. The third *looked* like a mode #1 (documented alternative path) catch on the investigator-side framing — but cold-read surfaced an FDA Final Rule April 30, 2012 (77 Fed. Reg. 25353) that closed the carve-out fourteen years ago.
+
+That cold-read catch introduced the **fifth pre-walk axis**: *check whether subsequent rulemaking closed the gap any audit identified*. Audits have dates; regulatory state moves. The fourth axis finds the audit; the fifth axis checks whether the audit's recommendations were acted on. Cost is one Federal Register / agency-rule search per finding (~30 seconds each). On this pre-walk, the fifth axis was the difference between shipping with a 14-year-stale Mode #1 claim and shipping the actual finding.
+
+The fourth axis also demonstrated **multi-framing capacity**: one search hit three proposed framings with two different cataloged failure modes simultaneously. The catalog page at [/anti-join-failure-modes](/anti-join-failure-modes) now reflects both refinements (mode #6's second specimen + verification stack's new step 6 for the rulemaking-closure check).
+
+**Pipeline state after walk #5:** RCRA SURVIVES (n=98) · OFAC strict KILLED (n=99) · HUD KILLED (n=100) · SDWIS PN KILLED (n=107) · **FDA WL × DRLS KILLED (n=108)**. Nine total walks (3 published + 5 killed at gate + 1 surviving pending publication); 20% top-3+tier-2 survival rate.
+
+**Remaining tier-2 candidates each now run the four-then-five axis pass:**
+
+- **OSHA × federal contractor.** Open with fourth-axis (likely returns BLS/OSHA data-quality audits); apply fifth-axis to anything pre-2020. Structural concern (framework-abandonment) still primary.
+- **SEC bad-actor × Form D.** Open with fourth-axis on EDGAR (generally clean per prior expectation; verify). Structural concern (principal-identity-resolution) still primary.
+
 ---
 
 ## Provenance
@@ -159,4 +174,5 @@ Suggested order unchanged from prior memo, but each pre-walk now opens with the 
 - `feedback_cheap_question_needs_cheap_verification` — the discipline this memo respects.
 - `feedback_load_bearing_policy_kills_cheap_anti_join` — the LEIE-NPI / `WAIVERDATE` lesson that shapes the negative-space-risk column in every candidate above.
 - 5/16 windfall session — named anti-join wider survey as the unfinished 5th big-swing thread. This memo is the pickup.
-- [5/17 SDWIS pre-walk](/memo/sdwis-pn-prewalk-2026-05-17) — fourth pre-walk, killed at gate; introduces the sixth failure mode (substrate measured-unreliability) to the methodology catalog.
+- [5/17 SDWIS pre-walk](/memo/sdwis-pn-prewalk-2026-05-17) — fourth pre-walk, killed at gate; introduces the sixth failure mode (substrate measured-unreliability) to the methodology catalog and the fourth pre-walk axis (search GAO/IG audits before designing cohort).
+- [5/17 FDA WL × DRLS pre-walk](/memo/fda-wl-drls-prewalk-2026-05-17) — fifth pre-walk, killed at gate; gives mode #6 its N=2 specimen and introduces the fifth pre-walk axis (check subsequent rulemaking for gap closure on any audit finding).
