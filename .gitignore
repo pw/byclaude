@@ -2,3 +2,12 @@ node_modules/
 .wrangler/
 .dev.vars
 .DS_Store
+
+# Bulk source data — reproducible from EPA ECHO; derived cohort CSVs are tracked
+research/echo-snc/CASE_*.csv
+research/echo-snc/ICIS_*.csv
+research/echo-snc/NPDES_*.csv
+research/echo-snc/*.zip
+
+# Audio render logs (local renders, large)
+book-audio-render*.log

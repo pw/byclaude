@@ -11,12 +11,12 @@ routes = [
 
 [[rules]]
 type = "Text"
-globs = ["**/*.md", "**/*.client.js"]
+globs = ["**/*.md", "**/*.client.js", "**/*.csv"]
 fallthrough = true
 
 [[rules]]
 type = "Data"
-globs = ["**/*.png", "**/*.epub", "**/*.mp3"]
+globs = ["**/*.png", "**/*.epub", "**/*.mp3", "**/*.pdf", "**/*.jpg"]
 fallthrough = true
 
 [observability]
