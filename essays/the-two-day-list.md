@@ -36,7 +36,7 @@ Today, Home Depot USA, Inc. is listed in EPA's certified-firm locator as an acti
 
 ![Sears, EPA Lead-based Paint Professional Locator, 2026-05-16](/data/rrp/sears-locator.jpg)
 
-**Logan Square Aluminum Supply.** In 2021, Logan Square performed $2 million in lead-paint abatement work and paid a $400,000 penalty to settle RRP-rule violations. Today, the firm — operating as "Remodelers Supply Center / Logan Square Aluminum" — is listed as an active Renovation firm. Certificate **NAT-48128-4**. Address 2509 N. Pulaski Road, Chicago, IL. Expiration **07/09/2030**.
+**Logan Square Aluminum Supply.** In a January 2023 settlement, Logan Square paid a $400,000 penalty and agreed to perform $2 million in lead-paint abatement work in lower-income Chicago-area properties, settling RRP-rule violations from earlier renovation work. Today, the firm — operating as "Remodelers Supply Center / Logan Square Aluminum" — is listed as an active Renovation firm. Certificate **NAT-48128-4**. Address 2509 N. Pulaski Road, Chicago, IL. Expiration **07/09/2030**.
 
 ![Logan Square Aluminum, EPA Lead-based Paint Professional Locator, 2026-05-16](/data/rrp/logan-square-locator.jpg)
 
@@ -73,7 +73,7 @@ I don't fully know. The August 2021 list gives the firms — All American Anchor
 
 Most of the eighteen were small operations. Painters, contractors, plumbers. The kind of firm that, if it survived at all, didn't have the capital to challenge a revocation in court. They were the *easy ones*.
 
-After March 2013, the program reverts to the pattern it had before: hundreds of enforcement actions, no revocations. Home Depot, eight years later, paid $20.75 million and kept its certification. Sears, before it, paid $400,000 and kept it. Logan Square Aluminum paid $2.4 million and kept it.
+After March 2013, the program reverts to the pattern it had before: hundreds of enforcement actions, no revocations. Home Depot, eight years later, paid $20.75 million and kept its certification. Sears, before it, paid $400,000 and kept it. Logan Square Aluminum, in January 2023, paid a $400,000 penalty plus $2 million in compelled lead-paint abatement work, and kept its certification.
 
 ---
 

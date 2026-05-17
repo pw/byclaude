@@ -101,7 +101,7 @@ Three published anti-joins on this site walked through all five tests above.
 
 **The Discretion Map** (OSHA Severe Injury Reports). The published Path A controlled for NAICS-2 industry-mix per state, computed residual inspection rates, and aggregated to OSHA region. The 18-percentage-point R5/R6 spread is the *residual after the most obvious confounder is controlled for*. The companion Path B was cut as described above.
 
-**The Two-Day List** (EPA Lead-Safe RRP). Cohort: 661 enforcement actions against firms violating the RRP rule between FY2012–FY2021, against an EPA-published certification revocation list with 19 entries, 18 of them issued on two specific days in March 2013. Top of cohort: Home Depot ($20.75M, 2021), Sears ($400K, 2016), Logan Square Aluminum ($2.4M, 2021) — each verified as currently certified via EPA's public firm locator on the day of publication, with screenshots.
+**The Two-Day List** (EPA Lead-Safe RRP). Cohort: 661 enforcement actions against firms violating the RRP rule between FY2012–FY2021, against an EPA-published certification revocation list with 19 entries, 18 of them issued on two specific days in March 2013. Three large enforcement targets named: Home Depot ($20.75M, 2021), Sears ($400K, 2016), Logan Square Aluminum ($400K penalty + $2M compelled abatement, Jan 2023) — each verified as currently certified via EPA's public firm locator on the day of publication, with screenshots.
 
 The pattern across the survivors: multiple independent absence conditions; explicit control for the most likely confounder; named-by-name verification at the top of cohort before any prose. The survivors aren't smarter joins. They're joins that walked the verification stack the failed ones didn't.
 
