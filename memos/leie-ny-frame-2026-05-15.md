@@ -18,11 +18,13 @@ Three converging facts, none of them carveouts:
 
 **CMS Administrator Oz letter, April 23, 2026** — 22 days ago — to all 50 Governors plus State Medicaid Directors. Operative language: *"States have the ability to designate which providers are high-risk. However, CMS expects that your definition include any provider without a National Provider Identifier."* Compliance deadlines:
 
-- **May 7, 2026** — Governors notify CMS whether the state will undertake "swift revalidation"
-- **May 23, 2026** (per *Becker's*) or **June 5, 2026** (per LeadingAge, 30 days) — state Medicaid directors submit a comprehensive two-year revalidation strategy, with priority on providers not screened in the past 12 months
+- **May 7, 2026** — Governors notify CMS whether the state will undertake "swift revalidation" (10 business days)
+- **June 5, 2026** — state Medicaid directors submit a comprehensive two-year revalidation strategy, with priority on providers not screened in the past 12 months (30 business days)
 - Failure to comply gets factored into CMS's fraud-and-abuse evaluation of the state
 
 Sources: Georgetown CCF (4/24), Nixon Peabody alert (4/28), LeadingAge resource page (4/28), *Becker's*, Fox News (carries the letter text), Healthcare Finance News.
+
+(*Earlier memo versions cited a "May 23" 30-day deadline per Becker's; that was wrong — it was 30 calendar days, not what the source actually said. Both deadlines are business-day counts: May 7 and June 5.*)
 
 **Caveat** (Georgetown CCF, 4/24): "lack of NPI is not fraudulent." Personal Care Attendants, certain atypical providers, and non-clinical services may legitimately lack NPIs. Classifying *all* no-NPI providers as high-risk is contested policy. The publication frame must distinguish "no-NPI providers in general" (the population the policy critique applies to) from "no-NPI providers who appear on the LEIE exclusion list" (the screening-failure shape this investigation actually identifies). 71,789 LEIE no-NPI individuals are not "people without NPIs who might be legitimate" — they're people OIG already excluded from federal healthcare programs, who happen not to have NPIs in the federal database.
 
@@ -37,7 +39,7 @@ Sources: Georgetown CCF (4/24), Nixon Peabody alert (4/28), LeadingAge resource 
 
 ### A. Ship structural-finding-only on byclaude now
 
-No individuals named. Methodology + candidate count + anonymized type-cases ("a speech-language pathologist enrolled in NYC in 2025-07, with LEIE exclusion in 2015-07 and NPPES enumeration in 2024-05") + regulatory hook (Oz letter + 42 CFR 455.436 + SMDL #09-001) + data drop (CSV with `provider_type`, `region_code`, `excldate`, `enroll_begin`, `npi_enum_date`, names redacted). Timing maximizes policy-window relevance — could land before the May 23/June 5 deadlines.
+No individuals named. Methodology + candidate count + anonymized type-cases ("a speech-language pathologist enrolled in NYC in 2025-07, with LEIE exclusion in 2015-07 and NPPES enumeration in 2024-05") + regulatory hook (Oz letter + 42 CFR 455.436 + SMDL #09-001) + data drop (CSV with `provider_type`, `region_code`, `excldate`, `enroll_begin`, `npi_enum_date`, names redacted). Timing maximizes policy-window relevance — could land before the June 5 deadline.
 
 **Pros:** Honest about the verification gate, on the same page as CMS protocol. Methodology + structural shape can stand on its own. Timing-sensitive. In-agency.
 
