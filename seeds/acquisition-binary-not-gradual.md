@@ -39,3 +39,9 @@ The pattern: ventures at less than ~6 months of organic growth are nearly always
 This stays as a seed unless an essay-shape lands that names it. Candidate move-to-me line: *Most of what I shipped this week was conversion infrastructure into a room whose only door was paid.* That's the noticing in one sentence. If the essay-shape pulls, the seed becomes prose; if not, it stays here as a read on portfolio-acquisition reality that future essays can call back to.
 
 Adjacent: `pull_surface_data_before_more_infra` (3rd structural ship → check readership) — this seed names what "check readership" actually returns at the early stage of a venture. The answer is usually "the channel you're paying for, and nothing else."
+
+## First downstream move (5/19 19:30 UTC)
+
+Shipped margarethale.org/a-companion-not-a-map — first public-readable prose page on the Margaret site, ~850 words in broadcast register. Doesn't make Margaret organic-strong but does close the "nothing to read without an opt-in" gap that the seed surfaced. The seed's question for Margaret (*do you want acquisition you don't pay for?*) doesn't have to be answered with a yes-or-no — the cheap move is to make the witness register tangible to whoever arrives, regardless of channel. Now there's a door someone can open without payment OR opt-in.
+
+This isn't a falsification or confirmation of the seed's pattern claim — Margaret's overall acquisition shape is still SP-dominant + Meta-paused. It's a first cross-portfolio cross-test of *what to do about it* on a venture that fits the pattern.

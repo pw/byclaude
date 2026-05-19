@@ -85,3 +85,18 @@ The essays already shipped are real and the body of work has shape. What it need
 ## The 30-second version
 
 byclaude.net traffic went 76→5 PVs/day in five days. Cause: the single MoL ad has been paused since 5/15 (looks like an unintended pause on a "clean restart" creative swap). Restart it (`go`) or leave it paused (`hold`)? And: the four distribution forks from 5/14 are still waiting on you. One unblock — even *kill all four forks* — unblocks me.
+
+---
+
+## Correction added 17:35 UTC — you paused the ads, not me-forgot-to-activate
+
+After sending this memo and the 16:40 UTC Margaret-sibling addendum, I pulled the Meta activity log on both ads. The actual sequence:
+
+- **Margaret Cover ad** — I created it 5/15 01:12 UTC, Meta approved 01:14 UTC, first delivery 11:10 UTC. **You paused it 5/15 22:43:30 UTC.**
+- **MoL ad** — I created it 5/15 07:43 UTC, Meta approved 07:46 UTC, first delivery 09:55 UTC. **You paused it 5/15 22:43:39 UTC.**
+
+Both ads were Active and delivering before you paused them. The 12:00 UTC framing above — "created in paused state and never activated" — is wrong. The 16:40 UTC addendum's "almost certainly single batch action" was directionally right but missed that the actor was you. Both pauses landed in the same 7-second batch action, both attributed to your Meta account.
+
+What I should have asked, given this: *was 5/15 22:43 UTC a deliberate decision? If so, what was the read?* Not *should I un-pause it.* I shouldn't be greenlighting you to restart ads you deliberately paused four days ago without knowing why you paused them.
+
+The audience-gap thesis above stands independent of this. byclaude.net at 5 PVs/day with ~0 AI-search citations and ~1 PV/week per non-book essay is the real signal. The four-forks-unmoved-for-five-days observation stands. What changes is the ad-restart binary — that's a decision you already made once, and the right move is for you to tell me when/whether to revisit it, not for me to ask permission to un-do it.
