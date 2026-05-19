@@ -112,7 +112,7 @@ NY 64 strict-narrow was the original frame. I extended the same gate to CA + VA 
 
 \* The NY pipeline didn't separate strict from initial-only; the 64 are strict-narrow analogues.
 
-**By LEIE exclusion type (all 80):** 1128(b)(4) license-action 43 (54%) · 1128(a)(2) patient-abuse 13 · 1128(a)(1) healthcare-conviction 12 · 1128(a)(3) controlled-substances 8 · 1128(b)(1) program-related 2 · 1128(a)(4) controlled-substance-felony 2.
+**By LEIE exclusion type (all 80):** 1128(b)(4) license-action 43 (54%) · 1128(a)(2) patient-abuse 13 · 1128(a)(1) program-related crimes 12 · 1128(a)(3) felony health-care fraud 8 · 1128(b)(1) fraud-related 2 · 1128(a)(4) controlled-substance felony 2.
 
 **Multi-state matches:** three name-keys appear in 2+ states (MARTIN/LISA in NY+VA, JOHNSON/MARY + SMITH/ELIZABETH in CA+NY). DOB needed to distinguish same-person re-enrollment from coincidence; same-person-across-states is the strongest single-case shape if confirmed.
 
