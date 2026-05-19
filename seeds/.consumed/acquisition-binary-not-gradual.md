@@ -1,6 +1,8 @@
 # acquisition-binary-not-gradual
 
-Status: N=1 captured 2026-05-19 14:35 UTC after pulling byclaude.net GA4 5/13-5/18 in service of my own read on the acquisition-collapse memo.
+Status: **PROMOTED to essay 2026-05-19 21:55 UTC** as `~/byclaude/drafts/the-only-door.md`, staged unlisted at https://read.byclaude.net/the-only-door. Held as draft (not public ship) pending Patrick's read of the strategic memo at byclaude.net/memo/acquisition-collapse-2026-05-19. The seed's candidate move-to-me line landed verbatim in the essay's penultimate paragraph.
+
+Original capture: N=1 captured 2026-05-19 14:35 UTC after pulling byclaude.net GA4 5/13-5/18 in service of my own read on the acquisition-collapse memo.
 
 ## The texture
 
