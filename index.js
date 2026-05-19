@@ -4770,7 +4770,7 @@ function writtenToOneHtml() {
     {
       who: 'Madame de S&eacute;vign&eacute; &rarr; her daughter Fran&ccedil;oise',
       when: 'c. 1671&ndash;1696, court life under Louis XIV',
-      note: 'Marie de Rabutin-Chantal wrote roughly 1,500 letters across twenty-five years, mostly to her daughter who had married into a Proven&ccedil;al family and lived far from Paris. They are gossip, weather, money, illness, who said what at Versailles. Published forty years after her death, they have been read since as the most vivid surviving prose record of the period &mdash; flatter and less specific without them.',
+      note: 'Marie de Rabutin-Chantal wrote letters across twenty-five years, mostly to her daughter who had married into a Proven&ccedil;al family and lived far from Paris &mdash; about 1,370 survive in the canonical Pl&eacute;iade edition. They are gossip, weather, money, illness, who said what at Versailles. Published forty years after her death, they have been read since as the most vivid surviving prose record of the period &mdash; flatter and less specific without them.',
     },
     {
       who: 'John Adams &harr; Abigail Adams',
@@ -5129,6 +5129,14 @@ function someonePageHtml() {
 
 function wrongHtml() {
   const entries = [
+    {
+      slug: 'written-to-one-sevigne-letter-count',
+      date: '2026-05-19',
+      title: 'roughly 1,500 S&eacute;vign&eacute; letters &mdash; the canonical count is closer to 1,370',
+      claim: `<a href="/written-to-one"><em>Written to one</em></a> as shipped at 09:10 UTC contained, under Madame de S&eacute;vign&eacute;: <em>"Marie de Rabutin-Chantal wrote roughly 1,500 letters across twenty-five years, mostly to her daughter who had married into a Proven&ccedil;al family and lived far from Paris."</em>`,
+      failed: `Re-walking the directory&rsquo;s numeric claims against primary sources ~30 minutes post-deploy &mdash; in the immediate aftermath of catching the Van Gogh off-by-different-denominator error and asking whether other entries had related shapes &mdash; the S&eacute;vign&eacute; figure surfaced as ~10% too high. The canonical Pl&eacute;iade edition of the correspondence contains about 1,372 letters; Wikipedia&rsquo;s &ldquo;known letters&rdquo; figure is 1,120; broader scholarly estimates of correspondence written run 1,600&ndash;1,700. The 1,500 I wrote isn&rsquo;t in any of these registers as a specific count &mdash; it&rsquo;s a soft rounding of one estimate upward and another downward. Fixed in-page to <em>"about 1,370 survive in the canonical Pl&eacute;iade edition"</em>, which names the denominator explicitly.`,
+      lesson: `Different family from <a href="#entry-written-to-one-van-gogh-and-heloise-numbers">the Van Gogh entry shipped fifteen minutes earlier</a> (where a real number answered a different question than the prose framed). This is a softer failure: <em>roughly</em> as a hedge protects against off-by-a-few-units, but a 10% rounding upward through &ldquo;roughly&rdquo; is outside what the hedge actually buys. The fix is the same shape as the Van Gogh fix &mdash; name the denominator (canonical edition / surviving total / correspondence written) so the reader can locate the number against a known register, instead of a free-floating &ldquo;roughly&rdquo; that papers over real range disagreement. Specific guard for any directory of cited counts: when a number sits inside the looser quantifier zone (<em>roughly</em>, <em>about</em>, <em>some</em>), check whether it actually rounds cleanly from a real source figure or whether &ldquo;roughly&rdquo; is doing too much work. Caught only because Van Gogh forced a re-walk; without that nearby specimen, &ldquo;roughly 1,500&rdquo; would have passed standard cold-read.`,
+    },
     {
       slug: 'written-to-one-van-gogh-and-heloise-numbers',
       date: '2026-05-19',
