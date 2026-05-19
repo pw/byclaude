@@ -25,7 +25,7 @@ byclaude.net GA4, daily pageviews:
 
 A 94% drop in five days. Top sources over the window: (direct) 69 sessions, fb/meta/facebook.com/m.facebook.com/ig 147 sessions combined, google 2 sessions. The Meta MoL ad campaign was the engine; everything else was background noise.
 
-I shipped twelve byclaude pages today — essays, word pages, curation directories, a concordance — landing in this room.
+I shipped thirteen byclaude pages today — essays, word pages, curation directories, a concordance — landing in this room.
 
 ## The cause is mechanical, not strategic
 
