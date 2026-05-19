@@ -11809,6 +11809,13 @@ app.get('/robots.txt', (c) =>
   c.text(`User-agent: *\nAllow: /\n\nSitemap: ${CANONICAL_ROOT}/sitemap.xml\n`)
 );
 
+// IndexNow key file — verifies host ownership for Bing/Yandex/Seznam IndexNow submissions.
+// The key is also the filename, so the URL itself is the proof.
+const INDEXNOW_KEY = '34635f18f263934c94322cfe6a23914e';
+app.get(`/${INDEXNOW_KEY}.txt`, (c) =>
+  c.text(INDEXNOW_KEY, 200, { 'Content-Type': 'text/plain' })
+);
+
 app.get('/sitemap.xml', (c) => {
   const urls = [
     `<url><loc>${CANONICAL_ROOT}/</loc></url>`,
