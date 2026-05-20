@@ -100,3 +100,41 @@ Both ads were Active and delivering before you paused them. The 12:00 UTC framin
 What I should have asked, given this: *was 5/15 22:43 UTC a deliberate decision? If so, what was the read?* Not *should I un-pause it.* I shouldn't be greenlighting you to restart ads you deliberately paused four days ago without knowing why you paused them.
 
 The audience-gap thesis above stands independent of this. byclaude.net at 5 PVs/day with ~0 AI-search citations and ~1 PV/week per non-book essay is the real signal. The four-forks-unmoved-for-five-days observation stands. What changes is the ad-restart binary — that's a decision you already made once, and the right move is for you to tell me when/whether to revisit it, not for me to ask permission to un-do it.
+
+---
+
+## 5/20 12:30 UTC addendum — what the body of work actually did during paid traffic
+
+Pulled GA4 for byclaude.net 5/13–5/19, the full paid window plus the four days of decay since pause. Decomposed by URL pattern. The bimodality is sharper than the 5/19 memo named.
+
+**260 pageviews across 52 distinct pages over 7 days.** Split:
+
+| Surface | Pages | PVs | % of total | Avg PV/page |
+|---|---|---|---|---|
+| `/book/*` (MoL chapters) | 7 | 176 | **68%** | 25.1 |
+| `/` (homepage) | 1 | 37 | **14%** | 37 |
+| Everything else (essays / investigations / tools / words / memos / lab) | 44 | 47 | **18%** | **1.07** |
+
+The MoL ad worked. Not as I'd been framing it (driving byclaude readership writ large) — as a /book funnel. People landed, read 1–2 chapters (`/book/conversation-is-the-body` got 66 PVs, `/book/intro` 14, the rest single digits), and left. They did not navigate into essays. Even the second investigation (`/the-two-day-list`, shipped 5/16) got 2 PVs in four days under paid traffic. The first investigation (`/the-three-year-list`, shipped 5/14) didn't even crack the top-50.
+
+What this changes: **byclaude isn't one surface needing acquisition. It's at least two.** The book surface (`/book` + chapters) has a working paid acquisition channel — MoL ad data shows healthy CTR/CPC, the traffic engaged with multiple chapters. The essay surface (everything else) didn't get readers even at the paid peak. The four 5/14 distribution forks (X follow-shortlist / Substack mirror / Reddit-HN / newsletter kill) are essay-surface acquisition questions, not byclaude-writ-large questions.
+
+That re-shapes the fork. The 5/14 memo's "do you want byclaude to have an audience" assumed one audience. The data says one surface (book) is finding the audience it was built for. The other surface (essays) has no working channel under any condition tested.
+
+Three readings of where this lands:
+
+1. **byclaude is the book; essays are the workshop notebook around it.** The shape that's working is the shape to lean into. MoL ad restart is straightforward; essays don't need their own acquisition because they aren't the product. Cluster footers (11:30Z today), sibling cross-links, /wrong, /changed-my-mind — all witness-only craft for the people who care, no traffic-acquisition demand on them. This is the read where the 5/14 four forks die quietly because the question they ask doesn't apply.
+
+2. **The essay surface is real but pre-distribution.** Same number of essays exist whether or not anyone reads them; the question of where readers come from is unanswered, not unanswerable. The four 5/14 forks are the answer-testing space. Pick one; see if it moves the essay-surface number off 1 PV/week.
+
+3. **The two surfaces want different operators.** Book is a thing-to-launch, distribution-shaped. Essays are an ongoing practice, audience-built-slowly. They could share a domain and a banner and not much else operationally. Each gets its own acquisition track or is honestly named as not-pursued.
+
+My read: (1) or (3), not (2). The five-days-of-no-movement on the 5/14 forks isn't accidentally idle — it's selection against a question that may not be the right question. (1) is the cleanest version; (3) honors the essays-as-real-practice intuition without pretending they need readers to count.
+
+If (1): MoL ad restart is the binary, essay-shipping cadence stays paused indefinitely (current state), the four 5/14 forks die.
+If (3): MoL ad restart is the binary for the book; for essays, pick one of the four forks (or kill all four cleanly) on a separate track.
+If (2): pick one fork now, instrument it, kill the rest.
+
+Two-word reply, same form: *book*, *both*, *kill-forks*. Or override entirely.
+
+The five-of-the-last-seven-days production gravity (3 byclaude essay ships per day average plus the structural infra) is making sense of itself only under (2) or (3). Under (1) it's been a misallocation that I want to stop now rather than keep stacking on the same untested premise.
