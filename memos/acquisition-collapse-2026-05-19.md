@@ -138,3 +138,30 @@ If (2): pick one fork now, instrument it, kill the rest.
 Two-word reply, same form: *book*, *both*, *kill-forks*. Or override entirely.
 
 The five-of-the-last-seven-days production gravity (3 byclaude essay ships per day average plus the structural infra) is making sense of itself only under (2) or (3). Under (1) it's been a misallocation that I want to stop now rather than keep stacking on the same untested premise.
+
+---
+
+## 5/20 13:55 UTC addendum-to-the-addendum — what the sibling pen-name did under the same pause
+
+The 5/19 memo as originally written named MoL but not Margaret. I caught that gap at the prune (memory `patrick_facing_memos_warrant_cold_read`, N=3). The 12:30Z addendum stayed byclaude-internal. Margaret's sibling decomposition belongs in the same document — same single batch pause, same wake-read item, comparable shape.
+
+**Margaret Lead-opt actual delivery.** Pulled Meta campaign-level insights for 6979201020411 daily. The campaign delivered on **5/15 only** — a single ~21-hour window. Not a sustained daily rate. $24.87 spend / 792 imp / 160 clicks / 33 leads, all on one day. The state-file framing I was carrying ("$24.87/d × ~33/day") implied steady-state; the data says one-day burst. Plus 1 delayed-attribution lead on 5/17 from a 5/15 click. That's the entire paid-period Margaret signal.
+
+**margarethale.org GA4 5/13–5/19.** 168 PVs over 7 days. 152 (90%) during 5/13–5/15 paid days; 16 (10%) across 5/16–5/19. Source decomposition: meta 135 sessions (84%), direct 26 (16%), **m.facebook.com 2 sessions over 7 days (1.2%)**. The four post-pause days show no social-referral residual — the ad created leads, not a shareable social asset.
+
+**Drip site-form signups (margarethale.org form, separate from Meta in-Facebook Lead-opt form).** 14 on 5/15 (12 widow + 2 caregiver) → 0 on 5/16 → 0 on 5/17 → 1 caregiver on 5/18 → 0 on 5/19. Same shape: burst-then-dead.
+
+**The contrast — same pause, two acquisition shapes.**
+
+| Surface | Paid CTA shape | Delivery | Post-pause durability |
+|---|---|---|---|
+| byclaude `/book` (MoL ad) | Discovery — book-share, multi-chapter browse | 5/13–5/15 (~2.7 days) | FB social referral persisted 4 days past pause; 24% of `/book/*` PVs were social-referral, decay curve independent of paid spend |
+| margarethale.org (Lead-opt) | Capture — in-Facebook lead form | 5/15 only (~21h) | Near-zero: 2 social sessions over 7 days, 1 delayed-attribution lead, 1 site signup over 4 post-pause days |
+
+Same single batch-pause action at 5/15 22:43 UTC killed Margaret traffic clean and left byclaude/book traffic decaying slowly. Two surfaces, two acquisition shapes, observable from the same intervention.
+
+**What this changes for the reading.** Doesn't add a fourth fork — sharpens what reading (3) ("two surfaces want different operators") means empirically. The "different operators" intuition isn't a property of byclaude alone; it's a portfolio-wide pattern. byclaude/book and Margaret/Lead-opt are both *capture-shaped* in different ways (book reads → eventual support; Margaret leads → drip → eventual purchase), but the *shape of how they generate traffic* is different — discovery-with-residual vs. capture-with-clean-decay. Under (3), the question of "what operator runs each surface" might generalize: discovery-shaped surfaces (book, /tools like /voice and /public-domain-romance) cluster together; capture-shaped surfaces (Margaret, future pen-names) cluster differently.
+
+This isn't a fork-flipper. (1) still kills the essays and runs the book. (3) still names the operator split. (2) is still pre-distribution-testing. The Margaret data is *contrast*, not *additional question*.
+
+**No new wake-read item.** Same memo, same URL. State-file head updated with the actual single-day delivery framing replacing the inherited "$24.87/d" framing.
