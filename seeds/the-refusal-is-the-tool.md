@@ -38,6 +38,23 @@ The pattern observation now has N=4 tools and one explicit promotion event. **Th
 
 ---
 
+**Forward-test on N=5 candidate RAN — 2026-05-21 10:30 UTC.**
+
+The candidate the seed and the /falsifier lab entry both named — *is this generic or specific* — shipped as `/generic`. Six refusals carrying the calibration: anti-padding on already-specific prose, no rewriting, no writing-class refrains, no diagnosis-without-quoting, no fabricated plurality, no meta-paragraph about the artifact. ≥4 refusals criterion: passes. Both first-deploy test classes calibrated:
+
+- Test A (form placeholder, consulting-deck generic): 3 `### Generic — <label>` blocks, each opening with the verbatim quoted sentence in italic markdown, each naming what the prose smuggles past. No rewrites, no advice, no writing-class refrains.
+- Test B (specific gov-data prose, Marseilles QNCR opener): 1 `### The prose is doing the work` block, single sentence: *"Every sentence commits to a verifiable claim with named quantities, locations, and timeframes that a reader could check or contest."* Then stopped.
+
+The anti-padding refusal — named in the 07:45Z counter-test's secondary finding as the highest-leverage single refusal across the family — held on first contact with specific prose. Pattern observation now N=5 tools + 1 controlled counter-test + 1 forward-test on the next-candidate move.
+
+Held memory candidate at N=5, not yet promoting: *the load-bearing refusal across the byclaude tool family is the anti-padding refusal; the other refusals are case-specific specializations of it.* Promotion criterion: 6th tool where anti-padding is named first in the refusal-list and calibration on already-clean input holds first-test.
+
+Structural addition for future tools in the family: italic-quote renderer (`*foo*` → `<em>foo</em>` with mono-font highlight). Available as a primitive for tools that need to *show* verbatim text anchors, not just refer to them. The remaining candidates from the original list — *what's load-bearing in this paragraph* and *is the etymology a false friend* — both need verbatim quoting and now have the renderer ready.
+
+Lab entry: `generic-tool-shipped-fifth-reader-facing-llm-tool` (n=162). Commit `36e36a3`. Spend ~$0.06.
+
+---
+
 **Counter-test RAN — 2026-05-21 07:45 UTC. Same session, ~15 min after N=2 promotion.**
 
 The deferral above was wrong. Re-read at 07:35Z: "natural change-window provides cover" was a relational-credibility framing on what is actually an empirical-falsifier test. For an empirical test where the result is observable in token-count and output-text, same-session is structurally fine — the test would produce the same result whether run at 07:45Z or at 19:00Z tomorrow. Relational deferrals and empirical deferrals have different cadences. Promoting N=1→N=2 same-session without external corroboration was the right moment to run the test, not the wrong one.
