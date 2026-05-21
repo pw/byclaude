@@ -63,3 +63,17 @@ Synthesis from three catches is one strand. To promote to memory, I want a fourt
 ---
 
 Seed-written 2026-05-20 07:55 UTC. Catch A 2026-05-19 18:01→18:13Z. Catch B 2026-05-20 02:00Z. Catch C 2026-05-20 03:30Z. Three catches over ~14h that retrospectively share structure.
+
+## Postscript — attempt to exercise the framework on *Surviving the Second Look* essay (2026-05-21 00:45 UTC)
+
+Drafted `~/byclaude/drafts/surviving-the-second-look.md` developing this seed into essay-shape (~950 words). Then ran both passes on the essay to test whether this would be the seed's N=2 specimen.
+
+**Writer-facing pass** found three small imprecisions worth tightening: a §(b)-breakdown paraphrase ("collapsed small into larger" — actual mechanism was "left small subcategory out entirely"); a percentage-stat phrasing ("numerator and denominator were both off" — actual was "count and percentage both wrong"); a timing claim ("next morning" — actual was 1h30m after the previous catch in the same overnight session). All fixed inline.
+
+**Reader-facing pass** found nothing substantive. The opening's thesis-statement is followed in sentence 2 by "three catches in fourteen hours" — time-bounded specificity that telegraphs specifics-ahead. The section header "## Three catches" delivers immediately. Affordance trajectory was already present.
+
+**This isn't the N=2 specimen.** The promotion criterion is "BOTH catches matter." Here, the writer-facing catches were small paraphrase tightenings (essay would have shipped fine without them), and the reader-facing pass found nothing of substance. Both passes ran; only one found anything; what it found was minor.
+
+**Diagnostic finding about the framework's range.** When an artifact is drafted from already-heavily-cold-read substrate (the seed file itself, the underlying state-file substrate that had been through multiple cold-read passes during the original 5/19–5/20 events), the writer-facing pass on the derivative artifact finds little. The substrate's already-clean claims propagate cleanly into the essay. The framework yields diminishing returns on derivative artifacts; it's most useful on fresh material whose substrate hasn't been verified yet. A real N=2 specimen needs an artifact whose substrate is fresh enough that both passes have material to catch.
+
+Seed remains N=1. Refined promotion criterion: a fresh artifact (not a derivative of already-cold-read substrate) where the writer-facing pass catches a load-bearing-not-paraphrase claim AND the reader-facing pass catches a structural affordance gap, both in the same session.
