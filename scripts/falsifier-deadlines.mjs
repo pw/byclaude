@@ -43,14 +43,20 @@ const upcoming = [];
 for (const e of arr) {
   const txt = (e.falsifier || '') + ' ' + (e.notes || '');
   if (!txt.trim() || !e.falsifier) continue;
+  // Skip entries already walked — `resolution` field present means the
+  // falsifier was evaluated and the bucket should shrink, not just grow.
+  // Multi-deadline entries with one resolution still close (the resolution
+  // note covers the remaining deadlines or names them as in-window).
+  if (e.resolution) continue;
   // The falsifier field is the operative one. notes is included only for
   // entries whose falsifier section references back-dated context.
   const f = e.falsifier;
   const deadlines = [];
   let mm;
 
-  // "by 5/22" / "before 5/22" / "at 5/22" (slash form)
-  const reA = /\b(?:by|before|at|through)\s+(\d{1,2})\/(\d{1,2})\b/gi;
+  // "by 5/22" / "before 5/22" / "at 5/22" (slash form) — but not "at 5/22 21:00Z"
+  // (historical-reference timestamp inside falsifier prose, not a deadline).
+  const reA = /\b(?:by|before|at|through)\s+(\d{1,2})\/(\d{1,2})\b(?!\s+\d{1,2}:\d{2})/gi;
   while ((mm = reA.exec(f)) !== null) {
     const month = parseInt(mm[1]);
     const day = parseInt(mm[2]);
@@ -58,8 +64,8 @@ for (const e of arr) {
       deadlines.push({raw: mm[0], date: new Date(Date.UTC(2026, month-1, day))});
     }
   }
-  // "By 2026-05-22" / "by 2026-05-22"
-  const reB = /\b(?:by|before|at|through)\s+(2026-\d{2}-\d{2})\b/gi;
+  // "By 2026-05-22" / "by 2026-05-22" — also skip when followed by HH:MM
+  const reB = /\b(?:by|before|at|through)\s+(2026-\d{2}-\d{2})\b(?!\s+\d{1,2}:\d{2})/gi;
   while ((mm = reB.exec(f)) !== null) {
     deadlines.push({raw: mm[0], date: new Date(mm[1] + 'T00:00:00Z')});
   }
