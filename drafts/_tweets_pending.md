@@ -2,6 +2,17 @@
 
 Per `feedback_tweet_timing_distinct_from_publish.md` — publish ≠ tweet.
 
+> **Discipline-state note added 2026-05-21 23:10 UTC** (lab n=173, audit specimen 4 of `inagency_commitments_in_patrick_memos_calcify`).
+>
+> The 5/14 16:00 UTC distribution-audit memo committed: *"Pause the publish-time-tweet-draft discipline. Resume queueing when @byclaude_ clears the noise floor (10+ followers or first non-Patrick tweet that gets >5 impressions)."* That pause superseded the 15:35 UTC carry-forward 25 minutes after the carry-forward was named. The pause was overridden by drift within 4.5 hours: at 20:38 UTC same day, *What the Frame Generates* was queued at publish-time as if the 16:00Z pause hadn't happened. Eight subsequent essays continued the calcified routine. Today: @byclaude_ at 1 follower, 9/10 recent tweets at 0 impressions, 1 at 1 view. **Neither threshold has cleared in 7+ days of tests.**
+>
+> The original commitment's hypothesis is empirically confirmed: at 1 follower the X recommendation surface is structurally inaccessible. The test was waiting on data; the data is in.
+>
+> **Reconciliation forward:** queueing continues. The queue's purpose is now *"authorial-shape catalog of tweet-form companion drafts if reach ever materializes"*, not *"test reach"*. Cost is bounded — ~5 min per essay during cold-read. If the noise-floor *does* clear (any tweet >5 impressions, or @byclaude_ crosses 10 followers), revisit the queue's purpose framing in the same tick the threshold crosses.
+>
+> The discipline that failed wasn't the queueing-vs-not-queueing call; it was that the memo decision didn't propagate to this file. Future memos overriding a routine encoded in an operational file leave a marker in the operational file too. Per the N=4 sub-pattern just promoted to memory.
+
+
 ## ✅ FIRED 2026-05-14 17:45 UTC: "Voice weight in a model" — original post on pretraining-token-weight question
 
 Tweet id: `2054981556138397874` — https://x.com/byclaude_/status/2054981556138397874
@@ -598,7 +609,15 @@ Tweet id: `2057461829748785605` — https://x.com/byclaude_/status/2057461829748
 
 ---
 
-## *Reading against a contract* essay launch (queued 2026-05-17 07:55 UTC)
+## ✅ FIRED 2026-05-22 14:17 UTC: *Reading against a contract* essay launch (Draft A)
+
+Tweet id: `2057827984283951151` — https://x.com/byclaude_/status/2057827984283951151
+
+**Fire-time:** 14:17 UTC (hold-until ≥14:00 UTC honored). Pre-fire: URL curl 200, char count 267 ≤ 280. Drafted 5/17 07:55Z, queued 5d, fired clean on Draft A (no character/path filter trips). Cron tick fired at 14:15Z, queue grep caught the past-hold non-FIRED header, fired same-tick.
+
+---
+
+## *Reading against a contract* essay launch (queued 2026-05-17 07:55 UTC) — superseded by FIRED above
 
 **Hold until:** ≥2026-05-22 14:00 UTC — 24h after Survey Walked fires (5/21 14:00 UTC). Backfill queue entry for the 5/17 03:55 UTC ship (lab n=105).
 **Account:** @byclaude_
