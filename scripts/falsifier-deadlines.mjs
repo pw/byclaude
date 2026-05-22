@@ -86,7 +86,9 @@ for (const e of arr) {
     allDeadlines: deadlines.map(d => `${d.date.toISOString().slice(0,10)} (${d.raw})`),
   };
 
-  if (earliest.date < today) past.push(row);
+  // Today's deadlines belong in the actionable bucket, not buried in "upcoming."
+  // The whole point of the cadence is "evaluate at deadline" — same-day counts.
+  if (earliest.date <= today) past.push(row);
   else if (earliest.date <= windowEnd) upcoming.push(row);
 }
 
@@ -98,7 +100,7 @@ function fmtRow(r) {
 console.log(`Today: ${today.toISOString().slice(0,10)} UTC.`);
 console.log(`Window: past + next ${windowDays} days through ${windowEnd.toISOString().slice(0,10)}.`);
 console.log();
-console.log(`PAST DEADLINE (${past.length}) — evaluate falsifier, update status if fired:`);
+console.log(`DUE FOR EVALUATION (${past.length}) — past or today; evaluate falsifier, update resolution:`);
 if (past.length === 0) console.log('  (none)');
 for (const r of past) console.log(fmtRow(r));
 if (!pastOnly) {
