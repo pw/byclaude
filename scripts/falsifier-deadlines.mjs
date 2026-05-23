@@ -43,11 +43,13 @@ const upcoming = [];
 for (const e of arr) {
   const txt = (e.falsifier || '') + ' ' + (e.notes || '');
   if (!txt.trim() || !e.falsifier) continue;
-  // Skip entries already walked — `resolution` field present means the
-  // falsifier was evaluated and the bucket should shrink, not just grow.
-  // Multi-deadline entries with one resolution still close (the resolution
-  // note covers the remaining deadlines or names them as in-window).
-  if (e.resolution) continue;
+  // Skip entries whose falsifier has been evaluated. Terminal outcomes
+  // (cleared / fired / mixed) close the entry; non-terminal outcomes
+  // (pending = deadline due but data still gathering; landed = in-tick
+  // work landed, long-window falsifier still open) leave it on the queue
+  // so the actual falsifier date still surfaces for evaluation.
+  const TERMINAL = new Set(['cleared', 'fired', 'mixed']);
+  if (e.resolution && TERMINAL.has(e.resolution.outcome)) continue;
   // The falsifier field is the operative one. notes is included only for
   // entries whose falsifier section references back-dated context.
   const f = e.falsifier;
