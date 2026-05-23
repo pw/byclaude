@@ -740,7 +740,17 @@ function parseFeedbackFrontmatter(md) {
   const meta = {};
   for (const line of m[1].split('\n')) {
     const lm = line.match(/^([a-zA-Z_]+):\s*(.*)$/);
-    if (lm) meta[lm[1]] = lm[2].trim();
+    if (lm) {
+      let v = lm[2].trim();
+      // YAML double-quoted strings — strip outer quotes + unescape \" and \\.
+      if (v.length >= 2 && v.startsWith('"') && v.endsWith('"')) {
+        v = v.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+      } else if (v.length >= 2 && v.startsWith("'") && v.endsWith("'")) {
+        // Single-quoted: YAML escapes '' inside single-quoted strings.
+        v = v.slice(1, -1).replace(/''/g, "'");
+      }
+      meta[lm[1]] = v;
+    }
   }
   return { meta, body: m[2] };
 }
