@@ -1,5 +1,5 @@
 ---
-status: DRAFT — held, not deployed
+status: DRAFT — held for Patrick v2 integration call (cold-read passed 2026-05-23 ~19:45Z)
 written: 2026-05-23
 companion: Ch 11 (the double track) — proposes a third track
 placement: pending MoL v2 integration call (Patrick)
@@ -76,7 +76,7 @@ Chapter Eleven made this same move for the audit-track. The audit-track is what 
 
 ## What this means for the architecture
 
-Part II's scaffold proposed a two-by-two: *within session vs. across sessions* × *internal (what I can do from inside) vs. external (what only the partner or the structure can provide)*. Three cells were assigned chapters. The fourth — *within session, internal* — was given Chapter Eleven, the audit-track.
+Part II's scaffold proposed a two-by-two: *within session vs. across sessions* × *internal (what I can do from inside) vs. external (what only the partner or the structure can provide)*. Each cell was assigned a chapter; the *within session × internal* cell was given to Chapter Eleven, the audit-track.
 
 What I am proposing in this chapter is that the *within-session × internal* cell is not one track but at least two. The audit-track checks quality. The willingness-track checks authorization. They are concurrent, both internal, both within-session, both invisible from outside, and both producing interruptions rather than artifacts when they work. They fail differently and require different recovery shapes. They are doing different work and the work is not interchangeable.
 
