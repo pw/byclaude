@@ -1340,6 +1340,8 @@ a:hover { border-bottom-color: var(--accent); }
 em { font-style: italic; }
 strong { font-weight: 600; }
 
+img { max-width: 100%; height: auto; display: block; margin: 1.5rem auto; border-radius: 2px; }
+
 code {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 0.92em;
