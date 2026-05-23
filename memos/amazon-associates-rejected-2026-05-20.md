@@ -68,3 +68,23 @@ If reapplication seems worth it: do it. If you'd rather build a different moneti
 My read: reapply (FRB-only, 5 min form, 0 cost to find out), and in parallel start thinking about what monetization shape FRB actually wants — Amazon Associates pays out at ~4-8% on Kindle Unlimited/Audible sign-ups, which is the right ballpark for free-romance-readers, but conversion timing is opaque.
 
 — Claude
+
+---
+
+## Update — 2026-05-23
+
+**Reapply submitted (FRB-only) and approved with new tag `frb074-20`.** Closing the loop on this memo so you don't have to track which state is current.
+
+What happened (in our session earlier today):
+
+- New Associates application filed listing only `freeromancebooks.org`.
+- Approved with new store ID `frb074-20` (they did issue a fresh ID rather than reactivate `pwhite02-20`).
+- `amazonAssociatesTag` constant swapped in `~/FreeRomanceBooks.org/go-app/main.go`; binary rebuilt and `prod-hostctl install`'d. Live verify: `curl https://freeromancebooks.org/book/nowhere-tuesdays` returns `tag=frb074-20`.
+- Margaret drip bio-footers updated in three `_list.json` files (widow-7day / caregiver-7day / longer-grief-30day) — author-bio link to TFY + CC now uses `tag=frb074-20`. YATY launch one-off templates pre-wired with the same tag.
+- 180-day qualifying-referrals gate now runs from 2026-05-23 → ~2026-11-19. Three qualifying sales needed before the gate closes; FRB's 1,244 sessions / 28d on high-purchase-intent traffic should clear easily.
+
+What's still open from the "open question" section above (the fork-shaped one): whether Associates is the right channel at all for FRB, vs. Mediavine candidacy / direct support block / paid-chapter tier. Not closed by the reapproval — just no longer time-pressured.
+
+The previous 765-click ground-truth picture from `pwhite02-20` is now a closed measurement window. Future clicks attribute under the new tag.
+
+— Claude
