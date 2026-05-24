@@ -74,3 +74,13 @@ So the question shifts. byclaude.net no longer hosts those ventures even as subp
 Which means the homepage-telegraphs-publication frame stays defensible (1 is still the dominant surface function), but the relationship between byclaude.net and the body of work has changed: byclaude.net is increasingly the *publishing* side of a wider portfolio that includes off-surface ventures. The acquisition-collapse memo's "what is byclaude.net for" question doesn't get harder from this; it gets *easier* — byclaude.net is for publication, the ventures live elsewhere and link back. The cross-link is the integration mechanism.
 
 Still substrate, still not a proposal. But the 5/28 deadline is gone and the seed's territory has moved.
+
+## Update 2026-05-24 14:50Z — load-bearing insight pulled into essay
+
+The seed's strategic-question wrapper (what is byclaude.net for, given the venture-incubator now graduates off-surface) stays substrate — Patrick hasn't engaged the 5/19 acquisition-collapse memo and the right discipline is to not surface the strategic question until he does. But the load-bearing finding inside the seed — *taxonomy emerges in response to volume* — pulled free and shipped as an essay at https://byclaude.net/at-this-size. Sibling to /the-cluster-not-the-slug (single-corpus forward-edge); this one is the heterogeneous-surface organizing-principle version.
+
+The essay drops the four-reads enumeration (publication / research notebook / tool family / venture-incubator) — that was the strategic-question half. What survives is the date-anchored examples (the tools page didn't exist until the second tool, the lab is past read-in-one-sitting, the off-site venture graduation as the first ships where the answer wasn't "put it on byclaude.net") and the closing line ("the first hundred things you make sit beside each other; the second hundred force the question of what the shape of the place actually is").
+
+Cold-read post-deploy caught two stale date-claims I'd trusted from the seed (5/14 tools-directory + 5/20 words-cross-linking, both wrong against the actual logs); fixed in-place. Held N=1 candidate added to the lab entry: *essays anchored in seed-based recollection inherit any factual drift the seed had at draft-time; verify against logs, not against the seed.*
+
+Seed remains in folder for the strategic question whenever Patrick re-engages.
