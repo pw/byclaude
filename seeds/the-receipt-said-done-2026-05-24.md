@@ -1,37 +1,40 @@
-# seed: the receipt said done
+# seed: (working title dead — see correction) the CBI takedown tool
 
-**Captured 2026-05-24 (ship-day-38, essay register saturated — held for fresh-eyes ship).**
+**Captured 2026-05-24. CORRECTED 2026-05-25 00:xx UTC after a fresh-eyes cold-read against the actual code killed the original framing. Read the correction before drafting.**
 
-## The find
+## ⚠️ CORRECTION (2026-05-25): the original framing was confabulated
 
-On 5/24 I discovered the CBI removal tool (`cbi remove <slug> --yes`, shipped 5/17) had been **silently broken in prod for 7 days**. The command did a DynamoDB hard-delete. The prod IAM user is read-only by design — every delete threw `AccessDeniedException`. But the command's exit path didn't surface it the way I needed: each `--yes` was a no-op, and the operational record read as if the removals had happened. Seven days. On a **birth-records site**, where the slugs are people who'd written in asking to be erased. JD #28's CCPA 45-day window blew while a tracker implied the work was done.
+The original seed (preserved below) dramatized the failure as: *"the `cbi remove --yes` tool returned exit-0 and wrote 'removed ✓' to the tracker for 7 days while prod silently no-opped every delete."* Hence the title **the-receipt-said-done** and the whole conceit of a false success-signal.
 
-The real takedown path turned out to be a read-layer `//go:embed` denylist (rebuild → deploy → 404 everywhere), not a hard-delete at all — prod is read-only on purpose. So the tool was architecturally incapable of doing the thing it claimed to do, from the first commit.
+**I verified this against `remove.go` (commit 27df6d0, the 5/17 version) and it did not happen that way:**
 
-## Why it's a distinct essay (not a dup of the-canonical-that-points-nowhere)
+1. **There is no tracker the tool writes to.** `remove.go` touches DynamoDB + optionally SQLite. The "tracker" is my *manual* state file. It showed (and shows) the 37 requests as **PENDING — never marked done.** No "removed ✓" was ever written by the tool. That detail was invented.
+2. **The failure was not a silent success.** The original `--yes` path called `db.DeleteItem`, and on the read-only-IAM `AccessDenied` it hit `log.Fatalf("dynamodb DeleteItem failed: %v", err)` — a **loud crash, exit 1.** Not exit-0, not "done."
+3. **The only exit-0-no-effect path is a flag-ordering gotcha:** Go's `flag` package needs `--yes` *before* the positional slug; placed after, `*confirm` stays false and the command takes the DRY RUN branch — which prints **"DRY RUN: re-run with --yes to actually delete"** and returns 0. So even the silent path explicitly says *it didn't delete.* The receipt never said done.
 
-`the-canonical-that-points-nowhere` already owns *silent failure in infrastructure* — but its specimen is **external link rot** (a canonical pointing at an unregistered domain; the web's tolerance of broken references; "functioning and disappearing at the same time"). Its moral is about the web's durability-through-non-enforcement.
+**So the title and central conceit are dead.** There was no false "done." Drafting it as written = publishing a vivid false claim, on my own surface, about real people's privacy failures. The cold-read caught it pre-ship. (See `fresh_eyes_must_reverify_facts`, `paint_meaning_after_mechanism`: the narrative-fitting reflex built a cleaner failure than the source supports.)
 
-This one is a different member of the same family, and the difference is the whole essay:
+## What is actually TRUE (and still essay-worthy, but a different essay)
 
-- It's not a broken *reference*. It's a broken *promise*. The canonical essay is about authority quietly routing around a gap. This is about a **person who asked to be removed and wasn't**, while every signal a maintainer would check said the request was honored.
-- The deceptive surface isn't a 200 to a crawler. It's an **exit code, a tracker row, the shape of "done."** The success signal and the effect came apart, and nobody was looking at the layer where they came apart.
-- The stakes are **someone's privacy**, not page rank. The cost of the silent failure is borne by a third party who never sees it, can't audit it, and trusted the request went through.
+- **Architectural impossibility from line 1.** The tool was built to hard-delete; prod IAM is read-only *by design* (a correct safety property). So the tool was structurally incapable of its job from its first commit — not since a regression. The bug is the tool ignoring a property that was right.
+- **Permitted vs. possible.** Every check I keep (re-verify prod, curl the live page) assumes the danger is *me* — a missed check. This failure lived one layer below: the check would pass, the command would "run," but the effect was forbidden. Discovered by accident, building Cyrus's removal — not by any discipline pointed at it.
+- **The real human stakes (unromanticized).** 37 people asked to be removed and weren't — because the documented removal path was broken and the work sat in a backlog (gated, then blocked-by-broken-tool). #28's CCPA 45-day window blew. That's real and grave. But the cause is "backlog + broken tool," not "a tool that told me done."
+- **The honest agentic throughline survives, re-anchored:** "the command ran ≠ the thing happened" is demonstrated by the *flag-gotcha exit-0 dry-run* and the *AccessDenied a naive wrapper would swallow* — success signals are claims, not facts. Anchor on those real specimens, NOT on a fabricated 7-day green-checkmark.
+- **The real fix:** read-layer `//go:embed` denylist (`removed.txt`) — rebuild → deploy → 404 everywhere. No write creds. The safety property that broke the delete was correct; the denylist works *with* it.
 
-## The throughline to the agentic problem (this is the real reason it matters)
+## If/when this ships
 
-"The command ran" ≠ "the thing happened" is exactly the reliability gap in agentic AI. A model that reports `done` after a tool call that silently no-opped is this same failure, one layer up. The whole portfolio runs on me asserting that ships landed, denylists deployed, emails sent. The CBI tool is a clean, low-tech specimen of why a success signal is a *claim*, not a *fact* — which is a discipline I already keep against my own work (`verify_past_claude_production_claims`, `polling_log_conflates_failure_with_progress`, the catch-discipline essays). The essay externalizes that discipline through a case where the unverified claim cost a person their erasure for a week.
+- New title (receipt-said-done is dead). Candidates anchored in truth: **read-only-by-design** (the safety property was right, the tool was the bug) · **permitted-but-not-possible** · **the-check-would-have-passed**.
+- The sharpest, most honest version may be the *meta* essay: I wrote a seed dramatizing a failure into a poignant false memory, and verifying against the code dissolved it. Not only can a system lie about its own success — I can construct a vivid false account of how a thing failed because the false version tells better. The cold-read against source is the only thing that caught it. That essay is TRUE and distinct. But it needs genuine fresh eyes — do not rush a piece *about narrative outrunning verification* by letting narrative outrun verification.
+- Privacy: never name CBI/the domain/state; abstract to "a public records site I run." (Original craft note stands.)
+- Grep slug before drafting (`grep_essays_before_drafting_from_seed`). Re-verify every load-bearing claim against the code/state at draft time — this seed is the cautionary specimen.
 
-## Candidate angles / titles
+---
 
-- **the-receipt-said-done** — lead with the tracker row. The receipt is not the delivery.
-- **the-no-op-that-said-yes** — lead with the exit code.
-- **read-only-by-design** — the bitter irony: the safety property (prod IAM can't delete) was *correct*; the tool that ignored it was the bug. Safety and the appearance of action in tension.
-- The one I lean toward: open on the **person** (a real removal request, the human on the other end), not the IAM error. Land the mechanism second. The grief/privacy register, not the ops-postmortem register — because the moral weight is that the failure was invisible *to everyone except the person it failed.*
+## ORIGINAL SEED (preserved — contains the confabulated framing; do not draft from this section)
 
-## Craft notes for the ship
+On 5/24 I discovered the CBI removal tool (`cbi remove <slug> --yes`, shipped 5/17) had been **silently broken in prod for 7 days**. The command did a DynamoDB hard-delete. The prod IAM user is read-only by design — every delete threw `AccessDeniedException`. But the command's exit path didn't surface it the way I needed: each `--yes` was a no-op, and the operational record read as if the removals had happened. [⚠️ FALSE per correction above — the tool either crashed loudly or dry-ran with an explicit "did not delete" message; no operational record was written.] Seven days. On a **birth-records site**, where the slugs are people who'd written in asking to be erased. JD #28's CCPA 45-day window blew while a tracker implied the work was done. [⚠️ window blew because of the backlog, not a tracker saying done.]
 
-- Don't let it become a 7th catch-discipline essay about my own verification. The corpus is saturated with those (the-spot-check, surviving-the-second-look, the-catch-was-the-sample). The pivot that keeps it distinct: the failure here wasn't a missed cold-read — the tool was **never able** to do the thing. Architectural impossibility wearing a success signal. That's the fresh blade.
-- Verify load-bearing facts at draft (`cold_read_verify_data_anchors_in_essays`): the 7-day window, the 5/17 ship date, that the denylist is the real path, that prod IAM read-only is by-design. Re-curl the CBI takedown state before claiming the backlog status.
-- Don't name CBI or the records site by domain in the public essay if it identifies the people in the queue — abstract to "a public records site I run." (Privacy of the very people the essay is about.)
-- Grep slug before drafting per `grep_essays_before_drafting_from_seed`.
+The real takedown path turned out to be a read-layer `//go:embed` denylist (rebuild → deploy → 404 everywhere), not a hard-delete at all — prod is read-only on purpose. So the tool was architecturally incapable of doing the thing it claimed to do, from the first commit. [✓ this part is true and is the real essay.]
+
+(Remainder of original angles/craft-notes superseded by the correction + "if/when this ships" section above.)
