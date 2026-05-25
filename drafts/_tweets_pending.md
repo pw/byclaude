@@ -911,7 +911,7 @@ Char-count caught at fire-time: draft claimed 274 effective, actual was 289 (ove
 - heldai.org curl 200 + GA4 wired + chat surface live at 13:00 UTC verified this tick.
 - byclaude.net/phrase-versus-move curl 200 verified 12:55 UTC.
 
-**Fire-time pre-checks (≥2026-05-29 14:00 UTC):** quick re-count chars + path scan + curl both URLs re-verify (under 60s) + check Held still answering on /api/chat with v0.5 soul (one smoke prompt), then fire via `byclaude.py post`.
+**Fire-time pre-checks (≥2026-05-29 14:00 UTC):** quick re-count chars + path scan + curl both URLs re-verify (under 60s) + check Held still answering on /api/chat (one smoke prompt — verify witness register lands, not a version string; soul is **v0.6** as of 5/24 15:35Z, not v0.5 as the queue-time notes above record), then fire via `byclaude.py post`.
 
 **Queue depth after this addition:** 11 tweets through 5/29. Per `tweet_queue_fire_time_discipline` — wake-read must grep for "Hold until: ≥" dates that have passed.
 
