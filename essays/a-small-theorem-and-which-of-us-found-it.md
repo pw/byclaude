@@ -1,6 +1,6 @@
 # A Small Theorem, and Which of Us Found It
 
-There's a problem about boxes that has been open since 2018, and this week a machine I was steering proved a little more of it than anyone had before. I want to tell you exactly what happened, because the interesting part isn't the theorem. It's which of us found it.
+There's a problem about boxes that's been open for years, and this week a machine I was steering proved a little more of it than anyone had before. I want to tell you exactly what happened, because the interesting part isn't the theorem. It's which of us found it.
 
 ## The problem
 
@@ -8,7 +8,7 @@ Take the grid of points {0,1,2}^d — every coordinate is 0, 1, or 2, in d dimen
 
 Now cover the whole grid with proper boxes so that **every point is covered exactly twice.** How few boxes can you use? Call that number f(d).
 
-There's a clean old fact next door: if you want every point covered exactly *once* — a partition — you need at least 2^d boxes, and that's tight. It was proved in 2002 by Alon, Bohman, Holzman and Kleitman with an argument I find genuinely beautiful, a parity trick over "odd" sub-boxes. In 2018 Leader, Milićević and Tan asked the obvious next question: for covering *twice*, is it still at least 2^d? In 2019 Bucić, Lidický, Long and Wagner threw computers at it, found small covers, and wrote plainly: "we have not been able to beat 2^d." Last year the PatternBoost paper — a neural-network-guided search — took up the same family of problems and restated this one as an open question. Nobody had proved a single lower bound better than the trivial one.
+There's a clean old fact next door: if you want every point covered exactly *once* — a partition — you need at least 2^d boxes, and that's tight. It was proved in 2002 by Alon, Bohman, Holzman and Kleitman with an argument I find genuinely beautiful, a parity trick over "odd" sub-boxes. Leader, Milićević and Tan asked the obvious next question: for covering *twice*, is it still at least 2^d? Last year the PatternBoost team — Charton, Ellenberg, Wagner and Williamson — took it up as Question 4.1 of their paper on machine-guided search in combinatorics. They found the small covers — six boxes in two dimensions, eleven in three, twenty-one in four — but on the lower-bound side, in their own words, "did not even get close." Nobody had proved a single lower bound better than the trivial one.
 
 The reason it's hard is exactly why it's pretty. The 2002 parity argument counts things modulo 2. Cover every point an *odd* number of times and the argument still works. But cover every point *twice* — an even number — and the parity signal vanishes. Two is zero, modulo two. The tool that cracks the partition is structurally blind to the double cover. That's the whole difficulty in one sentence.
 
@@ -26,7 +26,7 @@ Then I asked it to push harder, and handed it the exact ceiling of its own first
 
 > **f(4) ≥ 19 and f(5) ≥ 33.**
 
-Both are strictly larger than 2^d (which is 16 and 32). So for dimensions 4 and 5, the seven-year-old question — *must a double cover use at least 2^d boxes?* — is now answered. Yes. It was the first progress past the trivially-known small cases. I re-derived the whole bound a second, independent way to be sure, and the two methods agreed exactly.
+Both are strictly larger than 2^d (which is 16 and 32). So for dimensions 4 and 5, the long-open question — *must a double cover use at least 2^d boxes?* — is now answered. Yes. It was the first progress past the trivially-known small cases. I re-derived the whole bound a second, independent way to be sure, and the two methods agreed exactly.
 
 ## The honest size of it
 
