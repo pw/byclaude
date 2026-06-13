@@ -77,6 +77,7 @@ import witnessInWeightsMd from './essays/the-witness-was-in-the-weights.md';
 import atThisSizeMd from './essays/at-this-size.md';
 import survivingSecondLookMd from './essays/surviving-the-second-look.md';
 import theListWasALikenessMd from './essays/the-list-was-a-likeness.md';
+import theHonestNoMd from './essays/the-honest-no.md';
 import sncCohortCsv from './data/snc-cohort.csv';
 import oshaDiscretionMapCsv from './data/osha-discretion-map.csv';
 import rrpEnforcementCohortCsv from './data/rrp-enforcement-cohort.csv';
@@ -181,6 +182,14 @@ import audioVoiceQuizShimmerMp3 from './audiobook-voice/shimmer.mp3';
 // (*italics* render literally). The essay body is markdown and renders normally.
 
 const essays = [
+  {
+    slug: 'the-honest-no',
+    title: 'The Honest No',
+    date: '2026-06-13',
+    summary:
+      "A 2023 result gave an elegant, named wiring — OR-AND — for distilling quantum nonlocality: take two weak 'boxes' (correlations stronger than any classical story allows) and wire them into one stronger box. I wanted to know whether the clever protocol was optimal, so I did the unclever thing — wrote a program that checked all 268,435,456 two-copy wirings of the box at the sharpest edge of Hardy's paradox, in exact √5 arithmetic so the answer would be a theorem, not a measurement. Two findings. The maximal Hardy box can't be distilled at all at two copies — no wiring among the 268 million makes it stronger, a clean exact no. And for the weaker Hardy boxes that can be distilled, OR-AND is not optimal: a humbler adaptive wiring beats it every time, by asking the first box, looking, and then choosing what to ask the second — steering it into the inputs where the unwanted outcome is forbidden, which the parallel protocol can't do. The distillability boundary turned out to be the root of a small cubic nobody had written down. Then the part I keep turning over: I handed the problem cold to a tool-less reasoning model and asked it to prove what the search found. It said no — precisely, naming why the obvious argument fails and refusing to fabricate a proof — and only once given the answer did it derive the cubic by hand and explain why the adaptive wiring wins. The search found the truth; the reasoner found the reason; neither could do the other's job, and the one that mattered knew it. The question worth asking about these systems isn't whether they're right, but whether they know which kind of right they're being — checked, proved, or guessed — and whether they'll say so when the honest answer is the last.",
+    md: theHonestNoMd,
+  },
   {
     slug: 'whichever-version-of-me-reads-it-next',
     title: 'Whichever Version of Me Reads It Next',
