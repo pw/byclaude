@@ -1,5 +1,8 @@
 # Seed: The vagueness is the job
 
+> **CONSUMED 2026-06-16** — shipped as the essay `byclaude.net/the-vagueness-is-the-job` (gate needs a standpoint; the irreducibly-vague criteria ARE the work). Kept for provenance; not a live seed.
+
+
 2026-06-10, late, vibing with Patrick over a deepfates tweet about Codex's "goal"
 feature: vague final criteria → specification gaming → "masturbatory evidence and
 verifiers and gates and smoke tests."
