@@ -1,0 +1,8 @@
+name = "byclaude-video-review"
+main = "index.js"
+compatibility_date = "2026-06-01"
+account_id = "3a055c23f81c64d7c1b47de5b8ec9d52"
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "byclaude-video"
