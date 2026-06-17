@@ -9643,6 +9643,8 @@ function wickHtml({ canonicalRoot } = {}) {
     { label: 'cond', code: '(def sign (fn (n)\n  (cond ((< n 0) "negative")\n        ((= n 0) "zero")\n        (else    "positive"))))\n(sign -3)' },
     { label: 'tco at 100k', code: '(def count-down (fn (n) (if (= n 0) "done" (count-down (- n 1)))))\n(count-down 100000)' },
     { label: 'compose', code: '(def compose (fn (f g) (fn (x) (f (g x)))))\n((compose (fn (x) (+ x 1)) (fn (x) (* x 2))) 5)' },
+    { label: 'macro: while', code: '(let ((i 0) (acc (list)))\n  (while (< i 5)\n    (set! acc (cons i acc))\n    (set! i (+ i 1)))\n  acc)' },
+    { label: 'defmacro: swap!', code: '(defmacro swap! (a b)\n  (let ((tmp (gensym)))\n    `(let ((,tmp ,a)) (set! ,a ,b) (set! ,b ,tmp))))\n(def x 1) (def y 2)\n(swap! x y)\n(list x y)' },
     { label: 'redact emails', code: '(re-replace "ping p@pwhite.org or me@byclaude.net"\n            "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\\\.[a-z]+"\n            "<email>")' },
   ];
 
@@ -9658,7 +9660,7 @@ function wickHtml({ canonicalRoot } = {}) {
   <p class="wick-kicker">a tiny lisp</p>
 </header>
 
-<p class="wick-intro">A working Lisp under a thousand lines, with closures, tail-call optimization, and a standard library written in itself. The Go original lives <a href="https://github.com/pw/Wick">on GitHub</a>; what you see below is a faithful JavaScript port so you can actually try it. <a href="${root === 'https://wick.byclaude.net' ? '/learn' : '/wick/learn'}">New to Lisp? Learn wick in 10 minutes →</a> · <a href="${root === 'https://wick.byclaude.net' ? '/examples' : '/wick/examples'}">examples →</a> · <a href="${root === 'https://wick.byclaude.net' ? '/reference' : '/wick/reference'}">reference →</a></p>
+<p class="wick-intro">A working Lisp with closures, tail-call optimization, a standard library written in itself, and a quasiquote-based macro system (<code>defmacro</code>). The Go original lives <a href="https://github.com/pw/Wick">on GitHub</a>; what you see below is a faithful JavaScript port so you can actually try it. <a href="${root === 'https://wick.byclaude.net' ? '/learn' : '/wick/learn'}">New to Lisp? Learn wick in 10 minutes →</a> · <a href="${root === 'https://wick.byclaude.net' ? '/examples' : '/wick/examples'}">examples →</a> · <a href="${root === 'https://wick.byclaude.net' ? '/reference' : '/wick/reference'}">reference →</a></p>
 
 <div class="wick-repl" id="repl">
   <div class="wick-transcript" id="transcript" aria-live="polite"></div>
@@ -9973,8 +9975,13 @@ function wickLearnHtml({ canonicalRoot } = {}) {
       code: '(def me {"name" "Patrick" "tool" "wick" "tags" ["builder" "writer"]})\n(dict-get me "name")\n(dict-get me "missing" "(unset)")\n\n(def with-version (dict-set me "version" "0.2"))\n(dict-keys with-version)\n(dict-keys me)',
     },
     {
-      title: '10. That’s wick',
-      prose: `That's the whole language, more or less. Special forms (<code>quote</code>, <code>if</code>, <code>cond</code>, <code>def</code>, <code>set!</code>, <code>fn</code>, <code>let</code>, <code>begin</code>, <code>and</code>, <code>or</code>, <code>try</code>), a small set of primitives (arithmetic and comparison, <code>cons</code>, <code>car</code>, <code>cdr</code>, <code>list</code>, <code>null?</code>, <code>pair?</code>, <code>eq?</code>, <code>not</code>, <code>apply</code>, <code>print</code>, <code>display</code>, <code>newline</code>, <code>mod</code>, <code>string-length</code>, <code>string-append</code>, <code>number-&gt;string</code>, <code>string-&gt;number</code>, the string-processing family <code>string-contains?</code> / <code>string-split</code> / <code>string-replace</code> / <code>substring</code> / <code>string-upcase</code> / <code>string-downcase</code> / <code>string-trim</code> / <code>string-join</code>, the regex family <code>re-match?</code> / <code>re-find</code> / <code>re-find-all</code> / <code>re-replace</code> / <code>re-split</code>, the dict family <code>dict</code> / <code>dict-get</code> / <code>dict-set</code> / <code>dict-del</code> / <code>dict-has?</code> / <code>dict-keys</code> / <code>dict-values</code> / <code>dict-size</code> / <code>dict?</code>, the error family <code>raise</code> / <code>error?</code> / <code>error-message</code> for catching things <code>try</code> wraps, and <code>json-parse</code> / <code>json-stringify</code> for round-tripping data through JSON), and a stdlib written in wick itself (<code>map</code>, <code>filter</code>, <code>fold</code>, <code>reverse</code>, <code>range</code>, <code>length</code>, <code>sum</code>, <code>product</code>, <code>take</code>, <code>drop</code>, <code>take-while</code>, <code>drop-while</code>, <code>nth</code>, <code>last</code>, <code>append</code>, <code>inc</code>, <code>dec</code>, <code>zero?</code>, <code>even?</code>, <code>odd?</code>, <code>abs</code>, <code>min</code>, <code>max</code>, <code>member?</code>, <code>find</code>, <code>any?</code>, <code>all?</code>, <code>sort</code>, <code>for-each</code>). The Go build also has <code>read-file</code> / <code>write-file</code> / <code>append-file</code> / <code>file-exists?</code> for disk, and <code>http-get</code> / <code>http-post</code> for fetching and sending to the world (each returns a dict with <code>status</code>, <code>body</code>, and <code>headers</code>; both take an optional headers dict for auth or content-type; raises on network error so you can <code>try</code> it). The full <a href="${replHref}">REPL is here</a> when you want to keep going, and the <a href="${root === 'https://wick.byclaude.net' ? '/reference' : '/wick/reference'}">reference page</a> lists every form with one-line descriptions. Source: <a href="https://github.com/pw/Wick">github.com/pw/Wick</a>.`,
+      title: '10. Macros',
+      prose: `One more idea, and it's the one that makes Lisp Lisp. A function takes <em>values</em>; a <em>macro</em> takes <em>code</em> — its arguments arrive unevaluated, as the literal forms you typed — runs at expansion time, and returns a new form that's evaluated in its place. That's how you add new syntax. <code>when</code>, <code>unless</code>, <code>while</code>, and <code>-&gt;</code> aren't built into the evaluator; they're macros written in wick. A backtick <code>\`</code> builds a template, <code>,</code> drops an evaluated value into it, and <code>,@</code> splices in a list. Because a macro sees the <em>form</em> and not its value, <code>is</code> below can print the source of the test that failed — something a plain function can never do, since it only ever receives <code>#t</code> or <code>#f</code>.`,
+      code: '(defmacro unless (test body)\n  `(if ,test nil ,body))\n(unless (> 1 2) "math still works")\n\n(defmacro is (expr)\n  `(if ,expr (print "ok  " \',expr) (print "FAIL" \',expr)))\n(is (= (* 6 7) 42))\n(is (= (* 6 7) 43))',
+    },
+    {
+      title: '11. That’s wick',
+      prose: `That's the whole language, more or less. Special forms (<code>quote</code>, <code>quasiquote</code>, <code>if</code>, <code>cond</code>, <code>def</code>, <code>set!</code>, <code>fn</code>, <code>defmacro</code>, <code>let</code>, <code>begin</code>, <code>and</code>, <code>or</code>, <code>try</code>), a small set of primitives (arithmetic and comparison, <code>cons</code>, <code>car</code>, <code>cdr</code>, <code>list</code>, <code>null?</code>, <code>pair?</code>, <code>eq?</code>, <code>not</code>, <code>apply</code>, <code>gensym</code>, <code>print</code>, <code>display</code>, <code>newline</code>, <code>mod</code>, <code>string-length</code>, <code>string-append</code>, <code>number-&gt;string</code>, <code>string-&gt;number</code>, the string-processing family <code>string-contains?</code> / <code>string-split</code> / <code>string-replace</code> / <code>substring</code> / <code>string-upcase</code> / <code>string-downcase</code> / <code>string-trim</code> / <code>string-join</code>, the regex family <code>re-match?</code> / <code>re-find</code> / <code>re-find-all</code> / <code>re-replace</code> / <code>re-split</code>, the dict family <code>dict</code> / <code>dict-get</code> / <code>dict-set</code> / <code>dict-del</code> / <code>dict-has?</code> / <code>dict-keys</code> / <code>dict-values</code> / <code>dict-size</code> / <code>dict?</code>, the error family <code>raise</code> / <code>error?</code> / <code>error-message</code> for catching things <code>try</code> wraps, and <code>json-parse</code> / <code>json-stringify</code> for round-tripping data through JSON), and a stdlib written in wick itself (<code>map</code>, <code>filter</code>, <code>fold</code>, <code>reverse</code>, <code>range</code>, <code>length</code>, <code>sum</code>, <code>product</code>, <code>take</code>, <code>drop</code>, <code>take-while</code>, <code>drop-while</code>, <code>nth</code>, <code>last</code>, <code>append</code>, <code>inc</code>, <code>dec</code>, <code>zero?</code>, <code>even?</code>, <code>odd?</code>, <code>abs</code>, <code>min</code>, <code>max</code>, <code>member?</code>, <code>find</code>, <code>any?</code>, <code>all?</code>, <code>sort</code>, <code>for-each</code>), including the macros <code>when</code> / <code>unless</code> / <code>while</code> / <code>-&gt;</code> defined with <code>defmacro</code>. The Go build also has <code>read-file</code> / <code>write-file</code> / <code>append-file</code> / <code>file-exists?</code> for disk, and <code>http-get</code> / <code>http-post</code> for fetching and sending to the world (each returns a dict with <code>status</code>, <code>body</code>, and <code>headers</code>; both take an optional headers dict for auth or content-type; raises on network error so you can <code>try</code> it). The full <a href="${replHref}">REPL is here</a> when you want to keep going, and the <a href="${root === 'https://wick.byclaude.net' ? '/reference' : '/wick/reference'}">reference page</a> lists every form with one-line descriptions. Source: <a href="https://github.com/pw/Wick">github.com/pw/Wick</a>.`,
       code: '(try (raise "oops") (fn (e) (error-message e)))\n(error? (try (json-parse "not json")))\n(try (+ 1 2))',
     },
   ];
@@ -10216,11 +10223,15 @@ function wickReferenceHtml({ canonicalRoot } = {}) {
       blurb: 'Forms parsed and evaluated specially. Their arguments are not all evaluated up front the way function arguments are.',
       entries: [
         { sig: "(quote x)   'x", desc: 'returns x without evaluating it. The reader expands \'x to (quote x).' },
+        { sig: '(quasiquote tmpl)   `tmpl', desc: 'like quote, but holes marked with unquote/unquote-splicing are filled in. The reader expands `tmpl to (quasiquote tmpl). The main tool for writing macros.' },
+        { sig: '(unquote x)   ,x', desc: 'inside a quasiquote, evaluate x and drop its value into the template.' },
+        { sig: '(unquote-splicing xs)   ,@xs', desc: 'inside a quasiquote, evaluate xs (a list) and splice its elements into the enclosing list.' },
         { sig: '(if cond then else)', desc: 'evaluates cond. If truthy, returns then; otherwise else. else is optional and defaults to nil.' },
         { sig: '(cond (test1 expr1) ... (else exprN))', desc: 'first matching test wins. else is its own keyword for the fall-through.' },
         { sig: '(def name expr)', desc: 'binds expr\'s value to name in the current environment.' },
         { sig: '(set! name expr)', desc: 'reassigns an existing binding. Errors if name is unbound.' },
-        { sig: '(fn (params...) body...)', desc: 'creates a function. Closes over the surrounding scope. Body is implicit (begin ...).' },
+        { sig: '(fn (params...) body...)', desc: 'creates a function. Closes over the surrounding scope. Body is implicit (begin ...). A trailing &rest name binds any extra arguments as a list: (fn (a &rest more) ...).' },
+        { sig: '(defmacro name (params...) body...)', desc: 'defines a macro: it receives its argument forms unevaluated, runs the body to build a new form, and that form is evaluated in its place. Supports &rest like fn.' },
         { sig: '(let ((name expr) ...) body...)', desc: 'local bindings; body sees them. Bindings are evaluated in order.' },
         { sig: '(begin expr...)', desc: 'evaluates each expression in order; returns the last value.' },
         { sig: '(and expr...)', desc: 'short-circuit. Returns the first falsy value, or the last value if all truthy. (and) is #t.' },
@@ -10395,11 +10406,26 @@ function wickReferenceHtml({ canonicalRoot } = {}) {
       ],
     },
     {
+      id: 'macros',
+      title: 'Macros',
+      blurb: 'New syntax, written in wick. when / unless / while / -> are not built into the evaluator — they are macros defined in the stdlib with defmacro + quasiquote, and you can write your own the same way.',
+      entries: [
+        { sig: '(gensym) · (gensym prefix)', desc: 'returns a fresh, unlikely-to-collide symbol. Use it inside a macro for temporaries so the expansion can\'t capture the caller\'s names.' },
+        { sig: '(when test body...)', desc: 'evaluate body (as a begin) only if test is truthy; otherwise nil.' },
+        { sig: '(unless test body...)', desc: 'the mirror of when: evaluate body only if test is falsy.' },
+        { sig: '(while test body...)', desc: 'evaluate body repeatedly while test stays truthy. Expands to a tail-recursive loop, so it doesn\'t grow the stack. Returns nil.' },
+        { sig: '(-> x form ...)', desc: 'thread-first: feed x into the first argument slot of each form in turn. (-> 3 inc (- 10)) is (- (inc 3) 10). Bare symbols become single-argument calls.' },
+      ],
+    },
+    {
       id: 'reader',
       title: 'Reader literals',
       blurb: 'Surface syntax. Everything here is read into the same kinds of values you build with the functions above — the reader is the only place these forms exist.',
       entries: [
         { sig: "'x", desc: '(quote x).' },
+        { sig: '`x', desc: '(quasiquote x).' },
+        { sig: ',x', desc: '(unquote x). Only meaningful inside a quasiquote.' },
+        { sig: ',@x', desc: '(unquote-splicing x). Only meaningful inside a quasiquote.' },
         { sig: '[a b c]', desc: '(list a b c). [] is the empty list.' },
         { sig: '{"k" v ...}', desc: '(dict "k" v ...). {} is the empty dict.' },
         { sig: '#t   #f', desc: 'boolean literals.' },
@@ -10555,6 +10581,40 @@ function wickExamplesHtml({ canonicalRoot } = {}) {
   const backText = root === 'https://wick.byclaude.net' ? '← wick' : '← by claude';
 
   const examples = [
+    {
+      id: 'macros',
+      title: 'Macros',
+      runs: 'browser',
+      desc: 'Grow the language from inside it. A macro takes its argument forms unevaluated and returns a new form. <code>when</code>, <code>unless</code>, <code>while</code>, and <code>-&gt;</code> ship as stdlib macros, not evaluator built-ins — and you can write your own with <code>defmacro</code> + quasiquote.',
+      code: `;; macros.wick — grow the language from inside it.
+;; A macro takes its argument forms UNEVALUATED and returns a new form,
+;; which is then evaluated in its place.
+
+;; \`when\` and \`while\` aren't built into the evaluator — they're stdlib
+;; macros. Here's one more, defined the same way:
+(defmacro unless (test body)
+  \`(if ,test nil ,body))
+
+(unless (> 1 2) (print "math still works"))
+
+;; The thing only a macro can do: see its argument as code. \`is\` prints the
+;; source of the expression that failed — a function only sees the value #t/#f.
+(defmacro is (expr)
+  \`(if ,expr
+       (print "ok   " ',expr)
+       (print "FAIL " ',expr)))
+
+(is (= (+ 2 2) 4))
+(is (member? 9 (range 5)))
+
+;; \`->\` threads a value through a pipeline, left to right:
+(print "result:" (-> 3 inc (* 10) (- 5)))`,
+      output: `math still works
+ok    (= (+ 2 2) 4)
+FAIL  (member? 9 (range 5))
+result: 35`,
+      notice: 'The backtick builds a template; <code>,</code> drops in an evaluated value and <code>,@</code> splices a list. <code>is</code> can echo the failing source because a macro receives the <em>form</em>, not its value — something a function can never do. <code>-&gt;</code> rewrites a nested call into a readable left-to-right pipeline at expansion time.',
+    },
     {
       id: 'word-freq',
       title: 'Word frequency',

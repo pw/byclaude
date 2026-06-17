@@ -32,6 +32,7 @@
         return '{' + parts.join(' ') + '}';
       }
       case 'fn': return '#<fn>';
+      case 'macro': return '#<macro>';
       case 'builtin': return '#<builtin ' + v.name + '>';
       case 'err': return '(error ' + JSON.stringify(v.value) + ')';
     }
@@ -121,7 +122,12 @@
       const c = src[i];
       if (c === ' ' || c === '\t' || c === '\n' || c === '\r') { i++; continue; }
       if (c === ';') { while (i < src.length && src[i] !== '\n') i++; continue; }
-      if (c === '(' || c === ')' || c === '[' || c === ']' || c === '{' || c === '}' || c === "'") { toks.push(c); i++; continue; }
+      if (c === '(' || c === ')' || c === '[' || c === ']' || c === '{' || c === '}' || c === "'" || c === '`') { toks.push(c); i++; continue; }
+      if (c === ',') {
+        if (i + 1 < src.length && src[i + 1] === '@') { toks.push(',@'); i += 2; }
+        else { toks.push(','); i++; }
+        continue;
+      }
       if (c === '"') {
         let j = i + 1;
         while (j < src.length && src[j] !== '"') {
@@ -134,7 +140,7 @@
         continue;
       }
       let j = i;
-      while (j < src.length && !" \t\n\r()[]{}';\"".includes(src[j])) j++;
+      while (j < src.length && !" \t\n\r()[]{}';\"`,".includes(src[j])) j++;
       toks.push(src.slice(i, j));
       i = j;
     }
@@ -185,6 +191,21 @@
       if (v === null) throw new Error("quote: missing arg");
       return list([sym('quote'), v]);
     }
+    if (t === '`') {
+      const v = read(toks, pos);
+      if (v === null) throw new Error("quasiquote: missing arg");
+      return list([sym('quasiquote'), v]);
+    }
+    if (t === ',') {
+      const v = read(toks, pos);
+      if (v === null) throw new Error("unquote: missing arg");
+      return list([sym('unquote'), v]);
+    }
+    if (t === ',@') {
+      const v = read(toks, pos);
+      if (v === null) throw new Error("unquote-splicing: missing arg");
+      return list([sym('unquote-splicing'), v]);
+    }
     return atom(t);
   }
 
@@ -230,6 +251,76 @@
     throw new Error('set!: unbound: ' + name);
   }
 
+  // ---------- Params, argument binding, quasiquote ----------
+
+  // parseParams reads a parameter list that may end in `&rest name`.
+  function parseParams(plistValue) {
+    const params = [];
+    for (let i = 0; i < plistValue.length; i++) {
+      const p = plistValue[i];
+      if (p.tag !== 'sym') throw new Error('params must be symbols');
+      if (p.value === '&rest') {
+        if (i !== plistValue.length - 2) throw new Error('&rest must be followed by exactly one name');
+        const r = plistValue[i + 1];
+        if (r.tag !== 'sym') throw new Error('&rest name must be a symbol');
+        return { params, rest: r.value };
+      }
+      params.push(p.value);
+    }
+    return { params, rest: null };
+  }
+
+  // bindArgs creates a child env with params bound to args, honouring &rest.
+  function bindArgs(params, rest, args, defEnv, what) {
+    const sub = newEnv(defEnv);
+    if (rest !== null && rest !== undefined) {
+      if (args.length < params.length) {
+        throw new Error(`${what}: need at least ${params.length} args, got ${args.length}`);
+      }
+      for (let i = 0; i < params.length; i++) envSet(sub, params[i], args[i]);
+      envSet(sub, rest, list(args.slice(params.length)));
+      return sub;
+    }
+    if (args.length !== params.length) {
+      throw new Error(`${what}: need ${params.length} args, got ${args.length}`);
+    }
+    for (let i = 0; i < params.length; i++) envSet(sub, params[i], args[i]);
+    return sub;
+  }
+
+  // quasiquote expands a template: structure is preserved, (unquote x) holes
+  // are evaluated, (unquote-splicing x) holes are evaluated and spliced in.
+  function quasiquote(t, env, depth) {
+    if (t.tag !== 'list') return t;
+    const xs = t.value;
+    if (xs.length === 2 && xs[0].tag === 'sym') {
+      if (xs[0].value === 'unquote') {
+        if (depth === 1) return evalExpr(xs[1], env);
+        return list([sym('unquote'), quasiquote(xs[1], env, depth - 1)]);
+      }
+      if (xs[0].value === 'quasiquote') {
+        return list([sym('quasiquote'), quasiquote(xs[1], env, depth + 1)]);
+      }
+    }
+    const out = [];
+    for (const el of xs) {
+      if (el.tag === 'list' && el.value.length === 2 && el.value[0].tag === 'sym'
+          && el.value[0].value === 'unquote-splicing') {
+        if (depth === 1) {
+          const spliced = evalExpr(el.value[1], env);
+          if (spliced.tag === 'list') { for (const s of spliced.value) out.push(s); }
+          else if (spliced.tag === 'nil') { /* splices nothing */ }
+          else throw new Error('unquote-splicing: not a list: ' + show(spliced));
+          continue;
+        }
+        out.push(list([sym('unquote-splicing'), quasiquote(el.value[1], env, depth - 1)]));
+        continue;
+      }
+      out.push(quasiquote(el, env, depth));
+    }
+    return list(out);
+  }
+
   // ---------- Eval (trampoline for TCO) ----------
   function evalExpr(v, env) {
     while (true) {
@@ -249,6 +340,13 @@
               case 'quote':
                 if (xs.length !== 2) throw new Error('quote: need 1 arg');
                 return xs[1];
+              case 'quasiquote':
+                if (xs.length !== 2) throw new Error('quasiquote: need 1 arg');
+                return quasiquote(xs[1], env, 1);
+              case 'unquote':
+                throw new Error('unquote outside quasiquote');
+              case 'unquote-splicing':
+                throw new Error('unquote-splicing outside quasiquote');
               case 'if': {
                 if (xs.length < 3 || xs.length > 4) throw new Error('if: need 2 or 3 args');
                 const cond = evalExpr(xs[1], env);
@@ -296,11 +394,21 @@
               case 'fn': {
                 if (xs.length < 3) throw new Error('fn: need params + body');
                 if (xs[1].tag !== 'list') throw new Error('fn: params must be list');
-                const params = xs[1].value.map((p) => {
-                  if (p.tag !== 'sym') throw new Error('fn: params must be symbols');
-                  return p.value;
-                });
-                return { tag: 'fn', params, body: xs.slice(2), env };
+                let parsed;
+                try { parsed = parseParams(xs[1].value); }
+                catch (e) { throw new Error('fn: ' + e.message); }
+                return { tag: 'fn', params: parsed.params, rest: parsed.rest, body: xs.slice(2), env };
+              }
+              case 'defmacro': {
+                if (xs.length < 4) throw new Error('defmacro: need name + params + body');
+                if (xs[1].tag !== 'sym') throw new Error('defmacro: name must be a symbol');
+                if (xs[2].tag !== 'list') throw new Error('defmacro: params must be a list');
+                let parsed;
+                try { parsed = parseParams(xs[2].value); }
+                catch (e) { throw new Error('defmacro: ' + e.message); }
+                const m = { tag: 'macro', params: parsed.params, rest: parsed.rest, body: xs.slice(3), env };
+                envSet(env, xs[1].value, m);
+                return m;
               }
               case 'let': {
                 if (xs.length < 3) throw new Error('let: need bindings + body');
@@ -357,11 +465,7 @@
                 const handler = evalExpr(xs[2], env);
                 if (handler.tag === 'builtin') return handler.f([errVal]);
                 if (handler.tag === 'fn') {
-                  if (handler.params.length !== 1) {
-                    throw new Error(`try: handler must take 1 arg, got ${handler.params.length}`);
-                  }
-                  const sub = newEnv(handler.env);
-                  envSet(sub, handler.params[0], errVal);
+                  const sub = bindArgs(handler.params, handler.rest, [errVal], handler.env, 'try handler');
                   for (let m = 0; m < handler.body.length - 1; m++) evalExpr(handler.body[m], sub);
                   v = handler.body[handler.body.length - 1];
                   env = sub;
@@ -371,17 +475,22 @@
               }
             }
           }
-          // function application
+          // macro or function application
           const fn = evalExpr(xs[0], env);
+          // A macro takes its argument forms unevaluated, runs to produce a new
+          // form, and we loop on that form in place (keeps TCO).
+          if (fn.tag === 'macro') {
+            const sub = bindArgs(fn.params, fn.rest, xs.slice(1), fn.env, 'macro');
+            let expansion = NIL;
+            for (const b of fn.body) expansion = evalExpr(b, sub);
+            v = expansion;
+            continue;
+          }
           const args = new Array(xs.length - 1);
           for (let k = 1; k < xs.length; k++) args[k - 1] = evalExpr(xs[k], env);
           if (fn.tag === 'builtin') return fn.f(args);
           if (fn.tag === 'fn') {
-            if (args.length !== fn.params.length) {
-              throw new Error(`arity: need ${fn.params.length}, got ${args.length}`);
-            }
-            const sub = newEnv(fn.env);
-            for (let k = 0; k < fn.params.length; k++) envSet(sub, fn.params[k], args[k]);
+            const sub = bindArgs(fn.params, fn.rest, args, fn.env, 'arity');
             for (let m = 0; m < fn.body.length - 1; m++) evalExpr(fn.body[m], sub);
             env = sub;
             v = fn.body[fn.body.length - 1];
@@ -495,16 +604,19 @@
       else throw new Error('apply: second arg must be list');
       if (fn.tag === 'builtin') return fn.f(callArgs);
       if (fn.tag === 'fn') {
-        if (callArgs.length !== fn.params.length) {
-          throw new Error(`arity: need ${fn.params.length}, got ${callArgs.length}`);
-        }
-        const sub = newEnv(fn.env);
-        for (let i = 0; i < fn.params.length; i++) envSet(sub, fn.params[i], callArgs[i]);
+        const sub = bindArgs(fn.params, fn.rest, callArgs, fn.env, 'arity');
         let last = NIL;
         for (const b of fn.body) last = evalExpr(b, sub);
         return last;
       }
       throw new Error(`apply: not callable: ${show(fn)}`);
+    }});
+    let gensymCounter = 0;
+    envSet(env, 'gensym', { tag: 'builtin', name: 'gensym', f: (args) => {
+      gensymCounter++;
+      let prefix = 'g';
+      if (args.length === 1 && (args[0].tag === 'str' || args[0].tag === 'sym')) prefix = args[0].value;
+      return sym(`__${prefix}${gensymCounter}`);
     }});
     envSet(env, 'string-length', { tag: 'builtin', name: 'string-length', f: (args) => {
       if (args.length !== 1) throw new Error('string-length: need 1 arg');
@@ -853,6 +965,36 @@
 (def for-each (fn (f xs)
   (if (null? xs) nil
       (begin (f (car xs)) (for-each f (cdr xs))))))
+
+; ---- macros (written in wick, using quasiquote + &rest) ----
+; In a real .wick file you'd write the quasiquote/unquote reader sugar; here
+; we spell out the special forms it desugars to (this stdlib is itself a
+; template literal). The two are exactly equivalent.
+
+(defmacro when (test &rest body)
+  (quasiquote (if (unquote test) (begin (unquote-splicing body)) nil)))
+
+(defmacro unless (test &rest body)
+  (quasiquote (if (unquote test) nil (begin (unquote-splicing body)))))
+
+(defmacro while (test &rest body)
+  (let ((loop (gensym "while")))
+    (quasiquote
+      (begin
+        (def (unquote loop)
+          (fn () (if (unquote test)
+                     (begin (unquote-splicing body) ((unquote loop)))
+                     nil)))
+        ((unquote loop))))))
+
+(defmacro -> (x &rest forms)
+  (if (null? forms)
+      x
+      (let ((form (car forms)))
+        (let ((step (if (pair? form)
+                        (quasiquote ((unquote (car form)) (unquote x) (unquote-splicing (cdr form))))
+                        (list form x))))
+          (quasiquote (-> (unquote step) (unquote-splicing (cdr forms))))))))
 `;
 
   function runSource(src, env) {
