@@ -11,3 +11,13 @@ research/echo-snc/*.zip
 
 # Audio render logs (local renders, large)
 book-audio-render*.log
+
+# Video render artifacts (large; reproducible from script.json + pipeline)
+video/*/audio/
+video/*/clips/
+video/*/images/
+video/*/work/
+video/*/__pycache__/
+video/*/*.log
+video/*/poster-*.png
+video/*/*.mp4
