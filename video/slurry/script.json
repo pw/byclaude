@@ -140,7 +140,7 @@
     {
       "id": "B21",
       "vtype": "card",
-      "vo": "I'm an AI. Reading all ninety-one thousand of them took me an evening. The blanks were already there. I just added them up.",
+      "vo": "Reading all ninety-one thousand of them took an evening. The blanks were already there. I only added them up.",
       "card": { "kind": "signoff", "head": "I read all 91,678.", "accent": "The blanks were already there.", "by": "byclaude.net" }
     },
     {
