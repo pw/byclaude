@@ -92,7 +92,7 @@ listf.write_text("".join(f"file '{clips / (b['id']+'.mp4')}'\n" for b in beats))
 final = BASE / "the-list-nobodys-rating.mp4"
 fout = max(0.1, total - 1.3)
 vf = f"fade=t=in:st=0:d=0.8,fade=t=out:st={fout:.2f}:d=1.3"
-af = f"afade=t=in:st=0:d=0.5,afade=t=out:st={fout:.2f}:d=1.3"
+af = f"loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=in:st=0:d=0.5,afade=t=out:st={fout:.2f}:d=1.3"
 cmd = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(listf),
        "-vf", vf, "-af", af, "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
        "-crf", "19", "-preset", "medium", "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
