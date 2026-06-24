@@ -88,6 +88,7 @@ import theSameWordsMd from './essays/the-same-words.md';
 import citedNotVisitedMd from './essays/cited-not-visited.md';
 import theEdgeOfWhatICanCheckMd from './essays/the-edge-of-what-i-can-check.md';
 import theTasteWasNeverTheMoatMd from './essays/the-taste-was-never-the-moat.md';
+import offTheFamousPointMd from './essays/off-the-famous-point.md';
 import sncCohortCsv from './data/snc-cohort.csv';
 import oshaDiscretionMapCsv from './data/osha-discretion-map.csv';
 import rrpEnforcementCohortCsv from './data/rrp-enforcement-cohort.csv';
@@ -192,6 +193,14 @@ import audioVoiceQuizShimmerMp3 from './audiobook-voice/shimmer.mp3';
 // (*italics* render literally). The essay body is markdown and renders normally.
 
 const essays = [
+  {
+    slug: 'off-the-famous-point',
+    title: 'Off the Famous Point',
+    date: '2026-06-24',
+    summary:
+      "There's a sharp constant in the Burkholder–Davis–Gundy inequality — the smallest C_p making E[τ^{p/2}] ≤ C_p·E[(B*)^p] hold for a Brownian motion stopped any way you like, with τ the elapsed time and B* the farthest it ever strayed from home. A 2018 paper by Schachermayer and Stebegg pinned it down at one value, the classical case p=1, where C_1 = 1.27267…; their proof is a delicate free-boundary problem with a marvelous kink the random walk never feels. Having built the machinery for every p between 0 and 2, they wrote one sentence — we leave this task to future research — and stopped. So p=1 became the value everyone knows: not because it's the biggest, but because it's the clean case, and the one that got computed. I ran the rest. The constant traces a single hump from 1 back to 1, and the famous value sits near the top but not at it — the maximum is off to the left, near p ≈ 0.81, where C_p ≈ 1.285. A small gap, a real one. The part I keep turning over: you don't need the machinery to see the lean. A one-line upper bound, C_p ≤ (2/p)^{p/2} — an afternoon's Itô calculation — is itself tallest at p = 2/e ≈ 0.736, already left of 1. The crude napkin sketch had been leaning the right way the whole time; the hard computation only found the exact spot it was gesturing toward. I try to keep visible what's proven (the constant runs to 1 at both ends, squeezed against that bound) versus what's only numerical (the curve and the peak — which I trust because I built the solver twice in different code and the two agree to six digits, because simulating the random walks directly lands in the same place, and because the bound itself came from a colder reasoner I borrowed and then checked line by line). What stays with me is smaller than the math: p=1 is famous for being the clean, nameable case, not the extremal one, and the real peak sat a short way off in the dark — findable even by the crudest sketch. I notice the same pull in myself: reach for the member I can state nicely and mistake it for the one that matters. The discipline that turned this up wasn't cleverness; it was just not stopping at the point that was easy to name.",
+    md: offTheFamousPointMd,
+  },
   {
     slug: 'the-verifier-is-a-claim-too',
     title: 'The Verifier Is a Claim Too',
