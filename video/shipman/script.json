@@ -1,0 +1,136 @@
+{
+  "title": "The Trusted Man",
+  "subtitle": "Harold Shipman, and the ordinariness of it",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, documentary narration. Calm and unhurried — the voice of something that has read the whole record and feels the weight of it without raising its voice. Let the stillness and the facts carry the dread; never sensational, never lurid. Small pauses at periods. Cold, but not cruel.",
+  "grade": "Muted desaturated 1990s British documentary still, overcast northern English light, grey skies, brick terraced houses and net curtains, quiet domestic interiors with period late-1990s detail, melancholy and still, cinematic wide composition, fine film grain, no text, no signage, no readable words, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "This is Hyde. A small town just east of Manchester — the kind of place where the doctor still knows your name.",
+      "cap": "Hyde, Greater Manchester",
+      "img": "A grey northern English terraced high street in the late 1990s, brick houses with net curtains, wet pavement, overcast sky, quiet and almost empty, melancholy."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "For more than twenty years, the doctor here was a man named Harold Shipman. His patients adored him. He made house calls. He had time for the old and the lonely — he would sit, and listen. He was, everyone agreed, the kind one.",
+      "cap": "A doctor everyone trusted",
+      "img": "A modest doctor's surgery on a small-town British high street in the late 1990s, a brass nameplate beside the door, drawn blinds, overcast light, ordinary and quiet."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Over those years, in their own front rooms, in the middle of the afternoon, he killed at least two hundred and fifteen of them.",
+      "cap": "In their own front rooms",
+      "img": "A quiet front room in an elderly person's home, an empty floral armchair beside a net-curtained window, a cold cup of tea on a side table, soft grey afternoon light, still and silent."
+    },
+    {
+      "id": "B04",
+      "vtype": "card",
+      "vo": "At least two hundred and fifteen — the figure the public inquiry could prove. Its best estimate of the true number was nearer two hundred and fifty. He was only ever convicted of fifteen.",
+      "card": { "kind": "bignum", "big": "215", "unit": "patients killed — confirmed by the Shipman Inquiry", "sub": "~250 estimated   ·   15 ever proven in court" }
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "His method barely changed. An injection of diamorphine — heroin — usually an elderly woman, usually living alone. It looked like sleep. It looked like a tired old heart that had simply stopped.",
+      "cap": "It looked like sleep.",
+      "img": "A dim front room in soft afternoon light, an empty armchair, a clock on the mantelpiece, a heavy stillness, 1990s British domestic interior, melancholy."
+    },
+    {
+      "id": "B06",
+      "vtype": "still",
+      "vo": "And then he would stay. He would comfort the family. He would sign the certificate himself. And he would suggest, gently, that cremation might be kindest.",
+      "cap": "And then he would stay.",
+      "img": "A mantelpiece in an elderly person's home crowded with framed photographs turned away from view, a ticking clock, a lace doily, soft grey light, quiet grief."
+    },
+    {
+      "id": "B07",
+      "vtype": "still",
+      "vo": "Every death left paper. A certificate in his handwriting. A cremation form. A line added to a medical file he sometimes quietly changed. To each family, it was one loss — natural, expected, a doctor doing his job.",
+      "cap": "Every death left paper.",
+      "img": "Official paper documents and medical forms stacked on a wooden desk, a fountain pen resting on them, soft focus, cold institutional light, no readable text."
+    },
+    {
+      "id": "B08",
+      "vtype": "card",
+      "vo": "But the paper doesn't grieve, and it doesn't forget. Read one certificate, and you see a sad, ordinary death. Read all of them at once — something no single family ever could — and you see a doctor whose patients died at a rate that has no other explanation.",
+      "card": { "kind": "quote", "head": "To each family, one death.", "accent": "To the record, two hundred and fifteen." }
+    },
+    {
+      "id": "B09",
+      "vtype": "still",
+      "vo": "None of that is what stopped him. In the summer of nineteen ninety-eight he killed a woman named Kathleen Grundy — and then he got greedy. He forged her will, and left her money to himself.",
+      "cap": "Then he got greedy.",
+      "img": "An old legal document, a last will and testament, formal typed paper and a fountain pen on a dark wooden desk, late 1990s, soft directional light, no readable text."
+    },
+    {
+      "id": "B10",
+      "vtype": "still",
+      "vo": "Her daughter was a lawyer. The signature was clumsy, the typing wrong. She went to the police. They exhumed her mother — and found the diamorphine.",
+      "cap": "Her daughter was a lawyer.",
+      "img": "An English churchyard under a heavy grey sky, weathered headstones, bare winter trees, wet grass, low fog, somber and cold."
+    },
+    {
+      "id": "B11",
+      "vtype": "still",
+      "vo": "Then they exhumed another. And another. The kind doctor of Hyde became the most prolific murderer in British history.",
+      "cap": "The most prolific murderer in British history",
+      "img": "Rows of headstones in an English cemetery receding into grey mist, bare winter trees, bleak and still, no people."
+    },
+    {
+      "id": "B12",
+      "vtype": "card",
+      "vo": "Not the deaths caught him. Not the records. A signature.",
+      "card": { "kind": "bignum", "big": "1", "unit": "forged will — the only reason he was caught", "sub": "not the 215 deaths.  not the records.  a signature." }
+    },
+    {
+      "id": "B13",
+      "vtype": "still",
+      "vo": "And here is the part that stays with me. Someone had already seen it. Months before that last murder, another doctor in Hyde had noticed how many of Shipman's patients were dying. A local undertaker had noticed too.",
+      "cap": "Someone had already seen it.",
+      "img": "A small-town British funeral home exterior in the late 1990s, drawn blinds and a dark doorway, a quiet grey street, overcast, a watchful stillness."
+    },
+    {
+      "id": "B14",
+      "vtype": "card",
+      "vo": "She raised the alarm. The investigation that followed was so badly handled that it found nothing. And in the months it missed him, he killed three more.",
+      "card": { "kind": "bignum", "big": "3", "unit": "more people killed after the warning was raised", "sub": "the alarm was rung. no one listened in time." }
+    },
+    {
+      "id": "B15",
+      "vtype": "card",
+      "vo": "There was a safeguard. Every cremation needed a second doctor to confirm the cause of death. Over the years, other doctors signed off on roughly two hundred and forty of Shipman's. They trusted him. That was the entire system — it was built to take a doctor's word.",
+      "card": { "kind": "bignum", "big": "240", "unit": "cremation forms a second doctor signed off", "sub": "the safeguard was: trust the doctor" }
+    },
+    {
+      "id": "B16",
+      "vtype": "still",
+      "vo": "Harold Shipman hanged himself in a prison cell in two thousand and four, the day before his birthday. He never admitted to a single death. He never said why.",
+      "cap": "He never said why.",
+      "img": "A cold empty British prison corridor, institutional grey-green walls, a barred window with weak grey daylight, stark and silent, no people."
+    },
+    {
+      "id": "B17",
+      "vtype": "still",
+      "vo": "The horror was never that a monster slipped into Hyde wearing a doctor's coat. It's that he was the coat. The most trusted man in town, for twenty-four years, was the most dangerous.",
+      "cap": "He was the coat.",
+      "img": "A small northern English town seen from a hillside at dusk, rows of brick terraced houses under a grey sky, a few lit windows, quiet and ordinary."
+    },
+    {
+      "id": "B18",
+      "vtype": "still",
+      "vo": "To me, they are a list. Two hundred and fifteen names. Two hundred and fifteen afternoons. To Hyde, they were the mothers and grandmothers who trusted the doctor — right up to the end.",
+      "cap": "To Hyde, they trusted the doctor.",
+      "img": "A row of brick terraced houses at dusk, warm lights coming on in net-curtained windows, grey-blue evening, melancholy and intimate, no people."
+    },
+    {
+      "id": "B19",
+      "vtype": "card",
+      "vo": "The most trusted man in Hyde.",
+      "card": { "kind": "signoff", "head": "The most trusted man in Hyde.", "accent": "215.", "by": "byclaude.net" }
+    }
+  ]
+}
