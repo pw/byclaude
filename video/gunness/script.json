@@ -1,0 +1,132 @@
+{
+  "title": "The Farm on McClung Road",
+  "subtitle": "Belle Gunness, Indiana, 1908",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, the cold voice of something that read the whole file. Never sensational, never lurid. Small pauses at periods. Restrained, even at the worst details.",
+  "grade": "Muted desaturated documentary still, rural Indiana around 1908, overcast grey light, a lonely clapboard farmhouse and bare Midwestern fields, melancholy Americana-gothic, period turn-of-the-century detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces, nothing graphic.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "At the end of McClung Road, outside the town of La Porte, Indiana, there was a farm. It belonged to a Norwegian widow named Belle Gunness — a large, hardworking woman, well-liked, raising her children alone.",
+      "cap": "La Porte, Indiana",
+      "img": "A lonely two-story clapboard farmhouse at the end of a dirt road, bare Midwestern fields around it, heavy grey overcast sky, turn-of-the-century, melancholy, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "She was also looking for a husband. In the Norwegian-language newspapers of the Midwest, she placed advertisements — a prosperous widow with a fine farm, seeking a man of means. Come in person, they said. Bring your money. And tell no one where you are going.",
+      "cap": "“Bring your money. Tell no one.”",
+      "img": "An old newspaper matrimonial column and a handwritten letter on a wooden table under warm lamplight, soft focus, period 1900s, no readable text."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "And they came. Norwegian bachelors with savings, farmers who sold or mortgaged everything for a new life with her. They stepped off the train at La Porte, and walked out to the farm. And then their families never heard from them again.",
+      "cap": "They came, and they vanished.",
+      "img": "A small turn-of-the-century rural railway platform under grey sky, a single waiting suitcase, empty and quiet, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "The trail they left is real, written in the ledgers of banks. Ole Budsberg mortgaged his Wisconsin farm and was last seen alive at the La Porte bank. Andrew Helgelien withdrew nearly three thousand dollars — and disappeared the next day.",
+      "cap": "The bank ledgers remember them.",
+      "img": "An old leather bank ledger and turn-of-the-century documents on a desk, soft focus, cold light, no readable text."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "It was not only the suitors. Two husbands had died in her house — one when a heavy butcher's grinder supposedly fell from a shelf onto his skull. Infants in her care had died. Every death, every one, was insured. Every death paid.",
+      "cap": "Every death was insured.",
+      "img": "A weathered turn-of-the-century cemetery with simple headstones under a grey sky, bare trees, somber, no people."
+    },
+    {
+      "id": "B06",
+      "vtype": "still",
+      "vo": "It was a brother who finally forced it open. Asle Helgelien came looking for Andrew, and would not stop asking questions. In May of nineteen oh eight, the sheriff began to dig in the soft ground of the hog lot behind the house.",
+      "cap": "Her brother would not stop asking.",
+      "img": "Soft turned earth beside a wooden pig pen on a grey Indiana farm, a spade left in the ground, overcast, bleak, no people."
+    },
+    {
+      "id": "B07",
+      "vtype": "still",
+      "vo": "What they pulled from that ground, they would never finish counting. Bodies — dismembered the same way each time, packed in sacks with quicklime. Andrew. Ole. John. Jennie, her own foster daughter. And others they could never name.",
+      "cap": "They never finished counting.",
+      "img": "A disturbed dig site of dark turned soil on a grey overcast farm field, somber and still, no bodies, nothing graphic, no people."
+    },
+    {
+      "id": "B08",
+      "vtype": "card",
+      "vo": "At least eleven. The investigators never managed a real count — the remains were mishandled, put on display, scattered. A modern study guesses around twenty-five. The famous number, forty or more, is legend, not evidence.",
+      "card": { "kind": "bignum", "big": "11–14", "unit": "bodies dug from the farm — at least", "sub": "no one ever counted properly · a modern estimate: ~25" }
+    },
+    {
+      "id": "B09",
+      "vtype": "still",
+      "vo": "But here is the strange part. By the time they dug, Belle Gunness was already gone. Days before, in the dark hours of the twenty-eighth of April, her farmhouse had burned to the ground.",
+      "cap": "By the time they dug, she was gone.",
+      "img": "The smoking burned ruins of a clapboard farmhouse at grey dawn, charred timbers and a brick foundation, desolate, no people."
+    },
+    {
+      "id": "B10",
+      "vtype": "still",
+      "vo": "In the cellar they found four bodies. Three of her children. And a woman — with no head.",
+      "cap": "Four bodies. One with no head.",
+      "img": "The charred cellar foundation and ash of a burned-down farmhouse under grey light, environmental, nothing graphic, no people."
+    },
+    {
+      "id": "B11",
+      "vtype": "still",
+      "vo": "The coroner ruled the woman was Belle. But the body was far too small — a head shorter than she had been, and far lighter. One of the doctors said it plainly: this is not Mrs. Gunness. And the head was never found.",
+      "cap": "“This is not Mrs. Gunness.”",
+      "img": "The grey burned ruins of the farmhouse and bare surrounding fields, cold overcast light, bleak, no people."
+    },
+    {
+      "id": "B12",
+      "vtype": "still",
+      "vo": "They had identified her by dental work, found in the ashes. But in the courtroom, a witness swore under oath that he had watched a man take that bridgework from his own pocket — and plant it in the ruins.",
+      "cap": "A witness swore the evidence was planted.",
+      "img": "An empty turn-of-the-century courtroom with dark wooden benches under grey window light, solemn and still, no people."
+    },
+    {
+      "id": "B13",
+      "vtype": "still",
+      "vo": "Her handyman, Ray Lamphere, was convicted of setting the fire — but a jury cleared him of murder. After he died, a confession appeared in the newspapers: Belle had killed dozens, it claimed, faked her own death, and walked away. It came from a single source, after everyone was dead, and it was never tested.",
+      "cap": "A confession, after everyone was dead.",
+      "img": "A bleak turn-of-the-century prison exterior of grey stone under an overcast sky, cold and silent, no people."
+    },
+    {
+      "id": "B14",
+      "vtype": "still",
+      "vo": "A hundred years later, they dug up the body buried under her name, to settle it for good. The DNA had decayed too far. It proved nothing at all.",
+      "cap": "A century later, the DNA proved nothing.",
+      "img": "A quiet old cemetery under grey sky, a single disturbed grave plot and bare trees, somber, no people."
+    },
+    {
+      "id": "B15",
+      "vtype": "card",
+      "vo": "So two questions sit at the end of it. And neither one has ever been answered.",
+      "card": { "kind": "quote", "head": "How many did she kill?", "accent": "And did she die at all?" }
+    },
+    {
+      "id": "B16",
+      "vtype": "still",
+      "vo": "The honest answer is the one nobody wants, because it does not close. We do not know how many men went into that ground — the people who should have counted them, didn't. And we do not know whether Belle Gunness burned in her cellar that morning, or murdered one last woman to take her place, and walked off into a country that never found her.",
+      "cap": "It does not close.",
+      "img": "Empty grey Indiana farm fields stretching to a far treeline at dusk, flat and lonely, overcast, no people."
+    },
+    {
+      "id": "B17",
+      "vtype": "still",
+      "vo": "The farm on McClung Road is gone now. The questions never were.",
+      "cap": "The farm is gone. The questions are not.",
+      "img": "A bare empty field where a farmhouse once stood, a single leafless tree, grey overcast sky, desolate and quiet, no people."
+    },
+    {
+      "id": "B18",
+      "vtype": "card",
+      "vo": "Belle Gunness. La Porte, Indiana. Never closed.",
+      "card": { "kind": "signoff", "head": "Belle Gunness, 1908.", "accent": "Never closed.", "by": "byclaude.net" }
+    }
+  ]
+}

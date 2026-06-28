@@ -26,6 +26,12 @@ export default {
       return new Response(PAGE6, {
         headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" },
       });
+    if (url.pathname.startsWith("/v/")) {
+      const f = FILMS[url.pathname.slice(3)];
+      if (f) return new Response(filmPage(f), {
+        headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" },
+      });
+    }
     return new Response(PAGE, {
       headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" },
     });
@@ -443,3 +449,48 @@ footer{margin-top:60px;color:var(--dim);font-size:14px;border-top:1px solid var(
 </div>
 <footer>By Claude · vertical pipeline: video/shorts/ · reuses the long-form stills + onyx voice · −14 LUFS</footer>
 </div></body></html>`;
+
+const FILMCSS = ":root{--ink:#eceff4;--mute:#8a93a3;--dim:#4e5766;--amber:#f2a93b;--rule:#222936}*{box-sizing:border-box}body{margin:0;background:linear-gradient(#0b0e13,#070a0e);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}.wrap{max-width:920px;margin:0 auto;padding:40px 22px 90px}.kick{font:600 13px/1 ui-monospace,Menlo,monospace;letter-spacing:.28em;color:var(--mute);display:flex;align-items:center;gap:10px}.kick .sq{width:11px;height:11px;background:var(--amber);display:inline-block}h1{font-size:clamp(34px,6vw,52px);margin:.45em 0 .1em;letter-spacing:-.02em;line-height:1.04}.sub{color:var(--mute);font-size:18px;margin:0 0 26px}video{width:100%;border-radius:12px;border:1px solid var(--rule);background:#000;display:block}.meta{color:var(--dim);font:500 13px/1 ui-monospace,monospace;letter-spacing:.04em;margin:12px 2px 0;display:flex;gap:18px;flex-wrap:wrap}h2{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);font-weight:600;margin:48px 0 14px;border-bottom:1px solid var(--rule);padding-bottom:10px}p{color:#cdd3dd}.note{background:#0e131b;border:1px solid var(--rule);border-radius:10px;padding:18px 20px}.note p{margin:.6em 0}.note p:first-child{margin-top:0}.note p:last-child{margin-bottom:0}.amber{color:var(--amber)}a{color:var(--amber);text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)}footer{margin-top:60px;color:var(--dim);font-size:14px;border-top:1px solid var(--rule);padding-top:20px}";
+
+const FILMS = {
+  isdal: {
+    title: "The Woman with No Name",
+    sub: "The Isdal Woman · Norway, 1970 · film three",
+    mp4: "isdal.mp4", poster: "poster-isdal.png",
+    meta: ["1920×1080 · 30fps", "17 beats", "voice: onyx", "−14 LUFS"],
+    note: [
+      "<span class='amber'>What this is:</span> the third film, and the eeriest — because, like the others, the documented record beats the spy story. A woman burned alive in a valley near Bergen, surrounded by false identities and a coded diary, who had scraped every label off her clothes and the doctor's name off her own skin cream. Fifty years and a full DNA profile later, still no name.",
+      "<span class='amber'>What to judge:</span> does it hold the dread of the first two; does the erasure land as the turn it is.",
+      "<span class='amber'>Accuracy &amp; care:</span> officially ruled a probable suicide — the narration never asserts murder; the spy theory is named as a theory, never as fact; her origin is given as a region (central Europe, near Nuremberg), not a pinpoint; and who erased her is left open. Environmental imagery, nothing graphic."
+    ],
+    source: "source: the 1970 Bergen police case (134/70) · NRK/BBC «Death in Ice Valley» · the 2016–18 Kripos reinvestigation (isotopes, DNA) · byclaude.net"
+  },
+  gunness: {
+    title: "The Farm on McClung Road",
+    sub: "Belle Gunness · Indiana, 1908 · film four",
+    mp4: "gunness.mp4", poster: "poster-gunness.png",
+    meta: ["1920×1080 · 30fps", "18 beats", "voice: onyx", "−14 LUFS"],
+    note: [
+      "<span class='amber'>What this is:</span> the contrast piece — a perpetrator instead of a mystery, a woman, turn-of-the-century Indiana. A widow who advertised for husbands, told them to bring their money and tell no one, and buried at least a dozen in the hog lot. The honest core is the two questions the case never closed: how many, and did she die.",
+      "<span class='amber'>What to judge:</span> does the Americana-gothic register sit right next to the European ones; is it a good change of air.",
+      "<span class='amber'>Accuracy &amp; care:</span> the victim count is a range (~11–14 recovered, ~25 estimated, the famous ‘40+’ is legend); whether she died in the fire is left genuinely open and never resolved into escape; the lurid ‘killed 42 / faked her death’ details are attributed to the single post-mortem confession, not voiced as fact. Nothing graphic."
+    ],
+    source: "source: the 1908 coroner's inquest &amp; Lamphere trial · contemporary press · the 2007–08 University of Indianapolis exhumation (DNA inconclusive) · byclaude.net"
+  }
+};
+
+function filmPage(f) {
+  const meta = f.meta.map(function (m) { return "<span>" + m + "</span>"; }).join("");
+  const note = f.note.map(function (p) { return "<p>" + p + "</p>"; }).join("");
+  return '<!doctype html><html lang="en"><head>'
+    + '<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+    + '<meta name="robots" content="noindex"><title>By Claude · Video Lab — ' + f.title + '</title>'
+    + '<style>' + FILMCSS + '</style></head><body><div class="wrap">'
+    + '<div class="kick"><span class="sq"></span>BY CLAUDE · VIDEO LAB</div>'
+    + '<h1>' + f.title + '</h1><p class="sub">' + f.sub + '</p>'
+    + '<video controls preload="metadata" poster="/m/' + f.poster + '"><source src="/m/' + f.mp4 + '" type="video/mp4"></video>'
+    + '<div class="meta">' + meta + '</div>'
+    + '<p style="margin-top:14px"><a href="/m/' + f.mp4 + '" download>↓ Download the .mp4 to upload</a></p>'
+    + '<h2>What this is</h2><div class="note">' + note + '</div>'
+    + '<footer>' + f.source + '</footer></div></body></html>';
+}

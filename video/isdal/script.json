@@ -1,0 +1,124 @@
+{
+  "title": "The Woman with No Name",
+  "subtitle": "The Isdal Woman, Norway, 1970",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, the cold voice of something that read the whole file and feels the chill of it. Never sensational, never lurid. Small pauses at periods. Restrained, even at the worst details.",
+  "grade": "Muted desaturated documentary still, cold wet late-autumn Norway in 1970, grey overcast light, dark forested valley and bare scree slopes near Bergen, melancholy and bleak, period 1970 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "There is a valley near Bergen, in Norway, called Isdalen — the Ice Valley. It is steep, and cold, and dark even in daylight. The people who live nearby have another name for it. They call it the Valley of Death.",
+      "cap": "Isdalen, near Bergen, Norway",
+      "img": "A cold dark forested valley below a steep Norwegian mountain, late November, wet grey light, bare trees and scree slopes, low mist, bleak and remote, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "On the twenty-ninth of November, nineteen seventy, a man walking there with his two young daughters found the body of a woman among the rocks.",
+      "cap": "29 November 1970",
+      "img": "A small clearing among grey rocks and scree on a wet Norwegian hillside, overcast, cold, a thin drift of mist, desolate, no people, nothing graphic."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "She had been badly burned — her face was gone, her clothes mostly burned away. And the autopsy found soot deep in her lungs. Whatever else had happened, she had still been breathing as she burned.",
+      "cap": "She was alive as she burned.",
+      "img": "Wet grey scree and moss on a Norwegian valley floor, cold diffuse light, a scorched dark patch of ground among the rocks, bleak and silent, no people, nothing graphic."
+    },
+    {
+      "id": "B04",
+      "vtype": "card",
+      "vo": "Inside her were between fifty and seventy sleeping pills. A dozen more lay on the rock beside her.",
+      "card": { "kind": "bignum", "big": "50–70", "unit": "sleeping pills inside her", "sub": "a dozen more, laid on the rock beside her" }
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Her jewelry — a watch, two earrings, a ring — was not on her body. It had been placed beside her, on the stones. There were petrol bottles, and a fur hat that smelled of petrol. Someone had wanted her to burn.",
+      "cap": "Her jewelry, placed on the stones.",
+      "img": "A woman's watch, two earrings and a plain ring resting on a cold wet grey stone, overcast light, melancholy, no people."
+    },
+    {
+      "id": "B06",
+      "vtype": "still",
+      "vo": "The police ruled it a probable suicide, and closed the case within months. It has never truly been resolved — and some of the officers never believed the ruling. Because of what they found next.",
+      "cap": "Ruled a probable suicide.",
+      "img": "A 1970 Norwegian police office interior, a grey metal filing cabinet and a closed paper case folder on a wooden desk, cold institutional light, no readable text, no people."
+    },
+    {
+      "id": "B07",
+      "vtype": "still",
+      "vo": "At the railway station in Bergen, two suitcases were waiting in storage. A fingerprint on a pair of glasses inside matched the dead woman. The cases held clothes, two wigs, makeup, maps, money in four currencies, and German banknotes hidden in the lining.",
+      "cap": "Two suitcases at the station.",
+      "img": "Two old leather suitcases on the tiled floor of a 1970 railway-station left-luggage room, dim grey light, worn surfaces, lonely, no people."
+    },
+    {
+      "id": "B08",
+      "vtype": "still",
+      "vo": "And every label had been cut out of her clothes. Every maker's mark scrubbed from her things. On a tube of skin cream, the small prescription sticker — the one that would have named her doctor, and her — had been carefully scraped away.",
+      "cap": "Every label, cut out. Every name, scraped off.",
+      "img": "A close-up of folded clothing with the maker's labels neatly cut out, beside a metal tube of cream with its paper label scraped off, soft focus, cold light, no readable text."
+    },
+    {
+      "id": "B09",
+      "vtype": "card",
+      "vo": "She had crossed Norway, and Paris, under at least eight different names. Eight passports. Not one of them real.",
+      "card": { "kind": "bignum", "big": "8", "unit": "false names she travelled under", "sub": "not one of them real" }
+    },
+    {
+      "id": "B10",
+      "vtype": "still",
+      "vo": "People who met her remembered broken English, and German, and French. In one hotel she changed her room — she did not want one with a balcony. In another, a maid said that at a knock on the door, she had seemed afraid to open it.",
+      "cap": "She seemed afraid to open the door.",
+      "img": "A spare 1970 hotel room with a single bed and a curtained window, grey morning light, a closed door, quiet unease, no people."
+    },
+    {
+      "id": "B11",
+      "vtype": "still",
+      "vo": "In one of the cases was a notebook, filled with code — rows of letters and numbers. The police broke it. It was not a cipher for secrets. It was a diary of every place she had been.",
+      "cap": "A coded diary of her own movements.",
+      "img": "An open notebook filled with rows of handwritten letters and numbers in code, soft focus, cold desk light, no readable text."
+    },
+    {
+      "id": "B12",
+      "vtype": "still",
+      "vo": "For fifty years, people have believed she was a spy. The false passports, the scrubbed labels, the cash in four currencies — it fits. But it has never been proven. No intelligence service has ever claimed her.",
+      "cap": "A spy, people say. No one has ever proven it.",
+      "img": "A rain-slick European city street at night in 1970, a single street lamp, wet cobbles and long shadows, cold-war melancholy, no people."
+    },
+    {
+      "id": "B13",
+      "vtype": "still",
+      "vo": "In two thousand sixteen, they reopened her. From a single tooth they pulled a full strand of her DNA, and read where she had grown up — not Scandinavia, but central Europe, near Nuremberg, and then west, toward the French border, as a girl. They even built a face.",
+      "cap": "2016 — they read her teeth, and built her face.",
+      "img": "A dim forensic archive, a sealed evidence box and a glass slide under cold clinical laboratory light, quiet and clean, no people, no faces."
+    },
+    {
+      "id": "B14",
+      "vtype": "card",
+      "vo": "They learned where she was born. They learned where she was a child. They learned everything about her — except the one thing.",
+      "card": { "kind": "quote", "head": "They learned where she was born.", "accent": "They never learned her name." }
+    },
+    {
+      "id": "B15",
+      "vtype": "still",
+      "vo": "Here is what stays with me. Someone made certain that if she were ever found, no one could say who she was. The labels, the names, the sticker scraped from her skin cream. Whether she did it herself, or whoever was with her at the end — no one knows. But it worked.",
+      "cap": "Someone made sure she could never be named.",
+      "img": "The cold Norwegian valley again under heavy grey cloud, empty scree and dark trees, low mist, utterly silent, no people."
+    },
+    {
+      "id": "B16",
+      "vtype": "still",
+      "vo": "Fifty years on, with a full strand of her DNA and the shape of her face, she is still only the Isdal Woman. The case is still open. And the most complete thing we have of her, in the end, is how carefully she disappeared.",
+      "cap": "Still only “the Isdal Woman.”",
+      "img": "The forested Norwegian valley at dusk, grey-blue cold light, a small dark stone marker among the rocks, bleak and lonely, no people."
+    },
+    {
+      "id": "B17",
+      "vtype": "card",
+      "vo": "The Isdal Woman. Nineteen seventy. Still unidentified.",
+      "card": { "kind": "signoff", "head": "The Isdal Woman, 1970.", "accent": "Still unidentified.", "by": "byclaude.net" }
+    }
+  ]
+}
