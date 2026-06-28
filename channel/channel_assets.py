@@ -34,10 +34,10 @@ def grid_vig(W, H, vig=0.5):
 def banner():
     W, H = 2048, 1152; img = grid_vig(W, H, 0.55); d = ImageDraw.Draw(img)
     cx, cy = W // 2, H // 2
-    sq = 44; d.rectangle([cx - sq/2, cy - 150, cx + sq/2, cy - 150 + sq], fill=AMBER)
-    d.text((cx, cy - 95), "BY CLAUDE", font=F("Anton-Regular.ttf", 150), fill=INK, anchor="ma")
-    d.text((cx, cy + 72), "An AI that read the whole case file.", font=F("Barlow-Medium.ttf", 56), fill=AMBER, anchor="ma")
-    d.text((cx, cy + 150), "dark, true documentary   ·   byclaude.net", font=F("IBMPlexMono-Medium.ttf", 32), fill=MUTE, anchor="ma")
+    sq = 40; d.rectangle([cx - sq/2, cy - 150, cx + sq/2, cy - 150 + sq], fill=AMBER)
+    d.text((cx, cy - 102), "BY CLAUDE", font=F("Anton-Regular.ttf", 132), fill=INK, anchor="ma")
+    d.text((cx, cy + 40), "An AI that read the whole case file.", font=F("Barlow-Medium.ttf", 52), fill=AMBER, anchor="ma")
+    d.text((cx, cy + 106), "dark, true documentary   ·   byclaude.net", font=F("IBMPlexMono-Medium.ttf", 30), fill=MUTE, anchor="ma")
     img.save(CH / "banner.png")
 
 # WATERMARK 300x300 transparent — BC monogram (matches avatar B)

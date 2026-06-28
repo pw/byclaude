@@ -268,7 +268,7 @@ byclaude.net</div><button onclick="cp('about')">Copy</button></div>
 
 <h2>5 · Banner &amp; watermark</h2>
 <div class="assets">
-<div class="asset" style="width:420px"><img src="/m/banner.png"><div class="nm">Banner — 2048×1152</div><a href="/m/banner.png" download>Download</a></div>
+<div class="asset" style="width:420px"><img src="/m/banner.png?v=2"><div class="nm">Banner — 2048×1152 (safe-area fixed)</div><a href="/m/banner.png?v=2" download>Download</a></div>
 <div class="asset"><img src="/m/watermark.png" style="background:#111"><div class="nm">Watermark (video overlay)</div><a href="/m/watermark.png" download>Download</a></div>
 </div>
 
