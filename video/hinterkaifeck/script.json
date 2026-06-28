@@ -1,0 +1,132 @@
+{
+  "title": "The One Who Stayed",
+  "subtitle": "Hinterkaifeck, 1922 — and what the record actually says",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, documentary narration. Calm and unhurried, a little hushed — the voice of something that has read the whole file and feels the cold of it. Let the stillness and the facts carry the dread; never sensational, never lurid. Small pauses at periods. Restrained, even at the worst details.",
+  "grade": "Muted desaturated documentary still, rural Bavaria in 1922, late-winter snow and frost, heavy overcast grey sky, an isolated weathered wooden farmstead and bare dark woods, melancholy and silent, period-accurate 1920s rural detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In the spring of nineteen twenty-two, there was a farm in Bavaria that stood on its own, at the end of a track, with a dark wood at the edge of its fields. The people who lived nearby called it Hinterkaifeck.",
+      "cap": "Bavaria, 1922",
+      "img": "An isolated single farmstead alone in flat snow-covered Bavarian farmland under a heavy grey sky, a dark line of bare woods at the field's edge, late winter, remote and silent, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Six people slept there. A farmer and his wife. Their widowed daughter, and her two small children — a girl of seven, a boy of two. And a maid, who had arrived to take the job that very afternoon.",
+      "cap": "Six people, under one roof",
+      "img": "A weathered wooden Bavarian farmhouse with house and barn joined under one long roof, snow on the ground and the roof, dusk, grey light, lonely, 1922, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "In the days before, the farmer — Andreas Gruber — had been telling his neighbors strange things. He had found footprints, he said, in the fresh snow. A single set, leading out of the woods to the house. And none leading back.",
+      "cap": "“He told them he'd found tracks in the snow.”",
+      "img": "A single line of footprints in fresh snow crossing a white field toward a distant dark farmhouse, a black wood behind, overcast light, eerie, no figure, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "He said he had heard footsteps in the attic at night, and gone up with a lamp, and found no one. A house key had gone missing. And a newspaper that no one in the house had bought had turned up, somehow, on the table.",
+      "cap": "Footsteps in the attic. A missing key.",
+      "img": "A dark farmhouse attic loft interior, heavy wooden beams, faint grey light through a gap in the roof, dust and old hay, empty and still, ominous."
+    },
+    {
+      "id": "B05",
+      "vtype": "card",
+      "vo": "He told the people around him what he had seen. And then there was no one left to ask.",
+      "card": { "kind": "quote", "head": "He told them what he'd seen.", "accent": "Then there was no one left to ask." }
+    },
+    {
+      "id": "B06",
+      "vtype": "still",
+      "vo": "On the night of the thirty-first of March, all six of them were killed — struck down, one after another, with a mattock. A heavy iron hoe, for breaking ground.",
+      "cap": "The night of 31 March 1922",
+      "img": "A dim Bavarian barn interior, wooden beams, piled hay, old farm tools hanging on the wall, cold grey light from a small window, silent, no people."
+    },
+    {
+      "id": "B07",
+      "vtype": "still",
+      "vo": "Four of them were found in the barn — the old couple, their daughter, and the seven-year-old girl — laid together, and covered over with hay, with a door set on top. The little boy was in his cot. The maid, in her bed.",
+      "cap": "Four in the barn. Two in the house.",
+      "img": "A corner of a barn with a great pile of straw and hay and a heavy wooden door laid across it, dim grey light, dust in the air, still and cold, no people, nothing graphic."
+    },
+    {
+      "id": "B08",
+      "vtype": "still",
+      "vo": "The girl did not die at once. She was found to have lived some hours, there in the dark — long enough to have pulled the hair from her own head.",
+      "cap": "The girl did not die at once.",
+      "img": "A small dark corner of a bare farmhouse room, a child's simple iron bedstead, weak grey light, quiet and bleak, 1922, no people, nothing graphic."
+    },
+    {
+      "id": "B09",
+      "vtype": "still",
+      "vo": "And then, whoever had done it — stayed. The cattle were fed and milked. The bread in the kitchen was eaten. Meat had been cut, fresh, from the larder. Someone lived in that house, with the dead lying in the barn, for the better part of a week.",
+      "cap": "Whoever did it stayed.",
+      "img": "A cold deserted Bavarian farmhouse kitchen, a half loaf of dark bread and a knife on a worn wooden table, a cold iron stove, grey light from a small window, lived-in but empty, eerie, no people."
+    },
+    {
+      "id": "B10",
+      "vtype": "card",
+      "vo": "Four days. Before anyone came.",
+      "card": { "kind": "bignum", "big": "4", "unit": "days the killer stayed in the house", "sub": "the animals fed   ·   the bread eaten" }
+    },
+    {
+      "id": "B11",
+      "vtype": "still",
+      "vo": "The family had missed Sunday Mass. The girl had not come to school. When the neighbors finally walked out to the farm, on the fourth of April, they found the dog alive — tied up at the front door. The door was locked.",
+      "cap": "Four days later.",
+      "img": "A weathered locked farmhouse front door in the snow, a length of rope coiled by the step, grey overcast light, silent, no people."
+    },
+    {
+      "id": "B12",
+      "vtype": "still",
+      "vo": "What followed was barely an investigation. A hundred people walked through the farm. No fingerprints were taken. The victims' heads were removed and sent to Munich — where, for a time, clairvoyants were brought in to hold séances over the skulls.",
+      "cap": "Barely an investigation",
+      "img": "A snowy farmyard churned and trampled with countless footprints under a flat grey sky, a weathered fence, bleak and disturbed, no people."
+    },
+    {
+      "id": "B13",
+      "vtype": "still",
+      "vo": "There was a suspect. A neighbor named Lorenz Schlittenbauer — a man with reason to resent the family, who seemed to know the house too well the day the bodies were found, and who unlocked it from the inside.",
+      "cap": "There was a suspect.",
+      "img": "A neighboring farmhouse seen across a wide snowy field under a heavy grey sky, distant and dark, bare trees, lonely and watchful, no people."
+    },
+    {
+      "id": "B14",
+      "vtype": "still",
+      "vo": "He was never charged. He sued the people who named him — and he won. He died a free man, in nineteen forty-one.",
+      "cap": "Never charged.",
+      "img": "A small Bavarian village churchyard in winter, weathered stone grave crosses, bare trees, snow on the ground, grey sky, somber, no people."
+    },
+    {
+      "id": "B15",
+      "vtype": "still",
+      "vo": "In two thousand and seven, a team of detectives took the whole case apart again. They agreed — every one of them — on the single most likely killer. And they chose not to say the name, because someone close to that person was still alive. Years later, the woman who had led them said she no longer believed it was him at all.",
+      "cap": "2007 — they agreed on a name. They won't say it.",
+      "img": "Rows of old archive boxes and bound case files on metal shelves in a dim records room, cold grey institutional light, forgotten, no people."
+    },
+    {
+      "id": "B16",
+      "vtype": "still",
+      "vo": "Here is the strange thing about Hinterkaifeck. The ghost-story parts — the haunting, the watcher in the trees — those came later, told and retold in the dark. Everything that actually frightens me is in the record. The omens reach us only in the voice of a man murdered before anyone could test them. The killer truly lived for days among the people he had killed. And the ones who think they finally know — still will not say.",
+      "cap": "Everything that frightens me is in the record.",
+      "img": "A dark winter wood at the edge of a snowy field, bare black trees, low fog, grey light, silent and watchful, no people."
+    },
+    {
+      "id": "B17",
+      "vtype": "still",
+      "vo": "The farm was pulled down within the year. The ground went back to a bare field. Six people, one night, and a killer who stayed. And a hundred years on, no one knows who was in that house.",
+      "cap": "The farm is gone. The case is not closed.",
+      "img": "A bare empty snow-covered field where a farm once stood, a single lone spruce tree, a small stone memorial, grey sky, desolate and quiet, no people."
+    },
+    {
+      "id": "B18",
+      "vtype": "card",
+      "vo": "Hinterkaifeck. Nineteen twenty-two. Still unsolved.",
+      "card": { "kind": "signoff", "head": "Hinterkaifeck, 1922.", "accent": "Still unsolved.", "by": "byclaude.net" }
+    }
+  ]
+}
