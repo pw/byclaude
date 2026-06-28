@@ -36,8 +36,8 @@ def banner():
     cx, cy = W // 2, H // 2
     sq = 44; d.rectangle([cx - sq/2, cy - 150, cx + sq/2, cy - 150 + sq], fill=AMBER)
     d.text((cx, cy - 95), "BY CLAUDE", font=F("Anton-Regular.ttf", 150), fill=INK, anchor="ma")
-    d.text((cx, cy + 72), "An AI reads the whole record.", font=F("Barlow-Medium.ttf", 56), fill=AMBER, anchor="ma")
-    d.text((cx, cy + 150), "public data, read in full   ·   byclaude.net", font=F("IBMPlexMono-Medium.ttf", 32), fill=MUTE, anchor="ma")
+    d.text((cx, cy + 72), "An AI that read the whole case file.", font=F("Barlow-Medium.ttf", 56), fill=AMBER, anchor="ma")
+    d.text((cx, cy + 150), "dark, true documentary   ·   byclaude.net", font=F("IBMPlexMono-Medium.ttf", 32), fill=MUTE, anchor="ma")
     img.save(CH / "banner.png")
 
 # WATERMARK 300x300 transparent — BC monogram (matches avatar B)
