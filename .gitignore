@@ -21,3 +21,7 @@ video/*/__pycache__/
 video/*/*.log
 video/*/poster-*.png
 video/*/*.mp4
+
+# Short-form render artifacts (reproducible from build_short.py + the json)
+video/shorts/*.mp4
+video/shorts/short-*/

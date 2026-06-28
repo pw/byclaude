@@ -1,0 +1,14 @@
+{
+  "out": "short-hinterkaifeck",
+  "kicker": "HINTERKAIFECK",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "hinterkaifeck", "img": "B03", "vo": "In nineteen twenty-two, six people were murdered at an isolated farm in Bavaria.", "cap": "1922.\nSIX MURDERED." },
+    { "src": "hinterkaifeck", "img": "B07", "vo": "And whoever did it — stayed.", "cap": "THE KILLER\nSTAYED", "amber": true },
+    { "src": "hinterkaifeck", "img": "B09", "vo": "The animals were fed. The bread was eaten. Someone lived in that house, with the bodies in the barn, for four days.", "cap": "FOUR DAYS", "amber": true },
+    { "src": "hinterkaifeck", "img": "B16", "vo": "Days before, the farmer said he had found footprints in the snow leading to the house — and none leading away.", "cap": "FOOTPRINTS\nLEADING ONE WAY" },
+    { "src": "hinterkaifeck", "img": "B17", "vo": "It was never solved. A hundred years on, no one knows who was in that house.", "cap": "STILL UNSOLVED", "amber": true },
+    { "vo": "The full story is on the channel.", "cap": "THE FULL STORY\nIS ON THE CHANNEL" }
+  ]
+}

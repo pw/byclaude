@@ -1,0 +1,14 @@
+{
+  "out": "short-shipman",
+  "kicker": "HAROLD SHIPMAN",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "shipman", "img": "B02", "vo": "For more than twenty years, the most trusted man in a small English town was its doctor.", "cap": "THE MOST TRUSTED\nMAN IN TOWN" },
+    { "src": "shipman", "img": "B03", "vo": "In their own front rooms, he killed at least two hundred and fifteen of his patients.", "cap": "215 PATIENTS", "amber": true },
+    { "src": "shipman", "img": "B05", "vo": "Mostly elderly women. An injection, in the afternoon. It looked like sleep.", "cap": "IT LOOKED\nLIKE SLEEP" },
+    { "src": "shipman", "img": "B09", "vo": "He was never caught by the killing. He was caught by a forged will.", "cap": "CAUGHT BY\nA FORGED WILL", "amber": true },
+    { "src": "shipman", "img": "B13", "vo": "And someone had already seen it — another doctor — and been ignored.", "cap": "SOMEONE\nHAD SEEN IT" },
+    { "vo": "The full story is on the channel.", "cap": "THE FULL STORY\nIS ON THE CHANNEL" }
+  ]
+}
