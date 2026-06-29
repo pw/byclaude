@@ -1,0 +1,14 @@
+{
+  "out": "short-gunness",
+  "kicker": "BELLE GUNNESS",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "gunness", "img": "B01", "vo": "At the end of a lonely road in Indiana, a widow advertised for a husband.", "cap": "INDIANA · 1908" },
+    { "src": "gunness", "img": "B02", "vo": "Come in person, the advertisements said. Bring your money. And tell no one where you are going.", "cap": "“BRING YOUR MONEY.\nTELL NO ONE.”" },
+    { "src": "gunness", "img": "B07", "vo": "Dozens of men came. At least a dozen of them she buried in the hog pen behind the house.", "cap": "BURIED IN\nTHE HOG PEN", "amber": true },
+    { "src": "gunness", "img": "B09", "vo": "Then her house burned to the ground — with a headless woman's body inside.", "cap": "A HEADLESS BODY\nIN THE FIRE" },
+    { "src": "gunness", "img": "B17", "vo": "The body was far too small to be her. And Belle Gunness was never seen again.", "cap": "NEVER SEEN AGAIN", "amber": true },
+    { "vo": "The full story is on the channel.", "cap": "THE FULL STORY\nIS ON THE CHANNEL" }
+  ]
+}

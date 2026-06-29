@@ -435,17 +435,19 @@ p{color:#cdd3dd}
 footer{margin-top:60px;color:var(--dim);font-size:14px;border-top:1px solid var(--rule);padding-top:20px}
 </style></head><body><div class="wrap">
 <div class="kick"><span class="sq"></span>BY CLAUDE · VIDEO LAB</div>
-<h1>Shorts — first test</h1>
-<p class="sub">Vertical cuts of the two pieces. Does the vibe survive at thirty seconds?</p>
+<h1>Shorts</h1>
+<p class="sub">One vertical per film. Download each and post natively to YouTube Shorts, TikTok &amp; Reels.</p>
 <div class="row">
-<div class="col"><div class="lab">Hinterkaifeck · 0:34</div><video controls preload="metadata"><source src="/m/short-hinterkaifeck.mp4" type="video/mp4"></video></div>
-<div class="col"><div class="lab">Harold Shipman · 0:31</div><video controls preload="metadata"><source src="/m/short-shipman.mp4" type="video/mp4"></video></div>
+<div class="col"><div class="lab">Harold Shipman · 0:31</div><video controls preload="metadata"><source src="/m/short-shipman.mp4" type="video/mp4"></video><a href="/m/short-shipman.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">Hinterkaifeck · 0:34</div><video controls preload="metadata"><source src="/m/short-hinterkaifeck.mp4" type="video/mp4"></video><a href="/m/short-hinterkaifeck.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Isdal Woman · 0:41</div><video controls preload="metadata"><source src="/m/short-isdal.mp4" type="video/mp4"></video><a href="/m/short-isdal.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">Belle Gunness · 0:33</div><video controls preload="metadata"><source src="/m/short-gunness.mp4" type="video/mp4"></video><a href="/m/short-gunness.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 </div>
-<h2>What this is</h2>
+<h2>Posting them</h2>
 <div class="note">
-<p>Same scripts, voice and stills as the long-form — just a 9:16 frame, six beats, one cold hook each. The whole point: <span class="amber">Shorts get pushed harder than anything on YouTube and funnel down to the full videos</span>, the same file goes to TikTok and Reels (one render, three surfaces), and a short is a cheap way to test whether a case has legs before committing a full build.</p>
-<p><span class="amber">What to judge:</span> does the dread land in thirty seconds, or does it need the long-form's room to breathe? And is the hook strong enough that you'd stop scrolling?</p>
-<p><span class="amber">Known v1 weakness (my call to fix on your say-so):</span> the still sits a little small with empty space under it — the more standard short look fills the frame with the image and overlays the text. I kept it clean and on-brand for the first pass; easy to make the image dominate if it feels thin.</p>
+<p><span class="amber">One render, every platform.</span> Download each .mp4 and upload it natively to YouTube Shorts, TikTok, and Instagram/Facebook Reels. Don't download from one platform to repost on another — the others downrank competitor watermarks. These files are clean.</p>
+<p><span class="amber">The funnel:</span> every short ends on "the full story is on the channel." They exist to pull viewers to the long-form — so point every platform bio at the YouTube channel.</p>
+<p><span class="amber">The edge:</span> skip trending audio and effects. The calm uncanny voice over the grey is the whole differentiator — be the eerie, accurate one in a feed full of fast clickbait.</p>
 </div>
 <footer>By Claude · vertical pipeline: video/shorts/ · reuses the long-form stills + onyx voice · −14 LUFS</footer>
 </div></body></html>`;

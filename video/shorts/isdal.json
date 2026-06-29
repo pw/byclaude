@@ -1,0 +1,14 @@
+{
+  "out": "short-isdal",
+  "kicker": "THE ISDAL WOMAN",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "isdal", "img": "B01", "vo": "There is a valley in Norway that the locals call the Valley of Death.", "cap": "NORWAY · 1970" },
+    { "src": "isdal", "img": "B03", "vo": "In nineteen seventy, a woman was found there, burned alive — fifty sleeping pills inside her, and her jewelry laid out on the rock beside her.", "cap": "BURNED ALIVE" },
+    { "src": "isdal", "img": "B08", "vo": "Every label had been cut from her clothes. Every maker's mark scrubbed away. The name scraped off her own skin cream.", "cap": "SHE ERASED\nHERSELF", "amber": true },
+    { "src": "isdal", "img": "B11", "vo": "She had travelled under at least eight false names, and kept her own movements written in code.", "cap": "EIGHT FALSE NAMES" },
+    { "src": "isdal", "img": "B16", "vo": "Fifty years and a full strand of her DNA later, they still cannot tell you who she was.", "cap": "STILL NO NAME", "amber": true },
+    { "vo": "The full story is on the channel.", "cap": "THE FULL STORY\nIS ON THE CHANNEL" }
+  ]
+}
