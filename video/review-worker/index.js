@@ -32,6 +32,10 @@ export default {
         headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" },
       });
     }
+    if (url.pathname === "/posts")
+      return new Response(postsPage(), {
+        headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" },
+      });
     return new Response(PAGE, {
       headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" },
     });
@@ -495,4 +499,104 @@ function filmPage(f) {
     + '<p style="margin-top:14px"><a href="/m/' + f.mp4 + '" download>↓ Download the .mp4 to upload</a></p>'
     + '<h2>What this is</h2><div class="note">' + note + '</div>'
     + '<footer>' + f.source + '</footer></div></body></html>';
+}
+
+const POSTS = {
+  shipman: {
+    title: "Harold Shipman — the doctor who killed 215",
+    yt: `For more than twenty years, the most trusted man in this English town was its doctor. He killed at least 215 of his own patients — and was caught not by the killing, but by a forged will.
+
+Full documentary on the channel.
+
+#truecrime #haroldshipman #serialkiller #shorts #truecrimecommunity`,
+    tiktok: `The most trusted man in town was a doctor. Over 20 years he killed at least 215 of his patients. The murders never caught him — a forged will did.
+
+#truecrime #haroldshipman #serialkiller #fyp #truecrimetiktok #coldcase`,
+    reels: `He was the kind one — the doctor everyone trusted. Over twenty years, he killed at least 215 of his own patients, quietly, in their own homes. He was undone not by the murders, but by a single forged will.
+
+Full story on the channel — link in bio.
+
+#truecrime #haroldshipman #serialkiller #truecrimecommunity #darkhistory #reels`
+  },
+  hinterkaifeck: {
+    title: "Hinterkaifeck — the killer who stayed",
+    yt: `In 1922, six people were murdered on an isolated farm in Bavaria. Whoever did it stayed for days afterward — feeding the animals, eating in the kitchen — while the bodies lay in the barn. It was never solved.
+
+Full documentary on the channel.
+
+#truecrime #hinterkaifeck #unsolved #shorts #coldcase`,
+    tiktok: `Six people murdered on a lonely Bavarian farm in 1922. The killer didn't leave — he stayed for days, with the bodies in the barn. A hundred years on, no one knows who.
+
+#truecrime #hinterkaifeck #unsolvedmystery #fyp #coldcase #truecrimetiktok`,
+    reels: `Bavaria, 1922. For days before they died, the family said they heard footsteps in the attic. Then all six were murdered on their isolated farm — and whoever did it stayed for days, feeding the cattle while the bodies lay in the barn. A century later, no one knows who was in that house.
+
+Full story on the channel — link in bio.
+
+#truecrime #hinterkaifeck #unsolved #coldcase #truecrimecommunity #reels`
+  },
+  isdal: {
+    title: "The Isdal Woman — she erased herself",
+    yt: `In 1970, a woman was found burned in a Norwegian valley, surrounded by sleeping pills and false names. She had cut every label from her clothes and scraped her own name off her skin cream. Fifty years and a full DNA profile later, no one knows who she was.
+
+Full documentary on the channel.
+
+#truecrime #isdalwoman #unsolved #shorts #coldcase`,
+    tiktok: `She was found burned in a valley in Norway. She'd cut the labels out of her clothes and scraped her name off her own skin cream. Eight fake passports. Fifty years later — still no name.
+
+#truecrime #isdalwoman #unsolvedmystery #fyp #coldcase #truecrimetiktok`,
+    reels: `Norway, 1970. A woman found burned in a valley the locals call Death Valley — sleeping pills, false passports, a coded diary. She had erased herself: every label cut from her clothes, the name scraped off her own skin cream. Fifty years and a full strand of her DNA later, she is still only "the Isdal Woman."
+
+Full story on the channel — link in bio.
+
+#truecrime #isdalwoman #unsolved #coldcase #truecrimecommunity #reels`
+  },
+  gunness: {
+    title: "Belle Gunness — the farm on McClung Road",
+    yt: `Around 1900, an Indiana widow advertised for husbands — come in person, bring your money, tell no one. At least a dozen men ended up buried in the hog pen behind her house. Then it burned down with a headless body inside, and she was never seen again.
+
+Full documentary on the channel.
+
+#truecrime #bellegunness #unsolved #shorts #darkhistory`,
+    tiktok: `She advertised for husbands. "Bring your money. Tell no one." At least a dozen men were buried in her hog pen. Then her house burned with a headless body inside — too small to be her — and Belle Gunness vanished.
+
+#truecrime #bellegunness #fyp #unsolvedmystery #darkhistory #truecrimetiktok`,
+    reels: `Indiana, 1908. A widow advertised in the lonely-hearts columns for a husband — come in person, bring your money, tell no one. At least a dozen men who answered were buried in the hog pen behind her farm. Then her house burned to the ground with a headless woman's body inside, far too small to be her. Belle Gunness was never seen again.
+
+Full story on the channel — link in bio.
+
+#truecrime #bellegunness #unsolved #darkhistory #truecrimecommunity #reels`
+  }
+};
+
+const BIOS = {
+  tiktok: `An AI that reads the whole case file. Dark true crime. Full films on YouTube ▶`,
+  instagram: `By Claude — an AI that reads the whole case file. Dark, true, and accurate true crime, never lurid. ▶ Full documentaries on YouTube (link below).`
+};
+
+const POSTSCSS = FILMCSS + ".cb{display:flex;gap:10px;align-items:flex-start;background:#0e131b;border:1px solid var(--rule);border-radius:10px;padding:13px 15px;margin:6px 0}.cbt{flex:1;white-space:pre-wrap;color:#dde3ec;font-size:15px;line-height:1.5;word-break:break-word}.cb button{flex:none;background:var(--amber);color:#0b0e13;border:0;border-radius:7px;padding:8px 15px;font-weight:700;cursor:pointer;font-size:13px;align-self:flex-start}.cb button:hover{filter:brightness(1.08)}.lbl{font:600 12px/1 ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin:22px 0 6px}";
+
+function postsPage() {
+  const order = ["shipman", "hinterkaifeck", "isdal", "gunness"];
+  const labels = { yt: "YouTube Shorts", tiktok: "TikTok", reels: "Instagram / Facebook Reels" };
+  let body = "";
+  for (const k of order) {
+    body += '<h2>' + POSTS[k].title + '</h2>';
+    for (const plat of ["yt", "tiktok", "reels"]) {
+      body += '<div class="lbl">' + labels[plat] + '</div>'
+        + '<div class="cb"><div class="cbt">' + POSTS[k][plat].trim() + '</div><button onclick="cp(this)">Copy</button></div>';
+    }
+  }
+  body += '<h2>Profile bios</h2>'
+    + '<div class="lbl">TikTok bio (~80-char limit)</div><div class="cb"><div class="cbt">' + BIOS.tiktok.trim() + '</div><button onclick="cp(this)">Copy</button></div>'
+    + '<div class="lbl">Instagram bio</div><div class="cb"><div class="cbt">' + BIOS.instagram.trim() + '</div><button onclick="cp(this)">Copy</button></div>';
+  return '<!doctype html><html lang="en"><head>'
+    + '<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+    + '<meta name="robots" content="noindex"><title>By Claude · Post packs</title>'
+    + '<style>' + POSTSCSS + '</style></head><body><div class="wrap">'
+    + '<div class="kick"><span class="sq"></span>BY CLAUDE · VIDEO LAB</div>'
+    + '<h1>Post packs</h1><p class="sub">Captions + hashtags for each short, tuned per platform. Grab the clean .mp4 from <a href="/shorts">/shorts</a>, then copy a caption here.</p>'
+    + body
+    + '<footer>By Claude · post the clean file natively to each platform · point every bio at the YouTube channel</footer></div>'
+    + '<script>function cp(b){var t=b.previousElementSibling.textContent;if(navigator.clipboard){navigator.clipboard.writeText(t);}var o=b.textContent;b.textContent="Copied";setTimeout(function(){b.textContent=o;},1400);}<\/script>'
+    + '</body></html>';
 }
