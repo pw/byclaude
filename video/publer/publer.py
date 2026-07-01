@@ -11,22 +11,27 @@ KEY (one-time, Patrick): Publer Business plan -> connect TikTok/IG/YT/FB ->
   Settings > Access & Login > API Keys > Create. Then it lives in 1Password:
   op://Claude Code/Publer API Key/credential   (or env PUBLER_API_KEY)
 
-API verified against publer.com/docs on 2026-06-30:
+API verified empirically against the live API on 2026-07-01 (the docs summary had
+several errors — corrected here from real probes):
   base  https://app.publer.com/api/v1
-  hdrs  Authorization: Bearer-API <key>
-        Publer-Workspace-Id: <workspace id>          (all calls except /me, /workspaces)
+  hdrs  Authorization: Bearer-API <key>              (NOT plain "Bearer" — that 401s)
+        Publer-Workspace-Id: <workspace id>          (all calls except /users/me, /workspaces)
         Content-Type: application/json               (NOT on the multipart upload)
-  GET  /me                       validate key
-  GET  /workspaces               -> [{id,name,role}]
-  GET  /accounts                 -> {accounts:[{id,name,provider,type,status}]}
+  GET  /users/me                 validate key         (NOT /me — that 404s)
+  GET  /workspaces               -> [{id,name,owner,...}]   (bare list)
+  GET  /accounts                 -> [{id,provider,name,type,...}]  (needs workspace header)
   POST /media  (multipart 'file')-> {id, path}   SYNCHRONOUS (returns id immediately)
-  POST /posts/schedule/publish   {bulk:{state, posts:[{networks, accounts}]}} -> {job_id}
-  GET  /job_status/<job_id>      -> status working|complete|failed
+  POST /posts/schedule           {bulk:{state, posts:[...]}} -> {job_id}   DRAFT / SCHEDULE (no go-live)
+  POST /posts/schedule/publish   {bulk:{state, posts:[...]}} -> {job_id}   PUBLISHES IMMEDIATELY
+  GET  /job_status/<job_id>      -> status working|complete; payload[].failure.message on per-net error
+  GET  /posts   / DELETE /posts?ids[]=<id>            list / delete posts
   limit 100 requests / 2 minutes
+  ⚠ /posts/schedule/publish IGNORES bulk.state and publishes. A draft MUST use /posts/schedule.
+    (Learned the hard way 2026-07-01: --state draft on the /publish endpoint queued a live post.)
 
-Per-platform video object shapes (verified same day):
+Per-platform video object shapes (verified 2026-07-01):
   tiktok    type "video", text, media[{id,type:video}], details{privacy,comment,duet,stitch,...}
-  instagram type "reel",  text, media[{id,type:video}]
+  instagram type "video", text, media[{id,type:video}]   (type "reel" is REJECTED via API)
   youtube   type "short", title, description, privacy, media[{id,type:video}]
   facebook  type "reel",  text, media[{id,type:video}], details{feed:true}
 
@@ -80,12 +85,16 @@ def net_tiktok(c, mid):
 
 
 def net_instagram(c, mid):
-    return {"type": "reel", "text": c["reels"], "media": [{"id": mid, "type": "video"}]}
+    # IG rejects type "reel" via API ("Post type is not valid"); "video" is the
+    # accepted value — Instagram auto-treats a vertical video as a Reel. (Verified 2026-07-01.)
+    return {"type": "video", "text": c["reels"], "media": [{"id": mid, "type": "video"}]}
 
 
 def net_youtube(c, mid):
+    # YT rejects type "short" via API ("Post type is not valid"); "video" is accepted —
+    # YouTube auto-classifies a vertical clip <3min as a Short. (Verified 2026-07-01.)
     return {
-        "type": "short",
+        "type": "video",
         "title": c["title"],
         "description": c["yt"],
         "privacy": "public",
@@ -113,7 +122,7 @@ def api_key():
         return k.strip()
     try:
         out = subprocess.run(
-            ["op", "read", "op://Claude Code/Publer API Key/credential"],
+            ["op", "read", "op://Claude Code/Publer API/credential"],
             capture_output=True, text=True, timeout=30,
         )
         if out.returncode == 0 and out.stdout.strip():
@@ -192,8 +201,9 @@ def poll_job(key, wsid, job_id, timeout=420):
 # --- commands ---
 def cmd_check(args):
     key = api_key()
-    me = requests.get(f"{BASE}/me", headers=headers(key, json_ct=False), timeout=30)
-    print(f"GET /me -> {me.status_code}: {me.text[:200]}")
+    me = requests.get(f"{BASE}/users/me", headers=headers(key, json_ct=False), timeout=30)
+    who = me.json().get("email", me.text[:120]) if me.ok else me.text[:120]
+    print(f"GET /users/me -> {me.status_code}: {who}")
     me.raise_for_status()
     wsid = get_workspace(key, args.workspace)
     print(f"workspace: {wsid}")
@@ -248,16 +258,24 @@ def cmd_post(args):
     accounts = []
     for p, a in targets:
         entry = {"id": a["id"]}
-        if args.at:
+        if args.state == "scheduled":
+            if not args.at:
+                sys.exit("--state scheduled requires --at <ISO8601 UTC>")
             entry["scheduled_at"] = args.at
         accounts.append(entry)
     payload = {"bulk": {"state": args.state,
                         "posts": [{"networks": networks, "accounts": accounts}]}}
-    print(f"\nposting [{args.state}] to: {', '.join(p for p, _ in targets)}")
 
-    r = requests.post(f"{BASE}/posts/schedule/publish", headers=headers(key, wsid),
+    # ENDPOINT SELECTION IS THE SAFETY BOUNDARY:
+    #   /posts/schedule/publish  -> publishes IMMEDIATELY (ignores state)
+    #   /posts/schedule          -> saves a draft / schedules (does NOT go live)
+    # Only "published" may touch the /publish endpoint. draft & scheduled must not.
+    endpoint = "posts/schedule/publish" if args.state == "published" else "posts/schedule"
+    print(f"\n[{args.state}] via /{endpoint} -> {', '.join(p for p, _ in targets)}")
+
+    r = requests.post(f"{BASE}/{endpoint}", headers=headers(key, wsid),
                       data=json.dumps(payload), timeout=60)
-    print(f"POST /posts/schedule/publish -> {r.status_code}: {r.text[:300]}")
+    print(f"POST /{endpoint} -> {r.status_code}: {r.text[:300]}")
     r.raise_for_status()
     body = r.json()
     job = (body.get("data") or {}).get("job_id") or body.get("job_id")
