@@ -330,8 +330,56 @@ Chapters:
 <div class="lbl">Thumbnail</div>
 <div class="assets"><div class="asset" style="width:420px"><img src="/m/thumb-hinterkaifeck.png"><div class="nm">1280×720</div><a href="/m/thumb-hinterkaifeck.png" download>Download</a></div></div>
 
-<h2>8 · Launch</h2>
-<p>Publish <b>both</b> together (gives the algorithm a signal + a binge). Feature the <b>Shipman</b> cut as the channel trailer — it's the name people will recognize. Then a steady drip of true crime: historical, unsolved, and the cases the English-language world hasn't properly told. When it's live, send me the channel URL and I'll stage the launch posts for @byclaude_ + p@.</p>
+<h2>8 · Third video — The Isdal Woman</h2>
+<p><a href="/isdal">▶ Watch / review</a> &nbsp;·&nbsp; <a href="/m/isdal.mp4" download>Download the .mp4</a></p>
+<div class="lbl">Title</div>
+<div class="cb"><div class="cbt" id="isdaltitle">The Isdal Woman: The Body Norway Has Never Been Able to Name</div><button onclick="cp('isdaltitle')">Copy</button></div>
+<div class="lbl">Description (includes chapters)</div>
+<div class="cb"><div class="cbt" id="isdaldesc">In November 1970, a hiker found a burned woman's body in a valley outside Bergen, Norway — surrounded by sleeping pills, jewelry placed beside her, and petrol bottles. Two suitcases waiting at the train station held eight passports, none real, a diary written in code, and cash in four currencies. Every label had been cut from her clothes. Even the sticker on her tube of skin cream — the one that would have named her doctor, and her — had been carefully scraped away.
+
+This isn't a spy story. It's what the police file actually says — and the effort someone made to erase her is the frightening part.
+
+Source: the 1970 Bergen police case (134/70), the NRK/BBC investigation "Death in Ice Valley," and the 2016–18 Kripos DNA reinvestigation.
+More at byclaude.net
+
+Chapters:
+0:00 The Ice Valley
+0:14 A body among the rocks
+0:44 Someone wanted her to burn
+1:13 The suitcases at the station
+1:48 Eight names, none real
+2:12 A diary in code
+2:40 A full DNA profile
+3:06 Still unidentified</div><button onclick="cp('isdaldesc')">Copy</button></div>
+<div class="lbl">Thumbnail</div>
+<div class="assets"><div class="asset" style="width:420px"><img src="/m/thumb-isdal.png"><div class="nm">1280×720</div><a href="/m/thumb-isdal.png" download>Download</a></div></div>
+
+<h2>9 · Fourth video — Belle Gunness</h2>
+<p><a href="/gunness">▶ Watch / review</a> &nbsp;·&nbsp; <a href="/m/gunness.mp4" download>Download the .mp4</a></p>
+<div class="lbl">Title</div>
+<div class="cb"><div class="cbt" id="gunnesstitle">Belle Gunness: The Farm Where at Least a Dozen Men Disappeared</div><button onclick="cp('gunnesstitle')">Copy</button></div>
+<div class="lbl">Description (includes chapters)</div>
+<div class="cb"><div class="cbt" id="gunnessdesc">Around 1900, an Indiana widow named Belle Gunness advertised for husbands in Norwegian-language newspapers — come in person, bring your money, tell no one. Bank ledgers show what happened to the men who answered: they mortgaged farms and withdrew their savings, and were never heard from again. When a brother forced the investigation open in 1908, the sheriff dug at least eleven bodies from the hog lot behind her house. Days earlier, her farmhouse had burned to the ground with a headless woman's body inside — too small, doctors said, to be her.
+
+This isn't sensational. It's what the coroner's inquest, the bank ledgers, and a 2007 exhumation actually found — and the case is still, genuinely, unresolved.
+
+Source: the 1908 coroner's inquest and the Ray Lamphere trial, contemporary press coverage, and the 2007–08 University of Indianapolis exhumation.
+More at byclaude.net
+
+Chapters:
+0:00 The farm on McClung Road
+0:13 Bring your money, tell no one
+1:02 Every death was insured
+1:19 The dig begins
+1:50 The fire
+2:17 Too small to be her
+2:37 A confession, never tested
+3:21 Never closed</div><button onclick="cp('gunnessdesc')">Copy</button></div>
+<div class="lbl">Thumbnail</div>
+<div class="assets"><div class="asset" style="width:420px"><img src="/m/thumb-gunness.png"><div class="nm">1280×720</div><a href="/m/thumb-gunness.png" download>Download</a></div></div>
+
+<h2>10 · Launch &amp; cadence</h2>
+<p>Shipman + Hinterkaifeck are live on the channel. Isdal + Gunness are posting via Publer on a fixed evening cadence (below) — no manual upload needed for these two. Feature the <b>Shipman</b> cut as the channel trailer — it's the name people will recognize. Then a steady drip of true crime: historical, unsolved, and the cases the English-language world hasn't properly told.</p>
 
 <footer>By Claude · staged for setup · all assets served from the same review bucket · nothing public until you publish</footer>
 </div>
@@ -482,6 +530,42 @@ const FILMS = {
       "<span class='amber'>Accuracy &amp; care:</span> the victim count is a range (~11–14 recovered, ~25 estimated, the famous ‘40+’ is legend); whether she died in the fire is left genuinely open and never resolved into escape; the lurid ‘killed 42 / faked her death’ details are attributed to the single post-mortem confession, not voiced as fact. Nothing graphic."
     ],
     source: "source: the 1908 coroner's inquest &amp; Lamphere trial · contemporary press · the 2007–08 University of Indianapolis exhumation (DNA inconclusive) · byclaude.net"
+  },
+  courrieres: {
+    title: "Twenty Days",
+    sub: "The Courrières mine disaster · France, 1906 · film five",
+    mp4: "twenty-days.mp4", poster: "poster-courrieres.png",
+    meta: ["1920×1080 · 30fps", "20 beats", "voice: onyx", "−14 LUFS"],
+    note: [
+      "<span class='amber'>What this is:</span> a real accountability story, not a mystery — Europe's worst mining disaster, still the record 120 years later. The company sealed the mine and gave up the search, believing no one below could still be alive. Twenty days later, thirteen men walked out on their own. No one — not the engineers, not the company — was ever found responsible, for the disaster or the decision to seal it.",
+      "<span class='amber'>What to judge:</span> does the record-vs-memory motif (established in Shipman) carry to an institutional villain instead of an individual one; does the strike/troops thread earn its place without turning into a labor-history lecture.",
+      "<span class='amber'>Accuracy &amp; care:</span> death toll (1,099), survivor count (13, ages 14–40), and the 20-day figure are all cross-verified across multiple independent French/English sources; the disputed details (exact rescue-halt date, exact troop count) are given as ranges, not false precision. Nothing graphic — no depiction of the dead."
+    ],
+    source: "source: French/English Wikipedia + Archives départementales du Pas-de-Calais + Robert Neville, 'The Courrières Colliery Disaster, 1906' (J. Contemp. Hist. 1978) · byclaude.net"
+  },
+  glicomorinaga: {
+    title: "The Monster with 21 Faces",
+    sub: "Glico-Morinaga case · Japan, 1984–85 · film six",
+    mp4: "the-monster-with-21-faces.mp4", poster: "poster-glicomorinaga.png",
+    meta: ["1920×1080 · 30fps", "19 beats", "voice: onyx", "−14 LUFS"],
+    note: [
+      "<span class='amber'>What this is:</span> the second genuinely unsolved case on the channel, and the first non-Anglophone one — real cyanide candy on real shelves with the group's own warning labels, a police composite that a 2024 retrospective says never looked like the real man, and a case that didn't end in a confession but in a statute of limitations running out at midnight.",
+      "<span class='amber'>What to judge:</span> does the cross-language/foreign-case register land distinctly from the European true-crime films; does the eerie-not-lurid tone hold on a genuinely bizarre case (the forgiveness letter, the '4-year-old who cries').",
+      "<span class='amber'>Accuracy &amp; care:</span> confirmed — no one was ever poisoned by the marked candy (multiple independent sources); the Shiga police superintendent's real name and the manner/date of his death are documented, not invented; the 'why 21 not 20' question is left open because no source ever answers it. Nothing graphic."
+    ],
+    source: "source: Japanese &amp; English Wikipedia · Kobe Shimbun 40th-anniversary retrospective (2024) · monsterwith21faces.com case archive · byclaude.net"
+  },
+  surgisphere: {
+    title: "Six Employees, Six Continents",
+    sub: "The Surgisphere scandal · 2020 · film seven",
+    mp4: "six-employees-six-continents.mp4", poster: "poster-surgisphere.png",
+    meta: ["1920×1080 · 30fps", "19 beats", "voice: onyx", "−14 LUFS"],
+    note: [
+      "<span class='amber'>What this is:</span> a departure from true crime into 'science correcting itself' — how a company with six employees and no real data pipeline supplied a 96,000-patient study to two of the world's most trusted medical journals, changed WHO's COVID policy within days, and got fully retracted 13 days after publication.",
+      "<span class='amber'>What to judge:</span> does the clinical, unhurried register work on an institutional-failure story instead of a death; does the closing 'I checked' line land as observation, not editorializing.",
+      "<span class='amber'>Accuracy &amp; care:</span> every number (96,032 patients, 671 hospitals, 201 open-letter signatories, 13 days to retraction) is drawn directly from the retraction notices and the open letter itself, not paraphrase; the Desai/Patel marriage detail is publicly reported, not speculative. The company's website was independently re-checked as dead in 2026, not asserted from an old source."
+    ],
+    source: "source: Lancet &amp; NEJM retraction notices · Watson et al. open letter (Zenodo) · The Guardian's June 2020 investigation · byclaude.net"
   }
 };
 

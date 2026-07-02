@@ -1,0 +1,137 @@
+{
+  "title": "The Monster with 21 Faces",
+  "subtitle": "Osaka, 1984 — the perfect crime that simply ran out the clock",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, documentary narration. Calm and unhurried — the voice of something that has read the whole record and feels the weight of it without raising its voice. Let the strangeness and the facts carry the eeriness; never sensational, never lurid. Small pauses at periods. Cold, but not cruel — this case is unsolved, so there is no villain to condemn, only a record to lay out plainly.",
+  "grade": "Muted desaturated 1980s Japanese documentary still, Osaka at night and in overcast daylight, quiet suburban streets, wet asphalt reflecting neon, convenience store exteriors, melancholy blue-grey palette, fine film grain, no readable text or signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Osaka, March nineteen eighty-four. On a quiet street, in the middle of the night, three men broke into a house and took the president of a candy company from his own bathtub.",
+      "cap": "Osaka, Japan — March 1984",
+      "img": "A quiet suburban Japanese residential street at night, traditional house exteriors, a single lit window, wet pavement reflecting a streetlamp, muted blue-grey, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "They held him for three days. Then he escaped, and told police everything he could remember. It wasn't much. And it was the last clean look anyone would ever get at them.",
+      "cap": "Held three days. Then he escaped.",
+      "img": "A closed industrial warehouse exterior at night, a shuttered roller door, a single dim security light, wet ground, quiet and empty, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "card",
+      "vo": "They signed their letters with a name borrowed from a children's story — a master thief in disguise called the Phantom with Twenty Faces. They added one.",
+      "card": { "kind": "quote", "head": "かい人21面相", "accent": "\"The Monster with 21 Faces\"" }
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Nobody has ever explained why twenty-one, and not twenty. That turns out to be true of almost everything about them.",
+      "cap": "Why 21? No one has ever said.",
+      "img": "An old children's storybook closed on a low table, a soft desk lamp casting warm light, tatami flooring, muted, no readable text, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "For a year and a half, they wrote taunting letters to newspapers, to police, to two of Japan's biggest food companies — in playful, childish handwriting, entirely in phonetic script, simple enough that a child could have written it.",
+      "cap": "Letters, typed, for a year and a half",
+      "img": "A manual typewriter on a plain wooden desk under a dim lamp, a stack of blank paper beside it, muted colors, no visible text, no people."
+    },
+    {
+      "id": "B06",
+      "vtype": "card",
+      "vo": "In May, the threat arrived in writing. Cyanide, in Glico's own products, on shelves nationwide.",
+      "card": { "kind": "quote", "head": "\"We put cyanide in Glico's products.\"", "accent": "\"Eat Glico and go to the grave.\"" }
+    },
+    {
+      "id": "B07",
+      "vtype": "still",
+      "vo": "Glico pulled every product from every shelf in the country. It cost them, and their rival Morinaga, millions of dollars. Hundreds of workers lost their jobs — over letters typed by men no one had ever seen.",
+      "cap": "Every shelf, emptied",
+      "img": "Empty grocery store shelves under flat fluorescent light, bare metal racks, a quiet aisle, muted colors, no readable labels, no people."
+    },
+    {
+      "id": "B08",
+      "vtype": "still",
+      "vo": "That October, they went further, and left real cyanide-laced candy on real shelves — each package carrying its own warning label. Contains poison. Eat this and die. As far as anyone has ever confirmed, not one person who saw that label ate the candy anyway.",
+      "cap": "Real poison. A warning on every package.",
+      "img": "A convenience store candy shelf close-up, boxed sweets in muted color, soft fluorescent light, no readable text on any label, still-life documentary photography, no people."
+    },
+    {
+      "id": "B09",
+      "vtype": "still",
+      "vo": "Then, without warning, they forgave Glico. One letter said there was a four-year-old in their own group who cried, every time he heard about it.",
+      "cap": "Then they forgave Glico",
+      "img": "A single child's toy left alone on tatami flooring, soft window light, quiet and still, muted colors, no people."
+    },
+    {
+      "id": "B10",
+      "vtype": "still",
+      "vo": "Twice, they arranged for cash to be dropped along moving trains and highways. Twice, undercover police watched a man they had never seen before — checking the money, checking for a tail, and vanishing.",
+      "cap": "Twice, a man appeared. Twice, he vanished.",
+      "img": "An empty train platform at night, a single dim lamp, wet tracks reflecting light, quiet and still, muted blue-grey, no people."
+    },
+    {
+      "id": "B11",
+      "vtype": "still",
+      "vo": "In January nineteen eighty-five, police released his likeness to the public. It became the most famous face in Japan — a face that belonged to no one anyone could find.",
+      "cap": "The most famous face in Japan",
+      "img": "An artist's sketching desk with pencils and an eraser under a single desk lamp, blank drawing paper, muted tones, no visible face or content, no people."
+    },
+    {
+      "id": "B12",
+      "vtype": "card",
+      "vo": "Forty years later, in twenty twenty-four, a retired investigator finally said what many had wondered. The famous sketch, he said, never really looked like the man at all.",
+      "card": { "kind": "bignum", "big": "40", "unit": "years later, in 2024", "sub": "a retired investigator said the famous sketch never looked like him at all" }
+    },
+    {
+      "id": "B13",
+      "vtype": "still",
+      "vo": "One writer spent years living under suspicion — cleared by his alibi, never charged. He later wrote his own books about being, in his words, the case's most important person of interest.",
+      "cap": "Suspected for years. Never charged.",
+      "img": "A writer's study desk with stacked manuscript pages and a lamp, a bookshelf in soft shadow, muted colors, no readable text, no people."
+    },
+    {
+      "id": "B14",
+      "vtype": "still",
+      "vo": "That November, after a stakeout went wrong and the man in the sketch slipped away again, the superintendent of the Shiga police said publicly that all responsibility was his alone. The following August, he took his own life.",
+      "cap": "\"All responsibility is mine.\"",
+      "img": "An empty police station corridor at night, closed office doors, dim fluorescent light, quiet and institutional, muted colors, no people."
+    },
+    {
+      "id": "B15",
+      "vtype": "still",
+      "vo": "Five days after his death, one last letter arrived. It said they were finished — a kind of condolence offering, in their own words.",
+      "cap": "Five days later, the last letter",
+      "img": "A plain unmarked envelope resting on a dark wooden table, a single soft light source, quiet and still, muted colors, no visible text, no people."
+    },
+    {
+      "id": "B16",
+      "vtype": "card",
+      "vo": "It's fun to lead a bad man's life, the letter said. Then the letters simply stopped.",
+      "card": { "kind": "quote", "head": "\"We'll quit tormenting food companies now.\"", "accent": "\"It's fun to lead a bad man's life.\"" }
+    },
+    {
+      "id": "B17",
+      "vtype": "still",
+      "vo": "No one was ever arrested. The investigation ran for sixteen years, until the law itself gave up first — the last chargeable offense passed its own statute of limitations at midnight, in February of the year two thousand.",
+      "cap": "16 years. Then the clock simply ran out.",
+      "img": "A quiet archive room with tall filing cabinets in rows, dim overhead light, muted colors, no readable labels, no people."
+    },
+    {
+      "id": "B18",
+      "vtype": "still",
+      "vo": "The letters stopped. The men never surfaced. Twenty-one faces, and to this day, not one of them has a name.",
+      "cap": "Not one of them has a name.",
+      "img": "An empty Osaka residential street at dawn, quiet and still, muted blue-grey morning light, no people."
+    },
+    {
+      "id": "B19",
+      "vtype": "card",
+      "vo": "Twenty-one faces. Zero names.",
+      "card": { "kind": "signoff", "head": "Twenty-one faces.", "accent": "Zero names.", "by": "byclaude.net" }
+    }
+  ]
+}
