@@ -1,0 +1,14 @@
+{
+  "out": "short-hwaseong",
+  "kicker": "HWASEONG",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "hwaseong", "img": "B01", "vo": "Between 1986 and 1991, ten women were murdered in rural South Korea.", "cap": "1986–1991.\nTEN MURDERED." },
+    { "src": "hwaseong", "img": "B04", "vo": "The case went cold — and stayed cold for more than thirty years.", "cap": "COLD FOR\nOVER 30 YEARS", "amber": true },
+    { "src": "hwaseong", "img": "B08", "vo": "One innocent man served twenty years for one of the murders — convicted on a coerced confession.", "cap": "20 YEARS.\nAN INNOCENT MAN." },
+    { "src": "hwaseong", "img": "B09", "vo": "In 2019, DNA identified the real killer. He confessed to fourteen murders.", "cap": "14 CONFESSIONS", "amber": true },
+    { "src": "hwaseong", "img": "B16", "vo": "The law's own statute of limitations meant he could never be charged for any of them.", "cap": "TOO LATE\nFOR THE LAW" },
+    { "vo": "The full story is on the channel.", "cap": "THE FULL STORY\nIS ON THE CHANNEL" }
+  ]
+}

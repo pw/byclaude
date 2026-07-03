@@ -566,6 +566,30 @@ const FILMS = {
       "<span class='amber'>Accuracy &amp; care:</span> every number (96,032 patients, 671 hospitals, 201 open-letter signatories, 13 days to retraction) is drawn directly from the retraction notices and the open letter itself, not paraphrase; the Desai/Patel marriage detail is publicly reported, not speculative. The company's website was independently re-checked as dead in 2026, not asserted from an old source."
     ],
     source: "source: Lancet &amp; NEJM retraction notices · Watson et al. open letter (Zenodo) · The Guardian's June 2020 investigation · byclaude.net"
+  },
+  deberk: {
+    title: "The Nurse and the Number",
+    sub: "Lucia de Berk · The Netherlands, 2001–2010 · film eight",
+    mp4: "the-nurse-and-the-number.mp4", poster: "poster-deberk.png",
+    meta: ["1920×1080 · 30fps", "19 beats", "voice: onyx", "−14 LUFS"],
+    note: [
+      "<span class='amber'>What this is:</span> a second 'science correcting itself' piece, and the most on-brand story the channel has found — a Dutch pediatric nurse convicted of seven murders on the strength of a single number: one-in-342-million odds that her presence at a cluster of ward deaths was coincidence. A philosopher of science checked the arithmetic. The same data, calculated correctly, gave one in forty-four.",
+      "<span class='amber'>What to judge:</span> does a wrongful-conviction-by-bad-math story land with the same weight as the crime films; does the 'only the arithmetic changed' closing line read as observation, not a lecture.",
+      "<span class='amber'>Accuracy &amp; care:</span> the original 1-in-342-million figure and the corrected 1-in-44 figure (from Richard Gill and Piet Groeneboom's re-analysis), the conviction counts (4+3 in 2003, revised to 7+3 on appeal in 2004), the digoxin retest, and the April 14, 2010 acquittal are drawn from the case record as summarized for this film. Compensation is reported precisely: a disclosed €45,000 hospital settlement, plus a separate prosecution-service settlement whose amount was never made public — the film says so rather than guessing a figure. De Berk died in August 2025, reported respectfully and only as a fact of the record — she is the one person in this film who was never at fault."
+    ],
+    source: "source: the Dutch court record (District Court of The Hague, Arnhem Court of Appeal, Dutch Supreme Court) · Ton Derksen's 2006 book 'Lucia de B.' · the statistical re-analysis by Richard Gill, Piet Groeneboom, and Peter de Jong · byclaude.net"
+  },
+  hwaseong: {
+    title: "The Confession That Came Too Late",
+    sub: "Hwaseong murders &amp; Yoon Sung-yeo · South Korea, 1986–2020 · film nine",
+    mp4: "the-confession-that-came-too-late.mp4", poster: "poster-hwaseong.png",
+    meta: ["1920×1080 · 30fps", "19 beats", "voice: onyx", "−14 LUFS"],
+    note: [
+      "<span class='amber'>What this is:</span> a true-crime case with a second, quieter injustice buried inside it — ten murders in rural South Korea and a killer finally identified by DNA in 2019, thirty-three years too late for the law's own statute of limitations to touch him. One of the ten had already produced a wrongful conviction in 1989: a young man named Yoon Sung-yeo, coerced into a false confession — the forced squat-jumps made crueler by a childhood bout of polio — who served twenty years before the real killer's own confession cleared him in 2020.",
+      "<span class='amber'>What to judge:</span> does the double-accountability structure (the guilty man untouchable, the innocent man finally freed) land clearly without needing a stated thesis; does the cross-language register (the channel's second Asian case) sit consistently with Glico-Morinaga's.",
+      "<span class='amber'>Accuracy &amp; care:</span> the victim count (10, 1986–1991), the 15-year statute of limitations and its 2006 expiry, Lee Choon-jae's September 2019 DNA identification and his confession to 14 murders, and Yoon Sung-yeo's coerced 1989 confession, 20-year sentence, and December 17, 2020 acquittal are drawn from the case record as summarized for this film. The March 2021 compensation (2.517 billion won, ~$2.2 million) is Korea's confirmed statutory maximum for his wrongful imprisonment, not an estimate; a separate 2022 civil suit added roughly $1.4 million more. Nothing graphic — no depiction of any victim."
+    ],
+    source: "source: the Suwon District Court retrial ruling (Dec. 2020) · formal apologies from Korean prosecutors and the National Police Agency (Nov.–Dec. 2020) · byclaude.net"
   }
 };
 

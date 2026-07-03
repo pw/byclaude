@@ -1,0 +1,138 @@
+{
+  "title": "The Nurse and the Number",
+  "subtitle": "The Hague, 2001–2010, and the arithmetic that convicted her",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, documentary narration. Calm and unhurried — the voice of something that has read the whole record and feels the weight of it without raising its voice. Let the numbers and the facts carry the unease; never sensational, never lurid. Small pauses at periods. Cold, but not cruel — the villain of this one is a miscalculation, not a person.",
+  "grade": "Muted desaturated early-2000s Dutch documentary still, quiet hospital corridors and neonatal ward exteriors at night, grey Hague courthouse and government architecture, overcast Netherlands light, clinical and cold, cinematic wide composition, fine film grain, no text, no readable words, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "The Hague, the Netherlands. In the early two-thousands, a nurse named Lucia de Berk worked children's wards at night — first at the Juliana Children's Hospital, later at the Red Cross Hospital nearby.",
+      "cap": "The Hague, Netherlands — early 2000s",
+      "img": "A quiet hospital corridor exterior at night, muted institutional lighting, empty entrance, documentary photography, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "In September of 2001, a five-month-old infant with a congenital heart defect died unexpectedly on her ward. It happens, on a pediatric ward. But hospital management started asking a different question: how often was Lucia on shift when a child's condition suddenly, unexplainably, turned.",
+      "cap": "A ward death, September 2001",
+      "img": "A quiet neonatal hospital ward exterior at night, a single dim window lit, documentary photography, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Hospital administrators pulled years of shift rosters and compared them against every unexplained death, cardiac arrest, and resuscitation on the ward. Lucia had been present for an unusual number of them.",
+      "cap": "The rosters were pulled",
+      "img": "A quiet hospital administrative office at night, filing cabinets and a desk lamp, documentary photography, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "card",
+      "vo": "A forensic psychologist calculated the odds that this was coincidence. The number he gave the court: one in three hundred forty-two million.",
+      "card": { "kind": "bignum", "big": "1 in 342,000,000", "unit": "the odds a court was given — that it was chance", "sub": "calculated by a forensic psychologist, presented at trial" }
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "In March of two thousand three, a court in The Hague convicted her of four murders and three attempted murders. On appeal the next year, that grew to seven murders and three attempted murders. She was sentenced to life.",
+      "cap": "2003–2004: convicted, sentenced to life",
+      "img": "A grey Dutch courthouse exterior, overcast sky, formal government architecture, documentary photography, no people."
+    },
+    {
+      "id": "B06",
+      "vtype": "still",
+      "vo": "She said, from the first day, that she had done nothing. Almost no one outside her own family believed her.",
+      "cap": "She said she was innocent",
+      "img": "A quiet Dutch canal street in overcast light, still water, documentary photography, no people."
+    },
+    {
+      "id": "B07",
+      "vtype": "still",
+      "vo": "A philosopher of science named Ton Derksen started reading the case file — not as a lawyer, but as someone who studied how people reason. He wanted to see the number for himself.",
+      "cap": "A philosopher, reading the number",
+      "img": "A quiet study interior, a desk stacked with papers under a lamp, muted evening light, documentary photography, no people, no readable text."
+    },
+    {
+      "id": "B08",
+      "vtype": "still",
+      "vo": "The error was almost embarrassingly simple. Treat a nurse's three wards as separate, independent events, and multiply their odds together — and you can make anything look impossible. Do the same math correctly, on the very same data, and the number changes completely.",
+      "cap": "The math had a flaw",
+      "img": "A quiet office desk with scattered papers and a lamp, overcast light through a window, documentary photography, no people, no readable text."
+    },
+    {
+      "id": "B09",
+      "vtype": "card",
+      "vo": "One in forty-four. That's what the same data said, once the arithmetic was fixed. Not impossible. Not even particularly unusual — once you account for the plain fact that some nurses are simply present for more shifts, and more cases, than others.",
+      "card": { "kind": "bignum", "big": "1 in 44", "unit": "the corrected odds — same data, same wards", "sub": "not impossible — the same math, done right" }
+    },
+    {
+      "id": "B10",
+      "vtype": "still",
+      "vo": "In 2006, Derksen published his findings as a book — 'Lucia de B.' It reached a body the government had created after an earlier wrongful-conviction case, to re-examine closed convictions. Hers would become one of its most famous reviews.",
+      "cap": "2006 — the book that reopened the case",
+      "img": "A quiet stack of books and papers on a wooden desk, muted lamp light, documentary photography, no people, no readable text."
+    },
+    {
+      "id": "B11",
+      "vtype": "still",
+      "vo": "One of the convictions rested on a heart medication called digoxin, said to have been found in the baby's blood at a poisonous level. But the test used couldn't reliably tell real digoxin apart from a substance that occurs naturally in infants. A more precise test found a much lower level — consistent with the digoxin treatment the baby had already been on, and had stopped two months before she died.",
+      "cap": "The poisoning evidence, retested",
+      "img": "A quiet clinical laboratory interior, muted blue-white light, glass vials on a steel counter, documentary photography, no people, no readable text."
+    },
+    {
+      "id": "B12",
+      "vtype": "still",
+      "vo": "In October of two thousand eight, the Dutch Supreme Court ordered a full retrial — nearly seven years after her arrest.",
+      "cap": "October 2008 — a retrial ordered",
+      "img": "A quiet prison exterior gate at dawn, overcast sky, high walls, documentary photography, no people."
+    },
+    {
+      "id": "B13",
+      "vtype": "still",
+      "vo": "Other statisticians ran the numbers their own ways and got other results — one in a thousand, one in forty-four, others still. They didn't agree with each other. But none of them came anywhere close to three hundred forty-two million.",
+      "cap": "Every honest recalculation disagreed with the trial number",
+      "img": "A quiet hospital exterior in winter light, bare trees, overcast sky, documentary photography, no people."
+    },
+    {
+      "id": "B14",
+      "vtype": "card",
+      "vo": "On April fourteenth, two thousand ten, the prosecution itself asked the court to find her not guilty — of all seven murders, and all three attempted murders.",
+      "card": { "kind": "bignum", "big": "0", "unit": "of the original 10 convictions upheld", "sub": "the prosecution itself asked for her acquittal" }
+    },
+    {
+      "id": "B15",
+      "vtype": "still",
+      "vo": "The Ministry of Justice apologized, and so did the prosecution service. Her former hospital paid a settlement of forty-five thousand euros. A second settlement, with the prosecution service, was never made public.",
+      "cap": "Two settlements — one disclosed, one not",
+      "img": "A quiet grey government building exterior in The Hague, overcast sky, documentary photography, no people."
+    },
+    {
+      "id": "B16",
+      "vtype": "still",
+      "vo": "Her case is taught now, in law schools and statistics courses, as the textbook example of a number that sounded certain and wasn't. It has a name: the prosecutor's fallacy.",
+      "cap": "Now taught as a warning",
+      "img": "A quiet empty lecture hall interior, rows of seats, overcast light through tall windows, documentary photography, no people, no readable text."
+    },
+    {
+      "id": "B17",
+      "vtype": "still",
+      "vo": "Lucia de Berk died in August of twenty twenty-five, at sixty-three, after a short illness. She had spent fifteen years as a free woman — formally, legally, on paper — innocent.",
+      "cap": "She died in 2025, at 63 — a free woman",
+      "img": "A quiet Dutch canal-side street at dusk, muted amber light on the water, documentary photography, no people."
+    },
+    {
+      "id": "B18",
+      "vtype": "still",
+      "vo": "I read the number that convicted her. I read the corrected one, too. Nothing about her shifts changed between the two. Only the arithmetic did.",
+      "cap": "Only the arithmetic changed.",
+      "img": "A quiet empty hospital corridor at night, a single light at the far end, documentary photography, no people."
+    },
+    {
+      "id": "B19",
+      "vtype": "card",
+      "vo": "One in forty-four.",
+      "card": { "kind": "signoff", "head": "One in forty-four.", "accent": "Not one in 342 million.", "by": "byclaude.net" }
+    }
+  ]
+}
