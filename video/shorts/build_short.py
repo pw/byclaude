@@ -68,10 +68,57 @@ def compose(beat, idx):
 def tts(beat, idx):
     out = BASE / "audio" / f"{idx:02d}.mp3"
     payload = json.dumps({"model": "gpt-4o-mini-tts", "voice": spec["voice"], "input": beat["vo"], "instructions": spec["voice_instructions"]})
-    subprocess.run(["curl", "-s", "https://api.openai.com/v1/audio/speech", "-H", f"Authorization: Bearer {OKEY}",
-                    "-H", "Content-Type: application/json", "-d", payload, "-o", str(out)], capture_output=True)
-    dur = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(out)], capture_output=True, text=True)
+    # generate up to 2x; verify each via whisper transcription (catches silent TTS truncation)
+    last_reason = ''
+    for attempt in (1, 2):
+        subprocess.run(["curl", "-s", "https://api.openai.com/v1/audio/speech", "-H", f"Authorization: Bearer {OKEY}",
+                        "-H", "Content-Type: application/json", "-d", payload, "-o", str(out)], capture_output=True)
+        dur = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(out)], capture_output=True, text=True)
+        if out.stat().st_size < 1000:
+            last_reason = 'tts-empty-file'; continue
+        v = verify_tts(out, beat["vo"])
+        if v[0] in ('ok', 'unknown'):
+            tag = '' if attempt == 1 else f' (recovered on retry {attempt}: {v[1]})'
+            print(f"[tts] beat {idx}: {v[0]}{tag}", flush=True)
+            return idx, round(float(dur.stdout.strip()), 3)
+        last_reason = v[1]
+        if attempt == 1:
+            print(f"[tts] beat {idx}: VERIFY-FAIL ({v[1]}) -- retrying. expected={beat['vo']!r} got={v[2]!r}", flush=True)
+    # still failing after retry -- proceed but warn loudly (operator's call, not a hard block)
+    print(f"[tts] beat {idx}: *** STILL FAILING after retry ({last_reason}); using best attempt ***", flush=True)
+    print(f"    expected: {beat['vo']!r}", flush=True)
+    print(f"    got:      {v[2]!r}", flush=True)
     return idx, round(float(dur.stdout.strip()), 3)
+
+def verify_tts(audio_path, expected):
+    """Returns (status, reason, transcript). status in {'ok','fail','unknown'}.
+    Hard check: last content word of script must appear in transcript (catches truncation).
+    Soft check: word overlap >= 0.6 (catches drift). whisper failure = 'unknown' (don't block)."""
+    import re, urllib.request
+    try:
+        with open(audio_path, 'rb') as f: data = f.read()
+        boundary = '----verifyboundary'
+        body = f'--{boundary}\r\nContent-Disposition: form-data; name="model"\r\n\r\nwhisper-1\r\n'.encode()
+        body += f'--{boundary}\r\nContent-Disposition: form-data; name="file"; filename="a.mp3"\r\nContent-Type: audio/mpeg\r\n\r\n'.encode()
+        body += data + b'\r\n--' + boundary.encode() + b'--\r\n'
+        req = urllib.request.Request('https://api.openai.com/v1/audio/transcriptions', data=body,
+                                     headers={'Authorization': f'Bearer {OKEY}', 'Content-Type': f'multipart/form-data; boundary={boundary}'})
+        transcript = json.loads(urllib.request.urlopen(req, timeout=30).read())['text']
+    except Exception as e:
+        return ('unknown', f'whisper-fail: {e}', '')
+    n = lambda s: re.sub(r'\s+', ' ', re.sub(r'[^a-z0-9 ]', ' ', s.lower())).strip()
+    e = n(expected); a = n(transcript)
+    if not a: return ('fail', 'empty-transcript', transcript)
+    e_content = [w for w in e.split() if len(w) > 2]
+    if not e_content: return ('ok', 'no-checkable-words', transcript)
+    last = e_content[-1]
+    if last not in a.split():
+        return ('fail', f'last-word-missing:{last!r}', transcript)
+    e_set, a_set = set(e_content), set(w for w in a.split() if len(w) > 2)
+    overlap = len(e_set & a_set) / len(e_set)
+    if overlap < 0.6:
+        return ('fail', f'overlap-{overlap:.0%}-below-60%', transcript)
+    return ('ok', f'{overlap:.0%}-overlap', transcript)
 
 beats = spec["beats"]
 durs = {}
