@@ -1,0 +1,44 @@
+{
+  "title": "Await the Signal",
+  "subtitle": "The Lead Masks Case, Brazil, 1966",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Warm desaturated documentary still, dry-season tropical hilltop outside Rio de Janeiro in August 1966, golden-brown grass and exposed rock, hazy humid subtropical light, distant Guanabara Bay silhouette, melancholy and uncanny, period 1966 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In August of nineteen sixty-six, a boy was flying a kite on a hill above Rio.",
+      "cap": "Brazil · 1966",
+      "img": "A wide grassy tropical hilltop in late afternoon dry-season light, brown-gold grass and exposed grey rock, a small distant silhouette of a kite in a hazy sky, distant blue silhouette of Guanabara Bay, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "He found two men lying in the grass, side by side. They wore suits. They wore waterproof coats. And each of them had a lead mask over his eyes.",
+      "cap": "Two men\nTwo lead masks",
+      "img": "Two adult male figures seen from a distance lying side by side on dry brown grass on a hilltop, dressed in dark formal suits and coats, strange dull lead-coloured masks over their faces, late afternoon light, no gore, nothing graphic, eerie and still."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "There were no wounds on them. No blood. No sign that either man had struggled. Just the two of them, an empty water bottle, and two wet towels.",
+      "cap": "No cause of death",
+      "img": "Close on dry tropical grass with an old glass water bottle and two folded damp cloth towels resting on the ground, late warm daylight, desolate, melancholy, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "In one man's pocket, a small notebook. The last entry was an instruction. Six thirty: ingest the capsules. After the effect: protect the metals. Await the signal.",
+      "cap": "Await the signal",
+      "img": "A small open 1960s pocket notebook resting on dry grass, a handwritten page visible but illegible, a pen beside it, warm afternoon light, documentary still, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The coroner could not say what killed them. By the time the autopsy was performed, the organs were too decomposed to test. The signal never came.",
+      "cap": "Still unknown",
+      "img": "A wide empty tropical hilltop at dusk, two small dark shapes on the grass in the far distance seen from far away, brown-gold grass fading to deep blue evening sky, melancholy, remote, no recognizable faces, nothing graphic."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "title": "Six Letters",
+  "subtitle": "The YOGTZE Case, Germany, 1984",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Cold late-autumn night in West Germany, 1984, deep blue-black darkness with sodium-vapor amber highlights, wet surfaces, thin fog, melancholy and uncanny, precise period 1984 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "facts": "All claims verified 2026-07-04 against: official Staatsanwaltschaft Hagen + Polizei Hagen closure press release 2025-04-03 (presseportal.de/blaulicht/pm/30835/6005237, fetched + read directly); de.wikipedia YOGTZE-Fall (sourced to Aktenzeichen XY 12.04.1985, produced with Kripo Hagen); AutoBild 27.05.2016 file-based long-read (EKHK Ulrich Kayser). Name is Günter (no h). Evening scene + note = wife's testimony only ('nach Angaben seiner Frau'); note never secured (wife discarded it that night, per Siegener Zeitung 2016 via de.wp); Kayser 2016: 'Wir wissen nicht, ob es ihn gegeben hat'; 2025 cold-case investigator Schmidt doubts it existed. 1984 Gutachten (run over elsewhere, placed in passenger seat) per de.wp/AutoBild — reversed 2025: never forensically validated (Schmidt via AK-Kurier 12.08.2025), injuries match unbraked tree crash, no foreign DNA, nakedness attributed to psychological state, depression + acute crisis, 'Verkehrsunfall ohne Fremdeinwirkung'. Four-men statement to the truckers per XY/file ('vier weitere männliche Personen… abgehauen'; asked if friends: no).",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "One night in October of nineteen eighty-four, a German man named Günter Stoll suddenly called out: now, I get it. He wrote six letters on a slip of paper — then crossed them out. By sunrise, he was dead.",
+      "cap": "Germany · 1984",
+      "img": "A modest West German living room at night in 1984 — a small table under a single warm lamp, a blank notepad-sized slip of paper and a ballpoint pen resting on the table, any marks on the paper completely illegible, a wooden chair pushed back as if someone just stood up, drawn curtains, faint television glow from another room."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Truck drivers found his car at three A.M., in a ditch off the autobahn. He was inside — naked, dying. He told them four men had been in the car. That they ran. That they were not his friends.",
+      "cap": "Four men",
+      "img": "A pale light-blue late-1970s Volkswagen Golf Mk1 hatchback crashed nose-down into a grassy ditch below a dark German autobahn embankment at night, a trail of flattened brush behind it, its headlights dark, thin fog, the distant glow of one approaching truck's headlights far up the empty carriageway, interior of the car in deep shadow, no people visible."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Examiners concluded he had been run over somewhere else — and placed in his own passenger seat. A murder case stayed open for forty years. And the six letters became famous: Y. O. G. T. Z. E.",
+      "cap": "YOGTZE",
+      "amber": true,
+      "img": "A 1984 West German police case file open on a metal desk at night — typewritten pages and black-and-white photographs spread under a single cold desk lamp, all text completely illegible and blurred, a full ashtray, deep shadow swallowing the edges of the room."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Then, in twenty twenty-five, new forensics closed the case. The injuries matched the crash. No trace of anyone else. A man in crisis, alone, driving unbraked into a tree. There was no murder.",
+      "cap": "No murder.",
+      "img": "A quiet German autobahn embankment at pale dawn in the present day, the night fog lifting — a single mature tree on the grassy slope, an empty modern carriageway, soft grey-blue first light replacing the darkness, serene, still, slightly sad."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Which leaves the word. The paper was never found — his wife had thrown it away that night. She is the only person who ever saw it. Forty years of theories, about six letters the police doubt were ever written at all.",
+      "cap": "Six letters\nOne witness",
+      "amber": true,
+      "img": "The same modest 1984 West German living room table at night, seen slightly closer — the warm lamp still on, the wooden chair empty, and the table completely bare, no paper anywhere, the room a shade darker and utterly still."
+    }
+  ]
+}

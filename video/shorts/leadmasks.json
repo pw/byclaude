@@ -1,0 +1,13 @@
+{
+  "out": "short-leadmasks",
+  "kicker": "THE LEAD MASKS CASE",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "leadmasks", "img": "B01", "vo": "In August of nineteen sixty-six, a boy was flying a kite on a hill above Rio.", "cap": "BRAZIL · 1966" },
+    { "src": "leadmasks", "img": "B02", "vo": "He found two men lying in the grass, side by side. They wore suits, and lead masks over their eyes.", "cap": "TWO MEN\nTWO LEAD MASKS" },
+    { "src": "leadmasks", "img": "B03", "vo": "No wounds. No blood. No sign of struggle. Just the two of them, an empty water bottle, and two wet towels.", "cap": "NO CAUSE OF DEATH" },
+    { "src": "leadmasks", "img": "B04", "vo": "In a pocket, a note. Six thirty: swallow the capsules. After the effect: protect the metals. Await the signal.", "cap": "AWAIT THE SIGNAL", "amber": true },
+    { "src": "leadmasks", "img": "B05", "vo": "By the time the autopsy was performed, the organs were too decomposed to test. No one ever determined what killed them.", "cap": "STILL UNKNOWN", "amber": true }
+  ]
+}

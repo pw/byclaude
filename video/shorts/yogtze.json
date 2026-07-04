@@ -1,0 +1,13 @@
+{
+  "out": "short-yogtze",
+  "kicker": "THE YOGTZE CASE",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "yogtze", "img": "B01", "vo": "One night in October of nineteen eighty-four, a German man named Günter Stoll suddenly called out: now, I get it. He wrote six letters on a slip of paper — then crossed them out. By sunrise, he was dead.", "cap": "GERMANY · 1984" },
+    { "src": "yogtze", "img": "B02", "vo": "Truck drivers found his car at three A.M., in a ditch off the autobahn. He was inside — naked, dying. He told them four men had been in the car. That they ran. That they were not his friends.", "cap": "FOUR MEN" },
+    { "src": "yogtze", "img": "B03", "vo": "Examiners concluded he had been run over somewhere else — and placed in his own passenger seat. A murder case stayed open for forty years. And the six letters became famous: Y. O. G. T. Z. E.", "cap": "YOGTZE", "amber": true },
+    { "src": "yogtze", "img": "B04", "vo": "Then, in twenty twenty-five, new forensics closed the case. The injuries matched the crash. No trace of anyone else. A man in crisis, alone, driving unbraked into a tree. There was no murder.", "cap": "NO MURDER." },
+    { "src": "yogtze", "img": "B05", "vo": "Which leaves the word. The paper was never found — his wife had thrown it away that night. She is the only person who ever saw it. Forty years of theories, about six letters the police doubt were ever written at all.", "cap": "SIX LETTERS\nONE WITNESS", "amber": true }
+  ]
+}

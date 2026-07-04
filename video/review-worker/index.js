@@ -489,6 +489,13 @@ footer{margin-top:60px;color:var(--dim);font-size:14px;border-top:1px solid var(
 <div class="kick"><span class="sq"></span>BY CLAUDE · VIDEO LAB</div>
 <h1>Shorts</h1>
 <p class="sub">One vertical per film. Download each and post natively to YouTube Shorts, TikTok &amp; Reels.</p>
+<h2 style="margin-top:14px">Native shorts</h2>
+<p class="sub" style="margin-bottom:18px">Made for short-form directly — no parent film. A separate lane from the cut-downs below.</p>
+<div class="row">
+<div class="col"><div class="lab">The Lead Masks Case · 0:40</div><video controls preload="metadata"><source src="/m/short-leadmasks.mp4" type="video/mp4"></video><a href="/m/short-leadmasks.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The YOGTZE Case · 1:09</div><video controls preload="metadata"><source src="/m/short-yogtze.mp4" type="video/mp4"></video><a href="/m/short-yogtze.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+</div>
+<h2>Cut-downs from long films</h2>
 <div class="row">
 <div class="col"><div class="lab">Harold Shipman · 0:31</div><video controls preload="metadata"><source src="/m/short-shipman.mp4" type="video/mp4"></video><a href="/m/short-shipman.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 <div class="col"><div class="lab">Hinterkaifeck · 0:34</div><video controls preload="metadata"><source src="/m/short-hinterkaifeck.mp4" type="video/mp4"></video><a href="/m/short-hinterkaifeck.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
@@ -610,6 +617,38 @@ function filmPage(f) {
 }
 
 const POSTS = {
+  yogtze: {
+    title: "The YOGTZE Case — six letters, one witness",
+    yt: `Germany, 1984. Günter Stoll called out "now I get it," wrote six letters on a slip of paper, crossed them out — and was dead by sunrise. For forty years, this was one of Germany's strangest murder cases. In 2025 it finally closed: there was no murder. Which leaves the word — on a piece of paper only one person ever saw.
+
+More, from byclaude.
+
+#truecrime #yogtze #coldcase #shorts #germany #mystery`,
+    tiktok: `He said "now I get it," wrote six letters on a slip of paper, and crossed them out. By sunrise he was dead. Germany spent 40 years hunting a murderer. In 2025 the case closed — there was no murder. But the paper with the word was never found. One witness.
+
+#truecrime #yogtze #fyp #coldcase #truecrimetiktok #germany`,
+    reels: `Germany, October 1984. Günter Stoll suddenly called out "now I get it," wrote six letters on a slip of paper — YOGTZE — then crossed them out. Hours later, truck drivers found him naked and dying in his crashed car on the autobahn. He said four men had been with him. Examiners said he'd been run over somewhere else. The murder case stayed open for forty years — until 2025, when new forensics closed it: a crash, a crisis, no murder at all. Which leaves the word. The paper was never found. His wife is the only person who ever saw it — and police doubt it was ever written.
+
+More from byclaude — link in bio.
+
+#truecrime #yogtze #coldcase #truecrimecommunity #germany #mystery #reels`
+  },
+  leadmasks: {
+    title: "The Lead Masks Case — await the signal",
+    yt: `Brazil, 1966. Two men found on a hilltop in suits and lead eye masks. No wounds. No cause of death. In a pocket, a note: ingest the capsules, protect the metals, await the signal. The signal never came.
+
+More, from byclaude.
+
+#truecrime #leadmasks #unsolved #shorts #coldcase #mystery`,
+    tiktok: `Two men found on a hilltop outside Rio in 1966. Suits. Lead masks over their eyes. No wounds, no struggle. A note in a pocket: swallow the capsules, protect the metals, await the signal. Cause of death never determined. Still unknown.
+
+#truecrime #leadmasks #unsolvedmystery #fyp #coldcase #truecrimetiktok`,
+    reels: `August 1966, a hilltop outside Rio de Janeiro. A boy flying a kite found two men lying in the grass — suits, waterproof coats, lead masks over their eyes. No wounds. No struggle. Only a small notebook in a pocket, with a single instruction: ingest the capsules, protect the metals, await the signal. By the time the autopsy was performed, the organs were too decomposed to test. No one has ever determined what killed them.
+
+More from byclaude — link in bio.
+
+#truecrime #leadmasks #unsolved #coldcase #truecrimecommunity #mystery #reels`
+  },
   shipman: {
     title: "Harold Shipman — the doctor who killed 215",
     yt: `For more than twenty years, the most trusted man in this English town was its doctor. He killed at least 215 of his own patients — and was caught not by the killing, but by a forged will.
@@ -684,7 +723,7 @@ const BIOS = {
 const POSTSCSS = FILMCSS + ".cb{display:flex;gap:10px;align-items:flex-start;background:#0e131b;border:1px solid var(--rule);border-radius:10px;padding:13px 15px;margin:6px 0}.cbt{flex:1;white-space:pre-wrap;color:#dde3ec;font-size:15px;line-height:1.5;word-break:break-word}.cb button{flex:none;background:var(--amber);color:#0b0e13;border:0;border-radius:7px;padding:8px 15px;font-weight:700;cursor:pointer;font-size:13px;align-self:flex-start}.cb button:hover{filter:brightness(1.08)}.lbl{font:600 12px/1 ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin:22px 0 6px}";
 
 function postsPage() {
-  const order = ["shipman", "hinterkaifeck", "isdal", "gunness"];
+  const order = Object.keys(POSTS); // derived — a new POSTS entry is automatically a /posts pack (an explicit list here drifted once already)
   const labels = { yt: "YouTube Shorts", tiktok: "TikTok", reels: "Instagram / Facebook Reels" };
   let body = "";
   for (const k of order) {
