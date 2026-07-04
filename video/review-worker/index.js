@@ -495,6 +495,9 @@ footer{margin-top:60px;color:var(--dim);font-size:14px;border-top:1px solid var(
 <div class="col"><div class="lab">The Lead Masks Case · 0:40</div><video controls preload="metadata"><source src="/m/short-leadmasks.mp4" type="video/mp4"></video><a href="/m/short-leadmasks.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 <div class="col"><div class="lab">The YOGTZE Case · 1:09</div><video controls preload="metadata"><source src="/m/short-yogtze.mp4" type="video/mp4"></video><a href="/m/short-yogtze.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 <div class="col"><div class="lab">The Dancing Plague · 1:08</div><video controls preload="metadata"><source src="/m/short-dancingplague.mp4" type="video/mp4"></video><a href="/m/short-dancingplague.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">Elisa Lam · 0:38</div><video controls preload="metadata"><source src="/m/short-elisalam.mp4" type="video/mp4"></video><a href="/m/short-elisalam.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Somerton Man · 0:40</div><video controls preload="metadata"><source src="/m/short-somertonman.mp4" type="video/mp4"></video><a href="/m/short-somertonman.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Max Headroom Incident · 0:38</div><video controls preload="metadata"><source src="/m/short-maxheadroom.mp4" type="video/mp4"></video><a href="/m/short-maxheadroom.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 </div>
 <h2>Cut-downs from long films</h2>
 <div class="row">
@@ -618,6 +621,54 @@ function filmPage(f) {
 }
 
 const POSTS = {
+  elisalam: {
+    title: "Elisa Lam — the doors that did not close",
+    yt: `In February 2013, a 21-year-old student stepped into an elevator at the Cecil Hotel in Los Angeles. The doors did not close. For ninety seconds she pressed buttons, stepped into the hallway, stepped back in. The security camera recorded what it recorded.
+
+Two weeks later, guests complained the water tasted wrong.
+
+More from byclaude.
+
+#truecrime #elisalam #cecilhotel #unsolved #shorts #mystery`,
+    tiktok: `February 2013, the Cecil Hotel. A 21-year-old student steps into an elevator. The doors do not close. Ninety seconds of footage no one has ever explained. Two weeks later, guests complained the water tasted wrong.
+
+#truecrime #elisalam #cecilhotel #fyp #unsolvedmystery #truecrimetiktok`,
+    reels: `Los Angeles, 2013. A 21-year-old student named Elisa Lam steps into an elevator at the Cecil Hotel. The doors do not close. For ninety seconds she presses buttons, steps into the hallway, steps back in. The security camera recorded what it recorded. She was not seen alive again. Two weeks later, guests complained the water tasted wrong. The autopsy found her in the rooftop tank. The lid was heavy. There was no sign of anyone else. The coroner ruled it accidental.
+
+More from byclaude — link in bio.
+
+#truecrime #elisalam #cecilhotel #unsolved #truecrimecommunity #mystery #reels`
+  },
+  somertonman: {
+    title: "The Somerton Man — Tamam Shud",
+    yt: `In December 1948, the body of a man was found on a beach in South Australia. No wallet. No identification. Every label cut from his clothes. In a hidden pocket, a torn piece of paper. Two words: Tamam Shud. It means, ended.
+
+In 2022, DNA identified him. The rest is still unknown.
+
+#truecrime #somertonman #tamamshud #unsolved #shorts #coldcase`,
+    tiktok: `A man found dead on an Australian beach in 1948. No wallet. No ID. Every label cut from his clothes. In a hidden pocket, a torn scrap of paper — Tamam Shud. It means, ended. For seventy years, no name. In 2022, DNA gave him one. The rest is still unknown.
+
+#truecrime #somertonman #tamamshud #fyp #unsolvedmystery #truecrimetiktok`,
+    reels: `Adelaide, 1948. The body of a man found on a beach. No wallet. No identification. Every label cut from his clothes. In a hidden pocket, a small torn piece of paper — two words: Tamam Shud. It is Persian. It means, ended. No one claimed him. No one recognized him. For seventy years, his name was unknown. In 2022, DNA finally identified him as Carl Webb. Why he died on that beach is still unknown.
+
+More from byclaude — link in bio.
+
+#truecrime #somertonman #tamamshud #unsolved #coldcase #truecrimecommunity #mystery #reels`
+  },
+  maxheadroom: {
+    title: "The Max Headroom Incident — the voice in the static",
+    yt: `On a November night in 1987, television sets across Chicago flickered. The local news was interrupted. In its place: a man in a rubber mask, his voice distorted. He spoke for ninety seconds. He laughed. He did it twice that night, on two different stations. The FCC launched the largest manhunt in its history. No one was ever charged.
+
+#truecrime #maxheadroom #unsolved #shorts #mystery #1987`,
+    tiktok: `November 1987, Chicago. The local news is interrupted by a man in a rubber Max Headroom mask, voice distorted, laughing on live television. Ninety seconds. He did it twice in one night on two different stations. The FCC launched the largest manhunt in its history. No one was ever charged.
+
+#truecrime #maxheadroom #unsolvedmystery #fyp #mystery #truecrimetiktok #80s`,
+    reels: `Chicago, November 22, 1987. Television sets across the city flickered. The local news was interrupted. In its place: a man wearing a rubber Max Headroom mask, his voice distorted. He spoke for ninety seconds. He laughed. He referenced a fictional news anchor. Then the broadcast returned. He did it twice that night, on two different stations. The FCC launched the largest manhunt in its history. No one was ever charged. The mask, the voice, the joke — all remained unidentified.
+
+More from byclaude — link in bio.
+
+#truecrime #maxheadroom #unsolved #mystery #truecrimecommunity #80s #reels`
+  },
   dancingplague: {
     title: "The Dancing Plague of 1518 — no recorded deaths",
     yt: `Strasbourg, 1518. A woman steps into the street and starts dancing — no music, no reason. Within a month, four hundred people can't stop. The city built them a stage. Here's the part almost every retelling gets wrong.

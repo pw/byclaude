@@ -1,0 +1,45 @@
+{
+  "title": "The Voice in the Static",
+  "subtitle": "The Max Headroom Incident · Chicago, 1987",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, late-1980s analog television broadcast interior, CRT scanline texture, VHS color noise, glitching chroma, vintage Chicago television studio aesthetic, melancholy and uncanny, period 1987 detail, cinematic wide composition, fine film grain, no readable text overlays, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "On a November night in 1987, television sets across Chicago flickered.",
+      "cap": "Chicago · 1987",
+      "img": "An old CRT television set glowing in a dark 1980s suburban living room at night, scanlines and static distortion on the screen, warm wood-paneled background, eerie, no people, no readable screen content."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "The local news was interrupted. In its place: a man wearing a rubber mask, his voice distorted.",
+      "cap": "Signal hijacked",
+      "img": "Heavy analog video static and chroma distortion filling a vintage CRT screen, harsh horizontal sync bars, glitching late-80s broadcast interference pattern, eerie, no people, no readable content."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "He spoke for ninety seconds. He laughed. He referred to a fictional news anchor. Then the broadcast returned.",
+      "cap": "Ninety seconds",
+      "img": "A vintage 1980s television broadcasting control room at night, rows of CRT monitors with static, analog mixing console with glowing buttons, dim blue light, melancholy, no people, no readable screens."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "He did it twice that night, on two different stations. The FCC launched the largest manhunt in its history.",
+      "cap": "Twice in one night",
+      "img": "A lone rooftop television antenna silhouetted against a cold overcast Chicago night sky, distant city lights below, eerie and remote, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "No one was ever charged. The mask, the voice, the joke, all remained unidentified.",
+      "cap": "Still unknown",
+      "amber": true,
+      "img": "An old CRT television switched off, screen collapsed to a small bright horizontal line then fading to dark, in a dim room at night, melancholy and quiet, no people."
+    }
+  ]
+}

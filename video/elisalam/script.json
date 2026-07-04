@@ -1,0 +1,45 @@
+{
+  "title": "The Doors Did Not Close",
+  "subtitle": "Elisa Lam · Los Angeles, 2013",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, downtown Los Angeles 2013, faded art-deco hotel interior, dim yellowish corridor lighting, worn carpet, vintage elevator metal, melancholy and uncanny, period 2013 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In February 2013, a 21-year-old student named Elisa Lam stepped into an elevator at the Cecil Hotel in Los Angeles.",
+      "cap": "Los Angeles · 2013",
+      "img": "Old worn art-deco hotel elevator interior with brass trim and faded carpet, doors open onto a dim corridor, yellowish overhead light, melancholy and slightly sinister, no people, nothing graphic."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "The doors did not close. For ninety seconds, she pressed buttons, stepped into the hallway, stepped back in. The security camera recorded what it recorded.",
+      "cap": "Ninety seconds of footage",
+      "img": "Empty dimly-lit hotel corridor with worn patterned carpet seen from inside an open elevator at night, yellowish wall sconces, eerie stillness, no people, surveillance point of view."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "She was not seen alive again.",
+      "cap": "Never seen alive again",
+      "amber": true
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Two weeks later, guests complained that the water tasted wrong. The autopsy found her in the rooftop tank.",
+      "cap": "Found in the water tank",
+      "amber": true,
+      "img": "A large rusty cylindrical rooftop water tank on top of a 1920s downtown Los Angeles hotel, hazy daylight, exposed pipes, melancholy industrial detail, no people, nothing graphic."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The lid was heavy. There was no sign of anyone else. The coroner ruled it accidental.",
+      "cap": "Ruled accidental",
+      "img": "Empty downtown Los Angeles rooftop at dusk, large rust-streaked water tanks under a fading orange sky, distant skyscrapers, melancholy and remote, no people, nothing graphic."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "out": "short-somertonman",
+  "kicker": "THE SOMERTON MAN",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "somertonman", "img": "B01", "vo": "In December 1948, the body of a man was found on a beach in South Australia.", "cap": "ADELAIDE · 1948" },
+    { "src": "somertonman", "img": "B02", "vo": "He carried no wallet. No identification. Every label had been cut from his clothes.", "cap": "EVERY LABEL\nCUT AWAY" },
+    { "src": "somertonman", "img": "B03", "vo": "In a hidden pocket, a small torn piece of paper. Two words: Tamam Shud. It is Persian. It means, ended.", "cap": "TAMAM SHUD\n(ENDED)", "amber": true },
+    { "src": "somertonman", "img": "B04", "vo": "No one claimed him. No one recognized him. For seventy years, his name was unknown.", "cap": "NO NAME\nFOR 70 YEARS" },
+    { "src": "somertonman", "img": "B05", "vo": "In 2022, DNA identified him. Carl Webb. Why he died on that beach is still unknown.", "cap": "NAMED IN 2022\nSTILL UNKNOWN", "amber": true }
+  ]
+}

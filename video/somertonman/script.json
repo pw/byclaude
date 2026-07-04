@@ -1,0 +1,46 @@
+{
+  "title": "Tamam Shud",
+  "subtitle": "The Somerton Man · Adelaide, 1948",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, an Australian beach in high summer in December 1948, pale gold sand and limestone seawall, hazy hot Southern Hemisphere summer light, gentle breakers, melancholy and uncanny, period 1948 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In December 1948, the body of a man was found on a beach in South Australia.",
+      "cap": "Adelaide · 1948",
+      "img": "A wide pale-gold sand Australian beach at dawn, low gentle waves, distant stone seawall, hazy warm summer light, melancholy and desolate, no people, nothing graphic."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "He carried no wallet. No identification. Every label had been cut from his clothes.",
+      "cap": "Every label cut away",
+      "img": "Folded vintage 1940s mens clothing — a brown suit jacket, white shirt, tie — resting on sand, all maker's labels visibly cut away leaving small frayed threads, melancholy documentary still, no people, nothing graphic."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "In a hidden pocket, a small torn piece of paper. Two words: Tamam Shud. It is Persian. It means, ended.",
+      "cap": "Tamam Shud\n(ended)",
+      "amber": true,
+      "img": "A small torn yellowed scrap of paper lying on dark sand, weathered, photographed close, warm documentary light, no people, no readable text."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "No one claimed him. No one recognized him. For seventy years, his name was unknown.",
+      "cap": "No name for 70 years",
+      "img": "A simple unmarked grey granite headstone in an Australian cemetery, drowsy summer afternoon light, dry grass, melancholy, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "In 2022, DNA identified him. Carl Webb. Why he died on that beach is still unknown.",
+      "cap": "Named in 2022\nstill unknown",
+      "amber": true,
+      "img": "An empty wide Australian beach at dusk, gentle low waves, warm fading light over pale sand, distant horizon, melancholy and unresolved, no people, nothing graphic."
+    }
+  ]
+}

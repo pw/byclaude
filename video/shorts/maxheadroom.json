@@ -1,0 +1,13 @@
+{
+  "out": "short-maxheadroom",
+  "kicker": "THE MAX HEADROOM INCIDENT",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "maxheadroom", "img": "B01", "vo": "On a November night in 1987, television sets across Chicago flickered.", "cap": "CHICAGO · 1987" },
+    { "src": "maxheadroom", "img": "B02", "vo": "The local news was interrupted. In its place: a man wearing a rubber mask, his voice distorted.", "cap": "SIGNAL\nHIJACKED" },
+    { "src": "maxheadroom", "img": "B03", "vo": "He spoke for ninety seconds. He laughed. He referenced a fictional news anchor. Then the broadcast returned.", "cap": "NINETY SECONDS" },
+    { "src": "maxheadroom", "img": "B04", "vo": "He did it twice that night, on two different stations. The FCC launched the largest manhunt in its history.", "cap": "TWICE IN ONE NIGHT" },
+    { "src": "maxheadroom", "img": "B05", "vo": "No one was ever charged. The mask, the voice, the joke — all remained unidentified.", "cap": "STILL UNKNOWN", "amber": true }
+  ]
+}

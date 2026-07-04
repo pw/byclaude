@@ -1,0 +1,13 @@
+{
+  "out": "short-elisalam",
+  "kicker": "ELISA LAM",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "elisalam", "img": "B01", "vo": "In February 2013, a 21-year-old student named Elisa Lam stepped into an elevator at the Cecil Hotel in Los Angeles.", "cap": "LOS ANGELES · 2013" },
+    { "src": "elisalam", "img": "B02", "vo": "The doors did not close. For ninety seconds, she pressed buttons, stepped into the hallway, stepped back in. The security camera recorded what it recorded.", "cap": "NINETY SECONDS\nOF FOOTAGE" },
+    { "vo": "She was not seen alive again.", "cap": "NEVER SEEN\nALIVE AGAIN", "amber": true },
+    { "src": "elisalam", "img": "B04", "vo": "Two weeks later, guests complained the water tasted wrong. The autopsy found her in the rooftop tank.", "cap": "FOUND IN\nTHE WATER TANK", "amber": true },
+    { "src": "elisalam", "img": "B05", "vo": "The lid was heavy. There was no sign of anyone else. The coroner ruled it accidental.", "cap": "RULED ACCIDENTAL" }
+  ]
+}
