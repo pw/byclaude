@@ -1,0 +1,17 @@
+{
+  "out": "short-sawmill",
+  "kicker": "THE BRIDGE NEXT DOOR",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "sawmillbridge", "img": "B01", "vo": "Forty-three thousand cars cross this bridge every day, on the Saw Mill River Parkway, just outside Yonkers. You've probably been one of them.", "cap": "43,153 CARS.\nEVERY DAY." },
+    { "src": "sawmillbridge", "img": "B02", "vo": "State inspectors rate its substructure 'Critical' — the worst score they give a bridge that's still open to traffic. It's also flagged 'scour critical': an open question about whether the river is eating away at what holds it up.", "cap": "SUBSTRUCTURE:\nCRITICAL", "amber": true },
+    { "src": "sawmillbridge", "img": "B03", "vo": "That rating has stood for more than five years. Nobody fixed it. Nobody replaced it. It's been left exactly as it was found.", "cap": "5+ YEARS.\nUNTOUCHED." },
+    { "src": "sawmillbridge", "img": "B04", "vo": "A few exits north, on this same parkway, the state spent thirty-eight million dollars rebuilding two other bridges — finished in twenty twenty-three. This one wasn't part of that project.", "cap": "$38M.\nTWO BRIDGES FIXED.\nNOT THIS ONE.", "amber": true },
+    { "src": "sawmillbridge", "img": "B05", "vo": "It's not in any other funded plan either. No news story. No date to replace it. Just the record — and a bridge you've probably already driven, with no way to know.", "cap": "YOU HAD\nNO WAY TO KNOW", "amber": true }
+  ],
+  "facts": {
+    "source": "Verified via the bridge-story-engine two-tier pipeline (Sonnet-5-wide scout -> adversarial frontier verify, 0 false negatives across a 98-bridge calibrated batch). NBI ID NY-000000005500699, NY Route 987D over the Saw Mill River / Saw Mill River Parkway, Yonkers, southern Westchester County NY. Owner: NY State Highway Agency. Traffic 43,153 vehicles/day (2021 count). Substructure rated Critical (NYSDOT's worst routine condition rating); overall condition Poor for 5+ years. Flagged scour-critical, unresolved. State completed a separate $38M rebuild of two other Saw Mill River Parkway bridges in Pleasantville (Exits 26-28) in Jan 2023 -- this bridge was explicitly not part of that project. Also not in the $115M Lower Westchester Bridge Bundle or a 2025 $16.4M I-287-over-the-parkway joint job (different structure). No news coverage or programmed replacement located for this exact bridge.",
+    "honesty_guard_followed": "Critical substructure + scour-critical are framed throughout as advanced deferred deterioration and an open, unresolved foundation question -- never as collapse-imminent or unsafe-to-drive-today. No script line asserts or implies the bridge could fail or is dangerous right now. The dread is duration-of-neglect + heavy daily reliance + the documented contrast with the neighboring bridges that got fixed, not present-tense danger. No officials, dates, or specifics were invented beyond the verified facts above."
+  }
+}
