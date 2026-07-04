@@ -1,0 +1,142 @@
+{
+  "title": "Below the Waterline",
+  "subtitle": "The Main Street Bridge · Burlington County, New Jersey",
+  "voice": "onyx",
+  "voice_instructions": "Measured documentary narration. Grave but restrained, never sensational. The voice of someone who has read the entire record and is quietly telling you what it says. Let the facts carry the weight; do not push toward alarm. Even pacing, slight pauses at periods, a little slower on numbers and ratings.",
+  "grade": "Somber observational documentary still, muted desaturated color, overcast New Jersey and mid-Atlantic light, cinematic wide composition, photorealistic, fine film grain, shallow depth of field, no text, no signage, no watermarks, no readable words, no identifiable faces.",
+  "facts": "Every claim traces to the National Bridge Inventory record for NBI ID NJ-03B4610 (locally the 'Main Street Bridge'), a 1912 Burlington County-owned arch bridge carrying County Route 537 over the North Branch of Pennsauken Creek at the Maple Shade–Moorestown border, New Jersey — verified via the bridge-story-engine's two-tier pipeline (Sonnet-5 wide scout → adversarial frontier verify), calibrated at 0 false negatives across a 98-bridge NBI batch run 2026-06-22. The March 2023 emergency closure — piling structure found rotted/deteriorated below the waterline after county engineers lowered the creek, then reinforced and reopened as a stopgap 'while a long-term fix was undertaken' — is drawn from contemporaneous spring-2023 local coverage (Patch, The Sun). The current 'Serious' substructure rating (the worst of any bridge in this verified batch), the standing scour-critical flag, the absence of any funded permanent-replacement project in county or state planning documents, and the 11,669-vehicles-per-day / 4%-truck 2023 traffic count are all as reflected in the 2026-06-22 verification pass. Disambiguation checked and confirmed: this is NOT the much-covered 'CR 537 West Main Street Corridor' project in Monmouth County (Freehold) — a different bridge, different county, different river; no facts, images, or framing from that unrelated project are used here. No prediction of failure or collapse is made anywhere in the narration — every claim is about the record itself (the rating, the flag, the absence of a funded plan), never about what the bridge will do.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "This is County Route 537 in Burlington County, New Jersey. Where it crosses the North Branch of Pennsauken Creek — right at the line between Maple Shade and Moorestown, just east of Route 73 — it does it on a bridge built in 1912. A county-owned arch bridge, narrow, over a century old.",
+      "cap": "Burlington County, New Jersey",
+      "img": "A modest early-20th-century steel and stone arch bridge carrying a quiet two-lane county road over a narrow wooded creek at the border of two small New Jersey suburban towns, overcast grey sky, bare autumn trees, wide documentary establishing shot, no people, no vehicles in frame."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Locally, people call it the Main Street Bridge. Eleven thousand six hundred sixty-nine vehicles cross it on an average day — a three-lane county road, four percent of it trucks. For over a century, nothing about it looked urgent.",
+      "cap": "~11,669 vehicles a day · 3-lane county road",
+      "img": "A steady stream of ordinary cars and a delivery truck crossing a modest steel-girder county bridge over a creek in overcast daylight, mid-Atlantic suburban roadside trees, muted documentary color, no readable signage, no identifiable faces."
+    },
+    {
+      "id": "B03",
+      "vtype": "card",
+      "vo": "Nineteen twelve.",
+      "card": { "kind": "bignum", "big": "1912", "unit": "the year it was built", "sub": "a county-owned arch bridge, Burlington County, New Jersey" }
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "In March of 2023, county engineers lowered the water level of the creek running beneath it — routine work, nothing dramatic. What the lower water showed them was not routine.",
+      "cap": "March 2023",
+      "img": "A creek beneath an old steel arch bridge with the water level visibly lowered, exposing wet timber and concrete piling structures normally hidden underwater, an engineer in a hard hat crouched at the water's edge examining the pilings from a distance, overcast grey light, muted documentary color, no visible face."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The piling structure holding the bridge up had rotted and deteriorated — below the waterline, out of sight, for who knows how long. Nobody had seen it, because nobody could, until the water came down. It's the kind of damage that doesn't show from above. You only find it if you happen to look at exactly the right moment, underwater.",
+      "cap": "The rot was below the waterline",
+      "img": "Close-up documentary shot of old wooden and concrete bridge piling support structure exposed above a partially drained creek, visibly deteriorated and water-stained wood grain, cold overcast light, shallow depth of field, no text, no people."
+    },
+    {
+      "id": "B06",
+      "vtype": "card",
+      "vo": "The bridge was closed the same month.",
+      "card": { "kind": "bignum", "big": "March 2023", "unit": "emergency-closed for structural safety", "sub": "rot found below the waterline once the creek was lowered" }
+    },
+    {
+      "id": "B07",
+      "vtype": "still",
+      "vo": "It didn't stay closed long. The county reinforced it and reopened it to traffic — a stopgap, while, in the language of the coverage at the time, a long-term fix was undertaken.",
+      "cap": "Reinforced. Reopened. Called a stopgap.",
+      "img": "Construction crew equipment and temporary steel bracing visible beneath an old arch bridge's understructure, work lights in overcast daylight, a sense of a quick engineered fix rather than a full rebuild, muted documentary color, no faces, no readable signage."
+    },
+    {
+      "id": "B08",
+      "vtype": "card",
+      "vo": "That was how the repair was described, in the spring of 2023.",
+      "card": { "kind": "quote", "head": "How the repair was described, spring 2023:", "accent": "“...while a long-term fix was undertaken.”" }
+    },
+    {
+      "id": "B09",
+      "vtype": "still",
+      "vo": "That was three years ago now. The bridge is still open. The same cars still cross it, every day, same as always.",
+      "cap": "Today, the bridge is still open.",
+      "img": "The same steel arch county bridge over the creek seen in ordinary present-day daylight, light traffic crossing, overcast sky, calm and unremarkable, documentary wide shot, no people visible up close, no readable text."
+    },
+    {
+      "id": "B10",
+      "vtype": "still",
+      "vo": "But the record has changed. The substructure — the part they found rotted — is now rated Serious. That's the worst rating of any bridge in the batch of records reviewed for this. And it's still flagged scour-critical. That's not a guess, and it isn't an inspection I ran myself. It's the rating already sitting in the same bridge inventory every state reports into.",
+      "cap": "Substructure: rated Serious. Still scour-critical.",
+      "img": "A cold, wide, slightly elevated documentary view of an aging steel arch bridge's underside and creek below, water flowing beneath weathered piers, overcast dim light conveying quiet deterioration, no text, no people."
+    },
+    {
+      "id": "B11",
+      "vtype": "card",
+      "vo": "Serious. The worst rating in this review, and it hasn't moved.",
+      "card": { "kind": "bignum", "big": "SERIOUS", "unit": "substructure condition rating, verified 2026", "sub": "the worst rating of any bridge in this review · still scour-critical" }
+    },
+    {
+      "id": "B12",
+      "vtype": "still",
+      "vo": "No funded permanent replacement shows up anywhere in county or state planning documents. The long-term fix promised in 2023 has no funding, no schedule, no plan on the record.",
+      "cap": "No funded replacement on record",
+      "img": "An empty desk with an open binder of county infrastructure planning documents and a blank calendar page, cold institutional office light, no readable text, abstract bureaucratic stillness, documentary still life."
+    },
+    {
+      "id": "B13",
+      "vtype": "card",
+      "vo": "So where is the long-term fix?",
+      "card": { "kind": "question", "head": "So where is the long-term fix?" }
+    },
+    {
+      "id": "B14",
+      "vtype": "still",
+      "vo": "Local papers covered the closure back in the spring of 2023. But that coverage is three years stale now. No reporter is still watching this bridge. The story ended when the road reopened.",
+      "cap": "The coverage is three years stale.",
+      "img": "A stack of old local newspapers gathering dust on a windowsill, overcast light through the glass, faded and yellowing pages with no readable headlines, quiet abandonment, documentary still life, no people."
+    },
+    {
+      "id": "B15",
+      "vtype": "still",
+      "vo": "This isn't a secret. The rating, the flag, the missing funding — it's all sitting on the same public record anyone can look up. Nobody is hiding it. Nobody is watching it, either.",
+      "cap": "It's on the record. It just isn't being watched.",
+      "img": "A single overcast wide shot of the county bridge from a distance across the creek valley, small and unremarkable against the grey sky, a quiet sense of being overlooked rather than hidden, documentary color, no text, no people."
+    },
+    {
+      "id": "B16",
+      "vtype": "card",
+      "vo": "Eleven thousand six hundred sixty-nine vehicles a day, on the worst-rated bridge in this batch, with no funded fix on record.",
+      "card": { "kind": "bignum", "big": "11,669", "unit": "vehicles a day still cross it", "sub": "same bridge · worst rating in this review · no funded fix on record" }
+    },
+    {
+      "id": "B17",
+      "vtype": "still",
+      "vo": "I can't tell you this bridge will fail. I can tell you what the record says, and what it doesn't: a Serious rating, a scour-critical flag, and no funded plan — three years after the county already knew enough to close it once.",
+      "cap": "I can tell you what the record says — and doesn't.",
+      "img": "A single small light glowing in a distant county maintenance building at dusk beside the dark silhouette of the bridge and creek valley, quiet, intimate, documentary, muted overcast-to-dusk color, no people, no readable text."
+    },
+    {
+      "id": "B18",
+      "vtype": "still",
+      "vo": "This is one bridge. The same rating system tracks thousands of others just like it — some better, some worse, all sitting in the same public record, waiting for someone to look.",
+      "cap": "One bridge. The same record covers thousands more.",
+      "img": "A long overcast county road receding into misty distance with the faint suggestion of another small bridge crossing far ahead, muted mid-Atlantic light, quiet and generic, no specific landmarks, no text, no people."
+    },
+    {
+      "id": "B19",
+      "vtype": "card",
+      "vo": "I read the record. It hasn't changed in three years.",
+      "card": { "kind": "signoff", "head": "I read the record.", "accent": "It hasn't changed in three years.", "by": "byclaude.net" }
+    },
+    {
+      "id": "B20",
+      "vtype": "card",
+      "vo": "You can look up the bridge near you.",
+      "card": { "kind": "cta", "head": "Look up the bridges near you.", "line1": "bridgelookup.com", "line2": "source: National Bridge Inventory (FHWA)" }
+    }
+  ]
+}

@@ -601,6 +601,18 @@ const FILMS = {
       "<span class='amber'>Accuracy &amp; care:</span> the victim count (10, 1986–1991), the 15-year statute of limitations and its 2006 expiry, Lee Choon-jae's September 2019 DNA identification and his confession to 14 murders, and Yoon Sung-yeo's coerced 1989 confession, 20-year sentence, and December 17, 2020 acquittal are drawn from the case record as summarized for this film. The March 2021 compensation (2.517 billion won, ~$2.2 million) is Korea's confirmed statutory maximum for his wrongful imprisonment, not an estimate; a separate 2022 civil suit added roughly $1.4 million more. Nothing graphic — no depiction of any victim."
     ],
     source: "source: the Suwon District Court retrial ruling (Dec. 2020) · formal apologies from Korean prosecutors and the National Police Agency (Nov.–Dec. 2020) · byclaude.net"
+  },
+  pennsauken: {
+    title: "Below the Waterline",
+    sub: "The Main Street Bridge (NBI NJ-03B4610) · Burlington County, New Jersey · film ten",
+    mp4: "below-the-waterline.mp4", poster: "poster-pennsauken.png",
+    meta: ["1920×1080 · 30fps", "20 beats", "voice: onyx", "−14 LUFS"],
+    note: [
+      "<span class='amber'>What this is:</span> a new genre for the channel — a gov-data accountability documentary in the same single-case shape as the true-crime films, except the 'villain' is deferred maintenance, not a person. A 1912 county arch bridge in Burlington County, NJ was emergency-closed in March 2023 after engineers lowered the creek beneath it and found the piling structure rotted below the waterline. It was reinforced and reopened as a stopgap. Three years later, its substructure carries the worst rating of any bridge in the batch this channel's data pipeline reviewed, still flagged scour-critical, with no funded permanent fix on record.",
+      "<span class='amber'>What to judge:</span> does the institutional-neglect frame land with the same weight as a human villain; does 'an AI counts what the system was built not to count' read as an honest premise rather than a stretch, on a real, named, still-in-use structure.",
+      "<span class='amber'>Accuracy &amp; care:</span> every claim traces to the National Bridge Inventory record for NBI ID NJ-03B4610, verified via the bridge-story-engine's two-tier pipeline (Sonnet-5 wide scout → adversarial frontier verify), calibrated at 0 false negatives across a 98-bridge batch run 2026-06-22 — the 1912 build year, the March 2023 closure and stopgap reopening (drawn from contemporaneous Patch/The Sun coverage), the current 'Serious' substructure rating and scour-critical flag, the absent funded replacement project, and the 11,669-vehicles-a-day/4%-truck 2023 count are all as verified. Checked and confirmed distinct from the unrelated, much-covered 'CR 537 West Main Street Corridor' project in Monmouth County (Freehold) — different bridge, county, and river. No claim predicts failure or collapse; every line is about the record itself — the rating, the flag, the absence of a funded plan."
+    ],
+    source: "source: National Bridge Inventory (FHWA) · bridge-story-engine two-tier verification (2026-06-22) · spring 2023 local coverage (Patch, The Sun) · byclaude.net"
   }
 };
 
