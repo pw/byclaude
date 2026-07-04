@@ -1,0 +1,13 @@
+{
+  "out": "short-dancingplague",
+  "kicker": "THE DANCING PLAGUE",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "dancingplague", "img": "B01", "vo": "In July of fifteen eighteen, in the city of Strasbourg, a woman named Frau Troffea stepped into the street and began to dance. No music. No reason anyone could see. She simply would not stop.", "cap": "STRASBOURG · 1518" },
+    { "src": "dancingplague", "img": "B02", "vo": "Within a week, thirty more had joined her. Within a month, as many as four hundred people were dancing — through the summer heat, day and night, until their feet bled and they collapsed.", "cap": "400 DANCERS" },
+    { "src": "dancingplague", "img": "B03", "vo": "The city could not explain it, so they tried to cure it with more dancing: a stage, hired musicians, guild halls cleared out for the afflicted. It only made things worse.", "cap": "THEY BUILT A STAGE" },
+    { "src": "dancingplague", "img": "B04", "vo": "You will read that it killed hundreds — fifteen people a day, at its worst. But that number comes from writers a century later. Strasbourg's own records from 1518 never mention a single death.", "cap": "NO RECORDED\nDEATHS", "amber": true },
+    { "src": "dancingplague", "img": "B05", "vo": "The best guess now isn't poison, or plague. It's fear — a city starved and terrified, dancing itself into a trance it could not leave. Four hundred people danced for weeks. What it cost them was never written down.", "cap": "NEVER WRITTEN\nDOWN", "amber": true }
+  ]
+}

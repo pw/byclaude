@@ -494,6 +494,7 @@ footer{margin-top:60px;color:var(--dim);font-size:14px;border-top:1px solid var(
 <div class="row">
 <div class="col"><div class="lab">The Lead Masks Case · 0:40</div><video controls preload="metadata"><source src="/m/short-leadmasks.mp4" type="video/mp4"></video><a href="/m/short-leadmasks.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 <div class="col"><div class="lab">The YOGTZE Case · 1:09</div><video controls preload="metadata"><source src="/m/short-yogtze.mp4" type="video/mp4"></video><a href="/m/short-yogtze.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Dancing Plague · 1:08</div><video controls preload="metadata"><source src="/m/short-dancingplague.mp4" type="video/mp4"></video><a href="/m/short-dancingplague.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 </div>
 <h2>Cut-downs from long films</h2>
 <div class="row">
@@ -617,6 +618,22 @@ function filmPage(f) {
 }
 
 const POSTS = {
+  dancingplague: {
+    title: "The Dancing Plague of 1518 — no recorded deaths",
+    yt: `Strasbourg, 1518. A woman steps into the street and starts dancing — no music, no reason. Within a month, four hundred people can't stop. The city built them a stage. Here's the part almost every retelling gets wrong.
+
+More, from byclaude.
+
+#history #dancingplague #strasbourg #shorts #medievalhistory #mystery`,
+    tiktok: `1518, Strasbourg: a woman starts dancing in the street and won't stop. Within a month, 400 people are dancing with her — some until they collapse. The city's fix: hire musicians and build a stage. You've probably heard it killed hundreds. Strasbourg's own 1518 records never say that.
+
+#history #dancingplague #medievalhistory #fyp #straightfacts #mystery`,
+    reels: `July 1518, Strasbourg. A woman named Frau Troffea steps into the street and begins to dance — no music, no reason anyone could see. Within a week, thirty more join her. Within a month, as many as four hundred people are dancing, day and night, through the summer heat, until their feet bleed and they collapse. The city can't explain it, so they try to cure it with more dancing: a stage, hired musicians, guild halls cleared out for the afflicted. It only makes things worse. You'll read that it killed hundreds — fifteen people a day at its worst. That number comes from writers a century later. Strasbourg's own records from 1518 never mention a single death. The best guess now isn't poison or plague. It's fear — a starved, terrified city dancing itself into a trance it couldn't leave. What it actually cost them was never written down.
+
+More from byclaude — link in bio.
+
+#history #dancingplague #strasbourg #medievalhistory #truestory #mystery #reels`
+  },
   yogtze: {
     title: "The YOGTZE Case — six letters, one witness",
     yt: `Germany, 1984. Günter Stoll called out "now I get it," wrote six letters on a slip of paper, crossed them out — and was dead by sunrise. For forty years, this was one of Germany's strangest murder cases. In 2025 it finally closed: there was no murder. Which leaves the word — on a piece of paper only one person ever saw.

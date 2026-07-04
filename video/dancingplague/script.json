@@ -1,0 +1,47 @@
+{
+  "title": "The Dance That Wouldn't Stop",
+  "subtitle": "The Strasbourg Dancing Plague, 1518",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Warm desaturated documentary illustration, a 16th-century free city in the Holy Roman Empire in high summer, sunbaked cobblestone streets and half-timbered buildings, dusty golden late-afternoon light, melancholy and uncanny, precise period 1518 detail, cinematic wide composition, fine film grain, no modern text, no signage, nothing graphic.",
+  "facts": "All claims verified 2026-07-04 against three independently fetched sources: en.wikipedia.org/wiki/Dancing_plague_of_1518, nationalgeographic.com/history/article/dancing-plague-of-1518-strasbourg-choreomania, history.com/articles/what-was-the-dancing-plague-of-1518 (all fetched directly this session), cross-checked against John Waller's 'A Time to Dance, A Time to Die' (2008), the standard historical monograph. Start: July 14, 1518, Strasbourg — then a free city of the Holy Roman Empire, not France (modern France only later). Initiator commonly named 'Frau Troffea' in secondary/chronicle accounts; spelling and identity details vary across sources, so this is presented as the historians' name for her, not an asserted certainty. Spread: 30+ dancers within a week (Wikipedia), up to ~400 total afflicted within a month (Wikipedia, History.com, and Nat Geo all concur on ~400). Authorities' response — a stage built, musicians/professional dancers hired, guild halls refurbished for dancers, later reversed into a public dance ban plus a pilgrimage to a St. Vitus shrine — corroborated independently by both Wikipedia and History.com. LOAD-BEARING CLAIM (the twist): contemporary 1518 Strasbourg sources never recorded a death toll or confirmed any deaths at all; the widely repeated 'up to 15 deaths a day' figure comes from later, non-contemporary writers — per Wikipedia's own sourcing discussion, echoed by Nat Geo's hedged phrasing ('some accounts noted...'). History.com's own retelling blurs the ~400 AFFLICTED into '400 victims' — itself a live example of the exact drift this video calls out; not attributed by name in the narration, but the reason B04 is careful to say 'writers a century later,' not 'historians agree.' Resolution: episode subsided by early September 1518. Theories: Waller's mass psychogenic illness (triggered by famine/disease-driven stress in Alsace) is the more credible current explanation among historians; ergot poisoning is the disputed, less-credible alternative — Waller argues it doesn't explain multi-day continuous purposeful dancing.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In July of fifteen eighteen, in the city of Strasbourg, a woman named Frau Troffea stepped into the street and began to dance. No music. No reason anyone could see. She simply would not stop.",
+      "cap": "Strasbourg · 1518",
+      "img": "A narrow sunbaked cobblestone street between close-set half-timbered houses in a 16th-century German free city at midday in high summer, one distant solitary female figure alone in the street caught mid-motion as if dancing, no other people, dust hanging in harsh sunlight, no legible text or signage."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Within a week, thirty more had joined her. Within a month, as many as four hundred people were dancing — through the summer heat, day and night, until their feet bled and they collapsed.",
+      "cap": "400 dancers",
+      "img": "A wide view of a medieval town square at high summer noon, dozens of small distant silhouetted figures scattered across the cobblestones in different postures of motion, long harsh shadows, sun-baked stone buildings ringing the square, shimmering heat haze, no visible faces, nothing graphic."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "The city could not explain it, so they tried to cure it with more dancing: a stage, hired musicians, guild halls cleared out for the afflicted. It only made things worse.",
+      "cap": "They built a stage",
+      "img": "A freshly built wooden stage in a 16th-century town square at dusk, small silhouetted figures of musicians with period drums and pipes standing near it, guild-hall doors flung open behind, a loose scattered crowd of tiny distant figures near the stage, warm fading light, dust, no visible faces, nothing graphic."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "You will read that it killed hundreds — fifteen people a day, at its worst. But that number comes from writers a century later. Strasbourg's own records from 1518 never mention a single death.",
+      "cap": "No recorded deaths",
+      "amber": true,
+      "img": "An empty 16th-century city archive room at dusk, a heavy wooden table holding a single opened leather-bound ledger with blank aged parchment pages catching low candlelight, a quill and inkwell beside it, deep shadow around the edges of the room, no people, no legible text, still and contemplative."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The best guess now isn't poison, or plague. It's fear — a city starved and terrified, dancing itself into a trance it could not leave. Four hundred people danced for weeks. What it cost them was never written down.",
+      "cap": "Never written down",
+      "amber": true,
+      "img": "A wide view of a stone chapel on a hill above a medieval city at dawn, an empty cobblestone road winding up to it, a few tiny distant departing figures on the path, soft pale morning light replacing the night, serene, melancholy, quiet, no visible faces, nothing graphic."
+    }
+  ]
+}
