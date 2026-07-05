@@ -1,0 +1,13 @@
+{
+  "out": "short-beaumont",
+  "kicker": "THE BEAUMONT CHILDREN",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "beaumont", "img": "B01", "vo": "On Australia Day, nineteen sixty-six, three children caught the eight-forty-five bus to a beach in Adelaide.", "cap": "ADELAIDE · 1966" },
+    { "src": "beaumont", "img": "B02", "vo": "Jane, nine. Arnna, seven. Grant, four.", "cap": "JANE 9 · ARNNA 7 · GRANT 4" },
+    { "src": "beaumont", "img": "B05", "vo": "They were seen on the beach with a tall, fair-haired man. They were never seen again.", "cap": "NEVER SEEN AGAIN", "amber": true },
+    { "src": "beaumont", "img": "B11", "vo": "Sixty years later, no bodies. No clothing. No trace. The parents kept the same phone number for decades, in case the children called.", "cap": "60 YEARS\nNO TRACE", "amber": true },
+    { "src": "beaumont", "img": "B17", "vo": "Nancy died in twenty nineteen. Jim in twenty twenty-three. No one has ever been charged.", "cap": "STILL UNSOLVED", "amber": true }
+  ]
+}

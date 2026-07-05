@@ -37,3 +37,5 @@ def thumb(still, kicker, white, amber, out):
 V = Path.home() / "byclaude/video"
 thumb(V / "shipman/images/B03.png", "HAROLD SHIPMAN", "THE FAMILY DOCTOR", "WHO KILLED 215", CH / "thumb-shipman.png")
 thumb(V / "hinterkaifeck/images/B03.png", "HINTERKAIFECK · 1922", "SIX MURDERED. UNSOLVED.", "THE KILLER STAYED", CH / "thumb-hinterkaifeck.png")
+thumb(V / "isdal/images/B01.png", "THE ISDAL WOMAN · 1970", "SHE ERASED", "EVERY TRACE OF HERSELF", CH / "thumb-isdal.png")
+thumb(V / "gunness/images/B01.png", "BELLE GUNNESS · 1908", "A DOZEN MEN", "NEVER LEFT THAT FARM", CH / "thumb-gunness.png")

@@ -1,0 +1,331 @@
+window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://archive.macleans.ca/article/1997/5/19/the-blame-game","20190719142036","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1563546036");
+        The blame game | Maclean's | MAY 19, 1997
+                document.documentElement.className += ' wf-loading';
+    $(function() {
+        var loginForm = $(".loginForm");
+            loginForm.submit(function(e) {
+                e.preventDefault();
+                var formData = loginForm.serialize();
+                loginForm.addClass('loading');
+                $.ajax({
+                    url: '/login',
+                    type: 'POST',
+                    data: formData,
+                    success: function(data) {
+                        console.log('data', data);
+                        if (data.auth)
+                            window.location.reload(true);
+                        else {
+                            $('.loginForm .error_list').html(sprintf('%s', data.message));
+                            loginForm.removeClass('loading');
+                        }
+                    },
+                    error: function (data) {
+                        loginForm.removeClass('loading');
+                    }
+                });
+            });
+        $('.user_login').on('click', function(e) {
+            e.preventDefault();
+            $('.bnd_subscribe_popup')
+                .modal('setting', 'transition', 'fade down')
+                .modal('show');
+        });
+        });
+        $(window).scroll(function() {
+            var scrollwin = $(window).scrollTop();
+            var articleheight = $('.bndwgt__bondi_article').outerHeight(true);
+            var windowWidth = $(window).width();
+            if(scrollwin >= $('.bndwgt__bondi_article').offset().top){
+                if(scrollwin <= ($('.bndwgt__bondi_article').offset().top + articleheight)){
+                    $('.read_progress').css('width', ((scrollwin - $('.bndwgt__bondi_article').offset().top) / articleheight) * 100 + "%"  );
+                }else{
+                    $('.read_progress').css('width',"100%");
+                }
+            }else{
+                $('.read_progress').css('width',"0px");
+            }
+        });
+    	(function ($) {
+            Bondi.appEnv = "production";
+            Bondi.viewType = 'article';
+            Bondi.articleKey = 19970519050;
+            Bondi.coverDisplay = 'MAY 19, 1997';
+            Bondi.pageThumbFormat = 'https://web.archive.org/web/20190719142036/https://macleans.blob.core.windows.net/macleans19970519thumbnails/Pages/0x90/%s.jpg';
+            Bondi.spreadThumbFormat = 'https://web.archive.org/web/20190719142036/https://macleans.blob.core.windows.net/macleans19970519thumbnails/Spreads/0x360/%s.jpg';
+            Bondi.thumbFormat = 'https://web.archive.org/web/20190719142036/https://macleans.blob.core.windows.net/macleans%1$dthumbnails/%3$s/0x%2$d/%4$s';
+            Bondi.publicationTitle = "Maclean&#039;s";
+    		Bondi.spreads[19970519050] = [{"Spread":28,"StartPageKey":"19970519054","EndPageKey":"19970519055","PageRange":"42,43","PageCount":2,"Width":6000,"Height":4140,"ImageFormat":null,"SecureImageFormat":"https:\/\/web.archive.org\/web\/20190719142036\/https:\/\/archive.macleans.ca\/image\/spread\/19970519\/28\/%s","TogglePage":"42","HasText":true,"HasTextArticleKey":"19970519050","HasTextArticleKeys":null,"MaxHeight":4140,"TotalWidth":6000,"Pages":[{"PageKey":"19970519054","IssueKey":19970519,"Sequence":54,"Spread":28,"PageName":"42","Width":3000,"Height":4140,"SpreadSequence":1,"ImageFormat":null,"SecureImageFormat":null,"TogglePage":null,"HasText":false,"HasTextArticleKey":null,"HasTextArticleKeys":null,"CoverType":null,"PageSizes":null,"TextArticles":null,"JumpLinks":null,"Articles":null},{"PageKey":"19970519055","IssueKey":19970519,"Sequence":55,"Spread":28,"PageName":"43","Width":3000,"Height":4140,"SpreadSequence":2,"ImageFormat":null,"SecureImageFormat":null,"TogglePage":null,"HasText":false,"HasTextArticleKey":null,"HasTextArticleKeys":null,"CoverType":null,"PageSizes":null,"TextArticles":null,"JumpLinks":null,"Articles":null}],"PageSizes":[{"PageKey":28,"Device":"desktop","MaxDeviceWidth":10000,"DefaultWidth":2000,"DefaultHeight":1380,"MaxWidth":4400,"MaxHeight":3036,"SizeSequence":1,"Pages":null},{"PageKey":28,"Device":"desktop","MaxDeviceWidth":1900,"DefaultWidth":1600,"DefaultHeight":1104,"MaxWidth":4000,"MaxHeight":2760,"SizeSequence":2,"Pages":null},{"PageKey":28,"Device":"desktop","MaxDeviceWidth":1400,"DefaultWidth":1360,"DefaultHeight":938,"MaxWidth":3200,"MaxHeight":2208,"SizeSequence":3,"Pages":null},{"PageKey":28,"Device":"desktop","MaxDeviceWidth":1023,"DefaultWidth":960,"DefaultHeight":662,"MaxWidth":2400,"MaxHeight":1656,"SizeSequence":4,"Pages":null},{"PageKey":28,"Device":"mobile","MaxDeviceWidth":1080,"DefaultWidth":1360,"DefaultHeight":938,"MaxWidth":4000,"MaxHeight":2760,"SizeSequence":5,"Pages":null},{"PageKey":28,"Device":"mobile","MaxDeviceWidth":768,"DefaultWidth":1200,"DefaultHeight":828,"MaxWidth":3200,"MaxHeight":2208,"SizeSequence":6,"Pages":null},{"PageKey":28,"Device":"mobile","MaxDeviceWidth":640,"DefaultWidth":960,"DefaultHeight":662,"MaxWidth":2400,"MaxHeight":1656,"SizeSequence":7,"Pages":null}],"TextArticles":null,"JumpLinks":[],"Articles":[{"Key":"19970519050","Title":"The blame game","Section":"Business","StartIndex":1,"Genre":"article","PageName":"42","Spread":28}]},{"Spread":29,"StartPageKey":"19970519056","EndPageKey":"19970519057","PageRange":"44,45","PageCount":2,"Width":6000,"Height":4140,"ImageFormat":null,"SecureImageFormat":"https:\/\/web.archive.org\/web\/20190719142036\/https:\/\/archive.macleans.ca\/image\/spread\/19970519\/29\/%s","TogglePage":"44","HasText":true,"HasTextArticleKey":"19970519050","HasTextArticleKeys":null,"MaxHeight":4140,"TotalWidth":6000,"Pages":[{"PageKey":"19970519056","IssueKey":19970519,"Sequence":56,"Spread":29,"PageName":"44","Width":3000,"Height":4140,"SpreadSequence":1,"ImageFormat":null,"SecureImageFormat":null,"TogglePage":null,"HasText":false,"HasTextArticleKey":null,"HasTextArticleKeys":null,"CoverType":null,"PageSizes":null,"TextArticles":null,"JumpLinks":null,"Articles":null},{"PageKey":"19970519057","IssueKey":19970519,"Sequence":57,"Spread":29,"PageName":"45","Width":3000,"Height":4140,"SpreadSequence":2,"ImageFormat":null,"SecureImageFormat":null,"TogglePage":null,"HasText":false,"HasTextArticleKey":null,"HasTextArticleKeys":null,"CoverType":null,"PageSizes":null,"TextArticles":null,"JumpLinks":null,"Articles":null}],"PageSizes":[{"PageKey":29,"Device":"desktop","MaxDeviceWidth":10000,"DefaultWidth":2000,"DefaultHeight":1380,"MaxWidth":4400,"MaxHeight":3036,"SizeSequence":1,"Pages":null},{"PageKey":29,"Device":"desktop","MaxDeviceWidth":1900,"DefaultWidth":1600,"DefaultHeight":1104,"MaxWidth":4000,"MaxHeight":2760,"SizeSequence":2,"Pages":null},{"PageKey":29,"Device":"desktop","MaxDeviceWidth":1400,"DefaultWidth":1360,"DefaultHeight":938,"MaxWidth":3200,"MaxHeight":2208,"SizeSequence":3,"Pages":null},{"PageKey":29,"Device":"desktop","MaxDeviceWidth":1023,"DefaultWidth":960,"DefaultHeight":662,"MaxWidth":2400,"MaxHeight":1656,"SizeSequence":4,"Pages":null},{"PageKey":29,"Device":"mobile","MaxDeviceWidth":1080,"DefaultWidth":1360,"DefaultHeight":938,"MaxWidth":4000,"MaxHeight":2760,"SizeSequence":5,"Pages":null},{"PageKey":29,"Device":"mobile","MaxDeviceWidth":768,"DefaultWidth":1200,"DefaultHeight":828,"MaxWidth":3200,"MaxHeight":2208,"SizeSequence":6,"Pages":null},{"PageKey":29,"Device":"mobile","MaxDeviceWidth":640,"DefaultWidth":960,"DefaultHeight":662,"MaxWidth":2400,"MaxHeight":1656,"SizeSequence":7,"Pages":null}],"TextArticles":null,"JumpLinks":[],"Articles":[{"Key":"19970519050","Title":"The blame game","Section":"Business","StartIndex":1,"Genre":"article","PageName":"42","Spread":28}]}];
+    		Bondi.pages[19970519050] = [{"PageKey":"19970519054","IssueKey":19970519,"Sequence":54,"Spread":1,"PageName":"42","Width":3000,"Height":4140,"SpreadSequence":0,"ImageFormat":null,"SecureImageFormat":"https:\/\/web.archive.org\/web\/20190719142036\/https:\/\/archive.macleans.ca\/image\/single\/19970519\/42\/%s","TogglePage":"42","HasText":true,"HasTextArticleKey":"19970519050","HasTextArticleKeys":null,"CoverType":null,"PageSizes":[{"PageKey":"19970519054","Device":"desktop","MaxDeviceWidth":10000,"DefaultWidth":1000,"DefaultHeight":1380,"MaxWidth":2600,"MaxHeight":3588,"SizeSequence":1,"Pages":null},{"PageKey":"19970519054","Device":"desktop","MaxDeviceWidth":1900,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":2000,"MaxHeight":2760,"SizeSequence":2,"Pages":null},{"PageKey":"19970519054","Device":"desktop","MaxDeviceWidth":1400,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1600,"MaxHeight":2208,"SizeSequence":3,"Pages":null},{"PageKey":"19970519054","Device":"desktop","MaxDeviceWidth":1023,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1200,"MaxHeight":1656,"SizeSequence":4,"Pages":null},{"PageKey":"19970519054","Device":"mobile","MaxDeviceWidth":1080,"DefaultWidth":1400,"DefaultHeight":1932,"MaxWidth":2400,"MaxHeight":3312,"SizeSequence":5,"Pages":null},{"PageKey":"19970519054","Device":"mobile","MaxDeviceWidth":768,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1800,"MaxHeight":2484,"SizeSequence":6,"Pages":null},{"PageKey":"19970519054","Device":"mobile","MaxDeviceWidth":640,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1200,"MaxHeight":1656,"SizeSequence":7,"Pages":null}],"TextArticles":null,"JumpLinks":[],"Articles":[{"Key":"19970519050","Title":"The blame game","Section":"Business","StartIndex":1,"Genre":"article","PageName":"42","Spread":28}]},{"PageKey":"19970519055","IssueKey":19970519,"Sequence":55,"Spread":1,"PageName":"43","Width":3000,"Height":4140,"SpreadSequence":0,"ImageFormat":null,"SecureImageFormat":"https:\/\/web.archive.org\/web\/20190719142036\/https:\/\/archive.macleans.ca\/image\/single\/19970519\/43\/%s","TogglePage":"42","HasText":true,"HasTextArticleKey":"19970519050","HasTextArticleKeys":null,"CoverType":null,"PageSizes":[{"PageKey":"19970519055","Device":"desktop","MaxDeviceWidth":10000,"DefaultWidth":1000,"DefaultHeight":1380,"MaxWidth":2600,"MaxHeight":3588,"SizeSequence":1,"Pages":null},{"PageKey":"19970519055","Device":"desktop","MaxDeviceWidth":1900,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":2000,"MaxHeight":2760,"SizeSequence":2,"Pages":null},{"PageKey":"19970519055","Device":"desktop","MaxDeviceWidth":1400,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1600,"MaxHeight":2208,"SizeSequence":3,"Pages":null},{"PageKey":"19970519055","Device":"desktop","MaxDeviceWidth":1023,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1200,"MaxHeight":1656,"SizeSequence":4,"Pages":null},{"PageKey":"19970519055","Device":"mobile","MaxDeviceWidth":1080,"DefaultWidth":1400,"DefaultHeight":1932,"MaxWidth":2400,"MaxHeight":3312,"SizeSequence":5,"Pages":null},{"PageKey":"19970519055","Device":"mobile","MaxDeviceWidth":768,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1800,"MaxHeight":2484,"SizeSequence":6,"Pages":null},{"PageKey":"19970519055","Device":"mobile","MaxDeviceWidth":640,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1200,"MaxHeight":1656,"SizeSequence":7,"Pages":null}],"TextArticles":null,"JumpLinks":[],"Articles":[{"Key":"19970519050","Title":"The blame game","Section":"Business","StartIndex":1,"Genre":"article","PageName":"42","Spread":28}]},{"PageKey":"19970519056","IssueKey":19970519,"Sequence":56,"Spread":2,"PageName":"44","Width":3000,"Height":4140,"SpreadSequence":0,"ImageFormat":null,"SecureImageFormat":"https:\/\/web.archive.org\/web\/20190719142036\/https:\/\/archive.macleans.ca\/image\/single\/19970519\/44\/%s","TogglePage":"44","HasText":true,"HasTextArticleKey":"19970519050","HasTextArticleKeys":null,"CoverType":null,"PageSizes":[{"PageKey":"19970519056","Device":"desktop","MaxDeviceWidth":10000,"DefaultWidth":1000,"DefaultHeight":1380,"MaxWidth":2600,"MaxHeight":3588,"SizeSequence":1,"Pages":null},{"PageKey":"19970519056","Device":"desktop","MaxDeviceWidth":1900,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":2000,"MaxHeight":2760,"SizeSequence":2,"Pages":null},{"PageKey":"19970519056","Device":"desktop","MaxDeviceWidth":1400,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1600,"MaxHeight":2208,"SizeSequence":3,"Pages":null},{"PageKey":"19970519056","Device":"desktop","MaxDeviceWidth":1023,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1200,"MaxHeight":1656,"SizeSequence":4,"Pages":null},{"PageKey":"19970519056","Device":"mobile","MaxDeviceWidth":1080,"DefaultWidth":1400,"DefaultHeight":1932,"MaxWidth":2400,"MaxHeight":3312,"SizeSequence":5,"Pages":null},{"PageKey":"19970519056","Device":"mobile","MaxDeviceWidth":768,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1800,"MaxHeight":2484,"SizeSequence":6,"Pages":null},{"PageKey":"19970519056","Device":"mobile","MaxDeviceWidth":640,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1200,"MaxHeight":1656,"SizeSequence":7,"Pages":null}],"TextArticles":null,"JumpLinks":[],"Articles":[{"Key":"19970519050","Title":"The blame game","Section":"Business","StartIndex":1,"Genre":"article","PageName":"42","Spread":28}]},{"PageKey":"19970519057","IssueKey":19970519,"Sequence":57,"Spread":2,"PageName":"45","Width":3000,"Height":4140,"SpreadSequence":0,"ImageFormat":null,"SecureImageFormat":"https:\/\/web.archive.org\/web\/20190719142036\/https:\/\/archive.macleans.ca\/image\/single\/19970519\/45\/%s","TogglePage":"44","HasText":true,"HasTextArticleKey":"19970519050","HasTextArticleKeys":null,"CoverType":null,"PageSizes":[{"PageKey":"19970519057","Device":"desktop","MaxDeviceWidth":10000,"DefaultWidth":1000,"DefaultHeight":1380,"MaxWidth":2600,"MaxHeight":3588,"SizeSequence":1,"Pages":null},{"PageKey":"19970519057","Device":"desktop","MaxDeviceWidth":1900,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":2000,"MaxHeight":2760,"SizeSequence":2,"Pages":null},{"PageKey":"19970519057","Device":"desktop","MaxDeviceWidth":1400,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1600,"MaxHeight":2208,"SizeSequence":3,"Pages":null},{"PageKey":"19970519057","Device":"desktop","MaxDeviceWidth":1023,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1200,"MaxHeight":1656,"SizeSequence":4,"Pages":null},{"PageKey":"19970519057","Device":"mobile","MaxDeviceWidth":1080,"DefaultWidth":1400,"DefaultHeight":1932,"MaxWidth":2400,"MaxHeight":3312,"SizeSequence":5,"Pages":null},{"PageKey":"19970519057","Device":"mobile","MaxDeviceWidth":768,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1800,"MaxHeight":2484,"SizeSequence":6,"Pages":null},{"PageKey":"19970519057","Device":"mobile","MaxDeviceWidth":640,"DefaultWidth":800,"DefaultHeight":1104,"MaxWidth":1200,"MaxHeight":1656,"SizeSequence":7,"Pages":null}],"TextArticles":null,"JumpLinks":[],"Articles":[{"Key":"19970519050","Title":"The blame game","Section":"Business","StartIndex":1,"Genre":"article","PageName":"42","Spread":28}]}];
+                    Bondi.Viewer.enabled = true;
+            	})(jQuery);
+try{Typekit.load({ async: true });}catch(e){}
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://web.archive.org/web/20190719142036/https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-54881620-8', 'auto');
+  ga('send', 'pageview');
+                For a limited time enjoy FREE access from 1905 to 2008
+            Subscribe Now 
+            The Maclean's Archive
+                                        Browse Issues
+                    Search 
+    $(document).ready(function(){
+        $(".bnd_mobilemenu_toggle").click(function(){
+            $('.bnd_mobile_menu')
+            .modal('setting', 'transition', 'fade right')
+            .modal('show');
+        });
+    });
+                    Browse Issues
+                    Search 
+            Subscribe Now 
+    $(document).ready(function(){
+        $(".bnd_search_overlay_trigger").click(function(){
+            $('.bnd_search_overlay')
+            .modal('setting', 'transition', 'fade top')
+            .modal('show');
+        });
+            });
+            Enter Your Search 
+                Featured Searches
+                Trudeau
+                Queen Elizabeth
+                Oil
+                June Callwood
+                Real Estate
+                Gordie Howe
+                Clinton
+                Trump
+                World War Two
+                Pierre Berton
+                The Great War
+        Business
+        The blame game
+                            JENNIFER WELLS
+                        May 19 1997
+                The blame game
+                                            JENNIFER WELLS
+                                                                May 19 1997
+                            Click to View Article Pages
+        Business
+        The blame game
+                            JENNIFER WELLS
+                        May 19 1997
+    The blame gameBusinessJENNIFER WELLSIt was a cool night in Jakarta and the Shangri-La hotel was all aglitter. Valentine’s Day, 1997. Young couples swayed through the lobby, the ladies carrying helium heart-shaped balloons and single roses. A piano player sat at a fullsized grand, playing Johnny Mathis tunes. And of course there was a sultry chanteuse, wearing a red slithery-silk thing. “You make me smile with your heart,” she sang. It was a bejewelled backdrop to the deal that went down that day, the forced one between Freeport-McMoRan’s Jim Bob Moffett and Bre-X’s David Walsh, the one that was meant to settle the ownership of Busang. Busang. The mother ofall gold mines. That’s what was said. That’s what was written. That’s what I wrote.I met Bre-X geologist John Felderhof at the Shangri-La two days later. We rode up the elevator to the club floor, then backtracked to the gardens behind the hotel. And there we sat, drinking beer, talking of Busang, Felderhof continuously smoking Marlboro Lites, scrawny cats curling around the table legs. “ When did you know you had hit the motherlode?” I asked. ‘When we drilled line 59, threeBre-X collapses and the police move inholes 150 m apart,” he said. “That’s when I called David up and said, ‘We’ve got a monster by the tail.’ ” Felderhof used that story line a lot.Drill line 59. That was back in 1995, when work was gearing up at Busang. Through the fall of that year, Bre-X’s crew of Filipino geologists was working flat out. Bobby Ramirez was logging core samples as fast as he could. Under chief geologist Michael de Guzman’s orders, there was a mad rush to get the core downriver to Samarinda. Overseeing operations, Cesar Puspos would spend weeks at a time there, staying up late into the night, working on his personal computer, which he never let anyone borrow.“There were bags and bags of core there,” recalls a Canadian geologist who worked for a time at Busang. He accepted the explanation that there was a sampling backup 100 km away at the assay lab in Balikpapan. There wasn’t.By February, 1997, Bre-X Minerals Ltd. of Calgary was sitting on a 50-million-ounce gold mine, at a minimum. That’s what Bre-X CEO Walsh was saying, and Felderhof, and de Guzman. Not only was the mine potential enormous, said the company, but the gold would fall from the rock like crabapples in autumn. Felderhof was exhausted and beleaguered—fed up, he said, with the way the company had been portrayed, “painted as a company that did all sorts of underhanded things.” He was referring to the issue of land title, which the company did not have; the aggressive, and technically illegal, drilling the company had undertaken; the company’s failure to notify investors when its exploration permit was cancelled; the heavy selling of shares by insiders at that time; the claim by Indonesian businessman Jusuf Merukh that he had been cut out of the find.As the controversy grew, the focus was on the insidious creep of Indonesian politics, the private eyes that had been put on the case, the battle between major mining houses to get control of Busang. The geology was a given. Or so it seemed. “I spend my lifetime in the bush,” said Felderhof, who left Halifax for the wilds of Asia in his 20s.“I’m proud of my technical record.”On the eve of the Freeport deal, Felderhof was an ashen, chain-smoking mess, anxious about the deal going down. He did not want a tape recorder on, he was impatient with attempts to take photographs, he turned shirty when he was shown a government-registered map of Busang—and was asked when Bre-X had stepped outside the property’s central zone, where itGOING, GOING, GONEClosing price of shares in Bre-X Minerals Ltd. *held a contract of work, and had moved into the southeast zone, where it did not. There was so much pressure. “I didn’t work hard all my life to be smeared and hauled through the courts by a bunch of people,” he said sharply.It was a hell of a subplot. Great smoke and mirrors. Who could have known that Busang in truth was a salting scam, the biggest, fattest fraud in the history of mining. “It’s the oldest game in town, ladies and gentlemen,” Moffett, whose own drill results in March showed that Busang was barren, told journalists last week. “Desperate prospectors have been salting mines since the beginning of the mining industry. It’s a terrible fraud. It’s repugnant.”The final confirmation came last week in a report from Graham Farquharson, the straight-shooting head of Toronto-based Strathcona Mineral Services Ltd. On March 19, when Farquharson first met with Bre-X representatives Roily Francisco and Bryan Coates and their outside legal counsel, John Sabine, Coates asked Farquharson if he thought it possible that the Busang data had been based on tainted samples. “We quickly replied that this would be most unlikely,” the Strathcona report said, “given the number of samples that were involved.” The facts, as Strathcona quickly learned, were very different: “What has been difficult has been the acceptance of the evidence that this tampering has occurred for so long, on such a scale, and with such accuracy as to give the assay values, and subsequent interpretation of those values, the appearance of being plausible.”Bre-X cratered, the stock retreating to penny-mine status. Once valued by the market at $6 billion, the stock was all but bust flat. Short sellers covered their positions and souvenir hunters put in the call for share certificates. The Toronto Stock Exchange and NASDAQ in New York City delisted the stock, and other exchanges will follow suit. The independent directors quit, including Paul Kavanagh, the retired Barrick Gold Corp. geologist who staked the waning days of his career on Busang. Francisco, the company’s chief financial officer, quit, too. The RCMP moved in to investigate, and Bre-X sought bankruptcy protection. Harvey Strosberg, the Windsor lawyer spearheading one of nine classaction suits against Walsh and his team, added Toronto brokerage Nesbitt Burns Inc. to his target list. Nesbitt’s gold analyst, Egizio Bianchini, had remained a great supporter of Bre-X even after Freeport reported its finding of “insignificant” amounts of gold at Busang.Felderhof was fired. He issued a statement from his Cayman Islands mansion through his Toronto lawyer, Joe Groia, the former enforcement chief for the Ontario Securities Commission. Felderhof called the latest reports about Busang “startling.” He insisted, for the second time in a week, that he was unaware of any fraud. “Notwithstanding these revelations, one does not lose faith in many years of professional work overnight. It will be several days, or weeks, before I have had a chance to properly assess all of this new information. I will appreciate everyone’s patience until then.” In Halifax, his sister Ineke, who runs an art gallery, told Maclean’s that the whole Felderhof clan is greatly upset. “He’s a man of great integrity,” she says.“His integrity is as solid as a rock. I think everything will come out in the wash.”At the annual Prospectors and Developers convention in March 1996, de Guzman gave amuch anticipated speech before the Toronto mining crowd. Bre-X was the hot stock, on its way to being touted as the guardian ofthe largest single gold deposit discovered in human history. Scattered through the crowd were the usual mining analysts, some of whom would go on to visit the site that summer. De Guzman had little charm as a speaker, but no one cared about his presentation style. He talked about the impressive grades coming out of the site, of the potential for a high recovery rate. “The resource calculation there,” he said, referring to part of his slide presentation, “shows our internal estimate as against drill-based calculations by Kilborn.”Kilborn, a subsidiary of the blue-chip Montreal engineering firm SNC-Lavalin, had been retained by Bre-X. Presentations such as this one led investors, and analysts, to believe that the company was independently auditing Bre-X’s results. ‘The Kilborn figures come up to be, this time, better than we were,” said de Guzman, referring to one set of figures. “Looks like I’m sleeping a little bit on this one.” The audience laughed.Two weeks later, Walsh issued a news release. A reporter at The Financial Post had raised technical questions about the validity of the company’s assay methods. In the release, Walsh quoted Felderhof:“Metallurgical test work conducted by internationally recognized Kilborn Engineering, as part of their recently completed pre-feasibility study on Busang, resulted in their determining that Bre-X’s current and previously reported gold assay results are in fact understated by as much as 12.9 per cent.”The tail end of the sentence appeared in boldface type. It all seemed so reassuring. Kilborn later revealed that its job was merely to compile a database built on Bre-X’s own numbers.Then there were the reports from analysts on the prospects for Busang, the same analysts that de Guzman squired about the site in the summer of 1996. “If our aggressive development assumptions come close to future reality,” said Daniel McConvey of Lehman Brothers in New York, “in five years Busang may be the largest-producing gold mine in the world.” McConvey’s report ran to a thorough 50 pages. “Only uncertainty over tenure disputes, $ concern over politics and the reaction of the major | mining companies to the current project and investment risks put a lid on our target price,” saidMcConvey. Busang, he said, “was not only a geolo| gist’s dream but a metallurgical dream.” JMcConvey was wrong. But can he be faulted for §GAMBLING ON GOLDPension funds were among the biggest losers when Bre-X shares tanked. A sampling of funds and their losses:Ontario Teachers Pension Plan Board:..........$100 millionCaisse de dépôt et placement du Québec:........$70 millionOntario Municipal Employees Retirement Board:. . . $45 millionNewfoundland Public Sector Pension Plan:........$5 millionHalifax Regional Municipality pension fund:......$1.5 millionEdmonton Telephone Endowment Fund.......$750,000that? Like others in the investment community, he accepted the decision—made, he says, by Felderhof—to have pieces of whole core crushed for sampling. It is common practice in the mining industry to split the core, crush half, and retain the other half. An acquiring company, a Barrick Gold or a Placer Dome Inc., would then have crushed and assayed the rest of the core, to be checked against the initial results. Felderhof’s explanation, that splitting the core meant losing too much of the gold, seems not to havealarmed any of the analysts.It certainly concerned Barrick. When the company agreed to buy Arequipa Resources Ltd. of Toronto last year, Barrick did not have to redrill Arequipa’s rich Pierina Project in Peru for the simple reason that Arequipa had kept core splits for independent testing. SOP—Standard operating procedure. Last December, Barrick geologists moved onto the Busang site, and took small “skeleton” pieces of core, which, when assayed, gave poor goldvalues. Other samples provided by Bre-X, which had gone the Samarinda route, showed better results. Barrick tried to square the inconsistencies with Felderhof, but the company was hoisted from the site before it could do its own drilling.On Feb. 17, Walsh issued another news release. Like the best stock promoters, Walsh has a smooth sense of timing. The deal with U.S. mining firm Freeport-McMoRan Copper &amp; Gold Inc., brokered by Indonesian timber tycoon Mohamad (Bob) Hasan, chopped Bre-X’s interest in Busang to 45 per cent from 90 per cent. How nice for Bre-X that Walsh had at his fingertips new resource numbers, upping the Kilborn calculations to 71 million ounces from 57 million ounces. Included in the release was a table that set out the drill lines and the average grade of gold recovered from a series of holes. On behalf of the board, the release was signed David G. Walsh, president and CEO.Two days later, Walsh and Felderhof, along with their two investment advisers from J. P. Morgan in New York, took a conference call with analysts to sell them on the Freeport deal. Morgan’s Doug McIntosh reviewed the economics of Busang, the milling rate, the cash costs, the capital costs, all based on Kilborn’s intermediate feasibility study. Felderhof allowed as to how he was “comfortable” with 200 million ounces as a resource estimate for Busang. There was, he said, “lots of blue sky.” Felderhof went on to say that early discussions with Freeport had gone smoothly. “The more they look into this, the more pleased they are by the excellency of the data.” The company’s due diligence, he said, might take as little as 10 days.Rather than being thrilled with the excellence of Bre-X’s results, Freeport had become very nervous very early. “It was clear to me after asking questions for two days that no one had ever done an independent analysis of this project, and the Bre-X people had con-trolled this project for three years and nobody had been allowed to do independent drilling,” Moffett said last week. There was no gold at the surface, no “geochem halos,” no surface anomalies. When Freeport drilled seven holes in the sweet spot of the southeast zone, there was simply no gold at all.On March 12, Moffett phoned Toronto, where Walsh and Felderhof and de Guzman were moving like royalty among the crowd at the Prospectors and Developers convention. “I hated to interrupt their joy,” said Moffett, who is noted for his sense of humor and his Elvis impersonations, “but I informed them that they needed to get somebody back to the job site because we had run into difficulties.” Walsh was the first to take the call. “He started out by telling me that he was a financial person and he didn’t understand all that stuff.” Walsh put Felderhof on the line. Felderhof said there must be some mistake, a mix-up. De Guzman was dispatched to the site. “It was almost a four-day wait,” said Moffett. “Then, he didn’t arrive at all.” On March 19, the day Bre-X sent Francisco to meet with Farquharson, de Guzman jumped out of a helicopter over the Borneo jungle.Mike de Guzman went to work for Benguet Corp., a Manila-based mining company, in 1977. He spent a decade there as a mine exploration geologist. In the early 1980s, Cesar Puspos worked under de Guzman at Benguet. Puspos was reserved, quiet, “not very vocal about issues,” says Paul Damasco, who was division manager of geology at Benguet at the time. “He was industrious, technically competent.” De Guzman recruited Puspos to work with him at Bre-X.De Guzman, Puspos and Jerry Alo ruled the Busang site. One geologist who worked there for a time recalls how odd it seemed that the lights in the sample preparation lab would be on at night, that the facility seemed well-equipped, but that little work appeared to go on there.The same observation is made in the Strathcona report. The core deemed to be “mineralized” was bagged and shipped downriver. The so-called in-fill material was pulverized on-site and, when assayed by an independent laboratory in Balikpapan, showed low gold values. The barged core, on the other hand, usually did show gold values. “We can only suggest that somewhere en route, probably at Samarinda, there has been a ‘laboratory’ or facilities established that have allowed very precise additions of the foreign gold that we and others before us have identified in the Bre-X samples delivered for assaying,” said the report. Last week, The Wall Street Journal quoted a Bre-X employee who claimed to have observed the mixing of powders with core samples at Bre-X’s warehouse at Loa Duri, near Samarinda.Late last week, police in Jakarta were trying to track down Puspos, interviewing Bobby Ramirez and Manny Puspos, Cesar Puspos’s younger brother, who joined Bre-X a little more than a year ago.David Walsh, in turn, hired forensic experts to get to the bottom of the fraud. The same David Walsh who for weeks swore that he stood by Felderhof and the company’s core-handling procedures. The same David Walsh who, even after the Freeport results came up dead dry, ridiculed the suggestion that his company, which was once worth barely 10 cents a share, was no longer worth even that.ABBY TAN
+                    View Full Issue
+                More From This Issue
+                        COVER
+                        DUSTUP OVER DOLLARS
+                        May 1997
+                        By MARY JANIGAN
+                        COVER
+                        THE UNITY BOMBER
+                        May 1997
+                        COVER
+                        SEARCHING FOR AN OPPOSITION
+                        May 1997
+                        By PATRICIA CHISHOLM
+                        Canada
+                        Mopping up
+                        May 1997
+                        Education
+                        Class action
+                        May 1997
+                        COVER
+                        A DIFFERENT VIEW
+                        May 1997
+                        By CHRIS WOOD
+                More From This Issue
+                        COVER
+                        DUSTUP OVER DOLLARS
+                        May 1997
+                        By MARY JANIGAN
+                        COVER
+                        THE UNITY BOMBER
+                        May 1997
+                        COVER
+                        SEARCHING FOR AN OPPOSITION
+                        May 1997
+                        By PATRICIA CHISHOLM
+                More Like This
+                        BUSINESS
+                        THE COLOUR OF MONEY
+                        May 2007
+                        By COLIN CAMPBELL
+                        BUSINESS
+                        EMPLOYEE OF THE WEEK
+                        MAY 7th 2007 2007
+                        BUSINESS
+                        And now, the Bell tolls for BCE
+                        MAY 7th 2007 2007
+                        By JASON KIRBY
+                More From This Author
+                        Business
+                        Virtual revenge
+                        May 1996
+                        By JENNIFER WELLS
+                        Business
+                        Bay Street bonanza
+                        DECEMBER 30, 1996/JANUARY 6, 1977 1996
+                        By JENNIFER WELLS
+                        SPECIAL REPORT
+                        Mega-bookstores, megabucks
+                        November 1997
+                        By JENNIFER WELLS
+                Every Issue. Ever.
+                The Complete Maclean’s Archive
+            Browse Issues
+            Search 
+            Maclean&#039;s
+            Rogers Media
+                &copy;2019 Rogers Media. All rights reserved.
+                Privacy Policy
+                Terms of Service
+        Maclean's Archive
+                    Every Issue. Ever.
+                            The story you want is part of the Maclean’s Archives. To access it, log in here or sign up for your free 30-day trial.
+                        Experience anything and everything Maclean's has ever published — over 3,500 issues and 150,000 articles, images and advertisements — since 1905. Browse on your own, or explore our curated collections and timely recommendations.
+                            WATCH THIS VIDEO for highlights of everything the Maclean's Archives has to offer.
+                    Sign-up FREE for 30 days
+                    Cancel Anytime - Get Started Now
+                Already a subscriber? | Login
+            -->
+                Access to this content requires a subscription to the Maclean's Archives. Please log in below:
+    Not a subscriber?
+        Sign Up Free for 30 Days
+        Cancel Anytime - Get Started Now
+                    Can't find your account number? Visit Macleans.ca/service
+                    For questions regarding your subscription, call 1-888-622-5326 or e-mail us.
+    $('.dual_modal_login .menu .item')
+        .tab()
+    ;
+    $('.go_login, .user_login')
+        .on('click', function() {
+            $.tab('change tab', 'login');
+        })
+    ;
+    $('.go_signup')
+        .on('click', function() {
+            $.tab('change tab', 'subscribe');
+        })
+    ;
+    _satellite.pageBottom();
+                The2010s
+                The2000s
+                The1990s
+                The1980s
+                The1970s
+                The1960s
+                The1950s
+                The1940s
+                The1930s
+                The1920s
+                The1910s
+                The1900s
+    $(document).ready(function(){
+      $(".bndwgt_decades_trigger").click(function(){
+          $('.bnd_issues_modal')
+            .modal('setting', 'transition', 'fade down')
+            .modal('show');
+          });
+          });
+                $(document).ready(function() {
+                    $(window).scroll(function() {
+                        if ($(window).scrollTop() > 1200) { $('#backToTop').fadeIn(700);
+                        }
+                        if ($(window).scrollTop() < 1200) { $('#backToTop').fadeOut(700);
+                        }
+                    });
+                });
+                Maclean&#039;s
+                                        October 2016
+                        1
+                        Article Title
+                            Article Title
+                            Article Title
+                    Continue on pg. 129
+               42
+               43
+               44
+               45
+                    var $flicker = $('.bndvwr__flicker').flickity({
+                        accessibility: false,
+                        cellAlign: 'left',
+                        contain: true,
+                        groupCells: '80%',
+                        pageDots: false,
+                        imagesLoaded: true,
+                        lazyLoad: true,
+                        draggable: true,
+                        freeScroll: true,
+                        freeScrollFriction: 0.05
+                    });
+                                View Thumbnails
+                    Read Plain Text
+                    Read Text
+                        Read Plain Text
+                        Read Text
+                        Article One
+                        Article Two
+                        Article Three
+                    //Multi Article Dropdown
+                    $('.ui.dropdown.bndwgt_multiarticle_trigger')
+                        .dropdown()
+                    ;
+             -->
+       I'm Done Reading
+       Done Reading
+        Done Reading
+        Page Details
+{{ coverDate }}, 
+                     0">By 
+                        By Mert Alas; Marcus Piggott
+                        Pictured: 
+        Close Page Details
+    $(document).ready(function(){
+      $("#bndwgt_pageinfo_trigger").click(function(){
+          $('body').addClass('pageinfo_visible');
+          $('.pageInfo_actions').insertBefore( "#bndwgt__pageinfo_wrapper" );
+          $('#bndwgt__pageinfo_wrapper')
+            //.modal('setting', 'transition', 'fade down')
+            .modal('show');
+          });
+    });
+    // When closing the Page Info modal
+    $('.bndwgt__pageinfo_wrapper').modal({
+        onHidden: function() {
+            $('body').removeClass('pageinfo_visible');
+        }
+    });
+                $(document).ready(function() {
+                    $(window).scroll(function() {
+                        if ($(window).scrollTop() > 2500) { $('#shared_cta1').slideDown(500); $('#shared_cta2').fadeIn(1000);
+                        }
+                        if ($(window).scrollTop() < 2500) { $('#shared_cta1').slideUp(500); $('#shared_cta2').fadeOut(1000);
+                        }
+                    });
+                });
+<!--
+     FILE ARCHIVED ON 14:20:36 Jul 19, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:14:03 Jul 03, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.503
+  exclusion.robots: 0.046
+  exclusion.robots.policy: 0.037
+  esindex: 0.008
+  cdx.remote: 6.896
+  LoadShardBlock: 119.574 (3)
+  PetaboxLoader3.datanode: 97.173 (4)
+  PetaboxLoader3.resolve: 169.949 (2)
+  load_resource: 172.775
+-->

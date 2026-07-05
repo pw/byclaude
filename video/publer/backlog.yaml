@@ -39,5 +39,9 @@ entries:
   - { film: phantomheilbronn, scheduled_at: 2026-07-20T14:30:00Z, type: short }
   - { film: larsmittank,     scheduled_at: 2026-07-21T14:30:00Z, type: short }
 
+  # Beaumont -- Opus long-form + cut-down. Scheduling Wed 7/22 (next slot after the existing 6 long-forms).
+  - { film: beaumont,        scheduled_at: 2026-07-22T14:30:00Z, type: short }   # cut-down trailer
+  - { film: beaumont,        scheduled_at: 2026-07-22T23:30:00Z, type: long, only: youtube }
+
   # Add new films below as produced.
   # Native shorts in production queue (not yet dated): TBD -- fill in when made.

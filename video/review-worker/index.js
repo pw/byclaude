@@ -519,6 +519,7 @@ footer{margin-top:60px;color:var(--dim);font-size:14px;border-top:1px solid var(
 <div class="col"><div class="lab">The Tunguska Event · 0:36</div><video controls preload="metadata"><source src="/m/short-tunguska.mp4" type="video/mp4"></video><a href="/m/short-tunguska.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 <div class="col"><div class="lab">The Phantom of Heilbronn · 0:28</div><video controls preload="metadata"><source src="/m/short-phantomheilbronn.mp4" type="video/mp4"></video><a href="/m/short-phantomheilbronn.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 <div class="col"><div class="lab">Lars Mittank · 0:39</div><video controls preload="metadata"><source src="/m/short-larsmittank.mp4" type="video/mp4"></video><a href="/m/short-larsmittank.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Beaumont Children · 0:37</div><video controls preload="metadata"><source src="/m/short-beaumont.mp4" type="video/mp4"></video><a href="/m/short-beaumont.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 </div>
 <h2>Cut-downs from long films</h2>
 <div class="row">
@@ -866,6 +867,22 @@ Full film on the channel — link in bio.
 Full film on the channel — link in bio.
 
 #truecrime #luciadeberk #wrongfulconviction #statistics #netherlands #truecrimecommunity #reels`
+  },
+  beaumont: {
+    title: "The Beaumont Children — the five-minute bus ride",
+    yt: `Australia Day, 1966. Three siblings — Jane 9, Arnna 7, Grant 4 — caught the 8:45 bus from Somerton Park to Glenelg Beach, five minutes from home. They were seen on the beach with a tall, fair-haired man. They paid for pasties at the bakery with a pound note their mother hadn't given them. They never came home. Sixty years later — no bodies, no clothing, no trace. The parents kept the same phone number for decades, in case the children called. Nancy died 2019. Jim died 2023. No one has ever been charged.
+
+Full film on the channel.
+
+#truecrime #beaumontchildren #adelaide #unsolved #shorts #missingpersons #australia`,
+    tiktok: `Australia Day, 1966. Three siblings — Jane 9, Arnna 7, Grant 4 — caught the 8:45 bus from home to Glenelg Beach, Adelaide. Five minutes away. They were seen with a tall fair-haired man. They never came home. 60 years later, no bodies, no trace. No one has ever been charged.
+
+#truecrime #beaumontchildren #adelaide #fyp #unsolvedmystery #missingpersons #truecrimetiktok`,
+    reels: `Adelaide, Australia. January 26, 1966 — Australia Day. Three siblings — Jane Nartare, nine; Arnna Kathleen, seven; Grant Ellis, four — caught the 8:45 bus from Somerton Park to Glenelg Beach, five minutes from home. Their mother expected them on the noon bus. They were seen on the beach with a tall, fair-haired man. They bought pasties at a bakery with a one-pound note their mother had not given them. They never came home. The largest investigation in Australian history found nothing — no bodies, no clothing, no confirmed trace. The parents kept the same phone number for decades, in case the children called. Nancy died in 2019. Jim in 2023. No one has ever been charged.
+
+Full film on the channel — link in bio.
+
+#truecrime #beaumontchildren #adelaide #unsolved #missingpersons #mystery #australia #reels`
   },
   kasparhauser: {
     title: "Kaspar Hauser — the riddle of his time",
