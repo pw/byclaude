@@ -1,0 +1,13 @@
+{
+  "out": "short-devilsfootprints",
+  "kicker": "THE DEVIL'S FOOTPRINTS",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "devilsfootprints", "img": "B01", "vo": "One snowy night in February of 1855, in the English county of Devon, something walked. By morning, a single-file trail of small hoof-shaped prints stretched for miles across the snow.", "cap": "DEVON · 1855" },
+    { "src": "devilsfootprints", "img": "B02", "vo": "Dozens of villages reported the same tracks the same morning — as much as a hundred miles of them, all told. The prints went over rooftops. Through solid walls. Across a river. Never once doubling back.", "cap": "OVER ROOFTOPS" },
+    { "src": "devilsfootprints", "img": "B03", "vo": "A local vicar wrote it up for a London newspaper, and the story spread nationwide within weeks. People whispered it was the Devil himself, out walking.", "cap": "THE DEVIL, WALKING" },
+    { "src": "devilsfootprints", "img": "B04", "vo": "Investigators proposed an escaped kangaroo. A rope of field mice. A pony's hooves, refrozen into one long unbroken line. None of it quite explained everything that was reported.", "cap": "NO EXPLANATION FIT", "amber": true },
+    { "src": "devilsfootprints", "img": "B05", "vo": "No one ever proved which theory was right — or whether the whole account grew taller in the telling. A hundred and seventy years later, the tracks in the snow are still just tracks in the snow.", "cap": "STILL JUST TRACKS", "amber": true }
+  ]
+}

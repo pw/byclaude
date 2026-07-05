@@ -504,6 +504,12 @@ footer{margin-top:60px;color:var(--dim);font-size:14px;border-top:1px solid var(
 <div class="col"><div class="lab">The Mary Celeste · 0:31</div><video controls preload="metadata"><source src="/m/short-maryceleste.mp4" type="video/mp4"></video><a href="/m/short-maryceleste.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 <div class="col"><div class="lab">The Valentich Disappearance · 0:30</div><video controls preload="metadata"><source src="/m/short-valentich.mp4" type="video/mp4"></video><a href="/m/short-valentich.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 <div class="col"><div class="lab">The Yuba County Five · 0:32</div><video controls preload="metadata"><source src="/m/short-yubacountyfive.mp4" type="video/mp4"></video><a href="/m/short-yubacountyfive.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">Kaspar Hauser · 1:13</div><video controls preload="metadata"><source src="/m/short-kasparhauser.mp4" type="video/mp4"></video><a href="/m/short-kasparhauser.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Wych Elm Case · 1:01</div><video controls preload="metadata"><source src="/m/short-wychelm.mp4" type="video/mp4"></video><a href="/m/short-wychelm.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Devil's Footprints · 1:04</div><video controls preload="metadata"><source src="/m/short-devilsfootprints.mp4" type="video/mp4"></video><a href="/m/short-devilsfootprints.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">Before Edison · 1:14</div><video controls preload="metadata"><source src="/m/short-leprince.mp4" type="video/mp4"></video><a href="/m/short-leprince.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Wallace Case · 1:03</div><video controls preload="metadata"><source src="/m/short-wallace.mp4" type="video/mp4"></video><a href="/m/short-wallace.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">Peking Man · 1:03</div><video controls preload="metadata"><source src="/m/short-pekingman.mp4" type="video/mp4"></video><a href="/m/short-pekingman.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 </div>
 <h2>Cut-downs from long films</h2>
 <div class="row">
@@ -639,6 +645,102 @@ function filmPage(f) {
 }
 
 const POSTS = {
+  kasparhauser: {
+    title: "Kaspar Hauser — the riddle of his time",
+    yt: `1828, Nuremberg: a teenage boy appears with no name, no past, and a letter no one can explain. Europe decides he must be a stolen prince. In 1833 he's murdered — with a mirror-writing note beside the body. In 2024, DNA finally ruled out the prince theory. It didn't answer anything else.
+
+More, from byclaude.
+
+#history #kasparhauser #truestory #shorts #mystery #germany`,
+    tiktok: `A boy shows up in a German town in 1828 with no name and no past. Everyone decides he's a secret prince. Five years later he's stabbed to death, with a note in mirror writing signed only "M.L.Ö." 2024 DNA test: not a prince. Still no idea who he was.
+
+#history #kasparhauser #truecrime #fyp #mystery #germany`,
+    reels: `Nuremberg, May 1828. A teenage boy appears in the town square, barely able to speak, holding an unsigned letter. He learns to talk, learns to write — and all of Europe starts whispering that he's a kidnapped prince, hidden since infancy. In 1829 someone attacks him with a knife; he survives. In December 1833, someone lures him to a garden with the promise of money, and stabs him for real. He dies three days later. In his purse: a note in mirror writing, signed only "M.L.Ö." His epitaph: a riddle of his time, birth unknown, death mysterious. The prince theory held for two hundred years — until 2024, when new DNA analysis ruled it out for good. Which leaves everything else exactly where it started.
+
+More from byclaude — link in bio.
+
+#history #kasparhauser #truestory #mystery #germany #reels`
+  },
+  wychelm: {
+    title: "Who put Bella in the wych elm?",
+    yt: `1943, an English wood: four boys look for birds' eggs in a hollow tree and find a human skull. She was never identified. In 1944 someone started chalking a question on walls nearby — and it's still appearing, eighty years on.
+
+More, from byclaude.
+
+#truecrime #wychelm #unsolved #shorts #coldcase #mystery`,
+    tiktok: `1943, England: boys find a skull inside a hollow tree. Full skeleton. Wedding ring. One hand buried separately, some distance away. She was never identified. A year later, someone starts writing "who put Bella down the wych elm" on walls nearby. That graffiti has kept reappearing for 80 years.
+
+#truecrime #wychelm #unsolvedmystery #fyp #coldcase #truecrimetiktok`,
+    reels: `April 1943, Hagley Wood, England. Four boys poaching climb inside a hollow tree looking for birds' eggs and find a human skull. Police search the tree and find the rest of her: a nearly complete skeleton, a gold wedding ring, a shoe — and one of her hands, missing, buried separately some distance away. She was never identified; no one ever reported her missing. Then, in 1944, someone starts writing a question on walls around the wood, in chalk, too high up for a child's hand: who put Bella down the wych elm? That question is still being written — as recently as the last few decades, on the stone obelisk near where she was found, by a hand that was never caught either.
+
+More from byclaude — link in bio.
+
+#truecrime #wychelm #unsolved #coldcase #truecrimecommunity #mystery #reels`
+  },
+  devilsfootprints: {
+    title: "The Devil's Footprints — Devon, 1855",
+    yt: `One snowy night in 1855, something walked across Devon, England — leaving hoof-shaped prints over rooftops, through walls, across a river. No explanation ever fit all of it. A hundred and seventy years later, still unresolved.
+
+More, from byclaude.
+
+#history #devilsfootprints #unexplained #shorts #mystery #england`,
+    tiktok: `Feb 1855, Devon, England: overnight snowfall, and by morning a single-file trail of small hoof prints stretches for miles — over roofs, through solid walls, across a river, never doubling back. Kangaroo, mice, refrozen pony tracks — nothing explains all of it. Still unsolved.
+
+#history #devilsfootprints #unexplained #fyp #mystery #england`,
+    reels: `February 1855, Devon, England. One snowy night, something walked. By morning, a single-file trail of small hoof-shaped prints stretched for miles across the snow — reported by dozens of villages the same morning, as much as a hundred miles of it all told. The prints crossed rooftops. Went straight through solid walls. Crossed a river. Never once doubled back. A local vicar wrote it up for a London newspaper and the story went nationwide within weeks — people said it was the Devil, out walking. Investigators proposed an escaped kangaroo, a rope of field mice, a pony's hooves refrozen into one unbroken line — none of it quite explained everything reported. No one ever proved which theory was right, or whether the story grew taller in the telling. A hundred and seventy years later, the tracks in the snow are still just tracks in the snow.
+
+More from byclaude — link in bio.
+
+#history #devilsfootprints #unexplained #mystery #england #reels`
+  },
+  leprince: {
+    title: "Before Edison — the man who invented film and vanished",
+    yt: `1888: a French inventor in Leeds shoots what may be the first motion picture ever made — years before Edison. In 1890 he boards a train and is never seen again. Textbooks still credit someone else.
+
+More, from byclaude.
+
+#history #louisleprince #truestory #shorts #mystery #film`,
+    tiktok: `This man invented motion pictures before Edison and before the Lumière brothers. Then in 1890 he boarded a train in France and vanished — no body, no luggage, nothing, ever. A 2003 archive photo of a drowned man might be him. Might not. Edison got the credit instead.
+
+#history #louisleprince #unsolvedmystery #fyp #mystery #film`,
+    reels: `October 1888, Leeds, England. A French inventor named Louis Le Prince points a single-lens camera at his own back garden and shoots what may be the oldest surviving motion picture in the world — years before Edison, years before the Lumière brothers. By 1890 he's ready to cross the Atlantic and show the world. He's been visiting his brother in Dijon, France, and on September the sixteenth he boards a train there, bound for Paris. He never gets off. His friends in Paris wait for him and he simply isn't there — no body, no luggage, no trace, ever, of Louis Le Prince again. In 2003, over a century later, someone searching the Paris police archives finds a photograph: an unidentified man pulled from the Seine in 1890, drowned, who looks strikingly like him. Some who've studied it say the body was too short to be his. No one has ever been able to say for certain. Because he vanished before he could show anyone, credit for inventing the movies went to Edison, and to the Lumières. Most textbooks still don't mention the man who did it first.
+
+More from byclaude — link in bio.
+
+#history #louisleprince #truestory #mystery #film #reels`
+  },
+  wallace: {
+    title: "The Wallace Case — the perfect alibi",
+    yt: `Liverpool, 1931: a man is lured across town by a phone call from someone who doesn't exist, then comes home to find his wife murdered. He's convicted — then England overturns a murder verdict for the first time ever. Still unsolved.
+
+More, from byclaude.
+
+#truecrime #juliawallace #unsolved #shorts #coldcase #mystery`,
+    tiktok: `1931 Liverpool: William Wallace gets a phone call from a "Mr Qualtrough" asking to meet the next night. The address doesn't exist — he spends an hour searching for it, watched by half a dozen witnesses. He goes home and finds his wife beaten to death. Convicted, then acquitted — the first overturned murder verdict in English legal history. Still unsolved.
+
+#truecrime #juliawallace #coldcase #fyp #truecrimetiktok #england`,
+    reels: `January 1931, Liverpool. Insurance man William Wallace gets a phone message at his chess club — a stranger, a "Mr Qualtrough," wants to meet him the next evening about a policy. The next night, Wallace searches for over an hour for the address Qualtrough gave him — half a dozen strangers, a policeman, a tram conductor, all watch him hunting for a street that doesn't exist. He gives up and goes home. There, in the parlor, he finds his wife Julia, beaten to death. Police decide he called himself — an elaborate alibi to cover a murder. He's convicted. Then, on appeal, judges rule the evidence can't support it: the first time in English law a murder conviction is overturned outright. Wallace walks free, and dies a few years later, still under suspicion. No one else was ever charged. If he didn't make that call, whoever did was never found.
+
+More from byclaude — link in bio.
+
+#truecrime #juliawallace #unsolved #coldcase #truecrimecommunity #england #reels`
+  },
+  pekingman: {
+    title: "Peking Man — the bones that never arrived",
+    yt: `Some of the most important human fossils ever found were packed into crates in 1941 to save them from war — and vanished the day Pearl Harbor was attacked. Never found since. Only casts and photographs survive.
+
+More, from byclaude.
+
+#history #pekingman #unsolvedmystery #shorts #science #mystery`,
+    tiktok: `1941: scientists pack half-a-million-year-old human fossils into crates to smuggle them out of China ahead of Japan's army. Ship sails Dec 8. Pearl Harbor is attacked Dec 7. The Marines guarding the crates are taken prisoner before it ever leaves. The bones are never seen again.
+
+#history #pekingman #unsolvedmystery #fyp #science #mystery`,
+    reels: `In caves outside Beijing, scientists once found something extraordinary: the bones of Peking Man, half a million years old — among the most important human fossils ever discovered. In 1941, with Japan's army closing in, American and Chinese scientists packed the bones into crates to smuggle them to safety in the United States — the last hope of saving them from the war. The crates were handed to U.S. Marines, to be shipped out of port on December the eighth. On December the seventh, Japan attacked Pearl Harbor. The Marines guarding the fossils were taken prisoner before the ship ever sailed. The bones never reached it. They were never seen again — not by the scientists who packed them, not by anyone. Decades of searching, on three continents, found nothing. All that survives are the casts and photographs one researcher made just in time. Everything we know about Peking Man, we know from copies — because the originals are still, somewhere, missing.
+
+More from byclaude — link in bio.
+
+#history #pekingman #unsolvedmystery #science #mystery #reels`
+  },
   sodder: {
     title: "The Sodder Children — the billboard on the highway",
     yt: `On Christmas night 1945, a fire destroyed the Sodder family home in the West Virginia hills. Five of the ten children were never seen again. No bones were found in the ashes. The family put up a billboard on the highway — they offered a reward, and kept it there for forty years. Twenty-two years after the fire, a photograph arrived in the mail. They believed it showed their son Louis, in his twenties.

@@ -1,0 +1,47 @@
+{
+  "title": "Who Put Bella in the Wych Elm?",
+  "subtitle": "Hagley Wood, England, 1943",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Cold desaturated documentary still, an English woodland in wartime 1943, bare grey trees and overcast winter light, damp undergrowth, melancholy and uncanny, precise period 1940s British detail, cinematic wide composition, fine film grain, no modern text, no signage, nothing graphic.",
+  "facts": "Verified 2026-07-05 via WebSearch against en.wikipedia.org/wiki/Who_put_Bella_in_the_Wych_Elm, corroborated by CrimeReads/Amusing Planet/History Press summaries. 18 April 1943: four boys (poaching/bird-nesting) found a human skull in the hollow trunk of a wych elm in Hagley Wood, Worcestershire. Police then found a near-complete skeleton, a gold wedding ring, fragments of clothing, a single shoe, and remains of a hand found some distance from the tree, buried separately. Forensic estimate at the time: female, dead at least 18 months, i.e. placed there in or before October 1941. Graffiti began appearing in 1944: first 'Who put Luebella down the wych elm?', shortly after 'Who put Bella down the wych elm, Hagley Wood?' — written too high on walls for the boys who found her to have done it. Since at least the 1970s, similar graffiti has reappeared sporadically on the Hagley Obelisk near the discovery site. Body never identified, case never solved; remains reportedly since lost. This script names no suspect and asserts no theory (WWII spy-ring/occult 'Hand of Glory' stories exist but are unverified folklore, deliberately omitted) — only the documented discovery and the graffiti's continuation are asserted as fact.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In April of nineteen forty-three, four boys poaching in an English wood climbed inside a hollow tree, looking for birds' eggs. Instead, they found a human skull.",
+      "cap": "Hagley Wood · 1943",
+      "img": "A gnarled ancient hollow wych elm tree deep in a bare English woodland in early spring, dead leaves and undergrowth around its base, overcast grey daylight, melancholy and still, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Police searched the tree and found the rest of her: a nearly complete skeleton, a gold wedding ring, a shoe. She'd been dead at least eighteen months. And one of her hands was missing — buried separately, some distance away.",
+      "cap": "One hand, buried apart",
+      "img": "Close on the base of a hollow tree trunk in an English wood, a glint of a small gold ring resting on old leaves just inside the dark hollow opening, cold diffuse daylight, eerie and quiet, no people, nothing graphic."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "She was never identified. No one ever reported her missing. In wartime England, one more unnamed body barely made the news.",
+      "cap": "Never identified",
+      "img": "A wide view of a quiet 1940s English wood in overcast weather, wartime England, empty and undisturbed, a distant hedgerow and church spire on the horizon, muted grey-green tones, melancholy."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Then, in 1944, someone started writing a question on walls around the wood — in chalk, too high up for a child's hand. Who put Bella down the wych elm? No one ever found out who was asking.",
+      "cap": "WHO PUT BELLA\nDOWN THE WYCH ELM?",
+      "amber": true,
+      "img": "A weathered brick wall along a rural English lane at dusk, faint chalked handwriting barely visible and illegible in the low light, damp stone, eerie stillness, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "That question is still being written. As recently as the last few decades, it's appeared again on the stone obelisk near where she was found — eighty years on, by a hand that was never caught either.",
+      "cap": "Still being asked",
+      "amber": true,
+      "img": "An old stone obelisk monument on a wooded English hillside in fading autumn light, moss on the stone, completely still, melancholy, no legible text, no people."
+    }
+  ]
+}

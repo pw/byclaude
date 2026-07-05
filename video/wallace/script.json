@@ -1,0 +1,47 @@
+{
+  "title": "The Perfect Alibi",
+  "subtitle": "The Murder of Julia Wallace, Liverpool, 1931",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Cold blue-grey documentary still, England in January 1931, muted period light with occasional gas or sodium lamp glow, precise 1930s British detail, cinematic wide single-scene composition, fine film grain, no modern text, no signage, nothing graphic, exactly one unified scene per image, never a split-frame, diptych, or collage layout.",
+  "facts": "Verified 2026-07-05 via WebSearch against en.wikipedia.org/wiki/R_v_Wallace and en.wikipedia.org/wiki/William_Herbert_Wallace. Jan 1931: William Herbert Wallace, 52yo Liverpool insurance agent, received a phone message at his chess club the night before, asking him to call the next evening (7:30pm) on 'R. M. Qualtrough' at a given Menlove Gardens East address to discuss a policy. Menlove Gardens North/South/West exist in Liverpool; Menlove Gardens East does not, and no trace of a Qualtrough was ever found. Wallace spent over an hour asking strangers, a policeman, and a tram conductor for the nonexistent address — independently witnessed. Returned home to find Julia Wallace beaten to death in the parlour. Prosecution theory: the call traced to a public phone box ~400 yards from his home; police alleged Wallace made the call himself to construct an alibi. Convicted at Liverpool Assizes 1931. R v Wallace (heard 18-19 May 1931, Royal Courts of Justice, Lord Chief Justice Hewart presiding) is the first case in English legal history where a murder conviction was quashed on the ground the verdict 'cannot be supported, having regard to the evidence,' under s.4(1) Criminal Appeal Act 1907 — a genuine landmark still cited in criminal law. No one else was ever charged; case remains officially unsolved. (Later amateur theories name a colleague, Richard Gordon Parry, but this was never proven and is not asserted here as fact.)",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "On a January night in 1931, a Liverpool insurance man named William Wallace got a phone message at his chess club. A stranger — a Mister Qualtrough — wanted to meet him the next evening, about a policy.",
+      "cap": "Liverpool · 1931",
+      "img": "The wood-paneled interior of a 1930s English chess club at night, a black telephone receiver on its hook on a side table, warm lamp light, quiet and empty, no people, no modern signage."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "The next night, Wallace searched for over an hour for the address Qualtrough had given him. Half a dozen strangers, a policeman, a tram conductor — all watched him hunting for a street that didn't exist.",
+      "cap": "The address didn't exist",
+      "img": "A row of identical terraced houses on a foggy Liverpool street at night in the 1930s, gas streetlamps glowing, wet cobblestones reflecting light, a lone distant figure walking away down the empty street, no visible face, melancholy."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "He gave up and went home. There, in the parlor, he found his wife Julia — beaten to death.",
+      "cap": "Julia Wallace",
+      "img": "The dim parlor of a modest 1930s English terraced house at night, a fallen armchair and a scattered hearthrug, one lamp overturned, deep shadow, no people, nothing graphic, somber and still."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Police decided Wallace had called himself — an elaborate alibi to cover a murder. He was convicted. Then, on appeal, judges ruled the evidence couldn't support it: the first time in English law a murder conviction was overturned outright.",
+      "cap": "Overturned",
+      "amber": true,
+      "img": "The exterior of an English Royal Courts of Justice building, stone columns and arched windows in grey overcast daylight, formal and severe, no people, no modern signage."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Wallace walked free, and died a few years later, still under suspicion. No one else was ever charged. If he didn't make that call, whoever did was never found.",
+      "cap": "Never found",
+      "amber": true,
+      "img": "An empty foggy Liverpool street at dawn in the 1930s, terraced houses fading into mist, one distant figure walking alone away from camera, melancholy, no visible face."
+    }
+  ]
+}

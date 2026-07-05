@@ -1,0 +1,13 @@
+{
+  "out": "short-kasparhauser",
+  "kicker": "KASPAR HAUSER",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "kasparhauser", "img": "B01", "vo": "In May of eighteen twenty-eight, a teenage boy appeared in a town square in Nuremberg, Germany. He could barely speak. In his hand, an unsigned letter — no name, no home, no past.", "cap": "NUREMBERG · 1828" },
+    { "src": "kasparhauser", "img": "B02", "vo": "He learned to talk. Learned to write. And all of Europe began to whisper the same theory: that he was a stolen prince, hidden away since infancy to protect someone else's throne.", "cap": "A STOLEN PRINCE?" },
+    { "src": "kasparhauser", "img": "B03", "vo": "In 1829 someone attacked him with a knife; he survived. In December of 1833, someone lured him to a garden with the promise of a purse — and stabbed him for real. He died three days later.", "cap": "ANSBACH · 1833" },
+    { "src": "kasparhauser", "img": "B04", "vo": "In his purse, police found a note in mirror writing, from someone signing only M, L, period, O. It described Hauser precisely — and promised nothing else. His own epitaph reads: a riddle of his time. Birth unknown. Death mysterious.", "cap": "M. L. Ö.", "amber": true },
+    { "src": "kasparhauser", "img": "B05", "vo": "For two hundred years, the prince theory held. Then in 2024, new DNA analysis ruled it out for good — his blood doesn't match the royal family it was supposed to hide. Which leaves everything else exactly where it started.", "cap": "STILL UNKNOWN", "amber": true }
+  ]
+}

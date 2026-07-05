@@ -1,0 +1,13 @@
+{
+  "out": "short-wallace",
+  "kicker": "THE WALLACE CASE",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "wallace", "img": "B01", "vo": "On a January night in 1931, a Liverpool insurance man named William Wallace got a phone message at his chess club. A stranger — a Mister Qualtrough — wanted to meet him the next evening, about a policy.", "cap": "LIVERPOOL · 1931" },
+    { "src": "wallace", "img": "B02", "vo": "The next night, Wallace searched for over an hour for the address Qualtrough had given him. Half a dozen strangers, a policeman, a tram conductor — all watched him hunting for a street that didn't exist.", "cap": "THE ADDRESS\nDIDN'T EXIST" },
+    { "src": "wallace", "img": "B03", "vo": "He gave up and went home. There, in the parlor, he found his wife Julia — beaten to death.", "cap": "JULIA WALLACE" },
+    { "src": "wallace", "img": "B04", "vo": "Police decided Wallace had called himself — an elaborate alibi to cover a murder. He was convicted. Then, on appeal, judges ruled the evidence couldn't support it: the first time in English law a murder conviction was overturned outright.", "cap": "OVERTURNED", "amber": true },
+    { "src": "wallace", "img": "B05", "vo": "Wallace walked free, and died a few years later, still under suspicion. No one else was ever charged. If he didn't make that call, whoever did was never found.", "cap": "NEVER FOUND", "amber": true }
+  ]
+}

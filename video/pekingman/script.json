@@ -1,0 +1,47 @@
+{
+  "title": "The Bones That Never Arrived",
+  "subtitle": "The Peking Man Fossils, China, 1941",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Warm dusty sepia documentary still, wartime East Asia in 1941, hazy amber period light, precise early-1940s detail, cinematic wide single-scene composition, fine film grain, no modern text, no signage, nothing graphic, exactly one unified scene per image, never a split-frame, diptych, triptych, or collage layout.",
+  "facts": "Verified 2026-07-05 via WebSearch against Smithsonian Magazine ('The Mystery of the Missing Hominid Fossils' + 'Mystery of the Lost Peking Man Fossils Solved?'), Wikipedia (Peking Man), and factsanddetails.com. Fossils of Peking Man (Homo erectus pekinensis, ~half a million years old) were excavated at Zhoukoudian near Beijing in the 1920s-30s — among the most important human-origin fossils ever found. German-American anthropologist Franz Weidenreich made detailed casts, photographs, and monographs of the originals before they were lost; these copies are why the fossils' form is still known today. Dec 1941, with Japan's invasion imminent, American and Chinese scientists packed the fossils into crates at Peking Union Medical College to be smuggled to the US for safekeeping. The crates were entrusted to US Marines for transport to the port of Qinhuangdao, to be loaded onto the SS President Harrison, scheduled to sail 8 Dec 1941. Japan attacked Pearl Harbor on 7 Dec 1941 (US date); the Marines guarding the crates were taken prisoner as the invasion began, before the ship ever departed. The fossils were never seen again despite extensive postwar searches (US-sponsored efforts, rewards offered) across multiple countries. Responsibility remains disputed between American, Chinese, and Japanese accounts; no theory (sunk with a ship, buried at a Marine camp, seized/destroyed by Japanese forces, lost in transit, hidden in China) has ever been confirmed.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In caves outside Beijing, scientists once found something extraordinary: the bones of Peking Man, half a million years old — some of the most important human fossils ever discovered.",
+      "cap": "Zhoukoudian, China",
+      "img": "A dusty limestone cave excavation site outside Beijing in the early 20th century, wooden scaffolding and excavation tools, warm hazy daylight, sepia-toned and archival, no people, no modern text."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "In 1941, with Japan's army closing in, American and Chinese scientists packed the bones into crates to smuggle them to safety in the United States — the last hope of saving them from the war.",
+      "cap": "Packed for safety",
+      "img": "A dim 1941 laboratory room with wooden crates being packed with straw padding on a long table, scientific specimens and paperwork nearby, warm lamp light, tense and quiet, no people visible clearly, no modern text."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "The crates were handed to U.S. Marines, to be shipped out of port on December the eighth. On December the seventh, Japan attacked Pearl Harbor. The Marines guarding the fossils were taken prisoner before the ship ever sailed.",
+      "cap": "One day too late",
+      "amber": true,
+      "img": "A wartime 1941 Chinese port dockside at dawn, wooden crates stacked near a gangway, a large steamship silhouette waiting at anchor in hazy morning light, tense atmosphere, no people, no modern signage."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "The bones never reached the ship. They were never seen again — not by the scientists who packed them, not by anyone. Decades of searching, on three continents, found nothing.",
+      "cap": "Never seen again",
+      "img": "An empty wartime dockside warehouse interior, scattered straw packing material on the floor where crates once stood, dust motes in a shaft of hazy light through a high window, somber and still, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "All that survives are the casts and photographs one researcher made just in time. Everything we know about Peking Man, we know from copies — because the originals are still, somewhere, missing.",
+      "cap": "Only copies remain",
+      "amber": true,
+      "img": "An old wooden specimen cabinet drawer left open, holding careful plaster casts and yellowed photographs of ancient bone fragments, soft warm archival light, quiet and reverent, no people, no modern text."
+    }
+  ]
+}

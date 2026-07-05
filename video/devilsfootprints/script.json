@@ -1,0 +1,47 @@
+{
+  "title": "The Devil's Footprints",
+  "subtitle": "Devon, England, 1855",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Cold blue-white documentary still, rural Devon, England after a heavy snowfall in February 1855, moonlit snow-covered fields and thatched cottages, pale winter dawn light, melancholy and uncanny, precise period 1850s British detail, cinematic wide composition, fine film grain, no modern text, no signage, nothing graphic.",
+  "facts": "Verified 2026-07-05 via WebSearch against en.wikipedia.org/wiki/Devil's_Footprints. Night of 8-9 Feb 1855 (and possibly one or two following nights), after heavy snowfall around the Exe Estuary, east and south Devon: trails of hoof-like marks (~4in long, 3in across, 8-16in apart, mostly single-file) reported from 30+ locations across Devon plus a couple in Dorset, totaling some 40-100 miles in aggregate (not one continuous unbroken line — separate sightings across many villages the same morning). Reports described the trail crossing rooftops, walls, hedges, haystacks, and a river with no apparent detour. Rev. G. M. Musgrave (vicar of Withycombe Raleigh) wrote an account referencing rumors of an escaped kangaroo from a private menagerie (Mr Fische's, Sidmouth); Thomas Fox proposed a rodent-track explanation in the Illustrated London News's 10 March 1855 issue. No theory (kangaroo, rodent tracks, refrozen pony/donkey hoofprints, mass exaggeration) has ever been conclusively confirmed; the event is treated by historians as real and contemporaneously documented, though likely somewhat amplified in retelling.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "One snowy night in February of 1855, in the English county of Devon, something walked. By morning, a single-file trail of small hoof-shaped prints stretched for miles across the snow.",
+      "cap": "Devon · 1855",
+      "img": "A snow-covered rural Devon village at night in February, thatched cottages under a full moon, a single-file trail of small strange hoof-like prints crossing an open snowy field into the distance, no people, eerie and still."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Dozens of villages reported the same tracks the same morning — as much as a hundred miles of them, all told. The prints went over rooftops. Through solid walls. Across a river. Never once doubling back.",
+      "cap": "Over rooftops",
+      "img": "A snowy English cottage roofline at dawn, strange small cloven-hoof-like prints visible crossing directly over the snow-covered roof tiles and continuing down the far side, pale winter light, uncanny, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "A local vicar wrote it up for a London newspaper, and the story spread nationwide within weeks. People whispered it was the Devil himself, out walking.",
+      "cap": "The Devil, walking",
+      "img": "A cozy 1850s English rectory study, an open letter and quill on a wooden writing desk near a frosted window looking out on snow, warm candlelight, contemplative, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Investigators proposed an escaped kangaroo. A rope of field mice. A pony's hooves, refrozen into one long unbroken line. None of it quite explained everything that was reported.",
+      "cap": "No explanation fit",
+      "amber": true,
+      "img": "A wide snowy Devon field at dawn with a long single-file trail of small strange prints crossing straight through a low stone wall as if it weren't there, pale cold light, uncanny and still, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "No one ever proved which theory was right — or whether the whole account grew taller in the telling. A hundred and seventy years later, the tracks in the snow are still just tracks in the snow.",
+      "cap": "Still just tracks",
+      "amber": true,
+      "img": "A quiet snow-covered Devon field in soft grey morning light, the strange prints fading into an ordinary hedge at the frame's edge, still and unresolved, melancholy, no people."
+    }
+  ]
+}

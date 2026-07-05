@@ -1,0 +1,47 @@
+{
+  "title": "The Riddle of His Time",
+  "subtitle": "Kaspar Hauser, Germany, 1828–1833",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Warm melancholic documentary illustration, a Bavarian/Franconian town in the 1820s-1830s, muted amber gaslight and grey stone, overcast Central European light, precise period 1828-1833 detail, cinematic wide composition, fine film grain, no modern text, no signage, nothing graphic.",
+  "facts": "Verified 2026-07-05 via WebSearch + direct Wikipedia fetch (en.wikipedia.org/wiki/Kaspar_Hauser) plus CNN's 2024-09-21 report on the new DNA study. Appeared Nuremberg 26 May 1828, ~16yo, letter in hand (unsigned, claimed custody since Oct 1812, said he wished to be a cavalryman 'as his father was'). 1829: attacked/forehead wound, survived, claimed a hooded man told him 'you still have to die before you leave the city of Nuremberg.' Fatal stabbing: 14 Dec 1833, Ansbach Court Garden, lured with the promise of a purse, died 17 Dec (3 days later). A violet purse found at the scene held a pencilled note in Spiegelschrift (mirror writing): 'Hauser will be able to tell you quite precisely how I look... I come from... the Bavarian border... I will even tell you the name: M.L.Ö.' Epitaph (verified, Ansbach): 'Hic iacet Casparus Hauser, aenigma sui temporis...' — English rendering used here ('riddle of his time... birth unknown, death mysterious') is the standard translation. The 'stolen prince of Baden' theory was the dominant legend for ~200 years; a Sept 2024 mitochondrial-DNA re-analysis (hair samples, ancient-DNA-grade method) found NO match to House of Baden mtDNA, ruling out princely descent (Springer/CNN). This does NOT identify who he actually was, nor settle the stabbing: a 2005 forensic re-analysis could not rule out murder, suicide, or accidental self-injury while staging an attack — presented here as a genuinely open question, not resolved either way.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In May of eighteen twenty-eight, a teenage boy appeared in a town square in Nuremberg, Germany. He could barely speak. In his hand, an unsigned letter — no name, no home, no past.",
+      "cap": "Nuremberg · 1828",
+      "img": "A cobblestone town square in a small Bavarian city in the 1820s, surrounded by tall narrow gabled townhouses, a single distant solitary teenage figure standing in the open square clutching a folded letter, overcast grey daylight, no visible face, no modern signage."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "He learned to talk. Learned to write. And all of Europe began to whisper the same theory: that he was a stolen prince, hidden away since infancy to protect someone else's throne.",
+      "cap": "A stolen prince?",
+      "img": "A modest 1820s German study interior, an open handwriting workbook and inkwell on a wooden desk near a window, warm daylight, a sense of someone slowly learning to write, no people visible, quiet and hopeful."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "In 1829 someone attacked him with a knife; he survived. In December of 1833, someone lured him to a garden with the promise of a purse — and stabbed him for real. He died three days later.",
+      "cap": "Ansbach · 1833",
+      "img": "A dark formal garden path in a small German city at dusk in December, bare trees, a wrought iron gate, a single dropped violet drawstring purse lying on frost-covered gravel, no people, no blood, somber and still."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "In his purse, police found a note in mirror writing, from someone signing only M, L, period, O. It described Hauser precisely — and promised nothing else. His own epitaph reads: a riddle of his time. Birth unknown. Death mysterious.",
+      "cap": "M. L. Ö.",
+      "amber": true,
+      "img": "Close on an old pencilled note beside a small violet purse resting on a stone garden bench at dusk, the handwriting on the paper completely illegible, cold blue winter light, melancholy, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "For two hundred years, the prince theory held. Then in 2024, new DNA analysis ruled it out for good — his blood doesn't match the royal family it was supposed to hide. Which leaves everything else exactly where it started.",
+      "cap": "Still unknown",
+      "amber": true,
+      "img": "A quiet Franconian churchyard at dusk with one weathered 19th-century gravestone among bare trees, soft fading light, peaceful and sad, no legible text on the stone, no people."
+    }
+  ]
+}

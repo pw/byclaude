@@ -1,0 +1,47 @@
+{
+  "title": "Before Edison",
+  "subtitle": "Louis Le Prince, France, 1890",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Warm sepia-tinted documentary still, provincial France and industrial Leeds England circa 1888-1890, brass-and-mahogany camera equipment, steam-train platforms, soft period photographic light, melancholy and nostalgic, precise Belle Époque detail, cinematic wide composition, fine film grain, no modern text, no signage, nothing graphic.",
+  "facts": "Verified 2026-07-05 via WebSearch + direct Wikipedia fetch (en.wikipedia.org/wiki/Louis_Le_Prince). Oct 14, 1888, Leeds, England: Le Prince filmed Roundhay Garden Scene with a single-lens camera and Eastman paper-negative film — among the earliest surviving motion-picture footage, predating both Edison's 1891 Kinetoscope demonstrations and the Lumière brothers' 1895 public screening. He was visiting his brother in Dijon, France; on 16 September 1890 he boarded a train there for Paris, intending to continue on to England and then the US to publicly demonstrate his camera. He took a later train than his friends in Paris expected — they discovered he was not aboard. French police, Scotland Yard, and his family conducted exhaustive searches; no body or luggage was ever found. In 2003, a photograph was found during research in the Paris police archives of an unidentified man pulled drowned from the Seine in 1890, said to resemble Le Prince — but this identification is disputed (some researchers who examined it say the body was too short to be his), so it is presented here as an unresolved lead, not confirmation. Because he vanished before he could publicly demonstrate or defend a patent claim, popular and commercial credit for inventing motion pictures went to Edison and the Lumière brothers instead; film historians have only more recently restored recognition of Le Prince's priority.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In October of 1888, in Leeds, England, a French inventor named Louis Le Prince pointed a single-lens camera at his own back garden — and shot what may be the oldest surviving motion picture in the world. Years before Edison. Years before the Lumière brothers.",
+      "cap": "Leeds · 1888",
+      "img": "A Victorian-era English back garden in Leeds in 1888, a wooden tripod holding a brass-and-mahogany box camera aimed at a lawn, soft autumn daylight, nostalgic and quiet, no people, no modern text."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "By 1890 he was ready to cross the Atlantic and show the world what he'd built. He'd been visiting his brother in Dijon, France — and on September the sixteenth, he boarded a train there, bound for Paris.",
+      "cap": "September 16, 1890",
+      "img": "A provincial French train station platform in 1890, an ornate iron-and-glass canopy, a steam locomotive at the platform with drifting steam, warm late-summer evening light, one small distant figure boarding near the far end, no visible face."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "He never got off that train. His friends in Paris waited for him, and he simply wasn't there. No body. No luggage. No trace, ever, of Louis Le Prince again.",
+      "cap": "Never arrived",
+      "img": "An empty Belle Époque Paris train station platform at night, gas lamps glowing, drifting steam, no passengers arriving, wet stone platform reflecting light, melancholy and quiet, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "In 2003, over a century later, someone searching the Paris police archives found a photograph: an unidentified man pulled from the Seine in 1890, drowned. He looks strikingly like Le Prince. Some who've studied it say the body was too short to be his. No one has ever been able to say for certain.",
+      "cap": "FROM THE SEINE\n1890",
+      "amber": true,
+      "img": "A dim archive room with old wooden filing cabinets and a single hanging bulb, an open manila folder on a desk holding a faded sepia photograph turned face-down, no legible text, somber, no people visible clearly."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Because he vanished before he could show anyone, credit for inventing the movies went to Edison, and to the Lumières. Most textbooks still don't mention the man who did it first.",
+      "cap": "The man who did it first",
+      "amber": true,
+      "img": "A dusty early film-reel canister and a strip of antique paper film resting on a wooden workbench in soft window light, nostalgic sepia tones, quiet and still, no people, no modern text."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "out": "short-leprince",
+  "kicker": "BEFORE EDISON",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "leprince", "img": "B01", "vo": "In October of 1888, in Leeds, England, a French inventor named Louis Le Prince pointed a single-lens camera at his own back garden — and shot what may be the oldest surviving motion picture in the world. Years before Edison. Years before the Lumière brothers.", "cap": "LEEDS · 1888" },
+    { "src": "leprince", "img": "B02", "vo": "By 1890 he was ready to cross the Atlantic and show the world what he'd built. He'd been visiting his brother in Dijon, France — and on September the sixteenth, he boarded a train there, bound for Paris.", "cap": "SEPTEMBER 16, 1890" },
+    { "src": "leprince", "img": "B03", "vo": "He never got off that train. His friends in Paris waited for him, and he simply wasn't there. No body. No luggage. No trace, ever, of Louis Le Prince again.", "cap": "NEVER ARRIVED" },
+    { "src": "leprince", "img": "B04", "vo": "In 2003, over a century later, someone searching the Paris police archives found a photograph: an unidentified man pulled from the Seine in 1890, drowned. He looks strikingly like Le Prince. Some who've studied it say the body was too short to be his. No one has ever been able to say for certain.", "cap": "FROM THE SEINE\n1890", "amber": true },
+    { "src": "leprince", "img": "B05", "vo": "Because he vanished before he could show anyone, credit for inventing the movies went to Edison, and to the Lumières. Most textbooks still don't mention the man who did it first.", "cap": "THE MAN WHO DID\nIT FIRST", "amber": true }
+  ]
+}

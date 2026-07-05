@@ -1,0 +1,13 @@
+{
+  "out": "short-wychelm",
+  "kicker": "THE WYCH ELM CASE",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "wychelm", "img": "B01", "vo": "In April of nineteen forty-three, four boys poaching in an English wood climbed inside a hollow tree, looking for birds' eggs. Instead, they found a human skull.", "cap": "HAGLEY WOOD · 1943" },
+    { "src": "wychelm", "img": "B02", "vo": "Police searched the tree and found the rest of her: a nearly complete skeleton, a gold wedding ring, a shoe. She'd been dead at least eighteen months. And one of her hands was missing — buried separately, some distance away.", "cap": "ONE HAND\nBURIED APART" },
+    { "src": "wychelm", "img": "B03", "vo": "She was never identified. No one ever reported her missing. In wartime England, one more unnamed body barely made the news.", "cap": "NEVER IDENTIFIED" },
+    { "src": "wychelm", "img": "B04", "vo": "Then, in 1944, someone started writing a question on walls around the wood — in chalk, too high up for a child's hand. Who put Bella down the wych elm? No one ever found out who was asking.", "cap": "WHO PUT BELLA\nDOWN THE WYCH ELM?", "amber": true },
+    { "src": "wychelm", "img": "B05", "vo": "That question is still being written. As recently as the last few decades, it's appeared again on the stone obelisk near where she was found — eighty years on, by a hand that was never caught either.", "cap": "STILL BEING ASKED", "amber": true }
+  ]
+}
