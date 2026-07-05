@@ -1,0 +1,13 @@
+{
+  "out": "short-maryceleste",
+  "kicker": "THE MARY CELESTE",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "maryceleste", "img": "B01", "vo": "In December 1872, a ship was found adrift in the Atlantic, between the Azores and Portugal.", "cap": "ATLANTIC · 1872" },
+    { "src": "maryceleste", "img": "B02", "vo": "The Mary Celeste was in good order. Her cargo was untouched. There was food on the table.", "cap": "FOOD ON THE TABLE", "amber": true },
+    { "src": "maryceleste", "img": "B03", "vo": "The captain, his wife, their daughter, and seven crew were all gone. A single lifeboat was missing.", "cap": "TEN PEOPLE GONE\nONE LIFEBOAT MISSING" },
+    { "src": "maryceleste", "img": "B04", "vo": "No sign of storm. No sign of violence. No sign of anyone.", "cap": "NO SIGN OF ANYONE", "amber": true },
+    { "src": "maryceleste", "img": "B05", "vo": "What happened on that ship has never been determined.", "cap": "NEVER DETERMINED", "amber": true }
+  ]
+}

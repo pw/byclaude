@@ -1,0 +1,46 @@
+{
+  "title": "Food beside Them, Untouched",
+  "subtitle": "The Yuba County Five · California, 1978",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the high Sierra Nevada mountains of the Plumas National Forest in winter 1978, deep snow on dormant pine forest, abandoned USFS trailer cabins in remote clearings, frost and bare branches, cold blue-grey winter light, melancholy and uncanny, period 1978 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In February 1978, five young men from Yuba City, California, drove to Chico for a basketball game.",
+      "cap": "California · 1978",
+      "img": "A vintage late-1960s American sedan on a rural two-lane road in the Sierra Nevada foothills in winter, dim grey overcast light, dormant oak and pine forest, melancholy, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "They did not come home. Their car was found days later, abandoned on a remote mountain road.",
+      "cap": "Abandoned\non a mountain road",
+      "img": "An empty vintage late-1960s American sedan parked at an odd angle on a snow-covered remote mountain road in the Sierra Nevada, deep snow, bare pine forest, cold winter light, isolated, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Months later, four of them were found in a forest trailer, twenty miles from the car.",
+      "cap": "Twenty miles from the car",
+      "amber": true,
+      "img": "An abandoned US Forest Service trailer cabin in a remote snowy pine-forest clearing in the Sierra Nevada, cold winter light, deep snow on the roof, desolate and isolated, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "One had lived there for weeks, with food and a heater untouched beside him. He had starved.",
+      "cap": "Food and heater\nuntouched",
+      "amber": true,
+      "img": "An interior of a spartan US Forest Service trailer cabin with military C-ration cans stacked on a counter and an unlit butane heater beside a bare bunk, cold dim grey light through a small frosted window, eerie, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The fifth was never found. The case is still open.",
+      "cap": "Still open",
+      "img": "A vast empty Sierra Nevada pine forest under deep snow at dusk, fading light, distant ridge, cold and remote, melancholy and unresolved, no people."
+    }
+  ]
+}

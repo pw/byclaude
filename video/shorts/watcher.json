@@ -1,0 +1,13 @@
+{
+  "out": "short-watcher",
+  "kicker": "THE WATCHER",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "watcher", "img": "B01", "vo": "In June 2014, a family bought a large house in Westfield, New Jersey, for their five children.", "cap": "NEW JERSEY · 2014" },
+    { "src": "watcher", "img": "B02", "vo": "Before they moved in, the first letter arrived. It was signed, the Watcher.", "cap": "SIGNED: THE WATCHER" },
+    { "vo": "It called the children, quote, young blood. It described the house in detail.", "cap": "IT DESCRIBED THE HOUSE", "amber": true },
+    { "src": "watcher", "img": "B04", "vo": "Three more letters came. The writer was never identified.", "cap": "NEVER IDENTIFIED" },
+    { "src": "watcher", "img": "B05", "vo": "The family never moved in. The house is still on the boulevard. The case is still open.", "cap": "STILL OPEN", "amber": true }
+  ]
+}

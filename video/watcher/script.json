@@ -1,0 +1,45 @@
+{
+  "title": "Young Blood",
+  "subtitle": "The Watcher · Westfield, New Jersey, 2014",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, an affluent American suburban street in summer 2014, large early-20th-century houses set back from the sidewalk, mature shade trees, hazy humid New Jersey evening light, melancholy and uncanny, period 2014 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In June 2014, a family bought a large house in Westfield, New Jersey, for their five children.",
+      "cap": "New Jersey · 2014",
+      "img": "A large early-twentieth-century American suburban house seen from the sidewalk at dusk in summer, mature shade trees, warm lit windows, hazy humid light, prosperous and quietly ominous, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Before they moved in, the first letter arrived. It was signed, the Watcher.",
+      "cap": "Signed: the Watcher",
+      "img": "A single typewritten letter resting on a wooden entryway table, partially visible, indistinct typed text, soft suburban daylight through a window, documentary still, eerie, no people, no readable text."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "It called the children, quote, young blood. It described the house in detail.",
+      "cap": "It described the house",
+      "amber": true
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Three more letters came. The writer was never identified.",
+      "cap": "Never identified",
+      "img": "A mailbox at the end of a quiet suburban driveway at dusk, slightly open, mature trees behind, hazy evening light, melancholy and sinister, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The family never moved in. The house is still on the boulevard. The case is still open.",
+      "cap": "Still open",
+      "amber": true,
+      "img": "The same large suburban house seen from the sidewalk at night, dark and unlit, dim streetlight, bare silhouette against the sky, melancholy and unresolved, no people."
+    }
+  ]
+}

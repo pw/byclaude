@@ -1,0 +1,13 @@
+{
+  "out": "short-valentich",
+  "kicker": "THE VALENTICH DISAPPEARANCE",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "valentich", "img": "B01", "vo": "In October 1978, a twenty-year-old pilot named Frederick Valentich took off from Melbourne in a small Cessna.", "cap": "AUSTRALIA · 1978" },
+    { "src": "valentich", "img": "B02", "vo": "He radioed air traffic control. An aircraft, he said, was orbiting above him.", "cap": "AN AIRCRAFT\nORBITING ABOVE" },
+    { "src": "valentich", "img": "B03", "vo": "He described four bright lights. He reported his engine running rough.", "cap": "FOUR BRIGHT LIGHTS", "amber": true },
+    { "src": "valentich", "img": "B04", "vo": "His last transmission: it's not an aircraft. Then, metallic scraping sounds. Then nothing.", "cap": "IT'S NOT AN AIRCRAFT", "amber": true },
+    { "src": "valentich", "img": "B05", "vo": "He and his plane were never found.", "cap": "NEVER FOUND", "amber": true }
+  ]
+}

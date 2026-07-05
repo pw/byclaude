@@ -498,6 +498,12 @@ footer{margin-top:60px;color:var(--dim);font-size:14px;border-top:1px solid var(
 <div class="col"><div class="lab">Elisa Lam · 0:38</div><video controls preload="metadata"><source src="/m/short-elisalam.mp4" type="video/mp4"></video><a href="/m/short-elisalam.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 <div class="col"><div class="lab">The Somerton Man · 0:40</div><video controls preload="metadata"><source src="/m/short-somertonman.mp4" type="video/mp4"></video><a href="/m/short-somertonman.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 <div class="col"><div class="lab">The Max Headroom Incident · 0:38</div><video controls preload="metadata"><source src="/m/short-maxheadroom.mp4" type="video/mp4"></video><a href="/m/short-maxheadroom.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Sodder Children · 0:34</div><video controls preload="metadata"><source src="/m/short-sodder.mp4" type="video/mp4"></video><a href="/m/short-sodder.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Watcher · 0:31</div><video controls preload="metadata"><source src="/m/short-watcher.mp4" type="video/mp4"></video><a href="/m/short-watcher.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Circleville Letter Writer · 0:35</div><video controls preload="metadata"><source src="/m/short-circleville.mp4" type="video/mp4"></video><a href="/m/short-circleville.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Mary Celeste · 0:31</div><video controls preload="metadata"><source src="/m/short-maryceleste.mp4" type="video/mp4"></video><a href="/m/short-maryceleste.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Valentich Disappearance · 0:30</div><video controls preload="metadata"><source src="/m/short-valentich.mp4" type="video/mp4"></video><a href="/m/short-valentich.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Yuba County Five · 0:32</div><video controls preload="metadata"><source src="/m/short-yubacountyfive.mp4" type="video/mp4"></video><a href="/m/short-yubacountyfive.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 </div>
 <h2>Cut-downs from long films</h2>
 <div class="row">
@@ -633,6 +639,98 @@ function filmPage(f) {
 }
 
 const POSTS = {
+  sodder: {
+    title: "The Sodder Children — the billboard on the highway",
+    yt: `On Christmas night 1945, a fire destroyed the Sodder family home in the West Virginia hills. Five of the ten children were never seen again. No bones were found in the ashes. A coroner issued death certificates without remains. Twenty-two years later, a photograph arrived in the mail. The family believed it showed their son Louis, in his twenties.
+
+The billboard stood by the highway for forty years. No explanation was ever confirmed.
+
+#truecrime #sodder #unsolved #shorts #coldcase #missingpersons`,
+    tiktok: `Christmas night 1945, West Virginia. A fire destroyed the Sodder family home. Five of the ten children were never seen again. No bones in the ashes. Twenty-two years later, a photograph arrived in the mail — believed to show their son Louis, in his twenties.
+
+#truecrime #sodderchildren #unsolvedmystery #fyp #missingpersons #truecrimetiktok`,
+    reels: `Fayetteville, West Virginia. Christmas night, 1945. A fire destroyed the Sodder family home in the hills. Five of the ten Sodder children were never seen again. No bones were found in the ashes — a coroner issued death certificates without remains. Twenty-two years later, a photograph arrived in the mail. The family believed it showed their son Louis, in his twenties. The billboard stood by the highway for forty years. No explanation was ever confirmed.
+
+More from byclaude — link in bio.
+
+#truecrime #sodder #unsolved #missingpersons #coldcase #truecrimecommunity #mystery #reels`
+  },
+  watcher: {
+    title: "The Watcher — young blood",
+    yt: `In June 2014, a family bought a large house in Westfield, New Jersey, for their five children. Before they moved in, the first letter arrived. It was signed: the Watcher. It called the children, quote, young blood. Three more letters came. The writer was never identified. The family never moved in. The house is still on the boulevard.
+
+#truecrime #thewatcher #unsolved #shorts #mystery #newjersey`,
+    tiktok: `June 2014, Westfield, New Jersey. A family buys a large house for their five children. Before they move in, the first letter arrives. Signed: the Watcher. It called the children "young blood." Three more letters came. The writer was never identified. The family never moved in.
+
+#truecrime #thewatcher #westfieldnj #fyp #unsolvedmystery #truecrimetiktok`,
+    reels: `Westfield, New Jersey. June 2014. A family bought a large house for their five children. Before they moved in, the first letter arrived. Signed: the Watcher. It called the children, quote, young blood. It described the house in detail. Three more letters came. The writer was never identified. The family never moved in. The house is still on the boulevard. The case is still open.
+
+More from byclaude — link in bio.
+
+#truecrime #thewatcher #unsolved #mystery #truecrimecommunity #reels`
+  },
+  circleville: {
+    title: "The Circleville Letter Writer — the letters continued",
+    yt: `For almost twenty years, beginning in 1976, someone in Circleville, Ohio, sent anonymous letters to dozens of residents. Handwritten. Specific. In 1977 a small handgun was rigged to a mailbox — meant for Mary Gilligan. Her brother-in-law was convicted. He maintained his innocence. The letters continued while he was in prison.
+
+He served ten years. The case was never solved.
+
+#truecrime #circleville #unsolved #shorts #mystery #ohio`,
+    tiktok: `For almost 20 years, someone in Circleville, Ohio, sent anonymous letters to dozens of residents. Handwritten. Specific. In 1977 a handgun was rigged to a mailbox — meant for Mary Gilligan. Her brother-in-law was convicted. He maintained his innocence. The letters continued while he was in prison.
+
+#truecrime #circlevilleletters #unsolvedmystery #fyp #mystery #truecrimetiktok`,
+    reels: `Circleville, Ohio. Beginning in 1976, for almost twenty years, someone sent anonymous letters to dozens of residents. Handwritten. Specific. The writer knew what people had done, and what they had not. In 1977, a small handgun was rigged to a mailbox — meant for Mary Gilligan. Her brother-in-law was convicted. He maintained his innocence. The letters continued while he was in prison. He served ten years. The case was never solved.
+
+More from byclaude — link in bio.
+
+#truecrime #circleville #unsolved #mystery #truecrimecommunity #reels`
+  },
+  maryceleste: {
+    title: "The Mary Celeste — food on the table",
+    yt: `In December 1872, a ship was found adrift in the Atlantic. The Mary Celeste was in good order. Her cargo was untouched. There was food on the table. The captain, his wife, their daughter, and seven crew were all gone. A single lifeboat was missing. No sign of storm. No sign of violence. No sign of anyone.
+
+What happened on that ship has never been determined.
+
+#truecrime #maryceleste #unsolved #shorts #mystery #maritime`,
+    tiktok: `December 1872. A ship found adrift in the Atlantic. The Mary Celeste — in good order, cargo untouched, food on the table. The captain, his wife, their daughter, and seven crew all gone. A single lifeboat missing. No sign of storm. No sign of violence. No sign of anyone.
+
+#truecrime #maryceleste #unsolvedmystery #fyp #mystery #truecrimetiktok`,
+    reels: `December 1872, the Atlantic Ocean between the Azores and Portugal. A ship found adrift. The Mary Celeste was in good order. Her cargo was untouched. There was food on the table. The captain, his wife, their two-year-old daughter, and seven crew were all gone. A single lifeboat was missing. No sign of storm. No sign of violence. No sign of anyone. What happened on that ship has never been determined.
+
+More from byclaude — link in bio.
+
+#truecrime #maryceleste #unsolved #mystery #truecrimecommunity #maritime #reels`
+  },
+  valentich: {
+    title: "The Valentich Disappearance — it's not an aircraft",
+    yt: `In October 1978, a 20-year-old pilot named Frederick Valentich took off from Melbourne in a small Cessna. He radioed air traffic control. An aircraft, he said, was orbiting above him. He described four bright lights. He reported his engine running rough. His last transmission: it's not an aircraft. Then metallic scraping sounds. Then nothing.
+
+He and his plane were never found.
+
+#truecrime #valentich #unsolved #shorts #mystery #aviation`,
+    tiktok: `October 1978. A 20-year-old pilot named Frederick Valentich takes off from Melbourne in a small Cessna. He radios ATC: an aircraft is orbiting above him. Four bright lights. Engine running rough. His last transmission: "It's not an aircraft." Then metallic scraping sounds. Then nothing.
+
+#truecrime #valentich #unsolvedmystery #fyp #aviation #truecrimetiktok`,
+    reels: `October 21, 1978, Australia. A 20-year-old pilot named Frederick Valentich took off from Melbourne in a small Cessna, bound for King Island over Bass Strait. He radioed air traffic control. An aircraft, he said, was orbiting above him. He described four bright lights. He reported his engine running rough. His last transmission: it's not an aircraft. Then metallic scraping sounds. Then nothing. He and his plane were never found.
+
+More from byclaude — link in bio.
+
+#truecrime #valentich #unsolved #mystery #aviation #truecrimecommunity #reels`
+  },
+  yubacountyfive: {
+    title: "The Yuba County Five — food beside them, untouched",
+    yt: `In February 1978, five young men from Yuba City, California, drove to Chico for a basketball game. They did not come home. Their car was found days later, abandoned on a remote mountain road. Months later, four of them were found in a forest trailer, twenty miles from the car. One had lived there for weeks, with food and a heater untouched beside him. He had starved. The fifth was never found.
+
+#truecrime #yubacountyfive #unsolved #shorts #mystery #missingpersons`,
+    tiktok: `February 1978. Five young men from Yuba City, California, drive to Chico for a basketball game. They don't come home. Their car is found abandoned on a remote mountain road. Months later, four of them are found in a forest trailer 20 miles from the car. One had lived there for weeks, with food and a heater untouched beside him. He had starved.
+
+#truecrime #yubacountyfive #unsolvedmystery #fyp #missingpersons #truecrimetiktok`,
+    reels: `February 1978, California. Five young men from Yuba City drove to Chico for a basketball game. They did not come home. Their car was found days later, abandoned on a remote mountain road in the Plumas National Forest. Months later, four of them were found in a forest trailer, twenty miles from the car. One had lived there for weeks, with food and a heater untouched beside him. He had starved. The fifth was never found. The case is still open.
+
+More from byclaude — link in bio.
+
+#truecrime #yubacountyfive #unsolved #missingpersons #mystery #truecrimecommunity #reels`
+  },
   elisalam: {
     title: "Elisa Lam — the doors that did not close",
     yt: `In February 2013, a 21-year-old student stepped into an elevator at the Cecil Hotel in Los Angeles. The doors did not close. For ninety seconds she pressed buttons, stepped into the hallway, stepped back in. The security camera recorded what it recorded.

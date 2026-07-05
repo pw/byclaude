@@ -1,0 +1,45 @@
+{
+  "title": "The Billboard on the Highway",
+  "subtitle": "The Sodder Children · West Virginia, 1945",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, Appalachian West Virginia hills in late December 1945, cold dormant deciduous forest, frost, dim winter light, smoke-grey sky, rural two-lane highway, melancholy and uncanny, period 1945 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "On Christmas night, nineteen forty-five, a fire destroyed the Sodder family home in the West Virginia hills.",
+      "cap": "West Virginia · 1945",
+      "img": "A weathered 1940s rural American wooden farmhouse at night seen from a distance, cold dim winter light, bare deciduous trees, faint smoke rising from the roof line, isolated and melancholy, no people, nothing graphic."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Five of the ten Sodder children were never seen again.",
+      "cap": "Five of ten\nnever seen again",
+      "amber": true
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "No bones were found in the ashes. A coroner issued death certificates without remains.",
+      "cap": "No remains\nin the ashes",
+      "img": "A low pile of grey ash and charred timber in the snow where a house stood, cold winter morning light, melted snow around the wreckage, desolate, no people, nothing graphic."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Twenty-two years later, a photograph arrived in the mail. The family believed it showed their son Louis, in his twenties.",
+      "cap": "A photograph\n22 years later",
+      "amber": true,
+      "img": "A single aged photograph lying on a worn wooden kitchen table, blurry, indistinct face, period 1960s domestic background, warm documentary light, melancholy, no recognizable person."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The billboard stood by the highway for forty years. No explanation was ever confirmed.",
+      "cap": "Still unknown",
+      "img": "A weathered wooden roadside billboard on a rural American two-lane highway in winter, faded, seen from a distance across a brown dormant field, bare trees, overcast sky, melancholy and unresolved, no people."
+    }
+  ]
+}

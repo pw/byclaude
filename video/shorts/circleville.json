@@ -1,0 +1,13 @@
+{
+  "out": "short-circleville",
+  "kicker": "THE CIRCLEVILLE LETTER WRITER",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "circleville", "img": "B01", "vo": "For almost twenty years, beginning in nineteen seventy-six, someone in Circleville, Ohio, sent anonymous letters to dozens of residents.", "cap": "OHIO · 1976–1994" },
+    { "src": "circleville", "img": "B02", "vo": "Handwritten. Specific. The writer knew what people had done. And what they had not.", "cap": "HANDWRITTEN\nSPECIFIC" },
+    { "src": "circleville", "img": "B03", "vo": "In nineteen seventy-seven, a small handgun was rigged to a mailbox. It was meant for Mary Gilligan.", "cap": "A TRAP\nRIGGED TO A MAILBOX", "amber": true },
+    { "src": "circleville", "img": "B04", "vo": "Her brother-in-law was convicted. He maintained his innocence. The letters continued while he was in prison.", "cap": "THE LETTERS\nCONTINUED", "amber": true },
+    { "src": "circleville", "img": "B05", "vo": "He served ten years. The case was never solved.", "cap": "STILL UNSOLVED", "amber": true }
+  ]
+}

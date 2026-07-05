@@ -1,0 +1,46 @@
+{
+  "title": "The Letters Continued",
+  "subtitle": "The Circleville Letter Writer · Ohio, 1976–1994",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, small-town rural Ohio in the late 1970s and 1980s, flat farmland horizon, wood-frame houses with screen doors, dim yellowish kitchens, country roads, melancholy and uncanny, period 1976-1994 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "For almost twenty years, beginning in nineteen seventy-six, someone in Circleville, Ohio, sent anonymous letters to dozens of residents.",
+      "cap": "Ohio · 1976–1994",
+      "img": "A rural American country mailbox at the end of a gravel driveway on a flat Ohio farmland road, late afternoon summer light, distant wood-frame farmhouse, melancholy, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Handwritten. Specific. The writer knew what people had done. And what they had not.",
+      "cap": "Handwritten\nspecific",
+      "img": "Several handwritten letters in printed block capitals scattered on a worn kitchen table under dim yellow overhead light, indistinct text, eerie, no people, no readable content."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "In nineteen seventy-seven, a small handgun was rigged to a mailbox. It was meant for Mary Gilligan.",
+      "cap": "A trap\nrigged to a mailbox",
+      "amber": true,
+      "img": "An old rural metal mailbox at the end of a wooden post seen close at dusk, door slightly ajar, dim evening light on flat Ohio farmland behind, sinister, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Her brother-in-law was convicted. He maintained his innocence. The letters continued while he was in prison.",
+      "cap": "The letters\ncontinued",
+      "amber": true,
+      "img": "A bare institutional prison cell window seen from outside, dim evening light, blue-grey uniform wall, cold fluorescent glow, melancholy and isolating, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "He served ten years. The case was never solved.",
+      "cap": "Still unsolved",
+      "img": "An empty flat Ohio farmland road at dusk stretching to the horizon, weathered wood fence posts, hazy fading light over farm fields, remote and unresolved, no people."
+    }
+  ]
+}

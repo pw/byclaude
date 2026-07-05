@@ -1,0 +1,46 @@
+{
+  "title": "Food on the Table",
+  "subtitle": "The Mary Celeste · Atlantic Ocean, 1872",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a 19th-century brigantine sailing ship adrift in the open Atlantic Ocean in December 1872, grey heavy overcast sky, glassy swells, weathered teak and salt-stained wood, brass fittings, canvas sails furled and damp, melancholy and uncanny, period 1872 maritime detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In December 1872, a ship was found adrift in the Atlantic, between the Azores and Portugal.",
+      "cap": "Atlantic · 1872",
+      "img": "A 19th-century wooden brigantine sailing ship becalmed on a glassy grey Atlantic swell under heavy overcast, distant horizon, viewed from another ship's deck, eerie and remote, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "The Mary Celeste was in good order. Her cargo was untouched. There was food on the table.",
+      "cap": "Food on the table",
+      "amber": true,
+      "img": "The interior of a 19th-century ship's captain's cabin, a wooden table set with pewter plates and a half-eaten meal, brass lantern dimly lit, weathered teak, porthole grey daylight, melancholy and eerie, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "The captain, his wife, their daughter, and seven crew were all gone. A single lifeboat was missing.",
+      "cap": "Ten people gone\none lifeboat missing",
+      "img": "Empty wooden davits on the side of a 19th-century sailing ship where a lifeboat once hung, grey Atlantic sea beyond, damp furled sails, weathered rope, melancholy, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "No sign of storm. No sign of violence. No sign of anyone.",
+      "cap": "No sign of anyone",
+      "amber": true,
+      "img": "Empty wooden deck of a 19th-century brigantine with damp furled sails and salt-stained railing seen at an angle, low grey overcast, distant empty horizon, desolate, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "What happened on that ship has never been determined.",
+      "cap": "Never determined",
+      "img": "A distant view of a 19th-century brigantine under bare grey overcast sky on a calm empty Atlantic, the small silhouette of a ship alone on the water, fading into mist, melancholy and unresolved, no people."
+    }
+  ]
+}

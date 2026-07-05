@@ -1,0 +1,46 @@
+{
+  "title": "It's Not an Aircraft",
+  "subtitle": "The Valentich Disappearance · Bass Strait, Australia, 1978",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the open ocean of Bass Strait between Australia and Tasmania seen from a small aircraft at dusk in October 1978, grey-blue sea and sky merging at the horizon, low cloud cover, Cessna cockpit interior detail, brass and bakelite radio equipment, melancholy and uncanny, period 1978 aviation detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In October 1978, a twenty-year-old pilot named Frederick Valentich took off from Melbourne in a small Cessna.",
+      "cap": "Australia · 1978",
+      "img": "A small single-engine Cessna aircraft silhouetted against a heavy grey overcast sky over open water at dusk, distant empty sea horizon, isolated and melancholy, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "He radioed air traffic control. An aircraft, he said, was orbiting above him.",
+      "cap": "An aircraft\norbiting above",
+      "img": "Close on a vintage 1970s aviation radio panel with bakelite dials and a hand microphone resting on a small Cessna control yoke, dim instrument-panel light, documentary still, eerie, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "He described four bright lights. He reported his engine running rough.",
+      "cap": "Four bright lights",
+      "amber": true,
+      "img": "A small Cessna cockpit window view looking up into a heavy grey overcast sky at dusk with four faint indistinct distant lights above the wing, eerie, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "His last transmission: it's not an aircraft. Then, metallic scraping sounds. Then nothing.",
+      "cap": "It's not an aircraft",
+      "amber": true,
+      "img": "Empty grey open ocean at dusk seen from above with low clouds merging into the dark sea, vast and featureless, fading light, desolate, no people, no horizon."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "He and his plane were never found.",
+      "cap": "Never found",
+      "img": "Empty grey ocean at night under a starless overcast sky seen from a great distance, the horizon vanishing into darkness, vast and unresolved, no people."
+    }
+  ]
+}

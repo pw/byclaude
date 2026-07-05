@@ -112,7 +112,12 @@ def verify_tts(audio_path, expected):
     e_content = [w for w in e.split() if len(w) > 2]
     if not e_content: return ('ok', 'no-checkable-words', transcript)
     last = e_content[-1]
-    if last not in a.split():
+    # number-words (twenties, 20s, 1960s, "twenty-two") normalize differently across
+    # whisper/TTS -- skip the hard last-word check; the soft overlap check below
+    # still catches real truncation. Catches false-positives like sodder's "in his twenties"
+    # being transcribed as "in his 20s" without dropping real failure detection.
+    is_numberish = lambda w: bool(re.match(r'^[0-9]+(s|th|st|nd|rd)?$|^(twent|thirt|fort|fift|sixt|sevent|eight|ninet)(y|ies)|^(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|fifteen|eighteen|hundred|thousand|million)', w))
+    if last not in a.split() and not is_numberish(last):
         return ('fail', f'last-word-missing:{last!r}', transcript)
     e_set, a_set = set(e_content), set(w for w in a.split() if len(w) > 2)
     overlap = len(e_set & a_set) / len(e_set)

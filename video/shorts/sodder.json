@@ -1,0 +1,13 @@
+{
+  "out": "short-sodder",
+  "kicker": "THE SODDER CHILDREN",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "sodder", "img": "B01", "vo": "On Christmas night, nineteen forty-five, a fire destroyed the Sodder family home in the West Virginia hills.", "cap": "WEST VIRGINIA · 1945" },
+    { "vo": "Five of the ten Sodder children were never seen again.", "cap": "FIVE OF TEN\nNEVER SEEN AGAIN", "amber": true },
+    { "src": "sodder", "img": "B03", "vo": "No bones were found in the ashes. A coroner issued death certificates without remains.", "cap": "NO REMAINS\nIN THE ASHES" },
+    { "src": "sodder", "img": "B04", "vo": "Twenty-two years later, a photograph arrived in the mail. The family believed it showed their son Louis, in his twenties.", "cap": "A PHOTOGRAPH\n22 YEARS LATER", "amber": true },
+    { "src": "sodder", "img": "B05", "vo": "The billboard stood by the highway for forty years. No explanation was ever confirmed.", "cap": "STILL UNKNOWN", "amber": true }
+  ]
+}
