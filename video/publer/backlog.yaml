@@ -1,0 +1,43 @@
+# backlog.yaml -- master schedule of films to push via Publer.
+# rolling_scheduler.py reads this and tops up the Publer queue up to cap.
+# Entries stay here as historical record; the script skips already-queued or past entries.
+# Add new entries at the bottom as inventory is produced.
+
+entries:
+  # Week 1 (Sun 7/5 - Sat 7/11)
+  - { film: gunness,         scheduled_at: 2026-07-05T23:30:00Z, type: long,  only: youtube }
+  - { film: springfieldthree, scheduled_at: 2026-07-06T14:30:00Z, type: short }
+  - { film: elisalam,        scheduled_at: 2026-07-06T23:30:00Z, type: short }
+  - { film: leadmasks,       scheduled_at: 2026-07-07T14:30:00Z, type: short }
+  - { film: courrieres,      scheduled_at: 2026-07-08T14:30:00Z, type: short }   # cut-down trailer
+  - { film: courrieres,      scheduled_at: 2026-07-08T23:30:00Z, type: long, only: youtube }
+  - { film: maryceleste,     scheduled_at: 2026-07-09T14:30:00Z, type: short }
+  - { film: sodder,          scheduled_at: 2026-07-09T23:30:00Z, type: short }
+  - { film: glicomorinaga,   scheduled_at: 2026-07-10T14:30:00Z, type: short }   # cut-down trailer
+  - { film: glicomorinaga,   scheduled_at: 2026-07-10T23:30:00Z, type: long, only: youtube }
+  - { film: vela,            scheduled_at: 2026-07-11T14:30:00Z, type: short }
+  - { film: somertonman,     scheduled_at: 2026-07-11T23:30:00Z, type: short }
+
+  # Week 2 (Sun 7/12 - Sat 7/18)
+  - { film: surgisphere,     scheduled_at: 2026-07-12T14:30:00Z, type: short }   # cut-down trailer
+  - { film: surgisphere,     scheduled_at: 2026-07-12T23:30:00Z, type: long, only: youtube }
+  - { film: maxheadroom,     scheduled_at: 2026-07-13T14:30:00Z, type: short }
+  - { film: watcher,         scheduled_at: 2026-07-13T23:30:00Z, type: short }
+  - { film: wowsignal,       scheduled_at: 2026-07-14T14:30:00Z, type: short }
+  - { film: circleville,     scheduled_at: 2026-07-14T23:30:00Z, type: short }
+  - { film: hwaseong,        scheduled_at: 2026-07-15T14:30:00Z, type: short }   # cut-down trailer
+  - { film: hwaseong,        scheduled_at: 2026-07-15T23:30:00Z, type: long, only: youtube }
+  - { film: roanoke,         scheduled_at: 2026-07-16T14:30:00Z, type: short }
+  - { film: yubacountyfive,  scheduled_at: 2026-07-16T23:30:00Z, type: short }
+  - { film: deberk,          scheduled_at: 2026-07-17T14:30:00Z, type: short }   # cut-down trailer
+  - { film: deberk,          scheduled_at: 2026-07-17T23:30:00Z, type: long, only: youtube }
+  - { film: oakisland,       scheduled_at: 2026-07-18T14:30:00Z, type: short }
+  - { film: valentich,       scheduled_at: 2026-07-18T23:30:00Z, type: short }
+
+  # Tail
+  - { film: uvb76,           scheduled_at: 2026-07-19T14:30:00Z, type: short }
+  - { film: phantomheilbronn, scheduled_at: 2026-07-20T14:30:00Z, type: short }
+  - { film: larsmittank,     scheduled_at: 2026-07-21T14:30:00Z, type: short }
+
+  # Add new films below as produced.
+  # Native shorts in production queue (not yet dated): TBD -- fill in when made.
