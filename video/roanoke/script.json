@@ -1,0 +1,45 @@
+{
+  "title": "Croatoan",
+  "subtitle": "The Roanoke Colony · North Carolina, 1587–1590",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a 16th-century English colonial settlement in the coastal maritime forests of Roanoke Island in North Carolina in the late summer of 1590, weathered wood palisade walls, thatched-roof cottages, salt marsh cordgrass, loblolly pines, hazy humid mid-Atlantic coastal light, melancholy and uncanny, period 1590 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In fifteen eighty-seven, more than a hundred English settlers landed on Roanoke Island, off the coast of North Carolina.",
+      "cap": "North Carolina · 1587",
+      "img": "A wide view of a 16th-century English colonial settlement with weathered wood palisade walls and thatched-roof cottages in a coastal pine forest, hazy humid summer light, distant salt marsh, melancholy, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Their governor sailed for England for supplies. War delayed him for three years.",
+      "cap": "Three years\nof waiting"
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "When he returned, in fifteen ninety, the colony was abandoned. The houses had been dismantled. There were no bodies. There was no sign of attack.",
+      "cap": "Abandoned\nno bodies\nno attack",
+      "amber": true,
+      "img": "An empty cleared area inside weathered 16th-century wood palisade walls where houses once stood, low stumps and overgrown grass, hazy coastal summer light, distant pine forest, desolate, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Carved into a palisade post, one word: Croatoan. Carved into a tree, the letters: C-R-O.",
+      "cap": "CROATOAN",
+      "amber": true,
+      "img": "Close on a weathered wooden palisade post with the faintly carved letters CROATOAN in period 1590s English hand, dim coastal forest light, documentary still, eerie, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The settlers were never found. The colony is now four hundred years old, and still unanswered.",
+      "cap": "Still unanswered",
+      "img": "An empty wide coastal North Carolina salt marsh at dusk with distant pine forest, faded orange sky reflected in still water, vast and unresolved, no people."
+    }
+  ]
+}

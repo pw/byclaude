@@ -1,0 +1,45 @@
+{
+  "title": "The Porch Light On",
+  "subtitle": "The Springfield Three · Missouri, 1992",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, an unassuming midwestern American suburban street at dusk in early June 1992, small wood-frame houses with low front porches, dim yellow porch lights, mature shade trees, warm humid Ozark summer light fading, melancholy and uncanny, period 1992 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "On a June night in nineteen ninety-two, in Springfield, Missouri, three women arrived home from a pair of graduation parties.",
+      "cap": "Missouri · 1992",
+      "img": "A modest single-story American suburban house at night with a single lit porch light, low front steps, mature shade trees behind, warm dim summer light, quiet and unremarkable, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "A mother, forty-seven. Her daughter, nineteen. The daughter's friend, eighteen.",
+      "cap": "Three women"
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "By morning, all three were gone.",
+      "cap": "All three\nwere gone",
+      "amber": true,
+      "img": "An empty suburban living room in the morning, an upholstered chair and lamp, sheer curtains letting in pale summer light, a coffee cup on a side table, eerily still, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Their cars were in the driveway. Their purses were inside. The porch light was still on. There was no sign of struggle.",
+      "cap": "No sign\nof struggle",
+      "img": "An empty suburban driveway at dawn with two parked sedans, porch light still glowing, mature trees in the background, pale early light, melancholy, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Thirty years later, no bodies have been found. No one has been charged.",
+      "cap": "Still unsolved",
+      "amber": true,
+      "img": "A wide view of an unassuming suburban Springfield side street at dusk, faded warm light, distant houses under mature trees, quiet and unresolved, no people."
+    }
+  ]
+}

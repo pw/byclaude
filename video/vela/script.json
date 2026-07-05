@@ -1,0 +1,45 @@
+{
+  "title": "The Double Flash",
+  "subtitle": "The Vela Incident · Indian Ocean, 1979",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the remote Southern Indian Ocean near the Prince Edward Islands in September 1979, vast empty grey-blue sea under heavy overcast, sub-Antarctic cold, occasional drifting icebergs on the horizon, an early satellite-control-room interior with CRT screens and 1970s mainframes, melancholy and uncanny, period 1979 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In September nineteen seventy-nine, an American satellite detected a double flash of light, over the southern Indian Ocean.",
+      "cap": "Indian Ocean · 1979",
+      "img": "A vast empty grey-blue Southern Ocean under heavy overcast with a faint distant double flash of light reflecting off low cloud cover, cold sub-Antarctic light, eerie, no people, no horizon detail."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "A double flash is the signature of a nuclear weapon. The brief, intense initial flash. The second, expanding fireball.",
+      "cap": "The signature\nof a nuclear test",
+      "img": "A vintage 1970s American satellite-control-room console with CRT screens and rows of indicator lamps, dim fluorescent light, paper strip charts, documentary still, eerie, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "It was never officially explained.",
+      "cap": "Never officially explained",
+      "amber": true
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Forty years of scholarship lean toward a joint test, by two governments that have never confirmed it.",
+      "cap": "Two governments\nhave never confirmed",
+      "amber": true,
+      "img": "A remote sub-Antarctic volcanic island silhouette against a heavy grey ocean horizon at dusk, hazy fading light, cold empty sea, desolate and remote, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The United States has never reclassified the event. The file remains, officially, ambiguous.",
+      "cap": "Officially ambiguous",
+      "img": "An empty grey ocean at night under a starless overcast sky, vast and featureless, a single distant indistinct shape on the horizon fading into darkness, melancholy and unresolved, no people."
+    }
+  ]
+}

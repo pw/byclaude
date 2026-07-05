@@ -1,14 +1,13 @@
 {
   "out": "short-hwaseong",
-  "kicker": "HWASEONG",
+  "kicker": "HWASEONG · YOON SUNG-YEO",
   "voice": "onyx",
   "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
   "beats": [
-    { "src": "hwaseong", "img": "B01", "vo": "Between 1986 and 1991, ten women were murdered in rural South Korea.", "cap": "1986–1991.\nTEN MURDERED." },
-    { "src": "hwaseong", "img": "B04", "vo": "The case went cold — and stayed cold for more than thirty years.", "cap": "COLD FOR\nOVER 30 YEARS", "amber": true },
-    { "src": "hwaseong", "img": "B08", "vo": "One innocent man served twenty years for one of the murders — convicted on a coerced confession.", "cap": "20 YEARS.\nAN INNOCENT MAN." },
-    { "src": "hwaseong", "img": "B09", "vo": "In 2019, DNA identified the real killer. He confessed to fourteen murders.", "cap": "14 CONFESSIONS", "amber": true },
-    { "src": "hwaseong", "img": "B16", "vo": "The law's own statute of limitations meant he could never be charged for any of them.", "cap": "TOO LATE\nFOR THE LAW" },
-    { "vo": "The full story is on the channel.", "cap": "THE FULL STORY\nIS ON THE CHANNEL" }
+    { "src": "hwaseong", "img": "B01", "vo": "Between nineteen eighty-six and nineteen ninety-one, ten women were killed in a farming district south of Seoul.", "cap": "SOUTH KOREA · 1986–1991" },
+    { "src": "hwaseong", "img": "B02", "vo": "Ten women. Five years. One killer.", "cap": "TEN WOMEN\nFIVE YEARS\nONE KILLER" },
+    { "src": "hwaseong", "img": "B04", "vo": "By two thousand and six, the statute of limitations had expired. The killer could not be charged.", "cap": "THE LAW'S OWN CLOCK\nRAN OUT" },
+    { "src": "hwaseong", "img": "B08", "vo": "In September two thousand nineteen, a DNA match. The real killer confessed to fourteen.", "cap": "DNA MATCH\nHE CONFESSED TO 14", "amber": true },
+    { "src": "hwaseong", "img": "B13", "vo": "An innocent man, who had served twenty years on a forced confession, was finally acquitted.", "cap": "20 YEARS\nFINALLY CLEARED", "amber": true }
   ]
 }

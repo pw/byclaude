@@ -1,0 +1,13 @@
+{
+  "out": "short-uvb76",
+  "kicker": "UVB-76 · THE BUZZER",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "uvb76", "img": "B01", "vo": "Somewhere in a forest south of Moscow, a radio tower has broadcast the same tone, on the same frequency, for more than forty years.", "cap": "RUSSIA · 4625 kHz" },
+    { "src": "uvb76", "img": "B02", "vo": "A short buzz. Twenty-five times a minute. Day and night.", "cap": "25 BUZZES A MINUTE", "amber": true },
+    { "src": "uvb76", "img": "B03", "vo": "Occasionally, the buzz stops. A voice reads Russian names and numbers, for a few minutes. Then the buzz returns.", "cap": "A VOICE\nTHEN THE BUZZ RETURNS" },
+    { "vo": "The Russian government has never explained its purpose.", "cap": "NEVER EXPLAINED", "amber": true },
+    { "src": "uvb76", "img": "B05", "vo": "It is still broadcasting.", "cap": "STILL BROADCASTING", "amber": true }
+  ]
+}

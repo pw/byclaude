@@ -1,0 +1,13 @@
+{
+  "out": "short-tunguska",
+  "kicker": "THE TUNGUSKA EVENT",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "tunguska", "img": "B01", "vo": "On a June morning in nineteen-oh-eight, over a remote Siberian forest, something exploded in the sky.", "cap": "SIBERIA · 1908" },
+    { "src": "tunguska", "img": "B02", "vo": "Eight hundred and thirty square miles of forest, flattened in a radial pattern. The blast was felt across Eurasia.", "cap": "830 SQUARE MILES\nFLATTENED", "amber": true },
+    { "src": "tunguska", "img": "B03", "vo": "No impact crater. No fragment of what caused it was ever recovered.", "cap": "NO CRATER\nNO FRAGMENTS", "amber": true },
+    { "vo": "The leading theory is an asteroid, three to six miles above the ground, that exploded in the air.", "cap": "AN AIRBURST\n3–6 MILES UP" },
+    { "src": "tunguska", "img": "B05", "vo": "One hundred and eighteen years later, this is still a theory. What exploded over Tunguska has never been confirmed.", "cap": "STILL A THEORY", "amber": true }
+  ]
+}

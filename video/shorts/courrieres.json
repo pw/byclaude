@@ -1,0 +1,13 @@
+{
+  "out": "short-courrieres",
+  "kicker": "COURRIÈRES MINE DISASTER",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "courrieres", "img": "B01", "vo": "In March nineteen-oh-six, in the coalfield of northern France, something ignited far underground.", "cap": "FRANCE · 1906" },
+    { "src": "courrieres", "img": "B02", "vo": "One thousand and ninety-nine miners were killed. It remains Europe's worst mining disaster, one hundred twenty years later.", "cap": "1,099 KILLED" },
+    { "src": "courrieres", "img": "B05", "vo": "Within days, the company sealed the mine.", "cap": "THE MINE WAS SEALED" },
+    { "src": "courrieres", "img": "B08", "vo": "Twenty days later, thirteen men walked out.", "cap": "13 WALKED OUT", "amber": true },
+    { "src": "courrieres", "img": "B15", "vo": "No one — not the company, not its engineers — was ever found responsible. Not for the disaster. Not for the sealing.", "cap": "NO ONE WAS RESPONSIBLE", "amber": true }
+  ]
+}

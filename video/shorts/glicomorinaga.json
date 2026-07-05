@@ -1,0 +1,13 @@
+{
+  "out": "short-glicomorinaga",
+  "kicker": "THE MONSTER WITH 21 FACES",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "glicomorinaga", "img": "B01", "vo": "Osaka, March nineteen eighty-four. The president of a food company was kidnapped from his home by men in rubber gloves.", "cap": "OSAKA · 1984" },
+    { "src": "glicomorinaga", "img": "B05", "vo": "Then, cyanide. In the company's own products, on supermarket shelves across Japan, with the group's warning labels already attached.", "cap": "REAL CYANIDE\nREAL SHELVES" },
+    { "src": "glicomorinaga", "img": "B07", "vo": "No one was ever poisoned. The labels held.", "cap": "NO ONE WAS POISONED" },
+    { "src": "glicomorinaga", "img": "B17", "vo": "The investigation ran sixteen years — until the statute of limitations simply ran out, at midnight.", "cap": "16 YEARS\nTHEN THE CLOCK RAN OUT", "amber": true },
+    { "src": "glicomorinaga", "img": "B18", "vo": "Twenty-one faces. Zero names.", "cap": "21 FACES\n0 NAMES", "amber": true }
+  ]
+}

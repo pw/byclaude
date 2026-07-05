@@ -1,0 +1,46 @@
+{
+  "title": "The Buzzer",
+  "subtitle": "UVB-76 · Russia, 1970s–",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a remote Russian military shortwave radio transmitter station in a snowy birch and pine forest, rusted steel antenna towers disappearing into low cloud, an old concrete blockhouse with rusted iron door, dim fluorescent interior with vintage 1970s-80s Soviet radio equipment, paper logs, and a single microphone, melancholy and uncanny, period 1970s-to-present detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Somewhere in a forest south of Moscow, a radio tower has broadcast the same tone, on the same frequency, for more than forty years.",
+      "cap": "Russia · 4625 kHz",
+      "img": "A tall rusted steel radio transmission tower in a remote snowy Russian birch and pine forest under heavy overcast, distant concrete blockhouse, eerie and isolated, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "A short buzz. Twenty-five times a minute. Day and night.",
+      "cap": "25 buzzes a minute",
+      "amber": true,
+      "img": "An old Soviet-era radio room interior with dim fluorescent light, a single microphone on a steel desk, vintage meters and indicator lamps, paper logbook, eerie, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Occasionally, the buzz stops. A voice reads Russian names and numbers, for a few minutes. Then the buzz returns.",
+      "cap": "A voice\nthen the buzz returns",
+      "img": "A close-up of an old Soviet mechanical typewriter with a sheet of paper bearing Cyrillic text, dim desk-lamp light, vintage shortwave log, documentary still, no readable text, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "The Russian government has never explained its purpose.",
+      "cap": "Never explained",
+      "amber": true
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "It is still broadcasting.",
+      "cap": "Still broadcasting",
+      "amber": true,
+      "img": "A vast empty Russian winter forest under low grey overcast with a distant rusted radio tower, deep snow, cold fading light at dusk, melancholy and unresolved, no people."
+    }
+  ]
+}

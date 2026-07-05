@@ -1,0 +1,13 @@
+{
+  "out": "short-surgisphere",
+  "kicker": "SURGISPHERE",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "surgisphere", "img": "B01", "vo": "In May twenty twenty, the Lancet published what was billed as the largest hydroxychloroquine study of the pandemic.", "cap": "MAY 2020 · THE LANCET" },
+    { "src": "surgisphere", "img": "B03", "vo": "The data came from one company. A firm called Surgisphere.", "cap": "ONE COMPANY" },
+    { "src": "surgisphere", "img": "B04", "vo": "Its own LinkedIn page listed six employees.", "cap": "SIX EMPLOYEES" },
+    { "src": "surgisphere", "img": "B10", "vo": "Thirteen days after publication, the study was fully retracted.", "cap": "13 DAYS\nTO RETRACTION", "amber": true },
+    { "src": "surgisphere", "img": "B18", "vo": "Two of the world's most trusted medical journals. Thirteen days. Nobody thought they'd need to check.", "cap": "NOBODY CHECKED", "amber": true }
+  ]
+}

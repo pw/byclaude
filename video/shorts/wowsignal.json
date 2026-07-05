@@ -1,0 +1,13 @@
+{
+  "out": "short-wowsignal",
+  "kicker": "THE WOW! SIGNAL",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "wowsignal", "img": "B01", "vo": "In August nineteen seventy-seven, a radio telescope in Ohio picked up a signal, from the direction of Sagittarius.", "cap": "OHIO · 1977" },
+    { "src": "wowsignal", "img": "B02", "vo": "It lasted seventy-two seconds. Then it stopped.", "cap": "72 SECONDS\nTHEN SILENCE", "amber": true },
+    { "src": "wowsignal", "img": "B03", "vo": "Thirty times louder than the background noise. On the frequency of hydrogen, the most common element in the universe.", "cap": "30× BACKGROUND\nAT THE HYDROGEN LINE" },
+    { "vo": "The astronomer circled the printout, and wrote in the margin, one word: wow.", "cap": "WOW", "amber": true },
+    { "src": "wowsignal", "img": "B05", "vo": "Despite fifty years of follow-up observations, it has never repeated.", "cap": "NEVER REPEATED", "amber": true }
+  ]
+}

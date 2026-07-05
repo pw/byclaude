@@ -1,0 +1,13 @@
+{
+  "out": "short-oakisland",
+  "kicker": "THE OAK ISLAND MONEY PIT",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "oakisland", "img": "B01", "vo": "In seventeen ninety-five, a teenager on a small island in Nova Scotia found a circular depression in the ground.", "cap": "NOVA SCOTIA · 1795" },
+    { "src": "oakisland", "img": "B02", "vo": "He dug. Layers of old oak logs, every ten feet. At ninety feet, an inscribed stone.", "cap": "OAK LOGS\nEVERY 10 FEET" },
+    { "src": "oakisland", "img": "B03", "vo": "Then the pit flooded. It has flooded every time, since.", "cap": "IT FLOODS\nEVERY TIME", "amber": true },
+    { "src": "oakisland", "img": "B04", "vo": "Two hundred and thirty years of digging. Six men have died. No treasure has ever been confirmed.", "cap": "230 YEARS\nNO TREASURE CONFIRMED", "amber": true },
+    { "src": "oakisland", "img": "B05", "vo": "Whatever is or is not at the bottom, the digging continues.", "cap": "STILL DIGGING" }
+  ]
+}

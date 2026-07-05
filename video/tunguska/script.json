@@ -1,0 +1,45 @@
+{
+  "title": "Eight Hundred Thirty Square Miles",
+  "subtitle": "The Tunguska Event · Siberia, 1908",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the remote Siberian taiga near the Podkamennaya Tunguska River in the early morning of June 30 1908, vast endless boreal forest of Siberian pine and larch, hazy humid summer light, flattened forest in a radial butterfly pattern, isolated Evenki reindeer-herder camps in the distance, melancholy and uncanny, period 1908 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "On a June morning in nineteen-oh-eight, over a remote Siberian forest, something exploded in the sky.",
+      "cap": "Siberia · 1908",
+      "img": "A vast remote Siberian boreal forest of pine and larch under a heavy pale sky at dawn, hazy humid light, eerie stillness, distant low horizon, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Eight hundred and thirty square miles of forest, flattened in a radial pattern. The blast was felt across Eurasia.",
+      "cap": "830 square miles\nflattened",
+      "amber": true,
+      "img": "An aerial view of a vast Siberian forest with millions of trees flattened radially outward in a butterfly pattern, dim overcast light, desolate, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "No impact crater. No fragment of what caused it was ever recovered.",
+      "cap": "No crater\nno fragments",
+      "amber": true,
+      "img": "Close on a carpet of scorched Siberian forest floor with charred stumps and broken trunks, hazy overcast light, desolate and eerie, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "The leading theory is an asteroid, three to six miles above the ground, that exploded in the air.",
+      "cap": "An airburst\n3–6 miles up"
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "But one hundred and eighteen years later, this is still a theory. What exploded over Tunguska has never been confirmed.",
+      "cap": "Still a theory",
+      "img": "An empty Siberian forest at dusk with new growth among old dead trunks, fading grey light over a vast remote landscape, melancholy and unresolved, no people."
+    }
+  ]
+}

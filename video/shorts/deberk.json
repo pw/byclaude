@@ -1,14 +1,13 @@
 {
   "out": "short-deberk",
-  "kicker": "THE NUMBER",
+  "kicker": "LUCIA DE BERK",
   "voice": "onyx",
   "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
   "beats": [
-    { "src": "deberk", "img": "B02", "vo": "In 2001, a Dutch nurse was accused of killing her patients — based on a number.", "cap": "A NURSE.\nA NUMBER." },
-    { "src": "deberk", "vo": "A court was told the odds she was innocent were one in three hundred forty-two million.", "cap": "1 IN\n342,000,000", "amber": true },
-    { "src": "deberk", "img": "B07", "vo": "A philosopher checked the math himself.", "cap": "SOMEONE\nCHECKED THE MATH" },
-    { "src": "deberk", "vo": "The real odds, corrected: one in forty-four.", "cap": "1 IN 44", "amber": true },
-    { "src": "deberk", "img": "B13", "vo": "In 2010, the prosecution itself asked the court to acquit her — of everything.", "cap": "ACQUITTED.\nEVERYTHING." },
-    { "vo": "The full story is on the channel.", "cap": "THE FULL STORY\nIS ON THE CHANNEL" }
+    { "src": "deberk", "img": "B01", "vo": "In the early two-thousands, a Dutch nurse named Lucia de Berk was convicted of murder.", "cap": "THE NETHERLANDS" },
+    { "src": "deberk", "img": "B03", "vo": "The prosecution's statistic: one in three hundred forty-two million. The chance, they said, that the ward deaths during her shifts were coincidence.", "cap": "1 IN 342 MILLION" },
+    { "src": "deberk", "img": "B07", "vo": "A philosopher of science checked the arithmetic. The same data, calculated correctly.", "cap": "THE MATH HAD A FLAW" },
+    { "src": "deberk", "img": "B08", "vo": "One in forty-four.", "cap": "1 IN 44", "amber": true },
+    { "src": "deberk", "img": "B13", "vo": "Seven years into a life sentence, she was acquitted. Only the arithmetic had changed.", "cap": "ONLY THE ARITHMETIC\nCHANGED", "amber": true }
   ]
 }

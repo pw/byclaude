@@ -1,0 +1,13 @@
+{
+  "out": "short-phantomheilbronn",
+  "kicker": "THE PHANTOM OF HEILBRONN",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "phantomheilbronn", "img": "B01", "vo": "For fifteen years, the same woman's DNA was found at forty crime scenes across Europe.", "cap": "EUROPE · 1993–2009" },
+    { "vo": "A murder in Germany. A burglary in France. A burned-out car in Austria. The same unknown woman.", "cap": "40 CRIME SCENES\nTHE SAME WOMAN" },
+    { "src": "phantomheilbronn", "img": "B03", "vo": "Police in four countries searched for her. They named her the Phantom of Heilbronn.", "cap": "THE PHANTOM\nOF HEILBRONN", "amber": true },
+    { "vo": "She did not exist.", "cap": "SHE DID NOT EXIST", "amber": true },
+    { "src": "phantomheilbronn", "img": "B05", "vo": "Her DNA was on the cotton swabs, at the factory that made them.", "cap": "THE SWABS\nWERE CONTAMINATED", "amber": true }
+  ]
+}

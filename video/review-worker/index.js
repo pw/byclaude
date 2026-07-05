@@ -510,6 +510,15 @@ footer{margin-top:60px;color:var(--dim);font-size:14px;border-top:1px solid var(
 <div class="col"><div class="lab">Before Edison · 1:14</div><video controls preload="metadata"><source src="/m/short-leprince.mp4" type="video/mp4"></video><a href="/m/short-leprince.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 <div class="col"><div class="lab">The Wallace Case · 1:03</div><video controls preload="metadata"><source src="/m/short-wallace.mp4" type="video/mp4"></video><a href="/m/short-wallace.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 <div class="col"><div class="lab">Peking Man · 1:03</div><video controls preload="metadata"><source src="/m/short-pekingman.mp4" type="video/mp4"></video><a href="/m/short-pekingman.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Springfield Three · 0:32</div><video controls preload="metadata"><source src="/m/short-springfieldthree.mp4" type="video/mp4"></video><a href="/m/short-springfieldthree.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Vela Incident · 0:30</div><video controls preload="metadata"><source src="/m/short-vela.mp4" type="video/mp4"></video><a href="/m/short-vela.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Wow! Signal · 0:31</div><video controls preload="metadata"><source src="/m/short-wowsignal.mp4" type="video/mp4"></video><a href="/m/short-wowsignal.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Roanoke Colony · 0:37</div><video controls preload="metadata"><source src="/m/short-roanoke.mp4" type="video/mp4"></video><a href="/m/short-roanoke.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">Oak Island Money Pit · 0:32</div><video controls preload="metadata"><source src="/m/short-oakisland.mp4" type="video/mp4"></video><a href="/m/short-oakisland.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">UVB-76 · The Buzzer · 0:30</div><video controls preload="metadata"><source src="/m/short-uvb76.mp4" type="video/mp4"></video><a href="/m/short-uvb76.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Tunguska Event · 0:36</div><video controls preload="metadata"><source src="/m/short-tunguska.mp4" type="video/mp4"></video><a href="/m/short-tunguska.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Phantom of Heilbronn · 0:28</div><video controls preload="metadata"><source src="/m/short-phantomheilbronn.mp4" type="video/mp4"></video><a href="/m/short-phantomheilbronn.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">Lars Mittank · 0:39</div><video controls preload="metadata"><source src="/m/short-larsmittank.mp4" type="video/mp4"></video><a href="/m/short-larsmittank.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 </div>
 <h2>Cut-downs from long films</h2>
 <div class="row">
@@ -517,6 +526,11 @@ footer{margin-top:60px;color:var(--dim);font-size:14px;border-top:1px solid var(
 <div class="col"><div class="lab">Hinterkaifeck · 0:34</div><video controls preload="metadata"><source src="/m/short-hinterkaifeck.mp4" type="video/mp4"></video><a href="/m/short-hinterkaifeck.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 <div class="col"><div class="lab">The Isdal Woman · 0:41</div><video controls preload="metadata"><source src="/m/short-isdal.mp4" type="video/mp4"></video><a href="/m/short-isdal.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 <div class="col"><div class="lab">Belle Gunness · 0:33</div><video controls preload="metadata"><source src="/m/short-gunness.mp4" type="video/mp4"></video><a href="/m/short-gunness.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">Twenty Days · 0:32</div><video controls preload="metadata"><source src="/m/short-courrieres.mp4" type="video/mp4"></video><a href="/m/short-courrieres.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Monster with 21 Faces · 0:33</div><video controls preload="metadata"><source src="/m/short-glicomorinaga.mp4" type="video/mp4"></video><a href="/m/short-glicomorinaga.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">Six Employees, Six Continents · 0:28</div><video controls preload="metadata"><source src="/m/short-surgisphere.mp4" type="video/mp4"></video><a href="/m/short-surgisphere.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Confession That Came Too Late · 0:35</div><video controls preload="metadata"><source src="/m/short-hwaseong.mp4" type="video/mp4"></video><a href="/m/short-hwaseong.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
+<div class="col"><div class="lab">The Nurse and the Number · 0:30</div><video controls preload="metadata"><source src="/m/short-deberk.mp4" type="video/mp4"></video><a href="/m/short-deberk.mp4" download style="display:inline-block;margin-top:9px;color:#f2a93b;font-size:13px;text-decoration:none;border-bottom:1px solid rgba(242,169,59,.3)">↓ download .mp4</a></div>
 </div>
 <h2>Posting them</h2>
 <div class="note">
@@ -645,6 +659,202 @@ function filmPage(f) {
 }
 
 const POSTS = {
+  springfieldthree: {
+    title: "The Springfield Three — the porch light still on",
+    yt: `June 1992, Springfield, Missouri. Three women — a mother, 47, her daughter, 19, and the daughter's friend, 18 — arrived home from graduation parties. By morning, all three were gone. Their cars in the driveway. Their purses inside. The porch light still on. No sign of struggle. Thirty years later, no bodies, no charges.
+
+#truecrime #springfieldthree #unsolved #shorts #missingpersons #mystery`,
+    tiktok: `June 1992, Springfield MO. Three women arrive home from graduation parties. By morning, all three are gone. Cars in the driveway. Purses inside. Porch light still on. No sign of struggle. 30 years later — no bodies, no charges.
+
+#truecrime #springfieldthree #fyp #unsolvedmystery #missingpersons #truecrimetiktok`,
+    reels: `Springfield, Missouri. June 1992. Three women — a mother, 47, her daughter, 19, and the daughter's friend, 18 — arrived home from a pair of graduation parties. By morning, all three were gone. Their cars were in the driveway. Their purses were inside. The porch light was still on. There was no sign of struggle. Thirty years later, no bodies have been found. No one has been charged.
+
+More from byclaude — link in bio.
+
+#truecrime #springfieldthree #unsolved #missingpersons #mystery #truecrimecommunity #reels`
+  },
+  vela: {
+    title: "The Vela Incident — the double flash",
+    yt: `In September 1979, an American satellite detected a double flash of light over the southern Indian Ocean. A double flash is the signature of a nuclear weapon — the brief initial flash, then the expanding fireball. It was never officially explained. Forty years of scholarship lean toward a joint test, by two governments that have never confirmed it. The file remains, officially, ambiguous.
+
+#mystery #velaincident #unsolved #shorts #history #coldwar`,
+    tiktok: `September 1979. An American satellite detects a double flash of light over the southern Indian Ocean. A double flash is the signature of a nuclear weapon. It was never officially explained. 40 years of scholarship lean toward a joint test by two governments that have never confirmed it.
+
+#mystery #velaincident #fyp #unsolvedmystery #coldwar #truecrimetiktok`,
+    reels: `September 22, 1979, the southern Indian Ocean. An American satellite detected a double flash of light. A double flash is the signature of a nuclear weapon — the brief initial flash, then the expanding fireball. It was never officially explained. Forty years of scholarship lean toward a joint test, by two governments that have never confirmed it. The file remains, officially, ambiguous.
+
+More from byclaude — link in bio.
+
+#mystery #velaincident #unsolved #coldwar #history #truecrimecommunity #reels`
+  },
+  wowsignal: {
+    title: "The Wow! Signal — 6EQUJ5",
+    yt: `In August 1977, a radio telescope in Ohio picked up a signal from the direction of Sagittarius. It lasted 72 seconds. Then it stopped. 30 times louder than the background noise, on the frequency of hydrogen — the most common element in the universe. The astronomer circled the printout and wrote in the margin, one word: wow. Despite 50 years of follow-up observations, it has never repeated.
+
+#mystery #wowsignal #SETI #unsolved #shorts #space`,
+    tiktok: `August 1977, Ohio. A radio telescope picks up a signal from Sagittarius. 72 seconds. Then silence. 30× louder than background. On the frequency of hydrogen. The astronomer circled the printout and wrote in the margin: "Wow!" 50 years of follow-ups — it has never repeated.
+
+#mystery #wowsignal #fyp #SETI #space #unsolvedmystery`,
+    reels: `August 1977, Ohio. A radio telescope picked up a signal from the direction of Sagittarius. It lasted 72 seconds. Then it stopped. Thirty times louder than the background noise. On the frequency of hydrogen — the most common element in the universe. The astronomer who found it on the printout circled the letters and wrote in the margin, one word: wow. Despite fifty years of follow-up observations, it has never repeated.
+
+More from byclaude — link in bio.
+
+#mystery #wowsignal #SETI #space #unsolved #truecrimecommunity #reels`
+  },
+  roanoke: {
+    title: "The Roanoke Colony — Croatoan",
+    yt: `In 1587, more than a hundred English settlers landed on Roanoke Island, off the coast of North Carolina. Their governor sailed for England for supplies. War delayed him for three years. When he returned, the colony was abandoned. The houses had been dismantled. There were no bodies. There was no sign of attack. Carved into a palisade post, one word: Croatoan.
+
+#mystery #roanoke #unsolved #shorts #history #colonial`,
+    tiktok: `1587 — over 100 English settlers land on Roanoke Island, NC. Their governor sails for supplies. War delays him 3 years. He returns: colony abandoned, houses dismantled, no bodies, no sign of attack. Carved into a palisade post, one word: CROATOAN. 400 years later, still unanswered.
+
+#mystery #roanoke #fyp #unsolvedmystery #history #lostcolony`,
+    reels: `1587. More than a hundred English settlers landed on Roanoke Island, off the coast of North Carolina. Their governor sailed for England for supplies. War delayed him for three years. When he returned, in 1590, the colony was abandoned. The houses had been dismantled. There were no bodies. There was no sign of attack. Carved into a palisade post, one word: Croatoan. Carved into a tree, the letters: C-R-O. Four hundred years later, the colony is still unanswered.
+
+More from byclaude — link in bio.
+
+#mystery #roanoke #unsolved #history #lostcolony #truecrimecommunity #reels`
+  },
+  oakisland: {
+    title: "Oak Island — 230 years of digging",
+    yt: `In 1795, a teenager on a small island in Nova Scotia found a circular depression in the ground. He dug. Layers of old oak logs, every 10 feet. At 90 feet, an inscribed stone. Then the pit flooded. It has flooded every time since. 230 years of digging. Six men have died. No treasure has ever been confirmed. The digging continues.
+
+#mystery #oakisland #moneypit #unsolved #shorts #treasure`,
+    tiktok: `1795 — Nova Scotia. A teenager finds a circular depression. Digs. Oak logs every 10 feet. At 90 feet, an inscribed stone. Then the pit floods. It has flooded every time since. 230 years of digging. 6 men dead. No treasure confirmed.
+
+#mystery #oakisland #fyp #unsolvedmystery #treasure #moneypit`,
+    reels: `1795, Nova Scotia. A teenager on a small island found a circular depression in the ground. He dug. Layers of old oak logs, every ten feet. At ninety feet, an inscribed stone. Then the pit flooded. It has flooded every time, since. Two hundred and thirty years of digging. Six men have died. No treasure has ever been confirmed. Whatever is or is not at the bottom, the digging continues.
+
+More from byclaude — link in bio.
+
+#mystery #oakisland #moneypit #unsolved #treasure #truecrimecommunity #reels`
+  },
+  uvb76: {
+    title: "UVB-76 — the buzzer",
+    yt: `Somewhere in a forest south of Moscow, a radio tower has broadcast the same tone, on the same frequency, for more than 40 years. A short buzz, 25 times a minute, day and night. Occasionally, the buzz stops — a voice reads Russian names and numbers for a few minutes — then the buzz returns. The Russian government has never explained its purpose. It is still broadcasting.
+
+#mystery #uvb76 #shorts #numbers station #coldwar`,
+    tiktok: `Somewhere in a forest south of Moscow, a radio tower has broadcast the same tone on the same frequency for 40+ years. 25 buzzes a minute. Day and night. Occasionally a voice reads Russian names and numbers. Then the buzz returns. Russia has never explained it. Still broadcasting.
+
+#mystery #uvb76 #fyp #numbersstation #coldwar #shortwave`,
+    reels: `Somewhere in a forest south of Moscow, a radio tower has broadcast the same tone, on the same frequency, for more than forty years. A short buzz, twenty-five times a minute, day and night. Occasionally, the buzz stops. A voice reads Russian names and numbers, for a few minutes. Then the buzz returns. The Russian government has never explained its purpose. It is still broadcasting.
+
+More from byclaude — link in bio.
+
+#mystery #uvb76 #numbersstation #coldwar #shortwave #truecrimecommunity #reels`
+  },
+  tunguska: {
+    title: "The Tunguska Event — 830 square miles flattened",
+    yt: `On a June morning in 1908, over a remote Siberian forest, something exploded in the sky. 830 square miles of forest, flattened in a radial pattern. The blast was felt across Eurasia. No impact crater. No fragment of what caused it was ever recovered. The leading theory is an asteroid, 3–6 miles above the ground, that exploded in the air. 118 years later, this is still a theory.
+
+#mystery #tunguska #unsolved #shorts #science #history`,
+    tiktok: `June 1908, remote Siberia. Something explodes in the sky. 830 square miles of forest flattened in a radial pattern. Blast felt across Eurasia. No impact crater. No fragments recovered. Leading theory: asteroid airburst 3–6 miles up. 118 years later — still a theory.
+
+#mystery #tunguska #fyp #unsolvedmystery #science #asteroid`,
+    reels: `June 30, 1908. Over a remote Siberian forest, something exploded in the sky. Eight hundred and thirty square miles of forest, flattened in a radial pattern. The blast was felt across Eurasia. No impact crater. No fragment of what caused it was ever recovered. The leading theory is an asteroid, three to six miles above the ground, that exploded in the air. One hundred and eighteen years later, this is still a theory. What exploded over Tunguska has never been confirmed.
+
+More from byclaude — link in bio.
+
+#mystery #tunguska #unsolved #science #history #truecrimecommunity #reels`
+  },
+  phantomheilbronn: {
+    title: "The Phantom of Heilbronn — the woman who wasn't there",
+    yt: `For 15 years, the same woman's DNA was found at 40 crime scenes across Europe. A murder in Germany. A burglary in France. A burned-out car in Austria. The same unknown woman. Police in four countries searched for her. They named her the Phantom of Heilbronn. She did not exist. Her DNA was on the cotton swabs, at the factory that made them.
+
+#truecrime #phantomofheilbronn #unsolved #shorts #forensics`,
+    tiktok: `For 15 years, the same woman's DNA turns up at 40 crime scenes across Europe. Murder in Germany, burglary in France, burned car in Austria — same woman. Police in 4 countries hunt her. They name her the Phantom of Heilbronn. She did not exist. Her DNA was on the cotton swabs at the factory.
+
+#truecrime #phantomofheilbronn #fyp #forensics #unsolvedmystery`,
+    reels: `For fifteen years, the same woman's DNA was found at forty crime scenes across Europe. A murder in Germany. A burglary in France. A burned-out car in Austria. The same unknown woman. Police in four countries searched for her. They named her the Phantom of Heilbronn. She did not exist. Her DNA was on the cotton swabs, at the factory that made them.
+
+More from byclaude — link in bio.
+
+#truecrime #phantomofheilbronn #forensics #mystery #truecrimecommunity #reels`
+  },
+  larsmittank: {
+    title: "Lars Mittank — ran into a field",
+    yt: `In July 2014, a German tourist named Lars Mittank arrived at Varna Airport in Bulgaria to fly home. He went to the airport doctor, mentioned a fight injury, asked for medication. Then, on the security camera, he is seen dropping his luggage. He runs out of the terminal. He runs into a field of wheat. He left his luggage, phone, wallet, and passport inside. The most-viewed missing-person case in German history. Still missing.
+
+#truecrime #larsmittank #unsolved #shorts #missingpersons`,
+    tiktok: `July 2014, Varna Airport, Bulgaria. German tourist Lars Mittank is at the airport to fly home. He visits the airport doctor. Then, on the security camera, he drops his luggage and runs — out of the terminal, into a field of wheat. He left everything inside. The most-viewed missing-person case in German history.
+
+#truecrime #larsmittank #fyp #missingpersons #unsolvedmystery #truecrimetiktok`,
+    reels: `July 2014. A German tourist named Lars Mittank arrived at Varna Airport, in Bulgaria, to fly home from a beach holiday. He went to the airport doctor. Then, on the security camera, he is seen dropping his luggage. He runs out of the terminal. He runs into a field of wheat. He has not been seen since. He left his luggage, his phone, his wallet, and his passport inside the terminal. It is the most-viewed missing-person case in German history. He is still missing.
+
+More from byclaude — link in bio.
+
+#truecrime #larsmittank #missingpersons #unsolved #mystery #truecrimecommunity #reels`
+  },
+  courrieres: {
+    title: "Courrières — twenty days",
+    yt: `March 1906, northern France. Something ignited far underground. 1,099 miners were killed — Europe's worst mining disaster, 120 years later. Within days, the company sealed the mine. Twenty days later, thirteen men walked out. No one — not the company, not its engineers — was ever found responsible. Not for the disaster. Not for the sealing.
+
+#truecrime #courrieres #miningdisaster #shorts #history #accountability`,
+    tiktok: `March 1906, northern France. 1,099 miners killed in Europe's worst mining disaster. Within days, the company sealed the mine. Twenty days later, 13 men walked out. No one was ever found responsible — not for the disaster, not for the sealing.
+
+#truecrime #courrieres #fyp #miningdisaster #history #truecrimetiktok`,
+    reels: `March 1906, the coalfield of northern France. Something ignited far underground. One thousand and ninety-nine miners were killed. It remains Europe's worst mining disaster, one hundred twenty years later. Within days, the company sealed the mine. Twenty days later, thirteen men walked out. No one — not the company, not its engineers — was ever found responsible. Not for the disaster. Not for the sealing.
+
+Full film on the channel — link in bio.
+
+#truecrime #courrieres #miningdisaster #history #accountability #truecrimecommunity #reels`
+  },
+  glicomorinaga: {
+    title: "The Monster with 21 Faces — cyanide on the shelves",
+    yt: `Osaka, March 1984. The president of a food company was kidnapped. Then letters arrived, signed with a name borrowed from a children's story. Then cyanide — in the company's own products, on supermarket shelves across Japan, with the group's warning labels already attached. No one was poisoned. The labels held. The investigation ran 16 years — until the statute of limitations simply ran out, at midnight. 21 faces. Zero names.
+
+#truecrime #glicomorinaga #themonsterwith21faces #shorts #unsolved`,
+    tiktok: `Osaka, March 1984. The president of a food company is kidnapped. Then cyanide — in the company's own products, on supermarket shelves across Japan, with the group's warning labels already attached. No one was poisoned. 16 years later, the statute of limitations simply ran out at midnight. 21 faces. Zero names.
+
+#truecrime #glicomorinaga #fyp #themosterwith21faces #unsolvedmystery #truecrimetiktok`,
+    reels: `Osaka, March 1984. The president of a food company was kidnapped by men in rubber gloves. Then letters arrived, signed with a name borrowed from a children's story — the Monster with 21 Faces. Then cyanide — in the company's own products, on supermarket shelves across Japan, with the group's warning labels already attached. No one was poisoned. The labels held. The investigation ran sixteen years, until the statute of limitations simply ran out at midnight. Twenty-one faces. Zero names.
+
+Full film on the channel — link in bio.
+
+#truecrime #glicomorinaga #themosterwith21faces #unsolved #truecrimecommunity #reels`
+  },
+  surgisphere: {
+    title: "Surgisphere — six employees, six continents",
+    yt: `May 2020. The Lancet published what was billed as the largest hydroxychloroquine study of the pandemic. The data came from one company: Surgisphere. Its own LinkedIn page listed six employees. Thirteen days after publication, the study was fully retracted. Two of the world's most trusted medical journals. Thirteen days. Nobody thought they'd need to check.
+
+#truecrime #surgisphere #thelancet #shorts #science #accountability`,
+    tiktok: `May 2020. The Lancet publishes the largest hydroxychloroquine study of the pandemic. The data came from one company: Surgisphere. Its LinkedIn page listed six employees. 13 days later — fully retracted. Nobody thought they'd need to check.
+
+#truecrime #surgisphere #fyp #thelancet #science #truecrimetiktok`,
+    reels: `May 22, 2020. The Lancet published what was billed as the largest hydroxychloroquine study of the pandemic. The data came from one company: Surgisphere. Its own LinkedIn page listed six employees. Thirteen days after publication, the study was fully retracted. Two of the world's most trusted medical journals. Thirteen days. Nobody thought they'd need to check.
+
+Full film on the channel — link in bio.
+
+#truecrime #surgisphere #thelancet #science #accountability #truecrimecommunity #reels`
+  },
+  hwaseong: {
+    title: "Hwaseong — too late for the law, in time for the innocent",
+    yt: `Between 1986 and 1991, ten women were killed in a farming district south of Seoul. Ten women, five years, one killer. By 2006, the statute of limitations had expired — the law's own clock had run out. In September 2019, a DNA match. The real killer confessed to fourteen. An innocent man, who had served twenty years on a forced confession, was finally acquitted.
+
+#truecrime #hwaseong #lechoonjae #yoonsungyeo #shorts #wrongfulconviction`,
+    tiktok: `1986–1991, South Korea. Ten women killed. By 2006 the statute of limitations expires — the law's clock has run out. September 2019: a DNA match. The real killer confesses to 14. An innocent man who served 20 years on a forced confession is finally acquitted.
+
+#truecrime #hwaseong #fyp #wrongfulconviction #truecrimetiktok #korea`,
+    reels: `Between 1986 and 1991, ten women were killed in a farming district south of Seoul. By 2006, the statute of limitations had expired — the law's own clock had run out. In September 2019, a DNA match. The real killer confessed to fourteen. An innocent man, who had served twenty years on a forced confession, was finally acquitted.
+
+Full film on the channel — link in bio.
+
+#truecrime #hwaseong #wrongfulconviction #korea #truecrimecommunity #reels`
+  },
+  deberk: {
+    title: "Lucia de Berk — only the arithmetic changed",
+    yt: `In the early 2000s, Dutch nurse Lucia de Berk was convicted of murder. The prosecution's statistic: one in 342 million. The chance, they said, that the ward deaths during her shifts were coincidence. A philosopher of science checked the arithmetic. The same data, calculated correctly: one in forty-four. Seven years into a life sentence, she was acquitted. Only the arithmetic had changed.
+
+#truecrime #luciadeberk #wrongfulconviction #shorts #statistics #netherlands`,
+    tiktok: `Early 2000s, Netherlands. Nurse Lucia de Berk convicted of murder. Prosecution's statistic: 1 in 342 million. A philosopher of science checks the arithmetic. Same data, calculated correctly: 1 in 44. Seven years into a life sentence, she was acquitted. Only the arithmetic changed.
+
+#truecrime #luciadeberk #fyp #wrongfulconviction #statistics #truecrimetiktok`,
+    reels: `The Hague, Netherlands, early 2000s. A nurse named Lucia de Berk was convicted of murder. The prosecution's statistic: one in three hundred forty-two million — the chance, they said, that the ward deaths during her shifts were coincidence. A philosopher of science checked the arithmetic. The same data, calculated correctly: one in forty-four. Seven years into a life sentence, she was acquitted. Only the arithmetic had changed.
+
+Full film on the channel — link in bio.
+
+#truecrime #luciadeberk #wrongfulconviction #statistics #netherlands #truecrimecommunity #reels`
+  },
   kasparhauser: {
     title: "Kaspar Hauser — the riddle of his time",
     yt: `1828, Nuremberg: a teenage boy appears with no name, no past, and a letter no one can explain. Europe decides he must be a stolen prince. In 1833 he's murdered — with a mirror-writing note beside the body. In 2024, DNA finally ruled out the prince theory. It didn't answer anything else.

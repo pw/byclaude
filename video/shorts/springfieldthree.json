@@ -1,0 +1,13 @@
+{
+  "out": "short-springfieldthree",
+  "kicker": "THE SPRINGFIELD THREE",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "springfieldthree", "img": "B01", "vo": "On a June night in nineteen ninety-two, in Springfield, Missouri, three women arrived home from a pair of graduation parties.", "cap": "MISSOURI · 1992" },
+    { "vo": "A mother, forty-seven. Her daughter, nineteen. The daughter's friend, eighteen.", "cap": "THREE WOMEN" },
+    { "src": "springfieldthree", "img": "B03", "vo": "By morning, all three were gone.", "cap": "ALL THREE\nWERE GONE", "amber": true },
+    { "src": "springfieldthree", "img": "B04", "vo": "Their cars were in the driveway. Their purses were inside. The porch light was still on. There was no sign of struggle.", "cap": "NO SIGN OF STRUGGLE" },
+    { "src": "springfieldthree", "img": "B05", "vo": "Thirty years later, no bodies have been found. No one has been charged.", "cap": "STILL UNSOLVED", "amber": true }
+  ]
+}

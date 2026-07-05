@@ -1,0 +1,45 @@
+{
+  "title": "6EQUJ5",
+  "subtitle": "The Wow! Signal · Ohio, 1977",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a 1970s university radio telescope observatory interior and the giant radio dish itself in a flat Ohio farm field at night, dim fluorescent control rooms with paper strip charts and 1970s mainframes, cinder-block walls, melancholy and uncanny, period 1977 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In August nineteen seventy-seven, a radio telescope in Ohio picked up a signal, from the direction of Sagittarius.",
+      "cap": "Ohio · 1977",
+      "img": "A large 1970s radio telescope dish silhouetted against a heavy dusk sky over a flat Ohio farm field, distant treeline, eerie and quiet, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "It lasted seventy-two seconds. Then it stopped.",
+      "cap": "72 seconds\nthen silence",
+      "amber": true,
+      "img": "A vintage 1970s radio observatory control room interior with paper strip charts on a table under dim fluorescent light, cinder-block walls, a single chair pushed back, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Thirty times louder than the background noise. On the frequency of hydrogen, the most common element in the universe.",
+      "cap": "30× the background\nat the hydrogen line",
+      "img": "A close-up of a vintage 1970s paper printout strip with rows of printed letters and numbers including the sequence 6EQUJ5, dim desk-lamp light, documentary still, no readable annotations, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "The astronomer who found it on the printout circled the letters and wrote, in the margin, one word: wow.",
+      "cap": "WOW",
+      "amber": true
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Despite dozens of follow-up observations over fifty years, it has never repeated.",
+      "cap": "Never repeated",
+      "img": "A vast radio telescope dish array under a wide empty night sky with distant stars, low horizon, cold dim light, melancholy and unresolved, no people."
+    }
+  ]
+}

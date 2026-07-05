@@ -1,0 +1,45 @@
+{
+  "title": "Ran Into a Field",
+  "subtitle": "Lars Mittank · Bulgaria, 2014",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, Varna Airport in Bulgaria in the high summer of July 2014, low Bulgarian coastal scrub and wheat fields around the airport perimeter, dim yellowish 2010s terminal interior with security cameras and a single departures board, hazy humid Black Sea summer light, melancholy and uncanny, period 2014 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In July twenty fourteen, a German tourist named Lars Mittank arrived at Varna Airport, in Bulgaria, to fly home from a beach holiday.",
+      "cap": "Bulgaria · 2014",
+      "img": "A modest single-terminal Eastern European airport building at dusk with a flat empty apron and distant coastal hills, hazy humid summer light, melancholy, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "He went to the airport doctor. He mentioned an injury from a fight, days earlier, and asked for medication.",
+      "cap": "He visited\nthe airport doctor"
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Then, on the airport's security camera, he is seen dropping his luggage. He runs out of the terminal. He runs into a field of wheat.",
+      "cap": "He ran\ninto a field",
+      "amber": true,
+      "img": "A hazy empty Eastern European airport parking lot at dusk with an open field of tall golden wheat beyond the perimeter fence, fading summer light, eerie, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "He has not been seen since. He left his luggage, his phone, his wallet, and his passport inside the terminal.",
+      "cap": "Luggage, phone,\nwallet, passport\nleft behind",
+      "amber": true,
+      "img": "A wheeled suitcase lying on its side on an airport terminal floor, dim fluorescent light, an overturned paper coffee cup beside it, documentary still, eerie, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "It is the most-viewed missing-person case in German history. The field was searched. The camera footage is unexplained.",
+      "cap": "Still missing",
+      "img": "A wide empty Bulgarian wheat field at dusk, fading orange sky over distant coastal hills, tall dry wheat moving slightly in the wind, vast and unresolved, no people."
+    }
+  ]
+}

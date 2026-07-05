@@ -1,0 +1,46 @@
+{
+  "title": "Two Hundred Years of Digging",
+  "subtitle": "The Oak Island Money Pit · Nova Scotia, 1795–",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a small remote forested island in Mahone Bay Nova Scotia in late autumn, low coastal scrub spruce and birch, grey cold Canadian maritime light, weathered wooden excavator equipment and rusted derricks in forest clearings, melancholy and uncanny, period 1795-to-present detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In seventeen ninety-five, a teenager on a small island in Nova Scotia found a circular depression in the ground.",
+      "cap": "Nova Scotia · 1795",
+      "img": "A small remote forested island in a cold grey Canadian bay at dusk, low spruce and birch forest, weathered coastal light, melancholy and isolated, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "He dug. Layers of old oak logs, every ten feet. At ninety feet, an inscribed stone.",
+      "cap": "Oak logs\nevery 10 feet",
+      "img": "A weathered hand-dug pit in forest floor dirt showing the ends of ancient oak logs embedded horizontally in the walls, dim documentary light, no people, no readable text."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Then the pit flooded. It has flooded every time, since.",
+      "cap": "It floods\nevery time",
+      "amber": true,
+      "img": "A weathered old wooden shaft headframe with rusted iron hardware in a forest clearing, water pooling in the dark shaft below, grey overcast light, eerie, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Two hundred and thirty years of digging. Six men have died. No treasure has ever been confirmed.",
+      "cap": "230 years\nno treasure confirmed",
+      "amber": true,
+      "img": "A weathered rusted steel excavator derrick in a small forest clearing on a remote island, grey overcast, bare birch trees, melancholy, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Whatever is or is not at the bottom, the digging continues.",
+      "cap": "Still digging",
+      "img": "An empty forest clearing on a remote island with multiple weathered excavation pits under cold grey overcast, distant cold water of the bay through the trees, unresolved, no people."
+    }
+  ]
+}

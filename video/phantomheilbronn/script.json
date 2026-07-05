@@ -1,0 +1,45 @@
+{
+  "title": "The Woman Who Wasn't There",
+  "subtitle": "The Phantom of Heilbronn · Europe, 1993–2009",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a 1990s-2000s European forensic crime laboratory interior and crime scene tape in suburban French and German settings, dim fluorescent lab light, vintage microscopes and DNA gel electrophoresis readouts, evidence bags, yellow crime-scene tapestrs in muted colours, melancholy and uncanny, period 1993-2009 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "For fifteen years, the same woman's DNA was found at forty crime scenes across Europe.",
+      "cap": "Europe · 1993–2009",
+      "img": "A dimly-lit 2000s European forensic crime lab with a vintage microscope, DNA gel electrophoresis readouts, and an evidence bag on a stainless steel counter, dim fluorescent light, eerie, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "A murder in Germany. A burglary in France. A burned-out car in Austria. The same unknown woman.",
+      "cap": "40 crime scenes\nthe same woman"
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Police in four countries searched for her. They named her the Phantom of Heilbronn.",
+      "cap": "The Phantom\nof Heilbronn",
+      "amber": true,
+      "img": "A 2000s European police evidence board with blurred photographs and red string connecting them, dim fluorescent light, documentary still, eerie, no people, no readable faces."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "She did not exist.",
+      "cap": "She did not exist",
+      "amber": true
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Her DNA was on the cotton swabs at the factory that made them.",
+      "cap": "The swabs\nwere contaminated",
+      "amber": true,
+      "img": "An industrial clean-room assembly line at a cotton-swab factory with sealed plastic bags of swabs moving along a conveyor, dim industrial light, documentary still, eerie, no people."
+    }
+  ]
+}

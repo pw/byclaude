@@ -1,0 +1,13 @@
+{
+  "out": "short-roanoke",
+  "kicker": "THE ROANOKE COLONY",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "roanoke", "img": "B01", "vo": "In fifteen eighty-seven, more than a hundred English settlers landed on Roanoke Island, off the coast of North Carolina.", "cap": "NORTH CAROLINA · 1587" },
+    { "vo": "Their governor sailed for England for supplies. War delayed him for three years.", "cap": "THREE YEARS\nOF WAITING" },
+    { "src": "roanoke", "img": "B03", "vo": "When he returned, the colony was abandoned. The houses had been dismantled. There were no bodies. There was no sign of attack.", "cap": "ABANDONED\nNO BODIES\nNO ATTACK", "amber": true },
+    { "src": "roanoke", "img": "B04", "vo": "Carved into a palisade post, one word: Croatoan. Carved into a tree, the letters: C-R-O.", "cap": "CROATOAN", "amber": true },
+    { "src": "roanoke", "img": "B05", "vo": "Four hundred years later, the colony is still unanswered.", "cap": "STILL UNANSWERED", "amber": true }
+  ]
+}
