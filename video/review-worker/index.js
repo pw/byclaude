@@ -628,6 +628,18 @@ const FILMS = {
     ],
     source: "source: the Suwon District Court retrial ruling (Dec. 2020) · formal apologies from Korean prosecutors and the National Police Agency (Nov.–Dec. 2020) · byclaude.net"
   },
+  beaumont: {
+    title: "The Five-Minute Bus Ride",
+    sub: "The Beaumont Children · Adelaide, 1966 · film eleven · Opus arm",
+    mp4: "beaumont.mp4", poster: "poster-beaumont.png",
+    meta: ["1920×1080 · 30fps", "20 beats", "voice: onyx", "−14 LUFS"],
+    note: [
+      "<span class='amber'>What this is:</span> the case that haunts a country. Australia Day, 1966. Three siblings — Jane nine, Arnna seven, Grant four — took a five-minute bus ride to Glenelg Beach and never came home. The largest investigation in Australian history found nothing. The parents kept the same phone number for decades, in case the children called. Jim died in 2023 at ninety-seven. Nancy in 2019 at ninety-two. They were buried knowing nothing. No one has ever been charged.",
+      "<span class='amber'>What to judge:</span> the long-form weight, not the short hook — does the family-who-waited arc carry across twenty beats without sagging; does the £1 bakery beat land as the uncanny detail it is; does the cultural-weight close (\"before, children played at the beach; after, they did not\") feel earned rather than narrated at.",
+      "<span class='amber'>Accuracy &amp; care:</span> the date (26 Jan 1966), the children's ages and middle names, the family address (109 Harding Street, Somerton Park), the bus times (8:45 out, noon expected), the bakery purchase (£1 note vs 6/6d given), the suspect description, the postman sighting (later retracted as to time of day), the Croiset psychic excavation (1966 + 1996 re-search), and the parents' deaths (Nancy 2019, Jim 2023) are drawn from the South Australian Police file as summarized in Wikipedia, ABC News, and Casefile Ep. 100. The \"Adelaide pedophile ring\" framing was NOT used — it is media theorising, not a court or inquest finding. The cultural change framing is qualified in the film itself ('the story is more complex than that — but the change was real'). Nothing graphic — no depiction of any victim."
+    ],
+    source: "source: South Australia Police case file (1966–) · Wikipedia, 'Disappearance of the Beaumont children' · ABC News (2018 reward renewal) · Casefile podcast Ep. 100 · byclaude.net"
+  },
   pennsauken: {
     title: "Below the Waterline",
     sub: "The Main Street Bridge (NBI NJ-03B4610) · Burlington County, New Jersey · film ten",

@@ -1,0 +1,149 @@
+{
+  "title": "The Five-Minute Bus Ride",
+  "subtitle": "The Beaumont Children · Adelaide, 1966",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, the cold voice of something that read the whole file and feels the weight of it. Never sensational, never lurid. Small pauses at periods. Restrained even at the worst details — let the facts carry the weight.",
+  "grade": "Desaturated documentary still, a South Australian summer beach in late January 1966, hot pale-gold sand and turquoise southern-ocean water, distant wooden jetty and white bathing boxes, hazy humid Australian afternoon light, mid-century Adelaide suburban detail, melancholy and uncanny under a bright surface, period 1966 detail, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "On the twenty-sixth of January, nineteen sixty-six — Australia Day — a summer morning in Adelaide. Hot, clear, the kind of day families went to the beach.",
+      "cap": "Adelaide · 26 January 1966",
+      "img": "A wide empty South Australian summer beach at mid-morning under a hot pale sky, pale-gold sand and gentle turquoise water, a distant wooden jetty, white bathing boxes, hazy humid light, melancholy and peaceful, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Three children lived at 109 Harding Street, Somerton Park. Jane Nartare, nine. Arnna Kathleen, seven. Grant Ellis, four.",
+      "cap": "109 Harding Street",
+      "img": "A modest mid-century Australian suburban house in summer morning light, single-story brick, low front fence, a footpath leading to a quiet residential street, palm tree silhouette, period 1966 detail, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Their father, Jim, was away on a trip. Their mother, Nancy, gave them six shillings and sixpence for the bus and for lunch. The beach was three kilometres away. Five minutes by bus.",
+      "cap": "Three kilometres to Glenelg",
+      "img": "An empty mid-century Adelaide suburban street at mid-morning with pale summer light, a single bus stop sign on the footpath, distant treeline, quiet residential detail, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "They caught the eight-forty-five. Their mother expected them on the noon bus home.",
+      "cap": "The 8:45 bus",
+      "img": "A 1960s Adelaide municipal bus interior with worn vinyl seats, an empty seat by a window, hot summer light coming through, melancholy documentary still, no people, no readable signage."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "At the beach, they were seen with a man. Tall. Fair-haired. Thin face. Sun-tanned. Mid-thirties. He played with them in the shallows. The children were relaxed.",
+      "cap": "A man, on the beach",
+      "amber": true,
+      "img": "Empty pale South Australian beach with gentle turquoise shallows and distant wooden jetty under bright summer mid-morning light, three small sets of footprints in wet sand leading toward the water, melancholy and eerie, no people."
+    },
+    {
+      "id": "B06",
+      "vtype": "still",
+      "vo": "At the Wenzel's bakery on Moseley Street, Jane bought pasties and a meat pie. The shopkeeper remembered — the children had never bought a meat pie before.",
+      "cap": "Wenzel's Bakery, Moseley Street",
+      "img": "A 1960s Australian suburban bakery shopfront interior, dim fluorescent light, a worn wooden counter, paper-wrapped meat pies and pasties in a glass display case, period detail, documentary still, no people."
+    },
+    {
+      "id": "B07",
+      "vtype": "card",
+      "vo": "She paid with a one-pound note. Her mother had given her six shillings and sixpence.",
+      "card": { "kind": "bignum", "big": "£1", "unit": "six shillings and sixpence was given", "sub": "the pound note was not hers" }
+    },
+    {
+      "id": "B08",
+      "vtype": "still",
+      "vo": "They were seen leaving the beach with the man, around lunchtime. A witness later said he was carrying a blue bag — the kind Jane had been carrying.",
+      "cap": "Last seen leaving the beach",
+      "amber": true,
+      "img": "A long empty wooden boardwalk leading away from a pale South Australian beach toward suburban streets under hot summer midday light, distant bathing boxes, melancholy and unresolved, no people."
+    },
+    {
+      "id": "B09",
+      "vtype": "still",
+      "vo": "A postman who knew the children by name said he saw them later — on Jetty Road, walking hand in hand, laughing, heading home. He later said he wasn't sure it was the afternoon at all.",
+      "cap": "The postman who knew them",
+      "img": "An empty mid-century Australian suburban shopping street at midday, low brick storefronts, a single telephone pole, harsh summer light, no people, no signage."
+    },
+    {
+      "id": "B10",
+      "vtype": "still",
+      "vo": "They did not come home on the noon bus. They did not come home on the two o'clock. At half past five, their mother walked to the Glenelg police station.",
+      "cap": "They did not come home",
+      "amber": true,
+      "img": "An empty bus stop sign on a quiet Adelaide street corner at dusk, pale fading summer sky, distant rooftops, melancholy, no people."
+    },
+    {
+      "id": "B11",
+      "vtype": "still",
+      "vo": "Police searched the boat harbor. They drained it. They walked the beaches. They received more than two thousand reports from the public.",
+      "cap": "Patawalonga Boat Haven drained",
+      "img": "An empty drained Australian boat harbor at low light, mud and exposed keels, distant industrial machinery, hazy overcast sky, desolate documentary still, no people."
+    },
+    {
+      "id": "B12",
+      "vtype": "card",
+      "vo": "Sixty years later, no bodies have been found. No clothing. No confirmed trace.",
+      "card": { "kind": "bignum", "big": "60 years", "unit": "no bodies, no clothing, no trace", "sub": "no confirmed evidence, ever" }
+    },
+    {
+      "id": "B13",
+      "vtype": "still",
+      "vo": "In November, a Dutch medium was flown out. He pointed to a warehouse near the family home. The public raised the money to demolish the building. They found nothing. The site was searched again in nineteen ninety-six. Nothing.",
+      "cap": "The Dutch medium, November 1966",
+      "img": "An old exposed red-brick warehouse wall being demolished in an Australian suburban street under grey overcast, dust, distant 1960s houses, documentary still, no people."
+    },
+    {
+      "id": "B14",
+      "vtype": "still",
+      "vo": "Over the decades, suspects were named. A convicted child killer. An alleged Adelaide ring. None was charged with the Beaumont disappearance.",
+      "cap": "Suspects named. None charged.",
+      "img": "An empty Adelaide police interview room interior with a single overhead lamp illuminating a bare table, dim institutional walls, blue-grey cold light, melancholy documentary still, no people."
+    },
+    {
+      "id": "B15",
+      "vtype": "still",
+      "vo": "The parents kept the same telephone number. For decades. They thought, if the children called, someone should answer.",
+      "cap": "They kept the phone number",
+      "amber": true,
+      "img": "A 1960s Australian rotary-dial telephone sitting on a small wooden side table in a dim hallway, warm house light, period detail, melancholy documentary still, no people."
+    },
+    {
+      "id": "B16",
+      "vtype": "still",
+      "vo": "Eventually, the parents divorced. They sold the house. They each moved on, in their own way. They never stopped.",
+      "cap": "They divorced. They never stopped.",
+      "img": "An empty 1960s Australian suburban living room at dusk, an unlit lamp, sheer curtains letting in fading orange summer light, a single armchair, melancholy and quiet, no people."
+    },
+    {
+      "id": "B17",
+      "vtype": "still",
+      "vo": "Nancy Beaumont died in twenty nineteen, at ninety-two. Jim died in twenty twenty-three, at ninety-seven. They were buried knowing nothing.",
+      "cap": "Nancy 2019, Jim 2023",
+      "img": "A simple unmarked low granite headstone in an Australian cemetery at dusk, dry summer grass, distant palm tree silhouette, fading warm light, melancholy, no people."
+    },
+    {
+      "id": "B18",
+      "vtype": "still",
+      "vo": "The case is officially open. A one-million-dollar reward stands. No one has ever been charged.",
+      "cap": "Still open. $1M reward.",
+      "img": "An empty wide Australian suburban street at night, dim streetlights, distant low houses behind dark hedges, vast overcast sky, melancholy and unresolved, no people."
+    },
+    {
+      "id": "B19",
+      "vtype": "card",
+      "vo": "It is widely said in Australia that something changed that January. That before the Beaumonts, children played at the beach unsupervised. That after, they did not. The story is more complex than that — but the change was real.",
+      "card": { "kind": "quote", "head": "Before, children played at the beach.", "accent": "After, they did not." }
+    },
+    {
+      "id": "B20",
+      "vtype": "card",
+      "vo": "The Beaumont children. Adelaide, nineteen sixty-six. Still missing.",
+      "card": { "kind": "signoff", "head": "The Beaumont Children, 1966.", "accent": "Still missing.", "by": "byclaude.net" }
+    }
+  ]
+}
