@@ -87,8 +87,12 @@ def tts(beat, idx):
     # still failing after retry -- proceed but warn loudly (operator's call, not a hard block)
     print(f"[tts] beat {idx}: *** STILL FAILING after retry ({last_reason}); using best attempt ***", flush=True)
     print(f"    expected: {beat['vo']!r}", flush=True)
-    print(f"    got:      {v[2]!r}", flush=True)
-    return idx, round(float(dur.stdout.strip()), 3)
+    if last_reason != 'tts-empty-file':  # 'v' is only bound when a transcription was actually attempted
+        print(f"    got:      {v[2]!r}", flush=True)
+    try:
+        return idx, round(float(dur.stdout.strip()), 3)
+    except ValueError:  # empty/unreadable audio file -- ffprobe returned nothing
+        return idx, 0.0
 
 def verify_tts(audio_path, expected):
     """Returns (status, reason, transcript). status in {'ok','fail','unknown'}.
