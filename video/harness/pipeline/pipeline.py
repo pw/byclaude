@@ -389,13 +389,16 @@ def render_images(base: Path, data: dict, model: str = "nano-banana-2-lite", max
 def build_video_per_clip(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str = "byclaude.net",
                          out_name: str = "final.mp4", preset: str = "veryfast",
                          resolution: int = 1080, encoder: str = "libx264",
-                         max_workers: int = 18):
+                         max_workers: int = 18, motion: str = "kenburns"):
     """Per-clip rendering: each beat → its own mp4 (parallel), then concat.
 
     Scales linearly up to N_beats parallel ffmpegs. On a many-core box this
     can be faster than single-filter (which is limited by filtergraph thread
     ceiling ~N_beats+8). Uses -c copy concat (no re-encode) + a separate
     loudnorm/fade audio pass.
+
+    motion: "kenburns" (slow zoom, good for creepy/atmospheric) or "none"
+    (static stills, good for general topics).
     """
     durs = json.load(open(base / "work/durations.json"))
     clips = base / "clips"; clips.mkdir(parents=True, exist_ok=True)
@@ -455,23 +458,36 @@ def build_video_per_clip(base: Path, data: dict, kicker: str = "DOCUMENTARY", ma
         frames = round(clip * FPS)
         img = asset(b); cap = cap_paths.get(bid)
         vt = b["vtype"]
-        if vt == "still":
-            z = "z='min(zoom+0.0009,1.10)'" if idx % 2 == 0 else "z='if(lte(on,1),1.10,max(zoom-0.0009,1.0))'"
-        else:
-            z = "z='min(zoom+0.00035,1.045)'"
-        zp = (f"zoompan={z}:d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
-              f":s={OUT_W}x{OUT_H}:fps={FPS}")
         out = clips / f"{bid}.mp4"
         audio_path = base / "audio" / f"{bid}.mp3"
         has_audio = audio_path.exists() and audio_path.stat().st_size > 1000
-        ins = ["-i", str(img)]
-        if cap: ins += ["-i", str(cap)]
-        if has_audio:
-            ins += ["-i", str(audio_path)]
+
+        if motion == "none":
+            # static still — loop the image for clip seconds, no zoom/pan
+            ins = ["-loop", "1", "-t", str(clip), "-i", str(img)]
+            if cap: ins += ["-i", str(cap)]
+            if has_audio:
+                ins += ["-i", str(audio_path)]
+            else:
+                ins += ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]
+            a_idx = 1 + (1 if cap else 0)
+            scale = f"scale={OUT_W}:{OUT_H}:force_original_aspect_ratio=increase,crop={OUT_W}:{OUT_H},fps={FPS}"
+            v_chain = f"[0:v]{scale}[s];[s][1:v]overlay=0:0[v]" if cap else f"[0:v]{scale}[v]"
         else:
-            ins += ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]
-        a_idx = 1 + (1 if cap else 0)
-        v_chain = f"[0:v]{zp}[kb];[kb][1:v]overlay=0:0[v]" if cap else f"[0:v]{zp}[v]"
+            # ken burns — smooth slow zoom-in, rounded centering to prevent 1px jitter
+            z = "z='min(zoom+0.0006,1.08)'"
+            zp = (f"zoompan={z}:d={frames}"
+                  f":x='round(iw/2-(iw/zoom/2))':y='round(ih/2-(ih/zoom/2))'"
+                  f":s={OUT_W}x{OUT_H}:fps={FPS}")
+            ins = ["-i", str(img)]
+            if cap: ins += ["-i", str(cap)]
+            if has_audio:
+                ins += ["-i", str(audio_path)]
+            else:
+                ins += ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]
+            a_idx = 1 + (1 if cap else 0)
+            v_chain = f"[0:v]{zp}[kb];[kb][1:v]overlay=0:0[v]" if cap else f"[0:v]{zp}[v]"
+
         a_filter = f"aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,apad,atrim=0:{clip}"
         fc = f"{v_chain};[{a_idx}:a]{a_filter}[a]"
         if use_nvenc:
@@ -720,6 +736,156 @@ def build_video(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
         "phase": "video", "ok": ok,
         "wall_s": round(time.time() - t0, 2),
         "total_narration_s": round(total_dur, 1),
+        "final": str(final),
+        "size_mb": round(final.stat().st_size / 1e6, 1) if ok else 0,
+        "error": "" if ok else r.stderr[-400:],
+    }
+
+
+# ─── short-form vertical (9:16) ───────────────────────────────────────────────
+
+def build_short(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str = "byclaude.net",
+                out_name: str = "final.mp4", preset: str = "ultrafast",
+                max_workers: int = 6, motion: str = "kenburns"):
+    """Vertical 1080x1920 short-form video: bg + kicker + still band + big caption.
+
+    Uses pre-generated stills from base/images/. Composites each beat as a
+    full frame (PIL), renders TTS, then assembles per-clip (parallel).
+    """
+    durs = json.load(open(base / "work/durations.json"))
+    frames_dir = base / "frames"; frames_dir.mkdir(parents=True, exist_ok=True)
+    clips = base / "clips"; clips.mkdir(parents=True, exist_ok=True)
+    (base / "work").mkdir(parents=True, exist_ok=True)
+    FPS = 30; TAIL = 0.35
+    beats = data["beats"]
+    t0 = time.time()
+
+    SW, SH = 1080, 1920  # vertical
+    BG = (11, 14, 19); AMBER = (242, 169, 59); INK = (236, 239, 244)
+    GRID = (26, 30, 40); MUTE = (140, 149, 165); DIM = (78, 87, 102)
+
+    def _sf(n, s): return ImageFont.truetype(str(FONTS / n), s)
+
+    def bg_frame():
+        img = Image.new("RGB", (SW, SH), BG)
+        d = ImageDraw.Draw(img)
+        step = SW // 9
+        for x in range(0, SW, step): d.line([(x, 0), (x, SH)], fill=GRID, width=1)
+        for y in range(0, SH, step): d.line([(0, y), (W, y)], fill=GRID, width=1)
+        yy, xx = np.mgrid[0:SH, 0:SW]; cx, cy = SW / 2, SH / 2
+        r = np.sqrt(((xx - cx) / (SW / 2))**2 + ((yy - cy) / (SH / 2))**2)
+        vig = np.clip(1 - 0.5 * np.clip(r - 0.2, 0, 1)**1.6, 0, 1)
+        return Image.fromarray((np.asarray(img, float) * vig[:, :, None]).astype(np.uint8), "RGB")
+
+    def fit(d, text, fn, maxw, start, floor=46):
+        s = start
+        while s > floor:
+            f = _sf(fn, s)
+            if max(d.textlength(ln, font=f) for ln in text.split("\n")) <= maxw: return f
+            s -= 3
+        return _sf(fn, floor)
+
+    def compose_frame(beat, idx):
+        img = bg_frame(); d = ImageDraw.Draw(img)
+        # kicker
+        d.rectangle([70, 86, 92, 108], fill=AMBER)
+        kf = _sf("IBMPlexMono-SemiBold.ttf", 28); kx = 108
+        for ch in ("BY CLAUDE  ·  " + kicker.upper()):
+            d.text((kx, 82), ch, font=kf, fill=MUTE); kx += d.textlength(ch, font=kf) + 3
+        cap_y = int(SH * 0.42)
+        # still band (if beat has an image)
+        if beat.get("vtype") == "still" and beat.get("img"):
+            still_path = base / "images" / f"{beat['id']}.png"
+            if still_path.exists():
+                still = Image.open(still_path).convert("RGB")
+                bh = int(SW * still.height / still.width)
+                still = still.resize((SW, bh))
+                by = 300
+                img.paste(still, (0, by))
+                d = ImageDraw.Draw(img)
+                d.rectangle([0, by, SW - 1, by + bh - 1], outline=(40, 46, 58), width=2)
+                cap_y = by + bh + 100
+        # big caption
+        cap = beat.get("cap", "")
+        if cap:
+            f = fit(d, cap, "Anton-Regular.ttf", SW - 130, start=130)
+            col = AMBER if beat.get("amber") else INK
+            y = cap_y
+            for ln in cap.split("\n"):
+                d.text((SW // 2, y), ln, font=f, fill=col, anchor="ma"); y += int(f.size * 1.04)
+        # mark
+        d.text((SW // 2, SH - 96), mark, font=_sf("IBMPlexMono-Medium.ttf", 28), fill=DIM, anchor="ma")
+        out = frames_dir / f"{idx:02d}.png"
+        img.save(out)
+        return out
+
+    # compose all frames
+    frame_paths = []
+    for idx, b in enumerate(beats):
+        frame_paths.append(compose_frame(b, idx))
+
+    # build clips in parallel
+    def build_clip(args):
+        idx, b = args
+        bid = b["id"]; dur = durs.get(bid, {}).get("dur", 3.0)
+        clip = round(dur + TAIL, 3)
+        frames = round(clip * FPS)
+        frame = frame_paths[idx]
+        audio_path = base / "audio" / f"{bid}.mp3"
+        has_audio = audio_path.exists() and audio_path.stat().st_size > 1000
+        out = clips / f"{idx:02d}.mp4"
+
+        ins = ["-loop", "1", "-i", str(frame)]
+        if has_audio:
+            ins += ["-i", str(audio_path)]
+        else:
+            ins += ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]
+        a_idx = 1
+
+        if motion == "kenburns":
+            z = "z='min(zoom+0.0006,1.06)'"
+            zp = f"zoompan={z}:d={frames}:x='round(iw/2-(iw/zoom/2))':y='round(ih/2-(ih/zoom/2))':s={SW}x{SH}:fps={FPS}"
+        else:
+            zp = f"scale={SW}:{SH},fps={FPS}"
+
+        a_filter = f"aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,apad,atrim=0:{clip}"
+        fc = f"[0:v]{zp}[v];[{a_idx}:a]{a_filter}[a]"
+        cmd = ["ffmpeg", "-y", *ins, "-filter_complex", fc, "-map", "[v]", "-map", "[a]",
+               "-t", str(clip), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
+               "-crf", "20", "-preset", preset, "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
+               "-movflags", "+faststart", str(out)]
+        r = subprocess.run(cmd, capture_output=True, text=True)
+        ok = out.exists() and out.stat().st_size > 10000
+        return (bid, clip, "ok" if ok else f"FAIL {r.stderr[-200:]}")
+
+    with ThreadPoolExecutor(max_workers=max_workers) as ex:
+        clip_results = list(ex.map(build_clip, list(enumerate(beats))))
+
+    # concat + fades + loudnorm
+    listf = base / "work/concat.txt"
+    clip_names = [clips / f"{i:02d}.mp4" for i in range(len(beats))]
+    listf.write_text("".join(f"file '{c}'\n" for c in clip_names))
+    final = base / out_name
+    total = sum(c for _, c, _ in clip_results)
+    fout = max(0.1, total - 0.8)
+
+    concat_raw = base / "work/concat_raw.mp4"
+    subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(listf),
+                    "-c", "copy", "-movflags", "+faststart", str(concat_raw)],
+                   capture_output=True, text=True)
+
+    vf = f"fade=t=in:st=0:d=0.4,fade=t=out:st={fout:.2f}:d=0.8"
+    af = f"loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=in:st=0:d=0.3,afade=t=out:st={fout:.2f}:d=0.8"
+    cmd = ["ffmpeg", "-y", "-i", str(concat_raw), "-vf", vf, "-af", af,
+           "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
+           "-crf", "20", "-preset", preset, "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
+           "-movflags", "+faststart", str(final)]
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    ok = final.exists() and final.stat().st_size > 10000
+    return {
+        "phase": "video", "ok": ok,
+        "wall_s": round(time.time() - t0, 2),
+        "total_narration_s": round(total, 1),
         "final": str(final),
         "size_mb": round(final.stat().st_size / 1e6, 1) if ok else 0,
         "error": "" if ok else r.stderr[-400:],
