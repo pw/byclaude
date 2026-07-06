@@ -386,7 +386,7 @@ def render_images(base: Path, data: dict, model: str = "nano-banana-2-lite", max
 # ─── final video assembly ─────────────────────────────────────────────────────
 
 def build_video(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str = "byclaude.net",
-                out_name: str = "final.mp4"):
+                out_name: str = "final.mp4", preset: str = "veryfast"):
     """Per-beat Ken-Burns + captions on stills → concat → fades → loudnorm."""
     durs = json.load(open(base / "work/durations.json"))
     clips = base / "clips"; clips.mkdir(parents=True, exist_ok=True)
@@ -457,7 +457,7 @@ def build_video(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
         fc = f"{v_chain};[{a_idx}:a]{a_filter}[a]"
         cmd = ["ffmpeg", "-y", *ins, "-filter_complex", fc, "-map", "[v]", "-map", "[a]",
                "-t", str(clip), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
-               "-crf", "20", "-preset", "medium", "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
+               "-crf", "20", "-preset", preset, "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
                "-movflags", "+faststart", str(out)]
         r = subprocess.run(cmd, capture_output=True, text=True)
         ok = out.exists() and out.stat().st_size > 10000
@@ -478,7 +478,7 @@ def build_video(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
     af = f"loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=in:st=0:d=0.5,afade=t=out:st={fout:.2f}:d=1.3"
     cmd = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(listf),
            "-vf", vf, "-af", af, "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
-           "-crf", "19", "-preset", "medium", "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
+           "-crf", "19", "-preset", preset, "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
            "-movflags", "+faststart", str(final)]
     r = subprocess.run(cmd, capture_output=True, text=True)
     ok = final.exists() and final.stat().st_size > 10000
