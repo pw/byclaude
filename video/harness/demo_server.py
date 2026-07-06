@@ -178,7 +178,8 @@ async function pollStatus() {
     meta.innerHTML = '<span><b>' + data.beats + '</b> beats</span>' +
       '<span><b>' + data.narration + '</b> narration</span>' +
       '<span><b>$' + data.cost + '</b> cost</span>' +
-      '<span><b>' + data.format + '</b></span>';
+      '<span><b>' + data.format + '</b></span>' +
+      '<span><a href="/video/' + jobId + '" download style="color:#f2a93b;text-decoration:none">Download MP4</a></span>';
 
     const btn = document.getElementById('go');
     btn.disabled = false;

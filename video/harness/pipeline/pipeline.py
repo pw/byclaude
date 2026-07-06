@@ -474,10 +474,12 @@ def build_video_per_clip(base: Path, data: dict, kicker: str = "DOCUMENTARY", ma
             scale = f"scale={OUT_W}:{OUT_H}:force_original_aspect_ratio=increase,crop={OUT_W}:{OUT_H},fps={FPS}"
             v_chain = f"[0:v]{scale}[s];[s][1:v]overlay=0:0[v]" if cap else f"[0:v]{scale}[v]"
         else:
-            # ken burns — smooth slow zoom-in, rounded centering to prevent 1px jitter
-            z = "z='min(zoom+0.0006,1.08)'"
+            # ken burns — very slow zoom to minimize zoompan jitter;
+            # the integer pixel stepping in x/y is the jitter source,
+            # slower zoom = fewer position changes per second = smoother
+            z = "z='min(zoom+0.0003,1.06)'"
             zp = (f"zoompan={z}:d={frames}"
-                  f":x='round(iw/2-(iw/zoom/2))':y='round(ih/2-(ih/zoom/2))'"
+                  f":x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
                   f":s={OUT_W}x{OUT_H}:fps={FPS}")
             ins = ["-i", str(img)]
             if cap: ins += ["-i", str(cap)]
@@ -843,8 +845,8 @@ def build_short(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
         a_idx = 1
 
         if motion == "kenburns":
-            z = "z='min(zoom+0.0006,1.06)'"
-            zp = f"zoompan={z}:d={frames}:x='round(iw/2-(iw/zoom/2))':y='round(ih/2-(ih/zoom/2))':s={SW}x{SH}:fps={FPS}"
+            z = "z='min(zoom+0.0003,1.05)'"
+            zp = f"zoompan={z}:d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={SW}x{SH}:fps={FPS}"
         else:
             zp = f"scale={SW}:{SH},fps={FPS}"
 
