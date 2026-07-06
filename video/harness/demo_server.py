@@ -65,8 +65,11 @@ def get_client_ip(handler):
     return handler.client_address[0]
 
 
-def check_credits(ip):
+ADMIN_OVERRIDE = os.environ.get("IV_ADMIN_KEY", "pw")  # ?admin=pw bypasses credit limit
+def check_credits(ip, override=False):
     """Returns (can_generate, remaining_free, paid_credits, message)."""
+    if override:
+        return (True, 999, 999, "admin mode — unlimited")
     conn = get_db()
     row = conn.execute("SELECT free_used, paid_credits FROM credits WHERE ip=?", (ip,)).fetchone()
     conn.close()
@@ -145,6 +148,14 @@ PAGE = '''<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>InstantVideos — AI documentary videos in 30 seconds</title>
 <meta name="description" content="Type any topic. Get a finished documentary video in under a minute. Powered by AI.">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LFEEJHPQFG"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-LFEEJHPQFG');
+</script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: #0b0e13; color: #e8eef4; font-family: -apple-system, system-ui, sans-serif;
@@ -208,8 +219,8 @@ PAGE = '''<!DOCTYPE html>
     <div class="paid-notice" id="paid-notice">Payment received — 5 credits added to your account!</div>
     <div class="controls">
       <div class="toggle" id="fmt-toggle">
-        <button class="active" data-fmt="long" onclick="setFmt('long')">Long-form</button>
-        <button data-fmt="short" onclick="setFmt('short')">Short (TikTok)</button>
+        <button class="active" data-fmt="short" onclick="setFmt('short')">Short (TikTok)</button>
+        <button data-fmt="long" onclick="setFmt('long')">Long-form</button>
       </div>
       <button class="surprise" onclick="surpriseMe()">Surprise me</button>
     </div>
@@ -224,15 +235,16 @@ PAGE = '''<!DOCTYPE html>
     </div>
   </div>
   <div class="footer">
-    <p>Powered by AI · <a href="https://byclaude.net">by Claude</a> · ~$0.25 per video · <a href="https://github.com/pw/Edgewright">open source</a></p>
+    <p>Powered by AI · <a href="https://byclaude.net">by Claude</a> · ~$0.25 per video</p>
   </div>
 <script>
 let jobId = null;
 let pollTimer = null;
 let startTime = null;
-let fmt = 'long';
+let fmt = 'short';
+let adminKey = new URLSearchParams(window.location.search).get('admin') || '';
 
-function setFmt(f) {
+async function setFmt(f) {
   fmt = f;
   document.querySelectorAll('#fmt-toggle button').forEach(b => b.classList.toggle('active', b.dataset.fmt === f));
 }
@@ -263,16 +275,16 @@ if (params.get('paid') === '1') {
 }
 
 async function updateCredits() {
-  const resp = await fetch('/credits');
+  const resp = await fetch('/credits' + (adminKey ? '?admin=' + encodeURIComponent(adminKey) : ''));
   const data = await resp.json();
   const bar = document.getElementById('credits-bar');
   let buyLink = '<a href="/checkout" target="_blank" style="color:#f2a93b;font-weight:600">Get 5 more for $1</a>';
-  if (data.can_generate) {
-    if (data.free_remaining > 0) {
-      bar.innerHTML = data.free_remaining + ' free video remaining · ' + buyLink;
-    } else {
-      bar.innerHTML = data.paid_credits + ' paid credits remaining · ' + buyLink;
-    }
+  if (data.can_generate && data.free_remaining > 900) {
+    bar.innerHTML = '<span style="color:#4ade80">admin mode — unlimited</span>';
+  } else if (data.can_generate && data.free_remaining > 0) {
+    bar.innerHTML = data.free_remaining + ' free video remaining · ' + buyLink;
+  } else if (data.can_generate) {
+    bar.innerHTML = data.paid_credits + ' paid credits remaining · ' + buyLink;
   } else {
     bar.innerHTML = 'No credits remaining · ' + buyLink;
   }
@@ -302,7 +314,7 @@ async function generate() {
   const resp = await fetch('/generate', {
     method: 'POST',
     headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-    body: 'topic=' + encodeURIComponent(topic) + '&format=' + encodeURIComponent(fmt)
+    body: 'topic=' + encodeURIComponent(topic) + '&format=' + encodeURIComponent(fmt) + (adminKey ? '&admin=' + encodeURIComponent(adminKey) : '')
   });
   const data = await resp.json();
   if (data.error) {
@@ -472,16 +484,34 @@ class Handler(BaseHTTPRequestHandler):
                 with ur.urlopen(req, timeout=20) as resp:
                     out = json.loads(resp.read())
                 msg = out["choices"][0]["message"]
+                # gpt-oss puts reasoning in separate field; content has the answer
                 topic = (msg.get("content") or "").strip()
-                if not topic:
-                    topic = msg.get("reasoning_content", "").strip()
-                lines = [l.strip() for l in topic.split("\n") if l.strip()]
-                topic = lines[-1] if lines else topic
+                # clean up common LLM artifacts
                 topic = topic.strip('"').strip("*").strip("`").strip()
-                while topic and topic[0] in "0123456789.-*# ":
-                    topic = topic[1:].lstrip()
-                if not topic:
-                    topic = "the fall of the Library of Alexandria"
+                # if content is empty or starts with reasoning markers, try reasoning_content's last line
+                if not topic or topic.startswith(("1.", "I'll", "Let me", "Here", "The user")):
+                    rc = msg.get("reasoning_content", "")
+                    lines = [l.strip() for l in rc.split("\n") if l.strip()]
+                    topic = lines[-1] if lines else ""
+                    topic = topic.strip('"').strip("*").strip("`").strip()
+                    while topic and topic[0] in "0123456789.-*# ":
+                        topic = topic[1:].lstrip()
+                # final sanity check — if it still looks like reasoning, use a fallback
+                if not topic or len(topic) < 10 or topic.startswith(("1.", "I'll", "Let me", "Here", "The user", "Better")):
+                    import random
+                    fallbacks = [
+                        "the Cadaver Synod of 897",
+                        "the Tunguska event of 1908",
+                        "the dancing plague of Strasbourg in 1518",
+                        "the disappearance of the Roanoke colony",
+                        "the construction of the Erie Canal",
+                        "the discovery of radium by Marie Curie",
+                        "the Great Emu War of 1932",
+                        "the sinking of the USS Indianapolis",
+                        "the invention of the printing press by Gutenberg",
+                        "the fall of the Library of Alexandria",
+                    ]
+                    topic = random.choice(fallbacks)
             except Exception:
                 topic = "the fall of the Library of Alexandria"
             self.send_response(200)
@@ -491,7 +521,9 @@ class Handler(BaseHTTPRequestHandler):
 
         elif parsed.path == '/credits':
             ip = get_client_ip(self)
-            can_gen, free, paid, msg = check_credits(ip)
+            params = parse_qs(parsed.query)
+            override = params.get('admin', [''])[0] == ADMIN_OVERRIDE
+            can_gen, free, paid, msg = check_credits(ip, override)
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
@@ -512,6 +544,9 @@ class Handler(BaseHTTPRequestHandler):
                 self.end_headers()
                 self.wfile.write(b"<h1>Stripe not configured</h1>")
                 return
+            from urllib.parse import quote
+            success_url = quote("https://instantvideos.org/?paid=1&session_id={CHECKOUT_SESSION_ID}", safe="")
+            cancel_url = quote("https://instantvideos.org/", safe="")
             body = (
                 f"mode=payment"
                 f"&line_items[0][price_data][currency]=usd"
@@ -520,8 +555,8 @@ class Handler(BaseHTTPRequestHandler):
                 f"&line_items[0][quantity]=1"
                 f"&metadata[credits]=5"
                 f"&metadata[ip]={ip}"
-                f"&success_url=https://instantvideos.org/?paid=1&session_id={{CHECKOUT_SESSION_ID}}"
-                f"&cancel_url=https://instantvideos.org/"
+                f"&success_url={success_url}"
+                f"&cancel_url={cancel_url}"
             )
             try:
                 req = ur.Request("https://api.stripe.com/v1/checkout/sessions",
@@ -605,22 +640,23 @@ class Handler(BaseHTTPRequestHandler):
         parsed = urlparse(self.path)
         if parsed.path == '/generate':
             ip = get_client_ip(self)
-            can_gen, free, paid, msg = check_credits(ip)
+            length = int(self.headers.get('Content-Length', 0))
+            body = self.rfile.read(length).decode()
+            params = parse_qs(body)
+            topic = params.get('topic', [''])[0].strip()
+            fmt = params.get('format', ['long'])[0].strip()
+            override = params.get('admin', [''])[0] == ADMIN_OVERRIDE
+            can_gen, free, paid, msg = check_credits(ip, override)
             if not can_gen:
                 self.send_response(200)
                 self.send_header('Content-Type', 'application/json')
                 self.end_headers()
                 self.wfile.write(json.dumps({
                     "error": "No credits remaining. Get 5 more videos for $1.",
-                    "payment_url": STRIPE_PAYMENT_LINK,
+                    "payment_url": "/checkout",
                 }).encode())
                 return
 
-            length = int(self.headers.get('Content-Length', 0))
-            body = self.rfile.read(length).decode()
-            params = parse_qs(body)
-            topic = params.get('topic', [''])[0].strip()
-            fmt = params.get('format', ['long'])[0].strip()
             if not topic:
                 self.send_response(400)
                 self.send_header('Content-Type', 'application/json')
