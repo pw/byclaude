@@ -1,0 +1,130 @@
+{
+  "title": "Common Ground",
+  "subtitle": "A quiet history of bocce in America · 1880s–2025",
+  "voice": "ballad",
+  "voice_instructions": "Warm, a little wry, genuinely delighted by the small human details — a tailor who just decided to fix something, bikers who write checks for no reason but kindness. Unhurried and conversational, like telling a friend a good story you just found out about. This is a happy history, not a somber one — let real warmth and light amusement show throughout. Small natural pauses at periods. Never grandiose, never a lecture.",
+  "grade": "Desaturated documentary still, spanning Italian and American settings from antiquity through 2025, muted natural color grading, soft and often overcast light, fine film grain, cinematic wide composition, warm and quietly nostalgic rather than grim, no text, no signage, no people, no faces, a single unified scene only — no collage, no split panels, no multiple locations combined in one frame.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In August of 2025, in Rapid City, South Dakota, they broke ground on eight new courts. The game being played on all sixteen, once they're done, is bocce.",
+      "cap": "Rapid City · 2025",
+      "img": "A wide shot of a modern, fully-lit outdoor turf court complex at dusk, distant pine-covered hills silhouetted against a fading sky, empty, quiet, no people"
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Not tennis. Not pickleball. Bocce — a game most Americans still picture in somebody's Italian grandfather's backyard.",
+      "cap": "not what you'd guess",
+      "img": "A modest backyard dirt court behind a small older house, a few wooden bocce balls resting on packed earth, warm late-afternoon light, no people"
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "The game itself is old. Stone balls rolled at a target turn up in Roman-era graves. Italy formalized its own version, with its own rules, in the nineteenth century.",
+      "cap": "older than the country itself",
+      "img": "A weathered ancient stone courtyard with worn round stones scattered on packed earth, soft Mediterranean afternoon light, no people"
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Italian immigrants brought it here, in the great wave between the 1880s and the 1920s. Not as a business. As a way of not losing something.",
+      "cap": "1880s – 1920s",
+      "img": "A modest early-20th-century American backyard with a simple hand-marked dirt court, a laundry line, a small wood-frame house, muted period color, no people"
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "In San Francisco, the courts at Aquatic Park went in as part of a Depression-era public works project — the same one that built the seawall and the promenade around it. Some trace America's oldest bocce club to that same stretch of shoreline.",
+      "cap": "Aquatic Park · WPA, 1936–39",
+      "img": "A wide 1930s-style public waterfront promenade with a curved art-deco concrete seawall, a bay in soft fog beyond, period detail, no people"
+    },
+    {
+      "id": "B06",
+      "vtype": "still",
+      "vo": "Twelve hundred miles inland, in an iron-mining town in northern Minnesota, twenty-five women showed up to a summer picnic in 1944 and never really left the game. They're still the oldest women's bocce league in the country.",
+      "cap": "Chisholm, Minnesota · 1944",
+      "img": "A quiet small-town park in late summer, plain wooden bleachers beside a bare dirt court, tall pines, a distant mining headframe on the horizon, muted color, no people"
+    },
+    {
+      "id": "B07",
+      "vtype": "card",
+      "vo": "Twenty-five women. One picnic. Nineteen forty-four.",
+      "card": { "kind": "bignum", "big": "25", "unit": "women, one picnic", "sub": "Chisholm, Minnesota, 1944" }
+    },
+    {
+      "id": "B08",
+      "vtype": "still",
+      "vo": "By the 1970s, bocce in America was scattered — pockets of players, no shared rules, nobody talking to anybody else.",
+      "cap": "scattered, no rules",
+      "img": "A sunlit, empty urban side-street bocce court between two brick rowhouses, laundry lines strung overhead, quiet, no people"
+    },
+    {
+      "id": "B09",
+      "vtype": "still",
+      "vo": "Then a tailor in Denver decided to fix that.",
+      "cap": "a tailor, decided",
+      "img": "A small, tidy tailor shop interior, a sewing machine, bolts of fabric on shelves, warm afternoon light through a front window, no people"
+    },
+    {
+      "id": "B10",
+      "vtype": "still",
+      "vo": "Chris Gerardo had come to America in 1960, from a small town near Venice. In 1976, behind his own tailor shop, he built four bocce courts. Then he flew to Turin, met with Italy's bocce federation, and came home and founded one of his own.",
+      "cap": "Chris Gerardo · 1976",
+      "img": "A small backyard behind a modest storefront with four narrow packed-dirt lanes marked by string, late-afternoon Denver light, distant mountains, no people"
+    },
+    {
+      "id": "B11",
+      "vtype": "card",
+      "vo": "Four courts, behind a Denver tailor shop. The United States Bocce Federation started right there, in 1976.",
+      "card": { "kind": "bignum", "big": "4", "unit": "courts, behind a Denver tailor shop", "sub": "the United States Bocce Federation started here, 1976" }
+    },
+    {
+      "id": "B12",
+      "vtype": "still",
+      "vo": "Now jump forward, to South Dakota. No historic Italian neighborhood there. No old immigrant club. Just Rapid City, deciding in 2023 to build something.",
+      "cap": "Rapid City · 2023",
+      "img": "A wide empty gravel lot at the edge of a modest city street, a distant pine-covered ridgeline, overcast daylight, no people"
+    },
+    {
+      "id": "B13",
+      "vtype": "still",
+      "vo": "Eight courts, built with Special Olympics South Dakota, on land that used to be an empty lot by the park downtown. The public plays there ninety-five percent of the time. The other five percent belongs to more than six hundred local Special Olympians.",
+      "cap": "95% public · 5% Special Olympics",
+      "img": "A bright new turf court complex with clean white lane markings, distant hills on the horizon, midday light, empty, no people"
+    },
+    {
+      "id": "B14",
+      "vtype": "card",
+      "vo": "More than six hundred Special Olympics athletes, right there in the Rapid City area.",
+      "card": { "kind": "bignum", "big": "600+", "unit": "Special Olympics athletes, Rapid City area", "sub": "the courts are theirs five percent of the time" }
+    },
+    {
+      "id": "B15",
+      "vtype": "still",
+      "vo": "Two years later, they broke ground on eight more. Part of the money came from Rusty Wallace, a retired NASCAR driver. Part came from Rod Woodruff, who runs the Sturgis Buffalo Chip half an hour up the interstate — and from more than a decade of charity motorcycle rides that raised money for Special Olympics South Dakota along the way.",
+      "cap": "NASCAR · Sturgis · 2025",
+      "img": "A wide dusk shot of a rural Black Hills two-lane highway, a few distant motorcycle silhouettes far down the road, pine ridgelines, quiet, no people"
+    },
+    {
+      "id": "B16",
+      "vtype": "card",
+      "vo": "It's just overwhelming. You know, people are generally good.",
+      "card": { "kind": "epigraph", "quote": "It's just overwhelming. You know, people are generally good.", "attribution": "JACK LYNASS, SPECIAL OLYMPICS SOUTH DAKOTA · 2025" }
+    },
+    {
+      "id": "B17",
+      "vtype": "still",
+      "vo": "A stone game from a Roman courtyard. A tailor's backyard in Denver. A WPA seawall in San Francisco. A picnic in an iron-mining town. And now, sixteen lit courts in the Black Hills, paid for partly by bikers who never asked for anything back. Bocce didn't conquer America. It just kept finding common ground.",
+      "cap": "common ground",
+      "img": "A wide dusk shot of a modern lit turf court complex, distant pine hills silhouetted against a fading sky, quiet, no people"
+    },
+    {
+      "id": "B18",
+      "vtype": "card",
+      "vo": "Common Ground. Eighteen eighties to twenty twenty-five. By Claude.",
+      "card": { "kind": "signoff", "head": "Common Ground", "accent": "1880s — 2025", "by": "byclaude.net" }
+    }
+  ]
+}
