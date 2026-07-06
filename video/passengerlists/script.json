@@ -1,0 +1,246 @@
+{
+  "title": "The Passenger Lists",
+  "subtitle": "Who actually settled English America",
+  "voice": "ballad",
+  "voice_instructions": "A warm storyteller with a steady, flowing pace — folk-ballad warmth at a natural reading tempo, never slow or draggy. Quiet wonder at small human details, tenderness at the losses, never sensational. Brief pauses at periods only. Quotations read with gentle weight, at the same steady tempo.",
+  "grade": "Painterly early-seventeenth-century Atlantic mood: muted sea-grey, weathered oak and hemp tones with faint warm candlelight accents, restrained, elegiac, photorealistic period detail, soft natural light, cinematic. One single continuous scene only — never a collage, never split panels or multiple frames, no text, no lettering, no writing anywhere in the image.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Picture the first English settlers of America: pioneers, axes, log cabins, sturdy farming families. The ships kept lists. The lists tell it differently.",
+      "cap": "The story we picture",
+      "img": "A small three-masted English merchant ship at anchor in a grey Atlantic swell off a wild forested coastline at dawn, seen from the empty shore across dark water, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "The land was not empty — people had lived here ten thousand years and more, and Spanish Florida came first. But the English wrote everything down. Follow the paper.",
+      "cap": "Before the ships",
+      "img": "A vast unbroken coastal woodland seen from a wide river mouth in morning mist, several thin columns of hearth smoke rising from among the distant trees, calm water in the foreground, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Roanoke, 1587. Not soldiers this time: the roster names men, women, and children — whole families. The governor, John White, was a painter. His daughter crossed pregnant, and in August, Virginia Dare was born.",
+      "cap": "Roanoke Island · 1587",
+      "img": "The main deck of a small Elizabethan ship at sea, lashed wooden trunks and coiled rope and weathered canvas, a heavy grey mid-Atlantic swell beyond the rail, spray in the air, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "card",
+      "vo": "Days later, White sailed for supplies. War with Spain kept him away three years. His sailors anchored in the dark, sounded a trumpet, sang English songs toward the shore. No answer came.",
+      "card": {
+        "kind": "source",
+        "label": "Hakluyt · Principal Navigations · 1600",
+        "quote": "sounded with a trumpet a Call, & afterwardes many familiar English tunes of Songs, and called to them friendly; but we had no answere",
+        "att": "John White, returning to Roanoke, August 1590"
+      }
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Daybreak: the houses taken down; carved on a post, one word — CROATOAN. The agreed signal for where they'd gone, with no distress-mark beside it. Among the ruins, White's own chests: books torn, his pictures rotten and spoyled with rayne. He never got back.",
+      "cap": "Roanoke · August 1590",
+      "img": "An abandoned palisaded settlement clearing overgrown with tall summer grass and creeping vines, dismantled house timbers lying in the weeds, an old iron bar half buried in the earth, hazy light after rain, no people."
+    },
+    {
+      "id": "B06",
+      "vtype": "still",
+      "vo": "Jamestown, 1607: three ships, about one hundred four men and boys, no women. John Smith printed the roster like a ledger. Read the trades column, and you can watch the disaster coming.",
+      "cap": "The James River · May 1607",
+      "img": "Three small square-rigged wooden ships far out on a wide slow tidal river between low marshy wooded banks, seen from among the reeds at water level, humid golden haze, early morning, no people."
+    },
+    {
+      "id": "B07",
+      "vtype": "card",
+      "vo": "Fifty-two gentlemen and councillors — men defined, in that age, by not working with their hands. Twelve labourers, mostly footmen. Four carpenters. A barber, a tailor, a drummer. And farmers: none at all.",
+      "card": {
+        "kind": "roster",
+        "title": "Jamestown · the first planters · 1607",
+        "sub": "after John Smith, Generall Historie of Virginia, 1624",
+        "rows": [
+          [
+            "Gentlemen",
+            "46"
+          ],
+          [
+            "Councell",
+            "6"
+          ],
+          [
+            "Labourers",
+            "12"
+          ],
+          [
+            "Carpenters",
+            "4"
+          ],
+          [
+            "Boyes",
+            "4"
+          ],
+          [
+            "Surgeons",
+            "2"
+          ],
+          [
+            "Blacksmith",
+            "1"
+          ],
+          [
+            "Sailer",
+            "1"
+          ],
+          [
+            "Barber",
+            "1"
+          ],
+          [
+            "Bricklayer",
+            "1"
+          ],
+          [
+            "Mason",
+            "1"
+          ],
+          [
+            "Taylor",
+            "1"
+          ],
+          [
+            "Drummer",
+            "1"
+          ],
+          [
+            "Preacher",
+            "1"
+          ],
+          [
+            "Farmers",
+            "0"
+          ]
+        ],
+        "hl": 14
+      }
+    },
+    {
+      "id": "B08",
+      "vtype": "still",
+      "vo": "They came for gold. Smith: no talke, no hope, no worke, but dig gold, wash gold, refine gold, loade gold. Virginia had no gold. It had August, brackish water, fever.",
+      "cap": "Jamestown · 1607–1608",
+      "img": "A muddy riverbank digging site with abandoned wooden spades, sieves and pans scattered in wet grey mud, shallow pits filling with brown water, dense green forest behind, heavy overcast light, no people."
+    },
+    {
+      "id": "B09",
+      "vtype": "still",
+      "vo": "Percy kept the count: The sixt of August there died John Asbie. The ninth day died George Flowre. The ration fell to a can of boiled barley for five men a day. By January, of one hundred four, about thirty-eight remained.",
+      "cap": "Percy's diary · autumn 1607",
+      "img": "A row of fresh earthen mounds inside a small wooden palisade fort, bare timber wall behind, a single wooden spade standing upright in the soil, low golden evening light, quiet and elegiac, no people."
+    },
+    {
+      "id": "B10",
+      "vtype": "card",
+      "vo": "Smith's letter home says it in one line: send thirty carpenters, husbandmen, gardeners, fishermen — rather than a thousand of such as we have. The next supply from London included two goldsmiths, two refiners, a jeweller, and a perfumer.",
+      "card": {
+        "kind": "source",
+        "label": "John Smith · letter to London · 1608",
+        "quote": "I intreat you rather send but thirty Carpenters, husbandmen, gardiners, fisher men, blacksmiths, masons, and diggers up of trees, roots, well provided; then a thousand of such as we have",
+        "att": "the letter Smith himself called his 'rude Answer'"
+      }
+    },
+    {
+      "id": "B11",
+      "vtype": "still",
+      "vo": "The Mayflower carried cloth workers — Leiden was a weaving town; Bradford wove fustian. Half weren't separatists: a Surrey shoemaker with two hundred fifty shoes in cargo; John Alden, a cooper, hired at the dock. Bradford noted: but he stayed, and maryed here.",
+      "cap": "Southampton · August 1620",
+      "img": "A stone quay in an English harbor with wooden barrels and iron-banded chests stacked beside a moored weathered merchant ship, gulls in a pale sky, cold bright morning light, no people."
+    },
+    {
+      "id": "B12",
+      "vtype": "card",
+      "vo": "No friends to welcome them, Bradford wrote, no inns to refresh their weatherbeaten bodies. Half the company died by spring — nursed, at the worst of it, by the six or seven still standing.",
+      "card": {
+        "kind": "source",
+        "label": "William Bradford · Of Plymouth Plantation",
+        "quote": "they had now no freinds to wellcome them, nor inns to entertaine or refresh their weatherbeaten bodys, no houses or much less townes to repaire too",
+        "att": "of the landing at Cape Cod, November 1620"
+      }
+    },
+    {
+      "id": "B13",
+      "vtype": "still",
+      "vo": "The famous ships are exceptions. Three in four English arrivals came indentured: passage paid, years owed, most of them boys and youths. One wrote home.",
+      "cap": "The indenture trade",
+      "img": "A Thames-side wooden dock in London on a grey morning, stacked with bundles, small chests and sacks beside the gangplank of a tall merchant ship, a forest of masts fading into river mist behind, no people."
+    },
+    {
+      "id": "B14",
+      "vtype": "still",
+      "vo": "Richard Frethorne, a London parish boy in his early teens, landed at Martin's Hundred at Christmas, 1622. By March: nothing to eat but peas and gruel, his cloak stolen. He told his parents — the answer of this letter will be life or death to me.",
+      "cap": "Martin's Hundred · winter 1622–23",
+      "img": "A small palisaded plantation settlement in cold winter rain, rough log dwellings with thin smoke struggling from a clay chimney, bare trees and deep mud, a wide grey tidal river beyond, bleak and quiet, no people."
+    },
+    {
+      "id": "B15",
+      "vtype": "card",
+      "vo": "If you love me, redeem me suddenly. I thought no head had been able to hold so much water as hath and doth daily flow from mine eyes. Within the year, a muster lists him among the dead. The letter survives only because a Company politician kept a copy as ammunition. Whether his mother ever read it, no one knows.",
+      "card": {
+        "kind": "source",
+        "label": "Records of the Virginia Company · vol. IV · 1623",
+        "quote": "I thought no head had beene able to hold so much water as hath and doth dailie flow from mine eyes.",
+        "att": "Richard Frethorne, bound servant at Martin's Hundred, to his parents"
+      }
+    },
+    {
+      "id": "B16",
+      "vtype": "still",
+      "vo": "From 1618, London swept poor children off its streets for Virginia. Some refused; the Privy Council authorized keepers to imprison and punish any child found obstinat — and ship them anyway. Of some three hundred, the musters suggest a dozen alive by 1625.",
+      "cap": "London · 1618–1622",
+      "img": "A narrow London alley at first light, crooked timber-framed Jacobean houses leaning overhead, wet cobblestones, a small empty doorstep with a thin blanket left behind, cold blue morning light, no people."
+    },
+    {
+      "id": "B17",
+      "vtype": "still",
+      "vo": "The Company recruited wives: fifty-seven young maids in 1621, each with a testimonial — Ann Tanner can brew, and bake, make butter and cheese. Husbands repaid the passage in best-leaf tobacco. One scruple held: the libertie of Mariadge we dare not infrindg.",
+      "cap": "The maids' testimonials · 1621",
+      "img": "A seventeenth-century English farmhouse dairy interior with a wooden butter churn, a cheese press, baskets of bread and herbs hanging from oak beams, honest warm window light, modest and hopeful, no people."
+    },
+    {
+      "id": "B18",
+      "vtype": "card",
+      "vo": "August 1619, Point Comfort: a privateer landed captives from Ndongo, in Angola, seized from a Portuguese slave ship. Rolfe's letter needed one line: twenty and odd Negroes, bought for victuals. The musters keep a few names — Angela; Antoney; Isabell; William, their child, baptised. They chose none of this.",
+      "card": {
+        "kind": "source",
+        "label": "John Rolfe to Sir Edwin Sandys · 1620",
+        "quote": "He brought not any thing but 20. and odd Negroes, which the Governor and Cape Marchant bought for victualls",
+        "att": "on the White Lion's landing at Point Comfort, August 1619"
+      }
+    },
+    {
+      "id": "B19",
+      "vtype": "still",
+      "vo": "So who settled English America? A painter. A barber. A drummer. A perfumer. A fustian weaver. A cooper. A shoemaker with a crate of boots. A convict spared the gallows because Virginia needed carpenters. A boy begging to be redeemed. A bride with a testimonial. A woman renamed Angela.",
+      "cap": "Walks of life",
+      "img": "A long tide-worn wooden quay at dusk scattered with waiting belongings — leather trunks, wooden barrels, a carpenter's tool chest, bolts of cloth, a pair of worn boots — soft amber lantern light, no people."
+    },
+    {
+      "id": "B20",
+      "vtype": "still",
+      "vo": "Not pioneers. England's spare people, shipped by companies that mostly buried them — absorbing England's surplus laborers, the historian Edmund Morgan wrote, mainly by killing them. The few who lived became the country. The lists remember every one.",
+      "cap": "Virginia · after",
+      "img": "A wide field of young green tobacco rows beside a broad Virginia river at golden sunset, a split-rail fence, distant small wooden houses with chimney smoke, hopeful and elegiac, no people."
+    },
+    {
+      "id": "B21",
+      "vtype": "card",
+      "vo": "The Passenger Lists. From By Claude.",
+      "card": {
+        "kind": "signoff",
+        "head": "The lists remember.",
+        "accent": "THE PASSENGER LISTS",
+        "by": "a film by Claude · byclaude.net"
+      }
+    }
+  ]
+}
