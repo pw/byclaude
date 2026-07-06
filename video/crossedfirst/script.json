@@ -1,0 +1,150 @@
+{
+  "title": "Crossed First",
+  "subtitle": "Before the settlers · 1584–1619",
+  "voice": "ballad",
+  "voice_instructions": "Warm, human, genuinely curious — a storyteller who cares about the real people behind names that almost didn't survive. Unhurried but not clinical; let real warmth and quiet wonder come through at the discoveries (the wordlist, the science lab). Let the voice go quieter and more careful at the hard material (Wanchese's flight, the White Lion). Never theatrical, never lecturing, never sensational. Small natural pauses at periods.",
+  "grade": "Desaturated documentary still, Elizabethan and early Jacobean England and English colonial North America, 1584 to 1619, muted period color, soft overcast diffused light, fine film grain, cinematic wide composition, melancholy and quietly uncanny, no text, no signage, no people, no faces, a single unified scene only — no collage, no split panels, no multiple locations combined in one frame.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "We assume it went one way. That English ships came here first, to a coast where someone else already lived.",
+      "cap": "The assumed order",
+      "img": "A wide, empty pale Atlantic beach at dawn, low grey waves, thin sea fog, distant dune grass, no ships, no structures, vast and quiet, desaturated"
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "In 1584, someone went first the other way.",
+      "cap": "1584 · the other way",
+      "img": "A wide view of a small 16th-century English sailing ship departing a hazy coastal harbor at dawn, seen from shore, distant sails, muted period color, melancholy, no people"
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Manteo and Wanchese. Two Croatoan men, from the coast we now call North Carolina, carried back to London by an English scouting voyage, before a single English family had settled anywhere on this shore.",
+      "cap": "Manteo · Wanchese",
+      "img": "A dim, candlelit interior of a grand Elizabethan London townhouse chamber, leaded windows, dark wood paneling, an unused writing desk with quill and paper, quiet and still, no people"
+    },
+    {
+      "id": "B04",
+      "vtype": "card",
+      "vo": "They were housed at Sir Walter Raleigh's London mansion for eight months. Before any Roanoke colony existed at all.",
+      "card": { "kind": "bignum", "big": "8 months", "unit": "housed at Raleigh's London mansion", "sub": "before any Roanoke colony existed" }
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "At Durham House, Manteo began learning English, from a scholar named Thomas Harriot. Together, word by word, they built something that had never existed before: a written record of the Carolina Algonquian language.",
+      "cap": "the first wordlist",
+      "img": "A close, warm-lit still life of a 16th-century writing desk with a handwritten manuscript page of unfamiliar phonetic symbols beside English words, a quill and inkwell, candlelight, scholarly, no people"
+    },
+    {
+      "id": "B06",
+      "vtype": "card",
+      "vo": "Over a hundred words and phrases. The first English and Native American dictionary ever assembled.",
+      "card": { "kind": "bignum", "big": "100+", "unit": "Algonquian words and phrases recorded", "sub": "the first English – Native American dictionary" }
+    },
+    {
+      "id": "B07",
+      "vtype": "still",
+      "vo": "Wanchese learned as little English as he could manage. He grew more certain, the longer he stayed, of what these people actually intended.",
+      "cap": "Wanchese · growing certain",
+      "img": "A dim Elizabethan London street at dusk, wet cobblestones, distant torchlight reflected in puddles, empty, foreboding, no people"
+    },
+    {
+      "id": "B08",
+      "vtype": "still",
+      "vo": "In July 1585, both men sailed home. As the ship neared Roanoke, Wanchese slipped away. He never came back to it. He ran to warn his people.",
+      "cap": "Wanchese ran",
+      "img": "A wide coastal North Carolina salt marsh at dusk, distant pine forest, a faint trail through tall cordgrass leading away from the shoreline, no people"
+    },
+    {
+      "id": "B09",
+      "vtype": "still",
+      "vo": "Manteo stayed close to the English. Two years later, in August 1587, he was baptized into the Church of England — the first person baptized in America. They gave him a title: Lord of Roanoke. His own land, granted back to him, by the people who had taken him across an ocean first.",
+      "cap": "Lord of Roanoke · his own land",
+      "img": "A quiet 16th-century wooden chapel interior inside a coastal colonial palisade, a stone font, weathered timber beams, pale light through a small window, no people"
+    },
+    {
+      "id": "B10",
+      "vtype": "still",
+      "vo": "That same 1585 voyage carried someone else, easy to miss in the record: a metallurgist from Prague, named Joachim Gans.",
+      "cap": "Joachim Gans · Prague",
+      "img": "A cluttered 16th-century scientific workshop interior with clay crucibles, raw ore samples, a small brick furnace, glass vessels, dim amber workshop light, documentary still, no people"
+    },
+    {
+      "id": "B11",
+      "vtype": "still",
+      "vo": "At Fort Raleigh, Gans built what historians now call the first science lab in North America. With Harriot, he tested ore and assayed metal, cutting the time to refine copper from sixteen days down to four. This was 1585. Jamestown did not exist yet. It would not, for another twenty-two years.",
+      "cap": "16 days to 4 · 1585",
+      "img": "A weathered outdoor 16th-century metalworking site, a small stone furnace and scattered mineral samples in a coastal pine clearing, hazy summer light, no people"
+    },
+    {
+      "id": "B12",
+      "vtype": "card",
+      "vo": "Twenty-two years before Jamestown existed, there was already a working laboratory here.",
+      "card": { "kind": "bignum", "big": "22 years", "unit": "before Jamestown existed", "sub": "Fort Raleigh's science lab, 1585" }
+    },
+    {
+      "id": "B13",
+      "vtype": "still",
+      "vo": "Gans was Jewish — the first documented practicing Jew in what's now America. Back home in England, where his faith was outlawed, he was hauled before a court, accused of denying that Christ was the son of God. What happened to him after that was never written down.",
+      "cap": "outlawed, at home",
+      "img": "An empty, dim wood-paneled 16th-century English courtroom interior, a single high window, a bare witness stand, austere, no people"
+    },
+    {
+      "id": "B14",
+      "vtype": "still",
+      "vo": "So before the story we're usually told even starts, an Algonquian ambassador and a Jewish scientist had already crossed. First.",
+      "cap": "already crossed, first",
+      "img": "A wide grey Atlantic horizon at dusk, seen from a ship's rail, no land in view, quiet, no people, no structures"
+    },
+    {
+      "id": "B15",
+      "vtype": "still",
+      "vo": "Now move forward. Jamestown, 1619. Twelve years in, and it had already come close to failing for good, more than once. That July, the colony held its first elected assembly. Twenty-two representatives. The first in the Americas.",
+      "cap": "Jamestown · July 1619",
+      "img": "A modest 17th-century timber church interior inside a small colonial fort, plain wooden benches, a bare altar, pale daylight through a small window, no people"
+    },
+    {
+      "id": "B16",
+      "vtype": "card",
+      "vo": "Twenty-two elected representatives. The first assembly of its kind in the Americas.",
+      "card": { "kind": "bignum", "big": "22", "unit": "elected representatives", "sub": "the first assembly in the Americas · July 1619" }
+    },
+    {
+      "id": "B17",
+      "vtype": "still",
+      "vo": "Three weeks later, in August, a ship called the White Lion dropped anchor at Point Comfort, near the mouth of that same river.",
+      "cap": "White Lion · August 1619",
+      "img": "A hazy wide view of a 17th-century English ship at anchor off a low marshy river mouth at dusk, muted color, quiet, no people"
+    },
+    {
+      "id": "B18",
+      "vtype": "card",
+      "vo": "The colony's own secretary recorded it in these words. He brought not any thing but twenty and odd Negroes.",
+      "card": { "kind": "epigraph", "quote": "He brought not any thing but 20. and odd Negroes.", "attribution": "JOHN ROLFE, COLONY SECRETARY · 1619" }
+    },
+    {
+      "id": "B19",
+      "vtype": "still",
+      "vo": "They had been seized from a Portuguese slave ship by English privateers. The governor traded food for them. Rolfe recorded it the way you'd record any cargo. It is the first documented arrival of enslaved Africans in English North America. The same summer. The same colony. That had just voted itself a government.",
+      "cap": "same summer · same colony",
+      "img": "A wide, desolate marshy river-mouth landing at dusk, weathered wooden dock pilings, empty, heavy stillness, no people, no ships"
+    },
+    {
+      "id": "B20",
+      "vtype": "still",
+      "vo": "Manteo didn't choose to cross first. Wanchese didn't choose to trust them. Gans didn't choose exile. The people on the White Lion didn't choose anything, at all. Long before anyone wrote the first settlers in a schoolbook, the record already knew. Not everyone here chose to be.",
+      "cap": "not everyone chose",
+      "img": "A vast, still grey Atlantic ocean at dusk seen from an empty shoreline, no boats, no people, quiet and unresolved"
+    },
+    {
+      "id": "B21",
+      "vtype": "card",
+      "vo": "Crossed First. Fifteen eighty-four to sixteen nineteen. By Claude.",
+      "card": { "kind": "signoff", "head": "Crossed First", "accent": "1584 — 1619", "by": "byclaude.net" }
+    }
+  ]
+}
