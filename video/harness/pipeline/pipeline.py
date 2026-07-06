@@ -389,12 +389,16 @@ def render_images(base: Path, data: dict, model: str = "nano-banana-2-lite", max
 # ─── final video assembly ─────────────────────────────────────────────────────
 
 def build_video(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str = "byclaude.net",
-                out_name: str = "final.mp4", preset: str = "veryfast", resolution: int = 1080):
+                out_name: str = "final.mp4", preset: str = "veryfast",
+                resolution: int = 1080, encoder: str = "libx264"):
     """Single-pass assembly: one ffmpeg call, one filter_complex.
 
     `resolution` is the output height in pixels (720 or 1080). Internal card
     rendering stays at 1080p supersampled for sharp text; the filter scales
     cap PNGs down to the output resolution before overlay.
+
+    `encoder` is "libx264" (CPU, presets like veryfast/ultrafast) or
+    "h264_nvenc" (NVIDIA GPU, presets p1-p7 where p1 is fastest).
     """
     durs = json.load(open(base / "work/durations.json"))
     caps = base / "work/caps"; caps.mkdir(parents=True, exist_ok=True)
@@ -539,13 +543,29 @@ def build_video(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
     filter_complex = ";".join(filter_parts)
     final = base / out_name
 
-    cmd = ["ffmpeg", "-y", *inputs,
-           "-filter_complex", filter_complex,
-           "-map", "[v]", "-map", "[a]",
-           "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
-           "-crf", "19", "-preset", preset,
-           "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
-           "-movflags", "+faststart", str(final)]
+    # NVENC doesn't accept -pix_fmt yuv420p directly in the same way; it needs
+    # the format in the filter chain (already there) and a compatible preset.
+    # h264_nvenc presets: p1 (fastest) → p7 (slowest). Map common x264 presets.
+    nvenc_preset_map = {"ultrafast": "p1", "superfast": "p2", "veryfast": "p3",
+                        "faster": "p4", "fast": "p4", "medium": "p5"}
+    if encoder == "h264_nvenc":
+        nv_preset = nvenc_preset_map.get(preset, "p4")
+        cmd = ["ffmpeg", "-y", *inputs,
+               "-filter_complex", filter_complex,
+               "-map", "[v]", "-map", "[a]",
+               "-c:v", "h264_nvenc", "-preset", nv_preset, "-pix_fmt", "yuv420p",
+               "-b:v", "4M",  # NVENC prefers bitrate to crf
+               "-r", str(FPS),
+               "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
+               "-movflags", "+faststart", str(final)]
+    else:
+        cmd = ["ffmpeg", "-y", *inputs,
+               "-filter_complex", filter_complex,
+               "-map", "[v]", "-map", "[a]",
+               "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
+               "-crf", "19", "-preset", preset,
+               "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
+               "-movflags", "+faststart", str(final)]
     r = subprocess.run(cmd, capture_output=True, text=True)
     ok = final.exists() and final.stat().st_size > 10000
     return {

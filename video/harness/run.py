@@ -66,6 +66,7 @@ def main():
     ap.add_argument("--preset", default="veryfast",
                     choices=["ultrafast", "superfast", "veryfast", "faster", "fast", "medium"])
     ap.add_argument("--resolution", type=int, default=1080, choices=[720, 1080])
+    ap.add_argument("--encoder", default="libx264", choices=["libx264", "h264_nvenc"])
     ap.add_argument("--register", default="documentary, measured, unhurried, lets facts carry the weight")
     ap.add_argument("--voice", default="onyx")
     ap.add_argument("--grade", default="")
@@ -119,7 +120,8 @@ def main():
 
     # ── Phase 3: video assembly ─────────────────────────────────────────────
     vid_t = P.build_video(workdir, script, args.kicker, args.mark, args.out_name,
-                          preset=args.preset, resolution=args.resolution)
+                          preset=args.preset, resolution=args.resolution,
+                          encoder=args.encoder)
 
     overall_dt = time.time() - overall_t0
 
