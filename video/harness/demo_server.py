@@ -4,10 +4,13 @@
 Type a topic → get a short documentary video. Shows live progress.
 
 Features:
-- Per-IP rate limiting: 1 free video, then Stripe checkout for more
-- Credit tracking via SQLite
-- Stripe payment verification on return
+- Free mode (IV_FREE_MODE=1, default): unlimited videos for everyone.
+  Flip to 0 to re-enable the paywall (1 free per IP, then Stripe).
+- Per-IP credit tracking via SQLite (kept even in free mode so the paywall
+  can come back without losing state)
+- Stripe checkout + payment verification on return
 - Video persistence via R2 upload (optional)
+- Graceful failure messages when an upstream AI provider runs out of quota
 - ThreadingHTTPServer for concurrent requests
 
 Usage: python3 demo_server.py [--port 8080]
@@ -66,26 +69,41 @@ def get_client_ip(handler):
 
 
 ADMIN_OVERRIDE = os.environ.get("IV_ADMIN_KEY", "pw")  # ?admin=pw bypasses credit limit
+# Free mode: anyone can generate as many videos as they like. Defaults to ON
+# — this instance's whole purpose is the Show HN launch, so free-by-default
+# means a reboot (which would wipe /tmp/vh-env.conf) can't silently re-paywall
+# the site. To re-enable the paywall after the launch: set IV_FREE_MODE=0 in
+# /tmp/vh-env.conf (or a persistent env file) and restart vh-demo.service.
+# The underlying credit rows are kept either way so paid users keep credits.
+FREE_MODE = os.environ.get("IV_FREE_MODE", "1") == "1"
+
+
 def check_credits(ip, override=False):
-    """Returns (can_generate, remaining_free, paid_credits, message)."""
+    """Returns (can_generate, remaining_free, paid_credits, message, mode)."""
     if override:
-        return (True, 999, 999, "admin mode — unlimited")
+        return (True, 999, 999, "admin mode — unlimited", "admin")
+    if FREE_MODE:
+        return (True, 999, 0, "Free during launch — try as many as you like", "free")
     conn = get_db()
     row = conn.execute("SELECT free_used, paid_credits FROM credits WHERE ip=?", (ip,)).fetchone()
     conn.close()
     if not row:
-        return (True, 1, 0, "1 free video remaining")
+        return (True, 1, 0, "1 free video remaining", "paid")
     free_used, paid = row
     free_remaining = max(0, 1 - free_used)
     if free_remaining > 0:
-        return (True, free_remaining, paid, f"{free_remaining} free video remaining")
+        return (True, free_remaining, paid, f"{free_remaining} free video remaining", "paid")
     if paid > 0:
-        return (True, 0, paid, f"{paid} paid credits remaining")
-    return (False, 0, 0, "No credits remaining — buy more for $1")
+        return (True, 0, paid, f"{paid} paid credits remaining", "paid")
+    return (False, 0, 0, "No credits remaining — buy more for $1", "paid")
 
 
 def use_credit(ip):
-    """Consume one credit (free first, then paid). Returns True if granted."""
+    """Consume one credit (free first, then paid). Returns True if granted.
+    No-op in free mode — we don't debit rows so the paywall can come back clean.
+    """
+    if FREE_MODE:
+        return True
     conn = get_db()
     row = conn.execute("SELECT free_used, paid_credits FROM credits WHERE ip=?", (ip,)).fetchone()
     if not row:
@@ -106,6 +124,34 @@ def use_credit(ip):
         return True
     conn.close()
     return False
+
+
+def detect_failure(log_lines):
+    """Look at the accumulated pipeline log and return a user-facing message
+    if we recognize an upstream-exhaustion signature, else None (caller falls
+    back to a generic message).
+
+    Known failure shapes:
+    - OpenAI TTS quota:                "insufficient_quota", 429 from openai
+    - Gemini image quota:              429 from generativelanguage.googleapis.com
+    - kie.ai balance exhausted:        "No task ID returned", /v1/chat/credit
+    - Anthropic / Fireworks LLM quota: 429 + anthropic|fireworks, "gen_script.py failed"
+    - LLM returned bad JSON:          "model returned invalid JSON"
+    """
+    joined = "\n".join(log_lines).lower()
+    if "insufficient_quota" in joined:
+        return "Our audio credits just ran out — we're topping up now. Please try again in a few minutes."
+    if "429" in joined and ("openai" in joined or "gpt-4o" in joined or "audio/speech" in joined):
+        return "Our audio credits just ran out — we're topping up now. Please try again in a few minutes."
+    if "429" in joined and ("generativelanguage.googleapis.com" in joined or "gemini" in joined):
+        return "Our image credits just ran out — we're topping up now. Please try again in a few minutes."
+    if "no task id" in joined or ("kie.ai" in joined and ("balance" in joined or "credit" in joined)):
+        return "Our image credits just ran out — we're topping up now. Please try again in a few minutes."
+    if "gen_script.py failed" in joined or "model returned invalid json" in joined:
+        return "Our story-writing AI hit a capacity limit. Please try again in a moment."
+    if "anthropic_error" in joined or ("429" in joined and ("anthropic" in joined or "fireworks" in joined)):
+        return "Our story-writing AI hit a capacity limit. Please try again in a moment."
+    return None
 
 
 def grant_credits(ip, n=5, session_id=""):
@@ -278,9 +324,10 @@ async function updateCredits() {
   const resp = await fetch('/credits' + (adminKey ? '?admin=' + encodeURIComponent(adminKey) : ''));
   const data = await resp.json();
   const bar = document.getElementById('credits-bar');
-  let buyLink = '<a href="/checkout" target="_blank" style="color:#f2a93b;font-weight:600">Get 5 more for $1</a>';
-  if (data.can_generate && data.free_remaining > 900) {
-    bar.innerHTML = '<span style="color:#4ade80">admin mode — unlimited</span>';
+  const buyLink = '<a href="/checkout" target="_blank" style="color:#f2a93b;font-weight:600">Get 5 more for $1</a>';
+  if (data.mode === 'free' || data.mode === 'admin') {
+    // launch / admin — wide open. No paywall CTAs.
+    bar.innerHTML = '<span style="color:#4ade80">' + data.message + '</span>';
   } else if (data.can_generate && data.free_remaining > 0) {
     bar.innerHTML = data.free_remaining + ' free video remaining · ' + buyLink;
   } else if (data.can_generate) {
@@ -436,6 +483,7 @@ def run_pipeline(job_id, topic, fmt="long"):
             job["log"].append(line)
 
     proc.wait()
+    exit_code = proc.returncode
     final = workdir / "final.mp4"
     if final.exists() and final.stat().st_size > 10000:
         with LOCK:
@@ -449,9 +497,13 @@ def run_pipeline(job_id, topic, fmt="long"):
             job["cost"] = f"{s.get('total_cost_usd', 0):.2f}"
             job["format"] = s.get("format", "long")
     else:
+        # scan the pipeline log for a known upstream-exhaustion signature;
+        # if we find one, surface a friendly message instead of generic.
+        with LOCK:
+            detected = detect_failure(job["log"])
         with LOCK:
             job["status"] = "error"
-            job["error"] = "Video build failed — check log"
+            job["error"] = detected or f"Video build failed (pipeline exit {exit_code}) — please try again."
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -523,7 +575,7 @@ class Handler(BaseHTTPRequestHandler):
             ip = get_client_ip(self)
             params = parse_qs(parsed.query)
             override = params.get('admin', [''])[0] == ADMIN_OVERRIDE
-            can_gen, free, paid, msg = check_credits(ip, override)
+            can_gen, free, paid, msg, mode = check_credits(ip, override)
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
@@ -532,8 +584,9 @@ class Handler(BaseHTTPRequestHandler):
                 "free_remaining": free,
                 "paid_credits": paid,
                 "message": msg,
-        "payment_url": "/checkout",
-    }).encode())
+                "mode": mode,
+                "payment_url": "/checkout",
+            }).encode())
 
         elif parsed.path == '/checkout':
             # create a Stripe Checkout Session with the user's IP as metadata
@@ -646,7 +699,7 @@ class Handler(BaseHTTPRequestHandler):
             topic = params.get('topic', [''])[0].strip()
             fmt = params.get('format', ['long'])[0].strip()
             override = params.get('admin', [''])[0] == ADMIN_OVERRIDE
-            can_gen, free, paid, msg = check_credits(ip, override)
+            can_gen, free, paid, msg, mode = check_credits(ip, override)
             if not can_gen:
                 self.send_response(200)
                 self.send_header('Content-Type', 'application/json')
