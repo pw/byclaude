@@ -67,6 +67,10 @@ def main():
                     choices=["ultrafast", "superfast", "veryfast", "faster", "fast", "medium"])
     ap.add_argument("--resolution", type=int, default=1080, choices=[720, 1080])
     ap.add_argument("--encoder", default="libx264", choices=["libx264", "h264_nvenc"])
+    ap.add_argument("--mode", default="single", choices=["single", "perclip"],
+                    help="single=one ffmpeg filtergraph; perclip=N parallel ffmpegs + concat copy")
+    ap.add_argument("--max-workers", type=int, default=18,
+                    help="per-clip mode: parallel ffmpeg count (default = N_beats)")
     ap.add_argument("--register", default="documentary, measured, unhurried, lets facts carry the weight")
     ap.add_argument("--voice", default="onyx")
     ap.add_argument("--grade", default="")
@@ -119,9 +123,14 @@ def main():
         print(f"[run] WARN: {len(imgs_t['failures'])} image failures: {imgs_t['failures']}", flush=True)
 
     # ── Phase 3: video assembly ─────────────────────────────────────────────
-    vid_t = P.build_video(workdir, script, args.kicker, args.mark, args.out_name,
-                          preset=args.preset, resolution=args.resolution,
-                          encoder=args.encoder)
+    if args.mode == "perclip":
+        vid_t = P.build_video_per_clip(workdir, script, args.kicker, args.mark, args.out_name,
+                                       preset=args.preset, resolution=args.resolution,
+                                       encoder=args.encoder, max_workers=args.max_workers)
+    else:
+        vid_t = P.build_video(workdir, script, args.kicker, args.mark, args.out_name,
+                              preset=args.preset, resolution=args.resolution,
+                              encoder=args.encoder)
 
     overall_dt = time.time() - overall_t0
 

@@ -386,6 +386,154 @@ def render_images(base: Path, data: dict, model: str = "nano-banana-2-lite", max
     }
 
 
+def build_video_per_clip(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str = "byclaude.net",
+                         out_name: str = "final.mp4", preset: str = "veryfast",
+                         resolution: int = 1080, encoder: str = "libx264",
+                         max_workers: int = 18):
+    """Per-clip rendering: each beat → its own mp4 (parallel), then concat.
+
+    Scales linearly up to N_beats parallel ffmpegs. On a many-core box this
+    can be faster than single-filter (which is limited by filtergraph thread
+    ceiling ~N_beats+8). Uses -c copy concat (no re-encode) + a separate
+    loudnorm/fade audio pass.
+    """
+    durs = json.load(open(base / "work/durations.json"))
+    clips = base / "clips"; clips.mkdir(parents=True, exist_ok=True)
+    caps = base / "work/caps"; caps.mkdir(parents=True, exist_ok=True)
+    (base / "work").mkdir(parents=True, exist_ok=True)
+    FPS = 30; TAIL = 0.5
+    OUT_W, OUT_H = (1920, 1080) if resolution == 1080 else (1280, 720)
+    beats = data["beats"]
+    t0 = time.time()
+
+    def asset(b):
+        if b["vtype"] == "still": return base / "images" / f"{b['id']}.png"
+        return base / "work" / f"{b['id']}.png"
+
+    def render_caption(b):
+        if b["vtype"] != "still": return None
+        text = b.get("cap")
+        if not text: return None
+        img = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
+        y0 = int(H * 0.58)
+        for y in range(y0, H):
+            a = int(205 * ((y - y0) / (H - y0)) ** 1.35)
+            d.line([(0, y), (W, y)], fill=(4, 6, 9, a))
+        kf = MONOSB(15)
+        d.rectangle([60 * S, 58 * S, 60 * S + 12 * S, 58 * S + 12 * S], fill=ACCENT)
+        _tracked(d, 84 * S, 55 * S, kicker.upper(), kf, MUTE, 3)
+        bf = MONO(15)
+        d.text((W - 60 * S - d.textlength(mark, font=bf), H - 74 * S), mark, font=bf, fill=DIM)
+        f = MED(42)
+        lines = _wrap(d, text, f, int(W * 0.80))
+        lh = _line_h(f) + 8 * S
+        th = lh * len(lines)
+        ty = int(H * 0.90) - th
+        cx = W // 2
+        d.rectangle([cx - 34 * S, ty - 30 * S, cx + 34 * S, ty - 26 * S], fill=ACCENT)
+        for ln in lines:
+            d.text((cx, ty), ln, font=f, fill=(238, 241, 246), anchor="ma"); ty += lh
+        out = caps / f"{b['id']}.png"
+        img.resize((1920, 1080), Image.LANCZOS).save(out)
+        return out
+
+    # render caps
+    cap_paths = {}
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        futs = {ex.submit(render_caption, b): b["id"] for b in beats}
+        for f in futs:
+            bid = futs[f]; p = f.result()
+            if p: cap_paths[bid] = p
+
+    nvenc_preset_map = {"ultrafast": "p1", "superfast": "p2", "veryfast": "p3",
+                        "faster": "p4", "fast": "p4", "medium": "p5"}
+    use_nvenc = encoder == "h264_nvenc"
+
+    def build_clip(args):
+        idx, b = args
+        bid = b["id"]; dur = durs[bid]["dur"]; clip = round(dur + TAIL, 3)
+        frames = round(clip * FPS)
+        img = asset(b); cap = cap_paths.get(bid)
+        vt = b["vtype"]
+        if vt == "still":
+            z = "z='min(zoom+0.0009,1.10)'" if idx % 2 == 0 else "z='if(lte(on,1),1.10,max(zoom-0.0009,1.0))'"
+        else:
+            z = "z='min(zoom+0.00035,1.045)'"
+        zp = (f"zoompan={z}:d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+              f":s={OUT_W}x{OUT_H}:fps={FPS}")
+        out = clips / f"{bid}.mp4"
+        audio_path = base / "audio" / f"{bid}.mp3"
+        has_audio = audio_path.exists() and audio_path.stat().st_size > 1000
+        ins = ["-i", str(img)]
+        if cap: ins += ["-i", str(cap)]
+        if has_audio:
+            ins += ["-i", str(audio_path)]
+        else:
+            ins += ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]
+        a_idx = 1 + (1 if cap else 0)
+        v_chain = f"[0:v]{zp}[kb];[kb][1:v]overlay=0:0[v]" if cap else f"[0:v]{zp}[v]"
+        a_filter = f"aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,apad,atrim=0:{clip}"
+        fc = f"{v_chain};[{a_idx}:a]{a_filter}[a]"
+        if use_nvenc:
+            cmd = ["ffmpeg", "-y", *ins, "-filter_complex", fc, "-map", "[v]", "-map", "[a]",
+                   "-t", str(clip), "-c:v", "h264_nvenc", "-preset", nvenc_preset_map.get(preset, "p4"),
+                   "-pix_fmt", "yuv420p", "-b:v", "4M", "-r", str(FPS),
+                   "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
+                   "-movflags", "+faststart", str(out)]
+        else:
+            cmd = ["ffmpeg", "-y", *ins, "-filter_complex", fc, "-map", "[v]", "-map", "[a]",
+                   "-t", str(clip), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
+                   "-crf", "20", "-preset", preset, "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
+                   "-movflags", "+faststart", str(out)]
+        r = subprocess.run(cmd, capture_output=True, text=True)
+        ok = out.exists() and out.stat().st_size > 10000
+        return (bid, clip, "ok" if ok else f"FAIL {r.stderr[-200:]}")
+
+    with ThreadPoolExecutor(max_workers=max_workers) as ex:
+        clip_results = list(ex.map(build_clip, list(enumerate(beats))))
+
+    # concat with -c copy (no re-encode — instant)
+    listf = base / "work/concat.txt"
+    listf.write_text("".join(f"file '{clips / (b['id']+'.mp4')}'\n" for b in beats))
+    final = base / out_name
+    total = sum(c for _, c, _ in clip_results)
+    fout = max(0.1, total - 1.3)
+
+    # concat copy, then a separate pass for fades + loudnorm (re-encode, but fast
+    # since it's just stream copy for video + audio filter)
+    concat_raw = base / "work/concat_raw.mp4"
+    cmd = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(listf),
+           "-c", "copy", "-movflags", "+faststart", str(concat_raw)]
+    subprocess.run(cmd, capture_output=True, text=True)
+
+    vf = f"fade=t=in:st=0:d=0.8,fade=t=out:st={fout:.2f}:d=1.3"
+    af = f"loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=in:st=0:d=0.5,afade=t=out:st={fout:.2f}:d=1.3"
+    if use_nvenc:
+        cmd = ["ffmpeg", "-y", "-i", str(concat_raw),
+               "-vf", vf, "-af", af,
+               "-c:v", "h264_nvenc", "-preset", nvenc_preset_map.get(preset, "p4"),
+               "-pix_fmt", "yuv420p", "-b:v", "4M", "-r", str(FPS),
+               "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
+               "-movflags", "+faststart", str(final)]
+    else:
+        cmd = ["ffmpeg", "-y", "-i", str(concat_raw),
+               "-vf", vf, "-af", af,
+               "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
+               "-crf", "19", "-preset", preset,
+               "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
+               "-movflags", "+faststart", str(final)]
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    ok = final.exists() and final.stat().st_size > 10000
+    return {
+        "phase": "video", "ok": ok,
+        "wall_s": round(time.time() - t0, 2),
+        "total_narration_s": round(total, 1),
+        "final": str(final),
+        "size_mb": round(final.stat().st_size / 1e6, 1) if ok else 0,
+        "error": "" if ok else r.stderr[-400:],
+    }
+
+
 # ─── final video assembly ─────────────────────────────────────────────────────
 
 def build_video(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str = "byclaude.net",
