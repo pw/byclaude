@@ -40,11 +40,12 @@ def run_gen_script(args, workdir: Path):
         "--format", args.format,
         "--register", args.register,
         "--voice", args.voice,
+        "--llm", args.llm,
     ]
     if args.grade: cmd += ["--grade", args.grade]
     env = os.environ.copy()
-    if "ANTHROPIC_API_KEY" not in env:
-        sys.exit("error: ANTHROPIC_API_KEY not in env")
+    if "ANTHROPIC_API_KEY" not in env and "BASETEN_API_KEY" not in env:
+        sys.exit("error: need ANTHROPIC_API_KEY (for sonnet-5) or BASETEN_API_KEY (for glm-5.2)")
     r = subprocess.run(cmd, env=env)
     if r.returncode != 0:
         sys.exit(f"error: gen_script.py failed (exit {r.returncode})")
@@ -57,6 +58,7 @@ def main():
     ap.add_argument("--workdir", default=None,
                     help="defaults to ~/byclaude/video/_bench/<timestamp>")
     ap.add_argument("--format", choices=["short", "long"], default="long")
+    ap.add_argument("--llm", default="sonnet-5", choices=["sonnet-5", "glm-5.2", "glm-5.2-turbo"])
     ap.add_argument("--register", default="documentary, measured, unhurried, lets facts carry the weight")
     ap.add_argument("--voice", default="onyx")
     ap.add_argument("--grade", default="")
@@ -122,7 +124,9 @@ def main():
     print("=" * 68)
     print(f"  TOPIC     {args.topic}")
     print(f"  FORMAT    {args.format}  ·  {len(beats)} beats ({stills} stills + {cards} cards)")
-    print(f"  MODEL     LLM: claude-sonnet-5   images: {args.model}   TTS: gpt-4o-mini-tts")
+    llm_label = {"sonnet-5": "claude-sonnet-5", "glm-5.2": "GLM-5.2 (Baseten)",
+                 "glm-5.2-turbo": "GLM-5.2 (Baseten)"}[args.llm]
+    print(f"  MODEL     LLM: {llm_label}   images: {args.model}   TTS: gpt-4o-mini-tts")
     print("-" * 68)
     print(f"  PHASE           WALL       COST        DETAIL")
     print(f"  gen (LLM)       {gen_meta.get('wall_s', 0):>6.1f}s    {fmt_cost(gen_meta.get('llm_cost_usd', 0))}     "
