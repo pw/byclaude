@@ -389,18 +389,18 @@ def render_images(base: Path, data: dict, model: str = "nano-banana-2-lite", max
 # ─── final video assembly ─────────────────────────────────────────────────────
 
 def build_video(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str = "byclaude.net",
-                out_name: str = "final.mp4", preset: str = "veryfast"):
+                out_name: str = "final.mp4", preset: str = "veryfast", resolution: int = 1080):
     """Single-pass assembly: one ffmpeg call, one filter_complex.
 
-    Replaces the old N+1-invocation approach (21 per-clip encodes + 1 concat
-    re-encode) with one ffmpeg that takes all images+caps+audios as inputs,
-    does per-beat zoompan+overlay in the filter graph, concats, applies
-    fades + loudnorm, and encodes once. ~5-10x faster.
+    `resolution` is the output height in pixels (720 or 1080). Internal card
+    rendering stays at 1080p supersampled for sharp text; the filter scales
+    cap PNGs down to the output resolution before overlay.
     """
     durs = json.load(open(base / "work/durations.json"))
     caps = base / "work/caps"; caps.mkdir(parents=True, exist_ok=True)
     (base / "work").mkdir(parents=True, exist_ok=True)
     FPS = 30; TAIL = 0.5
+    OUT_W, OUT_H = (1920, 1080) if resolution == 1080 else (1280, 720)
     beats = data["beats"]
     t0 = time.time()
 
@@ -485,14 +485,22 @@ def build_video(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
         else:
             z = "z='min(zoom+0.00035,1.045)'"
         zp = (f"zoompan={z}:d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
-              f":s=1920x1080:fps={FPS}")
+              f":s={OUT_W}x{OUT_H}:fps={FPS}")
 
         v_label = f"v{idx}"; a_label = f"a{idx}"; kb_label = f"kb{idx}"
         if cap_in is not None:
-            filter_parts.append(
-                f"[{img_in}:v]{zp}[{kb_label}];"
-                f"[{kb_label}][{cap_in}:v]overlay=0:0,format=yuv420p,setsar=1[{v_label}]"
-            )
+            # cap PNGs render at 1080p; scale to output resolution before overlay
+            if resolution != 1080:
+                filter_parts.append(
+                    f"[{img_in}:v]{zp}[{kb_label}];"
+                    f"[{cap_in}:v]scale={OUT_W}:{OUT_H}[cap{idx}];"
+                    f"[{kb_label}][cap{idx}]overlay=0:0,format=yuv420p,setsar=1[{v_label}]"
+                )
+            else:
+                filter_parts.append(
+                    f"[{img_in}:v]{zp}[{kb_label}];"
+                    f"[{kb_label}][{cap_in}:v]overlay=0:0,format=yuv420p,setsar=1[{v_label}]"
+                )
         else:
             filter_parts.append(
                 f"[{img_in}:v]{zp},format=yuv420p,setsar=1[{v_label}]"

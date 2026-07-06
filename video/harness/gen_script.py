@@ -13,12 +13,16 @@ import argparse, json, os, sys, time, urllib.request
 
 API_ANTHROPIC = "https://api.anthropic.com/v1/messages"
 API_BASETEN = "https://inference.baseten.co/v1/chat/completions"
+API_FIREWORKS = "https://api.fireworks.ai/inference/v1/chat/completions"
 
 # (model_id, pricing_per_1M_tokens_in/out, endpoint_family)
 LLMS = {
-    "sonnet-5":  ("claude-sonnet-5",                {"input": 3.0, "output": 15.0}, "anthropic"),
-    "glm-5.2":   ("zai-org/GLM-5.2",                {"input": 0.6, "output": 2.2},  "openai"),
-    "glm-5.2-turbo": ("zai-org/GLM-5.2",            {"input": 0.6, "output": 2.2},  "openai"),  # alias
+    "sonnet-5":      ("claude-sonnet-5",            {"input": 3.0, "output": 15.0}, "anthropic"),
+    "glm-5.2":       ("zai-org/GLM-5.2",            {"input": 0.6, "output": 2.2},  "baseten"),
+    "glm-5.2-fireworks": ("accounts/fireworks/routers/glm-5p2-fast",
+                                                       {"input": 2.10, "output": 6.60}, "fireworks"),  # 255 tok/s, $2.10/$6.60 per M
+    "gpt-oss-120b":  ("accounts/fireworks/models/gpt-oss-120b",
+                                                       {"input": 0.18, "output": 0.72}, "fireworks"),  # fast tier
 }
 
 
@@ -113,14 +117,22 @@ def call_anthropic(model, sys_p, user_p, max_tokens):
 
 
 def call_baseten(model, sys_p, user_p, max_tokens):
+    return _call_openai_compat(API_BASETEN, "BASETEN_API_KEY", model, sys_p, user_p, max_tokens)
+
+
+def call_fireworks(model, sys_p, user_p, max_tokens):
+    return _call_openai_compat(API_FIREWORKS, "FIREWORKS_API_KEY", model, sys_p, user_p, max_tokens)
+
+
+def _call_openai_compat(url, env_var, model, sys_p, user_p, max_tokens):
     body = json.dumps({
         "model": model, "max_tokens": max_tokens,
         "response_format": {"type": "json_object"},
         "messages": [{"role": "system", "content": sys_p},
                      {"role": "user", "content": user_p}],
     }).encode()
-    r = urllib.request.Request(API_BASETEN, data=body, headers={
-        "Authorization": f"Bearer {os.environ['BASETEN_API_KEY']}",
+    r = urllib.request.Request(url, data=body, headers={
+        "Authorization": f"Bearer {os.environ[env_var]}",
         "content-type": "application/json",
     })
     t0 = time.time()
@@ -142,14 +154,16 @@ def main():
     ap.add_argument("--voice", default="onyx")
     ap.add_argument("--grade", default="")
     ap.add_argument("--max-tokens", type=int, default=8000)
-    ap.add_argument("--llm", default="sonnet-5", choices=list(LLMS.keys()))
+    ap.add_argument("--llm", default="sonnet-5",
+                    choices=["sonnet-5", "glm-5.2", "glm-5.2-fireworks", "gpt-oss-120b"])
     args = ap.parse_args()
 
     model_id, pricing, family = LLMS[args.llm]
-    if family == "anthropic" and "ANTHROPIC_API_KEY" not in os.environ:
-        sys.exit("error: ANTHROPIC_API_KEY not in env")
-    if family == "openai" and "BASETEN_API_KEY" not in os.environ:
-        sys.exit("error: BASETEN_API_KEY not in env")
+    key_env = {"anthropic": "ANTHROPIC_API_KEY",
+               "baseten": "BASETEN_API_KEY",
+               "fireworks": "FIREWORKS_API_KEY"}[family]
+    if key_env not in os.environ:
+        sys.exit(f"error: {key_env} not in env")
 
     sys_p = system_prompt(args)
     user_p = USER_TEMPLATE.format(
@@ -162,8 +176,12 @@ def main():
     print(f"[gen] calling {model_id} ({family}) for '{args.topic}' ({args.format})", flush=True)
     if family == "anthropic":
         text, dt, usage = call_anthropic(model_id, sys_p, user_p, args.max_tokens)
-    else:
+    elif family == "baseten":
         text, dt, usage = call_baseten(model_id, sys_p, user_p, args.max_tokens)
+    elif family == "fireworks":
+        text, dt, usage = call_fireworks(model_id, sys_p, user_p, args.max_tokens)
+    else:
+        sys.exit(f"unknown family: {family}")
 
     # strip markdown fences (GLM wraps even with response_format=json_object)
     text = text.strip()

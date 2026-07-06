@@ -44,8 +44,11 @@ def run_gen_script(args, workdir: Path):
     ]
     if args.grade: cmd += ["--grade", args.grade]
     env = os.environ.copy()
-    if "ANTHROPIC_API_KEY" not in env and "BASETEN_API_KEY" not in env:
-        sys.exit("error: need ANTHROPIC_API_KEY (for sonnet-5) or BASETEN_API_KEY (for glm-5.2)")
+    needed = {"sonnet-5": "ANTHROPIC_API_KEY", "glm-5.2": "BASETEN_API_KEY",
+              "glm-5.2-fireworks": "FIREWORKS_API_KEY", "gpt-oss-120b": "FIREWORKS_API_KEY"}
+    key_env = needed.get(args.llm, "ANTHROPIC_API_KEY")
+    if key_env not in env:
+        sys.exit(f"error: {key_env} not in env (needed for --llm {args.llm})")
     r = subprocess.run(cmd, env=env)
     if r.returncode != 0:
         sys.exit(f"error: gen_script.py failed (exit {r.returncode})")
@@ -58,7 +61,11 @@ def main():
     ap.add_argument("--workdir", default=None,
                     help="defaults to ~/byclaude/video/_bench/<timestamp>")
     ap.add_argument("--format", choices=["short", "long"], default="long")
-    ap.add_argument("--llm", default="sonnet-5", choices=["sonnet-5", "glm-5.2", "glm-5.2-turbo"])
+    ap.add_argument("--llm", default="sonnet-5",
+                    choices=["sonnet-5", "glm-5.2", "glm-5.2-fireworks", "gpt-oss-120b"])
+    ap.add_argument("--preset", default="veryfast",
+                    choices=["ultrafast", "superfast", "veryfast", "faster", "fast", "medium"])
+    ap.add_argument("--resolution", type=int, default=1080, choices=[720, 1080])
     ap.add_argument("--register", default="documentary, measured, unhurried, lets facts carry the weight")
     ap.add_argument("--voice", default="onyx")
     ap.add_argument("--grade", default="")
@@ -111,7 +118,8 @@ def main():
         print(f"[run] WARN: {len(imgs_t['failures'])} image failures: {imgs_t['failures']}", flush=True)
 
     # ── Phase 3: video assembly ─────────────────────────────────────────────
-    vid_t = P.build_video(workdir, script, args.kicker, args.mark, args.out_name)
+    vid_t = P.build_video(workdir, script, args.kicker, args.mark, args.out_name,
+                          preset=args.preset, resolution=args.resolution)
 
     overall_dt = time.time() - overall_t0
 
@@ -124,9 +132,12 @@ def main():
     print("=" * 68)
     print(f"  TOPIC     {args.topic}")
     print(f"  FORMAT    {args.format}  ·  {len(beats)} beats ({stills} stills + {cards} cards)")
-    llm_label = {"sonnet-5": "claude-sonnet-5", "glm-5.2": "GLM-5.2 (Baseten)",
-                 "glm-5.2-turbo": "GLM-5.2 (Baseten)"}[args.llm]
+    llm_label = {"sonnet-5": "claude-sonnet-5",
+                 "glm-5.2": "GLM-5.2 (Baseten)",
+                 "glm-5.2-fireworks": "GLM-5.2-fast (Fireworks)",
+                 "gpt-oss-120b": "gpt-oss-120b (Fireworks)"}[args.llm]
     print(f"  MODEL     LLM: {llm_label}   images: {args.model}   TTS: gpt-4o-mini-tts")
+    print(f"  ENCODER   preset={args.preset}   resolution={args.resolution}p")
     print("-" * 68)
     print(f"  PHASE           WALL       COST        DETAIL")
     print(f"  gen (LLM)       {gen_meta.get('wall_s', 0):>6.1f}s    {fmt_cost(gen_meta.get('llm_cost_usd', 0))}     "
