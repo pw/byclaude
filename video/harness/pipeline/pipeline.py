@@ -9,7 +9,7 @@ Adapted from the per-film scripts (~/byclaude/video/<film>/{cards,build_tts,buil
 with the hardcoded BASE replaced by an argument.
 """
 from __future__ import annotations
-import json, re, subprocess, sys, time
+import json, os, re, subprocess, sys, time, urllib.request, base64
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 
@@ -22,17 +22,76 @@ KEYS_ENV = Path.home() / ".config/api-keys/keys.env"
 
 # TTS pricing (gpt-4o-mini-tts): $15/1M chars (standard); mini tier = $0.015/1K = $15/1M.
 TTS_RATE_PER_1K = 0.015
-# Image pricing (kie.ai: gpt-image-2 = $0.05/2K still; nano-banana-2-lite = $0.02)
+# Image pricing — kie.ai (gpt-image-2 = $0.05/2K still; nano-banana-2-lite = $0.02)
 IMG_COST = {
     "gpt-image-2": 0.05,
     "nano-banana-2-lite": 0.02,
     "nano-banana": 0.04,
+    # Google direct (gemini-3.1-flash-lite-image): $0.033/image at the published
+    # $15/1M input + $0.04/1M output rates for the underlying Flash-Lite tier.
+    # Treated as ~3.3¢ for cost telemetry; refine if Google publishes per-image pricing.
+    "gemini-flash-lite": 0.033,
 }
+
+# Google Gemini direct endpoint. Sub-2s advertised, ~3s observed (2026-07-06).
+GEMINI_MODEL = "gemini-3.1-flash-lite-image"
+GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
 
 
 def _openai_key() -> str:
     text = KEYS_ENV.read_text()
     return re.search(r'^export OPENAI_API_KEY=(.+)$', text, re.M).group(1).strip().strip('"')
+
+
+def _gemini_key() -> str:
+    """Read Google AI key from env (preferred) or 1Password via `op`."""
+    k = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+    if k: return k
+    # fall back to op; this only works in interactive bash but worth trying
+    try:
+        r = subprocess.run(["op", "read", "op://Claude Code/Google AI DocADay/credential"],
+                           capture_output=True, text=True, timeout=10)
+        if r.returncode == 0 and r.stdout.strip():
+            return r.stdout.strip()
+    except Exception:
+        pass
+    raise RuntimeError("no Google/Gemini API key found (set GEMINI_API_KEY or run with op access)")
+
+
+def gemini_image(prompt: str, out: Path, aspect_ratio: str = "16:9", timeout: int = 60) -> tuple:
+    """Direct call to gemini-3.1-flash-lite-image. Returns (ok, wall_s, error)."""
+    key = _gemini_key()
+    body = json.dumps({
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "responseModalities": ["IMAGE", "TEXT"],
+            "imageConfig": {"aspectRatio": aspect_ratio},
+        },
+    }).encode()
+    req = urllib.request.Request(
+        f"{GEMINI_URL}?key={key}",
+        data=body,
+        headers={"Content-Type": "application/json"},
+    )
+    t0 = time.time()
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            d = json.loads(resp.read())
+    except Exception as e:
+        return (False, time.time() - t0, f"http: {e}")
+    dt = time.time() - t0
+    cands = d.get("candidates", [])
+    if not cands:
+        return (False, dt, f"no candidates: {str(d)[:200]}")
+    for p in cands[0].get("content", {}).get("parts", []):
+        idata = p.get("inlineData") or p.get("inline_data")
+        if idata and idata.get("data"):
+            try:
+                out.write_bytes(base64.b64decode(idata["data"]))
+                return (True, dt, "")
+            except Exception as e:
+                return (False, dt, f"decode: {e}")
+    return (False, dt, "no image part in response")
 
 
 # ─── cards ───────────────────────────────────────────────────────────────────
@@ -259,14 +318,21 @@ def render_tts(base: Path, data: dict, max_workers: int = 6):
 
 def render_images(base: Path, data: dict, model: str = "nano-banana-2-lite", max_workers: int = 5,
                   retries: int = 2):
-    """Generate still beats in parallel via the ai-image-generation skill.
+    """Generate still beats in parallel.
     Failed images get retried sequentially after the parallel pass (kie.ai
-    occasionally times out under load)."""
+    occasionally times out under load).
+
+    Models:
+      gemini-flash-lite       — Google direct (gemini-3.1-flash-lite-image), ~3s/image, $0.033
+      nano-banana-2-lite      — via kie.ai skill, advertised ~8s (often 60-180s under load), $0.02
+      gpt-image-2             — via kie.ai skill, ~30-40s, $0.05
+    """
     imgdir = base / "images"; imgdir.mkdir(parents=True, exist_ok=True)
     grade = data.get("grade", "")
     stills = [b for b in data["beats"] if b["vtype"] == "still"]
     t0 = time.time()
     per_image_times = []
+    use_gemini = model == "gemini-flash-lite"
 
     def run(b, attempt=1):
         out = imgdir / f"{b['id']}.png"
@@ -274,6 +340,10 @@ def render_images(base: Path, data: dict, model: str = "nano-banana-2-lite", max
             return (b["id"], "skip", 0.0)
         prompt = b["img"] + " " + grade
         t = time.time()
+        if use_gemini:
+            ok, dt, err = gemini_image(prompt, out)
+            status = "ok" if ok else f"FAIL: {err}"
+            return (b["id"], status, dt)
         r = subprocess.run(["node", str(GEN), prompt, "--ratio", "16:9",
                             "--model", model, "--out", str(out)],
                            capture_output=True, text=True)

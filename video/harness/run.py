@@ -60,8 +60,8 @@ def main():
     ap.add_argument("--register", default="documentary, measured, unhurried, lets facts carry the weight")
     ap.add_argument("--voice", default="onyx")
     ap.add_argument("--grade", default="")
-    ap.add_argument("--model", default="nano-banana-2-lite",
-                    choices=["nano-banana-2-lite", "gpt-image-2", "nano-banana"])
+    ap.add_argument("--model", default="gemini-flash-lite",
+                    choices=["gemini-flash-lite", "nano-banana-2-lite", "gpt-image-2", "nano-banana"])
     ap.add_argument("--kicker", default="DOCUMENTARY")
     ap.add_argument("--mark", default="byclaude.net")
     ap.add_argument("--out-name", default="final.mp4")
