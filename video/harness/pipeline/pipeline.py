@@ -163,10 +163,13 @@ def _tracked(draw, x, y, text, font, fill, track):
 def render_cards(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str = "byclaude.net"):
     """Bake every card-type beat to work/<id>.png. Returns telemetry dict."""
     work = base / "work"; work.mkdir(parents=True, exist_ok=True)
-    cards = [b for b in data["beats"] if b["vtype"] == "card"]
+    # defensive: treat anything with a `card` field as a card (some LLMs emit vtype=signoff/quote)
+    cards = [b for b in data["beats"] if "card" in b or b.get("vtype") != "still"]
     t0 = time.time()
     count = 0
     for beat in cards:
+        if "card" not in beat:
+            continue  # safety: vtype!=still but no card field — skip
         _render_one_card(work, beat, kicker, mark)
         count += 1
     return {"phase": "cards", "count": count, "wall_s": round(time.time() - t0, 2)}
@@ -387,19 +390,26 @@ def render_images(base: Path, data: dict, model: str = "nano-banana-2-lite", max
 
 def build_video(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str = "byclaude.net",
                 out_name: str = "final.mp4", preset: str = "veryfast"):
-    """Per-beat Ken-Burns + captions on stills → concat → fades → loudnorm."""
+    """Single-pass assembly: one ffmpeg call, one filter_complex.
+
+    Replaces the old N+1-invocation approach (21 per-clip encodes + 1 concat
+    re-encode) with one ffmpeg that takes all images+caps+audios as inputs,
+    does per-beat zoompan+overlay in the filter graph, concats, applies
+    fades + loudnorm, and encodes once. ~5-10x faster.
+    """
     durs = json.load(open(base / "work/durations.json"))
-    clips = base / "clips"; clips.mkdir(parents=True, exist_ok=True)
     caps = base / "work/caps"; caps.mkdir(parents=True, exist_ok=True)
+    (base / "work").mkdir(parents=True, exist_ok=True)
     FPS = 30; TAIL = 0.5
     beats = data["beats"]
     t0 = time.time()
 
     def asset(b):
         if b["vtype"] == "still": return base / "images" / f"{b['id']}.png"
+        # card / signoff / quote / etc. — all rendered to work/<id>.png by render_cards
         return base / "work" / f"{b['id']}.png"
 
-    def make_caption(b):
+    def render_caption(b):
         if b["vtype"] != "still": return None
         text = b.get("cap")
         if not text: return None
@@ -408,7 +418,6 @@ def build_video(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
         for y in range(y0, H):
             a = int(205 * ((y - y0) / (H - y0)) ** 1.35)
             d.line([(0, y), (W, y)], fill=(4, 6, 9, a))
-        # furniture (caption overlays stills, so include the kicker/mark)
         kf = MONOSB(15)
         d.rectangle([60 * S, 58 * S, 60 * S + 12 * S, 58 * S + 12 * S], fill=ACCENT)
         _tracked(d, 84 * S, 55 * S, kicker.upper(), kf, MUTE, 3)
@@ -427,66 +436,115 @@ def build_video(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
         img.resize((1920, 1080), Image.LANCZOS).save(out)
         return out
 
-    def build_clip(args):
-        idx, b = args
-        bid = b["id"]; dur = durs[bid]["dur"]; clip = round(dur + TAIL, 3)
+    # ── Pass 1: render caps to disk (fast PIL work, threaded) ──────────────
+    cap_paths = {}
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        futs = {ex.submit(render_caption, b): b["id"] for b in beats}
+        for f in futs:
+            bid = futs[f]; p = f.result()
+            if p: cap_paths[bid] = p
+
+    # ── Pass 2: build inputs + filter_complex for one big ffmpeg call ───────
+    inputs = []
+    filter_parts = []
+    concat_inputs = []
+    next_input = 0  # input index counter
+    total_dur = 0.0
+
+    for idx, b in enumerate(beats):
+        bid = b["id"]
+        dur = durs[bid]["dur"]
+        clip = round(dur + TAIL, 3)
         frames = round(clip * FPS)
-        img = asset(b); cap = make_caption(b)
-        vt = b["vtype"]
-        if vt == "still":
-            z = "z='min(zoom+0.0009,1.10)'" if idx % 2 == 0 else "z='if(lte(on,1),1.10,max(zoom-0.0009,1.0))'"
+        total_dur += clip
+
+        # image input — single still (no -loop); zoompan's d=N generates N frames from this 1
+        img_path = asset(b)
+        inputs += ["-i", str(img_path)]
+        img_in = next_input; next_input += 1
+
+        # cap input (stills only)
+        cap_in = None
+        if bid in cap_paths:
+            inputs += ["-i", str(cap_paths[bid])]
+            cap_in = next_input; next_input += 1
+
+        # audio input (mp3 if present, else anullsrc)
+        audio_path = base / "audio" / f"{bid}.mp3"
+        has_audio = audio_path.exists() and audio_path.stat().st_size > 1000
+        if has_audio:
+            inputs += ["-i", str(audio_path)]
+        else:
+            inputs += ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]
+        aud_in = next_input; next_input += 1
+
+        # zoompan expression (same shape as before)
+        if b["vtype"] == "still":
+            z = "z='min(zoom+0.0009,1.10)'" if idx % 2 == 0 else \
+                "z='if(lte(on,1),1.10,max(zoom-0.0009,1.0))'"
         else:
             z = "z='min(zoom+0.00035,1.045)'"
         zp = (f"zoompan={z}:d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
               f":s=1920x1080:fps={FPS}")
-        out = clips / f"{bid}.mp4"
-        audio_path = base / "audio" / f"{bid}.mp3"
-        has_audio = audio_path.exists() and audio_path.stat().st_size > 1000
-        ins = ["-loop", "1", "-i", str(img)]
-        n_inputs = 1
-        if cap:
-            ins += ["-i", str(cap)]
-            n_inputs = 2
-        if has_audio:
-            ins += ["-i", str(audio_path)]
+
+        v_label = f"v{idx}"; a_label = f"a{idx}"; kb_label = f"kb{idx}"
+        if cap_in is not None:
+            filter_parts.append(
+                f"[{img_in}:v]{zp}[{kb_label}];"
+                f"[{kb_label}][{cap_in}:v]overlay=0:0,format=yuv420p,setsar=1[{v_label}]"
+            )
         else:
-            ins += ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]
-        a_idx = n_inputs  # audio is the input right after img(+cap): img=0, cap=1, audio=1or2
-        v_chain = f"[0:v]{zp}[kb];[kb][1:v]overlay=0:0[v]" if cap else f"[0:v]{zp}[v]"
-        a_filter = "apad" if has_audio else f"atrim=0:{clip}"
-        fc = f"{v_chain};[{a_idx}:a]{a_filter}[a]"
-        cmd = ["ffmpeg", "-y", *ins, "-filter_complex", fc, "-map", "[v]", "-map", "[a]",
-               "-t", str(clip), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
-               "-crf", "20", "-preset", preset, "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
-               "-movflags", "+faststart", str(out)]
-        r = subprocess.run(cmd, capture_output=True, text=True)
-        ok = out.exists() and out.stat().st_size > 10000
-        return (bid, clip, "ok" if ok else f"FAIL {r.stderr[-300:]}")
+            filter_parts.append(
+                f"[{img_in}:v]{zp},format=yuv420p,setsar=1[{v_label}]"
+            )
 
-    with ThreadPoolExecutor(max_workers=4) as ex:
-        clip_results = list(ex.map(build_clip, list(enumerate(beats))))
-    for bid, clip, st in clip_results:
-        if st != "ok":
-            print(f"[vid] WARN {bid}: {st[:150]}", flush=True)
+        # audio: normalize to 48kHz stereo fltp, pad/trim to clip seconds
+        if has_audio:
+            filter_parts.append(
+                f"[{aud_in}:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,"
+                f"apad,atrim=0:{clip}[{a_label}]"
+            )
+        else:
+            filter_parts.append(
+                f"[{aud_in}:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,"
+                f"atrim=0:{clip}[{a_label}]"
+            )
 
-    listf = base / "work/concat.txt"
-    listf.write_text("".join(f"file '{clips / (b['id']+'.mp4')}'\n" for b in beats))
+        concat_inputs.append(f"[{v_label}][{a_label}]")
+
+    # concat all segments
+    concat_n = len(beats)
+    filter_parts.append(
+        "".join(concat_inputs) + f"concat=n={concat_n}:v=1:a=1[vcat][acat]"
+    )
+
+    # fades + loudnorm on the concatenated streams
+    fout = max(0.1, total_dur - 1.3)
+    filter_parts.append(
+        f"[vcat]fade=t=in:st=0:d=0.8,fade=t=out:st={fout:.2f}:d=1.3[v]"
+    )
+    filter_parts.append(
+        f"[acat]loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=in:st=0:d=0.5,"
+        f"afade=t=out:st={fout:.2f}:d=1.3[a]"
+    )
+
+    filter_complex = ";".join(filter_parts)
     final = base / out_name
-    total = sum(c for _, c, _ in clip_results)
-    fout = max(0.1, total - 1.3)
-    vf = f"fade=t=in:st=0:d=0.8,fade=t=out:st={fout:.2f}:d=1.3"
-    af = f"loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=in:st=0:d=0.5,afade=t=out:st={fout:.2f}:d=1.3"
-    cmd = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(listf),
-           "-vf", vf, "-af", af, "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
-           "-crf", "19", "-preset", preset, "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
+
+    cmd = ["ffmpeg", "-y", *inputs,
+           "-filter_complex", filter_complex,
+           "-map", "[v]", "-map", "[a]",
+           "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
+           "-crf", "19", "-preset", preset,
+           "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
            "-movflags", "+faststart", str(final)]
     r = subprocess.run(cmd, capture_output=True, text=True)
     ok = final.exists() and final.stat().st_size > 10000
     return {
         "phase": "video", "ok": ok,
         "wall_s": round(time.time() - t0, 2),
-        "total_narration_s": round(total, 1),
+        "total_narration_s": round(total_dur, 1),
         "final": str(final),
         "size_mb": round(final.stat().st_size / 1e6, 1) if ok else 0,
-        "error": "" if ok else r.stderr[-300:],
+        "error": "" if ok else r.stderr[-400:],
     }

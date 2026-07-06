@@ -186,10 +186,20 @@ def main():
     except json.JSONDecodeError as e:
         sys.exit(f"error: model returned invalid JSON: {e}\n--- raw ---\n{text[:1500]}")
 
-    # normalize: ids as "B##" strings; card beats shouldn't carry img
+    # normalize: ids as "B##" strings; card beats shouldn't carry img; vtypes collapse to {still,card}
+    VALID_VTYPES = {"still", "card", "quote", "bignum", "stat2", "stat3", "question",
+                    "cta", "signoff", "viz"}
+    CARD_LIKE = {"card", "quote", "bignum", "stat2", "stat3", "question", "cta", "signoff"}
     for i, b in enumerate(script.get("beats", []), 1):
         if not isinstance(b.get("id"), str) or not b["id"].startswith("B"):
             b["id"] = f"B{i:02d}"
+        vt = b.get("vtype", "still")
+        if vt not in VALID_VTYPES:
+            vt = "card" if "card" in b else "still"
+            b["vtype"] = vt
+        # anything with a card object collapses to vtype=card (defensive vs GLM's signoff/quote)
+        if "card" in b and vt in CARD_LIKE:
+            b["vtype"] = "card"
         if b.get("vtype") == "card" and "img" in b and not b["img"]:
             del b["img"]
 
