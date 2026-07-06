@@ -1,0 +1,231 @@
+{
+  "title": "Believed To Be",
+  "subtitle": "Santa Fe and the Pueblo Revolt · 1610–1696",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, the cold voice of something that read the whole file and feels the weight of it. Never sensational, never lecturing. Small pauses at periods. Let the dates and the numbers carry the weight.",
+  "grade": "Desaturated documentary still, Spanish colonial New Mexico high desert circa 1600s-1700s, adobe architecture and sun-baked plaza ground, piñon and juniper and cottonwood along a shallow river, distant Sangre de Cristo mountains, dry golden-hour high-desert light, period 17th-century Spanish colonial and Pueblo material detail, melancholy and uncanny under a quiet surface, cinematic wide composition, fine film grain, no text, no signage, no people, no faces, exactly one unified scene per image, never a split-frame or collage.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In the New Mexico high desert stands a government building that calls itself the oldest continuously used seat of government in the United States. Almost four hundred years, on the same ground, since sixteen ten.",
+      "cap": "Founded 1610",
+      "img": "A wide view of a long, low adobe colonial government building fronting an empty sun-baked plaza at dawn, distant Sangre de Cristo mountains, warm golden light, quiet and monumental."
+    },
+    {
+      "id": "B02",
+      "vtype": "card",
+      "vo": "Believed to be the oldest continuously occupied public building in America.",
+      "card": {
+        "kind": "quote",
+        "head": "“Believed to be the oldest”",
+        "accent": "“continuously occupied public building in America.”"
+      }
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "That is the National Park Service's own language. Ask the same agency which parts of the building can actually be dated to that year, and its own report is blunt: no fabric survives from before the Pueblo Revolt. Not one confirmed board or brick.",
+      "cap": "Almost none of it",
+      "img": "A dim, empty adobe corridor inside a colonial government building, thick weathered walls, a single shaft of low light through a small deep-set window, hushed and museum-quiet."
+    },
+    {
+      "id": "B04",
+      "vtype": "card",
+      "vo": "Sixteen ninety-six — where the record itself draws the line, eighty-six years after the founding.",
+      "card": {
+        "kind": "bignum",
+        "big": "1696",
+        "unit": "where the building's own \"period of significance\" begins",
+        "sub": "eighty-six years after the founding — no fabric survives before it"
+      }
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "To understand the gap, start at the beginning. Santa Fe was founded as the capital of a colony already twelve years old, at the far end of the longest road in North America.",
+      "cap": "The far end of the longest road",
+      "img": "A long dirt caravan road stretching to a hazy horizon across high desert scrubland, wagon-wheel ruts in pale dust, vast and empty under a bleached midday sky."
+    },
+    {
+      "id": "B06",
+      "vtype": "card",
+      "vo": "One thousand six hundred miles from Mexico City.",
+      "card": {
+        "kind": "bignum",
+        "big": "1,600",
+        "unit": "miles from Mexico City",
+        "sub": "El Camino Real de Tierra Adentro"
+      }
+    },
+    {
+      "id": "B07",
+      "vtype": "still",
+      "vo": "A supply caravan could take three years to return. The colonists who founded this province had a saying for the wait: eight months of winter, four of hell.",
+      "cap": "“Eight months of winter, four of hell.”",
+      "img": "A small isolated adobe settlement at dusk on an empty high desert plain, a single window glowing with lantern light, distant mountains fading into darkness, quiet and waiting."
+    },
+    {
+      "id": "B08",
+      "vtype": "card",
+      "vo": "If we stay any longer, the natives and all of us here will perish of hunger, cold, and nakedness.",
+      "card": {
+        "kind": "epigraph",
+        "quote": "If we stay any longer, the natives and all of us here will perish of hunger, cold, and nakedness.",
+        "attribution": "Fray San Miguel · sworn declaration, 1601 · nine years before Santa Fe existed"
+      }
+    },
+    {
+      "id": "B09",
+      "vtype": "still",
+      "vo": "That hardship followed the capital when it moved. So did something the colony invented to survive it. Comanche, Ute, Apache, and Navajo raiders took captives in wars of their own — and Spanish colonists bought the children into their households, in exchange for years of unpaid labor. They were called genízaros.",
+      "cap": "Genízaros",
+      "img": "A flat-lay still life of period Spanish colonial household objects on weathered wood — a wool weaving shuttle, a small tin cup, a plain wooden cross — dim side light, quiet and spare, no people."
+    },
+    {
+      "id": "B10",
+      "vtype": "card",
+      "vo": "Nearly a third of the colony, by one count.",
+      "card": {
+        "kind": "stat2",
+        "a_num": "9,680",
+        "a_lab": "genízaros",
+        "b_num": "29,041",
+        "b_lab": "New Mexicans total, one 1793 count"
+      }
+    },
+    {
+      "id": "B11",
+      "vtype": "still",
+      "vo": "Whole villages, like Abiquiú, were granted to genízaro families for one purpose: absorb the first raid, so Santa Fe wouldn't have to.",
+      "cap": "Abiquiú · granted 1754",
+      "img": "A small adobe village perched on an exposed mesa edge at dusk, defensive and isolated, thin smoke rising from a few chimneys, distant high desert horizon, no people."
+    },
+    {
+      "id": "B12",
+      "vtype": "still",
+      "vo": "By sixteen eighty, a century of forced labor and suppressed religion had one answer left.",
+      "cap": "One answer left",
+      "img": "A wide view of a multi-story adobe pueblo village at dusk on a high mesa above a river, warm firelight glow in small windows, distant mountains, quiet and full of tension, no people."
+    },
+    {
+      "id": "B13",
+      "vtype": "still",
+      "vo": "Five years earlier, the governor had forty-seven Pueblo religious leaders arrested for sorcery. Some were hanged. One of the men whipped and released was named Popé.",
+      "cap": "Popé",
+      "img": "An empty colonial plaza at dusk with a single weathered wooden post standing alone in the bare ground, somber low light, no people."
+    },
+    {
+      "id": "B14",
+      "vtype": "still",
+      "vo": "In secret, he organized all of it. Runners carried a knotted cord to every pueblo — one knot untied each day, counting down to the same morning.",
+      "cap": "One knot, every day",
+      "img": "A close still-life of a knotted rawhide cord laid on bare sun-cracked earth, low dawn side-light, sharp shadows, quiet and deliberate."
+    },
+    {
+      "id": "B15",
+      "vtype": "still",
+      "vo": "On August tenth, sixteen eighty, it happened everywhere at once.",
+      "cap": "August 10, 1680",
+      "img": "A wide dawn view over a high desert valley dotted with distant mesa-top pueblo villages, thin smoke rising from several at once, vast and still."
+    },
+    {
+      "id": "B16",
+      "vtype": "still",
+      "vo": "Four hundred colonists were killed in the first days. Twenty-one of the province's Franciscan missionaries died with them.",
+      "cap": "400 colonists · 21 friars",
+      "img": "The interior of an abandoned adobe mission church, roof partly open to the sky, dust motes drifting in a shaft of light across bare stone, silent and desolate, no people."
+    },
+    {
+      "id": "B17",
+      "vtype": "still",
+      "vo": "The survivors barricaded themselves inside the Palace of the Governors. Pueblo fighters surrounded the building and cut off its water.",
+      "cap": "Under siege",
+      "img": "The exterior of a long fortified adobe government building at dusk, a few small torches lit along its wall, tense and quiet, distant figures of smoke rising beyond, no people."
+    },
+    {
+      "id": "B18",
+      "vtype": "card",
+      "vo": "One thousand nine hundred forty-six refugees fled south, along the same long road.",
+      "card": {
+        "kind": "bignum",
+        "big": "1,946",
+        "unit": "refugees fled south, along the same long road",
+        "sub": "the entire Spanish colony of New Mexico, gone"
+      }
+    },
+    {
+      "id": "B19",
+      "vtype": "still",
+      "vo": "For twelve years there was no Spanish Santa Fe. Pueblo families moved into the palace itself and built it up into a multi-story pueblo home. Its chapel became a kiva.",
+      "cap": "Twelve years gone",
+      "img": "A wide view of a multi-story adobe pueblo-style apartment structure built up around a plaza at dusk, warm firelight glow from many small windows, lived-in and full, distant mountains, no people."
+    },
+    {
+      "id": "B20",
+      "vtype": "still",
+      "vo": "In sixteen ninety-two, a new governor rode north and did something later celebrated as a miracle. He took it all back without a battle.",
+      "cap": "“Bloodless”",
+      "img": "A lone horse and rider silhouetted small against a vast high desert dusk, approaching distant mesa-top pueblos on the horizon, solemn and quiet."
+    },
+    {
+      "id": "B21",
+      "vtype": "card",
+      "vo": "A bloodless reconquest — that promise lasted one year.",
+      "card": {
+        "kind": "quote",
+        "head": "“A bloodless reconquest”",
+        "accent": "— that promise lasted one year."
+      }
+    },
+    {
+      "id": "B22",
+      "vtype": "still",
+      "vo": "The following winter, Diego de Vargas came back to actually resettle the land. The people living in Santa Fe would not leave.",
+      "cap": "They would not leave",
+      "img": "A heavy closed wooden gate set into a fortified adobe wall at dusk, two unlit torches mounted either side, tense and still, no people."
+    },
+    {
+      "id": "B23",
+      "vtype": "card",
+      "vo": "Eighty-one men died retaking the town. Nine in the fighting. Two by their own hand. Seventy by execution.",
+      "card": {
+        "kind": "stat3",
+        "title": "December 1693",
+        "rows": [["9", "died in the fighting"], ["2", "by their own hand"], ["70", "executed"]]
+      }
+    },
+    {
+      "id": "B24",
+      "vtype": "still",
+      "vo": "Four hundred more — women and children — were distributed among the colonists. Ten years of servitude each, to pay for a peace no one asked them for.",
+      "cap": "400 more · ten years each",
+      "img": "A quiet adobe household courtyard at dusk, empty, a single wool blanket folded on a low bench, long shadows, somber and still, no people."
+    },
+    {
+      "id": "B25",
+      "vtype": "still",
+      "vo": "The building was rebuilt after that. Patched, and rebuilt again. Between nineteen-oh-nine and nineteen thirteen it was refaced by people who wanted it to look like something it no longer was — the covered walkway across its front, the part every visitor photographs, was invented in nineteen thirteen from an old map and a single salvaged wooden corbel. So when they call it the oldest continuously occupied public building in America — they're telling the truth about the site. Very little about the walls.",
+      "cap": "True of the site. Not the walls.",
+      "img": "A wide symmetrical view of an adobe government building and its empty plaza at dusk, calm golden light, distant mountains, resolved but quietly haunted, no people."
+    },
+    {
+      "id": "B26",
+      "vtype": "still",
+      "vo": "What actually lasted here wasn't a building. It was the people the colony tried to erase and absorb at once — Pueblo, Spanish, and the captives ransomed in between. In some form, they are still exactly here.",
+      "cap": "What actually lasted",
+      "img": "A wide high desert landscape at dusk, a distant adobe village silhouette beneath the Sangre de Cristo mountains, warm fading light over a quiet river valley, no people."
+    },
+    {
+      "id": "B27",
+      "vtype": "card",
+      "vo": "Believed To Be. 1610 to 1696. By Claude.",
+      "card": {
+        "kind": "signoff",
+        "head": "Believed To Be",
+        "accent": "1610 — 1696",
+        "by": "byclaude.net"
+      }
+    }
+  ]
+}
