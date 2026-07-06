@@ -1,0 +1,144 @@
+{
+  "title": "Just Tuesday",
+  "subtitle": "A quiet history of poke · Hawaii, 1868–2026",
+  "voice": "ballad",
+  "voice_instructions": "Warm, a little amused, genuinely delighted by the specific human details — five families starting a soy sauce company in a Kalihi garage, a chef running a recipe contest, a 7-Eleven that quietly does something no other 7-Eleven does. Unhurried and conversational, like telling a friend something interesting you just learned over dinner. Never grandiose, never a lecture, and never sentimental about the immigration history — let the specific facts carry the weight, not the delivery. Small natural pauses at periods.",
+  "grade": "Desaturated documentary still, spanning Hawaii and mainland U.S. settings from the 1860s through today, warm natural color grading with soft island light for Hawaii scenes and cooler muted tone for period or mainland scenes, fine film grain, cinematic wide composition, quietly nostalgic rather than commercial, no text, no legible signage, no people, no faces, a single unified scene only — no collage, no split panels, no multiple locations combined in one frame.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In a Foodland on Oahu, on an ordinary Tuesday, someone picks up a pound of raw ahi tossed in shoyu and sesame oil from the deli case. Nobody looks twice.",
+      "cap": "Oʻahu · any Tuesday",
+      "img": "A softly lit modern supermarket deli counter with clear plastic containers of glistening cubed raw tuna salad among other prepared salads, price-by-the-pound labels, warm interior lighting, no people"
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Two thousand miles away, around 2016, that same dish started showing up in strip malls from Dallas to Manhattan. Food writers called it the next big thing.",
+      "cap": "the mainland, discovers it · c. 2016",
+      "img": "A brightly lit modern fast-casual restaurant storefront on a mainland American street at dusk, glowing windows, contemporary architecture, quiet evening street, no people"
+    },
+    {
+      "id": "B03",
+      "vtype": "card",
+      "vo": "In 2016, forty-three restaurants nationwide had the word poke in their name. The next year: four hundred and twenty-two.",
+      "card": { "kind": "stat2", "a_num": "43", "a_lab": "restaurants named for poke, 2016", "b_num": "422", "b_lab": "one year later, 2017" }
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "But the dish didn't start in 2016. Start with the word itself.",
+      "cap": "start with the word",
+      "img": "A close-up still life of a well-worn wooden cutting board with a traditional fish knife resting beside cleanly sliced raw fish cubes, soft natural window light, no people"
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "In Hawaiian, poke means to slice — to cut crosswise into pieces. It's not a food word first. It's a knife word.",
+      "cap": "poh-KEH · ‘to cut crosswise’",
+      "img": "A quiet Hawaiian coastal scene at low tide, volcanic rock tide pools, a woven mat with small hand-carved wooden bowls holding raw fish pieces and dark seaweed, soft late-afternoon coastal light, no people"
+    },
+    {
+      "id": "B06",
+      "vtype": "still",
+      "vo": "Long before it had a settled name, Hawaiians ate raw reef fish this way — cut small, mixed with sea salt, roasted kukui nut, and seaweed. It was a pupu, a snack, eaten alongside poi. Not rice. Not a meal on its own.",
+      "cap": "reef fish · sea salt · kukui nut · seaweed",
+      "img": "A rustic wooden table outdoors near the shore holding a carved bowl of dark seaweed and raw fish pieces, a small mound of coarse salt, tropical foliage softly out of focus, warm light, no people"
+    },
+    {
+      "id": "B07",
+      "vtype": "card",
+      "vo": "Here's the strange part. Food historians think the word poke may not have attached to this dish until the nineteen-sixties. The dish itself is centuries older.",
+      "card": { "kind": "bignum", "big": "1960s", "unit": "is roughly when the word may have first meant this dish", "sub": "the dish itself: centuries older" }
+    },
+    {
+      "id": "B08",
+      "vtype": "still",
+      "vo": "The version we'd recognize today took shape somewhere in between — carried there by people who came to Hawaii for a completely different reason.",
+      "cap": "1868 onward",
+      "img": "A weathered nineteenth-century sailing ship approaching a tropical harbor at dawn, distant volcanic peaks silhouetted against early light, calm water, no people"
+    },
+    {
+      "id": "B09",
+      "vtype": "still",
+      "vo": "In June of 1868, a ship called the Scioto landed in Honolulu carrying a hundred and forty-eight Japanese laborers, contracted to work the sugar fields. It was the first wave.",
+      "cap": "the Scioto · June 20, 1868 · 148 aboard",
+      "img": "A dockside view of a nineteenth-century harbor, a wooden sailing ship moored at a quiet pier, sugar cane fields visible on distant hillsides, muted period color, no people"
+    },
+    {
+      "id": "B10",
+      "vtype": "card",
+      "vo": "That first wave was followed by twenty-six government-contracted ships carrying nearly thirty thousand more. By 1924, when a new immigration law shut the door, close to two hundred thousand Japanese had come through.",
+      "card": { "kind": "stat3", "title": "Japanese immigration to Hawaii", "rows": [["148", "1868 · the Scioto, first ship"], ["~29,000", "1885–94 · 26 government-contract ships"], ["~200,000", "by 1924 · when the door closed"]] }
+    },
+    {
+      "id": "B11",
+      "vtype": "still",
+      "vo": "They worked alongside Chinese, Filipino, Portuguese, Korean, and Okinawan laborers, all packed into the same plantation camps. Nobody planned for the food to mix. It just did.",
+      "cap": "the plantation camps",
+      "img": "A row of modest wooden plantation-era worker cottages along a dirt path, sugar cane fields extending toward distant mountains, warm late-afternoon light, muted period color, no people"
+    },
+    {
+      "id": "B12",
+      "vtype": "still",
+      "vo": "Around 1890, Japanese fishermen brought deep-sea tuna fishing to the islands. Ahi — yellowfin and bigeye tuna — became genuinely abundant for the first time.",
+      "cap": "ahi, made abundant · c. 1890",
+      "img": "A small wooden fishing sampan on calm open ocean at dawn, a distant island silhouette on the horizon, a few large tuna resting on the deck, muted period tone, no people, no faces"
+    },
+    {
+      "id": "B13",
+      "vtype": "still",
+      "vo": "Japanese cooks started adding shoyu — soy sauce — to the cubed raw ahi. In 1946, five Japanese families in Kalihi started their own shoyu company. It's still sold in Hawaii today.",
+      "cap": "Aloha Shoyu Co. · Kalihi, 1946",
+      "img": "A small mid-century family-run factory storefront, wooden crates of glass soy sauce bottles stacked outside on a quiet street, warm afternoon light, muted period color, no people"
+    },
+    {
+      "id": "B14",
+      "vtype": "still",
+      "vo": "By the 1970s, this — ahi, shoyu, sesame oil, green onion — was simply what poke meant in Hawaii. Nobody signed their name to it. It came from a lot of kitchens, over a long time.",
+      "cap": "no single inventor",
+      "img": "A quiet 1970s home kitchen counter with a glass bottle of soy sauce, a small bottle of sesame oil, sliced green onion, a knife and cutting board, warm domestic light, no people"
+    },
+    {
+      "id": "B15",
+      "vtype": "still",
+      "vo": "You'll sometimes see a chef named Sam Choy credited online as the one who invented it. He didn't. In 1992 he ran a poke recipe contest, and later sold it from food trucks. He's the reason it spread — not the reason it exists.",
+      "cap": "popularizer, not inventor",
+      "img": "A simple stainless food truck parked at dusk on a quiet Hawaii street, string lights overhead, palm trees silhouetted against the evening sky, no people, no text, no signage"
+    },
+    {
+      "id": "B16",
+      "vtype": "card",
+      "vo": "So what does ordinary actually look like today?",
+      "card": { "kind": "question", "head": "So what does ordinary look like today?" }
+    },
+    {
+      "id": "B17",
+      "vtype": "still",
+      "vo": "Foodland says it's sold poke since around the 1960s. It still runs an annual contest — not for best flavor, but for which of its own stores makes the best bowl. This year's winner: the Ala Moana location.",
+      "cap": "Foodland's poke contest · running since ~1960s",
+      "img": "A busy but tidy supermarket deli counter interior, glass display cases with rows of variously colored prepared salads, bright clean lighting, no people, no text, no signage"
+    },
+    {
+      "id": "B18",
+      "vtype": "still",
+      "vo": "At Times Supermarkets, the seafood counter carries more than thirty documented varieties. At Tamura's — technically a liquor store — the poke sells out most days by early afternoon.",
+      "cap": "30+ varieties · sold out by early afternoon",
+      "img": "A modest neighborhood liquor-and-grocery storefront exterior with a simple awning, a quiet residential street, warm afternoon light, no people, no text, no signage"
+    },
+    {
+      "id": "B19",
+      "vtype": "still",
+      "vo": "Don Quijote, a twenty-four-hour Japanese variety store, runs a poke of the month. And even 7-Eleven sells it here — fresh ahi, not frozen, a menu item that exists nowhere else the chain operates.",
+      "cap": "even 7-Eleven · Hawaii-only menu",
+      "img": "A late-night convenience store interior, a refrigerated deli case with prepared food containers, warm light spilling onto a quiet street through the front window, no people, no text, no signage"
+    },
+    {
+      "id": "B20",
+      "vtype": "card",
+      "vo": "In Hawaii, this was never new. Somewhere else, it just took until 2016 to notice.",
+      "card": { "kind": "signoff", "head": "What's a trend somewhere", "accent": "is Tuesday somewhere else.", "by": "byclaude.net" }
+    }
+  ]
+}
