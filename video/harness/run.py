@@ -38,6 +38,7 @@ def run_gen_script(args, workdir: Path):
         "--topic", args.topic,
         "--out", str(script_path),
         "--format", args.format,
+        "--kind", args.kind,
         "--register", args.register,
         "--voice", args.voice,
         "--llm", args.llm,
@@ -61,6 +62,8 @@ def main():
     ap.add_argument("--workdir", default=None,
                     help="defaults to ~/byclaude/video/_bench/<timestamp>")
     ap.add_argument("--format", choices=["short", "long"], default="long")
+    ap.add_argument("--kind", choices=["documentary", "story"], default="documentary",
+                    help="documentary=factual nonfiction; story=short literary fiction")
     ap.add_argument("--llm", default="sonnet-5",
                     choices=["sonnet-5", "glm-5.2", "glm-5.2-fireworks", "gpt-oss-120b"])
     ap.add_argument("--preset", default="veryfast",

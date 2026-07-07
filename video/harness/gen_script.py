@@ -33,18 +33,37 @@ def system_prompt(args):
     else:
         shape = LONG_SHAPE
         beat_count = "15-22 beats"
-    return f"""You write tight, exact documentary video scripts. Output STRICT JSON only — no prose, no markdown, no commentary. The JSON must validate against this shape:
+    if args.kind == "story":
+        identity = ("You write short literary fiction video scripts — a single character, "
+                    "a brief situation, a quiet turn. Invented detail is the point; the "
+                    "discipline is narrative, not factual.")
+        fact_rule = ("This is fiction — invent freely. But keep it tight: one arc, one turn, "
+                     "a close. No sprawl, no cast-of-thousands. Concrete sensory detail over abstraction.")
+        scene_rule = ("Each `still` beat has an image prompt (`img`) describing ONE concrete scene. "
+                      "Environmental storytelling only: the image shows the scene through objects, "
+                      "light, weather, architecture, an absence — NEVER a face, NEVER a readable "
+                      "sign, NEVER a split-panel/diptych/collage. Exactly one unified scene per "
+                      "image. The character is present through their traces, not their features.")
+    else:
+        identity = "You write tight, exact documentary video scripts."
+        fact_rule = ("Facts exact. Numbers load-bearing only if real. No invention, no "
+                     "embellishment, no legend dressed as fact. If uncertain, soften or omit.")
+        scene_rule = ("Each `still` beat has an image prompt (`img`) describing ONE concrete scene "
+                      "(no people, no faces, no readable text/signage, no split-panel/diptych/collage "
+                      "— exactly one unified scene).")
+    return f"""{identity} Output STRICT JSON only — no prose, no markdown, no commentary. The JSON must validate against this shape:
 
 {shape}
 
 Rules:
 - {beat_count}, ordered. The first beat is the hook.
 - Every beat MUST have non-empty `vo` (the narration). Never empty, never null.
-- Each `still` beat has: a single sentence of narration (`vo`), a short caption (`cap`, ~3-6 words, ALL CAPS suits the format), and an image prompt (`img`) describing ONE concrete scene (no people, no faces, no readable text/signage, no split-panel/diptych/collage — exactly one unified scene).
-- ~30-40% of beats should be `card` beats (typographic, no image) carrying the load-bearing numbers or the lines that land — use them at dramatic pivot points, not bunched together.
+- Each `still` beat has: a single sentence of narration (`vo`) and a short caption (`cap`, ~3-6 words, ALL CAPS suits the format).
+- {scene_rule}
+- ~30-40% of beats should be `card` beats (typographic, no image) carrying the load-bearing numbers or the lines that land — use them at dramatic pivot points, not bunched together. (Short format uses stills only and ignores this.)
 - The `grade` describes the visual grade in TONE/COLOUR/ERA terms only — NEVER name two concrete locations in it (that triggers split-panel output).
 - `voice_instructions` describes the TTS delivery register, not the content.
-- Facts exact. Numbers load-bearing only if real. No invention, no embellishment, no legend dressed as fact. If uncertain, soften or omit.
+- {fact_rule}
 - End on a card that closes the piece (signoff or a quiet line), not a call-to-action.
 
 Return only the JSON object."""
@@ -72,7 +91,7 @@ Card kinds (use any of these):
   stat3:  { "kind": "stat3",  "title": "<title>", "rows": [["<n>", "<label>"], ...] }
   question: { "kind": "question", "head": "<the question, short>" }
   cta:    { "kind": "cta",    "head": "<headline>", "line1": "<url or word>", "line2": "<subline>" }
-  signoff: { "kind": "signoff", "head": "<line>", "accent": "<bigger line>", "by": "<tiny line, e.g. 'byclaude.net'>" }"""
+  signoff: { "kind": "signoff", "head": "<line>", "accent": "<bigger line>", "by": "<tiny line, e.g. 'instantvideos.org'>" }"""
 
 SHORT_SHAPE = """{
   "title": "string",
@@ -121,16 +140,19 @@ def call_baseten(model, sys_p, user_p, max_tokens):
 
 
 def call_fireworks(model, sys_p, user_p, max_tokens):
-    return _call_openai_compat(API_FIREWORKS, "FIREWORKS_API_KEY", model, sys_p, user_p, max_tokens)
+    return _call_openai_compat(API_FIREWORKS, "FIREWORKS_API_KEY", model, sys_p, user_p, max_tokens, service_tier="priority")
 
 
-def _call_openai_compat(url, env_var, model, sys_p, user_p, max_tokens):
-    body = json.dumps({
+def _call_openai_compat(url, env_var, model, sys_p, user_p, max_tokens, service_tier=None):
+    body = {
         "model": model, "max_tokens": max_tokens,
         "response_format": {"type": "json_object"},
         "messages": [{"role": "system", "content": sys_p},
                      {"role": "user", "content": user_p}],
-    }).encode()
+    }
+    if service_tier:
+        body["service_tier"] = service_tier
+    body = json.dumps(body).encode()
     r = urllib.request.Request(url, data=body, headers={
         "Authorization": f"Bearer {os.environ[env_var]}",
         "content-type": "application/json",
@@ -150,6 +172,8 @@ def main():
     ap.add_argument("--topic", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--format", choices=["short", "long"], default="long")
+    ap.add_argument("--kind", choices=["documentary", "story"], default="documentary",
+                    help="documentary=factual nonfiction; story=short literary fiction")
     ap.add_argument("--register", default="documentary, measured, unhurried, lets facts carry the weight")
     ap.add_argument("--voice", default="onyx")
     ap.add_argument("--grade", default="")

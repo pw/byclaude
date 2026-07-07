@@ -317,6 +317,7 @@ gtag('config', 'G-LFEEJHPQFG');
         <button data-fmt="long" onclick="setFmt('long')">Long-form</button>
       </div>
       <button class="surprise" onclick="surpriseMe()">Surprise me</button>
+      <button class="surprise" onclick="storyIdea()">Tell me a story</button>
     </div>
     <input type="text" id="topic" placeholder="e.g. the Dyatlov Pass incident, the fall of Constantinople, how penicillin was discovered..." autofocus>
     <button class="gen" id="go" onclick="generate()">Generate Video</button>
@@ -336,6 +337,7 @@ let jobId = null;
 let pollTimer = null;
 let startTime = null;
 let fmt = 'short';
+let kind = 'documentary';
 let adminKey = new URLSearchParams(window.location.search).get('admin') || '';
 
 async function setFmt(f) {
@@ -344,8 +346,17 @@ async function setFmt(f) {
 }
 
 async function surpriseMe() {
+  kind = 'documentary';
   document.getElementById('topic').value = '...';
   const resp = await fetch('/surprise');
+  const data = await resp.json();
+  document.getElementById('topic').value = data.topic;
+}
+
+async function storyIdea() {
+  kind = 'story';
+  document.getElementById('topic').value = '...';
+  const resp = await fetch('/story-idea');
   const data = await resp.json();
   document.getElementById('topic').value = data.topic;
 }
@@ -409,7 +420,7 @@ async function generate() {
   const resp = await fetch('/generate', {
     method: 'POST',
     headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-    body: 'topic=' + encodeURIComponent(topic) + '&format=' + encodeURIComponent(fmt) + (adminKey ? '&admin=' + encodeURIComponent(adminKey) : '')
+    body: 'topic=' + encodeURIComponent(topic) + '&format=' + encodeURIComponent(fmt) + '&kind=' + encodeURIComponent(kind) + (adminKey ? '&admin=' + encodeURIComponent(adminKey) : '')
   });
   const data = await resp.json();
   if (data.error) {
@@ -459,10 +470,13 @@ async function pollStatus() {
     result.style.display = 'block';
 
     const meta = document.getElementById('meta');
+    const shareUrl = location.origin + '/v/' + jobId;
     meta.innerHTML = '<span><b>' + data.beats + '</b> beats</span>' +
       '<span><b>' + data.narration + '</b> narration</span>' +
       '<span><b>$' + data.cost + '</b> cost</span>' +
       '<span><b>' + (data.format === 'short' ? 'Short' : 'Long') + '</b></span>' +
+      '<span><input readonly id="share-url" value="' + shareUrl + '" style="background:#0b0e13;border:1px solid #2c3340;border-radius:4px;color:#8c95a5;padding:0.3rem 0.5rem;font-size:0.75rem;font-family:monospace;width:220px"></span>' +
+      '<span><a href="/v/' + jobId + '" target="_blank" style="color:#f2a93b;text-decoration:none;font-weight:600">Open</a></span>' +
       '<span><a href="/video/' + jobId + '" download style="color:#f2a93b;text-decoration:none">Download MP4</a></span>';
 
     const btn = document.getElementById('go');
@@ -497,11 +511,16 @@ document.getElementById('topic').addEventListener('keydown', e => {
 </html>'''
 
 
-def run_pipeline(job_id, topic, fmt="long"):
+def run_pipeline(job_id, topic, fmt="long", kind="documentary"):
     """Run the full pipeline in a background thread, streaming log lines to JOBS."""
     job = JOBS[job_id]
     workdir = job["workdir"]
     workdir.mkdir(parents=True, exist_ok=True)
+
+    if kind == "story":
+        register = "literary fiction, atmospheric, one arc one turn, lets the scene carry the emotion"
+    else:
+        register = "documentary, warm, engaging, lets the story carry the weight"
 
     env = os.environ.copy()
     cmd = [
@@ -509,6 +528,7 @@ def run_pipeline(job_id, topic, fmt="long"):
         "--topic", topic,
         "--workdir", str(workdir),
         "--format", fmt,
+        "--kind", kind,
         "--llm", "glm-5.2-fireworks",
         "--model", "gemini-flash-lite",
         "--preset", "ultrafast",
@@ -517,8 +537,9 @@ def run_pipeline(job_id, topic, fmt="long"):
         "--motion", "none",
         "--voice", "ballad",
         "--max-workers", "18",
-        "--register", "documentary, warm, engaging, lets the story carry the weight",
-        "--kicker", "DOCUMENTARY",
+        "--register", register,
+        "--kicker", "",
+        "--mark", "instantvideos.org",
     ]
 
     proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
@@ -572,6 +593,7 @@ class Handler(BaseHTTPRequestHandler):
                 "model": "accounts/fireworks/models/gpt-oss-120b",
                 "max_tokens": 200,
                 "temperature": 1.2,
+                "service_tier": "priority",
                 "messages": [
                     {"role": "user", "content": "Name ONE fascinating specific topic for a documentary video — a real event, discovery, mystery, or person from history or science. Reply with ONLY the topic, one sentence. No reasoning. Examples: 'the Cadaver Synod of 897', 'how Mary Anning found the first plesiosaur', 'the Tunguska event of 1908'."},
                 ],
@@ -618,6 +640,51 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
             self.wfile.write(json.dumps({"topic": topic}).encode())
+
+        elif parsed.path == '/story-idea':
+            body = json.dumps({
+                "model": "accounts/fireworks/models/gpt-oss-120b",
+                "max_tokens": 200,
+                "temperature": 1.2,
+                "service_tier": "priority",
+                "messages": [
+                    {"role": "user", "content": "Give ONE brief premise for a short literary fiction story — a single character, a quiet situation, a small turn. One sentence, evocative enough to build a 30-second video from. No genre fiction (no horror, no sci-fi/fantasy worldbuilding, no thriller). Grounded, human, one image that haunts. Examples: 'a lighthouse keeper finds a message in a bottle dated 1923', 'an old woman receives a letter from her sister who died forty years ago', 'a clockmaker's last clock runs backward', 'a child leaves a folded drawing at a train station every Sunday for a year'. Reply with ONLY the premise, one sentence. No reasoning."},
+                ],
+            }).encode()
+            try:
+                req = ur.Request("https://api.fireworks.ai/inference/v1/chat/completions",
+                    data=body, headers={
+                        "Authorization": f"Bearer {os.environ.get('FIREWORKS_API_KEY','')}",
+                        "content-type": "application/json"})
+                with ur.urlopen(req, timeout=20) as resp:
+                    out = json.loads(resp.read())
+                msg = out["choices"][0]["message"]
+                premise = (msg.get("content") or "").strip()
+                premise = premise.strip('"').strip("*").strip("`").strip()
+                if not premise or premise.startswith(("1.", "I'll", "Let me", "Here", "The user")):
+                    rc = msg.get("reasoning_content", "")
+                    lines = [l.strip() for l in rc.split("\n") if l.strip()]
+                    premise = lines[-1] if lines else ""
+                    premise = premise.strip('"').strip("*").strip("`").strip()
+                    while premise and premise[0] in "0123456789.-*# ":
+                        premise = premise[1:].lstrip()
+                if not premise or len(premise) < 10 or premise.startswith(("1.", "I'll", "Let me", "Here", "The user", "Better")):
+                    import random
+                    fallbacks = [
+                        "a lighthouse keeper finds a message in a bottle dated 1923",
+                        "an old woman receives a letter from her sister who died forty years ago",
+                        "a clockmaker's last clock runs backward",
+                        "a child leaves a folded drawing at a train station every Sunday for a year",
+                        "a librarian finds a book with her own name in the margin, in her own hand",
+                        "a retired sailor hangs a new chart on his kitchen wall every morning",
+                    ]
+                    premise = random.choice(fallbacks)
+            except Exception:
+                premise = "a lighthouse keeper finds a message in a bottle dated 1923"
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json')
+            self.end_headers()
+            self.wfile.write(json.dumps({"topic": premise}).encode())
 
         elif parsed.path == '/credits':
             ip = get_client_ip(self)
@@ -714,11 +781,89 @@ class Handler(BaseHTTPRequestHandler):
                 "error": job.get("error", ""),
             }).encode())
 
+        elif parsed.path.startswith('/v/'):
+            # share page — watchable HTML wrapper around the video
+            job_id = parsed.path.split('/')[2]
+            with LOCK:
+                job = JOBS.get(job_id, {})
+            video_path = job.get("video")
+            topic = job.get("topic", "")
+            fmt = job.get("format", "long")
+            # filesystem fallback (survives server restart — JOBS is in-memory)
+            if not video_path or not Path(video_path).exists():
+                fs_video = WORK / job_id / "final.mp4"
+                if fs_video.exists():
+                    video_path = str(fs_video)
+                    summary = WORK / job_id / "summary.json"
+                    if summary.exists() and not topic:
+                        try:
+                            s = json.load(open(summary))
+                            topic = s.get("topic", "")
+                            fmt = s.get("format", fmt)
+                        except Exception:
+                            pass
+            if not video_path or not Path(video_path).exists():
+                self.send_response(404)
+                self.send_header('Content-Type', 'text/html; charset=utf-8')
+                self.end_headers()
+                self.wfile.write(b"<h1>Video not found</h1><p>This video may have expired.</p>")
+                return
+            import html as _html
+            safe_topic = _html.escape(topic or "Untitled")
+            share_url = f"https://instantvideos.org/v/{job_id}"
+            video_class = "short" if fmt == "short" else ""
+            page = f'''<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{safe_topic} — InstantVideos</title>
+<meta name="description" content="{safe_topic} — a video made with InstantVideos.org">
+<style>
+  * {{ box-sizing: border-box; margin: 0; padding: 0; }}
+  body {{ background: #0b0e13; color: #e8eef4; font-family: -apple-system, system-ui, sans-serif;
+          display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 2rem 1rem; }}
+  h1 {{ font-size: 1.3rem; font-weight: 600; color: #f2a93b; text-align: center; margin-bottom: 1.2rem;
+        max-width: 640px; line-height: 1.35; }}
+  video {{ max-width: 100%; border-radius: 12px; border: 1px solid #1f2733; }}
+  video.short {{ max-height: 70vh; width: auto; }}
+  .bar {{ margin-top: 1.2rem; display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; justify-content: center; }}
+  .share {{ display: inline-flex; align-items: center; gap: 0.4rem; }}
+  .share input {{ background: #12161e; border: 1px solid #2c3340; border-radius: 6px; color: #8c95a5;
+                  padding: 0.5rem 0.7rem; font-size: 0.8rem; font-family: monospace; width: 260px; }}
+  a.btn, button.btn {{ display: inline-block; padding: 0.5rem 1rem; font-size: 0.82rem; font-weight: 600;
+    background: #f2a93b; color: #0b0e13; border: none; border-radius: 6px; text-decoration: none; cursor: pointer; }}
+  a.outline {{ background: transparent; border: 1px solid #2c3340; color: #8c95a5; }}
+  .footer {{ margin-top: 2rem; color: #4c566a; font-size: 0.78rem; text-align: center; }}
+  .footer a {{ color: #8c95a5; text-decoration: none; }}
+</style></head><body>
+  <h1>{safe_topic}</h1>
+  <video class="{video_class}" controls autoplay
+         src="/video/{job_id}" playsinline></video>
+  <div class="bar">
+    <div class="share">
+      <input readonly value="{share_url}" id="shareurl">
+      <button class="btn" onclick="navigator.clipboard.writeText(document.getElementById('shareurl').value);this.textContent='Copied'">Copy link</button>
+    </div>
+    <a class="btn outline" href="/video/{job_id}" download>Download</a>
+  </div>
+  <div class="footer">
+    <p>Made with <a href="https://instantvideos.org">InstantVideos.org</a> — type any topic, get a video.</p>
+  </div>
+</body></html>'''
+            self.send_response(200)
+            self.send_header('Content-Type', 'text/html; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(page.encode())
+
         elif parsed.path.startswith('/video/'):
             job_id = parsed.path.split('/')[2]
             with LOCK:
                 job = JOBS.get(job_id, {})
             video_path = job.get("video")
+            # filesystem fallback (survives restart)
+            if not video_path or not Path(video_path).exists():
+                fs_video = WORK / job_id / "final.mp4"
+                if fs_video.exists():
+                    video_path = str(fs_video)
             if not video_path or not Path(video_path).exists():
                 self.send_response(404)
                 self.end_headers()
@@ -746,6 +891,7 @@ class Handler(BaseHTTPRequestHandler):
             params = parse_qs(body)
             topic = params.get('topic', [''])[0].strip()
             fmt = params.get('format', ['long'])[0].strip()
+            kind = params.get('kind', ['documentary'])[0].strip()
             override = params.get('admin', [''])[0] == ADMIN_OVERRIDE
             can_gen, free, paid, msg, mode = check_credits(ip, override)
             if not can_gen:
@@ -785,7 +931,7 @@ class Handler(BaseHTTPRequestHandler):
                     "log": [], "workdir": workdir, "t0": time.time(),
                     "format": fmt, "ip": ip,
                 }
-            t = threading.Thread(target=run_pipeline, args=(job_id, topic, fmt), daemon=True)
+            t = threading.Thread(target=run_pipeline, args=(job_id, topic, fmt, kind), daemon=True)
             t.start()
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')

@@ -180,8 +180,9 @@ def _render_one_card(work: Path, beat: dict, kicker: str, mark: str):
     cx = W // 2
     # furniture
     kf = MONOSB(15)
-    d.rectangle([60 * S, 58 * S, 60 * S + 12 * S, 58 * S + 12 * S], fill=ACCENT)
-    _tracked(d, 84 * S, 55 * S, kicker.upper(), kf, MUTE, 3)
+    if kicker:
+        d.rectangle([60 * S, 58 * S, 60 * S + 12 * S, 58 * S + 12 * S], fill=ACCENT)
+        _tracked(d, 84 * S, 55 * S, kicker.upper(), kf, MUTE, 3)
     bf = MONO(15)
     d.text((W - 60 * S - d.textlength(mark, font=bf), H - 74 * S), mark, font=bf, fill=DIM)
 
@@ -790,10 +791,11 @@ def build_short(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
     def compose_frame(beat, idx):
         img = bg_frame(); d = ImageDraw.Draw(img)
         # kicker
-        d.rectangle([70, 86, 92, 108], fill=AMBER)
-        kf = _sf("IBMPlexMono-SemiBold.ttf", 28); kx = 108
-        for ch in ("BY CLAUDE  ·  " + kicker.upper()):
-            d.text((kx, 82), ch, font=kf, fill=MUTE); kx += d.textlength(ch, font=kf) + 3
+        if kicker:
+            d.rectangle([70, 86, 92, 108], fill=AMBER)
+            kf = _sf("IBMPlexMono-SemiBold.ttf", 28); kx = 108
+            for ch in kicker.upper():
+                d.text((kx, 82), ch, font=kf, fill=MUTE); kx += d.textlength(ch, font=kf) + 3
         cap_y = int(SH * 0.42)
         # still band (if beat has an image)
         if beat.get("vtype") == "still" and beat.get("img"):
