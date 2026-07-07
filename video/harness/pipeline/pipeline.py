@@ -67,6 +67,7 @@ def gemini_image(prompt: str, out: Path, aspect_ratio: str = "16:9", timeout: in
             "responseModalities": ["IMAGE", "TEXT"],
             "imageConfig": {"aspectRatio": aspect_ratio},
         },
+        "service_tier": "priority",
     }).encode()
     req = urllib.request.Request(
         f"{GEMINI_URL}?key={key}",
@@ -405,7 +406,7 @@ def build_video_per_clip(base: Path, data: dict, kicker: str = "DOCUMENTARY", ma
     clips = base / "clips"; clips.mkdir(parents=True, exist_ok=True)
     caps = base / "work/caps"; caps.mkdir(parents=True, exist_ok=True)
     (base / "work").mkdir(parents=True, exist_ok=True)
-    FPS = 30; TAIL = 0.5
+    FPS = 15; TAIL = 0.5  # 15fps for static content (motion=none) — halves frame count, visually identical
     OUT_W, OUT_H = (1920, 1080) if resolution == 1080 else (1280, 720)
     beats = data["beats"]
     t0 = time.time()
@@ -751,7 +752,7 @@ def build_short(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
     frames_dir = base / "frames"; frames_dir.mkdir(parents=True, exist_ok=True)
     clips = base / "clips"; clips.mkdir(parents=True, exist_ok=True)
     (base / "work").mkdir(parents=True, exist_ok=True)
-    FPS = 30; TAIL = 0.35
+    FPS = 15; TAIL = 0.35  # 15fps for static content — halves frame count, visually identical
     beats = data["beats"]
     t0 = time.time()
 
