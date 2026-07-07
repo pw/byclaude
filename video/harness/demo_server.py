@@ -351,6 +351,7 @@ async function surpriseMe() {
   const resp = await fetch('/surprise');
   const data = await resp.json();
   document.getElementById('topic').value = data.topic;
+  generate();
 }
 
 async function storyIdea() {
@@ -359,6 +360,7 @@ async function storyIdea() {
   const resp = await fetch('/story-idea');
   const data = await resp.json();
   document.getElementById('topic').value = data.topic;
+  generate();
 }
 
 // check for ?paid=1 on page load

@@ -117,6 +117,7 @@ async function surpriseMe() {
   const resp = await fetch('/surprise');
   const data = await resp.json();
   document.getElementById('prompt').value = data.prompt;
+  generate();
 }
 
 async function generate() {
