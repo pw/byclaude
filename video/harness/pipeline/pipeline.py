@@ -302,6 +302,13 @@ def render_tts(base: Path, data: dict, max_workers: int = 6):
                             "-of", "csv=p=0", str(out)], capture_output=True, text=True)
         try: dur = round(float(d.stdout.strip()), 3)
         except Exception: dur = None
+        if dur is None and out.exists() and out.stat().st_size < 1000:
+            # likely an API error saved as the mp3 file — surface it so detect_failure catches it
+            try:
+                e = json.loads(out.read_text()).get("error", {})
+                print(f"[tts] {b['id']} FAIL: {e.get('code', e.get('type', ''))}: {e.get('message', '')[:200]}", flush=True)
+            except Exception:
+                print(f"[tts] {b['id']} FAIL: no audio generated (unknown error)", flush=True)
         sz = out.stat().st_size if out.exists() else 0
         return (b["id"], len(vo), dur, sz)
 
@@ -456,7 +463,7 @@ def build_video_per_clip(base: Path, data: dict, kicker: str = "DOCUMENTARY", ma
 
     def build_clip(args):
         idx, b = args
-        bid = b["id"]; dur = durs[bid]["dur"]; clip = round(dur + TAIL, 3)
+        bid = b["id"]; dur = durs[bid]["dur"] or 3.0; clip = round(dur + TAIL, 3)
         frames = round(clip * FPS)
         img = asset(b); cap = cap_paths.get(bid)
         vt = b["vtype"]
@@ -617,7 +624,7 @@ def build_video(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
 
     for idx, b in enumerate(beats):
         bid = b["id"]
-        dur = durs[bid]["dur"]
+        dur = durs[bid]["dur"] or 3.0
         clip = round(dur + TAIL, 3)
         frames = round(clip * FPS)
         total_dur += clip
@@ -825,7 +832,7 @@ def build_short(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
     # build clips in parallel
     def build_clip(args):
         idx, b = args
-        bid = b["id"]; dur = durs.get(bid, {}).get("dur", 3.0)
+        bid = b["id"]; dur = durs.get(bid, {}).get("dur") or 3.0
         clip = round(dur + TAIL, 3)
         frames = round(clip * FPS)
         frame = frame_paths[idx]
