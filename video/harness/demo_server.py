@@ -514,7 +514,7 @@ def run_pipeline(job_id, topic, fmt="long"):
         "--preset", "ultrafast",
         "--resolution", "720",
         "--mode", "perclip",
-        "--motion", "kenburns",
+        "--motion", "none",
         "--voice", "ballad",
         "--max-workers", "18",
         "--register", "documentary, warm, engaging, lets the story carry the weight",
