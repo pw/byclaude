@@ -408,6 +408,7 @@ async function generate() {
   log.innerHTML = '';
   log.style.display = 'block';
   result.style.display = 'none';
+  timer.innerHTML = '<span class="spinner"></span> <span id="timer-text">0.0s</span>';
   timer.style.display = 'block';
   startTime = Date.now();
 

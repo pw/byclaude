@@ -1,0 +1,9 @@
+name = "instantimages"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+account_id = "e8ccae77a59917df36801cc52dbfcd60"
+
+# InstantImages.org — instant AI image generation on the edge.
+# Secrets (set via `wrangler secret put`):
+#   GEMINI_API_KEY    — Google AI / Gemini Flash Lite image API
+#   FIREWORKS_API_KEY — Fireworks gpt-oss-120b for "Surprise me" prompts
