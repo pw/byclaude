@@ -463,6 +463,19 @@ def build_video_per_clip(base: Path, data: dict, kicker: str = "DOCUMENTARY", ma
         audio_path = base / "audio" / f"{bid}.mp3"
         has_audio = audio_path.exists() and audio_path.stat().st_size > 1000
 
+        # fold fades into per-clip: fade-in on first, fade-out on last
+        last_idx = len(beats) - 1
+        v_fades, a_fades = [], []
+        if idx == 0:
+            v_fades.append("fade=t=in:st=0:d=0.8")
+            a_fades.append("afade=t=in:st=0:d=0.5")
+        if idx == last_idx:
+            fo = max(0, clip - 1.3)
+            v_fades.append(f"fade=t=out:st={fo:.2f}:d=1.3")
+            a_fades.append(f"afade=t=out:st={fo:.2f}:d=1.3")
+        vf = ("," + ",".join(v_fades)) if v_fades else ""
+        af = ("," + ",".join(a_fades)) if a_fades else ""
+
         if motion == "none":
             # static still — loop the image for clip seconds, no zoom/pan
             ins = ["-loop", "1", "-t", str(clip), "-i", str(img)]
@@ -473,7 +486,7 @@ def build_video_per_clip(base: Path, data: dict, kicker: str = "DOCUMENTARY", ma
                 ins += ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]
             a_idx = 1 + (1 if cap else 0)
             scale = f"scale={OUT_W}:{OUT_H}:force_original_aspect_ratio=increase,crop={OUT_W}:{OUT_H},fps={FPS}"
-            v_chain = f"[0:v]{scale}[s];[s][1:v]overlay=0:0[v]" if cap else f"[0:v]{scale}[v]"
+            v_chain = f"[0:v]{scale}[s];[s][1:v]overlay=0:0{vf}[v]" if cap else f"[0:v]{scale}{vf}[v]"
         else:
             # ken burns — very slow zoom to minimize zoompan jitter;
             # the integer pixel stepping in x/y is the jitter source,
@@ -489,9 +502,9 @@ def build_video_per_clip(base: Path, data: dict, kicker: str = "DOCUMENTARY", ma
             else:
                 ins += ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]
             a_idx = 1 + (1 if cap else 0)
-            v_chain = f"[0:v]{zp}[kb];[kb][1:v]overlay=0:0[v]" if cap else f"[0:v]{zp}[v]"
+            v_chain = f"[0:v]{zp}[kb];[kb][1:v]overlay=0:0{vf}[v]" if cap else f"[0:v]{zp}{vf}[v]"
 
-        a_filter = f"aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,apad,atrim=0:{clip}"
+        a_filter = f"aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,apad,atrim=0:{clip}{af}"
         fc = f"{v_chain};[{a_idx}:a]{a_filter}[a]"
         if use_nvenc:
             cmd = ["ffmpeg", "-y", *ins, "-filter_complex", fc, "-map", "[v]", "-map", "[a]",
@@ -516,32 +529,11 @@ def build_video_per_clip(base: Path, data: dict, kicker: str = "DOCUMENTARY", ma
     listf.write_text("".join(f"file '{clips / (b['id']+'.mp4')}'\n" for b in beats))
     final = base / out_name
     total = sum(c for _, c, _ in clip_results)
-    fout = max(0.1, total - 1.3)
 
-    # concat copy, then a separate pass for fades + loudnorm (re-encode, but fast
-    # since it's just stream copy for video + audio filter)
-    concat_raw = base / "work/concat_raw.mp4"
-    cmd = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(listf),
-           "-c", "copy", "-movflags", "+faststart", str(concat_raw)]
-    subprocess.run(cmd, capture_output=True, text=True)
-
-    vf = f"fade=t=in:st=0:d=0.8,fade=t=out:st={fout:.2f}:d=1.3"
-    af = f"loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=in:st=0:d=0.5,afade=t=out:st={fout:.2f}:d=1.3"
-    if use_nvenc:
-        cmd = ["ffmpeg", "-y", "-i", str(concat_raw),
-               "-vf", vf, "-af", af,
-               "-c:v", "h264_nvenc", "-preset", nvenc_preset_map.get(preset, "p4"),
-               "-pix_fmt", "yuv420p", "-b:v", "4M", "-r", str(FPS),
-               "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
-               "-movflags", "+faststart", str(final)]
-    else:
-        cmd = ["ffmpeg", "-y", "-i", str(concat_raw),
-               "-vf", vf, "-af", af,
-               "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
-               "-crf", "19", "-preset", preset,
-               "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
-               "-movflags", "+faststart", str(final)]
-    r = subprocess.run(cmd, capture_output=True, text=True)
+    # concat to final — no re-encode (fades baked into clips; TTS audio already normalized)
+    r = subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(listf),
+                        "-c", "copy", "-movflags", "+faststart", str(final)],
+                       capture_output=True, text=True)
     ok = final.exists() and final.stat().st_size > 10000
     return {
         "phase": "video", "ok": ok,
@@ -788,8 +780,8 @@ def build_short(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
             s -= 3
         return _sf(fn, floor)
 
-    def compose_frame(beat, idx):
-        img = bg_frame(); d = ImageDraw.Draw(img)
+    def compose_frame(beat, idx, bg_img):
+        img = bg_img.copy(); d = ImageDraw.Draw(img)
         # kicker
         if kicker:
             d.rectangle([70, 86, 92, 108], fill=AMBER)
@@ -823,10 +815,11 @@ def build_short(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
         img.save(out)
         return out
 
-    # compose all frames
+    # compose all frames (bg cached — same gradient/grid/vignette for every beat)
+    _bg = bg_frame()
     frame_paths = []
     for idx, b in enumerate(beats):
-        frame_paths.append(compose_frame(b, idx))
+        frame_paths.append(compose_frame(b, idx, _bg))
 
     # build clips in parallel
     def build_clip(args):
@@ -852,8 +845,20 @@ def build_short(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
         else:
             zp = f"scale={SW}:{SH},fps={FPS}"
 
-        a_filter = f"aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,apad,atrim=0:{clip}"
-        fc = f"[0:v]{zp}[v];[{a_idx}:a]{a_filter}[a]"
+        # fold fades into per-clip: fade-in on first, fade-out on last
+        last = len(beats) - 1
+        v_fades, a_fades = [], []
+        if idx == 0:
+            v_fades.append("fade=t=in:st=0:d=0.4")
+            a_fades.append("afade=t=in:st=0:d=0.3")
+        if idx == last:
+            fo = max(0, clip - 0.8)
+            v_fades.append(f"fade=t=out:st={fo:.2f}:d=0.8")
+            a_fades.append(f"afade=t=out:st={fo:.2f}:d=0.8")
+        vf = ("," + ",".join(v_fades)) if v_fades else ""
+        af = ("," + ",".join(a_fades)) if a_fades else ""
+        a_filter = f"aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,apad,atrim=0:{clip}{af}"
+        fc = f"[0:v]{zp}{vf}[v];[{a_idx}:a]{a_filter}[a]"
         cmd = ["ffmpeg", "-y", *ins, "-filter_complex", fc, "-map", "[v]", "-map", "[a]",
                "-t", str(clip), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
                "-crf", "20", "-preset", preset, "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
@@ -871,20 +876,11 @@ def build_short(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
     listf.write_text("".join(f"file '{c}'\n" for c in clip_names))
     final = base / out_name
     total = sum(c for _, c, _ in clip_results)
-    fout = max(0.1, total - 0.8)
 
-    concat_raw = base / "work/concat_raw.mp4"
-    subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(listf),
-                    "-c", "copy", "-movflags", "+faststart", str(concat_raw)],
-                   capture_output=True, text=True)
-
-    vf = f"fade=t=in:st=0:d=0.4,fade=t=out:st={fout:.2f}:d=0.8"
-    af = f"loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=in:st=0:d=0.3,afade=t=out:st={fout:.2f}:d=0.8"
-    cmd = ["ffmpeg", "-y", "-i", str(concat_raw), "-vf", vf, "-af", af,
-           "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
-           "-crf", "20", "-preset", preset, "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
-           "-movflags", "+faststart", str(final)]
-    r = subprocess.run(cmd, capture_output=True, text=True)
+    # concat to final — no re-encode (fades baked into clips; TTS audio already normalized)
+    r = subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(listf),
+                        "-c", "copy", "-movflags", "+faststart", str(final)],
+                       capture_output=True, text=True)
     ok = final.exists() and final.stat().st_size > 10000
     return {
         "phase": "video", "ok": ok,
