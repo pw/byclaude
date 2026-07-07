@@ -152,6 +152,8 @@ async function generate() {
       return;
     }
     const elapsed = ((Date.now()-startTime)/1000).toFixed(1);
+    const sp = timer.querySelector('.spinner');
+    if (sp) sp.style.display = 'none';
     document.getElementById('timer-text').textContent = 'Done in ' + elapsed + 's';
     document.getElementById('img').src = 'data:image/png;base64,' + data.image;
     document.getElementById('dl').href = 'data:image/png;base64,' + data.image;
