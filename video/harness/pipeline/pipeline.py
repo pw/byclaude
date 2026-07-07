@@ -742,7 +742,7 @@ def build_video(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
 
 def build_short(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str = "byclaude.net",
                 out_name: str = "final.mp4", preset: str = "ultrafast",
-                max_workers: int = 6, motion: str = "kenburns"):
+                max_workers: int = 6, motion: str = "kenburns", encoder: str = "libx264"):
     """Vertical 1080x1920 short-form video: bg + kicker + still band + big caption.
 
     Uses pre-generated stills from base/images/. Composites each beat as a
@@ -860,10 +860,19 @@ def build_short(base: Path, data: dict, kicker: str = "DOCUMENTARY", mark: str =
         af = ("," + ",".join(a_fades)) if a_fades else ""
         a_filter = f"aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,apad,atrim=0:{clip}{af}"
         fc = f"[0:v]{zp}{vf}[v];[{a_idx}:a]{a_filter}[a]"
-        cmd = ["ffmpeg", "-y", *ins, "-filter_complex", fc, "-map", "[v]", "-map", "[a]",
-               "-t", str(clip), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
-               "-crf", "20", "-preset", preset, "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
-               "-movflags", "+faststart", str(out)]
+        nvenc_preset_map = {"ultrafast": "p1", "superfast": "p2", "veryfast": "p3",
+                            "faster": "p4", "fast": "p4", "medium": "p5"}
+        if encoder == "h264_nvenc":
+            cmd = ["ffmpeg", "-y", *ins, "-filter_complex", fc, "-map", "[v]", "-map", "[a]",
+                   "-t", str(clip), "-c:v", "h264_nvenc", "-preset", nvenc_preset_map.get(preset, "p4"),
+                   "-pix_fmt", "yuv420p", "-b:v", "4M", "-r", str(FPS),
+                   "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
+                   "-movflags", "+faststart", str(out)]
+        else:
+            cmd = ["ffmpeg", "-y", *ins, "-filter_complex", fc, "-map", "[v]", "-map", "[a]",
+                   "-t", str(clip), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS),
+                   "-crf", "20", "-preset", preset, "-c:a", "aac", "-ar", "48000", "-b:a", "192k",
+                   "-movflags", "+faststart", str(out)]
         r = subprocess.run(cmd, capture_output=True, text=True)
         ok = out.exists() and out.stat().st_size > 10000
         return (bid, clip, "ok" if ok else f"FAIL {r.stderr[-200:]}")

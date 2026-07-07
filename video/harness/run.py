@@ -131,7 +131,7 @@ def main():
     if args.format == "short":
         vid_t = P.build_short(workdir, script, args.kicker, args.mark, args.out_name,
                               preset=args.preset, max_workers=args.max_workers,
-                              motion=args.motion)
+                              motion=args.motion, encoder=args.encoder)
     elif args.mode == "perclip":
         vid_t = P.build_video_per_clip(workdir, script, args.kicker, args.mark, args.out_name,
                                        preset=args.preset, resolution=args.resolution,
