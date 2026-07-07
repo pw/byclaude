@@ -40,7 +40,7 @@ if KEYS.exists():
 
 
 def get_db():
-    """SQLite connection for credit tracking."""
+    """SQLite connection for credit tracking + rate limit log."""
     conn = sqlite3.connect(str(DB))
     conn.execute("""CREATE TABLE IF NOT EXISTS credits (
         ip TEXT PRIMARY KEY,
@@ -50,6 +50,11 @@ def get_db():
         created_at TEXT DEFAULT (datetime('now')),
         updated_at TEXT DEFAULT (datetime('now'))
     )""")
+    conn.execute("""CREATE TABLE IF NOT EXISTS rate_log (
+        ip TEXT,
+        t REAL
+    )""")
+    conn.execute("CREATE INDEX IF NOT EXISTS rate_log_ip_t ON rate_log (ip, t)")
     conn.commit()
     return conn
 
@@ -76,6 +81,13 @@ ADMIN_OVERRIDE = os.environ.get("IV_ADMIN_KEY", "pw")  # ?admin=pw bypasses cred
 # /tmp/vh-env.conf (or a persistent env file) and restart vh-demo.service.
 # The underlying credit rows are kept either way so paid users keep credits.
 FREE_MODE = os.environ.get("IV_FREE_MODE", "1") == "1"
+
+# Per-IP rate limit (free mode only — in paid mode the credit count is the
+# limit, so we don't double-charge). Defaults: 5 videos per hour per IP.
+# Tunable live via env (no redeploy): set IV_RATE_LIMIT / IV_RATE_WINDOW_S
+# in /tmp/vh-env.conf and systemctl restart vh-demo.service.
+RATE_LIMIT = int(os.environ.get("IV_RATE_LIMIT", "5"))
+RATE_WINDOW_S = int(os.environ.get("IV_RATE_WINDOW_S", "3600"))
 
 
 def check_credits(ip, override=False):
@@ -124,6 +136,42 @@ def use_credit(ip):
         return True
     conn.close()
     return False
+
+
+def check_and_record_rate(ip, override=False):
+    """Atomically checks the per-IP rate limit and records a hit if granted.
+    Returns (ok, retry_after_s, message). No-op in paid mode (the credit
+    count is the limit there). Admin override bypasses. Fails OPEN: a
+    SQLite hiccup shouldn't block a real visitor.
+    """
+    if override or not FREE_MODE:
+        return (True, 0, "")
+    conn = get_db()
+    try:
+        conn.execute("BEGIN IMMEDIATE")
+        cutoff = time.time() - RATE_WINDOW_S
+        conn.execute("DELETE FROM rate_log WHERE t < ?", (cutoff,))
+        row = conn.execute("SELECT COUNT(*) FROM rate_log WHERE ip = ?", (ip,)).fetchone()
+        count = row[0] if row else 0
+        if count >= RATE_LIMIT:
+            conn.execute("COMMIT")
+            # oldest hit in window → when its slot frees up
+            row = conn.execute("SELECT MIN(t) FROM rate_log WHERE ip = ?", (ip,)).fetchone()
+            oldest = (row[0] if row and row[0] else time.time())
+            retry_after = max(0, int((oldest + RATE_WINDOW_S) - time.time()))
+            mins = max(1, (retry_after + 59) // 60)
+            return (False, retry_after,
+                    f"Rate limit reached — try again in ~{mins} min. "
+                    f"(Limit is {RATE_LIMIT} videos per hour per IP, to keep the demo sustainable for everyone.)")
+        conn.execute("INSERT INTO rate_log (ip, t) VALUES (?, ?)", (ip, time.time()))
+        conn.execute("COMMIT")
+        return (True, 0, "")
+    except Exception:
+        try: conn.execute("ROLLBACK")
+        except Exception: pass
+        return (True, 0, "")  # fail open
+    finally:
+        conn.close()
 
 
 def detect_failure(log_lines):
@@ -715,6 +763,15 @@ class Handler(BaseHTTPRequestHandler):
                 self.send_header('Content-Type', 'application/json')
                 self.end_headers()
                 self.wfile.write(json.dumps({"error": "no topic"}).encode())
+                return
+
+            # per-IP rate limit (free mode only; admin bypasses)
+            rate_ok, retry_after, rate_msg = check_and_record_rate(ip, override)
+            if not rate_ok:
+                self.send_response(200)
+                self.send_header('Content-Type', 'application/json')
+                self.end_headers()
+                self.wfile.write(json.dumps({"error": rate_msg}).encode())
                 return
 
             # consume a credit
