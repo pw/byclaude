@@ -14,7 +14,10 @@ spec = json.load(open(sys.argv[1]))
 BASE = SH / spec["out"]; BASE.mkdir(parents=True, exist_ok=True)
 for sub in ("audio", "frames", "clips"): (BASE / sub).mkdir(exist_ok=True)
 keytext = (Path.home() / ".config/api-keys/keys.env").read_text()
-OKEY = re.search(r'^export OPENAI_API_KEY=(.+)$', keytext, re.M).group(1).strip().strip('"')
+# 2026-08-16: narration moved to xAI grok TTS via OpenRouter (same as BTB videos —
+# Atlas/Ara voices; no instructions param on grok, tone rides the text) and the
+# whisper verification leg moved to OpenRouter transcription (OpenAI credits exhausted).
+ORKEY = re.search(r'^export OPENROUTER_API_KEY=(.+)$', keytext, re.M).group(1).strip().strip('"')
 
 W, H = 1080, 1920
 BG = (11, 14, 19); AMBER = (242, 169, 59); INK = (236, 239, 244)
@@ -67,11 +70,11 @@ def compose(beat, idx):
 
 def tts(beat, idx):
     out = BASE / "audio" / f"{idx:02d}.mp3"
-    payload = json.dumps({"model": "gpt-4o-mini-tts", "voice": spec["voice"], "input": beat["vo"], "instructions": spec["voice_instructions"]})
+    payload = json.dumps({"model": "x-ai/grok-voice-tts-1.0", "voice": spec["voice"], "input": beat["vo"], "response_format": "mp3"})
     # generate up to 2x; verify each via whisper transcription (catches silent TTS truncation)
     last_reason = ''
     for attempt in (1, 2):
-        subprocess.run(["curl", "-s", "https://api.openai.com/v1/audio/speech", "-H", f"Authorization: Bearer {OKEY}",
+        subprocess.run(["curl", "-s", "https://openrouter.ai/api/v1/audio/speech", "-H", f"Authorization: Bearer {ORKEY}",
                         "-H", "Content-Type: application/json", "-d", payload, "-o", str(out)], capture_output=True)
         dur = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(out)], capture_output=True, text=True)
         if out.stat().st_size < 1000:
@@ -97,19 +100,21 @@ def tts(beat, idx):
 def verify_tts(audio_path, expected):
     """Returns (status, reason, transcript). status in {'ok','fail','unknown'}.
     Hard check: last content word of script must appear in transcript (catches truncation).
-    Soft check: word overlap >= 0.6 (catches drift). whisper failure = 'unknown' (don't block)."""
-    import re, urllib.request
+    Soft check: word overlap >= 0.6 (catches drift). transcription failure = 'unknown' (don't block).
+    2026-08-16: whisper via OpenAI retired (OpenAI credits exhausted) — transcription now goes
+    through OpenRouter chat completions with audio input (gemini-3.5-flash-lite, $0.30/M)."""
+    import re, base64, urllib.request
     try:
-        with open(audio_path, 'rb') as f: data = f.read()
-        boundary = '----verifyboundary'
-        body = f'--{boundary}\r\nContent-Disposition: form-data; name="model"\r\n\r\nwhisper-1\r\n'.encode()
-        body += f'--{boundary}\r\nContent-Disposition: form-data; name="file"; filename="a.mp3"\r\nContent-Type: audio/mpeg\r\n\r\n'.encode()
-        body += data + b'\r\n--' + boundary.encode() + b'--\r\n'
-        req = urllib.request.Request('https://api.openai.com/v1/audio/transcriptions', data=body,
-                                     headers={'Authorization': f'Bearer {OKEY}', 'Content-Type': f'multipart/form-data; boundary={boundary}'})
-        transcript = json.loads(urllib.request.urlopen(req, timeout=30).read())['text']
+        with open(audio_path, 'rb') as f: b64 = base64.b64encode(f.read()).decode()
+        payload = {"model": "google/gemini-3.5-flash-lite", "messages": [{"role": "user", "content": [
+            {"type": "input_audio", "input_audio": {"data": b64, "format": "mp3"}},
+            {"type": "text", "text": "Transcribe this narration audio verbatim. Output only the transcription."}]}]}
+        req = urllib.request.Request('https://openrouter.ai/api/v1/chat/completions', data=json.dumps(payload).encode(),
+                                     headers={'Authorization': f'Bearer {ORKEY}', 'Content-Type': 'application/json'})
+        r = json.loads(urllib.request.urlopen(req, timeout=60).read())
+        transcript = r['choices'][0]['message']['content']
     except Exception as e:
-        return ('unknown', f'whisper-fail: {e}', '')
+        return ('unknown', f'transcribe-fail: {e}', '')
     n = lambda s: re.sub(r'\s+', ' ', re.sub(r'[^a-z0-9 ]', ' ', s.lower())).strip()
     e = n(expected); a = n(transcript)
     if not a: return ('fail', 'empty-transcript', transcript)

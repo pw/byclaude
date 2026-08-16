@@ -1,0 +1,47 @@
+{
+  "title": "The Seal Law",
+  "subtitle": "The Marine Mammal Protection Act, 1972",
+  "voice": "Atlas",
+  "voice_instructions": "(grok TTS carries tone via text; no instructions param) Measured, quiet, a little hushed — calm and unhurried but with forward energy; the cold voice of something that read the whole file. The hook lands plain and direct, never sensational. Small pauses.",
+  "grade": "Cold documentary still, muted ocean blues and slate grey with occasional warm sand tones, cinematic wide single-scene composition, fine film grain, no modern text, no signage, nothing graphic, exactly one unified scene per image, never a split-frame, diptych, or collage layout.",
+  "facts": "Verified 2026-08-16 via WebSearch/WebFetch against NOAA Fisheries feature stories, DOJ USAO-HI press release, and Frontiers in Marine Science (tuna-dolphin history), then adversarially gate-checked (2-skeptic Workflow, wf_d1afa7b3-690, verdict FIX, no blockers). MMPA signed Oct 21 1972 (Nixon): moratorium on taking marine mammals; take = harass, hunt, capture, kill (NOAA/mmc.gov/16 USC 1362). NOAA monk-seal viewing guidance (fetched): do not approach or touch; ADVISORY minimum 50 ft, 150 ft mother/pup pairs (a guideline, not a codified distance statute — script phrases it as 'the line the feds draw' since crowding past it into disturbance is the harassment). Case 1 (NOAA feature story + AP/Hawaii News Now): April 26 2016 Shylo Akuna assaulted a resting PREGNANT Hawaiian monk seal, punching repeatedly; sentenced July 26 2017 to FOUR YEARS in a HAWAII STATE circuit court (state felonies — monk seal abuse is a felony under both state and federal law; the sentence itself was state). Case 2 (NOAA feature story + WaPo): autumn 2017, Alabama visitor patted a resting monk seal AND pursued a green sea turtle on Kauai; his OWN social media posts tipped off federal agents; $1,500 summary settlement covering both animals (ESA + MMPA). Case 3 (DOJ USAO-HI PR): May 2026, Igor Lytvynchuk, 38, Covington WA, charged with hurling a large rock at (and attempted harassment of) endangered monk seal 'Lani' on Maui — rock reportedly missed; arrested by NOAA agents near Seattle; pleaded not guilty; CASE PENDING; script says 'accused'. Dolphin bycatch (Frontiers in Marine Science 2021; Wade 1995 Fishery Bulletin point estimate 558,572 w/ CV 0.13-0.53): stated as 'an estimated half a million' + cap 'EST. 550,000'; fleet deliberately purse-seined on dolphins. Harp seal hunt: Canadian Encyclopedia ~310k/yr avg 1949-61, peak >400k — 'hundreds of thousands' accurate. Monk seals ~1,600 remaining (NOAA 1,605 in 2022; ~1,600 in 2024-25). Recovery claim scoped to 'many species' (right whales/northern fur seals/monk seals did not recover). NOT included because unverifiable: a remembered 2018 'seal pup thrown at cruise ship' Seward case surfaced no primary source after two targeted searches.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Those seal videos all over your feed right now? Here's the thing nobody mentions. In America, touching one is a federal crime.",
+      "cap": "TOUCHING A SEAL\nIS A FEDERAL CRIME",
+      "img": "Extreme close-up portrait of a harbor seal lying on a rocky beach, big dark wet eyes looking straight at the camera, soft overcast coastal light, shallow depth of field, quiet and still."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "In 1972, Congress passed the Marine Mammal Protection Act. It banned the take of any marine mammal — and take means harass, hunt, capture, or kill. Crowding a seal resting on the beach counts.",
+      "cap": "MARINE MAMMAL\nPROTECTION ACT · 1972",
+      "img": "A formal government document signing ceremony in an official Washington office in 1972, men in period suits gathered around a wooden desk with papers and pens, warm lamp light, faces softly out of focus, no readable text anywhere."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "And people do get caught. One man got four years in prison under Hawaii law for repeatedly punching a pregnant monk seal — it's a felony there, and under federal law. A tourist who petted a resting seal and chased a sea turtle was caught by his own social media posts — a fifteen-hundred-dollar penalty. This year, federal agents arrested a man near Seattle accused of throwing a rock at a monk seal on Maui.",
+      "cap": "4 YEARS IN PRISON",
+      "amber": true,
+      "img": "A lone Hawaiian monk seal resting on warm sand beside a low rope barrier, empty tropical beach, late afternoon light, no people, calm and quiet."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "The law exists because of what came before it. In 1961 alone, an estimated half a million dolphins drowned in tuna nets — the fleet deliberately set on them. Hunters clubbed hundreds of thousands of harp seal pups on the ice every single year. Congress finally stepped in.",
+      "cap": "EST. 550,000 DROWNED\nIN ONE YEAR",
+      "amber": true,
+      "img": "A massive industrial purse-seine net spread across open ocean in the early 1960s, a weathered fishing vessel working rough grey water, overcast sky, somber and vast, no animals visible."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "It worked — many species that were collapsing came back. But only about sixteen hundred Hawaiian monk seals are left. If you see one on the beach, stay fifty feet away — more if there's a pup. That's the line the feds draw. Cross it, and you're the one breaking federal law.",
+      "cap": "50 FEET IS THE LINE.",
+      "img": "A single Hawaiian monk seal on a wide empty beach at dusk, dark blue ocean behind, long shadows across the sand, vast and quiet."
+    }
+  ]
+}

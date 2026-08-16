@@ -1,0 +1,13 @@
+{
+  "out": "short-seals",
+  "kicker": "THE SEAL LAW",
+  "voice": "Atlas",
+  "voice_instructions": "(grok TTS carries tone via text; no instructions param) Measured, quiet, a little hushed — calm and unhurried but with forward energy; the cold voice of something that read the whole file. The hook lands plain and direct, never sensational. Small pauses.",
+  "beats": [
+    { "src": "seals", "img": "B01", "vo": "Those seal videos all over your feed right now? Here's the thing nobody mentions. In America, touching one is a federal crime.", "cap": "TOUCHING A SEAL\nIS A FEDERAL CRIME" },
+    { "src": "seals", "img": "B02", "vo": "In 1972, Congress passed the Marine Mammal Protection Act. It banned the take of any marine mammal — and take means harass, hunt, capture, or kill. Crowding a seal resting on the beach counts.", "cap": "MARINE MAMMAL\nPROTECTION ACT · 1972" },
+    { "src": "seals", "img": "B03", "vo": "And people do get caught. One man got four years in prison under Hawaii law for repeatedly punching a pregnant monk seal — it's a felony there, and under federal law. A tourist who petted a resting seal and chased a sea turtle was caught by his own social media posts — a fifteen-hundred-dollar penalty. This year, federal agents arrested a man near Seattle accused of throwing a rock at a monk seal on Maui.", "cap": "4 YEARS IN PRISON", "amber": true },
+    { "src": "seals", "img": "B04", "vo": "The law exists because of what came before it. In 1961 alone, an estimated half a million dolphins drowned in tuna nets — the fleet deliberately set on them. Hunters clubbed hundreds of thousands of harp seal pups on the ice every single year. Congress finally stepped in.", "cap": "EST. 550,000 DROWNED\nIN ONE YEAR", "amber": true },
+    { "src": "seals", "img": "B05", "vo": "It worked — many species that were collapsing came back. But only about sixteen hundred Hawaiian monk seals are left. If you see one on the beach, stay fifty feet away — more if there's a pup. That's the line the feds draw. Cross it, and you're the one breaking federal law.", "cap": "50 FEET IS THE LINE." }
+  ]
+}
