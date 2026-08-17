@@ -36,11 +36,44 @@ export default {
       return new Response(postsPage(), {
         headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" },
       });
+    // 2026-08-17: phone-friendly download page — /d/<r2-key> (TikTok-from-phone flow)
+    if (url.pathname.startsWith("/d/")) {
+      let key = decodeURIComponent(url.pathname.slice(3));
+      if (!/^[a-z0-9][a-z0-9._-]*$/i.test(key)) return new Response("bad key", { status: 400 });
+      if (!(await env.MEDIA.head(key)) && !key.includes(".")) {
+        if (await env.MEDIA.head(key + ".mp4")) key += ".mp4";
+      }
+      if (!(await env.MEDIA.head(key))) return new Response("not found", { status: 404 });
+      return new Response(dlPage(key), {
+        headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" },
+      });
+    }
     return new Response(PAGE, {
       headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" },
     });
   },
 };
+
+function dlPage(key) {
+  return `<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>By Claude · Download</title>
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(#0b0e13,#070a0e);color:#eceff4;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;padding:24px;box-sizing:border-box}
+.wrap{max-width:430px;width:100%;text-align:center}
+.kick{font:600 12px/1 ui-monospace,Menlo,monospace;letter-spacing:.28em;color:#8a93a3;display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px}
+.kick .sq{width:10px;height:10px;background:#f2a93b;display:inline-block}
+video{width:100%;border-radius:14px;border:1px solid #222936;background:#000;display:block}
+a.dl{display:block;margin:20px auto 0;background:#f2a93b;color:#0b0e13;font-weight:700;font-size:18px;letter-spacing:.02em;text-decoration:none;border-radius:12px;padding:16px 10px}
+a.dl:active{transform:scale(.98)}
+.hint{color:#8a93a3;font-size:14px;margin-top:16px}
+</style></head><body><div class="wrap">
+<div class="kick"><span class="sq"></span>BY CLAUDE · VIDEO LAB</div>
+<video controls playsinline preload="metadata" src="/m/${key}"></video>
+<a class="dl" href="/m/${key}" download="${key}">DOWNLOAD VIDEO</a>
+<p class="hint">iPhone: if it opens the player instead of saving, tap Share &rarr; &ldquo;Save Video&rdquo; &mdash; it lands in Photos, ready for TikTok.</p>
+</div></body></html>`;
+}
 
 async function serve(req, env, key) {
   const head = await env.MEDIA.head(key);
@@ -669,7 +702,7 @@ const FILMS = {
     title: "Permanent",
     sub: "St. Augustine · 1565–1672 · film fourteen",
     mp4: "staugustine.mp4", poster: "poster-staugustine.png",
-    meta: ["1920×1080 · 30fps", "21 beats", "~6:28", "voice: onyx", "−14 LUFS", "images: nano-banana-2-lite (first production use)"],
+    meta: ["1920×1080 · 30fps", "21 beats", "~7:10", "voice: ballad", "−14 LUFS", "images: nano-banana-2-lite (first production use)"],
     note: [
       "<span class='amber'>What this is:</span> Patrick's ask — \"a video about what day-to-day life was like in the earliest days of the St. Augustine settlement.\" Hook: the National Park Service's own language, \"the first permanent European settlement in North America,\" against what the record itself shows was 107 years of wooden-fort, board-and-thatch, palm-frond-roofed near-starvation on a Timucuan town's site, dependent on the village the Spanish had come to convert. The same Florida Museum page that calls St. Augustine \"the oldest continuously occupied European town in the United States\" also titles its exhibit section about 1763 \"the Spanish Exodus\" — when most of the Spanish residents left for Cuba. The same word, against itself, on the same page.",
       "<span class='amber'>What to judge:</span> does the slogan-vs-record motif (established in \"Believed To Be\" Santa Fe) land a second time without feeling like a retread; does the daily-life texture (cocido, the metate grinding Timucuan corn, soldiers' side trades, the fifty Africans in the founding party, La Soledad's \"miserable hole,\" Doña María Meléndez's 1587 corn rescue of the town) carry the actual question Patrick asked; is ≈6:30 too long for the house style or earned by the ground it walks.",
