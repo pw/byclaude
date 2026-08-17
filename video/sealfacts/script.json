@@ -1,0 +1,66 @@
+{
+  "title": "Seal Facts",
+  "subtitle": "Light trivia about the internet's favorite marine mammal",
+  "voice": "Ara",
+  "voice_instructions": "(grok TTS carries tone via text; no instructions param) Light, warm, amused — a friend telling you fun facts at the beach. Playful asides land gently.",
+  "grade": "Warm playful documentary still, soft natural daylight, gentle pastel ocean blues and sandy creams, cinematic single-scene composition, fine film grain, no text, no signage, nothing graphic, exactly one unified scene per image, never a split-frame, diptych, or collage layout.",
+  "facts": "PENDING fact-skeptic pass (fired 2026-08-17). Claims to verify: (1) seals lack external ear flaps, sea lions have them; seals locomote on land by wriggling, sea lions walk on flippers; (2) harbor seals rest at the surface head-up in a posture called 'bottling'; (3) elephant seals at sea sleep ~2h/day in ~10-min naps, among the least of any mammal (2023 UCSC study); (4) harbor seal whiskers detect hydrodynamic wakes of fish that passed ~30s earlier, in darkness; (5) hooded seal milk ~60% fat, lactation ~4 days; (6) Baikal seal is the only exclusively freshwater seal; its origin in Lake Baikal is still debated; (7) 'catastrophic molt' is the real term for elephant seals shedding skin+fur in patches once a year; (8) callback claim from short-seals: touching a seal = federal harassment under MMPA (verified 8/16, NOAA/DOJ primaries).",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Seals: round, sleepy, permanently unbothered. The internet has decided they're the funniest animal alive. Here's what you didn't know about them.",
+      "cap": "SEAL FACTS",
+      "img": "A plump harbor seal lying on a sunny sandy beach with a mildly amused expression, soft pastel light, gentle and warm, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "First: seals are not sea lions. Seals have no ear flaps, just little holes, and on land they wriggle like a very committed caterpillar. Sea lions have ears, and they walk. Now you can win an argument.",
+      "cap": "SEALS WRIGGLE.\nSEA LIONS WALK.",
+      "img": "A harbor seal with a smooth earless head wriggling belly-first across warm sand while a sea lion with small visible ear flaps stands upright on its front flippers nearby, one unified playful beach scene."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Seals nap in the ocean. Harbor seals float at the surface like a cork, head up — scientists literally call it bottling. And elephant seals at sea sleep about two hours a day, in ten-minute naps. That's tied for the least sleep of any mammal — the African elephant shares the record. They're not lazy. They're sleep-deprived.",
+      "cap": "2 HOURS A DAY",
+      "img": "A harbor seal floating vertically at a calm ocean surface like a cork, head and shoulders out of the water, eyes closed, soft morning light, serene and a little comic."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "A seal's whiskers are a superpower. In total darkness, a harbor seal can feel the wake of a fish that swam past thirty-five seconds earlier, and follow it. Imagine tasting a car that drove by a minute ago.",
+      "cap": "WHISKER SONAR",
+      "img": "Extreme close-up of a harbor seal's whiskers underwater in dark blue water, a faint small fish silhouette far in the background, delicate and precise."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Baby hooded seals nurse for just four days. The milk is around sixty percent fat — yogurt-thick — and the pup gains weight like it's bulking for something. Then mom leaves. Tough love, Arctic edition.",
+      "cap": "60% FAT MILK",
+      "img": "A fluffy pale hooded seal pup nestled against its mother on blue Arctic sea ice, soft daylight, tender and a little comical."
+    },
+    {
+      "id": "B06",
+      "vtype": "still",
+      "vo": "Nearly every seal lives in the sea. Except one: the Baikal seal, which lives in a lake in Siberia. A freshwater seal. How it got there is still genuinely debated.",
+      "cap": "A SEAL IN A LAKE",
+      "img": "A Baikal seal resting on a mossy rock at the shore of a vast calm freshwater lake, forested mountains far behind, soft Siberian daylight."
+    },
+    {
+      "id": "B07",
+      "vtype": "still",
+      "vo": "And once a year, elephant seals do something called a catastrophic molt. They shed their whole coat and patches of skin at once, and spend weeks on the beach looking extremely embarrassed about it. Catastrophic is the scientific term. Really.",
+      "cap": "THE CATASTROPHIC MOLT",
+      "img": "A large elephant seal on a sandy beach mid-molt with a patchy shedding coat, looking rumpled and unimpressed, warm afternoon light, gentle humor, nothing graphic."
+    },
+    {
+      "id": "B08",
+      "vtype": "still",
+      "vo": "So the next time a seal video stops your scroll: that's a sleep-deprived, whisker-sonar, freshwater-lake, catastrophically molting wonder. Pet it, though, and it's still a federal crime. We checked.",
+      "cap": "STILL A FEDERAL CRIME",
+      "img": "A harbor seal lying on a beach giving a slow sideways glance at the camera, warm golden light, comedic stillness, no people."
+    }
+  ]
+}

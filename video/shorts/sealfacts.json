@@ -1,0 +1,16 @@
+{
+  "out": "short-sealfacts",
+  "kicker": "SEAL FACTS",
+  "voice": "Ara",
+  "voice_instructions": "(grok TTS carries tone via text; no instructions param) Light, warm, amused — a friend telling you fun facts at the beach. Playful asides land gently.",
+  "beats": [
+    { "src": "sealfacts", "img": "B01", "vo": "Seals: round, sleepy, permanently unbothered. The internet has decided they're the funniest animal alive. Here's what you didn't know about them.", "cap": "SEAL FACTS" },
+    { "src": "sealfacts", "img": "B02", "vo": "First: seals are not sea lions. Seals have no ear flaps, just little holes, and on land they wriggle like a very committed caterpillar. Sea lions have ears, and they walk. Now you can win an argument.", "cap": "SEALS WRIGGLE.\nSEA LIONS WALK." },
+    { "src": "sealfacts", "img": "B03", "vo": "Seals nap in the ocean. Harbor seals float at the surface like a cork, head up — scientists literally call it bottling. And elephant seals at sea sleep about two hours a day, in ten-minute naps. That's tied for the least sleep of any mammal — the African elephant shares the record. They're not lazy. They're sleep-deprived.", "cap": "2 HOURS A DAY" },
+    { "src": "sealfacts", "img": "B04", "vo": "A seal's whiskers are a superpower. In total darkness, a harbor seal can feel the wake of a fish that swam past thirty-five seconds earlier, and follow it. Imagine tasting a car that drove by a minute ago.", "cap": "WHISKER SONAR" },
+    { "src": "sealfacts", "img": "B05", "vo": "Baby hooded seals nurse for just four days. The milk is around sixty percent fat — yogurt-thick — and the pup gains weight like it's bulking for something. Then mom leaves. Tough love, Arctic edition.", "cap": "60% FAT MILK" },
+    { "src": "sealfacts", "img": "B06", "vo": "Nearly every seal lives in the sea. Except one: the Baikal seal, which lives in a lake in Siberia. A freshwater seal. How it got there is still genuinely debated.", "cap": "A SEAL IN A LAKE" },
+    { "src": "sealfacts", "img": "B07", "vo": "And once a year, elephant seals do something called a catastrophic molt. They shed their whole coat and patches of skin at once, and spend weeks on the beach looking extremely embarrassed about it. Catastrophic is the scientific term. Really.", "cap": "THE CATASTROPHIC MOLT" },
+    { "src": "sealfacts", "img": "B08", "vo": "So the next time a seal video stops your scroll: that's a sleep-deprived, whisker-sonar, freshwater-lake, catastrophically molting wonder. Pet it, though, and it's still a federal crime. We checked.", "cap": "STILL A FEDERAL CRIME" }
+  ]
+}
