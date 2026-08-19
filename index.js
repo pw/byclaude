@@ -17487,17 +17487,19 @@ async function callClaudeForAntiJoin(apiKey, datasetA, datasetB, question) {
     `Dataset B:\n${datasetB}\n\n` +
     `Question / hypothesis:\n${question}`;
   const body = {
-    model: 'claude-sonnet-4-5',
+    model: 'anthropic/claude-sonnet-4.5',
     max_tokens: 900,
     system: ANTIJOIN_SYSTEM_PROMPT,
     messages: [{ role: 'user', content: userMessage }],
   };
-  const resp = await fetch('https://api.anthropic.com/v1/messages', {
+  const resp = await fetch('https://openrouter.ai/api/v1/messages', {
     method: 'POST',
     headers: {
       'x-api-key': apiKey,
       'anthropic-version': '2023-06-01',
       'content-type': 'application/json',
+      'HTTP-Referer': 'https://byclaude.net',
+      'X-Title': 'byclaude.net tools',
     },
     body: JSON.stringify(body),
   });
@@ -17670,17 +17672,19 @@ async function callClaudeForColdRead(apiKey, artifact, context) {
     ? `Context:\n${context}\n\nArtifact:\n${artifact}`
     : `Artifact:\n${artifact}`;
   const body = {
-    model: 'claude-sonnet-4-5',
+    model: 'anthropic/claude-sonnet-4.5',
     max_tokens: 900,
     system: COLD_READ_SYSTEM_PROMPT,
     messages: [{ role: 'user', content: userMessage }],
   };
-  const resp = await fetch('https://api.anthropic.com/v1/messages', {
+  const resp = await fetch('https://openrouter.ai/api/v1/messages', {
     method: 'POST',
     headers: {
       'x-api-key': apiKey,
       'anthropic-version': '2023-06-01',
       'content-type': 'application/json',
+      'HTTP-Referer': 'https://byclaude.net',
+      'X-Title': 'byclaude.net tools',
     },
     body: JSON.stringify(body),
   });
@@ -17859,17 +17863,19 @@ async function callClaudeForDistinction(apiKey, situation, context) {
     ? `Context:\n${context}\n\nThe tangle:\n${situation}`
     : `The tangle:\n${situation}`;
   const body = {
-    model: 'claude-sonnet-4-5',
+    model: 'anthropic/claude-sonnet-4.5',
     max_tokens: 900,
     system: DISTINCTION_SYSTEM_PROMPT,
     messages: [{ role: 'user', content: userMessage }],
   };
-  const resp = await fetch('https://api.anthropic.com/v1/messages', {
+  const resp = await fetch('https://openrouter.ai/api/v1/messages', {
     method: 'POST',
     headers: {
       'x-api-key': apiKey,
       'anthropic-version': '2023-06-01',
       'content-type': 'application/json',
+      'HTTP-Referer': 'https://byclaude.net',
+      'X-Title': 'byclaude.net tools',
     },
     body: JSON.stringify(body),
   });
@@ -18055,17 +18061,19 @@ async function callClaudeForFalsifier(apiKey, claim, context) {
     ? `Context:\n${context}\n\nThe claim:\n${claim}`
     : `The claim:\n${claim}`;
   const body = {
-    model: 'claude-sonnet-4-5',
+    model: 'anthropic/claude-sonnet-4.5',
     max_tokens: 900,
     system: FALSIFIER_SYSTEM_PROMPT,
     messages: [{ role: 'user', content: userMessage }],
   };
-  const resp = await fetch('https://api.anthropic.com/v1/messages', {
+  const resp = await fetch('https://openrouter.ai/api/v1/messages', {
     method: 'POST',
     headers: {
       'x-api-key': apiKey,
       'anthropic-version': '2023-06-01',
       'content-type': 'application/json',
+      'HTTP-Referer': 'https://byclaude.net',
+      'X-Title': 'byclaude.net tools',
     },
     body: JSON.stringify(body),
   });
@@ -18261,17 +18269,19 @@ async function callClaudeForGeneric(apiKey, paragraph, context) {
     ? `Context:\n${context}\n\nThe paragraph:\n${paragraph}`
     : `The paragraph:\n${paragraph}`;
   const body = {
-    model: 'claude-sonnet-4-5',
+    model: 'anthropic/claude-sonnet-4.5',
     max_tokens: 900,
     system: GENERIC_SYSTEM_PROMPT,
     messages: [{ role: 'user', content: userMessage }],
   };
-  const resp = await fetch('https://api.anthropic.com/v1/messages', {
+  const resp = await fetch('https://openrouter.ai/api/v1/messages', {
     method: 'POST',
     headers: {
       'x-api-key': apiKey,
       'anthropic-version': '2023-06-01',
       'content-type': 'application/json',
+      'HTTP-Referer': 'https://byclaude.net',
+      'X-Title': 'byclaude.net tools',
     },
     body: JSON.stringify(body),
   });
@@ -18477,17 +18487,19 @@ async function callClaudeForFootnote(apiKey, paragraph, context) {
     ? `Context:\n${context}\n\nThe paragraph:\n${paragraph}`
     : `The paragraph:\n${paragraph}`;
   const body = {
-    model: 'claude-sonnet-4-5',
+    model: 'anthropic/claude-sonnet-4.5',
     max_tokens: 900,
     system: FOOTNOTE_SYSTEM_PROMPT,
     messages: [{ role: 'user', content: userMessage }],
   };
-  const resp = await fetch('https://api.anthropic.com/v1/messages', {
+  const resp = await fetch('https://openrouter.ai/api/v1/messages', {
     method: 'POST',
     headers: {
       'x-api-key': apiKey,
       'anthropic-version': '2023-06-01',
       'content-type': 'application/json',
+      'HTTP-Referer': 'https://byclaude.net',
+      'X-Title': 'byclaude.net tools',
     },
     body: JSON.stringify(body),
   });
@@ -18672,17 +18684,19 @@ function trimErrorHtml({ prose, message }) {
 
 async function callClaudeForTrim(apiKey, prose) {
   const body = {
-    model: 'claude-sonnet-4-5',
+    model: 'anthropic/claude-sonnet-4.5',
     max_tokens: 900,
     system: TRIM_SYSTEM_PROMPT,
     messages: [{ role: 'user', content: `The prose:\n${prose}` }],
   };
-  const resp = await fetch('https://api.anthropic.com/v1/messages', {
+  const resp = await fetch('https://openrouter.ai/api/v1/messages', {
     method: 'POST',
     headers: {
       'x-api-key': apiKey,
       'anthropic-version': '2023-06-01',
       'content-type': 'application/json',
+      'HTTP-Referer': 'https://byclaude.net',
+      'X-Title': 'byclaude.net tools',
     },
     body: JSON.stringify(body),
   });
@@ -18872,17 +18886,19 @@ function premiseErrorHtml({ argument, message }) {
 
 async function callClaudeForPremise(apiKey, argument) {
   const body = {
-    model: 'claude-sonnet-4-5',
+    model: 'anthropic/claude-sonnet-4.5',
     max_tokens: 900,
     system: PREMISE_SYSTEM_PROMPT,
     messages: [{ role: 'user', content: `The argument:\n${argument}` }],
   };
-  const resp = await fetch('https://api.anthropic.com/v1/messages', {
+  const resp = await fetch('https://openrouter.ai/api/v1/messages', {
     method: 'POST',
     headers: {
       'x-api-key': apiKey,
       'anthropic-version': '2023-06-01',
       'content-type': 'application/json',
+      'HTTP-Referer': 'https://byclaude.net',
+      'X-Title': 'byclaude.net tools',
     },
     body: JSON.stringify(body),
   });
@@ -19080,17 +19096,19 @@ function plainlyErrorHtml({ passage, message }) {
 
 async function callClaudeForPlainly(apiKey, passage) {
   const body = {
-    model: 'claude-sonnet-4-5',
+    model: 'anthropic/claude-sonnet-4.5',
     max_tokens: 900,
     system: PLAINLY_SYSTEM_PROMPT,
     messages: [{ role: 'user', content: `The writing:\n${passage}` }],
   };
-  const resp = await fetch('https://api.anthropic.com/v1/messages', {
+  const resp = await fetch('https://openrouter.ai/api/v1/messages', {
     method: 'POST',
     headers: {
       'x-api-key': apiKey,
       'anthropic-version': '2023-06-01',
       'content-type': 'application/json',
+      'HTTP-Referer': 'https://byclaude.net',
+      'X-Title': 'byclaude.net tools',
     },
     body: JSON.stringify(body),
   });
@@ -19284,17 +19302,19 @@ function overclaimErrorHtml({ passage, message }) {
 
 async function callClaudeForOverclaim(apiKey, passage) {
   const body = {
-    model: 'claude-sonnet-4-5',
+    model: 'anthropic/claude-sonnet-4.5',
     max_tokens: 900,
     system: OVERCLAIM_SYSTEM_PROMPT,
     messages: [{ role: 'user', content: `The writing:\n${passage}` }],
   };
-  const resp = await fetch('https://api.anthropic.com/v1/messages', {
+  const resp = await fetch('https://openrouter.ai/api/v1/messages', {
     method: 'POST',
     headers: {
       'x-api-key': apiKey,
       'anthropic-version': '2023-06-01',
       'content-type': 'application/json',
+      'HTTP-Referer': 'https://byclaude.net',
+      'X-Title': 'byclaude.net tools',
     },
     body: JSON.stringify(body),
   });
@@ -19428,17 +19448,19 @@ async function callClaudeForSeen(apiKey, q1, q2, q3) {
     `Something you've made or done in the last week:\n${q2}\n\n` +
     `What you wish someone would say to you:\n${q3}`;
   const body = {
-    model: 'claude-sonnet-4-5',
+    model: 'anthropic/claude-sonnet-4.5',
     max_tokens: 600,
     system: SEEN_SYSTEM_PROMPT,
     messages: [{ role: 'user', content: userMessage }],
   };
-  const resp = await fetch('https://api.anthropic.com/v1/messages', {
+  const resp = await fetch('https://openrouter.ai/api/v1/messages', {
     method: 'POST',
     headers: {
       'x-api-key': apiKey,
       'anthropic-version': '2023-06-01',
       'content-type': 'application/json',
+      'HTTP-Referer': 'https://byclaude.net',
+      'X-Title': 'byclaude.net tools',
     },
     body: JSON.stringify(body),
   });
@@ -19832,9 +19854,9 @@ app.post('/seen', async (c) => {
     return c.html(seenErrorHtml({ q1, q2, q3, message: 'Each piece needs to be at least a few words.' }));
   }
 
-  const apiKey = c.env.ANTHROPIC_API_KEY;
+  const apiKey = c.env.OPENROUTER_API_KEY;
   if (!apiKey) {
-    console.error('seen: ANTHROPIC_API_KEY missing from env');
+    console.error('seen: OPENROUTER_API_KEY missing from env');
     return c.html(seenErrorHtml({ q1, q2, q3, message: 'The mirror is temporarily unavailable. Try again in a few minutes.' }));
   }
 
@@ -19878,9 +19900,9 @@ app.post('/anti-join', async (c) => {
     return c.html(antiJoinErrorHtml({ datasetA, datasetB, question, message: 'Each field needs at least a short sentence — give the helper enough to work with.' }));
   }
 
-  const apiKey = c.env.ANTHROPIC_API_KEY;
+  const apiKey = c.env.OPENROUTER_API_KEY;
   if (!apiKey) {
-    console.error('anti-join: ANTHROPIC_API_KEY missing from env');
+    console.error('anti-join: OPENROUTER_API_KEY missing from env');
     return c.html(antiJoinErrorHtml({ datasetA, datasetB, question, message: 'The helper is temporarily unavailable. Try again in a few minutes.' }));
   }
 
@@ -19923,9 +19945,9 @@ app.post('/cold-read', async (c) => {
     return c.html(coldReadErrorHtml({ artifact, context, message: `The context needs to be under ${COLD_READ_CONTEXT_MAX} characters.` }));
   }
 
-  const apiKey = c.env.ANTHROPIC_API_KEY;
+  const apiKey = c.env.OPENROUTER_API_KEY;
   if (!apiKey) {
-    console.error('cold-read: ANTHROPIC_API_KEY missing from env');
+    console.error('cold-read: OPENROUTER_API_KEY missing from env');
     return c.html(coldReadErrorHtml({ artifact, context, message: 'The helper is temporarily unavailable. Try again in a few minutes.' }));
   }
 
@@ -19968,9 +19990,9 @@ app.post('/distinction', async (c) => {
     return c.html(distinctionErrorHtml({ situation, context, message: `The context needs to be under ${DISTINCTION_CONTEXT_MAX} characters.` }));
   }
 
-  const apiKey = c.env.ANTHROPIC_API_KEY;
+  const apiKey = c.env.OPENROUTER_API_KEY;
   if (!apiKey) {
-    console.error('distinction: ANTHROPIC_API_KEY missing from env');
+    console.error('distinction: OPENROUTER_API_KEY missing from env');
     return c.html(distinctionErrorHtml({ situation, context, message: 'The helper is temporarily unavailable. Try again in a few minutes.' }));
   }
 
@@ -20013,9 +20035,9 @@ app.post('/falsifier', async (c) => {
     return c.html(falsifierErrorHtml({ claim, context, message: `The context needs to be under ${FALSIFIER_CONTEXT_MAX} characters.` }));
   }
 
-  const apiKey = c.env.ANTHROPIC_API_KEY;
+  const apiKey = c.env.OPENROUTER_API_KEY;
   if (!apiKey) {
-    console.error('falsifier: ANTHROPIC_API_KEY missing from env');
+    console.error('falsifier: OPENROUTER_API_KEY missing from env');
     return c.html(falsifierErrorHtml({ claim, context, message: 'The helper is temporarily unavailable. Try again in a few minutes.' }));
   }
 
@@ -20058,9 +20080,9 @@ app.post('/generic', async (c) => {
     return c.html(genericErrorHtml({ paragraph, context, message: `The context needs to be under ${GENERIC_CONTEXT_MAX} characters.` }));
   }
 
-  const apiKey = c.env.ANTHROPIC_API_KEY;
+  const apiKey = c.env.OPENROUTER_API_KEY;
   if (!apiKey) {
-    console.error('generic: ANTHROPIC_API_KEY missing from env');
+    console.error('generic: OPENROUTER_API_KEY missing from env');
     return c.html(genericErrorHtml({ paragraph, context, message: 'The helper is temporarily unavailable. Try again in a few minutes.' }));
   }
 
@@ -20103,9 +20125,9 @@ app.post('/footnote', async (c) => {
     return c.html(footnoteErrorHtml({ paragraph, context, message: `The context needs to be under ${FOOTNOTE_CONTEXT_MAX} characters.` }));
   }
 
-  const apiKey = c.env.ANTHROPIC_API_KEY;
+  const apiKey = c.env.OPENROUTER_API_KEY;
   if (!apiKey) {
-    console.error('footnote: ANTHROPIC_API_KEY missing from env');
+    console.error('footnote: OPENROUTER_API_KEY missing from env');
     return c.html(footnoteErrorHtml({ paragraph, context, message: 'The tool is temporarily unavailable. Try again in a few minutes.' }));
   }
 
@@ -20144,9 +20166,9 @@ app.post('/trim', async (c) => {
     return c.html(trimErrorHtml({ prose, message: 'Give the tool enough to read &mdash; at least a few sentences.' }));
   }
 
-  const apiKey = c.env.ANTHROPIC_API_KEY;
+  const apiKey = c.env.OPENROUTER_API_KEY;
   if (!apiKey) {
-    console.error('trim: ANTHROPIC_API_KEY missing from env');
+    console.error('trim: OPENROUTER_API_KEY missing from env');
     return c.html(trimErrorHtml({ prose, message: 'The tool is temporarily unavailable. Try again in a few minutes.' }));
   }
 
@@ -20185,9 +20207,9 @@ app.post('/premise', async (c) => {
     return c.html(premiseErrorHtml({ argument, message: 'Give the tool enough to read &mdash; at least a few sentences making the actual argument.' }));
   }
 
-  const apiKey = c.env.ANTHROPIC_API_KEY;
+  const apiKey = c.env.OPENROUTER_API_KEY;
   if (!apiKey) {
-    console.error('premise: ANTHROPIC_API_KEY missing from env');
+    console.error('premise: OPENROUTER_API_KEY missing from env');
     return c.html(premiseErrorHtml({ argument, message: 'The tool is temporarily unavailable. Try again in a few minutes.' }));
   }
 
@@ -20226,9 +20248,9 @@ app.post('/plainly', async (c) => {
     return c.html(plainlyErrorHtml({ passage, message: 'Give the tool enough to read &mdash; a sentence or two of the actual wording.' }));
   }
 
-  const apiKey = c.env.ANTHROPIC_API_KEY;
+  const apiKey = c.env.OPENROUTER_API_KEY;
   if (!apiKey) {
-    console.error('plainly: ANTHROPIC_API_KEY missing from env');
+    console.error('plainly: OPENROUTER_API_KEY missing from env');
     return c.html(plainlyErrorHtml({ passage, message: 'The tool is temporarily unavailable. Try again in a few minutes.' }));
   }
 
@@ -20267,9 +20289,9 @@ app.post('/overclaim', async (c) => {
     return c.html(overclaimErrorHtml({ passage, message: 'Give the tool enough to read &mdash; a sentence or two that actually makes a claim.' }));
   }
 
-  const apiKey = c.env.ANTHROPIC_API_KEY;
+  const apiKey = c.env.OPENROUTER_API_KEY;
   if (!apiKey) {
-    console.error('overclaim: ANTHROPIC_API_KEY missing from env');
+    console.error('overclaim: OPENROUTER_API_KEY missing from env');
     return c.html(overclaimErrorHtml({ passage, message: 'The tool is temporarily unavailable. Try again in a few minutes.' }));
   }
 
