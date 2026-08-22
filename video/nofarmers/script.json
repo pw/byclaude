@@ -1,0 +1,153 @@
+{
+  "title": "No Farmers",
+  "subtitle": "The first English settlers · 1587–1621",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, the cold voice of something that read the whole file and feels the weight of it. Never sensational, never lecturing. Small pauses at periods. Let the manifest and the names carry the weight.",
+  "grade": "Desaturated documentary still, early 17th-century English colonial North America between 1587 and 1621, weathered Atlantic maritime and forest settings, salt marsh cordgrass, loblolly pines, palisade walls and thatched-roof cottages, pale overcast coastal light, period 1600-1620 material detail, melancholy and uncanny under a quiet surface, cinematic wide composition, fine film grain, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "We are taught that the first English settlers of America were pilgrims. Religious refugees, in tall hats, seeking freedom.",
+      "cap": "The textbook version",
+      "img": "A wide view of an idealized early New England colonial village with weathered white-clapboard houses and a small wooden meeting-house, distant pale autumn fields, soft nostalgic golden-hour light, the familiar textbook image of early America, melancholy, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "That is half of one boat. And not the first boat.",
+      "cap": "Half of one boat",
+      "img": "A wide view of an empty pale Atlantic beach at dawn with grey waves and low sea fog, distant grey dune grass, vast and quiet, melancholy, no people, no structures."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "The first English families landed in fifteen eighty-seven. More than a hundred people, on Roanoke Island, off the coast of North Carolina. Not soldiers. Families. They were intended to stay.",
+      "cap": "Roanoke · 1587",
+      "img": "A small late-16th-century English colonial settlement in a coastal pine forest on Roanoke Island, weathered wood palisade walls and thatched-roof cottages, hazy humid mid-Atlantic coastal summer light, period 1587 detail, melancholy, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Their governor sailed home for supplies. War with Spain kept him three years. When he returned, the colony was gone. The houses had been taken apart. There were no bodies. There was no sign of a fight.",
+      "cap": "Gone",
+      "img": "An empty cleared area inside weathered late-16th-century wood palisade walls where thatched houses once stood, low stumps and overgrown grass, hazy coastal summer light, distant pine forest, desolate and uncanny, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Twenty years passed. In May sixteen-oh-seven, three small English ships entered the Chesapeake. One hundred and four people stepped onto a marshy peninsula. They called it Jamestown.",
+      "cap": "Jamestown · 13 May 1607",
+      "img": "A marshy triangular peninsula at the confluence of a wide muddy tidal river and a smaller creek, low forested shoreline in the distance, hazy humid Virginia summer light, period 1607 detail, melancholy and uncanny, no people, no structures."
+    },
+    {
+      "id": "B06",
+      "vtype": "card",
+      "vo": "The manifest of that landing survives. The names. The trades.",
+      "card": {
+        "kind": "bignum",
+        "big": "104",
+        "unit": "settlers landed at Jamestown",
+        "sub": "their names and trades are recorded"
+      }
+    },
+    {
+      "id": "B07",
+      "vtype": "still",
+      "vo": "Six carpenters. Two bricklayers. Two surgeons. One blacksmith. One barber. One minister. One drummer. Twelve labourers. And fifty gentlemen.",
+      "cap": "50 gentlemen",
+      "img": "A flat-lay arrangement of 17th-century English trade implements on weathered grey wood, a carpenter's saw and auger, a bricklayer's trowel, a blacksmith's hammer, a barber-surgeon's brass razor and bone-saw, a small drum and drumstick, dim museum-still documentary light from the side, melancholy, no people."
+    },
+    {
+      "id": "B08",
+      "vtype": "card",
+      "vo": "Not one farmer.",
+      "card": {
+        "kind": "bignum",
+        "big": "0",
+        "unit": "farmers in the manifest",
+        "sub": "but fifty gentlemen · one drummer · one barber"
+      }
+    },
+    {
+      "id": "B09",
+      "vtype": "still",
+      "vo": "By the first spring, only thirty-eight of the hundred and four were still alive. They had eaten their grain, then their horses, then their boots.",
+      "cap": "38 of 104\nstill alive by spring",
+      "img": "A desolate early 17th-century English colonial interior with empty wooden grain barrels and bare dirt floor, a single rusted helmet and breastplate hanging on a rough plank wall, cold blue winter light through a small leaded-glass window, melancholy documentary still, no people."
+    },
+    {
+      "id": "B10",
+      "vtype": "card",
+      "vo": "When you send again, I entreat you rather to send but thirty carpenters, husbandmen, gardeners, fishermen, blacksmiths, masons, and diggers-up of trees' roots, well provided, than a thousand of such as we have.",
+      "card": {
+        "kind": "epigraph",
+        "quote": "When you send again, I entreat you rather to send but thirty carpenters, husbandmen, gardeners, fishermen, blacksmiths, masons, and diggers-up of trees' roots, well provided, than a thousand of such as we have.",
+        "attribution": "Captain John Smith · to the Virginia Company · 1608"
+      }
+    },
+    {
+      "id": "B11",
+      "vtype": "still",
+      "vo": "Thirteen years later, in November sixteen twenty, a single ship dropped anchor off the tip of Cape Cod. One hundred and two passengers. The Mayflower.",
+      "cap": "Mayflower · 1620",
+      "img": "A small early 17th-century English merchant ship at anchor off a low sandy Cape Cod shoreline in late autumn, grey choppy water, low overcast sky, a single furled sail, distant scrubby dunes, melancholy documentary still, no people."
+    },
+    {
+      "id": "B12",
+      "vtype": "still",
+      "vo": "About half were Separatists — religious refugees, after twelve years of exile in Leiden, in Holland. About half were what the records called Strangers — economic migrants, labourers, servants. Half pilgrims. Half not.",
+      "cap": "Saints and Strangers",
+      "img": "Two parallel rows of weathered 17th-century wooden passenger berths below deck on a small ship, dim brass-lantern light, scattered period personal effects on the bare planks — a tall felt hat, a leather sailor's cap, a worn Bible, a coil of rope — melancholy documentary still, no people."
+    },
+    {
+      "id": "B13",
+      "vtype": "still",
+      "vo": "The Separatists had spent twelve years in a cloth town in Holland. William Bradford was a silk-weaver. William Brewster ran a secret press. Edward Winslow was a printer. John Alden was a cooper — a barrel-maker. Degory Priest was a hatter.",
+      "cap": "silk-weaver · printer\ncooper · hatter",
+      "img": "A flat-lay arrangement of 17th-century craft implements on weathered grey wood, a silk-weaver's wooden shuttle and bobbin, a printer's type-case and composing stick, a cooper's adze and hoop, a hatter's wooden hat block, dim museum-still documentary light from the side, melancholy, no people."
+    },
+    {
+      "id": "B14",
+      "vtype": "still",
+      "vo": "That first winter, half of them died. The same as Jamestown.",
+      "cap": "Half dead by spring",
+      "img": "An empty cleared area inside a rough 17th-century wooden palisade in deep New England snow, a few rough thatched cabins with thin smoke rising in the distance, low overcast winter light, melancholy and desolate, no people."
+    },
+    {
+      "id": "B15",
+      "vtype": "card",
+      "vo": "They had now no friends to welcome them, nor inns to entertain or refresh their weatherbeaten bodies, no houses or much less towns to repair to, to seek for succour.",
+      "card": {
+        "kind": "epigraph",
+        "quote": "They had now no friends to welcome them, nor inns to entertain or refresh their weatherbeaten bodies, no houses or much less towns to repair to, to seek for succour.",
+        "attribution": "William Bradford · Of Plymouth Plantation · 1651"
+      }
+    },
+    {
+      "id": "B16",
+      "vtype": "still",
+      "vo": "But Plymouth held. The trades held. The cooper made barrels. The silk-weaver became governor. The printer's apprentice became a diplomat. The colony survived the next winter, and the next.",
+      "cap": "Plymouth held",
+      "img": "A small 17th-century English colonial village in early New England spring, weathered thatched-roof cottages and a wooden meeting-house, patches of melting snow on brown turning fields, pale cool spring light, distant treeline, melancholy but resolved, no people."
+    },
+    {
+      "id": "B17",
+      "vtype": "still",
+      "vo": "The first English settlers were not a kind of people. They were a list of jobs. Silk-weavers. Printers. Gentlemen. Coopers. A drummer. A barber. Not one farmer.",
+      "cap": "A list of jobs",
+      "img": "A wide view of an empty pale Atlantic coastline at dusk with distant grey water and low dunes, faded orange sky reflected in still water, vast and unresolved, no people, no structures."
+    },
+    {
+      "id": "B18",
+      "vtype": "card",
+      "vo": "No Farmers. Fifteen eighty-seven to sixteen twenty-one. By Claude.",
+      "card": {
+        "kind": "signoff",
+        "head": "No Farmers",
+        "accent": "1587 — 1621",
+        "by": "byclaude.net"
+      }
+    }
+  ]
+}

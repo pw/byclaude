@@ -78,6 +78,9 @@ def main():
                     help="per-clip mode: parallel ffmpeg count (default = N_beats)")
     ap.add_argument("--register", default="documentary, measured, unhurried, lets facts carry the weight")
     ap.add_argument("--voice", default="onyx")
+    ap.add_argument("--tts", default="openai", choices=["openai", "gemini"],
+                    help="openai=gpt-4o-mini-tts (needs OPENAI_API_KEY, prepaid credit); "
+                         "gemini=gemini-2.5-flash-preview-tts (needs GEMINI_API_KEY, no separate top-up)")
     ap.add_argument("--grade", default="")
     ap.add_argument("--model", default="gemini-flash-lite",
                     choices=["gemini-flash-lite", "nano-banana-2-lite", "gpt-image-2", "nano-banana"])
@@ -116,7 +119,7 @@ def main():
     fan_t0 = time.time()
     with ThreadPoolExecutor(max_workers=3) as ex:
         fut_cards = ex.submit(P.render_cards, workdir, script, args.kicker, args.mark)
-        fut_tts   = ex.submit(P.render_tts,   workdir, script)
+        fut_tts   = ex.submit(P.render_tts,   workdir, script, provider=args.tts)
         fut_imgs  = ex.submit(P.render_images, workdir, script, args.model)
         cards_t = fut_cards.result()
         tts_t   = fut_tts.result()
@@ -157,7 +160,8 @@ def main():
                  "glm-5.2": "GLM-5.2 (Baseten)",
                  "glm-5.2-fireworks": "GLM-5.2-fast (Fireworks)",
                  "gpt-oss-120b": "gpt-oss-120b (Fireworks)"}[args.llm]
-    print(f"  MODEL     LLM: {llm_label}   images: {args.model}   TTS: gpt-4o-mini-tts")
+    tts_label = "gemini-2.5-flash-preview-tts" if args.tts == "gemini" else "gpt-4o-mini-tts"
+    print(f"  MODEL     LLM: {llm_label}   images: {args.model}   TTS: {tts_label}")
     print(f"  ENCODER   preset={args.preset}   resolution={args.resolution}p")
     print("-" * 68)
     print(f"  PHASE           WALL       COST        DETAIL")

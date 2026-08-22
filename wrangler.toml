@@ -19,5 +19,9 @@ type = "Data"
 globs = ["**/*.png", "**/*.epub", "**/*.mp3", "**/*.pdf", "**/*.jpg"]
 fallthrough = true
 
+[[kv_namespaces]]
+binding = "OPTINS"
+id = "f31798c1d86e48b995e70ff7336d9161"
+
 [observability]
 enabled = true

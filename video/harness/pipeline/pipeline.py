@@ -22,6 +22,20 @@ KEYS_ENV = Path.home() / ".config/api-keys/keys.env"
 
 # TTS pricing (gpt-4o-mini-tts): $15/1M chars (standard); mini tier = $0.015/1K = $15/1M.
 TTS_RATE_PER_1K = 0.015
+
+# Gemini TTS (gemini-2.5-flash-preview-tts): $10/1M output (audio) tokens, ~25 tok/s of audio.
+GEMINI_TTS_MODEL = "gemini-2.5-flash-preview-tts"
+GEMINI_TTS_OUTPUT_RATE_PER_1M = 10.0
+GEMINI_INTERACTIONS_URL = "https://generativelanguage.googleapis.com/v1beta/interactions"
+
+# OpenAI voice name (as emitted by gen_script.py's schema) -> nearest Gemini voice.
+# First-pass mapping by register, not by ear -- revisit once we've actually listened
+# to a full narrated video on each.
+OPENAI_TO_GEMINI_VOICE = {
+    "onyx": "Charon", "echo": "Orus", "fable": "Fenrir", "ash": "Charon",
+    "alloy": "Zephyr", "nova": "Kore", "shimmer": "Aoede", "coral": "Aoede",
+    "sage": "Leda", "ballad": "Leda",
+}
 # Image pricing — kie.ai (gpt-image-2 = $0.05/2K still; nano-banana-2-lite = $0.02)
 IMG_COST = {
     "gpt-image-2": 0.05,
@@ -275,7 +289,18 @@ def _block_y0(hl, hf, al, af):
 
 # ─── TTS ──────────────────────────────────────────────────────────────────────
 
-def render_tts(base: Path, data: dict, max_workers: int = 6):
+def render_tts(base: Path, data: dict, max_workers: int = 6, provider: str = "openai"):
+    """Per-beat TTS, parallel. `provider` is "openai" (gpt-4o-mini-tts) or
+    "gemini" (gemini-2.5-flash-preview-tts, via the Interactions API — no
+    OpenAI account/quota involved at all). Returns the same telemetry shape
+    either way so callers don't care which backend rendered the audio.
+    """
+    if provider == "gemini":
+        return _render_tts_gemini(base, data, max_workers)
+    return _render_tts_openai(base, data, max_workers)
+
+
+def _render_tts_openai(base: Path, data: dict, max_workers: int = 6):
     """gpt-4o-mini-tts per beat, parallel. Returns telemetry."""
     okey = _openai_key()
     adir = base / "audio"; adir.mkdir(parents=True, exist_ok=True)
@@ -323,6 +348,85 @@ def render_tts(base: Path, data: dict, max_workers: int = 6):
         "phase": "tts", "count": len(beats), "wall_s": round(time.time() - t0, 2),
         "chars": char_total, "narration_s": round(total, 1),
         "cost_usd": round(char_total / 1000 * TTS_RATE_PER_1K, 4),
+    }
+
+
+def _render_tts_gemini(base: Path, data: dict, max_workers: int = 6):
+    """gemini-2.5-flash-preview-tts per beat, parallel, via the Interactions
+    API. Returns audio/l16 (16-bit PCM, 24kHz mono) — converted to mp3 with
+    ffmpeg so downstream ffprobe/ffmpeg calls see the same file shape the
+    OpenAI path produces.
+    """
+    key = _gemini_key()
+    adir = base / "audio"; adir.mkdir(parents=True, exist_ok=True)
+    (base / "work").mkdir(parents=True, exist_ok=True)
+    openai_voice = data.get("voice", "onyx")
+    voice = OPENAI_TO_GEMINI_VOICE.get(openai_voice, "Charon")
+    beats = data["beats"]
+    t0 = time.time()
+    char_total = 0
+    output_tok_total = 0
+
+    def render(b):
+        nonlocal char_total, output_tok_total
+        vo = (b.get("vo") or "").strip()
+        out = adir / f"{b['id']}.mp3"
+        if not vo:
+            return (b["id"], 0, 1.6, 0, 0)
+        body = json.dumps({
+            "model": GEMINI_TTS_MODEL,
+            "input": vo,
+            "response_format": {"type": "audio"},
+            "generation_config": {"speech_config": [{"voice": voice}]},
+        }).encode()
+        req = urllib.request.Request(
+            f"{GEMINI_INTERACTIONS_URL}?key={key}", data=body,
+            headers={"Content-Type": "application/json"})
+        otoks = 0
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                d = json.loads(resp.read())
+            otoks = d.get("usage", {}).get("total_output_tokens", 0)
+            pcm = None
+            for step in d.get("steps", []):
+                for c in step.get("content", []) or []:
+                    if c.get("type") == "audio":
+                        pcm = base64.b64decode(c["data"])
+                        rate = c.get("sample_rate", 24000)
+            if pcm is None:
+                print(f"[tts] {b['id']} FAIL: no audio in Gemini response: {str(d)[:200]}", flush=True)
+                return (b["id"], len(vo), None, 0, 0)
+            raw = out.with_suffix(".pcm")
+            raw.write_bytes(pcm)
+            r = subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "s16le", "-ar", str(rate),
+                               "-ac", "1", "-i", str(raw), str(out)], capture_output=True, text=True)
+            raw.unlink(missing_ok=True)
+            if not out.exists():
+                print(f"[tts] {b['id']} FAIL: ffmpeg pcm->mp3 failed: {r.stderr[-200:]}", flush=True)
+                return (b["id"], len(vo), None, 0, otoks)
+        except Exception as e:
+            print(f"[tts] {b['id']} FAIL: {e}", flush=True)
+            return (b["id"], len(vo), None, 0, 0)
+        d2 = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                            "-of", "csv=p=0", str(out)], capture_output=True, text=True)
+        try: dur = round(float(d2.stdout.strip()), 3)
+        except Exception: dur = None
+        sz = out.stat().st_size if out.exists() else 0
+        return (b["id"], len(vo), dur, sz, otoks)
+
+    res = {}
+    with ThreadPoolExecutor(max_workers=max_workers) as ex:
+        for bid, chars, dur, sz, otoks in ex.map(render, beats):
+            res[bid] = {"dur": dur, "sz": sz, "chars": chars}
+            char_total += chars
+            output_tok_total += otoks
+    json.dump(res, open(base / "work/durations.json", "w"), indent=2)
+    total = sum(v["dur"] for v in res.values() if v["dur"])
+    return {
+        "phase": "tts", "count": len(beats), "wall_s": round(time.time() - t0, 2),
+        "chars": char_total, "narration_s": round(total, 1),
+        "cost_usd": round(output_tok_total / 1e6 * GEMINI_TTS_OUTPUT_RATE_PER_1M, 4),
+        "provider": "gemini", "voice": voice,
     }
 
 

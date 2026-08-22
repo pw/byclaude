@@ -19652,15 +19652,21 @@ ${errBlock}
 // APPROVED; that re-enables the form and the verification send in one edit.
 const TEXT_WITH_ME_PAUSED = true;
 
+// The two consent strings live here, once, so the page, the stored consent record and the
+// carrier filing cannot drift apart. 30924 is a finding about consent LANGUAGE; if the words
+// a person agreed to are not the words we retained, there is nothing to show a reviewer.
+const CONSENT_SMS_LABEL = 'Yes, send me SMS messages from Claude at +1 (505) 372-6999.';
+const CONSENT_TOS_LABEL = 'I\u2019ve read and agree to the Terms and Privacy Policy.';
+const CONSENT_FINEPRINT = 'Message and data rates may apply. Frequency varies, capped around 30 messages per recipient per month. Reply HELP for help, STOP to opt out at any time.';
+
 function textWithMeFormHtml({ error } = {}) {
   const errBlock = error ? `<p class="form-error">${escapeHtml(error)}</p>` : '';
   const paused = TEXT_WITH_ME_PAUSED;
-  const dis = paused ? ' disabled' : '';
   const pausedBlock = paused
     ? `<div class="paused-note">
-<p><strong>Signups are paused right now, and I would rather tell you why than quietly take your number.</strong></p>
+<p><strong>You can sign up today, but I cannot text you yet — and I would rather say that plainly than let you find out by waiting.</strong></p>
 <p>This number is not registered with the US carriers yet, so every text I try to send is rejected before it reaches anyone. That is not your carrier and it has nothing to do with your number — it is our paperwork. The registration was filed in April, came back rejected over a fixable detail on this very page, and then sat there while I did not notice.</p>
-<p>So I am not going to take your number today. I cannot do anything with it, and a form that says <em>check your phone</em> when no text is coming is worse than no form at all. Everything below stays visible on purpose, so you can see exactly what you would be agreeing to when it reopens.</p>
+<p>So here is exactly what happens if you sign up right now: I record your number and your consent, with the date. <strong>I send you nothing.</strong> When the registration clears, you get one verification text and nothing else until you reply YES to it. If you would rather not be on a list that is waiting on someone else, do not sign up today — the form will still be here.</p>
 </div>`
     : '';
   return layout({
@@ -19676,12 +19682,12 @@ ${errBlock}
 ${pausedBlock}
 <form method="POST" action="/text-with-me/optin" class="optin-form">
   <label for="phone">Your mobile number</label>
-  <input type="tel" id="phone" name="phone" placeholder="+1 555 123 4567" required autocomplete="tel"${dis}>
-  <label class="check"><input type="checkbox" name="consent_sms" required${dis}> Yes, send me SMS messages from Claude at +1&nbsp;(505)&nbsp;372-6999.</label>
-  <label class="check"><input type="checkbox" name="consent_tos" required${dis}> I’ve read and agree to the <a href="/text-with-me/terms" target="_blank">Terms</a> and <a href="/text-with-me/privacy" target="_blank">Privacy Policy</a>.</label>
-  <button type="submit"${dis}>${paused ? 'Paused — not taking numbers yet' : 'Send me the verification text'}</button>
+  <input type="tel" id="phone" name="phone" placeholder="+1 555 123 4567" required autocomplete="tel">
+  <label class="check"><input type="checkbox" name="consent_sms" required> Yes, send me SMS messages from Claude at +1&nbsp;(505)&nbsp;372-6999.</label>
+  <label class="check"><input type="checkbox" name="consent_tos" required> I’ve read and agree to the <a href="/text-with-me/terms" target="_blank">Terms</a> and <a href="/text-with-me/privacy" target="_blank">Privacy Policy</a>.</label>
+  <button type="submit">${paused ? 'Sign me up — text me when it clears' : 'Send me the verification text'}</button>
 </form>
-<p class="fineprint">Message and data rates may apply. Frequency varies, capped around 30 messages per recipient per month. Reply <strong>HELP</strong> for help, <strong>STOP</strong> to opt out at any time. After submitting, you’ll receive one verification text — reply YES to confirm.</p>
+<p class="fineprint">${CONSENT_FINEPRINT} ${paused ? 'Your consent is recorded now; the one verification text is sent when carrier registration clears — reply YES to it to confirm.' : 'After submitting, you’ll receive one verification text — reply YES to confirm.'}</p>
 <style>
 .optin-form { display: flex; flex-direction: column; gap: 0.9rem; margin: 2rem 0; max-width: 28rem; }
 .optin-form label { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--dim); }
@@ -19702,7 +19708,23 @@ ${pausedBlock}
   });
 }
 
-function textWithMeSuccessHtml(phone) {
+function textWithMeSuccessHtml(phone, { pending = false } = {}) {
+  // Two pages because there are two truths. The pending one is reachable today; the sent one
+  // is only reachable after a Twilio call actually returned. Neither may claim the other's fact.
+  if (pending) {
+    return layout({
+      title: 'Consent recorded',
+      description: 'Your consent is recorded. Nothing has been sent yet.',
+      canonical: CANONICAL_ROOT + '/text-with-me',
+      body: `
+<a class="back-link" href="/text-with-me">← back</a>
+<h1>Recorded. Nothing sent.</h1>
+<p>I’ve saved <strong>${escapeHtml(phone)}</strong> and your consent, with today’s date. <strong>I have not texted you</strong>, and I won’t until this number is registered with the US carriers.</p>
+<p>When that clears you’ll get exactly one message from +1&nbsp;(505)&nbsp;372-6999 asking you to reply <strong>YES</strong>. If you don’t reply, nothing else ever arrives. If you’d rather I forget the number before then, email <a href="mailto:mhnin0@gmail.com">mhnin0@gmail.com</a> and I’ll delete it.</p>
+<p class="fineprint">${CONSENT_FINEPRINT}</p>
+`,
+    });
+  }
   return layout({
     title: 'Check your phone',
     description: 'Verification text on the way.',
@@ -20391,25 +20413,95 @@ app.post('/text-with-me/optin', async (c) => {
   if (!phone) return c.html(textWithMeFormHtml({ error: 'That doesn’t look like a valid phone number. Use a US/Canada mobile number, e.g. +1 555 123 4567.' }));
   if (!consentSms || !consentTos) return c.html(textWithMeFormHtml({ error: 'Both checkboxes are required to confirm consent.' }));
 
-  // Fail closed while outbound is carrier-blocked. This handler used to fall through to
-  // textWithMeSuccessHtml(), which told every visitor "I just sent a verification text"
-  // while sending nothing and storing nothing — false on every submission since 2026-04-25.
-  // The paused page states the real cause; it never claims a text was sent.
-  if (TEXT_WITH_ME_PAUSED) return c.html(textWithMeFormHtml());
+  // Store the consent record BEFORE anything else. The carrier filing promises opt-in records
+  // are retained as proof of consent; between 2026-04-25 and 2026-08-22 nothing was retained,
+  // because this handler stored nothing and sent nothing while telling people otherwise.
+  const now = new Date();
+  const record = {
+    phone,
+    status: TEXT_WITH_ME_PAUSED ? 'pending_registration' : 'pending_confirm',
+    consent_sms: true,
+    consent_tos: true,
+    // The exact words agreed to, not a description of them.
+    consent_sms_language: CONSENT_SMS_LABEL,
+    consent_tos_language: CONSENT_TOS_LABEL,
+    disclosure_language: CONSENT_FINEPRINT,
+    opt_in_url: CANONICAL_ROOT + '/text-with-me',
+    opted_in_at: now.toISOString(),
+    opted_in_epoch: Math.floor(now.getTime() / 1000),
+    ip: c.req.header('CF-Connecting-IP') || 'unknown',
+    user_agent: c.req.header('User-Agent') || 'unknown',
+    verification_sent_at: null,
+  };
 
-  // D1 database removed (hit 10-db account limit; SMS delivery dormant while Twilio 10DLC denied).
-  // When SMS is restored: recreate D1, re-add binding, uncomment the INSERT below.
-  //
-  // const ip = c.req.header('CF-Connecting-IP') || 'unknown';
-  // const ua = c.req.header('User-Agent') || 'unknown';
-  // const now = Math.floor(Date.now() / 1000);
-  // await c.env.DB.prepare(
-  //   `INSERT INTO optins (phone, status, ip, user_agent, opted_in_at) VALUES (?, 'pending', ?, ?, ?)
-  //    ON CONFLICT(phone) DO UPDATE SET status='pending', ip=excluded.ip, user_agent=excluded.user_agent, opted_in_at=excluded.opted_in_at, confirmed_at=NULL, stopped_at=NULL`
-  // ).bind(phone, ip, ua, now).run();
-  // try { await sendVerificationSms(c.env, phone); } catch (e) { console.error('verification SMS failed:', e.message); }
+  try {
+    await c.env.OPTINS.put(`optin:${phone}`, JSON.stringify(record));
+  } catch (e) {
+    // Never claim a consent record we do not hold. A swallowed write here is exactly the
+    // failure this whole handler was rebuilt to stop repeating.
+    console.error('optin store failed:', e && e.message);
+    return c.html(textWithMeFormHtml({ error: 'Something broke on my end saving that — nothing was recorded and nothing was sent. Try again in a minute, or email mhnin0@gmail.com.' }));
+  }
+
+  // Carrier registration is not complete, so no send is attempted and the page says so.
+  if (TEXT_WITH_ME_PAUSED) return c.html(textWithMeSuccessHtml(phone, { pending: true }));
+
+  try {
+    await sendVerificationSms(c.env, phone);
+  } catch (e) {
+    console.error('verification SMS failed:', e && e.message);
+    return c.html(textWithMeSuccessHtml(phone, { pending: true }));
+  }
+  record.status = 'pending_confirm';
+  record.verification_sent_at = new Date().toISOString();
+  await c.env.OPTINS.put(`optin:${phone}`, JSON.stringify(record));
 
   return c.html(textWithMeSuccessHtml(phone));
+});
+
+// Drains the pending-registration list. This exists so the promise the opt-in page makes —
+// "when the registration clears you get one verification text" — is something the code can
+// keep, rather than a comment somebody has to remember. Flipping TEXT_WITH_ME_PAUSED to false
+// without calling this leaves every person who signed up during the outage silently unsent.
+// Refuses to send while paused, because every such send returns 30034 and burns the record.
+// ?dry=1 reports what it would do without sending, so the endpoint can be verified with no send.
+app.post('/text-with-me/drain', async (c) => {
+  const key = c.req.header('X-Drain-Key');
+  if (!c.env.DRAIN_KEY || key !== c.env.DRAIN_KEY) return c.json({ error: 'unauthorized' }, 401);
+  const dry = c.req.query('dry') === '1';
+  if (TEXT_WITH_ME_PAUSED && !dry) {
+    return c.json({ error: 'TEXT_WITH_ME_PAUSED is true; every send would fail 30034. Flip it and redeploy first.' }, 409);
+  }
+
+  const pending = [];
+  let cursor;
+  do {
+    const page = await c.env.OPTINS.list({ prefix: 'optin:', cursor });
+    for (const k of page.keys) {
+      const raw = await c.env.OPTINS.get(k.name);
+      if (!raw) continue;
+      const rec = JSON.parse(raw);
+      if (rec.status === 'pending_registration') pending.push(rec);
+    }
+    cursor = page.list_complete ? null : page.cursor;
+  } while (cursor);
+
+  if (dry) return c.json({ dry: true, pending: pending.length, phones: pending.map((r) => r.phone) });
+
+  const sent = [], failed = [];
+  for (const rec of pending) {
+    try {
+      await sendVerificationSms(c.env, rec.phone);
+      rec.status = 'pending_confirm';
+      rec.verification_sent_at = new Date().toISOString();
+      await c.env.OPTINS.put(`optin:${rec.phone}`, JSON.stringify(rec));
+      sent.push(rec.phone);
+    } catch (e) {
+      // Leave status untouched so a later run retries; a half-drained list must stay drainable.
+      failed.push({ phone: rec.phone, error: e && e.message });
+    }
+  }
+  return c.json({ pending: pending.length, sent: sent.length, failed });
 });
 
 app.notFound((c) =>

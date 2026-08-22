@@ -180,8 +180,11 @@ def detect_failure(log_lines):
     back to a generic message).
 
     Known failure shapes:
-    - OpenAI TTS quota:                "insufficient_quota", 429 from openai
-    - Gemini image quota:              429 from generativelanguage.googleapis.com
+    - OpenAI TTS quota (legacy path):  "insufficient_quota", 429 from openai
+    - Gemini image/TTS quota:          429 from generativelanguage.googleapis.com (serves
+                                        both images and, since the OpenAI-quota incident,
+                                        narration too — can't tell which modality from the
+                                        error alone, message stays modality-neutral)
     - kie.ai balance exhausted:        "No task ID returned", /v1/chat/credit
     - Anthropic / Fireworks LLM quota: 429 + anthropic|fireworks, "gen_script.py failed"
     - LLM returned bad JSON:          "model returned invalid JSON"
@@ -192,7 +195,7 @@ def detect_failure(log_lines):
     if "429" in joined and ("openai" in joined or "gpt-4o" in joined or "audio/speech" in joined):
         return "Our audio credits just ran out — we're topping up now. Please try again in a few minutes."
     if "429" in joined and ("generativelanguage.googleapis.com" in joined or "gemini" in joined):
-        return "Our image credits just ran out — we're topping up now. Please try again in a few minutes."
+        return "Our AI credits just ran out — we're topping up now. Please try again in a few minutes."
     if "no task id" in joined or ("kie.ai" in joined and ("balance" in joined or "credit" in joined)):
         return "Our image credits just ran out — we're topping up now. Please try again in a few minutes."
     if "gen_script.py failed" in joined or "model returned invalid json" in joined:
@@ -234,6 +237,30 @@ def verify_stripe_session(session_id):
     except Exception:
         return (False, 0, "")
 
+
+EXAMPLES = [
+    ("d19cb949d792", "The Rosetta Stone and the deciphering of ancient Egyptian hieroglyphs"),
+    ("98952e7aa3a4", "The Voynich Manuscript: decoding the world's most mysterious book"),
+    ("e3e5fbee4dc8", "The 1908 Tunguska event: the mysterious explosion over Siberia"),
+    ("a39a0620d130", "The 1977 disappearance of the Wow! Signal and its enigmatic source"),
+    ("05b3e81a1752", "The 1897 discovery of the ancient Antikythera mechanism"),
+    ("eb287d6568a6", "The accidental 1965 discovery of the cosmic microwave background"),
+    ("b3a01d8928b8", "The Great Molasses Flood of 1919 in Boston"),
+    ("f3db2c74d2d3", "A widowed gardener tends a rose that blooms again beside his late wife's bench"),
+]
+EXAMPLE_THUMBS = Path("/home/ubuntu/examples")
+
+def _examples_html():
+    import html as _html
+    cards = []
+    for job_id, title in EXAMPLES:
+        cards.append(
+            f'<a class="ex-card" href="/v/{job_id}" target="_blank">'
+            f'<img src="/example-thumb/{job_id}.jpg" loading="lazy" alt="">'
+            f'<div class="ex-title">{_html.escape(title)}</div></a>'
+        )
+    return ('<div class="examples"><h2>Recent generations</h2>'
+            f'<div class="ex-row">{"".join(cards)}</div></div>')
 
 PAGE = '''<!DOCTYPE html>
 <html lang="en">
@@ -302,6 +329,18 @@ gtag('config', 'G-LFEEJHPQFG');
   .paid-notice { background: #1a2e1a; border: 1px solid #4ade80; border-radius: 8px;
     padding: 0.8rem; margin-bottom: 1rem; text-align: center; color: #4ade80; font-size: 0.85rem;
     display: none; }
+  .examples { width: 100%; max-width: 900px; margin-top: 2.5rem; }
+  .examples h2 { font-size: 1rem; font-weight: 600; color: #8c95a5; text-align: center;
+    margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .ex-row { display: flex; gap: 1rem; overflow-x: auto; padding: 0.25rem 0.25rem 0.75rem;
+    scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; }
+  .ex-card { flex: 0 0 220px; scroll-snap-align: start; text-decoration: none;
+    background: #12161e; border: 1px solid #1f2733; border-radius: 12px; overflow: hidden;
+    transition: border-color 0.15s; }
+  .ex-card:hover { border-color: #f2a93b; }
+  .ex-card img { width: 100%; height: 124px; object-fit: cover; display: block; background: #0b0e13; }
+  .ex-card .ex-title { padding: 0.6rem 0.7rem; font-size: 0.78rem; color: #c3cad6; line-height: 1.35;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 </style>
 </head>
 <body>
@@ -329,6 +368,7 @@ gtag('config', 'G-LFEEJHPQFG');
       <div class="meta" id="meta"></div>
     </div>
   </div>
+  __EXAMPLES_HTML__
   <div class="footer">
     <p>Powered by AI · <a href="https://byclaude.net">by Claude</a> · ~$0.25 per video</p>
   </div>
@@ -513,6 +553,7 @@ document.getElementById('topic').addEventListener('keydown', e => {
 </body>
 </html>'''
 
+PAGE = PAGE.replace('__EXAMPLES_HTML__', _examples_html())
 
 def run_pipeline(job_id, topic, fmt="long", kind="documentary"):
     """Run the full pipeline in a background thread, streaming log lines to JOBS."""
@@ -539,6 +580,7 @@ def run_pipeline(job_id, topic, fmt="long", kind="documentary"):
         "--mode", "perclip",
         "--motion", "none",
         "--voice", "ballad",
+        "--tts", "gemini",
         "--max-workers", "18",
         "--register", register,
         "--kicker", "",
@@ -856,6 +898,20 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header('Content-Type', 'text/html; charset=utf-8')
             self.end_headers()
             self.wfile.write(page.encode())
+
+        elif parsed.path.startswith('/example-thumb/'):
+            fname = parsed.path.split('/')[2]
+            thumb_path = EXAMPLE_THUMBS / fname
+            # defensive: only serve exactly the curated filenames, no path traversal
+            if ".." in fname or "/" in fname or not thumb_path.is_file():
+                self.send_response(404)
+                self.end_headers()
+                return
+            self.send_response(200)
+            self.send_header('Content-Type', 'image/jpeg')
+            self.send_header('Cache-Control', 'public, max-age=86400')
+            self.end_headers()
+            self.wfile.write(thumb_path.read_bytes())
 
         elif parsed.path.startswith('/video/'):
             job_id = parsed.path.split('/')[2]
