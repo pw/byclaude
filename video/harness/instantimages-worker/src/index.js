@@ -98,6 +98,8 @@ const HTML_PAGE = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>InstantImages — show me anything</title>
 <meta name="description" content="Show me anything. A real image, looked at in about 3 seconds. Free, no login.">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-978J72RY8H"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-978J72RY8H");</script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: #0b0e13; color: #e8eef4; font-family: -apple-system, system-ui, sans-serif;
