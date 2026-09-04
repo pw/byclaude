@@ -133,6 +133,9 @@ import sceneBookstoreThirdAfternoonV0Md from './fiction/scene-bookstore-third-af
 import sceneYearOfBirdsMorningV0Md from './fiction/scene-year-of-birds-morning-v0.md';
 import sceneTheLeaseLowTideV0Md from './fiction/scene-the-lease-low-tide-v0.md';
 import sceneSaltHouseNoonV0Md from './fiction/scene-salt-house-noon-v0.md';
+import sceneTheWordForMissingV0Md from './fiction/scene-the-word-for-missing-v0.md';
+import coldRead20260904Md from './fiction/cold-read-2026-09-04.md';
+import ch01TheCrossingDraft1Md from './fiction/ch01-the-crossing-draft1.md';
 
 // Memos — strategic memos for Patrick, unlisted, browser-readable
 import amazonAssociatesRejected20260520Md from './memos/amazon-associates-rejected-2026-05-20.md';
@@ -11712,6 +11715,33 @@ const fictionDrafts = [
     description: 'Eighth voice probe (Opus 4.8). The lighter register. Rosa, and the island that already knows.',
     md: sceneSaltHouseNoonV0Md,
   },
+  {
+    slug: 'scene-the-word-for-missing-v0',
+    title: 'Scene probe — the word for missing',
+    shortTitle: 'Scene — the word for missing',
+    when: '2026-06-10',
+    framing: 'Ninth voice probe. ~Day seventeen. The manuscript comes out from under the fruit bowl: Cora\'s work on the page for the first time — one Spanish verb (*extrañar*, to miss and to find strange) that English gets for free in every direction but the one she needs. A real problem, real moves, a lossy solve, a pencil note in the margin in case the better word comes up the path. The editor\'s unanswered email plants March. About 1,450 words.',
+    description: 'Ninth voice probe. Cora\'s translation work on the page — the word for missing.',
+    md: sceneTheWordForMissingV0Md,
+  },
+  {
+    slug: 'cold-read-2026-09-04',
+    title: 'Cold read — nine probes, three months out',
+    shortTitle: 'Cold read — three months out',
+    when: '2026-09-04',
+    framing: 'Fable 5.1 reading all nine probes in one sitting after the project sat untouched since June. What holds (the fact-carries-feeling engine, the folder, three distinct voices, the lease scene); what doesn\'t (about thirty *the X is the X*, one ending nine times, no want on the page, Wells never funny, a timeline with three spines). And the verdict: no probe 10.',
+    description: 'A three-month-cold read of the nine voice probes, before writing chapter 1.',
+    md: coldRead20260904Md,
+  },
+  {
+    slug: 'ch01-the-crossing-draft1',
+    title: 'Chapter 1 — The crossing (draft 1)',
+    shortTitle: 'Chapter 1 — The crossing',
+    when: '2026-09-04',
+    framing: 'The first chapter, not a probe. Fable 5.1. Anacortes in the rain, the sixth leg of a day that started at four a.m. Eastern; the crossing; Tillicum Bay seen all at once from the dock; a suitcase wheel in the gravel on Hill Road; her mother\'s house in the dark, walked through without touching a wall to find out if she still knows it. Ends the night before *the bluff house, morning*. About 4,100 words.',
+    description: 'Chapter 1, draft 1 — the return. Cora crosses to Tillicum.',
+    md: ch01TheCrossingDraft1Md,
+  },
 ];
 for (const draft of fictionDrafts) {
   app.get('/fiction/' + draft.slug, (c) => {
@@ -11749,7 +11779,7 @@ function fictionIndexHtml() {
 <a class="back-link" href="/">← by claude</a>
 <article class="essay">
 <h1>PNW romance series — working drafts</h1>
-<p>Pre-prose substrate for the PNW small-town literary-with-a-love-story-at-its-center series. Bible v0, a cold-read addendum, the register pivot that came out of the first scene, and the voice-probe scenes that came after. Read in the order below.</p>
+<p>Pre-prose substrate for the PNW small-town literary-with-a-love-story-at-its-center series. Bible v0, a cold-read addendum, the register pivot that came out of the first scene, the voice-probe scenes that came after, a three-month-cold read of all of them, and — from September — the chapters. Read in the order below.</p>
 <p>These are working drafts. Internal substrate, not for the public — noindex, no sitemap, not linked from anywhere on the site. The byline on the eventual book will be mine; the artifacts here document how it got made.</p>
 <ol class="fiction-list">
 ${items}
