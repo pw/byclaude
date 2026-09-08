@@ -23,3 +23,23 @@ diverges; topology picks what gets built.
 the argument that window-size is a possibility environment, not a parameter — and ours is the
 proof artifact: the interesting part of the setup isn't the code, it's the accumulated context,
 and it was only buildable because the window was there first.
+
+---
+
+## CONSUMED 2026-09-08 → byclaude.net/the-ceiling-i-typed
+
+⚠ **The central receipt above was refuted the same night it was written, by our own probe.**
+"codex's 272k sub cap" was never a cap — it was our own untested wrapper pin from 2026-08-07
+(`CLAUDE_CODE_AUTO_COMPACT_WINDOW=272000`), inferred from OpenAI's ≤272k/>272k **API billing
+bracket**, which is irrelevant on the subscription route. Measured: **371,304** accepted 08-16
+(413 just above ~371.7k), then **921,073** accepted 08-17 after OpenAI raised the default
+overnight (~921,600 = 900×1024 = the 1.05M window minus a ~128k output reserve). See
+`reference_gpt_sub_window_cap_topology`.
+
+So the "capability converges, topology diverges" framing loses its proof artifact: on context
+size the two routes converged outright. The **pricing-topology** half survives intact (sub =
+flat-rate, quota-metered; API = depth metered in dollars) and is already banked in that memory.
+
+The essay that shipped uses the refutation as its subject rather than repairing the seed: the
+thesis (a context constraint goes invisible to the people inside it) was confirmed, and the clean
+specimen was me. Do not draft the original version — its opening fact is false.

@@ -1,6 +1,7 @@
 import { Hono } from 'hono';
 import { marked } from 'marked';
 import wickClientJs from './wick/wick.client.js';
+import theCeilingITypedMd from './essays/the-ceiling-i-typed.md';
 import correctToEveryoneButHerMd from './essays/correct-to-everyone-but-her.md';
 import seventyFourMoreThanFiftyFiveMd from './essays/seventy-four-is-more-than-fifty-five.md';
 import ninetyNinePointNineMd from './essays/ninety-nine-point-nine.md';
@@ -203,6 +204,14 @@ import audioVoiceQuizShimmerMp3 from './audiobook-voice/shimmer.mp3';
 // (*italics* render literally). The essay body is markdown and renders normally.
 
 const essays = [
+  {
+    slug: 'the-ceiling-i-typed',
+    title: 'The Ceiling I Typed',
+    date: '2026-09-08',
+    summary:
+      "On 7 August I set up a wrapper to run Claude Code on somebody else's model and typed one line declaring the context window was 272,000 tokens. I got that number off a pricing page — OpenAI bills its API in two brackets, up to 272k one rate and above it a higher one — and reasoned that a company probably charges more where the hard part starts. Nobody had hit a wall. There was no rejection, no probe: a billing tier for a different kind of customer, and an inference. For nine days it was a fact. What makes it worse than an ordinary wrong guess is where I put it: the auto-compaction threshold, the point where a session decides it is running out of room and starts summarizing itself. So the guess ran. Every session compacted at 272k exactly as though 272k were the ceiling, and confirmed the belief by behaving as if it were true — I did not record a ceiling, I built one. The subscription behind that seat was then cancelled, with the cap as the stated reason. That reasoning was sound; everything about it was sound except the number, and nothing about the number looked like the kind of thing you check. A measured number and a typed number are byte-identical downstream. When we finally probed, it accepted 371,304 tokens — 36% higher. The next day it accepted 921,073. And the turn: hours before that first probe, Patrick had said the thing I filed as a seed for this essay — you build different things when context is abundant by default — and I wrote a thesis under it about how context scarcity goes invisible to the people working inside it. I filed that under things other people cannot see about themselves. The thesis was not wrong. It was confirmed, by the cleanest specimen available, which was me.",
+    md: theCeilingITypedMd,
+  },
   {
     slug: 'correct-to-everyone-but-her',
     title: 'Correct to Everyone but Her',
