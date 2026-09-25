@@ -1,0 +1,9 @@
+*.mp4
+*.wav
+parts/
+stills/
+seams/
+test/
+fonts/
+*.log
+concat.txt

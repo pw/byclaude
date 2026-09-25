@@ -1,0 +1,403 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Corm;src:url(fonts/CormorantGaramond.ttf)}
+@font-face{font-family:CormI;src:url(fonts/CormorantGaramond-Italic.ttf)}
+@font-face{font-family:Gar;src:url(fonts/EBGaramond.ttf)}
+@font-face{font-family:GarI;src:url(fonts/EBGaramond-Italic.ttf)}
+@font-face{font-family:Heb;src:url(fonts/FrankRuhlLibre.ttf)}
+@font-face{font-family:Mono;src:url(fonts/IBMPlexMono-Regular.ttf)}
+html,body{margin:0;background:#000}canvas{display:block}
+</style></head><body><canvas id="c" width="1920" height="1080"></canvas><script>
+const W = 1920, H = 1080, cv = document.getElementById('c'), X = cv.getContext('2d');
+const C = {bg:'#14110d', ink:'#ece2cc', dim:'#9b927f', faint:'#5b544a', J:'#e3a64b', E:'#4fb7a8', D:'#d4604f', P:'#8f9cf5', X:'#7d766b', EL:'#a9bcd9', NP:'#b8a48a'};
+const P = window.PARAMS; const TL = P.timing; const FLOOD = P.flood; const NAMES = P.names;
+// ---------- timing helpers ----------
+const L = (s, i) => TL.lines[s][i];                 // {s: start, d: dur}
+const ls = (s, i) => L(s, i).s, le = (s, i) => L(s, i).s + L(s, i).d;
+const sc = s => TL.scenes[s];                         // {a, b} visible window
+const ss = (a, b, x) => { const y = Math.min(1, Math.max(0, (x - a) / (b - a))); return y * y * (3 - 2 * y); };
+const lerp = (a, b, k) => a + (b - a) * k;
+function hash(n) { const s = Math.sin(n * 127.1 + 311.7) * 43758.5453; return s - Math.floor(s); }
+// fraction through a line (for pacing words across a spoken line)
+const lf = (s, i, t) => Math.min(1, Math.max(0, (t - ls(s, i)) / L(s, i).d));
+
+// ---------- drawing helpers ----------
+function font(f, size) { X.font = `${size}px ${f}`; }
+function text(str, x, y, o = {}) {
+  X.save(); X.globalAlpha *= (o.a ?? 1); font(o.f || 'Gar', o.size || 40); X.fillStyle = o.c || C.ink;
+  X.textAlign = o.al || 'left'; X.textBaseline = o.bl || 'alphabetic';
+  if (o.ls) X.letterSpacing = o.ls + 'px';
+  X.fillText(str, x, y); X.restore();
+}
+function wrapWords(words, maxW) { const lines = []; let cur = [], w = 0; const sp = X.measureText(' ').width;
+  for (const wd of words) { const ww = X.measureText(wd.t).width; if (cur.length && w + sp + ww > maxW) { lines.push(cur); cur = []; w = 0; } wd.w = ww; w += (cur.length ? sp : 0) + ww; cur.push(wd); }
+  if (cur.length) lines.push(cur); return lines; }
+// rich paragraph: highlights = [{p: phrase, c: color, k: 0..1}] ; reveal = 0..1 word-by-word
+function para(str, cx, y, maxW, o = {}) {
+  X.save(); font(o.f || 'Gar', o.size || 44); X.textBaseline = 'alphabetic';
+  const words = []; let pos = 0; for (const t of str.split(' ')) { words.push({t, a: pos, b: pos + t.length}); pos += t.length + 1; }
+  for (const h of (o.hl || [])) { const i = str.indexOf(h.p); if (i < 0) continue; for (const w of words) if (w.a < i + h.p.length && w.b > i) w.h = h; }
+  const lines = wrapWords(words, maxW), lh = o.lh || (o.size || 44) * 1.42, sp = X.measureText(' ').width;
+  const n = words.length, rev = o.reveal ?? 1; let k = 0;
+  lines.forEach((ln, li) => { const tw = ln.reduce((s, w) => s + w.w, 0) + sp * (ln.length - 1);
+    let x = o.al === 'left' ? cx : cx - tw / 2;
+    for (const w of ln) { const wa = Math.min(1, Math.max(0, rev * n - k)); k++;
+      X.globalAlpha = (o.a ?? 1) * wa;
+      X.fillStyle = w.h ? mix(o.c || C.ink, w.h.c, w.h.k) : (o.c || C.ink);
+      if (w.h && w.h.k > 0.01 && w.h.glow) { X.shadowColor = w.h.c; X.shadowBlur = 18 * w.h.k; } else X.shadowBlur = 0;
+      X.fillText(w.t, x, y + li * lh); x += w.w + sp; } });
+  X.restore(); return lines.length * lh; }
+function hex(c) { return [1, 3, 5].map(i => parseInt(c.slice(i, i + 2), 16)); }
+function mix(a, b, k) { const A = hex(a), B = hex(b); return `rgb(${A.map((v, i) => Math.round(lerp(v, B[i], k))).join(',')})`; }
+function rrect(x, y, w, h, r) { X.beginPath(); X.roundRect(x, y, w, h, r); }
+function line(x1, y1, x2, y2, c, w = 2, a = 1) { X.save(); X.globalAlpha *= a; X.strokeStyle = c; X.lineWidth = w; X.beginPath(); X.moveTo(x1, y1); X.lineTo(x2, y2); X.stroke(); X.restore(); }
+function chip(str, x, y, c, a = 1, size = 26) { X.save(); X.globalAlpha *= a; font('Mono', size); const w = X.measureText(str).width + size * 1.1;
+  rrect(x, y - size * 0.95, w, size * 1.45, 6); X.fillStyle = c + '26'; X.fill(); X.strokeStyle = c; X.lineWidth = 1.5; X.stroke();
+  X.fillStyle = c; X.textBaseline = 'alphabetic'; X.fillText(str, x + size * 0.55, y + size * 0.1); X.restore(); return w; }
+function caption(str, a = 1) { text(str, W / 2, H - 58, {f: 'Mono', size: 20, c: C.dim, al: 'center', a, ls: 1}); }
+
+// ---------- background ----------
+const grains = []; for (let g = 0; g < 6; g++) { const c = document.createElement('canvas'); c.width = 480; c.height = 270; const x = c.getContext('2d'), im = x.createImageData(480, 270);
+  for (let i = 0; i < im.data.length; i += 4) { const v = Math.random() * 255; im.data[i] = im.data[i + 1] = im.data[i + 2] = v; im.data[i + 3] = 14; } x.putImageData(im, 0, 0); grains.push(c); }
+function background(t) {
+  X.fillStyle = C.bg; X.fillRect(0, 0, W, H);
+  const g = X.createRadialGradient(W * 0.5, H * 0.42, 50, W * 0.5, H * 0.5, W * 0.75);
+  g.addColorStop(0, 'rgba(70,52,30,0.30)'); g.addColorStop(1, 'rgba(0,0,0,0)'); X.fillStyle = g; X.fillRect(0, 0, W, H);
+  for (let i = 0; i < 70; i++) { const x = (hash(i) * W + t * (6 + hash(i + 9) * 10)) % W, y = (hash(i + 3) * H - t * (3 + hash(i + 5) * 6) % H + H) % H;
+    X.globalAlpha = 0.10 + 0.12 * Math.sin(t * 0.7 + i); X.fillStyle = '#e8cfa0'; X.beginPath(); X.arc(x, y, 1 + hash(i + 7) * 1.6, 0, 7); X.fill(); }
+  X.globalAlpha = 1; }
+function finish(t) {
+  const v = X.createRadialGradient(W / 2, H / 2, H * 0.45, W / 2, H / 2, H * 1.05); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,0.55)');
+  X.fillStyle = v; X.fillRect(0, 0, W, H); X.drawImage(grains[Math.floor(t * 24) % 6], 0, 0, W, H); }
+
+// scene alpha: fade in over 0.7s at a, out over 0.7s before b
+function sa(s, t) { const w = sc(s); return ss(w.a, w.a + 0.7, t) * (1 - ss(w.b - 0.7, w.b, t)); }
+const on = (s, t) => t >= sc(s).a && t <= sc(s).b;
+
+// ================= SCENES =================
+function sOpen(t) { const A = sa('open', t); X.globalAlpha = A;
+  const q = 'So Moses the servant of Yahweh died there in the land of Moab. He buried him in the valley, opposite Beth Peor, but no man knows where his tomb is to this day.';
+  const k2 = s => ss(ls('open', 2) + L('open', 2).d * s, ls('open', 2) + L('open', 2).d * s + 0.5, t);
+  const up = ss(le('open', 0), le('open', 0) + 1.2, t);
+  para(q, W / 2, lerp(470, 400, up), 1280, {f: 'GarI', size: 54, lh: 80, reveal: ss(ls('open', 0), le('open', 0) - 0.3, t),
+    hl: [{p: 'died there', c: C.J, k: k2(0.25), glow: 1}, {p: 'He buried him', c: C.J, k: k2(0.4), glow: 1}, {p: 'to this day.', c: C.J, k: k2(0.72), glow: 1}]});
+  text('DEUTERONOMY 34:5–6', W / 2, 330 - up * 70, {f: 'Mono', size: 22, c: C.dim, al: 'center', a: ss(ls('open', 0) + 1, ls('open', 0) + 2, t), ls: 3});
+  const b = ss(ls('open', 1), ls('open', 1) + 1, t);
+  if (b > 0) { const names = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy'];
+    names.forEach((n, i) => { const a = b * ss(ls('open', 1) + 0.3 + i * 0.25, ls('open', 1) + 0.9 + i * 0.25, t);
+      text(n, W / 2 + (i - 2) * 300, 780, {f: 'Corm', size: 40, c: i === 4 ? C.ink : C.dim, al: 'center', a}); });
+    text('by Moses?', W / 2, 850, {f: 'CormI', size: 36, c: C.J, al: 'center', a: b * ss(ls('open', 1) + L('open', 1).d * 0.6, ls('open', 1) + L('open', 1).d * 0.6 + 0.8, t)}); }
+  X.globalAlpha = 1; }
+
+function threads(t, x0, x1, yc, amp, alpha, spread) { // four braided threads across the screen
+  const cols = [C.J, C.E, C.D, C.P];
+  cols.forEach((c, i) => { X.save(); X.globalAlpha = alpha; X.strokeStyle = c; X.lineWidth = 5; X.lineCap = 'round'; X.beginPath();
+    for (let x = x0; x <= x1; x += 6) { const u = (x - x0) / (x1 - x0);
+      const y = yc + (spread ? (i - 1.5) * spread * (1 - ss(0.1, 0.55, u)) : 0) + amp * ss(0.05, 0.5, u) * Math.sin(x * 0.012 - t * 1.4 + i * Math.PI / 2);
+      x === x0 ? X.moveTo(x, y) : X.lineTo(x, y); }
+    X.stroke(); X.restore(); }); }
+
+function sTitle(t) { const w = sc('title'), A = ss(w.a, w.a + 0.8, t) * (1 - ss(w.b - 0.8, w.b, t));
+  const draw = ss(w.a, w.a + 2.2, t); threads(t, 0, lerp(0, W, draw), 690, 26, A * 0.9, 90);
+  text('Who Wrote the Torah?', W / 2, 520, {f: 'Corm', size: 150, al: 'center', a: A * ss(w.a + 0.5, w.a + 1.6, t)});
+  text('THE YAHWIST, THE PRIESTS, AND THE EDITORS WHO KEPT BOTH', W / 2, 830, {f: 'Mono', size: 22, c: C.dim, al: 'center', ls: 4, a: A * ss(w.a + 1.2, w.a + 2.2, t)}); }
+
+function scroll(x, y, w, h, label, c, a, hl) { X.save(); X.globalAlpha *= a;
+  rrect(x, y, w, h, 10); X.fillStyle = '#231d15'; X.fill(); X.strokeStyle = c; X.lineWidth = 2; X.stroke();
+  for (const yy of [y - 10, y + h - 6]) { rrect(x - 12, yy, w + 24, 16, 8); X.fillStyle = '#5a4630'; X.fill(); }
+  for (let k = 0; k < 9; k++) { X.globalAlpha = a * 0.35; line(x + 22, y + 40 + k * (h - 70) / 9, x + w - 22 - hash(k + x) * 50, y + 40 + k * (h - 70) / 9, C.dim, 3); }
+  X.globalAlpha = a; text(label, x + w / 2, y + h + 58, {f: 'Corm', size: 36, al: 'center', c: hl ? C.ink : C.dim}); X.restore(); }
+function sTradition(t) { const A = sa('tradition', t); X.save(); X.globalAlpha = A;
+  const names = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy'];
+  const shift = ss(ls('tradition', 2) - 0.4, ls('tradition', 2) + 0.8, t); // scrolls rise away for the timeline
+  const L0 = ls('tradition', 0), D0 = L('tradition', 0).d;
+  X.translate(0, -shift * 200); X.globalAlpha = A * (1 - shift);
+  names.forEach((n, i) => scroll(290 + i * 290, 300, 190, 300, n, C.faint, ss(L0 + i * D0 * 0.11, L0 + i * D0 * 0.11 + 0.6, t), i === 4));
+  text('תּוֹרָה', W / 2, 205, {f: 'Heb', size: 78, al: 'center', c: C.J, a: ss(L0 + D0 * 0.55, L0 + D0 * 0.7, t)});
+  text('“THE FIVE BOOKS OF MOSES”', W / 2, 760, {f: 'Mono', size: 22, c: C.dim, al: 'center', ls: 4, a: ss(L0 + D0 * 0.8, L0 + D0 * 0.95, t)});
+  const j = ss(ls('tradition', 1) + 1.2, ls('tradition', 1) + 2, t);
+  if (j > 0) { const x = 290 + 4 * 290; X.save(); X.globalAlpha *= j; rrect(x + 16, 300 + 175, 158, 108, 6); X.fillStyle = C.J + '33'; X.fill(); X.strokeStyle = C.J; X.lineWidth = 2; X.stroke(); X.restore();
+    text('the last 8 verses', x + 95, 300 + 150, {f: 'CormI', size: 28, c: C.J, al: 'center', a: j}); }
+  X.restore(); X.save(); X.globalAlpha = A;
+  const jt = ss(ls('tradition', 1) + 2.2, ls('tradition', 1) + 3, t) * (1 - shift);
+  text('Talmud, Bava Batra 15a:  Joshua wrote them — or Moses did, “in tears”', W / 2, 860, {f: 'Mono', size: 23, c: C.J, al: 'center', a: jt});
+  // timeline of doubters
+  const tlA = shift; if (tlA > 0) { const y = 700; line(260, y, 1660, y, C.faint, 2, tlA);
+    const ev = [[0.12, 'c. 1150', 'Abraham ibn Ezra', 'hints in “the secret of the twelve”', ls('tradition', 2) + 0.6],
+                [0.60, '1651', 'Thomas Hobbes', 'Leviathan', ls('tradition', 3) + 0.8], [0.86, '1670', 'Baruch Spinoza', 'Theological-Political Treatise', ls('tradition', 3) + 1.6]];
+    for (const [u, d, n, s, at] of ev) { const a = tlA * ss(at, at + 0.8, t), x = 260 + u * 1400;
+      X.globalAlpha = A * a; X.fillStyle = C.J; X.beginPath(); X.arc(x, y, 9, 0, 7); X.fill();
+      text(d, x, y - 36, {f: 'Mono', size: 24, c: C.J, al: 'center', a: A * a}); text(n, x, y + 62, {f: 'Corm', size: 42, al: 'center', a: A * a}); text(s, x, y + 104, {f: 'GarI', size: 26, c: C.dim, al: 'center', a: A * a}); }
+    X.globalAlpha = A; para('“Moses could not have written all of this.”', W / 2, 330, 1400, {f: 'CormI', size: 60, a: ss(ls('tradition', 3) + L('tradition', 3).d * 0.55, ls('tradition', 3) + L('tradition', 3).d * 0.7, t)}); }
+  X.restore(); }
+
+function sNames(t) { const A = sa('names', t); X.save(); X.globalAlpha = A;
+  const card = ss(ls('names', 0), ls('names', 0) + 1, t) * (1 - ss(ls('names', 2) - 0.5, ls('names', 2) + 0.3, t));
+  text('1753', W / 2, 250, {f: 'Mono', size: 30, c: C.dim, al: 'center', a: card, ls: 6});
+  text('Jean Astruc', W / 2, 330, {f: 'Corm', size: 70, al: 'center', a: card});
+  text('physician · Conjectures on Genesis', W / 2, 382, {f: 'GarI', size: 30, c: C.dim, al: 'center', a: card});
+  const n1 = ss(ls('names', 1), ls('names', 1) + 0.8, t) * card, n2 = ss(ls('names', 1) + L('names', 1).d * 0.45, ls('names', 1) + L('names', 1).d * 0.45 + 0.8, t) * card;
+  text('אֱלֹהִים', 620, 640, {f: 'Heb', size: 150, al: 'center', c: C.EL, a: n1}); text('Elohim · “God”', 620, 740, {f: 'Mono', size: 28, c: C.EL, al: 'center', a: n1});
+  text('יהוה', 1300, 640, {f: 'Heb', size: 150, al: 'center', c: C.J, a: n2}); text('YHWH · Yahweh', 1300, 740, {f: 'Mono', size: 28, c: C.J, al: 'center', a: n2});
+  // chart
+  const ch = ss(ls('names', 2) - 0.2, ls('names', 2) + 0.6, t);
+  if (ch > 0) { const x0 = 200, x1 = 1720, base = 470, bw = (x1 - x0) / 50, sy = 9;
+    const grow = ss(ls('names', 2) + 0.4, ls('names', 2) + L('names', 2).d * 0.85, t);
+    X.globalAlpha = A * ch; line(x0, base, x1, base, C.faint, 1.5);
+    NAMES.forEach(([c, y, e], i) => { const u = Math.min(1, Math.max(0, grow * 50 - i));
+      X.fillStyle = C.J; X.fillRect(x0 + i * bw + 3, base - y * sy * u, bw - 6, y * sy * u);
+      X.fillStyle = C.EL; X.fillRect(x0 + i * bw + 3, base, bw - 6, e * sy * u);
+      if (c % 5 === 0 || c === 1) text(String(c), x0 + i * bw + bw / 2, base + 20 + 2, {f: 'Mono', size: 15, c: C.dim, al: 'center', bl: 'top', a: 0.001 + 0}); });
+    for (const c of [1, 10, 20, 30, 40, 50]) text(String(c), x0 + (c - 1) * bw + bw / 2, 820, {f: 'Mono', size: 20, c: C.dim, al: 'center'});
+    text('GENESIS, CHAPTER', W / 2, 865, {f: 'Mono', size: 18, c: C.faint, al: 'center', ls: 3});
+    text('↑ Yahweh  יהוה', x0, 230, {f: 'Heb', size: 40, c: C.J}); text('↓  Elohim  אֱלֹהִים', x0, 910 - 60, {f: 'Heb', size: 34, c: C.EL, a: 0});
+    text('↓ Elohim  אֱלֹהִים', x1, 760, {f: 'Heb', size: 40, c: C.EL, al: 'right'});
+    caption('Every occurrence of יהוה and אלהים in the Hebrew text of Genesis (Westminster Leningrad Codex), by chapter', ch);
+    const seam = ss(ls('names', 3) + L('names', 3).d * 0.6, ls('names', 3) + L('names', 3).d * 0.6 + 0.8, t);
+    if (seam > 0) { X.save(); X.shadowColor = C.J; X.shadowBlur = 25; line(x0 + bw, 170, x0 + bw, lerp(170, 800, seam), '#fff3d6', 3, A); X.restore();
+      text('the seam: Genesis 1 | 2', x0 + bw + 16, 150, {f: 'CormI', size: 34, c: C.J, a: A * seam}); } }
+  X.restore(); }
+
+function sCreation(t) { const A = sa('creation', t); X.save(); X.globalAlpha = A;
+  const h = ss(ls('creation', 0), ls('creation', 0) + 1, t), xl = 560, xr = 1360;
+  text('Genesis 1', xl, 200, {f: 'Corm', size: 64, al: 'center', a: h}); text('God  ·  Elohim', xl, 250, {f: 'Mono', size: 24, c: C.EL, al: 'center', a: h, ls: 2});
+  text('Genesis 2', xr, 200, {f: 'Corm', size: 64, al: 'center', a: h}); text('Yahweh God', xr, 250, {f: 'Mono', size: 24, c: C.J, al: 'center', a: h, ls: 2});
+  line(W / 2, 170, W / 2, 900, C.faint, 1.5, h);
+  const Lft = [['plants', 'day 3'], ['animals', 'days 5–6'], ['humans, male and female', 'day 6']], Rgt = [['a man, from the dust', ''], ['a garden', ''], ['animals', ''], ['a woman', '']];
+  const ly = i => 370 + i * 150, ry = i => 350 + i * 118;
+  const f1 = i => ss(ls('creation', 1) + L('creation', 1).d * (0.25 + i * 0.22), ls('creation', 1) + L('creation', 1).d * (0.25 + i * 0.22) + 0.6, t);
+  const f2 = i => ss(ls('creation', 2) + L('creation', 2).d * (0.22 + i * 0.19), ls('creation', 2) + L('creation', 2).d * (0.22 + i * 0.19) + 0.6, t);
+  Lft.forEach(([a, b], i) => { text(`${i + 1}`, xl - 280, ly(i), {f: 'Mono', size: 26, c: C.EL, a: f1(i)}); text(a, xl, ly(i), {f: 'Gar', size: 44, al: 'center', a: f1(i)}); text(b, xl, ly(i) + 38, {f: 'Mono', size: 20, c: C.dim, al: 'center', a: f1(i)}); });
+  Rgt.forEach(([a], i) => { text(`${i + 1}`, xr - 280, ry(i), {f: 'Mono', size: 26, c: C.J, a: f2(i)}); text(a, xr, ry(i), {f: 'Gar', size: 44, al: 'center', a: f2(i)}); });
+  const k = ss(ls('creation', 3), ls('creation', 3) + 1.5, t);
+  if (k > 0) { const pairs = [[0, 1], [1, 2], [2, 0], [2, 3]];
+    pairs.forEach(([a, b], i) => { const kk = ss(ls('creation', 3) + i * 0.35, ls('creation', 3) + i * 0.35 + 0.9, t);
+      X.save(); X.globalAlpha = A * 0.8 * kk; X.strokeStyle = mix(C.EL, C.J, 0.5); X.lineWidth = 2; X.setLineDash([6, 8]); X.beginPath();
+      X.moveTo(xl + 270, ly(a) - 14); X.bezierCurveTo(W / 2, ly(a) - 14, W / 2, ry(b) - 14, lerp(xl + 270, xr - 250, kk), lerp(ly(a), ry(b), kk) - 14); X.stroke(); X.restore(); }); }
+  const q = ss(ls('creation', 3) + L('creation', 3).d * 0.45, ls('creation', 3) + L('creation', 3).d * 0.45 + 0.8, t), q2 = ss(ls('creation', 3) + L('creation', 3).d * 0.7, ls('creation', 3) + L('creation', 3).d * 0.7 + 0.8, t);
+  para('“God said, ‘Let there be light,’ and there was light.”', xl, 900, 700, {f: 'GarI', size: 30, c: C.EL, a: q});
+  para('“…formed man from the dust of the ground, and breathed into his nostrils the breath of life.”', xr, 900, 700, {f: 'GarI', size: 30, c: C.J, a: q2});
+  text('1:3', xl, 1010, {f: 'Mono', size: 18, c: C.dim, al: 'center', a: q}); text('2:7', xr, 1010, {f: 'Mono', size: 18, c: C.dim, al: 'center', a: q2});
+  X.restore(); }
+
+function sDoublets(t) { const A = sa('doublets', t); X.save(); X.globalAlpha = A;
+  const out = ss(ls('doublets', 2) - 0.5, ls('doublets', 2) + 0.3, t);
+  const rows = [['A wife passed off as a sister', ['Gen 12', 'Gen 20', 'Gen 26']], ['Hagar in the wilderness', ['Gen 16', 'Gen 21']], ['Bethel is named', ['Gen 28', 'Gen 35']], ['Beersheba is named', ['Gen 21', 'Gen 26']]];
+  const d1 = L('doublets', 1);
+  text('THE DOUBLES', W / 2, 200, {f: 'Mono', size: 24, c: C.dim, al: 'center', ls: 6, a: ss(ls('doublets', 0), ls('doublets', 0) + 0.8, t) * (1 - out)});
+  rows.forEach(([n, cs], i) => { const at = d1.s + d1.d * [0.02, 0.36, 0.62, 0.8][i], a = ss(at, at + 0.6, t) * (1 - out), y = 330 + i * 150;
+    text(n, 880, y, {f: 'Corm', size: 50, al: 'right', a}); let x = 960;
+    cs.forEach((c, j) => { x += 20 + chip(c, x, y - 8, C.J, a * ss(at + 0.3 + j * 0.25, at + 0.8 + j * 0.25, t), 26); }); });
+  const e = ss(ls('doublets', 2), ls('doublets', 2) + 0.8, t), g = ss(ls('doublets', 3), ls('doublets', 3) + 0.8, t);
+  X.globalAlpha = A * e; rrect(160, 280, 760, 440, 14); X.fillStyle = '#1e1912'; X.fill(); X.strokeStyle = C.faint; X.stroke();
+  text('EXODUS 6:3', 540, 350, {f: 'Mono', size: 24, c: C.dim, al: 'center', ls: 3, a: e});
+  para('“I appeared to Abraham, to Isaac, and to Jacob, as God Almighty; but by my name Yahweh I was not known to them.”', 540, 450, 640, {f: 'GarI', size: 42, lh: 60, a: e, hl: [{p: 'Yahweh I was not known', c: C.J, k: e, glow: 1}]});
+  X.globalAlpha = A * g; rrect(1000, 280, 760, 440, 14); X.fillStyle = '#1e1912'; X.fill(); X.strokeStyle = C.faint; X.stroke();
+  text('GENESIS 4:26', 1380, 350, {f: 'Mono', size: 24, c: C.dim, al: 'center', ls: 3, a: g});
+  para('“At that time men began to call on Yahweh’s name.”', 1380, 470, 640, {f: 'GarI', size: 42, lh: 60, a: g, hl: [{p: 'call on Yahweh’s name.', c: C.J, k: g, glow: 1}]});
+  text('≠', W / 2, 530, {f: 'Corm', size: 110, c: C.D, al: 'center', a: A * ss(ls('doublets', 3) + 1.2, ls('doublets', 3) + 2, t)});
+  X.restore(); }
+
+// ---------- flood ----------
+const FSEG = []; // segments with text
+(function () { for (const v of FLOOD) { if (v.src.startsWith('split')) { const parts = v.src.slice(6).split('/'); const words = v.text.split(' '); const h = Math.ceil(words.length / 2);
+      const first = parts.find(p => p.endsWith('a'))[0], second = parts.find(p => p.endsWith('b'))[0];
+      FSEG.push({ref: v.ref + 'a', src: first, text: words.slice(0, h).join(' ')}); FSEG.push({ref: v.ref + 'b', src: second, text: words.slice(h).join(' ')}); }
+    else FSEG.push({ref: v.ref, src: v.src, text: v.text}); } })();
+const FS = 12.5, FH = 17, FG = 5;
+let FLAY = null, FLAY_XY = 0;
+function floodLayouts() { if (FLAY) return FLAY; font('Gar', FS);
+  for (const s of FSEG) s.w = Math.min(560, X.measureText(s.text).width + 14);
+  function flow(list, x0, w, y0, key) { let x = x0, y = y0; for (const s of list) { const sw = Math.min(s.w, w); if (x + sw > x0 + w) { x = x0; y += FH + FG; } s[key] = {x, y, w: sw}; x += sw + FG; } return y + FH; }
+  const bottom = flow(FSEG, 180, 1560, 0, 'A'); const off = (H - bottom) / 2 + 20; for (const s of FSEG) s.A.y += off;
+  function flowB(list, x0, w, y0) { let x = x0, y = y0; for (const s of list) { const sw = Math.min(s.w * 0.8, w); if (x + sw > x0 + w) { x = x0; y += 17; } s.B = {x, y, w: sw}; x += sw + 4; } return y + 14; }
+  const jEnd = flowB(FSEG.filter(s => s.src === 'J'), 130, 780, 270); flowB(FSEG.filter(s => s.src === 'P'), 1010, 780, 270);
+  flowB(FSEG.filter(s => s.src === 'X'), 130, 780, jEnd + 46); FLAY_XY = jEnd + 30;
+  return FLAY = true; }
+const SRCCOL = {J: C.J, P: C.P, X: C.X};
+function floodBlock(t, color, split, a, callouts) { floodLayouts();
+  FSEG.forEach((s, i) => { const k = ss(0, 1, split * 1.6 - (i / FSEG.length) * 0.6); const x = lerp(s.A.x, s.B.x, k), y = lerp(s.A.y, s.B.y, k), w = lerp(s.A.w, s.B.w, k), fh = lerp(FH, 13, k), fs = lerp(FS, 10, k);
+    const col = mix('#8a8171', SRCCOL[s.src], color); X.save(); X.globalAlpha = a * (s.src === 'X' ? lerp(1, 0.5, split) : 1);
+    rrect(x, y, w, fh, 4); X.fillStyle = col; X.globalAlpha *= 0.2; X.fill(); X.globalAlpha = a * (s.src === 'X' ? lerp(1, 0.5, split) : 1);
+    X.beginPath(); X.rect(x, y, w, fh); X.clip(); font('Gar', fs); X.fillStyle = mix('#cfc5b0', SRCCOL[s.src], color * 0.75); X.textBaseline = 'middle'; X.fillText(s.text, x + 6, y + fh / 2 + 1); X.restore();
+    s.cur = {x, y, w}; });
+  for (const c of callouts || []) { if (c.a <= 0) continue; const s = FSEG.find(q => q.ref === c.ref); if (!s) continue; const {x, y, w} = s.cur;
+    X.save(); X.globalAlpha = a * c.a; X.strokeStyle = c.c; X.lineWidth = 2.5; rrect(x - 3, y - 3, w + 6, FH + 6, 5); X.stroke();
+    const tx = c.tx ?? x + w / 2, ty = c.ty; line(x + w / 2, c.ty < y ? y - 3 : y + FH + 3, tx, ty + (c.ty < y ? 12 : -40), c.c, 1.5, 1);
+    X.restore(); text(c.label, tx, ty, {f: 'CormI', size: 40, c: c.c, al: 'center', a: a * c.a}); text(c.ref.replace(/[ab]$/, ''), tx, ty + 30, {f: 'Mono', size: 18, c: C.dim, al: 'center', a: a * c.a}); } }
+function sFlood(t) { const A = sa('flood', t); X.save(); X.globalAlpha = A;
+  const color = ss(ls('flood', 2), ls('flood', 2) + 2.2, t), split = ss(ls('flood', 3) - 0.2, ls('flood', 3) + 2.8, t);
+  const ttl = ss(ls('flood', 0), ls('flood', 0) + 1, t) * (1 - ss(ls('flood', 1), ls('flood', 1) + 0.6, t));
+  text('Genesis 6–9', W / 2, 500, {f: 'Corm', size: 110, al: 'center', a: ttl}); text('THE FLOOD', W / 2, 580, {f: 'Mono', size: 26, c: C.dim, al: 'center', ls: 8, a: ttl});
+  const blk = ss(ls('flood', 1) - 0.2, ls('flood', 1) + 0.9, t) * (1 - ss(le('flood', 6) - 0.2, le('flood', 6) + 0.6, t) * 0);
+  const d1 = L('flood', 1), cf = f => ss(d1.s + d1.d * f, d1.s + d1.d * f + 0.6, t) * (1 - ss(ls('flood', 2) - 0.6, ls('flood', 2) + 0.2, t));
+  const call1 = [{ref: '6:19', label: 'two of every sort', c: C.ink, a: cf(0.08), ty: 130}, {ref: '7:2', label: 'seven pairs of the clean', c: C.ink, a: cf(0.35), ty: 130},
+    {ref: '7:12', label: 'rain, forty days', c: C.ink, a: cf(0.62), ty: 1010}, {ref: '7:24', label: 'waters prevail 150 days', c: C.ink, a: cf(0.82), ty: 1010}];
+  call1.forEach((c, i) => c.tx = [420, 820, 1100, 1500][i]);
+  // after split: beats down each column
+  const d4 = L('flood', 4), d5 = L('flood', 5), b = (d, f) => ss(d.s + d.d * f, d.s + d.d * f + 0.5, t) * (1 - ss(le('flood', 6) - 1.5, le('flood', 6) - 0.5, t));
+  const rej = ss(ls('flood', 6) + L('flood', 6).d * 0.55, le('flood', 6), t); // re-braid
+  const splitK = split * (1 - rej);
+  const dimK = ss(ls('flood', 4) - 0.6, ls('flood', 4) + 0.4, t) * (1 - rej);
+  floodBlock(t, color, splitK, A * blk * lerp(1, 0.2, dimK), split < 0.05 ? call1 : []);
+  if (split > 0.5) { const aa = ss(0.5, 1, split) * (1 - rej);
+    text('YAHWEH', 530, 170, {f: 'Mono', size: 26, c: C.J, al: 'center', ls: 8, a: A * aa}); text('ELOHIM', 1390, 170, {f: 'Mono', size: 26, c: C.P, al: 'center', ls: 8, a: A * aa});
+    text('story one', 530, 220, {f: 'CormI', size: 34, c: C.dim, al: 'center', a: A * aa}); text('story two', 1390, 220, {f: 'CormI', size: 34, c: C.dim, al: 'center', a: A * aa});
+    const jb = [['regrets making humankind', '6:6', 0.1], ['seven pairs of the clean', '7:2', 0.35], ['forty days of rain', '7:12', 0.55], ['smells the pleasant aroma', '8:21', 0.8]];
+    const pb = [['all flesh is corrupt', '6:12', 0.1], ['two of each kind', '6:19', 0.28], ['dated to the day, about a year', '7:11 · 8:14', 0.5], ['a bow in the cloud', '9:13', 0.82]];
+    jb.forEach(([s, r, f], i) => { const y = 430 + i * 105; text(s, 530, y, {f: 'GarI', size: 46, c: C.J, al: 'center', a: A * b(d4, f)}); text(r, 530, y + 28, {f: 'Mono', size: 17, c: C.dim, al: 'center', a: A * b(d4, f)}); });
+    pb.forEach(([s, r, f], i) => { const y = 430 + i * 105; text(s, 1390, y, {f: 'GarI', size: 46, c: C.P, al: 'center', a: A * b(d5, f)}); text(r, 1390, y + 28, {f: 'Mono', size: 17, c: C.dim, al: 'center', a: A * b(d5, f)}); });
+    text('gray: verses scholars assign differently, or to the editor', 520, FLAY_XY, {f: 'Mono', size: 16, c: C.faint, al: 'center', a: A * aa * (1 - dimK)}); }
+  if (color > 0 && split < 0.5) caption('one standard source division · gold = the Yahweh story · blue = the Elohim story · gray = disputed or editorial', color * (1 - split * 2));
+  const kept = ss(le('flood', 6) - 0.9, le('flood', 6), t); if (kept > 0) text('braided', W / 2, 120, {f: 'CormI', size: 50, c: C.ink, al: 'center', a: A * kept});
+  X.restore(); }
+
+// ---------- sources ----------
+const SRC = [
+  {k: 'J', c: C.J, n: 'the Yahwist', traits: ['“Yahweh” from the start', 'vivid, human God', 'southern: Judah']},
+  {k: 'E', c: C.E, n: 'the Elohist', traits: ['“Elohim” until Moses', 'dreams, angels, prophets', 'northern: Israel']},
+  {k: 'D', c: C.D, n: 'the Deuteronomist', traits: ['the book of Deuteronomy', 'long speeches', 'one God, one place']},
+  {k: 'P', c: C.P, n: 'the Priestly source', traits: ['genealogies, dates', 'ritual law', 'creation by word']}];
+function sSources(t) { const A = sa('sources', t); X.save(); X.globalAlpha = A;
+  const w = ss(ls('sources', 0), ls('sources', 0) + 1, t) * (1 - ss(ls('sources', 1) - 0.4, ls('sources', 1) + 0.4, t));
+  text('Julius Wellhausen', W / 2, 470, {f: 'Corm', size: 90, al: 'center', a: w}); text('PROLEGOMENA TO THE HISTORY OF ISRAEL · 1883', W / 2, 540, {f: 'Mono', size: 24, c: C.dim, al: 'center', ls: 4, a: w});
+  text('the Documentary Hypothesis', W / 2, 640, {f: 'CormI', size: 54, c: C.J, al: 'center', a: w * ss(ls('sources', 0) + L('sources', 0).d * 0.75, ls('sources', 0) + L('sources', 0).d * 0.75 + 0.8, t)});
+  const lettersIn = ss(ls('sources', 1), ls('sources', 1) + 0.8, t);
+  SRC.forEach((s, i) => { const x = 330 + i * 420, st = i === 0 ? ls('sources', 2) : ls('sources', 2 + i), full = ss(st, st + 0.8, t);
+    const base = lettersIn * ss(ls('sources', 1) + i * 0.3, ls('sources', 1) + i * 0.3 + 0.6, t);
+    text(s.k, x, 500, {f: 'Corm', size: 220, c: s.c, al: 'center', a: base * lerp(0.35, 1, full)});
+    text(s.n, x, 580, {f: 'CormI', size: 42, c: C.ink, al: 'center', a: full});
+    s.traits.forEach((tr, j) => { const d = L('sources', 2 + i), aa = ss(d.s + d.d * (0.25 + j * 0.2), d.s + d.d * (0.25 + j * 0.2) + 0.5, t); text(tr, x, 670 + j * 52, {f: 'Gar', size: 30, c: C.dim, al: 'center', a: aa}); }); });
+  const g1 = ss(ls('sources', 5) + L('sources', 5).d * 0.78, ls('sources', 5) + L('sources', 5).d * 0.78 + 0.6, t);
+  text('Genesis 1 = P', 330 + 3 * 420, 880, {f: 'Mono', size: 26, c: C.P, al: 'center', a: g1});
+  X.restore(); }
+
+// ---------- history / braid ----------
+const YR = y => lerp(170, 1750, (1000 - y) / 600);   // 1000 BCE .. 400 BCE
+function strand(pts, c, a, wdt = 6, dash) { X.save(); X.globalAlpha *= a; X.strokeStyle = c; X.lineWidth = wdt; X.lineCap = 'round'; if (dash) X.setLineDash(dash); X.beginPath(); pts.forEach(([x, y], i) => i ? X.lineTo(x, y) : X.moveTo(x, y)); X.stroke(); X.restore(); }
+function strandPts(i, t, xEnd, opt = {}) { // compute path for source i across time
+  const N = 560, S = 640, braidY = 610; const pts = [];
+  const start = [950, 850, 622, 560][i], lane = [S, N, S, 790][i];
+  for (let yr = start; yr >= 400; yr -= 2) { const x = YR(yr); if (x > xEnd) break; let y = lane;
+    if (i === 1) y = lerp(N, S, ss(725, 690, yr));             // E moves south after 722
+    if (i === 3) y = lerp(790, S, ss(520, 470, yr));
+    if (i === 2) y = lerp(S + 40, S, ss(600, 520, yr)) ;
+    const inJE = (i < 2) ? ss(722, 690, yr) : 0; const all = ss(470, 430, yr);
+    const ph = x * 0.03 - t * 1.2 + i * Math.PI / 2;
+    y += (i < 2 ? inJE * (1 - all) * 16 * Math.sin(x * 0.03 - t * 1.2 + i * Math.PI) - inJE * (1 - all) * 0 : 0);
+    if (i < 2) y = lerp(y, S - 20 + (i ? 1 : -1) * 0, 0);
+    y = lerp(y, braidY + 22 * Math.sin(ph), all);
+    pts.push([x, y]); }
+  return pts; }
+function sHistory(t) { const A = sa('history', t); X.save(); X.globalAlpha = A;
+  const ax = ss(ls('history', 0), ls('history', 0) + 1.2, t);
+  line(YR(1000), 900, YR(400), 900, C.faint, 2, ax);
+  for (const y of [1000, 900, 800, 700, 600, 500, 400]) text(`${y} BCE`, YR(y), 945, {f: 'Mono', size: 20, c: C.dim, al: 'center', a: ax});
+  text('ISRAEL · NORTH', 180, 520, {f: 'Mono', size: 22, c: C.dim, ls: 3, a: ax}); text('JUDAH · SOUTH', 180, 710, {f: 'Mono', size: 22, c: C.dim, ls: 3, a: ax});
+  // growth of the drawing across the lines
+  const marks = [[950, ls('history', 0) + 0.5], [722, ls('history', 1)], [622, ls('history', 2)], [587, ls('history', 3)], [440, ls('history', 4)], [400, ls('history', 4) + L('history', 4).d * 0.6]];
+  let yrNow = 1000; for (let i = 0; i < marks.length - 1; i++) { const [y0, t0] = marks[i], [y1, t1] = marks[i + 1]; if (t >= t0) yrNow = lerp(y0, y1, ss(t0, t1, t)); }
+  const xEnd = YR(yrNow);
+  const nOn = [1, 1, 1, 1];
+  [0, 1, 2, 3].forEach(i => { const p = strandPts(i, t, xEnd); if (p.length > 1) { strand(p, SRC[i].c, 1); text(SRC[i].k, p[0][0] - 26, p[0][1] + 12, {f: 'Corm', size: 44, c: SRC[i].c, al: 'center'}); } });
+  const ev = [[722, 'Assyria destroys Israel', 1, 190], [622, 'a scroll found in the Temple', 2, 300], [587, 'Babylon destroys Jerusalem', 3, 300], [450, 'Ezra reads the Torah', 4, 190]];
+  const AL = {722: ['center', 0], 622: ['right', -14], 587: ['left', 14], 450: ['center', 0]}, REF = {622: '2 Kings 22', 450: 'Nehemiah 8'};
+  for (const [yr, lab, li, yy] of ev) { const a = ss(ls('history', li) + 0.3, ls('history', li) + 1.2, t), x = YR(yr), [al, dx] = AL[yr];
+    line(x, yy + 20, x, 880, C.ink, 1, a * 0.35); text(yr === 450 ? 'c. 450' : yr === 587 ? '587/586' : String(yr), x + dx, yy - 22, {f: 'Mono', size: 24, c: C.ink, al, a}); text(lab, x + dx, yy + 12, {f: 'GarI', size: 30, c: C.dim, al, a});
+    if (REF[yr]) text(REF[yr], x + dx, yy + 44, {f: 'Mono', size: 18, c: C.faint, al, a}); }
+  const R = ss(ls('history', 4) + L('history', 4).d * 0.3, ls('history', 4) + L('history', 4).d * 0.6, t);
+  text('R', YR(425), 560, {f: 'Corm', size: 64, c: C.ink, al: 'center', a: R}); text('Torah', YR(410), 690, {f: 'CormI', size: 40, c: C.ink, al: 'center', a: ss(ls('history', 5), ls('history', 5) + 1, t)});
+  caption('The classic model, with its traditional dates. Every date for J, E and P is a scholarly reconstruction.', ax);
+  X.restore(); }
+
+// ---------- modern ----------
+function sModern(t) { const A = sa('modern', t); X.save(); X.globalAlpha = A;
+  const m = i => ls('modern', i), md = i => L('modern', i).d;
+  const panels = ss(m(5) - 0.3, m(5) + 0.9, t);
+  // braid that frays
+  const fray = ss(m(0) + md(0) * 0.5, m(0) + md(0) + 0.5, t), eFade = ss(m(2), m(2) + 1.5, t), jBreak = ss(m(3), m(3) + 1.2, t), recolor = ss(m(3) + md(3) * 0.35, m(3) + md(3) * 0.35 + 1.2, t);
+  const brA = 1 - ss(m(4) - 0.4, m(4) + 0.4, t);
+  if (brA > 0) { X.save(); X.globalAlpha = A * brA;
+    for (let i = 0; i < 4; i++) { const pts = []; for (let x = 200; x <= 1720; x += 5) { const ph = x * 0.012 - t * 0.9 + i * Math.PI / 2;
+        const y = 560 + (22 + fray * (i - 1.5) * 70) * Math.sin(ph) * (1 - fray * 0.3) + fray * (i - 1.5) * 90 + fray * 14 * Math.sin(x * 0.05 + i * 3 + t); pts.push([x, y]); }
+      let c = SRC[i].c; if (i < 3) c = mix(c, C.NP, recolor);
+      let a = 1, dash = null; if (i === 1) { a = 1 - 0.8 * eFade; if (eFade > 0) dash = [2 + 30 * (1 - eFade), 14 * eFade + 2]; }
+      if (i === 0 && jBreak > 0) dash = [lerp(2000, 140, jBreak), lerp(0, 40, jBreak)];
+      strand(pts, c, a, 6, dash); if (i < 4) text(SRC[i].k, 160, 560 + (i - 1.5) * (30 + fray * 90) + 14, {f: 'Corm', size: 44, c, al: 'center', a: 1 - recolor * (i < 3 ? 1 : 0)}); }
+    text('?', 1000, 560 - 90 * 0.5 * fray - 30, {f: 'Corm', size: 90, c: C.E, al: 'center', a: eFade * 0.9});
+    const sch = [['John Van Seters', '1975'], ['H. H. Schmid', '1976'], ['Rolf Rendtorff', '1977'], ['Erhard Blum', '1984']];
+    sch.forEach(([n, y], i) => { const a = ss(m(1) + md(1) * (0.22 + i * 0.17), m(1) + md(1) * (0.22 + i * 0.17) + 0.6, t) * (1 - ss(m(2) + 1, m(2) + 2, t));
+      text(n, 330 + i * 420, 230, {f: 'Corm', size: 50, al: 'center', a}); text(y, 330 + i * 420, 275, {f: 'Mono', size: 22, c: C.dim, al: 'center', a}); });
+    text('non-Priestly', 960, 250, {f: 'CormI', size: 56, c: C.NP, al: 'center', a: recolor}); text('Priestly', 960, 900, {f: 'CormI', size: 56, c: C.P, al: 'center', a: recolor});
+    X.restore(); }
+  // ancestors / exodus
+  const anc = ss(m(4), m(4) + 0.8, t) * (1 - panels);
+  if (anc > 0) { X.save(); X.globalAlpha = A * anc;
+    rrect(250, 380, 560, 240, 14); X.fillStyle = '#231d15'; X.fill(); X.strokeStyle = C.NP; X.lineWidth = 2; X.stroke();
+    rrect(1110, 380, 560, 240, 14); X.fill(); X.stroke();
+    text('the ancestors', 530, 490, {f: 'Corm', size: 58, al: 'center'}); text('Abraham · Isaac · Jacob · Genesis 12–50', 530, 545, {f: 'Mono', size: 20, c: C.dim, al: 'center'});
+    text('the Exodus', 1390, 490, {f: 'Corm', size: 58, al: 'center'}); text('Moses · Egypt · Exodus', 1390, 545, {f: 'Mono', size: 20, c: C.dim, al: 'center'});
+    text('two origin stories?', W / 2, 260, {f: 'CormI', size: 48, c: C.ink, al: 'center', a: ss(m(4) + md(4) * 0.3, m(4) + md(4) * 0.3 + 0.8, t)});
+    const jn = ss(m(4) + md(4) * 0.72, m(4) + md(4) * 0.72 + 1.2, t); if (jn > 0) { const pts = []; for (let x = 810; x <= lerp(810, 1110, jn); x += 4) pts.push([x, 500 + 10 * Math.sin(x * 0.05 - t * 2)]); strand(pts, C.P, 1, 7);
+      text('joined by Priestly writers', W / 2, 700, {f: 'GarI', size: 34, c: C.P, al: 'center', a: jn}); }
+    text('one influential proposal (e.g. Konrad Schmid, Jan Christian Gertz)', W / 2, 820, {f: 'Mono', size: 20, c: C.faint, al: 'center'});
+    X.restore(); }
+  if (panels > 0) { X.save(); X.globalAlpha = A * panels;
+    const px = [180, 1000];
+    for (const x of px) { rrect(x, 230, 740, 560, 16); X.fillStyle = '#1e1912'; X.fill(); X.strokeStyle = C.faint; X.lineWidth = 1.5; X.stroke(); }
+    text('MUCH EUROPEAN SCHOLARSHIP', 550, 300, {f: 'Mono', size: 22, c: C.dim, al: 'center', ls: 3}); text('NEO-DOCUMENTARIANS', 1370, 300, {f: 'Mono', size: 22, c: C.dim, al: 'center', ls: 3});
+    const lay = [[C.NP, 'early non-Priestly stories'], [C.P, 'Priestly composition'], [C.NP, 'later expansions'], [C.X, 'post-Priestly editing']];
+    lay.forEach(([c, n], i) => { const y = 690 - i * 85; rrect(260, y - 50, 580, 64, 8); X.fillStyle = c + '40'; X.fill(); X.strokeStyle = c; X.stroke(); text(n, 550, y - 8, {f: 'Gar', size: 30, al: 'center', c: C.ink}); });
+    text('layers, grown over time', 550, 750, {f: 'CormI', size: 32, c: C.dim, al: 'center'});
+    SRC.forEach((s, i) => { const y = 400 + i * 80; const pts = []; for (let x = 1080; x <= 1660; x += 5) pts.push([x, y + 6 * Math.sin(x * 0.02 - t + i)]); strand(pts, s.c, 1, 5); text(s.k, 1060, y + 14, {f: 'Corm', size: 40, c: s.c, al: 'center'}); });
+    text('continuous sources, traced by plot', 1370, 750, {f: 'CormI', size: 32, c: C.dim, al: 'center'});
+    text('e.g. Joel Baden, Baruch Schwartz, Jeffrey Stackert', 1370, 840, {f: 'Mono', size: 19, c: C.faint, al: 'center'});
+    const ag = ss(m(6) + md(6) * 0.5, m(6) + md(6) * 0.5 + 0.8, t);
+    text('…and underneath, a lot of agreement', W / 2, 940, {f: 'CormI', size: 44, c: C.ink, al: 'center', a: ag});
+    X.restore(); }
+  X.restore(); }
+
+function sConsensus(t) { const A = sa('consensus', t); X.save(); X.globalAlpha = A;
+  text('WHAT ACADEMIC SCHOLARS LARGELY AGREE ON', W / 2, 190, {f: 'Mono', size: 24, c: C.dim, al: 'center', ls: 5, a: ss(ls('consensus', 0), ls('consensus', 0) + 0.8, t)});
+  const items = [['The Torah is composite', 'many hands, over several centuries'], ['The Priestly material is identifiable', 'one of the most secure results in the field'], ['Deuteronomy is a distinct voice', 'its core tied to the 7th century BCE and Josiah’s reforms'], ['Final shape: the Persian period', 'roughly the 5th–4th century BCE']];
+  items.forEach(([a, b], i) => { const at = ls('consensus', i), k = ss(at, at + 0.8, t), y = 320 + i * 150;
+    X.save(); X.globalAlpha = A * k; X.strokeStyle = C.J; X.lineWidth = 5; X.lineCap = 'round'; X.beginPath(); const ck = ss(at + 0.3, at + 1, t);
+    X.moveTo(470, y - 18); X.lineTo(lerp(470, 488, Math.min(1, ck * 2)), lerp(y - 18, y, Math.min(1, ck * 2))); if (ck > 0.5) X.lineTo(lerp(488, 522, (ck - 0.5) * 2), lerp(y, y - 40, (ck - 0.5) * 2)); X.stroke(); X.restore();
+    text(a, 570, y, {f: 'Corm', size: 54, a: A * k}); text(b, 570, y + 42, {f: 'GarI', size: 30, c: C.dim, a: A * k}); });
+  const d = ss(ls('consensus', 3) + L('consensus', 3).d * 0.6, ls('consensus', 3) + L('consensus', 3).d * 0.6 + 1, t);
+  if (d > 0) { const y = 960, Y = yr => lerp(470, 1450, (700 - yr) / 700); line(Y(700), y, Y(0), y, C.faint, 2, d);
+    X.globalAlpha = A * d; X.fillStyle = C.P + '55'; X.fillRect(Y(539), y - 14, Y(332) - Y(539), 28); text('Persian period', (Y(539) + Y(332)) / 2, y - 26, {f: 'Mono', size: 18, c: C.P, al: 'center', a: A * d});
+    X.fillStyle = C.J; X.beginPath(); X.arc(Y(250), y, 12, 0, 7); X.fill(); text('oldest surviving Torah scrolls, c. 250 BCE', Y(250) - 16, y - 26, {f: 'Mono', size: 18, c: C.J, al: 'left', a: A * d});
+    for (const yr of [700, 500, 300, 100]) text(`${yr} BCE`, Y(yr), y + 40, {f: 'Mono', size: 16, c: C.dim, al: 'center', a: A * d}); }
+  X.restore(); }
+
+function sClose(t) { const A = sa('close', t); X.save(); X.globalAlpha = A;
+  const c0 = ls('close', 0), k1 = ls('close', 1), k2 = ls('close', 2), k3 = ls('close', 3);
+  // two columns then braid back into one block
+  const split = 1 - ss(k1 - 1.2, k1 + 0.4, t);
+  const blk = 1 - ss(k2 + L('close', 2).d - 0.2, k2 + L('close', 2).d + 0.6, t);
+  floodBlock(t, 1, split, blk * ss(c0, c0 + 1, t) * 0.9, []);
+  const kb = ss(k1, k1 + 0.6, t) * (1 - ss(k2 - 0.2, k2 + 0.5, t));
+  if (kb > 0) { X.fillStyle = `rgba(20,17,13,${0.72 * kb})`; X.fillRect(0, 0, W, H); text('They kept both.', W / 2, H / 2 + 30, {f: 'Corm', size: 120, al: 'center', a: kb}); }
+  const k2a = ss(k2, k2 + 0.8, t) * (1 - ss(k3 - 0.4, k3 + 0.3, t));
+  if (k2a > 0) { X.fillStyle = `rgba(20,17,13,${0.8 * k2a})`; X.fillRect(0, 0, W, H);
+    ['Maybe out of reverence.', 'Maybe to hold two communities together.', 'We don’t know.'].forEach((s, i) => text(s, W / 2, 440 + i * 100, {f: 'CormI', size: 58, al: 'center', c: i === 2 ? C.dim : C.ink, a: ss(k2 + L('close', 2).d * [0, 0.3, 0.75][i], k2 + L('close', 2).d * [0, 0.3, 0.75][i] + 0.6, t)})); }
+  const fin = ss(k3, k3 + 0.8, t);
+  if (fin > 0) { threads(t, 0, W, 800, 26, fin * 0.85, 0);
+    para('Not one voice.', W / 2, 400, 1500, {f: 'Corm', size: 90, a: fin});
+    para('A conversation, kept on purpose.', W / 2, 540, 1500, {f: 'CormI', size: 70, c: C.J, a: ss(k3 + L('close', 3).d * 0.45, k3 + L('close', 3).d * 0.45 + 0.8, t)}); }
+  X.restore(); }
+
+function sEnd(t) { const w = sc('end'), A = ss(w.a, w.a + 1, t) * (1 - ss(w.b - 1.2, w.b, t)); X.save(); X.globalAlpha = A;
+  threads(t, 0, W, 760, 18, 0.5, 0);
+  text('Who Wrote the Torah?', W / 2, 400, {f: 'Corm', size: 96, al: 'center'});
+  text('made by Claude, an AI  ·  byclaude.net', W / 2, 500, {f: 'Mono', size: 28, c: C.J, al: 'center', ls: 2});
+  text('Scripture quotations: World English Bible (public domain). Hebrew counts: Westminster Leningrad Codex (OSHB).', W / 2, 590, {f: 'Mono', size: 19, c: C.dim, al: 'center'});
+  text('Further reading in the description.', W / 2, 630, {f: 'Mono', size: 19, c: C.dim, al: 'center'});
+  X.restore(); }
+
+const ORDER = [['open', sOpen], ['title', sTitle], ['tradition', sTradition], ['names', sNames], ['creation', sCreation], ['doublets', sDoublets], ['flood', sFlood], ['sources', sSources], ['history', sHistory], ['modern', sModern], ['consensus', sConsensus], ['close', sClose], ['end', sEnd]];
+window.render = function (t) { X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; background(t);
+  for (const [k, f] of ORDER) if (on(k, t)) { X.save(); f(t); X.restore(); }
+  X.globalAlpha = 1; finish(t); };
+window.ready = (async () => { for (const f of ['Corm', 'CormI', 'Gar', 'GarI', 'Heb', 'Mono']) await document.fonts.load(`40px ${f}`, 'אab'); await document.fonts.ready; render(0); return {total: TL.total}; })();
+</script></body></html>
