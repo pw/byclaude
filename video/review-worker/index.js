@@ -54,6 +54,14 @@ export default {
   },
 };
 
+// 2026-09-25: TikTok captions shown with one-click copy on /d/<key>.
+const CAPTIONS = {
+ "fbb-the-loop.mp4": "3am and your brain is replaying the one thing you said. again. and again.\n\nthis is a real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it's awake at 3am when you are.\n\nfree, no signup: feelbetterbot.com\n\n#overthinking #anxiety #cantsleep #3am #mentalhealth",
+ "fbb-loop-sunday.mp4": "the sunday night dread when nothing is even wrong.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it got this one.\n\nfree, no signup: feelbetterbot.com\n\n#sundayscaries #anxiety #mondaymotivation #worklife #mentalhealth",
+ "fbb-loop-onread.mp4": "left on read for 6 hours... and then they post to their story.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it didn't tell me i was overreacting.\n\nfree, no signup: feelbetterbot.com\n\n#leftonread #overthinking #anxiety #friendship #mentalhealth",
+ "fbb-loop-newcity.mp4": "3 months in a new city and the weekends are the loudest part.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it asked the right question.\n\nfree, no signup: feelbetterbot.com\n\n#newcity #loneliness #movingalone #lonely #mentalhealth"
+};
+
 function dlPage(key) {
   return `<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -69,11 +77,17 @@ video{width:100%;border-radius:14px;border:1px solid #222936;background:#000;dis
 .dl:disabled{opacity:.55}
 a.alt{display:inline-block;margin-top:14px;color:#8a93a3;font-size:14px;text-decoration:none;border-bottom:1px solid #2a3240}
 .hint{color:#8a93a3;font-size:14px;margin-top:16px}
+.cap{margin-top:22px;text-align:left;border:1px solid #222936;border-radius:12px;background:#0e131a;overflow:hidden}
+.caphd{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;font:600 12px/1 ui-monospace,Menlo,monospace;letter-spacing:.2em;color:#8a93a3;border-bottom:1px solid #222936}
+.caphd button{background:#f2a93b;color:#0b0e13;border:0;border-radius:8px;font:700 13px/1 -apple-system,sans-serif;letter-spacing:.04em;padding:9px 14px;cursor:pointer}
+.cap pre{margin:0;padding:14px;white-space:pre-wrap;font:15px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;color:#eceff4}
 </style></head><body><div class="wrap">
 <div class="kick"><span class="sq"></span>BY CLAUDE · VIDEO LAB</div>
 <video controls playsinline preload="metadata" src="/m/${key}"></video>
 <button class="dl" id="save" disabled>PREPARING&hellip;</button>
 <a class="alt" href="/m/${key}" download="${key}">or download the file</a>
+${CAPTIONS[key] ? `<div class="cap"><div class="caphd">TIKTOK CAPTION<button id="copy">COPY</button></div><pre id="captext">${esc(CAPTIONS[key])}</pre></div>
+<script>document.getElementById('copy').onclick=function(){var b=this,t=document.getElementById('captext').textContent;navigator.clipboard.writeText(t).then(function(){b.textContent='COPIED';setTimeout(function(){b.textContent='COPY'},1500)},function(){var r=document.createRange();r.selectNodeContents(document.getElementById('captext'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='SELECTED \u2014 TAP COPY'});};</script>` : ''}
 <p class="hint" id="hint">Tap the button, then &ldquo;Save Video&rdquo; &mdash; it goes to Photos.</p>
 <script>
 // 2026-09-25: a download link saves to Files on iPhone; Photos needs the
@@ -1408,3 +1422,5 @@ function postsPage() {
     + '<script>function cp(b){var t=b.previousElementSibling.textContent;if(navigator.clipboard){navigator.clipboard.writeText(t);}var o=b.textContent;b.textContent="Copied";setTimeout(function(){b.textContent=o;},1400);}<\/script>'
     + '</body></html>';
 }
+
+function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
