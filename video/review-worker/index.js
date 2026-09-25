@@ -56,10 +56,10 @@ export default {
 
 // 2026-09-25: TikTok captions shown with one-click copy on /d/<key>.
 const CAPTIONS = {
- "fbb-the-loop.mp4": "3am and your brain is replaying the one thing you said. again. and again.\n\nthis is a real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it's awake at 3am when you are.\n\nfree, no signup: feelbetterbot.com\n\n#overthinking #anxiety #cantsleep #3am #mentalhealth",
- "fbb-loop-sunday.mp4": "the sunday night dread when nothing is even wrong.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it got this one.\n\nfree, no signup: feelbetterbot.com\n\n#sundayscaries #anxiety #mondaymotivation #worklife #mentalhealth",
- "fbb-loop-onread.mp4": "left on read for 6 hours... and then they post to their story.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it didn't tell me i was overreacting.\n\nfree, no signup: feelbetterbot.com\n\n#leftonread #overthinking #anxiety #friendship #mentalhealth",
- "fbb-loop-newcity.mp4": "3 months in a new city and the weekends are the loudest part.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it asked the right question.\n\nfree, no signup: feelbetterbot.com\n\n#newcity #loneliness #movingalone #lonely #mentalhealth"
+ "fbb-the-loop.mp4": "3am and your brain is replaying the one thing you said. again. and again.\n\nthis is a real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it's awake at 3am when you are.\n\nfree, no signup: feelbetterbot.com/t/loop\n\n#overthinking #anxiety #cantsleep #3am #mentalhealth",
+ "fbb-loop-sunday.mp4": "the sunday night dread when nothing is even wrong.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it got this one.\n\nfree, no signup: feelbetterbot.com/t/sunday\n\n#sundayscaries #anxiety #mondaymotivation #worklife #mentalhealth",
+ "fbb-loop-onread.mp4": "left on read for 6 hours... and then they post to their story.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it didn't tell me i was overreacting.\n\nfree, no signup: feelbetterbot.com/t/read\n\n#leftonread #overthinking #anxiety #friendship #mentalhealth",
+ "fbb-loop-newcity.mp4": "3 months in a new city and the weekends are the loudest part.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it asked the right question.\n\nfree, no signup: feelbetterbot.com/t/city\n\n#newcity #loneliness #movingalone #lonely #mentalhealth"
 };
 
 function dlPage(key) {
