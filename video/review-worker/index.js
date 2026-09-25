@@ -36,6 +36,14 @@ export default {
       return new Response(postsPage(), {
         headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" },
       });
+    // 2026-09-25: the FBB Loop posting list — one phone page, work top to bottom.
+    if (url.pathname === "/fbb") {
+      const present = [];
+      for (const f of FBB_ORDER) if (await env.MEDIA.head(f.key)) present.push(f);
+      return new Response(fbbIndex(present), {
+        headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex", "Cache-Control": "no-store" },
+      });
+    }
     // 2026-08-17: phone-friendly download page — /d/<r2-key> (TikTok-from-phone flow)
     if (url.pathname.startsWith("/d/")) {
       let key = decodeURIComponent(url.pathname.slice(3));
@@ -59,7 +67,21 @@ const CAPTIONS = {
  "fbb-the-loop.mp4": "3am and your brain is replaying the one thing you said. again. and again.\n\nthis is a real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it's awake at 3am when you are.\n\nfree, no signup: feelbetterbot.com/t/loop\n\n#overthinking #anxiety #cantsleep #3am #mentalhealth",
  "fbb-loop-sunday.mp4": "the sunday night dread when nothing is even wrong.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it got this one.\n\nfree, no signup: feelbetterbot.com/t/sunday\n\n#sundayscaries #anxiety #mondaymotivation #worklife #mentalhealth",
  "fbb-loop-onread.mp4": "left on read for 6 hours... and then they post to their story.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it didn't tell me i was overreacting.\n\nfree, no signup: feelbetterbot.com/t/read\n\n#leftonread #overthinking #anxiety #friendship #mentalhealth",
- "fbb-loop-newcity.mp4": "3 months in a new city and the weekends are the loudest part.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it asked the right question.\n\nfree, no signup: feelbetterbot.com/t/city\n\n#newcity #loneliness #movingalone #lonely #mentalhealth"
+ "fbb-loop-newcity.mp4": "3 months in a new city and the weekends are the loudest part.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it asked the right question.\n\nfree, no signup: feelbetterbot.com/t/city\n\n#newcity #loneliness #movingalone #lonely #mentalhealth",
+ "fbb-loop-breakup.mp4": "POV: two weeks since the breakup and your thumb still opens his chat.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, and it calls that muscle memory, not weakness.\n\nfree, no signup: feelbetterbot.com/t/reach\n\n#breakup #heartbreak #movingon #healing #mentalhealth",
+ "fbb-loop-rejected.mp4": "POV: final round. you already told your family. then the email.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, and it doesn't try to silver-lining it.\n\nfree, no signup: feelbetterbot.com/t/almost\n\n#jobsearch #rejection #jobhunting #career #mentalhealth",
+ "fbb-loop-behind.mp4": "POV: everyone your age got a map and you got fog.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, and it gets what the comparison is really about.\n\nfree, no signup: feelbetterbot.com/t/map\n\n#comparison #twenties #quarterlifecrisis #adulting #mentalhealth",
+ "fbb-loop-burnout.mp4": "POV: you used to love this job and now you dread opening your laptop.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, and it finds the word for it.\n\nfree, no signup: feelbetterbot.com/t/color\n\n#burnout #worklife #corporatelife #9to5 #mentalhealth",
+ "fbb-loop-groupchat.mp4": "POV: you sent a pic of your new apartment to the group chat. 3 hours. nothing.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, and it sees why it stung.\n\nfree, no signup: feelbetterbot.com/t/seen\n\n#groupchat #friendship #newapartment #leftonread #mentalhealth",
+ "fbb-loop-mom.mp4": "POV: \"are you still doing that job?\"\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, and it catches the one word that hurt.\n\nfree, no signup: feelbetterbot.com/t/still\n\n#momtok #parents #familydrama #adulting #mentalhealth",
+ "fbb-loop-bed.mp4": "POV: it's 2pm and you haven't gotten out of bed.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, and it doesn't call it lazy.\n\nfree, no signup: feelbetterbot.com/t/2pm\n\n#bedrotting #cantgetoutofbed #lowenergy #selfcare #mentalhealth",
+ "fbb-loop-birthday.mp4": "POV: it's your birthday. it's 4pm. two texts.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, and it says happy birthday first.\n\nfree, no signup: feelbetterbot.com/t/bday\n\n#birthday #lonely #birthdayblues #selfcare #mentalhealth",
+ "fbb-loop-drift.mp4": "POV: you used to talk every day. now it's been months and texting first feels weird.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, and it explains why the gap feels so heavy.\n\nfree, no signup: feelbetterbot.com/t/gap\n\n#friendship #bestfriend #growingapart #adulting #mentalhealth",
+ "fbb-loop-imposter.mp4": "POV: new promotion, and everyone in the meeting sounds so sure of themselves.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, and it points out the wobble.\n\nfree, no signup: feelbetterbot.com/t/wobble\n\n#impostersyndrome #newjob #promotion #corporatelife #mentalhealth",
+ "fbb-loop-cancel.mp4": "POV: you said yes to the party and now you have nothing left.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, and it calls it an empty tank, not a flaw.\n\nfree, no signup: feelbetterbot.com/t/tank\n\n#socialbattery #introvert #cancelingplans #selfcare #mentalhealth",
+ "fbb-loop-dark.mp4": "POV: it's dark at 6pm again and your mood is going with it.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, and it puts it better than you could.\n\nfree, no signup: feelbetterbot.com/t/6pm\n\n#fall #seasonaldepression #wintermood #autumn #mentalhealth",
+ "fbb-loop-fight.mp4": "POV: you had a fight and now you're in separate rooms, not talking.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, and it names the kind of quiet it is.\n\nfree, no signup: feelbetterbot.com/t/quiet\n\n#relationships #couples #argument #communication #mentalhealth",
+ "fbb-loop-off.mp4": "POV: nothing's wrong. you just feel off today.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, and it doesn't make you explain it.\n\nfree, no signup: feelbetterbot.com/t/off\n\n#feelingoff #lowmood #selfcare #mentalhealthmatters #mentalhealth"
 };
 
 function dlPage(key) {
@@ -1424,3 +1446,66 @@ function postsPage() {
 }
 
 function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+// Posting order for the FBB Loop films: strongest first, heavy and light alternating,
+// with a note where a film has a natural moment. Films not yet uploaded are skipped.
+const FBB_ORDER = [
+  { key: "fbb-the-loop.mp4", title: "3am replay", when: "late evening" },
+  { key: "fbb-loop-dark.mp4", title: "Dark at 6pm", when: "early evening — very on-season now" },
+  { key: "fbb-loop-bed.mp4", title: "2pm, still in bed", when: "early afternoon" },
+  { key: "fbb-loop-onread.mp4", title: "Left on read", when: "any evening" },
+  { key: "fbb-loop-mom.mp4", title: "Mom: “still”", when: "any day" },
+  { key: "fbb-loop-sunday.mp4", title: "Sunday dread", when: "a Sunday, 5–8pm" },
+  { key: "fbb-loop-burnout.mp4", title: "Color drained", when: "a weekday morning" },
+  { key: "fbb-loop-groupchat.mp4", title: "Group chat silence", when: "any evening" },
+  { key: "fbb-loop-breakup.mp4", title: "Muscle memory", when: "late night" },
+  { key: "fbb-loop-imposter.mp4", title: "The wobble", when: "a weekday" },
+  { key: "fbb-loop-birthday.mp4", title: "Quiet birthday", when: "afternoon" },
+  { key: "fbb-loop-cancel.mp4", title: "Empty tank", when: "a Friday or Saturday, ~6pm" },
+  { key: "fbb-loop-drift.mp4", title: "The gap", when: "any day" },
+  { key: "fbb-loop-fight.mp4", title: "Separate rooms", when: "late evening" },
+  { key: "fbb-loop-rejected.mp4", title: "Final round", when: "a weekday" },
+  { key: "fbb-loop-newcity.mp4", title: "New city", when: "a Saturday" },
+  { key: "fbb-loop-behind.mp4", title: "Everyone got a map", when: "any day" },
+  { key: "fbb-loop-off.mp4", title: "Just off", when: "any day" },
+];
+
+function fbbIndex(films) {
+  const rows = films.map((f, i) => {
+    const hook = (CAPTIONS[f.key] || "").split("\n")[0];
+    const slug = f.key.replace(/\.mp4$/, "");
+    return `<div class="row" data-k="${slug}"><a class="main" href="/d/${slug}"><span class="n">${i + 1}</span><span class="b"><span class="t">${esc(f.title)}</span><span class="h">${esc(hook)}</span><span class="w">${esc(f.when)}</span></span></a><button class="ck" aria-label="mark posted"></button></div>`;
+  }).join("\n");
+  return `<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>FBB Loop films</title>
+<style>
+:root{--bg:#0b0e13;--card:#0e131a;--line:#222936;--ink:#eceff4;--mute:#8a93a3;--amber:#f2a93b}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:560px;margin:0 auto;padding:28px 16px 60px}
+h1{font-size:22px;margin:0 0 4px}.sub{color:var(--mute);font-size:14px;margin:0 0 22px}
+.row{display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:10px}
+.main{flex:1;display:flex;gap:14px;align-items:flex-start;text-decoration:none;color:inherit;min-width:0}
+.n{font:700 15px/1 ui-monospace,Menlo,monospace;color:var(--amber);min-width:22px;padding-top:3px}
+.b{flex:1;display:flex;flex-direction:column;gap:3px;min-width:0}.t{font-weight:700}.h{color:#cfd5de;font-size:14px}.w{color:var(--mute);font-size:12px}
+.ck{width:34px;height:34px;border:2px solid #3a4454;border-radius:8px;flex:none;background:transparent;cursor:pointer}
+.row.done{opacity:.45}.row.done .ck{background:var(--amber);border-color:var(--amber)}
+.foot{color:var(--mute);font-size:13px;margin-top:18px}
+</style></head><body><div class="wrap">
+<h1>FBB Loop films</h1>
+<p class="sub">One a day, top to bottom. Tap a film for Save to Photos + the caption. Tap the box when it\u2019s posted (remembered on this phone).</p>
+${rows}
+<p class="foot">Set the TikTok bio link to <b>feelbetterbot.com/t/bio</b> — it's the one clickable link on TikTok, and each caption carries its own typeable /t/ path so we can tell which film sent people.</p>
+</div>
+<script>
+(function(){
+  var K='fbb-posted';function get(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return {}}}
+  function put(o){try{localStorage.setItem(K,JSON.stringify(o))}catch(e){}}
+  var done=get();
+  document.querySelectorAll('.row').forEach(function(r){
+    var k=r.getAttribute('data-k'); if(done[k]) r.classList.add('done');
+    r.querySelector('.ck').addEventListener('click',function(){var d=get();d[k]=!d[k];put(d);r.classList.toggle('done',!!d[k]);});
+  });
+})();
+</script></body></html>`;
+}
