@@ -64,14 +64,34 @@ body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:c
 .kick{font:600 12px/1 ui-monospace,Menlo,monospace;letter-spacing:.28em;color:#8a93a3;display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px}
 .kick .sq{width:10px;height:10px;background:#f2a93b;display:inline-block}
 video{width:100%;border-radius:14px;border:1px solid #222936;background:#000;display:block}
-a.dl{display:block;margin:20px auto 0;background:#f2a93b;color:#0b0e13;font-weight:700;font-size:18px;letter-spacing:.02em;text-decoration:none;border-radius:12px;padding:16px 10px}
-a.dl:active{transform:scale(.98)}
+.dl{display:block;width:100%;border:0;cursor:pointer;font-family:inherit;margin:20px auto 0;background:#f2a93b;color:#0b0e13;font-weight:700;font-size:18px;letter-spacing:.02em;text-decoration:none;border-radius:12px;padding:16px 10px}
+.dl:active{transform:scale(.98)}
+.dl:disabled{opacity:.55}
+a.alt{display:inline-block;margin-top:14px;color:#8a93a3;font-size:14px;text-decoration:none;border-bottom:1px solid #2a3240}
 .hint{color:#8a93a3;font-size:14px;margin-top:16px}
 </style></head><body><div class="wrap">
 <div class="kick"><span class="sq"></span>BY CLAUDE · VIDEO LAB</div>
 <video controls playsinline preload="metadata" src="/m/${key}"></video>
-<a class="dl" href="/m/${key}" download="${key}">DOWNLOAD VIDEO</a>
-<p class="hint">iPhone: if it opens the player instead of saving, tap Share &rarr; &ldquo;Save Video&rdquo; &mdash; it lands in Photos, ready for TikTok.</p>
+<button class="dl" id="save" disabled>PREPARING&hellip;</button>
+<a class="alt" href="/m/${key}" download="${key}">or download the file</a>
+<p class="hint" id="hint">Tap the button, then &ldquo;Save Video&rdquo; &mdash; it goes to Photos.</p>
+<script>
+// 2026-09-25: a download link saves to Files on iPhone; Photos needs the
+// share sheet. Fetch the file up front so the tap can call navigator.share
+// synchronously (iOS drops the share if the tap's activation has expired).
+(function(){
+  var btn=document.getElementById('save'),hint=document.getElementById('hint'),file=null,name=${JSON.stringify(key)};
+  fetch('/m/'+name).then(function(r){return r.blob();}).then(function(b){
+    file=new File([b],name,{type:b.type||'video/mp4'});
+    if(navigator.canShare&&navigator.canShare({files:[file]})){btn.textContent='SAVE TO PHOTOS';btn.disabled=false;}
+    else{btn.style.display='none';hint.textContent='This browser can\u2019t hand the video to Photos directly \u2014 use the download link.';}
+  }).catch(function(){btn.style.display='none';hint.textContent='Couldn\u2019t load the video \u2014 use the download link.';});
+  btn.addEventListener('click',function(){
+    if(!file)return;
+    navigator.share({files:[file]}).catch(function(e){if(e&&e.name!=='AbortError')hint.textContent='Share failed ('+e.name+') \u2014 use the download link.';});
+  });
+})();
+</script>
 </div></body></html>`;
 }
 
