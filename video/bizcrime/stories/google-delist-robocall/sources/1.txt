@@ -1,0 +1,70 @@
+https://www.ftc.gov/news-events/news/press-releases/2018/05/ftc-action-halts-deceptive-robocalls-aimed-small-business-owners
+fetched 2026-09-26 (curl, browser UA, HTTP 200)
+
+Tags:
+
+          Consumer Protection
+
+          Bureau of Consumer Protection
+
+          Internet commerce
+
+          robocalls
+
+          Advertising and Marketing
+
+          Telemarketing
+
+          Small Business
+
+          The Federal Trade Commission has charged a Florida-based scheme with deceiving small business owners by falsely claiming to represent Google, falsely threatening businesses with removal from Google search results, and falsely promising first-place or first-page placement in Google search results.
+According to the FTC, the Point Break defendants have no relationship with Google, and yet they barrage consumers with robocalls threatening that Google will label their business “permanently closed” unless they “press one” to speak with a “Google specialist.” Telemarketers tell those who respond that, for a purported one-time fee ranging from $300 to $700, they can “claim and verify” their Google listing and have unique “keywords” so their business will appear prominently when people search for their products or services.
+Consumers who pay receive a follow-up call from the defendants’ telemarketers, pitching a second program that the defendants falsely claim can guarantee top search result placements for a one-time payment of $949.99 and recurring monthly payments of $169.99 or $99.99.
+According to the FTC’s complaint, in October 2017, the defendants temporarily lost the ability to accept payments by credit card due to high chargeback rates (when consumers dispute credit card transactions).  As a result, they took money, usually $100, from at least 250 of their customers’ checking accounts without the customers’ advance knowledge, consent, or authorization, and with no apparent reason or justification.
+The defendants, who are charged with violating the FTC Act, are Pointbreak Media, LLC, also d/b/a Point Break Media, Point Break Solutions and Kivanni Marketing; DCP Marketing, LLC, also d/b/a Point Break; Modern Spotlight LLC; Modern Spotlight Group LLC, also d/b/a Modern Spotlight; Modern Internet Marketing LLC; Modern Source Media, LLC, also d/b/a Modern Source; Perfect Image Online LLC; Dustin Pillonato; Justin Ramsey; Aaron Michael Jones, also known as Michael Aaron Jones and Mike Jones; Ricardo Diaz; Michael Pocker; and Steffan Molina.
+The court has appointed a temporary receiver over the operation and has frozen the defendants’ assets during litigation. The FTC seeks to end the alleged illegal practices and obtain money for return to consumers.
+The Commission vote approving the complaint was 2-0. The U.S. District Court for the Southern District of Florida entered a temporary restraining order against the defendants on May 8, 2018.
+The FTC acknowledges the assistance of Google during the investigation of this case.
+NOTE: The Commission files a complaint when it has “reason to believe” that the law has been or is being violated and it appears to the Commission that a proceeding is in the public interest. The case will be decided by the court.
+The Federal Trade Commission works to promote competition, and protect and educate consumers. You can learn more about consumer topics and file a consumer complaint online or by calling 1-877-FTC-HELP (382-4357). Like the FTC on Facebook, follow us on Twitter, read our blogs and subscribe to press releases for the latest FTC news and resources.
+
+        Press Release Reference
+
+            FTC Disconnects Pointbreak Media Robocall Scheme Defendants
+
+        Contact Information
+
+            CONTACT FOR CONSUMERS:
+Consumer Response Center
+877-382-4357
+CONTACT FOR NEWS MEDIA:
+Frank Dorman
+Office of Public Affairs
+202-326-2674
+STAFF CONTACT:
+Evan Mendelson
+Bureau of Consumer Protection
+202-326-3320
+
+        Related Cases
+
+            Pointbreak Media, LLC
+
+        For Consumers
+
+            Small Business Scams
+FTC.gov/SmallBusiness
+
+        Related Business Blog
+
+            FTC challenges robocallers’ false threat that small businesses will be “removed” from Google 
+
+        Topics
+
+            Protecting Consumers
+
+    Robocalls
+
+    Protecting Small Businesses
+
+      Return to top

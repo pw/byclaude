@@ -1,0 +1,18 @@
+{
+ "title": "'Your Business Will Be Removed From Google' \u2014 Unless You Pay $700",
+ "one_paragraph_summary": "Dustin Pillonato and Justin Ramsey ran Pointbreak Media, which robocalled more than 74 million people \u2014 including 14 million numbers on the Do Not Call Registry \u2014 falsely warning small business owners that Google was about to mark their business 'permanently closed' unless they pressed 1 to speak to a 'Google specialist' and pay $300 to $700 to 'claim and verify' their listing, then upsold a bogus $949.99 search-ranking guarantee. The FTC won summary judgment and courts ordered Pillonato and Ramsey to pay more than $3.3 million.",
+ "victim_type": "small business owners with Google Business listings",
+ "year": "2018-2019",
+ "dollar_amount_if_any": "$3.3 million+ ordered against the two main defendants",
+ "named_parties": "Dustin Pillonato; Justin Ramsey; Aaron Michael Jones; Vincent Yates; Pointbreak Media, LLC; DCP Marketing, LLC; Modern Source Media, LLC; National Business Listings, LLC; AllStar Data, LLC",
+ "primary_source_urls": [
+  "https://www.ftc.gov/news-events/news/press-releases/2018/05/ftc-action-halts-deceptive-robocalls-aimed-small-business-owners",
+  "https://www.ftc.gov/news-events/news/press-releases/2019/05/ftc-disconnects-pointbreak-media-robocall-scheme-defendants",
+  "https://www.ftc.gov/system/files/documents/cases/pointbreak_media_final_order_as_to_pillonato_and_ramsey.pdf"
+ ],
+ "secondary_urls": [
+  "https://www.ftc.gov/business-guidance/blog/2018/05/ftc-challenges-robocallers-false-threat-small-businesses-will-be-removed-google"
+ ],
+ "why_it_hooks": "A robocall tells you Google is about to delete your business \u2014 the only real threat is the call itself.",
+ "verification_notes": "Strong primary documentation: complaint, final order, and two press releases all on ftc.gov. Exact per-defendant dollar breakdowns are in the final order PDF and should be pulled precisely rather than repeating the rounded $3.3M figure for any specific-number claim in the script."
+}

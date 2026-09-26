@@ -1,0 +1,47 @@
+{
+  "out": "short-google-delist-robocall",
+  "kicker": "THE FINAL NOTICE",
+  "voice": "Atlas",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    {
+      "src": "google-delist-robocall",
+      "img": "B01",
+      "vo": "One recorded call said it was from a data service provider for Google. This is your final notice. If you do not act soon, Google will label your business as permanently closed.",
+      "cap": "FINAL NOTICE"
+    },
+    {
+      "src": "google-delist-robocall",
+      "img": "B02",
+      "vo": "It wasn't Google. It was Pointbreak Media, a Florida telemarketer. Claiming a Google listing is free.",
+      "cap": "IT WASN'T GOOGLE",
+      "amber": true
+    },
+    {
+      "src": "google-delist-robocall",
+      "img": "B03",
+      "vo": "In seven weeks of twenty seventeen, Pointbreak made nearly seventy-five million robocalls. Nearly fifteen million to numbers on the Do Not Call Registry.",
+      "cap": "75 MILLION CALLS"
+    },
+    {
+      "src": "google-delist-robocall",
+      "img": "B04",
+      "vo": "Owners who pressed one paid three to five hundred dollars to claim and verify it. The court found no evidence customers benefited. Co-owner Dustin Pillonato admitted clients saw zero benefits.",
+      "cap": "0 BENEFITS"
+    },
+    {
+      "src": "google-delist-robocall",
+      "img": "B05",
+      "vo": "On October twentieth, twenty seventeen, their card processor cut them off. The next week, Pointbreak wrote itself one-hundred-dollar checks from at least two hundred eighty customers' accounts, without consent. Justin Ramsey endorsed every one.",
+      "cap": "280 CHECKS\n$100 EACH",
+      "amber": true
+    },
+    {
+      "src": "google-delist-robocall",
+      "img": "B06",
+      "vo": "Both men were already under court injunctions. In twenty nineteen, a federal judge ordered them to pay more than three point three million dollars, and hand over fifty-three pieces of jewelry. The product was a final notice, about something that was always free.",
+      "cap": "ALWAYS FREE",
+      "amber": true
+    }
+  ]
+}

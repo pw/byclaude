@@ -1,0 +1,66 @@
+https://www.ftc.gov/news-events/news/press-releases/2019/05/ftc-disconnects-pointbreak-media-robocall-scheme-defendants
+fetched 2026-09-26 (curl, browser UA, HTTP 200)
+
+Tags:
+
+          Consumer Protection
+
+          Bureau of Consumer Protection
+
+          robocalls
+
+          Advertising and Marketing
+
+          Telemarketing
+
+          Small Business
+
+          At the Federal Trade Commission’s request, a U.S. district court in Florida granted summary judgment against two individuals, approved six settlement agreements involving 11 defendants, and entered a default judgment against the remaining seven defendants, officially ending the massive Pointbreak Media robocall scheme.
+In May 2018, the FTC charged the Florida-based defendants with operating a telemarketing scam that targeted small business owners with false threats of removal from Google’s search engine and false promises of unique keywords to make the business appear prominently in search results. The FTC also alleged the defendants wrote themselves $100 checks from over 250 businesses’ checking accounts without the business owners’ advance knowledge, consent, or authorization.
+The FTC amended its complaint in July 2018 to add two counts for violations of the Telemarketing Sales Rule, because the defendants robocalled more than 74 million consumers and called more than 14 million numbers on the national Do Not Call (DNC) Registry. The summary judgment and other court orders announced today ban the defendants from such illegal robocalling and direct the scheme’s main perpetrators, Dustin Pillonato and Justin Ramsey, to pay over $3.3 million.
+The Actions Announced Today
+The stipulated court orders and judgments the FTC obtained are part of the agency’s ongoing efforts to combat the scourge of illegal robocalls. The court entered judgments against Pillonato and Ramsey, as well as a default judgment against Aaron Michael Jones, Vincent Yates, Pointbreak Media, LLC, DCP Marketing, LLC, Modern Source Media, LLC, National Business Listings, LLC, and AllStar Data, LLC. The judge also approved settlements with Daniel Carver, relief defendant Stephanie Watt, and relief defendant Jennefer Ramsey.
+The court found the primary perpetrators of the scheme, Pillonato and Ramsey, liable for each count the FTC alleged. The order bans them from: 1) telemarketing; 2) using remotely created checks to debit consumers’ accounts; and 3) marketing, promoting, or selling search optimization products or services. The order prohibits Pillonato and Ramsey from misrepresenting their affiliation with Google or any other entity, and prohibits them from misrepresenting any other facts material to a consumer’s purchase of any good or service. The court further ordered Pillonato and Ramsey to pay $3,367,666.30 and transfer custody of dozens of pieces of jewelry to the FTC. The FTC may use these assets to provide refunds to affected businesses.
+The order against Jones and several defaulting defendants includes the same conduct relief as imposed on Pillonato and Ramsey. It also bans Yates and the defaulting corporate defendants from robocalling and calling numbers on the DNC Registry. The order also imposes non-suspended judgments of $2,351,670.81 against Jones, a recidivist robocaller, $1,917,073.87 against Yates, and $3,367,666.30 against the defaulting corporate defendants.
+The order against Carver permanently bans him from robocalling and calling numbers on the DNC Registry, as well as requiring specific disclosures to consumers in any other telemarketing he does. It prohibits misrepresentations and imposes a $2,461,626.12 judgment, which will be partially suspended after he surrenders a 2016 Lexus RX 350 SUV. Finally, the orders against relief defendants Watt and Jennefer Ramsey impose judgments of $62,279 and $52,321, respectively, against them. The judgment against Watt will be partially suspended upon payment of $20,000.
+Case History
+In May 2018, the FTC charged the Florida-based Pointbreak Media scheme operators with violations of the FTC Act for deceiving small business owners by falsely claiming to represent Google, falsely threatening businesses with removal from Google search results, falsely claiming that they could associate keywords with these businesses, and falsely promising first-place or first-page placement in Google search results.
+The FTC’s complaint alleged the defendants had no relationship with Google, yet claimed to be “data service providers” for the company or “authorized Google My Business agencies.” The defendants also barraged small business owners with robocalls. The company’s telemarketers falsely told small business owners that the consumer’s business could only avoid removal from Google search results by paying the defendants a one-time fee of between $300 and $700. Otherwise, they said these businesses would be labeled “permanently closed.”
+In March 2019, the following defendants entered into settlement agreements resolving the charges against them in the FTC’s amended complaint: 1) Michael Pocker, Modern Spotlight LLC, Modern Spotlight Group LLC, and Modern Internet Marketing LLC; 2) Steffan Molina, Perfect Image Online LLC, and Pinnacle Presence LLC; and 3) Ricardo Diaz. The settlements contain both injunctive and monetary relief, and are intended to remedy the illegal conduct alleged in the complaint. The court has now entered each of these orders as final. The actions announced today resolve the FTC’s charges against all remaining defendants in this case.
+The Commission votes approving the proposed court orders against defendants Carver, Watt, and Jennefer Ramsey were 5-0. The FTC filed the proposed orders and motion for summary judgment in the U.S. District Court for the Southern District of Florida.
+NOTE: Stipulated final orders and judgments have the force of law when approved and signed by the District Court judge.
+
+          The Federal Trade Commission works to promote competition, and protect and educate consumers. The FTC will never demand money, make threats, tell you to transfer money, or promise you a prize. You can learn more about consumer topics and report scams, fraud, and bad business practices online at ReportFraud.ftc.gov. Follow the FTC on social media, read our blogs and subscribe to press releases for the latest FTC news and resources.
+
+        Press Release Reference
+
+            FTC Action Halts Deceptive Robocalls Aimed at Small Business Owners
+
+    FTC Crackdown Stops Operations Responsible for Billions of Illegal Robocalls
+
+    FTC Sends Refund Checks Totaling More Than $700,000 to Small Business Owners Defrauded by Deceptive Robocalls
+
+        Contact Information
+
+            MEDIA CONTACT:
+Mitchell J. Katz
+Office of Public Affairs
+202-326-2161
+STAFF CONTACT:
+Evan Mendelson
+Bureau of Consumer Protection
+202-326-3320
+
+        Related Cases
+
+            Pointbreak Media, LLC
+
+        Topics
+
+            Protecting Consumers
+
+    Robocalls
+
+    Protecting Small Businesses
+
+      Return to top

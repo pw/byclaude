@@ -1,0 +1,216 @@
+https://www.ftc.gov/business-guidance/blog/2018/05/ftc-challenges-robocallers-false-threat-small-businesses-will-be-removed-google
+fetched 2026-09-26 (curl, browser UA, HTTP 200)
+
+Imagine getting a prerecorded robocall claiming to be from a “data service provider for Google” giving you “final notice” that “If you do not act soon, Google will label your business as permanently closed.” Second only to a fire alarm going off, that constitutes an ASAP emergency for many small business owners. But those robocall warnings aren’t from Google. According to a lawsuit filed by the FTC, the ones we’re challenging are from Florida-based Point Break Media and a network of 12 other companies and individuals – entities not affiliated with Google. The FTC alleges that the threat the business is “being removed” from Google is untruthful, as are the promises Point Break makes to peddle a pricey suite of “verification” and search engine optimization services.
+
+According to the complaint, Point Break’s pitch falsely aligns its services with Google’s “Google My Business” service. People associate Google My Business with that box on the right of search pages that includes the company’s name, address, hours of operation, photos, etc. A business owner can gain control of that listing through a verification process run by Google. It takes just minutes. It’s free and always has been.
+
+But according to the lawsuit, the defendants charge small business owners between $300 and $700 for a service falsely represented to prevent the business from being removed from Google or “pushed so far down the search engine that no one will find you.” The complaint also alleges that Point Break’s telemarketers falsely claim to offer businesses a list of keywords that no other business will be able to use. If business owners pay, the defendants call back later to upsell what they call their Citation Program. The FTC alleges that in many instances, the defendants falsely promise that by joining the Citation Program, the business will become the first search result or one of the top results – for an initial fee of as much as $950 and monthly charges ranging from $99 to $170.
+
+The lawsuit also alleges that the defendants finagled with business owners’ bank accounts. As the complaint recounts, in October 2017, Bank of America Merchant Services closed Point Break’s merchant account because of its “predatory services, scare tactics and processing history with high chargeback ratios.” How did the defendants respond when they lost the ability to accept credit card payments? The FTC says they dipped directly into customers’ bank accounts without consent or authorization.
+
+The FTC’s complaint makes for interesting reading, including excerpts from the defendants’ telemarketing scripts, sales pitches to an undercover FTC investigator, and detailed allegations of how the corporate and individual defendants coordinated their activities. A federal judge in Florida granted the FTC’s request for an ex parte temporary restraining order with an asset freeze and receivership.
+
+Even at this early stage, there are steps small businesses can take to protect themselves from B2B deception.
+
+Your business’s best defense is a clear picture of how B2B deception works. Maybe it’s all those CSI-style shows, but one of the best ways to protect yourself from questionable pitches is to understand how they operate. Alert your employees, social and professional networks, and other business owners in your community that some fraudsters target small businesses with messages falsely claiming a company is about to lose its URL, trademark, business license, etc. Also, let your staff know that no robocaller can make any promise or guarantee that they can get your business a top search result or preferred placement on an online map. The FTC has more information about spotting deceptive B2B promotions.
+
+Add this to the imposter roster. You’ve probably received robocalls claiming to be from the FBI, immigration authorities, IRS, etc., threatening you if you don’t pay up. That’s not how legitimate law enforcement agencies operate – and it’s not how major companies work either. For example, Google will not call you to threaten to remove your company from search listing. The modus operandi of imposter scams is constantly morphing, but the FTC has resources to help you spot the tried-and-untrue versions, as well as variations of the scheme.
+
+Tune in to the tell-tale signs of a business rip-off. There’s no one-size-fits-all way to identify an offer that isn’t on the up-and-up, but the FTC has seen recurring themes. When callers step on the gas with “Act now!” pitches, it’s a sign for you to pump the brakes. If they’re eager to get your credit card or bank account number, pressure you for personal information, or push for immediate payment using methods like money transfers or gift cards, put your wallet on lock-down.
+
+        Tags:
+
+          Consumer Protection
+
+          Bureau of Consumer Protection
+
+          robocalls
+
+          Advertising and Marketing
+
+          Telemarketing
+
+          Small Business
+
+      Comments closed.
+
+    Robert Matia
+
+    May 24, 2018
+
+          As a small business owner, there's hardly a week that goes by where we don't get a couple of these calls. Keep going after them!
+
+    Lori Connor
+
+    May 24, 2018
+
+          I am so happy to hear that FTC is taking action against this deceptive practice.
+
+    Fed Up!
+
+    February 25, 2019
+
+          We spend a large portion of the day - every business day - answering robocalls of every kind. The fake Google was at one time the largest portion of calls, but no longer. We get everything from "final notice to fix your social security registration," to "your car warranty is about to expire," to "business loans." There is a MASSIVE need to eliminate robocalls COMPLETELY! It is cutting heavily into our production schedule with the daily (often hourly or more) interruptions. We are three people & need HELP!
+
+        More from the Business Blog
+
+              Business Blog
+
+  Announcing the Bureau of Consumer Protection’s New Guidance Program
+
+          Christopher Mufarrige, Director, Bureau of Consumer Protection
+
+          September 10, 2026
+
+              Business Blog
+
+  Veterans: Here’s help to protect your small business
+
+          BCP Staff
+
+          July 20, 2026
+
+              Business Blog
+
+  Back up those earnings claims — and other lessons from the FTC’s Labor Task Force work 
+
+          BCP Staff
+
+          June 16, 2026
+
+              Business Blog
+
+  Take It Down Act enforcement starts now: What to know about the FTC and TIDA
+
+           Christopher G. Mufarrige
+
+          May 19, 2026
+
+          Get Business Blog updates
+
+        Topics
+
+            Advertising and Marketing (420)
+
+    Advertising and Marketing Basics (176)
+
+    Children (31)
+
+    Children's Privacy (45)
+
+    Consumer Privacy (81)
+
+    Credit and Finance (177)
+
+    Credit and Loans (55)
+
+    Credit Reporting (50)
+
+    Data Privacy Framework (6)
+
+    Data Security (150)
+
+    Debt (28)
+
+    Debt Collection (37)
+
+    Endorsements, Influencers, and Reviews (90)
+
+    Environmental Marketing (29)
+
+    FinTech (30)
+
+    Gramm-Leach-Bliley Act (20)
+
+    Health Claims (122)
+
+    Health Privacy (7)
+
+    Made in USA (22)
+
+    Mortgages (12)
+
+    Online Advertising and Marketing (148)
+
+    Payments and Billing (75)
+
+    Privacy and Security (270)
+
+    Privacy Shield (11)
+
+    Red Flags Rule (2)
+
+    Self-Regulation (1)
+
+    Small Business (125)
+
+    Tech (44)
+
+    Telemarketing (66)
+
+    U.S.-EU Safe Harbor Framework (2)
+
+        Selected Industries
+
+            Alcohol (2)
+
+    Appliances (11)
+
+    Automobiles (40)
+
+    Clothing and Textiles (21)
+
+    Finance (33)
+
+    Franchises, Business Opportunities, and Investments (55)
+
+    Funerals (6)
+
+    Human Resources (36)
+
+    Jewelry (6)
+
+    Real Estate and Mortgages (13)
+
+    Tobacco (4)
+
+        Archives
+
+        	  	  	  		  			  		  		  		  		  		  		  		  		  	July 2026
+                  (2)
+
+        	  	  	  		  			  		  		  		  		  		  		  		  		  	June 2026
+                  (1)
+
+        	  	  	  		  			  		  		  		  		  		  		  		  		  	May 2026
+                  (2)
+
+        	  	  	  		  			  		  		  		  		  		  		  		  		  	April 2026
+                  (2)
+
+        	  	  	  		  			  		  		  		  		  		  		  		  		  	March 2026
+                  (4)
+
+        	  	  	  		  			  		  		  		  		  		  		  		  		  	February 2026
+                  (1)
+
+        	  	  	  		  			  		  		  		  		  		  		  		  		  	January 2026
+                  (2)
+
+        	  	  	  		  			  		  		  		  		  		  		  		  		  	December 2025
+                  (2)
+
+        	  	  	  		  			  		  		  		  		  		  		  		  		  	September 2025
+                  (10)
+
+        	  	  	  		  			  		  		  		  		  		  		  		  		  	August 2025
+                  (5)
+
+        View More 
+
+          Get Business Blog updates
+
+ Enter your email to subscribe to Business Center Blog   
+
+      Return to top

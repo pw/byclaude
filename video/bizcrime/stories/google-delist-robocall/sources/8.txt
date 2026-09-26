@@ -1,0 +1,687 @@
+https://www.ftc.gov/system/files/documents/cases/pointbreak_media_order_granting_msj.pdf
+fetched 2026-09-26 (curl, browser UA, HTTP 200)
+
+Case 0:18-cv-61017-CMA Document 258 Entered on FLSD Docket 04/04/2019 Page 1 of 13
+
+
+
+                              UNITED STATES DISTRICT COURT
+                              SOUTHERN DISTRICT OF FLORIDA
+
+                         CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+   FEDERAL TRADE COMMISSION,
+
+          Plaintiff,
+   v.
+
+   POINTBREAK MEDIA, LLC; et al.,
+
+         Defendants.
+   ________________________________/
+
+                                               ORDER
+
+          On March 11, 2019, Magistrate Judge McAliley entered a Report [ECF No. 251] on
+
+   Plaintiff, Federal Trade Commission’s Motion for Summary Judgment [ECF No. 228]. Judge
+
+   McAliley recommends the Court grant Plaintiff’s Motion and enter a permanent injunction against
+
+   pro se Defendants, Dustin Pillonato and Justin Ramsey. (See Report 32–33). On March 18, 2019,
+
+   Defendants timely filed their Objections [ECF No. 253] to the Report. Plaintiff filed its Response
+
+   to Defendants’ Objections [ECF No. 255] (“Pl.’s Resp. to Objs.”) on March 21, 2019.
+
+          When a magistrate judge’s “disposition” has properly been objected to, as is the case here,
+
+   district courts must review the disposition de novo. Fed. R. Civ. P. 72(b)(3). Defendants timely
+
+   filed objections to the Report (see generally Objs.), and so the Court reviews the record de novo.
+
+   The Court has carefully reviewed the parties’ written submissions, the record, and applicable law.
+
+   For the following reasons, Judge McAliley’s Report is affirmed, and Plaintiff’s Motion for
+
+   Summary Judgment is granted.
+
+                                        I.      BACKGROUND
+
+          The Report details the relevant facts. (See Report 2–15). Judge McAliley relies on
+
+   Plaintiff’s Statement of Undisputed Material Facts [ECF No. 229] (“Pl.’s SOF”), as Defendants
+Case 0:18-cv-61017-CMA Document 258 Entered on FLSD Docket 04/04/2019 Page 2 of 13
+                                                  CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+   failed to file their own statement of material facts. (See Report 3 (citing cases)). The Court agrees
+
+   and fully adopts Plaintiff’s facts here. Given Defendants’ status as pro se litigants, however, the
+
+   Court also considers all evidence Defendants reference in their briefing.
+
+             For brevity, the undersigned outlines the general nature of the case, reserving specific
+
+   reference to the evidence in her analysis below. The dispute involves Plaintiff’s allegations against
+
+   various companies and their principals for deceptive representations, unfair billing practices, and
+
+   abusive telemarketing practices. (See generally First Amended Complaint [ECF No. 109]). Every
+
+   Defendant in the case, other than Pillonato and Ramsey, as principals of Pointbreak Media, LLC
+
+   and Modern Source Media LLC (see id. ¶¶ 16–17), has either settled or has defaulted.
+
+             Plaintiff asks the Court to enter summary judgment, a permanent injunction, and a money
+
+   judgment for $3,367,666.30, jointly and severally, against Pillonato and Ramsey.
+
+   (See generally Mot.). Plaintiff moves for summary judgment on all claims for which Pillonato and
+
+   Ramsey are named as Defendants: (1) Section 5(a) of the FTC act for alleged misrepresentations
+
+   to induce consumers to purchase “claiming and verifying” and Citation Program services under
+
+   both a personal liability and common enterprise theory (Count I) (Am. Compl. ¶¶ 208–10); (2)
+
+   Section 5(a) of the FTC Act for Pointbreak Media’s unfair billing practices (Count II) (see id. ¶¶
+
+   211–13); and (3) Telemarketing Sales Rule (“TSR”), 16 C.F.R. section 310.4(b), arising from
+
+   Pointbreak Media’s initiation of unlawful prerecorded messages and robocalls to numbers on the
+
+   National Do Not Call Registry (Counts III and IV) (see id. ¶¶ 224–27).
+
+             The parties have completed extensive briefing. In all, Plaintiff filed its Motion, Reply
+
+   [ECF No. 241], and Response to Defendants’ Objections. Defendants filed a Response [ECF No.
+
+   234], Surreply [ECF No. 244], and their Objections to the Report. Plaintiff’s Motion is ripe for
+
+   review.
+
+
+
+                                                    2
+Case 0:18-cv-61017-CMA Document 258 Entered on FLSD Docket 04/04/2019 Page 3 of 13
+                                                    CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+                                              II.     ANALYSIS
+
+          In her Report, Judge McAliley thoughtfully addresses every argument Defendants raise in
+
+   opposition to Plaintiff’s Motion. (See Report 17–28). The Magistrate Judge also references the
+
+   arguments in Plaintiff’s Motion that Defendants do not challenge. (See generally id.). Having had
+
+   the benefit of reviewing Defendants’ Objections, the undersigned addresses the merits of
+
+   Plaintiff’s Motion by evaluating the four claims against Pillonato and Ramsey. The Court
+
+   concludes by addressing, and ultimately rejecting, Defendants’ remaining objections.
+
+          A. Count I
+
+          In Count I, Plaintiff alleges Pillonato and Ramsey made false, misleading, and
+
+   unsubstantiated   representations,    in    violation   of   Section   5(a)   of   the   FTC    Act.
+
+   (See Am. Compl. ¶ 210). Section 5 prohibits “unfair or deceptive acts or practices in or affecting
+
+   commerce.” 15 U.S.C. § 45(a)(1). To establish a violation of Section 5, Plaintiff must prove: “(1)
+
+   there was a representation, (2) the representation was likely to mislead customers acting reasonably
+
+   under the circumstances, and (3) the representation was material.” F.T.C. v. Tashman, 318 F.3d
+
+   1273, 1277 (11th Cir. 2003) (citations omitted).
+
+          Plaintiff has established all the elements of a claim under Section 5(a) as a matter of law.
+
+   (See Report 17). Defendants have not challenged this conclusion in either their briefing before or
+
+   after the Report. (See generally Resp.; Surreply; Objs.). The Court has independently reviewed
+
+   the evidence and agrees there is no genuine dispute of material fact that Pointbreak Media’s
+
+   robocalls and live sales agent calls violated Section 5(a). In so doing, the undersigned fully adopts
+
+   the Report’s analysis on Count I here. (See Report 17–19).
+
+          But the Court’s analysis does not stop there, for Plaintiff asks the Court to hold Pillonato
+
+   and Ramsey liable for the conduct of Co-Defendants, Modern Spotlight LLC, Modern Spotlight
+
+
+
+                                                      3
+Case 0:18-cv-61017-CMA Document 258 Entered on FLSD Docket 04/04/2019 Page 4 of 13
+                                                  CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+   Group LLC, Perfect Image Online LLC, National Business Listings LLC, and DCP Marketing
+
+   LLC (the “Co-Defendants”) under a common enterprise theory. (See id. 19–22). Plaintiff also
+
+   asks the Court to find Pillonato and Ramsey liable for the conduct of the Co-Defendants under a
+
+   personal liability theory. (See id. 22–25). The Court addresses both theories of liability in turn.
+
+          i.      Common Enterprise Liability
+
+           The Court first turns to common enterprise liability. “When a common enterprise exists,
+
+   each corporation may be held liable for the others’ violations.” F.T.C. v. Life Mgmt. Servs. of
+
+   Orange Cty., LLC, 350 F. Supp. 3d 1246, 1257 (M.D. Fla. 2018) (citation omitted).
+
+          Pillonato and Ramsey do not dispute that Modern Source Media, Perfect Image Online,
+
+   National Business Listings, and DCP Marketing, along with Pointbreak Media, were part of a
+
+   common enterprise.      (See generally Resp., Surreply; Objs.). After reviewing the record and
+
+   applicable law, the Court agrees that Modern Source Media, Perfect Image Online, National
+
+   Business Listings, DCP Marketing, and Pointbreak Media were part of a common enterprise.
+
+   (See Report 19–22).
+
+          Defendants only dispute the Magistrate Judge’s conclusion that Modern Spotlight and
+
+   Modern Spotlight Group (the “Modern Spotlight Defendants”) are also part of the common
+
+   enterprise.   (See Resp. 1–4; Surreply 1–2; Objs. ¶ 1).       In support, Defendants supply the
+
+   Declaration of Michael Pocker, another Defendant in the case and the principal of the Modern
+
+   Spotlight Defendants. (See Resp. 10–14).
+
+          Mr. Pocker’s statement reflects that the Modern Spotlight Defendants traded office space
+
+   and Modern Spotlight subleased office space from Pointbreak Media. (See id.). Mr. Pocker also
+
+   states while some employees worked for both Pointbreak Media and the Modern Spotlight
+
+   Defendants, no employees worked for the entities simultaneously. (See id.). To Defendants, this
+
+
+
+                                                     4
+Case 0:18-cv-61017-CMA Document 258 Entered on FLSD Docket 04/04/2019 Page 5 of 13
+                                                 CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+   declaration creates an issue of material fact whether the Modern Spotlight Defendants were part
+
+   of the common enterprise. (See id.). The Court disagrees.
+
+          Under the FTC Act, “a corporate entity can be held liable for the conduct of other entities
+
+   where the structure, organization, and pattern of a business venture reveal a common enterprise or
+
+   a maze of integrated business entities.” F.T.C. v. Lanier Law, LLC, 715 F. App’x 970, 979 (11th
+
+   Cir. 2017) (internal quotation marks and citation omitted). In determining if a common enterprise
+
+   exists, courts consider whether the businesses “share office spaces and employees, commingle
+
+   funds, coordinate advertising efforts, and operate under common control.” Id. (citation omitted).
+
+   While courts are expected to weigh these factors, they are primarily tasked with evaluating the
+
+   “pattern and frame-work of the whole enterprise.” F.T.C. v. HES Merch. Servs. Co., No. 6:12-cv-
+
+   1618-Orl-22KRS, 2014 WL 6863506, at *5 (M.D. Fla. Nov. 18, 2014), aff’d, 652 F. App’x 837
+
+   (11th Cir. 2016) (internal quotation marks and citation omitted).
+
+          The Report describes the extensive cooperation between the Modern Spotlight Defendants
+
+   and Pointbreak Media and Modern Source Media to induce customers to purchase their services.
+
+   (See Report 19–21). For example, the companies shared client data. Modern Spotlight Group sold
+
+   its claiming and verification customer leads exclusively to Modern Source Media; and Modern
+
+   Source Media sold its Citation Program services exclusively to Modern Spotlight Group
+
+   customers. (See Pl.’s SOF ¶¶ 56, 58). Modern Spotlight Group also scheduled Citation Program
+
+   sales calls for Modern Source Media; and Modern Source Media provided phone numbers to
+
+   Modern Spotlight Group, which placed claiming and verification robocalls to those numbers.
+
+   (See Declaration of Michael Pocker [ECF No. 229-111] ¶ 57; see also Supplemental Declaration
+
+   of Michael Pocker [ECF No. 241-2] ¶ 4). Tellingly, Modern Source Media’s own employees do
+
+   not distinguish between Modern Source Media and Modern Spotlight Group, telling consumers
+
+
+
+                                                   5
+Case 0:18-cv-61017-CMA Document 258 Entered on FLSD Docket 04/04/2019 Page 6 of 13
+                                                   CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+   the companies were a single business. (See Pl.’s Resp. to Objs. 3–4). Ramsey acknowledged that
+
+   Pointbreak Media was completely dependent on Modern Spotlight Group for its survival. (See
+
+   December 14, 2017 E-mail from Ramsey to Pillonato [ECF No. 229-59] 3 (stating “all . . . we have
+
+   . . . “[r]ight now its [sic] pocker and pocker only.” (alterations added))).
+
+           The Report also highlights the following undisputed evidence, which in the aggregate, most
+
+   certainly shows a common enterprise existed between Pointbreak Media and the Modern Spotlight
+
+   Defendants: 1) Pointbreak Media and Modern Spotlight shared a credit card merchant account; (2)
+
+   Pointbreak Media and the Modern Spotlight Defendants used similar robocall and live sales agent
+
+   scripts; (3) Pocker, Pillonato, and Ramsey discussed the companies’ sales scripts with each other;
+
+   (4) Pointbreak Media’s office space and employees became Modern Spotlight Group’s offices and
+
+   employees; and (5) Modern Spotlight Group used similar customer contracts and welcome emails
+
+   as Pointbreak Media. (See Report 20–21 (citing Pl.’s SOF ¶¶ 5, 7, 14, 15, 27, 28, 29)). These
+
+   “undisputed facts demonstrate that the [Modern Spotlight Defendants] operated as part of a
+
+   common enterprise with the other Corporate Defendants.” F.T.C. v. Johnson, 156 F. Supp. 3d
+
+   1202, 1208 (D. Nev. 2015) (alteration added) (entering summary judgment for the FTC and finding
+
+   common enterprise liability existed where entities commingled funds and coordinated their sales
+
+   efforts).
+
+           Despite this compelling, conclusive, and indisputable record evidence, Defendants ask the
+
+   Court to consider, in rigid form, the factors of shared office space, shared employees, and common
+
+   control. (See Objs. ¶ 2). The crux of Defendants’ argument is that a triable issue of fact exists on
+
+   the question of common enterprise liability because Pointbreak Media and the Modern Spotlight
+
+   Defendants did not simultaneously share employees and office space. This argument fails to
+
+   persuade.
+
+
+
+                                                      6
+Case 0:18-cv-61017-CMA Document 258 Entered on FLSD Docket 04/04/2019 Page 7 of 13
+                                                  CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+             F.T.C. v. Life Management Services of Orange County, LLC, 350 F. Supp. 3d 1246 (M.D.
+
+   Fla. 2018), is instructive. There, the court was similarly tasked with determining whether common
+
+   enterprise liability existed between two companies, Loyal and LMS. See id. at 1257–58. The
+
+   indisputable record evidence overwhelmingly supported a common enterprise finding, including a
+
+   shared merchant account and LMS submitting identical scripts and documents as Loyal. See id.
+
+   at 1258. That the companies’ addresses were “overlapping” although not identical did not alter
+
+   the court’s conclusion that the evidence was so one-sided for the FTC to prevail on summary
+
+   judgment. Id. (footnote call number and citations omitted).
+
+             So, too, here the undisputed material facts dictate summary judgment in Plaintiff’s favor
+
+   on the question of common enterprise liability. Contrary to Defendants’ insistence, common
+
+   enterprise liability does not require a finding of contemporaneous shared employees and office
+
+   space. Plaintiff need not “prove any particular number of entity connections” or “any specific
+
+   connection.” F.T.C v. Kennedy, 574 F. Supp. 2d 714, 722 (S.D. Tex. 2008). Rather, Plaintiff must
+
+   show that Pointbreak Media and the Modern Spotlight Defendants “maintained an unholy
+
+   alliance.” Id. (internal quotation marks and citation omitted). This, Plaintiff has done. Because
+
+   Mr. Pocker’s Declaration “is insufficient evidence ‘for a jury to return a verdict’ in [Defendants’]
+
+   favor” on the question of common enterprise, “summary judgment [is] appropriate.” Lanier Law,
+
+   LLC, 715 F. App’x at 980 (quoting Anderson v. Liberty Lobby, Inc., 477 U.S. 242, 249) (alterations
+
+   added).
+
+             Given that the Modern Spotlight Defendants are part of the common enterprise, Pointbreak
+
+   Media and Modern Source Media are liable for the Modern Spotlight Defendants’ deceptive sales.
+
+   Ramsey and Pillonato, as principals of Pointbreak Media and Modern Source Media, are therefore
+
+   liable for the entire common enterprise’s wrongdoing.
+
+
+
+                                                     7
+Case 0:18-cv-61017-CMA Document 258 Entered on FLSD Docket 04/04/2019 Page 8 of 13
+                                                  CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+          ii.     Personal Liability
+
+          Plaintiff also asks the Court to impose liability on Pillonato and Ramsey through a personal
+
+   liability theory. (See generally Mot.). For the Court to impose personal liability, Plaintiff “must
+
+   first show that the corporation committed violations of those acts for which it is liable.” F.T.C. v.
+
+   Primary Grp., Inc., 713 F. App’x 805, 806–07 (11th Cir. 2017) (per curiam) (citation and footnote
+
+   call number omitted). Once corporate liability is established, Plaintiff must then show “the
+
+   individual knew of the deceptive practices and either participated directly in those practices or had
+
+   the authority to control them.” Id. at 807 (quoting F.T.C. v. IAB Mktg. Assocs., LP, 746 F.3d 1228,
+
+   1233 (11th Cir. 2014)).     The Eleventh Circuit recently explained that “knowledge may be
+
+   established by showing that the individual had actual knowledge of the deceptive conduct, was
+
+   recklessly indifferent to its deceptiveness, or had an awareness of a high probability of
+
+   deceptiveness and intentionally avoided learning of the truth.” Id. (internal quotation marks and
+
+   citations omitted).
+
+          Defendants initially contested a finding of personal liability with respect to the Modern
+
+   Spotlight Defendants’ deceptive sales, focusing on the “control” element of the personal liability
+
+   inquiry. (See Resp. 3). But Pillonato and Ramsey are personally liable for the Modern Spotlight
+
+   Defendants’ deceptive sales because they directly participated in the deceptive sales practices.
+
+   Indeed, Pillonato and Ramsey (1) provided phone numbers for the Modern Spotlight Defendants
+
+   to robocall and a merchant account for them to use; (2) shared welcome emails and contracts with
+
+   them; and (3) coordinated with the Modern Spotlight Defendants on how to transfer customers to
+
+   Modern Source Media. (See Pl.’s SOF ¶¶ 27, 29; see also Supplemental Declaration of Michael
+
+   Pocker ¶¶ 4, 6, 9–10). As Plaintiff points out, day-to-day involvement of the Modern Spotlight
+
+   Defendants’ activities is unnecessary to establish direct participation. (See Pl.’s Resp. to Objs. 7).
+
+
+
+                                                     8
+Case 0:18-cv-61017-CMA Document 258 Entered on FLSD Docket 04/04/2019 Page 9 of 13
+                                                  CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+   Where individuals obtained merchant bank accounts for an entity, as Pillonato and Ramsey did for
+
+   Modern Spotlight (see Pl.’s SOF ¶ 27), they directly participated in the entity’s wrongdoing. See
+
+   F.T.C. v. J.L. Publ’ns, Inc., 99 F. Supp. 2d 1176, 1206 (C.D. Cal. 2000). Plaintiff has established
+
+   that Pillonato and Ramsey directly participated in the Modern Spotlight Defendants’ deceptive
+
+   sales practices as a matter of law.
+
+            In their briefing since the Report, Defendants no longer challenge the indisputable
+
+   evidence that they either participated directly in deceptive sales practices (in the case of some
+
+   members of the common enterprise like the Modern Spotlight Defendants) or had the authority to
+
+   control them. Nor could they. (See Report 22–23).
+
+           Instead, Pillonato and Ramsey now argue a triable issue of fact exists on the knowledge
+
+   element of the personal liability inquiry. (See Objs. ¶ 7). Specifically, Defendants insist they
+
+   could not have known of the other entities’ deceptive practices when they opposed all illegal
+
+   activities and instructed employees to not mislead customers into thinking Pointbreak Media and
+
+   Google were one and the same. (See id.). In support, Defendants supply Pointbreak Media’s co-
+
+   owner, Beau Strickland’s testimony, stating Ramsey and Pillonato opposed all illegal activities.
+
+   (See id.).
+
+           The Court must again disagree with Defendants. Mr. Strickland’s testimony amounts to a
+
+   “mere scintilla of evidence” in the context of the entire record establishing Pillonato and Ramsey
+
+   certainly had or should have had knowledge of Pointbreak Media’s deceptive practices, as well as
+
+   the deceptive practices of all the other entities. (Report 23–24 (citation omitted)).
+
+           Indeed, at a minimum, Pillonato and Ramsey should have known of the entities’ (including
+
+   the Modern Spotlight Defendants’) deceptive sales practices. Even if Defendants’ “protestations
+
+   [they were] not aware of the content of the scripts, the texting, or any other illegal behavior” were
+
+
+
+                                                     9
+Case 0:18-cv-61017-CMA Document 258 Entered on FLSD Docket 04/04/2019 Page 10 of 13
+                                                    CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+   true, that would be “only because [they] intentionally avoided discovering [them] despite knowing
+
+   that there was a high probability that [the entities were] engaging in” deceptive sales practices.
+
+   Primary Group, Inc., 713 F. App’x at 808 (internal quotation marks and citations omitted;
+
+   alterations added). Plaintiff is therefore entitled to summary judgment on a personal liability
+
+   theory. See F.T.C. v. Williams, Scott & Assocs., LLC, 679 F. App’x 836, 839 (11th Cir. 2017) (per
+
+   curiam) (affirming summary judgment in favor of the FTC finding principal personally liable
+
+   where the undisputed evidence supported the conclusion the individual “should have known about
+
+   [the entity’s] illegal activities.” (alteration added)).
+
+           B. Count II
+
+           Pillonato and Ramsey do not challenge the Magistrate Judge’s findings as to Count II.
+
+   (See generally Objs.). The undersigned has reviewed the Report, the record, and the applicable
+
+   law. For the reasons discussed in detail in the Report, the Court agrees Plaintiff has established
+
+   the absence of a triable issue of fact on the elements of a claim of unfair billing practices under
+
+   Section 5(a) of the FTC Act. (See Report 25–26). Plaintiff is entitled to summary judgment against
+
+   Pillonato and Ramsey on Count II.
+
+           C. Counts III and IV
+
+           Counts III and IV involve allegations Pillonato and Ramsey violated the TSR.
+
+   (See Am. Compl. ¶¶ 224–227). These claims arise from the robocalls Pointbreak Media made,
+
+   including millions of calls to telephone numbers on the National Do Not Call Registry. The
+
+   undisputed evidence supports, and Defendants do not dispute, that (1) Pointbreak Media was a
+
+   telemarketer and a seller under the TSR; and (2) Pointbreak Media, with Pillonato and Ramsey’s
+
+   knowledge, initiated robocalls, including robocalls to telephone numbers on the National Do Not
+
+   Call Registry. (See Report 27).
+
+
+
+                                                      10
+Case 0:18-cv-61017-CMA Document 258 Entered on FLSD Docket 04/04/2019 Page 11 of 13
+                                                   CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+           In their initial briefing, Pillonato and Ramsey argued Pointbreak Media calls should benefit
+
+   from the business-to-business exception. (See Resp. 6). The TSR exempts “[t]elephone calls
+
+   between a telemarketer and any business to induce the purchase of goods or services . . . .” 16
+
+   C.F.R. § 310.6(b)(7) (alterations added). The Magistrate Judge correctly rejected Defendants’
+
+   unsupported and conclusory assertion that any calls from Pointbreak Media received by non-
+
+   businesses were made in error. (See Report 28). Even if this assertion were supported by the
+
+   evidence, Defendants’ subjective intentions are irrelevant, as the business-to-business exemption
+
+   only applies to telephone calls between telemarketers and businesses. (See id. (citing Inc21.com
+
+   Corp., 745 F. Supp. 2d 975, 1007 (N.D. Cal. 2010))). Plaintiff thus prevails on summary judgment
+
+   against Defendants on Counts III and IV.
+
+           D. Miscellaneous Objections
+
+           Defendants’ remaining objections all fail to persuade. First, contrary to Defendants’
+
+   contention (see Objs. ¶ 6), the Magistrate Judge correctly recommended a proposed judgment of
+
+   $3,367,666.30 against Pillonato and Ramsey. Under the FTC Act, “courts have justly imposed
+
+   joint and several liability where a common enterprise exists.” F.T.C. v. WV Universal Mgmt.,
+
+   LLC, 877 F.3d 1234, 1240 (11th Cir. 2017) (citation omitted). And “[i]f an individual may be held
+
+   personally liable for corporate violations of the FTC Act . . . nothing more need be shown to
+
+   justify imposition of joint and several liability for the corporation’s restitution obligations.” F.T.C.
+
+   v. Commerce Planet, Inc., 815 F.3d 593, 600 (9th Cir. 2016) (alterations added). Finally, “[i]f two
+
+   or more defendants jointly cause harm, each defendant is held liable for the entire amount of the
+
+   harm; provided, however, that the plaintiff recover only once for the full amount.” Honeycutt v.
+
+   United States, 137 S. Ct. 1626, 1631 (2017) (alteration added; citation omitted).
+
+
+
+
+                                                     11
+Case 0:18-cv-61017-CMA Document 258 Entered on FLSD Docket 04/04/2019 Page 12 of 13
+                                                  CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+          Defendants’ objection ignores “well-established principles of joint and several liability.”
+
+   (Pl.’s Resp. to Objs. 9). The case law makes clear that although Plaintiff cannot collect from
+
+   Pillonato and Ramsey any amount it has already recovered from the other named Defendants, that
+
+   limitation does not change the amount of the money judgment. This objection is overruled.
+
+          Defendants also object to the recommended bans on telemarketing and remotely created
+
+   payment orders (“RCPO[s]”). (See Objs. ¶¶ 4–5). While the Court could reject these two
+
+   objections on the basis that Defendants failed to raise them in their Response or Surreply, the Court
+
+   exercises its discretion to review them on their merits given Defendants’ pro se status.
+
+          Defendants contend the RCPO ban is overbroad because it will prevent them from
+
+   accepting “any all checks.” (Id. ¶ 4). Not so. The Proposed Final Order of Permanent Injunction
+
+   and Monetary Judgment [ECF No. 251-1] (“Proposed Final Order”) only prohibits Defendants
+
+   from accepting a check if it is “initiated or created by or on behalf of the payee.” (Id. 5). As
+
+   Plaintiff notes, an RCPO “is created not by the party on whose account it draws (the payor), but
+
+   rather by the party accepting payment (the payee).” (Pl.’s Resp. to Objs. 9). Because Defendants
+
+   may still accept checks written by their customers, the Proposed Final Order is not overbroad.
+
+          Defendants also object to the telemarketing ban in the Proposed Final Order because it
+
+   “effectively prohibit[s] them from using a telephone in any manner whatsoever in conducting any
+
+   business whatsoever . . . .” (Objs. ¶ 5 (alterations added)). Defendants are again mistaken. The
+
+   Proposed Final Order only precludes Pillonato and Ramsey from using telephones as part of a
+
+   telemarketing sales campaign. (See Proposed Final Order 5). Defendants are otherwise free to
+
+   use telephones in connection with any job or business. Given Defendants’ history of unlawful
+
+   marketing (see Report 15), the telemarketing ban in the Proposed Final Order is not overbroad.
+
+
+
+
+                                                    12
+Case 0:18-cv-61017-CMA Document 258 Entered on FLSD Docket 04/04/2019 Page 13 of 13
+                                                    CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+          Defendants’ objection to the Proposed Final Order’s requirement they turn over certain
+
+   items of jewelry to the Receiver because they purportedly do not possess the requested items fares
+
+   no better. (See Objs. ¶ 3). Plaintiff has supplied receipts showing Ramsey purchased the jewelry.
+
+   (See Certification of Records of Regularly Conducted Activity [ECF No. 241-3]). This evidence
+
+   corroborates the adverse inference that can be drawn from Defendants’ Fifth Amendment
+
+   invocation when asked questions about the items at their depositions. (See Pl.’s Resp. to Objs. 10
+
+   (citations to the record omitted)).
+
+          Finally, Defendants ask “to be heard on the terms of the injunction,” in the event the Court
+
+   does not accept their other objections. (Objs. ¶ 8). Defendants have had the benefit of multiple
+
+   rounds of briefing, including raising objections pertinent to the terms of the Proposed Final Order.
+
+   (See id. ¶¶ 3–5). The undersigned sees no need for yet another round of motion practice on the
+
+   scope of the permanent injunction.
+
+                                             III.   CONCLUSION
+
+          For the foregoing reasons, it is
+
+          ORDERED AND ADJUDGED that the Report [ECF No. 251] is AFFIRMED.
+
+   Plaintiff, Federal Trade Commission’s Motion for Summary Judgment [ECF No. 228] is
+
+   GRANTED. A permanent injunction against Defendants will be entered by separate order.
+
+          DONE AND ORDERED in Miami, Florida, this 4th day of April, 2019.
+
+
+
+                                                          _________________________________
+                                                          CECILIA M. ALTONAGA
+                                                          UNITED STATES DISTRICT JUDGE
+
+   cc:    counsel of record
+
+
+
+
+                                                     13
+

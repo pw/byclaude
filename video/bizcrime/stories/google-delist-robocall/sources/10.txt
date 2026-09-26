@@ -1,0 +1,1629 @@
+https://www.ftc.gov/system/files/documents/cases/pointbreak_media_report_and_recommendations.pdf
+fetched 2026-09-26 (curl, browser UA, HTTP 200)
+
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 1 of 33
+
+
+
+                           UNITED STATES DISTRICT COURT
+                           SOUTHERN DISTRICT OF FLORIDA
+
+                      CASE NO. 18-61017-CIV-ALTONAGA/MCALILEY
+
+   FEDERAL TRADE COMMISSION,
+
+         Plaintiff,
+
+   vs.
+
+   POINTBREAK MEDIA, LLC, et al.
+
+         Defendants.
+   ______________________________________/
+
+                          REPORT AND RECOMMENDATIONS
+
+         Plaintiff Federal Trade Commission (“FTC”) has filed a Motion for Summary
+
+   Judgment Against Defendants Dustin Pillonato and Justin Ramsey, which the Honorable
+
+   Cecilia M. Altonaga referred to me. (ECF Nos. 228, 245). Pillonato and Ramsey filed an
+
+   Opposition, and the FTC filed a Reply to which Pillonato and Ramsey, with leave of Court,
+
+   filed a Sur-Reply. (ECF Nos. 234, 241, 243, 244). I have carefully considered the parties’
+
+   memoranda of law, the pertinent portions of the record and the applicable law. For the
+
+   reasons set forth below, I recommend that the Court grant the FTC’s Motion for Summary
+
+   Judgment.
+
+   I.    BACKGROUND
+
+         A.     Procedural Background
+
+         This is an action for violation of Section 5(a) of the FTC Act and the Telemarketing
+
+   Sales Rule, promulgated pursuant to the Telemarketing Act, that alleges the defendants
+
+                                               1
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 2 of 33
+
+
+
+   engaged in deceptive representations, unfair billing practices and abusive telemarketing
+
+   practices. The FTC’s Amended Complaint seeks monetary and injunctive relief against
+
+   several companies and their principals, including Pillonato and Ramsey and their
+
+   companies Pointbreak Media, LLC, DCP Marketing, LLC, Modern Source Media, LLC,
+
+   National Business Listings, LLC and Allstar Data, LLC. (ECF No. 109). Early in this
+
+   lawsuit, the Court entered a preliminary injunction against Pillonato and Ramsey and each
+
+   of their companies, with the exception of Allstar Data and National Business Listings.
+
+   (ECF No. 64). The FTC now asks this Court to enter final summary judgment against
+
+   Pillonato and Ramsey and a permanent injunction and a money judgment in the amount of
+
+   $3,367,666.30 against both of them, jointly and severally. 1 (ECF Nos. 228 at 24; 241 at 1
+
+   n.1).
+
+             B.     Undisputed Material Facts
+
+             Relying on the FTC’s Statement of Undisputed Material Facts (“SUMF”), 2 the
+
+   Court sets forth below those undisputed material facts necessary to resolve the motion for
+
+   summary judgment. Unless otherwise noted, the Court cites to the pertinent paragraphs of
+
+   the SUMF. The Court does this having thoroughly reviewed the evidence the FTC cites in
+
+   in the SUMF in support of each assertion, and having confirmed that each assertion relied
+
+
+
+
+   1
+    A clerk’s default was previously entered against Pointbreak, Modern Source, DCP Marketing,
+   National Business Listings and Allstar Data. (ECF Nos. 97-99, 156-57).
+   2
+       This is filed at ECF No. 229.
+
+                                                2
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 3 of 33
+
+
+
+   upon in this report and recommendation is supported by some, if not all, of the cited
+
+   evidence. 3
+
+          The Court finds the following facts to be undisputed for several reasons. First and
+
+   foremost, Pillonato and Ramsey did not file their own statement of material facts as
+
+   required by Local Rule 56.1(a). “All material facts set forth in the movant’s
+
+   statement…will be deemed admitted unless controverted by the opposing party’s statement
+
+   [of material facts], provided that the Court finds that the movant’s statement is supported
+
+   by evidence in the record.” S.D. Fla. L.R. 56.1(b). The Court recognizes that Pillonato and
+
+   Ramsey are not represented by counsel, but their pro se status does not excuse their
+
+   compliance with the Local Rules of this Court. 4 See Williams v. Slack, 438 F. App’x. 848,
+
+   850 (11th Cir. 2011) (“Local Rule 56.1 is an ordinary procedural rule of civil litigation that
+
+   we do not interpret so as to excuse mistakes by those who proceed without counsel.”)
+
+   (quotation marks and citation omitted). The Court may therefore deem the facts set forth
+
+   in the SUMF as admitted. See Smith v. Mercer, 572 F. App’x. 676, 678 (11th Cir. 2014)
+
+
+
+   3
+     Rule 56 provides that “[a] party may object that the material cited to support…a fact cannot be
+   presented in a form that would be admissible at trial.” Pillonato and Ramsey have not made this
+   objection. Nonetheless, the Court affirmatively finds that the supporting evidence the FTC
+   submitted would be admissible at trial and, thus, the Court can rely upon it at the summary
+   judgment stage. Much of the evidence the FTC cites is witness declarations, and the Court finds
+   that the content of those declarations could be made admissible evidence at trial. See Federal Trade
+   Commission v. Lanier Law LLC, 715 F. App’x. 970, 979 (11th Cir. 2017) ([T]he appropriate
+   question [at summary judgment] is not whether the declarations themselves would ever be
+   admissible – they may not be. Instead, the question is whether the evidence contained within those
+   declarations could be presented in admissible form at trial.”) (emphasis in original).
+   4
+     Ramsey and Pillonato are on notice of this obligation. The Court previously ordered them to
+   comply with the Federal Rules of Civil Procedure and Local Rules for the Southern District of
+   Florida. (ECF No. 199, Order Providing Instructions to Pro Se Litigants, at 1).
+
+                                                    3
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 4 of 33
+
+
+
+   (“[D]espite [plaintiff’s] pro se status, the district court did not abuse its discretion in
+
+   applying N.D. Ga. L.R. 56.1 to deem Defendant’s facts admitted.”). 5
+
+          Second, in their Opposition, Pillonato and Ramsey do not address, much less
+
+   contradict, any of the facts set forth in the SUMF, and thus, they concede those facts. (ECF
+
+   No. 234). Their Opposition does include a declaration from a co-defendant and a deposition
+
+   excerpt from a co-owner of Pointbreak, but none of the information contained therein is
+
+   inconsistent with the SUMF. (Compare ECF No. 234 at pp. 10-17 with ECF No. 229 at
+
+   ¶¶24-31). “[T]he nonmoving party must offer more than a mere scintilla of evidence for its
+
+   position; indeed, the nonmoving party must make a showing sufficient to permit the jury
+
+   to reasonably find on its behalf.” Picardat v. City of Miami, No. 15-cv-24305-GAYLES,
+
+   2017 WL 1251897 at * 2 (S.D. Fla. April 5, 2017) (citing Harrison v. Culliver, 746 F.3d
+
+   1288, 1298 (11th Cir. 2014)). Pillonato and Ramsey have not done this, and they have thus
+
+   failed to create a genuine dispute regarding any of the facts set forth in the SUMF.
+
+          Last, the FTC questioned Pillonato and Ramsey at their respective depositions
+
+   regarding many of the facts set forth in the SUMF, and both invoked their Fifth Amendment
+
+   privilege against self-incrimination in response to those questions. The Eleventh Circuit
+
+   Court of Appeals “has held [] that the trier of fact may take an adverse inference against
+
+   the parties to a civil action refusing to testify on Fifth Amendment grounds.” United States
+
+   v. Two Parcels of Real Property Located in Russell County, Ala., 92 F.3d 1123, 1129 (11th
+
+
+
+
+   5
+    Local Rule 56.1 for the Northern District of Georgia is similar in all material respects to Local
+   Rule 56.1 for the Southern District of Florida.
+
+                                                   4
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 5 of 33
+
+
+
+   Cir. 1996) (citation omitted). 6 The Court is mindful that adverse inferences “may not result
+
+   in automatic summary judgment” and the FTC must provide evidence beyond the adverse
+
+   inference for any matter on which it carries the burden of proof. Securities and Exchange
+
+   Commission v. Calmes, Case No. 09-80524-CIV-Zloch/Rosenbaum, 2010 WL 11505260
+
+   at * 4 (S.D. Fla. Nov. 19, 2010). Here, the Court may infer that the answers Pillonato and
+
+   Ramsey refused to provide on Fifth Amendment grounds would have been unfavorable to
+
+   them because, as noted above, the FTC has provided probative evidence to corroborate the
+
+   facts set forth in the SUMF.
+
+                  1.      The Telemarketing Scheme
+
+          Defendants Pointbreak Media, LLC (“Pointbreak”), and Modern Spotlight Group,
+
+   LLC and Modern Spotlight, Inc. (together, “Modern Spotlight”), Perfect Image Online,
+
+   LLC, National Business Listings, LLC and Modern Source Media, LLC conducted a
+
+   telemarketing operation from November 2016 through May 2018 that targeted consumers,
+
+   including consumers on the National Do Not Call Registry, with tens of millions of
+
+   robocalls (i.e., calls with a prerecorded message). This scheme also used calls by live sales
+
+   agents who made false promises and threats to convince consumers to purchase, for a
+
+   significant fee, otherwise free Google “claiming and verification services.” (ECF Nos. 229,
+
+   SUMF, at ¶¶ 4-16; 229-26). Pointbreak and Modern Source also conducted a telemarketing
+
+   operation that targeted those consumers who had already purchased “claiming and
+
+   verification services,” and used false promises of top placement in search results, to
+
+
+   6
+    An exception to this rule exists if the claimant is also a defendant in a criminal case. Id. There is
+   no evidence that Pillonato or Ramsey are defendants in a criminal case.
+
+                                                     5
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 6 of 33
+
+
+
+   persuade them to purchase, for a significant recurring monthly fee, a purported search
+
+   engine optimization service called the “Citation Program.” (Id. at ¶¶ 17-18).
+
+                  2.     The Robocalls
+
+          Pointbreak, Modern Spotlight and Perfect Image placed robocalls to consumers
+
+   weekly, and sometimes daily, over a period of several months in 2017. (Id. at ¶ 4). During
+
+   the seven-week period between July 3, 2017 and August 25, 2017, Pointbreak alone made
+
+   nearly 75 million robocalls, nearly 15 million of which were to telephone numbers on the
+
+   National Do Not Call Registry (“DNC Registry”). (Id. at ¶¶ 4, 6; ECF No. 229-87 at 3-4).
+
+   The robocalls were the first stage of the Defendants’ telemarketing scheme. They contained
+
+   false threats of removal from Google and, with respect to Pointbreak, false statements of
+
+   affiliation with Google. (ECF No. 229, SUMF, at ¶¶ 5-7).
+
+          For example, a robocall from Pointbreak identified the caller as a “data service
+
+   provider for Google and Bing…This is your final notice. If you do not act soon, Google
+
+   will label your business as permanently closed. Press one now to speak with me or another
+
+   Google specialist. Did you know that 74 percent of your customers search online before
+
+   making a purchase? If your Google listing is shut down, you will lose on all of those
+
+   potential customers.” (Id. at ¶ 5). Another robocall identified Pointbreak as a “third party
+
+   service provider for Google.” (Id.).
+
+          A robocall from Modern Spotlight told the consumer that “Your Google Business
+
+   listing may be inactive. Immediate action is required. Please press one to speak with a
+
+   representative and avoid being removed from Google.” (Id. at ¶ 7). Perfect Image used a
+
+   similar robocall. (Id.).
+
+                                                6
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 7 of 33
+
+
+
+          In fact, Pointbreak had no affiliation or association with Google, and Google does
+
+   not remove a business from search results or label it “permanently closed” if the business
+
+   owner does not claim and verify the business. (Id. at ¶¶ 19-20).
+
+                  3.     Live Sales Pitches
+
+          Those consumers who pressed one in response to the robocalls were transferred to
+
+   a live sales agent for either Pointbreak, Modern Spotlight, Perfect Image or National
+
+   Business Listings. (Id. at ¶¶ 9-15). These sales agents used a host of false representations
+
+   to sell consumers a purported “claiming and verification” service. (Id. at ¶¶ 9-15, 19-23).
+
+   For example, the sales agents claimed various forms of affiliation with Google, including
+
+   that they were an “authorized Google My Business” agency or representative, an “affiliate
+
+   branch,” a “subsidiary that Google hires,” a “third party basically contracted by Google”
+
+   or a “Google Business Partner.” (Id. at ¶ 13). In truth, Google had no affiliation or
+
+   association with either Pointbreak, Modern Spotlight, Perfect Image or National Business
+
+   Listings, it had not contracted with those Defendants, nor did it approve, sponsor or endorse
+
+   their services. 7 (Id. at ¶ 19). None of these Defendants were a service provider for Google,
+
+   or an authorized “Google My Business agency.” (Id.).
+
+          The sales agents told consumers they would face adverse consequences if they did
+
+   not claim and verify their business with Google, which was untrue. (Id. at ¶¶ 10-12, 20).
+
+   For example, sales agents stated that (i) “Over the next 6-8 months businesses that are not
+
+   claimed and verified with Google run the risk of possibility [sic] being removed from the
+
+
+   7
+    For that matter, Google was not associated with any of the entities involved in this scheme. (ECF
+   No. 229-104 at 14-30).
+
+                                                   7
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 8 of 33
+
+
+
+   search engine or pushed so far down the search engine that no one will find you,” (ii) failure
+
+   to claim and verify the business “is causing your listing to NOT display, or display
+
+   IMPROPERLY, and MAY be at risk of being removed,” and (iii) purchase of the claiming
+
+   and verifying service was necessary to “avoid removal” from Google, and refusal to do so
+
+   would cause the business listing to be “removed entirely from the search engine” or
+
+   “removed from the internet.” (Id. at ¶¶ 10-12) (emphasis in original). In truth, Google does
+
+   not remove a business from search results if the owner does not claim and verify the
+
+   business, and Google search results include unclaimed and unverified businesses. (Id. at ¶
+
+   20).
+
+          Sales agents tried to convince consumers to purchase their services by promising
+
+   that the claiming and verification process included “registering” or “claiming” keywords,
+
+   which would allow the business to be prominently displayed in search results. (Id. at ¶¶
+
+   14-15, 21-22). For example, Pointbreak and NBL sales agents told consumers that “part of
+
+   the claiming and verification process is registering your keywords, so you come up
+
+   prominently when someone is searching for your goods and services.” (ECF Nos. 229-32
+
+   at 40; 229-35 at 2). Modern Spotlight and Perfect Image similarly claimed that keywords
+
+   are “one of the most important parts of the verification process.” (ECF No. 229-112 at ¶ 7,
+
+   p. 14). Some Pointbreak sales agents stated that the assigned keywords would be unique to
+
+   the business, or that the keywords would give the business top placement in search results.
+
+   (ECF No. 229, SUMF, at ¶ 15).
+
+          These promises were false. The claiming and verification process does not include
+
+   claiming or registering specific keywords. (Id. at ¶ 21). A third party cannot guarantee that
+
+                                                 8
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 9 of 33
+
+
+
+   a business “will appear in a particular place in Google search results for any given search
+
+   term,” (ECF No. 229-104 at 37:15-18), or that the listing will appear on the top or first
+
+   page of Google search results, because Google uses proprietary algorithms to determine
+
+   the order of search results. (ECF No. 229-104 at 38:21-25, 39:7-9).
+
+          These Defendants fraudulently charged hundreds of dollars for their claiming and
+
+   verification service, when not even Google charges businesses to claim, verify and manage
+
+   their business listings. (ECF Nos. 229-111 at ¶ 24; 229-35 at 5; 229-32 at 43; 229-3 at ¶ 5).
+
+   Consumers purchased their services relying on Defendants’ misrepresentations. (ECF No.
+
+   229, SUMF, at ¶ 23). The one-time fee that consumers paid Pointbreak for the claiming
+
+   and verification service ranged between $300-$500. (Id. at ¶ 16; 229-12). There is no
+
+   evidence that Pointbreak’s customers benefitted from its services. In fact, for some
+
+   customers, Pointbreak never provided claiming and verification services, and other
+
+   customers reported that they saw no change in search results, even when searching for the
+
+   claimed keywords. (ECF No. 229, SUMF, at ¶ 21).
+
+          Pointbreak, and later Modern Source, would call customers after they purchased the
+
+   claiming and verification service to sell yet another service, the “Citation Program.” Again,
+
+   they made false claims. (Id. at ¶ 17). The sales agents reiterated that they were affiliated
+
+   with Google, and told consumers that Google uses an “online visibility score” based on
+
+   “52 directories [that] GOOGLE uses to decide who’s credible and relevant and who’s not”
+
+   to determine where to place the business listing in search engine results. (Id. at ¶ 18; ECF
+
+   Nos.229-36 at 5-6; 229-6 at ¶ 10; 229-7 at ¶¶ 9-10). They described the Citation Program
+
+   as “get[ting] [the business] listed on every one of these directories, and over the next 30
+
+                                                9
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 10 of 33
+
+
+
+   days and [sic] we’ll take your visibility score…to 100% accurate and correct.” (ECF No.
+
+   229-36 at 6). The sales agents then guaranteed success, telling the consumer that the
+
+   Citation Program “…isn’t something that we think is going to work. This is something we
+
+   know is going to work. It works every single time without exception…It’s increasing your
+
+   coverage every month. It’s also increasing your ranking so you’re coming up at the very
+
+   top of the search.” (ECF Nos. 229, SUMF, at ¶ 18; 229-36 at 7-8).
+
+          In fact, Google uses a proprietary algorithm to determine the order of search results,
+
+   but contrary to the sales claims, that algorithm does not “boil down to an online visibility
+
+   score based on an association with 52 main directories.” (ECF No. 229-104 at 40:17-41:2).
+
+   Google does not use 52 directories to determine which businesses are credible and relevant,
+
+   (id. at 42:9-13), nor does it use a visibility score to determine search results. (Id. at 42:6-
+
+   9). In truth, a third party cannot guarantee that a business will appear prominently in Google
+
+   search results for any given search term. (Id. at 38:10-14).
+
+          Consumers purchased the Citation Program in reliance on these misrepresentations.
+
+   (ECF Nos. 229, SUMF, at ¶ 23). They paid Pointbreak or Modern Source a one-time fee,
+
+   between $499.99 and 849.99, and a recurring charge of $169.99 per month. (ECF No. 229-
+
+   6 at ¶ 10; 229-7 at ¶¶ 9-10; 229-8 at ¶ 9; 229-12 at ¶ 7). Customers did not see any change
+
+   in search results following purchase of the Citation Program. (ECF Nos. 229-7 at ¶ 12;
+
+   229-8 at ¶ 10).
+
+                 4.     Unauthorized Billing
+
+             Pointbreak accepted two forms of payment from consumers: (i) credit card or
+
+   (ii) a “remotely created check” that Pointbreak generated using the bank account
+
+                                                 10
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 11 of 33
+
+
+
+   information that business owners provided. (ECF Nos. 229-6 at ¶ 7; 229-7 at ¶ 5; 229-11
+
+   at ¶ 4; 229-12 at ¶ 6; 229-35 at 6). Pointbreak allowed Defendant Modern Spotlight to use
+
+   its credit card merchant account for a short period of time in 2017 in exchange for 30% of
+
+   the fees that Modern Spotlight generated from its sales of claiming and verifying services.
+
+   (ECF No. 229, SUMF, at ¶ 27). On October 20, 2017, Bank of America Merchant Services
+
+   terminated Pointbreak’s merchant account. (Id. at ¶ 32). Shortly thereafter, between
+
+   October 23 and 27, 2017, Pointbreak wrote itself remotely created checks from at least 280
+
+   consumers’ bank accounts, each in the amount of $100, without those consumers’ prior
+
+   knowledge or consent, and without providing increased services or benefits in return. (Id.
+
+   at ¶ 33; ECF Nos. 229-11 at ¶10, 229-12 at ¶13). 8
+
+                  5.     Pointbreak Reinvented Itself
+
+           In mid-November 2017, Pointbreak stopped making new sales to customers, but
+
+   continued its business practices through Defendant DCP Marketing, LLC and Modern
+
+   Source Media, LLC. (ECF No. 229, SUMF, at ¶ 28). DCP Marketing used Pointbreak as
+
+    its fictious name, and a DCP merchant account with the “Point Break” alias was used to
+
+    collect recurring charges from Pointbreak’s Citation Program customers. (Id.). Remotely
+
+    created checks identifying Pointbreak as the payee were also deposited into DCP’s
+
+    checking account. (Id.).
+
+
+
+
+   8
+    Pointbreak did not regularly charge $100 for its services. (ECF No. 22, SUMF, at ¶ 33). Indeed,
+   prior to this time, only 0.5% of Pointbreak’s 7,483 credit card transactions were for $100.00. (ECF
+   No. 229-106 at ¶ 25).
+
+                                                   11
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 12 of 33
+
+
+
+           As for Modern Source, one of its sales agents referred to Pointbreak as “the old
+
+    name” for Modern Source. (ECF No. 229-24 at 249). Modern Source sold only the Citation
+
+    Program, and several of its employees had previously worked for Pointbreak. (ECF No.
+
+    229, SUMF, at ¶¶ 28-29). Modern Source teamed up with Defendant Modern Spotlight
+
+    Group to sell its Citation Program. These companies had a close economic relationship.
+
+    Modern Source made sales only to customers of Modern Spotlight Group, and Modern
+
+    Spotlight Group provided its customers’ information only to Modern Source in return for
+
+    a percentage of Modern Source’s sales. (Id. at ¶ 29). Modern Spotlight Group sales agents
+
+    set up appointments for its customers to speak with agents from Modern Source, and would
+
+    forward telephone calls to Modern Source. (ECF No. 229-11 at ¶ 57). Modern Spotlight
+
+    Group also hired numerous employees who used to be employees of Pointbreak, and
+
+    moved into the office space previously utilized by Pointbreak. (ECF No. 229, SUMF, at ¶
+
+    28). A Modern Spotlight Group sales agent even stated that Pointbreak and Modern
+
+    Spotlight Group had “merged companies.” (Id. at ¶ 29). Further, Modern Spotlight Group,
+
+    Pointbreak and Modern Source used substantially similar consumer contracts and welcome
+
+    emails. (Id.).
+
+           In early February 2018, Defendant Perfect Image took over the employees and
+
+    customers that used to belong to Modern Spotlight Group. (Id. at ¶ 30). Perfect Image sold
+
+    its customers’ information to Modern Source until March 2018. (Id.). At or about that time,
+
+    Defendant National Business Listings began selling claiming and verification services
+
+    using the same script as Pointbreak and the same office space that Pointbreak and Modern
+
+    Source occupied. (Id. at ¶ 31).
+
+                                                12
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 13 of 33
+
+
+
+                  6.     Pillonato’s Role
+
+          Pillonato was an owner and manager of Pointbreak, Modern Source, National
+
+   Business Listings and DCP. (Id. at ¶ 1). He was the sole signatory on the bank accounts for
+
+   Modern Source and DCP, and was a signatory on Pointbreak’s bank accounts along with
+
+   Ramsey. (Id. at ¶¶ 2-3). Pillonato was also the sole signatory on Modern Source’s credit
+
+   card merchant account and opened DCP’s merchant account with the “Point Break” alias.
+
+   (Id. at ¶ 1). He signed contracts with service providers and vendors on behalf of Pointbreak
+
+   and Modern Source. (Id. at ¶¶ 2-3).
+
+          Pillonato, along with Ramsey, ran Pointbreak on a day-to-day basis. (Id. at ¶ 2). He
+
+   maintained the “customer relationship database and train[ed] agents on upsell activities,”
+
+   handled “[p]roduct fulfillment” and provided telephone numbers to sales agents. (Id.).
+
+   Pillonato actively monitored Pointbreak’s sales agents, and was involved in drafting
+
+   Pointbreak’s telemarketing sales scripts. (ECF Nos. 229-110 at ¶ 13; 229-105 at 17-18;
+
+   229-52).
+
+              Pillonato knew of the large volume of robocalls, and that Pointbreak’s robocalls
+
+   reached many non-businesses and phone numbers on the National Do Not Call Registry.
+
+   (ECF No. 229, SUMF, at ¶ 8). Pillonato also knew the content of Modern Spotlight’s
+
+   robocalls. (ECF No. 229-111 at ¶¶ 13-14). Pillonato admitted that clients who purchased
+
+   Pointbreak’s services “saw 0 benefits” and “got 0 results” and that “only about half” of the
+
+   Citation Program charges “are legit.” (ECF Nos. 229-74 at 2; 229-80 at 2). Pillonato
+
+   monitored and knew of consumers’ negative reviews of Pointbreak, which included
+
+   complaints that Pointbreak misrepresented its relationship with Google. (ECF No. 229,
+
+                                                13
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 14 of 33
+
+
+
+   SUMF, at ¶ 24). Pillonato also monitored Pointbreak’s credit card chargeback rate, which
+
+   he described as “horrible,” and knew about chargebacks that National Business Listings
+
+   received. 9 (Id. at ¶¶ 24, 30). Pillonato further knew that Pointbreak deposited the
+
+   unauthorized $100.00 checks into its bank accounts. (Id. at ¶ 34).
+
+                  7.     Ramsey’s Role
+
+          Like Pillonato, Ramsey was an owner and manager of Pointbreak, Modern Source
+
+    and National Business Listings. (Id. at ¶ 1). Ramsey was a signatory on Pointbreak’s bank
+
+   accounts and he opened Pointbreak’s credit card merchant accounts. (Id. at ¶ 2). As noted,
+
+   Ramsey and Pillonato ran Pointbreak on a day-to-day basis. (Id.). Ramsey trained and
+
+   oversaw sales agents, and provided telephone numbers to “push[] robocalls out to
+
+   consumers.” (Id.). Ramsey knew of Pointbreak’s telemarketing sales scripts and he
+
+   managed Pointbreak’s robocalls. (ECF No. 229-110 at ¶ 16). He drafted Pointbreak’s
+
+    robocall scripts, (ECF No. 229, SUMF, at ¶ 5), and was familiar with Modern Spotlight’s
+
+    and Modern Spotlight Group’s robocall scripts. (ECF No. 229-111 at ¶¶ 13-15). Ramsey
+
+    readily admitted that Modern Source was economically dependent upon Modern Spotlight
+
+    Group, complaining that he does not like “all our lively hoods [sic] being with pocker [an
+
+    owner and manager of Modern Spotlight Group]…[because] [r]ight now we have 0 back
+
+    up its pocker and pocker only.” (ECF No. 229-59 at 3).
+
+          Ramsey knew of Pointbreak’s large volume of robocalls, and that many of those
+
+    calls were to non-businesses and telephone numbers on the National Do Not Call Registry.
+
+
+   9
+     A poor credit card chargeback rate is, at minimum, a sign of customer dissatisfaction, and can be
+   a marker of fraud.
+
+                                                   14
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 15 of 33
+
+
+
+   (ECF No. 229, SUMF, at ¶ 8). He monitored negative reviews that consumers made about
+
+   Pointbreak, which included complaints of fraud, and knew that many of the Citation
+
+   Program charges were not legitimate. (Id. at ¶¶ 18, 24). Ramsey also endorsed all 280
+
+   unauthorized $100.00 checks, and knew that they were deposited into Pointbreak’s bank
+
+   accounts. (Id. at ¶¶ 32, 34).
+
+                  8.     Prior Court Orders
+
+           Pillonato and Ramsey have previously been enjoined from engaging in
+
+   telemarketing fraud. In 2015, the Circuit Court in and for Palm Beach County, Florida
+
+   entered a permanent injunction that prohibited Pillonato from, among other things, “using
+
+   any false or misleading statement to induce any person to pay for goods and services.” (Id.
+
+   at ¶ 36; Office of the Attorney General, Dep’t of Legal Affairs, State of Fla. v. Pillonato, et
+
+   al., 15-CA-002751 (Fla. Cir. Ct. June 11, 2015). Similarly, in April 2017, another division
+
+    of this Court entered a permanent injunction prohibiting Ramsey from, among other things,
+
+    (i) initiating or assisting others in initiating outbound telephone calls to any telephone
+
+    number on the National Do Not Call Registry, (ii) initiating or assisting others in initiating
+
+    outbound telephone calls to non-businesses that deliver a prerecorded message (i.e.,
+
+    robocalls), and (iii) violating the Telemarketing Sales Rule. (Id., F.T.C. v. Ramsey, et al.,
+
+    17-80032-MARRA (S.D. Fla. April 14, 2017), ECF No. 229-93 at pp. 6-8). That permanent
+
+    injunction required Ramsey to clearly and conspicuously disclose the identity of the seller
+
+    in any telemarketing sale. (ECF No. 229-93 at p. 8).
+
+
+
+
+                                                 15
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 16 of 33
+
+
+
+   II.    ANALYSIS
+
+          A.     Summary Judgment Standard
+
+          Summary judgment is appropriate when the pleadings, depositions, and affidavits
+
+   submitted by the parties show that no genuine issue of material fact exists and that the
+
+   movant is entitled to judgment as a matter of law. Fed. R. Civ. P. 56(a). An issue is genuine
+
+   if “a reasonable trier of fact could return judgment for the non-moving party.” Miccosukee
+
+   Tribe of Indians of Fla. v. United States, 516 F.3d 1235, 1243 (11th Cir. 2008) (citation
+
+   omitted). A fact is material if it “would affect the outcome of the suit under the governing
+
+   law.” Id. (citation omitted). The Court must view the evidence and all reasonable factual
+
+   inferences therefrom in the light most favorable to the nonmoving party. See Sada v. City
+
+   of Altamonte Springs, 434 Fed. Appx. 845, 847 (11th Cir. 2011). To survive summary
+
+   judgment, the nonmoving party must make “enough of a showing that the jury could
+
+   reasonably find for that party.” Gilliard v. Dep’t. of Corrections, 500 Fed. Appx. 860, 863
+
+   (11th Cir. 2012) (citation omitted).
+
+          The moving party bears the initial burden of showing the absence of a genuine issue
+
+   of material fact. United States v. Four Parcels of Real Prop. in Greene & Tuscaloosa Ctys.
+
+   in State of Ala., 941 F.2d 1428, 1437 (11th Cir. 1991) (citation omitted). The moving party
+
+   must show that, “on all the essential elements of its case on which it bears the burden of
+
+   proof at trial, no reasonable jury could find for the nonmoving party.” Four Parcels of Real
+
+   Prop. in Greene & Tuscaloosa Ctys. in State of Ala., 941 F.2d at 1438. “If the moving party
+
+   makes such an affirmative showing, it is entitled to summary judgment unless the
+
+   nonmoving party, in response, comes forward with significant, probative evidence
+
+                                                16
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 17 of 33
+
+
+
+   demonstrating the existence of a triable issue of fact.” Id. (quotation marks and citations
+
+   omitted); see also Ray v. Equifax Info. Servs., L.L.C., 327 Fed. App’x 819, 825 (11th Cir.
+
+   2009) (once the moving party satisfies its burden, “the non-moving party must make a
+
+    sufficient showing on each essential element of the case for which he has the burden of
+
+    proof.”) (quotation marks and citation omitted).
+
+           B.     The FTC is Entitled to Summary Judgment on Count I
+
+           The FTC contends that Pillonato and Ramsey, through Pointbreak, made
+
+   misrepresentations and omissions of material fact to induce consumers to purchase their
+
+   companies’ “claiming and verifying” and Citation Program services, in violation of Section
+
+    5(a) of the FTC Act. (ECF No. 228 at 17-18). Section 5 prohibits “unfair or deceptive acts
+
+    or practices in or affecting commerce.” 15 U.S.C. § 45(a)(1). To establish a violation of
+
+    Section 5, the FTC must prove three elements: “(1) that there was a representation, (2) the
+
+    representation was likely to mislead customers acting reasonably under the circumstances
+
+    and (3) the representation was material.” F.T.C. v. Tashman, 318 F.3d 1273, 1277 (11th
+
+   Cir. 2003) (citation omitted).
+
+          Pillonato and Ramsey do not challenge, and thus concede, that the FTC has
+
+   established all of the foregoing elements. (See generally, ECF No. 234). Further, the Court
+
+   has evaluated the FTC’s evidence and concludes that there is no genuine dispute of material
+
+   fact that the robocalls and live sales agent calls at issue in this lawsuit violate Section 5 of
+
+   the FTC Act.
+
+          First, Pointbreak’s acts and practices were “in or affecting commerce” as
+
+   Pointbreak, acting from its Florida offices, engaged in transactions with customers
+
+                                                 17
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 18 of 33
+
+
+
+   throughout the United States. (See e.g., ECF Nos. 229-6, 229-7, 229-8, 229-11, 229-12,
+
+   229-47). Section 44 of the FTC Act defines commerce as including “commerce among the
+
+   several States.” 15 U.S.C. § 44.
+
+          Second, the robocalls and live sales agent calls contained numerous false
+
+   representations, express and implied, including that (i) the companies were authorized by
+
+   or affiliated with Google, (ii) the customer would be removed from Google’s search engine
+
+    if he/she did not purchase the claiming and verifying service, (iii) the claiming and
+
+   verifying service includes registering keywords that cause the business listing to appear
+
+    prominently in search results, and (iv) the customer’s business would appear at the top of
+
+    search results if the customer purchased the Citation Program. See supra at pp. 6-10. “A
+
+   representation is ‘likely to mislead’ if it is false,” F.T.C. v. USA Financial, LLC¸ Case No.
+
+   8:08-CV-899-T-17MAP, 2010 WL 11508193 at *4 (M.D. Fla. April 5, 2010), or if the
+
+   defendant “had no basis for the representation.” Tashman, 318 F.3d at 1277. There is no
+
+   dispute that these representations were likely to mislead a reasonable consumer because
+
+   they were false and/or the companies lacked a reasonable basis for asserting that they were
+
+   true. See supra at pp. 7-10.
+
+          Third, these representations were material. “[A]n express claim [or] an
+
+    intentionally-implied claim made by [a] seller…” is presumed material.” F.T.C. v. Roca
+
+    Labs, Inc., 345 F.Supp.3d 1375, 1386 (M.D. Fla. 2018) (citations omitted). Pillonato and
+
+    Ramsey offered no evidence to rebut this presumption. Beyond the presumption, “[a]
+
+    representation is material if likely relied upon by a reasonable prospective purchaser.”
+
+    F.T.C. v. Lanier Law, LLC, 194 F.Supp.3d 1238, 1274 (M.D. Fla. 2016) (citation omitted).
+
+                                                18
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 19 of 33
+
+
+
+   Customers confirmed that they purchased claiming and verifying services, and the Citation
+
+   Program, based upon the misrepresentations described herein. (See ECF Nos. 229-6 at ¶ 6,
+
+   229-7 at ¶¶ 4, 9-10, 229-8 at ¶¶ 4, 8-9, 229-10 at ¶¶ 4-5, 6-8, 229-11 at ¶4). Importantly,
+
+   the FTC need only show that the representation had “a tendency to deceive,” as “proof of
+
+   actual consumer deception is unnecessary.” Lanier Law, LLC, 194 F.Supp.3d at 1274.
+
+                 1.      Common Enterprise
+
+          The FTC asks this Court to hold Pointbreak liable for both its own conduct, and the
+
+    conduct of Defendants Modern Source, Modern Spotlight, Modern Spotlight Group,
+
+    Perfect Image, National Business Listings and DCP Marketing because these companies
+
+    constitute a “common enterprise.” 10 (ECF No. 228 at 16-17). Under the FTC Act, “a
+
+   corporate entity can be held liable for the conduct of other entities where the structure,
+
+   organization, and pattern of a business venture reveal a common enterprise or a maze of
+
+   integrated business entities.” F.T.C. v. Lanier Law, LLC, 715 F. App’x at 989 (quotation
+
+   marks and citation omitted). Factors that courts consider in determining the existence of a
+
+   common enterprise include whether the businesses “share office spaces and employees,
+
+   commingle funds, coordinate advertising efforts, and operate under common control.” Id.
+
+          As an initial matter, Pillonato and Ramsey do not dispute, and thus concede, that
+
+   Modern Source, Perfect Image, National Business Listings and DCP Marketing, along with
+
+   Pointbreak, were a common enterprise. Importantly, the FTC has submitted sufficient
+
+   evidence from which a jury could reasonably find that these entities are part of a common
+
+
+   10
+     As explained in the following section, the FTC next asks the Court to find Pillonato and Ramsey
+   individually liable for the deceptive practices of the common enterprise.
+
+                                                  19
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 20 of 33
+
+
+
+   enterprise. Specifically, National Business Listings, DCP Marketing, Modern Source and
+
+   Pointbreak shared common ownership, DCP Marketing and Pointbreak commingled funds,
+
+   and Perfect Image, National Business Listings, DCP Marketing, Modern Source and
+
+   Pointbreak used the same or similar robocall and/or live sales agent scripts. See supra at
+
+   pp. 6, 8, 11, 13-14.
+
+          Pillonato’s and Ramsey’s sole challenge is to the FTC’s assertion that Pointbreak
+
+   was in a common enterprise with Modern Spotlight and Modern Spotlight Group. (ECF
+
+   No. 234 at 2-4). They do so with a declaration from Michael Pocker, an owner of Modern
+
+   Spotlight and Modern Spotlight Group, who asserts that these entities did not share offices,
+
+   employees or bank accounts, nor were they under common control or coordinate
+
+   advertising. (Id. at 2-3).
+
+          Pillonato and Ramsey take too narrow a view of a common enterprise. The FTC
+
+   need not establish that all of the common enterprise factors were present. No one factor is
+
+   determinative. Instead, courts must consider “the pattern and framework of the whole
+
+   enterprise….” F.T.C. v. HES Merchant Services Co., Inc., Case No. 6:12-cv-1618-Orl-
+
+   22KRS, 2014 WL 6863506 at *5 (M.D. Fla. Nov. 18, 2014) (citation omitted). It is helpful
+
+   to understand that the common enterprise “analysis is distinct from the alter ego inquiry,
+
+   such that the entities formally may be separate corporations but operate as a common
+
+   enterprise.” Lanier Law, LLC, 194 F.Supp.3d at 1269.
+
+          Here, the evidence shows that Pointbreak and Modern Spotlight shared a credit card
+
+   merchant account, and thereby commingled funds. See supra at p. 11; Lanier Law, LLC,
+
+   715 F. App’x at 980 (common enterprise existed where, among other things, member of
+
+                                               20
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 21 of 33
+
+
+
+   alleged common enterprise allowed other members “to access his accounts to process
+
+   consumer payments”). Further, Modern Spotlight, Modern Spotlight Group and Pointbreak
+
+   used similar robocall and live sales agent scripts, see supra at pp.6, 8, and the principals of
+
+    Pointbreak and the Modern Spotlight entities discussed scripts with one another. (ECF No.
+
+    229-111 at ¶ 15). In addition, Modern Spotlight Group hired former employees of
+
+    Pointbreak, and occupied the former office space of Pointbreak. See supra at p. 12. Modern
+
+    Spotlight Group also used substantially similar consumer contracts and welcome emails as
+
+    did Pointbreak and Pointbreak’s successor company, Modern Source. See supra at p. 12.
+
+            The record also shows that Modern Spotlight Group and Modern Source cooperated
+
+    to induce customers to purchase their services. They shared client data, and Modern
+
+    Spotlight Group sold its customer “leads” exclusively to Modern Source. (ECF No. 229-
+
+    111 at ¶¶ 56, 58). Modern Spotlight Group set up appointments for customers to speak with
+
+    Modern Source, and forwarded telephone calls to Modern Source. (Id. at ¶ 57). Modern
+
+    Source sold its services only to customers of Modern Spotlight Group, and Ramsey
+
+    acknowledged that Modern Source was entirely dependent upon Modern Spotlight Group
+
+    for business. See supra at pp. 12, 14. “[E]ntities constitute a common enterprise when they
+
+    exhibit either vertical or horizontal commonality – qualities that may be demonstrated by
+
+    a showing of strongly interdependent economic interests or the pooling of assets and
+
+    revenues.” F.T.C. v. Network Services Depot, Inc., 617 F.3d 1127, 1142-43 (9th Cir. 2010)
+
+    (cited with approval by F.T.C. v. Direct Benefits Group, LLC, Case No. 6:11-cv-1186-Orl-
+
+    28TBS, 2013 WL 3771322 at 18 (M.D. Fla. July 18, 2013)). The evidence establishes this
+
+    here.
+
+                                                 21
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 22 of 33
+
+
+
+          In sum, the FTC has submitted sufficient evidence from which a jury could
+
+   reasonably find that Pointbreak, Modern Spotlight and Modern Spotlight Group were a
+
+   common enterprise, and Pillonato and Ramsey have not met their burden to demonstrate a
+
+   genuine dispute regarding about this.
+
+                  2.     Individual Liability
+
+          This Court can hold Pillonato and Ramsey individually liable for the acts of
+
+   Pointbreak and the other entities in the common enterprise if the FTC proves that they
+
+   directly participated in or had the authority to control the deceptive practice and had “some
+
+   knowledge” of the practice. F.T.C. v. Gem Merch. Corp., 87 F.3d 466, 470 (11th Cir. 1996).
+
+                         a.      Control
+
+          The FTC “can prove that an individual defendant had control by showing that the
+
+   individual controlled the day-to-day affairs of the operation.” HES Merchant Services Co.,
+
+   Inc., 2014 WL 6863506 at *6 (quotation marks and citation omitted). Pillonato and Ramsey
+
+   do not dispute that they had the authority to control the entities (other than the Modern
+
+   Spotlight entities) within the enterprise. 11 (See generally, ECF No. 234). The undisputed
+
+   facts support this conclusion.
+
+          As already noted, Pillonato and Ramsey were actively involved in the business
+
+   affairs of Pointbreak, Modern Source, National Business Listings and DCP Marketing. See
+
+   supra at pp. 13-15. Moreover, “[a]n individual’s status as a corporate officer gives rise to
+
+    a presumption of ability to control a small, closely-held corporation.” F.T.C. v. Transnet
+
+
+   11
+     In their Opposition, Pillonato and Ramsey also do not dispute that they directly participated in
+   the deceptive acts of the common enterprise. (See generally, ECF No. 234).
+
+                                                  22
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 23 of 33
+
+
+
+   Wireless Corp, 506 F.Supp.2d 1247, 1270 (S.D. Fla. 2007) (citation omitted). Pillonato
+
+   and/or Ramsey were owners and officers of Pointbreak, Modern Source, National Business
+
+   Listings and DCP Marketing, see supra at pp. 13-14, and they have offered no evidence to
+
+    rebut this presumption of control.
+
+           Instead, they argue that they did not control the common enterprise because they
+
+    had no control over the Modern Spotlight entities. (ECF No. 234 at 3). Even if this were
+
+    true, it would not relieve them of liability. As mentioned above, the undisputed facts
+
+    establish that Pillonato and Ramsey controlled several other entities within the enterprise,
+
+    namely Pointbreak, Modern Source, National Business Listings and DCP Marketing.
+
+    Individuals who served as officers of some entities within common enterprise are deemed
+
+    to have authority to control the entire enterprise. See F.T.C. v. Tax Club, Inc., 994
+
+    F.Supp.2d 461, 473 (S.D.N.Y. 2014).
+
+                         b.     Knowledge
+
+           A defendant may be found individually liable if he exhibits “actual knowledge of
+
+   material misrepresentations, reckless indifference to the truth or falsity of such
+
+   representations, or an awareness of a high probability of fraud along with an intentional
+
+   avoidance of the truth.” Lanier Law, LLC, 194 F.Supp.3d at 1286 (citations omitted).
+
+   Pillonato and Ramsey challenge this element by arguing that they were not recklessly
+
+   indifferent. (ECF No. 234 at 4-5). They rely on testimony of a co-owner of Pointbreak that
+
+   Pillonato “was a real stickler for making the distinction…that we were not Google” and
+
+   both directed that employees be terminated if they led customers to believe that they would
+
+   be removed from Google or acted as if Pointbreak was Google. (ECF No. 234 at ¶ 3). In
+
+                                                23
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 24 of 33
+
+
+
+   the context of the record as a whole, this amounts to a “mere scintilla of evidence,” and it
+
+    is well-established that the non-moving party must do more to create a genuine dispute of
+
+    material fact. See Fedolfi v. Banyan Air Services, Inc., 258 Fed. Appx. 274, 276 (11th Cir.
+
+    2007) (citations omitted).
+
+           The undisputed facts establish that Pillonato and Ramsey certainly had “some
+
+    knowledge” of Pointbreak’s deceptive practices. See Gem Merch. Corp., 87 F.3d at 470.
+
+    Both were involved in drafting the deceptive robocall and live sales agent scripts. See supra
+
+    at pp. 13-14. They also monitored customers’ negative reviews and credit card
+
+    chargebacks. See supra at pp. 13-15. Pillonato even described their chargeback rate as
+
+    “horrible” and admitted that customers “saw 0 benefits” and “got 0 results.” See supra at
+
+    pp. 13-14. This is clear evidence that Pillonato and Ramsey knew or, at the very least,
+
+    were recklessly indifferent to the deceptive content of Pointbreak’s robocalls and live sales
+
+    agent calls. See e.g., Direct Benefits Group, LLC, 2013 WL 3771322 at *20 (individuals
+
+    knew of the probability and fact of deception because they created the contents of deceptive
+
+    websites); F.T.C. v. MacGregor, 360 F. App’x 891, 894-95 (9th Cir. 2009) (individual
+
+    defendant “likely knew of material misrepresentations…or was at least recklessly
+
+    indifferent to the truth” given “evidence showing the high volume of consumer complaints,
+
+    [and] the high refund and return rates…”).
+
+           Pillonato and Ramsey also had knowledge of the deceptive practices used by other
+
+    entities within the common enterprise. For example, National Business Listing used the
+
+    same deceptive script as Pointbreak, and Pillonato was aware of the chargebacks that it
+
+    received. See supra at pp. 12, 14. Both Pillonato and Ramsey knew the content of the
+
+                                                 24
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 25 of 33
+
+
+
+   deceptive robocalls that the Modern Spotlight entities used, id. at 13-14, and Ramsey
+
+    discussed the content of those scripts with the owner of the Modern Spotlight entities. (ECF
+
+    No. 229-111 at ¶ 15).
+
+           For the foregoing reasons, there is no genuine dispute of material fact that Pillonato
+
+    and Ramsey are individually liable for the conduct of the common enterprise, and the FTC
+
+    is entitled to judgment as a matter of law against them on Count I.
+
+           C.     The FTC is Entitled to Summary Judgment on Count II
+
+           In Count II of the Amended Complaint, the FTC contends that Pointbreak engaged
+
+   in unfair billing practices in violation of Section 5(a) of the FTC Act, and asks this Court
+
+   to hold Pillonato and Ramsey liable for that conduct. (ECF No. 109 at 35). “An unfair
+
+   practice under ¶ 5(a) is one that causes or is likely to cause substantial injury to consumers
+
+   which is not reasonably avoidable by consumers themselves and not outweighed by
+
+   countervailing benefits to consumers or to competition.” Direct Benefits Group, LLC, 2013
+
+   WL 3771322 at *13 (citation omitted). A substantial injury is an unfair practice that causes
+
+   small harm to a large class of people. Orkin Exterminating Co., Inc. v. F.T.C., 849 F.2d
+
+   1354, 1365 (11th Cir. 1988) (citations omitted); F.T.C. v. Windward Marketing, Inc., No.
+
+   Civ.-A. 1:96-CV-615F, 1997 WL 33642380 at *11 (N.D. Ga. Sept. 30, 1997). Consumers
+
+   can reasonably avoid injury if they “had a free and informed choice that would have
+
+   enabled them to avoid the unfair practice.” Windward Marketing, Inc., 1997 WL 33642380.
+
+   at *11 (citations omitted). Finally, the unfairness of the practice is not outweighed when it
+
+   “produces clear adverse consequences for consumers that are not accompanied by an
+
+   increase in services or benefits to consumers or by benefits to competition….” Id.
+
+                                                 25
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 26 of 33
+
+
+
+           It is undisputed that after Bank of America terminated Pointbreak’s credit card
+
+    merchant account, Pointbreak wrote itself $100 checks from 280 customers’ bank accounts
+
+    without those customers’ knowledge or authorization and without providing any increased
+
+    services or benefits in return. See supra at p.11. This is an unfair billing practice punishable
+
+    under Section 5(a) of the FTC Act. Pillonato and Ramsey make no argument to the
+
+    contrary, and do not dispute their personal liability for Pointbreak’s unfair billing practice.
+
+    The FTC’s evidence supports Pillonato’s and Ramsey’s concession. As already discussed,
+
+    both had authority to control Pointbreak. Both also directly participated in and knew about
+
+    Pointbreak’s unfair billing practice, as Ramsey endorsed all the unauthorized $100 checks
+
+    with Pillonato’s knowledge and both knew that the unauthorized checks were deposited in
+
+    Pointbreak’s bank accounts. See supra at pp. 14-15. Accordingly, the FTC is entitled to
+
+    judgment as a matter of law against Pillonato and Ramsey on Count II.
+
+           D.     The FTC is Entitled to Summary Judgment on Counts III and IV
+
+           In Counts III and IV, the FTC sues Pillonato and Ramsey for violation of the
+
+   Telemarketing Sales Rule (“TSR”), 16 C.F.R. § 310.4(b). These claims arise from the
+
+   robocalls Pointbreak made, which include millions of calls to telephone numbers on the
+
+   National Do Not Call Registry. (ECF No. 109 at 35-37). A violation of the TSR is an unfair
+
+   or deceptive practice under Section 5(a) of the FTC Act. See 15 U.S.C. §§ 6102(c), 6105(b);
+
+   see also F.T.C. v. WV Universal Management, LLC, 877 F.3d 1234, 1240 (11th Cir. 2017)
+
+   (“[B]y violating the TSR, [defendant] violated the FTC Act and is subject to its penalties.”).
+
+   With limited exceptions not present here, the TSR prohibits telemarketers from initiating,
+
+   and sellers from causing telemarketers to initiate, “any outbound telephone call that
+
+                                                  26
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 27 of 33
+
+
+
+   delivers a prerecorded message” and “any outbound telephone call to a person
+
+   when…[t]hat person’s telephone number is on the ‘do-not-call’ registry, maintained by the
+
+   Commission, of persons who do not wish to receive outbound telephone calls to induce the
+
+   purchase of goods or services….” 16 C.F.R. § 310.4(b)(1)(iii)(B), (v).
+
+          The TSR defines a telemarketer as “any person who…initiates or receives telephone
+
+   calls to or from a customer…” and a seller as “any person…who provides…goods or
+
+   services to the customer in exchange for consideration.”16 C.F.R. § 310.2(dd),(ff).
+
+   Pillonato and Ramsey do not dispute that Pointbreak was a telemarketer and a seller within
+
+   the meaning of the TSR. (ECF No. 234). They also do not dispute that Pointbreak, with
+
+   their knowledge, initiated robocalls, including robocalls to telephone numbers on the
+
+   National Do Not Call Registry. (Id.). Indeed, the evidence shows that over a seven-week
+
+   period, Pointbreak made nearly 15 million telephone calls to telephone numbers on the
+
+   National Do Not Call Registry. See supra at p. 6. The evidence also shows that Pillonato
+
+    and Ramsey provided the telephone numbers used for robocalls and by sales agents, that
+
+   they were aware of the high volume of robocalls and that many telephone calls reached
+
+   non-business and telephone numbers on the National Do Not Call Registry. See supra at
+
+   pp. 13-14. Based upon the foregoing, Pillonato and Ramsey are individually liable for
+
+   violation of the TSR and, thus, Section 5(a) of the FTC Act.
+
+          The only argument that Pillonato and Ramsey make in opposition is that
+
+   Pointbreak’s calls are exempted from the TSR under the business-to-business exception.
+
+   The TSR exempts “[t]elephone calls between a telemarketer and any business to induce the
+
+   purchase of goods or services….” 16 C.F.R. § 310.6(b)(7). Pillonato and Ramsey assert
+
+                                              27
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 28 of 33
+
+
+
+   that “[i]f a non-business received calls such numbers were called in error likely due to the
+
+   reassignment from a business line to a non-business line.” (ECF No. 234 at 6). They offer
+
+   no evidence to support their assumption. “[U]nsupported speculation ... does not meet a
+
+    party’s burden of producing some defense to a summary judgment motion.
+
+    Speculation does not create a genuine issue of fact; instead, it creates a false issue, the
+
+    demolition of which is a primary goal of summary judgment.” Cordoba v. Dillard's,
+
+   Inc., 419 F.3d 1169, 1181 (11th Cir.2005) (citation omitted).
+
+           Even if their assertion were supported by evidence, it would be insufficient for a
+
+    jury to reasonably conclude that the TSR’s business-to-business exception applies.
+
+    Notably, another district court squarely rejected the argument Pillonato and Ramsey make
+
+    here. In F.T.C. v. Inc21.com Corp., the defendants argued that the business-to-business
+
+    exception “must extend to any telelemarking call intended to be made to a business.”
+
+    Inc21.com Corp., 745 F.Supp.2d 975, 1007 (N.D. Cal. 2010) (emphasis in original). The
+
+    court disagreed, reasoning that “the plain language of the TSR clearly and unambiguously
+
+    states that the ‘business-to-business’ exemption applies solely to ‘telephone calls’ between
+
+    telemarketers and businesses. Nowhere in this language are the subjective intentions of
+
+    telemarketers referenced.” Id. at 1007.
+
+           For the foregoing reasons, the FTC is entitled to judgment as a matter of law against
+
+    Pillonato and Ramsey on Counts III and IV.
+
+           E.     Entry of a Permanent Injunction and Money Judgment is Warranted
+
+           The FTC asks this Court to enter a permanent injunction, and equitable money
+
+   judgment in the amount of $3,367,666.30, against Pillonato and Ramsey. (ECF Nos. 228
+
+                                                28
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 29 of 33
+
+
+
+   at 24-25, 241 at 1 n.1). Section13(b) of the FTC Act provides that “after proper proof, the
+
+   court may issue a permanent injunction.” 12 15 U.S.C. § 53(b). The Eleventh Circuit
+
+   interprets Section 13(b) as “an unqualified grant of statutory authority to issue the full range
+
+   of equitable remedies, including disgorgement, which considers only the defendants’
+
+   unjust gain and ignores consumer loss.” F.T.C. v. Washington Data Resources, Inc., 704
+
+   F.3d 1323, 1326 (11th Cir. 2013). “To calculate the size of the award, the FTC must first
+
+   show that its calculations reasonably approximate the amount of the defendants’ unjust
+
+   gains, after which the burden shifts to the defendants to show that those figures are
+
+   inaccurate.” Lanier Law, LLC, 194 F.Supp.3d at 1288 (citations omitted). The Eleventh
+
+   Circuit has held that “the amount of net revenue (gross receipts minus refunds)…is the
+
+   correct measure of unjust gains under section 13(b).” Washington Data Resources, Inc. at
+
+   1327.
+
+           The FTC is entitled to equitable monetary relief. The FTC has provided evidence
+
+   that the Pointbreak Defendants’ net revenues, calculated as gross revenues less
+
+   chargebacks and refunds, during the relevant time period, total $3,367,666.30. 13 (ECF No.
+
+   229-106 at Table 2, ¶ 19). Pillonato and Ramsey do not dispute the FTC’s calculation, and
+
+   it is their burden to do so. (ECF No. 234 at ¶ 6). In fact, they offer no objection to entry of
+
+
+
+   12
+      The FTC Act also provides that the court has “jurisdiction to grant such relief as the court finds
+   necessary to redress injury to consumers or other persons, partnerships, and corporations resulting
+   from…the unfair or deceptive act or practice, as the case may be.” 15 U.S.C. §57b.
+   13
+      During the relevant time period, the net revenues of the Pointbreak Defendants were as follows:
+   (i) Pointbreak Media $2,259,398.62, (ii) Modern Spotlight Group $635,359.79, (iii) Modern
+   Source $232,077.69, (iv) Perfect Image $79,601.18, (v) DCP Marketing $92,272.19 and (vi)
+   National Business Listings $68,956.83. (ECF No. 229-106 at Tables 2 & 4, ¶ 19).
+
+                                                    29
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 30 of 33
+
+
+
+   a money judgment. The Court has carefully reviewed the FTC’s calculation and finds that
+
+   it represents a reasonable approximation of the Pointbreak Defendants’ net revenues.
+
+           The FTC asks the Court to hold Pillonato and Ramsey jointly and severally liable.
+
+   (ECF No. 228 at 24, 241-1 at 7). This record, that Pillonato and Ramsey were jointly
+
+   responsible for the acts of the common enterprise, supports their joint and several liability.
+
+   See supra at pp. 22-25; F.T.C. v. Life Management Services of Orange County, LLC, et al.,
+
+   350 F.Supp.3d 1246, 1259-60 (M.D. Fla. 2018) (defendants engaged in common enterprise
+
+   can be held jointly and severally liable for the acts of each member). The Court finds that
+
+   the FTC is entitled to a monetary judgment against Pillonato and Ramsey, jointly and
+
+   severally, in the amount of $3,367,66.30.
+
+           The FTC argues that Pillonato and Ramsey are likely to continue to violate the FTC
+
+    Act and TSR, and it therefore requests entry of a permanent injunction to protect consumers
+
+    going forward. (ECF No. 228 at 24-25). A permanent injunction is permissible even if a
+
+    defendant has ceased his unlawful conduct if “the defendant’s past conduct indicates that
+
+    there is a reasonable likelihood of further violations in the future.” F.T.C. v. USA Financial,
+
+    LLC, et al., 415 F. App’x. 970, 975 (11th Cir. 2011) (citation omitted). In determining
+
+    whether a defendant is likely to commit future violations, courts consider the following
+
+    factors: “the egregiousness of the defendant’s actions, the isolated or recurrent nature of
+
+    the infraction, the degree of scienter involved, the sincerity of the defendant’s assurances
+
+    against future violations, the defendant’s recognition of the wrongful nature of his conduct,
+
+    and the likelihood that the defendant’s occupation will present opportunities for future
+
+    violations….” Lanier Law, LLC¸194 F.Supp.3d at 1288 (citations omitted). The application
+
+                                                  30
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 31 of 33
+
+
+
+   of these factors to this record support entry of a permanent injunction, as necessary to
+
+   protect the public and prevent future violations. Significantly, Ramsey and Pillonato
+
+   engaged in these unlawful practices when they were subject to permanent injunctions that
+
+   prohibited this very same misconduct. See supra at p. 15.
+
+           The FTC submitted a proposed permanent injunction with its Motion for Summary
+
+   Judgment and Reply. 14 (ECF Nos. 228-1, 241-1). The proposed injunction includes
+
+    “fencing-in” provisions. “[C]ourts may impose ‘fencing-in’ provisions, which extend
+
+    beyond the specific violations at issue, to prevent defendants from engaging in similar
+
+    deceptive practices in the future, so long as they bear a reasonable relation to the unlawful
+
+    practices found to exist.” Lanier Law, LLC, 194 F.Supp.3d at 1288-89 (quotation marks
+
+    and citations omitted). The FTC does not identify which provisions in its proposed
+
+    permanent injunction are “fencing-in” provisions. However, the Court has carefully
+
+    reviewed the proposed permanent injunction and notes that several provisions address
+
+    conduct beyond the wrongdoing for which the Court is holding Pillonato and Ramsey
+
+    liable. (See e.g., ECF No. 241-1 at IV (Prohibition Against Misrepresentations), VIII
+
+    (Compliance Reporting), IX (Recordkeeping)). The Court finds that the provisions in the
+
+    proposed permanent injunction reasonably relate to the unlawful practices Pillonato and
+
+    Ramsey engaged in and, thus, are appropriate “fencing-in” relief.
+
+           Pillonato and Ramsey do not object to any provision in the proposed permanent
+
+    injunction except for the provision requiring them to transfer possession, custody and
+
+
+   14
+    The proposed injunction attached to the Reply is identical to the version attached to the FTC’s
+   motion for summary judgment, except for the amount of monetary relief requested.
+
+                                                 31
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 32 of 33
+
+
+
+   control to the Receiver of 53 items of jewelry. (ECF No. 234 at ¶ 6). Pillonato and Ramsey
+
+   assert, without any supporting evidence, that they do not have possession of that jewelry.
+
+   (Id.). The FTC has submitted evidence of Ramsey’s purchase of all 53 items of jewelry.
+
+   (ECF No. 241-3). Ramsey does not deny this in his opposition. To defeat summary
+
+   judgment, the non-moving party must submit evidence from which a reasonable jury can
+
+   find in his favor. Pillonato and Ramsey have not done this.
+
+          For the reasons set forth above, entry of a permanent injunction and money
+
+   judgment in the amount of $3,367,666.30 against Ramsey and Pillonato, jointly and
+
+   severally, is warranted. I respectfully recommend that the Court enter the Final Order of
+
+   Permanent Injunction and Monetary Judgment attached hereto. 15
+
+   III.   CONCLUSION AND RECOMMENDATION
+
+          For the foregoing reasons, the Court concludes that the FTC is entitled to judgment
+
+   as a matter of law against Defendants Pillonato and Ramsey on all claims brought against
+
+   them in the Amended Complaint. The Court also concludes that the FTC is entitled to a
+
+   permanent injunction in the form attached hereto, and a money judgment against Pillonato
+
+   and Ramsey, jointly and severally, in the amount of $3,367,666.30.
+
+          Accordingly, I RESPECTFULLY RECOMMEND that the Court GRANT the
+
+   FTC’s Motion for Summary Judgment Against Defendants Dustin Pillonato and Justin
+
+
+   15
+     The attached Final Order of Permanent Injunction and Monetary Judgement is substantially
+   similar to the FTC’s proposal, which is attached to its Reply. (ECF No. 241-1). The only
+   differences are in the following sections, which I revised for clarity, accuracy and/or stylistic
+   reasons: (i) FINDINGS at ¶¶ D, E, F, H, O, P, Q, (ii) V (MONETARY JUDGMENT) at ¶ G, (iii)
+   VI., (CUSTOMER INFORMATION), (iv) VII., (ORDER ACKNOWLEDGMENTS) and (v)
+   VIII. (COMPLIANCE REPORTING) at ¶ 1.
+
+                                                  32
+Case 0:18-cv-61017-CMA Document 251 Entered on FLSD Docket 03/11/2019 Page 33 of 33
+
+
+
+   Ramsey (ECF No. 228). I FURTHER RECOMMEND that the Court enter the attached
+
+   Final Order of Permanent Injunction and Monetary Judgment As to Defendants Dustin
+
+   Pillonato and Justin Ramsey.
+
+           No later than seven (7) days from the date of this Report and Recommendation
+
+   the parties may file any written objections to this Report and Recommendation with the
+
+   Honorable Cecilia M. Altonaga, who is obligated to make a de novo review of only those
+
+    factual findings and legal conclusions that are the subject of objections. Only those
+
+    objected-to factual findings and legal conclusions may be reviewed on appeal. See Thomas
+
+    v. Arn, 474 U.S. 140 (1985), Henley v. Johnson, 885 F.2d 790, 794 (11th Cir. 1989), 28
+
+    U.S.C. § 636(b)(1), 11th Cir. R. 3-1 (2016). The opposing party may file a written response
+
+    within seven (7) days from the date any objections are filed. 16
+
+         RESPECTFULLY SUBMITTED in chambers at Miami, Florida, this 11th day of
+   March, 2019.
+
+
+                                       _______________________________________
+                                       CHRIS McALILEY
+                                       UNITED STATES MAGISTRATE JUDGE
+    cc: The Honorable Cecilia M. Altonaga
+        Counsel of record
+
+        Dustin Pillonato (pillonatodc@gmail.com)
+        7411 Bristol Lane
+        Parkland, FL 33067
+
+        Justin Ramsey (jramsey9799@gmail.com)
+        19149 Skyridge Circle
+        Boca Raton, FL 33498
+
+   16
+      The Court shortens the deadline to file objections and any corresponding response to
+   accommodate the upcoming calendar call and trial.
+
+                                                33
+

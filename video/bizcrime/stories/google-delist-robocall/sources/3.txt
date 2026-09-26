@@ -1,0 +1,969 @@
+https://www.ftc.gov/system/files/documents/cases/pointbreak_media_final_order_as_to_pillonato_and_ramsey.pdf
+fetched 2026-09-26 (curl, browser UA, HTTP 200)
+
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 1 of 19
+
+
+
+                              UNITED STATES DISTRICT COURT
+                              SOUTHERN DISTRICT OF FLORIDA
+
+                         CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+   FEDERAL TRADE COMMISSION,
+
+          Plaintiff,
+   v.
+
+   POINTBREAK MEDIA, LLC; et al.,
+
+         Defendants.
+   __________________________________/
+
+    FINAL ORDER OF PERMANENT INJUNCTION AND MONETARY JUDGMENT AS
+           TO DEFENDANTS DUSTIN PILLONATO AND JUSTIN RAMSEY
+
+          Plaintiff, the Federal Trade Commission (“FTC” or “Commission”), filed its First
+
+   Amended Complaint for Permanent Injunction and Other Equitable Relief (“First Amended
+
+   Complaint”) [ECF No. 109] stating claims under section 13(b) of the Federal Trade Commission
+
+   Act (“FTC Act”), 15 U.S.C. section 53(b), and section 6 of the Telemarketing and Consumer Fraud
+
+   and Abuse Prevention Act (“Telemarketing Act”), 15 U.S.C. section 6105. On December 18,
+
+   2018, Plaintiff filed a Motion for Summary Judgment Against Defendants Dustin Pillonato and
+
+   Justin Ramsey [ECF No. 228], which the Court granted in an April 4, 2019 Order [ECF No. 258].
+
+          Consistent with that Order, final judgment is entered in favor of Plaintiff and against
+
+   Defendants Pillonato and Ramsey as follows:
+
+                                               FINDINGS
+
+          A.      The Court has jurisdiction over the subject matter and the parties under 28 U.S.C.
+
+   sections 1331, 1337(a), and 1345; and 15 U.S.C. sections 45(a) and 53(b).
+
+          B.      Venue is proper as to all parties in this district under 28 U.S.C. sections 1391(b)(2),
+
+   (b)(3), and (d); and 15 U.S.C. section 53(b).
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 2 of 19
+                                                  CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+          C.      The First Amended Complaint states a claim upon which relief may be granted
+
+   under section 13 of the FTC Act, 15 U.S.C. section 53; and section 6 of the Telemarketing Act, 15
+
+   U.S.C. section 6105.
+
+          D.      On March 11, 2019, the Magistrate Judge Chris McAliley entered a Report and
+
+   Recommendation [ECF No. 251], recommending that the Court grant the FTC’s Motion for
+
+   Summary Judgment against Defendants Pillonato and Ramsey. On April 4, 2019, the Court entered
+
+   an Order [ECF No. 258] adopting Judge McAliley’s Report and Recommendation and granting
+
+   the FTC’s Motion for Summary Judgment.
+
+          E.      Defendants Pillonato and Ramsey’s activities that are the subject of this lawsuit are
+
+   in or affecting commerce, as defined in section 4 of the FTC Act, 15 U.S.C. section 44.
+
+          F.      For the reasons stated in Judge McAliley’s Report and Recommendation and the
+
+   Court’s Order granting the FTC’s Motion for Summary Judgment, Defendants Pointbreak Media,
+
+   LLC; DCP Marketing, LLC; Modern Spotlight LLC; Modern Spotlight Group LLC; Modern
+
+   Source Media, LLC; Perfect Image Online LLC; and National Business Listings, LLC
+
+   ( “Pointbreak Defendants”) formed a common enterprise. See, e.g., FTC v. Lanier Law, LLC, 715
+
+   F. App’x 970, 979 (11th Cir. 2017) (“[A] corporate entity can be held liable for the conduct of
+
+   other entities where the structure, organization, and pattern of a business venture reveal a common
+
+   enterprise or a maze of integrated business entities.” (alteration added)).
+
+          G.      The Pointbreak Defendants violated section 5 of the FTC Act, 15 U.S.C. section
+
+   45, by deceptively marketing and selling to small business owners Google “claiming and
+
+   verification” and search engine optimization services.
+
+
+
+
+                                                     2
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 3 of 19
+                                                  CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+          H.        Defendants Pillonato and Ramsey participated in, had authority to control, and had
+
+   knowledge of or were recklessly indifferent to the Pointbreak Defendants’ deceptive marketing
+
+   and sale of Google “claiming and verification” and search engine optimization services.
+
+          I.        Defendant Pointbreak Media, LLC engaged in unfair practices in violation of
+
+   section 5 the FTC Act, 15 U.S.C. section 45, by writing itself unauthorized $100 checks from at
+
+   least 280 of its customers’ bank accounts. Defendant Ramsey endorsed all of these checks.
+
+          J.        Defendants Pillonato and Ramsey participated in, had authority to control, and had
+
+   knowledge of the unauthorized checks that Pointbreak Media, LLC wrote itself from its customers’
+
+   bank accounts.
+
+          K.        Defendant Pointbreak Media, LLC was engaged in telemarketing, as defined by the
+
+   Telemarketing Sales Rule (“TSR”), 16 C.F.R. sections 310.2(aa), (cc), and (dd).
+
+          L.        Defendant Pointbreak Media, LLC violated the TSR, 16 C.F.R. section
+
+   310.4(b)(1)(v), by initiating or causing the initiation of telemarketing calls that delivered
+
+   prerecorded messages.
+
+          M.        Defendant    Pointbreak    Media,    LLC    violated   the   TSR,    16    C.F.R.
+
+   section 310.4(b)(1)(iii)(B), by initiating or causing the initiation of telemarketing calls to
+
+   consumers whose telephone numbers were on the National Do Not Call Registry (“DNC
+
+   Registry”).
+
+          N.        Defendants Pillonato and Ramsey had authority to control, and they participated in
+
+   and had knowledge of Pointbreak Media, LLC’s unlawful telemarketing.
+
+          O.        In light of Defendants Ramsey’s and Pillonato’s conduct, their violations of prior
+
+   court orders and their operation of the Pointbreak Defendants, there is a cognizable danger that
+
+
+
+
+                                                    3
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 4 of 19
+                                                 CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+   they will continue to engage in activities in violation of the FTC Act and the TSR unless
+
+   permanently enjoined from such acts and practices.
+
+          P.      Equitable monetary relief is warranted against Defendants Ramsey and Pillonato.
+
+   The proper measure of monetary liability as to Defendants Ramsey and Pillonato is the amount of
+
+   the Pointbreak Defendants’ net revenues, which is their gross receipts minus refunds. See F.T.C.
+
+   v. Washington Data Resources, Inc., 704 F.3d 1323, 1327 (11th Cir. 2013).
+
+          Q.      The Pointbreak Defendants’ net revenues (i.e., gross revenues less chargebacks and
+
+   refunds) are at least $3,367,666.30.
+
+          R.      Defendants Pillonato and Ramsey are jointly and severally liable for equitable
+
+   monetary relief in the amount of $3,367,666.30.
+
+                                           DEFINITIONS
+
+          For purposes of this Order, the following definitions apply:
+
+          A.      “Defendants” means all of the Individual Defendants and the Corporate
+
+   Defendants, individually, collectively, or in any combination.
+
+          B.      “Individual Defendants” means Dustin Pillonato; Justin Ramsey; Aaron Michael
+
+   Jones, a/k/a Michael Aaron Jones and Mike Jones; Ricardo Diaz; Michael Pocker; Steffan Molina;
+
+   Vincent Yates; and Daniel Carver, individually, collectively, or in any combination.
+
+          C.      “Corporate Defendants” means Pointbreak Media, LLC; DCP Marketing, LLC;
+
+   Modern Spotlight LLC; Modern Spotlight Group LLC; Modern Internet Marketing LLC; Modern
+
+   Source Media, LLC; Perfect Image Online LLC; Allstar Data, LLC; National Business Listings,
+
+   LLC; and Pinnacle Presence LLC, and their successors and assigns, individually, collectively, or
+
+   in any combination.
+
+
+
+
+                                                     4
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 5 of 19
+                                                    CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+           D.      “Receiver” means Jonathan E. Perlman, Esq., who the Court appointed as Receiver
+
+   in Section XI of the Preliminary Injunction as to Defendants Dustin Pillonato; Justin Ramsey;
+
+   Aaron Michael Jones; Michael Pocker; Pointbreak Media, LLC; DCP Marketing, LLC; Modern
+
+   Spotlight LLC; Modern Spotlight Group LLC; Modern Internet Marketing LLC; and Modern
+
+   Source Media, LLC (see [ECF No. 64]); in Section XI of the Preliminary Injunction as to
+
+   Defendants Steffan Molina and Perfect Image Online LLC [ECF No. 58]; and in Section XI of the
+
+   Preliminary Injunction as to Defendants Allstar Data, LLC; National Business Listings, LLC;
+
+   Pinnacle Presence LLC; Vincent Yates; and Daniel Carver [ECF No. 169].
+
+           E.      “Remotely Created Payment Order” means any check, draft, remotely-created
+
+   check, payment instruction, or payment order, whether in written or electronic format, that is
+
+   drawn on a payor’s account, initiated or created by or on behalf of the payee, and deposited into
+
+   or cleared through the check clearing system. For purposes of this definition, an account includes
+
+   any financial account or credit or other arrangement that allows checks, payment instructions, or
+
+   orders to be drawn against it that are payable by, through, or at a bank.
+
+           F.      “Search Engine Optimization Service or Product” means any service, product,
+
+   plan, or program represented, expressly or by implication, to improve a consumer’s rankings or
+
+   visibility in search engine results or increase the quantity or quality of traffic directed to a consumer
+
+   through search engine results.
+
+           G.      “Telemarketing” means any plan, program, or campaign which is conducted to
+
+   induce the purchase of goods, services, or charitable contributions, by use of one or more
+
+   telephones, and which involves a telephone call, whether or not covered by the TSR.
+
+
+
+
+                                                      5
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 6 of 19
+                                                    CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+                                                   ORDER
+
+                                   I.      PERMANENT BAN ON TELEMARKETING
+
+          Defendants Pillonato and Ramsey, whether acting directly or through an intermediary, are
+
+   permanently restrained and enjoined from:
+
+      A. participating in Telemarketing, including by consulting, brokering, planning, or advising;
+
+          and
+
+      B. Owning or controlling, holding a managerial post in, consulting for, serving as an officer
+
+          in, having any revenue sharing agreement with, or holding any ownership interest, share,
+
+          or stock in, other than the stock of a publicly traded company, any company that
+
+          participates in Telemarketing, including by consulting, brokering, planning, or advising.
+
+                II.     PERMANENT BAN ON USING REMOTELY CREATED PAYMENT
+                           ORDERS TO DEBIT CONSUMER ACCOUNTS
+
+          Defendants Pillonato and Ramsey are permanently restrained and enjoined, whether acting
+
+   directly or through an intermediary, from debiting or attempting to debit any consumer’s bank or
+
+   financial account using a Remotely Created Payment Order.
+
+                      III.    PERMANENT BAN ON SEARCH ENGINE OPTIMIZATION
+                                    SERVICES OR PRODUCTS
+
+          Defendants Pillonato and Ramsey are permanently restrained and enjoined, whether acting
+
+   directly or through an intermediary, from advertising, marketing, promoting, offering for sale, or
+
+   selling any Search Engine Optimization Service or Product.
+
+                             IV.        PROHIBITION AGAINST MISREPRESENTATIONS
+
+          Defendants Pillonato and Ramsey; their officers, agents, servants, employees, and
+
+   attorneys; and all other persons in active concert or participation with any of the foregoing, who
+
+   receive actual notice of this Order, whether acting directly or indirectly, in connection with
+
+
+
+                                                     6
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 7 of 19
+                                                  CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+   promoting or offering for sale any good or service, are permanently restrained and enjoined from
+
+   misrepresenting or assisting others in misrepresenting, expressly or by implication:
+
+      A. that they are authorized by, or affiliated with, Google or any other individual or entity;
+
+      B. that any consumer is in danger of being removed from any internet search results or marked
+
+          closed by Google or any other individual or entity;
+
+      C. any material aspect of any refund, cancellation, exchange or repurchase policy, including
+
+          the likelihood of a consumer obtaining a full or partial refund, or the circumstances in
+
+          which a full or partial refund will be granted to the consumer; or
+
+      D. any other fact material to consumers concerning any good or service, such as: the total
+
+          costs; any material restrictions, limitations, or conditions; or any material aspect of its
+
+          performance, efficacy, nature, or central characteristics.
+
+                         V.    MONETARY JUDGMENT AS TO DEFENDANTS
+                                 PILLONATO AND RAMSEY
+
+          A.      Judgment in the amount of $3,367,666.30 is entered in favor of the Commission
+
+          and against Defendants Pillonato and Ramsey, jointly and severally, as equitable monetary
+
+          relief. Defendants Pillonato and Ramsey are ordered to pay the Commission this amount
+
+          immediately upon entry of this Order.
+
+          B.      In partial satisfaction of this judgment, Defendants Pillonato and Ramsey,
+
+          immediately upon entry of this Order, shall take all steps necessary to transfer possession,
+
+          custody, and control to the Receiver of the assets listed below.
+
+                  1.     White Gold Diamond Tennis Bracelet, 14 kit, 13.10 DWT, approx. 6.3cts,
+
+                         7.5 inches long;
+
+                  2.     Rolex 116333, Black Roman Numeral Dial;
+
+                  3.     Rolex 116334, #8N8M9651, Scramble Serial, Blue Dial;
+
+                                                    7
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 8 of 19
+                                            CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+               4.    Rolex 116523, #Y527218, 18kt, 99.80 DWT, Two Tone Rolex Dayton
+
+                     Gold Dial;
+
+               5.    3.25ct Diamond Bezel for DateJust II;
+
+               6.    Hublot 45mm Unico Model 411.NM.1170.RX;
+
+               7.    “Cartier Love Bracelet,” 276 diamonds, 4.25 cts, 18k Yellow Gold;
+
+               8.    18k Rose Gold Rolex DayDate II;
+
+               9.    Gold DayDate 2 Full Diamonds, approx 40cts;
+
+               10.   Pavé “Love Bracelet” Rose Gold, 276 Diamonds, 5.5cts;
+
+               11.   Diamond Cartier Nail Bracelet;
+
+               12.   Matching His and Hers Rose Gold “Cartier” Style Nail Bracelets;
+
+               13.   (2) Rose Gold DayDate II President Links;
+
+               14.   (2) Diamond DayDate 2 Links;
+
+               15.   Breitling A17364, #1395326, Breitling SuperOcean II;
+
+               16.   Rolex 116244/116200 Oyster, #V764119, Rolex, Silver Dial, 2008;
+
+               17.   Breitling for Bentley 6.75, White Dial;
+
+               18.   Rolex 116200, #Z131385, Rolex DateJust, Black Roman Dial, 2006;
+
+               19.   Gold Coins/Bullion: Canadian Gold Maple, 1ozt;
+
+               20.   Gold Coins/Bullion: Gold Panda, 1ozt;
+
+               21.   Gold Coins/Bullion: 1ozt 1980 Gold Maple Leaf;
+
+               22.   Gold Coins/Bullion: 1 Gold Maple Leaf, 2 Gold Pandas, 1 AGE, 1 Krugg;
+
+               23.   Breitling Super Avenger, Diamond Dial, Diamond Bezel, Diamond Lugs,
+
+                     6ct total;
+
+
+
+
+                                              8
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 9 of 19
+                                              CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+               24.   Rolex 116880, #Z9715053, Stainless Steel Rolex Yachtmaster II Model
+
+                     116680;
+
+               25.   TAG Heuer Ladies’ Link, MOP Diamond Dial with Factory Diamond
+
+                     Bezel;
+
+               26.   Breitling Super Avenger, #2167190; Breitling Super Avenger Stainless
+
+                     Steel with White Dial;
+
+               27.   Gold Coins/Bullion: (7) 1 ozt Pamp Bars;
+
+               28.   Cartier Roadster XL Chonograph;
+
+               29.   Rolex 178274, #M323508, Mid Size 31mm DJ;
+
+               30.   Rolex Deepsea Dweller, #M870981, with extra link;
+
+               31.   Rolex 326935, #G95367T0, 18kt, 169.80 DWT, Rolex 18k Rose Gold Sky-
+
+                     Dweller;
+
+               32.   Rolex 116244/116200, #V764119, Oyster, Silver Dial, 2008;
+
+               33.   SS Yachtmaster II;
+
+               34.   Panerai PAM000 #L0277/1000, Men’s Panerai Pam000, Black Dial, Brown
+
+                     Leather Strap;
+
+               35.   Rolex 116300, #Scramble, Rolex DateJust II, Black Diamond Dial with
+
+                     3.25 ctw Bead Set Diamond Bezel Set in 18kwg;
+
+               36.   Rolex 116300, #Scramble, Rolex DateJust II, Silver Arabic Dial with
+
+                     Purple Numbers, 3.25 ctw Bead Set Diamond Bezel Set in 18kwg;
+
+               37.   Men’s Two Tone 41mm Rolex DateJust Model 116333 G Serial, Slate Dial,
+
+                     with Green Roman Numerals;
+
+
+
+
+                                               9
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 10 of 19
+                                            CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+               38.   (2) 18k Yellow Gold Dog Tag Pendants with 18kwg Beaded Necklace, 40
+
+                     inches long;
+
+               39.   Hublot King Power Titanium, 48mm;
+
+               40.   Audemars Piguet Royal Oak OffShore, 44mm Carbon Ceramic;
+
+               41.   Rolex Yachtmaster II Two tone, Model 116618;
+
+               42.   Rose Gold, DayDate President, Oyster Bracelet, Factory Diamond Dial,
+
+                     36mm;
+
+               43.   New Rolex Yacht-Master II, Two Tone, Rose;
+
+               44.   Breitling A17364, #1395326, Breitling SuperOcean II;
+
+               45.   1.01ct E/SI1 GIA Certified Cushion Cut Diamond;
+
+               46.   14k White Gold Cushion shape diamond halo semi mount totaling .68cts
+
+                     for 1.01 ct GIA (6212749823) Cushion Cut Diamond;
+
+               47.   Rolex 116810LV, #063E29Q7, Green Ceramic Submariner 116610LV,
+
+                     dated Nov. 2015;
+
+               48.   Rolex 116610, X0239F623, Stainless Steel Rolex Submariner 116610,
+
+                     Black Dial/Black Bezel, with 3 extra links;
+
+               49.   18k Rose Gold Diamond Bezel for Rolex DayDate;
+
+               50.   18K White Gold Diamond Cartier Style Love Bracelet;
+
+               51.   Complete AP ROO 42mm Navy;
+
+               52.   Hublot King Power Bayern Munich FC;
+
+               53.   Breitling with Diamond Bezel; and
+
+               54.   All items that are or were possessed, owned, or held for the benefit of
+
+                     Defendants Pillonato or Ramsey, and that are or were contained in a safe.
+
+
+
+                                              10
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 11 of 19
+                                               CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+         C.     The Receiver shall liquidate all assets transferred to the Receiver pursuant to this
+
+         Order. After payment to the Receiver of any expenses approved by the Court, all proceeds
+
+         from the liquidation of those assets shall be paid to the Commission. The Receiver is
+
+         excused from the requirements of 28 U.S.C. sections 2001 and 2004 in connection with
+
+         any pending or contemplated sale by the Receiver.
+
+         D.     Any entity or person, including Pillonato and Ramsey or any financial institution
+
+         holding Defendants Pillonato and Ramsey’s assets, must transfer those assets to the
+
+         Commission or Receiver, in accordance with instructions provided by a representative of
+
+         the Commission, within seven days of receiving notice of this Order.
+
+         E.      The freeze against the assets of Defendants Pillonato and Ramsey pursuant to the
+
+         May 8, 2018 Temporary Restraining Order [ECF No. 12], the May 21, 2018 Order
+
+         Extending the Temporary Restraining Order [ECF No. 23], and the June 7, 2018
+
+         Preliminary Injunction [ECF No. 64] is modified only with respect to Defendants Pillonato
+
+         and Ramsey. Specifically, once all of Defendant Pillonato and Ramsey’s frozen assets are
+
+         transferred in accordance with Subsections A, B, and C, the asset freeze will dissolve with
+
+         respect to Defendants Pillonato and Ramsey.
+
+         F.     Defendants Ramsey and Pillonato shall take all steps necessary to assist in the
+
+         transfer of all frozen assets, including those identified in Subsections B and C. If it is
+
+         necessary to execute additional documents to transfer, liquidate, or assign Defendant
+
+         Pillonato and Ramsey’s assets or any other assets surrendered under this Order, Defendants
+
+         Pillonato and Ramsey shall execute such documents within three days of a request from a
+
+         representative of the Commission.
+
+
+
+
+                                                 11
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 12 of 19
+                                                  CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+         G.      Defendants Pillonato and Ramsey’s Taxpayer Identification Numbers (such as their
+
+         Social Security Numbers), which they previously submitted to the Commission, may be
+
+         used by the Receiver or the Commission for collecting and reporting on any delinquent
+
+         amount arising out of this Order, consistent with 31 U.S.C. section 7701.
+
+         H.      Defendants Pillonato and Ramsey are deemed to have granted to the Commission
+
+         all rights and claims they have to any assets currently in the possession, custody, or control
+
+         of the Receiver, and to any other asset of any Corporate Defendant.
+
+         I.      Defendants Pillonato and Ramsey relinquish dominion and all legal and equitable
+
+         right, title, and interest in all assets transferred under this Order and may not seek the return
+
+         of any assets.
+
+         J.      All money paid to the Commission under this Order may be deposited into a fund
+
+         administered by the Commission or its designee to be used for equitable relief, including
+
+         consumer redress and any attendant expenses for the administration of any redress fund. If
+
+         a representative of the Commission decides that direct redress to consumers is wholly or
+
+         partially impracticable or money remains after redress is completed, the Commission may
+
+         apply any remaining money for such other equitable relief (including consumer
+
+         information remedies) as it determines to be reasonably related to Defendants’ practices
+
+         alleged in the First Amended Complaint. Any money not used for such equitable relief is
+
+         to be deposited to the United States Treasury as disgorgement. Defendants Pillonato and
+
+         Ramsey have no right to challenge any actions the Commission or its representatives may
+
+         take pursuant to this Subsection.
+
+
+
+
+                                                    12
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 13 of 19
+                                                  CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+                                      VI.   CUSTOMER INFORMATION
+
+          Defendants Pillonato and Ramey; their officers, agents, employees, and attorneys; and all
+
+   other persons in active concert or participation with any of the foregoing, who receive actual notice
+
+   of this Order, whether acting directly or indirectly, are hereby ordered to:
+
+          A.         provide sufficient customer information to enable the Commission to efficiently
+
+          administer consumer redress. If a representative of the Commission requests in writing
+
+          any information related to redress, Defendants Pillonato and Ramsey must provide it, in
+
+          the form prescribed by the Commission, within 14 days.
+
+          B.         not disclose, use, or benefit from customer information, including the name,
+
+          address, telephone number, email address, social security number, other identifying
+
+          information, or any data that enables access to a customer’s account (including a credit
+
+          card, bank account, or other financial account), that any Defendant obtained or used prior
+
+          to entry of this Order in connection with the marketing and sale of Google “claiming and
+
+          verification” and search engine optimization services;
+
+          C.         destroy such customer information in all forms in their possession, custody, or
+
+          control within 30 days after receipt of written direction to do so from a representative of
+
+          the Commission.
+
+          Provided, however, that Pillonato and Ramsey need not dispose of customer information
+
+   and may disclose it, to the extent requested by a government agency or required by law, regulation,
+
+   or court order.
+
+                                    VII. ORDER ACKNOWLEDGMENTS
+
+          Defendants Pillonato and Ramsey must each obtain acknowledgments of receipt of this
+
+   Order, as set forth below:
+
+
+
+                                                    13
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 14 of 19
+                                                 CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+          A.     Defendants Pillonato and Ramsey, within seven days of entry of this Order, must
+
+          each submit to the Commission an acknowledgment of receipt of this Order sworn under
+
+          penalty of perjury.
+
+          B.     For 10 years after entry of this Order, Defendants Pillonato and Ramsey, for any
+
+          business that either of them, individually or collectively with each other or any other
+
+          Defendant, is the majority owner or controls directly or indirectly, must deliver a copy of
+
+          this Order to: (1) all principals, officers, directors, and LLC managers and members; (2)
+
+          all employees having managerial responsibilities for conduct related to the subject matter
+
+          of the Order and all agents and representatives who participate in conduct related to the
+
+          subject matter of the Order; and (3) any business entity resulting from any change in
+
+          structure as set forth in Section VIII (Compliance Reporting). Defendants Pillonato and
+
+          Ramsey must deliver a copy of this Order to current personnel within 7 days of entry of
+
+          this Order. For all others, Defendants Pillonato and Ramsey must make delivery before
+
+          those individuals assume their responsibilities.
+
+          C.     From each individual or entity to which Defendants Pillonato or Ramsey delivered
+
+          a copy of this Order, that Defendant must obtain, within 30 days, a signed and dated
+
+          acknowledgment of receipt of this Order.
+
+                                    VIII. COMPLIANCE REPORTING
+
+          Defendants Pillonato and Ramsey shall each make timely submissions to the Commission
+
+   as follows:
+
+          A.     One year after entry of this Order, Defendants Pillonato and Ramsey must each
+
+          submit a compliance report, sworn under penalty of perjury. The compliance report must:
+
+
+
+
+                                                   14
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 15 of 19
+                                               CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+               1.      identify all telephone numbers and all physical, postal, email and Internet
+
+               addresses, including all residences, of the Defendant submitting the report;
+
+               2.      identify all business activities, including any business for which the
+
+               Defendant submitting the report performs services, whether as an employee or
+
+               otherwise, and identify any entity in which such Defendant has any ownership
+
+               interest;
+
+               3.      describe in detail that Defendant’s involvement in each business, including
+
+               title, role, responsibilities, participation, authority, control, and any ownership;
+
+               4.      identify the Defendant’s primary physical, postal, and email address and
+
+               telephone number, as designated points of contact, which representatives of the
+
+               Commission may use to communicate with the Defendant submitting the report;
+
+               5.      identify that Defendant’s businesses by all their names, telephone numbers,
+
+               and physical, postal, email, and Internet addresses;
+
+               6.      describe the activities of each business, including the goods and services
+
+               offered, the means of advertising, marketing, and sales, and the involvement of any
+
+               other Defendant in this lawsuit (which the Defendant submitting the report must
+
+               describe if he knows or should know due to his own involvement);
+
+               7.      describe in detail whether and how the Defendant submitting the report is
+
+               in compliance with each Section of this Order; and
+
+               8.      provide a copy of each Order Acknowledgment obtained pursuant to this
+
+               Order, unless previously submitted to the Commission.
+
+
+
+
+                                                 15
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 16 of 19
+                                                 CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+         B.     For 20 years after entry of this Order, Defendants Pillonato and Ramsey must each
+
+         submit a compliance notice, sworn under penalty of perjury, within 14 days of any change
+
+         in the following:
+
+                1.       his name, including aliases or fictitious names or his residence address;
+
+                2.       his title or role in any business activity, including any business for which he
+
+                performs services whether as an employee or otherwise, and any entity in which he
+
+                has any ownership interest, and identify the name, physical address, and any
+
+                Internet address of the business or entity;
+
+                3.       any designated point of contact; and
+
+                4.       the structure of any entity that he has any ownership interest in or controls
+
+                directly or indirectly that may affect compliance obligations arising under this
+
+                Order, including: the creation, merger, sale, or dissolution of the entity or any
+
+                subsidiary, parent, or affiliate that engages in any acts or practices subject to this
+
+                Order.
+
+         C.     Defendants Pillonato and Ramsey each must submit to the Commission notice of
+
+         the filing of any bankruptcy petition, insolvency proceeding, or similar proceeding by or
+
+         against him within 14 days of its filing.
+
+         D.     Any submission to the Commission required by this Order to be sworn under
+
+         penalty of perjury must be true and accurate and comply with 28 U.S.C. section 1746, such
+
+         as by concluding: “I declare under penalty of perjury under the laws of the United States
+
+         of America that the foregoing is true and correct,” and supplying the date, signatory’s full
+
+         name, title (if applicable), and signature.
+
+
+
+
+                                                     16
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 17 of 19
+                                                   CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+          E.         Unless otherwise directed by a Commission representative in writing, all
+
+          submissions to the Commission pursuant to this Order must be emailed to DEbrief@ftc.gov
+
+          or sent by overnight courier (not the United States Postal Service) to: Associate Director
+
+          for Enforcement, Bureau of Consumer Protection, Federal Trade Commission, 600
+
+          Pennsylvania Avenue NW, Washington, DC 20580. The subject line must begin: FTC v.
+
+          Pointbreak Media, X180031.
+
+                                            IX.   RECORDKEEPING
+
+          Defendants Pillonato and Ramsey shall each create certain records for 20 years after entry
+
+   of the Order and retain each such records for a five year period. Specifically, for any business that
+
+   Defendants Pillonato or Ramsey, individually or collectively with each other or any other
+
+   Defendants, is a majority owner or controls directly or indirectly, he must create and retain the
+
+   following records:
+
+          A.         accounting records showing the revenues from all goods or services sold;
+
+          B.         personnel records showing, for each person providing services, whether as an
+
+          employee or otherwise, that person’s: name; addresses; telephone numbers; job title or
+
+          position; dates of service; and (if applicable) the reason for termination;
+
+          C.         records of all consumer complaints and refund requests, whether received directly
+
+          or indirectly, such as through a third party, and any response;
+
+          D.         all records necessary to demonstrate full compliance with each provision of this
+
+          Order, including all submissions to the Commission; and
+
+          E.         a copy of each unique advertisement or other marketing material, including sales
+
+          scripts.
+
+
+
+
+                                                    17
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 18 of 19
+                                                  CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+                                    X.    COMPLIANCE MONITORING
+
+          For the purpose of monitoring Defendants Pillonato and Ramsey’s compliance with this
+
+   Order, including any failure to transfer any assets as required by this Order:
+
+          A.      Within 14 days of receipt of a written request from a representative of the
+
+          Commission, Defendants Pillonato and Ramsey must each: (i) submit additional
+
+          compliance reports or other requested information, which must be sworn under penalty of
+
+          perjury; (ii) appear for depositions; and (iii) produce documents for inspection and copying.
+
+          The Commission is also authorized to obtain discovery, without further leave of court,
+
+          using any of the procedures prescribed by Federal Rules of Civil Procedure 29, 30
+
+          (including telephonic depositions), 31, 33, 34, 36, 45, and 69. Notwithstanding the
+
+          provisions of Local Rule 26.1(i), the Commission is not required to provide notice to
+
+          Defendants Pillonato or Ramsey of, or make available for inspection by Defendants
+
+          Pillonato or Ramsey, any objections, documents, electronically stored information, or
+
+          things received in response to a subpoena.
+
+          B.       For matters concerning this Order, the Commission is authorized to communicate
+
+          directly with Defendants Pillonato and Ramsey. Defendants Pillonato and Ramsey each
+
+          must permit representatives of the Commission to interview any employee or other person
+
+          affiliated with him who has agreed to such an interview. The person interviewed may have
+
+          counsel present.
+
+          C.      The Commission may use all other lawful means to enforce this Order, including
+
+          posing, through its representatives, as consumers, suppliers, or other individuals or entities,
+
+          to Defendants Pillonato and Ramsey or any individual or entity affiliated with any of them,
+
+          without the necessity of identification or prior notice. Nothing in this Order limits the
+
+
+
+                                                    18
+Case 0:18-cv-61017-CMA Document 266 Entered on FLSD Docket 04/25/2019 Page 19 of 19
+                                                 CASE NO. 18-61017-CIV-ALTONAGA/McAliley
+
+
+          Commission’s lawful use of compulsory process, under sections 9 and 20 of the FTC Act,
+
+          15 U.S.C. sections 49, 57b-1.
+
+          D.      Upon written request from a representative of the Commission, any consumer
+
+          reporting agency must furnish consumer reports concerning Defendants Pillonato and
+
+          Ramsey, under the Fair Credit Reporting Act, 15 U.S.C. section 1681b(a)(1).
+
+                                      XI.   RETENTION OF JURISDICTION
+
+          The Court retains jurisdiction of this matter for purposes of construction, modification, and
+
+   enforcement of this Order.
+
+          DONE AND ORDERED in Miami, Florida, this 25th day of April, 2019.
+
+
+
+                                                        ____________________________________
+                                                        CECILIA M. ALTONAGA
+                                                        UNITED STATES DISTRICT JUDGE
+
+   cc:    counsel of record
+          Justin Ramsey (pro se)
+          Dustin Pillonato (pro se)
+
+
+
+
+                                                   19
+

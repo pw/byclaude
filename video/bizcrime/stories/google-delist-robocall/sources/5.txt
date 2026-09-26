@@ -1,0 +1,1664 @@
+https://www.ftc.gov/system/files/documents/cases/matter_1723182_pointbreak_complaint.pdf
+fetched 2026-09-26 (curl, browser UA, HTTP 200)
+
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 1 of 31
+
+
+
+
+                             UNITED STATES DISTRICT COURT
+                         FOR THE SOUTHERN DISTRICT OF FLORIDA
+
+                                     CASE NO. -18-cv-61017
+                                                ----
+                                                                      Altonaga
+
+  FEDERAL TRADE COMMISSION,                                              FILED BY
+
+
+            Plaintiff,
+                                                                                MAY - 7 2018
+                                                                               STEVEN M LARIMORE
+                                                                                CLERK U.S. DIST. CT.
+       V.                                                                      S.D. OF FLA. FT LAUD.
+
+
+  POINTBREAK MEDIA, LLC, a limited liability company,
+  also d/b/a Point Break Media, Point Break Solutions, and
+  Kivanni Marketing,
+
+  DCP MARKETING, LLC, a limited liability company, also          COMPLAINT FOR
+  d/b/a Point Break,                                             PERMANENT INJUNCTION
+                                                                 AND OTHER EQUITABLE
+  MODERN SPOTLIGHT LLC, a limited liability company,             RELIEF
+
+  MODERN SPOTLIGHT GROUP LLC, a limited liability                Filed Under Seal
+  company, also d/b/a Modern Spotlight,
+
+  MODERN INTERNET MARKETING LLC, a limited
+  liability company,
+
+  MODERN SOURCE MEDIA, LLC, a limited liability
+  company, also d/b/a Modern Source,
+
+  PERFECT IMAGE ONLINE LLC, a limited liability
+  company,
+
+  DUSTIN PILLONATO, individually and as an officer of
+  Pointbreak Media, LLC, DCP Marketing, LLC, and Modern
+  Source Media, LLC,
+
+  JUSTIN RAMSEY, individually and as an officer of
+  Pointbreak Media, LLC,
+
+  AARON MICHAEL JONES, a/k/a Michael Aaron Jones
+  and Mike Jones, individually and as an officer of Pointbreak
+  Media, LLC,
+
+  RICARDO DIAZ, individually and as an officer of
+  Pointbreak Media, LLC,
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 2 of 31
+
+
+
+
+   MICHAEL POCKER, individually and as an officer of
+   Modem Spotlight LLC and Modem Spotlight Group LLC,
+
+   STEFFAN MOLINA, individually and as an officer of
+   Modem Spotlight Group LLC and Perfect Image Online
+   LLC,
+
+              Defendants.
+
+
+
+
+              Plaintiff, the Federal Trade Commission ("FTC" or "Commission"), for its Complaint
+
+   alleges:
+
+              1.     The FTC brings this action under Section 13(b) of the Federal Trade Commission
+
+   Act ("FTC Act"), 15 U.S.C. § 53(b), to obtain temporary, preliminary, and permanent injunctive
+
+   relief, rescission or reformation of contracts, restitution, the refund of monies paid, disgorgement
+
+   of ill-gotten monies, and other equitable relief for Defendants' acts or practices in violation of
+
+   Section 5(a) of the FTC Act, 15 U.S.C. § 45(a).
+
+                                      JURISDICTION AND VENUE
+
+              2.     This Court has subject matter jurisdiction pursuant to 28 U.S.C. §§ 1331, 1337(a),
+
+   and 1345, and 15 U.S.C. §§ 45(a) and 53(b).
+
+              3.     Venue is proper in this district under 28 U.S.C. § 1391(b)(2-3), (d) and 15 U.S.C.
+
+   § 53(b).
+
+                                                PLAINTIFF
+
+              4.     The FTC is an independent agency of the United States Government created by
+
+  statute. 15 U.S.C. §§ 41-58. The FTC enforces Section 5(a) of the FTC Act, 15 U.S.C. § 45(a),
+
+  which prohibits unfair or deceptive acts or practices in or affecting commerce.
+
+              5.     The FTC is authorized to initiate federal district court proceedings, by its own
+
+   attorneys, to enjoin violations of the FTC Act, and to secure such equitable relief as may be
+
+                                                 Page 2 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 3 of 31
+
+
+
+
+  appropriate in each case, including rescission or reformation of contracts, restitution, the refund
+
+  of monies paid, and the disgorgement of ill-gotten monies. 15 U.S.C. §§ 53(b), 56(a)(2)(A).
+
+                                           DEFENDANTS
+
+         6.        Defendant Pointbreak Media, LLC ("Point Break"), also doing business as Point
+
+  Break Media, Point Break Solutions, and Kivanni Marketing, is a Delaware limited liability
+
+  company with its principal place of business in Boca Raton or Deerfield Beach, Florida. Point
+
+  Break transacts or has transacted business in this district and throughout the United States.
+
+         7.        Defendant DCP Marketing, LLC ("DCP Marketing"), also doing business as
+
+  Point Break, is a Florida limited liability company with its principal place of business in Boca
+
+  Raton, Deerfield Beach, or Lake Worth, Florida. DCP Marketing transacts or has transacted
+
+  business in this district and throughout the United States.
+
+          8.       Defendant Modem Spotlight LLC ("Modem Spotlight") is a Florida limited
+
+  liability company with its principal place of business in Boca Raton -0r Deerfield Beach, Florida.
+
+  Modem Spotlight LLC transacts or has transacted business in this district and throughout the
+
+  United States.
+
+         9.        Defendant Modem Spotlight Group LLC ("Modern Spotlight Group"), also doing
+
+  business as Modern Spotlight, is a Florida limited liability company with its principal place of
+
+  business in Boca Raton or Deerfield Beach, Florida. Modern Spotlight Group transacts or has
+
+  transacted business in this district and throughout the United States.
+
+          I 0.     Defendant Modern Source Media, LLC ("Modern Source"), also doing business
+
+  as Modem Source, is a Florida limited liability company with its principal place of business in
+
+  Boca Raton or Deerfield Beach, Florida. Modern Source transacts or has transacted business in
+
+  this district and throughout the United States.
+
+
+
+                                              Page 3 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 4 of 31
+
+
+
+
+            11.   Defendant Modem Internet Marketing LLC ("Modem Internet Marketing") is a
+
+  Florida limited liability company with its principal place of business in Boca Raton or Deerfield
+
+  Beach, Florida. Modem Internet Marketing transacts or has transacted business in this district
+
+  and throughout the United States.
+
+            12.   Defendant Perfect Image Online LLC .("Perfect Image Online") is a Florida
+
+  limited liability company with its principal place of business in Boca Raton or Deerfield Beach,
+
+  Florida. Perfect Image Online transacts or has transacted business in this district and throughout
+
+  the United States.
+
+            13.   Defendant Dustin Pillonato ("Pillonato") is an owner and manager of Point Break,
+
+  DCP Marketing, and Modem Source. At times material to this Complaint, acting alone or in
+
+  concert with others, he has formulated, directed, controlled, had the authority to control, or
+
+  participated in the acts and practices set forth in this Complaint. Pillonato resides in West Palm
+
+  Beach, Florida and, in connection with the matters alleged herein, transacts or has transacted
+
+  business in this district and throughout the United States.
+
+            14.   Defendant Justin Ramsey ("Ramsey") is an owner and manager of Point Break.
+
+  At times material to this Complaint, acting alone or in concert with others, he has formulated,
+
+  directed, controlled, had the authority to control, or participated in the acts and practices set forth
+
+  in this Complaint. Ramsey resides in Boca Raton, Florida and, in connection with the matters
+
+  alleged herein, transacts or has transacted business in this district and throughout the United
+
+  States.
+
+            15.   Defendant Aaron Michael Jones ("Jones") is an owner and manager of Point
+
+  Break. At times material to this Complaint, acting alone or in concert with others, he has
+
+  formulated, directed, controlled, had the authority to control, or participated in the acts and
+
+
+
+                                               Page 4 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 5 of 31
+
+
+
+
+  practices set forth in this Complaint. Jones resides in Irvine, California and, in connection with
+
+  the matters alleged herein, transacts or has transacted business in this district and throughout the
+
+  United States.
+
+          16.      Defendant Ricardo Diaz ("Diaz") is an owner and manager of Point Break. Diaz
+
+  also served as treasurer of Point Break. At times material to this Complaint, acting alone or in
+
+  concert with others, he has formulated, directed, controlled, had the authority to control, or
+
+  participated in the acts and practices set forth in this Complaint. Diaz resides in Cranston, Rhode
+
+  Island and, at times material to this complaint, resided in Miramar, Florida. In connection with
+
+  the matters alleged herein, Diaz transacts or has transacted business in this district and
+
+  throughout the United States.
+
+          17. ·    Defendant Michael Pocker ("Pocker") is an owner and manager of Modem
+
+   Spotlight and Modem Spotlight Group. At times material to this Complaint, acting alone or in
+
+  concert with others, he has formulated, directed, controlled, had the authority to control, or
+
+  participated in the acts and practices set forth in this Complaint. Pocker resides in Boca Raton,
+
+  Florida and, in connection with the matters alleged herein, transacts or has transacted business in
+
+  this district and throughout the United States.
+
+          18.      Defendant Steffan Molina ("Molina") is an owner and manager of Modem
+
+  Spotlight Group and Perfect Image Online. Acting alone or in concert with others, he has
+
+  formulated, directed, controlled, had the authority to control, or participated in the acts and
+
+  practices set forth in this Complaint. Molina resides in Boca Raton, Florida and, in connection
+
+  with the matters alleged herein, transacts or has transacted business in this district and
+
+  throughout the United States.
+
+
+
+
+                                              Page 5 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 6 of 31
+
+
+
+
+                                     COMMON ENTERPRISE
+
+          19.    Defendants Pointbreak Media, LLC, DCP Marketing, LLC, Modern Spotlight
+
+  LLC, Modern Spotlight Group LLC, Modern Internet Marketing LLC, Modern Source Media,
+
+  LLC, and Perfect Image Online LLC (collectively, "Corporate Defendants") have operated as a
+
+  common enterprise while engaging in the acts and practices alleged below. As described in more
+
+  detail in paragraphs 88-167, Corporate Defendants have conducted these acts and practices
+
+  through a maze of interrelated companies under common or overlapping control, with common
+
+  employees, in shared office space, and with commingled funds.
+
+         20.     Because these Corporate Defendants have operated as a common enterprise, each
+
+  is jointly and severally liable for the acts and practices alleged below. Defendants Pillonato,
+
+  Ramsey, Jones, Diaz, Pocker, and Molina (collectively, the "Individual Defendants") have
+
+  formulated, directed, controlled, had the authority to control, or participated in the acts and
+
+  practices of the Corporate Defendants that constitute the common enterprise. The Individual
+
+  Defendants each had knowledge of the unlawful acts and practices of the Corporate Defendants
+
+  that constitute the common enterprise.
+
+                                            COMMERCE
+
+         21.     At all times material to this Complaint, the Defendants have maintained a
+
+  substantial course of trade in or affecting commerce, as "commerce" is defined in Section 4 of
+
+  the FTC Act, 15 U.S.C. § 44.
+
+                            DEFENDANTS' BUSINESS ACTIVITIES
+
+                                               Overview
+
+         22.     As described in more detail in paragraphs 28-74, Defendants operate a
+
+  telemarketing scam in which they target small business owners with false threats of removal
+
+
+
+                                              Page 6 of31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 7 of 31
+
+
+
+
+  from Google's search engine and false promises of unique keywords in order to convince them
+
+  to purchase a Google "claiming and verification" service. Defendants explain that keywords are
+
+  search terms for which the consumer's business will appear prominently in search results.
+
+  Defendants charge $300-$700 for the claiming and verification service.
+
+         23.     Defendants also target each paying consumer with an upsell that falsely promises
+
+  that the consumer's business will receive first-page placement in Google search results.
+
+  Defendants charge a flat fee.of $949.99 and an additional monthly recurring charge of$169.99
+
+  or $99.99 for these search engine optimization services.
+
+         24.     In late October 2017, when Defendants lost the ability to process credit card
+
+  transactions, they wrote themselves $100 checks from at least 250 consumers' bank accounts
+
+  without those consumers' knowledge or authorization.
+
+                                         Google My Business
+
+         25.     Defendants' initial sales pitch relates to Google's "Google My Business" service.
+
+  Google My Business allows business owners to manage their business listings, including
+
+  updating their business information (such as hours of operation and address), adding
+
+  photographs, and responding to reviews.
+
+         26.     A business owner gains control of his or her Google My Business listing by either
+
+  claiming a preexisting listing or creating a new listing and then verifying that he or she is
+
+  authorized to manage the business. The owner usually verifies his or her authority to manage the
+
+  business by providing a verification code that Google mails to the business address. Claiming
+
+  the business takes no more than 15 minutes, and verifying it after receipt of the code takes no
+
+  more than three minutes.
+
+
+
+
+                                              Page 7 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 8 of 31
+
+
+
+
+          27.    Google does not charge business owners for claiming and verifying their business
+
+  listings, and the process does not involve identifying or claiming "keywords." Claiming and
+
+  verifying a business with Google does not guarantee first-page placement in search results.
+
+                   Defendants Target Consumers With Threatening Robocalls
+
+          28.    Since November 2016 at the latest, Defendants have placed threatening robocalls
+
+  to small business owners and other consumers, in an effort to induce them to "press one" to
+
+  speak to a live sales agent. Many consumers receive multiple robocalls daily from Defendants.
+
+          29.    On these robocalls, Defendants deliver recorded messages frequently claiming to
+
+  be authorized by Google. The calls threaten that Google will label the consumer's business
+
+  "permanently closed" unless the consumer takes action. The robocalls then invite the consumer
+
+  to "press one" to speak with a "Google specialist."
+
+          30.    One robocall, frequently used while Defendants operated as Point Break, states in
+
+  full:
+
+                        Hi, this is Jennifer Taylor, data service provider for Google and
+                        Bing. This is an urgent message for the business owner. We have
+                        tried numerous times to contact you through mail and now by
+                        telephone regarding your Google listing webpage. This is your
+                        final notice. If you do not act soon, Google will label your
+                        business as permanently closed. Press one now to speak with me
+                        or another Google specialist.
+
+                        Did you know that 74 percent of your customers search online
+                        before making a purchase? If your Google listing is shut down,
+                        you will lose on all of those potential customers. It is critical that
+                        you, the business owner, take advantage of this rare opportunity to
+                        get ahead of your competition. Press one now to find out how to
+                        validate your free Google listing.
+
+                        This message applies to all business owners. If you are the
+                        business owner, press one now. Press two if this is not a business
+                        or you would like to be removed from our calling list.
+
+
+
+
+                                            Page 8 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 9 of 31
+
+
+
+
+          31.    Another robocall, frequently used while Defendants operated as Modem
+
+  Spotlight Group, states in full:
+
+                         Your Google Business listing may be inactive. Immediate action
+                         is required.
+
+                         Please press one to speak with a representative and avoid being
+                         removed from Google.
+
+                         Please press eight to be removed from this list.
+
+          32.    A third robocall, also used while Defendants operated as Point Break, states in
+
+  full:
+
+                         Hi, this is Jonathan Smith, third party service provider for Google
+                         and Bing. This is an urgent message for the business owner. We
+                         have tried numerous times to contact you by telephone regarding
+                         your Google listing webpage. Press one now to speak with me or
+                         another listing specialist.
+
+                         Did you know that up to 74 percent of your customers could search
+                         online before making a purchase? It is critical that you, the
+                         business owner, take advantage of this rare opportunity to get
+                         ahead of your competition. Press one now to find out how to
+                         validate your listing.
+
+                         This message applies to all business owners. If you are the
+                         business owner, press one now, or press two if this is not a
+                         business or you would like your number to be removed from the
+                         calling list. Thank you.
+
+          33.    These robocalls and others used by Defendants contain numerous false or
+
+  misleading statements.
+
+          34.    The Defendants are not "service providers" for Google and have no affiliation
+
+  with or authorization from the company.
+
+          35.     Additionally, the small businesses called by Defendants face no real risk of being
+
+  removed from Google search results. Google does not label a business as permanently closed or
+
+
+
+
+                                             Page 9 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 10 of 31
+
+
+
+
+   "remove" it from ~earch results simply because the business's owner has not claimed and
+
+   verified the business.
+
+          36.     Moreover, Defendants place their robocalls to many business owners who have,
+
+   in fact, already claimed and verified their businesses through Google My Business.
+
+          37.     Although Defendants' robocalls present a "press two" or "press eight" option to
+
+   be removed from the Defendants' calling list, Defendants do not remove consumers who press
+
+   two or eight from their call lists. Defendants continue to call these consumers several times daily
+
+   or weekly.
+
+          Defendants' Sales Agents Use False Statements to Sell Google Listing Services
+
+          38.     Defendants transfer consumers who press one in response to the robocalls to a
+
+   live sales agent. The agent uses a script to lead these consumers through a sales pitch in which
+
+   he or she claims that (1) Defendants are authorized by, or affiliated with, Google; (2) the
+
+   consumer needs to pay Defendants to claim and verify the consumer's business in order to avoid
+
+   having the business removed from, or marked permanently closed by, Google; and (3) paying
+
+   Defendants will allow the consumer to link certain "keywords" to the consumer's Google listing,
+
+   resulting in prominent search result placement in response to searches for those keywords.
+
+          39.     These claims are all false or misleading.
+
+          40.     Defendants Ramsey and Pillonato drafted the script used by Point Break's sales
+
+   agents. Modern Spotlight Group and Perfect Image Online continue to use a similar script that
+
+   features the same three misrepresentations.
+
+                       Defendants' Claims of Google Authorization or Affiliation
+
+          41.     On many calls, Defendants' sales agents expressly tell consumers that they work
+
+   for Google.
+
+
+
+                                             Page 10 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 11 of 31
+
+
+
+
+          42.     On other calls, Defendants' sales agents admit to working for one of the
+
+   Corporate Defendants rather than Google, but call their employer an "authorized Google My
+
+   Business agency" or a contractor for Google.
+
+          43.     For example, on one call recorded by a consumer, one of Defendants' sales agents
+
+   twice identified Defendant Modem Spotlight Group as "an authorized Google My Business
+
+   agency," later adding that Google had authorized Modem Spotlight Group to "claim and verify
+
+   Google business listings."
+
+          44.     A different sales agent made the same representation on a call with an undercover
+
+   FTC investigator, identifying Modem Spotlight Group as an "authorized Google - Google My
+
+   Business agency." The agent claimed that Google had "contract[ed] out" with Modem Spotlight
+
+   Group. Later on the same call, a different sales agent identified hims~lf as a "senior authorized
+
+   Google My Business representative" and again identified Modem Spotlight Group as an
+
+   "authorized Google My Business agency."
+
+          45.     On another call recorded by a consumer, one of Defendants' sales agents
+
+   explained that Point Break is "like the umbrella under Google." On yet another call recorded by
+
+   a different consumer, a sales agent from Point Break claimed, "We work directly parallel with
+
+   Google .... Google Corporate ... , they would reach out to like Walmart, Costco, Target,
+
+   Starbucks, because they have multiple locations in just one distinctive area. That's why they
+
+   have companies like us to reach out to small to medium size companies."
+
+          46.     Even when Defendants' sales agents do not affirmatively claim that one of the
+
+   Corporate Defendants is an "authorized Google My Business agency," they fail to correct the
+
+   misrepresentation made on many of the immediately preceding robocalls that the caller is a
+
+   "service provider for Google." Instead, for example, the script drafted by Ramsey and Pillonato
+
+
+
+                                             Page 11 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 12 of 31
+
+
+
+
+   builds on the robocall's misrepresentation by directing the sales agents to start the call by
+
+   declaring themselves "here to assist you with your Google listing" and stating that "our system"
+
+   "shows your Google Listing (for name of company) has not been claimed or verified." The
+
+   script directs Defendants' sales agents only to identify their employer if directly asked.
+
+          47.     Defendants' claims described in paragraphs 41-46 are false.
+
+          48.     Google has not authorized any of the Defendants to act on its behalf, and Google
+
+   is in no way affiliated with any of the Defendants. Google has not contracted with Defendants to
+
+   claim and verify Google listings. Google also does not approve, sponsor, or endorse the
+
+   Defendants' services.
+
+                             Defendants' Threats ofRemoval from Google
+
+          49.     Defendants' sales agents usually start their sales calls by claiming that the
+
+   consumer's Google business listing "has not been claimed or verified."
+
+          50.     The sales agents proceed to state that because the consumer has not claimed and
+
+   verified his or her business, the business "run[s] the risk of possibly being removed from the
+
+   search engine or pushed so far down the search engine that no one will find you."
+
+          51.     Defendants' sales agents then offer to help consumers avoid removal from Google
+
+  by claiming and verifying the consumer's Google business listing on the consumer's behalf.
+
+          52.     When consumers attempt to decline Defendants' services, the sales agents
+
+  frequently return to threats of removal from Google. For example, when an undercover FTC
+
+  investigator asked what would happen if she did not pay Defendant Point Break's fee, the agent
+
+  replied, "Well, ma'am, then you are going to be running the risk of possibly being removed from
+
+  Google. Google did give you a designated time slot to verify your business with them and you
+
+
+
+
+                                              Page 12 of31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 13 of 31
+
+
+
+
+   did not meet that." When the investigator nevertheless declined, the agent replied, "Have fun
+
+   being removed from the Internet" and hung up.
+
+          53.        On another undercover call with Defendant Modem Spotlight Group, an FTC
+
+   undercover investigator confirmed, "[I]f I don't claim and verify, do I get removed from Google?
+
+   Is that how this works?" The agent replied, "Yes." The agent then proceeded to claim that,
+
+   "You actually have the basic listing .... It's a basic listing that Google gave to every business
+
+   five years ago. It's a simple name, address, and phone number listing. But right now, as the
+
+   owner, it is your job to have the listing claimed and verified, marked as a trusted, open-for­
+
+   business company because you guys are at risk of being removed because you're showing up
+
+   improperly."
+
+          54.        Similarly, the script drafted by Ramsey and Pillonato for Point Break states, "Four
+
+   years ago Google gave every business in the United States a Google Plus Page in hopes that
+
+   businesses would claim and verify themselves."
+
+          55.        Defendants' claims described in paragraphs 49-54 are false.
+
+          56.        Google does not "remove" a business from the search engine simply because the
+
+   business owner has not claimed and verified it.
+
+          57.        In fact, unclaimed business listings often appear in Google search results.
+
+          58.        Defendants also claim that consumers' businesses are not claimed and verified
+
+   even when that statement is untrue.
+
+          59.        Google did not give "every business" a "basic listing" or a "Google Plus Page"
+
+   five years ago.
+
+
+
+
+                                                Page 13 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 14 of 31
+
+
+
+
+              Defendants' Promises of Unique Keywords Linked to the Consumer's Business
+
+          60.      After making their threats of removal from Google, Defendants' sales agents
+
+   pivot to offering the consumer certain "keywords" as part of the claiming and verification
+
+   process.
+
+          61.      The Point Break script directs agents to explain that "[p]art of the claiming and
+
+   verification process is registering your keywords, so you come up prominently when someone is
+
+   searching for your goods and services."
+
+          62.       Defendants' sales agents tell consumers that their businesses will appear on the
+
+   first page of search results when potential customers search on Google for the keywords.
+
+          63.      On some calls, Defendants' sales agents promise consumers that these keywords
+
+   will be unique to the consumers' business, such that no other business can use them.
+
+          64.      For example, on one call recorded by a consumer, Point Break's sales agent stated
+
+   that the business owner would get "a list of keywords that nobody else can use in the world
+
+   because they are your keywords." When the consumer sought to confirm that "nobody else can
+
+   use the [keywords]," the agent responded, "Yes, sir, no one else can use them."
+
+          65.      Similarly, an undercover FTC investigator asked, "[W]ith the service I guess the
+
+   keywords are-are specifically for my business and no one else can use the keywords[?]" Point
+
+   Break's sales agent confirmed that this was correct.
+
+          66.      Defendants' claims described in paragraphs 60-65 are false.
+
+          67.      Defendants do not register or claim any keywords for consumers with Google,
+
+   much less "unique" keywords.
+
+          68.      In fact, Google does not provide the option to "register," or claim, "keywords" as
+
+   part of the Google My Business claiming and verification process.
+
+
+
+                                              Page 14 of31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 15 of 31
+
+
+
+
+            69.    Consumers who have signed up for Defendants' services see no change in their
+
+   search results, even when searching for the keywords that Defendants claim to have registered
+
+   for them.
+
+            70.    After this sales pitch, Defendants' sales agents tell consumers that there is a
+
+   purported one-time fee for the claiming and verification "services" offered by Defendants. That
+
+   fee generally ranges from $300-700. If consumers ask earlier in the call whether there will be a
+
+   cost, the sales agent sometimes tells the consumer that he or she is not yet sure. Other times, the
+
+   sales agent does not provide a specific cost, and instead claims that a computer will generate a
+
+   fee that depends on the consumer's industry and location.
+
+            71.    Consumers who sign up for Defendants' services provide either their credit card
+
+   or checking account information to Defendants.
+
+            72.    When a consumer provides checking account information, Defendants generate a
+
+   remotely created check that draws on the consumer's account.
+
+            73.    A remotely created check is processed through the banking system much like a
+
+   traditional check, but without a consumer's signature, instead bearing a statement such as
+
+   "Authorized by Account Holder." The check is created by the payee-here, one of the
+
+   Corporate Defendants-rather than the individual or business on whose account the check is
+
+   drawn.
+
+            74.   · After paying Corporate Defendants, some consumers receive a contract that
+
+   Defendants' sales agents ask them to sign electronically. In the contract, Corporate Defendants
+
+   promise to "build out the Google Maps link, a Google Plus page and a Google my Business
+
+   listing" and to "use specific keywords and/or phrases set forth to impose the above business [sic]
+
+   online visibility on Google." The contract does not set forth any keywords or phrases.
+
+
+
+                                              Page 15 of31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 16 of 31
+
+
+
+
+                       Defendants Upsell Consumers on a "Citation Program"
+
+           75.    Shortly after making the initial payment, consumers receive an email or phone
+
+   call from a "senior business analyst" working for one of the Corporate Defendants, typically
+
+   either Point Break or Modem Source. The analyst claims he or she was assigned to the
+
+   consumer's new Google listing and is calling to finalize the business listing.
+
+           76.    On the follow-up call, rather than finalizing the business listing, the "senior
+
+   business analyst" promotes a "Citation Program" that he or she claims will result in the
+
+   consumer's business being listed on fifty additional search engines.
+
+           77.    Defendants tell consumers that this program will ensure prominent placement on
+
+   Google. They usually tell consumers that their business will become the first search result or one
+
+   of the first search results. Defendants sometimes tell consumers that the service has never failed
+
+   a single customer. On one call, a Modem Source sales agent told an undercover FTC
+
+   investigator, "I don't care if you're pizza or if you're a plumber, I have seen this [program] work
+
+   every single time." He elaborated, "[W]e have a little over 4,500 clients in this secondary
+
+   program, and it has worked for every one of them."
+
+          78.     The senior business analyst does not correct any of the misrepresentations made
+
+   on the Defendants' previous conversations with the consumer. The analyst, for example, does
+
+   not correct the prior misrepresentation that the Defendants are authorized by, or affiliated with,
+
+   Google.
+
+          79.     The Citation Program costs a one-time fee ofup to $949.99 and recurring monthly
+
+   payments typically equal to $169.99 or $99.99. Defendants tell consumers that the monthly
+
+   payments are necessary because completing the work will take several months. There is no end
+
+   date for the recurring charges.
+
+
+
+                                              Page 16 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 17 of 31
+
+
+
+
+           80.       Consumers pay for the Citation Program by providing their credit card or
+
+   checking account information to Defendants. Then, Defendants either charge the credit card or
+
+   generate a remotely created check that they deposit into one of their bank accounts.
+
+           81.       Defendants send consumers who agree to this upsell a "Citation Services and
+
+   Reporting Agreement" to sign electronically. The contract states that one of the Corporate
+
+   Defendants "is authorized to use the specific keywords and/or phases [sic] set forth below for
+
+   development and improving the ranking in Citations and/or directories that are most frequently
+
+   used by the general public which are defined below." The contract, however, never sets forth
+
+   any keywords or directories.
+
+           82.       The contract also promises that the consumer's "search results will be strong and
+
+   constantly improve."
+
+           83.       Defendants' claims are false or misleading. No third party, including Defendants,
+
+   can guarantee that a business will appear on the first page of Google search results.
+
+           84.       Consumers who sign up for the Citation Program see little or no improvement in
+
+   their search results.
+
+                              Defendants' Unauthorized Consumer Billing
+
+           85.       In late October 2017, Bank of America Merchant Services closed Point Break's
+
+   merchant account because of Point Break's "predatory services, scare tactics and processing
+
+   history with high chargeback ratios." As a result, Point Break lost the ability to accept payments
+
+   by credit card.
+
+           86.       In response, Defendants simply took money, usually $100, from at least 250 of
+
+   their prior or existing customers' checking accounts without those customers' advance
+
+
+
+
+                                               Page 17 of31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 18 of 31
+
+
+
+
+  knowledge, consent, or authorization, and without any apparent reason or justification. Prior to
+
+  this time, Defendants had not sold any services for which they regularly charged $100.
+
+          87.     Defendants took this money by generating remotely created checks written out to
+
+  Point Break Media, often with "Google/Apple/Bing" in the memo line. Defendant Ramsey
+
+  endorsed each check before depositing it into one of two different Point Break checking accounts
+
+   at two different banks.
+
+                         DEFENDANTS' COMMON ENTERPRISE AND
+                            SHIFTING CORPORATE IDENTITIES
+
+          88.     Since November 2016, Defendants have operated their common enterprise
+
+  through a series of business aliases and limited liability companies. These entities have all
+
+   performed functions related to the unfair and deceptive practices outlined above. They have
+
+   shared owners, managers, office space, and employees, and have commingled funds.
+
+                                       Pointbreak Media, LLC
+
+          89.     Pointbreak Media, LLC formed in Delaware in May 2016.
+
+          90.     Point Break filed in July 2017 for authorization to transact business in Florida.
+
+  The filing identified Point Break's principal office and mailing address as 951 Broken Sound
+
+  Parkway, Suite 188, Boca Raton, FL 33487.
+
+          91.     Point Break's July 2017 filing identified Defendants Pillonato, Ramsey, Jones,
+
+  and Diaz as "Managing Members" of Point Break. The filing also identified Diaz as Point
+
+  Break's Treasurer and registered agent.
+
+          92.     Ramsey swore to the accuracy of the July 2017 filing, and Diaz also signed the
+
+  filing as Point Break's registered agent.
+
+          93.     From November 2016 until December 2017, Point Break engaged in the unlawful
+
+  acts and practices described in paragraphs 22-87 above. Specifically, Point Break used deceptive
+
+
+                                              Page 18 of31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 19 of 31
+
+
+
+
+   claims to sell Google "claiming and verification" services to consumers, upsold those victims on
+
+   the Citation Program service by using additional deceptive claims, and then, in October 2017,
+
+   took $100 from over 250 consumers without authorization.
+
+          94.    From November 2016 until March 2017, Point Break did business as "Kivanni
+
+   Marketing."
+
+          95.    Since March 2017, Point Break has done business as Point Break Media and Point
+
+   Break Solutions.
+
+          96.    Ramsey opened at least three merchant bank accounts for Point Break, through
+
+   which Point Break processed credit card transactions. Two of the merchant accounts operated
+
+   under the "Kivanni Marketing" name, while a third operated as "Pointbreak Media, LLC."
+
+          97.    Defendants have held money obtained from consumers in at least two checking
+
+   accounts and one savings account. Ramsey and Pillonato are signatories on both checking
+
+   accounts. Ramsey is a signatory on the savings account.
+
+          98.    In March 2017, Pillonato, acting on behalf of Point Break, signed a "cloud contact
+
+   center" Master Services Agreement with a telecommunications company from which Pillonato
+
+   obtained toll-free numbers that both Point Break and Modern Source provided to consumers.
+
+          99.    Defendant Point Break sent or received money, either directly or indirectly, to and
+
+   from Defendants Ramsey, Pillonato, Jones, Diaz, DCP Marketing, Modern Spotlight, Modern
+
+   Spotlight Group, and Modern Internet Marketing.
+
+          100.   For most of 2017, Point Break paid the rent at the Defendants' 951 Broken Sound
+
+   Parkway, Suite 188, Boca Raton, FL 33487 address. Diaz signed a lease for use of that office
+
+   space on behalf of non-party ConsultMe, LLC.
+
+
+
+
+                                            Page 19 of31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 20 of 31
+
+
+
+
+           101.   Throughout Point Break's existence, but especially in late 2017, it faced mounting
+
+   obstacles, primarily in the form of increased public awareness of its scam and increased scrutiny
+
+   from banks and credit card processors.
+
+           102.   In July 2017, for example, a private plaintiff sued Point Break, Ramsey, and
+
+   Pillonato for violations of the Telephone Consumer Protection Act. Within a few weeks, the
+
+   plaintiff voluntarily dismissed the case after reaching a settlement agreement with Defendants.
+
+           103.   Two months later, in September 2017, a different plaintiff filed a new Telephone
+
+   Consumer Protection Act complaint. In early November 2017, the plaintiff voluntarily dismissed
+
+   the case.
+
+           104.   Throughout this time period, consumers repeatedly made complaints about Point
+
+   Break, both to the FTC and on public internet forums. Point Break's own Google business
+
+   listing, for example, was littered with reviews from angry consumers.
+
+           105.   In October 2017, a reporter from Boston's local Fox affiliate showed up
+
+   unannounced at Point Break's call center to confront Ramsey. Ramsey declared that he was
+
+   "follow[ing] all the rules," but admitted that he was doing "Google listings" work. Shortly
+
+   thereafter, the Fox affiliate aired, and posted to its website, a story highlighting Ramsey and
+
+   Point Break's robocall operation.
+
+           106.   At around the same time, on October 20, 2017, a representative from Bank of
+
+   America Merchant Services contacted Ramsey to inform him that the bank had decided to close
+
+   the account that Point Break used to process credit card transactions. The bank's internal notes
+
+   blame the closure on "the merchant's predatory services, scare tactics and processing history
+
+   with high chargeback ratios." In the first twenty days of the month, Point Break had processed
+
+   over $125,000 in credit card charges.
+
+
+
+                                              Page 20 of31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 21 of 31
+
+
+
+
+           107.      Ramsey attempted to export his Point Break customer list from Bank of America
+
+   Merchant Services on or around October 23, 2017. Ramsey also sought to transfer all of Point
+
+   Break's recurring charges to another payment gateway.
+
+           108.      Having lost the ability to receive credit card payments and apparently in need of
+
+   cash, Point Break simply started writing checks to itself out of consumers' bank accounts, taking
+
+   over $25,000 in just three days. Ramsey endorsed all of these checks.
+
+           109.      At around the same time, on October 21, 2017, Ramsey opened a new Point
+
+   Break checking account, the company's first account at Wells Fargo Bank. On October 25,
+
+   2017, Ramsey added Pillonato as a signatory to that account, identifying him as a "part owner"
+
+   of Point Break.
+
+           110.      Defendants split their deposits of the unauthorized checks between their existing
+
+   Bank of America and new Wells Fargo checking accounts between October 24, 2017 and
+
+   October 26, 2017.
+
+           111.      Once it had reestablished itself at Wells Fargo, Point Break continued operations,
+
+   but told consumers that they could only pay by providing bank account information rather than
+
+   by credit card.
+
+           112.      By early December 2017, Point Break had stopped making new sales. In January
+
+   2018, it withdrew its authorization to conduct business in Florida. Since January 2018, Point
+
+   Break has continued to answer calls from consumers who previously had signed up for its
+
+   services.
+
+                                           DCP Marketing, LLC
+
+           113.      Pillonato formed DCP Marketing, LLC in Florida in March 2016.
+
+           114.      Pillonato is the registered agent and sole manager for DCP Marketing.
+
+
+
+                                                Page 21 of31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 22 of 31
+
+
+
+
+          115.    Pillonato is the sole signatory on at least two of DCP Marketing's checking
+
+   accounts.
+
+          116.    In late August and early September 2017, as pressure mounted on Point Break,
+
+   DCP Marketing received over $61,000 from Point Break and funneled the money through
+
+   Defendant Modern Internet Marketing and Defendant Molina to Defendant Modern Spotlight.
+
+          117.    Specifically, between August 25 and August 31, 2017, Point Break wired over
+
+   $71,000 to DCP Marketing. Between August 25 and September 15, DCP Marketing then
+
+   transferred over $61,000 of that $71,000 to Modern Internet Marketing. Modern Internet
+
+   Marketing, in turn, transferred the· money received from DCP Marketing to Modern Spotlight,
+
+   either directly or through Molina.
+
+          118.    These transactions occurred at around the same time that Pocker and Molina
+
+   formed and began operating Modern Spotlight Group.
+
+          119.    Additionally, on November 13, 2017, just weeks after Point Break lost the ability
+
+   to charge consumers' credit cards, DCP Marketing established a merchant account, doing
+
+   business as "Point Break."
+
+          120.    DCP Marketing used this account to continue Point Break's recurring charges-of
+
+   either $169.99 or $99.99 per month-of consumers who had enrolled in the Citation Program.
+
+          121.    At around the same time, DCP Marketing started to deposit into its own account
+
+   remotely created checks written to Point Break Media. Ramsey endorsed these checks.
+
+          122.    In November 2017, DCP Marketing also paid the monthly rent at the Defendants'
+
+   951 Broken Sound Parkway, Suite 188 address, despite the lease remaining in the name of
+
+   Defendant Diaz's ConsultMe, LLC.
+
+
+
+
+                                            Page 22 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 23 of 31
+
+
+
+
+          123.    Additionally, in early December 2017, when Point Break stopped paying
+
+   employees, DCP Marketing started paying some of those employees. Modem Spotlight Group
+
+   began paying others on November 22, 2017.
+
+          124.    DCP Marketing sent or received money, either directly or indirectly, to and from
+
+   Defendants Pillonato, Molina, Point Break, Modem Spotlight, Modem Spotlight Group, Modem
+
+   Internet Marketing, and Modem Source Media.
+
+                    Modern Spotlight LLC and Modern Spotlight Group LLC
+
+          125.    Defendant Pocker and non-party Paul DeCamara formed Defendant Modem
+
+   Spotlight LLC in Florida on March 6, 2017.
+
+          126.    Pocker is a manager of Modem, Spotlight and its registered agent.
+
+          127.    Pocker is a signatory on at least two Modem Spotlight checking accounts.
+
+          128.    Between March and June 2017, Modem Spotlight sold Google "claiming and
+
+   verification" services to consumers.
+
+          129.    On March 14, 2017, Pocker, on behalf of Modem Spotlight, signed a lease to rent
+
+   550 Fairway Drive, Suite 104, Deerfield Beach, FL 33441. Both Modem Spotlight and Modem
+
+   Spotlight Group have made rent payments pursuant to this lease agreement.
+
+          130.    As described in paragraphs 116-117 above, beginning in late August, Modem
+
+   Spotlight received over $61,000 from Point Break, via Defendants DCP Marketing, Molina, and
+
+   Modem Internet Marketing.
+
+          131.    On August 30, 2017, Pocker and Molina formed Modem Spotlight Group LLC in
+
+   Florida. Pocker and Molina opened two Modem Spotlight Group checking accounts on
+
+   September 13, 2017.
+
+
+
+
+                                            Page 23 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 24 of 31
+
+
+
+
+           132.    Packer is Modern Spotlight Group's registered agent, and Packer and Molina are
+
+   Modern Spotlight Group's sole managers.
+
+           133.    Modern Spotlight Group has at least two checking accounts, for which Pocker and
+
+   Molina are also the sole signatories.
+
+           134.    Modern Spotlight Group incorporated at 550 Fairway Drive, Suite 104, Deerfield
+
+   Beach, FL 33441 and lists this address on its website.
+
+           13 5.   Modern Spotlight Group also has or had a call center at 951 Broken Sound
+
+   Parkway, Suite 188, Boca Raton, FL 33487. Point Break and DCP Marketing have paid rent at
+
+   this address.
+
+           136.    Modern Spotlight Group has participated in the deceptive acts and practices
+
+   described above by using claims of affiliation with Google, threats of removal from Google, and
+
+   promises of unique keywords to sell Google "claiming and verification" services to small
+
+   business owners, as described in paragraphs 28-74.
+
+           13 7.   In late September 2017, Modern Spotlight Group started to pay most of the
+
+   employees whom, until the week prior, had been paid by Modern Spotlight.
+
+           138.    In mid-November 2017, Modern Spotlight Group also started to pay most of the
+
+   employees whom, until the week prior, had been paid by Point Break.
+
+           139.    Consumers who purchased Google listing services from Modern Spotlight Group
+
+   or Point Break received virtually identical welcome emails.
+
+           140.    Modern Spotlight Group uses or used a "Google Business Listing Agreement"
+
+   that is substantially similar to the "Google listing Agreement" that Point Break used.
+
+          141.     On one call with an undercover FTC investigator, a Modern Spotlight Group sales
+
+   agent confirmed the connection between Point Break and Modern Spotlight Group. When asked
+
+
+
+                                             Page 24 of31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 25 of 31
+
+
+
+
+   whether Point Break and Modem Spotlight Group were the same, the agent stated, "So our
+
+   company, we're-we're a new-we merged companies. So that company was not the greatest.
+
+   So my company bought out-the company that I work for now bought the other company out."
+
+           142.    Modem Spotlight and Modem Spotlight Group have sent or received money,
+
+   either directly or indirectly, to and from each other and Defendants Pocker, Molina, Point Break,
+
+   DCP Marketing, Modem Internet Marketing, and Modem Source Media.
+
+           143.    Modem Spotlight Group and Modem Spotlight LLC each voluntarily dissolved
+
+   on February 7, 2018.
+
+           144.    At around the same time that Modem Spotlight Group and Modem Spotlight
+
+   voluntarily dissolved, Modem Spotlight Group representatives emailed the company's existing
+
+   customers to introduce themselves as "the representative assigned to your google listing."
+
+           145.    On February 23, 2018, an FTC undercover investigator called the phone number
+
+   provided in Modem Spotlight Group's email. The representative who had sent the email told the
+
+   investigator that Modem Spotlight Group had "relocated offices three weeks ago." When the
+
+   investigator asked for Modem Spotlight Group's new address, the representative answered that it
+
+   was 4730 NW 2nd Avenue, Suite 200, Boca Raton, Florida. Perfect Image Online also uses this
+
+   office space.
+
+          146.     When the investigator asked if "everything else was still the same," the
+
+   representative stated, "Everything else is still the same. We just relocated offices."
+
+                                     Modern Source Media, LLC
+
+          147.     Pillonato formed Defendant Modem Source in Florida on November 13, 2017.
+
+          148.     Pillonato is the registered agent and sole manager of Modem Source.
+
+
+
+
+                                              Page 25 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 26 of 31
+
+
+
+
+          149.      Pillonato is a signatory on at least one Modem Source checking account. DCP
+
+   Marketing made the initial deposit into this account.
+
+          150.      Modem Source incorporated at 550 Fairway Drive, Suite 104, Deerfield Beach,
+
+   FL 33441 and lists this address on its website.
+
+          151.      Pillonato also opened a merchant account on behalf of Modem Source, through
+
+   which it has charged consumers' credit cards. That merchant account also uses the 550 Fairway
+
+   Drive address.
+
+          152.      Since November 2017, Modem Source has engaged in the acts and practices
+
+   described in paragraphs 75-84 above. Specifically, Modem Source has built on Modem
+
+   Spotlight Group's deceptive acts and practices by deceptively upselling Modem Spotlight
+
+   Group's victims on the Citation Program.
+
+          153.      After telling an FTC undercover investigator that his company "just recently went
+
+   to [sic] a change," a Modem Source sales agent informed the investigator that Modem Source
+
+   and Modem Spotlight were "sister compan[ies]."
+
+          154.      That same sales agent also said that he had "been with these guys for almost two
+
+   years now," despite the fact that Modem Source had formed less than two months prior to the
+
+   conversation. The agent later added that "the old name, it was Pointbreak is what they were
+
+   going by" and then confirmed that "it went from Pointbreak to Modem Spotlight."
+
+          155.      Over two weeks prior to Modem Source's formation, Point Break obtained a toll­
+
+   free number that Modem Source now lists on its website.
+
+          156.      For consumers who agree to the upsell, Modem Source uses virtually the same
+
+   Citation Services and Reporting Agreement as Point Break.
+
+
+
+
+                                              Page 26 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 27 of 31
+
+
+
+
+           157.   Modem Source has sent or received money, either directly or indirectly, to and
+
+   from Defendants Pillonato, DCP Marketing, and Modem Spotlight Group.
+
+                                     Perfect Image Online LLC
+
+           158.   Defendant Molina formed Perfect Image Online LLC in Florida on December 29,
+
+   2017.
+
+           159.   Molina is the registered agent and sole manager of Perfect Image Online.
+
+           160.   Molina is the sole signatory on at least one Perfect Image Online checking
+
+   account.
+
+           161.   Perfect Image Online shares with Modem Spotlight Group the office space at
+
+   4730 NW 2nd A venue, Suite 200, Boca Raton, FL 33431.
+
+           162.   Since February 2018, Perfect Image Online has participated in the deceptive acts
+
+   and practices described in paragraphs 28-74 above, by using claims of affiliation with Google,
+
+   threats of removal from Google, and promises of unique keywords to sell Google "claiming and
+
+   verification" services to small business owners.
+
+                                  Modern Internet Marketing LLC
+
+           163.   Non-party Sean Pocker, the brother of Defendant Michael Pocker, formed
+
+   Defendant Modem Internet Marketing in Florida in July 2017.
+
+           164.   Modem Internet Marketing is located at 550 Fairway Drive, Suite 104, Deerfield
+
+   Beach, FL 33441.
+
+           165.   As described in paragraphs 116-117 above, beginning in late August, Modem
+
+   Internet Marketing facilitated the transfer of over $61,000 from Defendant Point Break to
+
+   Defendant Modem Spotlight.
+
+
+
+
+                                             Page 27 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 28 of 31
+
+
+
+
+          166.    Modem Internet Marketing also has transferred almost all of the other money it
+
+   has received directly to Modem Spotlight.
+
+          167.    Modem Internet Marketing has sent or received money, either directly or
+
+   indirectly, to and from Defendants Molina, Point Break, DCP Marketing, and Modem Spotlight.
+
+                        VIOLATIONS OF SECTION 5 OF THE FTC ACT
+
+          168.    Section 5(a) of the FTC Act, 15 U.S.C. § 45(a), prohibits "unfair or deceptive acts
+
+   or practices in or affecting commerce."
+
+          169.    Misrepresentations or deceptive omissions of material fact constitute deceptive
+
+   acts or practices prohibited by Section 5(a) of the FTC Act.
+
+           170.   Acts or practices are unfair under Section 5 of the FTC Act if they cause, or are
+
+   likely to cause, substantial injury to consumers that consumers cannot reasonably avoid and that
+
+   is not outweighed by countervailing benefits to consumers or competition. 15 U.S.C. § 45(n).
+
+                                COUNT I - Deceptive Representations
+
+          171.    In numerous instances, in the course of marketing, offering for sale, and selling
+
+   Google listing or search engine optimization services, Defendants represent or have represented,
+
+   expressly or by implication, that:
+
+                  A.      Defendants are authorized by, or affiliated with, Google.
+
+                  B.      Consumers' businesses are in imminent danger of being marked
+
+                          permanently closed by Google or removed from Google's search results
+
+                          because consumers have not "claimed and verified" those businesses with
+
+                          Google.
+
+
+
+
+                                             Page 28 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 29 of 31
+
+
+
+
+                  C.      Defendants, as part of claiming and verifying the consumers' businesses,
+
+                          can assign certain keywords to those businesses that will result in the
+
+                          prominent display of the businesses' websites or listings.
+
+                  D.      Defendants can guarantee prominent, first-page, or first-place placement
+
+                          in Google search results to consumers who pay for the Defendants'
+
+                          Citation Program.
+
+          172.    In truth and in fact:
+
+                  A.      Defendants are not authorized by, or affiliated with, Google.
+
+                  B.      Consumers' businesses are not in imminent danger of being marked
+
+                          permanently closed by Google or removed from Google's search results.
+
+                  C.      Defendants cannot, as part of claiming and verifying consumers'
+
+                          businesses, assign to those businesses certain keywords that will result in
+
+                          the prominent display of the businesses' websites or listings.
+
+                  D.      Defendants cannot guarantee prominent, first-page, or first-place
+
+                          placement in Google search results to consumers pay for the Defendants'
+
+                          Citation Program.
+
+          173.    Therefore, Defendants' representations as set forth in Paragraph 171 are false,
+
+   misleading, or were not substantiated at the time they were made, and thus, they constitute
+
+   deceptive acts or practices in violation of Section 5(a) of the FTC Act, 15 U.S.C. § 45(a).
+
+                                 COUNT II- Unfair Billing Practices
+
+          174.    As described in Paragraphs 85-87, in numerous instances, Defendants have
+
+   obtained consumers' bank account information and caused billing information to be submitted
+
+   for payment on those accounts without consumers' authorization.
+
+
+
+                                              Page 29 of 31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 30 of 31
+
+
+
+
+          175.    Defendants' actions caused substantial injury to consumers that consumers could
+
+   not reasonably avoid and that is not outweighed by countervailing benefits to consumers or
+
+   competition.
+
+           176.   Therefore, Defendants' practices described in Paragraph 174 of this Complaint
+
+   constitute unfair acts or practices in violation of Section 5 of the FTC Act, 15 U .S.C. §§ 45(a)
+
+   and 45(n).
+
+                                        CONSUMER INJURY
+
+           177.   Consumers have suffered and will continue to suffer substantial injury as a result
+
+   of Defendants' violations of the FTC Act. In addition, Defendants have been unjustly enriched
+
+   as a result of their unlawful acts or practices. Absent injunctive relief by this Court, Defendants
+
+   are likely to continue to injure consumers, reap unjust enrichment, and harm the public interest.
+
+                          THIS COURT'S POWER TO GRANT RELIEF
+
+          178.    Section 13(b) of the FTC Act, 15 U.S.C. § 53(b), empowers this Court to grant
+
+   injunctive and such other relief as the Court may deem appropriate to halt and redress violations
+
+   of any provision of law enforced by the FTC. The Court, in the exercise of its equitable
+
+  jurisdiction, may award ancillary relief: including rescission or reformation of contracts,
+
+   restitution, the refund of monies paid, and the disgorgement of ill-gotten monies, to prevent and
+
+   remedy any violation of any provision of law enforced by the FTC.
+
+                                       PRAYER FOR RELIEF
+
+          Wherefore, Plaintiff FTC, pursuant to Section 13(b) of the FTC Act, 15 U.S.C. § 53(b),
+
+   and the Court's own equitable powers, requests that the Court:
+
+          A.      Award Plaintiff such preliminary injunctive and ancillary relief as may be
+
+   necessary to avert the likelihood of consumer injury during the pendency of this action and to
+
+
+
+                                              Page 30 of31
+Case 0:18-cv-61017-CMA Document 1 Entered on FLSD Docket 05/07/2018 Page 31 of 31
+
+
+
+
+   preserve the possibility of effective final relief, including but not limited to temporary and
+
+   preliminary injunctions, and an order providing for immediate access, the turnover of business
+
+   records, an asset freeze, the appointment of a receiver, and the disruption of domain and
+
+   telephone services;
+
+          B.      Enter a permanent injunction to prevent future violations of the FTC Act by
+
+   Defendants;
+
+          C.      Award such relief as the Court finds necessary to redress injury to consumers
+
+   resulting from Defendants' violations of the FTC Act, including but not limited to, rescission or
+
+   reformation of contracts, restitution, the refund of monies paid, and the disgorgement of ill­
+
+   gotten monies; and
+
+          D.      Award Plaintiff FTC the costs of bringing this action, as well as such other and
+
+   additional relief as the Court may determine to be just and proper.
+
+
+
+                                                 Respectfully submitted,
+
+                                                 ALDEN F. ABBOTT
+                                                 Acting General Counsel
+
+
+   Dated: May 7, 2018
+                                                 Evan M. Mendelson, Special Bar No. A5502430
+                                                 Christopher J. Erickson, Special Bar No. A5502434
+                                                 Brian M. Welke, Special Bar No. A5502432
+                                                 Federal Trade Commission
+                                                 600 Pennsylvania Ave. NW
+                                                 Mailstop CC-9528
+                                                 Washington, DC 20580
+                                                 (202) 326-3320; emendelson@ftc.gov
+                                                 (202) 326-3671; cerickson@ftc.gov
+                                                 (202) 326-2897; bwelke@ftc.gov
+                                                 Fax: (202) 326-3197
+                                                 Attorneys for Plaintiff
+                                                 FEDERAL TRADE COMMISSION
+
+
+                                              Page 31 of31
+
