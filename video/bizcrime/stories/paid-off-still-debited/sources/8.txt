@@ -1,0 +1,750 @@
+https://www.ftc.gov/system/files/documents/cases/1823202yellowstonecomplaint.pdf
+fetched 2026-09-26
+             Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 1 of 15
+
+
+
+
+                           UNITED STATES DISTRICT COURT
+                          SOUTHERN DISTRICT OF NEW YORK
+
+
+ FEDERAL TRADE COMMISSION,                                 Case No. 20-cv-6023
+
+        Plaintiff,                                         COMPLAINT FOR PERMANENT
+                                                           INJUNCTION AND OTHER
+        v.                                                 EQUITABLE RELIEF
+
+ YELLOWSTONE CAPITAL LLC, a New York
+ limited liability company,
+
+ FUNDRY LLC, a New York limited liability
+ company,
+
+ YITZHAK D. STERN, a/k/a Isaac Stern,
+ individually and as an officer of Yellowstone
+ Capital LLC and Fundry LLC, and
+
+ JEFFREY REECE, individually and as an officer
+ of Yellowstone Capital LLC and Fundry LLC,
+
+        Defendants.
+
+
+       Plaintiff, the Federal Trade Commission (“FTC”), for its Complaint alleges:
+
+       1.      The FTC brings this action under Section 13(b) of the Federal Trade Commission
+
+Act (“FTC Act”), 15 U.S.C. § 53(b), to obtain permanent injunctive relief, rescission or
+
+reformation of contracts, restitution, the refund of monies paid, disgorgement of ill-gotten
+
+monies, and other equitable relief for Defendants’ acts or practices in violation of Section 5(a) of
+
+the FTC Act, 15 U.S.C. § 45(a), in connection with their business financing activities.
+
+                                JURISDICTION AND VENUE
+
+       2.      This Court has subject matter jurisdiction pursuant to 28 U.S.C. §§ 1331, 1337(a),
+
+and 1345.
+
+
+
+
+                                                 1
+             Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 2 of 15
+
+
+
+
+       3.      Venue is proper in this District under 28 U.S.C. § 1391(b)(2), (c)(1), (c)(2), and
+
+(d), and 15 U.S.C. § 53(b).
+
+                                           PLAINTIFF
+
+       4.      The FTC is an independent agency of the United States Government created by
+
+statute. 15 U.S.C. §§ 41–58. The FTC enforces Section 5(a) of the FTC Act, 15 U.S.C. § 45(a),
+
+which prohibits unfair or deceptive acts or practices in or affecting commerce.
+
+       5.      The FTC is authorized to initiate federal district court proceedings, by its own
+
+attorneys, to enjoin violations of the FTC Act and to secure such equitable relief as may be
+
+appropriate in each case, including rescission or reformation of contracts, restitution, the refund
+
+of monies paid, and the disgorgement of ill-gotten monies. 15 U.S.C. § 53(b).
+
+                                         DEFENDANTS
+
+       6.      Defendant Yellowstone Capital LLC (“Yellowstone”) is a New York limited
+
+liability company with its principal place of business at 1 Evertrust Plaza, Jersey City, New
+
+Jersey 07302. Until at least March 2016, its principal place of business was 160 Pearl Street,
+
+New York, New York 10005, and it continues to use business addresses located in this District in
+
+connection with acts and practices alleged below. Yellowstone transacts or has transacted
+
+business in this District and throughout the United States. At times material to this Complaint,
+
+acting alone or in concert with others, Yellowstone has advertised, marketed, offered, or
+
+distributed financing to businesses throughout the United States.
+
+       7.      Defendant Fundry LLC (“Fundry”) is a New York limited liability company
+
+with its principal place of business at 1 Evertrust Plaza, Jersey City, New Jersey 07302. Until at
+
+least March 2016, its principal place of business was 160 Pearl Street, New York, New York
+
+10005. Fundry transacts or has transacted business in this District and throughout the United
+
+
+
+                                                 2
+                Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 3 of 15
+
+
+
+
+States. At times material to this Complaint, acting alone or in concert with others, Fundry has
+
+advertised, marketed, offered, or distributed financing to businesses throughout the United
+
+States.
+
+          8.     Defendant Yitzhak D. Stern, also known as Isaac Stern (“Stern”), is a founder
+
+and the Chief Executive Officer of both Yellowstone and Fundry. At all times material to this
+
+Complaint, acting alone or in concert with others, he has formulated, directed, controlled, had the
+
+authority to control, or participated in the acts and practices set forth in this Complaint.
+
+Defendant Stern, in connection with the matters alleged herein, transacts or has transacted
+
+business in this District and throughout the United States.
+
+          9.     Defendant Jeffrey Reece (“Reece”) is the President of both Yellowstone and
+
+Fundry. At all times material to this Complaint, acting alone or in concert with others, he has
+
+formulated, directed, controlled, had the authority to control, or participated in the acts and
+
+practices set forth in this Complaint. Defendant Reece, in connection with the matters alleged
+
+herein, transacts or has transacted business in this District and throughout the United States.
+
+                                    COMMON ENTERPRISE
+
+          10.    Defendants Yellowstone and Fundry (collectively, “Corporate Defendants”) have
+
+operated as a common enterprise while engaging in the deceptive and unfair acts and practices
+
+alleged below. Corporate Defendants have conducted the business practices described below
+
+through interrelated companies that have common officers, managers, business functions,
+
+employees, and office locations. Because these Corporate Defendants have operated as a
+
+common enterprise, they are partners in concerted wrongdoing and liable for the acts and
+
+practices alleged below. Defendants Stern and Reece have formulated, directed, controlled, had
+
+the authority to control, or participated in the acts and practices of the Corporate Defendants that
+
+
+
+                                                  3
+              Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 4 of 15
+
+
+
+
+constitute the common enterprise and are partners in the concerted wrongdoing of the common
+
+enterprise.
+
+                                         COMMERCE
+
+       11.     At all times material to this Complaint, Defendants have maintained a substantial
+
+course of trade in or affecting commerce, as “commerce” is defined in Section 4 of the FTC Act,
+
+15 U.S.C. § 44.
+
+                          DEFENDANTS’ BUSINESS ACTIVITIES
+
+                                           Overview
+
+       12.     Since at least 2015, Defendants have advertised, marketed, and offered short-
+
+term, high-cost financing products to small business consumers in immediate need of funds.
+
+Defendants tout these products – often referred to as “merchant cash advances” (“MCAs”) – as a
+
+quick source of funds for consumers that do not qualify for bank loans or other traditional forms
+
+of financing. Defendants characterize their products as discounted purchases of consumers’
+
+future receivables to be repaid in a larger amount via daily installment payments purportedly
+
+based on a percentage of consumers’ incoming business receipts.
+
+       13.     Defendants often advertise, market, and offer their MCAs through a vast, ever-
+
+changing network of agents. Some of these agents include, but are not limited to, Green Capital
+
+Funding LLC, West Coast Business Capital, LLC, World Global Capital LLC, High Speed
+
+Capital LLC, Thryve Capital Funding LLC, and Mason Capital LLC.
+
+       14.     Defendants engage in a pattern of deceptive and unfair conduct in connection with
+
+the marketing, advertising, and offering of their MCAs. They have misrepresented key aspects
+
+of their products, including their requirements that consumers provide collateral and personal
+
+guarantees, as well as the specific financing amount they will disburse to consumers.
+
+
+
+                                                4
+              Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 5 of 15
+
+
+
+
+Additionally, the Defendants have made excess, unauthorized withdrawals from consumers’
+
+accounts after consumers already repaid the full amount that they owed.
+
+                             Misrepresentations Regarding Collateral
+                                    and Personal Guarantees
+
+
+       15.        Since at least 2015, Defendants have disseminated advertisements that claim that
+
+their MCAs do not require collateral or a personal guarantee.
+
+       16.        For example, Defendants have disseminated numerous online advertisements, on
+
+websites including www.yellowstonecap.com, www.m.yellowstonecap.com,
+
+www.smallbusinessfunders.com, www.sbfcash.com, and www.3hourfunding.com, that make the
+
+following statements:
+
+             a.   “We say yes to more small businesses, regardless of collateral” (Exhibit A);
+
+             b. “No collateral loans” & “We won’t ask for any kind of collateral” (Exhibit B);
+
+             c. “No collateral, no personal guarantee” (Exhibit C);
+
+             d. “No collateral required” (Exhibit D);
+
+             e. “No Collateral Requirements” (Exhibit E);
+
+             f. “No Personal Guarantee Loans” & “We Provide Capital With No Personal
+
+                  Guarantee” (Exhibit F); and
+
+             g. “No Collateral Loans” (Exhibit G).
+
+       17.        Defendants’ video advertisements also represent that Defendants do not require
+
+collateral or personal guarantees. For example, one of Defendants’ video advertisements,
+
+attached as Exhibit H, makes the following prominent claims:
+
+
+
+
+                                                  5
+             Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 6 of 15
+
+
+
+
+As this image is displayed, an audio voiceover makes the following representations: “No
+
+collateral required. No collateral, no personal guarantee.”
+
+       18.     Defendants have also disseminated direct mail pieces that represent that they do
+
+not require personal guarantees. For example, one such direct mail piece, attached as Exhibit I,
+
+states: “You do not need excellent credit, or give us a personal guarantee.”
+
+       19.     In reality, in many instances, Defendants do require business owners to sign a
+
+guarantee holding them personally responsible for the entire funded amount should the business
+
+default. Additionally, in many instances, Defendants do require that consumers provide
+
+collateral, by granting Defendants a purported security interest or lien in all business property
+
+consumers own, including all financial accounts, equipment, inventory and other assets.
+
+       20.     When consumers default on their financing agreements, Defendants frequently
+
+file lawsuits against them, including against the individual business owners who provided the
+
+personal guarantees, in order to collect the unpaid funded amount. Additionally, in many
+
+instances, as part of these lawsuits, the Defendants seek court orders to seize the collateral that
+
+
+                                                  6
+             Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 7 of 15
+
+
+
+
+consumers have pledged. Defendants Stern and Reece have closely overseen and directed
+
+Defendants’ day-to-day advertising and marketing efforts. Among other things, they have
+
+directly managed the work of Defendants’ marketing agents. They have also frequently
+
+reviewed and provided feedback and approval for advertising content and claims. In fact,
+
+Defendants Stern and Reece have specifically reviewed copies of advertisements that claim the
+
+Defendants do not require collateral.
+
+                      Misrepresentations Regarding Financing Amount
+
+       21.     Defendants promote that they provide immediate financing in a specific amount
+
+in exchange for consumers’ agreement to repay a higher amount out of consumers’ future
+
+business revenues. Consumers remit the repayment amount over a period of months through
+
+daily debits from their bank accounts in installment amounts purportedly corresponding to an
+
+estimated percentage of each day’s receipts.
+
+       22.     Since at least early 2015 until at least October 2018, the first page of Defendants’
+
+contracts has prominently set forth the “Purchase Price” (the total dollar amount to be provided
+
+to the consumer), the “Specified Percentage” (the percentage of daily revenues used to calculate
+
+daily installment payments to Defendants), and the “Purchased Amount” (the total amount to be
+
+repaid from future receivables).
+
+       23.     For example, in an agreement to provide $10,000 in financing, the first page of
+
+the contract provides as follows:
+
+
+
+
+       24.     In this example, Defendants purportedly agree to provide $10,000 in funding, and
+
+the consumer agrees to repay a total of $14,000 via daily withdrawals from the consumer’s bank
+
+
+                                                 7
+             Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 8 of 15
+
+
+
+
+account. The amount of those daily withdrawals is purportedly set at 25% of the consumer’s
+
+daily receipts. A redacted example of Defendants’ entire financing agreement is attached to this
+
+complaint as Exhibit J.
+
+       25.     In reality, however, Defendants routinely provide consumers with substantially
+
+less than the total amount promised on the first page of the contract, by withholding fees that
+
+range from hundreds to thousands of dollars prior to disbursement. These fees are mentioned
+
+several pages into the contract without any indication that they are deducted from the “Purchase
+
+Price” – the funds promised to consumers. As a result, consumers, in numerous instances, have
+
+received significantly less funding than they were promised.
+
+       26.     In numerous instances, Defendants Stern and Reece have received messages
+
+detailing the difference between the funding amount promised to specific consumers in
+
+Defendants’ contracts and the significantly lower amount disbursed to those same consumers
+
+after additional fees were withheld.
+
+       27.     To the extent Defendants reveal the actual funding amount consumers will
+
+receive, they sometimes do so in a brief telephone call only after consumers have signed their
+
+contracts. In some instances, consumers express confusion and surprise when they learn that
+
+they will receive significantly less funding than they were promised in their contracts. For
+
+example, when one consumer learned that she would receive roughly $4,000 less than her
+
+contract stated, she responded, “I think something is wrong,” and “you guys are like highway
+
+robbery.”
+
+                                  Unauthorized Withdrawals
+
+       28.     Defendants require consumers to provide authorization for Defendants to
+
+withdraw daily payments – typically hundreds of dollars each day – from customers’ accounts
+
+
+
+                                                 8
+             Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 9 of 15
+
+
+
+
+using ACH debits until customers have fully repaid the “Purchased Amount” they owe under
+
+their agreements.
+
+       29.     Since at least 2015, Defendants have withdrawn money from customers’ accounts
+
+in excess of the amounts customers authorized, by continuing to withdraw daily payments from
+
+customers after they have already fully repaid the “Purchased Amount.” These unauthorized
+
+overpayments have been a typical occurrence for Defendants’ customers, and have impacted at
+
+least thousands of them, in amounts ranging from hundreds to thousands of dollars.
+
+       30.     Defendants have acknowledged that they take these overpayments from
+
+customers knowingly. Specifically, Defendants’ payment and recordkeeping processes create a
+
+“lag” or “debit delay” that results in them collecting an additional 4-5 or more unauthorized
+
+payments after customers have already fully repaid the “Purchased Amount.” For example,
+
+Defendants received one customer complaint stating: “My loan payoff was met and
+
+exceeded . . . [by] 4 daily payments totaling in the amount of $3480.” Defendants explained to
+
+another customer who complained about excess, unauthorized debits that “there is a 4 day lag on
+
+ACH debits . . . it’s simply the way our processor works.”
+
+       31.     In both internal communications and communications with customers in response
+
+to complaints, Defendants’ employees and agents have repeatedly acknowledged that the “lag”
+
+or “debit delay” was common practice for Defendants. For example, in response to a customer
+
+complaint about such overpayments, Defendants’ Operations Manager wrote to one of
+
+Defendants’ in-house servicers: “Maybe send an account summary so [the customer]
+
+understands the 5 day debit delay?” When another customer questioned these overpayments
+
+during a telephone call, one of Defendants’ in-house servicers responded that “there is always a
+
+delay” (emphasis added) in the prompt cessation of daily withdrawals. In response to another
+
+
+
+                                                9
+              Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 10 of 15
+
+
+
+
+customer who noticed and complained after the first day of overpayment, one of Defendants’
+
+servicers responded that he “made an exception” for the customer by stopping ACH debits
+
+before the full 4-5 days of overpayments elapsed.
+
+        32.     Additionally, in numerous instances, Defendants’ unauthorized payments have
+
+exceeded the 4-5 days associated with their typical “lag” or “debit delay.” For example, one
+
+customer submitted a complaint stating that Defendants continued making ACH debits from his
+
+account “for another two weeks and only stopped after numerous calls,” resulting in an
+
+overpayment of $4,345.00. Another customer reported that “[a]ccording to our contract which
+
+we have, we would pay back $10,213.00. . . . Yellowstone has withdrawn $5,409 over the
+
+amount we owed them.”
+
+        33.     Beyond the unauthorized payments themselves, in some instances, customers
+
+incur additional monetary and other harm, including overdraft fees charged by customers’ banks
+
+because their accounts were drained of funds by Defendants’ unauthorized withdrawals. For
+
+example, one customer wrote to Defendants that she “ha[d] $140 in overdraft fees that would not
+
+have happened if [Defendants] would of [sic] stopped withdrawing on Monday when I called to
+
+confirm it was the last payment …. I’m still overdrawn and need it desperately.” When another
+
+customer complained to Defendants about overpayments taken from her, and resulting bank
+
+overdraft fees, one of Defendants’ in-house servicers told his employee “if she busts your balls
+
+again and doesn’t stop – u can use ur judgment and throw her the $100 to go away,” and
+
+Defendants’ Operations Manager stated “I think it’s money well spent if you don’t have to talk to
+
+her.”
+
+        34.     To the extent Defendants refund these unauthorized debits, in numerous instances,
+
+they do so only in response to complaints from customers. In fact, even after customers
+
+
+
+                                                10
+             Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 11 of 15
+
+
+
+
+complain to Defendants about these unauthorized withdrawals, Defendants sometimes take
+
+weeks or months to refund these payments to customers.
+
+       35.     As indicated above, customers each typically pay hundreds (and sometimes
+
+thousands) of dollars in these excess, unauthorized payments. Defendants have charged at least
+
+millions of dollars in unauthorized overpayments.
+
+       36.     Defendants Stern and Reece have closely overseen and managed Defendants’
+
+servicing and collection of payments from consumers. They have directly supervised their in-
+
+house servicers and disseminated relevant policies and practices to them. Additionally,
+
+Defendants Stern and Reece have known about, and communicated with their in-house servicers
+
+about, the existence of unauthorized overpayments by consumers.
+
+       37.     Based on the facts and violations of law alleged in this Complaint, the FTC has
+
+reason to believe that Defendants are violating or are about to violate laws enforced by the
+
+Commission.
+
+
+
+
+                                                11
+             Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 12 of 15
+
+
+
+
+                                VIOLATIONS OF THE FTC ACT
+
+       38.     Section 5(a) of the FTC Act, 15 U.S.C. § 45(a), prohibits “unfair or deceptive acts
+
+or practices in or affecting commerce.”
+
+       39.     Misrepresentations or deceptive omissions of material fact constitute deceptive
+
+acts or practices prohibited by Section 5(a) of the FTC Act.
+
+       40.     Acts or practices are unfair under Section 5 of the FTC Act if they cause or are
+
+likely to cause substantial injury to consumers that consumers cannot reasonably avoid
+
+themselves and that is not outweighed by countervailing benefits to consumers or competition.
+
+15 U.S.C. § 45(n).
+
+                                               Count I
+
+                                 Misrepresentations Regarding
+                               Collateral and Personal Guarantees
+
+       41.     In numerous instances in connection with the advertising, marketing, promotion,
+
+or offering of small business financing products, Defendants have represented, directly or
+
+indirectly, expressly or by implication, that Defendants:
+
+                     a. require no collateral; and
+
+                     b. require no personal guarantee from business owners.
+
+       42.     In truth and in fact, in numerous instances in which Defendants have made the
+
+representations set forth in Paragraph 41, such representations were false or misleading at the
+
+time Defendants made them.
+
+       43.     Therefore, Defendants’ representations as set forth in Paragraph 41 are false or
+
+misleading and constitute deceptive acts or practices in violation of Section 5(a) of the FTC Act,
+
+15 U.S.C. § 45(a).
+
+
+
+
+                                                 12
+             Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 13 of 15
+
+
+
+
+                                             Count II
+
+                       Misrepresentations Regarding Financing Amount
+
+       44.      In numerous instances in connection with the advertising, marketing, promotion,
+
+or offering of small business financing products, Defendants have represented, directly or
+
+indirectly, expressly or by implication, that consumers will receive a specific amount of
+
+financing.
+
+       45.      In truth and in fact, in numerous instances in which Defendants have made the
+
+representations set forth in Paragraph 44, such representations were false or misleading at the
+
+time Defendants made them.
+
+       46.      Therefore, Defendants’ representations as set forth in Paragraph 44 are false or
+
+misleading and constitute deceptive acts or practices in violation of Section 5(a) of the FTC Act,
+
+15 U.S.C. § 45(a).
+
+                                             Count III
+
+                               Unfair Unauthorized Withdrawals
+
+       47.      In numerous instances, Defendants have withdrawn money from consumers’ bank
+
+accounts in amounts in excess of consumers’ authorization without the express informed consent
+
+of consumers.
+
+       48.      Defendants’ actions cause or are likely to cause substantial injury to consumers
+
+that consumers cannot reasonably avoid themselves and that is not outweighed by countervailing
+
+benefits to consumers or competition.
+
+       49.      Therefore, Defendants’ practices as described in Paragraph 47 above constitute
+
+unfair acts or practices in violation of Section 5 of the FTC Act, 15 U.S.C. §§ 45(a) and 45(n).
+
+
+
+
+                                                13
+              Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 14 of 15
+
+
+
+
+                                      CONSUMER INJURY
+
+        50.     Consumers are suffering, have suffered, and will continue to suffer substantial
+
+injury as a result of Defendants’ violations of the FTC Act. In addition, Defendants have been
+
+unjustly enriched as a result of their unlawful acts or practices. Absent injunctive relief by this
+
+Court, Defendants are likely to continue to injure consumers, reap unjust enrichment, and harm
+
+the public interest.
+
+                        THIS COURT’S POWER TO GRANT RELIEF
+
+        51.     Section 13(b) of the FTC Act, 15 U.S.C. § 53(b), empowers this Court to grant
+
+injunctive and such other relief as the Court may deem appropriate to halt and redress violations
+
+of any provision of law enforced by the FTC. The Court, in the exercise of its equitable
+
+jurisdiction, may award ancillary relief, including rescission or reformation of contracts,
+
+restitution, the refund of monies paid, and the disgorgement of ill-gotten monies, to prevent and
+
+remedy any violation of any provision of law enforced by the FTC.
+
+                                     PRAYER FOR RELIEF
+
+        Wherefore, Plaintiff FTC, pursuant to Section 13(b) of the FTC Act, 15 U.S.C. § 53(b)
+
+and the Court’s own equitable powers, requests that the Court:
+
+        A.      Enter a permanent injunction to prevent future violations of the FTC Act by
+
+Defendants;
+
+        B.      Award such relief as the Court finds necessary to redress injury to consumers
+
+resulting from Defendants’ violations of the FTC Act, including rescission or reformation of
+
+contracts, restitution, the refund of monies paid, and the disgorgement of ill-gotten monies; and
+
+        C.      Award Plaintiff the costs of bringing this action, as well as such other and
+
+additional relief as the Court may determine to be just and proper.
+
+
+
+                                                 14
+          Case 1:20-cv-06023 Document 1 Filed 08/03/20 Page 15 of 15
+
+
+
+
+Dated: August 3, 2020               Respectfully submitted,
+
+                                    ALDEN F. ABBOTT
+                                    General Counsel
+
+                                      /s/ Christopher B. Leach
+                                    EVAN R. ZULLOW
+                                    (ezullow@ftc.gov)
+                                    THOMAS C. KOST
+                                    (tkost@ftc.gov)
+                                    CHRISTOPHER B. LEACH
+                                    (cleach@ftc.gov)
+                                    IOANA R. GORECKI
+                                    (igorecki@ftc.gov)
+                                    Federal Trade Commission
+                                    600 Pennsylvania Ave. NW
+                                    Mail Stop CC-10232
+                                    Washington, DC 20580
+                                    Tel: 202-326-2914 (Zullow);
+                                    202-326-2286 (Kost);
+                                    202-326-2394 (Leach);
+                                    202-326-2077 (Gorecki)
+                                    Fax: 202-326-2752
+
+                                    Attorneys for Plaintiff
+                                    FEDERAL TRADE COMMISSION
+
+
+
+
+                                      15
+

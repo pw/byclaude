@@ -850,6 +850,42 @@ function filmPage(f) {
 }
 
 const POSTS = {
+  "google-delist-robocall": {
+    title: "The final notice — FTC v. Pointbreak Media",
+    yt: `"This is your final notice. If you do not act soon, Google will label your business as permanently closed." That was one of the robocalls from Pointbreak Media, a Florida telemarketer the court found had no affiliation with Google. In seven weeks of 2017 it made nearly 75 million robocalls, nearly 15 million of them to numbers on the Do Not Call Registry. Owners who pressed one paid $300 to $500 to claim and verify a listing Google lets you claim for free. When its card processor cut it off in October 2017, it wrote itself $100 checks from at least 280 customers' bank accounts without consent. In 2019 a federal judge ordered Dustin Pillonato and Justin Ramsey to pay $3,367,666.30 and hand over 53 pieces of jewelry.
+
+Source: FTC v. Pointbreak Media, LLC, S.D. Fla., 2019.
+
+#smallbusinessowner #smallbusiness #googlebusinessprofile #salonowner #contractorlife #shorts`,
+    tiktok: `"This is your final notice. Google will label your business as permanently closed." It wasn't Google. It was a Florida telemarketer charging $300 to $500 to claim a listing that's free. Nearly 75 million robocalls in seven weeks.
+
+Source: FTC v. Pointbreak Media, LLC, 2019.
+
+#smallbusinessowner #smallbusiness #googlebusinessprofile #salonowner #contractorlife`,
+    reels: `"This is your final notice. If you do not act soon, Google will label your business as permanently closed." The call came from Pointbreak Media, a Florida telemarketer the court found had no affiliation with Google, and owners who pressed one paid $300 to $500 to claim and verify a listing Google lets you claim for free. When its card processor cut it off in October 2017, it wrote itself $100 checks from at least 280 customers' bank accounts without consent. Google will not call you to threaten your listing; you can claim and verify it yourself, free.
+
+Source: FTC v. Pointbreak Media, LLC, S.D. Fla., 2019.
+
+#smallbusinessowner #smallbusiness #googlebusinessprofile #salonowner #nailtech #contractorlife`
+  },
+  "paid-off-still-debited": {
+    title: "Paid off, still debited — FTC v. Yellowstone Capital",
+    yt: `One customer's complaint: the loan payoff was met and exceeded by four daily payments totaling $3,480. It's quoted in the lawsuit the FTC filed in August 2020 against merchant cash advance company Yellowstone Capital, whose advances were repaid by automatic daily withdrawals from the business's bank account. The FTC alleged that since at least 2015 the withdrawals kept going after businesses had paid in full, four or five extra payments or more, which the company explained to one customer as "a 4 day lag on ACH debits." The defendants settled in 2021 without admitting or denying the allegations: a $9,837,000 judgment and a ban on withdrawals without express informed consent.
+
+Source: FTC v. Yellowstone Capital LLC, S.D.N.Y., complaint 2020, stipulated order 2021.
+
+#smallbusinessowner #merchantcashadvance #smallbusiness #restaurantowner #shorts`,
+    tiktok: `The loan was paid off. Four more daily withdrawals came out anyway: $3,480. The FTC alleged a merchant cash advance company kept debiting businesses after they had paid in full, and explained it to one customer as "a 4 day lag on ACH debits." It settled in 2021 without admitting or denying it.
+
+Source: FTC v. Yellowstone Capital LLC, 2020.
+
+#smallbusinessowner #merchantcashadvance #smallbusiness #salonowner #contractorlife`,
+    reels: `One customer complained that the loan payoff was met and exceeded by four daily payments totaling $3,480. The FTC alleged that merchant cash advance company Yellowstone Capital kept withdrawing from businesses' bank accounts after they had paid in full, four or five extra payments or more, which it explained to one customer as "a 4 day lag on ACH debits." The company settled in 2021 without admitting or denying the allegations. If you repay an advance by daily debit, check your account for withdrawals after the payoff.
+
+Source: FTC v. Yellowstone Capital LLC, S.D.N.Y., 2020.
+
+#smallbusinessowner #merchantcashadvance #smallbusiness #restaurantowner #salonowner #contractorlife`
+  },
   "payroll-vanished": {
     title: "The payroll that never arrived — MyPayrollHR, 2019",
     yt: `The first week of September 2019. A diner owner in Rindge, New Hampshire, was at her critically ill mother's bedside when her manager called: none of the diner's roughly two dozen employees had been paid that week, and the money had already left the diner's bank account. Her payroll company, MyPayrollHR, had shut down on September 5. Its owner, Michael Mann, changed the instructions inside the digital payroll files so the money went into accounts he controlled. When his bank froze those accounts, several thousand people didn't get a paycheck. He pled guilty and was sentenced to 144 months.

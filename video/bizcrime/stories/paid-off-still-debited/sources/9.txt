@@ -1,0 +1,806 @@
+https://www.ftc.gov/system/files/documents/cases/x200054yellowstonestipulatedorder.pdf
+fetched 2026-09-26
+                           UNITED STATES DISTRICT COURT
+                          SOUTHERN DISTRICT OF NEW YORK
+
+
+FEDERAL TRADE COMMISSION,                                  Case No. 1:20-cv-06023-LAK
+
+        Plaintiff,
+
+        V.
+                                                           STIPULATED ORDER FOR
+ YELLOWSTONE CAPITAL LLC, a New York                       PERMANENT INJUNCTION AND
+ limited liability company,                                MONETARY JUDGMENT
+
+ FUN DRY LLC, a New York limited liability
+ company,
+
+ YITZHAK D. STERN, a/k/a Isaac Stem,
+ individually and as an officer of Yellowstone
+ Capital LLC and Fundry LLC, and
+
+ JEFFREY REECE, individually and as an officer
+ of Yellowstone Capital LLC and Fundry LLC,
+
+        Defendants.
+
+
+       Plaintiff, the Federal Trade Commission ("Commission" or "FTC"), filed its Complaint
+
+for Permanent Injunction and Other Equitable Relief ( "Complaint"), for a pennanent injunction,
+
+and other equitable relief in this matter, pursuant to Section l 3(b) of the Federal Trade
+
+Commission Act ("FTC Act"), J5.JJ.S.C§53(b}. The Commission and Defendants stipulate to
+
+the entry of this Stipulated Order for Pennanent Injunction and Monetary Judgment ("Order") to
+
+resolve all matters in dispute in this action between them.
+
+       THEREFORE, IT IS ORDERED as follows:
+
+                                            FINDINGS
+
+1.     This Court has jurisdiction over this matter.
+2.     The Complaint charges that Defendants participated in deceptive and unfair acts or
+
+practices in violation of Section 5 of the FTC Act,15 0$.C. § :12, in the advertising, marketing,
+
+offering, and servicing of small business financing.
+
+3.     Defendants neither admit nor deny any of the allegations in the Complaint, except as
+
+specifically stated in this Order. Only for purposes of this action, Defendants admit the facts
+
+necessary to establish jurisdiction.
+
+4.     Defendants waive any claim that they may have under the Equal Access to Justice Act,
+
+28 U.S.C~§2412, concerning the prosecution of this action through the date of this Order, and
+
+agree to bear their own costs and attorneys' fees. Defendants waive and release any
+
+claims that they may have against the Commission and its agents that relate to this action.
+
+5.     The parties agree that this Order resolves all allegations in the Complaint.
+
+6.     Defendants and the Commission waive all lights to appeal or otherwise challenge or
+
+contest the validity of this Order.
+
+                                         DE.FINITIONS
+
+       For the purpose of this Order, the following definitions apply:
+
+        A. "Clear(ly) and Conspicuous(ly)" means that a required disclosure is difficult to miss
+
+            (i.e., easily noticeable) and easily understandable by ordinary consumers, including in
+
+            all of the following ways:
+
+                1. In any communication that is solely visual or solely audible, the disclosure
+
+                    must be made through the same means through which the communication is
+
+                    presented. In any communication made through both visual and audible
+
+                    means, such as a television advertisement, the disclosure must be presented
+
+
+
+
+                                                 2
+          simultaneously in both the visual and audible portions of the communication
+
+          even if the representation requiring the disclosure is made in only one means.
+
+      2. A visual disclosure, by its size, contrast, location, the length of time it appears,
+
+          and other characteristics, must stand out from any accompanying text or other
+
+          visual elements so that it is easily noticed, read, and understood.
+
+      3. An audible disclosure, including by telephone or streaming video, must be
+
+          delivered in a volume, speed, and cadence sufficient for ordinary consumers
+
+          to easily hear and understand it.
+
+      4. In any communication using an interactive electronic medium , such as the
+
+          Internet or software, the disclosure must be unavoidable.
+
+      5. The disclosure must use diction and syntax understandable to ordinary
+
+          consumers and must appear in each language in which the representation that
+
+          requires the disclosure appears.
+
+      6. The disclosure must comply with these requirements in each medium through
+
+          which it is received, including all electronic devices and face-to-face
+
+          communications.
+
+      7. The disclosure must not be contradicted or mitigated by, or inconsistent with,
+
+          anything else in the communication.
+
+      8. When the representation or sales practice targets a specific audience, such as
+
+          children, the elderly, or the terminally ill, "ordinary consumers" includes
+
+          reasonable members of that group.
+
+B.   "Defendants" means all of the Individual Defendants and the Corporate
+
+     Defendants, individually, collectively, or in any combination.
+
+
+
+                                         3
+        1. ''Corporate Defendants" means Yellowstone Capital LLC and Fundry LLC,
+
+            and their successors and assigns.
+
+        2. "individual Defendants" means Yitzhak D. Stem, a/k/a Isaac Stern, and
+
+            Jeffrey Reece.
+
+C. "Express Informed Consent" means an affirmative act communicating
+
+     unambiguous assent to be charged, made after receiving and in close proximity to a
+
+     Clear and Conspicuous Disclosure of all material infonnation related to the charge.
+
+D. "Financing Product or Service" means any product or service represented,
+
+     expressly or by implication, to provide or assist in providing, directly or indirectly,
+
+     funds in exchange for future receivables, revenues, proceeds, or other payments or
+
+     amounts.
+
+E.   "Funder" means any entity, organization, or sole proprietorship, or any person not
+
+     otherwise affi liated with any entity, organization or sole proprietorship, that
+
+     underwrites, funds, services, or assists in obtaining repayment of Financing Products
+
+     or Services for Defendants' consumers.
+
+F. "Marketer" means any entity, organization, or sole proprietorship, or any person not
+
+     otherwise affiliated with any entity, organization or sole proprietorship, that works
+
+     with or for Defendants to assist Defendants in marketing, advertising, brokering,
+
+     selling, or acquiring consumers interested in Defendants' Financing Products or
+
+     Services.
+
+
+
+
+                                            4
+                                             ORDER
+
+               I.      PROHIBITION AGAINST MISREPRESENTATIONS
+
+       IT IS ORDERED that Defendants, Defendants' officers, agents, employees, and
+
+attorneys, and all others in active concert or participation with any of them, who receive actual
+
+notice of this Order, whether acting directly or indirectly, in connection with advertising,
+
+marketing, promoting, distributing, servicing, or offering any Financing Product or Service, arc
+
+pem1anently restrained and enjoined from misrepresenting, or assisting others in
+
+misrepresenting, expressly or by implication:
+
+       A. Any requirements for obtaining the Financing Product or Service, including but not
+
+           limited to whether consumers are required to provide Defendants with a personal
+
+           guarantee, security interest, collateral, or any other rights or remedies;
+
+       B. The existence, amount, or timing of any fees or charges, or the total amount
+
+           consumers will repay;
+
+       C. The amount of funds consumers will receive or will likely receive; or
+
+       D. Any other material fact about the performance, costs, benefits, or characteristics of
+
+           the Financing Product or Service.
+
+                              11.     REQUIRED DISCLOSURES
+
+       IT IS FURTHER ORDERED that Defondants, Defendants' officers, agents, employees,
+
+and attorneys, and all others in active concert or participation with any of them, who receive
+
+actual notice of this Order, whether acting directly or indirectly, in connection with adve1tising,
+
+marketing, promoting, distributing, servicing, or offering any Financing Product or Service, are
+
+permanently restrained and enjoined from making any representation, or assisting others in
+
+making any representation, expressly or by implication, regarding the amount of funds
+
+
+
+                                                  5
+consumers will receive or the amount consumers will repay, unless Defendants disclose Clearly
+
+and Conspicuously, and in close proximity to the representation:
+
+       A. The existence, amount, and timing of any fees or charges;
+
+        B. Iffees or charges will reduce the amount of funds that consumers will receive at the
+
+           time of funding, that fact; and the specific amount of funds consumers will receive
+
+           after paying those foes and charges; and
+
+       C. The total amount consumers will repay (absent the future assessment of any fees or
+
+           charges for any breach or default by the consumer);
+
+and the claim is not otherwise misleading.
+
+            Ill.    PROHIBITION AGAINST UNFAIR BILLING PRACTICES
+
+        IT IS FURTHER ORDERED that Defendants, Defendants' officers, agents, employees,
+
+and attorneys and all others in active concert or participation with any of them, who receive
+
+actual notice of this Order, whether acting directly or indirectly, are permanently restrained and
+
+enjoined from causing debits or withdrawals to be made from any consumer's bank or other
+
+financial account, or from billing any consumer for any charge, without the consumer's Express
+
+Informed Consent.
+
+           IV.     REQUIREMENTS REGARDING MARKETERS AND FUNDERS
+
+        lT IS FURTHER ORDER.ED that Defendants shall, as a condition of doing business with
+
+any Marketer or Funder, establish, implement, and thereafter maintain a system to monitor their
+
+Marketers and Funders to ensure compliance with this Order. This system shall include, but not
+
+be limited to:
+
+        A. Providing each Marketer and Funder with a copy of this Order;
+
+        B. Requiring that each Marketer and Funder provide Defendants with a signed and dated
+
+
+                                                 6
+   acknowledgement of receipt of this Order;
+
+C. Clearly and conspicuously disclosing to the Marketer or Funder in writing that
+
+   engaging in the acts or practices prohibited by this Order will result in immediate
+
+   termination of any business relationship between Defendants and such Marketer or
+
+   Funder, and forfeiture of all monies owed to such Marketer or Funder;
+
+D. Requiring that each Marketer and Funder provide the Order and any other
+
+   infonnation required by this Subsection to each of its employees and agents that may
+
+   do business with Defendants;
+
+E. Promptly investigating any complaints that Defendants receive through any source to
+
+   determine whether any Marketer or Funder has engaged in acts or practices prohibited
+
+   by this Order;
+
+F. Immediately terminating and ceasing payment to any Marketer or Funder who
+
+   Defendants reasonably conclude has engaged in acts or practices prohibited by this
+
+   Order; and
+
+G. To the extent Defendants terminate any business relationship with any Marketer or
+
+   Funder for engaging in acts or practices prohibited by this Order, Defendants shall
+
+   maintain records detailing the circumstances of such termination, and will take
+
+   reasonable steps to ensure that Defendants will not do business with the Marketer or
+
+   Funder or their principals .
+
+
+  V.      MONETARY JUDGMENT FOR EQUITABLE MONETARY RELIEF
+
+IT TS FURTHER ORDERED that:
+
+A. Judgment in the amount of Nine Million, Eight Hundred Thirty Seven Thousand
+
+   Dollars ($9,837,000.00) is entered in favor of the Commission against Lndividual
+
+                                       7
+   Defendants and Corporate Defendants, jointly and severally, as equitable monetary
+
+   relief.
+
+B. Defendants are ordered to pay to the Commission Nine Million, Eight Hundred Thirty
+
+   Seven Thousand Dollars ($9,837,000.00), which, as Defendants stipulate, their
+
+   undersigned counsel holds in escrow for no purpose other than payment to the
+
+   Commission. Such payment must be made within 30 days of entry of this Order by
+
+   electronic fund transfer in accordance with instructions previously provided by a
+
+   representative of the Commission.
+
+               VI.   ADDITIONAL MONET ARY PROVISIONS
+
+IT IS FURTHER ORDERED that:
+
+A. Defendants relinquish dominion and all legal and equitable right, title, and interest in
+
+   all assets transferred pursuant to this Order and may not seek the return of any assets.
+
+B. The facts alleged in the Complaint will be taken as true, without further proof, in any
+
+   subsequent civil litigation by or on behalf of the Commission, including in a
+
+   proceeding to enforce its rights to any payment or monetary judgment pursuant to this
+
+   Order, such as a nondischargeability complaint in any bankruptcy case.
+
+C. The facts alleged in the Complaint establish all elements necessary to sustain an
+
+    action by the Commission pursuant to Section 523(a)(2)(A) of the Bankruptcy Code,
+
+   ll _U. S,C.§ 523(a)(2)(A), and this Order will have collateral estoppel effect for such
+
+   purposes.
+
+D. Defendants acknowledge that their Taxpayer Identification Numbers (Social Security
+
+   Numbers or Employer Identification Numbers), which Defendants previously
+
+
+
+
+                                          8
+           submitted to the Commission, may be used for collecting and reporting on any
+
+           delinquent amount arising out of this Order, in accordance with 31 U,S.C~l:i1701.
+
+        E. All money paid to the Commission pursuant to this Order may be deposited into a
+
+           fund administered by the Commission or its dcsignee to be used for equitable relief,
+
+           including consumer redress and any attendant expenses for the administration of any
+
+           redress fund. lf a representative of the Commission decides that direct redress to
+
+           consumers is wholly or partially impracticable or money remains after redress is
+
+           completed, the Commission may apply any remaining money for such other equitable
+
+           relief(including consumer information remedies) as it determines to be reasonably
+
+           related to Defendants' practices alleged in the Complaint. Any money not used for
+
+           such equitable relief is to be deposited to the U.S. Treasury as disgorgement.
+
+           Defendants have no right to challenge any actions the Commission or its
+
+           representatives may take pursuant to this Subsection.
+
+                            VII.    CUSTOMER INFORMATION
+
+        IT IS FURTHER ORDERED that Defendants, Defendants' officers, agents, employees,
+
+and attorneys, and all others in active concert or participation with any of them, who receive
+
+actual notice of this Order, are permanently restrained and enjoined from directly or indirectly
+
+failing to provide their customer information to enable the Commission to efficiently administer
+
+consumer redress. Defendants represent that they have provided this redress information to the
+
+Commission. If a representative of the Commission requests in writing any infonnation related
+
+to redress, Defendants must provide it, in the form prescribed by the Commission, within 14
+
+days.
+
+
+
+
+                                                 9
+                           VIII. ORDER ACKNOWLEDGMENTS
+
+         IT IS FURTHER ORDERED that Defendants obtain acknowledgments ofreceipt of this
+
+Order:
+
+         A. Each Defendant, within 7 days of entry of this Order, must submit to the Commission
+
+            an acknowledgment of receipt of this Order sworn under penalty of perjury.
+
+         B. For a period of 10 years after entry of this Order for each Corporate Defendant and
+
+            Individual Defendant Yitzhak Stem, and for a period of 3 years after entry of this
+
+            Order for Individual Defendant Jeffrey Reece, for any business that such Defendant,
+
+            individually or collectively with any other Defendants, is the majority owner or
+
+            controls directly or indirectly, and each Corporate Defendant, must deliver a copy of
+
+            this Order to: (I) all principals, officers, directors, and LLC managers and members;
+
+            (2) all employees having managerial responsibilities for conduct related to the subject
+
+            matter of the Order and all agents and representatives that participate in conduct
+
+            related to the subject matter of the Order; and (3) any business entity resulting from
+
+            any change in structure as set forth in the Section titled Compliance Repotting.
+
+            Delivery must occur within 7 days of entry of this Order for current personnel. For
+
+            all others, delivery must occur before they assume their responsibilities.
+
+         C. From each individual or entity to which a Defendant delivered a copy of this Order,
+
+            that Defendant must obtain, within 30 days, a signed and dated acknowledgment of
+
+            receipt of this Order.
+
+                              IX.    COMPLIANCE REPORTING
+
+         IT IS FURTHER ORDERED that Defendants make timely submissions to the
+
+Commission:
+A. One year after entry of this Order, each Defendant must submit a compliance report,
+
+   sworn under penalty of pe1jury:
+
+       1. Each Defendant must: (a) identify the primary physical, postal, and email
+
+           address and telephone number, as designated points of contact, which
+
+           representatives of the Commission may use to communicate with Defendant;
+
+           (b) identify all of that Defendant's businesses by all of their names, telephone
+
+           numbers, and physical , postal, email, and Internet addresses; (c) describe the
+
+           activities of each business, including the goods and services offered, the
+
+           means of advertising, marketing, and sales, and the involvement of any other
+
+           Defendant (which Individual Defendants must describe if they know or should
+
+           know due to their own involvement); (d) describe in detail whether and how
+
+           that Defendant is in compliance with each Section of this Order; and (c)
+
+           provide a copy of each Order Acknowledgment obtained pursuant to this
+
+           Order, unless previously submitted to the Commission.
+
+       2. Additionally, each Individual Defendant must: (a) identify all telephone
+
+           numbers and all physical, postal, email and Internet addresses, including all
+
+           residences; (b) identify all business activities, including any business for
+
+           which such Defendant performs services whether as an employee or otherwise
+
+           and any entity in which such Defendant has any ownership interest; and (c)
+
+           describe in detail such Defendant's involvement in each such business,
+
+           including title, role, responsibilities, participation, authority, control, and any
+
+           ownership.
+
+
+
+
+                                          11
+B. For 10 years after entry of this Order, each Defendant must submit a compliance
+
+   notice, sworn under penalty of perjury, within 14 days of any change in the following:
+
+       1. Each Defendant must report any change in: (a) any designated point of
+
+           contact; or (b) the structure of any Corporate Defendant or any entity that
+
+          Defendant has any ownership interest in or controls directly or indirectly that
+
+           may affect compliance obligations arising under this Order, including:
+
+           creation, merger, sale, or dissolution of the entity or any subsidiary, parent, or
+
+           affiliate that engages in any acts or practices subject to this Order.
+
+       2. Additionally, each Individual Defendant must report any change in: (a) name,
+
+           including aliases or fictitious name, or residence address; or (b) title or role in
+
+           any business activity, including any business for which such Defendant
+
+           performs services whether as an employee or otherwise and any entity in
+
+           which such Defendant has any ownership interest, and identify the name,
+
+           physical address, and any Internet address of the business or entity.
+
+C. Each Defendant must submit to the Commission notice of the filing of any
+
+   bankruptcy petition, insolvency proceeding, or similar proceeding by or against such
+
+   Defendant within 14 days of its filing.
+
+D. Any submission to the Commission required by this Order to be sworn under penalty
+
+   of perjury must be true and accurate and comply with 28 U.S.C._§ J 74Q. such as by
+
+   concluding: "I declare under penalty of perjury under the laws of the United States of
+
+   America that the foregoing is trnc and correct. Executed on: _ _" and supplying
+
+   the date, signatory's full name, title (if applicable), and signature.
+
+
+
+
+                                          12
+       E. Unless otherwise directed by a Commission representative in writing, all submissions
+
+           to the Commission pursuant to this Order must be emailed to DEbrief@ftc.gov or
+
+           sent by overnight courier (not the U.S. Postal Service) to: Associate Director for
+
+           Enforcement, Bureau of Consumer Protection, Federal Trade Commission, 600
+
+           Pennsylvania Avenue NW, Washington, DC 20580. The subject line must begin:
+
+           FTC v. Yellowstone Capital LLC.
+
+                                  X.      RECORDKEEPING
+
+       IT TS FURTHER ORDERED that Defendants must create certain records for 10 years
+
+after entry of the Order, and retain each such record for 5 years. Specifically, Corporate
+
+Defendants in connection with Financing Products or Services and each Individual Defendant for
+
+any business that such Defendant, individually or collectively with any other Defendants, is a
+
+majority owner or controls directly or indirectly, must create and retain the following records:
+
+       A. accounting records showing the revenues from a11 goods or services sold;
+
+       B. personnel records showing, for each person providing services, whether as an
+
+           employee or othenvise, that person's: name; addresses; telephone numbers; job title
+
+           or position; dates of service; and (if applicable) the reason for termination;
+
+       C. records of all consumer complaints and refund requests, whether received directly or
+
+           indirectly, such as through a third party that provides or is authorized to provide such
+
+           records to Defendants, and any response;
+
+       D. all records necessary to demonstrate full compliance with each provision of this
+
+           Order, including all submissions to the Commission;
+
+       E. a copy of each unique advertisement or other marketing material; and
+
+
+
+
+                                                 13
+       F. that Defendants create for a period of 10 years, and retain for a period of 5 years, the
+
+           following data for each and every Financing Product or Service any Defendant has
+
+           provided to consumers:
+
+               1. the total amount of receivables, revenues, proceeds, or other payments that the
+
+               Defendant has purchased;
+
+               2. the daily or other periodic payment amount stated in the contract;
+
+               3. the date of the consumer's first daily or other periodic payment;
+
+               4. the date of the consumer' s final daily or periodic payment applied to the
+
+               purchased receivables, revenues, proceeds, or other payments;
+
+               5. the total amount the consumer actually paid to the Defendant (before, if
+
+               applicable, any refund was provided); and
+
+               6. any refund amount the Defendant provided, along with the date of that refund.
+
+                              XI.      COMPLIANCE MONITORL~G
+
+       IT IS FURTHER ORDERED that, for the purpose of monitoring Defendants ' compliance
+
+with this Order and any failure to transfer any assets as required by this Order:
+
+       A. Within 14 days of receipt of a written request from a representative of the
+
+           Commission, each Defendant must submit additional compliance reports or other
+
+           requested information, which must be sworn under penalty of perjury; appear for
+
+           depositions; and produce documents for inspection and copying. The Commission is
+
+           also authorized to obtain discovery, without further leave of court, using any of the
+
+           procedures prescribed by :E~<iYI~LR..J.!-kttPJf;::ivi.LP.r9.£~d.tJ.rn.2-.2, ;3.Q (including
+
+           telephonic depositions), 31, 33, 34, 36, 45, and 69 .
+
+
+
+
+                                                      14
+       B. For matters concerning this Order, the Commission is authorized to communicate
+
+           directly with each Defendant. Defendant must permit representatives of the
+
+           Commission to interview any employee or other person affiliated with any Defendant
+
+           who has agreed to such an interview. The person interviewed may have counsel
+
+           present.
+
+       C. The Commission may use all other lawful means, including posing, through its
+
+           representatives as consumers, suppliers, or other individuals or entities, to Defendants
+
+           or any individual or entity affiliated with Defendants, without the necessity of
+
+           identification or prior notice. Nothing in this Order limits the Commission's lawful
+
+           use of compulsory process, pursuant to Sections 9 and 20 of the FTC Act, 15 U.S.C.
+
+           §§ 49, 576-1.
+
+       D. Upon written request from a representative of the Commission, any consumer
+
+           reporting agency must furnish consumer reports concerning Individual Defendants,
+
+           pursuant to Section 604(1) of the Fair Credit Reporting Act, 15JJ.S.C.JJ68lb(a){J}.
+
+                           XII.   RETENTION OF JURISDICTION
+
+       IT IS FURTHER ORDERED that this Court retains jurisdiction of this matter for
+
+purposes of construction, modification, and enforcement of this Order.
+
+
+
+
+                                                         SQQ
+
+
+
+
+                                                15
+_ _ _ day of
+               - - - - - - - - ' 202 .
+
+
+
+
+                     16
+SO STIPULATED AND AGREED:
+
+
+FOR PLAINTIFF:
+
+
+FEDERAL TRADE COMMISSION:
+
+
+
+-~~~-~
+EVAN R. ZULLOW
+                      _ _ _ Date:
+
+CHRISTOPHER B. LEACH
+IOANA R. GORECKI
+THOMAS C. KOST
+Federal Trade Commission
+600 Pennsylvania Ave. NW
+Mail Stop CC-10232
+Washington, DC 20580
+Tel: 202-326-2914 (Zullow)
+202-326-2394 (Leach)
+202-326-2077 (Gorecki)
+202-326-2286 (Kost)
+Fax: 202-326-2752
+ezul!ow@ftc.gov; cleach@ftc.gov; igorecki@ftc.gov; tkost@ftc.gov
+
+
+
+
+                                            17
+       \._,d,.:)tJ .i .Ll-'··•L; v ··t_j()\j_~ "-J-L/-!; r'-   i,_) UCt.i! !i~.::il t .:.~t:.'_   [-· i::t: U 'jt..,,.• /i~ )_J L_~.   :-.-r ttuc~ J.,C u~ ..L :::J
+         case 1:20-cv-06023-LAK Document 44 Filed 05/04/21 Page 18 of 19
+
+
+
+
+FOR DEFENDANTS YELLOWSTONE CAPITAL LLC; FUNDRY LLC;
+YITZHAK D. STERN, A/KIA ISAAC STERN; AND JEFFREY REECE:
+
+
+
+
+Christopher Emrich Ondeck
+Proskauer Rose LLP
+1001 Pennsylvania Ave., NW
+Suite 600s
+Washington, DC 20004
+202-416-5865
+Fax: 202-416-6899
+Email: condeck@proskauer.com
+
+Counsel for Defendants Yellowstone Capital LLC and Fundry LLC
+
+
+
+
+Leonard L. Gordon
+Venable LLP (NYC)
+1270 Avenu e of the Americas
+New York, NY l 0020
+(212)-3 70-6252
+Email : lgordon@venable.com
+
+Counselfor Defe ndants Yitzhak D. Stern and Jeffrey Reece
+
+
+
+
+                                                                                 18
+DEFENDANTS:
+
+
+
+                                                                              Date: 3/19/ 2021
+YITZHAK D. STERN, a/k/ a Isaa c Stern, individually
+and as an officer of Yellowstone Capital LLC and Fundry LLC
+
+
+
+
+-   -   -   -   -----;-,-...J-f-1\---='---"'~ --   -   - --    -   - --   -
+                                                                              Date:03/19/21
+JEFFREY RE '             ually and as an officer of
+Yellowstone Capital LLC and Fundry LLC
+
+
+
+
+                                                              19
+

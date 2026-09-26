@@ -1,0 +1,48 @@
+{
+  "out": "short-paid-off-still-debited",
+  "kicker": "PAID OFF, STILL DEBITED",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    {
+      "src": "paid-off-still-debited",
+      "img": "B01",
+      "vo": "One customer wrote: my loan payoff was met and exceeded, by four daily payments. Three thousand, four hundred eighty dollars.",
+      "cap": "$3,480\nAFTER PAYOFF"
+    },
+    {
+      "src": "paid-off-still-debited",
+      "img": "B02",
+      "vo": "It's quoted in an FTC lawsuit, filed August twenty twenty, against a merchant cash advance company: Yellowstone Capital. Businesses repaid through automatic withdrawals from their bank accounts. Every day.",
+      "cap": "DEBITED\nEVERY DAY"
+    },
+    {
+      "src": "paid-off-still-debited",
+      "img": "B03",
+      "vo": "Since at least twenty fifteen, the FTC alleged, the withdrawals kept going after businesses paid in full. Four or five extra payments, or more.",
+      "cap": "PAID IN FULL.\nSTILL DEBITED.",
+      "amber": true
+    },
+    {
+      "src": "paid-off-still-debited",
+      "img": "B04",
+      "vo": "The company told one customer: there is a four day lag on ACH debits. It's simply the way our processor works.",
+      "cap": "\"A 4 DAY LAG\"",
+      "amber": true
+    },
+    {
+      "src": "paid-off-still-debited",
+      "img": "B05",
+      "vo": "When one customer complained about overpayments and overdraft fees, a servicer said to throw her the hundred dollars to go away. The operations manager: money well spent, if you don't have to talk to her.",
+      "cap": "\"MONEY\nWELL SPENT\"",
+      "amber": true
+    },
+    {
+      "src": "paid-off-still-debited",
+      "img": "B06",
+      "vo": "In twenty twenty-one, the defendants settled without admitting or denying it: a nine point eight million dollar judgment, and a ban on withdrawals without express informed consent. In the FTC's telling, the lag made the extra payments. And the company knew.",
+      "cap": "THE FTC:\nTHEY KNEW",
+      "amber": true
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "beat": 1,
+    "vo": "One customer wrote: my loan payoff was met and exceeded, by four daily payments. Three thousand, four hundred eighty dollars.",
+    "sources": [
+      {
+        "url": "https://www.ftc.gov/system/files/documents/cases/1823202yellowstonecomplaint.pdf",
+        "quote": "For example, Defendants received one customer complaint stating: \"My loan payoff was met and exceeded . . . [by] 4 daily payments totaling in the amount of $3480.\""
+      }
+    ],
+    "note": "Customer quote as quoted in the FTC complaint; ellipsis/bracket rendered as a spoken pause. Customer unnamed."
+  },
+  {
+    "beat": 2,
+    "vo": "It's quoted in an FTC lawsuit, filed August twenty twenty, against a merchant cash advance company: Yellowstone Capital. Businesses repaid through automatic withdrawals from their bank accounts. Every day.",
+    "sources": [
+      {
+        "url": "https://www.ftc.gov/system/files/documents/cases/1823202yellowstonecomplaint.pdf",
+        "quote": "Dated: August 3, 2020"
+      },
+      {
+        "url": "https://www.ftc.gov/news-events/news/press-releases/2020/08/ftc-alleges-merchant-cash-advance-provider-overcharged-small-businesses-millions",
+        "quote": "A leading provider of merchant cash advances used deception to lure small business customers ... according to a Federal Trade Commission lawsuit."
+      },
+      {
+        "url": "https://www.ftc.gov/system/files/documents/cases/1823202yellowstonecomplaint.pdf",
+        "quote": "the consumer agrees to repay a total of $14,000 via daily withdrawals from the consumer's bank account."
+      },
+      {
+        "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/182-3202-yellowstone-capital-llc-ftc-v",
+        "quote": "Merchant cash advances are a form of financing in which a company provides money to a small business up front in exchange for a larger amount repaid through daily automatic payments."
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "vo": "Since at least twenty fifteen, the FTC alleged, the withdrawals kept going after businesses paid in full. Four or five extra payments, or more.",
+    "sources": [
+      {
+        "url": "https://www.ftc.gov/system/files/documents/cases/1823202yellowstonecomplaint.pdf",
+        "quote": "Since at least 2015, Defendants have withdrawn money from customers' accounts in excess of the amounts customers authorized, by continuing to withdraw daily payments from customers after they have already fully repaid the \"Purchased Amount.\""
+      },
+      {
+        "url": "https://www.ftc.gov/system/files/documents/cases/1823202yellowstonecomplaint.pdf",
+        "quote": "collecting an additional 4-5 or more unauthorized payments after customers have already fully repaid the \"Purchased Amount.\""
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "vo": "The company told one customer: there is a four day lag on ACH debits. It's simply the way our processor works.",
+    "sources": [
+      {
+        "url": "https://www.ftc.gov/system/files/documents/cases/1823202yellowstonecomplaint.pdf",
+        "quote": "Defendants explained to another customer who complained about excess, unauthorized debits that \"there is a 4 day lag on ACH debits . . . it's simply the way our processor works.\""
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "vo": "When one customer complained about overpayments and overdraft fees, a servicer said to throw her the hundred dollars to go away. The operations manager: money well spent, if you don't have to talk to her.",
+    "sources": [
+      {
+        "url": "https://www.ftc.gov/system/files/documents/cases/1823202yellowstonecomplaint.pdf",
+        "quote": "When another customer complained to Defendants about overpayments taken from her, and resulting bank overdraft fees, one of Defendants' in-house servicers told his employee \"if she busts your balls again and doesn't stop – u can use ur judgment and throw her the $100 to go away,\" and Defendants' Operations Manager stated \"I think it's money well spent if you don't have to talk to her.\""
+      }
+    ],
+    "note": "'$100' spoken as 'the hundred dollars'; the quotes are trimmed, not altered. This is ONE customer (complaint ¶33 second example) — not welded to the separate $140-overdraft customer."
+  },
+  {
+    "beat": 6,
+    "vo": "In twenty twenty-one, the defendants settled without admitting or denying it: a nine point eight million dollar judgment, and a ban on withdrawals without express informed consent. In the FTC's telling, the lag made the extra payments. And the company knew.",
+    "sources": [
+      {
+        "url": "https://www.ftc.gov/system/files/documents/cases/x200054yellowstonestipulatedorder.pdf",
+        "quote": "Defendants neither admit nor deny any of the allegations in the Complaint, except as specifically stated in this Order."
+      },
+      {
+        "url": "https://www.ftc.gov/system/files/documents/cases/x200054yellowstonestipulatedorder.pdf",
+        "quote": "Judgment in the amount of Nine Million, Eight Hundred Thirty Seven Thousand Dollars ($9,837,000.00) is entered in favor of the Commission"
+      },
+      {
+        "url": "https://www.ftc.gov/news-events/news/press-releases/2021/04/cash-advance-firm-pay-98m-settle-ftc-complaint-it-overcharged-small-businesses",
+        "quote": "The defendants will also be prohibited from making withdrawals from consumers' bank accounts without their express informed consent."
+      },
+      {
+        "url": "https://www.ftc.gov/news-events/news/press-releases/2021/04/cash-advance-firm-pay-98m-settle-ftc-complaint-it-overcharged-small-businesses",
+        "quote": "The FTC filed the proposed order signed by the Commission and the defendants on April 21, 2021"
+      },
+      {
+        "url": "https://www.ftc.gov/system/files/documents/cases/1823202yellowstonecomplaint.pdf",
+        "quote": "Defendants have acknowledged that they take these overpayments from customers knowingly. Specifically, Defendants' payment and recordkeeping processes create a \"lag\" or \"debit delay\" that results in them collecting an additional 4-5 or more unauthorized payments"
+      }
+    ],
+    "note": "'Nine point eight million' is the judgment resolving ALL counts; the VO does not equate it with the over-debited amount. 'The company knew' is attributed ('In the FTC's telling') — an allegation, settled without admission."
+  }
+]

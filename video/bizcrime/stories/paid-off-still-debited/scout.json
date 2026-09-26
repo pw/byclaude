@@ -1,0 +1,18 @@
+{
+ "title": "$9.8 Million Taken From Bank Accounts That Were Already Paid Off",
+ "one_paragraph_summary": "The FTC charged Yellowstone Capital with continuing to withdraw hundreds or thousands of dollars a day from small-business bank accounts even after merchants had fully repaid what their merchant-cash-advance contracts required \u2014 plus deceiving business owners about how much financing they'd actually receive. Yellowstone settled for $9.8 million, and in 2022 the FTC mailed 7,731 refund checks totaling more than $9.7 million back to the small businesses it had overcharged.",
+ "victim_type": "small businesses with active merchant-cash-advance financing",
+ "year": "2020 (FTC complaint) - 2022 (refunds mailed)",
+ "dollar_amount_if_any": "$9.8 million settlement; $9.7 million refunded to 7,731 businesses",
+ "named_parties": "Yellowstone Capital LLC; Fundry.com LLC; principals named in FTC v. Yellowstone Capital LLC",
+ "primary_source_urls": [
+  "https://www.ftc.gov/news-events/news/press-releases/2022/06/federal-trade-commission-returns-more-97-million-small-businesses-harmed-yellowstone-capitals",
+  "https://www.ftc.gov/legal-library/browse/cases-proceedings/182-3202-yellowstone-capital-llc-ftc-v"
+ ],
+ "secondary_urls": [
+  "https://search.ftc.gov/news-events/news/press-releases/2021/04/cash-advance-firm-pay-98m-settle-ftc-complaint-it-overcharged-small-businesses",
+  "https://www.claimdepot.com/settlements/yellowstone-mca-settlement"
+ ],
+ "why_it_hooks": "They finished paying the loan back. The company kept taking money out of their account anyway \u2014 for months.",
+ "verification_notes": "Primary FTC case page and press release confirm the settlement and refund numbers. Same corporate family as the NY AG billion-dollar case above but a distinct FTC action/timeline \u2014 script should make clear these are two separate enforcement actions against the same lender so they aren't retold as duplicates."
+}
