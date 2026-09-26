@@ -1449,6 +1449,8 @@ function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').repl
 
 // Posting order for the FBB Loop films: strongest first, heavy and light alternating,
 // with a note where a film has a natural moment. Films not yet uploaded are skipped.
+const FBB_BIO = 'someone to talk to, any hour. an AI, not a therapist. free, no sign-up.';   // TikTok bio cap is 80 chars; end-card line + honesty line
+const FBB_BIO_LINK = "https://feelbetterbot.com/t/bio";
 const FBB_ORDER = [
   { key: "fbb-the-loop.mp4", title: "3am replay", when: "late evening" },
   { key: "fbb-loop-dark.mp4", title: "Dark at 6pm", when: "early evening — very on-season now" },
@@ -1491,14 +1493,52 @@ h1{font-size:22px;margin:0 0 4px}.sub{color:var(--mute);font-size:14px;margin:0 
 .ck{width:34px;height:34px;border:2px solid #3a4454;border-radius:8px;flex:none;background:transparent;cursor:pointer}
 .row.done{opacity:.45}.row.done .ck{background:var(--amber);border-color:var(--amber)}
 .foot{color:var(--mute);font-size:13px;margin-top:18px}
+.prof{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:0 0 22px}
+.plab{font:600 12px/1 ui-monospace,Menlo,monospace;letter-spacing:.2em;color:var(--mute);margin-bottom:12px}
+.fld{border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.fhd{display:flex;align-items:center;gap:8px;padding:8px 10px;font-size:13px;color:var(--mute);border-bottom:1px solid var(--line)}
+.cnt{font:12px ui-monospace,Menlo,monospace}.fhd .cp{margin-left:auto}
+.cp{background:var(--amber);color:#0b0e13;border:0;border-radius:8px;font:700 13px/1 -apple-system,sans-serif;letter-spacing:.04em;padding:9px 14px;cursor:pointer}
+.val{padding:12px;font-size:15px;word-break:break-word}
+.avs{display:flex;gap:14px;padding:12px}.av{flex:1;text-align:center}
+.av img{width:100%;max-width:150px;aspect-ratio:1;border-radius:50%;display:block;margin:0 auto 10px}
+.sv{background:var(--amber);color:#0b0e13;border:0;border-radius:8px;font:700 13px/1 -apple-system,sans-serif;padding:9px 14px;cursor:pointer}
+.an{color:var(--mute);font-size:12px;margin-top:6px}.pnote{color:var(--mute);font-size:12px}
 </style></head><body><div class="wrap">
 <h1>FBB Loop films</h1>
+<div class="prof">
+  <div class="plab">TIKTOK PROFILE</div>
+  <div class="fld"><div class="fhd">Bio <span class="cnt">${FBB_BIO.length}/80</span><button class="cp" data-t="bio">COPY</button></div><div class="val" id="bio">${esc(FBB_BIO)}</div></div>
+  <div class="fld"><div class="fhd">Website link<button class="cp" data-t="link">COPY</button></div><div class="val" id="link">${esc(FBB_BIO_LINK)}</div></div>
+  <div class="fld"><div class="fhd">Profile photo</div><div class="avs">
+    <div class="av"><img src="/m/fbb-avatar-night.png" alt=""><button class="sv" data-f="fbb-avatar-night.png">SAVE</button><div class="an">night · my pick</div></div>
+    <div class="av"><img src="/m/fbb-avatar-brand.png" alt=""><button class="sv" data-f="fbb-avatar-brand.png">SAVE</button><div class="an">site colors</div></div>
+  </div></div>
+  <div class="pnote">Needs a Business account for the link to show before 1,000 followers. It opens the normal FeelBetterBot homepage; we just count arrivals from it.</div>
+</div>
 <p class="sub">One a day, top to bottom. Tap a film for Save to Photos + the caption. Tap the box when it\u2019s posted (remembered on this phone).</p>
 ${rows}
-<p class="foot">Set the TikTok bio link to <b>feelbetterbot.com/t/bio</b> — it's the one clickable link on TikTok, and each caption carries its own typeable /t/ path so we can tell which film sent people.</p>
+<p class="foot">Each caption carries its own typeable /t/ path, so we can tell which film sent people.</p>
 </div>
 <script>
 (function(){
+  document.querySelectorAll('.cp').forEach(function(b){b.addEventListener('click',function(){
+    var el=document.getElementById(b.getAttribute('data-t')),t=el.textContent;
+    function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='SELECTED';}
+    if(navigator.clipboard){navigator.clipboard.writeText(t).then(function(){b.textContent='COPIED';setTimeout(function(){b.textContent='COPY'},1500)},sel)}else sel();
+  })});
+  // Photos needs the share sheet on iPhone (a download lands in Files). iOS only allows share()
+  // inside the tap, so the images are fetched on load, not in the click. Long-press also works.
+  var files={};
+  document.querySelectorAll('.sv').forEach(function(b){
+    var f=b.getAttribute('data-f');
+    fetch('/m/'+f).then(function(r){return r.blob()}).then(function(bl){files[f]=new File([bl],f,{type:'image/png'})}).catch(function(){});
+    b.addEventListener('click',function(){
+      var file=files[f];
+      if(file&&navigator.canShare&&navigator.canShare({files:[file]})){navigator.share({files:[file]}).catch(function(){});}
+      else location.href='/m/'+f;
+    });
+  });
   var K='fbb-posted';function get(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return {}}}
   function put(o){try{localStorage.setItem(K,JSON.stringify(o))}catch(e){}}
   var done=get();
