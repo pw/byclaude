@@ -1,0 +1,18 @@
+{
+ "title": "The Salon That Had to Explain It Never Took Their Money",
+ "one_paragraph_summary": "Fox13 Memphis reported that scammers cloned African Hair Braiding's identity on social media -- in Orange Mound, owned by Olayinka Robinson -- and collected Cash App 'deposits' of up to $100 from customers booking appointments that never existed. Victims only discovered the fraud when they showed up at the real salon asking for a stylist named 'Tiffany' who had never worked there, forcing Robinson's real business to repeatedly explain it had never taken their money at all.",
+ "victim_type": "hair salon / braiding stylist business",
+ "year": 2023,
+ "dollar_amount_if_any": "Up to $100 per victim; total across victims not disclosed",
+ "named_parties": [
+  "African Hair Braiding (Orange Mound, Memphis, TN)",
+  "Olayinka Robinson (owner)",
+  "Daniel Irwin (BBB of the Mid-South, quoted)"
+ ],
+ "primary_source_urls": [
+  "https://www.fox13memphis.com/news/scammers-targeting-hair-salon-customers-out-of-hundreds-of-dollars-to-secure-appointments/article_1d63eb08-3c9b-11ee-8bcd-a36f0650859f.html"
+ ],
+ "secondary_urls": [],
+ "why_it_hooks": "Customers kept showing up asking for a stylist who never worked there a day in her life -- the real salon had to keep proving a negative: 'we never took your money.'",
+ "verification_notes": "Confirmed via direct fetch of the Fox13 Memphis article, including the owner's name, business name, direct quotes, and the Cash App detail. Note the money flowed from customers to scammers, not directly out of the salon's account -- frame the business as the reputational/operational victim (turned-away real customers, damaged trust, unpaid impersonation labor to clear its name), which the article supports."
+}

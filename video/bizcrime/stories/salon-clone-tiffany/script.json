@@ -1,0 +1,46 @@
+{
+  "out": "short-salon-clone-tiffany",
+  "kicker": "IS THERE A TIFFANY HERE?",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    {
+      "src": "salon-clone-tiffany",
+      "img": "B01",
+      "vo": "Somebody walks into a braiding salon in Memphis and asks: Is there a Tiffany here? We pay some amount online.",
+      "cap": "IS THERE A\nTIFFANY HERE?"
+    },
+    {
+      "src": "salon-clone-tiffany",
+      "img": "B02",
+      "vo": "It's African Hair Braiding, in Orange Mound. In August twenty twenty-three, the owner, Olayinka Robinson, told FOX Thirteen: We do not take any deposits. We take no money online, period.",
+      "cap": "NO MONEY ONLINE"
+    },
+    {
+      "src": "salon-clone-tiffany",
+      "img": "B03",
+      "vo": "Time and again, she said, customers were asked to Cash App up to a hundred dollars to secure an appointment at her salon. They show up, and learn they have been duped.",
+      "cap": "UP TO $100\nBY CASH APP",
+      "amber": true
+    },
+    {
+      "src": "salon-clone-tiffany",
+      "img": "B04",
+      "vo": "FOX Thirteen called it the latest trick: ripping businesses' information off the internet, then tricking people into paying deposits. The Better Business Bureau says scammers usually hijack a business's social media, or make new accounts in its name.",
+      "cap": "THE LATEST TRICK"
+    },
+    {
+      "src": "salon-clone-tiffany",
+      "img": "B05",
+      "vo": "A year earlier, FOX Thirteen reported the same thing at another Memphis salon, Empire Hair Studio. Its owner said almost thirty people paid a scammer by Cash App, for appointments that were never made.",
+      "cap": "A YEAR EARLIER"
+    },
+    {
+      "src": "salon-clone-tiffany",
+      "img": "B06",
+      "vo": "The bureau's biggest red flag: being asked to pay by Cash App. The salon takes no money online. The scam never needed it to. It needed the salon's name, and your deposit.",
+      "cap": "ITS NAME.\nYOUR DEPOSIT.",
+      "amber": true
+    }
+  ]
+}

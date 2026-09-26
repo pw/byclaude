@@ -1,0 +1,137 @@
+{
+ "slug": "salon-clone-tiffany",
+ "claims": [
+  {
+   "beat": 1,
+   "vo": "Somebody walks into a braiding salon in Memphis and asks: Is there a Tiffany here? We pay some amount online.",
+   "sources": [
+    {
+     "url": "https://www.fox13memphis.com/news/scammers-targeting-hair-salon-customers-out-of-hundreds-of-dollars-to-secure-appointments/article_1d63eb08-3c9b-11ee-8bcd-a36f0650859f.html",
+     "quote": "\"Somebody will come in and say, 'Is there a Tiffany here? We pay some amount online,'\" said Robinson.",
+     "note": "'walks into' paraphrases 'will come in'. No gender given; nothing said about who Tiffany is. Quote kept verbatim ('We pay', not 'We paid')."
+    },
+    {
+     "url": "https://www.fox13memphis.com/news/scammers-targeting-hair-salon-customers-out-of-hundreds-of-dollars-to-secure-appointments/article_1d63eb08-3c9b-11ee-8bcd-a36f0650859f.html",
+     "quote": "\"We do not take any deposits. We take no money online period,\" owner of African Hair Braiding in Orange Mound, Olayinka Robinson, said.",
+     "note": "Source for 'braiding salon in Memphis' (Orange Mound is a Memphis neighbourhood; FOX13 Memphis report)."
+    }
+   ]
+  },
+  {
+   "beat": 2,
+   "vo": "It's African Hair Braiding, in Orange Mound. In August twenty twenty-three, the owner, Olayinka Robinson, told FOX Thirteen: We do not take any deposits. We take no money online, period.",
+   "sources": [
+    {
+     "url": "https://www.fox13memphis.com/news/scammers-targeting-hair-salon-customers-out-of-hundreds-of-dollars-to-secure-appointments/article_1d63eb08-3c9b-11ee-8bcd-a36f0650859f.html",
+     "quote": "\"We do not take any deposits. We take no money online period,\" owner of African Hair Braiding in Orange Mound, Olayinka Robinson, said.",
+     "note": "Date = article datePublished 2023-08-16T20:12:00-05:00 (the report's date, not a date for the scams)."
+    }
+   ]
+  },
+  {
+   "beat": 3,
+   "vo": "Time and again, she said, customers were asked to Cash App up to a hundred dollars to secure an appointment at her salon.",
+   "sources": [
+    {
+     "url": "https://www.fox13memphis.com/news/scammers-targeting-hair-salon-customers-out-of-hundreds-of-dollars-to-secure-appointments/article_1d63eb08-3c9b-11ee-8bcd-a36f0650859f.html",
+     "quote": "But time and again Olayinka Robinson said customers have fallen victim to this scam."
+    },
+    {
+     "url": "https://www.fox13memphis.com/news/scammers-targeting-hair-salon-customers-out-of-hundreds-of-dollars-to-secure-appointments/article_1d63eb08-3c9b-11ee-8bcd-a36f0650859f.html",
+     "quote": "Robinson said the victims are asked to Cash App up to one hundred dollars to secure an appointment at her hair salon."
+    }
+   ]
+  },
+  {
+   "beat": 3,
+   "vo": "They show up, and learn they have been duped.",
+   "sources": [
+    {
+     "url": "https://www.fox13memphis.com/news/scammers-targeting-hair-salon-customers-out-of-hundreds-of-dollars-to-secure-appointments/article_1d63eb08-3c9b-11ee-8bcd-a36f0650859f.html",
+     "quote": "They show up and learn they have been duped.",
+     "note": "Verbatim."
+    }
+   ]
+  },
+  {
+   "beat": 4,
+   "vo": "FOX Thirteen called it the latest trick: ripping businesses' information off the internet, then tricking people into paying deposits.",
+   "sources": [
+    {
+     "url": "https://www.fox13memphis.com/news/scammers-targeting-hair-salon-customers-out-of-hundreds-of-dollars-to-secure-appointments/article_1d63eb08-3c9b-11ee-8bcd-a36f0650859f.html",
+     "quote": "The latest trick: ripping reputable businesses' information off the internet, then tricking you into paying deposits and scheduling appointments.",
+     "note": "'reputable' and 'and scheduling appointments' dropped; 'you' -> 'people'."
+    }
+   ]
+  },
+  {
+   "beat": 4,
+   "vo": "The Better Business Bureau says scammers usually hijack a business's social media, or make new accounts in its name.",
+   "sources": [
+    {
+     "url": "https://www.fox13memphis.com/news/scammers-targeting-hair-salon-customers-out-of-hundreds-of-dollars-to-secure-appointments/article_1d63eb08-3c9b-11ee-8bcd-a36f0650859f.html",
+     "quote": "\"Scammers will impersonate reputable businesses; usually hi-jacking or taking over their social media accounts, creating all new social media accounts for that business owner unbeknownst to that business owner,\" said Irwin.",
+     "note": "General description of the scam type, attributed to the BBB (spokesman not named per naming rule). Not claimed for this salon."
+    }
+   ]
+  },
+  {
+   "beat": 5,
+   "vo": "A year earlier, FOX Thirteen reported the same thing at another Memphis salon, Empire Hair Studio.",
+   "sources": [
+    {
+     "url": "https://www.fox13memphis.com/news/scammers-targeting-hair-salon-customers-out-of-hundreds-of-dollars-to-secure-appointments/article_1d63eb08-3c9b-11ee-8bcd-a36f0650859f.html",
+     "quote": "Last year FOX13 did a story about a hair salon owner in Memphis who said customers placed online deposits for hair appointments only to show up and learn they had no appointment and they had been scammed."
+    },
+    {
+     "url": "https://www.fox13memphis.com/news/it-won-t-stop-scammer-poses-as-stylist-in-memphis/article_58fa5006-51ec-5309-b3a8-82a1088f6d03.html",
+     "quote": "\"We've had at least six in a day, sometimes three a day,\" explained Becky Johnson, the owner of Empire Hair Studio.",
+     "note": "Source 2 published 2022-07-29 — a year before Source 1. The VO does NOT claim Source 2 is the story Source 1 refers to; both independently establish a Memphis salon + FOX13 report in 2022."
+    }
+   ]
+  },
+  {
+   "beat": 5,
+   "vo": "Its owner said almost thirty people paid a scammer by Cash App, for appointments that were never made.",
+   "sources": [
+    {
+     "url": "https://www.fox13memphis.com/news/it-won-t-stop-scammer-poses-as-stylist-in-memphis/article_58fa5006-51ec-5309-b3a8-82a1088f6d03.html",
+     "quote": "\"It's been almost thirty people in total.\""
+    },
+    {
+     "url": "https://www.fox13memphis.com/news/it-won-t-stop-scammer-poses-as-stylist-in-memphis/article_58fa5006-51ec-5309-b3a8-82a1088f6d03.html",
+     "quote": "She said the women have then sent the money on Cash App and showed up at the salon, only to learn they had been the victim of an online scam."
+    },
+    {
+     "url": "https://www.fox13memphis.com/news/it-won-t-stop-scammer-poses-as-stylist-in-memphis/article_58fa5006-51ec-5309-b3a8-82a1088f6d03.html",
+     "quote": "For seven months, the owner of a Memphis hair studio said women have been walking into her business expecting appointments that were never made."
+    }
+   ]
+  },
+  {
+   "beat": 6,
+   "vo": "The bureau's biggest red flag: being asked to pay by Cash App.",
+   "sources": [
+    {
+     "url": "https://www.fox13memphis.com/news/scammers-targeting-hair-salon-customers-out-of-hundreds-of-dollars-to-secure-appointments/article_1d63eb08-3c9b-11ee-8bcd-a36f0650859f.html",
+     "quote": "\"The biggest red flag from a consumer standpoint would be if someone wants you to pay via Cash App,\" said Daniel Irwin with Better Business Bureau of the Mid-South."
+    }
+   ]
+  },
+  {
+   "beat": 6,
+   "vo": "The salon takes no money online. The scam never needed it to. It needed the salon's name, and your deposit.",
+   "sources": [
+    {
+     "url": "https://www.fox13memphis.com/news/scammers-targeting-hair-salon-customers-out-of-hundreds-of-dollars-to-secure-appointments/article_1d63eb08-3c9b-11ee-8bcd-a36f0650859f.html",
+     "quote": "\"We do not take any deposits. We take no money online period,\""
+    },
+    {
+     "url": "https://www.fox13memphis.com/news/scammers-targeting-hair-salon-customers-out-of-hundreds-of-dollars-to-secure-appointments/article_1d63eb08-3c9b-11ee-8bcd-a36f0650859f.html",
+     "quote": "The latest trick: ripping reputable businesses' information off the internet, then tricking you into paying deposits and scheduling appointments.",
+     "note": "'the salon's name' = the business information the scam used; closing mechanism line, no new fact."
+    }
+   ]
+  }
+ ]
+}

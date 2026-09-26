@@ -868,6 +868,24 @@ Source: United States v. Mark Mushkin, Southern District of New York, criminal c
 
 #smallbusinessowner #smallbusiness #officemanager #lawfirm #smallbusinesstips #contractorlife`
   },
+  "salon-clone-tiffany": {
+    title: "Is there a Tiffany here? — the salon deposit scam, Memphis",
+    yt: `"Is there a Tiffany here? We pay some amount online." That's what somebody will come in and ask, says Olayinka Robinson, owner of African Hair Braiding in Orange Mound, Memphis. Her salon takes no deposits and no money online at all. Yet time and again, she told FOX13 in August 2023, customers were asked to Cash App up to $100 to secure an appointment there, then showed up and learned they had been duped. The Better Business Bureau of the Mid-South says the biggest red flag is being asked to pay by Cash App. A year earlier, FOX13 reported the same thing at another Memphis salon, Empire Hair Studio, where the owner said almost thirty people had paid a scammer for appointments that were never made.
+
+Source: FOX13 Memphis, Aug. 16, 2023.
+
+#salonowner #hairbraider #smallbusinessowner #beautybusiness #shorts`,
+    tiktok: `"Is there a Tiffany here? We pay some amount online." This braiding salon takes no money online, period. Time and again, its owner said, customers were asked to Cash App up to $100 to secure an appointment, then showed up and learned they had been duped. The scam needed only the salon's name and your deposit.
+
+Source: FOX13 Memphis, Aug. 16, 2023.
+
+#salonowner #hairbraider #smallbusinessowner #beautybusiness #smallbusinesstips`,
+    reels: `Somebody walks into a braiding salon in Memphis and asks, "Is there a Tiffany here? We pay some amount online." The salon, African Hair Braiding in Orange Mound, takes no deposits and no money online at all, but time and again, its owner said, customers were asked to Cash App up to $100 to secure an appointment, then showed up and learned they had been duped. The scam needed only the salon's name and a customer's deposit. The Better Business Bureau advises putting your terms ("we don't take deposits") on your real pages, so customers can check.
+
+Source: FOX13 Memphis, Aug. 16, 2023.
+
+#salonowner #hairbraider #smallbusinessowner #beautybusiness #smallbusinesstips`
+  },
   "google-delist-robocall": {
     title: "The final notice — FTC v. Pointbreak Media",
     yt: `"This is your final notice. If you do not act soon, Google will label your business as permanently closed." That was one of the robocalls from Pointbreak Media, a Florida telemarketer the court found had no affiliation with Google. In seven weeks of 2017 it made nearly 75 million robocalls, nearly 15 million of them to numbers on the Do Not Call Registry. Owners who pressed one paid $300 to $500 to claim and verify a listing Google lets you claim for free. When its card processor cut it off in October 2017, it wrote itself $100 checks from at least 280 customers' bank accounts without consent. In 2019 a federal judge ordered Dustin Pillonato and Justin Ramsey to pay $3,367,666.30 and hand over 53 pieces of jewelry.
