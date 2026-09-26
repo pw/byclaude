@@ -1,0 +1,14 @@
+{
+  "out": "short-payroll-vanished",
+  "kicker": "MYPAYROLLHR",
+  "voice": "Atlas",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "payroll-vanished", "img": "B01", "vo": "The first week of September, twenty nineteen. A diner owner in Rindge, New Hampshire, was at her critically ill mother's bedside when her manager called.", "cap": "RINDGE, N.H. · SEPT 2019" },
+    { "src": "payroll-vanished", "img": "B02", "vo": "None of the diner's roughly two dozen employees had been paid that week. The money had already left the diner's bank account.", "cap": "NOBODY PAID", "amber": true },
+    { "src": "payroll-vanished", "img": "B03", "vo": "Her payroll company, My Payroll HR, had shut down on September fifth. Prosecutors said it handled payroll for about a thousand small businesses.", "cap": "SHUT DOWN\nSEPT 5, 2019" },
+    { "src": "payroll-vanished", "img": "B04", "vo": "Its owner, Michael Mann, later admitted to years of fake invoices and loans he couldn't repay. So he began diverting his clients' payroll.", "cap": "FAKE INVOICES" },
+    { "src": "payroll-vanished", "img": "B05", "vo": "Payroll moved as digital files, meant to carry each employer's money to its employees. Mann changed the instructions inside them, sending the money to accounts he controlled. When his bank froze those accounts, the payroll froze too.", "cap": "HE CHANGED\nTHE INSTRUCTIONS", "amber": true },
+    { "src": "payroll-vanished", "img": "B06", "vo": "Several thousand people didn't get a paycheck. Bonnie Rosengrant and her husband spent thirty thousand dollars of savings covering wages and payroll taxes. Mann was sentenced to a hundred forty-four months. As of July twenty twenty-six, the Times Union reported, his victims had received nothing.", "cap": "RECEIVED\nNOTHING", "amber": true }
+  ]
+}

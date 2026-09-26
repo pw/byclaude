@@ -1,0 +1,56 @@
+https://www.nbcnews.com/news/us-news/fbi-investigates-after-millions-workers-direct-deposit-pay-vanishes-n1053426
+fetched 2026-09-26 direct curl (browser UA) — SECONDARY (NBC News, Dennis Romero, Sept. 12, 2019). Headline: FBI investigates after millions in workers' direct-deposit pay vanish
+
+Sept. 12, 2019, 11:38 PM EDT By Dennis Romero
+
+The FBI and the New York State Department of Labor are investigating allegations that a payroll company diverted millions of dollars in employee pay to its own bank account, officials said Thursday.
+
+An FBI spokesperson confirmed the investigation after the bureau's Albany, New York, office tweeted that it was "seeking information from business owners who may have suffered financial loss due to the alleged activity of MyPayrollHR and its affiliates."
+
+A spokesperson for the U.S. Department of Labor said New York state labor officials are also investigating.
+
+Download the NBC News app for breaking news and politics
+
+MyPayrollHR, based in Clifton Park, New York, apparently ceased operations last week after direct-deposit company Cachet Financial Services claimed it diverted as much as $26 million in small-business employee paychecks to one of its bank accounts. Cachet handles direct deposit transactions for numerous payroll firms.
+
+Last week, MyPayrollHR said in a message to clients, posted by the website KrebsonSecurity, that "we are no longer able to process any further payroll transactions."
+
+In some cases, small business employees did not receive their regular direct deposit paychecks at the end of August, and their normal pay was withdrawn from their accounts twice. The second withdrawal was the result of a technical error that has since been corrected, Cachet general counsel Wendy Slavkin said.
+
+But MyPayrollHR still did not make the original payments, she said, and the company alerted the FBI.
+
+MyPayrollHR did not respond to a request for comment.
+
+Olivia Braund, who works in marketing for Shafran Realty Group in Carlsbad, California, said she received a text from Chase Bank after payday notifying her that her account had been drained of the exact amount of her usual check.
+
+Olivia Braund of Shafran Realty Group in Carlsbad, California.KNSDHer boss, Alan Shafran, was kind enough to cover the amount, she said, adding she soon realized the entire office had had the same experience.
+
+Chase reversed the charges, Braund said, and she repaid her boss, but she ended up opening a new account to ensure it didn't happen again.
+
+"It was one of those things where everyone was scrambling for answers," she said. "We have a new payroll company now."
+
+About 4,000 businesses that used MyPayrollHR were affected by the situation, Slavkin said.
+
+The incident occurred just before Labor Day weekend when MyPayrollHR, which has worked with Cachet for about 12 years, submitted the usual data files for the latest employee pay period, she said.
+
+The files would normally place employer funds in a Cachet holding account for disbursement to workers, but codes were changed that diverted the funds to an account at Pioneer Bank controlled by MyPayrollHR, Slavkin said.
+
+Before the diversion was caught, Cachet had initiated direct deposits to workers employed by companies that used MyPayrollHR, she said. But the money wasn't there.
+
+Not realizing exactly what the problem was, Cachet moved to reverse the Pioneer deposit but found on Sept. 4 that the account had been frozen, Slavkin said.
+
+Cachet also submitted requests to reverse direct deposits to employees but after realizing the initial request contained the wrong code, the company put in a second request, Slavkin said.
+
+Both requests were accepted, leading some workers to find that not only were they not paid, but twice their normal pay had been removed from their accounts, she said.
+
+Cachet has worked with employees' banks to correct the reversals and will cover the paychecks until they can recover funds from Pioneer Bank or MyPayrollHR, she said.
+
+"It's basically Cachet's money used to pay thousands of employees across the country," Slavkin said.
+
+The firm is also rolling out new protocols that would prevent outside parties from diverting funds.
+
+It's not clear what will become of funds deposited with Pioneer Bank. A spokesman for the institution referred NBC News to a U.S. Securities and Exchange Commission filing dated Wednesday regarding "$19 million of deposit activity" that could constitute "potentially fraudulent activity."
+
+"The Company is working with the appropriate law enforcement authorities in connection with this matter," the SEC said in the report.
+
+The FBI has already heard from potential victims across the nation, an agent said. The U.S. Department of Labor is monitoring the investigations and is prepared to help, a spokesperson said.

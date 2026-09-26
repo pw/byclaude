@@ -1,0 +1,124 @@
+{
+  "slug": "payroll-vanished",
+  "claims": [
+    {
+      "vo": "The first week of September, twenty nineteen. A diner owner in Rindge, New Hampshire, was at her critically ill mother's bedside when her manager called.",
+      "sources": [
+        {
+          "url": "https://www.timesunion.com/business/article/Victims-of-MyPayrollHR-collapse-reveal-pain-and-16360790.php",
+          "quote": "In their sentencing memo, federal prosecutors lead with the story of Bonnie Rosengrant, the owner of the Hometown Diner, a popular eatery in Rindge, N.H., near Franklin Pierce University."
+        },
+        {
+          "url": "https://www.timesunion.com/business/article/Victims-of-MyPayrollHR-collapse-reveal-pain-and-16360790.php",
+          "quote": "Rosengrant was sitting at the bedside of her critically ill mother, holding her hand, during the first week in September 2019 when she received a call from her manager that none of the diner's roughly two dozen employees had been paid that week — despite the fact that the funds had already been pulled from the diner's bank account."
+        }
+      ]
+    },
+    {
+      "vo": "None of the diner's roughly two dozen employees had been paid that week. The money had already left the diner's bank account.",
+      "sources": [
+        {
+          "url": "https://www.timesunion.com/business/article/Victims-of-MyPayrollHR-collapse-reveal-pain-and-16360790.php",
+          "quote": "...none of the diner's roughly two dozen employees had been paid that week — despite the fact that the funds had already been pulled from the diner's bank account."
+        }
+      ]
+    },
+    {
+      "vo": "Her payroll company, My Payroll HR, had shut down on September fifth.",
+      "sources": [
+        {
+          "url": "https://www.justice.gov/usao-ndny/pr/michael-mann-charged-bank-fraud",
+          "quote": "On September 5, 2019, MyPayrollHR suddenly ceased operations after Mann’s banks froze his accounts, suspecting him of fraud."
+        },
+        {
+          "url": "https://www.timesunion.com/business/article/michael-mann-prison-fraud-victims-still-limbo-22338636.php",
+          "quote": "Rosengrant had been using MyPayrollHR for about three years at the time."
+        }
+      ]
+    },
+    {
+      "vo": "Prosecutors said it handled payroll for about a thousand small businesses.",
+      "sources": [
+        {
+          "url": "https://www.justice.gov/usao-ndny/pr/michael-mann-charged-bank-fraud",
+          "quote": "Until this month, MyPayrollHR processed payroll and tax payments for approximately 1,000 small-business clients located across the country."
+        }
+      ]
+    },
+    {
+      "vo": "Its owner, Michael Mann, later admitted to years of fake invoices and loans he couldn't repay.",
+      "sources": [
+        {
+          "url": "https://www.justice.gov/usao-ndny/pr/valuewise-ceo-michael-mann-sentenced-144-months-prison-100-million-fraud",
+          "quote": "Mann operated ValueWise Corporation, based in Clifton Park, New York, as well as subsidiary companies including MyPayrollHR.com LLC."
+        },
+        {
+          "url": "https://www.justice.gov/usao-ndny/pr/valuewise-ceo-michael-mann-sentenced-144-months-prison-100-million-fraud",
+          "quote": "He admitted that from 2013 to September 2019, he engaged in a fraudulent scheme to deceive banks and financing companies into loaning his companies tens of millions of dollars."
+        },
+        {
+          "url": "https://www.justice.gov/usao-ndny/pr/valuewise-ceo-michael-mann-sentenced-144-months-prison-100-million-fraud",
+          "quote": "Mann created fake invoices reflecting the fictitious debt and assigned them to the financing companies as collateral for the loans."
+        }
+      ]
+    },
+    {
+      "vo": "So he began diverting his clients' payroll.",
+      "sources": [
+        {
+          "url": "https://www.justice.gov/usao-ndny/pr/valuewise-ceo-michael-mann-sentenced-144-months-prison-100-million-fraud",
+          "quote": "Because Mann could not repay the loans with legitimate business revenues, he expanded the fraud, by stealing and diverting millions of dollars that were entrusted to his payroll companies..."
+        }
+      ]
+    },
+    {
+      "vo": "Payroll moved as digital files, meant to carry each employer's money to its employees. Mann changed the instructions inside them, sending the money to accounts he controlled.",
+      "sources": [
+        {
+          "url": "https://www.justice.gov/usao-ndny/pr/valuewise-ceo-michael-mann-sentenced-144-months-prison-100-million-fraud",
+          "quote": "Mann misappropriated payroll monies, entrusted to MyPayrollHR and other payroll companies he owned, by changing the instructions for digital Automated Clearing House (“ACH”) files that were supposed to transmit payroll from customers (employers) to the employees of the customers."
+        },
+        {
+          "url": "https://www.justice.gov/usao-ndny/pr/valuewise-ceo-michael-mann-sentenced-144-months-prison-100-million-fraud",
+          "quote": "Mann changed the instructions inside digital ACH files provided to Cachet, in order to divert payroll funds into accounts that he controlled at Pioneer Bank."
+        }
+      ]
+    },
+    {
+      "vo": "When his bank froze those accounts, the payroll froze too. Several thousand people didn't get a paycheck.",
+      "sources": [
+        {
+          "url": "https://www.justice.gov/usao-ndny/pr/valuewise-ceo-michael-mann-sentenced-144-months-prison-100-million-fraud",
+          "quote": "When Pioneer Bank froze Mann’s corporate accounts on or about August 30, 2019, it froze the payroll funds in those accounts, and caused several thousand people across the country to not receive a payroll payment."
+        }
+      ]
+    },
+    {
+      "vo": "Bonnie Rosengrant and her husband spent thirty thousand dollars of savings covering wages and payroll taxes.",
+      "sources": [
+        {
+          "url": "https://www.timesunion.com/business/article/Victims-of-MyPayrollHR-collapse-reveal-pain-and-16360790.php",
+          "quote": "Alarmed, Rosengrant left her mother's bedside and stepped into a financial mess so horrible that she and her husband were forced to use $30,000 of their life savings to pay their employees their lost wages and cover their payroll taxes."
+        }
+      ]
+    },
+    {
+      "vo": "Mann was sentenced to a hundred forty-four months.",
+      "sources": [
+        {
+          "url": "https://www.justice.gov/usao-ndny/pr/valuewise-ceo-michael-mann-sentenced-144-months-prison-100-million-fraud",
+          "quote": "Michael T. Mann, age 51, was sentenced today to 144 months in prison..."
+        }
+      ]
+    },
+    {
+      "vo": "As of July twenty twenty-six, the Times Union reported, his victims had received nothing.",
+      "sources": [
+        {
+          "url": "https://www.timesunion.com/business/article/michael-mann-prison-fraud-victims-still-limbo-22338636.php",
+          "quote": "While Mann has served out nearly half of his sentence at a low-security federal prison near Trenton, N.J., with an expected release date of 2030, his victims, many of them small business owners, have received nothing."
+        }
+      ]
+    }
+  ]
+}

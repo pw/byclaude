@@ -1,0 +1,52 @@
+https://www.justice.gov/usao-ndny/pr/valuewise-ceo-michael-mann-sentenced-144-months-prison-100-million-fraud
+fetched 2026-09-26 via Wayback Machine snapshot 20260524193657 (live justice.gov returned Akamai bm-verify challenge from exe.dev + Hetzner; residential tier empty) — PRIMARY (U.S. Attorney NDNY press release)
+
+ValueWise CEO Michael Mann Sentenced to 144 Months in Prison for $100 Million Fraud
+
+Wednesday, August 4, 2021
+
+Share
+
+Facebook
+
+X
+
+LinkedIn
+
+Email
+
+For Immediate Release
+
+U.S. Attorney's Office,               Northern District of New York
+
+Admitted to Massive Scheme That Affected Thousands Nationwide
+
+ALBANY, NEW YORK – Michael T. Mann, age 51, was sentenced today to 144 months in prison for running a complex scheme that caused more than $100 million in losses to banks, financing companies, and other businesses, and also involved his misappropriation of millions of dollars entrusted to payroll companies that he owned.
+
+The announcement was made by Acting United States Attorney Antoinette T. Bacon and Janeen DiGuiseppi, Special Agent in Charge of the Albany Field Office of the Federal Bureau of Investigation (FBI).
+
+Senior United States District Judge Lawrence E. Kahn also ordered Mann to serve 3 years of post-imprisonment supervised release, pay restitution to victims in the total amount of $101,038,793.31, and to forfeit assets already seized by the Government, including $14,522,474.90 contained in bank accounts and 30,000 common shares of Pioneer Bancorp Inc.
+
+Acting United States Attorney Antoinette T. Bacon stated: “Today’s sentence holds Michael Mann accountable for his despicable crimes.  For years, instead of growing a legitimate business in Clifton Park, he grew a fraudulent scheme.  Mann inflicted major losses on companies that loaned him money.  He also stole the paychecks of thousands of hard-working people, and the tax payments of hundreds of small businesses, across the country.  Mann caused immense stress for small business owners and fear among employees living paycheck to paycheck, and he justly deserves the term of imprisonment imposed today. This case should be a deterrent to businesspeople who would seek to lie, cheat and steal their way to success.”
+
+FBI Special Agent in Charge Janeen DiGuiseppi stated: “Michael Mann's intricate fraud scheme allowed him to manipulate the system to the tune of $100 million. He played a dangerously deceitful game with the paychecks of thousands of hard-working Americans trying to make an honest living. Not only were thousands of employees impacted, but some small business owners lost their livelihoods when they went out of business due to Mann’s criminal scheme. While today’s sentence cannot build back those businesses or give back lost jobs, we can only hope it serves as a resounding message that the FBI, together with our law enforcement partners, will not stand for anyone looking to gamble with the hard-earned incomes of our citizens.”
+
+Mann operated ValueWise Corporation, based in Clifton Park, New York, as well as subsidiary companies including MyPayrollHR.com LLC.  He admitted that from 2013 to September 2019, he engaged in a fraudulent scheme to deceive banks and financing companies into loaning his companies tens of millions of dollars. Because Mann could not repay the loans with legitimate business revenues, he expanded the fraud, by stealing and diverting millions of dollars that were entrusted to his payroll companies, and engaging in the daily kiting of millions of dollars among bank accounts he controlled.
+
+Mann’s scheme collapsed in late August and early September 2019, when one of his banks froze his accounts, setting off a chain of events that left his payroll companies unable to process payroll and tax payments for hundreds of small business customers nationwide.
+
+On August 12, 2020, Mann pled guilty to one count of conspiracy to commit wire fraud, one count of aggravated identity theft, nine counts of bank fraud, and one count of filing a false tax return.
+
+Mann’s scheme had multiple layers, including: 
+
+Mann obtained tens of millions of dollars in loans from three financing companies, located in New York, Colorado and California, respectively, by falsifying his companies’ revenues and receivables. Mann falsely told the financing companies that Minnesota-based UnitedHealth Group Incorporated (“UHG”) and its subsidiary OptumInsight Inc. (“Optum”), owed millions of dollars to his companies.  Mann created fake invoices reflecting the fictitious debt and assigned them to the financing companies as collateral for the loans.
+
+Mann fraudulently obtained a line of credit from several Capital Region banks; the line of credit had grown to $42 million by August 2019.  To obtain the line of credit, Mann created companies whose sole purpose was to further the fraud by generating fake invoices, disguising sources of funds, and artificially inflating his assets; falsely represented to the banks that his fake businesses had revenues and receivables based on consulting work for Optum/UHG and other well-known companies, including 3M, Best Buy and T-Mobile; hid the tens of millions of dollars in loans he was receiving from the financing companies, and that he was using the line of credit to pay down these loans; and provided false financial statements, and individual and corporate tax returns, to his outside auditor, which in turn made inaccurate reports to the banks.
+
+Mann misappropriated payroll monies, entrusted to MyPayrollHR and other payroll companies he owned, by changing the instructions for digital Automated Clearing House (“ACH”) files that were supposed to transmit payroll from customers (employers) to the employees of the customers.  Although his companies’ contracts with Cachet Financial Services specified that ACH transfers would route payroll funds from the employers’ accounts to a designated Cachet trust account and then directly to the customers’ employees, Mann changed the instructions inside digital ACH files provided to Cachet, in order to divert payroll funds into accounts that he controlled at Pioneer Bank. When Pioneer Bank froze Mann’s corporate accounts on or about August 30, 2019, it froze the payroll funds in those accounts, and caused several thousand people across the country to not receive a payroll payment. 
+
+Mann is the first person to be sentenced in connection with this fraud.  A co-conspirator, former Optum employee Luke E. Steiner, age 33, of Minneapolis, Minnesota, pled guilty in February 2020 to conspiring with Mann to defraud two financing companies out of millions of dollars. 
+
+This case was investigated by the FBI, as well as Internal Revenue Service-Criminal Investigation, and was prosecuted by Assistant U.S. Attorneys Michael Barnett and Cyrus P.W. Rieck. 
+
+Updated August 4, 2021

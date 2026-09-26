@@ -1,0 +1,64 @@
+https://krebsonsecurity.com/2019/09/ny-payroll-company-vanishes-with-35-million/
+fetched 2026-09-26 direct curl (browser UA) — SECONDARY (KrebsOnSecurity, Brian Krebs, Sept. 11, 2019). Headline: NY Payroll Company Vanishes With $35 Million. Reader comments omitted.
+
+MyPayrollHR, a now defunct cloud-based payroll processing firm based in upstate New York, abruptly ceased operations this past week after stiffing employees at thousands of companies. The ongoing debacle, which allegedly involves malfeasance on the part of the payroll company’s CEO, resulted in countless people having money drained from their bank accounts and has left nearly $35 million worth of payroll and tax payments in legal limbo.
+
+Unlike many stories here about cloud service providers being extorted by hackers for ransomware payouts, this snafu appears to have been something of an inside job. Nevertheless, it is a story worth telling, in part because much of the media coverage of this incident so far has been somewhat disjointed, but also because it should serve as a warning to other payroll providers about how quickly and massively things can go wrong when a trusted partner unexpectedly turns rogue.
+
+Clifton Park, NY-based MyPayrollHR — a subsidiary of ValueWise Corp. — disclosed last week in a rather unceremonious message to some 4,000 clients that it would be shutting its virtual doors and that companies which relied upon it to process payroll payments should kindly look elsewhere for such services going forward.
+
+This communique came after employees at companies that depend on MyPayrollHR to receive direct deposits of their bi-weekly payroll payments discovered their bank accounts were instead debited for the amounts they would normally expect to accrue in a given pay period.
+
+To make matters worse, many of those employees found their accounts had been dinged for two payroll periods — a month’s worth of wages — leaving their bank accounts dangerously in the red.
+
+The remainder of this post is a deep-dive into what we know so far about what transpired, and how such an occurrence might be prevented in the future for other payroll processing firms.
+
+To understand what’s at stake here requires a basic primer on how most of us get paid, which is a surprisingly convoluted process. In a typical scenario, our employer works with at least one third party company to make sure that on every other Friday what we’re owed gets deposited into our bank account.
+
+The company that handled that process for MyPayrollHR is a California firm called Cachet Financial Services. Every other week for more than 12 years, MyPayrollHR has submitted a file to Cachet that told it which employee accounts at which banks should be credited and by how much.
+
+According to interviews with Cachet, the way the process worked ran something like this: MyPayrollHR would send a digital file documenting deposits made by each of these client companies which laid out the amounts owed to each clients’ employees. In turn, those funds from MyPayrollHR client firms then would be deposited into a settlement or holding account maintained by Cachet.
+
+From there, Cachet would take those sums and disburse them into the bank accounts of people whose employers used MyPayrollHR to manage their bi-weekly payroll payments.
+
+But according to Cachet, something odd happened with the instructions file MyPayrollHR submitted on the afternoon of Wednesday, Sept. 4 that had never before transpired: MyPayrollHR requested that all of its clients’ payroll dollars be sent not to Cachet’s holding account but instead to an account at Pioneer Savings Bank that was operated and controlled by MyPayrollHR.
+
+The total amount of this mass payroll deposit was approximately $26 million. Wendy Slavkin, general counsel for Cachet, told KrebsOnSecurity that her client then inquired with Pioneer Savings about the wayward deposit and was told MyPayrollHR’s bank account had been frozen.
+
+Nevertheless, the payroll file submitted by MyPayrollHR instructed financial institutions for its various clients to pull $26 million from Cachet’s holding account — even though the usual deposits from MyPayrollHR’s client banks had not been made.
+
+In response, Cachet submitted a request to reverse that transaction. But according to Slavkin, that initial reversal request was improperly formatted, and so Cachet soon after submitted a correctly coded reversal request.
+
+Financial institutions are supposed to ignore or reject payment instructions that don’t comport with precise formatting required by the National Automated Clearinghouse Association (NACHA), the not-for-profit organization that provides the backbone for the electronic movement of money in the United States. But Slavkin said a number of financial institutions ended up processing both reversal requests, meaning a fair number of employees at companies that use MyPayrollHR suddenly saw a month’s worth of payroll payments withdrawn from their bank accounts.
+
+Dan L’Abbe, CEO of the San Francisco-based consultancy Granite Solutions Groupe, said the mix-up has been massively disruptive for his 250 employees.
+
+“This caused a lot of chaos for employers, but employees were the ones really affected,” L’Abbe said. “This is all very unusual because we don’t even have the ability to take money out of our employee accounts.”
+
+Slavkin said Cachet managed to reach the CEO of MyPayrollHR — Michael T. Mann — via phone on the evening of Sept. 4, and that Mann said he would would call back in a few minutes. According to Slavkin, Mann never returned the call. Not long after that, MyPayrollHR told clients that it was going out of business and that they should find someone else to handle their payroll.
+
+In short order, many people hit by one or both payroll reversals took to Twitter and Facebook to vent their anger and bewilderment at Cachet and at MyPayrollHR. But Slavkin said Cachet ultimately decided to cancel the previous payment reversals, leaving Cachet on the hook for $26 million.
+
+“What we have since done is reached out to 100+ receiving banks to have them reject both reversals,” Slavkin said. “So most — if not all — employees affected by this will in the next day or two have all their money back.”
+
+Cachet has since been in touch with the FBI and with federal prosecutors in New York, and Slavkin said both are now investigating MyPayrollHR and its CEO. On Monday, New York Governor Andrew Cuomo called on the state’s Department of Financial Services to investigate the company’s “sudden and disturbing shutdown.”
+
+A tweet sent Sept. 11 by the FBI’s Albany field office.
+
+The $26 million hit against Cachet wasn’t the only fraud apparently perpetrated by MyPayrollHR and/or its parent firm: According to Slavkin, the now defunct New York company also stiffed National Payment Corporation (NatPay) — the Florida-based firm which handles tax withholdings for MyPayrollHR clients — to the tune of more than $9 million.
+
+In a statement provided to KrebsOnSecurity, NatPay said it was alerted late last week that the bank accounts of MyPayrollHR and one of its affiliated companies were frozen, and that the notification came after payment files were processed.
+
+“NatPay was provided information that MyPayrollHR and Cloud Payroll may have been the victims of fraud committed by their holding company ValueWise, whose CEO and owner is Michael Mann,” NatPay said. “NatPay immediately put in place steps to manage the orderly process of recovering funds [and] has more than sufficient insurance to cover actions of attempted or real fraud.”
+
+Requests for comment from different executives at both MyPayrollHR and its parent firm ValueWise Corp. went unanswered, and the latter’s Web site is now offline. Several erstwhile MyPayrollHR employees reached via LinkedIn said none of them had seen or heard from Mr. Mann in days.
+
+Meanwhile, Granite Solutions Groupe CEO L’Abbe said some of his employees have seen their bank accounts credited back the money that was taken, while others are still waiting for those reversals to come through.
+
+“It varies widely,” L’Abbe said. “Every bank processes differently, and everyone’s relationship with the bank is different. Others have absolutely no money right now and are having a helluva time with their bank believing this is all the result of fraud. Things are starting to settle down now, but a lot of employees are still in limbo with their bank.”
+
+For its part, Cachet Financial says it will be looking at solutions to better detect when and if instructions from clients for funding its settlement accounts suddenly change.
+
+“Our system is excellent at protecting against outside hackers,” Slavkin said. “But when it comes to something like this it takes everyone by complete surprise.”
+
+This entry was posted on Wednesday 11th of September 2019 11:02 AM

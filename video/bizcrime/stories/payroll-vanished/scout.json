@@ -1,0 +1,18 @@
+{
+ "title": "The Payroll Company That Vanished With Everyone's Paycheck",
+ "one_paragraph_summary": "Michael Mann, CEO of ValueWise Corporation and its subsidiary MyPayrollHR, ran a scheme from 2013 to September 2019 that defrauded banks and financing companies out of tens of millions of dollars \u2014 and when his accounts were frozen, roughly 1,000 client businesses across the country suddenly had no payroll processor, leaving thousands of employees without paychecks and, in some cases, with payroll taxes never remitted. Mann was sentenced to 144 months in federal prison and ordered to pay over $101 million in restitution.",
+ "victim_type": "small and mid-size businesses that used MyPayrollHR to process payroll",
+ "year": "2019 (collapse) - 2021 (sentencing)",
+ "dollar_amount_if_any": "$100+ million in fraud losses; $101,038,793 ordered in restitution",
+ "named_parties": "Michael T. Mann; ValueWise Corporation; MyPayrollHR.com LLC",
+ "primary_source_urls": [
+  "https://www.justice.gov/usao-ndny/pr/valuewise-ceo-michael-mann-sentenced-144-months-prison-100-million-fraud",
+  "https://www.justice.gov/usao-ndny/pr/michael-mann-charged-bank-fraud"
+ ],
+ "secondary_urls": [
+  "https://www.nbcnews.com/news/us-news/mypayrollhr-ceo-arrested-charged-70-million-bank-fraud-scheme-n1057856",
+  "https://www.timesunion.com/business/article/Victims-of-MyPayrollHR-collapse-reveal-pain-and-16360790.php"
+ ],
+ "why_it_hooks": "One morning, a thousand small businesses' payroll company just disappeared \u2014 and their employees' paychecks bounced.",
+ "verification_notes": "Confirmed via DOJ USAO-NDNY press releases (charging and sentencing, both primary). A staffing-company anecdote about an 'angry mob' demanding paychecks appears in secondary local reporting (Times Union) and should be re-verified against that outlet directly before quoting it as fact in a script."
+}

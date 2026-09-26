@@ -1,0 +1,54 @@
+https://krebsonsecurity.com/2019/10/cachet-financial-reeling-from-mypayrollhr-fraud/
+fetched 2026-09-26 direct curl (browser UA) — SECONDARY (KrebsOnSecurity, Oct. 24, 2019). Headline: Cachet Financial Reeling from MyPayrollHR Fraud. Reader comments omitted.
+
+When New York-based cloud payroll provider MyPayrollHR unexpectedly shuttered its doors last month and disappeared with $26 million worth of customer payroll deposits, its payment processor Cachet Financial Services ended up funding the bank accounts of MyPayrollHR client company employees anyway, graciously eating a $26 million loss which it is now suing to recover.
+
+But on Oct. 23 — less than 24 hours before another weekly payroll rush — Pasadena, Calif.-based Cachet threw much of its customer base into disarray when it said its bank was no longer willing to risk another MyPayrollHR debacle, and that customers would need to wire payroll deposits instead of relying on the usual method of automated clearinghouse (ACH) payments (essentially bank-to-bank checks).
+
+Cachet processes some $150 billion in payroll payments annually for more than 110,000 employers. But payroll experts say this week’s actions by Cachet’s bank may well soon put the 22-year-old company out of business.
+
+“We apologize for the inconvenience of this message,” reads the communication from Cachet that went out to customers just after 6:30 PM ET on Oct. 23. It continued:
+
+“Due to ongoing fraud protocol with our bank, they are requiring pre-funding via Direct Wire for all batches that were uploaded this week, unless employees were already paid or tax payments were already transmitted. This includes all batch files moving forward.”
+
+All files that were uploaded today for collection and disbursement will not be processed. In order to process disbursement, we will need to receive a wire first thing tomorrow in order to release the disbursements.
+
+All collections that were processed prior to today will be reviewed by the bank and disbursements will be released once the funds are cleared. Credit trans
+
+Deadline for wires is 1 P.M. PST.
+
+This will be the process until further notice. If you need a backup processor, please contact us.
+
+If you require wire instructions, please respond to this email and they will be sent to you.
+
+We welcome and anticipate your phone calls and inquiries. We remain committed to our clients and are determined to see this through. We appreciate and thank you for your patience and understanding.”
+
+In a follow-up communication sent Thursday evening, Cachet said all debit transactions with a settlement date of Oct. 23 had been processed, but that any transactions uploaded after Oct. 23 were not being processed at all, and that wires are no longer being accepted.
+
+Cachet’s financial institution, Wilmington, Del. based The Bancorp Bank (NASDAQ: TBBK), did not respond to requests for comment.
+
+Cachet also did not respond to requests for comment. But in an email Thursday evening, the company sought to offer customers a range of alternatives — including other providers — to help process payrolls this week.
+
+Steve Friedl, an IT consultant in the payroll service bureau industry, said the Cachet announcement has sent payroll providers scrambling to cut and mail or courier paper checks to client employees.  But he said many payroll providers also use Cachet to process tax withholdings for client employees, and that this, too, could be disrupted by the funding changes.
+
+“There’s a lot of same day stuff that goes on in the payroll industry that depends on people being honest and having money available at certain times,” Friedl said. “When that’s not possible because a bank in that process says it doesn’t want to be stuck in the middle that can create problems for a lot of people who are then stuck in the middle.”
+
+Another payroll expert at a company that uses Cachet but who asked not to be named said, “everyone I know at payroll providers is scrambling to get it done another way this week” as a result of the decision by Cachet’s bank.
+
+“Those bureaus will do whatever they can to keep their clients happy because something like this can quickly put them out of business,” the source said. “Unlike what happened with MyPayrollHR — which harmed consumers directly — the payment service bureaus are the ones potentially getting hurt here.”
+
+Most corporate payroll is handled through ACH transactions, a system that allows financial institutions to push and pull funds to and from checking accounts between banks. ACH is essentially the same thing as writing a check for a good or service, and it typically involves an element of trust because there is a time delay (24-48h) between which the promised funds are released to the receiving bank and the funds are made available to the recipient.
+
+In contrast, a wire transfer takes minutes and the funds are made available to the recipient almost immediately. Wires are also far more expensive for customers, and they earn banks hugely profitable processing fees, whereas ACH transaction fees are minuscule by comparison.
+
+Ultimately, banks may decide that for certain clients they no longer wish to assume the risk of fraudsters exploiting the float period for ACH transactions to steal tens of millions of dollars, as was the case in the MyPayrollHR fiasco.
+
+It’s worth noting that the MyPayrollHR fraud wasn’t the first time Cachet has been tripped up by the demise of a payroll company: In 2016, the collapse of Monterey, Calif. based payroll processor Pinnacle Workforce Solutions left Cachet holding the bag for more than $1 million. Cachet sued to recover the money stuck in Pinnacle’s frozen accounts. From The Monetery County Weekly:
+
+“Cachet’s lawyers also outline possible nefarious action by Pinnacle. ACH companies act as middlemen for processing payroll and other large transactions. Every pay period, Pinnacle would send Cachet a coded file to tell the ACH how to distribute funds. But, on Sept. 21 [2016] Pinnacle had manipulated the code sent to Cachet so the money collected from its clients went directly to Pinnacle instead of being held in the ACH account before being distributed to its clients’ employees, the suit alleges.”
+
+It will be interesting to see how long the fallout from the MyPayrollHR episode will last and how many other firms may get wiped because of it. Shortly after MyPayrollHR closed its doors last month and disappeared with $35 million in payroll and tax payments, the company’s 49-year-old CEO Michael Mann was arrested and charged with bank fraud.
+
+The government alleges Mann was kiting millions of dollars in checks between his accounts at Bank of America and Pioneer from Aug. 1, 2019 to Aug. 30, 2019. The Times Union reports that Mann and his company are now being sued by Pioneer Bank and a large insurance company over a $42 million loan it gave to Mann and his companies just a month before his payroll business closed up shop.
+
+This entry was posted on Thursday 24th of October 2019 08:50 PM
