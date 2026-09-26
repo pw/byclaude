@@ -1,0 +1,128 @@
+{
+  "slug": "doordash-clone",
+  "note": "No court, agency or police record exists; all claims rest on contemporaneous local news reporting of what the owners and DoorDash said. The perpetrator is unidentified.",
+  "claims": [
+    {
+      "vo": "Late November, twenty twenty-two. DoorDash drivers started showing up at Smoque BBQ in Chicago, to pick up orders the kitchen had never received. Four or five of them.",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/chicago/news/doordash-scammer-smoque-bbq",
+          "quote": "all of a sudden we'd just get DoorDash drivers coming to pick up orders for orders we didn't have"
+        },
+        {
+          "url": "https://www.cbsnews.com/chicago/news/doordash-scammer-smoque-bbq",
+          "quote": "So he was puzzled when he went on the app on Tuesday"
+        },
+        {
+          "url": "https://blockclubchicago.org/2022/12/02/fake-doordash-accounts-are-scamming-local-eateries-and-customers/",
+          "quote": "Owners learned of the problem when they fielded four or five orders from DoorDash drivers that didn’t come through the restaurant"
+        },
+        {
+          "url": "https://blockclubchicago.org/2022/12/02/fake-doordash-accounts-are-scamming-local-eateries-and-customers/",
+          "quote": "3800 N. Pulaski Road in Old Irving Park"
+        },
+        {
+          "url": "https://blockclubchicago.org/2022/12/02/fake-doordash-accounts-are-scamming-local-eateries-and-customers/",
+          "quote": "someone created a fake account earlier this week"
+        }
+      ]
+    },
+    {
+      "vo": "Co-owner Barry Sorkin went on the app. There was a Smoque storefront. Same hours. Same address. Similar food. It was fake.",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/chicago/news/doordash-scammer-smoque-bbq",
+          "quote": "co-owner, Barry Sorkin"
+        },
+        {
+          "url": "https://www.cbsnews.com/chicago/news/doordash-scammer-smoque-bbq",
+          "quote": "So he was puzzled when he went on the app on Tuesday and saw a fake Smoque account with the same hours, same address and similar food items."
+        }
+      ]
+    },
+    {
+      "vo": "It had happened in October, too: a duplicate page beside the real one, with Smoque's menu copied. This time, co-owner Mike McDermott said, the new storefront was up, and theirs was gone.",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/chicago/news/doordash-scammer-smoque-bbq",
+          "quote": "In October, scammers did the same thing, creating a fake Smoque account."
+        },
+        {
+          "url": "https://blockclubchicago.org/2022/12/02/fake-doordash-accounts-are-scamming-local-eateries-and-customers/",
+          "quote": "Someone also made a duplicate DoorDash Smoque account in October and copied its menu, McDermott said. That caused customers to order from two sites, though only one was connected to the real Smoque, McDermott said."
+        },
+        {
+          "url": "https://blockclubchicago.org/2022/12/02/fake-doordash-accounts-are-scamming-local-eateries-and-customers/",
+          "quote": "“And then this last time, the difference was that this new storefront was up and ours was gone.”"
+        }
+      ]
+    },
+    {
+      "vo": "How the real page was taken down, he said, wasn't clear. Customers ordered, and paid. The kitchen never saw the orders. Where that money went wasn't clear either.",
+      "sources": [
+        {
+          "url": "https://blockclubchicago.org/2022/12/02/fake-doordash-accounts-are-scamming-local-eateries-and-customers/",
+          "quote": "but it’s not totally clear how they were able to have our storefront taken down."
+        },
+        {
+          "url": "https://blockclubchicago.org/2022/12/02/fake-doordash-accounts-are-scamming-local-eateries-and-customers/",
+          "quote": "DoorDash will reimburse Smoque customers who placed orders from the fraudulent page"
+        },
+        {
+          "url": "https://www.cbsnews.com/chicago/news/doordash-scammer-smoque-bbq",
+          "quote": "I just don't want people paying for orders that are not ever getting sent to anybody."
+        },
+        {
+          "url": "https://www.nbcchicago.com/news/local/chicago-restaurant-victimized-by-imposter-account-on-delivery-app/3009904/",
+          "quote": "orders we’ve never received"
+        },
+        {
+          "url": "https://blockclubchicago.org/2022/12/02/fake-doordash-accounts-are-scamming-local-eateries-and-customers/",
+          "quote": "It’s not clear where the money from the fake Smoque page has gone."
+        }
+      ]
+    },
+    {
+      "vo": "Smoque told customers to stop ordering through DoorDash. Within a day, the fake page was down. DoorDash said it would reimburse the customers, and Smoque. It said it checks tax information, and can ask for ID.",
+      "sources": [
+        {
+          "url": "https://www.nbcchicago.com/news/local/chicago-restaurant-victimized-by-imposter-account-on-delivery-app/3009904/",
+          "quote": "Smoque BBQ posted on social media asking customers to stop ordering on DoorDash until the issue’s resolved."
+        },
+        {
+          "url": "https://blockclubchicago.org/2022/12/02/fake-doordash-accounts-are-scamming-local-eateries-and-customers/",
+          "quote": "“Within a day, they took care of it,” McDermott said."
+        },
+        {
+          "url": "https://blockclubchicago.org/2022/12/02/fake-doordash-accounts-are-scamming-local-eateries-and-customers/",
+          "quote": "DoorDash will reimburse Smoque customers who placed orders from the fraudulent page and the company for orders it fulfilled while the fake storefront was active, company officials said."
+        },
+        {
+          "url": "https://www.cbsnews.com/chicago/news/doordash-scammer-smoque-bbq",
+          "quote": "DoorDash said it checks tax information to validate if a business is real."
+        },
+        {
+          "url": "https://www.cbsnews.com/chicago/news/doordash-scammer-smoque-bbq",
+          "quote": "Then if there are more questions about a restaurant's legitimacy, the company will also request a personal ID to validate it."
+        }
+      ]
+    },
+    {
+      "vo": "To prove he was the real owner, Sorkin had to send DoorDash a lot of paperwork. His question: how did someone set up a storefront with his restaurant's name on it, without those steps?",
+      "sources": [
+        {
+          "url": "https://www.nbcchicago.com/news/local/chicago-restaurant-victimized-by-imposter-account-on-delivery-app/3009904/",
+          "quote": "“I had to send (DoorDash) a lot of validating paperwork so I could show them I was the legitimate owner of the business. My question is how did someone manage to set up this alternate site without going through those steps?”"
+        },
+        {
+          "url": "https://www.nbcchicago.com/news/local/chicago-restaurant-victimized-by-imposter-account-on-delivery-app/3009904/",
+          "quote": "“It’s a little unclear to me now how somebody is able to set up this sort of alternate storefront with our name on it without going through a series of checks.”"
+        },
+        {
+          "url": "https://www.cbsnews.com/chicago/news/doordash-scammer-smoque-bbq",
+          "quote": "He reached out to DoorDash and had to provide paperwork to prove they're real."
+        }
+      ]
+    }
+  ]
+}

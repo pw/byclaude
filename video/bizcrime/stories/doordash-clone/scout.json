@@ -1,0 +1,20 @@
+{
+ "title": "Someone Built a Perfect Fake of Their Restaurant Inside the App",
+ "one_paragraph_summary": "CBS News Chicago reported that scammers created a duplicate Smoque BBQ listing on DoorDash -- same hours, same address, same full menu -- that fooled real DoorDash drivers into showing up to pick up orders the actual restaurant, in Chicago's Old Irving Park neighborhood, had never received. Co-owner Barry Sorkin said it was the second time in two months scammers had cloned his restaurant on the platform, and DoorDash only removed the fake listing after CBS 2 contacted the company directly to ask how it happened.",
+ "victim_type": "restaurant (barbecue)",
+ "year": 2022,
+ "dollar_amount_if_any": null,
+ "named_parties": [
+  "Smoque BBQ (Old Irving Park, Chicago, IL)",
+  "Barry Sorkin (co-owner)",
+  "DoorDash"
+ ],
+ "primary_source_urls": [
+  "https://www.cbsnews.com/chicago/news/doordash-scammer-smoque-bbq"
+ ],
+ "secondary_urls": [
+  "https://www.sfchronicle.com/food/restaurants/article/DoorDash-and-Grubhub-removed-imposter-S-F-sushi-16081842.php"
+ ],
+ "why_it_hooks": "Delivery drivers kept showing up for orders nobody at the real restaurant ever received -- because someone built a perfect copy of it inside the app, twice.",
+ "verification_notes": "Confirmed via direct fetch of the CBS News Chicago article, including owner name, restaurant name, and the detail that DoorDash only acted after being contacted by the news outlet. The SF Chronicle link documents a similar imposter-listing pattern hitting San Francisco sushi restaurants around the same period, corroborating this as a platform-wide vulnerability, not a one-off."
+}

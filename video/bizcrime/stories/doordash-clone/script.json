@@ -1,0 +1,47 @@
+{
+  "out": "short-doordash-clone",
+  "kicker": "THE PHANTOM STOREFRONT",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    {
+      "src": "doordash-clone",
+      "img": "B01",
+      "vo": "Late November, twenty twenty-two. DoorDash drivers started showing up at Smoque BBQ in Chicago, to pick up orders the kitchen had never received. Four or five of them.",
+      "cap": "CHICAGO · NOV 2022"
+    },
+    {
+      "src": "doordash-clone",
+      "img": "B02",
+      "vo": "Co-owner Barry Sorkin went on the app. There was a Smoque storefront. Same hours. Same address. Similar food. It was fake.",
+      "cap": "SAME HOURS\nSAME ADDRESS"
+    },
+    {
+      "src": "doordash-clone",
+      "img": "B03",
+      "vo": "It had happened in October, too: a duplicate page beside the real one, with Smoque's menu copied. This time, co-owner Mike McDermott said, the new storefront was up, and theirs was gone.",
+      "cap": "THEIRS WAS GONE",
+      "amber": true
+    },
+    {
+      "src": "doordash-clone",
+      "img": "B04",
+      "vo": "How the real page was taken down, he said, wasn't clear. Customers ordered, and paid. The kitchen never saw the orders. Where that money went wasn't clear either.",
+      "cap": "ORDERS\nNEVER CAME",
+      "amber": true
+    },
+    {
+      "src": "doordash-clone",
+      "img": "B05",
+      "vo": "Smoque told customers to stop ordering through DoorDash. Within a day, the fake page was down. DoorDash said it would reimburse the customers, and Smoque. It said it checks tax information, and can ask for ID.",
+      "cap": "FAKE PAGE DOWN"
+    },
+    {
+      "src": "doordash-clone",
+      "img": "B06",
+      "vo": "To prove he was the real owner, Sorkin had to send DoorDash a lot of paperwork. His question: how did someone set up a storefront with his restaurant's name on it, without those steps?",
+      "cap": "WITHOUT\nTHOSE STEPS",
+      "amber": true
+    }
+  ]
+}
