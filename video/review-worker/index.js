@@ -274,8 +274,8 @@ ${CAPTIONS[key] ? `<div class="cap"><div class="caphd">CAPTION<button id="copy">
   fetch('/m/'+name).then(function(r){return r.blob();}).then(function(b){
     file=new File([b],name,{type:b.type||'video/mp4'});
     if(navigator.canShare&&navigator.canShare({files:[file]})){btn.textContent='SAVE TO PHOTOS';btn.disabled=false;}
-    else{btn.style.display='none';hint.textContent='This browser can\u2019t hand the video to Photos directly \u2014 use the download link.';}
-  }).catch(function(){btn.style.display='none';hint.textContent='Couldn\u2019t load the video \u2014 use the download link.';});
+    else{btn.style.display='none';hint.textContent='This browser can\u2019t hand this to Photos directly \u2014 use the download link.';}
+  }).catch(function(){btn.style.display='none';hint.textContent='Couldn\u2019t load the file \u2014 use the download link.';});
   btn.addEventListener('click',function(){
     if(!file)return;
     navigator.share({files:[file]}).catch(function(e){if(e&&e.name!=='AbortError')hint.textContent='Share failed ('+e.name+') \u2014 use the download link.';});

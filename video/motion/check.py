@@ -12,6 +12,9 @@ All modes:
      boxes in headless Chrome with our fonts — draw icons as canvas paths).
   4. BRANDS: no real platform/brand name anywhere in film.html (list below).
 --inbox:  duration 15–60 s; ON_SCREEN must contain the composite disclosure ("composite").
+--explainer:  duration 15–75 s; ON_SCREEN must contain "not tax advice"; <dir>/SOURCES.md must exist and every
+          NUMBER in ON_SCREEN (digits, commas/$/% stripped) must appear in it — worked-example figures included, with
+          their arithmetic written out there. (Numbers are where explainers go wrong; this makes each one traceable.)
 --twin:   duration within 0.6 s of the original; the AUDIO STREAM is bit-identical to the original's
           (md5 of the copied stream) so the A/B differs only in picture; every NUMBER in ON_SCREEN
           (digits, commas stripped) appears in one of the --sources files.
@@ -49,6 +52,16 @@ if hits: fails.append(f'brand names in film.html: {hits}')
 if mode == '--inbox':
     if not 15 <= dur <= 60: fails.append(f'duration {dur:.1f}s outside 15–60')
     if not any('composite' in s.lower() for s in on): fails.append('no composite disclosure in ON_SCREEN')
+elif mode == '--explainer':
+    if not 15 <= dur <= 75: fails.append(f'duration {dur:.1f}s outside 15–75')
+    if not any('not tax advice' in s.lower() for s in on): fails.append('no "not tax advice" line in ON_SCREEN')
+    sp = D / 'SOURCES.md'
+    if not sp.exists(): fails.append('no SOURCES.md')
+    else:
+        corpus = sp.read_text().replace(',', '')
+        for s in on:
+            for num in re.findall(r'\d[\d,.]*\d|\d', s):
+                if num.replace(',', '').rstrip('.') not in corpus: fails.append(f'number {num!r} in ON_SCREEN {s!r} is not in SOURCES.md')
 elif mode == '--twin':
     orig = pathlib.Path(a[3]); srcs = [pathlib.Path(x) for i, x in enumerate(a) if i > 0 and a[i - 1] == '--sources']
     if not orig.exists() or not srcs: die('check: CANNOT RUN — --twin needs the original and at least one --sources', 2)
