@@ -1,0 +1,240 @@
+{
+ "slug": "fake-fire-inspector",
+ "claims": [
+  {
+   "beat": 1,
+   "vo": "As the owner remembers it, the text said: I paid him cash, like you said. He hadn't said that.",
+   "sources": [
+    {
+     "source": 3,
+     "url": "https://www.fox5dc.com/news/scammer-posing-as-fire-equipment-inspector-steals-nearly-1k-from-dc-bagel-shop",
+     "quote": "Because she texted me ‘I paid him cash like you said,’ and I said I didn’t say to pay him cash and she said ‘oh no, he said, you said that.'",
+     "note": "Owner's on-record recollection (FOX 5), framed as his memory, not a transcript."
+    }
+   ]
+  },
+  {
+   "beat": 2,
+   "vo": "Pearl's Bagels, in Northwest D.C.",
+   "sources": [
+    {
+     "source": 8,
+     "url": "https://www.popville.com/2023/04/pearls-bagels-love/",
+     "quote": "in the 1000 block of 7th Street, Northwest"
+    },
+    {
+     "source": 4,
+     "url": "https://wjla.com/news/local/pearls-bagels-scammed-fake-fire-inspector-oliver-cox-ansul-metro-prevention-surveillance-police-crime-pittsburgh-new-jersey-manhattan-nicholas-angelo-carrion-suspect-small-business-investigation-sophie-temple-fireline-employee-customers",
+     "quote": "the owner of a popular Northwest D.C. bagel shop"
+    }
+   ]
+  },
+  {
+   "beat": 2,
+   "vo": "A Saturday morning in April, twenty twenty-three, at its busiest.",
+   "sources": [
+    {
+     "source": 8,
+     "url": "https://www.popville.com/2023/04/pearls-bagels-love/",
+     "quote": "that occurred on Saturday, April 22, 2023"
+    },
+    {
+     "source": 9,
+     "url": "https://www.wusa9.com/article/news/local/dc/fake-inspector-takes-hundreds-from-dc-business/65-e2950142-adf7-4915-a20e-11d4489a8d9b",
+     "quote": "at 10:40am today (the busiest possible time at Pearl’s)"
+    }
+   ]
+  },
+  {
+   "beat": 2,
+   "vo": "A man with a notepad said he was there to inspect the fire-suppression system, for the company that services their equipment.",
+   "sources": [
+    {
+     "source": 6,
+     "url": "https://www.nbcwashington.com/news/local/man-scams-dc-business-out-of-970-by-posing-as-fire-protection-inspector/3334506/",
+     "quote": "walked in wearing a hat and carrying a notepad"
+    },
+    {
+     "source": 3,
+     "url": "https://www.fox5dc.com/news/scammer-posing-as-fire-equipment-inspector-steals-nearly-1k-from-dc-bagel-shop",
+     "quote": "Surveillance video shows the scammer telling the manager at the store that he needed to inspect the ANSUL system, a fire prevention tool required in restaurants."
+    },
+    {
+     "source": 9,
+     "url": "https://www.wusa9.com/article/news/local/dc/fake-inspector-takes-hundreds-from-dc-business/65-e2950142-adf7-4915-a20e-11d4489a8d9b",
+     "quote": "claimed he was with the (real) company that we use to service our equipment"
+    }
+   ]
+  },
+  {
+   "beat": 3,
+   "vo": "He used the owner's name, and asked to speak with him.",
+   "sources": [
+    {
+     "source": 3,
+     "url": "https://www.fox5dc.com/news/scammer-posing-as-fire-equipment-inspector-steals-nearly-1k-from-dc-bagel-shop",
+     "quote": "specifically using the owner’s name"
+    },
+    {
+     "source": 4,
+     "url": "https://wjla.com/news/local/pearls-bagels-scammed-fake-fire-inspector-oliver-cox-ansul-metro-prevention-surveillance-police-crime-pittsburgh-new-jersey-manhattan-nicholas-angelo-carrion-suspect-small-business-investigation-sophie-temple-fireline-employee-customers",
+     "quote": "Temple said the man asked to speak with her boss by name, and she complied, giving Cox a call."
+    }
+   ]
+  },
+  {
+   "beat": 3,
+   "vo": "On the phone, he told the owner, Oliver Cox, he'd update the tags and come back Monday with new parts.",
+   "sources": [
+    {
+     "source": 4,
+     "url": "https://wjla.com/news/local/pearls-bagels-scammed-fake-fire-inspector-oliver-cox-ansul-metro-prevention-surveillance-police-crime-pittsburgh-new-jersey-manhattan-nicholas-angelo-carrion-suspect-small-business-investigation-sophie-temple-fireline-employee-customers",
+     "quote": "Cox said the man told him he would update the tags on the equipment and return Monday afternoon with new parts, and then got off the phone."
+    }
+   ]
+  },
+  {
+   "beat": 3,
+   "vo": "The system was due for service.",
+   "sources": [
+    {
+     "source": 4,
+     "url": "https://wjla.com/news/local/pearls-bagels-scammed-fake-fire-inspector-oliver-cox-ansul-metro-prevention-surveillance-police-crime-pittsburgh-new-jersey-manhattan-nicholas-angelo-carrion-suspect-small-business-investigation-sophie-temple-fireline-employee-customers",
+     "quote": "Cox said the ANSUL system was due for service"
+    }
+   ]
+  },
+  {
+   "beat": 4,
+   "vo": "Then he hung up, and told the manager the owner had said to pay in cash.",
+   "sources": [
+    {
+     "source": 9,
+     "url": "https://www.wusa9.com/article/news/local/dc/fake-inspector-takes-hundreds-from-dc-business/65-e2950142-adf7-4915-a20e-11d4489a8d9b",
+     "quote": "had our manager call us to talk, then hung up and told our her we had said to just pay the invoices in cash (a lie)"
+    },
+    {
+     "source": 8,
+     "url": "https://www.popville.com/2023/04/pearls-bagels-love/",
+     "quote": "when he got off the phone he lied to them"
+    }
+   ]
+  },
+  {
+   "beat": 4,
+   "vo": "She hadn't heard the call.",
+   "sources": [
+    {
+     "source": 4,
+     "url": "https://wjla.com/news/local/pearls-bagels-scammed-fake-fire-inspector-oliver-cox-ansul-metro-prevention-surveillance-police-crime-pittsburgh-new-jersey-manhattan-nicholas-angelo-carrion-suspect-small-business-investigation-sophie-temple-fireline-employee-customers",
+     "quote": "Temple did not hear the phone conversation."
+    }
+   ]
+  },
+  {
+   "beat": 4,
+   "vo": "Four invoices. Nine hundred and seventy dollars, from the register.",
+   "sources": [
+    {
+     "source": 6,
+     "url": "https://www.nbcwashington.com/news/local/man-scams-dc-business-out-of-970-by-posing-as-fire-protection-inspector/3334506/",
+     "quote": "he came back with four different invoices totaling $970"
+    },
+    {
+     "source": 9,
+     "url": "https://www.wusa9.com/article/news/local/dc/fake-inspector-takes-hundreds-from-dc-business/65-e2950142-adf7-4915-a20e-11d4489a8d9b",
+     "quote": "The man was able to get away with $970, according to the police report."
+    },
+    {
+     "source": 8,
+     "url": "https://www.popville.com/2023/04/pearls-bagels-love/",
+     "quote": "convinced the employee to give him money from the register"
+    }
+   ]
+  },
+  {
+   "beat": 5,
+   "vo": "He said he'd be back in three minutes. He never returned.",
+   "sources": [
+    {
+     "source": 10,
+     "url": "https://www.dcnewsnow.com/news/local-news/washington-dc/fake-fire-equipment-inspector-scams-dc-business-of-close-to-1000/",
+     "quote": "“I’ll be back and I’ll be in out in three minutes,” the man can be heard saying on the video as he left. He never returned",
+     "note": "Paraphrased, not quoted (source text garbled)."
+    }
+   ]
+  },
+  {
+   "beat": 5,
+   "vo": "The invoices were from Metro Fire Prevention, a company the shop says doesn't exist.",
+   "sources": [
+    {
+     "source": 10,
+     "url": "https://www.dcnewsnow.com/news/local-news/washington-dc/fake-fire-equipment-inspector-scams-dc-business-of-close-to-1000/",
+     "quote": "He presented four receipts from a company called Metro Fire Prevention, a company that people at Pearl’s Bagels said doesn’t exist."
+    }
+   ]
+  },
+  {
+   "beat": 5,
+   "vo": "The address had no quadrant.",
+   "sources": [
+    {
+     "source": 3,
+     "url": "https://www.fox5dc.com/news/scammer-posing-as-fire-equipment-inspector-steals-nearly-1k-from-dc-bagel-shop",
+     "quote": "The big tell there was the address doesn’t have a quadrant listed."
+    },
+    {
+     "source": 4,
+     "url": "https://wjla.com/news/local/pearls-bagels-scammed-fake-fire-inspector-oliver-cox-ansul-metro-prevention-surveillance-police-crime-pittsburgh-new-jersey-manhattan-nicholas-angelo-carrion-suspect-small-business-investigation-sophie-temple-fireline-employee-customers",
+     "quote": "the address on the invoices for \"1231 State St.\" in D.C. did not exist"
+    }
+   ]
+  },
+  {
+   "beat": 6,
+   "vo": "Reporters found at least six similar cases up and down the East Coast.",
+   "sources": [
+    {
+     "source": 3,
+     "url": "https://www.fox5dc.com/news/scammer-posing-as-fire-equipment-inspector-steals-nearly-1k-from-dc-bagel-shop",
+     "quote": "There are at least six other incidents up and down the East Coast where this exact same situation played out. Based on news reports",
+     "note": "FOX 5's count, attributed to reporters."
+    }
+   ]
+  },
+  {
+   "beat": 6,
+   "vo": "It hasn't been determined that one man did them all.",
+   "sources": [
+    {
+     "source": 3,
+     "url": "https://www.fox5dc.com/news/scammer-posing-as-fire-equipment-inspector-steals-nearly-1k-from-dc-bagel-shop",
+     "quote": "It has not been determined whether the same guy is behind each of the thefts."
+    }
+   ]
+  },
+  {
+   "beat": 6,
+   "vo": "Two lies, told apart. To the owner, a routine service call. To the manager, the owner's permission. Neither heard the other's.",
+   "sources": [
+    {
+     "source": 4,
+     "url": "https://wjla.com/news/local/pearls-bagels-scammed-fake-fire-inspector-oliver-cox-ansul-metro-prevention-surveillance-police-crime-pittsburgh-new-jersey-manhattan-nicholas-angelo-carrion-suspect-small-business-investigation-sophie-temple-fireline-employee-customers",
+     "quote": "Cox said the man told him he would update the tags on the equipment and return Monday afternoon with new parts"
+    },
+    {
+     "source": 4,
+     "url": "https://wjla.com/news/local/pearls-bagels-scammed-fake-fire-inspector-oliver-cox-ansul-metro-prevention-surveillance-police-crime-pittsburgh-new-jersey-manhattan-nicholas-angelo-carrion-suspect-small-business-investigation-sophie-temple-fireline-employee-customers",
+     "quote": "Temple did not hear the phone conversation. She said the man handed her multiple invoices and told her she could pay in cash, with her boss's blessing."
+    },
+    {
+     "source": 3,
+     "url": "https://www.fox5dc.com/news/scammer-posing-as-fire-equipment-inspector-steals-nearly-1k-from-dc-bagel-shop",
+     "quote": "I didn’t say to pay him cash"
+    }
+   ],
+   "note": "Synthesis line (the mechanism), per the verified brief's caveat: 'he lied to each person separately... Neither heard the other's version.'"
+  }
+ ]
+}

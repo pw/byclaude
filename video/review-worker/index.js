@@ -1499,6 +1499,24 @@ Source: People of the State of New York v. Northern Leasing Systems, Inc., 2020.
 Source: People of the State of New York v. Northern Leasing Systems, Inc., New York Supreme Court, 2020.
 
 #smallbusinessowner #smallbusiness #salonowner #restaurantowner #floristlife #smallbusinesstips`
+  },
+  "fake-fire-inspector": {
+    title: "The fire-system inspection — $970 from the register",
+    yt: `"I paid him cash, like you said." That's the text the owner of Pearl's Bagels in Washington, D.C. remembers getting. He hadn't said it. On a busy Saturday morning in April 2023, a man said he was there to inspect the fire-suppression system for the shop's service company, got the owner on the phone about new tags and a Monday visit, hung up, and told the manager the owner had OK'd cash. Four invoices, $970, from a company the shop says doesn't exist.
+
+Source: Metropolitan Police Department (D.C.), April 2023; FOX 5 DC and WJLA 7News reporting.
+
+#smallbusinessowner #smallbusiness #shorts #restaurantowner #scamawareness`,
+    tiktok: `"I paid him cash, like you said." The owner hadn't said that. The man told the owner he'd update the fire-system tags and come back Monday. Then he hung up and told the manager the owner had OK'd cash. $970, four invoices, one phone call. Neither of them heard the other's version.
+
+Source: Metropolitan Police Department (D.C.), 2023; FOX 5 DC.
+
+#smallbusinessowner #restaurantowner #smallbusiness #cafeowner #scamawareness`,
+    reels: `"I paid him cash, like you said," is the text the owner of Pearl's Bagels in D.C. remembers getting from his manager. He hadn't said that. A man there to inspect the fire-suppression system got the owner on the phone about new tags and a Monday visit, hung up, and told the manager the owner had OK'd paying his four invoices in cash: $970, to a company the shop says doesn't exist. The company that really services your equipment will bill you, so if someone asks for cash at the counter, call that company yourself on the number you already have.
+
+Source: Metropolitan Police Department (D.C.) release, April 2023; FOX 5 DC and WJLA 7News reporting.
+
+#restaurantowner #smallbusinessowner #smallbusiness #restaurantlife #cafeowner #scamawareness`
   }
 };
 
