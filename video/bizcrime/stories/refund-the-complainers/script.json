@@ -1,0 +1,14 @@
+{
+  "out": "short-refund-the-complainers",
+  "kicker": "IT TECH PRODUCTS",
+  "voice": "Atlas",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "refund-the-complainers", "img": "B01", "vo": "November, twenty eleven. A law firm in White Plains, New York, received an invoice for two units of copier toner. Eight hundred seventy-two dollars.", "cap": "$872 FOR TONER" },
+    { "src": "refund-the-complainers", "img": "B02", "vo": "The firm had not ordered it. It came from I.T. Tech Products, run by Mark Mushkin. From twenty eleven to twenty seventeen, prosecutors said, it billed businesses across the country, mostly law firms.", "cap": "NEVER ORDERED" },
+    { "src": "refund-the-complainers", "img": "B03", "vo": "The complaint counts more than nineteen hundred checks, from eight hundred seventy-eight companies. About three point three million dollars. In those years, it bought ninety-six units of toner. All in twenty eleven.", "cap": "1,919 CHECKS\n96 TONERS", "amber": true },
+    { "src": "refund-the-complainers", "img": "B04", "vo": "Prosecutors said that if a business called to complain after paying, generally, it got a refund, and that this let the scheme continue. Forty-one refund checks. Thirty-six companies.", "cap": "THE REFUND", "amber": true },
+    { "src": "refund-the-complainers", "img": "B05", "vo": "The White Plains firm had called. Days later, its invoice came back, marked void, cancelled. In twenty seventeen, the same company billed it again. This time, the firm contacted law enforcement.", "cap": "VOID · CANCELLED", "amber": true },
+    { "src": "refund-the-complainers", "img": "B06", "vo": "In twenty nineteen, Mark Mushkin pleaded guilty to mail fraud. The product was the invoice. The refund, prosecutors said, is what kept it running.", "cap": "THE PRODUCT\nWAS THE INVOICE", "amber": true }
+  ]
+}

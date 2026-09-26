@@ -850,6 +850,24 @@ function filmPage(f) {
 }
 
 const POSTS = {
+  "refund-the-complainers": {
+    title: "The toner refunds — IT Tech Products, 2011–2017",
+    yt: `November 2011. A law firm in White Plains, New York, received an invoice for two units of copier toner: $872. It had never ordered it. From 2011 to 2017, prosecutors said, IT Tech Products, run by Mark Mushkin, billed businesses across the country, mostly law firms, for copier toner they never ordered. The federal complaint counts about 1,919 checks from 878 companies, about $3.3 million, while the company bought 96 units of toner, all in 2011. Prosecutors said that when a business called to complain after paying, it generally got a refund, and that this let the scheme continue. In 2019 Mushkin pleaded guilty to mail fraud.
+
+Source: United States v. Mark Mushkin, S.D.N.Y., criminal complaint, 2018.
+
+#smallbusinessowner #smallbusiness #officemanager #lawfirm #shorts`,
+    tiktok: `An $872 invoice for copier toner nobody at the firm had ordered. The federal complaint counts about 1,919 checks from 878 companies. The company bought 96 units of toner, all in 2011. And when a business called to complain after paying, prosecutors said, it generally got its money back.
+
+Source: United States v. Mark Mushkin, S.D.N.Y., 2018.
+
+#smallbusinessowner #smallbusiness #officemanager #lawfirm #smallbusinesstips`,
+    reels: `A law firm in White Plains, New York, got an $872 invoice for two units of copier toner it had never ordered. From 2011 to 2017, prosecutors said, IT Tech Products mailed invoices like it across the country, mostly to law firms, and the complaint counts about 1,919 checks from 878 companies while the company bought 96 units of toner, all in 2011. When a business called to complain after paying, prosecutors said, it generally got a refund, and that let the scheme continue. Before you pay for supplies, match the invoice to an order someone in your office actually placed.
+
+Source: United States v. Mark Mushkin, Southern District of New York, criminal complaint, 2018.
+
+#smallbusinessowner #smallbusiness #officemanager #lawfirm #smallbusinesstips #contractorlife`
+  },
   "google-delist-robocall": {
     title: "The final notice — FTC v. Pointbreak Media",
     yt: `"This is your final notice. If you do not act soon, Google will label your business as permanently closed." That was one of the robocalls from Pointbreak Media, a Florida telemarketer the court found had no affiliation with Google. In seven weeks of 2017 it made nearly 75 million robocalls, nearly 15 million of them to numbers on the Do Not Call Registry. Owners who pressed one paid $300 to $500 to claim and verify a listing Google lets you claim for free. When its card processor cut it off in October 2017, it wrote itself $100 checks from at least 280 customers' bank accounts without consent. In 2019 a federal judge ordered Dustin Pillonato and Justin Ramsey to pay $3,367,666.30 and hand over 53 pieces of jewelry.

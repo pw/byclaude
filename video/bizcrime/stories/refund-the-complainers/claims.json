@@ -1,0 +1,221 @@
+{
+ "slug": "refund-the-complainers",
+ "claims": [
+  {
+   "beat": 1,
+   "vo": "November, twenty eleven. A law firm in White Plains, New York, received an invoice for two units of copier toner.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "a law firm based in White Plains, New York (“Witness-1” and “Law Firm-1”)"
+    },
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "On or about November 1, 2011, Law Firm-1 received by mail an invoice dated October 27, 2011."
+    },
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "The invoice stated that the order was for 2 units at a rate of $429 per unit."
+    }
+   ]
+  },
+  {
+   "beat": 1,
+   "vo": "Eight hundred seventy-two dollars.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "The invoice stated that the total amount owed by Law Firm-1 was $872, which included $858 for the copier toner and $14 for shipping."
+    }
+   ]
+  },
+  {
+   "beat": 2,
+   "vo": "The firm had not ordered it.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "Witness-1 determined that Law Firm-1 had not ordered nor received the toner from IT Tech Products.",
+     "note": "¶9b of the complaint (in 2.txt; not reproduced in EXCERPTS.md). General form in EXCERPTS: “the Victim Businesses never ordered copier toner from IT Tech Products or MUSHKIN.”"
+    }
+   ]
+  },
+  {
+   "beat": 2,
+   "vo": "It came from I.T. Tech Products, run by Mark Mushkin.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "The invoice was from IT Tech Products, P.O. Box 12017, Costa Mesa, CA 92627"
+    },
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "from a purported company run by MUSHKIN called IT Tech Products."
+    }
+   ]
+  },
+  {
+   "beat": 2,
+   "vo": "From twenty eleven to twenty seventeen, prosecutors said, it billed businesses across the country, mostly law firms.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/california-man-charged-white-plains-federal-court-operating-multimillion-dollar-mail",
+     "file": "1.txt",
+     "quote": "Between about 2011 and 2017, MARK MUSHKIN operated a scheme in which he sent false invoices to small businesses throughout the country, predominately law firms, from a purported company run by MUSHKIN called IT Tech Products."
+    }
+   ]
+  },
+  {
+   "beat": 3,
+   "vo": "The complaint counts more than nineteen hundred checks, from eight hundred seventy-eight companies. About three point three million dollars.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "the Bank Account received approximately 1,919 checks from 878 companies totaling approximately $3,334,238."
+    },
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/california-man-charged-white-plains-federal-court-operating-multimillion-dollar-mail",
+     "file": "1.txt",
+     "quote": "Over 800 businesses mailed over 1,900 checks to IT Tech Products"
+    },
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/california-man-charged-white-plains-federal-court-operating-multimillion-dollar-mail",
+     "file": "1.txt",
+     "quote": "These checks totaled approximately $3.3 million"
+    }
+   ]
+  },
+  {
+   "beat": 3,
+   "vo": "In those years, it bought ninety-six units of toner. All in twenty eleven.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "between January 2011 and June 2017, only 96 units of copier toner were purchased by MARK MUSHKIN, the defendant, or any entity controlled by him. All 96 units of copier toner were purchased from a single company based in Phoenix, Arizona in 2011.",
+     "note": "“The company” = Mushkin or any entity he controlled."
+    }
+   ]
+  },
+  {
+   "beat": 4,
+   "vo": "Prosecutors said that if a business called to complain after paying, generally, it got a refund, and that this let the scheme continue.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "In the event that a Victim Business called a telephone number listed on the invoice to complain about the invoice after having made payment, generally MUSHKIN or a representative of IT Tech Products would send a refund. This practice allowed MUSHKIN to continue operating the scheme."
+    }
+   ]
+  },
+  {
+   "beat": 4,
+   "vo": "Forty-one refund checks. Thirty-six companies.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "41 checks that say “refund” in the memorandum line were written from the Bank Account. These checks were sent to 36 companies and totaled approximately $128,370.",
+     "note": "Counts refund-memo checks only; the complaint adds “Some refunds were also made to Victim Businesses through certified check.”"
+    }
+   ]
+  },
+  {
+   "beat": 5,
+   "vo": "The White Plains firm had called.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "Witness-1 called the phone number listed on the invoice."
+    }
+   ]
+  },
+  {
+   "beat": 5,
+   "vo": "Days later, its invoice came back, marked void, cancelled.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "Several days later, Law Firm-1 received another copy of the invoice from IT Tech Products dated October 27, 2011. This copy was marked “VOID - Cancelled October 29, 2011.”",
+     "note": "OCR renders the date tail as 'ZL'; read off page image p.5 per EXCERPTS.md."
+    }
+   ]
+  },
+  {
+   "beat": 5,
+   "vo": "In twenty seventeen, the same company billed it again. This time, the firm contacted law enforcement.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "On or about February 6, 2017, Law Firm-1 received another invoice from IT Tech Products dated February 1, 2017."
+    },
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "Law Firm-1 contacted a law enforcement officer to discuss the invoice."
+    }
+   ]
+  },
+  {
+   "beat": 6,
+   "vo": "In twenty nineteen, Mark Mushkin pleaded guilty to mail fraud.",
+   "sources": [
+    {
+     "url": "https://www.courtlistener.com/docket/7618229/united-states-v-mushkin/",
+     "file": "5.txt",
+     "quote": "Apr 5, 2019 Change of Not Guilty Plea"
+    },
+    {
+     "url": "Laguna Beach Independent, Daniel Langhorne, April 12, 2019 (sources/4.txt)",
+     "file": "4.txt",
+     "quote": "A Laguna Beach photographer pleaded guilty this month to felony mail fraud",
+     "note": "Secondary, used only to corroborate the plea on the docket; the 'photographer' descriptor is not used."
+    }
+   ]
+  },
+  {
+   "beat": 6,
+   "vo": "The product was the invoice.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "The invoices falsely stated shipment dates for copier toner and demanded payment to IT Tech Products for the copier toner.",
+     "note": "Characterization of the mechanism; rests on the false invoices + only 96 units bought (beat 3)."
+    },
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "In fact, the Victim Businesses never ordered copier toner from IT Tech Products or MUSHKIN."
+    }
+   ]
+  },
+  {
+   "beat": 6,
+   "vo": "The refund, prosecutors said, is what kept it running.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/california-man-charged-white-plains-federal-court-operating-multimillion-dollar-mail",
+     "file": "1.txt",
+     "quote": "MUSHKIN or a representative of IT Tech Products would send a refund, allowing him to continue operating his scheme undetected."
+    },
+    {
+     "url": "https://www.justice.gov/usao-sdny/press-release/file/1071586/dl",
+     "file": "2.txt",
+     "quote": "This practice allowed MUSHKIN to continue operating the scheme."
+    }
+   ]
+  }
+ ]
+}

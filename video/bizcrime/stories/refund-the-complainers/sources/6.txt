@@ -1,0 +1,4 @@
+https://www.bop.gov/PublicInfo/execute/inmateloc?todo=query&output=json&nameFirst=Mark&nameLast=Mushkin
+fetched 2026-09-26 — Federal Bureau of Prisons Inmate Locator, raw JSON response. IDENTITY IS INFERRED, not proven: name matches and age 60 is consistent with '52' in June 2018 (DOJ release). 'faclType: RRM' = Residential Reentry Management office; 'actRelDate' = actual release date. Does NOT state the sentence length.
+
+{"Captcha":false,"Messages":{},"FormToken":"pub18599info","InmateLocator":[{"nameLast":"MUSHKIN","nameFirst":"MARK","nameMiddle":"","sex":"Male","race":"White","age":"60","inmateNum":"76482-112","inmateNumType":"","releaseCode":"R","faclCode":"CLB","faclName":"Long Beach","faclType":"RRM","faclURL":"/locations/ccm/clb/","projRelDate":"","actRelDate":"05/28/2021","suffix":""}]}
