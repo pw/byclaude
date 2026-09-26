@@ -1,0 +1,634 @@
+https://ag.ny.gov/sites/default/files/2020_02755_people_of_the_state_of_v_people_of_the_state_of_decision_and_order_74.pdf
+fetched 2026-09-26 (pdftotext -layout)
+
+FILED: APPELLATE DIVISION - 1ST DEPT 02/11/2021 06:46 AM                                              2020-02755
+NYSCEF DOC. NO. 74     Supreme Court of the State of New York RECEIVED NYSCEF: 02/11/2021
+
+                      Appellate Division, First Judicial Department
+                              Troy K. Webber,                            J.P.,
+                              Angela M. Mazzarelli
+                              Lizbeth González
+                              Saliann Scarpulla                          JJ.
+
+
+                                        Appeal Nos.          12898
+                                                             12899
+                                                             12900
+                                                             12901
+                                        Index No.        450460/16
+                                        Case Nos.       2020-02755
+                                                        2020-02756
+                                                        2020-02757
+                                                        2020-02758
+                                                        2020-02791
+
+
+                              In the Matter of THE PEOPLE OF THE STATE OF
+                              NEW YORK, by LETITIA JAMES, etc et al.
+                                   Petitioners-Respondents-Appellants,
+
+                                                 –against–
+
+                              NORTHERN LEASING SYSTEMS, INC., et al.,
+                                  Respondents-Appellants-Respondents.
+
+
+                 Respondents appeal from the orders of the Supreme Court, New York County
+          (Lucy Billings, J.), entered on or about June 8, 2020, which, insofar as appealed from as
+          limited by the briefs, granted petitioners’ motion for summary determination of the
+          petition pursuant to Executive Law § 63(12), Business Corporation Law § 1101(a)(2) and
+          CPLR 5015(c), denied the Northern Respondents’ motions for discovery and a trial or
+          evidentiary hearing, and denied the Attorney Respondents’ motion for summary
+          judgment dismissing the petition as against them.
+
+          Rottenberg Lipman Rich, P.C., New York (Robert A. Freilich and Mark M. Rottenberg of
+          counsel), for Joseph I. Sussman, Joseph I. Sussman, P.C. and Eliyahu R. Babad,
+          appellants-respondents.
+Dechert LLP, New York (Andrew J. Levander, Neil Steiner and Patrick Andriola of
+counsel) and Moses & Singer LLP, New York (Robert D. Lillienstein and Scott E.
+Silberfein of counsel) for Northern Leasing Systems, Inc., Lease Finance Group LLC, MBF
+Leasing LLC, Lease Source-LSI, LLC, Golden Eagle Leasing LLC, Pushpin Holdings LLC,
+Jay Cohen and Neil Hertzman, respondents-appellants.
+
+Letitia James, Attorney General, New York (Ester Murdukhayeva and Steven C. Wu of
+counsel), for the State of New York and Letitia James, respondents-appellants.
+
+
+
+
+                                          2
+ WEBBER, J.P.
+
+      In April 2016, petitioners, the Attorney General (AG) and the Deputy Chief
+
+Administrative Judge for New York City Courts, commenced the instant proceeding
+
+against respondents Northern Leasing Systems, Inc., Lease Finance Group LLC, MBF
+
+Leasing LLC, Lease Source–LSI, LLC, Golden Eagle Leasing LLC, Pushpin Holdings
+
+LLC, Jay Cohen, and Neil Hertzman (Northern Respondents), alleging that they
+
+engaged in repeated and persistent fraud in that they tricked individuals, many of whom
+
+were small business owners, into entering into unconscionable equipment finance leases
+
+(EFLs) for credit card processing equipment.1 Although the action was commenced in
+
+2016, the acts complained of date from 2010.
+
+      The following is drawn from an extensive and lengthy record, which includes the
+
+petition and sworn affirmations by some 873 individuals who have filed complaints with
+
+the AG’s office, as well as affidavits by the then Deputy Chief Administrative Judge and
+
+New York Civil Court employees, documentary materials, respondents’ answers,
+
+affidavits by respondents’ officers and employees, and other records.
+
+      Factual Background
+
+      According to petitioners, banks would hire the Northern Respondents’ affiliated
+
+sales representatives, also known as “Independent Sales Organizations” (ISO), to
+
+market and sell the banks’ credit card processing services to consumers and small
+
+
+1 This proceeding is the State’s second enforcement action against the Northern
+
+Respondents for engaging in fraudulent and deceptive practices harming consumers. In
+2012, the AG’s office commenced a proceeding against them for withdrawing
+unauthorized fees from the bank accounts of nearly 110,000 former customers whose
+leases had long expired or who had already fully paid. That proceeding resulted in a
+Consent Order and Judgment on or about February 28, 2013 enjoining them from
+engaging in any further deceptive, fraudulent, or illegal practices. They have also been
+the subject of other state and federal actions involving similar conduct.
+
+
+                                            3
+businesses, and, at the same time, those sales representatives, acting on behalf of the
+
+Northern Respondents, would lease credit card processing equipment that was not
+
+provided by the banks to the consumers and businesses via the EFLs. The sales
+
+representatives misrepresented to those consumers the nature and terms of the EFLs
+
+and failed to disclose that they were entering into contracts with two different
+
+companies, as well as that they were entering into an equipment lease. Many consumers
+
+did not understand the nature of the EFLs they signed.
+
+       The Northern Respondents trained their affiliated ISO sales representatives and
+
+provided them with specific EFL forms and other written materials. Those sales
+
+representatives would target owners of small businesses such as flower shops, hair
+
+salons, bodegas, and small restaurants and bars all over the country. According to
+
+petitioners, many of the targeted business owners were over 65 years old, disabled, new
+
+immigrants, or not proficient in English. The consumers were given little opportunity to
+
+review the EFLs before signing and were not provided with copies of the EFLs.
+
+Following the signing of the EFLs by the consumers, the sales representatives were
+
+unreachable. Petitioners also allege that in some instances, the sales representatives
+
+forged the names of the consumers or unilaterally altered terms of the EFLs after they
+
+were signed.
+
+       The EFLs contained hidden, one-sided onerous terms, including a “no-
+
+cancellation provision” and an automatic month-to-month renewal provision. It is also
+
+alleged that the Northern Respondents would also make it exceedingly difficult for
+
+individuals to cancel an EFL or return unwanted equipment and that they would
+
+continue collecting monthly payments after the expiration of initial EFL terms, typically
+
+for 48 months, even though the amounts paid grossly exceeded the value of the
+
+
+                                             4
+equipment, which typically was only a few hundred dollars. The EFLs also contained a
+
+personal guaranty provision, requiring all individual signers to personally guarantee the
+
+EFLs. The EFLs contained a forum selection clause requiring customers to consent to
+
+the jurisdiction of New York City Courts regardless of where the lessee was physically
+
+located and an alternate service provision that allowed respondents to initiate legal
+
+proceedings by sending certified mail to the mailing address on the EFL or the
+
+individual guarantor’s current or last known address.
+
+      Petitioners allege that when lessees refused to pay, the Northern Respondents
+
+and their lawyers, Joseph I. Sussman, P.C., Joseph I. Sussman, and Eliyahu R. Babad
+
+(Attorney Respondents) would harass the lessees and guarantors and threaten litigation
+
+to collect on the debts, threaten the individual guarantors with harm to their personal
+
+consumer credit scores, and employ harassing debt collection practices aimed at
+
+individuals. They commenced actions in New York City Civil Court in New York County
+
+(New York County Civil Court), making it difficult for nonresidents to appear (more
+
+than 95% of consumers sued by the Northern Respondents resided outside of New
+
+York), resulting in thousands of dollars of default judgments against them, they
+
+obtained default judgments by serving summonses and complaints at addresses they
+
+knew were outdated, and they filed lawsuits that were untimely.
+
+      According to petitioners, since 2010, the Northern Respondents have filed more
+
+than 30,000 actions in New York County Civil Court and obtained more than 19,000
+
+default judgments, accounting for a large portion of the total general, commercial, and
+
+consumer debt filings and default judgments in New York County Civil Court.2
+
+
+2 Respondents’ filings became so overwhelming that the Civil Court created a separate
+
+calendar part to hear only actions brought by the Northern Respondents.
+
+
+                                            5
+Consumers made 1,643 complaints to the AG for the period from January 1, 2010 to
+
+December 31, 2015.
+
+       The State brought this special proceeding against respondents under Executive
+
+Law § 63(12) for engaging in repeated and persistent fraud and under Business
+
+Corporation Law (BCL) § 1102(a)(2) to have Northern Leasing System dissolved,
+
+seeking to permanently enjoin respondents from engaging in the above-described
+
+deceptive business practices and from conducting any business or performing any act in
+
+and from the State of New York involving equipment finance leasing and/or debt
+
+collection (or, alternatively, provide a performance bond), to rescind all of the EFLs
+
+obtained by fraud or misrepresentation, and to direct respondents to pay restitution,
+
+damages, disgorgement, civil penalties, and costs, and provide an accounting. The
+
+Administrative Judge seeks to vacate thousands of default judgments that respondents
+
+have obtained in New York County Civil Court, to stay all executions to collect on those
+
+judgments, and to compel respondents to pay restitution of all amounts collected based
+
+on those judgments, pursuant to CPLR 5015(c) and (d).
+
+       Procedural History
+
+       The Northern and Attorney Respondents separately moved to dismiss the
+
+petition. The motion court denied the Northern Respondents’ motion but granted the
+
+Attorney Respondents’ motion to dismiss the cause of action based on violations of
+
+General Business Law § 349. On appeal, this Court affirmed the denial of the Northern
+
+Respondents’ motion to dismiss but reversed the granting of the Attorney Respondents’
+
+motion to dismiss (Matter of People v Northern Leasing Sys., Inc., 169 AD3d 527 [1st
+
+Dept 2019]). While that appeal was pending, the Northern Respondents moved for
+
+disclosure and a trial, and petitioners sought a summary determination against the
+
+
+                                             6
+Northern Respondents. Following our decision, the Attorney Respondents moved for
+
+summary judgment, and petitioners sought a summary determination against the
+
+Attorney Respondents.
+
+       Discussion
+
+       We find that Supreme Court correctly denied respondents’ motions and granted
+
+petitioners’ motion for summary determination of their claims, as no material issues of
+
+fact exist warranting a trial (see e.g. Matter of People v Trump Entrepreneur Initiative
+
+LLC, 137 AD3d 409, 418-419 [1st Dept 2016], appeal withdrawn 31 NY3d 1011 [2018] ).
+
+The Northern Respondents’ evidence failed to raise factual issues as to their liability.
+
+       As a threshold matter, Supreme Court properly denied the Northern
+
+Respondents’ request for additional discovery, finding that there was no showing of
+
+need. “A special proceeding, as authorized by Executive Law § 63(12), is intended as an
+
+expeditious means for the Attorney General to prevent further injury and seek relief for
+
+the victims of business fraud” (People v Apple Health & Sports Clubs, 206 AD2d 266,
+
+268 [1st Dept 1994], lv dismissed in part, denied in part 84 NY2d 1004 [1994]).
+
+Contrary to the Northern Respondents’ assertions, they are not automatically entitled to
+
+conduct depositions or to engage in other discovery (see CPLR 408; Hirsch v Stewart,
+
+63 AD3d 74, 81 [1st Dept 2009]; Matter of Allocca v Kelly, 44 AD3d 308, 309 [1st Dept
+
+2007]; Stapleton Studios v City of New York, 7 AD3d 273, 274-275 [1st Dept 2004]).
+
+Discovery is disfavored in a special proceeding and is permitted only on leave of court
+
+upon a showing of “ample need” (Matter of Shore, 109 AD2d 842, 843–844 [2d Dept
+
+1985] [internal quotation marks omitted]) or “unusual circumstances” (State of New
+
+York v Bridgehampton Rd. Races Corp., 44 AD2d 725, 726 [2d Dept 1974]).
+
+
+
+
+                                             7
+       The Northern Respondents offered no explanation as to why there was need for
+
+additional discovery. Specifically, they failed to explain their request for deposing more
+
+than 800 individuals who had already submitted detailed affidavits, which were
+
+supported by documentary evidence and to whose lease files the Northern Respondents
+
+presumably possess direct access.
+
+       Contrary to the arguments set forth by the Northern and Attorney Respondents,
+
+Supreme Court properly considered the credible, authenticated and admissible evidence
+
+and found that a trial was not required since there were no triable issues of fact. The
+
+standard for determining whether respondents have raised a triable issue of fact is the
+
+same as that applied on a motion for summary judgment (Matter of Port of N.Y. Auth.
+
+[62 Cortlandt St. Realty Co.], 18 NY2d 250, 255 [1966], cert denied 385 US 1006
+
+[1967]; Matter of Northwest 5th & 45th Realty Corp. v Mitchell, Maxwell & Jackson,
+
+Inc., 164 AD3d 1158, 1158 [1st Dept 2018]; Karr v Black, 55 AD3d 82, 86 [1st Dept
+
+2008], lv denied 11 NY3d 712 [2008]; Matter of People v Applied Card Sys., Inc., 27
+
+AD3d 104, 106 [3d Dept 2005], lv dismissed 7 NY3d 741 [2006]).
+
+       The record shows that in response to petitioners’ motion, the Northern
+
+Respondents submitted the EFLs signed by the 873 complainants, the Northern
+
+Respondents’ contracts with the 352 different ISOs from which they purchased those
+
+873 EFLs, and affidavits by their chief executive officer, Jay Cohen, president, Ron
+
+Kincheloe, vice president of collections and customer service, Neil Hertzman, and
+
+director of information technology, Oksana Arkhipova. These documents purportedly
+
+explain and prove the propriety of their business practices and contradict the evidence
+
+submitted by petitioners. The Attorney Respondents submitted an affidavit by
+
+respondent Joseph Sussman and a “Global Appendix” describing the claims against, and
+
+
+                                             8
+defenses asserted by, each of the guarantors who had submitted affidavits with the
+
+petition, upon which the Attorney Respondents purportedly relied to establish a good
+
+faith basis to commence each action against the guarantors. Supreme Court properly
+
+considered these submissions and found the Northern Respondents’ evidence, including
+
+the welcome letters, receipts, and logs they maintained, purportedly showing that the
+
+complainant-lessees signed the EFLs and accepted delivery of equipment, were not
+
+authenticated or otherwise admissible.
+
+      Moreover, as noted by Supreme Court, these documents did not support the
+
+Northern Respondents’ attempts to refute the complainants’ claims. The affidavits by
+
+Cohen and Kincheloe, while stating the Northern Respondents’ procedures for customer
+
+service and investigation of forgery, fraud, and misrepresentation claims, did not
+
+establish that their employees followed those procedures. The Northern Respondents
+
+presented no affidavit or deposition testimony by any ISO employees to rebut the
+
+complainants’ consistent accounts, and they did not demonstrate a procedure for
+
+verifying through the ISOs that they presented validly executed EFL applications.
+
+      Supreme Court correctly found that petitioners demonstrated respondents’
+
+liability under Executive Law § 63(12). Under Executive Law § 63(12), “the test for fraud
+
+is whether the targeted act has the capacity or tendency to deceive or creates an
+
+atmosphere conducive to fraud” (People v General Elec. Co., 302 AD2d 314, 314 [1st
+
+Dept 2003]). “Executive Law § 63(12) was meant to protect not only the average
+
+consumer, but also the ignorant, the unthinking, and the credulous” (id. [internal
+
+quotation marks omitted]). “[P]ublic reports and lawsuits of alleged fraud are sufficient
+
+to put a plaintiff on inquiry notice of fraud” (Aozora Bank, Ltd. v Deutsche Bank Sec.
+
+Inc., 137 AD3d 685, 689 [1st Dept 2016]). “All that is required to defeat a motion to
+
+
+                                            9
+dismiss a fraud claim for lack of scienter is a rational inference of actual knowledge”
+
+(IKB Intl. S.A. v Morgan Stanley, 142 AD3d 447, 450 [1st Dept 2016] [internal
+
+quotation marks omitted]).
+
+       The Northern Respondents’ failure to oversee the ISOs and to assess any
+
+meaningful penalty against them for presenting a fraudulent EFL created an enterprise
+
+conducive to fraud. The forgeries, material misrepresentations, and noncancelable EFLs
+
+even when the leased equipment is never delivered, does not function, or is returned
+
+would never occur but for the Northern Respondents creating their market for the ISOs,
+
+through their commissions, and then ignoring the ISOs’ conduct. Given the 837
+
+affidavits of lessees’ complaints about similar ISO misconduct, the Northern
+
+Respondents were on notice that securing EFLs through the ISOs was conducive to
+
+fraud. As stated by Supreme Court, Jay Cohen, Northern Leasing Systems' chief
+
+executive officer, and Neil Hertzman, vice president of customer service and collections,
+
+as corporate officers, are liable for the Northern Respondents’ fraud if they participated
+
+in the fraud (see Polonetsky v Better Homes Depot, 97 NY2d 46, 55 [2001]) or received
+
+actual notice of the fraud (see People v Apple Health & Sports Clubs, 80 NY2d 803,
+
+807-808 [1992]). Cohen, as Northern Leasing Systems’ chief executive officer, stands in
+
+the same position and is liable to the same extent as Northern Leasing Systems. Further,
+
+since Hertzman responded to lessees’ complaints, he obtained actual knowledge of the
+
+likely misleading practices and is liable for participation in that scheme (see People v
+
+Greenberg, 21 NY3d 439, 447 [2013]; People v Apple Health & Sports Clubs, 206 AD2d
+
+at 267). This knowledge sustains petitioners’ fraud claim (id.; AIG Fin. Prods. Corp. v
+
+ICP Asset Mgt., LLC, 108 AD3d 444, 446-447 [1st Dept 2013]).
+
+
+
+
+                                            10
+       Supreme Court’s finding of an absence of agency or unconscionability requires
+
+neither additional discovery nor a trial. As stated above, there must be a showing that
+
+there is a need for additional discovery. As noted by Supreme Court, a trial is not
+
+warranted on this issue, as the Northern Respondents’ knowledge of the ISOs’ actions
+
+and failure to act inculpated them, which is the determining factor. Further, contrary to
+
+the Northern Respondents’ contentions, this is not inconsistent with our earlier decision
+
+upholding the denial of the Northern Respondents’ motion to dismiss on the basis that
+
+petitioners had sufficiently alleged agency and unconscionability (Northern Leasing
+
+Sys., 169 AD3d at 529). In our earlier decision, we found that the petition sufficiently
+
+pleaded actual authority, alleging that the Northern Respondents trained the ISO
+
+representatives, provided them with the specific lease forms, offering detailed
+
+instructions and materials about how to complete the forms, and paid commissions for
+
+each lease solicited from a customer. Since the allegations of training and provision of
+
+forms do not necessarily mean the authorization of the representatives’ deceptive acts,
+
+the petition also alleged that the Northern Respondents ratified these acts by retaining
+
+the benefits of the unauthorized actions with knowledge of the material facts (see
+
+Standard Funding Corp. v Lewitt, 89 NY2d 546, 552 [1997]; Matter of New York State
+
+Med. Transporters Assn. v Perales, 77 NY2d 126, 131 [1990]). Specifically, the petition
+
+alleged that respondents knew of the various misrepresentations and misconduct
+
+engaged in by the sales representatives, and yet approved and accepted the lease
+
+agreements and later sought to enforce them by commencing debt collection actions.
+
+       Supreme Court properly found that the Northern Respondents’ conduct falls
+
+within the “sham exception” to the Noerr-Pennington doctrine. The Noerr-Pennington
+
+doctrine protects the right under the First Amendment to the United States Constitution
+
+
+                                            11
+to petition the government for governmental action, including through litigation (see
+
+Villanova Estates, Inc. v Fieldston Prop. Owners Assn., Inc., 23 AD3d 160, 161 [1st Dept
+
+2005]) and activity incidental to litigation (see Nineteen Eighty-Nine, LLC v Icahn
+
+Enters. L.P., 99 AD3d 546, 547 [1st Dept 2012], lv denied 20 NY3d 863 [2013]). The
+
+parties seeking the benefit of the doctrine bear the initial burden of demonstrating the
+
+doctrine’s applicability so as to bar petitioners’ claims (see id.; Arts4All, Ltd. v Hancock,
+
+25 AD3d 453, 454 [1st Dept 2006], lv dismissed 6 NY3d 891 [2006]).
+
+        The sham exception to the Noerr-Pennington doctrine encompasses the abuse of
+
+a governmental process, rather than its outcome (Singh v Sukhram, 56 AD3d 187, 192
+
+[2d Dept 2008]). To establish the sham exception to the doctrine, petitioners must
+
+prove that respondents lacked a genuine interest in seeking governmental action (see
+
+Shapiro v Tardalo, 167 AD3d 555, 555 [1st Dept 2018]; Villanova Estates, 23 AD3d at
+
+161; Singh, 56 AD3d at 193) and that their use of the litigation process in that quest was
+
+objectively baseless (Northern Leasing Sys., 169 AD3d at 530; I.G. Second Generation
+
+Partners, L.P. v Duane Reade, 17 AD3d 206, 208 [1st Dept 2005]; Singh, 56 AD3d at
+
+192).
+
+        We held in our prior decision that allegations that the Northern Respondents
+
+created legal obligations through misrepresentations and fraud and then attempted to
+
+enforce those obligations through abusive pre-litigation and litigation practices
+
+sufficiently demonstrated that the Northern Respondents’ debt collection activities and
+
+procuring of default judgments were “objectively baseless” (Northern Leasing Sys., 169
+
+AD3d at 530).
+
+        On the instant motion, Supreme Court found that the Northern Respondents
+
+chose methods for procuring EFLs that created an enterprise conducive to fraud; that
+
+
+                                             12
+based on the sheer numbers of complaints, they are charged with knowledge of the ISOs’
+
+persistent misconduct; and that they ignored or overlooked that conduct. The Northern
+
+Respondents’ debt collection activities, through threats to injure credit ratings and to
+
+pursue litigation and through actual litigation, resulting in a high rate of default
+
+judgments, render the debt collection activities objectively baseless.
+
+       For similar reasons, Supreme Court correctly determined that the Attorney
+
+Respondents’ conduct falls within the sham exception to the Noerr-Pennington doctrine
+
+and that the Attorney Respondents are liable under Executive Law § 63(12).
+
+       The Northern Respondents’ contention that Supreme Court’s decision
+
+erroneously ignores attorneys’ obligation to represent their clients zealously and the
+
+protections afforded to do so under the Noerr-Pennington doctrine is without merit. It
+
+is well established that the duty of zealous representation has its limits (see Honzawa v
+
+Honzawa, 268 AD2d 327, 331 [1st Dept 2000]). In this particular case, where the
+
+evidence supports the Attorney Respondents’ notice of the Northern Respondents’ fraud
+
+and deception under Executive Law § 63(12) and advanced that interest, their petitions
+
+for debt collection go beyond attorneys’ duty of zealous representation.
+
+       Finally, contrary to the Northern Respondents’ argument, petitioners’ cross
+
+appeal is timely, since under Executive Order 202.8, CPLR deadlines were suspended
+
+due to the COVID-19 pandemic at the time petitioners were originally required to file
+
+their cross appeal.
+
+       Accordingly, the orders of the Supreme Court, New York County (Lucy Billings,
+
+J.), entered on or about June 8, 2020, which, insofar as appealed from as limited by the
+
+briefs, granted petitioners’ motion for summary determination of the petition pursuant
+
+to Executive Law § 63(12), Business Corporation Law § 1101(a)(2) and CPLR 5015(c),
+
+
+                                             13
+denied the Northern Respondents’ motions for discovery and a trial or evidentiary
+
+hearing, and denied the Attorney Respondents’ motion for summary judgment
+
+dismissing the petition as against them, should be affirmed, without costs.
+
+      Orders, Supreme Court, New York County (Lucy Billings, J.), entered on or about
+June 8, 2020, affirmed, without costs.
+
+      Opinion by Webber, J.P. All concur.
+
+Webber, J.P., Mazzarelli, González, Scarpulla, JJ.
+
+                THIS CONSTITUTES THE DECISION AND ORDER
+      OF THE SUPREME COURT, APPELLATE DIVISION, FIRST DEPARTMENT.
+
+                                  ENTERED: February 11, 2021
+
+
+
+
+                                           14
+

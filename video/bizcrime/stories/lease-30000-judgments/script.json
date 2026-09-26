@@ -1,0 +1,14 @@
+{
+  "out": "short-lease-30000-judgments",
+  "kicker": "NORTHERN LEASING",
+  "voice": "Atlas",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "lease-30000-judgments", "img": "B01", "vo": "A credit card machine, worth a few hundred dollars at most. Over the life of a Northern Leasing lease, small businesses paid thousands for it, New York's attorney general said.", "cap": "A FEW HUNDRED DOLLARS" },
+    { "src": "lease-30000-judgments", "img": "B02", "vo": "Flower shops. Hair salons. Bodegas and bars. The leases couldn't be cancelled. And any lawsuit had to be brought in New York, wherever the owner lived.", "cap": "NON-CANCELABLE" },
+    { "src": "lease-30000-judgments", "img": "B03", "vo": "Between twenty ten and twenty fifteen, the state said, Northern Leasing filed more than thirty thousand collection lawsuits in a New York City court. More than ninety-five percent of the people it sued lived outside New York.", "cap": "30,000 LAWSUITS", "amber": true },
+    { "src": "lease-30000-judgments", "img": "B04", "vo": "The filings became so overwhelming that the court created a separate calendar, just for its cases.", "cap": "A CALENDAR\nJUST FOR THEM" },
+    { "src": "lease-30000-judgments", "img": "B05", "vo": "By the time the state sued, it had won more than nineteen thousand default judgments. Many of the people sued, the state said, only found out when they checked their credit reports.", "cap": "ON A CREDIT REPORT", "amber": true },
+    { "src": "lease-30000-judgments", "img": "B06", "vo": "In twenty twenty, a judge threw out twenty-nine thousand, six hundred seventeen default judgments. The court found that requiring owners across the country to defend lawsuits in New York, and allowing service to obsolete addresses, had thwarted their ability to defend themselves.", "cap": "29,617\nTHROWN OUT", "amber": true }
+  ]
+}

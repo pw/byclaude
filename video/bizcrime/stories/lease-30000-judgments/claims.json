@@ -1,0 +1,154 @@
+[
+  {
+    "beat": "B01",
+    "vo": "A credit card machine, worth a few hundred dollars at most.",
+    "sources": [
+      {
+        "url": "https://ag.ny.gov/press-release/2016/ag-schneiderman-sues-northern-leasing-systems-inc-deceptive-business-practices",
+        "quote": "The credit card equipment leased to consumers by Northern Leasing is valued at only a few hundred dollars (at most) when new"
+      }
+    ],
+    "note": "AG allegation; attributed in the next sentence."
+  },
+  {
+    "beat": "B01",
+    "vo": "Over the life of a Northern Leasing lease, small businesses paid thousands for it, New York's attorney general said.",
+    "sources": [
+      {
+        "url": "https://ag.ny.gov/press-release/2016/ag-schneiderman-sues-northern-leasing-systems-inc-deceptive-business-practices",
+        "quote": "yet over the course of a Northern Leasing lease consumers pay thousands of dollars for the equipment."
+      }
+    ],
+    "note": "Attributed to the AG."
+  },
+  {
+    "beat": "B02",
+    "vo": "Flower shops. Hair salons. Bodegas and bars.",
+    "sources": [
+      {
+        "url": "https://ag.ny.gov/press-release/2020/attorney-general-james-wins-lawsuit-against-northern-leasing-systems-delivering",
+        "quote": "The lawsuit alleged that Northern Leasing targeted small, family-owned businesses, such as flower shops, hair salons, automotive repair shops, bodegas, delis, restaurants, and bars"
+      }
+    ],
+    "note": "Subset of the listed business types."
+  },
+  {
+    "beat": "B02",
+    "vo": "The leases couldn't be cancelled.",
+    "sources": [
+      {
+        "url": "https://ag.ny.gov/sites/default/files/2020_02755_people_of_the_state_of_v_people_of_the_state_of_decision_and_order_74.pdf",
+        "quote": "The forgeries, material misrepresentations, and noncancelable EFLs even when the leased equipment is never delivered, does not function, or is returned would never occur but for the Northern Respondents creating their market for the ISOs"
+      },
+      {
+        "url": "https://ag.ny.gov/press-release/2016/ag-schneiderman-sues-northern-leasing-systems-inc-deceptive-business-practices",
+        "quote": "Northern Leasing refuses to cancel the lease under any circumstances -- even if the equipment never worked or if the consumer’s signature was forged."
+      }
+    ],
+    "note": "Court's own finding refers to 'noncancelable EFLs'."
+  },
+  {
+    "beat": "B02",
+    "vo": "And any lawsuit had to be brought in New York, wherever the owner lived.",
+    "sources": [
+      {
+        "url": "https://ag.ny.gov/press-release/2016/ag-schneiderman-sues-northern-leasing-systems-inc-deceptive-business-practices",
+        "quote": "require any lawsuit under the lease to be brought in New York, regardless of where the consumer lives"
+      },
+      {
+        "url": "https://ag.ny.gov/sites/default/files/2020_02755_people_of_the_state_of_v_people_of_the_state_of_decision_and_order_74.pdf",
+        "quote": "The EFLs contained a forum selection clause requiring customers to consent to the jurisdiction of New York City Courts regardless of where the lessee was physically located"
+      },
+      {
+        "url": "https://ag.ny.gov/press-release/2020/attorney-general-james-wins-lawsuit-against-northern-leasing-systems-delivering",
+        "quote": "The court also found that Northern Leasing’s requirement that small business owners across the country defend lawsuits in New York County Civil Court"
+      }
+    ],
+    "note": "Contract term; the court found the requirement existed."
+  },
+  {
+    "beat": "B03",
+    "vo": "Between twenty ten and twenty fifteen, the state said, Northern Leasing filed more than thirty thousand collection lawsuits in a New York City court.",
+    "sources": [
+      {
+        "url": "https://ag.ny.gov/press-release/2016/ag-schneiderman-sues-northern-leasing-systems-inc-deceptive-business-practices",
+        "quote": "Northern Leasing and its related entities filed more than 30,000 collection actions between 2010 and 2015 in NYC Civil Court."
+      }
+    ],
+    "note": "Attributed ('the state said'). 'Lawsuits', not 'businesses' (DO NOT SAY)."
+  },
+  {
+    "beat": "B03",
+    "vo": "More than ninety-five percent of the people it sued lived outside New York.",
+    "sources": [
+      {
+        "url": "https://ag.ny.gov/sites/default/files/2020_02755_people_of_the_state_of_v_people_of_the_state_of_decision_and_order_74.pdf",
+        "quote": "(more than 95% of consumers sued by the Northern Respondents resided outside of New York)"
+      },
+      {
+        "url": "https://ag.ny.gov/press-release/2020/attorney-general-james-wins-lawsuit-against-northern-leasing-systems-delivering",
+        "quote": "Over 95 percent of the small business owners sued by Northern Leasing do not reside in New York State"
+      }
+    ],
+    "note": "Primary figure; NBC's '96 percent' not used."
+  },
+  {
+    "beat": "B04",
+    "vo": "The filings became so overwhelming that the court created a separate calendar, just for its cases.",
+    "sources": [
+      {
+        "url": "https://ag.ny.gov/sites/default/files/2020_02755_people_of_the_state_of_v_people_of_the_state_of_decision_and_order_74.pdf",
+        "quote": "Respondents’ filings became so overwhelming that the Civil Court created a separate calendar part to hear only actions brought by the Northern Respondents."
+      }
+    ],
+    "note": "Appellate court's own words. 'Two judges' (CardFellow) not used."
+  },
+  {
+    "beat": "B05",
+    "vo": "By the time the state sued, it had won more than nineteen thousand default judgments.",
+    "sources": [
+      {
+        "url": "https://ag.ny.gov/press-release/2016/ag-schneiderman-sues-northern-leasing-systems-inc-deceptive-business-practices",
+        "quote": "The company has also obtained more than 19,000 default judgments against individual consumers since 2010 in NYC Civil Court"
+      }
+    ],
+    "note": "[1] is the April 2016 filing release, so the figure is dated to the suit. Not 'almost all' (DO NOT SAY)."
+  },
+  {
+    "beat": "B05",
+    "vo": "Many of the people sued, the state said, only found out when they checked their credit reports.",
+    "sources": [
+      {
+        "url": "https://ag.ny.gov/press-release/2016/ag-schneiderman-sues-northern-leasing-systems-inc-deceptive-business-practices",
+        "quote": "many of whom were not even aware that they had been sued by Northern Leasing until they learned of the default judgment when they checked their credit reports."
+      }
+    ],
+    "note": "'Many', not 'most'. Attributed."
+  },
+  {
+    "beat": "B06",
+    "vo": "In twenty twenty, a judge threw out twenty-nine thousand, six hundred seventeen default judgments.",
+    "sources": [
+      {
+        "url": "https://ag.ny.gov/press-release/2020/attorney-general-james-wins-lawsuit-against-northern-leasing-systems-delivering",
+        "quote": "the 29,617 default judgments be vacated and dismissed with prejudice, meaning that Northern Leasing cannot refile actions in another court to collect sums purportedly owed."
+      },
+      {
+        "url": "https://ag.ny.gov/sites/default/files/2020_02755_people_of_the_state_of_v_people_of_the_state_of_decision_and_order_74.pdf",
+        "quote": "Orders, Supreme Court, New York County (Lucy Billings, J.), entered on or about June 8, 2020, affirmed, without costs."
+      }
+    ],
+    "note": "Kept separate from the 19,000 (through-2015) figure; never 'of them'."
+  },
+  {
+    "beat": "B06",
+    "vo": "The court found that requiring owners across the country to defend lawsuits in New York, and allowing service to obsolete addresses, had thwarted their ability to defend themselves.",
+    "sources": [
+      {
+        "url": "https://ag.ny.gov/press-release/2020/attorney-general-james-wins-lawsuit-against-northern-leasing-systems-delivering",
+        "quote": "The court also found that Northern Leasing’s requirement that small business owners across the country defend lawsuits in New York County Civil Court, combined with ineffective service provisions allowing service to obsolete addresses, thwarted the merchants’ ability to defend themselves in court"
+      }
+    ],
+    "note": "Court finding as reported by the AG; paraphrase stays within it."
+  }
+]
