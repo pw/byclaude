@@ -1,0 +1,47 @@
+{
+  "out": "short-apologetic-ransom",
+  "kicker": "THE APOLOGETIC RANSOM",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses. Read the quoted email lines flatly, as text on a page, not as a performance.",
+  "beats": [
+    {
+      "src": "apologetic-ransom",
+      "img": "B01",
+      "vo": "We sincerely apologize for our actions. I would not want to harm your business, but we have no other choice. An email to Bludorn, a Houston restaurant. July, twenty twenty-two.",
+      "cap": "“WE SINCERELY\nAPOLOGIZE”"
+    },
+    {
+      "src": "apologetic-ransom",
+      "img": "B02",
+      "vo": "The week after the Fourth of July, one-star ratings had appeared on its Google page. No words attached. In one week, four point eight fell to four point five.",
+      "cap": "4.8 TO 4.5"
+    },
+    {
+      "src": "apologetic-ransom",
+      "img": "B03",
+      "vo": "The email said there would be one review a day. To stop it: a seventy-five dollar Google Play gift card. Resold, the note said, the card meant three weeks of income for the sender's family.",
+      "cap": "$75\nGIFT CARD",
+      "amber": true
+    },
+    {
+      "src": "apologetic-ransom",
+      "img": "B04",
+      "vo": "Google at first said the ratings broke no policy, because there were no comments. The owners didn't pay. They posted the email. About a hundred customers answered with reviews.",
+      "cap": "THEY DIDN'T PAY"
+    },
+    {
+      "src": "apologetic-ransom",
+      "img": "B05",
+      "vo": "When Google finally removed the fake ratings, most of the real five-star reviews went too. The rating settled at four point six.",
+      "cap": "4.6",
+      "amber": true
+    },
+    {
+      "src": "apologetic-ransom",
+      "img": "B06",
+      "vo": "The apology was a form letter. The New York Times reported the text was the same in each email, sent to restaurants from San Francisco to New York. One-star ratings with no words. And a gift card, because, one consultant said, such transactions are difficult to trace.",
+      "cap": "THE SAME\nIN EACH EMAIL",
+      "amber": true
+    }
+  ]
+}

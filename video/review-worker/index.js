@@ -1446,6 +1446,24 @@ Full story on the channel — link in bio.
 
 #truecrime #bellegunness #unsolved #darkhistory #truecrimecommunity #reels`
   },
+  "apologetic-ransom": {
+    title: "The apologetic ransom — one-star ratings and a $75 gift card",
+    yt: `"We sincerely apologize for our actions. I would not want to harm your business, but we have no other choice." That email reached Bludorn, a Houston restaurant, in July 2022, after a run of one-star Google ratings with no words attached. It asked for a $75 Google Play gift card to stop them. The owners didn't pay. The apology was a form letter: the New York Times reported the same text went to restaurants from San Francisco to New York.
+
+Source: TODAY.com, July 29, 2022; CBS News, August 3, 2022.
+
+#restaurantowner #smallbusinessowner #shorts #smallbusiness #googlereviews`,
+    tiktok: `"We sincerely apologize for our actions." Then: one review a day, unless you send a $75 Google Play gift card. A Houston restaurant refused. The apology turned out to be a form letter, sent to restaurants coast to coast.
+
+Source: TODAY.com and CBS News, 2022.
+
+#restaurantowner #smallbusinessowner #smallbusiness #restaurantlife #googlereviews`,
+    reels: `"We sincerely apologize for our actions… but we have no other choice." That was the email Bludorn, a Houston restaurant, got in July 2022, after a run of one-star Google ratings with no words attached, asking for a $75 Google Play gift card to stop them. The owners didn't pay, and when Google cleared the fake ratings, most of their real five-star reviews went too. The apology was a form letter: the New York Times reported the same text went to restaurants from San Francisco to New York. If wordless one-star ratings land all at once, the National Restaurant Association's advice is: don't pay, and report it to the FTC and the FBI's IC3.
+
+Source: TODAY.com, July 29, 2022; CBS News, August 3, 2022.
+
+#restaurantowner #smallbusinessowner #smallbusiness #restaurantlife #salonowner #googlereviews`
+  },
   "three-million-invoices": {
     title: "The $180 hosting bill — nearly three million mailers",
     yt: `It looked like any other bill: a due date, $180, a line that read "Yearly Web Hosting." Between 2015 and 2022, nearly three million of these mailers went out to small businesses that already had a website, hosted by someone else. Tens of thousands paid, believing they owed it. What they got back was another "invoice" a year later.

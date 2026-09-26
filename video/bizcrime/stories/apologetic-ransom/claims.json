@@ -1,0 +1,271 @@
+[
+  {
+    "vo": "We sincerely apologize for our actions. I would not want to harm your business, but we have no other choice.",
+    "sources": [
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "We sincerely apologize for our actions, I would not want to harm your business, but we have no other choice.",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "An email to Bludorn, a Houston restaurant.",
+    "sources": [
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "reads an email sent by the scammers to Bludorn",
+        "verified_substring": true
+      },
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "Aaron Bludorn, chef and co-owner of the eponymous restaurant Bludorn in Houston, Texas, told TODAY Food.",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "July, twenty twenty-two.",
+    "sources": [
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "Bludorn said restaurant staff started to notice the bad reviews rolling in the week right after Fourth of July weekend",
+        "verified_substring": true
+      },
+      {
+        "source": 5,
+        "url": "http://web.archive.org/web/20250809145712/https://www.houstonchronicle.com/food-culture/restaurants-bars/article/Houston-restaurants-hit-by-extortion-scam-17303068.php",
+        "quote": "and the upscale Bludorn near Montrose.",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "The week after the Fourth of July, one-star ratings had appeared on its Google page.",
+    "sources": [
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "Bludorn said restaurant staff started to notice the bad reviews rolling in the week right after Fourth of July weekend",
+        "verified_substring": true
+      },
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "these bad reviews were only appearing on Google.",
+        "verified_substring": true
+      },
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "“And then we received the email,” he said.",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "No words attached.",
+    "sources": [
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "the sudden influx of one-star ratings with no comments attached to them",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "In one week, four point eight fell to four point five.",
+    "sources": [
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "Bludorn said the scammer made the restaurant’s Google rating drop from 4.8 to 4.5 in one week",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "The email said there would be one review a day.",
+    "sources": [
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "And will appear in the future, one review a day,”",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "To stop it: a seventy-five dollar Google Play gift card.",
+    "sources": [
+      {
+        "source": 1,
+        "url": "https://www.cbsnews.com/news/restaurant-scam-one-star-reviews/",
+        "quote": "the restaurant received an untraceable email asking for a $75 Google Play gift card to have them taken down.",
+        "verified_substring": true
+      },
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "The scammer went on to ask for $75 to be paid as a Google Play gift card",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "Resold, the note said, the card meant three weeks of income for the sender's family.",
+    "sources": [
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "saying that with the proceeds from the sale of that gift card their family will have “three weeks of income.”",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "Google at first said the ratings broke no policy, because there were no comments.",
+    "sources": [
+      {
+        "source": 1,
+        "url": "https://www.cbsnews.com/news/restaurant-scam-one-star-reviews/",
+        "quote": "which initially said the one-star reviews didn't violate policy because there were no comments included.",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "The owners didn't pay.",
+    "sources": [
+      {
+        "source": 1,
+        "url": "https://www.cbsnews.com/news/restaurant-scam-one-star-reviews/",
+        "quote": "Bludorn said paying the $75 was never an option.",
+        "verified_substring": true
+      },
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "Bludorn said he never communicated with the scammer",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "They posted the email.",
+    "sources": [
+      {
+        "source": 1,
+        "url": "https://www.cbsnews.com/news/restaurant-scam-one-star-reviews/",
+        "quote": "The restaurant then posted the blackmail attempt on its social media to explain what happened",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "About a hundred customers answered with reviews.",
+    "sources": [
+      {
+        "source": 1,
+        "url": "https://www.cbsnews.com/news/restaurant-scam-one-star-reviews/",
+        "quote": "more than 100 customers submitted their own positive Google reviews.",
+        "verified_substring": true
+      },
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "An outpouring of support from the community resulted in around 100 five-star reviews in one day",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "When Google finally removed the fake ratings, most of the real five-star reviews went too.",
+    "sources": [
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "He said an effort by Google to remove the fraudulent reviews caused most of the five-star reviews from real customers to be removed as a result.",
+        "verified_substring": true
+      },
+      {
+        "source": 1,
+        "url": "https://www.cbsnews.com/news/restaurant-scam-one-star-reviews/",
+        "quote": "Later, Google did remove reviews associated with Bludorn, but they removed both good and bad ones.",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "The rating settled at four point six.",
+    "sources": [
+      {
+        "source": 2,
+        "url": "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+        "quote": "Bludorn said that his current rating of 4.6 is two-tenths of a point lower than his rating before the scam.",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "The apology was a form letter.",
+    "sources": [
+      {
+        "source": 7,
+        "url": "https://www.seattletimes.com/business/restaurants-face-an-extortion-threat-a-bad-rating-on-google/",
+        "quote": "The text threat was the same in each email: “We sincerely apologize for our actions, and would not want to harm your business but we have no other choice.”",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "The New York Times reported the text was the same in each email, sent to restaurants from San Francisco to New York.",
+    "sources": [
+      {
+        "source": 7,
+        "url": "https://www.seattletimes.com/business/restaurants-face-an-extortion-threat-a-bad-rating-on-google/",
+        "quote": "The text threat was the same in each email",
+        "verified_substring": true
+      },
+      {
+        "source": 7,
+        "url": "https://www.seattletimes.com/business/restaurants-face-an-extortion-threat-a-bad-rating-on-google/",
+        "quote": "Restaurateurs from San Francisco to New York, many from establishments with Michelin stars, said in recent days that they’ve received a blitz of one-star ratings on Google",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "One-star ratings with no words.",
+    "sources": [
+      {
+        "source": 4,
+        "url": "https://restaurant.org/education-and-resources/resource-library/restaurant-reputations-held-for-ransom/",
+        "quote": "In this recent extortion scam, the one-star reviews were left without any comments.",
+        "verified_substring": true
+      }
+    ]
+  },
+  {
+    "vo": "And a gift card, because, one consultant said, such transactions are difficult to trace.",
+    "sources": [
+      {
+        "source": 7,
+        "url": "https://www.seattletimes.com/business/restaurants-face-an-extortion-threat-a-bad-rating-on-google/",
+        "quote": "The use of Google Play gift cards is likely an intentional choice, he added, because such transactions are difficult to trace.",
+        "verified_substring": true
+      },
+      {
+        "source": 7,
+        "url": "https://www.seattletimes.com/business/restaurants-face-an-extortion-threat-a-bad-rating-on-google/",
+        "quote": "said Alan B. Watkins, a cybersecurity consultant",
+        "verified_substring": true
+      }
+    ]
+  }
+]

@@ -70,7 +70,10 @@ def compose(beat, idx):
 
 def tts(beat, idx):
     out = BASE / "audio" / f"{idx:02d}.mp3"
-    payload = json.dumps({"model": "x-ai/grok-voice-tts-1.0", "voice": spec["voice"], "input": beat["vo"], "response_format": "mp3"})
+    # 2026-09-26: xAI began 404ing the legacy OpenAI voice name "onyx"; it had been resolving to Atlas
+    # (matched by pitch + spectrum + duration on an identical line), so alias it rather than edit every spec.
+    voice = {"onyx": "Atlas"}.get(spec["voice"], spec["voice"])
+    payload = json.dumps({"model": "x-ai/grok-voice-tts-1.0", "voice": voice, "input": beat["vo"], "response_format": "mp3"})
     # generate up to 2x; verify each via whisper transcription (catches silent TTS truncation)
     last_reason = ''
     for attempt in (1, 2):
@@ -116,7 +119,7 @@ def verify_tts(audio_path, expected):
     except Exception as e:
         return ('unknown', f'transcribe-fail: {e}', '')
     n = lambda s: re.sub(r'\s+', ' ', re.sub(r'[^a-z0-9 ]', ' ', s.lower())).strip()
-    e = n(expected); a = n(transcript)
+    e = n(expected); a = n(transcript.replace('$', ' dollars '))  # '$3,480' is how the transcriber writes 'three thousand ... dollars'
     if not a: return ('fail', 'empty-transcript', transcript)
     e_content = [w for w in e.split() if len(w) > 2]
     if not e_content: return ('ok', 'no-checkable-words', transcript)
