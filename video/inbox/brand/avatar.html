@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face { font-family: IS; src: url('../../motion/fonts/InstrumentSerif-Regular.ttf'); }
+@font-face { font-family: ISI; src: url('../../motion/fonts/InstrumentSerif-Italic.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html,body{margin:0;background:#000} canvas{display:block}
+</style></head><body><canvas id="c" width="1080" height="1080"></canvas><script>
+const g=document.getElementById('c').getContext('2d');
+const BG='#15120f', BUB='#3b332d', TERRA='#cf7f5a', CREAM='#efe6d8';
+function bubble(x,y,w,h,r,fill,tail){g.fillStyle=fill;g.beginPath();g.roundRect(x,y,w,h,r);g.fill();
+  if(tail){g.beginPath();g.moveTo(x+70,y+h-20);g.quadraticCurveTo(x+40,y+h+50,x-10,y+h+60);g.quadraticCurveTo(x+90,y+h+40,x+140,y+h-10);g.fill();}}
+window.draw = async (v) => {
+  await document.fonts.load('200px IS'); await document.fonts.load('600 80px Inter');
+  g.fillStyle=BG; g.fillRect(0,0,1080,1080);
+  const vg=g.createRadialGradient(540,540,100,540,540,760); vg.addColorStop(0,'rgba(207,127,90,0.10)'); vg.addColorStop(1,'rgba(0,0,0,0)'); g.fillStyle=vg; g.fillRect(0,0,1080,1080);
+  if(v==='A'){ // incoming bubble, three typing dots
+    bubble(150,330,780,400,200,BUB,true);
+    [0,1,2].forEach(i=>{g.fillStyle=i===1?TERRA:'rgba(239,230,216,'+(i===0?0.55:0.35)+')';g.beginPath();g.arc(380+i*160,530,58,0,7);g.fill();});
+  }
+  if(v==='B'){ // bubble with unread badge
+    bubble(130,330,740,420,210,BUB,true);
+    g.fillStyle=CREAM; g.font='270px IS'; g.textAlign='center'; g.textBaseline='middle'; g.fillText('hi!!',500,528);
+    g.fillStyle=TERRA; g.beginPath(); g.arc(820,350,120,0,7); g.fill();
+    g.fillStyle=BG; g.font='600 128px Inter'; g.fillText('23',820,356);
+  }
+};
+</script></body></html>

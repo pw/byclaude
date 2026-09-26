@@ -197,6 +197,10 @@ function inboxIndex() {
 <p class="vo">Plan: post A and B a week apart on byclaude.films; both held until you say go.</p></div>`;
   return `<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Motion design — round 1</title>
 <style>body{margin:0;background:#12100e;color:#ece6dc;font:16px/1.5 -apple-system,system-ui,sans-serif;padding:16px}h1{font-size:20px;margin:0 0 4px}h2{font-size:17px;margin:4px 0 8px}.sub{color:#9a9186;font-size:14px;margin-bottom:18px}.card{background:#1a1714;border:1px solid #2b2621;border-radius:12px;padding:14px;margin:0 0 18px}.lab{font:600 12px/1 ui-monospace,monospace;letter-spacing:.1em;color:#d99a6c}video{width:100%;max-height:70vh;border-radius:8px;background:#000;margin:6px 0}.vo{color:#cfc7bb;font-size:15px}pre{white-space:pre-wrap;font:14px/1.45 -apple-system,system-ui,sans-serif;color:#cfc7bb}.dl{color:#d99a6c;font-size:14px}summary{cursor:pointer;color:#9a9186}</style>
+<div class="card"><div class="lab">PROFILE · @smallbusinessinbox</div><h2>Avatar (tap to open, then save)</h2>
+<div style="display:flex;gap:14px"><a href="/m/inbox-avatar-B.png"><img src="/m/inbox-avatar-B.png" style="width:120px;border-radius:50%"></a><a href="/m/inbox-avatar-A.png"><img src="/m/inbox-avatar-A.png" style="width:120px;border-radius:50%"></a></div>
+<p class="vo">B (left) is my pick. Name: <b>Small Business Inbox</b></p>
+<pre>What a small business owner's phone looks like at 11pm. And the tax math nobody explains. Written composites, not real people.</pre></div>
 <h1>Motion design — round 1</h1><div class="sub">Six films for @smallbusinessinbox (written composites, no voice) + the lease A/B. Nothing is scheduled to post.</div>${ab}${cards}`;
 }
 
