@@ -80,7 +80,7 @@ window.render = (t) => {
     K.header({ name: S("Dee") });
     B.draw(t, { placeholder: S("Message"), cursorFrom: OPEN + 0.2 });
     K.caption(t, S("quick questions this week: 23"), STAT, CARD + 0.2, 920, { size: 40, color: K.C.dim, rise: 60 });
-    thumb(t);
+    // thumb(t);  — cut 2026-09-26 (Patrick): breaks the inside-the-phone POV
   }
   const dimA = 0.5 * ss(DIM, DIM + 0.6, t) * (1 - ss(OPEN - 0.3, OPEN, t));
   if (dimA > 0) { g.fillStyle = `rgba(0,0,0,${dimA})`; g.fillRect(0, 0, W, H); }

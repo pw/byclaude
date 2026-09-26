@@ -103,7 +103,7 @@ window.render = (t) => {
   if (op < 1) {   // the list, pushed left and darkened as the thread slides over it
     g.save(); g.translate(-260 * op, 0); drawList(t); g.restore();
     if (op > 0) { g.fillStyle = `rgba(0,0,0,${0.6 * op})`; g.fillRect(0, 0, W, H); }
-    thumb(t, TAP - 1.1, TAP, TAP + 0.25, 640, LIST_TOP + RH / 2 + 30);
+    // cut 2026-09-26 (Patrick), row highlight + click carry the tap: thumb(t, TAP - 1.1, TAP, TAP + 0.25, 640, LIST_TOP + RH / 2 + 30);
   }
   if (op > 0) {
     g.save(); g.translate(W * (1 - op), 0);
