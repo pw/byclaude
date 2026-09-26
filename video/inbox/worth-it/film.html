@@ -1,0 +1,132 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: IS; src: url('../../motion/fonts/InstrumentSerif-Regular.ttf'); }
+@font-face { font-family: ISI; src: url('../../motion/fonts/InstrumentSerif-Italic.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// "worth it" — the stylist, 8:12 PM. The list is heavy; one thread isn't. She reads it, and answers slowly.
+const ON_SCREEN = [
+  "8:12 PM", "8:13 PM", "8:14 PM", "Messages", "14 unread", "15 unread",
+  "Tasha", "can I move to thursday", "8:09 PM",
+  "Lauren", "you charged me for toner??", "7:47 PM",
+  "Kim", "running late", "6:58 PM",
+  "Dana", "running 20 late", "6:20 PM",
+  "Brooke", "do you have anything sooner", "4:15 PM",
+  "Nicole", "hi quick question", "2:03 PM",
+  "Marisol", "this is random but", "now",
+  "you did my hair the week before my mom's funeral.",
+  "I kept looking in the mirror that day and I looked like myself.",
+  "just wanted you to know.",
+  "Thank you for telling me. I'm really glad I got to do that for you.",
+  "Message", "@smallbusinessinbox", "A written composite. Not a real business or client."
+];
+const S = K.say(ON_SCREEN);
+K.accent([218, 150, 108]);
+
+// ---------- the list ----------
+const R0 = 0.1, RSTEP = 0.45;                     // six previews, drawn one after another
+const DRAG = 4.5, MAR = 7.4;                      // a restless scroll; then Marisol arrives at the top
+const DIMS = MAR + 1.0, TAP = MAR + 2.6, OPEN = TAP + 0.2, OPEN_D = 0.5;
+const RH = 158, LIST_TOP = K.L.headerBot + 8;
+const rows = [
+  { t: MAR, name: S("Marisol"), preview: S("this is random but"), time: S("now"), unread: true },
+  { t: -1, name: S("Tasha"), preview: S("can I move to thursday"), time: S("8:09 PM"), unread: true },
+  { t: R0 + 1 * RSTEP, name: S("Lauren"), preview: S("you charged me for toner??"), time: S("7:47 PM"), unread: true },
+  { t: R0 + 2 * RSTEP, name: S("Kim"), preview: S("running late"), time: S("6:58 PM"), unread: true },
+  { t: R0 + 3 * RSTEP, name: S("Dana"), preview: S("running 20 late"), time: S("6:20 PM"), unread: true },
+  { t: R0 + 4 * RSTEP, name: S("Brooke"), preview: S("do you have anything sooner"), time: S("4:15 PM"), unread: true },
+  { t: R0 + 5 * RSTEP, name: S("Nicole"), preview: S("hi quick question"), time: S("2:03 PM"), unread: true },
+];
+// scroll: rows sit one slot up (Marisol's slot hidden) until she arrives and pushes everything down.
+// Before that, a thumb drags the list up, holds, lets it spring back.
+function listScroll(t) {
+  const drag = 130 * ss(DRAG, DRAG + 1.0, t) * (1 - ss(DRAG + 1.7, DRAG + 2.4, t));
+  const push = 1 - ss(MAR, MAR + 0.5, t);
+  return RH * push + drag;
+}
+
+// ---------- the thread ----------
+const convo = K.conversation([
+  { t: -1, stamp: S("8:12 PM") },
+  { t: -1, in: S("this is random but") },
+  { t: OPEN + 1.0, dots: 1.6 },
+  { gap: 0.05, in: S("you did my hair the week before my mom's funeral.") },
+  { gap: 3.2, dots: 1.4 },
+  { gap: 0.05, in: S("I kept looking in the mirror that day and I looked like myself.") },
+  { gap: 4.2, dots: 1.0 },
+  { gap: 0.05, in: S("just wanted you to know.") },
+  { gap: 3.4, type: S("Thank you for telling me. I'm really glad I got to do that for you."), cps: 10 },
+  { gap: 0.8, send: true },
+]);
+const IN1 = convo.at[3], IN2 = convo.at[5], IN3 = convo.at[7], TYPE = convo.at[8], SEND = convo.at[9];
+const CARD = SEND + 3.0, TOTAL = CARD + 3.2;
+const CLOCK = [[0, S("8:12 PM")], [IN2 + 1.5, S("8:13 PM"), 0.5], [TYPE + 4.2, S("8:14 PM"), 0.5]];
+
+// the owner's thumb over the glass (same drawn thumb as the series): rises to (x, y), presses, leaves
+function thumb(t, t0, tPress, t1, x, y) {
+  const p = ss(t0, tPress - 0.1, t) * (1 - ss(t1, t1 + 0.6, t)); if (p <= 0) return;
+  const press = Math.exp(-Math.pow((t - tPress) / 0.09, 2));
+  const tx = x + Math.sin(t * 0.9) * 6 - (1 - p) * 60 + 8 * press, ty = lerp(2150, y, p) + 10 * press;
+  g.save(); g.translate(tx, ty); g.rotate(-0.42);
+  const sh = g.createRadialGradient(-30, 90, 20, -30, 90, 200);
+  sh.addColorStop(0, 'rgba(0,0,0,0.45)'); sh.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = sh; g.fillRect(-220, -180, 460, 520);
+  const skin = g.createLinearGradient(-80, 0, 80, 0);
+  skin.addColorStop(0, rgba([128, 92, 74], 1)); skin.addColorStop(0.55, rgba([168, 124, 100], 1)); skin.addColorStop(1, rgba([120, 86, 70], 1));
+  g.fillStyle = skin; g.beginPath(); g.roundRect(-78, -60, 156, 760, [78, 78, 40, 40]); g.fill();
+  g.fillStyle = rgba([196, 160, 140], 0.9); g.beginPath(); g.roundRect(-48, -44, 96, 118, [44, 44, 26, 26]); g.fill();
+  g.fillStyle = rgba([226, 200, 184], 0.35); g.beginPath(); g.roundRect(-40, -38, 30, 70, 14); g.fill();
+  g.restore();
+}
+
+function drawList(t) {
+  const sc = listScroll(t);
+  K.threadList(t, { title: S("Messages"), badge: t < MAR ? S("14 unread") : S("15 unread"), rows, scroll: sc,
+    highlight: { i: 0, amt: 0.9 * ss(TAP - 0.1, TAP + 0.05, t) } });
+  // everything but Marisol's row goes quiet
+  const d = 0.55 * ss(DIMS, DIMS + 0.9, t); if (d <= 0) return;
+  const top = LIST_TOP - sc, bot = top + RH;
+  g.fillStyle = rgba(K.C.bg, d);
+  g.fillRect(0, bot + 1, W, 1580 - bot - 1);
+  if (top > K.L.headerBot + 2) g.fillRect(0, K.L.headerBot + 2, W, top - K.L.headerBot - 2);
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  K.ground();
+  const op = ss(OPEN, OPEN + OPEN_D, t);
+  if (op < 1) {   // the list, pushed left and darkened as the thread slides over it
+    g.save(); g.translate(-260 * op, 0); drawList(t); g.restore();
+    if (op > 0) { g.fillStyle = `rgba(0,0,0,${0.6 * op})`; g.fillRect(0, 0, W, H); }
+    thumb(t, TAP - 1.1, TAP, TAP + 0.25, 640, LIST_TOP + RH / 2 + 30);
+  }
+  if (op > 0) {
+    g.save(); g.translate(W * (1 - op), 0);
+    g.shadowColor = 'rgba(0,0,0,0.5)'; g.shadowBlur = 40; K.ground(); g.shadowBlur = 0;
+    K.header({ name: S("Marisol") });
+    convo.draw(t, { placeholder: S("Message"), cursorFrom: TYPE - 2.0 });
+    g.restore();
+  }
+  K.statusBar(t, { clock: CLOCK, battery: 0.14 });
+  vignette(0.3);
+  K.endCard(t, CARD, { handle: S("@smallbusinessinbox"), note: S("A written composite. Not a real business or client.") });
+  grain(t);
+};
+
+window.ready = (async () => {
+  await K.ready();
+  const pans = [-0.3, 0.2, -0.1, 0.35, -0.25, 0.1];
+  const events = rows.slice(2).map((r, i) => ({ t: r.t, k: 'notif', gain: 0.4, pan: pans[i] }))
+    .concat([{ t: MAR, k: 'notif', gain: 0.75 }, { t: TAP, k: 'click' }])
+    .concat(convo.events.map(e => e.k === 'notif' ? { ...e, gain: 0.6 } : e));
+  return { total: TOTAL, events,
+    tension: [[0, 0.2], [R0 + 5 * RSTEP, 0.5], [DRAG + 1, 0.62], [MAR, 0.62], [MAR + 1.2, 0.35], [OPEN + 0.5, 0.18],
+              [IN1, 0.08], [IN2, 0], [TOTAL, 0]],
+    warm: [[0, 0], [OPEN, 0], [IN1 + 0.5, 0.15], [IN2 + 0.5, 0.4], [TYPE, 0.45], [SEND, 0.55], [CARD, 0.4], [CARD + 1.2, 0.3], [TOTAL, 0.1]] };
+})();
+</script></body></html>

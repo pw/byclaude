@@ -1,0 +1,112 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: IS; src: url('../../motion/fonts/InstrumentSerif-Regular.ttf'); }
+@font-face { font-family: ISI; src: url('../../motion/fonts/InstrumentSerif-Italic.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// "no-show" — the nail tech, 9:00 AM. She's set up; the hour empties in timestamps; the apology at 10:41;
+// two drafts she doesn't send; the one she does. The appointment sits above the thread and greys.
+const ON_SCREEN = [
+  "8:56 AM", "9:00 AM", "9:04 AM", "9:15 AM", "9:30 AM", "10:41 AM", "10:42 AM",
+  "Brianna", "Message",
+  "Morning! All set up for you at 9.",
+  "75 min · gel fill · $65",
+  "omg I am SO sorry I totally forgot", "can I come at 2??",
+  "I have a 24-hour cancellation policy and",
+  "No worries!",
+  "2 works. Heads up, starting next week I'm taking a small deposit to hold appointments.",
+  "totally fair. see you at 2",
+  "@smallbusinessinbox", "A written composite. Not a real business or client."
+];
+const S = K.say(ON_SCREEN);
+K.accent([206, 122, 140]);   // a polish rose — cursor, send, the appointment's edge
+
+const NINE = 4.5, T04 = 6.1, T15 = 7.7, T30 = 9.3;      // the hour, in timestamps of nothing
+const DIM = T30 + 1.3, ROLL = DIM + 0.4, ROLL_D = 2.3;     // phone down; the clock runs on to 10:41
+const WAKE = ROLL + ROLL_D + 0.4;
+const A = K.conversation([
+  { t: 0.4, stamp: S("8:56 AM") },
+  { t: 0.7, type: S("Morning! All set up for you at 9."), cps: 20 },
+  { gap: 0.45, send: true },
+  { t: T04 + 0.3, stamp: S("9:04 AM") },
+  { t: T15 + 0.3, stamp: S("9:15 AM") },
+  { t: T30 + 0.3, stamp: S("9:30 AM") },
+  { t: WAKE + 0.25, stamp: S("10:41 AM") },
+  { t: WAKE + 0.45, in: S("omg I am SO sorry I totally forgot") },
+  { gap: 1.6, in: S("can I come at 2??") },
+  { gap: 2.0, type: S("I have a 24-hour cancellation policy and"), cps: 22 },
+  { gap: 1.3, del: "all", cps: 38 },
+  { gap: 0.6, type: S("No worries!"), cps: 15 },
+  { gap: 1.1, del: "all", cps: 22 },
+  { gap: 0.9, type: S("2 works. Heads up, starting next week I'm taking a small deposit to hold appointments."), cps: 23 },
+  { gap: 0.5, send: true },
+  { gap: 1.6, dots: 1.5 },
+  { gap: 0.1, in: S("totally fair. see you at 2") },
+]);
+const SENT1 = A.at[2], POLICY = A.at[9], NOWOR = A.at[11], FINAL = A.at[13], SEND = A.at[14], FAIR = A.at[16];
+const APPT = 0.1, CARD = FAIR + 3.0, TOTAL = CARD + 3.2;
+
+const CLOCK = [[0, S("8:56 AM")], [NINE, S("9:00 AM"), 0.6], [T04, S("9:04 AM"), 0.5], [T15, S("9:15 AM"), 0.5],
+  [T30, S("9:30 AM"), 0.5], [ROLL, S("10:41 AM"), ROLL_D, 1], [FINAL + 1.5, S("10:42 AM"), 0.5]];
+// minutes after 9:00, for the appointment's own clock (follows the status bar's rolls)
+const mins = t => t < NINE ? -4 : t < T04 ? lerp(0, 4, ss(NINE, NINE + 0.6, t)) : t < T15 ? lerp(4, 15, ss(T04, T04 + 0.5, t))
+  : t < T30 ? lerp(15, 30, ss(T15, T15 + 0.5, t)) : lerp(30, 101, ss(ROLL, ROLL + ROLL_D, t));
+
+// the appointment, pinned above the thread: what the hour was. It fills as the hour goes, then greys.
+const CHIP = { y: 342, h: 104 };
+function appointment(t) {
+  const a = ss(APPT, APPT + 0.7, t); if (a <= 0) return;
+  const grey = ss(ROLL + 0.6, ROLL + ROLL_D + 0.2, t);
+  const x0 = K.L.x0, x1 = K.L.x1, y = CHIP.y + (1 - a) * -16, h = CHIP.h;
+  g.fillStyle = rgba(mix(K.C.raise, K.C.bg, 0.35 * grey), a); g.strokeStyle = rgba(K.C.line, a); g.lineWidth = 2;
+  g.beginPath(); g.roundRect(x0, y, x1 - x0, h, 26); g.fill(); g.stroke();
+  // time used up: a thin fill along the bottom edge, 9:00 to 10:15
+  const f = clamp(mins(t) / 75);
+  g.save(); g.beginPath(); g.roundRect(x0, y, x1 - x0, h, 26); g.clip();
+  g.fillStyle = rgba(mix(K.C.accent, K.C.faint, grey), 0.55 * a); g.fillRect(x0, y + h - 7, (x1 - x0) * f, 7);
+  g.restore();
+  g.fillStyle = rgba(mix(K.C.accent, K.C.line, grey), a); g.beginPath(); g.roundRect(x0 + 22, y + 22, 8, h - 44, 4); g.fill();
+  // drawn calendar glyph
+  const ix = x0 + 58, iy = y + h / 2 - 20, ic = rgba(mix(K.C.ink, K.C.faint, grey), 0.85 * a);
+  g.strokeStyle = ic; g.lineWidth = 3.5; g.lineJoin = 'round'; g.lineCap = 'round';
+  g.beginPath(); g.roundRect(ix, iy + 4, 40, 36, 7); g.stroke();
+  g.beginPath(); g.moveTo(ix, iy + 16); g.lineTo(ix + 40, iy + 16); g.moveTo(ix + 11, iy); g.lineTo(ix + 11, iy + 8);
+  g.moveTo(ix + 29, iy); g.lineTo(ix + 29, iy + 8); g.stroke();
+  g.textBaseline = 'middle'; g.textAlign = 'left';
+  g.font = '600 38px Inter'; g.fillStyle = rgba(mix(K.C.ink, K.C.faint, grey), a); g.fillText(S("9:00 AM"), ix + 66, y + h / 2 + 1);
+  const tw = g.measureText(S("9:00 AM")).width;
+  g.font = '400 38px Inter'; g.fillStyle = rgba(mix(K.C.dim, K.C.faint, grey), a);
+  g.fillText(S("75 min · gel fill · $65"), ix + 66 + tw + 26, y + h / 2 + 1);
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  K.ground();
+  K.header({ name: S("Brianna") });
+  A.draw(t, { placeholder: S("Message"), top: lerp(K.L.headerBot + 2, CHIP.y + CHIP.h + 10, ss(APPT, APPT + 0.7, t)) });
+  appointment(t);
+  const dimA = 0.62 * ss(DIM, DIM + 0.7, t) * (1 - ss(WAKE - 0.2, WAKE + 0.15, t));
+  if (dimA > 0) { g.fillStyle = `rgba(0,0,0,${dimA})`; g.fillRect(0, 0, W, H); }
+  K.statusBar(t, { clock: CLOCK, battery: t => lerp(0.86, 0.71, clamp(t / (SEND + 2))) });
+  vignette(0.33);
+  K.endCard(t, CARD, { handle: S("@smallbusinessinbox"), note: S("A written composite. Not a real business or client.") });
+  grain(t);
+};
+window.ready = (async () => {
+  await K.ready();
+  const events = A.events.concat([
+    { t: NINE, k: 'tick', gain: 0.7 }, { t: T04, k: 'tick', gain: 0.5 }, { t: T15, k: 'tick', gain: 0.55 },
+    { t: T30, k: 'tick', gain: 0.6 }, { t: ROLL, k: 'tick', gain: 0.45 }, { t: WAKE - 0.15, k: 'buzz' },
+    { t: SEND + 0.15, k: 'bell', gain: 0.45 }]);
+  return { total: TOTAL, events,
+    tension: [[0, 0.08], [SENT1, 0.12], [NINE, 0.28], [T15, 0.45], [T30, 0.62], [DIM, 0.72], [ROLL + ROLL_D, 0.78],
+              [WAKE, 0.5], [POLICY, 0.58], [NOWOR, 0.4], [FINAL, 0.25], [SEND, 0.1], [SEND + 1, 0], [TOTAL, 0]],
+    warm: [[0, 0], [FINAL + 1, 0], [SEND, 0.22], [FAIR, 0.3], [CARD, 0.2], [CARD + 1, 0.24], [TOTAL, 0.1]] };
+})();
+</script></body></html>

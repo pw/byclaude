@@ -37,6 +37,7 @@ export default {
         headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex" },
       });
     // 2026-09-25: the FBB Loop posting list — one phone page, work top to bottom.
+    if (url.pathname === "/inbox") return new Response(inboxIndex(), { headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex", "Cache-Control": "no-store" } });
     if (url.pathname === "/bizcrime") return new Response(bizIndex(), { headers: { "Content-Type": "text/html; charset=utf-8", "X-Robots-Tag": "noindex", "Cache-Control": "no-store" } });
     if (url.pathname === "/fbb") {
       const present = [];
@@ -145,6 +146,58 @@ function bizIndex() {
   return `<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Business true crime — slate 1</title>
 <style>body{margin:0;background:#0b0e13;color:#e6e9ef;font:16px/1.5 -apple-system,system-ui,sans-serif;padding:16px}h1{font-size:20px;margin:0 0 4px}h2{font-size:17px;margin:4px 0 8px}.sub{color:#8a93a3;font-size:14px;margin-bottom:18px}.card{background:#0e131b;border:1px solid #1e2532;border-radius:12px;padding:14px;margin:0 0 18px}.lab{font:600 12px/1 ui-monospace,monospace;letter-spacing:.1em;color:#f2a93b}video{width:100%;max-height:70vh;border-radius:8px;background:#000;margin:6px 0}.vo{color:#c9d0db;font-size:15px}pre{white-space:pre-wrap;font:14px/1.45 -apple-system,system-ui,sans-serif;color:#c9d0db}.dl{color:#f2a93b;font-size:14px}summary{cursor:pointer;color:#8a93a3}</style>
 <h1>Business true crime — slate 1 (${BIZ.length})</h1><div class="sub">byclaude.films · held from the posting cron until you say go. Every VO line traces to a source (claims.json per film).</div>${cards}`;
+}
+
+const INBOX = [
+ {
+  "slug": "quick-question",
+  "title": "The quick question",
+  "reels": "Typed it three times. Sent the short one. Seen at 11:52.\n\n#hairstylist #salonowner #hairsalon #smallbusinessowner #behindthechair",
+  "note": "Builds the series phone. My one reservation: the drawn finger hovering at the end \u2014 I would cut it and let \"quick questions this week: 23\" land alone."
+ },
+ {
+  "slug": "no-show",
+  "title": "No-show",
+  "reels": "All set up at 9. She remembered at 10:41. Starting next week, a small deposit holds the chair.\n\n#nailtech #nailsalon #gelnails #smallbusinessowner #salonowner",
+  "note": "The waiting is told by empty timestamps (9:04 \u00b7 9:15 \u00b7 9:30) and a dimmed screen."
+ },
+ {
+  "slug": "friend-price",
+  "title": "Friend price",
+  "reels": "The math on \"friend price\" came out to $12.19 an hour. So she sent the packages, and made the engagement session a gift. That part was hers to give.\n\n#weddingphotographer #photographylife #smallbusinessowner #photographer #creativebusiness",
+  "note": "The $12.19/hr frame is the one people forward. Math checks: 500 / 41 = 12.195."
+ },
+ {
+  "slug": "net-30",
+  "title": "Net 30",
+  "reels": "Net 30 turned into day 46, and the crew still gets paid Friday. Three polite emails, and one that never got sent.\n\n#contractorlife #fencecontractor #smallbusinessowner #tradesman #fencing #smallbusinesslife",
+  "note": "Client renamed from \"Hollis Property Group\" to \"Rick \u00b7 property manager\" \u2014 real Hollis firms exist and this film shows the client paying late."
+ },
+ {
+  "slug": "one-star",
+  "title": "One star",
+  "reels": "1:14 AM, a one-star review. The first reply was the defensive one. She checked her notes and sent the other one.\n\n#doggroomer #doggroomingbusiness #groomerlife #smallbusinessowner #petgroomer",
+  "note": "The notes card (\"owner OK'd shorter\") is the turn; the calm reply takes a visible quarter hour."
+ },
+ {
+  "slug": "worth-it",
+  "title": "Worth it",
+  "reels": "Fourteen unread by 8pm, most of them about rescheduling. And then one that wasn't.\n\n#hairstylist #salonowner #hairstylistlife #behindthechair #smallbusinessowner",
+  "note": "Posts last. Marisol's messages arrive live; the owner types without a single deletion."
+ }
+];
+function inboxIndex() {
+  const cards = INBOX.map((f, i) => `<div class="card"><div class="lab">${i+1} · @smallbusinessinbox</div><h2>${f.title}</h2>
+<video controls playsinline preload="metadata" src="/m/inbox-${f.slug}.mp4"></video>
+<p class="vo">${f.note}</p><details><summary>Reels caption</summary><pre>${f.reels.replace(/</g,"&lt;")}</pre></details>
+<a class="dl" href="/m/inbox-${f.slug}.mp4" download>download</a></div>`).join("");
+  const ab = `<div class="card"><div class="lab">A/B · byclaude.films · same words, same voice, same timing</div><h2>Northern Leasing: stills vs motion design</h2>
+<p class="vo">A: the narrated-stills film already in the slate.</p><video controls playsinline preload="metadata" src="/m/short-lease-30000-judgments.mp4"></video>
+<p class="vo">B: code-rendered twin. Audio track is bit-identical (gate-checked); every number on screen is in the sources, and the counts are literal (30,000 dots, under 5% inside New York, 19,000 lit, 29,617 in the grid).</p><video controls playsinline preload="metadata" src="/m/short-lease-30000-judgments-motion.mp4"></video>
+<p class="vo">Plan: post A and B a week apart on byclaude.films; both held until you say go.</p></div>`;
+  return `<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Motion design — round 1</title>
+<style>body{margin:0;background:#12100e;color:#ece6dc;font:16px/1.5 -apple-system,system-ui,sans-serif;padding:16px}h1{font-size:20px;margin:0 0 4px}h2{font-size:17px;margin:4px 0 8px}.sub{color:#9a9186;font-size:14px;margin-bottom:18px}.card{background:#1a1714;border:1px solid #2b2621;border-radius:12px;padding:14px;margin:0 0 18px}.lab{font:600 12px/1 ui-monospace,monospace;letter-spacing:.1em;color:#d99a6c}video{width:100%;max-height:70vh;border-radius:8px;background:#000;margin:6px 0}.vo{color:#cfc7bb;font-size:15px}pre{white-space:pre-wrap;font:14px/1.45 -apple-system,system-ui,sans-serif;color:#cfc7bb}.dl{color:#d99a6c;font-size:14px}summary{cursor:pointer;color:#9a9186}</style>
+<h1>Motion design — round 1</h1><div class="sub">Six films for @smallbusinessinbox (written composites, no voice) + the lease A/B. Nothing is scheduled to post.</div>${ab}${cards}`;
 }
 
 const CAPTIONS = {
@@ -1657,6 +1710,24 @@ Source: People of the State of New York v. Northern Leasing Systems, Inc., 2020.
 
 #smallbusinessowner #smallbusiness #salonowner #restaurantowner #smallbusinesstips`,
     reels: `A credit card machine worth a few hundred dollars, on a lease that cost small businesses thousands, couldn't be cancelled, and required any lawsuit to be brought in New York, wherever the owner lived. Between 2010 and 2015, New York's attorney general said, Northern Leasing filed more than 30,000 collection lawsuits there, and more than 95% of the people it sued lived out of state. Many, the state said, only found out when a default judgment showed up on their credit report. In 2020 a New York court threw out 29,617 default judgments, finding the out-of-state lawsuits and service to obsolete addresses had kept owners from defending themselves. Before you sign an equipment lease, read the cancellation terms and where it says you can be sued.
+
+Source: People of the State of New York v. Northern Leasing Systems, Inc., New York Supreme Court, 2020.
+
+#smallbusinessowner #smallbusiness #salonowner #restaurantowner #floristlife #smallbusinesstips`
+  },
+  "lease-30000-judgments-motion": {
+    title: "The card machine lease — 30,000 lawsuits in New York (motion)",
+    yt: `A credit card machine worth a few hundred dollars. Over a Northern Leasing lease, small businesses paid thousands for it, New York's attorney general said, and the lease couldn't be cancelled. Any lawsuit had to be brought in New York, wherever the owner lived. Between 2010 and 2015 the company filed more than 30,000 collection lawsuits in New York City Civil Court, the state said; more than 95% of the people sued lived outside New York. In 2020 a New York court threw out 29,617 default judgments. In 2023 it awarded over $680 million against Northern Leasing; as of January 2025, the attorney general's office said no funds had been collected.
+
+Source: People of the State of New York v. Northern Leasing Systems, Inc., New York Supreme Court, 2020; affirmed by the Appellate Division, 2021.
+
+#smallbusinessowner #smallbusiness #shorts #salonowner #restaurantowner`,
+    tiktok: `A card machine worth a few hundred dollars. A lease that cost thousands, couldn't be cancelled, and sent any lawsuit to New York, wherever you lived. 30,000+ collection lawsuits. 95%+ of the people sued lived out of state. In 2020 a court threw out 29,617 default judgments.
+
+Source: People of the State of New York v. Northern Leasing Systems, Inc., 2020.
+
+#smallbusinessowner #smallbusiness #salonowner #restaurantowner #smallbusinesstips`,
+    reels: `Thirty thousand dots, one for each collection lawsuit, New York's attorney general said. The machine was worth a few hundred dollars, on a lease that cost small businesses thousands, couldn't be cancelled, and required any lawsuit to be brought in New York, wherever the owner lived. Between 2010 and 2015, New York's attorney general said, Northern Leasing filed more than 30,000 collection lawsuits there, and more than 95% of the people it sued lived out of state. Many, the state said, only found out when a default judgment showed up on their credit report. In 2020 a New York court threw out 29,617 default judgments, finding the out-of-state lawsuits and service to obsolete addresses had kept owners from defending themselves. Before you sign an equipment lease, read the cancellation terms and where it says you can be sued.
 
 Source: People of the State of New York v. Northern Leasing Systems, Inc., New York Supreme Court, 2020.
 

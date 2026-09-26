@@ -1,0 +1,176 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: IS; src: url('../../motion/fonts/InstrumentSerif-Regular.ttf'); }
+@font-face { font-family: ISI; src: url('../../motion/fonts/InstrumentSerif-Italic.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// "one star" — the groomer, 1:14 AM. A review on a dark screen, a fast draft, her own notes, a slow reply. Then 8:40 AM.
+const ON_SCREEN = [
+  "1:14 AM", "1:15 AM", "1:16 AM", "1:21 AM", "1:26 AM", "1:29 AM", "1:31 AM", "8:40 AM", "now",
+  "New review · 1 star", "Asked for a trim and my dog came back half bald.",
+  "Reviews", "Write a public reply",
+  "She asked for a #7 and I showed her the",
+  "Notes", "Biscuit", "matted behind ears + belly", "owner OK'd shorter", "3:10pm",
+  "I'm sorry he came home shorter than you pictured. ",
+  "The matting meant going shorter than we planned. ",
+  "Bring Biscuit back any time and I'll even him out, no charge.",
+  "Public reply · 1:29 AM",
+  "New message", "thank you for explaining. he's actually fine lol. we'll come back",
+  "@smallbusinessinbox", "A written composite. Not a real business or client."
+];
+const S = K.say(ON_SCREEN);
+K.accent([222, 170, 92]);   // this film's one accent: a star's amber
+const C = K.C, L = K.L;
+const REVIEW = S("Asked for a trim and my dog came back half bald.");
+const MSG = S("thank you for explaining. he's actually fine lol. we'll come back");
+
+// ---- time plan ----
+const BUZZ = 1.0, OPEN = 5.3;                       // the review on the lock screen, then opened
+const A = K.conversation([
+  { t: OPEN + 1.5, type: S("She asked for a #7 and I showed her the"), cps: 30 },   // 0 fast, hot
+  { gap: 1.3, del: "all", cps: 40 },                                              // 1
+]);
+const NOTES = A.end + 0.35, SCROLL0 = NOTES + 0.35, SCROLL1 = SCROLL0 + 1.5, LAND = SCROLL1, MARK = LAND + 0.6;
+const NOTES_OUT = LAND + 3.8;
+const RETYPE = NOTES_OUT + 0.8;
+const B = K.conversation([
+  { t: OPEN + 1.5, type: S("She asked for a #7 and I showed her the"), cps: 30 },
+  { gap: 1.3, del: "all", cps: 40 },
+  { t: RETYPE, type: S("I'm sorry he came home shorter than you pictured. "), cps: 23 },     // 2 slower
+  { gap: 0.9, type: S("The matting meant going shorter than we planned. "), cps: 23 },       // 3
+  { gap: 0.7, type: S("Bring Biscuit back any time and I'll even him out, no charge."), cps: 24 }, // 4
+  { gap: 1.0, send: true },                                                        // 5
+  { gap: 0.9, seen: S("Public reply · 1:29 AM") },                                 // 6
+]);
+const SEND = B.at[5], POSTED = B.at[6];
+const WAIT = POSTED + 1.0;                          // 1:31 AM. Nothing.
+const DIM = WAIT + 1.4, DARK = DIM + 1.1;
+const ROLL = DARK + 0.4, ROLL_D = 2.0;
+const BUZZ2 = ROLL + ROLL_D + 0.3, OPEN2 = BUZZ2 + 2.3;
+const CARD = OPEN2 + 3.6, TOTAL = CARD + 3.2;
+// the morning thread: same conversation, plus her message
+const M = K.conversation([
+  { t: -1, out: S("I'm sorry he came home shorter than you pictured. ") + S("The matting meant going shorter than we planned. ") + S("Bring Biscuit back any time and I'll even him out, no charge."), silent: true },
+  { t: -1, seen: S("Public reply · 1:29 AM") },
+  { t: OPEN2 + 0.25, stamp: S("8:40 AM") },
+  { t: OPEN2 + 0.45, in: MSG, silent: true },
+]);
+const CLOCK = [[0, S("1:14 AM")], [A.at[1] + 0.3, S("1:15 AM"), 0.5], [SCROLL1, S("1:16 AM"), 0.5],
+  [B.at[3] - 0.2, S("1:21 AM"), 0.5], [B.at[4] - 0.2, S("1:26 AM"), 0.5], [SEND - 0.4, S("1:29 AM"), 0.5],
+  [WAIT, S("1:31 AM"), 0.6], [ROLL, S("8:40 AM"), ROLL_D, 6]];
+const nightP = t => ss(ROLL, ROLL + ROLL_D, t);
+
+// ---- drawing helpers (film-local) ----
+function star(cx, cy, R, fill, a) {
+  g.beginPath();
+  for (let k = 0; k < 10; k++) { const r = k % 2 ? R * 0.45 : R, ang = -Math.PI / 2 + k * Math.PI / 5; g.lineTo(cx + r * Math.cos(ang), cy + r * Math.sin(ang)); }
+  g.closePath();
+  if (fill) { g.fillStyle = rgba(C.accent, a); g.fill(); }
+  else { g.strokeStyle = rgba(C.faint, a); g.lineWidth = 3; g.lineJoin = 'round'; g.stroke(); }
+}
+function header(a) {
+  const y = L.headerY; g.strokeStyle = rgba(C.ink, 0.85 * a); g.lineWidth = 5; g.lineCap = 'round'; g.lineJoin = 'round';
+  g.beginPath(); g.moveTo(94, y - 20); g.lineTo(74, y); g.lineTo(94, y + 20); g.stroke();
+  g.fillStyle = rgba(C.ink, a); g.font = '600 42px Inter'; g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillText(S("Reviews"), 130, y + 1);
+  g.fillStyle = rgba(C.line, a); g.fillRect(0, L.headerBot, W, 2);
+}
+const CARD_Y = 352;
+function reviewCard(t, a) {
+  g.font = '400 52px Inter'; const lines = wrapText(REVIEW, L.x1 - L.x0 - 80);
+  const h = 36 + 44 + 26 + lines.length * 66 + 30;
+  g.fillStyle = rgba(C.raise, a); g.beginPath(); g.roundRect(L.x0, CARD_Y, L.x1 - L.x0, h, 34); g.fill();
+  const pop = ss(OPEN + 0.2, OPEN + 0.7, t);
+  for (let k = 0; k < 5; k++) star(L.x0 + 62 + k * 56, CARD_Y + 58, 22 * (k === 0 ? lerp(0.6, 1, pop) : 1), k === 0, a);
+  g.fillStyle = rgba(C.dim, a); g.font = '500 30px Inter'; g.textAlign = 'right'; g.fillText(S("1:14 AM"), L.x1 - 40, CARD_Y + 58);
+  g.fillStyle = rgba(C.ink, a); g.font = '400 52px Inter'; g.textAlign = 'left';
+  lines.forEach((s, i) => g.fillText(s, L.x0 + 40, CARD_Y + 36 + 44 + 26 + 66 * (i + 0.5)));
+  return CARD_Y + h;
+}
+
+// her notes: a sheet slides up, the list scrolls back (older entries come down from above) and lands on Biscuit
+const NOTE_ROWS = (() => {
+  const r = rng(23), rows = [];
+  for (let i = 0; i < 16; i++) rows.push(i === 4 ? { biscuit: true, h: 330 } : { h: 150, n: 140 + r() * 140, l1: 320 + r() * 420, l2: r() < 0.5 ? 200 + r() * 360 : 0, tm: 90 + r() * 40 });
+  let y = 0; rows.forEach(rw => { rw.y = y; y += rw.h; }); return rows;
+})();
+const SHEET_TOP = 520, LIST_TOP = SHEET_TOP + 150;
+const SCROLL_END = NOTE_ROWS[4].y - 170, SCROLL_START = NOTE_ROWS[12].y;   // start near the newest, land on Biscuit
+function notes(t) {
+  const up = ss(NOTES, NOTES + 0.55, t) * (1 - ss(NOTES_OUT, NOTES_OUT + 0.5, t)); if (up <= 0) return;
+  const y0 = lerp(H, SHEET_TOP, up);
+  g.fillStyle = `rgba(0,0,0,${0.45 * up})`; g.fillRect(0, 0, W, H);
+  g.fillStyle = rgba([30, 27, 24], 1); g.beginPath(); g.roundRect(0, y0, W, H - y0 + 60, [48, 48, 0, 0]); g.fill();
+  g.fillStyle = rgba(C.line, 1); g.beginPath(); g.roundRect(CX - 50, y0 + 22, 100, 10, 5); g.fill();
+  g.fillStyle = rgba(C.ink, 1); g.font = '600 44px Inter'; g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillText(S("Notes"), L.x0, y0 + 90);
+  const k = ss(SCROLL0, SCROLL1, t), e = 1 - Math.pow(1 - k, 3);     // flick, then settle
+  const scroll = lerp(SCROLL_START, SCROLL_END, e), speed = k > 0 && k < 1 ? 3 * Math.pow(1 - k, 2) : 0;
+  const off = y0 - SHEET_TOP;
+  g.save(); g.beginPath(); g.rect(0, LIST_TOP + off - 10, W, 1580 - LIST_TOP + 10); g.clip();
+  for (const rw of NOTE_ROWS) {
+    const y = LIST_TOP + off + rw.y - scroll; if (y > 1600 || y + rw.h < LIST_TOP - 20) continue;
+    if (!rw.biscuit) {
+      const al = 0.9, st = Math.min(40, speed * 16);   // a little smear while it moves
+      g.fillStyle = rgba(C.line, al);
+      g.beginPath(); g.roundRect(L.x0, y + 30 - st / 2, rw.n, 30 + st, 12); g.fill();
+      g.beginPath(); g.roundRect(L.x1 - rw.tm, y + 34 - st / 2, rw.tm, 22 + st, 10); g.fill();
+      g.fillStyle = rgba(mix(C.line, [30, 27, 24], 0.35), al);
+      g.beginPath(); g.roundRect(L.x0, y + 80 - st / 2, rw.l1, 22 + st, 10); g.fill();
+      if (rw.l2) { g.beginPath(); g.roundRect(L.x0, y + 114 - st / 2, rw.l2, 22 + st, 10); g.fill(); }
+    } else {
+      const lit = ss(LAND - 0.2, LAND + 0.4, t);
+      g.fillStyle = rgba(mix([30, 27, 24], C.raise, 1), lit); g.beginPath(); g.roundRect(L.x0 - 24, y + 4, L.x1 - L.x0 + 48, rw.h - 16, 30); g.fill();
+      g.textBaseline = 'middle'; g.textAlign = 'left';
+      g.fillStyle = rgba(C.ink, 1); g.font = '600 54px Inter'; g.fillText(S("Biscuit"), L.x0 + 10, y + 62);
+      g.fillStyle = rgba(C.dim, 1); g.font = '500 36px Inter'; g.textAlign = 'right'; g.fillText(S("3:10pm"), L.x1 - 10, y + 62);
+      g.textAlign = 'left'; g.font = '400 48px Inter'; g.fillStyle = rgba(C.ink, 0.92);
+      g.fillText(S("matted behind ears + belly"), L.x0 + 10, y + 150);
+      const s3 = S("owner OK'd shorter"); g.fillText(s3, L.x0 + 10, y + 232);
+      const u = ss(MARK, MARK + 0.7, t), w = g.measureText(s3).width;   // her own words, underlined
+      if (u > 0) { g.fillStyle = rgba(C.accent, 0.95); g.fillRect(L.x0 + 10, y + 266, w * u, 6); }
+    }
+  }
+  g.restore();
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  K.ground();
+  const lock = (1 - ss(OPEN - 0.3, OPEN + 0.1, t)) + ss(DARK - 0.4, DARK + 0.3, t) * (1 - ss(OPEN2 - 0.3, OPEN2 + 0.1, t));
+  header(1);
+  const cardBot = reviewCard(t, 1);
+  if (t < DARK + 0.4) B.draw(t, { placeholder: S("Write a public reply"), top: cardBot + 14 });
+  else M.draw(t, { placeholder: S("Write a public reply"), top: cardBot + 14, cursorFrom: 1e9 });
+  notes(t);
+  const dimA = 0.5 * ss(DIM, DIM + 0.7, t) * (1 - ss(OPEN2 - 0.3, OPEN2, t));
+  if (dimA > 0) { g.fillStyle = `rgba(0,0,0,${dimA})`; g.fillRect(0, 0, W, H); }
+  if (lock > 0) {
+    K.ground(lock, [8, 7, 6]);
+    const clockA = lock * (t < OPEN ? ss(0.15, 0.7, t) : ss(DARK + 0.1, DARK + 0.5, t));
+    K.bigClock(t, CLOCK, { y: 560, size: 210, alpha: clockA });
+    K.banner(t, { t0: BUZZ, t1: OPEN - 0.3, name: S("New review · 1 star"), text: REVIEW, label: S("now"), y: 780, alpha: lock });
+    K.banner(t, { t0: BUZZ2, t1: OPEN2 - 0.3, name: S("New message"), text: MSG, label: S("now"), y: 780, alpha: lock });
+  }
+  K.statusBar(t, { clock: CLOCK, battery: t => lerp(0.31, 1, nightP(t)), alpha: 1 - 0.5 * lock * (1 - nightP(t)) });
+  vignette(0.35);
+  K.endCard(t, CARD, { handle: S("@smallbusinessinbox"), note: S("A written composite. Not a real business or client.") });
+  grain(t);
+};
+window.ready = (async () => {
+  await K.ready(); await document.fonts.load('600 54px Inter'); await document.fonts.load('400 48px Inter');
+  const events = B.events.concat([
+    { t: BUZZ, k: 'buzz' }, { t: OPEN - 0.25, k: 'click' }, { t: NOTES, k: 'click', gain: 0.7 }, { t: LAND, k: 'thud', gain: 0.5 },
+    { t: NOTES_OUT, k: 'click', gain: 0.6 }, { t: ROLL, k: 'tick', gain: 0.6 }, { t: BUZZ2, k: 'buzz' }, { t: OPEN2 - 0.25, k: 'click' },
+    { t: OPEN2 + 0.45, k: 'notif' }]);
+  return { total: TOTAL, events,
+    tension: [[0, 0.2], [BUZZ, 0.55], [OPEN, 0.6], [A.at[0], 0.72], [A.at[1], 0.75], [NOTES, 0.6], [LAND, 0.42], [RETYPE, 0.35],
+              [SEND, 0.3], [WAIT, 0.5], [DARK, 0.45], [ROLL + 1, 0.15], [BUZZ2, 0.15], [OPEN2, 0.05], [TOTAL, 0]],
+    warm: [[LAND, 0], [LAND + 0.8, 0.12], [RETYPE, 0.1], [SEND - 0.1, 0.1], [SEND + 0.5, 0.26], [WAIT, 0.06], [DARK, 0],
+           [BUZZ2, 0], [OPEN2 + 0.5, 0.45], [CARD, 0.35], [TOTAL, 0.15]] };
+})();
+</script></body></html>

@@ -28,3 +28,13 @@ video/shorts/short-*/
 video/bizcrime/stories/*/sources/*.html
 video/bizcrime/stories/*/sources/*.pdf
 video/bizcrime/stories/*/sources/*.png
+
+# Motion-design render artifacts (reproducible from film.html + motion/render.py)
+video/inbox/out/
+video/inbox/*/video.mp4
+video/inbox/*/mix.wav
+video/inbox/*/still_*.png
+video/inbox/*/*.log
+video/bizcrime/motion/*/video.mp4
+video/bizcrime/motion/*/still_*.png
+video/bizcrime/motion/*/*.log

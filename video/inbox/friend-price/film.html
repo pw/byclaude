@@ -1,0 +1,153 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: IS; src: url('../../motion/fonts/InstrumentSerif-Regular.ttf'); }
+@font-face { font-family: ISI; src: url('../../motion/fonts/InstrumentSerif-Italic.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// "friend price" — the photographer. An old friend, a wedding, a note that does the math,
+// two drafts, and a gift that is hers to give instead of a discount that isn't.
+const ON_SCREEN = [
+  "9:14 PM", "9:15 PM", "9:17 PM", "9:18 PM", "9:19 PM",
+  "Jess", "Jun 3, 2023", "happy birthday!!", "Sat 9:14 PM",
+  "HEYYY long time!!", "I'm getting married!!!", "would you do our photos? friend price lol",
+  "Jess wedding", "shooting 8 hrs", "driving 2 hrs", "editing 30 hrs", "gallery + delivery 1 hr", "= 41 hrs",
+  "friend price? $500", "= $12.19 / hr", "before gear, insurance, taxes",
+  "Congrats!! My wedding packages start at",
+  "Honestly I can't really discount",
+  "Congratulations!! I'd love to be there. I'll send my packages, and the engagement session is on me.",
+  "STOP. yes. crying",
+  "Message", "@smallbusinessinbox", "A written composite. Not a real business or client."
+];
+const S = K.say(ON_SCREEN);
+K.accent([222, 172, 104]);   // golden hour
+
+// ---------- the note: a second surface that slides up and does the math ----------
+const NOTE_OPEN = 6.9;
+const NOTE = (() => {
+  const r = rng(23), lines = [], events = [];
+  const spec = [
+    { text: S("shooting 8 hrs"), gap: 0.75, cps: 21 },
+    { text: S("driving 2 hrs"), gap: 0.45, cps: 21 },
+    { text: S("editing 30 hrs"), gap: 0.45, cps: 21 },
+    { text: S("gallery + delivery 1 hr"), gap: 0.45, cps: 24 },
+    { text: S("= 41 hrs"), gap: 0.95, cps: 14, sum: true },
+    { text: S("friend price? $500"), gap: 1.1, cps: 17 },
+  ];
+  let T = NOTE_OPEN + 0.3;
+  for (const s of spec) {
+    const t0 = T + s.gap, snaps = [t0]; let tt = t0;
+    for (let i = 0; i < s.text.length; i++) {
+      const ch = s.text[i];
+      tt += (1 / s.cps) * (0.55 + 0.9 * r()) + (/[?=]/.test(ch) ? 0.14 : 0);
+      snaps.push(tt); if (i % 2 === 0 && ch !== ' ') events.push({ t: tt, k: 'tap', gain: 0.7 + 0.3 * r() });
+    }
+    lines.push({ ...s, t0, snaps, end: tt }); T = tt;
+  }
+  return { lines, events, end: T };
+})();
+const RULE = NOTE.lines[4].t0 - 0.55;            // the line under the column, drawn before the sum
+const BIG = NOTE.end + 0.9;                      // = $12.19 / hr
+const BEFORE = BIG + 2.0;                        // before gear, insurance, taxes
+const NOTE_CLOSE = BEFORE + 2.6;
+
+// ---------- the thread ----------
+const A = K.conversation([
+  { t: -1, stamp: S("Jun 3, 2023") },
+  { t: -1, out: S("happy birthday!!"), dim: 0.35 },
+  { t: 0.4, stamp: S("Sat 9:14 PM") },
+  { t: 0.8, in: S("HEYYY long time!!") },
+  { t: 2.4, in: S("I'm getting married!!!") },
+  { t: 4.0, in: S("would you do our photos? friend price lol") },
+  { t: NOTE_CLOSE + 0.6, type: S("Congrats!! My wedding packages start at"), cps: 20 },   // 6
+  { gap: 1.1, del: "all", cps: 26 },
+  { gap: 0.7, type: S("Honestly I can't really discount"), cps: 17 },                     // 8
+  { gap: 1.0, del: "all", cps: 22 },
+  { gap: 0.8, type: S("Congratulations!! I'd love to be there. I'll send my packages, and the engagement session is on me."), cps: 34 }, // 10
+  { gap: 0.5, send: true },                                                                 // 11
+  { gap: 1.3, in: S("STOP. yes. crying") },                                                 // 12
+]);
+const SEND = A.at[11], STOP = A.at[12], CARD = STOP + 3.0, TOTAL = CARD + 3.2;
+const CLOCK = [[0, S("9:14 PM")], [NOTE_OPEN + 1.2, S("9:15 PM"), 0.5], [BIG + 0.4, S("9:17 PM"), 0.6],
+  [A.at[8] + 0.3, S("9:18 PM"), 0.5], [SEND - 0.6, S("9:19 PM"), 0.5]];
+
+const eo = x => 1 - Math.pow(1 - clamp(x), 3);
+const sheetP = t => eo((t - NOTE_OPEN) / 0.55) * (1 - ss(NOTE_CLOSE, NOTE_CLOSE + 0.5, t));
+const TOP = 420, NX = 120;
+
+function note(t) {
+  const p = sheetP(t); if (p <= 0.001) return;
+  g.fillStyle = `rgba(0,0,0,${0.5 * p})`; g.fillRect(0, 0, W, H);           // the thread steps back
+  const y0 = lerp(H + 40, TOP, p);
+  g.save(); g.translate(0, y0 - TOP);
+  const paper = [33, 29, 25];
+  g.shadowColor = 'rgba(0,0,0,0.55)'; g.shadowBlur = 60; g.shadowOffsetY = -10;
+  g.fillStyle = rgba(paper, 1); g.beginPath(); g.roundRect(24, TOP, W - 48, H - TOP + 100, [52, 52, 0, 0]); g.fill();
+  g.shadowColor = 'transparent';
+  g.strokeStyle = rgba(K.C.line, 1); g.lineWidth = 2; g.stroke();
+  g.fillStyle = rgba(K.C.faint, 0.8); g.beginPath(); g.roundRect(CX - 50, TOP + 22, 100, 10, 5); g.fill();   // grabber
+  g.textAlign = 'left'; g.textBaseline = 'middle';
+  g.font = '600 34px Inter'; g.fillStyle = rgba(K.C.dim, 1); g.fillText(S("Jess wedding"), NX, TOP + 104);
+  g.font = '400 30px Inter'; g.textAlign = 'right'; g.fillStyle = rgba(K.C.faint, 1); g.fillText(S("Sat 9:14 PM"), W - NX, TOP + 104);
+  g.textAlign = 'left';
+  // the column of hours, typed
+  const LY = [TOP + 238, TOP + 336, TOP + 434, TOP + 532, TOP + 668, TOP + 800];
+  let cursor = null;
+  NOTE.lines.forEach((L, i) => {
+    if (t < L.t0 - 0.35) return;
+    let n = 0; while (n < L.snaps.length - 1 && L.snaps[n + 1] <= t) n++;
+    const txt = L.text.slice(0, n);
+    g.font = L.sum ? '700 56px Inter' : '500 54px Inter'; g.fillStyle = rgba(K.C.ink, 1);
+    g.fillText(txt, NX, LY[i]);
+    cursor = { x: NX + g.measureText(txt).width + 4, y: LY[i], since: t - L.snaps[n], done: n === L.text.length };
+  });
+  // rule under the column
+  const rp = ss(RULE, RULE + 0.45, t);
+  if (rp > 0) { g.fillStyle = rgba(K.C.ink, 0.7); g.fillRect(NX, TOP + 596, 560 * rp, 3); }
+  // the number, the one big moment
+  const bp = ss(BIG, BIG + 0.7, t);
+  if (bp > 0) {
+    g.font = '400 150px IS'; g.fillStyle = rgba(K.C.accent, bp);
+    g.fillText(S("= $12.19 / hr"), NX - 6, TOP + 968 + (1 - bp) * 26);
+  }
+  const qp = ss(BEFORE, BEFORE + 0.9, t);
+  if (qp > 0) { g.font = '400 42px Inter'; g.fillStyle = rgba(K.C.dim, qp); g.fillText(S("before gear, insurance, taxes"), NX, TOP + 1100 + (1 - qp) * 14); }
+  // cursor: follows the last line typed, blinks while she thinks; gone once the number lands
+  if (cursor && t < BIG) {
+    const on = cursor.since < 0.45 || Math.floor((cursor.since - 0.45) * 2.2) % 2 === 1;
+    if (on) { g.fillStyle = rgba(K.C.accent, 1); g.fillRect(cursor.x, cursor.y - 30, 4, 60); }
+  } else if (!cursor && t > NOTE_OPEN + 0.4 && Math.floor((t - NOTE_OPEN) * 2.2) % 2 === 0) {
+    g.fillStyle = rgba(K.C.accent, 1); g.fillRect(NX, TOP + 238 - 30, 4, 60);
+  }
+  g.restore();
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  K.ground();
+  K.header({ name: S("Jess") });
+  A.draw(t, { placeholder: S("Message") });
+  note(t);
+  K.statusBar(t, { clock: CLOCK, battery: t => lerp(0.46, 0.43, clamp(t / TOTAL)) });
+  vignette(0.32);
+  K.endCard(t, CARD, { handle: S("@smallbusinessinbox"), note: S("A written composite. Not a real business or client.") });
+  grain(t);
+};
+window.ready = (async () => {
+  await K.ready();
+  await document.fonts.load('400 150px IS'); await document.fonts.load('700 56px Inter'); await document.fonts.load('500 54px Inter');
+  const events = A.events.concat(NOTE.events, [
+    { t: NOTE_OPEN, k: 'click' }, { t: BIG + 0.15, k: 'thud' }, { t: NOTE_CLOSE, k: 'click', gain: 0.7 },
+    { t: SEND + 0.1, k: 'bell', gain: 0.55 },
+  ]).sort((a, b) => a.t - b.t);
+  return { total: TOTAL, events,
+    tension: [[0, 0.1], [4.0, 0.2], [NOTE_OPEN, 0.3], [RULE, 0.45], [BIG, 0.62], [BEFORE + 0.5, 0.7], [NOTE_CLOSE, 0.55],
+              [A.at[9], 0.6], [A.at[10], 0.35], [SEND, 0.05], [TOTAL, 0]],
+    warm: [[0, 0], [A.at[10] + 1, 0], [SEND, 0.3], [STOP + 0.2, 0.45], [CARD, 0.3], [TOTAL, 0.12]] };
+})();
+</script></body></html>

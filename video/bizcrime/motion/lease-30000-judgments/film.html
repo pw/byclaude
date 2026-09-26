@@ -1,0 +1,472 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: IS; src: url('../../../motion/fonts/InstrumentSerif-Regular.ttf'); }
+@font-face { font-family: ISI; src: url('../../../motion/fonts/InstrumentSerif-Italic.ttf'); }
+@font-face { font-family: Inter; src: url('../../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../../motion/common.js"></script>
+<script>
+// "30,000 lawsuits" -- Northern Leasing, as a case file. Motion-design twin of short-lease-30000-judgments:
+// same soundtrack, same timing (lines.json), only the picture changes. Every string on screen is in ON_SCREEN.
+const ON_SCREEN = [
+  "NORTHERN LEASING",
+  "A credit card machine.", "A FEW HUNDRED", "DOLLARS", "A FEW HUNDRED DOLLARS", "Over the life of the lease,", "thousands.",
+  "TYPICALLY 48 MONTHS", "RENEWS MONTH TO MONTH", "PER NEW YORK'S ATTORNEY GENERAL",
+  "FLOWER SHOPS", "HAIR SALONS", "BODEGAS", "BARS",
+  "LEASE AGREEMENT", "NON-CANCELABLE", "ANY LAWSUIT: NEW YORK",
+  "The leases couldn't", "be cancelled.", "Any lawsuit had to be", "brought in New York,", "wherever", "the owner lived.",
+  "2010", "2015", "NEW YORK", "NEW YORK CITY CIVIL COURT", "EACH DOT, ONE LAWSUIT",
+  "More than", "30,000 lawsuits.", "More than 95% lived", "outside New York.",
+  "CIVIL COURT CALENDAR", "A SEPARATE CALENDAR", "NORTHERN LEASING v.", "v.",
+  "A calendar", "just for its cases.",
+  "More than 19,000", "default judgments.", "CREDIT REPORT", "DEFAULT JUDGMENT", "PLAINTIFF", "COURT",
+  "Many found out when they", "checked their credit reports.",
+  "2020", "29,617 DEFAULT JUDGMENTS", "29,617", "thrown out.",
+  "THE COURT FOUND", "OWNERS ACROSS THE COUNTRY", "LAWSUITS IN NEW YORK", "To defend lawsuits", "in New York.",
+  "Service to", "obsolete addresses.",
+  "Thwarted their ability", "to defend themselves.", "29,617 THROWN OUT"
+];
+const OK = new Set(ON_SCREEN);
+const S = s => { if (!OK.has(s)) throw new Error('string not in ON_SCREEN: ' + s); return s; };
+
+const TOTAL = P.total || 70.875;
+const BG = [11, 11, 13], BONE = [232, 224, 206], PAPER = [226, 217, 197], INK = [26, 24, 22], MUTE = [128, 122, 112],
+      DIM = [70, 68, 64], AMB = [245, 166, 52];
+const win = (t, a, b, fi = 0.35, fo = 0.35) => ss(a, a + fi, t) * (1 - ss(b - fo, b, t));
+
+// ---------- text ----------
+function label(s, x, y, o = {}) {
+  const { size = 24, weight = 600, col = BONE, a = 1, align = 'center', ls = 4 } = o;
+  if (a <= 0.003) return;
+  g.font = `${weight} ${size}px Inter`; g.letterSpacing = `${ls}px`; g.textAlign = align; g.textBaseline = 'middle';
+  g.fillStyle = rgba(col, a); g.fillText(S(s), align === 'center' ? x + ls / 2 : x, y); g.letterSpacing = '0px';
+}
+// the big line: Instrument Serif, each row with its own alpha, rises into place
+function big(rows, y0 = 1420, size = 92) {
+  rows.forEach((r, i) => {
+    const a = r.a ?? 1; if (a <= 0.003) return;
+    g.font = `${size}px ${r.it ? 'ISI' : 'IS'}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.letterSpacing = '0px';
+    g.fillStyle = rgba(r.c || BONE, a); g.fillText(S(r.s), CX, y0 + i * size * 1.08 + 18 * (1 - a));
+  });
+}
+function pill(x, y, w, h, a) { g.fillStyle = rgba(BG, 0.82 * a); g.beginPath(); g.roundRect(x - w / 2, y - h / 2, w, h, h / 2); g.fill(); }
+
+// ---------- ground ----------
+function ground() {
+  g.fillStyle = rgba(BG, 1); g.fillRect(0, 0, W, H);
+  g.strokeStyle = 'rgba(255,255,255,0.022)'; g.lineWidth = 1; g.beginPath();
+  for (let x = 0; x <= W; x += 60) { g.moveTo(x + 0.5, 0); g.lineTo(x + 0.5, H); }
+  for (let y = 0; y <= H; y += 60) { g.moveTo(0, y + 0.5); g.lineTo(W, y + 0.5); }
+  g.stroke();
+}
+function kicker(t) {
+  const a = 0.8 * ss(0.1, 0.9, t);
+  g.font = '600 26px Inter'; g.letterSpacing = '7px'; const w = g.measureText(S('NORTHERN LEASING')).width; g.letterSpacing = '0px';
+  const x0 = CX - (w + 30) / 2;
+  g.fillStyle = rgba(AMB, a); g.fillRect(x0, 164, 14, 14);
+  label('NORTHERN LEASING', x0 + 30, 172, { size: 26, ls: 7, align: 'left', a, col: BONE });
+}
+
+// ---------- beat 1: the machine and the lease ----------
+function terminal(x, y, s, a) {   // (x,y) = bottom centre
+  if (a <= 0) return;
+  const w = 200 * s, h = 330 * s, x0 = x - w / 2, y0 = y - h;
+  g.fillStyle = rgba([40, 38, 36], a); g.strokeStyle = rgba(BONE, 0.85 * a); g.lineWidth = Math.max(2, 3 * s);
+  g.beginPath(); g.roundRect(x0, y0, w, h, 26 * s); g.fill(); g.stroke();
+  g.beginPath(); g.moveTo(x0 + 40 * s, y0 + 22 * s); g.lineTo(x0 + w - 40 * s, y0 + 22 * s); g.stroke();              // card slot
+  g.fillStyle = rgba([16, 16, 18], a); g.beginPath(); g.roundRect(x0 + 24 * s, y0 + 44 * s, w - 48 * s, 92 * s, 8 * s); g.fill();
+  g.fillStyle = rgba(AMB, 0.9 * a); g.fillRect(x0 + 42 * s, y0 + 78 * s, 70 * s, 8 * s);                            // screen line
+  g.fillStyle = rgba(AMB, 0.4 * a); g.fillRect(x0 + 42 * s, y0 + 98 * s, 40 * s, 6 * s);
+  for (let r = 0; r < 4; r++) for (let c = 0; c < 3; c++) {
+    g.fillStyle = rgba(BONE, (r === 3 && c !== 1 ? 0.35 : 0.7) * a);
+    g.beginPath(); g.roundRect(x0 + (32 + c * 50) * s, y0 + (160 + r * 40) * s, 36 * s, 26 * s, 6 * s); g.fill();
+  }
+}
+const SLIP_T = Array.from({ length: 56 }, (_, k) => k < 48 ? 6.15 + 2.55 * Math.sqrt(k / 47) : 8.95 + (k - 48) * 0.16);
+const FLOOR = 1250, PITCH = 16, SX = 720, SW = 300;
+function beat1(t) {
+  const A = 1 - ss(10.25, 10.85, t); if (A <= 0) return;
+  const move = ss(3.75, 5.0, t);
+  const mx = lerp(540, 290, move), my = lerp(1010, FLOOR, move), ms = lerp(1.45, 0.72, move);
+  // floor
+  const fa = ss(3.9, 4.8, t) * A;
+  g.strokeStyle = rgba(BONE, 0.35 * fa); g.lineWidth = 2; g.beginPath(); g.moveTo(90, FLOOR + 1); g.lineTo(990, FLOOR + 1); g.stroke();
+  terminal(mx, my + 12 * (1 - ss(0.1, 1.1, t)), ms, ss(0.1, 1.0, t) * A);
+  // the price tag, hung off the machine while it is alone
+  const tagA = ss(1.8, 2.4, t) * (1 - ss(3.7, 4.2, t)) * A;
+  if (tagA > 0) {
+    const sw = Math.sin(t * 2.2) * 0.04 * (1 - ss(2, 3.5, t)) + 0.05;
+    const hx = mx + 100 * ms - 12, hy = my - 330 * ms + 20;
+    g.save(); g.translate(hx, hy); g.rotate(sw);
+    g.strokeStyle = rgba(BONE, 0.6 * tagA); g.lineWidth = 2; g.beginPath(); g.moveTo(0, 0); g.quadraticCurveTo(60, 20, 90, 70); g.stroke();
+    g.translate(90, 70); g.rotate(0.12);
+    g.fillStyle = rgba(PAPER, tagA); g.beginPath();
+    g.moveTo(0, 0); g.lineTo(40, -46); g.lineTo(330, -46); g.lineTo(330, 96); g.lineTo(40, 96); g.closePath(); g.fill();
+    g.fillStyle = rgba(BG, tagA); g.beginPath(); g.arc(26, 0, 7, 0, 6.283); g.fill();
+    g.font = '700 28px Inter'; g.letterSpacing = '2px'; g.textAlign = 'center'; g.fillStyle = rgba(INK, tagA);
+    g.fillText(S('A FEW HUNDRED'), 186, 6); g.fillText(S('DOLLARS'), 186, 46); g.letterSpacing = '0px';
+    g.restore();
+  }
+  // the machine's level, carried across as a dashed line
+  const lvA = ss(4.8, 5.6, t) * A, lvY = FLOOR - 330 * 0.72;
+  if (lvA > 0) {
+    g.setLineDash([10, 9]); g.strokeStyle = rgba(BONE, 0.5 * lvA); g.lineWidth = 2;
+    g.beginPath(); g.moveTo(170, lvY); g.lineTo(lerp(170, 900, ss(4.8, 5.8, t)), lvY); g.stroke(); g.setLineDash([]);
+    label('A FEW HUNDRED DOLLARS', 170, lvY - 26, { size: 22, align: 'left', a: 0.85 * lvA, ls: 3 });
+  }
+  // the lease: a payment slip for every month, falling onto a stack that climbs far past the machine
+  for (let k = 0; k < 56; k++) {
+    const t0 = SLIP_T[k]; if (t < t0) continue;
+    const e = ss(t0, t0 + 0.32, t), top = FLOOR - (k + 1) * PITCH;
+    const y = lerp(top - 260, top, e * e), a = e * A, renew = k >= 48;
+    g.fillStyle = rgba(renew ? BG : PAPER, a); g.strokeStyle = rgba(renew ? AMB : BONE, (renew ? 0.8 : 0.3) * a); g.lineWidth = 2;
+    g.beginPath(); g.roundRect(SX - SW / 2, y, SW, PITCH - 4, 3); g.fill(); if (renew) { g.setLineDash([6, 5]); g.stroke(); g.setLineDash([]); }
+    if (!renew) { g.fillStyle = rgba(AMB, a); g.fillRect(SX - SW / 2 + 8, y + 3, 16, PITCH - 10);
+      g.fillStyle = rgba(INK, 0.35 * a); g.fillRect(SX - SW / 2 + 34, y + 4, 90 + (k * 37) % 70, 4); g.fillRect(SX + SW / 2 - 60, y + 4, 46, 4); }
+  }
+  // bracket: 48 months
+  const brA = ss(8.75, 9.2, t) * A, b48 = FLOOR - 48 * PITCH;
+  if (brA > 0) {
+    g.strokeStyle = rgba(BONE, 0.6 * brA); g.lineWidth = 2; g.beginPath();
+    g.moveTo(SX + SW / 2 + 16, FLOOR - 4); g.lineTo(SX + SW / 2 + 30, FLOOR - 4); g.lineTo(SX + SW / 2 + 30, b48 + 2); g.lineTo(SX + SW / 2 + 16, b48 + 2); g.stroke();
+    g.save(); g.translate(SX + SW / 2 + 60, (FLOOR + b48) / 2); g.rotate(-Math.PI / 2);
+    label('TYPICALLY 48 MONTHS', 0, 0, { size: 22, a: 0.85 * brA, ls: 3 }); g.restore();
+  }
+  label('RENEWS MONTH TO MONTH', SX, FLOOR - 56 * PITCH - 30, { size: 22, col: AMB, a: ss(9.3, 9.8, t) * A, ls: 3 });
+  // big lines
+  big([{ s: 'A credit card machine.', a: win(t, 0.4, 3.75, 0.5, 0.4) }], 1430);
+  big([{ s: 'Over the life of the lease,', a: win(t, 3.9, 10.4, 0.5, 0.4) },
+       { s: 'thousands.', it: true, c: AMB, a: win(t, 8.75, 10.4, 0.3, 0.4) }], 1400);
+  label('PER NEW YORK\'S ATTORNEY GENERAL', CX, 1590, { size: 20, col: MUTE, a: win(t, 9.0, 10.4, 0.4, 0.4), ls: 3 });
+}
+
+// ---------- beat 2: who it was, and the lease they signed ----------
+const SHOPS = [{ x: 170, k: 0, t0: 10.9, s: 'FLOWER SHOPS' }, { x: 413, k: 1, t0: 12.05, s: 'HAIR SALONS' },
+               { x: 656, k: 2, t0: 13.2, s: 'BODEGAS' }, { x: 900, k: 3, t0: 13.85, s: 'BARS' }];
+const SHOP_TOP = 360, SHOP_W = 200, SHOP_H = 220;
+function shop(sh, t, A) {
+  const e = ss(sh.t0, sh.t0 + 0.45, t), a = e * A; if (a <= 0) return;
+  const x0 = sh.x - SHOP_W / 2, y0 = SHOP_TOP + 30 * (1 - e);
+  g.strokeStyle = rgba(BONE, 0.8 * a); g.lineWidth = 3; g.fillStyle = rgba([22, 21, 20], a);
+  g.beginPath(); g.rect(x0, y0 + 40, SHOP_W, SHOP_H - 40); g.fill(); g.stroke();
+  // awning: scalloped, banded
+  for (let i = 0; i < 5; i++) { g.fillStyle = rgba(i % 2 ? [48, 46, 43] : BONE, (i % 2 ? 1 : 0.85) * a); g.fillRect(x0 - 8 + i * 43.2, y0, 43.2, 40); }
+  for (let i = 0; i < 5; i++) { g.fillStyle = rgba(i % 2 ? [48, 46, 43] : BONE, (i % 2 ? 1 : 0.85) * a); g.beginPath(); g.arc(x0 - 8 + i * 43.2 + 21.6, y0 + 40, 21.6, 0, Math.PI); g.fill(); }
+  // window + door
+  const wx = x0 + 18, wy = y0 + 80, ww = 110, wh = 100;
+  g.strokeStyle = rgba(BONE, 0.7 * a); g.lineWidth = 2; g.strokeRect(wx, wy, ww, wh); g.strokeRect(x0 + 144, y0 + 90, 40, SHOP_H - 90);
+  g.fillStyle = rgba(BONE, 0.7 * a); g.beginPath(); g.arc(x0 + 176, y0 + 160, 3, 0, 6.283); g.fill();
+  // what the shop is, drawn in the window
+  const cx = wx + ww / 2, cy = wy + wh / 2; g.strokeStyle = rgba(BONE, 0.9 * a); g.fillStyle = rgba(BONE, 0.9 * a); g.lineWidth = 2.5;
+  if (sh.k === 0) { g.beginPath(); g.moveTo(cx, cy + 40); g.lineTo(cx, cy - 4); g.stroke();
+    g.beginPath(); g.moveTo(cx, cy + 20); g.quadraticCurveTo(cx + 22, cy + 10, cx + 26, cy + 20); g.stroke();
+    for (let p = 0; p < 6; p++) { const an = p * 1.047; g.beginPath(); g.arc(cx + Math.cos(an) * 13, cy - 16 + Math.sin(an) * 13, 8, 0, 6.283); g.stroke(); }
+    g.fillStyle = rgba(AMB, a); g.beginPath(); g.arc(cx, cy - 16, 6, 0, 6.283); g.fill(); }
+  if (sh.k === 1) { g.beginPath(); g.arc(cx - 14, cy + 22, 10, 0, 6.283); g.stroke(); g.beginPath(); g.arc(cx + 14, cy + 22, 10, 0, 6.283); g.stroke();
+    g.beginPath(); g.moveTo(cx - 8, cy + 14); g.lineTo(cx + 16, cy - 36); g.moveTo(cx + 8, cy + 14); g.lineTo(cx - 16, cy - 36); g.stroke();
+    g.fillStyle = rgba(AMB, a); g.beginPath(); g.arc(cx, cy + 2, 3.5, 0, 6.283); g.fill(); }
+  if (sh.k === 2) { for (let r = 0; r < 3; r++) { g.beginPath(); g.moveTo(wx + 10, wy + 32 + r * 30); g.lineTo(wx + ww - 10, wy + 32 + r * 30); g.stroke();
+      for (let c = 0; c < 5; c++) { g.fillStyle = rgba(c === 2 && r === 1 ? AMB : BONE, 0.8 * a); g.fillRect(wx + 14 + c * 18, wy + 14 + r * 30, 12, 17); } } }
+  if (sh.k === 3) { g.beginPath(); g.moveTo(cx - 30, cy - 30); g.lineTo(cx + 30, cy - 30); g.lineTo(cx, cy + 4); g.closePath(); g.stroke();
+    g.beginPath(); g.moveTo(cx, cy + 4); g.lineTo(cx, cy + 34); g.moveTo(cx - 18, cy + 36); g.lineTo(cx + 18, cy + 36); g.stroke();
+    g.fillStyle = rgba(AMB, 0.9 * a); g.beginPath(); g.moveTo(cx - 20, cy - 20); g.lineTo(cx + 20, cy - 20); g.lineTo(cx, cy); g.closePath(); g.fill(); }
+  label(sh.s, sh.x, SHOP_TOP + SHOP_H + 40, { size: 22, a: 0.9 * a, ls: 3 });
+}
+const DOC = { x0: 250, x1: 830, y0: 700, y1: 1300 }, CLAUSE_Y = 1175;
+const FINE = []; { const r = rng(7); for (let y = DOC.y0 + 112; y < DOC.y1 - 30; y += 15) { const row = []; let x = DOC.x0 + 40;
+  while (x < DOC.x1 - 60) { const w = 10 + r() * 38; row.push([x, w]); x += w + 7; } FINE.push({ y, row }); } }
+function beat2(t) {
+  const A = ss(10.7, 11.1, t) * (1 - ss(20.95, 21.5, t)); if (A <= 0) return;
+  SHOPS.forEach(sh => shop(sh, t, A));
+  // wherever the owner lived: every shop's thread runs into the one clause
+  const th = ss(19.45, 20.3, t) * A;
+  if (th > 0) {
+    g.strokeStyle = rgba(AMB, 0.75 * th); g.lineWidth = 2.5; g.setLineDash([8, 7]);
+    for (const sh of SHOPS) { const x0 = sh.x, y0 = SHOP_TOP + SHOP_H + 64, x1 = CX + (sh.x - CX) * 0.35, y1 = CLAUSE_Y - 30;
+      const e = ss(19.45, 20.2, t); g.beginPath(); g.moveTo(x0, y0); g.lineTo(lerp(x0, x1, e), lerp(y0, y1, e)); g.stroke(); }
+    g.setLineDash([]);
+  }
+  // the lease agreement
+  const de = ss(14.55, 15.05, t), da = de * A;
+  if (da > 0) {
+    const oy = 60 * (1 - de);
+    g.save(); g.translate(0, oy);
+    g.fillStyle = rgba([0, 0, 0], 0.5 * da); g.fillRect(DOC.x0 + 14, DOC.y0 + 16, DOC.x1 - DOC.x0, DOC.y1 - DOC.y0);
+    g.fillStyle = rgba(PAPER, da); g.fillRect(DOC.x0, DOC.y0, DOC.x1 - DOC.x0, DOC.y1 - DOC.y0);
+    label('LEASE AGREEMENT', CX, DOC.y0 + 56, { size: 30, weight: 700, col: INK, a: da, ls: 5 });
+    g.fillStyle = rgba(INK, 0.6 * da); g.fillRect(DOC.x0 + 40, DOC.y0 + 88, DOC.x1 - DOC.x0 - 80, 2);
+    // fine print (drawn, not written: it was printed in miniscule type)
+    const hl = ss(16.75, 17.4, t);
+    g.fillStyle = rgba(INK, 0.32 * da);
+    for (const f of FINE) { if (Math.abs(f.y - CLAUSE_Y) < 30 && hl > 0) continue; for (const [x, w] of f.row) g.fillRect(x, f.y, w, 5); }
+    if (hl > 0) {   // the forum clause, highlighted and made legible
+      g.fillStyle = rgba(AMB, 0.95 * da); g.fillRect(DOC.x0 + 30, CLAUSE_Y - 26, (DOC.x1 - DOC.x0 - 60) * hl, 52);
+      label('ANY LAWSUIT: NEW YORK', CX, CLAUSE_Y, { size: 30, weight: 800, col: INK, a: ss(17.1, 17.4, t) * da, ls: 3 });
+    }
+    // stamp
+    const st = ss(14.95, 15.15, t);
+    if (st > 0) {
+      g.save(); g.translate(CX, 930); g.rotate(-0.12); const sc = lerp(1.7, 1, st); g.scale(sc, sc);
+      g.globalAlpha = st * A; g.fillStyle = rgba(PAPER, 0.93); g.fillRect(-255, -48, 510, 96);
+      g.strokeStyle = rgba(AMB, 1); g.lineWidth = 6; g.strokeRect(-255, -48, 510, 96); g.lineWidth = 2; g.strokeRect(-243, -36, 486, 72);
+      label('NON-CANCELABLE', 0, 3, { size: 44, weight: 800, col: [214, 132, 22], ls: 2 }); g.globalAlpha = 1; g.restore();
+    }
+    g.restore();
+  }
+  big([{ s: 'The leases couldn\'t', a: win(t, 14.8, 16.65, 0.35, 0.3) }, { s: 'be cancelled.', a: win(t, 14.95, 16.65, 0.35, 0.3) }], 1420);
+  big([{ s: 'Any lawsuit had to be', a: win(t, 16.75, 19.45, 0.35, 0.3) }, { s: 'brought in New York,', a: win(t, 17.6, 19.45, 0.35, 0.3) }], 1420);
+  big([{ s: 'wherever', a: win(t, 19.55, 21.0, 0.3, 0.4) }, { s: 'the owner lived.', it: true, c: AMB, a: win(t, 19.9, 21.0, 0.3, 0.4) }], 1420);
+}
+
+// ---------- the 30,000: one dot per lawsuit ----------
+const C = { x: 540, y: 820 }, RING = 165, N = 30000, NIN = 1350;   // under 5% start inside the New York ring
+const hx = new Float32Array(N), hy = new Float32Array(N), bt = new Float32Array(N), td = new Float32Array(N),
+      ax = new Float32Array(N), ay = new Float32Array(N), crv = new Float32Array(N), jt = new Float32Array(N).fill(1e9);
+{
+  const r = rng(1729), CL = [];
+  while (CL.length < 70) { const x = 90 + r() * 900, y = 400 + r() * 880; if (Math.hypot(x - C.x, y - C.y) > 240) CL.push([x, y, 10 + r() * 38]); }
+  const gauss = () => Math.sqrt(-2 * Math.log(r() + 1e-9)) * Math.cos(6.2832 * r());
+  for (let i = 0; i < N; i++) {
+    let x, y;
+    if (i < NIN) { const an = r() * 6.2832, rr = 126 + r() * 34; x = C.x + Math.cos(an) * rr; y = C.y + Math.sin(an) * rr; }
+    else for (;;) {
+      if (r() < 0.72) { const c = CL[Math.floor(r() * CL.length)]; x = c[0] + gauss() * c[2]; y = c[1] + gauss() * c[2] * 0.8; }
+      else { x = 80 + r() * 920; y = 390 + r() * 910; }
+      if (x > 72 && x < 1008 && y > 385 && y < 1300 && Math.hypot(x - C.x, y - C.y) > 190) break;
+    }
+    hx[i] = x; hy[i] = y; bt[i] = 21.8 + 7.6 * Math.sqrt(r()); td[i] = 1.3 + 0.9 * r(); crv[i] = (r() - 0.5) * 120;
+  }
+  // arrival: they pile up around the court in the order they arrive
+  const ord = Array.from({ length: N }, (_, i) => i).sort((a, b) => (bt[a] + td[a]) - (bt[b] + td[b]));
+  ord.forEach((i, k) => { const rr = Math.sqrt(52 * 52 + (k / N) * (118 * 118 - 52 * 52)), an = k * 2.39996;
+    ax[i] = C.x + Math.cos(an) * rr; ay[i] = C.y + Math.sin(an) * rr; });
+  // more than 19,000 default judgments: 19,000 of them travel back out to where the person lived
+  const perm = Array.from({ length: N }, (_, i) => i); for (let i = N - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [perm[i], perm[j]] = [perm[j], perm[i]]; }
+  for (let k = 0; k < 19000; k++) jt[perm[k]] = 44.7 + 3.3 * Math.sqrt(r());
+}
+// the credit report rises from one of the 19,000 homes
+let CR_HOME = 0; { let best = 1e9; for (let i = 0; i < N; i++) if (jt[i] < 1e8) { const d = Math.hypot(hx[i] - 860, hy[i] - 1180); if (d < best) { best = d; CR_HOME = i; } } }
+
+function court(x, y, s, a, col = BONE) {
+  if (a <= 0) return;
+  g.fillStyle = rgba(BG, 0.92 * a); g.beginPath(); g.arc(x, y, 50 * s, 0, 6.283); g.fill();
+  g.strokeStyle = rgba(col, a); g.fillStyle = rgba(col, a); g.lineWidth = 3 * s;
+  g.beginPath(); g.moveTo(x - 38 * s, y - 14 * s); g.lineTo(x, y - 36 * s); g.lineTo(x + 38 * s, y - 14 * s); g.closePath(); g.stroke();
+  for (let c = 0; c < 4; c++) g.fillRect(x - 30 * s + c * 18 * s, y - 8 * s, 6 * s, 30 * s);
+  g.fillRect(x - 40 * s, y + 25 * s, 80 * s, 5 * s);
+}
+
+function field(t, fa) {
+  if (fa <= 0.003) return;
+  const J = t > 44.6, cleared = t > 54;
+  // homes still waiting: the people who have not been sued yet
+  g.fillStyle = rgba(BONE, 0.5 * fa);
+  for (let i = 0; i < N; i++) if (t < bt[i]) g.fillRect(hx[i] - 1, hy[i] - 1, 2, 2);
+  // homes left behind (brighter while the 95% line plays)
+  const hb = win(t, 30.7, 35.3, 0.5, 0.5), inRing = win(t, 30.7, 35.3, 0.5, 0.5);
+  g.fillStyle = rgba(cleared ? MUTE : BONE, (0.16 + 0.5 * hb) * fa);
+  for (let i = NIN; i < N; i++) if (t >= bt[i] && !(J && t >= jt[i] + 1.0)) g.fillRect(hx[i] - 1, hy[i] - 1, 2, 2);
+  g.fillStyle = rgba(MUTE, (0.16 + 0.25 * inRing) * fa);
+  for (let i = 0; i < NIN; i++) if (t >= bt[i] && !(J && t >= jt[i] + 1.0)) g.fillRect(hx[i] - 1, hy[i] - 1, 2, 2);
+  // in flight toward the court
+  g.fillStyle = rgba([255, 200, 130], 0.95 * fa);
+  for (let i = 0; i < N; i++) { const b = bt[i]; if (t < b || t > b + td[i]) continue;
+    const e = ss(b, b + td[i], t), k = 4 * e * (1 - e), dx = ax[i] - hx[i], dy = ay[i] - hy[i], L = Math.hypot(dx, dy) || 1;
+    g.fillRect(lerp(hx[i], ax[i], e) - dy / L * crv[i] * k - 1, lerp(hy[i], ay[i], e) + dx / L * crv[i] * k - 1, 2.5, 2.5); }
+  // the pile at the court
+  g.fillStyle = rgba(J ? MUTE : AMB, (J ? 0.35 : 0.55) * fa);
+  for (let i = 0; i < N; i++) if (t >= bt[i] + td[i] && t < jt[i]) g.fillRect(ax[i] - 1, ay[i] - 1, 2, 2);
+  if (!J) return;
+  // judgments going back out, to where the person lived
+  g.fillStyle = rgba(AMB, 0.95 * fa);
+  for (let i = 0; i < N; i++) { const j = jt[i]; if (t < j || t > j + 1.0) continue; const e = ss(j, j + 1.0, t);
+    g.fillRect(lerp(ax[i], hx[i], e) - 1, lerp(ay[i], hy[i], e) - 1, 2.5, 2.5); }
+  g.fillStyle = rgba(cleared ? MUTE : AMB, (cleared ? 0.3 : 0.85) * fa);
+  for (let i = 0; i < N; i++) if (t >= jt[i] + 1.0) g.fillRect(hx[i] - 1.25, hy[i] - 1.25, 2.5, 2.5);
+}
+function fieldAlpha(t) {
+  return ss(21.2, 22.0, t) * (1 - 0.96 * win(t, 35.35, 42.45, 0.5, 0.45)) * (1 - 0.8 * win(t, 48.35, 54.0, 0.6, 0.3))
+    * (1 - ss(53.9, 54.3, t) * (1 - 0.55 * ss(60.0, 60.8, t))) * (1 - 0.9 * ss(65.1, 65.7, t)) * (1 - ss(67.9, 68.5, t) * 0.8);
+}
+function beat3(t) {
+  if (t < 21.2 || t > 35.5) return;
+  const A = ss(21.2, 21.8, t) * (1 - ss(35.2, 35.5, t));
+  // timeline, 2010 to 2015
+  const tl = A, p = ss(21.5, 30.2, t);
+  g.strokeStyle = rgba(BONE, 0.3 * tl); g.lineWidth = 3; g.beginPath(); g.moveTo(150, 290); g.lineTo(930, 290); g.stroke();
+  g.strokeStyle = rgba(AMB, 0.95 * tl); g.beginPath(); g.moveTo(150, 290); g.lineTo(lerp(150, 930, p), 290); g.stroke();
+  g.fillStyle = rgba(BONE, tl); g.fillRect(148, 278, 3, 24); g.fillRect(928, 278, 3, 24);
+  label('2010', 150, 256, { size: 26, a: tl, ls: 2 }); label('2015', 930, 256, { size: 26, a: tl * (0.4 + 0.6 * ss(29.8, 30.4, t)), ls: 2 });
+  // the New York ring
+  const rg = ss(22.0, 23.0, t) * A;
+  g.strokeStyle = rgba(BONE, (0.35 + 0.35 * win(t, 30.7, 35.3)) * rg); g.lineWidth = 2; g.setLineDash([6, 8]);
+  g.beginPath(); g.arc(C.x, C.y, RING, 0, 6.283); g.stroke(); g.setLineDash([]);
+  pill(C.x, C.y - RING, 150, 36, rg); label('NEW YORK', C.x, C.y - RING, { size: 20, a: 0.9 * rg, ls: 4 });
+}
+function courtLayer(t) {
+  const a = win(t, 21.6, 35.4, 0.6, 0.3) + win(t, 42.5, 48.6, 0.4, 0.4) + win(t, 60.1, 65.4, 0.5, 0.4);
+  court(C.x, C.y, 1, a);
+  const la = win(t, 25.0, 35.4, 0.5, 0.3);
+  pill(C.x, C.y + RING + 34, 440, 40, la); label('NEW YORK CITY CIVIL COURT', C.x, C.y + RING + 34, { size: 20, a: 0.95 * la, ls: 3 });
+  label('EACH DOT, ONE LAWSUIT', CX, 1330, { size: 20, col: MUTE, a: win(t, 23.2, 30.5, 0.5, 0.4), ls: 3 });
+  big([{ s: 'More than', a: win(t, 26.6, 30.6, 0.4, 0.35) }, { s: '30,000 lawsuits.', c: AMB, a: win(t, 26.9, 30.6, 0.4, 0.35) }], 1420);
+  big([{ s: 'More than 95% lived', a: win(t, 30.8, 35.35, 0.4, 0.35) }, { s: 'outside New York.', a: win(t, 32.2, 35.35, 0.4, 0.35) }], 1420);
+}
+
+// ---------- beat 4: the calendar ----------
+const ROWS = []; { const r = rng(99); const head = [0, 1, 0, 1, 1, 0, 1, 1, 1];
+  for (let i = 0; i < 96; i++) ROWS.push({ nl: i < head.length ? !!head[i] : (i % 11 !== 5), w1: 90 + r() * 110, w2: 80 + r() * 120, wr: 90 + r() * 70 }); }
+function sheet(x0, x1, y0, y1, title, titleCol, a) {
+  g.fillStyle = rgba([0, 0, 0], 0.5 * a); g.fillRect(x0 + 12, y0 + 14, x1 - x0, y1 - y0);
+  g.fillStyle = rgba(PAPER, a); g.fillRect(x0, y0, x1 - x0, y1 - y0);
+  label(title, (x0 + x1) / 2, y0 + 46, { size: 24, weight: 700, col: titleCol, a, ls: 3 });
+  g.fillStyle = rgba(INK, 0.6 * a); g.fillRect(x0 + 24, y0 + 76, x1 - x0 - 48, 2);
+}
+function row(R, x0, x1, y, h, a, fresh) {
+  if (R.nl) { g.fillStyle = rgba(AMB, (0.28 + 0.5 * fresh) * a); g.fillRect(x0 + 16, y + 2, x1 - x0 - 32, h - 4); }
+  g.fillStyle = rgba(INK, 0.5 * a); g.fillRect(x0 + 26, y + h / 2 - 3, 22, 6);
+  if (h >= 26) {
+    const fs = Math.min(20, h * 0.52);
+    if (R.nl) { g.font = `700 ${fs}px Inter`; g.letterSpacing = '1px'; g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillStyle = rgba(INK, a);
+      const s = S('NORTHERN LEASING v.'); g.fillText(s, x0 + 62, y + h / 2 + 1); const w = g.measureText(s).width; g.letterSpacing = '0px';
+      g.fillStyle = rgba(INK, 0.9 * a); g.fillRect(x0 + 72 + w, y + h / 2 - fs * 0.38, Math.min(R.wr, x1 - x0 - 110 - w), fs * 0.76); }
+    else { g.fillStyle = rgba(INK, 0.3 * a); g.fillRect(x0 + 62, y + h / 2 - 5, R.w1, 10);
+      g.font = `500 ${fs}px Inter`; g.textAlign = 'left'; g.fillStyle = rgba(INK, 0.55 * a); g.fillText(S('v.'), x0 + 72 + R.w1, y + h / 2 + 1);
+      g.fillStyle = rgba(INK, 0.3 * a); g.fillRect(x0 + 102 + R.w1, y + h / 2 - 5, Math.min(R.w2, x1 - x0 - 140 - R.w1), 10); }
+  } else { g.fillStyle = rgba(INK, (R.nl ? 0.55 : 0.25) * a); g.fillRect(x0 + 62, y + h / 2 - Math.max(1, h * 0.18), R.nl ? 200 + R.wr : R.w1 + R.w2, Math.max(2, h * 0.36)); }
+}
+function beat4(t) {
+  const A = win(t, 35.35, 42.4, 0.4, 0.35); if (A <= 0) return;
+  const split = ss(39.1, 39.9, t), Y0 = 300, Y1 = 1250, BODY0 = Y0 + 92, BODYH = Y1 - BODY0 - 16;
+  // A: one court calendar, swamped
+  const aA = A * (1 - split);
+  if (aA > 0) {
+    sheet(90, 990, Y0, Y1, 'CIVIL COURT CALENDAR', INK, aA);
+    const p = clamp((t - 35.5) / 3.5), n = Math.max(1, Math.floor(3 + 93 * Math.pow(p, 1.7))), h = Math.min(46, BODYH / n);
+    for (let i = 0; i < n; i++) { const born = 35.5 + 3.5 * Math.pow(Math.max(0, i - 3) / 93, 1 / 1.7);
+      row(ROWS[i], 90, 990, BODY0 + i * h, h, aA, 1 - ss(born, born + 0.35, t)); }
+  }
+  // B: the split -- its cases get their own calendar
+  if (split > 0) {
+    const a = A * split, off = 420 * (1 - split);
+    sheet(70, 505, Y0, Y1, 'CIVIL COURT CALENDAR', INK, a);
+    let k = 0; for (const R of ROWS) if (!R.nl && k < 14) { row(R, 70, 505, BODY0 + k * 44, 44, a, 0); k++; }
+    sheet(575 + off, 1010 + off, Y0, Y1, 'A SEPARATE CALENDAR', [150, 86, 10], a);
+    const hB = 30, nB = Math.floor(BODYH / hB); let m = 0;
+    for (const R of ROWS) if (R.nl && m < nB) { row(R, 575 + off, 1010 + off, BODY0 + m * hB, hB, a, 0); m++; }
+  }
+  big([{ s: 'A calendar', a: win(t, 39.3, 42.4, 0.35, 0.3) }, { s: 'just for its cases.', it: true, c: AMB, a: win(t, 40.55, 42.4, 0.35, 0.3) }], 1420);
+}
+
+// ---------- beat 5: the judgments, and where people found them ----------
+function beat5(t) {
+  big([{ s: 'More than 19,000', c: AMB, a: win(t, 45.4, 48.4, 0.4, 0.35) }, { s: 'default judgments.', a: win(t, 46.2, 48.4, 0.4, 0.35) }], 1420);
+  const A = win(t, 48.45, 54.1, 0.1, 0.4); if (A <= 0) return;
+  const e = ss(48.45, 49.35, t), s = lerp(0.03, 1, e), px = lerp(hx[CR_HOME], CX, e), py = lerp(hy[CR_HOME], 820, e);
+  const PW = 680, PH = 860;
+  g.save(); g.translate(px, py); g.scale(s, s); g.translate(-PW / 2, -PH / 2);
+  g.globalAlpha = A * ss(48.45, 48.7, t);
+  g.fillStyle = 'rgba(0,0,0,0.5)'; g.fillRect(14, 16, PW, PH);
+  g.fillStyle = rgba(PAPER, 1); g.fillRect(0, 0, PW, PH);
+  label('CREDIT REPORT', PW / 2, 62, { size: 32, weight: 700, col: INK, ls: 6 });
+  g.fillStyle = rgba(INK, 0.6); g.fillRect(40, 100, PW - 80, 2);
+  g.fillStyle = rgba(INK, 0.9); g.fillRect(40, 130, 250, 26); g.fillStyle = rgba(INK, 0.3); g.fillRect(40, 168, 170, 12);
+  const r = rng(5);
+  for (let k = 0; k < 5; k++) { const y = 222 + k * 56; g.fillStyle = rgba(INK, 0.28); g.fillRect(40, y, 180 + r() * 150, 12); g.fillRect(40, y + 20, 90 + r() * 60, 8);
+    g.fillStyle = rgba(INK, 0.4); g.fillRect(PW - 150, y, 110, 12); g.fillStyle = rgba(INK, 0.12); g.fillRect(40, y + 42, PW - 80, 1); }
+  // the entry they never saw coming
+  const ne = ss(50.85, 51.35, t);
+  if (ne > 0) {
+    const y0 = 520, pulse = 0.5 + 0.5 * Math.sin((t - 50.85) * 5);
+    g.globalAlpha = A * ne;
+    g.fillStyle = rgba(AMB, 0.95); g.fillRect(24, y0, PW - 48, 86);
+    label('DEFAULT JUDGMENT', PW / 2, y0 + 44, { size: 40, weight: 800, col: INK, ls: 3 });
+    g.strokeStyle = rgba(AMB, 0.4 + 0.5 * pulse); g.lineWidth = 4; g.strokeRect(14, y0 - 10, PW - 28, 320);
+    label('PLAINTIFF', 44, y0 + 138, { size: 18, col: [110, 104, 94], align: 'left', ls: 3 });
+    label('NORTHERN LEASING', 44, y0 + 172, { size: 30, weight: 700, col: INK, align: 'left', ls: 2 });
+    label('COURT', 44, y0 + 226, { size: 18, col: [110, 104, 94], align: 'left', ls: 3 });
+    label('NEW YORK CITY CIVIL COURT', 44, y0 + 260, { size: 30, weight: 700, col: INK, align: 'left', ls: 2 });
+  }
+  g.globalAlpha = 1; g.restore();
+  big([{ s: 'Many found out when they', a: win(t, 50.9, 54.0, 0.4, 0.35) }, { s: 'checked their credit reports.', it: true, c: AMB, a: win(t, 51.9, 54.0, 0.4, 0.35) }], 1420, 84);
+}
+
+// ---------- beat 6: 29,617 thrown out ----------
+const GN = 29617, GC = 173, GX = 108, GY = 340, GP = 5;
+const gfall = new Float32Array(GN), gvx = new Float32Array(GN); { const r = rng(2020); for (let i = 0; i < GN; i++) { gfall[i] = r() * 0.35; gvx[i] = (r() - 0.5) * 160; } }
+function beat6(t) {
+  if (t < 53.9) return;
+  // the wall: one cell per judgment
+  const A = ss(53.95, 54.4, t) * (1 - ss(60.0, 60.4, t));
+  if (A > 0) {
+    label('2020', GX, GY - 42, { size: 28, col: AMB, align: 'left', a: A * ss(54.0, 54.5, t), ls: 3 });
+    label('29,617 DEFAULT JUDGMENTS', GX + GC * GP, GY - 42, { size: 24, align: 'right', a: A * ss(56.1, 56.6, t), ls: 3 });
+    g.letterSpacing = '0px';
+    const rows = Math.ceil(GN / GC), sweepY = GY + lerp(-20, rows * GP + 20, ss(57.3, 59.2, t));
+    g.fillStyle = rgba(AMB, 0.92 * A);
+    for (let i = 0; i < GN; i++) { const rr = Math.floor(i / GC), y = GY + rr * GP;
+      if (t < 54.0 + 1.9 * rr / rows) continue; if (y < sweepY) continue; g.fillRect(GX + (i % GC) * GP, y, 4, 4); }
+    // thrown out: behind the sweep they drop away
+    g.fillStyle = rgba(BONE, 0.55 * A);
+    for (let i = 0; i < GN; i++) { const rr = Math.floor(i / GC), y = GY + rr * GP; if (y >= sweepY) continue;
+      const passT = 57.3 + 1.9 * ((y - GY + 20) / (rows * GP + 40)) + gfall[i], d = t - passT; if (d <= 0) { g.fillRect(GX + (i % GC) * GP, y, 4, 4); continue; }
+      const yy = y + 1100 * d * d + 40 * d; if (yy > H) continue; g.fillRect(GX + (i % GC) * GP + gvx[i] * d, yy, 3, 3); }
+    if (t > 57.2 && t < 59.4) { g.fillStyle = rgba(BONE, 0.9 * A); g.fillRect(GX - 20, sweepY - 2, GC * GP + 40, 4); }
+  }
+  big([{ s: '29,617', c: AMB, a: win(t, 56.2, 60.05, 0.4, 0.35) }, { s: 'thrown out.', it: true, a: win(t, 57.4, 60.05, 0.4, 0.35) }], 1420);
+  // the court found: owners across the country, made to answer in New York
+  const B = win(t, 60.1, 65.4, 0.4, 0.4);
+  if (B > 0) {
+    const e = ss(60.3, 62.8, t);
+    g.strokeStyle = rgba(BONE, 0.22 * B); g.lineWidth = 1.2; g.beginPath();
+    for (let i = NIN; i < N; i += 43) { g.moveTo(hx[i], hy[i]); g.lineTo(lerp(hx[i], C.x, e), lerp(hy[i], C.y, e)); } g.stroke();
+    label('THE COURT FOUND', CX, 300, { size: 22, col: MUTE, a: B, ls: 5 });
+    label('OWNERS ACROSS THE COUNTRY', CX, 350, { size: 28, a: B * ss(60.6, 61.1, t), ls: 4 });
+    pill(C.x, C.y + RING + 34, 400, 40, B * ss(62.6, 63.1, t)); label('LAWSUITS IN NEW YORK', C.x, C.y + RING + 34, { size: 22, col: AMB, a: B * ss(62.6, 63.1, t), ls: 3 });
+  }
+  big([{ s: 'To defend lawsuits', a: win(t, 61.0, 65.3, 0.4, 0.35) }, { s: 'in New York.', a: win(t, 62.2, 65.3, 0.4, 0.35) }], 1420);
+  // service to obsolete addresses
+  const E = win(t, 65.2, 68.1, 0.3, 0.4);
+  if (E > 0) {
+    const HX = 300, HY = 700, e2 = ss(65.3, 66.7, t);
+    // the address: a house that is not there any more
+    g.strokeStyle = rgba(BONE, 0.55 * E); g.lineWidth = 4; g.setLineDash([12, 10]);
+    g.beginPath(); g.moveTo(HX - 110, HY + 130); g.lineTo(HX - 110, HY); g.lineTo(HX, HY - 95); g.lineTo(HX + 110, HY); g.lineTo(HX + 110, HY + 130); g.closePath(); g.stroke(); g.setLineDash([]);
+    // the envelope, served from the court to it
+    const ex = lerp(C.x, HX + 330, e2), ey = lerp(C.y + 260, HY + 270, e2) - 200 * 4 * e2 * (1 - e2), es = lerp(0.9, 2.4, e2);
+    g.save(); g.translate(ex, ey); g.rotate(lerp(0.2, -0.05, e2)); g.scale(es, es);
+    g.fillStyle = rgba(PAPER, E); g.fillRect(-80, -52, 160, 104);
+    g.strokeStyle = rgba(INK, 0.35 * E); g.lineWidth = 1.5; g.beginPath(); g.moveTo(-80, -52); g.lineTo(0, 6); g.lineTo(80, -52); g.stroke();
+    g.fillStyle = rgba(INK, 0.55 * E); g.fillRect(-36, 14, 80, 6); g.fillRect(-36, 26, 64, 6); g.fillRect(-36, 38, 72, 6);
+    g.fillStyle = rgba(INK, 0.3 * E); g.fillRect(52, -44, 20, 24);
+    const sk = ss(66.6, 67.0, t); g.strokeStyle = rgba(AMB, E); g.lineWidth = 3.5;
+    g.beginPath(); g.moveTo(-44, 16); g.lineTo(-44 + 100 * sk, 44); g.stroke();
+    g.restore();
+  }
+  big([{ s: 'Service to', a: win(t, 65.25, 68.1, 0.35, 0.35) }, { s: 'obsolete addresses.', it: true, c: AMB, a: win(t, 65.6, 68.1, 0.35, 0.35) }], 1420);
+  // what it did to them
+  const F = ss(68.0, 68.6, t);
+  label('THE COURT FOUND', CX, 780, { size: 24, col: MUTE, a: F, ls: 6 });
+  big([{ s: 'Thwarted their ability', a: F }, { s: 'to defend themselves.', it: true, a: ss(68.6, 69.2, t) }], 900, 100);
+  label('29,617 THROWN OUT', CX, 1190, { size: 30, weight: 700, col: AMB, a: ss(69.2, 69.7, t), ls: 5 });
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.globalAlpha = 1; g.textBaseline = 'middle';
+  ground();
+  beat1(t); beat2(t);
+  field(t, fieldAlpha(t)); beat3(t); courtLayer(t);
+  beat4(t); beat5(t); beat6(t);
+  kicker(t);
+  vignette(0.55);
+  grain(t);
+};
+window.ready = (async () => {
+  await FONTS_READY;
+  for (const f of ['92px IS', '92px ISI', '800 40px Inter', '700 30px Inter', '600 24px Inter', '500 20px Inter']) await document.fonts.load(f);
+  return { total: TOTAL };
+})();
+</script></body></html>

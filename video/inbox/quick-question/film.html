@@ -1,0 +1,105 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: IS; src: url('../../motion/fonts/InstrumentSerif-Regular.ttf'); }
+@font-face { font-family: ISI; src: url('../../motion/fonts/InstrumentSerif-Italic.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// "quick question" — the stylist, 11:48 PM. A cascade, three drafts, one clear answer, Seen. Then 7:02 AM.
+const ON_SCREEN = [
+  "11:48 PM", "11:49 PM", "11:50 PM", "11:51 PM", "11:52 PM", "11:53 PM", "7:02 AM",
+  "Kayla", "hi!! quick question", "how much are highlights", "like just some not full", "is that with a cut",
+  "my friend said you did hers for 90?", "also do you take walk ins",
+  "Hi Kayla! Great question. Highlight pricing really depends on your length and thickness, and how much time we'll need, so a partial",
+  "Hi! It depends on your length, but partials usually",
+  "Partial highlights start at $140. Happy to do a free consult!",
+  "Seen 11:52 PM", "Message", "Dee", "now", "quick questions this week: 23",
+  "@smallbusinessinbox", "A written composite. Not a real business or client."
+];
+const S = K.say(ON_SCREEN);
+K.accent([212, 138, 104]);
+
+const A = K.conversation([
+  { t: 0.5, stamp: S("11:48 PM") },
+  { t: 0.9, in: S("hi!! quick question") },
+  { gap: 1.7, in: S("how much are highlights") },
+  { gap: 1.25, in: S("like just some not full") },
+  { gap: 1.0, in: S("is that with a cut") },
+  { gap: 0.85, in: S("my friend said you did hers for 90?") },
+  { gap: 0.75, in: S("also do you take walk ins") },
+  { gap: 1.6, type: S("Hi Kayla! Great question. Highlight pricing really depends on your length and thickness, and how much time we'll need, so a partial"), cps: 30 },
+  { gap: 0.9, del: "all", cps: 44 },
+  { gap: 0.5, type: S("Hi! It depends on your length, but partials usually"), cps: 26 },
+  { gap: 0.9, del: "all", cps: 34 },
+  { gap: 0.6, type: S("Partial highlights start at $140. Happy to do a free consult!"), cps: 21 },
+  { gap: 0.45, send: true },
+  { gap: 1.0, seen: S("Seen 11:52 PM") },
+]);
+const SEND = A.at[12], SEEN = A.at[13];
+const DIM = SEEN + 2.2, DARK = DIM + 1.3;            // the thread sits; the screen dims, then sleeps
+const ROLL = DARK + 0.5, ROLL_D = 2.4;                // the night, rolled on the clock
+const BUZZ = ROLL + ROLL_D + 0.35, OPEN = BUZZ + 2.2;  // Dee, on the lock screen; then her thread
+const THUMB = OPEN + 0.5, STAT = OPEN + 1.4, CARD = STAT + 3.4, TOTAL = CARD + 3.2;
+const B = K.conversation([
+  { t: DARK + 0.5, stamp: S("7:02 AM") },
+  { t: DARK + 0.5, in: S("hi!! quick question"), silent: true },
+]);
+const CLOCK = [[0, S("11:48 PM")], [A.at[3] + 0.4, S("11:49 PM"), 0.5], [A.at[7] + 1.2, S("11:50 PM"), 0.5],
+  [A.at[9] + 0.3, S("11:51 PM"), 0.5], [A.at[11] + 0.6, S("11:52 PM"), 0.5], [SEEN + 1.6, S("11:53 PM"), 0.5],
+  [ROLL, S("7:02 AM"), ROLL_D, 6]];
+const nightP = t => ss(ROLL, ROLL + ROLL_D, t);
+
+// the owner's thumb over the glass: comes up, hovers above the compose box, does not land
+function thumb(t) {
+  const p = ss(THUMB, THUMB + 1.1, t) * (1 - ss(CARD - 0.2, CARD + 0.5, t)); if (p <= 0) return;
+  const tx = 760 + Math.sin(t * 0.9) * 10 - (1 - p) * 40, ty = lerp(2150, 1420, p) + Math.sin(t * 1.3 + 1) * 8;
+  g.save(); g.translate(tx, ty); g.rotate(-0.42);
+  const sh = g.createRadialGradient(-30, 90, 20, -30, 90, 200);   // soft shadow on the screen
+  sh.addColorStop(0, 'rgba(0,0,0,0.45)'); sh.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = sh; g.fillRect(-220, -180, 460, 520);
+  const skin = g.createLinearGradient(-80, 0, 80, 0);
+  skin.addColorStop(0, rgba([128, 92, 74], 1)); skin.addColorStop(0.55, rgba([168, 124, 100], 1)); skin.addColorStop(1, rgba([120, 86, 70], 1));
+  g.fillStyle = skin; g.beginPath(); g.roundRect(-78, -60, 156, 760, [78, 78, 40, 40]); g.fill();
+  g.fillStyle = rgba([196, 160, 140], 0.9); g.beginPath(); g.roundRect(-48, -44, 96, 118, [44, 44, 26, 26]); g.fill();   // nail
+  g.fillStyle = rgba([226, 200, 184], 0.35); g.beginPath(); g.roundRect(-40, -38, 30, 70, 14); g.fill();
+  g.restore();
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  K.ground();
+  const lock = ss(DARK - 0.4, DARK + 0.3, t) * (1 - ss(OPEN - 0.3, OPEN + 0.1, t));
+  if (t < DARK + 0.4) {   // under the lock screen the scene swaps to Dee's thread
+    K.header({ name: S("Kayla") });
+    A.draw(t, { placeholder: S("Message") });
+  } else {
+    K.header({ name: S("Dee") });
+    B.draw(t, { placeholder: S("Message"), cursorFrom: OPEN + 0.2 });
+    K.caption(t, S("quick questions this week: 23"), STAT, CARD + 0.2, 920, { size: 40, color: K.C.dim, rise: 60 });
+    thumb(t);
+  }
+  const dimA = 0.5 * ss(DIM, DIM + 0.6, t) * (1 - ss(OPEN - 0.3, OPEN, t));
+  if (dimA > 0) { g.fillStyle = `rgba(0,0,0,${dimA})`; g.fillRect(0, 0, W, H); }
+  if (lock > 0) {
+    K.ground(lock, [8, 7, 6]);
+    K.bigClock(t, CLOCK, { y: 560, size: 210, alpha: lock * ss(DARK + 0.1, DARK + 0.5, t) });
+    K.banner(t, { t0: BUZZ, t1: OPEN - 0.3, name: S("Dee"), text: S("hi!! quick question"), label: S("now"), y: 780, alpha: lock });
+  }
+  K.statusBar(t, { clock: CLOCK, battery: t => lerp(0.12, 1, nightP(t)), alpha: 1 - 0.55 * lock * (1 - nightP(t)) });
+  vignette(0.35);
+  K.endCard(t, CARD, { handle: S("@smallbusinessinbox"), note: S("A written composite. Not a real business or client.") });
+  grain(t);
+};
+window.ready = (async () => {
+  await K.ready();
+  const events = A.events.concat([{ t: BUZZ, k: 'buzz' }, { t: OPEN - 0.25, k: 'click' }, { t: ROLL, k: 'tick', gain: 0.6 }]);
+  return { total: TOTAL, events,
+    tension: [[0, 0.12], [1, 0.25], [A.at[6], 0.55], [A.at[7], 0.62], [SEND, 0.6], [SEEN, 0.7], [DARK, 0.8],
+              [ROLL + 1, 0.25], [BUZZ, 0.35], [STAT, 0.5], [CARD, 0.3], [TOTAL, 0]],
+    warm: [[SEND - 0.1, 0], [SEND + 0.4, 0.28], [SEEN + 1.2, 0.05], [DARK, 0], [CARD, 0], [CARD + 1, 0.22], [TOTAL, 0.1]] };
+})();
+</script></body></html>
