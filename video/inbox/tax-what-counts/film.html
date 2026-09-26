@@ -1,0 +1,240 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: IS; src: url('../../motion/fonts/InstrumentSerif-Regular.ttf'); }
+@font-face { font-family: ISI; src: url('../../motion/fonts/InstrumentSerif-Italic.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// "what counts" — THE MATH. Her lunch-hour question, then a worksheet: the IRS test in plain words,
+// seven everyday things sorted into COUNTS / DOESN'T, keep the proof, the takeaway. Rules: SOURCES.md.
+const ON_SCREEN = [
+  "12:41 PM", "12:42 PM", "Nina", "Today 12:41 PM", "can I write off my lunch??", "Message",
+  "THE MATH", "what counts as a business expense", "the IRS test", "ordinary", "common and accepted in your line of work",
+  "necessary", "helpful and appropriate for it",
+  "COUNTS", "DOESN'T",
+  "booth rent", "where the work happens",
+  "shears + supplies", "tools of the trade",
+  "a class that keeps your current skills sharp", "generally",
+  "your phone", "the business share only",
+  "the drive from home to your booth", "commuting, usually",
+  "lunch by yourself", "personal, on a normal workday",
+  "your gym", "personal",
+  "keep the proof", "the receipt", "and a note of what it was for",
+  "If it's for the business, keep the receipt.", "If it's just for you, it's not a business write-off.",
+  "@smallbusinessinbox", "General information, not tax advice.", "Rules from IRS.gov; your situation may differ."
+];
+const S = K.say(ON_SCREEN);
+K.accent([92, 150, 108]);   // ledger green
+
+const PAPER = [238, 230, 214], INK = [42, 36, 31], INK2 = [118, 106, 94], RULE = [210, 199, 180];
+const ACC = [58, 118, 78];  // the same green, deepened to read on bone paper
+const eo = x => 1 - Math.pow(1 - clamp(x), 3);
+
+// ---------- the phone ----------
+const A = K.conversation([
+  { t: 0.4, stamp: S("Today 12:41 PM") },
+  { t: 1.0, type: S("can I write off my lunch??"), cps: 12 },
+  { gap: 0.55, send: true },
+]);
+const SEND = A.at[2];
+const SHEET = SEND + 1.5, TOP = 214;
+
+// ---------- the worksheet script ----------
+const KICK = SHEET + 0.5, TITLE = SHEET + 0.9, LBL = TITLE + 2.4;
+const ORD = LBL + 0.7, ORD_D = ORD + 0.6, NEC = ORD_D + 3.3, NEC_D = NEC + 0.6;
+const B0 = NEC_D + 2.9;                                   // the test shrinks to the top; the sort begins
+const ITEMS = [
+  { name: S("booth rent"), why: S("where the work happens"), yes: true },
+  { name: S("shears + supplies"), why: S("tools of the trade"), yes: true },
+  { name: S("the drive from home to your booth"), why: S("commuting, usually"), yes: false },
+  { name: S("a class that keeps your current skills sharp"), why: S("generally"), yes: true },
+  { name: S("lunch by yourself"), why: S("personal, on a normal workday"), yes: false },
+  { name: S("your phone"), why: S("the business share only"), yes: true },
+  { name: S("your gym"), why: S("personal"), yes: false },
+];
+{ let T = B0 + 1.2;
+  for (const it of ITEMS) {
+    const words = (it.name + ' ' + it.why).split(' ').length;
+    it.t0 = T; it.fall = T + 1.0 + 0.1 * words; it.land = it.fall + 0.45; T = it.land + 0.35;
+  }
+}
+const LAST = ITEMS[ITEMS.length - 1].land;
+const PROOF = LAST + 2.0, TAKE = PROOF + 5.8, TAKE2 = TAKE + 2.6, CARD = TAKE2 + 4.2, TOTAL = CARD + 3.4;
+window.TIMES = { SEND, SHEET, B0, ITEMS: ITEMS.map(i => i.t0), LAST, PROOF, TAKE, TAKE2, CARD, TOTAL };
+const CLOCK = [[0, S("12:41 PM")], [ITEMS[3].t0, S("12:42 PM"), 0.5]];
+
+// column slots, laid out once fonts are in
+const COLX = { true: 104, false: 584 }, COLW = 396, COLY = 1024;
+function layoutSlots() {
+  const y = { true: COLY, false: COLY };
+  for (const it of ITEMS) {
+    g.font = '600 40px Inter'; it.nl = wrapText(it.name, COLW);
+    g.font = '500 31px Inter'; it.wl = wrapText(it.why, COLW);
+    it.x = COLX[it.yes]; it.y = y[it.yes];
+    y[it.yes] += it.nl.length * 50 + it.wl.length * 40 + 34;
+  }
+}
+
+function txt(s, x, y, font, col, a, align = 'left') {
+  if (a <= 0) return; g.font = font; g.textAlign = align; g.fillStyle = rgba(col, a); g.fillText(s, x, y);
+}
+function lines(arr, x, y, lh, font, col, a, align = 'left') { arr.forEach((s, i) => txt(s, x, y + i * lh, font, col, a, align)); }
+function check(x, y, s, col, a) {
+  g.strokeStyle = rgba(col, a); g.lineWidth = s * 0.16; g.lineCap = 'round'; g.lineJoin = 'round';
+  g.beginPath(); g.moveTo(x - s * 0.45, y); g.lineTo(x - s * 0.12, y + s * 0.34); g.lineTo(x + s * 0.5, y - s * 0.4); g.stroke();
+}
+function cross(x, y, s, col, a) {
+  g.strokeStyle = rgba(col, a); g.lineWidth = s * 0.14; g.lineCap = 'round';
+  g.beginPath(); g.moveTo(x - s * 0.36, y - s * 0.36); g.lineTo(x + s * 0.36, y + s * 0.36);
+  g.moveTo(x + s * 0.36, y - s * 0.36); g.lineTo(x - s * 0.36, y + s * 0.36); g.stroke();
+}
+
+// the test, drawn at full size; the sort draws it again scaled down at the top
+function testBlock(t, a) {
+  const X = 110;
+  txt(S("the IRS test"), X, 612, '500 34px Inter', INK2, a * ss(LBL, LBL + 0.6, t));
+  const o = ss(ORD, ORD + 0.6, t), od = ss(ORD_D, ORD_D + 0.7, t);
+  txt(S("ordinary"), X - 4, 712 + (1 - o) * 18, '400 96px ISI', ACC, a * o);
+  g.font = '400 50px Inter'; lines(wrapText(S("common and accepted in your line of work"), 520), X, 800 + (1 - od) * 12, 64, '400 50px Inter', INK, a * od);
+  const n = ss(NEC, NEC + 0.6, t), nd = ss(NEC_D, NEC_D + 0.7, t);
+  txt(S("necessary"), X - 4, 1010 + (1 - n) * 18, '400 96px ISI', ACC, a * n);
+  txt(S("helpful and appropriate for it"), X, 1098 + (1 - nd) * 12, '400 50px Inter', INK, a * nd);
+}
+
+function sheet(t) {
+  const p = eo((t - SHEET) / 0.6); if (p <= 0.001) return;
+  g.fillStyle = `rgba(0,0,0,${0.55 * p})`; g.fillRect(0, 0, W, H);
+  g.save(); g.translate(0, lerp(H + 40, TOP, p) - TOP);
+  g.shadowColor = 'rgba(0,0,0,0.5)'; g.shadowBlur = 60; g.shadowOffsetY = -10;
+  g.fillStyle = rgba(PAPER, 1); g.beginPath(); g.roundRect(24, TOP, W - 48, H - TOP + 100, [52, 52, 0, 0]); g.fill();
+  g.shadowColor = 'transparent';
+  g.fillStyle = rgba(RULE, 1); g.beginPath(); g.roundRect(CX - 50, TOP + 22, 100, 10, 5); g.fill();   // grabber
+
+  const proofOut = 1 - ss(PROOF, PROOF + 0.6, t);          // everything above the proof beat leaves here
+  // kicker
+  g.save(); g.letterSpacing = '7px';
+  txt(S("THE MATH"), 110, 300, '700 30px Inter', ACC, ss(KICK, KICK + 0.5, t) * (1 - ss(TAKE - 0.6, TAKE, t)));
+  g.restore();
+  // title
+  const ti = ss(TITLE, TITLE + 0.8, t) * (1 - ss(B0, B0 + 0.5, t));
+  g.font = '400 84px IS'; lines(wrapText(S("what counts as a business expense"), 860), 106, 404 + (1 - ss(TITLE, TITLE + 0.8, t)) * 20, 86, '400 84px IS', INK, ti);
+  // the test: full size, then shrunk to the top as a reminder
+  const sh = eo((t - B0) / 0.8), sc = lerp(1, 0.56, sh);
+  g.save(); g.translate(110, lerp(600, 352, sh)); g.scale(sc, sc); g.translate(-110, -600);
+  testBlock(t, proofOut * lerp(1, 0.9, sh));
+  g.restore();
+
+  // the sort
+  const colA = ss(B0 + 0.5, B0 + 1.1, t) * proofOut;
+  if (colA > 0) {
+    g.fillStyle = rgba(RULE, colA); g.fillRect(64, 900, W - 128, 3); g.fillRect(CX - 1.5, 900, 3, 640 * ss(B0 + 0.5, B0 + 1.3, t));
+    g.save(); g.letterSpacing = '5px';
+    txt(S("COUNTS"), 158, 944, '700 34px Inter', ACC, colA); txt(S("DOESN'T"), 638, 944, '700 34px Inter', INK2, colA);
+    g.restore();
+    check(122, 941, 38, ACC, colA); cross(604, 941, 34, INK2, colA);
+  }
+  for (const it of ITEMS) {
+    if (t < it.t0) continue;
+    // staged: the item arrives in the middle, then its verdict
+    const inA = ss(it.t0, it.t0 + 0.35, t), outA = 1 - ss(it.fall, it.fall + 0.3, t), sa = inA * outA;
+    if (sa > 0) {
+      const dy = (1 - inA) * 20 + ss(it.fall, it.fall + 0.3, t) * 30;
+      g.font = '600 56px Inter'; const nl = wrapText(it.name, 900);
+      const y0 = 752 - (nl.length - 1) * 34 + dy;
+      lines(nl, CX, y0, 68, '600 56px Inter', INK, sa, 'center');
+      const wa = ss(it.t0 + 0.45, it.t0 + 0.8, t) * outA;
+      txt(it.why, CX, y0 + nl.length * 68 - 6, '500 38px Inter', it.yes ? ACC : INK2, wa, 'center');
+    }
+    // dropped into its column
+    const d = eo((t - it.fall - 0.15) / 0.45); if (d <= 0) continue;
+    const ya = it.y - (1 - d) * 70, ca = d * proofOut;
+    lines(it.nl, it.x, ya, 50, '600 40px Inter', it.yes ? INK : INK2, ca);
+    lines(it.wl, it.x, ya + it.nl.length * 50 - 4, 40, '500 31px Inter', it.yes ? ACC : INK2, ca * 0.95);
+  }
+
+  // keep the proof
+  const pr = ss(PROOF + 0.5, PROOF + 1.1, t) * (1 - ss(TAKE - 0.6, TAKE, t));
+  if (pr > 0) {
+    txt(S("keep the proof"), 110, 440 + (1 - pr) * 16, '400 104px ISI', INK, pr);
+    receipt(t, 560, 560, pr);
+    const r1 = ss(PROOF + 1.3, PROOF + 1.9, t) * pr, r2 = ss(PROOF + 2.4, PROOF + 3.0, t) * pr;
+    txt(S("the receipt"), 110, 1300, '600 54px Inter', INK, r1);
+    txt(S("and a note of what it was for"), 110, 1380, '400 54px Inter', ACC, r2);
+  }
+  // the takeaway
+  const k1 = ss(TAKE, TAKE + 0.8, t), k2 = ss(TAKE2, TAKE2 + 0.8, t);
+  if (k1 > 0) {
+    g.font = '400 92px IS';
+    const l1 = wrapText(S("If it's for the business, keep the receipt."), 860), l2 = wrapText(S("If it's just for you, it's not a business write-off."), 860);
+    lines(l1, 110, 700 + (1 - k1) * 24, 98, '400 92px IS', INK, k1);
+    lines(l2, 110, 740 + l1.length * 98 + 60 + (1 - k2) * 24, 98, '400 92px IS', ACC, k2);
+  }
+  g.restore();
+}
+
+// a paper receipt with a handwritten note clipped to it (drawn, no words)
+function receipt(t, cx, top, a) {
+  const p = eo((t - PROOF - 0.6) / 0.7), y = top + (1 - p) * 40, w = 330, h = 520, x = cx - w / 2 - 60;
+  g.save(); g.globalAlpha = a * p;
+  g.translate(x + w / 2, y + h / 2); g.rotate(-0.04); g.translate(-(x + w / 2), -(y + h / 2));
+  g.shadowColor = 'rgba(60,40,20,0.22)'; g.shadowBlur = 24; g.shadowOffsetY = 8;
+  g.fillStyle = 'rgb(252,249,242)'; g.beginPath(); g.moveTo(x, y); g.lineTo(x + w, y); g.lineTo(x + w, y + h);
+  for (let k = 0; k < 11; k++) { const zx = x + w - (k + 0.5) * (w / 11); g.lineTo(zx, y + h - 14); g.lineTo(zx - w / 22, y + h); }
+  g.lineTo(x, y + h); g.closePath(); g.fill(); g.shadowColor = 'transparent';
+  const r = rng(5);
+  for (let k = 0; k < 9; k++) {
+    const ly = y + 60 + k * 44, total = k === 7;
+    g.fillStyle = rgba(INK2, total ? 0.75 : 0.45);
+    g.fillRect(x + 36, ly, (total ? 90 : 90 + r() * 110), total ? 12 : 9);
+    g.fillRect(x + w - 36 - (total ? 70 : 40 + r() * 20), ly, total ? 70 : 40 + r() * 20, total ? 12 : 9);
+    if (k === 6) { g.fillStyle = rgba(RULE, 1); g.fillRect(x + 36, ly + 26, w - 72, 3); }
+  }
+  g.restore();
+  // the note, stuck on a corner, written on
+  const q = eo((t - PROOF - 2.2) / 0.6); if (q <= 0) return;
+  g.save(); g.globalAlpha = a * q;
+  const nx = x + w - 70, ny = y + 250 + (1 - q) * 30, nw = 280, nh = 230;
+  g.translate(nx + nw / 2, ny + nh / 2); g.rotate(0.07); g.translate(-(nx + nw / 2), -(ny + nh / 2));
+  g.shadowColor = 'rgba(60,40,20,0.25)'; g.shadowBlur = 20; g.shadowOffsetY = 6;
+  g.fillStyle = rgba(mix(PAPER, ACC, 0.28), 1); g.fillRect(nx, ny, nw, nh); g.shadowColor = 'transparent';
+  const wp = clamp((t - PROOF - 2.5) / 1.4);   // the pen line, written out
+  g.strokeStyle = rgba(INK, 0.8); g.lineWidth = 5; g.lineCap = 'round'; g.lineJoin = 'round';
+  for (let row = 0; row < 3; row++) {
+    const len = row === 2 ? 0.55 : 1, rp = clamp(wp * 3 - row) * len; if (rp <= 0) continue;
+    g.beginPath(); const y0 = ny + 62 + row * 58, x0 = nx + 32, x1 = x0 + (nw - 64) * rp;
+    for (let xx = x0; xx <= x1; xx += 4) g.lineTo(xx, y0 + Math.sin(xx * 0.11 + row) * 9 * Math.sin(xx * 0.023 + row * 2));
+    g.stroke();
+  }
+  g.restore();
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  K.ground();
+  K.header({ name: S("Nina") });
+  A.draw(t, { placeholder: S("Message") });
+  sheet(t);
+  K.statusBar(t, { clock: CLOCK, battery: t => lerp(0.64, 0.62, clamp(t / TOTAL)) });
+  vignette(0.22);
+  const ca = K.endCard(t, CARD, { handle: S("@smallbusinessinbox"), note: S("General information, not tax advice.") });
+  if (ca > 0) { g.font = '400 30px Inter'; g.textAlign = 'center'; g.fillStyle = rgba(K.C.dim, ss(CARD + 0.7, CARD + 1.5, t)); g.fillText(S("Rules from IRS.gov; your situation may differ."), CX, 1030); }
+  grain(t);
+};
+window.ready = (async () => {
+  await K.ready();
+  await Promise.all(['400 84px IS', '400 92px IS', '400 96px ISI', '400 104px ISI', '600 56px Inter', '600 40px Inter', '500 31px Inter', '700 34px Inter', '400 50px Inter'].map(f => document.fonts.load(f)));
+  layoutSlots();
+  const drops = ITEMS.map(it => ({ t: it.fall + 0.45, k: it.yes ? 'click' : 'thud', gain: it.yes ? 0.8 : 0.55 }));
+  const events = A.events.concat(drops, [
+    { t: SHEET, k: 'click' }, { t: PROOF + 0.6, k: 'click', gain: 0.6 }, { t: TAKE2, k: 'bell', gain: 0.5 },
+  ]).sort((a, b) => a.t - b.t);
+  return { total: TOTAL, events,
+    tension: [[0, 0.12], [SEND, 0.22], [SHEET, 0.18], [B0, 0.28], [LAST, 0.32], [PROOF, 0.2], [TAKE, 0.08], [TAKE2, 0], [TOTAL, 0]],
+    warm: [[0, 0], [PROOF, 0], [TAKE, 0.2], [TAKE2, 0.4], [CARD, 0.3], [TOTAL, 0.12]] };
+})();
+</script></body></html>

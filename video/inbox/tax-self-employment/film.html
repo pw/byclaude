@@ -1,0 +1,234 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: IS; src: url('../../motion/fonts/InstrumentSerif-Regular.ttf'); }
+@font-face { font-family: ISI; src: url('../../motion/fonts/InstrumentSerif-Italic.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// "THE MATH" · tax-self-employment — why your tax feels bigger than your W-2 friend's.
+// Her question to a friend; then a bone-paper worksheet: two columns (the half the boss paid, the half she paid),
+// one worked example (32,400 -> 92.35% -> 15.3%), two softeners, the takeaway. Every number is in SOURCES.md.
+const ON_SCREEN = [
+  "9:41 PM", "9:42 PM", "9:43 PM", "Nia", "Jan 14", "how's the new booth??", "Tue 9:41 PM",
+  "why do I owe so much more than when I worked at the salon", "Message",
+  "THE MATH", "federal · tax year 2026",
+  "Social Security + Medicare", "15.3%", "EMPLOYEE", "SELF-EMPLOYED", "your boss", "you", "7.65%",
+  "you pay half", "you pay the whole 15.3%", "on top of income tax",
+  "example", "profit", "32,400", "× 92.35%", "generally figured on 92.35% of profit", "29,921.40",
+  "× 15.3%", "self-employment tax", "about 4,578",
+  "two things to know", "1", "2",
+  "It usually only applies once net earnings reach $400.",
+  "You deduct half of it on your return.", "It lowers the income your income tax is figured on.", "example: about 2,289 less taxable income",
+  "It's not a penalty for going out on your own.", "It's the half your boss used to pay.",
+  "@smallbusinessinbox", "General information, not tax advice.", "Rules from IRS.gov; your situation may differ."
+];
+const S = K.say(ON_SCREEN);
+const ACC = [196, 92, 58];            // terracotta: the one accent
+K.accent(ACC);
+const PAPER = [241, 233, 218], INK = [40, 33, 28], DIMI = [120, 106, 92], RULEC = [216, 204, 186];
+
+// ---------- the phone ----------
+const A = K.conversation([
+  { t: -1, stamp: S("Jan 14") },
+  { t: -1, in: S("how's the new booth??"), dim: 0.35 },
+  { t: 0.5, stamp: S("Tue 9:41 PM") },
+  { t: 0.9, type: S("why do I owe so much more than when I worked at the salon"), cps: 19 },
+  { gap: 0.5, send: true },
+]);
+const SEND = A.at[4];
+const SHEET = SEND + 1.9;                                // the worksheet lifts off the phone
+
+// ---------- worksheet timeline ----------
+const T1 = SHEET + 0.8;                                  // scene 1: the two columns
+const TITLE = T1, RATE = T1 + 0.9, COLS = T1 + 2.6, LCAP = COLS + 1.6, FLIP = COLS + 3.0, RCAP = FLIP + 0.8, ONTOP = RCAP + 1.4;
+const X1 = ONTOP + 3.2;                                  // scene 1 out
+const T2 = X1 + 0.6;                                     // scene 2: the example
+const R1 = T2 + 0.5, R2 = R1 + 1.8, R3 = R2 + 2.6, RES = R3 + 1.6;
+const X2 = RES + 3.4;
+const T3 = X2 + 0.6;                                     // scene 3: two softeners
+const H3 = T3 + 0.2, I1 = H3 + 1.0, I2 = I1 + 3.6, I2b = I2 + 2.0, I2c = I2b + 1.6;
+const X3 = I2c + 3.2;
+const T4 = X3 + 0.6;                                     // scene 4: the takeaway
+const TK1 = T4 + 0.3, TK2 = TK1 + 3.0;
+const CARD = TK2 + 4.0, TOTAL = CARD + 3.6;
+
+const CLOCK = [[0, S("9:41 PM")], [T1 + 4.2, S("9:42 PM"), 0.5], [T3 + 1, S("9:43 PM"), 0.5]];
+const eo = x => 1 - Math.pow(1 - clamp(x), 3);
+const TOP = 200, LX = 110, RX = 970;
+const sheetP = t => eo((t - SHEET) / 0.6);
+const fin = (t0, d = 0.55) => t => ss(t0, t0 + d, t);          // fade-in helper
+function sceneA(t, t0, t1) { return ss(t0, t0 + 0.4, t) * (1 - ss(t1, t1 + 0.5, t)); }
+
+function txt(s, x, y, font, col, a, align = 'left') {
+  if (a <= 0) return; g.font = font; g.textAlign = align; g.textBaseline = 'middle'; g.fillStyle = rgba(col, a); g.fillText(s, x, y);
+}
+function wrapped(s, x, y, font, lh, maxw, col, a, align = 'left') {
+  if (a <= 0) return 0; g.font = font; const L = wrapText(s, maxw);
+  L.forEach((l, i) => txt(l, x, y + i * lh, font, col, a, align)); return L.length;
+}
+// numbers roll up from zero like a till
+function rollNum(s, p, x, y, size, col, align = 'right', fam = 'Inter', w = 700) {
+  if (p <= 0) return; const from = s.replace(/\d/g, '0');
+  g.save(); g.globalAlpha = Math.min(1, p * 3); K.rollText(from, s, p, x, y, size, rgba(col, 1), align, 1, fam, w); g.restore();
+}
+
+// ---- scene 1: EMPLOYEE vs SELF-EMPLOYED ----
+function bar(cx, t, grow, flip, a) {
+  const w = 300, h = 500, y0 = 770, half = h / 2;
+  const botY = y0 + half, base = y0 + h;
+  // bottom half: you (accent), grows up from the base
+  const gb = ss(0, 0.55, grow), hb = half * gb;
+  g.fillStyle = rgba(ACC, a); g.beginPath(); g.roundRect(cx - w / 2, base - hb, w, hb, [0, 0, 18, 18]); g.fill();
+  // top half: your boss (outlined, hatched) stacked on it -> you (accent) when flipped
+  const gt = ss(0.45, 1, grow);
+  if (gt > 0) {
+    const hh = half * gt, yy = base - hb - hh;
+    g.save(); g.beginPath(); g.roundRect(cx - w / 2, yy, w, hh, [18, 18, 0, 0]); g.clip();
+    g.fillStyle = rgba(PAPER, a); g.fillRect(cx - w / 2, yy, w, hh);
+    g.strokeStyle = rgba(RULEC, a); g.lineWidth = 3;
+    for (let k = -h; k < w + h; k += 26) { g.beginPath(); g.moveTo(cx - w / 2 + k, yy); g.lineTo(cx - w / 2 + k - hh, yy + hh); g.stroke(); }
+    if (flip > 0) { g.fillStyle = rgba(ACC, a * flip); g.fillRect(cx - w / 2, yy + hh * (1 - flip), w, hh * flip); }
+    g.restore();
+    g.strokeStyle = rgba(INK, a * 0.85); g.lineWidth = 4; g.beginPath(); g.roundRect(cx - w / 2, yy, w, hh + 1, [18, 18, 0, 0]); g.stroke();
+  }
+  // labels
+  const la = a * ss(0.8, 1, grow);
+  const topC = mix(INK, PAPER, flip);
+  txt(S("your boss"), cx, y0 + half / 2 - 34, '500 36px Inter', topC, la * (1 - flip), 'center');
+  txt(S("you"), cx, y0 + half / 2 - 34, '500 36px Inter', PAPER, la * flip, 'center');
+  txt(S("7.65%"), cx, y0 + half / 2 + 28, '700 60px Inter', topC, la, 'center');
+  txt(S("you"), cx, botY + half / 2 - 34, '500 36px Inter', PAPER, la, 'center');
+  txt(S("7.65%"), cx, botY + half / 2 + 28, '700 60px Inter', PAPER, la, 'center');
+}
+function scene1(t) {
+  const a = sceneA(t, T1 - 0.2, X1); if (a <= 0) return;
+  g.save(); g.translate(0, -40 * ss(X1, X1 + 0.5, t));
+  txt(S("Social Security + Medicare"), CX, 400 + 14 * (1 - fin(TITLE)(t)), '600 50px Inter', INK, a * fin(TITLE)(t), 'center');
+  const rp = fin(RATE, 0.7)(t);
+  txt(S("15.3%"), CX, 560 + 22 * (1 - rp), '400 210px IS', ACC, a * rp, 'center');
+  const cp = fin(COLS, 0.4)(t);
+  txt(S("EMPLOYEE"), 290, 720, '700 36px Inter', DIMI, a * cp, 'center');
+  txt(S("SELF-EMPLOYED"), 790, 720, '700 36px Inter', DIMI, a * cp, 'center');
+  const grow = ss(COLS + 0.2, COLS + 1.3, t), flip = ss(FLIP, FLIP + 0.7, t);
+  bar(290, t, grow, 0, a); bar(790, t, grow, flip, a);
+  txt(S("you pay half"), 290, 1335 + 10 * (1 - fin(LCAP)(t)), '600 42px Inter', INK, a * fin(LCAP)(t), 'center');
+  const rc = fin(RCAP)(t);
+  g.font = '600 42px Inter'; wrapText(S("you pay the whole 15.3%"), 420).forEach((l, i) =>
+    txt(l, 790, 1335 + i * 54 + 10 * (1 - rc), '600 42px Inter', i ? ACC : INK, a * rc, 'center'));
+  txt(S("on top of income tax"), 790, 1466 + 10 * (1 - fin(ONTOP)(t)), '400 50px ISI', DIMI, a * fin(ONTOP)(t), 'center');
+  g.restore();
+}
+
+// ---- scene 2: the worked example ----
+function row(label, sub, val, y, t0, t, a, big) {
+  const p = fin(t0, 0.5)(t);
+  txt(label, LX, y, '600 50px Inter', INK, a * p);
+  if (sub) wrapped(sub, LX, y + 64, '400 38px Inter', 48, 470, DIMI, a * fin(t0 + 0.5)(t));
+  if (val) rollNum(val, ss(t0 + 0.25, t0 + 1.3, t), RX, y, 92, INK);
+}
+function scene2(t) {
+  const a = sceneA(t, T2, X2); if (a <= 0) return;
+  g.save(); g.translate(0, 70 - 40 * ss(X2, X2 + 0.5, t));
+  // "example" tag
+  const tp = fin(T2 + 0.1)(t);
+  if (tp > 0) {
+    g.font = '600 34px Inter'; const w = g.measureText(S("example")).width + 44;
+    g.strokeStyle = rgba(ACC, a * tp); g.lineWidth = 3; g.beginPath(); g.roundRect(LX - 6, 372, w, 58, 29); g.stroke();
+    txt(S("example"), LX - 6 + w / 2, 402, '600 34px Inter', ACC, a * tp, 'center');
+  }
+  row(S("profit"), null, S("32,400"), 540, R1, t, a);
+  rule(LX, RX, 615, ss(R2 - 0.5, R2, t) * a, 0.6);
+  row(S("× 92.35%"), S("generally figured on 92.35% of profit"), S("29,921.40"), 710, R2, t, a);
+  rule(LX, RX, 850, ss(R3 - 0.5, R3, t) * a, 0.6);
+  row(S("× 15.3%"), S("Social Security + Medicare"), null, 945, R3, t, a);
+  // the double rule, then the answer
+  const dr = ss(RES - 0.6, RES - 0.1, t) * a; rule(LX, RX, 1080, dr, 1); rule(LX, RX, 1092, dr, 1);
+  const rp = fin(RES, 0.6)(t);
+  txt(S("self-employment tax"), LX, 1170, '500 42px Inter', DIMI, a * rp);
+  txt(S("about 4,578"), RX, 1320 + 20 * (1 - rp), '400 190px IS', ACC, a * rp, 'right');
+  g.restore();
+}
+function rule(x0, x1, y, a, w = 1) {
+  if (a <= 0) return; g.fillStyle = rgba(INK, a * 0.75); g.fillRect(x0, y, x1 - x0, 3 * w);
+}
+
+// ---- scene 3: two things that help ----
+function scene3(t) {
+  const a = sceneA(t, T3, X3); if (a <= 0) return;
+  g.save(); g.translate(0, 130 - 40 * ss(X3, X3 + 0.5, t));
+  txt(S("two things to know"), CX, 410, '500 44px Inter', DIMI, a * fin(H3)(t), 'center');
+  const TX = 250, MW = 740;
+  const p1 = fin(I1)(t);
+  txt(S("1"), 150, 560 + 16 * (1 - p1), '400 170px IS', ACC, a * p1, 'center');
+  wrapped(S("It usually only applies once net earnings reach $400."), TX, 540 + 16 * (1 - p1), '500 54px Inter', 68, MW, INK, a * p1);
+  rule(LX, RX, 790, a * ss(I2 - 0.6, I2 - 0.1, t) * 0.5, 0.7);
+  const p2 = fin(I2)(t);
+  txt(S("2"), 150, 910 + 16 * (1 - p2), '400 170px IS', ACC, a * p2, 'center');
+  const n = wrapped(S("You deduct half of it on your return."), TX, 890 + 16 * (1 - p2), '500 54px Inter', 68, MW, INK, a * p2);
+  const yb = 890 + n * 68 + 20;
+  wrapped(S("It lowers the income your income tax is figured on."), TX, yb + 10 * (1 - fin(I2b)(t)), '400 46px Inter', 60, MW, DIMI, a * fin(I2b)(t));
+  let fs = 46; g.font = `600 ${fs}px Inter`; while (g.measureText(S("example: about 2,289 less taxable income")).width > MW && fs > 36) g.font = `600 ${--fs}px Inter`;
+  txt(S("example: about 2,289 less taxable income"), TX, yb + 160 + 10 * (1 - fin(I2c)(t)), `600 ${fs}px Inter`, ACC, a * fin(I2c)(t));
+  g.restore();
+}
+
+// ---- scene 4: the takeaway ----
+function scene4(t) {
+  const a = ss(T4, T4 + 0.4, t); if (a <= 0) return;
+  const p1 = fin(TK1, 0.8)(t), p2 = fin(TK2, 0.8)(t);
+  const n = wrapped(S("It's not a penalty for going out on your own."), CX, 720 + 20 * (1 - p1), '400 104px IS', 112, 880, INK, a * p1, 'center');
+  wrapped(S("It's the half your boss used to pay."), CX, 720 + n * 112 + 90 + 20 * (1 - p2), '400 104px ISI', 112, 880, ACC, a * p2, 'center');
+}
+
+function sheet(t) {
+  const p = sheetP(t); if (p <= 0.001) return;
+  g.fillStyle = `rgba(0,0,0,${0.55 * p})`; g.fillRect(0, 0, W, H);
+  g.save(); g.translate(0, lerp(H + 60, TOP, p) - TOP);
+  g.shadowColor = 'rgba(0,0,0,0.6)'; g.shadowBlur = 70; g.shadowOffsetY = -12;
+  g.fillStyle = rgba(PAPER, 1); g.beginPath(); g.roundRect(24, TOP, W - 48, H - TOP + 100, [44, 44, 0, 0]); g.fill();
+  g.shadowColor = 'transparent';
+  // ledger rules + margin: a drawn worksheet
+  g.fillStyle = rgba(RULEC, 0.55); for (let y = TOP + 160; y < H; y += 100) g.fillRect(24, y, W - 48, 2);
+  g.fillStyle = rgba(ACC, 0.22); g.fillRect(76, TOP + 120, 2, H);
+  txt(S("THE MATH"), LX, TOP + 70, '700 32px Inter', ACC, 1);
+  txt(S("federal · tax year 2026"), RX, TOP + 70, '400 30px Inter', DIMI, 1, 'right');
+  g.fillStyle = rgba(INK, 0.8); g.fillRect(LX, TOP + 114, RX - LX, 3);
+  scene1(t); scene2(t); scene3(t);
+  scene4(t);
+  g.restore();
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  K.ground();
+  K.header({ name: S("Nia") });
+  A.draw(t, { placeholder: S("Message") });
+  sheet(t);
+  K.statusBar(t, { clock: CLOCK, battery: t => lerp(0.62, 0.6, clamp(t / TOTAL)) });
+  vignette(0.28);
+  const ca = K.endCard(t, CARD, { handle: S("@smallbusinessinbox"), note: S("General information, not tax advice.") });
+  if (ca > 0) txt(S("Rules from IRS.gov; your situation may differ."), CX, 1030, '400 30px Inter', K.C.dim, ss(CARD + 0.9, CARD + 1.7, t), 'center');
+  grain(t);
+};
+window.ready = (async () => {
+  await K.ready();
+  for (const f of ['400 210px IS', '400 104px ISI', '400 50px ISI', '700 92px Inter', '600 50px Inter', '500 54px Inter'])
+    await document.fonts.load(f);
+  const taps = (t0, n, gap) => Array.from({ length: n }, (_, i) => ({ t: t0 + i * gap, k: 'tap', gain: 0.5 }));
+  const events = A.events.concat([
+    { t: SHEET, k: 'click' }, { t: RATE + 0.1, k: 'thud' }, { t: COLS + 0.3, k: 'click', gain: 0.6 },
+    { t: FLIP + 0.1, k: 'thud', gain: 0.8 },
+    ...taps(R1 + 0.3, 5, 0.18), ...taps(R2 + 0.3, 6, 0.16), { t: RES + 0.1, k: 'thud' },
+    { t: I1, k: 'click', gain: 0.6 }, { t: I2, k: 'click', gain: 0.6 },
+    { t: TK2 + 0.1, k: 'bell', gain: 0.5 },
+  ]).sort((a, b) => a.t - b.t);
+  return { total: TOTAL, events,
+    tension: [[0, 0.12], [SEND, 0.35], [SHEET, 0.4], [FLIP, 0.55], [RES, 0.6], [T3, 0.35], [I2, 0.2], [T4, 0.05], [TOTAL, 0]],
+    warm: [[0, 0], [T3, 0], [I2, 0.2], [TK2, 0.45], [CARD, 0.3], [TOTAL, 0.12]] };
+})();
+</script></body></html>

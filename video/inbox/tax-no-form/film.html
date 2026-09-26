@@ -1,0 +1,218 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: IS; src: url('../../motion/fonts/InstrumentSerif-Regular.ttf'); }
+@font-face { font-family: ISI; src: url('../../motion/fonts/InstrumentSerif-Italic.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// "no form" — THE MATH. She asks a friend whether no 1099 means no tax; the answer is a worksheet:
+// a year of booth income by how it was paid, which payments come with a form, and that all of it counts.
+// Every rule is quoted in SOURCES.md; the figures are an illustrative example.
+const ON_SCREEN = [
+  "10:12 PM", "10:13 PM", "Sun 10:12 PM", "Tash", "Message",
+  "nobody sent me a 1099", " so I don't have to report it right?",
+  "THE MATH", "One year of booth income", "example",
+  "cash", "checks", "payment app", "card reader",
+  "6,200", "1,500", "9,500", "14,800",
+  "no form", "maybe a 1099-K", "1099-K",
+  "sales", "32,000", "all reported", "Tax is figured after business expenses come off.",
+  "All of it gets reported, form or no form.", "Federal rules. States have their own.",
+  "So what's a 1099?", "1099",
+  "A report someone else files about money paid to you.",
+  "It isn't what makes it income.",
+  "Your regular clients usually don't file one at all.",
+  "The easy way to never guess:", "every payment in", "one place", "as it happens",
+  "Tue", "Wed", "85", "120", "60",
+  "If you earned it,", "it counts.", "Form or no form.",
+  "@smallbusinessinbox", "General information, not tax advice.", "Rules from IRS.gov; your situation may differ."
+];
+const S = K.say(ON_SCREEN);
+K.accent([204, 112, 78]);
+
+// ---------- the phone: the question, typed to a friend ----------
+const Q1 = S("nobody sent me a 1099"), Q2 = S(" so I don't have to report it right?");
+const A = K.conversation([
+  { t: 0.4, stamp: S("Sun 10:12 PM") },
+  { t: 1.0, type: Q1, cps: 15 },
+  { gap: 1.0, type: Q2, cps: 17 },     // the hesitation after "1099"
+  { gap: 0.5, send: true },
+  { gap: 0.5, dots: 2.2 },
+]);
+const SEND = A.at[3], LIFT = SEND + 2.0;
+const CLOCK = [[0, S("10:12 PM")], [SEND - 0.5, S("10:13 PM"), 0.5]];
+
+// ---------- the worksheet ----------
+const PAPER = [236, 228, 212], INK = [40, 33, 28], DIM = [118, 106, 94], RULE = [196, 184, 166], ACC = [166, 70, 40];
+const eo = x => 1 - Math.pow(1 - clamp(x), 3);
+const S1 = LIFT + 0.7;                            // section 1: the year, by how it was paid
+const ROWS = [
+  { l: S("cash"),        a: S("6,200"),  f: S("no form"),        hot: true },
+  { l: S("checks"),      a: S("1,500"),  f: S("no form"),        hot: true },
+  { l: S("payment app"), a: S("9,500"),  f: S("maybe a 1099-K") },
+  { l: S("card reader"), a: S("14,800"), f: S("1099-K") },
+];
+ROWS.forEach((r, i) => { r.t = S1 + 1.6 + i * 1.35; r.y = 520 + i * 118; });
+const RULE_T = ROWS[3].t + 1.25, TOT = RULE_T + 0.5, ALL = TOT + 1.1, CAP1 = ALL + 1.1, FED = CAP1 + 2.2;
+const S2 = FED + 3.6;                             // section 2: what a 1099 is
+const Q_T = S2 + 0.3, R1 = Q_T + 1.8, R2 = R1 + 3.4, R3 = R2 + 2.6;
+const S3 = R3 + 3.8;                              // section 3: the habit
+const H3 = S3 + 0.3, B1 = H3 + 1.8, B2 = B1 + 1.2, B3 = B2 + 1.2, LOG = B3 + 1.3;
+const LOGROWS = [
+  { d: S("Tue"), l: S("cash"), a: S("85") },
+  { d: S("Tue"), l: S("card reader"), a: S("120") },
+  { d: S("Wed"), l: S("payment app"), a: S("60") },
+];
+LOGROWS.forEach((r, i) => r.t = LOG + 0.4 + i * 0.9);
+const S4 = LOGROWS[2].t + 3.0;                    // the takeaway
+const TK1 = S4 + 0.4, TK2 = TK1 + 1.6, CARD = TK2 + 2.8, TOTAL = CARD + 3.2;
+
+const secA = (t, a, b) => ss(a, a + 0.5, t) * (1 - ss(b - 0.5, b, t));
+function txt(s, x, y, font, col, a, align = 'left') {
+  if (a <= 0) return; g.font = font; g.textAlign = align; g.textBaseline = 'middle'; g.fillStyle = rgba(col, a); g.fillText(s, x, y);
+}
+function wrapped(s, x, y, font, lh, col, a, maxw = 900, align = 'left') {
+  if (a <= 0) return 0; g.font = font; const lines = wrapText(s, maxw);
+  lines.forEach((l, i) => txt(l, x, y + i * lh, font, col, a, align)); return lines.length;
+}
+const pin = (t, t0, d = 0.5) => ss(t0, t0 + d, t);
+
+function formCard(t, t0, a) {   // a drawn 1099: somebody else's paperwork
+  const p = eo((t - t0) / 0.7); if (p <= 0 || a <= 0) return;
+  g.save(); g.globalAlpha = a * p; g.translate(CX + 120, 1330 + (1 - p) * 60); g.rotate(-0.06);
+  g.shadowColor = 'rgba(60,40,20,0.25)'; g.shadowBlur = 30; g.shadowOffsetY = 10;
+  g.fillStyle = rgba([250, 246, 236], 1); g.fillRect(-230, -150, 460, 300); g.shadowColor = 'transparent';
+  g.strokeStyle = rgba(RULE, 1); g.lineWidth = 2; g.strokeRect(-230, -150, 460, 300);
+  g.fillStyle = rgba(INK, 1); g.font = '700 54px Inter'; g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillText(S("1099"), -200, -100);
+  g.fillStyle = rgba(RULE, 1);
+  for (let k = 0; k < 5; k++) g.fillRect(-200, -40 + k * 40, k % 2 ? 250 : 400, 12);
+  g.strokeStyle = rgba(RULE, 1); g.strokeRect(80, -125, 120, 60);
+  g.restore();
+}
+
+function worksheet(t) {
+  const p = eo((t - LIFT) / 0.7); if (p <= 0.001) return;
+  const y0 = lerp(H + 60, 0, p);
+  g.save(); g.translate(0, y0);
+  g.shadowColor = 'rgba(0,0,0,0.6)'; g.shadowBlur = 70; g.shadowOffsetY = -12;
+  g.fillStyle = rgba(PAPER, 1); g.beginPath(); g.roundRect(0, 0, W, H + 100, [48, 48, 0, 0]); g.fill();
+  g.shadowColor = 'transparent';
+  // faint ledger lines, like a worksheet pad
+  const la = 1 - ss(S2 - 0.5, S2, t);   // ledger lines belong to the worksheet section only
+  g.fillStyle = rgba(RULE, 0.4 * la); for (let y = 578; y < 1600; y += 118) g.fillRect(60, y, W - 120, 2);
+  g.fillStyle = rgba(ACC, 0.25); g.fillRect(70, 0, 3, H);
+  // kicker, always
+  g.font = '700 32px Inter'; g.letterSpacing = '6px'; txt(S("THE MATH"), 96, 196, '700 32px Inter', ACC, pin(t, LIFT + 0.4)); g.letterSpacing = '0px';
+
+  // --- section 1 ---
+  const a1 = secA(t, S1, S2);
+  if (a1 > 0) {
+    txt(S("One year of booth income"), 96, 300 + (1 - pin(t, S1)) * 16, '400 76px IS', INK, a1 * pin(t, S1, 0.6));
+    const ep = pin(t, S1 + 0.7);
+    if (ep > 0) {   // the "example" tag
+      g.strokeStyle = rgba(ACC, a1 * ep); g.lineWidth = 2.5; g.beginPath(); g.roundRect(96, 360, 170, 54, 27); g.stroke();
+      txt(S("example"), 181, 388, '600 32px Inter', ACC, a1 * ep, 'center');
+    }
+    ROWS.forEach(r => {
+      const rp = pin(t, r.t, 0.45); if (rp <= 0) return; const dy = (1 - rp) * 14;
+      txt(r.l, 96, r.y + dy, '500 50px Inter', INK, a1 * rp);
+      txt(r.a, 640, r.y + dy, '600 62px Inter', INK, a1 * rp, 'right');
+      const fp = pin(t, r.t + 0.45, 0.45);
+      const hot = r.hot ? ss(ALL - 0.2, ALL + 0.5, t) : 0;
+      txt(r.f, 690, r.y + dy, '500 38px Inter', mix(DIM, ACC, r.hot ? 1 : 0), a1 * fp);
+      if (hot > 0) { g.font = '500 38px Inter'; const w = g.measureText(r.f).width; g.fillStyle = rgba(ACC, a1 * 0.8); g.fillRect(690, r.y + 28, w * hot, 3); }
+    });
+    const rl = ss(RULE_T, RULE_T + 0.45, t);
+    if (rl > 0) { g.fillStyle = rgba(INK, a1 * 0.8); g.fillRect(96, 1000, 548 * rl, 4); }
+    const tp = pin(t, TOT, 0.6);
+    txt(S("sales"), 96, 1080 + (1 - tp) * 16, '600 50px Inter', INK, a1 * tp);
+    txt(S("32,000"), 644, 1076 + (1 - tp) * 16, '400 108px IS', INK, a1 * tp, 'right');
+    txt(S("all reported"), 690, 1080, '600 38px Inter', ACC, a1 * pin(t, ALL, 0.5));
+    wrapped(S("All of it gets reported, form or no form."), 96, 1260 + (1 - pin(t, CAP1)) * 18, '400 66px IS', 78, INK, a1 * pin(t, CAP1, 0.7), 660);
+    wrapped(S("Tax is figured after business expenses come off."), 96, 1470 + (1 - pin(t, CAP1 + 1.2)) * 12, '400 40px Inter', 52, INK, 0.72 * a1 * pin(t, CAP1 + 1.2, 0.6), 880);
+    txt(S("Federal rules. States have their own."), 96, 1560, '400 36px Inter', DIM, a1 * pin(t, FED, 0.6));
+  }
+  // --- section 2 ---
+  const a2 = secA(t, S2, S3);
+  if (a2 > 0) {
+    txt(S("So what's a 1099?"), 96, 330 + (1 - pin(t, Q_T)) * 16, '400 88px IS', INK, a2 * pin(t, Q_T, 0.6));
+    wrapped(S("A report someone else files about money paid to you."), 96, 500 + (1 - pin(t, R1)) * 16, '500 54px Inter', 72, INK, a2 * pin(t, R1, 0.6), 880);
+    wrapped(S("It isn't what makes it income."), 96, 720 + (1 - pin(t, R2)) * 16, '400 80px IS', 88, ACC, a2 * pin(t, R2, 0.6), 900);
+    wrapped(S("Your regular clients usually don't file one at all."), 96, 890 + (1 - pin(t, R3)) * 14, '400 44px Inter', 60, DIM, a2 * pin(t, R3, 0.6), 880);
+    formCard(t, Q_T + 0.5, a2);
+  }
+  // --- section 3 ---
+  const a3 = secA(t, S3, S4);
+  if (a3 > 0) {
+    txt(S("The easy way to never guess:"), 96, 330 + (1 - pin(t, H3)) * 16, '400 80px IS', INK, a3 * pin(t, H3, 0.6));
+    [[S("every payment in"), B1], [S("one place"), B2], [S("as it happens"), B3]].forEach(([s, t0], i) => {
+      const bp = pin(t, t0, 0.45); if (bp <= 0) return; const y = 480 + i * 96;
+      g.fillStyle = rgba(ACC, a3 * bp); g.beginPath(); g.arc(112, y, 11, 0, 6.2832); g.fill();
+      txt(s, 148 + (1 - bp) * 20, y, '600 58px Inter', INK, a3 * bp);
+    });
+    const lp = pin(t, LOG, 0.6);
+    if (lp > 0) {   // a little log, filled in as it happens
+      const bx = 96, by = 820, bw = W - 192, bh = 440;
+      g.fillStyle = rgba([248, 243, 232], a3 * lp); g.strokeStyle = rgba(RULE, a3 * lp); g.lineWidth = 2;
+      g.beginPath(); g.roundRect(bx, by + (1 - lp) * 30, bw, bh, 28); g.fill(); g.stroke();
+      g.strokeStyle = rgba(ACC, a3 * lp); g.lineWidth = 2.5; g.beginPath(); g.roundRect(bx + bw - 200, by + 30, 170, 54, 27); g.stroke();
+      txt(S("example"), bx + bw - 115, by + 58, '600 32px Inter', ACC, a3 * lp, 'center');
+      LOGROWS.forEach((r, i) => {
+        const rp = pin(t, r.t, 0.4); if (rp <= 0) return; const y = by + 150 + i * 100 + (1 - rp) * 10;
+        txt(r.d, bx + 40, y, '600 46px Inter', DIM, a3 * rp);
+        txt(r.l, bx + 160, y, '500 46px Inter', INK, a3 * rp);
+        txt(r.a, bx + bw - 40, y, '600 52px Inter', INK, a3 * rp, 'right');
+        if (i < 2) { g.fillStyle = rgba(RULE, a3 * rp * 0.7); g.fillRect(bx + 40, y + 50, bw - 80, 2); }
+      });
+    }
+  }
+  // --- section 4: takeaway ---
+  const a4 = ss(S4, S4 + 0.5, t);
+  if (a4 > 0) {
+    const p1 = pin(t, TK1, 0.8), p2 = pin(t, TK2, 0.8);
+    txt(S("If you earned it,"), CX, 760 + (1 - p1) * 24, '400 124px IS', INK, a4 * p1, 'center');
+    txt(S("it counts."), CX, 900 + (1 - p1) * 24, '400 124px IS', INK, a4 * p1, 'center');
+    txt(S("Form or no form."), CX, 1090 + (1 - p2) * 20, '400 96px ISI', ACC, a4 * p2, 'center');
+  }
+  g.restore();
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  g.fillStyle = '#000'; g.fillRect(0, 0, W, H);
+  // the phone steps back as the worksheet rises over it
+  const back = eo((t - LIFT) / 0.8);
+  if (back < 1) {
+    g.save(); const s = 1 - 0.08 * back; g.translate(CX * (1 - s), H * 0.45 * (1 - s)); g.scale(s, s);
+    K.ground();
+    K.header({ name: S("Tash") });
+    A.draw(t, { placeholder: S("Message") });
+    K.statusBar(t, { clock: CLOCK, battery: 0.34 });
+    g.restore();
+    if (back > 0) { g.fillStyle = `rgba(0,0,0,${0.6 * back})`; g.fillRect(0, 0, W, H); }
+  }
+  worksheet(t);
+  vignette(0.18);
+  const ca = K.endCard(t, CARD, { handle: S("@smallbusinessinbox"), note: S("General information, not tax advice.") });
+  if (ca > 0) txt(S("Rules from IRS.gov; your situation may differ."), CX, 1032, '400 30px Inter', K.C.dim, ss(CARD + 0.7, CARD + 1.5, t), 'center');
+  grain(t);
+};
+window.ready = (async () => {
+  await K.ready();
+  await Promise.all(['400 76px IS', '400 124px IS', '400 96px ISI', '600 62px Inter', '500 50px Inter', '700 54px Inter'].map(f => document.fonts.load(f)));
+  const ev = [{ t: LIFT, k: 'click', gain: 0.7 }];
+  ROWS.forEach(r => ev.push({ t: r.t, k: 'tap', gain: 0.9 }));
+  ev.push({ t: TOT + 0.1, k: 'thud', gain: 0.8 }, { t: Q_T + 0.5, k: 'click', gain: 0.5 }, { t: R2 + 0.1, k: 'thud', gain: 0.6 });
+  [B1, B2, B3].forEach(b => ev.push({ t: b, k: 'tap', gain: 0.7 }));
+  LOGROWS.forEach(r => ev.push({ t: r.t, k: 'tap', gain: 0.8 }));
+  ev.push({ t: TK1 + 0.1, k: 'bell', gain: 0.5 });
+  const events = A.events.concat(ev).sort((a, b) => a.t - b.t);
+  return { total: TOTAL, events,
+    tension: [[0, 0.15], [SEND, 0.45], [LIFT, 0.5], [S1 + 2, 0.3], [TOT, 0.35], [S2, 0.3], [R2, 0.2], [S3, 0.15], [S4, 0.05], [TOTAL, 0]],
+    warm: [[0, 0], [TOT, 0], [ALL + 0.5, 0.15], [S2, 0.08], [S4, 0.1], [TK1 + 0.3, 0.35], [CARD, 0.25], [TOTAL, 0.1]] };
+})();
+</script></body></html>

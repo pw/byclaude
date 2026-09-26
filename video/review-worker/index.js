@@ -148,6 +148,44 @@ function bizIndex() {
 <h1>Business true crime — slate 1 (${BIZ.length})</h1><div class="sub">byclaude.films · held from the posting cron until you say go. Every VO line traces to a source (claims.json per film).</div>${cards}`;
 }
 
+const TAXF = [
+ {
+  "slug": "tax-profit",
+  "title": "Taxed on profit, not on what came in",
+  "reels": "Federal tax on a business starts from profit: money in, minus business expenses. An expense that never gets written down stays in that profit.\nGeneral information, not tax advice.\n\n#boothrenter #selfemployed #smallbusinesstaxes #hairstylist #salonsuite #beautybusiness",
+  "note": "Reviewer caught a receipt-means-deductible implication twice; now \"deductible business costs\u2026 business part only.\" 3 review rounds."
+ },
+ {
+  "slug": "tax-what-counts",
+  "title": "What counts as a business expense",
+  "reels": "Booth rent, supplies, and the business share of a phone usually count as business expenses. Lunch by yourself, the drive from home to your booth, and the gym usually don't.\nGeneral information, not tax advice.\n\n#boothrenter #selfemployed #smallbusinesstaxes #hairstylist #salonsuite",
+  "note": "Caption said \"the drive to work\" \u2014 wrong for home-office groomers/trades; now \"from home to your booth.\" 2 rounds."
+ },
+ {
+  "slug": "tax-self-employment",
+  "title": "Why it feels bigger than your W-2 tax",
+  "reels": "At a job, your employer paid half of your Social Security and Medicare and you paid the other half. Self-employed, you pay both halves, 15.3% figured on 92.35% of profit, and you deduct half of it when figuring income tax.\nGeneral information, not tax advice.\n\n#boothrenter #selfemployed #smallbusinesstaxes #hairstylist #dogroomer #1099life",
+  "note": "\"$2,289\" read as tax saved (really ~$275 at 12%); now \"about 2,289 less taxable income.\" 2 rounds."
+ },
+ {
+  "slug": "tax-quarterly",
+  "title": "Quarterly estimated taxes",
+  "reels": "Booth income has no paycheck withholding, so federal tax is generally paid during the year in four installments. For 2026 income the last date is January 15, 2027.\nGeneral information, not tax advice.\n\n#boothrenter #selfemployed #smallbusinesstaxes #hairstylist #dogroomer #estimatedtaxes",
+  "note": "Takeaway reframed as \"one common habit\"; added \"covers self-employment tax\" + \"missed one? the days stop counting once you pay.\" 3 rounds."
+ },
+ {
+  "slug": "tax-how-much",
+  "title": "How much to send (safe harbor)",
+  "reels": "Nobody knows what they'll make by December. For federal estimated tax, paying in last year's total tax on time (110% if last year's AGI was over $150,000) is generally one way to avoid the underpayment penalty, though you may still owe the rest when you file.\nGeneral information, not tax advice.\n\n#boothrenter #selfemployed #smallbusinesstaxes #hairstylist #estimatedtaxes #dogroomer",
+  "note": "Most-corrected: TOTAL tax = line 24 minus refundable credits (line 16 omits SE tax); zero-tax card fixed for EIC filers; \"on time\" added. 4 rounds."
+ },
+ {
+  "slug": "tax-no-form",
+  "title": "No form doesn't mean no tax",
+  "reels": "No 1099 doesn't mean no tax: federal rules count business income whether it comes by cash, check, card reader or payment app, form or no form. A 1099 is a report someone else files; it isn't what makes money income.\nGeneral information, not tax advice.\n\n#boothrenter #selfemployed #smallbusinesstaxes #hairstylist #dogroomer #1099",
+  "note": "Read as taxed on all $32,000; now \"all reported\u2026 tax is figured after business expenses.\" 2 rounds."
+ }
+];
 const INBOX = [
  {
   "slug": "quick-question",
@@ -195,16 +233,26 @@ function inboxIndex() {
 <p class="vo">A: the narrated-stills film already in the slate.</p><video controls playsinline preload="metadata" src="/m/short-lease-30000-judgments.mp4"></video>
 <p class="vo">B: code-rendered twin. Audio track is bit-identical (gate-checked); every number on screen is in the sources, and the counts are literal (30,000 dots, under 5% inside New York, 19,000 lit, 29,617 in the grid).</p><video controls playsinline preload="metadata" src="/m/short-lease-30000-judgments-motion.mp4"></video>
 <p class="vo"><a class="dl" href="/d/short-lease-30000-judgments-motion.mp4">save B to Photos</a></p><p class="vo">Plan: post A and B a week apart on byclaude.films; both held until you say go.</p></div>`;
+  const tax = TAXF.map((f, i) => `<div class="card"><div class="lab">THE MATH ${i+1} · verified against IRS.gov by a blind reviewer until clean</div><h2>${f.title}</h2>
+<video controls playsinline preload="metadata" src="/m/inbox-${f.slug}.mp4"></video>
+<p class="vo">${f.note}</p><details><summary>Reels caption</summary><pre>${f.reels.replace(/</g,"&lt;")}</pre></details>
+<a class="dl" href="/d/inbox-${f.slug}.mp4">save to Photos + copy caption</a></div>`).join("");
   return `<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Motion design — round 1</title>
 <style>body{margin:0;background:#12100e;color:#ece6dc;font:16px/1.5 -apple-system,system-ui,sans-serif;padding:16px}h1{font-size:20px;margin:0 0 4px}h2{font-size:17px;margin:4px 0 8px}.sub{color:#9a9186;font-size:14px;margin-bottom:18px}.card{background:#1a1714;border:1px solid #2b2621;border-radius:12px;padding:14px;margin:0 0 18px}.lab{font:600 12px/1 ui-monospace,monospace;letter-spacing:.1em;color:#d99a6c}video{width:100%;max-height:70vh;border-radius:8px;background:#000;margin:6px 0}.vo{color:#cfc7bb;font-size:15px}pre{white-space:pre-wrap;font:14px/1.45 -apple-system,system-ui,sans-serif;color:#cfc7bb}.dl{color:#d99a6c;font-size:14px}summary{cursor:pointer;color:#9a9186}</style>
 <div class="card"><div class="lab">PROFILE · @smallbusinessinbox</div><h2>Avatar (tap one, then SAVE TO PHOTOS)</h2>
 <div style="display:flex;gap:14px"><a href="/d/inbox-avatar-B.png"><img src="/m/inbox-avatar-B.png" style="width:120px;border-radius:50%"></a><a href="/d/inbox-avatar-A.png"><img src="/m/inbox-avatar-A.png" style="width:120px;border-radius:50%"></a></div>
 <p class="vo">B (left) is my pick. Name: <b>Small Business Inbox</b></p>
 <pre>What a small business owner's phone looks like at 11pm. And the tax math nobody explains. Written composites, not real people.</pre></div>
-<h1>Motion design — round 1</h1><div class="sub">Six films for @smallbusinessinbox (written composites, no voice) + the lease A/B. Nothing is scheduled to post.</div>${ab}${cards}`;
+<h1>Motion design — round 1</h1><div class="sub">@smallbusinessinbox: six owner-life films (posting daily 7:30pm MT once the account can publish) + six THE MATH tax tutorials (HELD until you watch) + the lease A/B.</div><h1 style="margin-top:8px">THE MATH — tax tutorials (held)</h1>${tax}<h1>Owner-life films</h1>${ab}${cards}`;
 }
 
 const CAPTIONS = {
+ "inbox-tax-profit.mp4": "Federal tax on a business starts from profit: money in, minus business expenses. An expense that never gets written down stays in that profit.\nGeneral information, not tax advice.\n\n#boothrenter #selfemployed #smallbusinesstaxes #hairstylist #salonsuite #beautybusiness",
+ "inbox-tax-what-counts.mp4": "Booth rent, supplies, and the business share of a phone usually count as business expenses. Lunch by yourself, the drive from home to your booth, and the gym usually don't.\nGeneral information, not tax advice.\n\n#boothrenter #selfemployed #smallbusinesstaxes #hairstylist #salonsuite",
+ "inbox-tax-self-employment.mp4": "At a job, your employer paid half of your Social Security and Medicare and you paid the other half. Self-employed, you pay both halves, 15.3% figured on 92.35% of profit, and you deduct half of it when figuring income tax.\nGeneral information, not tax advice.\n\n#boothrenter #selfemployed #smallbusinesstaxes #hairstylist #dogroomer #1099life",
+ "inbox-tax-quarterly.mp4": "Booth income has no paycheck withholding, so federal tax is generally paid during the year in four installments. For 2026 income the last date is January 15, 2027.\nGeneral information, not tax advice.\n\n#boothrenter #selfemployed #smallbusinesstaxes #hairstylist #dogroomer #estimatedtaxes",
+ "inbox-tax-how-much.mp4": "Nobody knows what they'll make by December. For federal estimated tax, paying in last year's total tax on time (110% if last year's AGI was over $150,000) is generally one way to avoid the underpayment penalty, though you may still owe the rest when you file.\nGeneral information, not tax advice.\n\n#boothrenter #selfemployed #smallbusinesstaxes #hairstylist #estimatedtaxes #dogroomer",
+ "inbox-tax-no-form.mp4": "No 1099 doesn't mean no tax: federal rules count business income whether it comes by cash, check, card reader or payment app, form or no form. A 1099 is a report someone else files; it isn't what makes money income.\nGeneral information, not tax advice.\n\n#boothrenter #selfemployed #smallbusinesstaxes #hairstylist #dogroomer #1099",
  "inbox-quick-question.mp4": "Typed it three times. Sent the short one. Seen at 11:52.\n\n#hairstylist #salonowner #hairsalon #smallbusinessowner #behindthechair",
  "inbox-no-show.mp4": "All set up at 9. She remembered at 10:41. Starting next week, a small deposit holds the chair.\n\n#nailtech #nailsalon #gelnails #smallbusinessowner #salonowner",
  "inbox-friend-price.mp4": "The math on \"friend price\" came out to $12.19 an hour. So she sent the packages, and made the engagement session a gift. That part was hers to give.\n\n#weddingphotographer #photographylife #smallbusinessowner #photographer #creativebusiness",

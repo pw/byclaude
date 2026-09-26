@@ -1,0 +1,218 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: IS; src: url('../../motion/fonts/InstrumentSerif-Regular.ttf'); }
+@font-face { font-family: ISI; src: url('../../motion/fonts/InstrumentSerif-Italic.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// "tax-quarterly" — THE MATH. She types the question to a friend; a worksheet slides up and answers it:
+// why you pay during the year, the $1,000 line, the four 2026 dates (the next one lit), the penalty, how, the habit.
+// Every rule and date is quoted in SOURCES.md (Form 1040-ES 2026, IRS estimated-taxes + penalty pages).
+const ON_SCREEN = ["10:12 PM", "10:13 PM", "Dani", "Sat 10:12 PM", "Message", "wait I'm supposed to pay taxes DURING the year??", "THE MATH", "federal", "AT A JOB", "tax comes out of", "every paycheck", "YOUR BOOTH", "nobody takes it out", "So the IRS expects you", "to pay as you go.", "That covers income tax and self-employment tax.", "Generally, if you expect", "to owe", "$1,000", "or more", "when you file.", "4 due dates", "for 2026 income", "April 15, 2026", "June 15, 2026", "Sept. 15, 2026", "Jan. 15, 2027", "Jan – Mar", "Apr – May", "Jun – Aug", "Sep – Dec", "next", "These are federal. Your state may have its own.", "Miss one, or pay too little?", "You may owe", "a penalty.", "figured like interest", "how much was short", "× how many days late", "× the IRS interest rate", "Missed one?", "The days stop counting once you pay.", "HOW", "Form 1040-ES", "pay at IRS.gov/payments", "One common habit:", "Set some aside", "every week.", "Pay by each", "due date.", "@smallbusinessinbox", "General information, not tax advice.", "Rules from IRS.gov; your situation may differ."];
+const S = K.say(ON_SCREEN);
+const ACC = [38, 122, 94];          // ledger green: the one accent
+K.accent(ACC);
+
+// ---------- the phone: her question ----------
+const A = K.conversation([
+  { t: 0.4, stamp: S("Sat 10:12 PM") },
+  { t: 0.9, type: S("wait I'm supposed to pay taxes DURING the year??"), cps: 17 },
+  { gap: 0.5, send: true },                                  // 2
+  { gap: 0.9, dots: 2.2 },                                   // 3
+]);
+const SEND = A.at[2];
+const SH = A.at[3] + 1.5;                                    // the worksheet slides up
+const CLOCK = [[0, S("10:12 PM")], [SEND + 0.2, S("10:13 PM"), 0.5]];
+
+// ---------- the worksheet ----------
+const PAPER = [239, 231, 214], RULE = [219, 208, 188], INK = [36, 31, 27], DIM = [118, 106, 92], TILE = [229, 219, 199];
+const TOP = 236;
+const eo = x => 1 - Math.pow(1 - clamp(x), 3);
+const sheetP = t => eo((t - SH) / 0.6);
+
+// scenes on the sheet: [start, end] relative to SH
+const SC = {
+  job:  [0.5, 11.2],
+  owe:  [11.2, 17.2],
+  cal:  [17.2, 28.6],
+  pen:  [28.6, 39.2],
+  how:  [39.2, 43.6],
+  take: [43.6, 49.6],
+};
+const T = k => [SH + SC[k][0], SH + SC[k][1]];
+const sceneA = (t, k) => { const [a, b] = T(k); return ss(a, a + 0.45, t) * (1 - ss(b - 0.45, b, t)); };
+const CARD = SH + SC.take[1] - 0.2, TOTAL = CARD + 3.4;
+
+// one piece of text: fades + rises in at te (absolute), inherits the scene's alpha
+function put(t, sa, te, text, x, y, font, col, align = 'left', o = {}) {
+  const p = ss(te, te + 0.55, t), a = p * sa; if (a <= 0.002) return 0;
+  g.font = font; g.textAlign = align; g.textBaseline = 'middle'; g.fillStyle = rgba(col, a * (o.alpha ?? 1));
+  if (o.ls) g.letterSpacing = o.ls;
+  g.fillText(text, x, y + (1 - p) * (o.rise ?? 22));
+  const w = g.measureText(text).width; g.letterSpacing = '0px'; return w;
+}
+const X0 = 120, X1 = 960;
+
+function paper(t) {
+  const p = sheetP(t); if (p <= 0.001) return false;
+  g.fillStyle = `rgba(0,0,0,${0.5 * p})`; g.fillRect(0, 0, W, H);          // the thread steps back
+  g.save(); g.translate(0, (1 - p) * (H - TOP + 60));
+  g.shadowColor = 'rgba(0,0,0,0.5)'; g.shadowBlur = 60; g.shadowOffsetY = -8;
+  g.fillStyle = rgba(PAPER, 1); g.beginPath(); g.roundRect(24, TOP, W - 48, H - TOP + 100, [48, 48, 0, 0]); g.fill();
+  g.shadowColor = 'transparent';
+  // ruled lines + a margin line: a worksheet, not a slide
+  for (let y = TOP + 170; y < H; y += 90) { g.fillStyle = rgba(RULE, 0.55); g.fillRect(24, y, W - 48, 2); }
+  g.fillStyle = rgba(ACC, 0.28); g.fillRect(92, TOP + 20, 3, H);
+  g.fillStyle = rgba(DIM, 0.5); g.beginPath(); g.roundRect(CX - 50, TOP + 20, 100, 10, 5); g.fill();   // grabber
+  // kicker, always on the sheet
+  const ka = ss(SH + 0.2, SH + 0.8, t);
+  g.font = '700 30px Inter'; g.textAlign = 'left'; g.textBaseline = 'middle'; g.letterSpacing = '7px';
+  g.fillStyle = rgba(ACC, ka); g.fillText(S("THE MATH"), X0, TOP + 100);
+  g.letterSpacing = '0px'; g.font = '500 30px Inter'; g.textAlign = 'right'; g.fillStyle = rgba(DIM, ka);
+  g.fillText(S("federal"), X1, TOP + 100);
+  g.restore();
+  return true;
+}
+
+function sceneJob(t) {
+  const sa = sceneA(t, 'job'); if (sa <= 0) return; const s = SH;
+  const cap = '600 32px Inter', big = '500 64px Inter';
+  put(t, sa, s + 0.7, S("AT A JOB"), X0, 560, cap, DIM, 'left', { ls: '5px' });
+  put(t, sa, s + 1.0, S("tax comes out of"), X0, 650, big, INK);
+  put(t, sa, s + 1.4, S("every paycheck"), X0, 740, big, INK);
+  put(t, sa, s + 3.6, S("YOUR BOOTH"), X0, 900, cap, DIM, 'left', { ls: '5px' });
+  put(t, sa, s + 4.0, S("nobody takes it out"), X0, 990, big, ACC);
+  const rp = ss(s + 6.1, s + 6.6, t) * sa;
+  if (rp > 0) { g.fillStyle = rgba(INK, 0.6 * sa); g.fillRect(X0, 1110, 520 * rp, 3); }
+  put(t, sa, s + 6.5, S("So the IRS expects you"), X0, 1230, '400 92px IS', INK);
+  put(t, sa, s + 6.9, S("to pay as you go."), X0, 1335, '400 92px IS', INK);
+  put(t, sa, s + 7.6, S("That covers income tax and self-employment tax."), X0, 1440, '400 42px Inter', INK);
+}
+
+function sceneOwe(t) {
+  const sa = sceneA(t, 'owe'); if (sa <= 0) return; const s = SH + SC.owe[0];
+  put(t, sa, s + 0.3, S("Generally, if you expect"), X0, 640, '500 58px Inter', INK);
+  put(t, sa, s + 0.7, S("to owe"), X0, 725, '500 58px Inter', INK);
+  const w = put(t, sa, s + 1.5, S("$1,000"), X0 - 8, 930, '400 250px IS', ACC, 'left', { rise: 34 });
+  put(t, sa, s + 2.2, S("or more"), X0 + w + 26, 976, '500 58px Inter', INK);
+  put(t, sa, s + 2.9, S("when you file."), X0, 1140, '500 58px Inter', INK);
+}
+
+const ROWS = [
+  { d: "April 15, 2026", m: "Jan – Mar" }, { d: "June 15, 2026", m: "Apr – May" },
+  { d: "Sept. 15, 2026", m: "Jun – Aug" }, { d: "Jan. 15, 2027", m: "Sep – Dec" },
+];
+const CAL_ROW = i => SH + SC.cal[0] + 1.6 + i * 0.8;
+const CAL_PAST = SH + SC.cal[0] + 5.6, CAL_NEXT = SH + SC.cal[0] + 6.6;
+function sceneCal(t) {
+  const sa = sceneA(t, 'cal'); if (sa <= 0) return; const s = SH + SC.cal[0];
+  put(t, sa, s + 0.3, S("4 due dates"), X0, 540, '400 120px IS', INK);
+  put(t, sa, s + 0.8, S("for 2026 income"), X0, 636, '500 42px Inter', DIM);
+  const past = ss(CAL_PAST, CAL_PAST + 0.6, t), nx = ss(CAL_NEXT, CAL_NEXT + 0.5, t);
+  ROWS.forEach((r, i) => {
+    const te = CAL_ROW(i), p = ss(te, te + 0.45, t), a = p * sa; if (a <= 0.002) return;
+    const y = 730 + i * 178, x = X0 - 24, w = X1 - X0 + 48, h = 142, dx = (1 - p) * 30;
+    const isNext = i === 3, fade = isNext ? 1 : 1 - 0.55 * past;
+    g.fillStyle = rgba(isNext ? mix(TILE, ACC, nx) : TILE, a * fade);
+    g.beginPath(); g.roundRect(x + dx, y, w, h, 28); g.fill();
+    const ink = isNext ? mix(INK, PAPER, nx) : INK, sub = isNext ? mix(DIM, [214, 232, 222], nx) : DIM;
+    g.textBaseline = 'middle'; g.textAlign = 'left'; g.font = '600 60px Inter'; g.fillStyle = rgba(ink, a * fade);
+    g.fillText(S(r.d), x + 44 + dx, y + h / 2 + 2);
+    g.textAlign = 'right'; g.font = '500 40px Inter'; g.fillStyle = rgba(sub, a * fade);
+    g.fillText(S(r.m), x + w - 40 + dx, y + h / 2 + 2);
+    if (!isNext && past > 0) {   // passed: a light line through the date
+      g.font = '600 60px Inter'; const dw = g.measureText(r.d).width;
+      g.fillStyle = rgba(INK, 0.45 * past * a); g.fillRect(x + 44 + dx, y + h / 2 + 2, dw * past, 3);
+    }
+    if (isNext && nx > 0) {      // the next one: a tag that drops onto the tile
+      g.font = '700 36px Inter'; g.letterSpacing = '4px'; const tw = g.measureText(S("next")).width + 48;
+      const ty = y - 34 + (1 - nx) * -14;
+      g.fillStyle = rgba(ACC, nx * sa); g.beginPath(); g.roundRect(x + w - tw - 24, ty, tw, 58, 29); g.fill();
+      g.strokeStyle = rgba(PAPER, nx * sa); g.lineWidth = 4; g.stroke();
+      g.fillStyle = rgba(PAPER, nx * sa); g.textAlign = 'center'; g.fillText(S("next"), x + w - 24 - tw / 2 + 2, ty + 30);
+      g.letterSpacing = '0px';
+    }
+  });
+  put(t, sa, s + 7.4, S("These are federal. Your state may have its own."), X0, 1500, '500 38px Inter', DIM);
+}
+
+function scenePen(t) {
+  const sa = sceneA(t, 'pen'); if (sa <= 0) return; const s = SH + SC.pen[0];
+  put(t, sa, s + 0.3, S("Miss one, or pay too little?"), X0, 580, '500 56px Inter', INK);
+  put(t, sa, s + 1.6, S("You may owe"), X0, 760, '400 130px IS', INK, 'left', { rise: 30 });
+  put(t, sa, s + 2.0, S("a penalty."), X0, 895, '400 130px IS', ACC, 'left', { rise: 30 });
+  put(t, sa, s + 3.8, S("figured like interest"), X0, 1080, '600 32px Inter', DIM, 'left', { ls: '3px' });
+  put(t, sa, s + 4.3, S("how much was short"), X0, 1170, '500 56px Inter', INK);
+  put(t, sa, s + 4.9, S("× how many days late"), X0, 1265, '500 56px Inter', INK);
+  put(t, sa, s + 5.5, S("× the IRS interest rate"), X0, 1360, '500 56px Inter', INK);
+  put(t, sa, s + 6.8, S("Missed one?"), X0, 1480, '600 42px Inter', INK);
+  put(t, sa, s + 7.2, S("The days stop counting once you pay."), X0, 1538, '400 42px Inter', INK);
+}
+
+function sceneHow(t) {
+  const sa = sceneA(t, 'how'); if (sa <= 0) return; const s = SH + SC.how[0];
+  put(t, sa, s + 0.3, S("HOW"), X0, 700, '600 32px Inter', DIM, 'left', { ls: '5px' });
+  put(t, sa, s + 0.6, S("Form 1040-ES"), X0 - 4, 850, '400 150px IS', INK, 'left', { rise: 30 });
+  const w = put(t, sa, s + 1.5, S("pay at IRS.gov/payments"), X0, 1030, '500 58px Inter', ACC);
+  const up = ss(s + 2.0, s + 2.5, t) * sa;
+  if (up > 0) { g.fillStyle = rgba(ACC, up); g.fillRect(X0 + 4 + g.measureText("pay at ").width, 1068, (w - g.measureText("pay at ").width - 4) * up, 3); }
+}
+
+function sceneTake(t) {
+  const sa = sceneA(t, 'take'); if (sa <= 0) return; const s = SH + SC.take[0];
+  put(t, sa, s + 0.1, S("One common habit:"), X0, 590, '500 46px Inter', INK, 'left', { rise: 20 });
+  put(t, sa, s + 0.3, S("Set some aside"), X0, 740, '400 120px IS', INK, 'left', { rise: 30 });
+  put(t, sa, s + 0.8, S("every week."), X0, 870, '400 120px IS', INK, 'left', { rise: 30 });
+  put(t, sa, s + 2.0, S("Pay by each"), X0, 1070, '400 120px IS', ACC, 'left', { rise: 30 });
+  put(t, sa, s + 2.5, S("due date."), X0, 1200, '400 120px IS', ACC, 'left', { rise: 30 });
+}
+
+// end card with the two-line note (the kit's card holds one line)
+function card(t) {
+  const a = ss(CARD, CARD + 0.8, t); if (a <= 0) return;
+  K.ground(a); g.textAlign = 'center'; g.textBaseline = 'middle';
+  g.fillStyle = rgba(K.C.ink, ss(CARD + 0.3, CARD + 1.1, t)); g.font = '400 92px IS'; g.fillText(S("@smallbusinessinbox"), CX, 860);
+  const na = ss(CARD + 0.7, CARD + 1.5, t);
+  g.font = '400 32px Inter'; g.fillStyle = rgba(K.C.dim, na);
+  g.fillText(S("General information, not tax advice."), CX, 970);
+  g.fillText(S("Rules from IRS.gov; your situation may differ."), CX, 1018);
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle'; g.letterSpacing = '0px';
+  K.ground();
+  K.header({ name: S("Dani") });
+  A.draw(t, { placeholder: S("Message") });
+  if (paper(t)) {
+    g.save(); g.translate(0, (1 - sheetP(t)) * (H - TOP + 60));
+    sceneJob(t); sceneOwe(t); sceneCal(t); scenePen(t); sceneHow(t); sceneTake(t);
+    g.restore();
+  }
+  K.statusBar(t, { clock: CLOCK, battery: t => lerp(0.64, 0.61, clamp(t / TOTAL)) });
+  vignette(0.28);
+  card(t);
+  grain(t);
+};
+window.ready = (async () => {
+  await K.ready();
+  await Promise.all(['400 250px IS', '400 120px IS', '600 60px Inter', '500 58px Inter', '700 30px Inter', '400 32px Inter'].map(f => document.fonts.load(f)));
+  const s = k => SH + SC[k][0];
+  const events = A.events.concat([
+    { t: SH, k: 'click' },
+    { t: s('owe') + 1.55, k: 'thud' },
+    ...ROWS.map((_, i) => ({ t: CAL_ROW(i) + 0.05, k: 'tick', gain: 0.7 })),
+    { t: CAL_NEXT, k: 'click' },
+    { t: s('pen') + 1.65, k: 'thud', gain: 0.8 },
+    { t: s('take') + 2.05, k: 'bell', gain: 0.5 },
+  ]).sort((a, b) => a.t - b.t);
+  return { total: TOTAL, events,
+    tension: [[0, 0.12], [SEND, 0.3], [SH, 0.35], [s('owe'), 0.4], [s('cal'), 0.45], [CAL_NEXT, 0.55], [s('pen'), 0.6],
+              [s('how'), 0.35], [s('take'), 0.1], [TOTAL, 0]],
+    warm: [[0, 0], [s('how'), 0], [s('take') + 1.8, 0.4], [CARD, 0.3], [TOTAL, 0.1]] };
+})();
+</script></body></html>

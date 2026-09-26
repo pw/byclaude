@@ -1,0 +1,210 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: IS; src: url('../../motion/fonts/InstrumentSerif-Regular.ttf'); }
+@font-face { font-family: ISI; src: url('../../motion/fonts/InstrumentSerif-Italic.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// "tax-profit" — THE MATH. Her Notes at 11 PM: made 48k, is ALL of it taxed? The page lifts onto a worksheet:
+// money in, three expenses come off one line at a time, profit rolls down to 32,400. The tax starts there.
+const ON_SCREEN = [
+  "11:12 PM", "11:13 PM", "Notes", "Sat 11:12 PM",
+  "made 48k this year. do I owe tax on ALL of that??",
+  "THE MATH", "example",
+  "money in", "gross receipts", "48,000",
+  "booth rent", "12,000", "color + supplies", "3,000", "skills class", "600",
+  "profit", "net profit · Schedule C, line 31", "32,400",
+  "Your federal tax starts from profit — not from everything that came in.",
+  "the one you forgot", "?",
+  "Deductible business costs come off the top. Keep the proof. Business part only.",
+  "Forget one, and it stays in profit — taxed as if you kept it.",
+  "Track every business expense.", "The deductible ones come off before the tax is figured.",
+  "@smallbusinessinbox", "General information, not tax advice.", "Rules from IRS.gov; your situation may differ."
+];
+const S = K.say(ON_SCREEN);
+const ACC = [58, 132, 98];              // ledger green: the one accent
+K.accent(ACC);
+const PAPER = [238, 229, 212], INK = [38, 32, 27], PDIM = [128, 116, 100], PLINE = [206, 194, 174];
+const eo = x => 1 - Math.pow(1 - clamp(x), 3);
+const F = (w, s, fam = 'Inter') => `${w} ${s}px ${fam}`;
+
+// ---------- the note: typed ----------
+const Q = S("made 48k this year. do I owe tax on ALL of that??");
+const NOTE = (() => {
+  const r = rng(31), snaps = [{ t: -1, n: 0 }], events = []; let tt = 1.1;
+  for (let i = 0; i < Q.length; i++) {
+    const ch = Q[i];
+    tt += (1 / 15) * (0.55 + 0.9 * r()) + (ch === ' ' ? 0.03 : 0) + (/[.?]/.test(ch) ? 0.14 : 0);
+    if (i === 18) tt += 0.9;                                  // after "this year." she stops, then asks
+    snaps.push({ t: tt, n: i + 1 }); if (i % 2 === 0 && ch !== ' ') events.push({ t: tt, k: 'tap', gain: 0.8 + 0.3 * r() });
+  }
+  return { snaps, events, end: tt };
+})();
+const LIFT = NOTE.end + 2.3;                     // the page lifts off the phone
+const IN0 = LIFT + 1.0;                          // money in
+const E1 = IN0 + 2.3, E2 = E1 + 1.9, E3 = E2 + 1.9;
+const RULE = E3 + 1.8, PROF = RULE + 0.5, ROLL = PROF + 0.5, ROLL_D = 1.8;
+const CAP1 = ROLL + ROLL_D + 0.7, CAP1E = CAP1 + 5.2;
+const GHOST = CAP1E + 0.2, CAP2 = GHOST + 0.2, CAP2E = CAP2 + 5.2;
+const CAP3 = CAP2E + 0.3, CAP3E = CAP3 + 4.8;
+const TAKE = CAP3E + 0.3, TAKE2 = TAKE + 1.2, CARD = TAKE + 6.2, TOTAL = CARD + 5.0;
+const CLOCK = [[0, S("11:12 PM")], [NOTE.end - 1.0, S("11:13 PM"), 0.5]];
+
+// ---------- phone: Notes ----------
+function notes(t) {
+  const a = 1 - ss(LIFT, LIFT + 0.9, t); if (a <= 0) return;
+  g.save(); const sc = lerp(1, 0.94, ss(LIFT, LIFT + 0.9, t)); g.translate(CX, 960); g.scale(sc, sc); g.translate(-CX, -960);
+  g.globalAlpha = a;
+  // header: back chevron + "Notes" in the accent
+  g.strokeStyle = rgba(ACC, 1); g.lineWidth = 5; g.lineCap = 'round'; g.lineJoin = 'round';
+  const hy = K.L.headerY; g.beginPath(); g.moveTo(94, hy - 20); g.lineTo(74, hy); g.lineTo(94, hy + 20); g.stroke();
+  g.fillStyle = rgba(ACC, 1); g.font = F(500, 40); g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillText(S("Notes"), 116, hy + 1);
+  g.fillStyle = rgba(K.C.line, 1); g.fillRect(0, K.L.headerBot, W, 2);
+  g.fillStyle = rgba(K.C.dim, 1); g.font = F(500, 30); g.textAlign = 'center'; g.fillText(S("Sat 11:12 PM"), CX, 392);
+  // the typed line
+  let k = 0; while (k < NOTE.snaps.length - 1 && NOTE.snaps[k + 1].t <= t) k++;
+  const cur = NOTE.snaps[k], txt = Q.slice(0, cur.n);
+  g.font = F(500, 64); g.textAlign = 'left'; g.fillStyle = rgba(K.C.ink, 1);
+  const lines = txt ? wrapText(txt, 900) : [''];
+  lines.forEach((s, i) => g.fillText(s, 90, 520 + i * 86));
+  const since = t - cur.t;
+  if (t > 0.5 && t < LIFT && (since < 0.5 || Math.floor((since - 0.5) * 2.2) % 2 === 1)) {
+    const last = lines[lines.length - 1], cx = 90 + g.measureText(last).width + 4;
+    g.fillStyle = rgba(ACC, 1); g.fillRect(cx, 520 + (lines.length - 1) * 86 - 34, 5, 68);
+  }
+  g.restore(); g.globalAlpha = 1;
+}
+
+// ---------- the worksheet ----------
+const X0 = 110, X1 = 970;
+const Y = { kick: 400, inn: 560, e1: 720, e2: 836, e3: 952, ghost: 1068, rule: 1142, prof: 1270 };
+function minus(x, y, a, col) { g.fillStyle = rgba(col, a); g.fillRect(x, y - 4, 34, 7); }
+function row(t, t0, label, num, y, o = {}) {
+  const p = eo((t - t0) / 0.5); if (p <= 0) return;
+  const a = p * (o.alpha ?? 1), dx = (1 - p) * 28;
+  g.textBaseline = 'middle'; g.textAlign = 'left'; g.fillStyle = rgba(o.labelCol ?? INK, a); g.font = F(500, 52);
+  g.fillText(label, X0 + dx, y);
+  g.textAlign = 'right'; g.font = F(o.numW ?? 600, o.numSize ?? 72); g.fillStyle = rgba(o.numCol ?? INK, a);
+  g.fillText(num, X1 + dx, y + 2);
+  if (o.minus) { const w = g.measureText(num).width; minus(X1 + dx - w - 62, y + 2, a, PDIM); }
+  g.fillStyle = rgba(PLINE, a); g.fillRect(X0, y + (o.lineAt ?? 54), X1 - X0, 2);   // hairline under the row
+}
+function sheet(t) {
+  const p = eo((t - LIFT) / 0.8) * (1 - ss(TAKE - 0.2, TAKE + 0.6, t)); if (p <= 0.001) return;
+  const y0 = lerp(H + 60, 0, p);
+  g.save(); g.translate(0, y0);
+  g.fillStyle = rgba(PAPER, 1); g.beginPath(); g.roundRect(0, 250, W, H, [56, 56, 0, 0]); g.fill();
+  // faint ledger lines
+  g.fillStyle = rgba(PLINE, 0.9); g.fillRect(X0 - 30, 300, 3, 1300);                       // margin rule
+  // kicker + example tag
+  g.textBaseline = 'middle'; g.textAlign = 'left'; g.font = F(700, 34); g.fillStyle = rgba(ACC, 1);
+  if ('letterSpacing' in g) g.letterSpacing = '6px';
+  g.fillText(S("THE MATH"), X0, Y.kick);
+  if ('letterSpacing' in g) g.letterSpacing = '0px';
+  g.font = F(500, 32); const ew = g.measureText(S("example")).width + 44;
+  g.strokeStyle = rgba(PDIM, 1); g.lineWidth = 2.5; g.beginPath(); g.roundRect(X1 - ew, Y.kick - 28, ew, 56, 28); g.stroke();
+  g.fillStyle = rgba(PDIM, 1); g.textAlign = 'center'; g.fillText(S("example"), X1 - ew / 2, Y.kick + 1);
+
+  // money in — dims once the tax is shown to start lower down
+  const dimIn = 1 - 0.55 * ss(CAP1 + 0.6, CAP1 + 1.4, t);
+  row(t, IN0, S("money in"), S("48,000"), Y.inn, { alpha: dimIn, numSize: 84, lineAt: 92 });
+  const gp = eo((t - IN0 - 0.3) / 0.5);
+  if (gp > 0) { g.textAlign = 'left'; g.font = F(400, 32); g.fillStyle = rgba(PDIM, gp * dimIn); g.fillText(S("gross receipts"), X0, Y.inn + 56); }
+
+  row(t, E1, S("booth rent"), S("12,000"), Y.e1, { minus: true });
+  row(t, E2, S("color + supplies"), S("3,000"), Y.e2, { minus: true });
+  row(t, E3, S("skills class"), S("600"), Y.e3, { minus: true });
+
+  // the one you forgot: a dashed empty line
+  const gh = eo((t - GHOST) / 0.6);
+  if (gh > 0) {
+    g.save(); g.setLineDash([14, 12]); g.strokeStyle = rgba(PDIM, 0.9 * gh); g.lineWidth = 3;
+    g.beginPath(); g.roundRect(X0 - 16, Y.ghost - 44, X1 - X0 + 32, 88, 18); g.stroke(); g.restore();
+    g.textAlign = 'left'; g.font = F(400, 50, 'ISI'); g.fillStyle = rgba(PDIM, gh); g.fillText(S("the one you forgot"), X0 + 8, Y.ghost + 2);
+    g.textAlign = 'right'; g.font = F(600, 64); g.fillText(S("?"), X1 - 10, Y.ghost + 2);
+  }
+
+  // rule, then profit rolling down from 48,000 to 32,400
+  const rp = ss(RULE, RULE + 0.5, t);
+  if (rp > 0) { g.fillStyle = rgba(INK, 0.85); g.fillRect(X0, Y.rule, (X1 - X0) * rp, 4); }
+  const pp = eo((t - PROF) / 0.5);
+  if (pp > 0) {
+    g.textAlign = 'left'; g.font = F(600, 60); g.fillStyle = rgba(INK, pp); g.fillText(S("profit"), X0, Y.prof - 18);
+    const sp = eo((t - CAP1) / 0.6);
+    if (sp > 0) { g.font = F(400, 30); g.fillStyle = rgba(PDIM, sp); g.fillText(S("net profit · Schedule C, line 31"), X0, Y.prof + 104); }
+  }
+  if (t >= ROLL - 0.2) {
+    const q = clamp((t - ROLL) / ROLL_D), a = eo((t - ROLL + 0.2) / 0.4);
+    g.globalAlpha = a;
+    K.rollText(S("48,000"), S("32,400"), q, X1, Y.prof - 10, 150, rgba(q >= 1 ? ACC : INK, 1), 'right', 0, 'IS', 400);
+    g.globalAlpha = 1;
+    // underline + arrow once the tax is said to start here
+    const up = ss(CAP1 + 0.3, CAP1 + 0.9, t);
+    if (up > 0) { g.fillStyle = rgba(ACC, up); g.fillRect(X1 - 380 * up, Y.prof + 66, 380 * up, 5); }
+  }
+  g.restore();
+}
+function caption(t, text, t0, t1, y, size = 46) {
+  const p = ss(t0, t0 + 0.6, t), a = p * (1 - ss(t1 - 0.4, t1, t)); if (a <= 0) return;
+  g.font = F(500, size); g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillStyle = rgba(INK, a);
+  wrapText(text, X1 - X0).forEach((s, i) => g.fillText(s, X0, y + (1 - p) * 20 + i * size * 1.32));
+}
+function takeaway(t) {
+  const a = ss(TAKE, TAKE + 0.8, t); if (a <= 0) return;
+  g.fillStyle = rgba(PAPER, a); g.fillRect(0, 0, W, H);
+  g.textAlign = 'left'; g.textBaseline = 'middle';
+  g.font = F(700, 34); g.fillStyle = rgba(ACC, a); if ('letterSpacing' in g) g.letterSpacing = '6px';
+  g.fillText(S("THE MATH"), X0, 520); if ('letterSpacing' in g) g.letterSpacing = '0px';
+  const p1 = eo((t - TAKE - 0.3) / 0.7);
+  g.font = F(400, 112, 'IS'); g.fillStyle = rgba(INK, p1);
+  wrapText(S("Track every business expense."), X1 - X0).forEach((s, i) => g.fillText(s, X0, 720 + i * 118 + (1 - p1) * 24));
+  const p2 = eo((t - TAKE2) / 0.7);
+  g.font = F(400, 88, 'ISI'); g.fillStyle = rgba(ACC, p2);
+  const tw = S("The deductible ones come off before the tax is figured.").split(' ');
+  [tw.slice(0, 3).join(' '), tw.slice(3, 6).join(' '), tw.slice(6).join(' ')].forEach((s, i) => g.fillText(s, X0, 1030 + i * 100 + (1 - p2) * 24));
+}
+function endCard(t) {
+  const a = ss(CARD, CARD + 0.8, t); if (a <= 0) return;
+  K.ground(a); g.textAlign = 'center'; g.textBaseline = 'middle';
+  g.fillStyle = rgba(K.C.ink, ss(CARD + 0.3, CARD + 1.1, t)); g.font = F(400, 92, 'IS'); g.fillText(S("@smallbusinessinbox"), CX, 860);
+  const b = ss(CARD + 0.7, CARD + 1.5, t);
+  g.fillStyle = rgba(K.C.dim, b); g.font = F(400, 32);
+  g.fillText(S("General information, not tax advice."), CX, 970);
+  g.fillText(S("Rules from IRS.gov; your situation may differ."), CX, 1018);
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  K.ground();
+  notes(t);
+  K.statusBar(t, { clock: CLOCK, battery: t => lerp(0.34, 0.32, clamp(t / TOTAL)), alpha: 1 - 0.6 * ss(LIFT, LIFT + 0.8, t) });
+  sheet(t);
+  caption(t, S("Your federal tax starts from profit — not from everything that came in."), CAP1, CAP1E, 1466);
+  caption(t, S("Deductible business costs come off the top. Keep the proof. Business part only."), CAP2, CAP2E, 1466);
+  caption(t, S("Forget one, and it stays in profit — taxed as if you kept it."), CAP3, CAP3E, 1466);
+  takeaway(t);
+  vignette(0.18);
+  endCard(t);
+  grain(t);
+};
+window.ready = (async () => {
+  await K.ready();
+  for (const f of ['500 64px Inter', '700 34px Inter', '500 52px Inter', '600 84px Inter', '400 150px IS', '400 112px IS', '400 88px ISI', '400 50px ISI'])
+    await document.fonts.load(f);
+  const events = NOTE.events.concat([
+    { t: LIFT, k: 'click' }, { t: IN0, k: 'tick', gain: 0.7 },
+    { t: E1, k: 'tick', gain: 0.6 }, { t: E2, k: 'tick', gain: 0.6 }, { t: E3, k: 'tick', gain: 0.6 },
+    { t: RULE, k: 'click', gain: 0.6 }, { t: ROLL + ROLL_D, k: 'thud' },
+    { t: GHOST, k: 'tick', gain: 0.4 }, { t: TAKE + 0.3, k: 'bell', gain: 0.5 },
+  ]).sort((a, b) => a.t - b.t);
+  return { total: TOTAL, events,
+    tension: [[0, 0.15], [NOTE.end, 0.45], [LIFT, 0.5], [IN0, 0.4], [E3, 0.3], [ROLL + ROLL_D, 0.1],
+              [GHOST, 0.3], [CAP3E, 0.35], [TAKE, 0.05], [TOTAL, 0]],
+    warm: [[0, 0], [ROLL, 0], [ROLL + ROLL_D, 0.3], [CAP1E, 0.2], [GHOST, 0.1], [TAKE + 0.3, 0.45], [CARD, 0.3], [TOTAL, 0.12]] };
+})();
+</script></body></html>

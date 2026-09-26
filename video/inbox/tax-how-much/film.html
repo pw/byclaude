@@ -1,0 +1,241 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: IS; src: url('../../motion/fonts/InstrumentSerif-Regular.ttf'); }
+@font-face { font-family: ISI; src: url('../../motion/fonts/InstrumentSerif-Italic.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// "how much" — THE MATH. She can't know what she'll make by December; the worksheet shows she doesn't
+// have to: the smaller of 90% of this year or 100% of last year, paid on time. Every rule is in SOURCES.md.
+const ON_SCREEN = [
+  "9:41 PM", "9:42 PM", "Tue 9:41 PM", "Tash", "Message",
+  "how am I supposed to know what I'll make by december",
+  "THE MATH", "federal · 2026",
+  "No underpayment penalty, generally,", "if you pay on time the smaller of:",
+  "90%", "of this year's tax", "you'd have to guess it",
+  "or",
+  "100%", "of the TOTAL tax on", "last year's return", "you already know it",
+  "110% if last year's AGI (adjusted gross income)", "was over $150,000", "($75,000 if married filing separately this year)",
+  "example",
+  "total tax last year", "4,000", "four due dates", "÷ 4",
+  "1,000", "each due date, on time",
+  "if this year's tax is", "6,000", "paid in on time", "– 4,000", "due when you file", "2,000",
+  "Safe from the penalty, generally.", "Not from the bill.", "form 1040 line 24, minus refundable credits", "includes self-employment tax · full-year return you filed", "Missed a due date? The penalty is figured per payment,", "and grows with each day it's late.",
+  "Zero tax last year?", "if all three are true:",
+  "last year's total tax was $0", "counted after refundable credits, like the EIC", "or: you didn't have to file",
+  "US citizen or resident all year", "a full 12-month tax year",
+  "Generally, no underpayment penalty", "for this year.",
+  "Last year's number is", "a safe place to start.",
+  "@smallbusinessinbox", "General information, not tax advice.", "Rules from IRS.gov; your situation may differ."
+];
+const S = K.say(ON_SCREEN);
+const ACC = [44, 122, 94];          // ledger green: the film's one accent (cursor, send, worksheet)
+K.accent(ACC);
+const PAPER = [238, 229, 212], INK = [40, 34, 29], PDIM = [116, 104, 90], RULE_C = [218, 206, 186];
+
+// ---------- the phone ----------
+const A = K.conversation([
+  { t: 0.4, stamp: S("Tue 9:41 PM") },
+  { t: 0.8, type: S("how am I supposed to know what I'll make by december"), cps: 19 },
+  { gap: 0.5, send: true },
+  { gap: 0.8, dots: 1.8 },
+]);
+const SEND = A.at[2], WS = A.at[3] + 0.9;          // the worksheet slides up while the friend is still typing
+const s1 = WS + 0.6;                               // page 1: the rule
+const P1 = 16.3, s2 = s1 + P1 + 0.3;               // page 2: the example
+const P2 = 18.2, s3 = s2 + P2 + 0.3;               // page 3: zero tax last year
+const P3 = 13.2, s4 = s3 + P3 + 0.3;               // page 4: the takeaway
+const CARD = s4 + 3.6, TOTAL = CARD + 3.1;
+const CLOCK = [[0, S("9:41 PM")], [s2 - 1, S("9:42 PM"), 0.5]];
+
+const eo = x => 1 - Math.pow(1 - clamp(x), 3);
+const TOP = 232, X0 = 110, X1 = 970;
+const sheetP = t => eo((t - WS) / 0.6);
+// a page: fades in at s, out (rising) at s + len
+const pageA = (t, s, len) => ss(s - 0.1, s + 0.35, t) * (1 - ss(s + len - 0.4, s + len, t));
+const pageRise = (t, s, len) => -40 * ss(s + len - 0.4, s + len, t);
+
+// one piece of worksheet text: fades up at t0
+function txt(t, t0, s, x, y, font, col, align = 'left', a = 1) {
+  const p = ss(t0, t0 + 0.45, t) * a; if (p <= 0) return 0;
+  g.font = font; g.textAlign = align; g.textBaseline = 'middle'; g.fillStyle = rgba(col, p);
+  g.fillText(s, x, y + (1 - ss(t0, t0 + 0.45, t)) * 16); return g.measureText(s).width;
+}
+// a number written on: left-to-right reveal, like a pen
+function pen(t, t0, s, x, y, font, col, align = 'right', a = 1, dur = 0.45) {
+  const p = eo((t - t0) / dur); if (p <= 0 || a <= 0) return;
+  g.font = font; g.textAlign = align; g.textBaseline = 'middle';
+  const w = g.measureText(s).width, left = align === 'right' ? x - w : align === 'center' ? x - w / 2 : x;
+  g.save(); g.beginPath(); g.rect(left - 10, y - 140, (w + 20) * p, 280); g.clip();
+  g.fillStyle = rgba(col, a); g.fillText(s, x, y); g.restore();
+}
+function rule(t, t0, y, a = 1, x0 = X0, x1 = X1) {
+  const p = eo((t - t0) / 0.45); if (p <= 0) return;
+  g.fillStyle = rgba(INK, 0.75 * a); g.fillRect(x0, y, (x1 - x0) * p, 3);
+}
+// hand-drawn loop around something (a slightly wobbly ellipse, drawn on)
+function ring(t, t0, cx, cy, rx, ry, a = 1) {
+  const p = eo((t - t0) / 0.7); if (p <= 0) return;
+  g.strokeStyle = rgba(ACC, 0.9 * a); g.lineWidth = 6; g.lineCap = 'round'; g.beginPath();
+  const n = 90, end = 6.2832 * 1.06 * p;
+  for (let i = 0; i <= n; i++) {
+    const th = -0.35 + end * i / n, w = 1 + 0.025 * Math.sin(th * 3 + 1) + 0.03 * (i / n);
+    const x = cx + Math.cos(th) * rx * w, y = cy + Math.sin(th) * ry * w - 6 * (i / n);
+    i ? g.lineTo(x, y) : g.moveTo(x, y);
+  }
+  g.stroke();
+}
+function check(t, t0, x, y, a = 1) {
+  const p = eo((t - t0) / 0.4); if (p <= 0) return;
+  g.strokeStyle = rgba(PDIM, 0.8 * a); g.lineWidth = 3; g.beginPath(); g.roundRect(x - 26, y - 26, 52, 52, 10); g.stroke();
+  const pts = [[x - 14, y + 1], [x - 4, y + 12], [x + 18, y - 16]];
+  g.strokeStyle = rgba(ACC, a); g.lineWidth = 7; g.lineCap = 'round'; g.lineJoin = 'round'; g.beginPath();
+  g.moveTo(...pts[0]);
+  if (p < 0.4) g.lineTo(lerp(pts[0][0], pts[1][0], p / 0.4), lerp(pts[0][1], pts[1][1], p / 0.4));
+  else { g.lineTo(...pts[1]); const q = (p - 0.4) / 0.6; g.lineTo(lerp(pts[1][0], pts[2][0], q), lerp(pts[1][1], pts[2][1], q)); }
+  g.stroke();
+}
+
+// ---------- the pages ----------
+function page1(t) {
+  const s = s1, a = pageA(t, s, P1); if (a <= 0) return;
+  g.save(); g.translate(0, pageRise(t, s, P1));
+  txt(t, s + 0.2, S("No underpayment penalty, generally,"), X0, 430, '600 54px Inter', INK, 'left', a);
+  txt(t, s + 1.0, S("if you pay on time the smaller of:"), X0, 500, '600 54px Inter', INK, 'left', a);
+  // A — this year
+  pen(t, s + 4.2, S("90%"), X0 - 4, 680, '400 150px IS', INK, 'left', a);
+  txt(t, s + 4.5, S("of this year's tax"), 390, 650, '500 50px Inter', INK, 'left', a);
+  txt(t, s + 5.3, S("you'd have to guess it"), 390, 716, '400 50px ISI', PDIM, 'left', a);
+  txt(t, s + 6.9, S("or"), X0 + 8, 818, '500 42px Inter', PDIM, 'left', a);
+  // B — last year
+  pen(t, s + 7.4, S("100%"), X0 - 4, 960, '400 150px IS', ACC, 'left', a);
+  txt(t, s + 7.7, S("of the TOTAL tax on"), 390, 904, '500 50px Inter', INK, 'left', a);
+  txt(t, s + 7.9, S("last year's return"), 390, 966, '500 50px Inter', INK, 'left', a);
+  txt(t, s + 8.8, S("you already know it"), 390, 1032, '400 50px ISI', ACC, 'left', a);
+  txt(t, s + 9.6, S("form 1040 line 24, minus refundable credits"), X0, 1150, '400 34px Inter', INK, 'left', 0.7 * a);
+  txt(t, s + 9.9, S("includes self-employment tax · full-year return you filed"), X0, 1196, '400 34px Inter', INK, 'left', 0.7 * a);
+  ring(t, s + 10.2, 535, 966, 470, 128, a);
+  // the condition that raises it
+  txt(t, s + 11.0, S("110% if last year's AGI (adjusted gross income)"), X0, 1300, '400 40px Inter', PDIM, 'left', a);
+  txt(t, s + 11.4, S("was over $150,000"), X0, 1356, '400 40px Inter', PDIM, 'left', a);
+  txt(t, s + 11.8, S("($75,000 if married filing separately this year)"), X0, 1412, '400 36px Inter', PDIM, 'left', a);
+  g.restore();
+}
+function page2(t) {
+  const s = s2, a = pageA(t, s, P2); if (a <= 0) return;
+  g.save(); g.translate(0, pageRise(t, s, P2));
+  // example tag
+  const ta = ss(s + 0.1, s + 0.5, t) * a;
+  if (ta > 0) {
+    g.font = '600 34px Inter'; const w = g.measureText(S("example")).width + 40;
+    g.strokeStyle = rgba(ACC, ta); g.lineWidth = 3; g.beginPath(); g.roundRect(X0, 372, w, 58, 29); g.stroke();
+    g.fillStyle = rgba(ACC, ta); g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillText(S("example"), X0 + 20, 402);
+  }
+  const dimTop = 1 - 0.45 * ss(s + 7.0, s + 7.6, t);          // the first sum steps back when the second starts
+  txt(t, s + 0.5, S("total tax last year"), X0, 510, '500 52px Inter', INK, 'left', a * dimTop);
+  pen(t, s + 1.1, S("4,000"), X1, 510, '600 60px Inter', INK, 'right', a * dimTop);
+  txt(t, s + 2.6, S("four due dates"), X0, 600, '500 52px Inter', INK, 'left', a * dimTop);
+  pen(t, s + 3.0, S("÷ 4"), X1, 600, '600 60px Inter', INK, 'right', a * dimTop);
+  rule(t, s + 3.9, 652, a * dimTop);
+  // 1,000 rolls down out of 4,000
+  const bp = ss(s + 4.3, s + 4.8, t) * a * dimTop;
+  if (bp > 0) {
+    g.globalAlpha = bp; K.rollText(S("4,000"), S("1,000"), clamp((t - s - 4.4) / 1.0), X1, 752, 150, rgba(ACC, 1), 'right', 0, 'IS', 400);
+    g.globalAlpha = 1;
+  }
+  txt(t, s + 5.3, S("each due date, on time"), X0, 764, '500 50px Inter', INK, 'left', a * dimTop);
+  // this year turns out bigger
+  txt(t, s + 7.2, S("if this year's tax is"), X0, 930, '500 52px Inter', INK, 'left', a);
+  pen(t, s + 7.8, S("6,000"), X1, 930, '600 60px Inter', INK, 'right', a);
+  txt(t, s + 8.9, S("paid in on time"), X0, 1020, '500 52px Inter', INK, 'left', a);
+  pen(t, s + 9.3, S("– 4,000"), X1, 1020, '600 60px Inter', INK, 'right', a);
+  rule(t, s + 10.0, 1072, a);
+  txt(t, s + 10.3, S("due when you file"), X0, 1140, '600 52px Inter', INK, 'left', a);
+  pen(t, s + 10.7, S("2,000"), X1, 1140, '700 64px Inter', INK, 'right', a);
+  txt(t, s + 12.0, S("Safe from the penalty, generally."), X0 - 4, 1300, '400 76px IS', INK, 'left', a);
+  txt(t, s + 12.8, S("Not from the bill."), X0 - 4, 1386, '400 76px ISI', ACC, 'left', a);
+  txt(t, s + 14.4, S("Missed a due date? The penalty is figured per payment,"), X0, 1480, '400 36px Inter', INK, 'left', 0.8 * a);
+  txt(t, s + 14.9, S("and grows with each day it's late."), X0, 1530, '400 36px Inter', INK, 'left', 0.8 * a);
+  g.restore();
+}
+function page3(t) {
+  const s = s3, a = pageA(t, s, P3); if (a <= 0) return;
+  g.save(); g.translate(0, pageRise(t, s, P3));
+  txt(t, s + 0.2, S("Zero tax last year?"), X0 - 4, 450, '400 104px IS', INK, 'left', a);
+  txt(t, s + 1.3, S("if all three are true:"), X0, 548, '400 44px ISI', PDIM, 'left', a);
+  const CX0 = X0 + 26, TX = X0 + 84;
+  check(t, s + 2.1, CX0, 666, a);
+  txt(t, s + 2.2, S("last year's total tax was $0"), TX, 666, '500 46px Inter', INK, 'left', a);
+  txt(t, s + 3.3, S("counted after refundable credits, like the EIC"), TX, 724, '400 40px Inter', PDIM, 'left', a);
+  txt(t, s + 4.4, S("or: you didn't have to file"), TX, 778, '400 40px Inter', PDIM, 'left', a);
+  check(t, s + 6.1, CX0, 890, a);
+  txt(t, s + 6.2, S("US citizen or resident all year"), TX, 890, '500 46px Inter', INK, 'left', a);
+  check(t, s + 7.9, CX0, 996, a);
+  txt(t, s + 8.0, S("a full 12-month tax year"), TX, 996, '500 46px Inter', INK, 'left', a);
+  rule(t, s + 9.4, 1086, a);
+  txt(t, s + 9.8, S("Generally, no underpayment penalty"), X0 - 4, 1180, '400 66px IS', ACC, 'left', a);
+  txt(t, s + 10.3, S("for this year."), X0 - 4, 1258, '400 66px IS', ACC, 'left', a);
+  g.restore();
+}
+function page4(t) {
+  const s = s4, a = ss(s - 0.1, s + 0.35, t); if (a <= 0) return;
+  txt(t, s + 0.3, S("Last year's number is"), CX, 820, '400 104px IS', INK, 'center', a);
+  txt(t, s + 0.9, S("a safe place to start."), CX, 940, '400 104px IS', ACC, 'center', a);
+}
+
+function worksheet(t) {
+  const p = sheetP(t); if (p <= 0.001) return;
+  g.fillStyle = `rgba(0,0,0,${0.5 * p})`; g.fillRect(0, 0, W, H);          // the thread steps back
+  g.save(); g.translate(0, lerp(H + 40, TOP, p) - TOP);
+  g.shadowColor = 'rgba(0,0,0,0.55)'; g.shadowBlur = 60; g.shadowOffsetY = -10;
+  g.fillStyle = rgba(PAPER, 1); g.beginPath(); g.roundRect(36, TOP, W - 72, H - TOP + 100, [40, 40, 0, 0]); g.fill();
+  g.shadowColor = 'transparent';
+  // ruled paper, faint
+  g.fillStyle = rgba(RULE_C, 0.55);
+  for (let y = TOP + 150; y < 1600; y += 90) g.fillRect(60, y + 26, W - 120, 2);
+  g.fillStyle = rgba(RULE_C, 0.9); g.fillRect(84, TOP + 110, 2, 1400);
+  // kicker
+  g.font = '700 32px Inter'; g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillStyle = rgba(ACC, 1);
+  g.letterSpacing = '6px'; g.fillText(S("THE MATH"), X0, TOP + 70); g.letterSpacing = '0px';
+  g.font = '500 30px Inter'; g.textAlign = 'right'; g.fillStyle = rgba(PDIM, 1); g.fillText(S("federal · 2026"), X1, TOP + 70);
+  page1(t); page2(t); page3(t); page4(t);
+  g.restore();
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  K.ground();
+  K.header({ name: S("Tash") });
+  A.draw(t, { placeholder: S("Message") });
+  worksheet(t);
+  K.statusBar(t, { clock: CLOCK, battery: 0.62 });
+  vignette(0.28);
+  const ca = K.endCard(t, CARD, { handle: S("@smallbusinessinbox"), note: S("General information, not tax advice.") });
+  if (ca > 0) {
+    g.textAlign = 'center'; g.textBaseline = 'middle'; g.font = '400 30px Inter';
+    g.fillStyle = rgba(K.C.dim, ss(CARD + 0.9, CARD + 1.7, t)); g.fillText(S("Rules from IRS.gov; your situation may differ."), CX, 1030);
+  }
+  grain(t);
+};
+window.ready = (async () => {
+  await K.ready();
+  for (const f of ['400 150px IS', '400 50px ISI', '600 54px Inter', '500 50px Inter', '700 64px Inter']) await document.fonts.load(f);
+  const soft = (tt) => ({ t: tt, k: 'tap', gain: 0.35 });
+  const events = A.events.concat([
+    { t: WS, k: 'click' },
+    soft(s1 + 4.2), soft(s1 + 7.4), { t: s1 + 10.3, k: 'tick', gain: 0.6 }, { t: s2, k: 'click', gain: 0.5 },
+    soft(s2 + 1.1), soft(s2 + 3.0), { t: s2 + 4.5, k: 'thud', gain: 0.8 }, soft(s2 + 7.8), soft(s2 + 9.3), { t: s2 + 10.7, k: 'thud', gain: 0.6 },
+    { t: s3, k: 'click', gain: 0.5 }, soft(s3 + 2.1), soft(s3 + 6.1), soft(s3 + 7.9),
+    { t: s4 + 0.3, k: 'bell', gain: 0.5 },
+  ]).sort((a, b) => a.t - b.t);
+  return { total: TOTAL, marks: { SEND, WS, s1, s2, s3, s4, CARD }, events,
+    tension: [[0, 0.15], [1, 0.3], [SEND, 0.45], [WS, 0.4], [s1 + 5, 0.3], [s1 + 11, 0.2], [s2 + 9, 0.3], [s2 + 11, 0.35],
+              [s3, 0.15], [s4, 0.05], [TOTAL, 0]],
+    warm: [[0, 0], [s1 + 8, 0], [s1 + 11, 0.12], [s2 + 5, 0.15], [s3 + 10, 0.3], [s4 + 0.3, 0.42], [CARD, 0.3], [TOTAL, 0.1]] };
+})();
+</script></body></html>
