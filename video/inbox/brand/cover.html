@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face { font-family: IS; src: url('../../motion/fonts/InstrumentSerif-Regular.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html,body{margin:0;background:#000} canvas{display:block}
+</style></head><body><canvas id="c" width="1640" height="624"></canvas><script>
+// FB page cover, 1640x624 (2x of 820x312). Mobile crops the sides, so everything lives in the middle ~1100px.
+const g=document.getElementById('c').getContext('2d');
+const W=1640,H=624, BG='#15120f', BUB='#3b332d', TERRA='#cf7f5a', CREAM='#efe6d8', DIM='rgba(239,230,216,0.45)';
+function bubble(x,y,w,h,r,fill,tail){g.fillStyle=fill;g.beginPath();g.roundRect(x,y,w,h,r);g.fill();
+  if(tail){g.beginPath();g.moveTo(x+30,y+h-10);g.quadraticCurveTo(x+14,y+h+22,x-8,y+h+26);g.quadraticCurveTo(x+40,y+h+18,x+64,y+h-6);g.fill();}}
+window.draw = async () => {
+  await document.fonts.load('80px IS'); await document.fonts.load('500 30px Inter');
+  g.fillStyle=BG; g.fillRect(0,0,W,H);
+  const vg=g.createRadialGradient(W/2,H/2,80,W/2,H/2,820); vg.addColorStop(0,'rgba(207,127,90,0.10)'); vg.addColorStop(1,'rgba(0,0,0,0)'); g.fillStyle=vg; g.fillRect(0,0,W,H);
+  g.textBaseline='middle'; g.textAlign='center';
+  g.fillStyle=DIM; g.font='500 26px Inter'; g.fillText('Today 11:52 PM',W/2,92);
+  const msgs=[['is this still available?',0.55],['can you do friday instead',0.75],['quick question',1]];
+  let y=150; const x0=W/2-330;
+  g.font='56px IS';
+  msgs.forEach(([t,a],i)=>{const w=g.measureText(t).width+88; g.globalAlpha=a; bubble(x0,y,w,100,50,BUB,i===msgs.length-1);
+    g.fillStyle=CREAM; g.textAlign='left'; g.fillText(t,x0+44,y+52); g.globalAlpha=1; y+=128;});
+  // unread badge on the last bubble
+  const lw=g.measureText('quick question').width+88;
+  g.fillStyle=TERRA; g.beginPath(); g.arc(x0+lw+6,y-128+8,34,0,7); g.fill();
+  g.fillStyle=BG; g.font='600 36px Inter'; g.textAlign='center'; g.fillText('23',x0+lw+6,y-128+10);
+};
+</script></body></html>
