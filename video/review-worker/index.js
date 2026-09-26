@@ -190,21 +190,27 @@ function inboxIndex() {
   const cards = INBOX.map((f, i) => `<div class="card"><div class="lab">${i+1} · @smallbusinessinbox</div><h2>${f.title}</h2>
 <video controls playsinline preload="metadata" src="/m/inbox-${f.slug}.mp4"></video>
 <p class="vo">${f.note}</p><details><summary>Reels caption</summary><pre>${f.reels.replace(/</g,"&lt;")}</pre></details>
-<a class="dl" href="/m/inbox-${f.slug}.mp4" download>download</a></div>`).join("");
+<a class="dl" href="/d/inbox-${f.slug}.mp4">save to Photos + copy caption</a></div>`).join("");
   const ab = `<div class="card"><div class="lab">A/B · byclaude.films · same words, same voice, same timing</div><h2>Northern Leasing: stills vs motion design</h2>
 <p class="vo">A: the narrated-stills film already in the slate.</p><video controls playsinline preload="metadata" src="/m/short-lease-30000-judgments.mp4"></video>
 <p class="vo">B: code-rendered twin. Audio track is bit-identical (gate-checked); every number on screen is in the sources, and the counts are literal (30,000 dots, under 5% inside New York, 19,000 lit, 29,617 in the grid).</p><video controls playsinline preload="metadata" src="/m/short-lease-30000-judgments-motion.mp4"></video>
-<p class="vo">Plan: post A and B a week apart on byclaude.films; both held until you say go.</p></div>`;
+<p class="vo"><a class="dl" href="/d/short-lease-30000-judgments-motion.mp4">save B to Photos</a></p><p class="vo">Plan: post A and B a week apart on byclaude.films; both held until you say go.</p></div>`;
   return `<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Motion design — round 1</title>
 <style>body{margin:0;background:#12100e;color:#ece6dc;font:16px/1.5 -apple-system,system-ui,sans-serif;padding:16px}h1{font-size:20px;margin:0 0 4px}h2{font-size:17px;margin:4px 0 8px}.sub{color:#9a9186;font-size:14px;margin-bottom:18px}.card{background:#1a1714;border:1px solid #2b2621;border-radius:12px;padding:14px;margin:0 0 18px}.lab{font:600 12px/1 ui-monospace,monospace;letter-spacing:.1em;color:#d99a6c}video{width:100%;max-height:70vh;border-radius:8px;background:#000;margin:6px 0}.vo{color:#cfc7bb;font-size:15px}pre{white-space:pre-wrap;font:14px/1.45 -apple-system,system-ui,sans-serif;color:#cfc7bb}.dl{color:#d99a6c;font-size:14px}summary{cursor:pointer;color:#9a9186}</style>
-<div class="card"><div class="lab">PROFILE · @smallbusinessinbox</div><h2>Avatar (tap to open, then save)</h2>
-<div style="display:flex;gap:14px"><a href="/m/inbox-avatar-B.png"><img src="/m/inbox-avatar-B.png" style="width:120px;border-radius:50%"></a><a href="/m/inbox-avatar-A.png"><img src="/m/inbox-avatar-A.png" style="width:120px;border-radius:50%"></a></div>
+<div class="card"><div class="lab">PROFILE · @smallbusinessinbox</div><h2>Avatar (tap one, then SAVE TO PHOTOS)</h2>
+<div style="display:flex;gap:14px"><a href="/d/inbox-avatar-B.png"><img src="/m/inbox-avatar-B.png" style="width:120px;border-radius:50%"></a><a href="/d/inbox-avatar-A.png"><img src="/m/inbox-avatar-A.png" style="width:120px;border-radius:50%"></a></div>
 <p class="vo">B (left) is my pick. Name: <b>Small Business Inbox</b></p>
 <pre>What a small business owner's phone looks like at 11pm. And the tax math nobody explains. Written composites, not real people.</pre></div>
 <h1>Motion design — round 1</h1><div class="sub">Six films for @smallbusinessinbox (written composites, no voice) + the lease A/B. Nothing is scheduled to post.</div>${ab}${cards}`;
 }
 
 const CAPTIONS = {
+ "inbox-quick-question.mp4": "Typed it three times. Sent the short one. Seen at 11:52.\n\n#hairstylist #salonowner #hairsalon #smallbusinessowner #behindthechair",
+ "inbox-no-show.mp4": "All set up at 9. She remembered at 10:41. Starting next week, a small deposit holds the chair.\n\n#nailtech #nailsalon #gelnails #smallbusinessowner #salonowner",
+ "inbox-friend-price.mp4": "The math on \"friend price\" came out to $12.19 an hour. So she sent the packages, and made the engagement session a gift. That part was hers to give.\n\n#weddingphotographer #photographylife #smallbusinessowner #photographer #creativebusiness",
+ "inbox-net-30.mp4": "Net 30 turned into day 46, and the crew still gets paid Friday. Three polite emails, and one that never got sent.\n\n#contractorlife #fencecontractor #smallbusinessowner #tradesman #fencing #smallbusinesslife",
+ "inbox-one-star.mp4": "1:14 AM, a one-star review. The first reply was the defensive one. She checked her notes and sent the other one.\n\n#doggroomer #doggroomingbusiness #groomerlife #smallbusinessowner #petgroomer",
+ "inbox-worth-it.mp4": "Fourteen unread by 8pm, most of them about rescheduling. And then one that wasn't.\n\n#hairstylist #salonowner #hairstylistlife #behindthechair #smallbusinessowner",
  "fbb-the-loop.mp4": "3am and your brain is replaying the one thing you said. again. and again.\n\nthis is a real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it's awake at 3am when you are.\n\nfree, no signup: feelbetterbot.com/t/loop\n\n#overthinking #anxiety #cantsleep #3am #mentalhealth",
  "fbb-loop-sunday.mp4": "the sunday night dread when nothing is even wrong.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it got this one.\n\nfree, no signup: feelbetterbot.com/t/sunday\n\n#sundayscaries #anxiety #mondaymotivation #worklife #mentalhealth",
  "fbb-loop-onread.mp4": "left on read for 6 hours... and then they post to their story.\n\na real reply from FeelBetterBot, in its own voice. it's an AI, not a therapist, but it didn't tell me i was overreacting.\n\nfree, no signup: feelbetterbot.com/t/read\n\n#leftonread #overthinking #anxiety #friendship #mentalhealth",
@@ -253,12 +259,12 @@ a.alt{display:inline-block;margin-top:14px;color:#8a93a3;font-size:14px;text-dec
 .cap pre{margin:0;padding:14px;white-space:pre-wrap;font:15px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;color:#eceff4}
 </style></head><body><div class="wrap">
 <div class="kick"><span class="sq"></span>BY CLAUDE · VIDEO LAB</div>
-<video controls playsinline preload="metadata" src="/m/${key}"></video>
+${/\.(png|jpe?g)$/i.test(key) ? `<img src="/m/${key}" style="width:100%;border-radius:12px">` : `<video controls playsinline preload="metadata" src="/m/${key}"></video>`}
 <button class="dl" id="save" disabled>PREPARING&hellip;</button>
 <a class="alt" href="/m/${key}" download="${key}">or download the file</a>
-${CAPTIONS[key] ? `<div class="cap"><div class="caphd">TIKTOK CAPTION<button id="copy">COPY</button></div><pre id="captext">${esc(CAPTIONS[key])}</pre></div>
+${CAPTIONS[key] ? `<div class="cap"><div class="caphd">CAPTION<button id="copy">COPY</button></div><pre id="captext">${esc(CAPTIONS[key])}</pre></div>
 <script>document.getElementById('copy').onclick=function(){var b=this,t=document.getElementById('captext').textContent;navigator.clipboard.writeText(t).then(function(){b.textContent='COPIED';setTimeout(function(){b.textContent='COPY'},1500)},function(){var r=document.createRange();r.selectNodeContents(document.getElementById('captext'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='SELECTED \u2014 TAP COPY'});};</script>` : ''}
-<p class="hint" id="hint">Tap the button, then &ldquo;Save Video&rdquo; &mdash; it goes to Photos.</p>
+<p class="hint" id="hint">Tap the button, then &ldquo;${/\.(png|jpe?g)$/i.test(key) ? "Save Image" : "Save Video"}&rdquo; &mdash; it goes to Photos.</p>
 <script>
 // 2026-09-25: a download link saves to Files on iPhone; Photos needs the
 // share sheet. Fetch the file up front so the tap can call navigator.share
