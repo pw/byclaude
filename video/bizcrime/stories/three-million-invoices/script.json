@@ -1,0 +1,14 @@
+{
+  "out": "short-three-million-invoices",
+  "kicker": "THE $180 HOSTING BILL",
+  "voice": "Atlas",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "beats": [
+    { "src": "three-million-invoices", "img": "B01", "vo": "It looked like any other bill. A due date. An amount due: one hundred eighty dollars. A line that read, Yearly Web Hosting.", "cap": "$180 DUE" },
+    { "src": "three-million-invoices", "img": "B02", "vo": "It went mostly to small businesses that already had a website. Their sites were hosted by someone else. The company on the bill had never hosted them.", "cap": "ALREADY HAD\nA WEBSITE" },
+    { "src": "three-million-invoices", "img": "B03", "vo": "Between twenty fifteen and twenty twenty-two, Robert Lederhilger, of Bradenton, Florida, mailed, and caused others to mail, nearly three million of them. Under names like Web Host Agents. Main Street Web Pros. Simple Domain Host.", "cap": "NEARLY 3 MILLION\nMAILERS", "amber": true },
+    { "src": "three-million-invoices", "img": "B04", "vo": "Some of them said, in the fine print, that they were a solicitation. Not a bill. Tens of thousands of businesses paid, believing they owed it.", "cap": "“NOT A BILL”", "amber": true },
+    { "src": "three-million-invoices", "img": "B05", "vo": "They got no hosting. No service of any kind. Only another invoice, a year later, asking for more.", "cap": "ANOTHER INVOICE\nA YEAR LATER", "amber": true },
+    { "src": "three-million-invoices", "img": "B06", "vo": "A jury convicted him of mail fraud. In March twenty twenty-six, he was sentenced to seventy-three months. Prosecutors put the losses at nearly nine million dollars. The only product was the paper: a bill with every hallmark of one already owed.", "cap": "73 MONTHS", "amber": true }
+  ]
+}

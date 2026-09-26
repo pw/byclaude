@@ -1,0 +1,170 @@
+{
+ "slug": "three-million-invoices",
+ "claims": [
+  {
+   "beat": 1,
+   "vo": "It looked like any other bill.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/florida-man-sentenced-73-months-prison-nationwide-mass-mailing-scam-targeting-small",
+     "quote": "deceptive mailers that falsely appeared to their recipients—primarily small businesses that already had websites—to be invoices for purported web hosting services."
+    }
+   ]
+  },
+  {
+   "beat": 1,
+   "vo": "A due date. An amount due: one hundred eighty dollars. A line that read, Yearly Web Hosting.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/file/1296441/dl",
+     "quote": "it listed a due date, the amount due, a description of the services provided, i.e. \"Yearly Web Hosting,\"",
+     "note": "Indictment (allegation); corroborated by the DOJ-published exemplar on the case page [2a]: \"DUE DATE: 5/11/19\" · \"Amount 180.00\" · \"Yearly Web Hosting\"."
+    },
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/florida-man-sentenced-73-months-prison-nationwide-mass-mailing-scam-targeting-small",
+     "quote": "The invoices typically listed $180 as the amount due."
+    }
+   ]
+  },
+  {
+   "beat": 2,
+   "vo": "It went mostly to small businesses that already had a website.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/florida-man-sentenced-73-months-prison-nationwide-mass-mailing-scam-targeting-small",
+     "quote": "primarily small businesses that already had websites"
+    }
+   ]
+  },
+  {
+   "beat": 2,
+   "vo": "Their sites were hosted by someone else. The company on the bill had never hosted them.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/florida-man-sentenced-73-months-prison-nationwide-mass-mailing-scam-targeting-small",
+     "quote": "Those victims, whose websites were hosted by other providers, received nothing from the defendant except another \"invoice,\" a year later, asking for more money."
+    }
+   ]
+  },
+  {
+   "beat": 3,
+   "vo": "Between twenty fifteen and twenty twenty-two, Robert Lederhilger, of Bradenton, Florida, mailed, and caused others to mail, nearly three million of them.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/florida-man-sentenced-73-months-prison-nationwide-mass-mailing-scam-targeting-small",
+     "quote": "Between 2015 and 2022, LEDERHILGER designed and ran a sophisticated fraud scheme in which he mailed, and caused others to mail, nearly three million deceptive mailers"
+    },
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/florida-man-sentenced-73-months-prison-nationwide-mass-mailing-scam-targeting-small",
+     "quote": "LEDERHILGER, 44, of Bradenton, Florida"
+    }
+   ],
+   "note": "'nearly' per sentencing release; conviction release/case page say 'over three million' — verified brief says use 'nearly'."
+  },
+  {
+   "beat": 3,
+   "vo": "Under names like Web Host Agents. Main Street Web Pros. Simple Domain Host.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/us-v-robert-w-lederhilger-iii-23-cr-116-alc",
+     "quote": "he mailed — and caused others operating the companies Total Host Pro, Web Host Agents, Simple Domain Host, Sunshine Biz Services, Domain Hosting Group, Main Street Web Pros, and Vicco Web, to mail"
+    },
+    {
+     "url": "https://www.justice.gov/usao-sdny/file/1296441/dl",
+     "quote": "Lederhilger, at times, also operated under the names \"Web Host Agents,\" \"Certified Web Services,\" and \"FreeBird Host LLC.\""
+    }
+   ],
+   "note": "No reseller operator named or implied charged."
+  },
+  {
+   "beat": 4,
+   "vo": "Some of them said, in the fine print, that they were a solicitation. Not a bill.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/us-v-robert-w-lederhilger-iii-23-cr-116-alc",
+     "quote": "THIS IS A SOLICITATION FOR THE ORDER OF GOODS OR SERVICES, OR BOTH, AND NOT A BILL, INVOICE, OR STATEMENT OF ACCOUNT DUE.",
+     "note": "Transcribed from the DOJ-published mailer exemplar embedded on the case page (EXCERPTS [2a], left mailer). The right exemplar shows no such line — hence 'some'."
+    }
+   ]
+  },
+  {
+   "beat": 4,
+   "vo": "Tens of thousands of businesses paid, believing they owed it.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/florida-man-sentenced-73-months-prison-nationwide-mass-mailing-scam-targeting-small",
+     "quote": "Tens of thousands of victims, believing that they owed the defendant money for web hosting services, paid the defendant's \"invoices.\""
+    }
+   ]
+  },
+  {
+   "beat": 5,
+   "vo": "They got no hosting. No service of any kind.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/us-v-robert-w-lederhilger-iii-23-cr-116-alc",
+     "quote": "When victim businesses made payments to LEDERHILGER, they received no webhosting or any other service in return."
+    }
+   ]
+  },
+  {
+   "beat": 5,
+   "vo": "Only another invoice, a year later, asking for more.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/florida-man-sentenced-73-months-prison-nationwide-mass-mailing-scam-targeting-small",
+     "quote": "received nothing from the defendant except another \"invoice,\" a year later, asking for more money."
+    }
+   ]
+  },
+  {
+   "beat": 6,
+   "vo": "A jury convicted him of mail fraud.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/florida-man-convicted-trial-mail-fraud-connection-mass-mailing-scam",
+     "quote": "LEDERHILGER III was convicted of mail fraud in connection with a years-long, mass-mailing scam. The defendant was found guilty following a one-week jury trial"
+    }
+   ]
+  },
+  {
+   "beat": 6,
+   "vo": "In March twenty twenty-six, he was sentenced to seventy-three months.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/florida-man-sentenced-73-months-prison-nationwide-mass-mailing-scam-targeting-small",
+     "quote": "Tuesday, March 10, 2026"
+    },
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/florida-man-sentenced-73-months-prison-nationwide-mass-mailing-scam-targeting-small",
+     "quote": "ROBERT W. LEDERHILGER III was sentenced today to 73 months in prison"
+    }
+   ]
+  },
+  {
+   "beat": 6,
+   "vo": "Prosecutors put the losses at nearly nine million dollars.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/pr/florida-man-sentenced-73-months-prison-nationwide-mass-mailing-scam-targeting-small",
+     "quote": "which resulted in losses of nearly $9 million to tens of thousands of victims."
+    }
+   ]
+  },
+  {
+   "beat": 6,
+   "vo": "The only product was the paper: a bill with every hallmark of one already owed.",
+   "sources": [
+    {
+     "url": "https://www.justice.gov/usao-sdny/file/1296441/dl",
+     "quote": "The Deceptive Mailings included all the hallmarks of an actual invoice for services already rendered",
+     "note": "Indictment language (allegation) — the jury convicted on this count; the sentencing release states the mailers 'falsely appeared ... to be invoices'."
+    },
+    {
+     "url": "https://www.justice.gov/usao-sdny/file/1296441/dl",
+     "quote": "LEDERHILGER provided no services to the Victim Businesses in exchange for the $180 they each paid."
+    }
+   ]
+  }
+ ]
+}
