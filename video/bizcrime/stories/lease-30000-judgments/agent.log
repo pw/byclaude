@@ -1,0 +1,39 @@
+The Northern Leasing short (`lease-30000-judgments`) is built, uploaded and has its captions live. It is not posted anywhere; that waits for a human read.
+
+- **Film:** 6 beats, 70.8 s, 1080×1920. The transcription check passed on every beat (beat 2 needed one retry).
+- **Where it is:** R2 serves it at https://byclaude-video-review.pw3.workers.dev/m/short-lease-30000-judgments.mp4 (200, same byte count as the local file). The caption pack is live on the review worker's /posts page and in `publer/captions.json`.
+- **Committed and pushed:** `a3f4677`.
+
+**One build step failed, then worked.** The brief says to use voice `onyx`, but the text-to-speech service now rejects that name. Every beat came back as a 56-byte "Provider returned 404" error. I switched the script to `Atlas`, the male voice the seals short already uses, and the rebuild passed. Another session has since added `onyx`→`Atlas` as a fallback in `build_short.py`, but that change isn't committed yet, and the main brief still says `onyx`.
+
+**Narration:**
+1. A credit card machine, worth a few hundred dollars at most. Over the life of a Northern Leasing lease, small businesses paid thousands for it, New York's attorney general said. — *A FEW HUNDRED DOLLARS*
+2. Flower shops. Hair salons. Bodegas and bars. The leases couldn't be cancelled. And any lawsuit had to be brought in New York, wherever the owner lived. — *NON-CANCELABLE*
+3. Between twenty ten and twenty fifteen, the state said, Northern Leasing filed more than thirty thousand collection lawsuits in a New York City court. More than ninety-five percent of the people it sued lived outside New York. — *30,000 LAWSUITS*
+4. The filings became so overwhelming that the court created a separate calendar, just for its cases. — *A CALENDAR JUST FOR THEM*
+5. By the time the state sued, it had won more than nineteen thousand default judgments. Many of the people sued, the state said, only found out when they checked their credit reports. — *ON A CREDIT REPORT*
+6. In twenty twenty, a judge threw out twenty-nine thousand, six hundred seventeen default judgments. The court found that requiring owners across the country to defend lawsuits in New York, and allowing service to obsolete addresses, had thwarted their ability to defend themselves. — *29,617 THROWN OUT*
+
+**Sources:** `claims.json` maps all 12 sentences to their source URL and the exact quote. A script checked that the quotes add up to the full narration and that each one appears word for word in `EXCERPTS.md`. The sources are the AG's 2016 and 2020 press releases and the 2021 appeals court decision.
+
+**Stills:** six scenes — a card terminal in a flower shop, an empty salon chair with a lease, a courthouse corridor, an empty courtroom, a laptop at night, and a records room. I checked a contact sheet, zoomed crops and three video frames: no faces, no readable text, no logos.
+
+**What I softened or left out:**
+- **The scout's hook** ("sued 30,000 businesses, won almost all by default, most never knew"). I dropped it and used lawsuits, "a high rate", and "many".
+- **The three big numbers.** Each is dated so they can't be heard as the same pool: the 19,000 judgments are "by the time the state sued", and the 29,617 thrown out are never "of them".
+- **Attribution.** "The state said" or "the AG said" is attached to the price gap, the 30,000 lawsuits and the credit-report line. The judgments thrown out, the separate calendar and the service-address finding are stated as the court's.
+- **Left out of the narration:**
+  - forged signatures and "free" pitches (allegations against the sales reps)
+  - Jay Cohen by name
+  - the spinoff companies and $4.6 million restitution (for length)
+  - the owner NBC interviewed
+  - "since 1991"
+  - "dissolved"
+  - anything from CardFellow
+  - the blocked 2025 and 2026 appeals rulings
+- **The $680 million award.** It appears only in the YouTube caption, dated: "as of January 2025, the attorney general's office said no funds had been collected." It never says the award was upheld.
+- **Ending.** The film closes on the court's finding about how the scheme worked, not on the $680 million, because the brief says to close on the mechanism.
+- **Reels caption.** It has four sentences on the hook and mechanism, one line on what to check before signing an equipment lease, and "Source: People of the State of New York v. Northern Leasing Systems, Inc., New York Supreme Court, 2020." Six hashtags, no #ai.
+
+That commit also includes the three-million-invoices caption another session had already deployed, so git matches what's live.
+exit 0 for lease-30000-judgments

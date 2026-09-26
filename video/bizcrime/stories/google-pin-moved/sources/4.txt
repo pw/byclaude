@@ -1,0 +1,101 @@
+https://www.brightlocal.com/learn/google-business-profile/support-common-issues/google-maps-pin-moving-scam/
+fetched 2026-09-26T04:26Z via https://www.brightlocal.com/learn/google-business-profile/support-common-issues/google-maps-pin-moving-scam/
+"datePublished":"2024-08-01T08:27:37+00:00"
+
+Google Maps Pin Moving Scam: What It Is and How to Fix It - BrightLocal Skip to content { this.currentIndex = (this.currentIndex + 1) % this.banners.length; }, 8000); }, stopRotation() { clearInterval(this.timer) }, resetRotation() { this.stopRotation(); this.startRotation() } }" @mouseenter="stopRotation()" @mouseleave="resetRotation()" class="relative h-full flex items-center px-7 gap-2 box-border"> About About us How we compare Careers Support Contact Us Help Center Login { if (value) { document.body.style.overflow = 'hidden'; } else { document.body.style.overflow = ''; } }); window.addEventListener('resize', () => { if (mobileMenuOpen && window.innerWidth >= 1180) { mobileMenuOpen = false; } }); "> BrightLocal What is local SEO? Solutions TAILORED FOR YOU Local Businesses Everything you need to get discovered locally, made simple. Agencies & Consultants Scale local SEO for clients without scaling complexity. EXPLORE OUR SOLUTIONS All-in-one Platform Track rankings, manage listings, and grow your reputation in one platform. Local Citation Building Service Get your business listed accurately where it matters most. Managed Local SEO Services Hands-on local SEO delivered by experts, from strategy to execution. API Solutions Integrate local SEO, listings, and review data directly into your systems via APIs. CUSTOMER SUCCESS STORIES Increased Client Retention and Saved $167k/Year B2B SEO AGENCY CITATIONS PLATFORM Increased Occupancy Rates to 83% in 7 Months LOCAL STORAGE BUSINESS SEO SERVICES Improved Client Rankings and Saved $16k/Year SEO CONSULTANT PLATFORM CITATIONS See all case studies Explore all solutions Platform PLATFORM CAPABILITIES Track Local Visibility See how visible your business is in local search, right down to the neighborhood level. Manage Listings Keep your business information accurate and consistent everywhere customers search. Grow Online Reputation Monitor, manage, and improve reviews to build trust and stand out locally. MOST POPULAR FEATURES Local AI Visibility Tracker NEW See how your business appears across ChatGPT and Google's AIs. AI Insights NEW Turn complex local SEO data into clear, prioritized actions to improve search presence. Citation Builder Build and clean up listings on the sites that influence local search visibility. Local Search Grid Visualize how you rank against competitors across map locations. Free Local SEO Tools FREE Get quick insights into your local search performance. No setup, no cost, no SEO expertise required. THE FUTURE OF BRIGHTLOCAL FUTURE Our Platform Evolution We're building the next generation of BrightLocal, combining AI intelligence, guided actions, and built-in execution. AI-powered intelligence & prioritized actions AVAILABLE NOW Built-in execution when time or expertise is lacking AVAILABLE NOW AND MORE COMING Brand new platform experience COMING LATER Explore the platform Book a guided demo Pricing Learning Hub { if (this.hovered) this.startIdle(); }, 600); }, animate() { const lerp = (a, b, t) => a + (b - a) * t; this.currentAngle = lerp(this.currentAngle, this.targetAngle, 0.1); this.currentG = lerp(this.currentG, this.targetG, 0.1); this.currentPos = lerp(this.currentPos, this.targetPos, 0.1); $el.style.setProperty('--grad-angle', this.currentAngle + 'deg'); $el.style.setProperty('--grad-start', 'rgb(1,' + Math.round(this.currentG) + ',44)'); $el.style.setProperty('--grad-start-pos', this.currentPos + '%'); const stillMoving = Math.abs(this.currentAngle - this.targetAngle) > 0.1 || Math.abs(this.currentG - this.targetG) > 0.1; this.raf = stillMoving ? requestAnimationFrame(() => this.animate()) : null; }, startIdle() { this.idleBaseAngle = this.currentAngle; this.idleBaseG = 60; this.idleBasePos = this.currentPos; const start = performance.now(); const tick = (now) => { if (!this.hovered) return; const t = (now - start) / 1000; this.targetAngle = this.idleBaseAngle + Math.sin(t * 0.4) * 12 + Math.sin(t * 0.7) * 5; this.targetG = this.idleBaseG + Math.sin(t * 0.5 + 1) * 6; this.targetPos = this.idleBasePos + Math.sin(t * 0.3 + 2) * 2.5; if (!this.raf) this.animate(); this.idleRaf = requestAnimationFrame(tick); }; this.idleRaf = requestAnimationFrame(tick); }, onMouseLeave() { this.hovered = false; clearTimeout(this.idleTimeout); cancelAnimationFrame(this.idleRaf); this.idleRaf = null; this.targetAngle = 142.705; this.targetG = 60; this.targetPos = 8.31; if (!this.raf) this.animate(); } }" @mouseenter="onMouseEnter" @mousemove="onMouseMove" @mouseleave="onMouseLeave" > Everything you need to master local SEO Guides, checklists, and insights to help you improve your local visibility and get better results Learn local SEO Tools & lists News Explore the Learning Hub Local Consumer Review Survey 2026 See how the review landscape is changing and it means for your local SEO Strategy Start learning Build your local marketing skills with free, expert-led courses Enroll for free New to SEO? Try our SEO Pathway Beginner friendly 25 Lessons 14 follow along Videos Start your journey 01 The Foundations 5 items completed 100% Module complete! 02 Technical SEO Essentials 2 items completed 29% Continue Book a Demo Get Started Get Started activeSubmenu = null, 300)" class="inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:text-gray-900 focus:outline-none" :aria-label="mobileMenuOpen ? 'Close menu' : 'Open main menu'"> activeSubmenu = null, 300)" class="min-[1180px]:hidden"> What is local SEO? Solutions Platform Pricing Learning Hub About Support Login Book a Demo Get Started Solutions TAILORED FOR YOU Local Businesses Everything you need to get discovered locally, made simple. Agencies & Consultants Scale local SEO for clients without scaling complexity. EXPLORE OUR SOLUTIONS All-in-one Platform Local Citation Building Service Managed Local SEO Services API Solutions CUSTOMER SUCCESS STORIES Increased Client Retention and Saved $167k/Year B2B SEO AGENCY CITATIONS PLATFORM Increased Occupancy Rates to 83% in 7 Months LOCAL STORAGE BUSINESS SEO SERVICES Improved Client Rankings and Saved $16k/Year SEO CONSULTANT PLATFORM CITATIONS See all case studies Explore all solutions Book a Demo Platform PLATFORM CAPABILITIES Track Local Visibility See how visible your business is in local search, right down to the neighborhood level. Manage Listings Keep your business information accurate and consistent everywhere customers search. Grow Online Reputation Monitor, manage, and improve reviews to build trust and stand out locally. MOST POPULAR FEATURES Local AI Visibility Tracker AI Insights Citation Builder Local Search Grid Free Local SEO Tools FREE Get quick insights into your local search performance. No setup, no cost, no SEO expertise required. Platform Spotlight FUTURE Our Platform Evolution We're building the next generation of BrightLocal, combining AI intelligence, guided actions, and built-in execution. Explore the platform Book a guided demo Book a Demo Learning Hub Everything you need to master local SEO Guides, checklists, and insights to help you improve your local visibility and get better results Learn local SEO Tools & lists News Explore the Learning Hub Local Consumer Review Survey 2026 See how the review landscape is changing and it means for your local SEO Strategy Start learning Build your local marketing skills with free, expert-led courses Enroll for free Book a Demo About About us How we compare Careers Book a Demo Support Contact Us Help Center Book a Demo Explore Education Resources News Podcasts Webinars BrightLocal Academy SEO Pathways Learn Local SEO from Scratch in 2025 Home / Learning Hub / Education / The Google Business Profile Handbook / Google Business Profile Support and Common Issues EXPLORE EDUCATION CONTENT Google Business Profile Support and Common Issues Introduction to Google Business Profile What is Google Business Profile? Benefits of Google Business Profile Getting Started with Google Business Profile Setting Up Google Business Profile Verifying a Google Business Profile Verifying Google Business Profiles for Multiple Locations Editing Google Business Profiles for Multi-location Businesses How to Edit Your Google Business Profile Service-area Businesses and Google Business Profile How to Optimize Google Business Profile Google Business Profile Conversion Factors Google Business Profile Description Google Business Profile Categories Business Opening Hours Google Business Reviews (opens in new Hub) Google Business Profile Videos Google Business Profile Photos Google Posts and Updates Google Q&A Google Business Profile Products and Services Google Business Profile Messaging Google Business Profile Bookings and Appointments Google Business Profile Attributes Google Local Justifications Google Business Profile Reporting Google Business Profile UTM Tracking Monitoring Google Business Profile Google Business Profile Insights and Performance Google Business Profile Support and Common Issues Transfer Profile Ownership Merging Google Business Profiles Getting Google Business Profile Support Google Business Profile Spam Google Business Profile Suspensions Google Maps Pin Moving Scam Fix On this page updateTocHeight())" @resize.window="updateTocHeight()" :style="`max-height: ${tocMaxHeight}`" class="bg-bg-primary border border-border-primary border-solid flex flex-col gap-xs p-xs rounded-md overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-transparent scrollbar-thumb-fg-quaternary-300 scrollbar-thumb-rounded-full" id="sidebar-toc" > Google Maps Pin Moving Scam: What It Is and How to Fix It Last updated: October 2025 Mike Hawkes Senior Content Marketing Manager This loophole has now been fixed to prevent. It was reported in January 2025. A black hat local SEO technique involving moving Google Maps pins causes chaos for local businesses. For consumers, few things are as annoying as heading to a business location only to find it’s not there, despite what Google said. That restaurant with the great evening menu? Permanently closed. The mechanic Google Maps promised was just a 10-minute drive away. Nowhere to be seen. While these scenarios are undoubtedly the source of much frustration when you’re hungry or dealing with a flat tire, they’re even more problematic for the business itself. That’s because irritated consumers typically won’t make a second journey. They might vent to their friends or leave a bad review online, however. But what’s the problem, and how can you make sure it doesn’t happen to your Google Maps pin? What is the Pin Moving Scam on Google Maps? If your Google Maps pin moved without you having moved it, you might have fallen victim to the Google Maps pin scan. There have been reports of this tactic being used against unsuspecting local businesses since early 2024. This scam is diabolical in its simplicity. Using the ‘Suggest an Edit’ feature, which appears below all Map listings, a bad actor edits a map location without the business’s knowledge or consent. The scammer drags the pin to a new location—usually several hours away in a totally different area—to give Google and search users a false idea of where that business is. Anyone can access the ‘Suggest an Edit’ feature, so it’s no surprise that black hat SEOs are using it as a tactic. As it stands, Google has been informed of the problem but has not created a fix to prevent it from continuing. Why is it a Worry for Businesses? The Google Maps pin scam is problematic on a few different levels. Google won’t alert you if someone suggests an edit to your business location or moves your Map pin maliciously. Not knowing means you can’t take steps to resolve the issue. The most pressing issue is that it can severely impact your local search visibility. If your pin moves, your location moves with it. That means search users in your area will no longer see your business. Of course, this has serious implications for your rankings, which could suffer a disastrous sudden drop. That lack of visibility also means you’re likely to lose web traffic. Foot traffic to your physical location could also decline and sales figures may be hit. Tip! Look out for sudden drops in rankings using Local Search Grid. If all your local rankings suddenly turn red, it could be a sign your pin has been moved. There’s also the annoyance factor to consider. As we mentioned earlier, if a consumer heads to what they think is your location, but you’re not there, your reputation is likely to suffer. The 2023 Local Business Discovery and Trust report found that 62% of consumers would avoid using a business if they found incorrect information online. You’re not just losing revenue and the chance to pick up a loyal new customer; you could also find that the negative reviews are piling up through no fault of your own. It’s a self-perpetuating cycle that could have serious financial repercussions. How do I Fix it if it Happens to My Business? Your first indication that this black hat technique has hit you could come too late—when your local search positions have dropped, and your calls, sales, and web traffic have all faltered. The best line of defense is to be proactive. Get into the habit of regularly reviewing your Google Business listing so that you can verify that all information is accurate. If you’re already a victim of this scam, you’ll need to move your pin back to your actual business location. You can do this by following the same steps as the scammers: Step 1: Use an email address not associated with your Google Business Profile. Tip! If you use an official email address, you’ll have to go through the whole Google Business Profile verification process again. If you use another email address, this should be resolved faster. Alternatively, you could ask a Google Local Guide to do it if you have a good relationship with one. Step 2: Search for your business, potentially by name, if you can’t find the exact pin location easily. Step 3: Click ‘Suggest an edit’, then choose ‘Change name or other details’. Step 4: Drag the pin to your true location, or enter your true address manually. Step 5: Save the change. Tracking and Rejecting Changes While there isn’t an official line from Google about how to prevent it, there is an option in ‘Business Profile settings’ that may do just that. Google’s documentation on ‘managing updates to your Google Business Profile’ allows you to ‘accept’ updates it rolls out across various elements of your profile. The documentation states that “Google uses information from a variety of sources, like user reports and licensed content” to update information from your opening hours through to your GBP attributes. One of the options available is your ‘Map marker’. While it doesn’t specifically call out the ‘Suggest an edit’ functionality here, there’s a good chance it’s what it means by ‘user reports’. You can choose whether to automatically ‘accept’, ‘edit’, ‘edit and resubmit’ or else simply ‘discard’ the updates. To update this, follow the steps below: Step 1: Select the kebab menu on your profile’s NMX and click ‘Business Profile settings’. Step 2: Browse to your ‘Linked accounts’, then go to ‘Businesses’ on the side Nav Step 3: Select the business you want to edit and choose ‘Actions’ when it appears. Step 4: In the ‘Google updates’ section, select ‘Accept’. Step 5: You’ll then be shown the list of options below. We’d advise you not to click ‘clear selection’. Deselect ‘Map marker’. This may help alert you to this scam. Step 6: Click accept. Warning: this will prevent any automatic updates of your map marker, even correct ones. New to SEO? Try our SEO Pathway Beginner friendly 25 Lessons 14 follow along Videos 01 The Foundations 5 items completed 100% Module complete! 02 Technical SEO Essentials 2 of 7 items completed 29% Continue Visit SEO Pathway Previous Causes and Fixes for Google Business Profile Suspensions Join 83,000+ savvy marketers Sign up to our Newsletter Stay ahead in local SEO with our free newsletter—featuring the latest news, original research, expert tips, and exclusive event invites delivered straight to your inbox. Stay ahead in local SEO with our free newsletter—featuring the latest news, original research, expert tips, and exclusive event invites delivered straight to your inbox. We never share your private data – see our Privacy Policy for details. Platform BrightLocal Local SEO Platform
+
+Local SEO Tools
+
+Track Your Local Visibility
+
+Manage & Build Your Business Listings
+
+Grow Your Online Reputation
+
+Platform Pricing
+
+Book a Demo
+
+The Future BrightLocal Platform
+
+Popular Features
+
+Local AI Visibility Tracker
+
+Citation Builder
+
+Local Search Grid
+
+Local Rank Tracker
+
+Citation Tracker
+
+Tailored For You
+
+For Local Businesses
+
+For Agencies & Consultants
+
+For SaaS Platforms
+
+Solutions
+
+All-in-One Local Search Platform
+
+Build Citations
+
+Fully Managed Local SEO Service
+
+API Solutions
+
+Free Tools
+
+Local Search Results Checker
+
+Rank Fluctuation Monitor
+
+Google Review Link and Place ID Generator
+
+The Learning Hub
+
+Explore
+
+Education
+
+Resources
+
+News
+
+Podcasts
+
+Webinars
+
+BrightLocal Academy
+
+Company
+
+Home
+
+About us
+
+Case studies
+
+How we compare
+
+Careers
+
+Contact us
+
+Support
+
+Contact support
+
+Help Center
+
+BrightLocal Privacy Policy Terms & Conditions Cookie Policy Sitemap EntityMap © 2026 BrightLocal Ltd. All rights reserved. BrightLocal® is a registered trademark in the USA, EU and UK. LinkedIn Facebook Instagram X YouTube Add BrightLocal as a preferred source CHOOSE YOUR SOLUTION Get started with BrightLocal All-in-One Platform
+
+Build Citations
+
+Managed SEO Services
+
+API Solutions

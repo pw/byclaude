@@ -1,0 +1,87 @@
+https://www.nearmedia.co/black-hat-tactic-moving-google-map-pins-still-ongoing/
+fetched 2026-09-26T04:26Z via https://www.nearmedia.co/black-hat-tactic-moving-google-map-pins-still-ongoing/
+"datePublished": "2024-07-24T18:26:29.000Z"
+
+× Legal Market Research
+
+Google & DMA 6(5)
+
+More Analysis
+
+Podcast
+
+About
+
+Contact
+
+Sign in--> Subscribe Analysis Black Hat Tactic Moving Google Map Pins Still Ongoing It's taking longer for Google to address bugs, often with very real consequences for local businesses.
+
+Mike Blumenthal
+
+Google Local has a number of long standing, unresolved bugs and they go back a good many months. They all hurt local businesses to a greater or lessor degree. The most detrimental of these is the unchecked ability for a competitor to move a business's Map pin to a totally different location.
+
+How long should businesses have to wait for Google to provide a solution to this hack? Check back to see when the clock stops.
+
+What Is the 'Map Pin Hack'?
+
+Here's how it works: a bad actor suggests an edit to your Map location and moves your pin out of your market or service area. Easy peasy, and probably easier to perpetrate the higher your Local Guide status.
+
+When this happens, a business is impacted in a number of ways. The most significant is that it loses any ability to rank in or around their location. Driving directions are totally hosed, taking customers to the wrong place; and if the business attempts to rectify/relocate via the GBP dashboard they are often forced to re-verify. To add insult to injury, their LSA ads will often quit working as well.
+
+Let's look at an example, 1st Class Plumbing & Heating* at 855 38th St NW in Rochester, MN. They were moved to 1530 Old W Main St in Red Wing, MN, 43 miles away. Obviously, driving directions are totally useless when this happens.
+
+The much bigger issue is that when you do a search for a plumber near their actual location, they are nowhere to be seen. They have literally dropped off the map.
+
+Here's a great video from Darren Shaw that details the nature and history of this problem:
+
+How Long Has Google Known?
+
+The Map Pin Hack was reported on Reddit in mid-March and in the public and private Google forums on March 20th. SearchEngineRoundtable, SearchEngineLand, Joy Hawkins, Jason Brown and Darren Shaw have all been sharing updates since then. There have also been reports of this hack happening internationally.
+
+Clearly, Google is aware of this problem and has not yet solved it – or potentially addressed it in any form. Joy is right to ask "How is this still happening!?"
+
+How Can Businesses Protect Themselves?
+
+Currently, there appears to be no way to actually stop a bad actor from moving your pin location. If you are in a competitive vertical in a competitive market the best that you can do is: 1) monitor your listing location on a regular basis and 2) move it back if it gets moved. Whitespark's Local Platform will automatically monitor your listing for this and any other unwanted changes if you are too busy to keep an eye out for this skullduggery.
+
+When you do move it back, to avoid re-verification, you should have a Local Guide suggest an edit via Google Maps. If you move it back to its original location via your GBP dashboard, be prepared to go through the verification process all over again.
+
+Unfortunately, at least in the US, businesses have little or no legal recourse due to Google's categorical Section 230 protections.
+
+A Disturbing Trend
+
+When you see this sort of outcome you always have to ask "Is it a bug or a feature"? And, as is often the case with black hat tactics in Google Maps, the answer is "yes." The ability to edit pin location is a feature designed to allow consumers to make entrances and store locations more accurate than Google can do via automation. Why there are no distance limits on this "feature" is a big question.
+
+The other question that has to be asked is when will it get fixed? Previously, when asked about the time for a Google repair, I would give my "666" answer. If it isn't fixed in 6 days, it will be 6 weeks and, if not by then, it'll be 6 months.
+
+But with many bugs we are seeing an unsettling trend: very extended repair times. For example GBP support's inability to restore reviews in certain cases after a suspension/reinstatement goes back at least until February. In the EU, the issue where a photo is grabbed willy nilly off the internet and featured on the mobile business profile goes back well over a year. In one case, Google added an image from an animal rights activist to the profile photos of a chicken farmer.
+
+While bugs are to be expected, these increasing delays are problematic.
+
+What Is Going On?
+
+I strongly suspect that the ongoing, extended delays in fixing these serious bugs is a function of the many layoffs over the past 24 months from the GBP and Google Maps teams. Thus, the few remaining folks assigned to maintenance are forced to delay repairs for all too many issues.
+
+Now when I give the "666" answer as to when something might be fixed I add an addendum: If it isn't fixed in 6 weeks, it will be 6 months and if not done by then it might be 60 months or worse, Deep-Sixed.
+
+* I made an effort to reach out to 1st Class but they refused to take my call, thinking that I just another telemarketer. As soon as the word Google came out of my mouth, they hung up. Not once but twice. It is an amazing fact that Google's brand has been so tarnished by spammers that even the word "google" causes the person answering the phone to freak out.
+
+More Local Search analysis
+
+Google Completes GBP Reviews for LSAs Swap in EU
+
+In the UK & EU and perhaps other EMEA countries, Local Services Ad accounts must now be connected to a Google Business Profile and LSA reviews are being replaced by GBP reviews.
+
+Mike Blumenthal -->
+
+The Google Local SERP Today
+
+Google local SERPs are becoming a festival of "self-preferencing."
+
+Mike Blumenthal -->
+
+How Google's (Local) Development –> Deprecation Process Affects Innovation
+
+GBP Chat's rise and fall is an example of Google's approach to local product development, which often hurts small developers and innovation more generally.
+
+Mike Blumenthal -->

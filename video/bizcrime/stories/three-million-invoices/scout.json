@@ -1,0 +1,18 @@
+{
+ "title": "Three Million Fake Invoices for a Website You Already Had",
+ "one_paragraph_summary": "Starting in 2015, Robert W. Lederhilger III mailed more than three million official-looking invoices to small businesses that already had websites, demanding payment for 'web hosting services' \u2014 and when businesses paid, they got no actual service, just a fake 'renewal' bill a year later asking for more money. He collected roughly $2.99 million from small businesses over six years before being convicted at trial of mail fraud; he was sentenced to 73 months in federal prison and ordered to forfeit $5.2 million.",
+ "victim_type": "small businesses with existing websites",
+ "year": "2015-2021 (scheme); 2025 (conviction/sentencing)",
+ "dollar_amount_if_any": "$2.99 million collected; $5.2 million forfeiture ordered",
+ "named_parties": "Robert W. Lederhilger III",
+ "primary_source_urls": [
+  "https://www.justice.gov/usao-sdny/pr/florida-man-sentenced-73-months-prison-nationwide-mass-mailing-scam-targeting-small",
+  "https://www.justice.gov/usao-sdny/us-v-robert-w-lederhilger-iii-23-cr-116-alc",
+  "https://www.justice.gov/usao-sdny/file/1296441/dl"
+ ],
+ "secondary_urls": [
+  "https://thefederalnewswire.com/stories/675434453-florida-man-convicted-in-2-99-million-mass-mailing-scam-targeting-small-businesses"
+ ],
+ "why_it_hooks": "Three million fake bills for a service he never provided \u2014 for a website you already owned.",
+ "verification_notes": "Strong: DOJ case page, indictment PDF, and sentencing press release all primary and consistent. Good candidate for a script that literally shows the invoice mailer if a copy can be found in the court exhibits."
+}

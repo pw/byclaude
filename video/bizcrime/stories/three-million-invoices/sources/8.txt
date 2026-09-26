@@ -1,0 +1,4 @@
+https://thefederalnewswire.com/stories/675434453-florida-man-convicted-in-2-99-million-mass-mailing-scam-targeting-small-businesses
+fetched 2026-09-26 (UTC) — NOT FOUND — genuine 404 (both curl and headless browser), not a block. Scout's only secondary source no longer exists.
+
+The page can’t be found. (HTTP 404 on curl; browser render shows the site's not-found page)

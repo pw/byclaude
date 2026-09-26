@@ -1,0 +1,164 @@
+https://www.justice.gov/usao-sdny/file/1296441/dl
+fetched 2026-09-26 (UTC) — PDF (redirects to /usao-sdny/media/1296441/dl), scanned image, no text layer; text below is tesseract OCR at 300dpi of 3_indictment.pdf — OCR artefacts possible (e.g. 'III' read as 'IIL'); verify any quoted line against the PDF image
+
+UNITED STATES DISTRICT COURT
+SOUTHERN DISTRICT OF NEW YORK
+
+UNITED STATES OF AMERICA SEALED INDICTMENT
+Vv. 23 Cr.
+CRED (TOT Me
+ROBERT W. LEDERHILGER MII, “ey a lag ms 7 i
+Defendant.
+COUNT ONE
+(Mail Fraud) .
+
+The Grand Jury charges:
+
+The Defendant’s Mail Fraud Scheme
+
+1. From at least in or about March 2015 through at least in or about May 2022,
+ROBERT W. LEDERHILGER IIL, the defendant, engaged in a scheme to induce small businesses
+(the “Victim Businesses’) located throughout the United States to pay for webhosting services that
+were not and never intended to be rendered.
+
+2. ROBERT W. LEDERHILGER III, the defendant, owned and operated a company
+called “Enterprise Service Level LLC.” Lederhilger, at times, also operated under the names “Web
+Host Agents,” “Certified Web Services,” and “FreeBird Host LLC.” Collectively, “Enterprise
+Service Level LLC,” “Web Host Agents,” “Certified Web Services,” and “FreeBird Host LLC”
+are referred to herein as the “Lederhilger Companies.”
+
+3. In or about July 2016, ROBERT W. LEDERHILGER III, the defendant, contracted
+with a mass printing and mailing company in Georgia (the “Printer’’) to print and mail solicitations
+for webhosting services or renewal invoices for webhosting services (the “Deceptive Mailings”)
+
+to Victim Businesses throughout the United States. The Deceptive Mailings were designed to
+
+convincingly and misleadingly look like invoices for webhosting services that had already been
+rendered by a Lederhilger Company. The Deceptive Mailings included all the hallmarks of an
+actual invoice for services already rendered: it listed a due date, the amount due, a description of
+the services provided, i.e. “Yearly Web Hosting,” a phone number for billing inquiries, and it
+requested that a check be made payable to a Lederhilger Company. LEDERHILGER caused the
+Deceptive Mailings to be sent via the United States mail at a rate of several thousand per month
+beginning at least in or about July 2016 through in or about March 2021.
+
+4, ROBERT W. LEDERHILGER III, the defendant, engaged a large-scale
+commercial mail receiving agency (the “CMRA”) with mailbox locations throughout the United
+States to receive mailed responses to the Deceptive Mailings for the Lederhilger Companies,
+including at a mailbox located on Park Avenue South in New York, New York (the “Park Avenue
+South Address”).
+
+5. In response to the Deceptive Mailings, Victim Businesses sent checks for
+approximately $180 via United States mail to the Park Avenue South Address, which were
+processed and deposited by the CMRA into bank accounts controlled by ROBERT W.
+LEDERHILGER III, the defendant. LEDERHILGER provided no services to the Victim
+Businesses in exchange for the $180 they each paid.
+
+6. In addition to sending Deceptive Mailings directly from the Lederhilger
+Companies, ROBERT W. LEDERHILGER III, the defendant, caused others to send Deceptive
+Mailings to Victim Businesses around the country.
+
+a. LEDERHILGER, via the Enterprise Service Level website, offered what he
+described as a “Reseller Program,” which he claimed would allow others to sell webhosting
+
+services without any technical acumen. LEDERHILGER purported to offer participants in the
+
+program, i.e., the “Resellers,” the following services: (i) an exclusive territory; (ii) a list of leads
+every month; (iii) a marketing system; (iv) a website; (v) backend billing system; (vi) back-office
+support staff; and (vii) all technological order fulfillment. LEDERHILGER agreed to provide on
+the Reseller’s behalf the webhosting services to the end users, i.e. the Victim Businesses. In
+exchange for these services, the Resellers agreed to pay LEDERHILGER via Enterprise Service
+Level, approximately 44% of the between approximately $180 and approximately $192 that each
+Victim Business paid. The Resellers were also required to cover the costs for printing Deceptive
+Mailings from their “reseller” businesses, pay the wages of the back-office support staff, and pay
+LEDERHILGER for the monthly lead lists.
+
+b. LEDERHILGER required that Resellers take the following steps before
+participating in the program: create Limited Liability Companies (the “Reseller LLCs’), open
+corresponding bank accounts, enter agreements with the Printer to print and mail the Deceptive
+Mailings, open mailboxes at the CMRA to receive responses to the Deceptive Mailings, obtain a
+business phone line, and pay the back-office support staff that LEDERHILGER provided.
+
+C, While the Resellers operated independently of each other in their own
+LEDERHILGER-assigned territories, LEDERHILGER, via the Printer, coordinated and oversaw
+the printing and mailing of all the Deceptive Mailings across the Resellers.
+
+d. The Resellers, acting at LEDERHILGER’s direction, caused Deceptive
+Mailings to be sent throughout the United States to Victim Businesses. In response, Victim
+Businesses mailed checks for between $180 and $192 to the Resellers at CMRA mailboxes
+throughout the United States, including to the Park Avenue South Address.
+
+e, Despite LEDERHILGER’s ostensible agreement that Enterprise Service
+
+Level would provide the webhosting services to the Victim Businesses on the Resellers’ behalf,
+
+LEDERHILGER and Enterprise Service Level did not provide any services to the Victim
+Businesses.
+
+7. As a result, from at least in or about March 2015 through at least in or about
+May 2022, ROBERT W. LEDERHILGER III, the defendant, through the Lederhilger Companies
+and the Reseller LLCs, caused Deceptive Mailings to be sent to tens of thousands of Victim
+Businesses, which fraudulently induced more than approximately 38,000 payments by the Victim
+Businesses to the Lederhilger Companies and the Reseller LLCs, approximately $7 million paid
+for services not rendered.
+
+&
+
+Statutory Allegations
+
+8. From at least in or about March 2015 through at least in or about May 2022, in the
+Southern District of New York and elsewhere, ROBERT W. LEDERHILGER IIT, the defendant,
+willfully and knowingly, having devised and intending to devise a scheme and artifice to defraud,
+and for obtaining money and property by means of false and fraudulent pretenses, representations,
+and promises, for the purpose of executing such scheme and artifice and attempting so to do, did
+place in a post office and authorized depository for mail matter, matters and things to be sent and.
+delivered by the Postal Service, and did deposit and cause to be deposited matters and things to be
+sent and delivered by private and commercial interstate carriers, and did take and receive
+therefrom, such matters and things, and did cause to be delivered by mail and such carriers,
+according to the directions thereon, and at the places at which they were directed to be delivered
+by the person to whom they were addressed, such matters and things, to wit, LEDERHILGER sent
+and caused others to send by United States mail deceptive mailings relating to purported
+
+webhosting services to fraudulently induce victim businesses to send payments by mail to New
+
+York, New York, among other places, for webhosting services that were not and LEDERHILGER
+never intended to be rendered.
+(Title 18, United States Code, Sections 1341 and 2.)
+
+FORFEITURE ALLEGATION
+
+9. As a result of committing the offense alleged in Count One of this Indictment,
+ROBERT W. LEDERHILGER III, the defendant, shall forfeit to the United States, pursuant to
+Title 18, United States. Code, Section 981(a)(1)(C) and Title 28, United States Code,
+Section 2461(c), any and all property, real and personal, that constitutes or is derived from
+proceeds traceable to the commission of said offense, including but not limited to a sum of money
+in United States currency representing the amount of proceeds traceable to the commission of said
+offense and the following specific property:
+
+a. Up to $207,000 in United States currency on deposit in Account number
+14676012 at Vanguard Group, Inc. held in the name of “Robert W. Lederhilger,” including
+accrued interest;
+
+b. Up to $33,730 in United States currency on deposit in Account number
+77692300 at Vanguard Group, Inc. held in the name of “Josivette Lederhilger,” including
+
+accrued interest.
+
+Substitute Asset Provision
+
+10. If any of the above-described forfeitable property, as a result of any act or omission
+of the defendant: (a) cannot be located upon the exercise of due diligence; (b) has been transferred
+or sold to, or deposited with, a third party; (c) has been placed beyond the jurisdiction of the court;
+(d) has been substantially diminished in value; or (e) has been commingled with other property
+which cannot be divided without difficulty; it is the intent of the United States, pursuant to Title 21,
+United States Code, Section 853(p) and Title 28, United States Code, Section 2461(c), to seek
+forfeiture of any other property of the defendant up to the value of the forfeitable property
+
+described above.
+
+(Title 18, United States Code, Section 981;
+Title 21, United States Code, Section 853; and -.
+Title 28, United States Code, Section 2461.)
+
+Foreperson o DAMIAN WILLIAMS
+United States Attorney
+

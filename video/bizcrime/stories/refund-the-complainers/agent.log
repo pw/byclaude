@@ -1,0 +1,32 @@
+The refund-the-complainers film is built, uploaded to R2, and its captions are live on the review worker. Nothing was posted to Instagram; that's for the cron after a human read.
+
+- **Video:** https://byclaude-video-review.pw3.workers.dev/m/short-refund-the-complainers.mp4 returns 200, and the file size matches the local one byte for byte. It's 73.3 s (the cap is 75), 1080×1920, six beats, and every beat passed the narration check on the final build.
+- **Captions:** added to the review worker and to `publer/captions.json`, and live on `/posts`. They were still there after another film's worker deployed its own captions.
+- **Git:** committed as `75218d9` and pushed. I committed only my own caption entry; the salon-clone-tiffany film's uncommitted entry in the same file was left for that film's own build to commit, which it has.
+
+## Voiceover (172 words)
+1. November, twenty eleven. A law firm in White Plains, New York, received an invoice for two units of copier toner. Eight hundred seventy-two dollars.
+2. The firm had not ordered it. It came from I.T. Tech Products, run by Mark Mushkin. From twenty eleven to twenty seventeen, prosecutors said, it billed businesses across the country, mostly law firms.
+3. The complaint counts more than nineteen hundred checks, from eight hundred seventy-eight companies. About three point three million dollars. In those years, it bought ninety-six units of toner. All in twenty eleven.
+4. Prosecutors said that if a business called to complain after paying, generally, it got a refund, and that this let the scheme continue. Forty-one refund checks. Thirty-six companies.
+5. The White Plains firm had called. Days later, its invoice came back, marked void, cancelled. In twenty seventeen, the same company billed it again. This time, the firm contacted law enforcement.
+6. In twenty nineteen, Mark Mushkin pleaded guilty to mail fraud. The product was the invoice. The refund, prosecutors said, is what kept it running.
+
+On-screen captions: $872 FOR TONER · NEVER ORDERED · 1,919 CHECKS / 96 TONERS · THE REFUND · VOID · CANCELLED · THE PRODUCT WAS THE INVOICE
+
+## claims.json
+It's at `bizcrime/stories/refund-the-complainers/claims.json`. Each of the 15 VO sentences is tied to a source URL and a verbatim quote. A script checked every quote against its source file: all match except the VOID-stamp date, which is garbled by OCR (it was read off the page image, as the excerpts file notes). Nearly everything rests on the criminal complaint and the DOJ release. The guilty plea rests on the court docket, with the Laguna Beach Independent as corroboration only.
+
+## Softened or left out
+- **Refunds:** always "generally" and always attributed to prosecutors. The VO never says "immediately", "everyone", or that refunds were proven to be why he wasn't caught. I added the 36-companies count so the refund line doesn't sound universal.
+- **Sentence:** the VO says only "pleaded guilty to mail fraud", with no prison, restitution or forfeiture.
+- **Figures:** all attributed to the complaint. "878 companies", not "small businesses". "2011 to 2017", not "six years". The check count became "more than nineteen hundred" (the DOJ's own figure) to save time; the caption shows 1,919.
+- **Left out entirely:** Xerox, the gallery and the "photographer" label, "Bob Stevens", victim names, the Westfair profit arithmetic, and any FTC case.
+- **"Had not ordered it"** for the White Plains firm comes from a paragraph of the complaint that isn't in EXCERPTS.md; the excerpts' general line ("never ordered copier toner") also covers it. Both are cited.
+- **"White Plains"** appears in EXCERPTS.md only in a heading, so I cited the complaint line itself.
+
+## Deviations and heads-up
+- **Voice is Atlas, not onyx.** The narration service returns a 404 for `onyx` now. The three-million-invoices film also uses Atlas. The payroll-vanished film's script still says `onyx` and there's no video file for it, so it likely failed on this.
+- **One still was edited:** B04 (the desk phone) had a tiny unreadable fake maker's badge, which I blurred out. I checked all six stills close up: no faces, no readable text, no logos.
+- **First two builds went over the cap** (76.5 s and 75.5 s), so I trimmed the script. Those builds also flagged beat 3, but that was the checker failing on numbers transcribed as digits, not bad audio.
+exit 0 for refund-the-complainers

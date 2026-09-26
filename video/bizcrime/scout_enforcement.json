@@ -1,0 +1,261 @@
+[
+  {
+    "title": "The 'Cash Advance' That Was Really an 820% Loan",
+    "one_paragraph_summary": "Yellowstone Capital LLC and 25 affiliated companies sold small businesses financing they called 'merchant cash advances' — legally framed as a purchase of future revenue with flexible payments — but in reality collected fixed daily amounts auto-debited from merchants' bank accounts on rigid 60-90 day schedules, at effective annual rates as high as 820%. New York Attorney General Letitia James won a judgment of more than $1.065 billion in early 2025, the largest single-state consumer restitution in New York history, canceling more than $534 million still owed by roughly 18,000 small businesses nationwide.",
+    "victim_type": "small businesses (restaurants, retail, contractors) that took MCA financing",
+    "year": "2025 (judgment); scheme ran roughly 2012-2021",
+    "dollar_amount_if_any": "$1.065 billion judgment; $534 million+ in canceled small-business debt",
+    "named_parties": "Yellowstone Capital LLC and 25 affiliated companies (New York Attorney General Letitia James, plaintiff)",
+    "primary_source_urls": [
+      "https://ag.ny.gov/press-release/2025/attorney-general-james-announces-1-billion-settlement-predatory-lender"
+    ],
+    "secondary_urls": [
+      "https://www.bloomberg.com/news/articles/2020-08-03/ftc-sues-yellowstone-capital-claiming-lending-abuses",
+      "https://getoutofdebt.org/230067/ny-ag-wins-1b-against-predatory-lender-yellowstone-capital",
+      "https://www.fintechanddigitalassets.com/2025/02/ny-attorney-general-secures-1-billion-judgment-for-illegal-loans-misrepresented-as-merchant-cash-advances/"
+    ],
+    "why_it_hooks": "They called it a 'cash advance.' It was a loan shark rate of 820% a year — and it took a billion-dollar judgment to prove it.",
+    "verification_notes": "Court judgment and dollar figures confirmed via the NY AG's own press release (primary). A verifier should pull the underlying complaint/judgment for the exact list of 25 affiliate names and any specific, nameable small-business victims quoted in filings before scripting individual anecdotes; the press release describes the population (18,000 businesses) rather than naming individuals."
+  },
+  {
+    "title": "$9.8 Million Taken From Bank Accounts That Were Already Paid Off",
+    "one_paragraph_summary": "The FTC charged Yellowstone Capital with continuing to withdraw hundreds or thousands of dollars a day from small-business bank accounts even after merchants had fully repaid what their merchant-cash-advance contracts required — plus deceiving business owners about how much financing they'd actually receive. Yellowstone settled for $9.8 million, and in 2022 the FTC mailed 7,731 refund checks totaling more than $9.7 million back to the small businesses it had overcharged.",
+    "victim_type": "small businesses with active merchant-cash-advance financing",
+    "year": "2020 (FTC complaint) - 2022 (refunds mailed)",
+    "dollar_amount_if_any": "$9.8 million settlement; $9.7 million refunded to 7,731 businesses",
+    "named_parties": "Yellowstone Capital LLC; Fundry.com LLC; principals named in FTC v. Yellowstone Capital LLC",
+    "primary_source_urls": [
+      "https://www.ftc.gov/news-events/news/press-releases/2022/06/federal-trade-commission-returns-more-97-million-small-businesses-harmed-yellowstone-capitals",
+      "https://www.ftc.gov/legal-library/browse/cases-proceedings/182-3202-yellowstone-capital-llc-ftc-v"
+    ],
+    "secondary_urls": [
+      "https://search.ftc.gov/news-events/news/press-releases/2021/04/cash-advance-firm-pay-98m-settle-ftc-complaint-it-overcharged-small-businesses",
+      "https://www.claimdepot.com/settlements/yellowstone-mca-settlement"
+    ],
+    "why_it_hooks": "They finished paying the loan back. The company kept taking money out of their account anyway — for months.",
+    "verification_notes": "Primary FTC case page and press release confirm the settlement and refund numbers. Same corporate family as the NY AG billion-dollar case above but a distinct FTC action/timeline — script should make clear these are two separate enforcement actions against the same lender so they aren't retold as duplicates."
+  },
+  {
+    "title": "The Lender That Charged Up To 820% and Called It Legal",
+    "one_paragraph_summary": "New York's Attorney General also won a judgment of more than $77.3 million against a second merchant-cash-advance ring — Richmond Capital Group, Ram Capital Funding, and Viceroy Capital Funding, and their principals — for usury and fraud, after finding the companies misrepresented short-term, ultra-high-interest loans as MCA 'purchases' to small businesses across the country. A 2023 court victory in the same case had already wiped out all outstanding debts owed by the small businesses involved.",
+    "victim_type": "small businesses that took MCA financing",
+    "year": "2023 (debt cancellation) - 2024 (judgment)",
+    "dollar_amount_if_any": "$77,298,631 judgment",
+    "named_parties": "Richmond Capital Group; Ram Capital Funding; Viceroy Capital Funding; company principals (New York Attorney General Letitia James, plaintiff)",
+    "primary_source_urls": [
+      "https://ag.ny.gov/press-release/2024/attorney-general-james-announces-historic-judgment-against-predatory-lender"
+    ],
+    "secondary_urls": [
+      "https://www.jdsupra.com/topics/merchant-cash-advance-mca"
+    ],
+    "why_it_hooks": "A New York court didn't just fine them — it erased every dollar the small businesses still owed.",
+    "verification_notes": "Primary AG press release confirms the judgment amount and prior debt cancellation. Verifier should read the full release for named individual defendants (principals) before scripting to attribute correctly, since the summary above lists company names rather than the individuals' names."
+  },
+  {
+    "title": "The Payroll Company That Vanished With Everyone's Paycheck",
+    "one_paragraph_summary": "Michael Mann, CEO of ValueWise Corporation and its subsidiary MyPayrollHR, ran a scheme from 2013 to September 2019 that defrauded banks and financing companies out of tens of millions of dollars — and when his accounts were frozen, roughly 1,000 client businesses across the country suddenly had no payroll processor, leaving thousands of employees without paychecks and, in some cases, with payroll taxes never remitted. Mann was sentenced to 144 months in federal prison and ordered to pay over $101 million in restitution.",
+    "victim_type": "small and mid-size businesses that used MyPayrollHR to process payroll",
+    "year": "2019 (collapse) - 2021 (sentencing)",
+    "dollar_amount_if_any": "$100+ million in fraud losses; $101,038,793 ordered in restitution",
+    "named_parties": "Michael T. Mann; ValueWise Corporation; MyPayrollHR.com LLC",
+    "primary_source_urls": [
+      "https://www.justice.gov/usao-ndny/pr/valuewise-ceo-michael-mann-sentenced-144-months-prison-100-million-fraud",
+      "https://www.justice.gov/usao-ndny/pr/michael-mann-charged-bank-fraud"
+    ],
+    "secondary_urls": [
+      "https://www.nbcnews.com/news/us-news/mypayrollhr-ceo-arrested-charged-70-million-bank-fraud-scheme-n1057856",
+      "https://www.timesunion.com/business/article/Victims-of-MyPayrollHR-collapse-reveal-pain-and-16360790.php"
+    ],
+    "why_it_hooks": "One morning, a thousand small businesses' payroll company just disappeared — and their employees' paychecks bounced.",
+    "verification_notes": "Confirmed via DOJ USAO-NDNY press releases (charging and sentencing, both primary). A staffing-company anecdote about an 'angry mob' demanding paychecks appears in secondary local reporting (Times Union) and should be re-verified against that outlet directly before quoting it as fact in a script."
+  },
+  {
+    "title": "The Locksmith Who Got Framed by 10,000 Fake Google Listings",
+    "one_paragraph_summary": "A real locksmith business in Texas reported to Google that an unlicensed operation was impersonating them on Google Maps — that single complaint led Google's investigators to a network of more than 10,000 fake or hijacked business listings, mostly for 'duress' services like locksmiths and towing companies, that rerouted desperate customers to scammers who overcharged them and sold their contact information. Google sued the alleged ringleader, Maryland resident Yaniv Asayag (owner of Eagle Locksmith / Eagle Services LLC), in federal court in March 2025.",
+    "victim_type": "small local service businesses (locksmiths, tow companies) impersonated online, and their customers",
+    "year": "2025",
+    "dollar_amount_if_any": "Not publicly quantified; lead-generation/data-sale scheme, 10,000+ fake listings removed",
+    "named_parties": "Yaniv Asayag; Eagle Locksmith; Eagle Services LLC (Google LLC, plaintiff)",
+    "primary_source_urls": [
+      "https://www.cbsnews.com/news/google-maps-fake-listings-lawsuit-scams/"
+    ],
+    "secondary_urls": [
+      "https://www.yahoo.com/news/google-sues-scammers-behind-thousands-141629731.html",
+      "https://tech.slashdot.org/story/25/03/21/1126233/google-sues-scammers-over-fake-maps-listings",
+      "https://www.locksmithledger.com/home/article/55276443/is-google-finally-taking-some-action"
+    ],
+    "verification_notes": "News coverage (CBS, Yahoo, trade press) cites Google's own complaint but this scout did not locate Google's court filing or blog post directly — a verifier should pull the actual complaint (likely N.D. Cal.) for the case number, exact allegations, and to confirm the real Texas locksmith's identity is not disclosed in the filing (protect their privacy/don't name them without confirming they want attention).",
+    "why_it_hooks": "One honest locksmith's complaint to Google unraveled a scam network with 10,000 fake storefronts."
+  },
+  {
+    "title": "The 'Update Your Yellow Pages Listing' Call That Cost Nonprofits and Small Offices Thousands",
+    "one_paragraph_summary": "The FTC sued Your Yellow Book Inc. and the Law family (Brandie Michelle Law, Dustin Robert Law, and their father Robert Ray Law) of Oklahoma City for calling small businesses, doctors' offices, retirement homes, and religious schools, asking them to 'verify' or 'update' their listing in an online business directory — and then billing them up to $487 based on the recorded call, even though the organizations never agreed to be listed or pay anything. A federal court in Oklahoma entered a permanent injunction and, in a related follow-on case, ordered Robert Ray Law to pay nearly $400,000 and banned him from unsolicited direct-mail solicitation for life.",
+    "victim_type": "small businesses, nonprofits, doctors' offices, retirement homes, religious schools",
+    "year": "2014-2015",
+    "dollar_amount_if_any": "Up to $487 per victim billed; ~$400,000 judgment against Robert Ray Law in the follow-on case",
+    "named_parties": "Your Yellow Book, Inc.; Brandie Michelle Law; Dustin Robert Law; Robert Ray Law; CPU Service Incorporated",
+    "primary_source_urls": [
+      "https://search.ftc.gov/news-events/news/press-releases/2014/08/ftc-sues-online-yellow-pages-operation-scamming-small-businesses-doctors-offices-retirement-homes",
+      "https://www.ftc.gov/legal-library/browse/cases-proceedings/142-3070-x140045-your-yellow-book-inc",
+      "https://search.ftc.gov/system/files/documents/cases/140807youryellowbookcmpt.pdf"
+    ],
+    "secondary_urls": [
+      "https://www.ftc.gov/news-events/news/press-releases/2015/11/ftc-obtains-contempt-ruling-against-yellow-pages-scam"
+    ],
+    "why_it_hooks": "A phone call asking you to 'just confirm your listing' — and a recording of your 'yes' that was never really a yes.",
+    "verification_notes": "Well-documented with primary FTC complaint PDF and case docket. The 'deceptive collection tactics using altered audio' detail comes from a distinct but related FTC yellow-pages case (Robert Law/Your Yellow Book vs. a separate 2015 Montreal-based operation) — verify which specific defendant used the altered-audio trick before dramatizing it, so it's attributed to the right case."
+  },
+  {
+    "title": "Operation Misprint: The National Sting on the 'Toner Phone' Scam",
+    "one_paragraph_summary": "In a coordinated multi-agency crackdown called 'Operation Misprint,' the FTC and state partners sued a network of companies doing business as National Supply Center, Central Supply Center, and District Supply Center, along with individual defendants, for calling small businesses and non-profits, misrepresenting who they were, then shipping grossly overpriced photocopier toner and office supplies nobody ordered and demanding payment. The FTC estimated office-supply scams like this cost small businesses roughly $250 million a year nationally.",
+    "victim_type": "small businesses and nonprofit organizations",
+    "year": "1999-2000",
+    "dollar_amount_if_any": "Estimated $250 million/year industry-wide; individual settlements in the hundreds of thousands",
+    "named_parties": "National Supply & Distribution Center, Inc.; Data Distribution Service, Inc.; District/Central/National Supply Center entities; Steven Rayman; Larry Ellis; Lee Siegel; Scott Earl; Dennis Connelly and others",
+    "primary_source_urls": [
+      "https://www.ftc.gov/news-events/news/press-releases/2000/05/ftc-announces-settlement-office-supply-scam-case-provides-tips-small-businesses-how-defend",
+      "https://www.ftc.gov/news-events/news/press-releases/1999/12/businesses-both-large-and-small-continue-fall-prey-bogus-business",
+      "https://www.ftc.gov/news-events/news/press-releases/2000/09/ftc-continues-crackdown-office-supply-scams"
+    ],
+    "secondary_urls": [
+      "https://www.ftc.gov/news-events/news/press-releases/1996/08/ftc-nets-856500-settlements-nine-defendants-toner-phoner-fraud-case"
+    ],
+    "why_it_hooks": "A box of toner you never ordered shows up at your shop — followed by an invoice, and then a very aggressive collections call.",
+    "verification_notes": "Multiple primary FTC press releases confirm the operation and named defendants. Dated (late 1990s) — good as a 'this has been happening for decades and is still happening' anchor story rather than a 2020s hook; pair it in the video with a modern toner-scam case (Mushkin, below) to show it never stopped."
+  },
+  {
+    "title": "'Your Business Will Be Removed From Google' — Unless You Pay $700",
+    "one_paragraph_summary": "Dustin Pillonato and Justin Ramsey ran Pointbreak Media, which robocalled more than 74 million people — including 14 million numbers on the Do Not Call Registry — falsely warning small business owners that Google was about to mark their business 'permanently closed' unless they pressed 1 to speak to a 'Google specialist' and pay $300 to $700 to 'claim and verify' their listing, then upsold a bogus $949.99 search-ranking guarantee. The FTC won summary judgment and courts ordered Pillonato and Ramsey to pay more than $3.3 million.",
+    "victim_type": "small business owners with Google Business listings",
+    "year": "2018-2019",
+    "dollar_amount_if_any": "$3.3 million+ ordered against the two main defendants",
+    "named_parties": "Dustin Pillonato; Justin Ramsey; Aaron Michael Jones; Vincent Yates; Pointbreak Media, LLC; DCP Marketing, LLC; Modern Source Media, LLC; National Business Listings, LLC; AllStar Data, LLC",
+    "primary_source_urls": [
+      "https://www.ftc.gov/news-events/news/press-releases/2018/05/ftc-action-halts-deceptive-robocalls-aimed-small-business-owners",
+      "https://www.ftc.gov/news-events/news/press-releases/2019/05/ftc-disconnects-pointbreak-media-robocall-scheme-defendants",
+      "https://www.ftc.gov/system/files/documents/cases/pointbreak_media_final_order_as_to_pillonato_and_ramsey.pdf"
+    ],
+    "secondary_urls": [
+      "https://www.ftc.gov/business-guidance/blog/2018/05/ftc-challenges-robocallers-false-threat-small-businesses-will-be-removed-google"
+    ],
+    "why_it_hooks": "A robocall tells you Google is about to delete your business — the only real threat is the call itself.",
+    "verification_notes": "Strong primary documentation: complaint, final order, and two press releases all on ftc.gov. Exact per-defendant dollar breakdowns are in the final order PDF and should be pulled precisely rather than repeating the rounded $3.3M figure for any specific-number claim in the script."
+  },
+  {
+    "title": "The Equipment Lease You Could Never Escape",
+    "one_paragraph_summary": "Northern Leasing Systems and affiliated companies locked small business owners nationwide into abusive, overpriced, non-cancelable leases for credit-card processing equipment — then, when businesses fell behind or tried to walk away, filed over 30,000 lawsuits in New York City Civil Court and won more than 19,000 default judgments, often against owners who were never properly served or lived out of state. New York's Attorney General won a court order in 2020 vacating roughly 30,000 of those default judgments and dissolving Northern Leasing Systems, Inc.; in 2024 the AG secured a further $4.6 million in restitution after finding the same operators had spun up new entities to keep running the scheme.",
+    "victim_type": "small businesses that leased credit-card processing equipment",
+    "year": "2016 (suit filed) - 2020 (dissolution) - 2024 (further restitution)",
+    "dollar_amount_if_any": "30,000+ default judgments vacated; $4.6 million+ additional restitution in 2024",
+    "named_parties": "Northern Leasing Systems, Inc.; Lease Finance Group; MBF Leasing; NLS Equipment Finance LLC; Leasing Expenses Company, LLC",
+    "primary_source_urls": [
+      "https://ag.ny.gov/press-release/2016/ag-schneiderman-sues-northern-leasing-systems-inc-deceptive-business-practices",
+      "https://ag.ny.gov/press-release/2020/attorney-general-james-wins-lawsuit-against-northern-leasing-systems-delivering",
+      "https://ag.ny.gov/press-release/2024/attorney-general-james-secures-over-46-million-small-businesses-northern-leasing"
+    ],
+    "secondary_urls": [
+      "https://www.cardfellow.com/blog/northern-leasing-systems-lawsuit-scam-review/"
+    ],
+    "why_it_hooks": "They sued 30,000 small businesses and won almost all of it by default — because most owners never even knew they'd been sued.",
+    "verification_notes": "Three separate primary NY AG press releases (2016 suit, 2020 dissolution/judgment-vacatur, 2024 follow-on restitution) give a clean three-act structure. After dissolution, the AG found the SAME operators running the scheme through new shell entities — verify that specific 'they came back under a new name' detail directly in the 2024 release before using it as the twist."
+  },
+  {
+    "title": "878 Small Businesses, One Fake Toner Company, $3.3 Million",
+    "one_paragraph_summary": "For six years, Mark Mushkin ran a phony company called IT Tech Products that mailed fake invoices to small businesses nationwide — mostly law firms — falsely claiming they'd ordered and received shipments of copier toner, and asking for payment. When a business questioned an invoice, Mushkin would simply refund them to avoid scrutiny while continuing the scheme against everyone else. Federal prosecutors say he deposited 1,919 checks totaling more than $3.3 million from 878 different small businesses before he was charged with mail fraud.",
+    "victim_type": "small businesses, predominantly law firms",
+    "year": "2011-2017 (scheme); charged 2018",
+    "dollar_amount_if_any": "$3.3 million from 878 businesses",
+    "named_parties": "Mark Timothy Mushkin; IT Tech Products",
+    "primary_source_urls": [
+      "https://www.justice.gov/usao-sdny/pr/california-man-charged-white-plains-federal-court-operating-multimillion-dollar-mail"
+    ],
+    "secondary_urls": [
+      "https://westfaironline.com/crime/man-accused-of-scamming-businesses-with-toner-scheme/",
+      "https://dailyvoice.com/new-york/mountpleasant/news/man-charged-in-westchester-with-running-3m-mail-fraud-scheme/738552/"
+    ],
+    "why_it_hooks": "If you complained, he refunded you immediately — the perfect trick to keep scamming everyone who didn't.",
+    "verification_notes": "Primary source is the DOJ charging press release (USAO-SDNY); this scout could not confirm a later conviction/sentencing press release in this session — a verifier should check PACER or DOJ SDNY for the case disposition (docket likely in the Southern District of New York, White Plains) before stating in a video that he was convicted, and use 'charged with' language unless sentencing is confirmed."
+  },
+  {
+    "title": "Three Million Fake Invoices for a Website You Already Had",
+    "one_paragraph_summary": "Starting in 2015, Robert W. Lederhilger III mailed more than three million official-looking invoices to small businesses that already had websites, demanding payment for 'web hosting services' — and when businesses paid, they got no actual service, just a fake 'renewal' bill a year later asking for more money. He collected roughly $2.99 million from small businesses over six years before being convicted at trial of mail fraud; he was sentenced to 73 months in federal prison and ordered to forfeit $5.2 million.",
+    "victim_type": "small businesses with existing websites",
+    "year": "2015-2021 (scheme); 2025 (conviction/sentencing)",
+    "dollar_amount_if_any": "$2.99 million collected; $5.2 million forfeiture ordered",
+    "named_parties": "Robert W. Lederhilger III",
+    "primary_source_urls": [
+      "https://www.justice.gov/usao-sdny/pr/florida-man-sentenced-73-months-prison-nationwide-mass-mailing-scam-targeting-small",
+      "https://www.justice.gov/usao-sdny/us-v-robert-w-lederhilger-iii-23-cr-116-alc",
+      "https://www.justice.gov/usao-sdny/file/1296441/dl"
+    ],
+    "secondary_urls": [
+      "https://thefederalnewswire.com/stories/675434453-florida-man-convicted-in-2-99-million-mass-mailing-scam-targeting-small-businesses"
+    ],
+    "why_it_hooks": "Three million fake bills for a service he never provided — for a website you already owned.",
+    "verification_notes": "Strong: DOJ case page, indictment PDF, and sentencing press release all primary and consistent. Good candidate for a script that literally shows the invoice mailer if a copy can be found in the court exhibits."
+  },
+  {
+    "title": "The Fake Insurance Certificate That Cost a Contractor $700,000",
+    "one_paragraph_summary": "Fernando Jose Cuellar Membreno posed as a licensed insurance agent under a rotating list of business names (including HSR Insurance and Sub Contractors of the South), collected workers'-compensation premium payments from contractors and subcontractors, and handed out falsified certificates of insurance instead of real coverage. Georgia's State Board of Workers' Compensation found one of his fake certificates alone ended up costing a general contractor more than $700,000 in additional premiums once the fraud was discovered — and Membreno was indicted on 22 felony counts, then arrested again in 2025 for running the same scheme under new business names.",
+    "victim_type": "contractors and subcontractors buying workers' compensation coverage",
+    "year": "2021 (initial arrest) - 2025 (re-arrested on new charges)",
+    "dollar_amount_if_any": "$700,000+ in additional premiums for one general contractor; 22 felony counts total",
+    "named_parties": "Fernando Jose Cuellar Membreno; HSR Insurance, LLC; All Nations, Inc.; All Saints Insurance; Sub Contractors of the South; Platoon Builders Corp.; Tax Center of Gainesville; Tax Center Buford, Inc.",
+    "primary_source_urls": [
+      "https://www.insurancejournal.com/news/southeast/2025/09/17/839365.htm"
+    ],
+    "secondary_urls": [
+      "https://www.wsbtv.com/news/georgia-agent-sold-fake-insurance-coverage-pocketed-premium-payments-officials/NH6J3JAL3JFFFNFYYULFFZA5U4/",
+      "https://www.fox5atlanta.com/news/officials-gwinnett-county-man-steals-thousands-in-fake-insurance-scam",
+      "https://www.yahoo.com/news/articles/gwinnett-man-allegedly-posing-insurance-203805756.html"
+    ],
+    "why_it_hooks": "He didn't just pocket the premium — he handed contractors a certificate of insurance that was completely fake, and they only found out when it mattered most.",
+    "verification_notes": "No direct Georgia state-agency (Insurance Commissioner / State Board of Workers' Compensation) press release URL was located in this session — all sourcing here is via Insurance Journal, WSB-TV, and FOX 5 Atlanta reporting on the Gwinnett County grand jury indictment and the enforcement division's investigation. A verifier should request the actual indictment or state board press release from Gwinnett County / Georgia DOI before scripting exact figures, and confirm whether this is one continuous case or two separate indictments (2021 and 2025) involving the same person under different business names."
+  },
+  {
+    "title": "He Opened FedEx Accounts in Real Businesses' Names — Without Asking",
+    "one_paragraph_summary": "Andre Grizzle ran a Pittsburgh shipping company, LDM International, that bid on shipping jobs through an online marketplace by offering suspiciously cheap rates — then fulfilled them by calling FedEx customer service, impersonating employees of legitimate businesses, and opening fraudulent FedEx accounts in those real companies' names without their knowledge or consent, sticking them with shipping charges they never agreed to. Grizzle pleaded guilty to mail fraud for defrauding FedEx of more than $600,000, but the real businesses whose names and identities were hijacked were left to sort out the fallout with FedEx and their own customers.",
+    "victim_type": "legitimate businesses whose names/identities were used to open fraudulent shipping accounts, and FedEx",
+    "year": "2009-2013 (scheme); guilty plea date not confirmed in this session",
+    "dollar_amount_if_any": "$600,000+",
+    "named_parties": "Andre Grizzle; LDM International",
+    "primary_source_urls": [
+      "https://www.justice.gov/usao-wdtn/pr/man-pleads-guilty-defrauding-fedex-more-600000-0"
+    ],
+    "secondary_urls": [],
+    "why_it_hooks": "Your business's name, used to open a shipping account you never knew existed — and you're the one who has to untangle it.",
+    "verification_notes": "Primary DOJ (USAO-WDTN) press release confirms the plea, dollar amount, and mechanics. This scout could not independently confirm whether any specific real business (by name) was identified in the press release as a victim of the identity-borrowing — read the full release/plea agreement before naming a specific victim business on camera; frame the story around the mechanism (a business's identity used without consent) rather than a specific named victim unless one is confirmed in the primary document."
+  },
+  {
+    "title": "The Vegan Restaurant Owner Who Stole From Her Own Staff",
+    "one_paragraph_summary": "Sarma Melngailis, celebrity owner of Manhattan's acclaimed vegan restaurant Pure Food and Wine, and her husband Anthony Strangis were indicted on 24 counts including grand larceny, criminal tax fraud, and labor law violations after prosecutors say they bilked nearly $1 million from investors and from their own employees — including money withheld from paychecks that was never paid to the IRS — before shuttering the restaurant and fleeing in May 2015. The pair were caught in Tennessee after using a food-delivery app under their own name, and Melngailis ultimately pleaded guilty to grand larceny, tax fraud, and scheme to defraud in exchange for four months in jail and five years' probation.",
+    "victim_type": "restaurant employees (unpaid wages/withheld taxes) and investors",
+    "year": "2015 (collapse/flight) - 2016 (indictment) - 2017 (guilty plea)",
+    "dollar_amount_if_any": "Nearly $1 million from staff and investors combined",
+    "named_parties": "Sarma Melngailis; Anthony Strangis; Pure Food and Wine (Irving Place, Manhattan); One Lucky Duck",
+    "primary_source_urls": [
+      "https://www.brooklynda.org/2016/05/12/owner-of-vegan-food-business-and-her-husband-indicted-for-allegedly-stealing-from-employees-defrauding-investors-not-paying-taxes/"
+    ],
+    "secondary_urls": [
+      "https://www.cbsnews.com/newyork/news/vegan-restaurant-owners-charged",
+      "https://www.thedailybeast.com/new-yorks-most-famous-vegan-is-going-to-jail/",
+      "https://en.wikipedia.org/wiki/Sarma_Melngailis"
+    ],
+    "why_it_hooks": "A celebrated restaurant owner emptied the tip jar, the payroll taxes, and the investors' money — then got caught because she ordered a pizza under her real name.",
+    "verification_notes": "This is a small-business-owner-as-perpetrator story with a strong primary source (Brooklyn DA indictment press release) confirming the charges and dollar figure. The 'caught via food delivery app' detail is widely reported (and the basis of the Netflix documentary 'Bad Vegan') but should be verified against a court record or contemporaneous news report, not just the documentary, before stating it as fact."
+  },
+  {
+    "title": "The Contractor Who Took $150,000 in Deposits and Vanished on the Jobs",
+    "one_paragraph_summary": "Pennsylvania's Attorney General sued a York County home-improvement contractor and his companies, American Home Solutions Corporation and Elite Remodeling, LLC, alleging he collected more than $150,000 in advance deposits from homeowners for renovation and repair work, then either never started the jobs or walked away mid-project, leaving customers with unfinished or substandard work and no refunds.",
+    "victim_type": "homeowners hiring a contracting business (perpetrator = small-business/contractor owner)",
+    "year": "2025",
+    "dollar_amount_if_any": "$150,000+ in deposits",
+    "named_parties": "American Home Solutions Corporation; Elite Remodeling, LLC (York County, PA contractor); Pennsylvania Attorney General Dave Sunday, plaintiff",
+    "primary_source_urls": [
+      "https://www.attorneygeneral.gov/taking-action/ag-sunday-sues-york-county-contractor-for-taking-150k-in-deposits-and-failing-to-honor-contracts/"
+    ],
+    "secondary_urls": [],
+    "why_it_hooks": "This is exactly the guy who makes every honest contractor's estimate feel like a scam to a nervous customer.",
+    "verification_notes": "Primary source is the PA Attorney General's own press release, which should also name the individual contractor/owner behind the two companies — pull the full release for that name before scripting, since this summary (from search-result snippets) named only the two business entities, not the individual owner-defendant. Confirm whether charges are civil (AG consumer-protection suit) or criminal before describing the legal posture on camera."
+  }
+]

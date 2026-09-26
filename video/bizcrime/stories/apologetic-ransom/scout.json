@@ -1,0 +1,23 @@
+{
+ "title": "The $75 Gift Card Ransom",
+ "one_paragraph_summary": "In 2022, scammers posted a wave of fake one-star Google reviews on acclaimed Houston restaurant Bludorn, then emailed co-owners Aaron Bludorn and Cherif Mbodji an oddly apologetic extortion note ('sorry,' 'we apologize') demanding a $75 Google Play gift card to make the reviews stop, threatening more if they refused. The owners declined to pay, went public about it, and more than 100 real customers flooded the page with genuine positive reviews in solidarity, while Google initially said the reviews didn't technically violate policy since they carried no text.",
+ "victim_type": "restaurant",
+ "year": 2022,
+ "dollar_amount_if_any": "$75 demanded; owners refused to pay",
+ "named_parties": [
+  "Bludorn (restaurant, Houston, TX)",
+  "Aaron Bludorn (co-owner)",
+  "Cherif Mbodji (co-owner)",
+  "Michelle Korsmo (National Restaurant Association, quoted)"
+ ],
+ "primary_source_urls": [
+  "https://www.cbsnews.com/news/restaurant-scam-one-star-reviews/"
+ ],
+ "secondary_urls": [
+  "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+  "https://www.marketplace.org/story/2022/08/10/online-review-extortion-scheme-targets-the-restaurant-industry-at-an-unsteady-time",
+  "https://restaurant.org/education-and-resources/resource-library/restaurant-reputations-held-for-ransom/"
+ ],
+ "why_it_hooks": "The extortionists apologized IN THE SAME EMAILS demanding the ransom -- 'sorry,' 'we apologize' -- while threatening to keep bombing a five-star restaurant's rating over $75.",
+ "verification_notes": "CBS News article loaded and was fetched directly; quotes and details (co-owner names, $75 Google Play gift card demand, 100+ supportive reviews) confirmed in that piece. Today.com and Marketplace.org describe the same nationwide 2022 review-extortion wave hitting restaurants coast to coast, corroborating the mechanism though not this specific restaurant. Confirm exact 2022 date before final script."
+}

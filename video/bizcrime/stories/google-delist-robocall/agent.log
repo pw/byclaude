@@ -1,0 +1,28 @@
+Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.
+The `google-delist-robocall` film is built, uploaded and in the review worker; nothing was posted to Instagram. It runs 72.7 s over 6 beats, and the checker confirmed every beat's narration. It's at https://byclaude-video-review.pw3.workers.dev/m/short-google-delist-robocall.mp4 (200, same byte count as the local file). The caption is live on `/posts`.
+
+**Two build steps failed once each; neither hit the two-failure stop:**
+- **Voice:** the first build produced no audio. `"voice": "onyx"` is an old voice name that the current speech service rejects, and every beat came back as an error file. A quick test confirmed "Atlas" works and "onyx" doesn't, so the film uses Atlas. The shared BRIEF.md had already been corrected by another agent when I went to fix it.
+- **R2 upload:** wrangler first failed on login. Setting the pwhite account's key fixed it.
+
+**VO** (181 words, kicker "THE FINAL NOTICE"):
+1. One recorded call said it was from a data service provider for Google. This is your final notice. If you do not act soon, Google will label your business as permanently closed. — *FINAL NOTICE*
+2. It wasn't Google. It was Pointbreak Media, a Florida telemarketer. Claiming a Google listing is free. — *IT WASN'T GOOGLE*
+3. In seven weeks of twenty seventeen, Pointbreak made nearly seventy-five million robocalls. Nearly fifteen million to numbers on the Do Not Call Registry. — *75 MILLION CALLS*
+4. Owners who pressed one paid three to five hundred dollars to claim and verify it. The court found no evidence customers benefited. Co-owner Dustin Pillonato admitted clients saw zero benefits. — *0 BENEFITS*
+5. On October twentieth, twenty seventeen, their card processor cut them off. The next week, Pointbreak wrote itself one-hundred-dollar checks from at least two hundred eighty customers' accounts, without consent. Justin Ramsey endorsed every one. — *280 CHECKS / $100 EACH*
+6. Both men were already under court injunctions. In twenty nineteen, a federal judge ordered them to pay more than three point three million dollars, and hand over fifty-three pieces of jewelry. The product was a final notice, about something that was always free. — *ALWAYS FREE*
+
+**claims.json** (`stories/google-delist-robocall/claims.json`): the 16 VO sentences are mapped to 26 source quotes. A script checked that every quote appears verbatim in EXCERPTS.md and that the claims add up to the VO word for word; both passed. Most quotes come from the court's findings (the magistrate judge's report). The $3,367,666.30 and the April 25, 2019 date come from the final order, "free" from the FTC blog, and "Florida-based" from the 2018 FTC press release.
+
+**Softened or omitted:**
+- **Upsell cut:** the second "Citation Program" sale ($499.99–$849.99 plus $169.99 a month) was in an earlier draft. I cut it because the film ran 77 s, over the 75 s cap.
+- **Court finding reworded:** with the upsell gone, "the court found customers saw no change in search results" would have attached to the $300–$500 fee. The flat "no change" finding was about the upsell, so I used the court's own line: "no evidence customers benefited."
+- **Money:** "more than three point three million", never "paid", since no source says what was collected. The refunds (average $158.32) and the safe on the surrender list are left out for length.
+- **DO NOT SAY list followed throughout:** robocalls not people, nearly 15 million, at least 280, the court's $300–$500, the script's own words (not "delete"), no "Jennifer Taylor", no victims named, and no criminal framing. Watch and bracelet brand names stay out of the VO and the stills.
+- **Stills:** all six were checked at full resolution. There are no faces, no readable signs or screens, and no logos.
+
+**Captions:** the reels caption ends "Source: FTC v. Pointbreak Media, LLC, S.D. Fla., 2019." Its one check-this line comes from the FTC blog: Google won't call to threaten your listing, and you can claim it yourself for free. Hashtags are #smallbusinessowner #smallbusiness #googlebusinessprofile #salonowner #nailtech #contractorlife.
+
+**Git:** another film agent's commit (f129ed2, already pushed) happened to include my caption entry in `index.js` and `captions.json`. My script, claims, brief and sources are committed and pushed as 3530b51.
+exit 0 for google-delist-robocall

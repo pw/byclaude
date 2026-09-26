@@ -1,0 +1,33 @@
+The film for `three-million-invoices` is built, uploaded to R2 and has its caption live on the review worker. Nothing was posted to Instagram; that stays with the `ig.py` cron after a human read.
+
+**Slug:** `three-million-invoices`. Kicker: "THE $180 HOSTING BILL". It runs 67.7 s over 6 beats and 170 words, and every beat's narration passed the build's check that the audio matches the script.
+
+**R2:** https://byclaude-video-review.pw3.workers.dev/m/short-three-million-invoices.mp4 returns 200, and its size matches the local file (10,378,974 bytes). The caption pack shows on `/posts`. Committed and pushed as `83af2b1`.
+
+**VO (on-screen line in brackets):**
+1. [$180 DUE] It looked like any other bill. A due date. An amount due: one hundred eighty dollars. A line that read, Yearly Web Hosting.
+2. [ALREADY HAD A WEBSITE] It went mostly to small businesses that already had a website. Their sites were hosted by someone else. The company on the bill had never hosted them.
+3. [NEARLY 3 MILLION MAILERS] Between twenty fifteen and twenty twenty-two, Robert Lederhilger, of Bradenton, Florida, mailed, and caused others to mail, nearly three million of them. Under names like Web Host Agents. Main Street Web Pros. Simple Domain Host.
+4. ["NOT A BILL"] Some of them said, in the fine print, that they were a solicitation. Not a bill. Tens of thousands of businesses paid, believing they owed it.
+5. [ANOTHER INVOICE A YEAR LATER] They got no hosting. No service of any kind. Only another invoice, a year later, asking for more.
+6. [73 MONTHS] A jury convicted him of mail fraud. In March twenty twenty-six, he was sentenced to seventy-three months. Prosecutors put the losses at nearly nine million dollars. The only product was the paper: a bill with every hallmark of one already owed.
+
+**claims.json:** saved as `bizcrime/stories/three-million-invoices/claims.json`. It has 14 entries, one per VO sentence (a few pairs are combined), each with the source URL and the verbatim line it rests on. Joined together they match the VO word for word. Most claims come from the sentencing release; the rest are from the case page (including its published mailer image), the indictment and the conviction release. Two claims rest on the indictment's wording, which is an allegation, and the file says so: "Yearly Web Hosting" and "every hallmark of one already owed". Both are backed up by the case page's mailer image or by the conviction.
+
+**Stills:** six generated images in `~/byclaude/video/three-million-invoices/images/`: a salon counter with mail, a shop with a laptop after closing, trays of envelopes at a print house, blurred fine print, one envelope a year later, and a wall of private mailboxes. I looked at them at full size and in the rendered frames: no faces, no readable text, no logos.
+
+**What I softened or left out:**
+- I said "nearly three million", not "over three million", and never had him as the only mailer ("mailed, and caused others to mail").
+- The money figures are the sentencing ones: "nearly $9 million" in losses, attributed to prosecutors. I left out $2.99M and $5.2M entirely, so there's no number that seems to contradict another.
+- I didn't use the indictment's "$7 million / 38,000 payments" or anything about how he found targets. No victims are named or dramatised, and I didn't say anyone got money back.
+- "Not a bill" is said to be on *some* mailers, as the verified brief requires, and it's paraphrased rather than read out as a quote.
+- I didn't use U.S. Attorney Jay Clayton's quote ("Stealing $5 million $180 at a time got him 73 months"). Its $5M is his round number, and I wanted the film to stay on the court figures.
+- **I didn't use the DOJ's photo of the real mailers.** The verified brief calls it the best asset, but the series brief says no readable text on screen, and using it safely would need the phone numbers blurred and the recipients' city lines cropped. If you want it in, it's in `sources/mailers_doj.png`.
+
+**Changes from the series brief:**
+- **Voice:** the brief says `voice: "onyx"`, but the text-to-speech service returns 404 for that name. Onyx is an OpenAI voice, and narration moved to grok on 8/16. I switched to `Atlas`, the male grok voice `seals.json` already uses, and the rebuild passed.
+- **Upload login:** the R2 upload failed the first time because `keys.env` only has `CF_PWHITE_EMAIL` and `CF_PWHITE_KEY`, and the upload tool (wrangler) needs them under different names. I mapped them across and it worked.
+- I wrote both fixes into `bizcrime/BRIEF.md` so the other story agents don't hit them. That file isn't in git, so the change isn't committed. Any agent that had already read the brief before my edit will still hit the voice 404.
+
+The caption's hashtags are all small-business ones (#smallbusinessowner, #salonowner, #contractorlife and so on), and it ends "Source: U.S. v. Robert W. Lederhilger III, Southern District of New York, sentenced March 2026."
+exit 0 for three-million-invoices

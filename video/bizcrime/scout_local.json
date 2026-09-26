@@ -1,0 +1,303 @@
+[
+  {
+    "title": "The $75 Gift Card Ransom",
+    "one_paragraph_summary": "In 2022, scammers posted a wave of fake one-star Google reviews on acclaimed Houston restaurant Bludorn, then emailed co-owners Aaron Bludorn and Cherif Mbodji an oddly apologetic extortion note ('sorry,' 'we apologize') demanding a $75 Google Play gift card to make the reviews stop, threatening more if they refused. The owners declined to pay, went public about it, and more than 100 real customers flooded the page with genuine positive reviews in solidarity, while Google initially said the reviews didn't technically violate policy since they carried no text.",
+    "victim_type": "restaurant",
+    "year": 2022,
+    "dollar_amount_if_any": "$75 demanded; owners refused to pay",
+    "named_parties": [
+      "Bludorn (restaurant, Houston, TX)",
+      "Aaron Bludorn (co-owner)",
+      "Cherif Mbodji (co-owner)",
+      "Michelle Korsmo (National Restaurant Association, quoted)"
+    ],
+    "primary_source_urls": [
+      "https://www.cbsnews.com/news/restaurant-scam-one-star-reviews/"
+    ],
+    "secondary_urls": [
+      "https://www.today.com/food/restaurants/one-star-review-restaurant-extortion-scam-rcna40333",
+      "https://www.marketplace.org/story/2022/08/10/online-review-extortion-scheme-targets-the-restaurant-industry-at-an-unsteady-time",
+      "https://restaurant.org/education-and-resources/resource-library/restaurant-reputations-held-for-ransom/"
+    ],
+    "why_it_hooks": "The extortionists apologized IN THE SAME EMAILS demanding the ransom -- 'sorry,' 'we apologize' -- while threatening to keep bombing a five-star restaurant's rating over $75.",
+    "verification_notes": "CBS News article loaded and was fetched directly; quotes and details (co-owner names, $75 Google Play gift card demand, 100+ supportive reviews) confirmed in that piece. Today.com and Marketplace.org describe the same nationwide 2022 review-extortion wave hitting restaurants coast to coast, corroborating the mechanism though not this specific restaurant. Confirm exact 2022 date before final script."
+  },
+  {
+    "title": "The Overpayment That Wasn't",
+    "one_paragraph_summary": "Tamie Kalish, owner of TS Roofing and Home Improvement in Columbus, Ohio, deposited a customer check that appeared to overpay a job by $800. Trying to do right by the 'customer,' she mailed back the difference as two money orders -- only to have the original check bounce hours later, draining her account. All told the fake-check scam cost her $1,125.",
+    "victim_type": "roofing / home improvement contractor",
+    "year": null,
+    "dollar_amount_if_any": "$1,125 total loss",
+    "named_parties": [
+      "Tamie Kalish (owner)",
+      "TS Roofing and Home Improvement (Columbus, OH)"
+    ],
+    "primary_source_urls": [
+      "https://www.nbc4i.com/news/investigates/better-call-4/columbus-small-business-owner-victim-of-check-scam/"
+    ],
+    "secondary_urls": [
+      "https://consumer.ftc.gov/node/76583",
+      "https://scambusters.org/check-overpayment-scams.html"
+    ],
+    "why_it_hooks": "She thought she was doing the 'overpaying' customer a favor by mailing back the extra money -- then her OWN bank account got drained by the fake check.",
+    "verification_notes": "NBC4 (WCMH) 'Better Call 4' consumer-investigation piece loaded via search synthesis with a direct quote and specific dollar figures ($800 overpayment claimed, $1,125 total loss); did not independently re-fetch full article text, so confirm exact air date and spelling of names before scripting. Classic, well-documented fake-check-overpayment mechanism per FTC/Scambusters."
+  },
+  {
+    "title": "DoorDash Called Her Best Month Ever 'Fraud' and Kept the $67,000",
+    "one_paragraph_summary": "After a marketing push drove almost $67,000 in orders in just a few weeks at Yang's Sushi Bar in Unionville, Ontario, DoorDash suspended the restaurant's account, alleged 'fraudulent activity,' and refused to release the revenue -- leaving co-owner Andy Li fighting the platform just to get his own restaurant's earned money back.",
+    "victim_type": "restaurant (sushi bar)",
+    "year": 2021,
+    "dollar_amount_if_any": "~$67,000 withheld",
+    "named_parties": [
+      "Yang's Sushi Bar (Unionville, Ontario)",
+      "Andy Li (co-owner)",
+      "DoorDash"
+    ],
+    "primary_source_urls": [
+      "https://www.cbc.ca/news/canada/toronto/doordash-refuses-to-release-unionville-sushi-bar-revenue-1.5867105"
+    ],
+    "secondary_urls": [
+      "https://ca.news.yahoo.com/unionville-sushi-bar-accuses-doordash-100000234.html"
+    ],
+    "why_it_hooks": "A record-breaking sales month got treated like a crime scene -- the platform kept the cash and called the restaurant's own customers 'fraud.'",
+    "verification_notes": "IMPORTANT: I could not load the CBC article directly -- both the standard URL and the AMP version returned HTTP 403 Forbidden to the fetch tool. Restaurant name ('Yang's Sushi Bar') and owner name ('Andy Li') come from a web-search engine's synthesized summary of the CBC headline/snippet, not a directly-verified full-text read. Before scripting, someone should re-pull the CBC page through a browser or the Yahoo News Canada mirror to confirm names, exact dollar figure, and resolution."
+  },
+  {
+    "title": "The Vet Clinic That Sued Yelp for Extortion",
+    "one_paragraph_summary": "In February 2010, Cats and Dogs Animal Hospital in Long Beach, California filed a federal class-action lawsuit alleging that after the practice repeatedly declined to buy Yelp advertising, its negative reviews got promoted, some old negative reviews reappeared under new names, and Yelp sales reps kept calling to offer to 'hide' or 'lower' bad reviews if the clinic would just sign an ad contract. Yelp's CEO publicly called the allegations 'ludicrous.'",
+    "victim_type": "veterinary clinic",
+    "year": 2010,
+    "dollar_amount_if_any": null,
+    "named_parties": [
+      "Cats and Dogs Animal Hospital, Inc. (Long Beach, CA)",
+      "Yelp Inc.",
+      "Jeremy Stoppelman (Yelp CEO)"
+    ],
+    "primary_source_urls": [
+      "http://www.dmlp.org/threats/cats-and-dogs-animal-hospital-inc-v-yelp-inc",
+      "https://www.govinfo.gov/app/details/USCOURTS-cand-3_10-cv-02351"
+    ],
+    "secondary_urls": [
+      "https://www.dvm360.com/view/calif-veterinarian-sues-yelpcom-alleging-extortion",
+      "https://www.ocweekly.com/who-is-this-veterinarian-taking-on-yelp-6607541/"
+    ],
+    "why_it_hooks": "A vet clinic accused a tech giant of running a protection racket with five-star ratings as the muscle -- and it became a real federal court case, not a rant.",
+    "verification_notes": "This is a real, docketed federal lawsuit (case detail confirmed via a govinfo.gov PACER-derived listing and the Digital Media Law Project's case page) -- the allegations were contested and Yelp denied them; treat 'extortion' as an ALLEGATION litigated in court, not a proven fact, and say so on screen. Note: a separate, unrelated 2013 case involved a different San Diego small-claims judge comparing Yelp's tactics to 'the Mafia... pay us protection money' -- that quote is from a DIFFERENT dispute and should not be presented as part of the Cats & Dogs Animal Hospital case without independently re-verifying which case it belongs to."
+  },
+  {
+    "title": "The Fake Health Inspector Who Threatened to Shut Down a Chinese Restaurant",
+    "one_paragraph_summary": "On December 20, 2025, a man later identified as Jason David Skadeland, 40, allegedly walked into Little Panda Restaurant in Cherokee, Iowa, presented himself as a health/food inspector, and was belligerent with employees while threatening to shut the restaurant down during a food pickup -- despite having no connection to Iowa's Department of Inspections, Appeals, and Licensing Food Safety Bureau. He was arrested.",
+    "victim_type": "restaurant",
+    "year": 2025,
+    "dollar_amount_if_any": null,
+    "named_parties": [
+      "Little Panda Restaurant (Cherokee, IA)",
+      "Jason David Skadeland (accused, age 40)"
+    ],
+    "primary_source_urls": [
+      "https://www.ktiv.com/2026/01/14/man-arrested-allegedly-impersonating-healthfood-inspector-threatening-shut-down-restaurant/"
+    ],
+    "secondary_urls": [],
+    "why_it_hooks": "He had no badge that meant anything -- just enough bluster to threaten to shut down a small-town Chinese restaurant on the spot.",
+    "verification_notes": "Sourced and confirmed via direct fetch of the KTIV article. Only one outlet found covering this specific incident -- recommend corroborating with Cherokee County court records or the local newspaper (Cherokee Chronicle Times) for case disposition (charges filed, plea, outcome) before finalizing the script, and confirm no dollar loss actually occurred (article doesn't mention money changing hands, only threats)."
+  },
+  {
+    "title": "The $970 Jedi Mind Trick",
+    "one_paragraph_summary": "A man calling himself 'Jim Stance' walked into Pearl's Bagels in Washington, D.C.'s Mt. Vernon Square, claimed to be inspecting the ANSUL fire-suppression system, dropped owner Oliver Cox's name to build credibility with an employee, then got Cox on the phone and lied that Cox had authorized payment -- and walked out with $970 in cash. Cox later learned at least six similar 'Metro Fire Prevention' cons had hit businesses along the East Coast.",
+    "victim_type": "restaurant (bagel shop)",
+    "year": 2023,
+    "dollar_amount_if_any": "$970",
+    "named_parties": [
+      "Pearl's Bagels (Washington, D.C.)",
+      "Oliver Cox (owner)",
+      "'Jim Stance' (alias used by scammer)",
+      "'Metro Fire Prevention' (fake company name used)"
+    ],
+    "primary_source_urls": [
+      "https://www.foxnews.com/us/fake-fire-inspector-walks-out-washington-dc-bagel-store-970-cash-after-jedi-mind-trick.amp"
+    ],
+    "secondary_urls": [
+      "https://www.cbsnews.com/pittsburgh/news/officials-warn-about-fire-extinguisher-scam-targeting-businesses/"
+    ],
+    "why_it_hooks": "The scammer never lied to the owner directly -- he lied to the EMPLOYEE about what the owner had said, live, over the phone. Cox calls it a Jedi mind trick.",
+    "verification_notes": "Confirmed via direct fetch of the Fox News (AMP) article, including the $970 figure, the alias 'Jim Stance,' and the owner's account of the phone deception. The CBS Pittsburgh piece documents a similar but separate 'Metro Fire Prevention' incident in a different city ($400 loss) -- cite as evidence of a pattern, not the same event."
+  },
+  {
+    "title": "They Billed Him $5,483 Against a Stranger's Trademark Filing",
+    "one_paragraph_summary": "Overland Park, Kansas entrepreneur Robert Traister paid an online 'trademark service' to protect the name of the small business he was building from home. Six months later, charges with plausible-sounding names -- 'Comprehensive Trademark Search,' 'Documents Attestation,' 'Notice of Publication,' 'Registration Issuance Fee' -- started hitting his cards. Scammers had attached his billing information to an unrelated Chinese handbag company's public trademark record and were invoicing him against it, ultimately taking $5,483 across two cards before his bank flagged the pattern.",
+    "victim_type": "home-based small business (brand/trademark protection)",
+    "year": 2026,
+    "dollar_amount_if_any": "$5,483",
+    "named_parties": [
+      "Robert Traister (Overland Park, KS)"
+    ],
+    "primary_source_urls": [
+      "https://www.iolaregister.com/opinion/columnists/scammers-came-for-my-small-business-dont-fall-for-this-trick"
+    ],
+    "secondary_urls": [
+      "https://www.aol.com/news/scammers-came-kansas-city-small-101000335.html",
+      "https://www.uspto.gov/trademarks/protect/how-avoid-scams-trademark-services"
+    ],
+    "why_it_hooks": "He was trying to protect his brand name -- the scam grafted his credit card onto a total stranger's Chinese handbag-company trademark filing on the other side of the world, and billed him for it in five separate 'official-sounding' charges.",
+    "verification_notes": "Primary source is a first-person op-ed BY the victim himself, syndicated to AOL -- strong for authenticity of the account since he's naming himself and his own losses, but it is self-reported, not third-party investigated. He does not name his business. Recommend confirming he's reachable/willing to be featured before using his name and story in a video."
+  },
+  {
+    "title": "Dude, Cash First",
+    "one_paragraph_summary": "Toronto cooking-class instructor Siva Swaminathan lost her Instagram business account, @chezsiva -- 2,400 followers and years of client bookings -- after clicking a phishing email disguised as a Meta copyright notice. Hackers took over the account, demanded a cash ransom over WhatsApp ('dude, cash first'), then deleted the account entirely and emailed her contacts pretending to be her. Instagram never responded to her repeated reports; she rebuilt from scratch and has recovered only about a third of her original following.",
+    "victim_type": "small hospitality/cooking-class business",
+    "year": 2022,
+    "dollar_amount_if_any": "Ransom amount undisclosed; lost business account + ~1,600 of 2,400 followers permanently",
+    "named_parties": [
+      "Siva Swaminathan",
+      "Chez Siva / @chezsiva (Toronto cooking classes)"
+    ],
+    "primary_source_urls": [
+      "https://www.blogto.com/eat_drink/2022/04/toronto-small-business-instagram-hacked-ransom/"
+    ],
+    "secondary_urls": [
+      "https://www.nbcchicago.com/news/local/grayslake-business-owner-devastated-after-instagram-account-hacked-held-for-ransom/2691555/",
+      "https://www.itv.com/news/2023-06-07/instagram-hackers-demanding-300-held-my-business-to-ransom"
+    ],
+    "why_it_hooks": "'I begged them to give me my account back... they kept replying: dude, cash first.' Then they deleted it anyway.",
+    "verification_notes": "Confirmed via direct fetch of the BlogTO article, including the direct quotes and account name. Single-outlet story -- Meta/Instagram's non-response is asserted by the subject, not independently confirmed by the outlet contacting Instagram. The NBC Chicago (Grayslake, IL) and ITV (UK) links are separate, similar incidents used here only to show this is a documented pattern, not additional sourcing for the Chez Siva case specifically."
+  },
+  {
+    "title": "The Payroll Company That Vanished With $35 Million",
+    "one_paragraph_summary": "On September 5, 2019, upstate New York payroll processor MyPayrollHR abruptly shut down after its owner, Michael Mann, diverted tens of millions of dollars in client payroll funds into his own account. Roughly 400 small businesses' employees went unpaid overnight, including every worker at Hometown Diner in Rindge, New Hampshire, whose owner Bonnie Rosengrant learned that morning that none of her staff had been paid. Mann was later criminally charged with $70 million in bank fraud.",
+    "victim_type": "restaurant (diner)",
+    "year": 2019,
+    "dollar_amount_if_any": "~$35 million total across ~400 businesses (diner-specific payroll amount not disclosed)",
+    "named_parties": [
+      "MyPayrollHR",
+      "Michael Mann (owner, criminally charged)",
+      "Hometown Diner (Rindge, NH)",
+      "Bonnie Rosengrant (owner)"
+    ],
+    "primary_source_urls": [
+      "https://cbsnews.com/news/mypayrollhr-small-business-owners-scrambling-after-closure-2019-09-17"
+    ],
+    "secondary_urls": [
+      "https://krebsonsecurity.com/2019/09/ny-payroll-company-vanishes-with-35-million/",
+      "https://www.foxbusiness.com/features/payroll-company-closes-35m-vanishes",
+      "https://www.justice.gov/usao-ri/pr/payroll-company-owner-sentenced-stealing-12m-irs-taxes-small-businesses-and-municipal"
+    ],
+    "why_it_hooks": "Every one of her employees' paychecks just vanished overnight, no warning -- because a payroll company's owner had been quietly rerouting the money to himself for weeks.",
+    "verification_notes": "Widely and independently corroborated (Krebs on Security, Fox Business, CBS News, DOJ). The Bonnie Rosengrant / Hometown Diner detail came through a web-search synthesis citing a Yahoo News/CBS-syndicated story; recommend re-confirming which exact outlet ran her quote ('It was very emotional. We're a small business so every penny counts') before final script, since it was not independently re-fetched in full."
+  },
+  {
+    "title": "The Client Who Needed Him to Wire $1,550 'For Shipping'",
+    "one_paragraph_summary": "Outdoor photographer Dan Bailey documented on his own blog how a 'client' paid for prints using what turned out to be a stolen credit card, then pressured him to wire $1,550 via Western Union to a supposed shipping company to expedite delivery. He caught the scam minutes from sending the money, after Chase's fraud department told him the card had already been reported stolen and cancelled -- but he'd already spent money producing the prints.",
+    "victim_type": "photography business",
+    "year": null,
+    "dollar_amount_if_any": "$1,550 requested (wire not sent); print-production cost already incurred",
+    "named_parties": [
+      "Dan Bailey (Dan Bailey's Adventure Photography)"
+    ],
+    "primary_source_urls": [
+      "https://danbaileyphoto.com/blog/the-western-union-fake-shipping-company-scam/"
+    ],
+    "secondary_urls": [
+      "https://rangefinderonline.com/wedding-portrait/weddings/a-scam-targeting-wedding-photographers/",
+      "https://www.diyphotography.net/how-credit-card-scam-targeting-wedding-photographers-work-and-how-to-protect-yourself/"
+    ],
+    "why_it_hooks": "He was one wire transfer away from sending $1,550 to a shipping company that didn't exist -- for a customer who'd already paid him with someone else's stolen credit card.",
+    "verification_notes": "Primary source is the victim's own blog post -- self-published, not third-party-reported, though he is a known professional photographer naming himself. The exact date isn't given in what was retrieved; find it on the blog page directly. Rangefinder and DIYPhotography independently describe the identical scam mechanism hitting wedding/event photographers industry-wide, which supports this being a real, recurring con rather than an isolated confabulation."
+  },
+  {
+    "title": "Someone Moved Their Pin to the Wrong City -- On Purpose",
+    "one_paragraph_summary": "An SEO consultant in the Kansas City area discovered that someone had used Google's 'Suggest an edit' feature to relocate Insulation Pros' Google Business Profile pin from Independence, Missouri to Smithville, more than 20 miles away. Delivery drivers and customers were routed to the wrong location, the business's local search ranking collapsed, and the company saw an unseasonably large drop in monthly inquiries -- and Google never notified the business that its listing had moved.",
+    "victim_type": "insulation / home-improvement contractor",
+    "year": 2024,
+    "dollar_amount_if_any": null,
+    "named_parties": [
+      "Insulation Pros (Independence, MO)",
+      "David Jackson (SEO consultant who discovered the pin move)"
+    ],
+    "primary_source_urls": [
+      "https://sherwood.news/business/are-people-trying-to-sabotage-businesses-by-manipulating-their-google-maps/"
+    ],
+    "secondary_urls": [
+      "https://searchengineland.com/google-maps-pin-scam-threat-444109"
+    ],
+    "why_it_hooks": "Nobody broke in, nobody hacked anything -- someone just clicked 'suggest an edit,' and the business quietly vanished from its own neighborhood on the map everyone uses to find it.",
+    "verification_notes": "Confirmed via direct fetch of the Sherwood News article. Note: Insulation Pros itself DECLINED to comment for that story -- the account comes third-hand, through their SEO consultant David Jackson, not a direct owner interview. Still a legitimate, named, documented case per Sherwood News's own reporting; frame narration around what Jackson observed rather than putting words in the owner's mouth."
+  },
+  {
+    "title": "The $100 Bill With No Blue Stripe",
+    "one_paragraph_summary": "In September 2026, a customer paid for a sandwich at Paulie's Italian Deli on Oak Street in New Orleans with a counterfeit $100 bill. Owner Paul Tufaro didn't catch the ridged texture and missing security stripe until after he'd already handed back $40 in real change and thrown in a free meal -- part of a wave of fake-bill incidents that's pushed Oak Street shop owners to start buying counterfeit-detection equipment.",
+    "victim_type": "restaurant (deli)",
+    "year": 2026,
+    "dollar_amount_if_any": "~$140 total loss ($100 bill face value + $40 real change given back)",
+    "named_parties": [
+      "Paulie's Italian Deli (Oak Street, New Orleans, LA)",
+      "Paul Tufaro (owner)"
+    ],
+    "primary_source_urls": [
+      "https://hoodline.com/2026/09/fake-100-bills-hit-oak-street-shops-owners-fight-back-with-detectors/"
+    ],
+    "secondary_urls": [
+      "https://www.cbsnews.com/chicago/news/avondale-bar-counterfeit-bill/"
+    ],
+    "why_it_hooks": "He didn't just lose the fake $100 -- he handed back real change AND threw in a free meal on top of it before he realized.",
+    "verification_notes": "Sourced via web search summary of the Hoodline article, not independently re-fetched in full -- Hoodline is a local-news aggregator network with variable editorial rigor by market, so recommend a secondary confirmation (e.g., WWL, The Times-Picayune/New Orleans Advocate, or Fox 8) before finalizing exact figures and spelling of names."
+  },
+  {
+    "title": "The Salon That Had to Explain It Never Took Their Money",
+    "one_paragraph_summary": "Fox13 Memphis reported that scammers cloned African Hair Braiding's identity on social media -- in Orange Mound, owned by Olayinka Robinson -- and collected Cash App 'deposits' of up to $100 from customers booking appointments that never existed. Victims only discovered the fraud when they showed up at the real salon asking for a stylist named 'Tiffany' who had never worked there, forcing Robinson's real business to repeatedly explain it had never taken their money at all.",
+    "victim_type": "hair salon / braiding stylist business",
+    "year": 2023,
+    "dollar_amount_if_any": "Up to $100 per victim; total across victims not disclosed",
+    "named_parties": [
+      "African Hair Braiding (Orange Mound, Memphis, TN)",
+      "Olayinka Robinson (owner)",
+      "Daniel Irwin (BBB of the Mid-South, quoted)"
+    ],
+    "primary_source_urls": [
+      "https://www.fox13memphis.com/news/scammers-targeting-hair-salon-customers-out-of-hundreds-of-dollars-to-secure-appointments/article_1d63eb08-3c9b-11ee-8bcd-a36f0650859f.html"
+    ],
+    "secondary_urls": [],
+    "why_it_hooks": "Customers kept showing up asking for a stylist who never worked there a day in her life -- the real salon had to keep proving a negative: 'we never took your money.'",
+    "verification_notes": "Confirmed via direct fetch of the Fox13 Memphis article, including the owner's name, business name, direct quotes, and the Cash App detail. Note the money flowed from customers to scammers, not directly out of the salon's account -- frame the business as the reputational/operational victim (turned-away real customers, damaged trust, unpaid impersonation labor to clear its name), which the article supports."
+  },
+  {
+    "title": "Twenty-Six Businesses, One Street, One Plaintiff",
+    "one_paragraph_summary": "WFLA's consumer unit reported that Raining Berries, a Tampa-based coffee-and-acai brand, was one of 26 businesses near the University of Florida campus sued by the same visually impaired plaintiff -- represented by an attorney who filed 129 similar website-accessibility lawsuits in a single year -- alleging the company's website wasn't compatible with screen-reader software. Founder and CEO Bimal Bhojani said he had already worked to make the site ADA-compliant and calls the wave of suits a 'shakedown,' a pattern regulators and district attorneys elsewhere have accused serial ADA filers of running purely for settlement payouts.",
+    "victim_type": "restaurant / coffee & acai bowl chain",
+    "year": 2025,
+    "dollar_amount_if_any": "Not disclosed for Raining Berries specifically; comparable California serial-filer cases cite typical settlement demands of $10,000-$20,000 per business",
+    "named_parties": [
+      "Raining Berries",
+      "Bimal Bhojani (founder/CEO)",
+      "Aleksandra Kravets (plaintiff's attorney, cited as filing 129 similar suits)"
+    ],
+    "primary_source_urls": [
+      "https://www.wfla.com/8-on-your-side/better-call-behnken/raining-berries-ceo-calls-ada-lawsuit-a-shakedown/"
+    ],
+    "secondary_urls": [
+      "https://instituteforlegalreform.com/blog/plaintiffs-lawyers-are-filing-thousands-of-ada-lawsuits-against-u-s-small-businesses/",
+      "https://www.courthousenews.com/law-firm-accused-of-ada-shakedown-of-small-businesses/"
+    ],
+    "why_it_hooks": "Twenty-six businesses on one strip, all sued by the same person and lawyer -- and the founder says he'd already done everything right before the lawsuit landed.",
+    "verification_notes": "'Shakedown' is Bhojani's own characterization, not a legal finding -- the underlying ADA accessibility claims against Raining Berries have not been shown false or dismissed in this reporting, so frame it as 'he calls it a shakedown,' not as an established fact. The Courthouse News and Institute for Legal Reform links describe a DIFFERENT, though similarly-patterned, serial-filer scheme in California (different law firms, different plaintiffs) -- use only as evidence this is a broader documented phenomenon, do not conflate with the Florida case's specific attorney/plaintiff."
+  },
+  {
+    "title": "Someone Built a Perfect Fake of Their Restaurant Inside the App",
+    "one_paragraph_summary": "CBS News Chicago reported that scammers created a duplicate Smoque BBQ listing on DoorDash -- same hours, same address, same full menu -- that fooled real DoorDash drivers into showing up to pick up orders the actual restaurant, in Chicago's Old Irving Park neighborhood, had never received. Co-owner Barry Sorkin said it was the second time in two months scammers had cloned his restaurant on the platform, and DoorDash only removed the fake listing after CBS 2 contacted the company directly to ask how it happened.",
+    "victim_type": "restaurant (barbecue)",
+    "year": 2022,
+    "dollar_amount_if_any": null,
+    "named_parties": [
+      "Smoque BBQ (Old Irving Park, Chicago, IL)",
+      "Barry Sorkin (co-owner)",
+      "DoorDash"
+    ],
+    "primary_source_urls": [
+      "https://www.cbsnews.com/chicago/news/doordash-scammer-smoque-bbq"
+    ],
+    "secondary_urls": [
+      "https://www.sfchronicle.com/food/restaurants/article/DoorDash-and-Grubhub-removed-imposter-S-F-sushi-16081842.php"
+    ],
+    "why_it_hooks": "Delivery drivers kept showing up for orders nobody at the real restaurant ever received -- because someone built a perfect copy of it inside the app, twice.",
+    "verification_notes": "Confirmed via direct fetch of the CBS News Chicago article, including owner name, restaurant name, and the detail that DoorDash only acted after being contacted by the news outlet. The SF Chronicle link documents a similar imposter-listing pattern hitting San Francisco sushi restaurants around the same period, corroborating this as a platform-wide vulnerability, not a one-off."
+  }
+]

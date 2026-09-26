@@ -1,0 +1,32 @@
+The film for `salon-clone-tiffany` is built, uploaded, and its captions are live. It is 73.4 s long, just under the 75 s limit. Nothing was posted to Instagram; that waits for a human read and the `ig.py` cron.
+
+**Slug:** `salon-clone-tiffany` → `short-salon-clone-tiffany` (6 beats, 186 words)
+
+**R2 URL:** https://byclaude-video-review.pw3.workers.dev/m/short-salon-clone-tiffany.mp4
+It returns HTTP 200, and the byte count (12,714,915) matches the local file. The review worker is deployed (version `c7bf9a12`), and the caption pack is live on `/posts`. The work is committed and pushed (`7a99d2d`).
+
+**Voiceover:**
+1. Somebody walks into a braiding salon in Memphis and asks: Is there a Tiffany here? We pay some amount online. `IS THERE A / TIFFANY HERE?`
+2. It's African Hair Braiding, in Orange Mound. In August twenty twenty-three, the owner, Olayinka Robinson, told FOX Thirteen: We do not take any deposits. We take no money online, period. `NO MONEY ONLINE`
+3. Time and again, she said, customers were asked to Cash App up to a hundred dollars to secure an appointment at her salon. They show up, and learn they have been duped. `UP TO $100 / BY CASH APP`
+4. FOX Thirteen called it the latest trick: ripping businesses' information off the internet, then tricking people into paying deposits. The Better Business Bureau says scammers usually hijack a business's social media, or make new accounts in its name. `THE LATEST TRICK`
+5. A year earlier, FOX Thirteen reported the same thing at another Memphis salon, Empire Hair Studio. Its owner said almost thirty people paid a scammer by Cash App, for appointments that were never made. `A YEAR EARLIER`
+6. The bureau's biggest red flag: being asked to pay by Cash App. The salon takes no money online. The scam never needed it to. It needed the salon's name, and your deposit. `ITS NAME. / YOUR DEPOSIT.`
+
+**claims.json** is at `bizcrime/stories/salon-clone-tiffany/claims.json`. Every VO sentence is mapped to a verbatim quote and URL: beats 1–4 and 6 rest on FOX13's 2023-08-16 article, and beat 5 on FOX13's 2022-07-29 article. I checked that the claims file's VO text matches the script word for word.
+
+**What I softened or left out because the sources don't support it:**
+- **Tiffany:** she appears only inside Robinson's quote. The film never says who she is or whether she exists, and "somebody" carries no gender.
+- **Social media:** it's attributed to the Better Business Bureau as how these scams "usually" work, never as what happened to this salon. The BBB spokesman isn't named.
+- **The "hundreds of dollars" headline** isn't used. The film says "up to a hundred dollars", and I changed the beat 3 caption from "$100" to "UP TO $100" to match.
+- **The date** is the report's date ("told FOX Thirteen" in August 2023), not a date for the scams.
+- **Not included:** any victim count or total loss for this salon, any harm to the salon's business (Robinson's "we do not want to lose customers" worry is left out too), any suspect or arrest, and any inner states.
+- **Empire Hair Studio** is labelled as another salon. Its figures ("almost thirty", Cash App, "never made") stay in that beat. I dropped "seven months" and "$30 to $100" to keep it short, and "they leave in tears" is left out entirely. The VO doesn't claim Empire is the story FOX13 referred to as "last year"; both sources independently put a Memphis salon case in 2022.
+- **The WREG 2026 source** is not used.
+
+**Images:** two first-round stills had faces (blurred profiles on a phone screen, and a poster of faces in a window). I regenerated them, and the rejected versions are in `salon-clone-tiffany/images/rejected/`. All six final stills show no faces, no readable text and no logos. I checked four frames from the finished video.
+
+**Build notes:**
+- **Upload:** it failed once before working. `npx wrangler` exited silently because no Cloudflare credentials were in the environment. The second attempt worked, using the repo's local wrangler binary with the keys exported from `keys.env`.
+- **Shared file:** `review-worker/index.js` is edited by other film agents running at the same time. My deploy and commit therefore also include their `POSTS` entries that were in the file, so git matches what's live.
+exit 0 for salon-clone-tiffany

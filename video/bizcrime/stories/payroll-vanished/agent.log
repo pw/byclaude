@@ -1,0 +1,39 @@
+The `payroll-vanished` short is built, uploaded to R2 and its caption is live. It has not been posted to Instagram; that's the `ig.py` cron's job after a human read.
+
+**Film:** https://byclaude-video-review.pw3.workers.dev/m/short-payroll-vanished.mp4
+- Returns HTTP 200, and the file size matches the local copy byte for byte.
+- 1080×1920, 70.2 s, 6 beats.
+- The caption pack shows on `/posts`.
+- Committed and pushed as `4cb44ef`.
+
+**One change from BRIEF.md:** I used the voice `Atlas` instead of `onyx`. The build script now sends narration to grok TTS, which doesn't have a voice called onyx and returned an error on every beat. That broke the first build (it produced a 2 s file with no narration). The sibling films built today and the seals short also use Atlas. On the second build, all 6 beats passed the transcription check. BRIEF.md should say `Atlas` so the other film agents don't hit the same error.
+
+**VO:**
+1. The first week of September, twenty nineteen. A diner owner in Rindge, New Hampshire, was at her critically ill mother's bedside when her manager called. — `RINDGE, N.H. · SEPT 2019`
+2. None of the diner's roughly two dozen employees had been paid that week. The money had already left the diner's bank account. — `NOBODY PAID`
+3. Her payroll company, My Payroll HR, had shut down on September fifth. Prosecutors said it handled payroll for about a thousand small businesses. — `SHUT DOWN / SEPT 5, 2019`
+4. Its owner, Michael Mann, later admitted to years of fake invoices and loans he couldn't repay. So he began diverting his clients' payroll. — `FAKE INVOICES`
+5. Payroll moved as digital files, meant to carry each employer's money to its employees. Mann changed the instructions inside them, sending the money to accounts he controlled. When his bank froze those accounts, the payroll froze too. — `HE CHANGED / THE INSTRUCTIONS`
+6. Several thousand people didn't get a paycheck. Bonnie Rosengrant and her husband spent thirty thousand dollars of savings covering wages and payroll taxes. Mann was sentenced to a hundred forty-four months. As of July twenty twenty-six, the Times Union reported, his victims had received nothing. — `RECEIVED / NOTHING`
+
+**claims.json** is in `bizcrime/stories/payroll-vanished/`. It has 11 claims covering every VO sentence, and a script check confirmed each quoted line appears word for word in EXCERPTS.md.
+- **DOJ sentencing release, Aug 4 2021:** Mann's companies, what he admitted, the fake invoices, the payroll files he changed, the freeze and "several thousand" unpaid, the 144 months.
+- **DOJ charging release, Sept 23 2019:** the September 5 shutdown and "approximately 1,000" clients.
+- **Times Union, 2021:** the bedside call, the roughly two dozen unpaid staff, the $30,000.
+- **Times Union, July 2026:** "have received nothing."
+
+**Stills:** all six are objects and rooms: a hospital bedside, an empty diner counter, a dark office, blank invoice forms, a server closet, a kitchen table. I checked each one and three frames from the finished film: no faces, no readable text, no logos.
+
+**Softened or left out because of the sources:**
+- **The paychecks:** I said nobody was paid and the money had "left the account", not "bounced" or "vanished". I left out the double withdrawals from workers' accounts, because they came from the payment processor's reversals, not from Mann.
+- **Client count:** "about a thousand" is attributed to prosecutors. The other counts (hundreds, nearly 200, and 4,000) are not used.
+- **Loans:** I said "years", not "a decade" or 2010. None of the dollar totals ($70M, $101M, $26M, $35M) are in the VO.
+- **The diner:** "Critically ill", not "dying". There's no staff count beyond "roughly two dozen", and nothing about the diner closing, which is confounded by COVID.
+- **Left out entirely:** the "angry mob" anecdote, the suicide attempt, the payment processor and bank names, the big brands, and the defense's claims.
+- **Victims received nothing:** it carries its July 2026 date and is attributed to the Times Union.
+- **Rosengrant:** named only once, as an on-record owner.
+
+**Captions:** the reels caption is four plain sentences. It ends with one line on what to check ("When payroll leaves your account, confirm your employees were actually paid") and "Source: U.S. Attorney's Office, Northern District of New York, sentencing of Michael T. Mann, Aug. 4, 2021." It uses five audience-side hashtags and no #ai.
+
+**Other agents' work in my commit:** that commit includes caption entries other film agents added to the shared caption file and captions.json. They're already in the deployed worker, so git still matches what's live. Also, the finished `.mp4` files for three sibling films (`three-million-invoices`, `google-delist-robocall`, `lease-30000-judgments`) won't open. They were probably still being built when I checked, but look at them before those films are posted.
+exit 0 for payroll-vanished

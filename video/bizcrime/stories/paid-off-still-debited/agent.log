@@ -1,0 +1,40 @@
+Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.
+# Film report: `paid-off-still-debited`
+
+The film is built, uploaded to R2 and live on the review worker. It has not been posted: that waits for a human read and then the `ig.py --profile byclaude batch` cron.
+
+- **Length:** 69.4 s, 6 beats, 170 words. The speech-to-text check passed on all six beats.
+- **Stills:** I checked all six at full resolution. No faces, no legible text, no signs or logos, no split panels.
+- **R2:** https://byclaude-video-review.pw3.workers.dev/m/short-paid-off-still-debited.mp4 returns 200, and its size matches the local file (10,627,993 bytes).
+- **Captions:** added to `POSTS` in the review worker, deployed, and confirmed on the live `/posts` page. `captions.json` was regenerated.
+- **Git:** committed and pushed as `f129ed2`.
+
+## Voiceover
+1. One customer wrote: my loan payoff was met and exceeded, by four daily payments. Three thousand, four hundred eighty dollars. — `$3,480 / AFTER PAYOFF`
+2. It's quoted in an FTC lawsuit, filed August twenty twenty, against a merchant cash advance company: Yellowstone Capital. Businesses repaid through automatic withdrawals from their bank accounts. Every day. — `DEBITED / EVERY DAY`
+3. Since at least twenty fifteen, the FTC alleged, the withdrawals kept going after businesses paid in full. Four or five extra payments, or more. — `PAID IN FULL. / STILL DEBITED.`
+4. The company told one customer: there is a four day lag on ACH debits. It's simply the way our processor works. — `"A 4 DAY LAG"`
+5. When one customer complained about overpayments and overdraft fees, a servicer said to throw her the hundred dollars to go away. The operations manager: money well spent, if you don't have to talk to her. — `"MONEY / WELL SPENT"`
+6. In twenty twenty-one, the defendants settled without admitting or denying it: a nine point eight million dollar judgment, and a ban on withdrawals without express informed consent. In the FTC's telling, the lag made the extra payments. And the company knew. — `THE FTC: / THEY KNEW`
+
+## Where each beat's facts come from
+The full mapping is in `claims.json`. I machine-checked every quoted line in it against `EXCERPTS.md`, and a deliberately altered quote failed the check as it should.
+- **Beat 1:** the customer complaint quoted in the FTC complaint, ¶30.
+- **Beat 2:** the complaint's filing date (Aug 3, 2020), the 2020 press release, the complaint's "daily withdrawals from the consumer's bank account", and the case page's definition of a merchant cash advance.
+- **Beat 3:** the complaint's "Since at least 2015 …" and "an additional 4-5 or more".
+- **Beat 4:** the complaint's "there is a 4 day lag on ACH debits . . . it's simply the way our processor works."
+- **Beat 5:** complaint ¶33, second example only. It is one customer, not merged with the separate customer who had $140 in overdraft fees.
+- **Beat 6:** the court order ("neither admit nor deny"; $9,837,000 judgment), the 2021 press release (the consent ban), and the complaint's "acknowledged that they take these overpayments … knowingly" plus the "lag … results in … 4-5 or more".
+
+## What I softened or left out
+- Everything the verified brief ruled out stayed out: "for months", a per-day dollar figure, $9.8M presented as the amount over-debited, "$9.7M returned", "fraud" or "charged", COVID framing, and the New York Attorney General case.
+- Stern and Reece are not named. They are "the defendants" / "the company", and "the company knew" is attributed to the FTC.
+- "Three thousand four hundred eighty dollars" and "the hundred dollars" are the source's "$3480" and "$100" spoken aloud. The quotes are trimmed at the source's own ellipses, not reworded.
+- **Cut for time:** the first build ran 76.7 s. I removed "Refunds, the FTC said, in numerous instances came only after a complaint", plus the refund checks and the two-week and $4,345 examples. I also dropped an earlier closing line, "the refund waited for the complaint", because it stated as a general rule what the source only says happened "in numerous instances".
+- The YouTube caption originally said "usually four or five"; nothing supports "usually", so I removed it.
+
+## Changes outside this film
+- **Speech-check fix in `build_short.py`:** the check failed any beat ending in "dollars", because the transcriber writes "$3,480" and the check strips the `$`. It now reads `$` as the word "dollars". I tested it against the real transcript and against a transcript with the word missing, which still fails as it should. A parallel apologetic-ransom run committed this change inside its own commit (`a1d2656`), whose message doesn't mention it.
+- **Other films' captions:** my commit of `index.js` and `captions.json` also includes caption entries for other films from runs going on in parallel. Those entries were already deployed, so git now matches what is live.
+- **Stills:** they are in `~/byclaude/video/paid-off-still-debited/images/`, which git ignores by design.
+exit 0 for paid-off-still-debited

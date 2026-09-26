@@ -1,0 +1,19 @@
+{
+ "title": "Someone Moved Their Pin to the Wrong City -- On Purpose",
+ "one_paragraph_summary": "An SEO consultant in the Kansas City area discovered that someone had used Google's 'Suggest an edit' feature to relocate Insulation Pros' Google Business Profile pin from Independence, Missouri to Smithville, more than 20 miles away. Delivery drivers and customers were routed to the wrong location, the business's local search ranking collapsed, and the company saw an unseasonably large drop in monthly inquiries -- and Google never notified the business that its listing had moved.",
+ "victim_type": "insulation / home-improvement contractor",
+ "year": 2024,
+ "dollar_amount_if_any": null,
+ "named_parties": [
+  "Insulation Pros (Independence, MO)",
+  "David Jackson (SEO consultant who discovered the pin move)"
+ ],
+ "primary_source_urls": [
+  "https://sherwood.news/business/are-people-trying-to-sabotage-businesses-by-manipulating-their-google-maps/"
+ ],
+ "secondary_urls": [
+  "https://searchengineland.com/google-maps-pin-scam-threat-444109"
+ ],
+ "why_it_hooks": "Nobody broke in, nobody hacked anything -- someone just clicked 'suggest an edit,' and the business quietly vanished from its own neighborhood on the map everyone uses to find it.",
+ "verification_notes": "Confirmed via direct fetch of the Sherwood News article. Note: Insulation Pros itself DECLINED to comment for that story -- the account comes third-hand, through their SEO consultant David Jackson, not a direct owner interview. Still a legitimate, named, documented case per Sherwood News's own reporting; frame narration around what Jackson observed rather than putting words in the owner's mouth."
+}

@@ -1,0 +1,21 @@
+{
+ "title": "The $970 Jedi Mind Trick",
+ "one_paragraph_summary": "A man calling himself 'Jim Stance' walked into Pearl's Bagels in Washington, D.C.'s Mt. Vernon Square, claimed to be inspecting the ANSUL fire-suppression system, dropped owner Oliver Cox's name to build credibility with an employee, then got Cox on the phone and lied that Cox had authorized payment -- and walked out with $970 in cash. Cox later learned at least six similar 'Metro Fire Prevention' cons had hit businesses along the East Coast.",
+ "victim_type": "restaurant (bagel shop)",
+ "year": 2023,
+ "dollar_amount_if_any": "$970",
+ "named_parties": [
+  "Pearl's Bagels (Washington, D.C.)",
+  "Oliver Cox (owner)",
+  "'Jim Stance' (alias used by scammer)",
+  "'Metro Fire Prevention' (fake company name used)"
+ ],
+ "primary_source_urls": [
+  "https://www.foxnews.com/us/fake-fire-inspector-walks-out-washington-dc-bagel-store-970-cash-after-jedi-mind-trick.amp"
+ ],
+ "secondary_urls": [
+  "https://www.cbsnews.com/pittsburgh/news/officials-warn-about-fire-extinguisher-scam-targeting-businesses/"
+ ],
+ "why_it_hooks": "The scammer never lied to the owner directly -- he lied to the EMPLOYEE about what the owner had said, live, over the phone. Cox calls it a Jedi mind trick.",
+ "verification_notes": "Confirmed via direct fetch of the Fox News (AMP) article, including the $970 figure, the alias 'Jim Stance,' and the owner's account of the phone deception. The CBS Pittsburgh piece documents a similar but separate 'Metro Fire Prevention' incident in a different city ($400 loss) -- cite as evidence of a pattern, not the same event."
+}
