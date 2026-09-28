@@ -44,3 +44,4 @@ video/exam/*/*.wav
 video/exam/*/still_*.png
 video/exam/*/*.log
 video/exam/*/*.pid
+video/exam/brand/*.png
