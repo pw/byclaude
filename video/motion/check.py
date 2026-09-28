@@ -12,6 +12,8 @@ All modes:
      boxes in headless Chrome with our fonts — draw icons as canvas paths).
   4. BRANDS: no real platform/brand name anywhere in film.html (list below).
 --inbox:  duration 15–60 s; ON_SCREEN must contain the composite disclosure ("composite").
+--exam:  (practice-question films) duration 15–75 s; ON_SCREEN contains "Unofficial"; <dir>/KEY.json =
+          {question, options[4], answer} with every string verbatim in ON_SCREEN; SOURCES.md number rule as --explainer.
 --explainer:  duration 15–75 s; ON_SCREEN must contain "not tax advice"; <dir>/SOURCES.md must exist and every
           NUMBER in ON_SCREEN (digits, commas/$/% stripped) must appear in it — worked-example figures included, with
           their arithmetic written out there. (Numbers are where explainers go wrong; this makes each one traceable.)
@@ -55,6 +57,23 @@ if mode == '--inbox':
 elif mode == '--explainer':
     if not 15 <= dur <= 75: fails.append(f'duration {dur:.1f}s outside 15–75')
     if not any('not tax advice' in s.lower() for s in on): fails.append('no "not tax advice" line in ON_SCREEN')
+    sp = D / 'SOURCES.md'
+    if not sp.exists(): fails.append('no SOURCES.md')
+    else:
+        corpus = sp.read_text().replace(',', '')
+        for s in on:
+            for num in re.findall(r'\d[\d,.]*\d|\d', s):
+                if num.replace(',', '').rstrip('.') not in corpus: fails.append(f'number {num!r} in ON_SCREEN {s!r} is not in SOURCES.md')
+elif mode == '--exam':
+    if not 15 <= dur <= 75: fails.append(f'duration {dur:.1f}s outside 15–75')
+    if not any('unofficial' in s.lower() for s in on): fails.append('no "Unofficial" disclosure in ON_SCREEN')
+    kp = D / 'KEY.json'
+    if not kp.exists(): fails.append('no KEY.json')
+    else:
+        k = json.loads(kp.read_text()); opts = k.get('options', [])
+        if len(opts) != 4 or k.get('answer') not in 'ABCD' or len(k.get('answer', '')) != 1: fails.append('KEY.json needs 4 options + one answer letter A-D')
+        for s in [k.get('question', '')] + opts:
+            if s not in on: fails.append(f'KEY string not drawn verbatim from ON_SCREEN: {s[:60]!r}')
     sp = D / 'SOURCES.md'
     if not sp.exists(): fails.append('no SOURCES.md')
     else:

@@ -38,3 +38,9 @@ video/inbox/*/*.log
 video/bizcrime/motion/*/video.mp4
 video/bizcrime/motion/*/still_*.png
 video/bizcrime/motion/*/*.log
+video/exam/out/
+video/exam/*/*.mp4
+video/exam/*/*.wav
+video/exam/*/still_*.png
+video/exam/*/*.log
+video/exam/*/*.pid
