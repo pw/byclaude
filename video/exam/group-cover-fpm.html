@@ -1,0 +1,30 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Anton;src:url(fonts/Anton-Regular.ttf)}
+@font-face{font-family:Inter;src:url(../motion/fonts/Inter.ttf)}
+html,body{margin:0}
+body{width:1640px;height:856px;background:#183828;color:#F4EEE2;font-family:Inter;position:relative;overflow:hidden}
+.wrap{position:absolute;left:150px;top:0;height:856px;width:860px;display:flex;flex-direction:column;justify-content:center}
+.kick{font-family:Anton;font-size:40px;letter-spacing:5px;opacity:.75}
+.big{font-family:Anton;font-size:150px;line-height:1;margin-top:18px}
+.sub{font-size:36px;margin-top:34px;font-weight:500;line-height:1.35;opacity:.92}
+.card{position:absolute;left:1070px;top:178px;width:420px;display:flex;flex-direction:column;gap:22px}
+.row{display:flex;align-items:center;gap:22px}
+.o{flex:none;width:76px;height:76px;border-radius:50%;border:4px solid rgba(244,238,226,.45);display:flex;align-items:center;justify-content:center;font-family:Anton;font-size:38px;color:rgba(244,238,226,.6);box-sizing:border-box}
+.bar{height:22px;border-radius:11px;background:rgba(244,238,226,.18)}
+.row.on .o{background:#F09810;border-color:#F09810;color:#183828}
+.row.on .bar{background:#F09810}
+.tag{position:absolute;left:1070px;top:640px;font-size:26px;opacity:.6;letter-spacing:.5px}
+</style></head><body>
+<div class="wrap">
+ <div class="kick">FOOD PROTECTION MANAGER EXAM</div>
+ <div class="big">DAILY PRACTICE<br>QUESTION</div>
+ <div class="sub">A new question every morning.<br>The answer and its Food Code section every evening.</div>
+</div>
+<div class="card">
+ <div class="row"><div class="o">A</div><div class="bar" style="width:290px"></div></div>
+ <div class="row"><div class="o">B</div><div class="bar" style="width:220px"></div></div>
+ <div class="row on"><div class="o">C</div><div class="bar" style="width:310px"></div></div>
+ <div class="row"><div class="o">D</div><div class="bar" style="width:250px"></div></div>
+</div>
+<div class="tag">Food Code practice · unofficial</div>
+</body></html>
