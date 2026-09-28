@@ -6,6 +6,7 @@ HERE = pathlib.Path(__file__).parent
 P = {
  'adj': dict(bg='#5E1A26', tx='#EAD8C0', ac='#ECB454', dim='rgba(234,216,192,', kick='CLAIMS ADJUSTER LICENSING EXAM', big='A PRACTICE QUESTION<br>EVERY MORNING', sub='Worked answer every evening · free group, link below'),
  'fpm': dict(bg='#183828', tx='#F4EEE2', ac='#F09810', dim='rgba(244,238,226,', kick='FOOD PROTECTION MANAGER EXAM', big='A PRACTICE QUESTION<br>EVERY MORNING', sub='Answer + Food Code section every evening · free group, link below'),
+ 'fifa': dict(bg='#0A1430', tx='#FCF0E4', ac='#D89C24', dim='rgba(252,240,228,', kick='FIFA FOOTBALL AGENT EXAM', big='A PRACTICE QUESTION<br>EVERY MORNING', sub='Answer + regulation article every evening · free group, link below'),
  'ww':  dict(bg='#102850', tx='#F4EEE2', ac='#A8D0E8', dim='rgba(244,238,226,', kick='WASTEWATER OPERATOR EXAM', big='A PRACTICE PROBLEM<br>EVERY MORNING', sub='Worked answer every evening · free group, link below'),
 }
 FONTS = """@font-face{font-family:Anton;src:url(../fonts/Anton-Regular.ttf)}@font-face{font-family:Inter;src:url(../../motion/fonts/Inter.ttf)}html,body{margin:0}"""
@@ -26,7 +27,9 @@ body{{width:1640px;height:624px;background:{v['bg']};color:{v['tx']};font-family
 </style><div class=k>{v['kick']}</div><div class=b>{v['big']}</div><div class=s>{v['sub']}</div>"""
 with sync_playwright() as s:
     b = s.chromium.launch()
+    only = sys.argv[1:]
     for k, v in P.items():
+        if only and k not in only: continue
         for kind, fn, W, H in (('profile', profile, 1024, 1024), ('cover', cover, 1640, 624)):
             f = HERE / f'{k}-{kind}.html'; f.write_text(fn(v))
             pg = b.new_page(viewport={'width': W, 'height': H}); pg.goto(f.resolve().as_uri()); pg.wait_for_timeout(500)
