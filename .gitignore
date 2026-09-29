@@ -45,3 +45,5 @@ video/exam/*/still_*.png
 video/exam/*/*.log
 video/exam/*/*.pid
 video/exam/brand/*.png
+video/exam/*/verify.v1/
+video/exam/fb_batch.log

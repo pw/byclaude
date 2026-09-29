@@ -1,0 +1,155 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: Anton; src: url('../fonts/Anton-Regular.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// fpm-reheat — reheating food that was cooked and cooled in-house, for hot holding: all parts to 165°F for
+// 15 seconds, 41°F -> 165°F in 2 hours max (FDA Food Code 3-403.11, same in 2022 and 2026). The question pins the
+// stove (microwave adds a 2-minute stand), in-house (factory-packaged goes to 135°F), chili (not a roast), and
+// hot holding (not immediate service). Worked answer = a drawn thermometer.
+const ON_SCREEN = [
+  "FOOD MANAGER EXAM", "CAN YOU GET THIS ONE?", "PRACTICE QUESTION", "example",
+  "Your kitchen cooked chili yesterday, cooled it and stored it in the walk-in. Today you reheat it on the stove for hot holding. Every part must reach at least:",
+  "A) 135°F for 15 seconds", "B) 145°F for 15 seconds", "C) 155°F for 15 seconds", "D) 165°F for 15 seconds",
+  "PAUSE AND SOLVE IT", "5", "4", "3", "2", "1",
+  "41°F", "OUT OF THE COOLER",
+  "THE CLIMB", "2 hours max",
+  "165°F", "ALL PARTS, AT LEAST", "15 seconds",
+  "135°F", "THEN HOLD HOT", "at or above",
+  "Cooked, cooled, then reheated for hot holding: every part to 165°F.", "FOOD CODE 3-403.11",
+  "THE TRAP", "A) 135°F is the hot-holding minimum. Cooked-and-cooled food must reach 165°F first.",
+  "@fpmexamprep", "A free practice question every morning in our group.", "Join from this Page.",
+  "Unofficial. Not affiliated with any exam provider or regulator.", "Based on the FDA Food Code; your local code may differ."
+];
+const S = EX.init(ON_SCREEN, 'fpm'), T = EX.T;
+const Q = S("Your kitchen cooked chili yesterday, cooled it and stored it in the walk-in. Today you reheat it on the stove for hot holding. Every part must reach at least:");
+const OPTS = [S("A) 135°F for 15 seconds"), S("B) 145°F for 15 seconds"), S("C) 155°F for 15 seconds"), S("D) 165°F for 15 seconds")], ANSWER = 'D';
+const RULE = S("Cooked, cooled, then reheated for hot holding: every part to 165°F."), CITE = S("FOOD CODE 3-403.11");
+const TRAP = S("A) 135°F is the hot-holding minimum. Cooked-and-cooled food must reach 165°F first.");
+
+const PLAN = EX.schedule([
+  { id: 'hook', kind: 'hook', read: [S("FOOD MANAGER EXAM"), S("CAN YOU GET THIS ONE?")], in: 0.6, min: 2.2 },
+  { id: 'q', kind: 'question', read: [S("PRACTICE QUESTION"), S("example"), Q], in: 0.9, gap: 0.1 },
+  ...OPTS.map((s, i) => ({ id: 'o' + i, kind: 'option', read: [s], in: 0.4, min: 0.75 })),
+  { id: 'pause', kind: 'pause', read: [S("PAUSE AND SOLVE IT")], in: 0.3, min: 5 },
+  { id: 'reveal', kind: 'reveal', in: 0.4, min: 1.3 },
+  { id: 'w41', kind: 'work', read: [S("41°F"), S("OUT OF THE COOLER")], in: 0.8, min: 1.4 },
+  { id: 'climb', kind: 'work', read: [S("THE CLIMB"), S("2 hours max")], in: 1.0, min: 1.2 },
+  { id: 'w165', kind: 'work', read: [S("165°F"), S("ALL PARTS, AT LEAST"), S("15 seconds")], in: 0.8, min: 1.8 },
+  { id: 'w135', kind: 'work', read: [S("135°F"), S("THEN HOLD HOT"), S("at or above")], in: 0.8, min: 1.4 },
+  { id: 'rule', kind: 'work', read: [RULE, CITE], in: 0.7 },
+  { id: 'trap', kind: 'trap', read: [S("THE TRAP"), TRAP], in: 0.5 },
+  { id: 'end', kind: 'end', in: 0.6, min: 4.0 },
+], { start: 0.2 });
+const A = PLAN.at, TOTAL = PLAN.total, RV = A.reveal.at;
+
+// ---------- layout ----------
+const CARD_Y = 285, BANNER_Y = 330;
+const TX = 230, TW = 46, Y165 = 560, Y41 = 1230, BULB_Y = 1296, BULB_R = 58;
+const yOf = f => Y41 - (f - 41) * (Y41 - Y165) / 124;
+const NX = 330, NOTE_X = 600, RULE_Y = 1400;
+
+const capText = (txt, x, y, col, a, size = 38) => {
+  g.font = EX.F(400, size, 'Anton'); if ('letterSpacing' in g) g.letterSpacing = '4px';
+  g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillStyle = rgba(col, a); g.fillText(txt, x, y);
+  if ('letterSpacing' in g) g.letterSpacing = '0px';
+};
+function thermometer(t) {
+  const t0 = A.w41.at, a = ss(t0, t0 + 0.6, t) * (1 - ss(A.end.at, A.end.at + 0.6, t));
+  if (a <= 0) return;
+  const top = Y165 - 44, rise = EX.eo((t - A.climb.at - 0.2) / 1.6);
+  const level = lerp(Y41, Y165, rise), x0 = TX - TW / 2;
+  // glass
+  g.fillStyle = rgba(T.card, a); g.beginPath(); g.roundRect(x0, top, TW, BULB_Y - top, TW / 2); g.fill();
+  g.beginPath(); g.arc(TX, BULB_Y, BULB_R, 0, 6.2832); g.fill();
+  // mercury: bulb + column from 41°F up to the current level
+  const inner = TW - 18;
+  g.fillStyle = rgba(T.text, 0.92 * a);
+  g.beginPath(); g.arc(TX, BULB_Y, BULB_R - 11, 0, 6.2832); g.fill();
+  g.beginPath(); g.roundRect(TX - inner / 2, level - inner / 2, inner, BULB_Y - level + inner / 2, inner / 2); g.fill();
+  // outline
+  g.strokeStyle = rgba(T.line, a); g.lineWidth = 3;
+  g.beginPath(); g.roundRect(x0, top, TW, BULB_Y - top - BULB_R + 8, TW / 2); g.stroke();
+  // scale marks every 10°F, faint
+  g.fillStyle = rgba(T.dim, 0.35 * a);
+  for (let f = 50; f <= 160; f += 10) g.fillRect(x0 - 16, yOf(f) - 1, 12, 2);
+}
+function mark(t, t0, f, big, caps, body, o = {}) {
+  const k = t - t0, a = EX.eo(k / 0.4) * (o.alpha ?? 1); if (a <= 0) return;
+  const y = yOf(f), col = o.accent ? T.accent : T.text;
+  // leader from the glass to the number
+  const lp = EX.eo(k / 0.45);
+  g.fillStyle = rgba(col, a); g.fillRect(TX + TW / 2 + 4, y - 2, (NX - TX - TW / 2 - 18) * lp, 4);
+  // the number
+  const sz = o.accent ? 104 : 86, np = EX.eo((k - 0.15) / 0.45);
+  g.save(); g.beginPath(); g.rect(NX - 6, y - sz, 260 * clamp(np), sz * 2); g.clip();
+  g.font = EX.F(400, sz, 'Anton'); g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillStyle = rgba(col, a);
+  g.fillText(big, NX, y + 4 + (1 - np) * 8); g.restore();
+  // note: small caps line + body line
+  const cp = EX.eo((k - 0.35) / 0.45);
+  if (body) {
+    capText(caps, NOTE_X, y - 30, T.dim, a * cp, 36);
+    EX.line(t, t0 + 0.5, body, NOTE_X, y + 28, { size: o.bodySize ?? 60, weight: 600, alpha: o.alpha ?? 1, color: o.accent ? T.accent : T.text });
+  } else capText(caps, NOTE_X, y + 2, T.dim, a * cp, 44);
+}
+function climb(t) {
+  const t0 = A.climb.at, a = ss(t0, t0 + 0.4, t) * (1 - ss(A.end.at, A.end.at + 0.6, t)); if (a <= 0) return;
+  // an arrow up the right of the glass, drawn with the rise
+  const p = EX.eo((t - t0 - 0.2) / 1.6), x = TX - TW / 2 - 44, yb = Y41 - 60, yt = yOf(150);
+  const ye = lerp(yb, yt, p);
+  g.strokeStyle = rgba(T.dim, a); g.lineWidth = 5; g.lineCap = 'round'; g.lineJoin = 'round';
+  g.beginPath(); g.moveTo(x, yb); g.lineTo(x, ye); g.stroke();
+  if (p > 0.6) { const h = 16 * ss(0.6, 1, p); g.beginPath(); g.moveTo(x - h, ye + h); g.lineTo(x, ye); g.lineTo(x + h, ye + h); g.stroke(); }
+  const cy = (yOf(135) + Y41) / 2 + 10, q = EX.eo((t - t0 - 0.3) / 0.5);
+  capText(S("THE CLIMB"), NX, cy - 50, T.dim, a * q, 40);
+  EX.line(t, t0 + 0.5, S("2 hours max"), NX, cy + 26, { size: 76, weight: 700, alpha: a, dur: 0.6 });
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  EX.ground();
+  const rg = g.createRadialGradient(CX, 300, 50, CX, 300, 1300);
+  rg.addColorStop(0, 'rgba(255,245,220,0.07)'); rg.addColorStop(1, 'rgba(255,245,220,0)'); g.fillStyle = rg; g.fillRect(0, 0, W, H);
+
+  EX.hook(t, A.hook.at, A.hook.end, [S("FOOD MANAGER EXAM"), S("CAN YOU GET THIS ONE?")], { y: 900 });
+  EX.kicker(t, S("PRACTICE QUESTION"), { alpha: ss(A.q.at, A.q.at + 0.6, t) });
+
+  // question phase; after the reveal the card and wrong rows leave, the answer rises to a banner
+  const leave = ss(RV + 1.0, RV + 1.8, t);
+  const bottom = EX.card(t, A.q.at, Q, { y: CARD_Y, tag: S("example"), size: 58, alpha: 1 - leave, dy: -40 * leave });
+  const OPT_Y = bottom + 40, rowH = 108, gap = 18;
+  if (leave < 1) EX.options(t, OPTS, { y: OPT_Y, rowH, gap, at: [A.o0.at, A.o1.at, A.o2.at, A.o3.at], reveal: RV, answer: ANSWER, alpha: 1 - leave, hide: t >= RV + 1.0 ? ANSWER : null });
+  const ansI = OPTS.findIndex(s => s[0] === ANSWER);
+  if (t >= RV + 1.0) {
+    const m = ss(RV + 1.0, RV + 1.9, t), y = lerp(OPT_Y + ansI * (rowH + gap) + rowH / 2, BANNER_Y, m);
+    EX.optionRow(t, OPTS[ansI], 60, y, 960, rowH, { arrive: 1, lit: 1, alpha: 1 - ss(A.end.at, A.end.at + 0.6, t) });
+  }
+  EX.ring(t, A.pause.shown, 5, { x: 150, y: OPT_Y + 4 * (rowH + gap) + 92, r: 64, label: S("PAUSE AND SOLVE IT"), labelSize: 60, labelX: 254 });
+
+  // worked answer: the thermometer
+  const outA = 1 - ss(A.end.at, A.end.at + 0.6, t);
+  thermometer(t);
+  mark(t, A.w41.at + 0.3, 41, S("41°F"), S("OUT OF THE COOLER"), null, { alpha: outA });
+  climb(t);
+  mark(t, A.w165.at, 165, S("165°F"), S("ALL PARTS, AT LEAST"), S("15 seconds"), { accent: true, bodySize: 66, alpha: outA });
+  mark(t, A.w135.at, 135, S("135°F"), S("THEN HOLD HOT"), S("at or above"), { alpha: outA });
+  const ruleA = 1 - ss(A.trap.at - 0.1, A.trap.at + 0.4, t);
+  if (ruleA > 0) EX.rule(t, A.rule.at, RULE, CITE, { y: RULE_Y, size: 60, alpha: ruleA });
+  EX.trap(t, A.trap.at, TOTAL + 1, S("THE TRAP"), TRAP, { y: 1325, size: 46 });
+
+  vignette(0.22);
+  EX.endCard(t, A.end.at);
+  grain(t);
+};
+window.ready = (async () => {
+  await EX.ready();
+  return { total: TOTAL, events: PLAN.events, tension: PLAN.tension, warm: PLAN.warm,
+           beats: PLAN.beats.map(b => [b.id, +b.at.toFixed(2), +b.end.toFixed(2)]) };
+})();
+</script></body></html>

@@ -1,0 +1,4 @@
+{"domain": "US state wastewater treatment operator certification (ABC-format formula sheet)",
+ "question": "A circular clarifier is 50 ft in diameter. Its effluent weir runs around the full outer edge. Flow is 1.8 MGD. Using 3.14 for pi, what is the weir overflow rate?",
+ "options": ["A) 36,000 gpd/ft", "B) 22,930 gpd/ft", "C) 11,465 gpd/ft", "D) 917 gpd/ft"],
+ "answer": "C"}

@@ -1,0 +1,120 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: Anton; src: url('../fonts/Anton-Regular.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// adj-coinsurance-met — commercial property, 90% coinsurance, the limit exactly meets the requirement
+// (500,000 x 90% = 450,000 = limit), so no penalty: the insurer pays the loss minus the deductible. Answer: $77,500.
+const ON_SCREEN = [
+  "ADJUSTER EXAM MATH", "PENALTY OR NO PENALTY?", "PRACTICE QUESTION", "example",
+  "Commercial property, 90% coinsurance. Building value at the time of loss: $500,000. Limit: $450,000. Covered fire loss: $80,000. Deductible: $2,500. How much does the insurer pay?",
+  "A) $69,500", "B) $72,000", "C) $77,500", "D) $80,000",
+  "PAUSE AND SOLVE IT", "5", "4", "3", "2", "1",
+  "THE REQUIREMENT", "needed", "90% of value", "500,000", "450,000", "carried", "the limit",
+  "ratio", "450 ÷ 450",
+  "MET — NO PENALTY",
+  "THE PAYMENT", "loss", "× 1", "80,000", "deductible", "–", "2,500", "insurer pays", "=", "77,500",
+  "THE TRAP", "A) $69,500 divides by the full $500,000. Divide by the 90% requirement: $450,000.",
+  "@adjusterexamprep", "A free practice question every morning in our group.", "Join from this Page.",
+  "Unofficial. Not affiliated with any exam provider or regulator.", "Rules vary by state."
+];
+const S = EX.init(ON_SCREEN, 'adj'), T = EX.T;
+const Q = S("Commercial property, 90% coinsurance. Building value at the time of loss: $500,000. Limit: $450,000. Covered fire loss: $80,000. Deductible: $2,500. How much does the insurer pay?");
+const OPTS = [S("A) $69,500"), S("B) $72,000"), S("C) $77,500"), S("D) $80,000")], ANSWER = 'C';
+const TRAP = S("A) $69,500 divides by the full $500,000. Divide by the 90% requirement: $450,000.");
+const MET = S("MET — NO PENALTY");
+
+const PLAN = EX.schedule([
+  { id: 'hook', kind: 'hook', read: [S("ADJUSTER EXAM MATH"), S("PENALTY OR NO PENALTY?")], in: 0.6, min: 2.2 },
+  { id: 'q', kind: 'question', read: [S("PRACTICE QUESTION"), S("example"), Q], in: 0.9, gap: 0.3 },
+  ...OPTS.map((s, i) => ({ id: 'o' + i, kind: 'option', read: [s], in: 0.4, min: 0.75 })),
+  { id: 'pause', kind: 'pause', read: [S("PAUSE AND SOLVE IT")], in: 0.3, min: 5 },
+  { id: 'reveal', kind: 'reveal', in: 0.4, min: 1.3 },
+  { id: 'w1', kind: 'work', read: [S("THE REQUIREMENT"), S("needed"), S("90% of value"), S("500,000"), S("450,000")], in: 1.0, min: 2.2 },
+  { id: 'w2', kind: 'work', read: [S("carried"), S("the limit"), S("450,000")], in: 0.7, min: 1.8 },
+  { id: 'w3', kind: 'work', read: [S("ratio"), S("450 ÷ 450"), S("1")], in: 0.9, min: 2.2 },
+  { id: 'met', kind: 'work', read: [MET], in: 0.6, min: 1.8 },
+  { id: 'w4', kind: 'work', read: [S("THE PAYMENT"), S("loss"), S("× 1"), S("80,000")], in: 0.9 },
+  { id: 'w5', kind: 'work', read: [S("deductible"), S("–"), S("2,500")], in: 0.6, min: 1.4 },
+  { id: 'w6', kind: 'work', read: [S("insurer pays"), S("="), S("77,500")], in: 0.8, min: 1.8 },
+  { id: 'trap', kind: 'trap', read: [S("THE TRAP"), TRAP], in: 0.5 },
+  { id: 'end', kind: 'end', in: 0.6, min: 4.0 },
+], { start: 0.2 });
+const A = PLAN.at, TOTAL = PLAN.total, RV = A.reveal.at;
+
+// ---------- layout ----------
+const CARD_Y = 285, BANNER_Y = 330, L1_Y = 450, GEOM = { x0: 80, xFrom: 520, xOp: 650, xTo: 1000, rowH: 104, size: 66, strongSize: 110 };
+let OPT_Y = 0;
+const ROWS1 = [
+  { head: S("THE REQUIREMENT"), at: A.w1.at },
+  { at: A.w1.at + 0.25, label: S("needed"), note: S("90% of value"), from: S("500,000"), to: S("450,000") },
+  { at: A.w2.at, label: S("carried"), note: S("the limit"), to: S("450,000") },
+  { at: A.w3.at, label: S("ratio"), from: S("450 ÷ 450"), to: S("1") },
+];
+const ROWS2 = [
+  { head: S("THE PAYMENT"), at: A.w4.at },
+  { at: A.w4.at + 0.25, label: S("loss"), note: S("× 1"), to: S("80,000") },
+  { at: A.w5.at, label: S("deductible"), op: S("–"), to: S("2,500") },
+  { rule: true, at: A.w6.at },
+  { at: A.w6.at + 0.2, label: S("insurer pays"), op: S("="), to: S("77,500"), strong: true },
+];
+
+// "MET — NO PENALTY": a drawn tick in a disc, then the words; an equals-style bracket joins the two 450,000s
+function metLine(t, y, alpha) {
+  const t0 = A.met.at, p = EX.eo((t - t0) / 0.5), a = alpha * p; if (a <= 0) return;
+  // bracket on the right edge tying "needed 450,000" to "carried 450,000"
+  const yA = L1_Y + 88 + GEOM.rowH / 2, yB = yA + GEOM.rowH, bp = EX.eo((t - t0) / 0.45);
+  g.strokeStyle = rgba(T.text, 0.75 * alpha * bp); g.lineWidth = 4; g.lineCap = 'round'; g.lineJoin = 'round';
+  g.beginPath(); g.moveTo(1022, yA); g.lineTo(1040, yA); g.lineTo(1040, yA + (yB - yA) * bp); if (bp > 0.95) g.lineTo(1022, yB); g.stroke();
+  const cx = 112, cy = y + (1 - p) * 14;
+  g.fillStyle = rgba(T.card, a); g.beginPath(); g.arc(cx, cy, 34, 0, 6.2832); g.fill();
+  g.strokeStyle = rgba(T.dim, a); g.lineWidth = 3; g.beginPath(); g.arc(cx, cy, 34, 0, 6.2832); g.stroke();
+  EX.tick(cx, cy, 30, rgba(T.text, a * EX.eo((t - t0 - 0.15) / 0.4)), 6);
+  EX.line(t, t0 + 0.2, MET, 172, cy + 2, { size: 60, weight: 400, font: 'Anton', alpha, dur: 0.6 });
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  EX.ground();
+  const rg = g.createRadialGradient(CX, 300, 50, CX, 300, 1300);
+  rg.addColorStop(0, 'rgba(255,235,210,0.07)'); rg.addColorStop(1, 'rgba(255,235,210,0)'); g.fillStyle = rg; g.fillRect(0, 0, W, H);
+
+  EX.hook(t, A.hook.at, A.hook.end, [S("ADJUSTER EXAM MATH"), S("PENALTY OR NO PENALTY?")], { y: 900 });
+  EX.kicker(t, S("PRACTICE QUESTION"), { alpha: ss(A.q.at, A.q.at + 0.6, t) });
+
+  // question phase; after the reveal the card and wrong rows leave and the lit answer rises to a banner
+  const leave = ss(RV + 1.0, RV + 1.8, t);
+  const bottom = EX.card(t, A.q.at, Q, { y: CARD_Y, tag: S("example"), alpha: 1 - leave, dy: -40 * leave });
+  OPT_Y = bottom + 36;
+  const rowH = 100, gap = 18;
+  if (leave < 1) EX.options(t, OPTS, { y: OPT_Y, rowH, gap, at: [A.o0.at, A.o1.at, A.o2.at, A.o3.at], reveal: RV, answer: ANSWER, alpha: 1 - leave, hide: t >= RV + 1.0 ? ANSWER : null });
+  const ansI = OPTS.findIndex(s => s[0] === ANSWER);
+  if (t >= RV + 1.0) {
+    const m = ss(RV + 1.0, RV + 1.9, t), y = lerp(OPT_Y + ansI * (rowH + gap) + rowH / 2, BANNER_Y, m);
+    EX.optionRow(t, OPTS[ansI], 60, y, 960, rowH, { arrive: 1, lit: 1, alpha: 1 - ss(A.end.at, A.end.at + 0.6, t) });
+  }
+  EX.ring(t, A.pause.shown, 5, { x: 150, y: OPT_Y + 4 * (rowH + gap) + 92, r: 64, label: S("PAUSE AND SOLVE IT"), labelSize: 60, labelX: 254 });
+
+  // worked answer; it steps back while the trap card is up
+  const back = 1 - ss(A.trap.at, A.trap.at + 0.6, t);
+  const y1 = EX.ledger(t, ROWS1, { ...GEOM, y: L1_Y, alpha: back });
+  metLine(t, y1 + 56, back);
+  EX.ledger(t, ROWS2, { ...GEOM, y: y1 + 120, alpha: back });
+  EX.trap(t, A.trap.at, TOTAL + 1, S("THE TRAP"), TRAP, { y: 860, size: 50 });
+
+  vignette(0.22);
+  EX.endCard(t, A.end.at);
+  grain(t);
+};
+window.ready = (async () => {
+  await EX.ready();
+  return { total: TOTAL, events: PLAN.events, tension: PLAN.tension, warm: PLAN.warm,
+           beats: PLAN.beats.map(b => [b.id, +b.at.toFixed(2), +b.end.toFixed(2)]) };
+})();
+</script></body></html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: Anton; src: url('../fonts/Anton-Regular.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// fpm-time-control — time as a public health control (Food Code 3-501.19). Hot food leaving hot holding at 135°F
+// gets the 4-hour option only (the 6-hour option needs food that starts at 41°F or less). 11:00 AM + 4 h = 3:00 PM.
+const ON_SCREEN = [
+  "FOOD MANAGER EXAM", "CAN YOU GET THIS ONE?", "PRACTICE QUESTION", "example",
+  "Pizza held hot at 135°F comes off hot holding at 11:00 AM for a buffet, using time as a public health control. By what time must it be served or thrown out?",
+  "A) 1:00 PM", "B) 2:00 PM", "C) 3:00 PM", "D) 5:00 PM",
+  "PAUSE AND SOLVE IT", "5", "4", "3", "2", "1",
+  "off hot holding", "at 135°F", "11:00 AM",
+  "4-hour rule", "+", "4 hours",
+  "11", "12",
+  "serve or toss by", "=", "3:00 PM",
+  "Off hot holding at 135°F: 4 hours, max. Mark the pan; serve or toss by then.", "FOOD CODE 3-501.19",
+  "THE TRAP", "D) 5:00 PM is the 6-hour option: cold food only (41°F or below at the start), tossed if it goes above 70°F.",
+  "@fpmexamprep", "A free practice question every morning in our group.", "Join from this Page.",
+  "Unofficial. Not affiliated with any exam provider or regulator.", "Based on the FDA Food Code; your local code may differ."
+];
+const S = EX.init(ON_SCREEN, 'fpm'), T = EX.T;
+const Q = S("Pizza held hot at 135°F comes off hot holding at 11:00 AM for a buffet, using time as a public health control. By what time must it be served or thrown out?");
+const OPTS = [S("A) 1:00 PM"), S("B) 2:00 PM"), S("C) 3:00 PM"), S("D) 5:00 PM")], ANSWER = 'C';
+const RULE = S("Off hot holding at 135°F: 4 hours, max. Mark the pan; serve or toss by then."), CITE = S("FOOD CODE 3-501.19");
+const TRAP = S("D) 5:00 PM is the 6-hour option: cold food only (41°F or below at the start), tossed if it goes above 70°F.");
+const HOURS = [[S("11"), 11], [S("12"), 12], [S("1"), 1], [S("2"), 2], [S("3"), 3]];
+
+const PLAN = EX.schedule([
+  { id: 'hook', kind: 'hook', read: [S("FOOD MANAGER EXAM"), S("CAN YOU GET THIS ONE?")], in: 0.6, min: 2.2 },
+  { id: 'q', kind: 'question', read: [S("PRACTICE QUESTION"), S("example"), Q], in: 0.9, gap: 0.3 },
+  ...OPTS.map((s, i) => ({ id: 'o' + i, kind: 'option', read: [s], in: 0.4, min: 0.75 })),
+  { id: 'pause', kind: 'pause', read: [S("PAUSE AND SOLVE IT")], in: 0.3, min: 5 },
+  { id: 'reveal', kind: 'reveal', in: 0.4, min: 1.0 },
+  { id: 'w1', kind: 'work', read: [S("off hot holding"), S("at 135°F"), S("11:00 AM")], in: 1.0 },
+  { id: 'w2', kind: 'work', read: [S("4-hour rule"), S("+"), S("4 hours"), ...HOURS.map(h => h[0])], in: 0.7, min: 2.6 },
+  { id: 'w3', kind: 'work', read: [S("serve or toss by"), S("="), S("3:00 PM")], in: 0.7, min: 1.6 },
+  { id: 'rule', kind: 'work', read: [RULE, CITE], in: 0.6 },
+  { id: 'trap', kind: 'trap', read: [S("THE TRAP"), TRAP], in: 0.5 },
+  { id: 'end', kind: 'end', in: 0.6, min: 4.0 },
+], { start: 0.2 });
+const A = PLAN.at, TOTAL = PLAN.total, RV = A.reveal.at;
+
+// ---------- layout ----------
+const CARD_Y = 285, BANNER_Y = 330, LED_Y = 470;
+const CLK = { x: CX, y: 1112, r: 162 }, RULE_Y = 1370, TRAP_Y = 900;
+const ang = h => (h % 12) / 12 * 6.2832 - Math.PI / 2;   // clock angle, 12 at the top
+
+// the clock: face + hour ticks, the four hours fill as a wedge while the hour hand sweeps 11 -> 3
+function clock(t) {
+  const t0 = A.w2.at, out = 1 - ss(A.trap.at, A.trap.at + 0.5, t), a = EX.eo((t - t0) / 0.6) * out;
+  if (a <= 0) return;
+  const { x, r } = CLK, y = CLK.y + (1 - a) * 20;
+  const sweep = EX.eo((t - t0 - 0.5) / 1.8), lit = ss(A.w3.at + 0.3, A.w3.at + 0.9, t);
+  const a0 = ang(11), a1 = a0 + sweep * (4 / 12) * 6.2832;
+  g.fillStyle = rgba(T.card, a); g.beginPath(); g.arc(x, y, r, 0, 6.2832); g.fill();
+  if (sweep > 0) {                                   // the elapsed four hours
+    g.fillStyle = rgba(mix(T.text, T.accent, lit), (0.16 + 0.1 * lit) * a);
+    g.beginPath(); g.moveTo(x, y); g.arc(x, y, r - 8, a0, a1); g.closePath(); g.fill();
+    g.strokeStyle = rgba(mix(T.text, T.accent, lit), 0.9 * a); g.lineWidth = 8; g.lineCap = 'round';
+    g.beginPath(); g.arc(x, y, r + 14, a0, a1); g.stroke();
+  }
+  g.strokeStyle = rgba(T.line, a); g.lineWidth = 5; g.beginPath(); g.arc(x, y, r, 0, 6.2832); g.stroke();
+  for (let h = 0; h < 12; h++) {                     // hour ticks (paths)
+    const q = ang(h), c = Math.cos(q), s = Math.sin(q);
+    g.strokeStyle = rgba(T.dim, 0.8 * a); g.lineWidth = 4;
+    g.beginPath(); g.moveTo(x + c * (r - 26), y + s * (r - 26)); g.lineTo(x + c * (r - 10), y + s * (r - 10)); g.stroke();
+  }
+  g.font = EX.F(400, 60, 'Anton'); g.textAlign = 'center'; g.textBaseline = 'middle';
+  HOURS.forEach(([s, h], i) => {
+    const q = ang(h), p = EX.eo((t - t0 - 0.2 - i * 0.12) / 0.4); if (p <= 0) return;
+    const on = h === 3 ? lit : 0;
+    g.fillStyle = rgba(mix(T.text, T.accent, on), a * p);
+    g.fillText(s, x + Math.cos(q) * (r + 58), y + Math.sin(q) * (r + 58) + 3);
+  });
+  // hands: minute hand parked at 12 (on the hour), hour hand sweeps with the wedge
+  g.lineCap = 'round';
+  g.strokeStyle = rgba(T.dim, a); g.lineWidth = 7;
+  g.beginPath(); g.moveTo(x, y); g.lineTo(x, y - (r - 34)); g.stroke();
+  const hq = a0 + sweep * (4 / 12) * 6.2832;
+  g.strokeStyle = rgba(mix(T.text, T.accent, lit), a); g.lineWidth = 12;
+  g.beginPath(); g.moveTo(x, y); g.lineTo(x + Math.cos(hq) * (r - 62), y + Math.sin(hq) * (r - 62)); g.stroke();
+  g.fillStyle = rgba(T.text, a); g.beginPath(); g.arc(x, y, 12, 0, 6.2832); g.fill();
+}
+
+const ROWS = [
+  { at: A.w1.at + 0.2, label: S("off hot holding"), note: S("at 135°F"), to: S("11:00 AM") },
+  { at: A.w2.at, label: S("4-hour rule"), op: S("+"), to: S("4 hours") },
+  { rule: true, at: A.w3.at },
+  { at: A.w3.at + 0.2, label: S("serve or toss by"), op: S("="), to: S("3:00 PM"), strong: true },
+];
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  EX.ground();
+  const rg = g.createRadialGradient(CX, 300, 50, CX, 300, 1300);   // soft light from above
+  rg.addColorStop(0, 'rgba(255,240,215,0.07)'); rg.addColorStop(1, 'rgba(255,240,215,0)'); g.fillStyle = rg; g.fillRect(0, 0, W, H);
+
+  EX.hook(t, A.hook.at, A.hook.end, [S("FOOD MANAGER EXAM"), S("CAN YOU GET THIS ONE?")], { y: 900 });
+  EX.kicker(t, S("PRACTICE QUESTION"), { alpha: ss(A.q.at, A.q.at + 0.6, t) });
+
+  // question phase; after the reveal the card and wrong rows leave and the lit answer rises to a banner
+  const leave = ss(RV + 1.0, RV + 1.8, t);
+  const bottom = EX.card(t, A.q.at, Q, { y: CARD_Y, tag: S("example"), alpha: 1 - leave, dy: -40 * leave });
+  const OPT_Y = bottom + 36, rowH = 100, gap = 18;
+  if (leave < 1) EX.options(t, OPTS, { y: OPT_Y, rowH, gap, at: [A.o0.at, A.o1.at, A.o2.at, A.o3.at], reveal: RV, answer: ANSWER, alpha: 1 - leave, hide: t >= RV + 1.0 ? ANSWER : null });
+  const ansI = OPTS.findIndex(s => s[0] === ANSWER);
+  if (t >= RV + 1.0) {
+    const m = ss(RV + 1.0, RV + 1.9, t), y = lerp(OPT_Y + ansI * (rowH + gap) + rowH / 2, BANNER_Y, m);
+    EX.optionRow(t, OPTS[ansI], 60, y, 960, rowH, { arrive: 1, lit: 1, alpha: 1 - ss(A.end.at, A.end.at + 0.6, t) });
+  }
+  EX.ring(t, A.pause.shown, 5, { x: 150, y: OPT_Y + 4 * (rowH + gap) + 92, r: 64, label: S("PAUSE AND SOLVE IT"), labelSize: 60, labelX: 254 });
+
+  // worked answer
+  EX.ledger(t, ROWS, { y: LED_Y, x0: 80, xFrom: 580, xOp: 640, xTo: 1000, rowH: 94, size: 64, strongSize: 100 });
+  clock(t);
+  const ruleA = 1 - ss(A.trap.at, A.trap.at + 0.5, t);
+  if (t >= A.rule.at && ruleA > 0) EX.rule(t, A.rule.at, RULE, CITE, { y: RULE_Y, size: 54, alpha: ruleA });
+  EX.trap(t, A.trap.at, TOTAL + 1, S("THE TRAP"), TRAP, { y: TRAP_Y, size: 50 });
+
+  vignette(0.22);
+  EX.endCard(t, A.end.at);
+  grain(t);
+};
+window.ready = (async () => {
+  await EX.ready();
+  return { total: TOTAL, events: PLAN.events, tension: PLAN.tension, warm: PLAN.warm,
+           beats: PLAN.beats.map(b => [b.id, +b.at.toFixed(2), +b.end.toFixed(2)]) };
+})();
+</script></body></html>

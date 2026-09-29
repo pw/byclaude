@@ -1,0 +1,160 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: Anton; src: url('../fonts/Anton-Regular.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// adj-equal-shares — "other insurance": two primary policies that both permit contribution by equal shares.
+// X (limit 50k) and Y (limit 200k) share a 120k claim: 50k each until X is used up, then Y pays the last 20k.
+// Answer: X $50,000 · Y $70,000. Trap: contribution by limits (24k / 96k).
+const ON_SCREEN = [
+  "ADJUSTER EXAM MATH", "WHO PAYS WHAT?", "PRACTICE QUESTION", "example",
+  "Two primary liability policies share a $120,000 claim. Both allow contribution by equal shares. Limits: Policy X $50,000, Policy Y $200,000. How is it split?",
+  "A) X $60,000 · Y $60,000", "B) X $50,000 · Y $70,000", "C) X $24,000 · Y $96,000", "D) X $50,000 · Y $50,000",
+  "PAUSE AND SOLVE IT", "5", "4", "3", "2", "1",
+  "Equal shares: each pays the same until its limit runs out or the claim is paid.",
+  "CG 00 01 · OTHER INSURANCE",
+  "POLICY X", "POLICY Y", "limit", "50,000", "200,000",
+  "equal shares", "each pays", "the rest", "X is full", "0", "20,000",
+  "total", "70,000", "50,000 + 70,000 = 120,000",
+  "THE TRAP", "C) splits by limits (X 20%, Y 80%), the fallback only if a policy won't share equally.",
+  "@adjusterexamprep", "A free practice question every morning in our group.", "Join from this Page.",
+  "Unofficial. Not affiliated with any exam provider or regulator.", "Rules vary by state."
+];
+const S = EX.init(ON_SCREEN, 'adj'), T = EX.T;
+const HOOK = [S("ADJUSTER EXAM MATH"), S("WHO PAYS WHAT?")];
+const Q = S("Two primary liability policies share a $120,000 claim. Both allow contribution by equal shares. Limits: Policy X $50,000, Policy Y $200,000. How is it split?");
+const OPTS = [S("A) X $60,000 · Y $60,000"), S("B) X $50,000 · Y $70,000"), S("C) X $24,000 · Y $96,000"), S("D) X $50,000 · Y $50,000")], ANSWER = 'B';
+const RULE = S("Equal shares: each pays the same until its limit runs out or the claim is paid.");
+const CITE = S("CG 00 01 · OTHER INSURANCE");
+const TRAP = S("C) splits by limits (X 20%, Y 80%), the fallback only if a policy won't share equally.");
+const CHECK = S("50,000 + 70,000 = 120,000");
+
+const NODOT = s => s.replace(' · ', ' ');     // the reading rule counts words; a separator dot is not one
+const PLAN = EX.schedule([
+  { id: 'hook', kind: 'hook', read: HOOK, in: 0.5, min: 2.2 },
+  { id: 'q', kind: 'question', read: [S("PRACTICE QUESTION"), S("example"), Q], in: 0.9, gap: 0.1 },
+  ...OPTS.map((s, i) => ({ id: 'o' + i, kind: 'option', read: [NODOT(s)], in: 0.3, min: 0.75 })),
+  { id: 'pause', kind: 'pause', read: [S("PAUSE AND SOLVE IT")], in: 0.3, min: 5 },
+  { id: 'reveal', kind: 'reveal', in: 0.4, min: 1.0 },
+  { id: 'rule', kind: 'work', read: [RULE, NODOT(CITE)], in: 0.8 },
+  { id: 'w1', kind: 'work', read: [S("POLICY X"), S("POLICY Y"), S("limit"), S("50,000"), S("200,000")], in: 0.5 },
+  { id: 'w2', kind: 'work', read: [S("equal shares"), S("each pays"), S("50,000"), S("50,000")], in: 0.6 },
+  { id: 'w3', kind: 'work', read: [S("the rest"), S("X is full"), S("0"), S("20,000")], in: 0.6 },
+  { id: 'w4', kind: 'work', read: [S("total"), S("50,000"), S("70,000"), CHECK], in: 0.9, min: 1.2 },
+  { id: 'trap', kind: 'trap', read: [S("THE TRAP"), TRAP], in: 0.5 },
+  { id: 'end', kind: 'end', in: 0.4, min: 4.0 },
+], { start: 0.2 });
+const A = PLAN.at, TOTAL = PLAN.total, RV = A.reveal.at;
+
+// ---------- layout ----------
+const CARD_Y = 285, BANNER_Y = 330, RULE_Y = 470, TAB_Y = 800;
+const XL = 80, XC = 640, YC = 1000;              // label x · right edge of the X column · right edge of the Y column
+let OPT_Y = 0;
+
+// one table cell: fades in, slides up 8px, wipes on left->right; tabular digits so the column lines up
+function cell(t, t0, str, xr, y, size, col, weight = 700) {
+  const k = t - t0; if (k <= 0) return;
+  const p = EX.eo(k / 0.45), w = EX.numWidth(str, size, weight);
+  g.save(); g.beginPath(); g.rect(xr - w - 8, y - size, (w + 16) * p, size * 2); g.clip();
+  EX.num(str, xr, y + (1 - p) * 8, size, 'right', col, weight); g.restore();
+}
+function caps(txt, x, y, a, size = 38, align = 'right', col = T.dim) {
+  g.font = EX.F(400, size, 'Anton'); if ('letterSpacing' in g) g.letterSpacing = '5px';
+  g.textAlign = align; g.textBaseline = 'middle'; g.fillStyle = rgba(col, a); g.fillText(txt, x, y);
+  if ('letterSpacing' in g) g.letterSpacing = '0px';
+}
+function label(t, t0, main, note, y, a, strong) {
+  const p = a * EX.eo((t - t0) / 0.35); if (p <= 0) return;
+  g.textAlign = 'left'; g.textBaseline = 'middle';
+  g.font = EX.F(500, 40); g.fillStyle = rgba(strong ? T.text : T.dim, p); g.fillText(main, XL, note ? y - 18 : y);
+  if (note) { g.font = EX.F(400, 32); g.fillStyle = rgba(T.dim, 0.85 * p); g.fillText(note, XL, y + 24); }
+}
+function hair(t, t0, x0, x1, y, a, al = 0.45) {
+  const p = EX.eo((t - t0) / 0.5); if (p <= 0) return;
+  g.fillStyle = rgba(T.text, al * a); g.fillRect(x1 - (x1 - x0) * p, y, (x1 - x0) * p, 3);
+}
+
+function table(t) {
+  if (t < A.w1.at) return;
+  const a = 1 - ss(A.end.at, A.end.at + 0.6, t);
+  // column heads + limits (dim: they are the givens, not the answer)
+  const h = a * EX.eo((t - A.w1.at) / 0.4);
+  caps(S("POLICY X"), XC, TAB_Y, h); caps(S("POLICY Y"), YC, TAB_Y, h);
+  label(t, A.w1.at + 0.2, S("limit"), null, TAB_Y + 80, a);
+  cell(t, A.w1.at + 0.3, S("50,000"), XC, TAB_Y + 80, 60, rgba(T.dim, 0.9 * a), 500);
+  cell(t, A.w1.at + 0.45, S("200,000"), YC, TAB_Y + 80, 60, rgba(T.dim, 0.9 * a), 500);
+  hair(t, A.w1.at + 0.6, XL, YC, TAB_Y + 132, a, 0.3);
+  // round 1: equal amounts until X hits its limit
+  const y1 = TAB_Y + 205;
+  label(t, A.w2.at, S("equal shares"), S("each pays"), y1, a);
+  cell(t, A.w2.at + 0.2, S("50,000"), XC, y1, 64, rgba(T.text, a));
+  cell(t, A.w2.at + 0.35, S("50,000"), YC, y1, 64, rgba(T.text, a));
+  // X is full: a drawn bracket under its cell, tied to its limit above
+  const fx = EX.eo((t - A.w3.at) / 0.5);
+  if (fx > 0) { g.strokeStyle = rgba(T.text, 0.55 * a * fx); g.lineWidth = 4; g.lineCap = 'round';
+    const w = EX.numWidth("50,000", 64, 700); g.beginPath(); g.roundRect(XC - w - 18, y1 - 44, w + 36, 88, 20); g.stroke(); }
+  // round 2: Y pays what is left
+  const y2 = y1 + 115;
+  label(t, A.w3.at, S("the rest"), S("X is full"), y2, a);
+  cell(t, A.w3.at + 0.25, S("0"), XC, y2, 64, rgba(T.dim, 0.8 * a));
+  cell(t, A.w3.at + 0.4, S("20,000"), YC, y2, 64, rgba(T.text, a));
+  // totals in the accent: this is the answer
+  hair(t, A.w4.at, 340, YC, y2 + 62, a, 0.55);
+  const y3 = y2 + 150;
+  label(t, A.w4.at + 0.1, S("total"), null, y3, a, true);
+  cell(t, A.w4.at + 0.25, S("50,000"), XC, y3, 80, rgba(T.accent, a));
+  cell(t, A.w4.at + 0.45, S("70,000"), YC, y3, 80, rgba(T.accent, a));
+  // the check: every dollar of the claim is paid
+  const k = t - A.w4.at - 1.4; if (k > 0) {
+    const p = EX.eo(k / 0.6), yy = y3 + 130;
+    g.font = EX.F(500, 60); const w = g.measureText(CHECK).width;
+    g.save(); g.beginPath(); g.rect(YC - w - 8, yy - 60, (w + 16) * p, 120); g.clip();
+    g.textAlign = 'right'; g.textBaseline = 'middle'; g.fillStyle = rgba(T.text, 0.85 * a);
+    g.fillText(CHECK, YC, yy + (1 - p) * 8); g.restore();
+    EX.tick(XL + 30, yy, 44, rgba(T.accent, a * ss(0.4, 0.8, k)), 7);
+  }
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  EX.ground();
+  const rg = g.createRadialGradient(CX, 300, 50, CX, 300, 1300);
+  rg.addColorStop(0, 'rgba(255,235,210,0.07)'); rg.addColorStop(1, 'rgba(255,235,210,0)'); g.fillStyle = rg; g.fillRect(0, 0, W, H);
+
+  EX.hook(t, A.hook.at, A.hook.end, HOOK, { y: 900 });
+  EX.kicker(t, S("PRACTICE QUESTION"), { alpha: ss(A.q.at, A.q.at + 0.6, t) });
+
+  // question phase; after the reveal the card and wrong rows leave and the lit answer rises to a banner
+  const leave = ss(RV + 1.0, RV + 1.8, t);
+  const bottom = EX.card(t, A.q.at, Q, { y: CARD_Y, tag: S("example"), alpha: 1 - leave, dy: -40 * leave });
+  OPT_Y = bottom + 36;
+  const rowH = 100, gap = 18;
+  if (leave < 1) EX.options(t, OPTS, { y: OPT_Y, rowH, gap, at: [A.o0.at, A.o1.at, A.o2.at, A.o3.at], reveal: RV, answer: ANSWER, alpha: 1 - leave, hide: t >= RV + 1.0 ? ANSWER : null });
+  const ansI = OPTS.findIndex(s => s[0] === ANSWER);
+  if (t >= RV + 1.0) {
+    const m = ss(RV + 1.0, RV + 1.9, t), y = lerp(OPT_Y + ansI * (rowH + gap) + rowH / 2, BANNER_Y, m);
+    EX.optionRow(t, OPTS[ansI], 60, y, 960, rowH, { arrive: 1, lit: 1, alpha: 1 - ss(A.end.at, A.end.at + 0.6, t) });
+  }
+  EX.ring(t, A.pause.shown, 5, { x: 150, y: OPT_Y + 4 * (rowH + gap) + 92, r: 64, label: S("PAUSE AND SOLVE IT"), labelSize: 60, labelX: 254 });
+
+  // worked answer: the rule + its cite, then the table
+  EX.rule(t, A.rule.at, RULE, CITE, { y: RULE_Y, size: 50, alpha: 1 - ss(A.trap.at - 0.1, A.trap.at + 0.4, t) });
+  table(t);
+  EX.trap(t, A.trap.at, TOTAL + 1, S("THE TRAP"), TRAP, { y: 410, size: 46 });
+
+  vignette(0.22);
+  EX.endCard(t, A.end.at);
+  grain(t);
+};
+window.ready = (async () => {
+  await EX.ready();
+  return { total: TOTAL, events: PLAN.events, tension: PLAN.tension, warm: PLAN.warm,
+           beats: PLAN.beats.map(b => [b.id, +b.at.toFixed(2), +b.end.toFixed(2)]) };
+})();
+</script></body></html>

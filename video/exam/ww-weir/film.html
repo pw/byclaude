@@ -1,0 +1,155 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: Anton; src: url('../fonts/Anton-Regular.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// ww-weir — weir overflow rate on a circular clarifier (example: 50 ft across, weir on the full outer edge,
+// 1.8 MGD, pi = 3.14 as on the ABC formula sheet). Weir length = 3.14 x 50 = 157 ft; 1,800,000 / 157 = 11,465 gpd/ft.
+const ON_SCREEN = [
+  "WASTEWATER EXAM MATH", "CAN YOU GET THIS ONE?", "PRACTICE QUESTION", "example",
+  "A circular clarifier is 50 ft in diameter. Its effluent weir runs around the full outer edge. Flow is 1.8 MGD. Using 3.14 for pi, what is the weir overflow rate?",
+  "A) 36,000 gpd/ft", "B) 22,930 gpd/ft", "C) 11,465 gpd/ft", "D) 917 gpd/ft",
+  "PAUSE AND SOLVE IT", "5", "4", "3", "2", "1",
+  "WEIR OVERFLOW RATE", "flow, gpd", "weir length, ft", "50 ft", "weir",
+  "WEIR LENGTH (FT)", "3.14 × 50", "=", "157",
+  "FLOW (GPD)", "1.8 × 1,000,000", "1,800,000",
+  "RATE (GPD PER FT)", "1,800,000 ÷ 157", "11,465",
+  "THE TRAP", "D) 917 divides by the tank's area. That is surface overflow rate, not weir overflow rate.",
+  "@wastewaterexamprep", "A free practice question every morning in our group.", "Join from this Page.",
+  "Unofficial. Not affiliated with any exam provider or regulator.", "Check your state's exam and formula sheet."
+];
+const S = EX.init(ON_SCREEN, 'ww'), T = EX.T;
+const Q = S("A circular clarifier is 50 ft in diameter. Its effluent weir runs around the full outer edge. Flow is 1.8 MGD. Using 3.14 for pi, what is the weir overflow rate?");
+const OPTS = [S("A) 36,000 gpd/ft"), S("B) 22,930 gpd/ft"), S("C) 11,465 gpd/ft"), S("D) 917 gpd/ft")], ANSWER = 'C';
+const TRAP = S("D) 917 divides by the tank's area. That is surface overflow rate, not weir overflow rate.");
+
+const PLAN = EX.schedule([
+  { id: 'hook', kind: 'hook', read: [S("WASTEWATER EXAM MATH"), S("CAN YOU GET THIS ONE?")], in: 0.6, min: 2.2 },
+  { id: 'q', kind: 'question', read: [S("PRACTICE QUESTION"), S("example"), Q], in: 0.9, gap: 0.3 },
+  ...OPTS.map((s, i) => ({ id: 'o' + i, kind: 'option', read: [s], in: 0.4, min: 0.8 })),
+  { id: 'pause', kind: 'pause', read: [S("PAUSE AND SOLVE IT")], in: 0.3, min: 5 },
+  { id: 'reveal', kind: 'reveal', in: 0.4, min: 1.3 },
+  { id: 'dia', kind: 'work', read: [S("WEIR OVERFLOW RATE"), S("flow, gpd"), S("weir length, ft"), S("50 ft"), S("weir")], in: 1.0, min: 3.2 },
+  { id: 'w1', kind: 'work', read: [S("WEIR LENGTH (FT)"), S("3.14 × 50"), S("="), S("157")], in: 1.0, min: 2.0 },
+  { id: 'w2', kind: 'work', read: [S("FLOW (GPD)"), S("1.8 × 1,000,000"), S("="), S("1,800,000")], in: 1.0, min: 2.0 },
+  { id: 'w3', kind: 'work', read: [S("RATE (GPD PER FT)"), S("1,800,000 ÷ 157"), S("="), S("11,465")], in: 1.0, min: 2.4 },
+  { id: 'trap', kind: 'trap', read: [S("THE TRAP"), TRAP], in: 0.5 },
+  { id: 'end', kind: 'end', in: 0.6, min: 4.0 },
+], { start: 0.2 });
+const A = PLAN.at, TOTAL = PLAN.total, RV = A.reveal.at;
+
+// ---------- layout ----------
+const CARD_Y = 285, BANNER_Y = 330, LED_Y = 830;
+const TX = 232, TY = 612, TR = 132;             // the clarifier, seen from above
+
+const cap = (txt, x, y, a, col = T.dim, size = 36, align = 'left') => {
+  g.font = EX.F(400, size, 'Anton'); if ('letterSpacing' in g) g.letterSpacing = '5px';
+  g.textAlign = align; g.textBaseline = 'middle'; g.fillStyle = rgba(col, a); g.fillText(txt, x, y);
+  if ('letterSpacing' in g) g.letterSpacing = '0px';
+};
+
+// plan view of the tank: water, centre well, the weir tracing the whole rim, the 50 ft diameter
+function clarifier(t) {
+  const t0 = A.dia.at, a = 1 - EX.eo((t - A.trap.at + 0.6) / 0.5);
+  if (t < t0 || a <= 0) return;
+  const p0 = EX.eo((t - t0) / 0.5);
+  g.fillStyle = rgba(T.card, a * p0); g.beginPath(); g.arc(TX, TY, TR, 0, 6.2832); g.fill();
+  // faint ripples, deterministic
+  g.strokeStyle = rgba(T.line, 0.5 * a * p0); g.lineWidth = 2;
+  for (let k = 1; k <= 3; k++) { g.beginPath(); g.arc(TX, TY, 30 + k * 26 + 6 * Math.sin(t * 0.8 + k), 0, 6.2832); g.stroke(); }
+  g.fillStyle = rgba(T.ground, 0.8 * a * p0); g.beginPath(); g.arc(TX, TY, 26, 0, 6.2832); g.fill();
+  g.strokeStyle = rgba(T.dim, 0.8 * a * p0); g.lineWidth = 3; g.beginPath(); g.arc(TX, TY, 26, 0, 6.2832); g.stroke();
+  // the weir: a notched line that travels once around the whole edge
+  const sweep = EX.eo((t - t0 - 0.5) / 1.4); if (sweep > 0) {
+    const a0 = -Math.PI / 2, a1 = a0 + 6.2832 * sweep;
+    g.strokeStyle = rgba(T.text, a); g.lineWidth = 8; g.lineCap = 'round';
+    g.beginPath(); g.arc(TX, TY, TR, a0, a1); g.stroke();
+    g.lineWidth = 3; g.strokeStyle = rgba(T.text, 0.85 * a);
+    for (let k = 0; k < 44; k++) {                 // V-notches
+      const an = a0 + (k + 0.5) * 6.2832 / 44; if (an > a1) break;
+      const c = Math.cos(an), s = Math.sin(an);
+      g.beginPath(); g.moveTo(TX + c * (TR - 4), TY + s * (TR - 4)); g.lineTo(TX + c * (TR - 16), TY + s * (TR - 16)); g.stroke();
+    }
+    // travelling head of the trace
+    if (sweep < 1) { g.fillStyle = rgba(T.text, a); g.beginPath(); g.arc(TX + Math.cos(a1) * TR, TY + Math.sin(a1) * TR, 9, 0, 6.2832); g.fill(); }
+  }
+  // "weir" label, with a leader to the rim
+  const q = EX.eo((t - t0 - 1.2) / 0.5); if (q > 0) {
+    const an = 2.2, ex = TX + Math.cos(an) * TR, ey = TY + Math.sin(an) * TR;
+    g.strokeStyle = rgba(T.dim, a * q); g.lineWidth = 3; g.beginPath(); g.moveTo(ex - 6, ey + 8); g.lineTo(TX - 120, TY + TR + 36); g.stroke();
+    g.font = EX.F(600, 44); g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillStyle = rgba(T.text, a * q);
+    g.fillText(S("weir"), TX - 100, TY + TR + 40);
+  }
+  // diameter
+  const d = EX.eo((t - t0 - 1.6) / 0.6); if (d > 0) {
+    const xa = TX - TR + 14, xb = lerp(xa, TX + TR - 14, d);
+    g.strokeStyle = rgba(T.text, 0.9 * a); g.lineWidth = 4; g.setLineDash([14, 10]);
+    g.beginPath(); g.moveTo(xa, TY); g.lineTo(xb, TY); g.stroke(); g.setLineDash([]);
+    g.lineWidth = 4; g.beginPath(); g.moveTo(xa, TY - 16); g.lineTo(xa, TY + 16); g.stroke();
+    if (d > 0.95) { g.beginPath(); g.moveTo(xb, TY - 16); g.lineTo(xb, TY + 16); g.stroke(); }
+    g.font = EX.F(700, 46); g.textAlign = 'center'; g.fillStyle = rgba(T.text, a * ss(0.6, 1, d));
+    g.fillText(S("50 ft"), TX, TY - 44);
+  }
+}
+// the formula, set as a fraction the way the formula sheet prints it
+function formula(t) {
+  const t0 = A.dia.at + 0.4, a = 1 - EX.eo((t - A.trap.at + 0.6) / 0.5);
+  if (t < t0 || a <= 0) return;
+  const x0 = 452, x1 = 1010, cx = (x0 + x1) / 2, p = EX.eo((t - t0) / 0.5);
+  cap(S("WEIR OVERFLOW RATE"), x0, 510, a * p);
+  const n = EX.eo((t - t0 - 0.4) / 0.5), b = EX.eo((t - t0 - 0.7) / 0.5), dn = EX.eo((t - t0 - 1.0) / 0.5);
+  g.font = EX.F(500, 52); g.textAlign = 'center'; g.textBaseline = 'middle';
+  g.fillStyle = rgba(T.text, a * n); g.fillText(S("flow, gpd"), cx, 590 + (1 - n) * 10);
+  g.fillStyle = rgba(T.text, 0.8 * a); g.fillRect(cx - 220 * b, 638, 440 * b, 4);
+  g.fillStyle = rgba(T.text, a * dn); g.fillText(S("weir length, ft"), cx, 688 + (1 - dn) * 10);
+}
+const ROWS = [
+  { head: S("WEIR LENGTH (FT)"), at: A.w1.at },
+  { at: A.w1.at + 0.25, from: S("3.14 × 50"), op: S("="), to: S("157") },
+  { head: S("FLOW (GPD)"), at: A.w2.at },
+  { at: A.w2.at + 0.25, from: S("1.8 × 1,000,000"), op: S("="), to: S("1,800,000") },
+  { head: S("RATE (GPD PER FT)"), at: A.w3.at },
+  { at: A.w3.at + 0.25, from: S("1,800,000 ÷ 157"), op: S("="), to: S("11,465"), strong: true },
+];
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  EX.ground();
+  const rg = g.createRadialGradient(CX, 300, 50, CX, 300, 1300);
+  rg.addColorStop(0, 'rgba(210,230,255,0.07)'); rg.addColorStop(1, 'rgba(210,230,255,0)'); g.fillStyle = rg; g.fillRect(0, 0, W, H);
+
+  EX.hook(t, A.hook.at, A.hook.end, [S("WASTEWATER EXAM MATH"), S("CAN YOU GET THIS ONE?")], { y: 900 });
+  EX.kicker(t, S("PRACTICE QUESTION"), { alpha: ss(A.q.at, A.q.at + 0.6, t) });
+
+  const leave = ss(RV + 1.0, RV + 1.8, t);
+  const bottom = EX.card(t, A.q.at, Q, { y: CARD_Y, tag: S("example"), alpha: 1 - leave, dy: -40 * leave });
+  const OPT_Y = bottom + 36, rowH = 100, gap = 18;
+  if (leave < 1) EX.options(t, OPTS, { y: OPT_Y, rowH, gap, at: [A.o0.at, A.o1.at, A.o2.at, A.o3.at], reveal: RV, answer: ANSWER, alpha: 1 - leave, hide: t >= RV + 1.0 ? ANSWER : null });
+  const ansI = OPTS.findIndex(s => s[0] === ANSWER);
+  if (t >= RV + 1.0) {
+    const m = ss(RV + 1.0, RV + 1.9, t), y = lerp(OPT_Y + ansI * (rowH + gap) + rowH / 2, BANNER_Y, m);
+    EX.optionRow(t, OPTS[ansI], 60, y, 960, rowH, { arrive: 1, lit: 1, alpha: 1 - ss(A.end.at, A.end.at + 0.6, t) });
+  }
+  EX.ring(t, A.pause.shown, 5, { x: 150, y: OPT_Y + 4 * (rowH + gap) + 92, r: 64, label: S("PAUSE AND SOLVE IT"), labelSize: 60, labelX: 254 });
+
+  clarifier(t);
+  formula(t);
+  EX.ledger(t, ROWS, { y: LED_Y, x0: 80, xFrom: 560, xOp: 600, xTo: 1000, rowH: 96, size: 72, strongSize: 100 });
+  EX.trap(t, A.trap.at, TOTAL + 1, S("THE TRAP"), TRAP, { y: 420, size: 46 });
+
+  vignette(0.22);
+  EX.endCard(t, A.end.at);
+  grain(t);
+};
+window.ready = (async () => {
+  await EX.ready();
+  return { total: TOTAL, events: PLAN.events, tension: PLAN.tension, warm: PLAN.warm,
+           beats: PLAN.beats.map(b => [b.id, +b.at.toFixed(2), +b.end.toFixed(2)]) };
+})();
+</script></body></html>

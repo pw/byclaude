@@ -1,0 +1,4 @@
+{"domain": "US wastewater treatment operator certification (activated sludge process control: sludge volume index)",
+ "question": "Activated sludge settleometer test: after 30 minutes the settled sludge volume is 250 mL/L. The MLSS is 2,000 mg/L. What is the sludge volume index (SVI)?",
+ "options": ["A) 0.125 mL/g", "B) 8 mL/g", "C) 125 mL/g", "D) 8,000 mL/g"],
+ "answer": "C"}

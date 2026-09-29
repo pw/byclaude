@@ -1,0 +1,142 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: Anton; src: url('../fonts/Anton-Regular.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// ww-pounds — the pounds (loading) formula: lb/day = flow (MGD) x concentration (mg/L) x 8.34 lb/gal.
+// Example: 3.2 MGD at 200 mg/L BOD -> 5,337.6 lb/day. Distractors are real slips: drop the 8.34 (640.0),
+// divide by it (76.7), or reach for 3.785 L/gal from the same line of the conversion table (2,422.4).
+const ON_SCREEN = [
+  "WASTEWATER EXAM MATH", "CAN YOU GET THIS ONE?", "PRACTICE QUESTION", "example",
+  "Influent flow: 3.2 MGD. Influent BOD: 200 mg/L. What is the BOD loading to the plant, in pounds per day?",
+  "A) 76.7 lb/day", "B) 640.0 lb/day", "C) 2,422.4 lb/day", "D) 5,337.6 lb/day",
+  "PAUSE AND SOLVE IT", "5", "4", "3", "2", "1",
+  "THE FORMULA", "lb/day = MGD × mg/L × 8.34", "8.34 lb = 1 gallon of water",
+  "YOUR NUMBERS", "flow, MGD", "BOD, mg/L", "lb per gallon", "lb/day", "×", "=",
+  "3.2", "200", "640", "8.34", "5,337.6",
+  "THE TRAP", "B) 640.0 forgets × 8.34, the pounds in a gallon of water. Without it, the answer isn't in pounds.",
+  "@wastewaterexamprep", "A free practice question every morning in our group.", "Join from this Page.",
+  "Unofficial. Not affiliated with any exam provider or regulator.", "Check your state's exam and formula sheet."
+];
+const S = EX.init(ON_SCREEN, 'ww'), T = EX.T;
+const Q = S("Influent flow: 3.2 MGD. Influent BOD: 200 mg/L. What is the BOD loading to the plant, in pounds per day?");
+const OPTS = [S("A) 76.7 lb/day"), S("B) 640.0 lb/day"), S("C) 2,422.4 lb/day"), S("D) 5,337.6 lb/day")], ANSWER = 'D';
+const TRAP = S("B) 640.0 forgets × 8.34, the pounds in a gallon of water. Without it, the answer isn't in pounds.");
+const FORMULA = S("lb/day = MGD × mg/L × 8.34");
+
+const PLAN = EX.schedule([
+  { id: 'hook', kind: 'hook', read: [S("WASTEWATER EXAM MATH"), S("CAN YOU GET THIS ONE?")], in: 0.6, min: 2.2 },
+  { id: 'q', kind: 'question', read: [S("PRACTICE QUESTION"), S("example"), Q], in: 0.9, gap: 0.3 },
+  ...OPTS.map((s, i) => ({ id: 'o' + i, kind: 'option', read: [s], in: 0.4, min: 0.8 })),
+  { id: 'pause', kind: 'pause', read: [S("PAUSE AND SOLVE IT")], in: 0.3, min: 5 },
+  { id: 'reveal', kind: 'reveal', in: 0.4, min: 1.3 },
+  { id: 'f', kind: 'work', read: [S("THE FORMULA"), FORMULA, S("8.34 lb = 1 gallon of water")], in: 1.0 },
+  { id: 'w1', kind: 'work', read: [S("YOUR NUMBERS"), S("flow, MGD"), S("3.2"), S("BOD, mg/L"), S("×"), S("200")], in: 1.0 },
+  { id: 'w2', kind: 'work', read: [S("="), S("640")], in: 0.6, min: 1.2 },
+  { id: 'w3', kind: 'work', read: [S("lb per gallon"), S("×"), S("8.34")], in: 0.7, min: 1.4 },
+  { id: 'w4', kind: 'work', read: [S("lb/day"), S("="), S("5,337.6")], in: 0.8, min: 1.8 },
+  { id: 'trap', kind: 'trap', read: [S("THE TRAP"), TRAP], in: 0.5 },
+  { id: 'end', kind: 'end', in: 0.6, min: 4.0 },
+], { start: 0.2 });
+const A = PLAN.at, TOTAL = PLAN.total, RV = A.reveal.at;
+
+// ---------- layout ----------
+const CARD_Y = 285, BANNER_Y = 330, F_Y = 450, NUM_Y = 705;
+const X_LABEL = 80, X_OP = 470, X_DEC = 900;          // every number's decimal point sits on X_DEC
+
+// a number set on a decimal tab: integer part right-aligned to X_DEC, ".frac" hangs to its right
+function decNum(s, y, size, color) {
+  const k = s.indexOf('.'), ip = k < 0 ? s : s.slice(0, k), fp = k < 0 ? '' : s.slice(k);
+  EX.num(ip, X_DEC, y, size, 'right', color, 700);
+  if (fp) EX.num(fp, X_DEC, y, size, 'left', color, 700);
+}
+function wipeIn(p, x0, x1, y, h, fn) { if (p <= 0) return; g.save(); g.beginPath(); g.rect(x0, y - h / 2, (x1 - x0) * clamp(p), h); g.clip(); fn(); g.restore(); }
+function capLabel(txt, x, y, a) {
+  g.font = EX.F(400, 38, 'Anton'); if ('letterSpacing' in g) g.letterSpacing = '5px';
+  g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillStyle = rgba(T.dim, a); g.fillText(S(txt), x, y);
+  if ('letterSpacing' in g) g.letterSpacing = '0px';
+}
+
+// the multiplication stack: label | op | number on a decimal tab
+const STACK = [
+  { at: A.w1.at + 0.3, label: "flow, MGD", n: "3.2" },
+  { at: A.w1.at + 0.9, label: "BOD, mg/L", op: "×", n: "200" },
+  { rule: true, at: A.w2.at },
+  { at: A.w2.at + 0.2, op: "=", n: "640" },
+  { at: A.w3.at, label: "lb per gallon", op: "×", n: "8.34", hi: true },
+  { rule: true, at: A.w4.at },
+  { at: A.w4.at + 0.2, label: "lb/day", op: "=", n: "5,337.6", strong: true },
+];
+function stack(t, a) {
+  if (t < A.w1.at || a <= 0) return;
+  capLabel("YOUR NUMBERS", X_LABEL, NUM_Y, a * EX.eo((t - A.w1.at) / 0.4));
+  let y = NUM_Y + 40;
+  for (const r of STACK) {
+    const k = t - r.at;
+    if (r.rule) { const p = EX.eo(k / 0.45); if (p > 0) { g.fillStyle = rgba(T.text, 0.55 * a); g.fillRect(1010 - 580 * p, y + 8, 580 * p, 3); } y += 24; continue; }
+    const size = r.strong ? 100 : 66, rh = r.strong ? 130 : 92, yy = y + rh / 2, fa = a * EX.eo(k / 0.35);
+    if (k > 0) {
+      if (r.label) { g.font = EX.F(500, 40); g.textAlign = 'left'; g.textBaseline = 'middle';
+        g.fillStyle = rgba(r.strong ? T.text : T.dim, fa); g.fillText(S(r.label), X_LABEL, yy); }
+      if (r.op) { g.font = EX.F(500, 58); g.textAlign = 'center'; g.fillStyle = rgba(T.dim, fa); g.fillText(S(r.op), X_OP, yy + 2); }
+      const p = EX.eo((k - 0.15) / 0.45);
+      const col = r.strong ? T.accent : T.text;
+      wipeIn(p, X_OP + 40, 1030, yy, size * 1.5, () => decNum(S(r.n), yy + (1 - p) * 8, size, rgba(col, a)));
+      if (r.hi) {                                        // the 8.34 the trap is about: a quiet underline
+        const u = EX.eo((k - 0.6) / 0.5); if (u > 0) { const w = EX.numWidth("8.34", size, 700);
+          g.fillStyle = rgba(T.accent, 0.75 * a); g.fillRect(X_DEC - EX.numWidth("8", size, 700), yy + 42, w * u, 4); }
+      }
+    }
+    y += rh;
+  }
+}
+function formula(t, a) {
+  const t0 = A.f.at; if (t < t0 || a <= 0) return;
+  capLabel("THE FORMULA", X_LABEL, F_Y, a * EX.eo((t - t0) / 0.4));
+  EX.line(t, t0 + 0.3, FORMULA, X_LABEL, F_Y + 84, { size: 62, weight: 600, dur: 0.8, alpha: a });
+  EX.line(t, t0 + 1.2, S("8.34 lb = 1 gallon of water"), X_LABEL, F_Y + 160, { size: 42, weight: 500, color: T.dim, dur: 0.6, alpha: a });
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  EX.ground();
+  const rg = g.createRadialGradient(CX, 300, 50, CX, 300, 1300);          // soft light from above
+  rg.addColorStop(0, 'rgba(220,235,255,0.07)'); rg.addColorStop(1, 'rgba(220,235,255,0)'); g.fillStyle = rg; g.fillRect(0, 0, W, H);
+
+  EX.hook(t, A.hook.at, A.hook.end, [S("WASTEWATER EXAM MATH"), S("CAN YOU GET THIS ONE?")], { y: 900 });
+  EX.kicker(t, S("PRACTICE QUESTION"), { alpha: ss(A.q.at, A.q.at + 0.6, t) });
+
+  // question phase; after the reveal the card and wrong rows leave and the answer rises to a banner
+  const leave = ss(RV + 1.0, RV + 1.8, t);
+  const bottom = EX.card(t, A.q.at, Q, { y: CARD_Y, tag: S("example"), alpha: 1 - leave, dy: -40 * leave, size: 54 });
+  const OPT_Y = bottom + 40, rowH = 104, gap = 20;
+  if (leave < 1) EX.options(t, OPTS, { y: OPT_Y, rowH, gap, at: [A.o0.at, A.o1.at, A.o2.at, A.o3.at], reveal: RV, answer: ANSWER, alpha: 1 - leave, hide: t >= RV + 1.0 ? ANSWER : null });
+  const ansI = OPTS.findIndex(s => s[0] === ANSWER);
+  if (t >= RV + 1.0) {
+    const m = ss(RV + 1.0, RV + 1.9, t), y = lerp(OPT_Y + ansI * (rowH + gap) + rowH / 2, BANNER_Y, m);
+    EX.optionRow(t, OPTS[ansI], 60, y, 960, rowH, { arrive: 1, lit: 1, alpha: 1 - ss(A.end.at, A.end.at + 0.6, t) });
+  }
+  EX.ring(t, A.pause.shown, 5, { x: 150, y: OPT_Y + 4 * (rowH + gap) + 100, r: 64, label: S("PAUSE AND SOLVE IT"), labelSize: 60, labelX: 254 });
+
+  // worked answer
+  const wa = 1 - ss(A.end.at, A.end.at + 0.6, t);
+  formula(t, wa);
+  stack(t, wa);
+  EX.trap(t, A.trap.at, TOTAL + 1, S("THE TRAP"), TRAP, { y: 1302, size: 46 });
+
+  vignette(0.22);
+  EX.endCard(t, A.end.at);
+  grain(t);
+};
+window.ready = (async () => {
+  await EX.ready();
+  return { total: TOTAL, events: PLAN.events, tension: PLAN.tension, warm: PLAN.warm,
+           beats: PLAN.beats.map(b => [b.id, +b.at.toFixed(2), +b.end.toFixed(2)]) };
+})();
+</script></body></html>

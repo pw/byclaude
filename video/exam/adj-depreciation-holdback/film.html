@@ -1,0 +1,139 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: Anton; src: url('../fonts/Anton-Regular.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// adj-depreciation-holdback — replacement-cost roof claim, roof not yet replaced. First payment = ACV minus deductible:
+// 12,000 × 8 ÷ 20 = 4,800 depreciation; 12,000 minus 4,800 = 7,200 ACV; minus 1,000 = 6,200. The 4,800 is paid after
+// replacement. Answer: $6,200. (Minus signs are en dashes: the true minus sign fails the glyph gate.)
+const ON_SCREEN = [
+  "ADJUSTER EXAM MATH", "WHAT'S THE FIRST CHECK?", "PRACTICE QUESTION", "example",
+  "Standard replacement-cost homeowners policy, home insured to full value. A storm destroys the roof: $12,000 to replace, 20-year useful life, 8 years old, straight-line depreciation. Deductible: $1,000. The roof isn't replaced yet. What is the insurer's first payment?",
+  "A) $3,800", "B) $6,200", "C) $7,200", "D) $11,000",
+  "PAUSE AND SOLVE IT", "5", "4", "3", "2", "1",
+  "DEPRECIATION", "8 of 20 years used", "12,000 × 8 ÷ 20", "=", "4,800",
+  "FIRST PAYMENT", "replacement cost", "12,000", "depreciation", "–", "actual cash value", "7,200",
+  "deductible", "1,000", "paid now", "6,200",
+  "AFTER REPLACEMENT", "recoverable depreciation", "+",
+  "THE TRAP", "D) $11,000 pays out the held-back $4,800 before the roof is replaced.",
+  "@adjusterexamprep", "A free practice question every morning in our group.", "Join from this Page.",
+  "Unofficial. Not affiliated with any exam provider or regulator.", "Rules vary by state."
+];
+const S = EX.init(ON_SCREEN, 'adj'), T = EX.T;
+const HOOK = [S("ADJUSTER EXAM MATH"), S("WHAT'S THE FIRST CHECK?")];
+const Q = S("Standard replacement-cost homeowners policy, home insured to full value. A storm destroys the roof: $12,000 to replace, 20-year useful life, 8 years old, straight-line depreciation. Deductible: $1,000. The roof isn't replaced yet. What is the insurer's first payment?");
+const OPTS = [S("A) $3,800"), S("B) $6,200"), S("C) $7,200"), S("D) $11,000")], ANSWER = 'B';
+const TRAP = S("D) $11,000 pays out the held-back $4,800 before the roof is replaced.");
+const MINUS = S("–");
+
+const PLAN = EX.schedule([
+  { id: 'hook', kind: 'hook', read: HOOK, in: 0.6, min: 2.2 },
+  { id: 'q', kind: 'question', read: [S("PRACTICE QUESTION"), S("example"), Q], in: 0.9, gap: 0.3 },
+  ...OPTS.map((s, i) => ({ id: 'o' + i, kind: 'option', read: [s], in: 0.4, min: 0.75 })),
+  { id: 'pause', kind: 'pause', read: [S("PAUSE AND SOLVE IT")], in: 0.3, min: 5 },
+  { id: 'reveal', kind: 'reveal', in: 0.4, min: 1.3 },
+  { id: 'w1', kind: 'work', read: [S("DEPRECIATION"), S("8 of 20 years used"), S("12,000 × 8 ÷ 20"), S("="), S("4,800")], in: 1.0 },
+  { id: 'w2', kind: 'work', read: [S("FIRST PAYMENT"), S("replacement cost"), S("12,000"), S("depreciation"), MINUS, S("4,800")], in: 0.9 },
+  { id: 'w3', kind: 'work', read: [S("actual cash value"), S("="), S("7,200")], in: 0.8, min: 1.6 },
+  { id: 'w4', kind: 'work', read: [S("deductible"), MINUS, S("1,000")], in: 0.7, min: 1.4 },
+  { id: 'w5', kind: 'work', read: [S("paid now"), S("="), S("6,200")], in: 0.8, min: 1.6 },
+  { id: 'w6', kind: 'work', read: [S("AFTER REPLACEMENT"), S("recoverable depreciation"), S("+"), S("4,800")], in: 0.9 },
+  { id: 'trap', kind: 'trap', read: [S("THE TRAP"), TRAP], in: 0.5 },
+  { id: 'end', kind: 'end', in: 0.6, min: 4.0 },
+], { start: 0.2 });
+const A = PLAN.at, TOTAL = PLAN.total, RV = A.reveal.at;
+
+// ---------- layout ----------
+const CARD_Y = 280, BANNER_Y = 330, ROW_H = 96, ROW_GAP = 16;
+const G1 = { y: 410, x0: 80, xFrom: 610, xOp: 660, xTo: 1000, rowH: 92, size: 64 };
+const G2 = { y: 660, x0: 80, xFrom: 640, xOp: 660, xTo: 1000, rowH: 92, size: 64, strongSize: 100 };
+const G3 = { y: 1310, x0: 80, xFrom: 640, xOp: 660, xTo: 1000, rowH: 92, size: 64 };
+
+const R1 = [
+  { head: S("DEPRECIATION"), at: A.w1.at },
+  { at: A.w1.at + 0.3, from: S("12,000 × 8 ÷ 20"), op: S("="), to: S("4,800") },
+];
+const R2 = [
+  { head: S("FIRST PAYMENT"), at: A.w2.at },
+  { at: A.w2.at + 0.25, label: S("replacement cost"), to: S("12,000") },
+  { at: A.w2.at + 0.8, label: S("depreciation"), op: MINUS, to: S("4,800") },
+  { rule: true, at: A.w3.at },
+  { at: A.w3.at + 0.2, label: S("actual cash value"), op: S("="), to: S("7,200") },
+  { at: A.w4.at, label: S("deductible"), op: MINUS, to: S("1,000") },
+  { rule: true, at: A.w5.at },
+  { at: A.w5.at + 0.2, label: S("paid now"), op: S("="), to: S("6,200"), strong: true },
+];
+const R3 = [
+  { head: S("AFTER REPLACEMENT"), at: A.w6.at },
+  { at: A.w6.at + 0.3, label: S("recoverable depreciation"), op: S("+"), to: S("4,800") },
+];
+
+// the "8 of 20 years used" gauge under the depreciation line: 20 cells, the first 8 fill one by one
+function lifeBar(t, alpha) {
+  const t0 = A.w1.at + 0.5; if (t < t0 || alpha <= 0) return;
+  const x0 = 80, y = 620, w = 24, gp = 6, n = 20;
+  for (let i = 0; i < n; i++) {
+    const p = EX.eo((t - t0 - i * 0.04) / 0.3); if (p <= 0) continue;
+    const used = i < 8, f = used ? EX.eo((t - t0 - 0.5 - i * 0.09) / 0.3) : 0;
+    g.fillStyle = rgba(T.line, alpha * p); g.fillRect(x0 + i * (w + gp), y - 12, w, 24);
+    if (f > 0) { g.fillStyle = rgba(T.text, 0.85 * alpha * f); g.fillRect(x0 + i * (w + gp), y - 12, w, 24); }
+  }
+  const q = EX.eo((t - t0 - 1.3) / 0.4); if (q <= 0) return;
+  g.font = EX.F(500, 36); g.textAlign = 'left'; g.textBaseline = 'middle'; g.fillStyle = rgba(T.dim, alpha * q);
+  g.fillText(S("8 of 20 years used"), x0 + n * (w + gp) + 14, y + 1);
+}
+// a bracket that ties the held-back 4,800 back to the depreciation line it came from
+function holdLink(t, alpha) {
+  const p = EX.eo((t - A.w6.at - 0.9) / 0.6); if (p <= 0 || alpha <= 0) return;
+  const x = 1034, yA = G2.y + 88 + 92 + 46, yB = G3.y + 88 + 46;
+  g.strokeStyle = rgba(T.dim, 0.7 * alpha); g.lineWidth = 3; g.lineCap = 'round';
+  g.beginPath(); g.moveTo(1012, yA); g.lineTo(x, yA); g.lineTo(x, lerp(yA, yB, p)); if (p > 0.98) g.lineTo(1012, yB); g.stroke();
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  EX.ground();
+  const rg = g.createRadialGradient(CX, 300, 50, CX, 300, 1300);
+  rg.addColorStop(0, 'rgba(255,235,210,0.07)'); rg.addColorStop(1, 'rgba(255,235,210,0)'); g.fillStyle = rg; g.fillRect(0, 0, W, H);
+
+  EX.hook(t, A.hook.at, A.hook.end, HOOK, { y: 900 });
+  EX.kicker(t, S("PRACTICE QUESTION"), { alpha: ss(A.q.at, A.q.at + 0.6, t) });
+
+  // question phase; after the reveal the card and wrong rows leave and the lit answer rises to a banner
+  const leave = ss(RV + 1.0, RV + 1.8, t);
+  const bottom = EX.card(t, A.q.at, Q, { y: CARD_Y, tag: S("example"), size: 50, alpha: 1 - leave, dy: -40 * leave });
+  const OPT_Y = bottom + 30;
+  if (leave < 1) EX.options(t, OPTS, { y: OPT_Y, rowH: ROW_H, gap: ROW_GAP, at: [A.o0.at, A.o1.at, A.o2.at, A.o3.at], reveal: RV,
+    answer: ANSWER, alpha: 1 - leave, hide: t >= RV + 1.0 ? ANSWER : null });
+  const ansI = OPTS.findIndex(s => s[0] === ANSWER);
+  if (t >= RV + 1.0) {
+    const m = ss(RV + 1.0, RV + 1.9, t), y = lerp(OPT_Y + ansI * (ROW_H + ROW_GAP) + ROW_H / 2, BANNER_Y, m);
+    EX.optionRow(t, OPTS[ansI], 60, y, 960, ROW_H, { arrive: 1, lit: 1, alpha: 1 - ss(A.end.at, A.end.at + 0.6, t) });
+  }
+  EX.ring(t, A.pause.shown, 5, { x: 136, y: OPT_Y + 4 * (ROW_H + ROW_GAP) + 70, r: 56, label: S("PAUSE AND SOLVE IT"), labelSize: 58, labelX: 230 });
+
+  // worked answer; dims under the trap card
+  const wa = 1 - 0.94 * ss(A.trap.at, A.trap.at + 0.5, t);
+  EX.ledger(t, R1, { ...G1, alpha: wa });
+  lifeBar(t, wa);
+  EX.ledger(t, R2, { ...G2, alpha: wa });
+  EX.ledger(t, R3, { ...G3, alpha: wa });
+  holdLink(t, wa);
+  EX.trap(t, A.trap.at, TOTAL + 1, S("THE TRAP"), TRAP, { y: 760, size: 48 });
+
+  vignette(0.22);
+  EX.endCard(t, A.end.at);
+  grain(t);
+};
+window.ready = (async () => {
+  await EX.ready();
+  return { total: TOTAL, events: PLAN.events, tension: PLAN.tension, warm: PLAN.warm,
+           beats: PLAN.beats.map(b => [b.id, +b.at.toFixed(2), +b.end.toFixed(2)]) };
+})();
+</script></body></html>

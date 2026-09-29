@@ -1,0 +1,144 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: Anton; src: url('../fonts/Anton-Regular.ttf'); }
+@font-face { font-family: Inter; src: url('../../motion/fonts/Inter.ttf'); font-weight: 100 900; }
+html, body { margin: 0; background: #000; } canvas { display: block; }
+</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="../../motion/common.js"></script>
+<script src="../kit.js"></script>
+<script>
+// fpm-handwash — FDA Food Code 2-301.12 (unchanged 2022 -> 2026): clean hands and exposed arms for at least
+// 20 seconds; within the procedure, rub together vigorously for at least 10 to 15 seconds. Answer: C) 20 seconds.
+const ON_SCREEN = [
+  "FOOD MANAGER EXAM", "CAN YOU GET THIS ONE?", "PRACTICE QUESTION",
+  "FDA Food Code: at a handwashing sink, a food employee must clean hands and exposed arms for at least how long in total?",
+  "A) 10 seconds", "B) 15 seconds", "C) 20 seconds", "D) 30 seconds",
+  "PAUSE AND SOLVE IT", "5", "4", "3", "2", "1",
+  "the whole wash", "at least", "20 SEC", "the rubbing step", "10–15 SEC",
+  "THE STEPS",
+  "Rinse under clean, running warm water",
+  "Apply soap",
+  "Rub vigorously 10–15 seconds: nails, fingertips, between fingers",
+  "Rinse thoroughly under warm water",
+  "Dry right away",
+  "FDA FOOD CODE 2-301.12",
+  "THE TRAP", "B) 15 seconds is only the rubbing step. The whole wash is at least 20.",
+  "@fpmexamprep", "A free practice question every morning in our group.", "Join from this Page.",
+  "Unofficial. Not affiliated with any exam provider or regulator.", "Based on the FDA Food Code; your local code may differ."
+];
+const S = EX.init(ON_SCREEN, 'fpm'), T = EX.T;
+const Q = S("FDA Food Code: at a handwashing sink, a food employee must clean hands and exposed arms for at least how long in total?");
+const OPTS = [S("A) 10 seconds"), S("B) 15 seconds"), S("C) 20 seconds"), S("D) 30 seconds")], ANSWER = 'C';
+const TRAP = S("B) 15 seconds is only the rubbing step. The whole wash is at least 20.");
+const STEPS = [S("Rinse under clean, running warm water"), S("Apply soap"),
+  S("Rub vigorously 10–15 seconds: nails, fingertips, between fingers"),
+  S("Rinse thoroughly under warm water"), S("Dry right away")];
+const CITE = S("FDA FOOD CODE 2-301.12");
+
+const PLAN = EX.schedule([
+  { id: 'hook', kind: 'hook', read: [S("FOOD MANAGER EXAM"), S("CAN YOU GET THIS ONE?")], in: 0.6, min: 2.2 },
+  { id: 'q', kind: 'question', read: [S("PRACTICE QUESTION"), Q], in: 0.9, gap: 0.3 },
+  ...OPTS.map((s, i) => ({ id: 'o' + i, kind: 'option', read: [s], in: 0.4, min: 0.75 })),
+  { id: 'pause', kind: 'pause', read: [S("PAUSE AND SOLVE IT")], in: 0.3, min: 5 },
+  { id: 'reveal', kind: 'reveal', in: 0.4, min: 1.3 },
+  { id: 'b1', kind: 'work', read: [S("the whole wash"), S("at least"), S("20 SEC")], in: 1.0, min: 1.8 },
+  { id: 'b2', kind: 'work', read: [S("the rubbing step"), S("10–15 SEC")], in: 1.0, min: 1.8 },
+  { id: 'sh', kind: 'work', read: [S("THE STEPS")], in: 0.4, min: 0.6 },
+  ...STEPS.map((s, i) => ({ id: 's' + i, kind: 'work', read: [s], in: 0.6, min: 1.1 })),
+  { id: 'cite', kind: 'work', read: [CITE], in: 0.5, min: 1.4 },
+  { id: 'trap', kind: 'trap', read: [S("THE TRAP"), TRAP], in: 0.5 },
+  { id: 'end', kind: 'end', in: 0.6, min: 4.2 },
+], { start: 0.2 });
+const A = PLAN.at, TOTAL = PLAN.total, RV = A.reveal.at;
+
+// ---------- layout ----------
+const CARD_Y = 285, BANNER_Y = 330, BAR_Y = 420, STEP_Y = 900;
+let OPT_Y = 0;
+const capsText = (txt, x, y, col, size = 38, align = 'left') => {
+  g.font = EX.F(400, size, 'Anton'); if ('letterSpacing' in g) g.letterSpacing = '5px';
+  g.textAlign = align; g.textBaseline = 'middle'; g.fillStyle = col; g.fillText(txt, x, y); if ('letterSpacing' in g) g.letterSpacing = '0px';
+};
+
+// two duration bars, drawn to scale: 20 s (the whole wash) and 10–15 s (the rubbing step, solid to 10, lighter to 15)
+function bars(t) {
+  const out = 1 - ss(A.trap.at, A.trap.at + 0.5, t); if (t < A.b1.at || out <= 0) return;
+  const x0 = 80, x1 = 1000, px = s => x0 + (x1 - x0) * s / 20, bh = 54;
+  // bar 1
+  const p1 = EX.eo((t - A.b1.at - 0.2) / 0.5), y1 = BAR_Y + 110;
+  if (p1 > 0) {
+    g.font = EX.F(500, 44); g.textAlign = 'left'; g.fillStyle = rgba(T.text, out * p1); g.fillText(S("the whole wash"), x0, y1);
+    g.font = EX.F(500, 38); g.textAlign = 'right'; g.fillStyle = rgba(T.dim, out * p1); g.fillText(S("at least"), x1 - 256, y1 + 4);
+    g.font = EX.F(400, 76, 'Anton'); g.fillStyle = rgba(T.accent, out * p1); g.fillText(S("20 SEC"), x1, y1 - 2);
+    const f = EX.eo((t - A.b1.at - 0.5) / 1.0);
+    g.fillStyle = rgba(T.card, out); g.beginPath(); g.roundRect(x0, y1 + 50, x1 - x0, bh, bh / 2); g.fill();
+    if (f > 0) { g.fillStyle = rgba(T.accent, out); g.beginPath(); g.roundRect(x0, y1 + 50, (x1 - x0) * f, bh, bh / 2); g.fill(); }
+  }
+  // bar 2
+  const p2 = EX.eo((t - A.b2.at - 0.2) / 0.5), y2 = BAR_Y + 300;
+  if (p2 > 0) {
+    g.font = EX.F(500, 44); g.textAlign = 'left'; g.fillStyle = rgba(T.text, out * p2); g.fillText(S("the rubbing step"), x0, y2);
+    g.font = EX.F(400, 76, 'Anton'); g.textAlign = 'right'; g.fillStyle = rgba(T.text, out * p2); g.fillText(S("10–15 SEC"), x1, y2 - 2);
+    const f10 = EX.eo((t - A.b2.at - 0.5) / 0.8), f15 = EX.eo((t - A.b2.at - 1.1) / 0.5);
+    g.fillStyle = rgba(T.card, out * p2); g.beginPath(); g.roundRect(x0, y2 + 50, x1 - x0, bh, bh / 2); g.fill();
+    if (f15 > 0) { g.fillStyle = rgba(T.text, 0.38 * out); g.beginPath(); g.roundRect(x0, y2 + 50, px(15) - x0, bh, bh / 2); g.fill(); }
+    if (f10 > 0) { g.fillStyle = rgba(T.text, 0.92 * out); g.beginPath(); g.roundRect(x0, y2 + 50, (px(10) - x0) * f10, bh, bh / 2); g.fill(); }
+  }
+}
+
+function steps(t) {
+  const out = 1 - ss(A.end.at, A.end.at + 0.6, t); if (t < A.sh.at || out <= 0) return;
+  capsText(S("THE STEPS"), 80, STEP_Y, rgba(T.dim, out * EX.eo((t - A.sh.at) / 0.4)));
+  let y = STEP_Y + 90; const size = 48, tx = 180;
+  STEPS.forEach((s, i) => {
+    const t0 = A['s' + i].at, p = EX.eo((t - t0) / 0.5);
+    g.font = EX.F(500, size); const rows = wrapText(s, 1010 - tx);
+    if (p > 0) {
+      const cx = 112, cy = y + 4, lit = i === 2;            // the rubbing step carries the 10–15 figure
+      g.fillStyle = rgba(lit ? T.text : T.card, out * p); g.beginPath(); g.arc(cx, cy, 32, 0, 6.2832); g.fill();
+      g.font = EX.F(400, 38, 'Anton'); g.textAlign = 'center'; g.textBaseline = 'middle';
+      g.fillStyle = rgba(lit ? T.ground : T.text, out * p); g.fillText(String(i + 1), cx, cy + 2);
+      rows.forEach((r, j) => EX.line(t, t0 + 0.1 + j * 0.25, r, tx, y + j * size * 1.25, { size, weight: 500, alpha: out, _sub: true }));
+    }
+    y += rows.length * size * 1.25 + 30;
+  });
+  const cp = EX.eo((t - A.cite.at) / 0.5);
+  if (cp > 0) { g.fillStyle = rgba(T.dim, out * cp); g.fillRect(80, y + 8, 5, 44); capsText(CITE, 104, y + 32, rgba(T.dim, out * cp), 40); }
+}
+
+window.render = (t) => {
+  g.setTransform(1, 0, 0, 1, 0, 0); g.textBaseline = 'middle';
+  EX.ground();
+  const rg = g.createRadialGradient(CX, 300, 50, CX, 300, 1300);
+  rg.addColorStop(0, 'rgba(255,245,225,0.06)'); rg.addColorStop(1, 'rgba(255,245,225,0)'); g.fillStyle = rg; g.fillRect(0, 0, W, H);
+
+  EX.hook(t, A.hook.at, A.hook.end, [S("FOOD MANAGER EXAM"), S("CAN YOU GET THIS ONE?")], { y: 900 });
+  EX.kicker(t, S("PRACTICE QUESTION"), { alpha: ss(A.q.at, A.q.at + 0.6, t) });
+
+  const leave = ss(RV + 1.0, RV + 1.8, t);
+  const bottom = EX.card(t, A.q.at, Q, { y: CARD_Y, alpha: 1 - leave, dy: -40 * leave });
+  OPT_Y = bottom + 40;
+  const rowH = 104, gap = 20;
+  if (leave < 1) EX.options(t, OPTS, { y: OPT_Y, rowH, gap, at: [A.o0.at, A.o1.at, A.o2.at, A.o3.at], reveal: RV, answer: ANSWER, alpha: 1 - leave, hide: t >= RV + 1.0 ? ANSWER : null });
+  const ansI = OPTS.findIndex(s => s[0] === ANSWER);
+  if (t >= RV + 1.0) {
+    const m = ss(RV + 1.0, RV + 1.9, t), y = lerp(OPT_Y + ansI * (rowH + gap) + rowH / 2, BANNER_Y, m);
+    EX.optionRow(t, OPTS[ansI], 60, y, 960, rowH, { arrive: 1, lit: 1, alpha: 1 - ss(A.end.at, A.end.at + 0.6, t) });
+  }
+  EX.ring(t, A.pause.shown, 5, { x: 150, y: OPT_Y + 4 * (rowH + gap) + 96, r: 64, label: S("PAUSE AND SOLVE IT"), labelSize: 60, labelX: 254 });
+
+  bars(t);
+  steps(t);
+  EX.trap(t, A.trap.at, TOTAL + 1, S("THE TRAP"), TRAP, { y: 470, size: 48 });
+
+  vignette(0.22);
+  EX.endCard(t, A.end.at);
+  grain(t);
+};
+window.ready = (async () => {
+  await EX.ready();
+  return { total: TOTAL, events: PLAN.events, tension: PLAN.tension, warm: PLAN.warm,
+           beats: PLAN.beats.map(b => [b.id, +b.at.toFixed(2), +b.end.toFixed(2)]) };
+})();
+</script></body></html>
