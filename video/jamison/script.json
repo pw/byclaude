@@ -1,0 +1,84 @@
+{
+  "title": "The Jamison Family",
+  "subtitle": "Latimer County · Oklahoma, 2009",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the remote wooded hills of southeastern Oklahoma in autumn 2009, oak and pine scrub, rocky dirt tracks, overcast grey light, melancholy and uncanny, cinematic wide composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In October two thousand nine, Bobby and Sherilynn Jamison and their six-year-old daughter, Madyson, drove into the hills of southeastern Oklahoma to look at land.",
+      "cap": "OKLAHOMA · 2009",
+      "img": "A rough dirt road winding into remote wooded autumn hills under an overcast sky, empty, quiet."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Days later, their pickup was found, abandoned, near the land.",
+      "cap": "TRUCK\nABANDONED",
+      "img": "An empty pickup truck parked alone at a remote gravel clearing in wooded autumn hills, doors closed, overcast light, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Inside were their wallets, their phones, about thirty-two thousand dollars in cash. And their dog, malnourished.",
+      "cap": "ABOUT $32,000\nLEFT BEHIND",
+      "amber": true,
+      "img": "The interior of an empty pickup truck cab seen through the driver's window, a wallet and a cell phone on the bench seat, dim overcast light."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Four years later, hunters found their remains, less than three miles away.",
+      "cap": "FOUND\nUNDER 3 MILES AWAY",
+      "img": "A steep rocky wooded hillside in late autumn, fallen leaves and bare oaks, grey light, empty and still."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "No cause of death was ever determined.",
+      "cap": "CAUSE OF DEATH\nUNDETERMINED",
+      "amber": true,
+      "img": "Remote wooded hills at dusk under a heavy grey sky, a faint dirt track disappearing into the trees, unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Bobby (44), Sherilynn (40) and Madyson Jamison (6) disappeared on or after Oct 8, 2009, while considering buying a 40-acre plot in the hills of southeastern Oklahoma (Latimer County / Sans Bois Mountains)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jamison_family_deaths",
+        "https://www.cbsnews.com/news/skeletal-remains-found-by-hunters-in-okla-could-belong-to-jamison-family-missing-since-2009/"
+      ]
+    },
+    {
+      "claim": "Pickup found abandoned a few days later (Oct 17, 2009) near the land",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jamison_family_deaths",
+        "https://www.cbsnews.com/news/skeletal-remains-found-by-hunters-in-okla-could-belong-to-jamison-family-missing-since-2009/"
+      ]
+    },
+    {
+      "claim": "Truck contained wallets, IDs, phones, about $32,000 cash, and the family dog, malnourished",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jamison_family_deaths",
+        "https://www.cbsnews.com/news/skeletal-remains-found-by-hunters-in-okla-could-belong-to-jamison-family-missing-since-2009/",
+        "https://boingboing.net/?p=1115493"
+      ]
+    },
+    {
+      "claim": "Hunters found remains of two adults and a child in November 2013, under 3 miles (2.7 aerial miles) from the truck; identified July 2014",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jamison_family_deaths",
+        "https://www.cbsnews.com/news/skeletal-remains-found-by-hunters-in-okla-could-belong-to-jamison-family-missing-since-2009/"
+      ]
+    },
+    {
+      "claim": "No cause of death determined; circumstances remain unknown",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jamison_family_deaths",
+        "https://crimejunkiepodcast.com/mysterious-death-of-the-jamison-family/"
+      ]
+    }
+  ]
+}

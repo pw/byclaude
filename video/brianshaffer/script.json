@@ -1,0 +1,82 @@
+{
+  "title": "Brian Shaffer",
+  "subtitle": "Columbus · Ohio, 2006",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a modern urban campus shopping and bar complex in Columbus, Ohio at night in 2006, concrete, glass and brick, sodium and fluorescent light, wet pavement, melancholy and uncanny, cinematic composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In the early hours of April first, two thousand six, a medical student named Brian Shaffer was out with friends at a bar in Columbus, Ohio.",
+      "cap": "OHIO · 2006",
+      "img": "A brick and glass urban complex on a city street at night, wet pavement reflecting lights, an empty sidewalk, no readable signs."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "At one fifteen a.m., security cameras recorded him riding an escalator up to the bar's entrance.",
+      "cap": "1:15 A.M.",
+      "img": "An empty outdoor escalator rising to an upper level of a concrete and glass building at night, harsh fluorescent light, a security camera mounted above."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Around one fifty-five, a camera caught him outside the bar, talking with two women. Then he moved out of frame.",
+      "cap": "1:55 A.M.\nLAST SEEN",
+      "amber": true,
+      "img": "A grainy high-angle security-camera view of an empty upper-level walkway outside a bar entrance at night, harsh light, no people, no timestamp text."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "No camera ever recorded him leaving.",
+      "cap": "NEVER SEEN\nLEAVING",
+      "amber": true,
+      "img": "A small black security camera mounted on a concrete wall at night, pointed down at an empty escalator, cold light."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "He was twenty-seven. Twenty years later, he has never been found.",
+      "cap": "NEVER FOUND",
+      "img": "An empty city street at dawn outside a brick and glass building complex, wet pavement, grey light, a single traffic light, stillness."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Brian Shaffer, 27, Ohio State medical student, disappeared early April 1, 2006, after a night out with friends at the Ugly Tuna Saloona, Columbus, Ohio",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Disappearance_of_Brian_Shaffer",
+        "https://cwcolumbus.com/news/local/cold-case-missing-ohio-state-medical-student-brian-shaffer-vanished-after-night-out-ugly-tuna-saloona-never-seen-again-2006-osu-campus-gateway-disappearance-police-detective-john-hurst"
+      ]
+    },
+    {
+      "claim": "1:15 a.m. footage shows him going up an escalator to the bar's main entrance",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Disappearance_of_Brian_Shaffer"
+      ]
+    },
+    {
+      "claim": "Around 1:55 a.m. seen on camera outside the bar talking briefly with two young women before moving off-camera",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Disappearance_of_Brian_Shaffer",
+        "https://www.newsnationnow.com/missing/20-years-since-bizarre-disappearance-of-brian-shaffer/"
+      ]
+    },
+    {
+      "claim": "Cameras never recorded him leaving",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Disappearance_of_Brian_Shaffer",
+        "https://cwcolumbus.com/news/local/cold-case-missing-ohio-state-medical-student-brian-shaffer-vanished-after-night-out-ugly-tuna-saloona-never-seen-again-2006-osu-campus-gateway-disappearance-police-detective-john-hurst"
+      ]
+    },
+    {
+      "claim": "Never found; case unsolved as of 20th anniversary (2026)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Disappearance_of_Brian_Shaffer",
+        "https://www.newsnationnow.com/missing/20-years-since-bizarre-disappearance-of-brian-shaffer/"
+      ]
+    }
+  ]
+}

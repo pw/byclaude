@@ -1,0 +1,84 @@
+{
+  "title": "Hessdalen Lights",
+  "subtitle": "Hessdalen valley · Norway, 1981",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a remote snowy valley in rural central Norway at night in the early 1980s, dark spruce forest and low mountain ridges, a few scattered farmhouses, cold blue-grey light, melancholy and uncanny, cinematic wide composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "From December nineteen eighty-one, people in the Hessdalen valley, in central Norway, reported lights in the sky. Up to twenty times a week.",
+      "cap": "NORWAY · 1981",
+      "img": "A wide view down a dark snowy valley at night, a single small farmhouse window lit far below, low mountain ridges against an overcast sky, still and silent."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "White, yellow, or red. Some hovered in mid-air for more than an hour. Others moved off at enormous speed.",
+      "cap": "HOVERING\nFOR AN HOUR",
+      "amber": true,
+      "img": "A single small bright white-yellow ball of light hovering in mid-air above a dark snowy valley floor at night, faint glow on the snow below, dark spruce trees, eerie stillness."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "In nineteen eighty-three, researchers came to watch the valley, with cameras, and radar.",
+      "cap": "CAMERAS\nAND RADAR",
+      "img": "A small field research hut on a snowy hillside at night with a tripod-mounted camera and a small radar antenna dish pointed at the dark valley, a dim lamp glowing inside, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Since nineteen ninety-eight, an automatic station has watched the sky there, day and night.",
+      "cap": "WATCHED\nSINCE 1998",
+      "img": "A small weatherproof automatic monitoring station box with cameras and sensors mounted on a pole on a snowy ridge above a dark valley at dusk, a faint red indicator light."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Proposed explanations include burning dust, and rock under strain. More than forty years on, there is no agreed explanation.",
+      "cap": "NO AGREED\nEXPLANATION",
+      "amber": true,
+      "img": "An empty snowy valley at night under a vast dark sky, a faint distant point of light low over the ridge, cold and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Peak activity Dec 1981–mid-1984, lights seen 15–20 times per week in the Hessdalen valley, rural central Norway",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hessdalen_lights",
+        "https://www.geipan.fr/sites/default/files/23_STRAND_abs.pdf",
+        "https://www.atlasobscura.com/places/hessdalen-ams"
+      ]
+    },
+    {
+      "claim": "Colors bright white, yellow or red; hover in mid-air; duration a few seconds to well over an hour; sometimes move with enormous speed",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hessdalen_lights",
+        "https://www.discoveryuk.com/mysteries/hessdalen-lights-natural-phenomenon-or-extraterrestrial-signals/"
+      ]
+    },
+    {
+      "claim": "Project Hessdalen began 1983; field investigations 1983–85 used cameras and radar (1984 radar detections)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hessdalen_lights",
+        "https://www.hessdalen.org/"
+      ]
+    },
+    {
+      "claim": "Automatic measurement station installed 1998, monitoring the sky continuously",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hessdalen_lights",
+        "https://www.hessdalen.org/"
+      ]
+    },
+    {
+      "claim": "Hypotheses include combustion of dust and piezoelectricity (quartz under strain); no consensus explanation",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hessdalen_lights",
+        "https://olhardigital.com.br/2025/06/04/ciencia-e-espaco/as-luzes-misteriosas-no-ceu-da-noruega-que-intrigam-cientistas-ha-mais-de-40-anos/"
+      ]
+    }
+  ]
+}

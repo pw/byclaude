@@ -1,0 +1,82 @@
+{
+  "title": "The Taos Hum",
+  "subtitle": "Taos · New Mexico, 1993",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the high desert around Taos, New Mexico in the early 1990s, adobe houses, sagebrush mesa and distant mountains, dusk or night, quiet and uneasy, cinematic wide composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "By nineteen ninety-three, so many people in Taos, New Mexico, had complained about a sound that their members of Congress asked for an investigation.",
+      "cap": "NEW MEXICO · 1993",
+      "img": "A quiet adobe house on a sagebrush mesa at dusk, distant dark mountains, one window lit, empty dirt road, stillness."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "A low hum. A rumble. A drone. Only about two in every hundred people said they could hear it.",
+      "cap": "ABOUT 2%\nCOULD HEAR IT",
+      "amber": true,
+      "img": "A dim adobe bedroom at night, an unmade bed, a window looking out on a dark desert mesa, a single bedside lamp, uneasy quiet."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "That summer, scientists from Sandia, Los Alamos, the Air Force and the University of New Mexico brought instruments to Taos to measure it.",
+      "cap": "ACOUSTIC · SEISMIC\nMAGNETIC",
+      "img": "Early-1990s scientific measuring equipment, a microphone on a tripod and a portable instrument case with analog meters, set up on a table inside a quiet adobe home at night, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Hearers matched its pitch: very low, between thirty and eighty hertz. The instruments never found the source.",
+      "cap": "SOURCE\nNEVER FOUND",
+      "amber": true,
+      "img": "A long empty highway across the dark high desert mesa at night with distant mountains, faint starlight, nothing visible on the horizon."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Hums like it have been reported around the world. Most have never been traced.",
+      "cap": "MOST\nNEVER TRACED",
+      "img": "A vast dark desert mesa under a heavy night sky with a few distant lights of a small town, cold and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Persistent complaints of a low-frequency sound near Taos led New Mexico's congressional delegation to request an investigation; summer 1993 team from Sandia, Los Alamos, Air Force Phillips Laboratory and University of New Mexico measured acoustic, seismic, electric, magnetic and EM signals",
+      "sources": [
+        "https://auditory.org/asamtgs/asa94aus/5aNS/5aNS2.html",
+        "https://en.wikipedia.org/wiki/The_Hum"
+      ]
+    },
+    {
+      "claim": "Described as a low-frequency humming, rumbling or droning noise; at least ~2% of residents could hear it",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Hum",
+        "https://www.livescience.com/43519-taos-hum.html"
+      ]
+    },
+    {
+      "claim": "Hearers perceived frequencies between 32 and 80 Hz (matching tests pointed to 30–100 Hz)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Hum",
+        "https://auditory.org/asamtgs/asa94aus/5aNS/5aNS2.html"
+      ]
+    },
+    {
+      "claim": "The investigation did not identify a source (no matching signal detected)",
+      "sources": [
+        "https://explorersweb.com/exploration-mysteries-the-hum-other-mystery-sounds/",
+        "https://www.livescience.com/43519-taos-hum.html"
+      ]
+    },
+    {
+      "claim": "Hums reported worldwide; most reported cases never traced to a specific source",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Hum"
+      ]
+    }
+  ]
+}

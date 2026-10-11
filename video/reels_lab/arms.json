@@ -2,55 +2,98 @@
  "unsolved": {
   "wychelm": {
    "end": "stamp",
-   "topic": "unsolved"
+   "topic": "unsolved",
+   "kind": "person"
   },
   "valentich": {
    "end": "question",
-   "topic": "unsolved"
+   "topic": "unsolved",
+   "kind": "person"
   },
   "isdal": {
    "end": "stamp",
-   "topic": "unsolved"
+   "topic": "unsolved",
+   "kind": "person"
   },
   "vela": {
    "end": "question",
-   "topic": "unsolved"
+   "topic": "unsolved",
+   "kind": "anomaly"
   },
   "circleville": {
    "end": "stamp",
-   "topic": "unsolved"
+   "topic": "unsolved",
+   "kind": "anomaly"
   },
   "watcher": {
    "end": "question",
-   "topic": "unsolved"
+   "topic": "unsolved",
+   "kind": "person"
   },
   "wowsignal": {
    "end": "stamp",
-   "topic": "unsolved"
+   "topic": "unsolved",
+   "kind": "anomaly"
   },
   "sodder": {
    "end": "question",
-   "topic": "unsolved"
+   "topic": "unsolved",
+   "kind": "person"
   },
   "beaumont": {
    "end": "stamp",
-   "topic": "unsolved"
+   "topic": "unsolved",
+   "kind": "person"
   },
   "springfieldthree": {
    "end": "question",
-   "topic": "unsolved"
+   "topic": "unsolved",
+   "kind": "person"
   },
   "maryceleste": {
    "end": "stamp",
-   "topic": "unsolved"
+   "topic": "unsolved",
+   "kind": "person"
   },
   "roanoke": {
    "end": "question",
-   "topic": "unsolved"
+   "topic": "unsolved",
+   "kind": "person"
   },
   "maxheadroom": {
    "end": "question",
-   "topic": "unsolved"
+   "topic": "unsolved",
+   "kind": "anomaly"
+  },
+  "hessdalen": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly"
+  },
+  "taoshum": {
+   "end": "question",
+   "topic": "unsolved",
+   "kind": "anomaly"
+  },
+  "voynich": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly"
+  },
+  "dorothyarnold": {
+   "end": "question",
+   "topic": "unsolved",
+   "kind": "person"
+  },
+  "brianshaffer": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person"
+  },
+  "jamison": {
+   "end": "question",
+   "topic": "unsolved",
+   "kind": "person"
   }
  },
  "byclaude": {

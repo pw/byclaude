@@ -1,0 +1,76 @@
+{
+  "title": "Dorothy Arnold",
+  "subtitle": "New York, 1910",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, New York City in December 1910, grey winter light and light snow, melancholy and uncanny, period 1910 detail, cinematic composition, fine film grain. Single image, not a collage, one continuous scene, no split frame, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "On December twelfth, nineteen ten, Dorothy Arnold, twenty-five, left her family's home in Manhattan to go shopping.",
+      "cap": "NEW YORK · 1910",
+      "img": "The front steps and door of an elegant Upper East Side brownstone on a grey December morning in 1910, light snow on the railings, empty street."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "She charged a box of chocolates. She bought a book, at Brentano's, on Fifth Avenue.",
+      "cap": "CHOCOLATES.\nA BOOK.",
+      "img": "A wrapped 1910-style box of chocolates and a small cloth-bound book with a plain blank cover resting on a shop counter, soft winter window light."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Just before two o'clock, she ran into a friend, and said she would walk home through Central Park.",
+      "cap": "WALKING HOME\nTHROUGH THE PARK",
+      "img": "A single winding footpath through Central Park in winter 1910, bare trees, an old iron lamppost and an empty wooden bench, light snow, no buildings in frame, no street, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "She never came home.",
+      "cap": "SHE NEVER\nCAME HOME",
+      "amber": true,
+      "img": "Interior of an elegant 1910 Manhattan dining room at evening, a dinner table set with china, one empty chair, warm gaslight, heavy curtains drawn, still and quiet, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Sightings, letters, and confessions all came to nothing. No trace of her has ever been confirmed.",
+      "cap": "NO TRACE\nEVER CONFIRMED",
+      "amber": true,
+      "img": "Fifth Avenue at dusk in winter 1910, empty snowy sidewalk, gas street lamps glowing, a few distant carriages, melancholy."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Vanished December 12, 1910, age 25; left home ~11 a.m. to shop (for a dress); family lived in Manhattan (Upper East Side)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Disappearance_of_Dorothy_Arnold",
+        "https://www.aetv.com/articles/new-york-heiress-dorothy-arnold-disappeared-1910-century-later-still-missing"
+      ]
+    },
+    {
+      "claim": "Charged a half-pound box of chocolates (Park & Tilford); bought a book at Brentano's (Fifth Avenue & 27th St)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Disappearance_of_Dorothy_Arnold",
+        "https://www.aetv.com/articles/new-york-heiress-dorothy-arnold-disappeared-1910-century-later-still-missing"
+      ]
+    },
+    {
+      "claim": "Met friend Gladys King shortly before 2 p.m.; said she would walk home through Central Park",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Disappearance_of_Dorothy_Arnold",
+        "https://www.aetv.com/articles/new-york-heiress-dorothy-arnold-disappeared-1910-century-later-still-missing"
+      ]
+    },
+    {
+      "claim": "Never returned home; sightings, a postcard, ransom notes, a 1916 prisoner's burial claim all unverified/false; no confirmed trace; fate unknown",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Disappearance_of_Dorothy_Arnold",
+        "https://www.americanheritage.com/girl-who-never-came-back"
+      ]
+    }
+  ]
+}

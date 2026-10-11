@@ -1,0 +1,85 @@
+{
+  "title": "The Voynich Manuscript",
+  "subtitle": "Italy, 1912",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, an old handwritten vellum codex from the early 1400s in a dim rare-book reading room, warm lamplight on aged parchment, faded brown ink and muted green and blue pigments, quiet and uncanny, close cinematic composition, fine film grain. Any handwriting is illegible invented script-like marks, not any real alphabet, no readable words. Single image, not a collage, no signage, no people, no faces, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "In nineteen twelve, a rare book dealer named Wilfrid Voynich bought a manuscript that no one could read.",
+      "cap": "ITALY · 1912",
+      "img": "A small old leather-bound codex resting closed on a wooden table in a dim old library, shelves of old books in shadow behind, a shaft of window light."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "About two hundred and forty pages, handwritten, in a script no one has ever identified.",
+      "cap": "AN UNKNOWN\nSCRIPT",
+      "amber": true,
+      "img": "A close-up of an open aged vellum page covered in neat rows of looping illegible handwritten glyphs in faded brown ink, lamplight, shallow depth of field."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Page after page of plants. Almost none can be clearly identified.",
+      "cap": "UNIDENTIFIED\nPLANTS",
+      "img": "An open aged vellum page with a hand-drawn medieval botanical illustration of a strange unknown plant with large roots and odd leaves in faded green and brown pigments, a few lines of illegible glyphs beside it."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "In two thousand nine, carbon dating placed its parchment in the early fourteen hundreds.",
+      "cap": "PARCHMENT\n1404 – 1438",
+      "amber": true,
+      "img": "A clean radiocarbon dating laboratory bench, a tiny torn sliver of old parchment in a small glass dish beside a precision scale and a mass spectrometer, cool white clinical light, no book on the table, no people.",
+      "note": "generated outside _build_images.py with a lab-only grade (shared reading-room grade produced a lab+book collage)"
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Codebreakers, linguists, and computers have all tried. It has never been convincingly deciphered.",
+      "cap": "NEVER\nDECIPHERED",
+      "amber": true,
+      "img": "The old codex lying open on a reading-room desk at night under a single desk lamp, pages of illegible glyphs and strange drawings, empty chair, unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Wilfrid Voynich, a book dealer, acquired the manuscript in 1912 among ~30 manuscripts sold from Jesuit / Collegio Romano holdings in Italy (Frascati per the commonly told account)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Voynich_manuscript",
+        "https://www.medievalists.net/2011/02/mysterious-voynich-manuscript-dates-back-to-the-15th-century/"
+      ]
+    },
+    {
+      "claim": "Around 240 surviving pages, handwritten in an undeciphered, unknown script",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Voynich_manuscript",
+        "https://www.nbcnews.com/id/wbna41581204"
+      ]
+    },
+    {
+      "claim": "Herbal section; none of the plants depicted are unambiguously identifiable (a few tentatively)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Voynich_manuscript"
+      ]
+    },
+    {
+      "claim": "Radiocarbon dating at University of Arizona (2009, published 2011) dated the parchment to 1404–1438",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Voynich_manuscript",
+        "https://www.theregister.com/2011/02/11/voynich_dated/",
+        "https://www.medievalists.net/2011/02/mysterious-voynich-manuscript-dates-back-to-the-15th-century/"
+      ]
+    },
+    {
+      "claim": "Never demonstrably deciphered; studied by cryptographers incl. WWII codebreakers, linguists, computational approaches; no proposal independently verified (2026 overview still unsolved)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Voynich_manuscript",
+        "https://yourstory.com/2026/03/voynich-manuscript-unsolved-mystery"
+      ]
+    }
+  ]
+}
