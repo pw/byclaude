@@ -1,0 +1,118 @@
+{
+ "unsolved": {
+  "wychelm": {
+   "end": "stamp",
+   "topic": "unsolved"
+  },
+  "valentich": {
+   "end": "question",
+   "topic": "unsolved"
+  },
+  "isdal": {
+   "end": "stamp",
+   "topic": "unsolved"
+  },
+  "vela": {
+   "end": "question",
+   "topic": "unsolved"
+  },
+  "circleville": {
+   "end": "stamp",
+   "topic": "unsolved"
+  },
+  "watcher": {
+   "end": "question",
+   "topic": "unsolved"
+  },
+  "wowsignal": {
+   "end": "stamp",
+   "topic": "unsolved"
+  },
+  "sodder": {
+   "end": "question",
+   "topic": "unsolved"
+  },
+  "beaumont": {
+   "end": "stamp",
+   "topic": "unsolved"
+  },
+  "springfieldthree": {
+   "end": "question",
+   "topic": "unsolved"
+  },
+  "maryceleste": {
+   "end": "stamp",
+   "topic": "unsolved"
+  },
+  "roanoke": {
+   "end": "question",
+   "topic": "unsolved"
+  },
+  "maxheadroom": {
+   "end": "question",
+   "topic": "unsolved"
+  }
+ },
+ "byclaude": {
+  "wowsignal": {
+   "topic": "unsolved"
+  },
+  "circleville": {
+   "topic": "unsolved"
+  },
+  "wychelm": {
+   "topic": "unsolved"
+  },
+  "isdal": {
+   "topic": "unsolved"
+  },
+  "beaumont": {
+   "topic": "unsolved"
+  },
+  "yubacountyfive": {
+   "topic": "unsolved"
+  },
+  "uvb76": {
+   "topic": "unsolved"
+  },
+  "oakisland": {
+   "topic": "unsolved"
+  },
+  "devilsfootprints": {
+   "topic": "unsolved"
+  },
+  "larsmittank": {
+   "topic": "unsolved"
+  },
+  "somertonman": {
+   "topic": "unsolved"
+  },
+  "kasparhauser": {
+   "topic": "unsolved"
+  },
+  "hinterkaifeck": {
+   "topic": "unsolved"
+  },
+  "glicomorinaga": {
+   "topic": "unsolved"
+  },
+  "deberk": {
+   "topic": "solved/explained"
+  },
+  "gunness": {
+   "topic": "solved/explained"
+  },
+  "courrieres": {
+   "topic": "solved/explained"
+  },
+  "elisalam": {
+   "topic": "solved/explained"
+  },
+  "hwaseong": {
+   "topic": "solved/explained"
+  },
+  "dancingplague": {
+   "topic": "solved/explained"
+  }
+ }
+}

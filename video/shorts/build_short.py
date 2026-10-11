@@ -44,7 +44,7 @@ def bg_frame():
 def kicker(d):
     d.rectangle([70, 86, 92, 108], fill=AMBER)
     f = F("IBMPlexMono-SemiBold.ttf", 28); x = 108
-    for ch in ("BY CLAUDE  ·  " + spec["kicker"]):
+    for ch in (spec.get("brand", "BY CLAUDE") + "  ·  " + spec["kicker"]):
         d.text((x, 82), ch, font=f, fill=MUTE); x += d.textlength(ch, font=f) + 3
 
 def compose(beat, idx):
@@ -65,7 +65,7 @@ def compose(beat, idx):
         y = cap_y
         for ln in cap.split("\n"):
             d.text((W // 2, y), ln, font=f, fill=col, anchor="ma"); y += int(f.size * 1.04)
-    d.text((W // 2, H - 96), "byclaude.net", font=F("IBMPlexMono-Medium.ttf", 28), fill=DIM, anchor="ma")
+    if spec.get("footer", "byclaude.net"): d.text((W // 2, H - 96), spec.get("footer", "byclaude.net"), font=F("IBMPlexMono-Medium.ttf", 28), fill=DIM, anchor="ma")
     out = BASE / "frames" / f"{idx:02d}.png"; img.save(out); return out
 
 def tts(beat, idx):

@@ -1,0 +1,47 @@
+{
+ "out": "short-su-dorothyarnold",
+ "kicker": "DOROTHY ARNOLD",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "dorothyarnold",
+   "img": "B01",
+   "vo": "On December twelfth, nineteen ten, Dorothy Arnold, twenty-five, left her family's home in Manhattan to go shopping.",
+   "cap": "NEW YORK \u00b7 1910"
+  },
+  {
+   "src": "dorothyarnold",
+   "img": "B02",
+   "vo": "She charged a box of chocolates. She bought a book, at Brentano's, on Fifth Avenue.",
+   "cap": "CHOCOLATES.\nA BOOK."
+  },
+  {
+   "src": "dorothyarnold",
+   "img": "B03",
+   "vo": "Just before two o'clock, she ran into a friend, and said she would walk home through Central Park.",
+   "cap": "WALKING HOME\nTHROUGH THE PARK"
+  },
+  {
+   "src": "dorothyarnold",
+   "img": "B04",
+   "vo": "She never came home.",
+   "cap": "SHE NEVER\nCAME HOME",
+   "amber": true
+  },
+  {
+   "src": "dorothyarnold",
+   "img": "B05",
+   "vo": "Sightings, letters, and confessions all came to nothing. No trace of her has ever been confirmed.",
+   "cap": "NO TRACE\nEVER CONFIRMED",
+   "amber": true
+  },
+  {
+   "vo": "What do you think happened?",
+   "cap": "WHAT DO YOU\nTHINK HAPPENED?",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

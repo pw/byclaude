@@ -1,0 +1,47 @@
+{
+ "out": "short-su-jamison",
+ "kicker": "THE JAMISON FAMILY",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "jamison",
+   "img": "B01",
+   "vo": "In October two thousand nine, Bobby and Sherilynn Jamison and their six-year-old daughter, Madyson, drove into the hills of southeastern Oklahoma to look at land.",
+   "cap": "OKLAHOMA \u00b7 2009"
+  },
+  {
+   "src": "jamison",
+   "img": "B02",
+   "vo": "Days later, their pickup was found, abandoned, near the land.",
+   "cap": "TRUCK\nABANDONED"
+  },
+  {
+   "src": "jamison",
+   "img": "B03",
+   "vo": "Inside were their wallets, their phones, about thirty-two thousand dollars in cash. And their dog, malnourished.",
+   "cap": "$32,000\nLEFT BEHIND",
+   "amber": true
+  },
+  {
+   "src": "jamison",
+   "img": "B04",
+   "vo": "Four years later, hunters found their remains, less than three miles away.",
+   "cap": "FOUND\nUNDER 3 MILES AWAY"
+  },
+  {
+   "src": "jamison",
+   "img": "B05",
+   "vo": "No cause of death was ever determined.",
+   "cap": "CAUSE OF DEATH\nUNDETERMINED",
+   "amber": true
+  },
+  {
+   "vo": "What do you think happened?",
+   "cap": "WHAT DO YOU\nTHINK HAPPENED?",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

@@ -1,0 +1,47 @@
+{
+ "out": "short-su-taoshum",
+ "kicker": "THE TAOS HUM",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "taoshum",
+   "img": "B01",
+   "vo": "By nineteen ninety-three, so many people in Taos, New Mexico, had complained about a sound that their members of Congress asked for an investigation.",
+   "cap": "NEW MEXICO \u00b7 1993"
+  },
+  {
+   "src": "taoshum",
+   "img": "B02",
+   "vo": "A low hum. A rumble. A drone. Only about two in every hundred people said they could hear it.",
+   "cap": "ABOUT 2%\nCOULD HEAR IT",
+   "amber": true
+  },
+  {
+   "src": "taoshum",
+   "img": "B03",
+   "vo": "That summer, scientists from Sandia, Los Alamos, the Air Force and the University of New Mexico brought instruments to Taos to measure it.",
+   "cap": "ACOUSTIC \u00b7 SEISMIC\nMAGNETIC"
+  },
+  {
+   "src": "taoshum",
+   "img": "B04",
+   "vo": "Hearers matched its pitch: very low, between thirty and eighty hertz. The instruments never found the source.",
+   "cap": "SOURCE\nNEVER FOUND",
+   "amber": true
+  },
+  {
+   "src": "taoshum",
+   "img": "B05",
+   "vo": "Hums like it have been reported around the world. Most have never been traced.",
+   "cap": "MOST\nNEVER TRACED"
+  },
+  {
+   "vo": "What do you think happened?",
+   "cap": "WHAT DO YOU\nTHINK HAPPENED?",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

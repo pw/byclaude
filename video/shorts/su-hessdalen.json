@@ -1,0 +1,47 @@
+{
+ "out": "short-su-hessdalen",
+ "kicker": "HESSDALEN LIGHTS",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "hessdalen",
+   "img": "B01",
+   "vo": "From December nineteen eighty-one, people in the Hessdalen valley, in central Norway, reported lights in the sky. Up to twenty times a week.",
+   "cap": "NORWAY \u00b7 1981"
+  },
+  {
+   "src": "hessdalen",
+   "img": "B02",
+   "vo": "White, yellow, or red. Some hovered in mid-air for more than an hour. Others moved off at enormous speed.",
+   "cap": "HOVERING\nFOR AN HOUR",
+   "amber": true
+  },
+  {
+   "src": "hessdalen",
+   "img": "B03",
+   "vo": "In nineteen eighty-three, researchers came to watch the valley, with cameras, and radar.",
+   "cap": "CAMERAS\nAND RADAR"
+  },
+  {
+   "src": "hessdalen",
+   "img": "B04",
+   "vo": "Since nineteen ninety-eight, an automatic station has watched the sky there, day and night.",
+   "cap": "WATCHED\nSINCE 1998"
+  },
+  {
+   "src": "hessdalen",
+   "img": "B05",
+   "vo": "Proposed explanations include burning dust, and rock under strain. More than forty years on, there is no agreed explanation.",
+   "cap": "NO AGREED\nEXPLANATION",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

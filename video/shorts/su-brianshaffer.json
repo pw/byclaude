@@ -1,0 +1,47 @@
+{
+ "out": "short-su-brianshaffer",
+ "kicker": "BRIAN SHAFFER",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "brianshaffer",
+   "img": "B01",
+   "vo": "In the early hours of April first, two thousand six, a medical student named Brian Shaffer was out with friends at a bar in Columbus, Ohio.",
+   "cap": "OHIO \u00b7 2006"
+  },
+  {
+   "src": "brianshaffer",
+   "img": "B02",
+   "vo": "At one fifteen a.m., security cameras recorded him riding an escalator up to the bar's entrance.",
+   "cap": "1:15 A.M."
+  },
+  {
+   "src": "brianshaffer",
+   "img": "B03",
+   "vo": "Around one fifty-five, a camera caught him outside the bar, talking with two women. Then he moved out of frame.",
+   "cap": "1:55 A.M.\nLAST SEEN",
+   "amber": true
+  },
+  {
+   "src": "brianshaffer",
+   "img": "B04",
+   "vo": "No camera ever recorded him leaving.",
+   "cap": "NEVER SEEN\nLEAVING",
+   "amber": true
+  },
+  {
+   "src": "brianshaffer",
+   "img": "B05",
+   "vo": "He was twenty-seven. Twenty years later, he has never been found.",
+   "cap": "NEVER FOUND"
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}
