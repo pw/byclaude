@@ -1,0 +1,47 @@
+{
+ "out": "short-su-devilsfootprints",
+ "kicker": "THE DEVIL'S FOOTPRINTS",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "devilsfootprints",
+   "img": "B01",
+   "vo": "On the night of the eighth of February, eighteen fifty-five, after heavy snow, something left tracks across Devon, in England.",
+   "cap": "DEVON \u00b7 1855"
+  },
+  {
+   "src": "devilsfootprints",
+   "img": "B04",
+   "vo": "By morning, people found small, hoof-shaped prints in the snow, mostly in a single line.",
+   "cap": "HOOF-SHAPED\nPRINTS"
+  },
+  {
+   "src": "devilsfootprints",
+   "img": "B02",
+   "vo": "They were reported from more than thirty places. Witnesses said the tracks went over rooftops, and walls, as if nothing were there.",
+   "cap": "OVER THE\nROOFTOPS",
+   "amber": true
+  },
+  {
+   "src": "devilsfootprints",
+   "img": "B03",
+   "vo": "Theories followed. An escaped kangaroo. Hopping mice. A balloon, dragging chains.",
+   "cap": "A KANGAROO?\nA BALLOON?"
+  },
+  {
+   "src": "devilsfootprints",
+   "img": "B05",
+   "vo": "None of them has ever been proved.",
+   "cap": "NEVER\nPROVED",
+   "amber": true
+  },
+  {
+   "vo": "What do you think happened?",
+   "cap": "WHAT DO YOU\nTHINK HAPPENED?",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

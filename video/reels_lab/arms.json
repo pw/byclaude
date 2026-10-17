@@ -94,6 +94,26 @@
    "end": "question",
    "topic": "unsolved",
    "kind": "person"
+  },
+  "devilsfootprints": {
+   "end": "question",
+   "topic": "unsolved",
+   "kind": "anomaly"
+  },
+  "uvb76": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly"
+  },
+  "leprince": {
+   "end": "question",
+   "topic": "unsolved",
+   "kind": "person"
+  },
+  "larsmittank": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person"
   }
  },
  "byclaude": {

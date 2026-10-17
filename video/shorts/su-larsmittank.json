@@ -1,0 +1,41 @@
+{
+ "out": "short-su-larsmittank",
+ "kicker": "LARS MITTANK",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "larsmittank",
+   "img": "B01",
+   "vo": "In July twenty fourteen, a twenty-eight-year-old German named Lars Mittank went to Varna Airport, in Bulgaria, to fly home.",
+   "cap": "BULGARIA \u00b7 2014"
+  },
+  {
+   "src": "larsmittank",
+   "img": "B04",
+   "vo": "Days earlier, his ear had been hurt in a fight. At the airport, he saw a doctor. Then he ran out of the building, leaving his bags, his phone and his passport behind.",
+   "cap": "HE RAN",
+   "amber": true
+  },
+  {
+   "src": "larsmittank",
+   "img": "B03",
+   "vo": "Security cameras show him climbing a fence, crossing a meadow, and running toward the woods.",
+   "cap": "OVER\nTHE FENCE"
+  },
+  {
+   "src": "larsmittank",
+   "img": "B05",
+   "vo": "He has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

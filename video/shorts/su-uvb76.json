@@ -1,0 +1,41 @@
+{
+ "out": "short-su-uvb76",
+ "kicker": "UVB-76 \u00b7 THE BUZZER",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "uvb76",
+   "img": "B05",
+   "vo": "Since at least the early nineteen-eighties, a Russian shortwave station has broadcast a near-constant buzz, on the same frequency.",
+   "cap": "RUSSIA \u00b7 4625 kHz"
+  },
+  {
+   "src": "uvb76",
+   "img": "B04",
+   "vo": "A short, flat buzz. Over and over. Day and night.",
+   "cap": "THE BUZZER",
+   "amber": true
+  },
+  {
+   "src": "uvb76",
+   "img": "B02",
+   "vo": "Every so often, the buzzing stops. A voice reads out words and numbers in Russian. Then the buzzing comes back.",
+   "cap": "A VOICE.\nTHEN NUMBERS."
+  },
+  {
+   "src": "uvb76",
+   "img": "B03",
+   "vo": "Listeners have recorded it for decades. Most assume it is military. No one has ever officially said what it is for.",
+   "cap": "NEVER\nEXPLAINED",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

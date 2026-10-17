@@ -1,0 +1,47 @@
+{
+ "out": "short-su-leprince",
+ "kicker": "LOUIS LE PRINCE",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "leprince",
+   "img": "B01",
+   "vo": "In October eighteen eighty-eight, in Leeds, a French inventor named Louis Le Prince filmed a few seconds of people walking in a garden.",
+   "cap": "LEEDS \u00b7 1888"
+  },
+  {
+   "src": "leprince",
+   "img": "B05",
+   "vo": "It is among the oldest surviving motion pictures in the world.",
+   "cap": "AMONG THE\nFIRST FILMS",
+   "amber": true
+  },
+  {
+   "src": "leprince",
+   "img": "B02",
+   "vo": "Two years later, in September eighteen ninety, he boarded a train at Dijon, bound for Paris.",
+   "cap": "DIJON TO PARIS\n1890"
+  },
+  {
+   "src": "leprince",
+   "img": "B03",
+   "vo": "He never arrived. No body. No luggage. He was never seen again.",
+   "cap": "NEVER\nSEEN AGAIN",
+   "amber": true
+  },
+  {
+   "src": "leprince",
+   "img": "B04",
+   "vo": "In two thousand three, a photograph of a man drowned in the Seine in eighteen ninety turned up in the Paris police archives. Whether it is him is disputed.",
+   "cap": "A DROWNED\nMAN?"
+  },
+  {
+   "vo": "What do you think happened?",
+   "cap": "WHAT DO YOU\nTHINK HAPPENED?",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}
