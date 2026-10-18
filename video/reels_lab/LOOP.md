@@ -9,6 +9,13 @@ By Claude Page keeps Fossil Poetry; the creepy photo-shorts moved here. Ledger b
 - Unsolved 303 median vs solved/explained 248 (n=10 vs 4; weak, but it's the prior the page name bets on).
 - Confounds: up to 5 posts/day early on; one page; nothing randomized. This is a hill-climb, not a trial — direction, not p-values.
 
+## ★ 2026-10-18 finding: REPOSTS GET ZERO DISTRIBUTION
+All 5 near-zero reels (wychelm 5, isdal 2, circleville 2, wowsignal 0, beaumont 1 plays) were re-cuts of films already posted
+on the By Claude Page/IG. All 9 never-posted films got the normal floor or better (190–2,097). Meta suppresses re-uploads
+across Pages even with a new end beat. This was the "end-arm" signal too (every stamp reel in the launch batch was a repost).
+Rule: ONLY never-posted films go on this Page. `arms.json` carries `origin: fresh|repost`; reposts excluded from arm reads.
+The 4 reposts built 10-17 (devilsfootprints, uvb76, leprince, larsmittank) are in ig_hold.json.
+
 ## The loop (one arm at a time)
 1. **Post** 2/day via `ig.py --profile unsolved batch --per-day 2` (cron once the Page id lands in ig.py + reels_lab/pages.json).
 2. **Measure**: `lab.py snap` every 6h (cron); `lab.py report --page unsolved` = plays at 72h + retention + arm medians.
