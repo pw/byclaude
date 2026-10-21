@@ -1,0 +1,98 @@
+{
+  "title": "Flight 19",
+  "subtitle": "Flight 19 · off Florida, 1945",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the open Atlantic Ocean off the Florida coast in December 1945, grey overcast winter sky, cold slate-blue and silver sea, 1940s wartime era, melancholy and uncanny, cinematic wide composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Fort Lauderdale, December fifth, nineteen forty-five. Five Navy Avenger bombers took off on a training flight. Fourteen men.",
+      "cap": "FLORIDA · 1945",
+      "img": "Five World War Two era single-engine navy torpedo bombers flying in loose formation far off over the open Atlantic, seen small and distant from behind, low winter afternoon sun breaking through cloud, grey-green sea below, no markings legible."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "The flight leader radioed that his compasses had failed. He believed he was over the Florida Keys.",
+      "cap": "COMPASSES\nFAILED",
+      "amber": true,
+      "img": "Close view of a 1940s aircraft cockpit magnetic compass and instrument panel with round gauges, dim fading daylight, the canopy glass beyond showing only grey sea and cloud, worn metal and glass, no hands, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "The radio calls faded into static. They never came back.",
+      "cap": "NEVER\nCAME BACK",
+      "img": "An empty darkening Atlantic Ocean at dusk, rough grey swells and whitecaps under heavy low cloud, the last thin band of light on the horizon, an empty sky, desolate."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "That night, a flying boat with thirteen men went out to search. It was never heard from again.",
+      "cap": "13 MORE\nLOST",
+      "amber": true,
+      "img": "A large 1940s twin-engine gull-winged navy flying boat seen in dark silhouette far away over a black night sea, faint navigation light, heavy cloud, a sliver of moonlight on the water, lonely and ominous."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The Navy's board recorded causes or reasons unknown. No wreckage of the five bombers has ever been found.",
+      "cap": "CAUSES\nUNKNOWN",
+      "amber": true,
+      "img": "A vast calm empty Atlantic at grey dawn, flat silver water to the horizon, no ships, no debris, a pale overcast sky, quiet and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "December 5, 1945: five TBM Avenger torpedo bombers (Flight 19) took off from Naval Air Station Fort Lauderdale on a training flight with 14 men",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Flight_19",
+        "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19",
+        "https://www.history.com/this-day-in-history/december-5/aircraft-squadron-lost-in-the-bermuda-triangle",
+        "https://www.nasflmuseum.com/flight-19"
+      ]
+    },
+    {
+      "claim": "Flight leader Lt. Charles C. Taylor radioed that his compasses had failed and believed he was over the Florida Keys",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Flight_19",
+        "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19",
+        "https://www.history.com/this-day-in-history/december-5/aircraft-squadron-lost-in-the-bermuda-triangle"
+      ]
+    },
+    {
+      "claim": "Radio transmissions faded into static; the aircraft never returned",
+      "sources": [
+        "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19",
+        "https://www.history.com/this-day-in-history/december-5/aircraft-squadron-lost-in-the-bermuda-triangle",
+        "https://en.wikipedia.org/wiki/Flight_19"
+      ]
+    },
+    {
+      "claim": "That evening a PBM Mariner flying boat with 13 crew took off to search (about 7:27–7:30 pm) and was never heard from again",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Flight_19",
+        "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19",
+        "https://www.nasflmuseum.com/flight-19"
+      ]
+    },
+    {
+      "claim": "The Navy board's finding was amended to 'causes or reasons unknown' (Taylor exonerated 1947)",
+      "sources": [
+        "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19",
+        "https://en.wikipedia.org/wiki/Flight_19",
+        "https://www.nasflmuseum.com/flight-19"
+      ]
+    },
+    {
+      "claim": "No wreckage/debris of the five Avengers has ever been found or confirmed; later wreck finds (1986–1991) were other aircraft; no 2024–2026 identification reported",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Flight_19",
+        "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19",
+        "https://www.nasflmuseum.com/flight-19"
+      ]
+    }
+  ]
+}

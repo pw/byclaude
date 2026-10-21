@@ -1,0 +1,98 @@
+{
+  "title": "Paula Jean Welden",
+  "subtitle": "Long Trail · Vermont, 1946",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the forested Green Mountains of southern Vermont in early winter in the 1940s, bare hardwoods and dark spruce, grey overcast light, cold blue-grey palette with muted colour, melancholy and quiet, cinematic composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Bennington, Vermont. December first, nineteen forty-six. An eighteen-year-old college student left campus, to go hiking.",
+      "cap": "VERMONT · 1946",
+      "img": "A small New England college campus at the edge of wooded hills on a grey early-December afternoon in the 1940s, bare trees, a gravel path leading away toward dark forested mountains, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "She wore a red coat, jeans, and sneakers. Light clothes, for a December night in the mountains.",
+      "cap": "A RED COAT",
+      "amber": true,
+      "img": "A narrow hiking trail through bare winter woods in Vermont at late afternoon, a few dry leaves, cold low light, the last low sun throwing a faint red light along the empty path, no person."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Around four o'clock, hikers on the Long Trail spoke with her, near Glastenbury Mountain. No one is known to have seen her again.",
+      "cap": "LAST SEEN\nLONG TRAIL",
+      "img": "A forest trail bending around a corner into dense dark spruce and birch woods on a mountainside at dusk, light fading fast, an old wooden trail marker post with no lettering, empty."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Hundreds of people searched the woods. No trace of her was ever found.",
+      "cap": "NO TRACE\nEVER FOUND",
+      "amber": true,
+      "img": "A vast stretch of dark forested Vermont mountainside in early winter seen from above, a thin dusting of snow, low cloud on the ridges, a few distant lantern points scattered in the trees."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Vermont had no state police. Her case led to the creation of one, in nineteen forty-seven. What happened to her has never been determined.",
+      "cap": "STATE POLICE\nFOUNDED 1947",
+      "amber": true,
+      "img": "An empty mountain trail in deep winter woods at blue hour, untouched snow, tall dark spruce, silent and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Paula Jean Welden, 18, a Bennington College sophomore, left campus the afternoon of December 1, 1946 to go hiking (told roommate she was going for a hike/walk)",
+      "sources": [
+        "https://vsp.vermont.gov/unsolved/missing/c/welden",
+        "https://en.wikipedia.org/wiki/Disappearance_of_Paula_Jean_Welden",
+        "https://newenglandhistoricalsociety.com/paula-jean-welden-birth-vermont-state-police/",
+        "https://charleyproject.org/case/paula-jean-welden"
+      ]
+    },
+    {
+      "claim": "She wore a red coat/parka, blue jeans and sneakers; clothing adequate for the afternoon but not for the night's drop in temperature",
+      "sources": [
+        "https://charleyproject.org/case/paula-jean-welden",
+        "https://newenglandhistoricalsociety.com/paula-jean-welden-birth-vermont-state-police/",
+        "https://en.wikipedia.org/wiki/Disappearance_of_Paula_Jean_Welden"
+      ]
+    },
+    {
+      "claim": "Last confirmed sighting ~4 p.m., speaking with hikers on the Long Trail near Glastenbury Mountain (off Route 9); no confirmed sighting after",
+      "sources": [
+        "https://vsp.vermont.gov/unsolved/missing/c/welden",
+        "https://charleyproject.org/case/paula-jean-welden",
+        "https://newenglandhistoricalsociety.com/paula-jean-welden-birth-vermont-state-police/",
+        "https://en.wikipedia.org/wiki/Disappearance_of_Paula_Jean_Welden"
+      ]
+    },
+    {
+      "claim": "Hundreds of volunteers, family, National Guard and firefighters searched; extensive search found no sign of her; no body or forensic clue ever found",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Disappearance_of_Paula_Jean_Welden",
+        "https://newenglandhistoricalsociety.com/paula-jean-welden-birth-vermont-state-police/",
+        "https://vsp.vermont.gov/unsolved/missing/c/welden"
+      ]
+    },
+    {
+      "claim": "Vermont had no statewide police in 1946; per VSP her case 'led directly to the 1947 formation of the Vermont State Police'",
+      "sources": [
+        "https://vsp.vermont.gov/unsolved/missing/c/welden",
+        "https://newenglandhistoricalsociety.com/paula-jean-welden-birth-vermont-state-police/",
+        "https://en.wikipedia.org/wiki/Disappearance_of_Paula_Jean_Welden"
+      ]
+    },
+    {
+      "claim": "Still unsolved: VSP lists it under Unsolved: Missing, 'no conclusive outcome was ever determined', with a current tip contact; no 2024-2026 reports of remains/resolution found",
+      "sources": [
+        "https://vsp.vermont.gov/unsolved/missing/c/welden",
+        "https://en.wikipedia.org/wiki/Disappearance_of_Paula_Jean_Welden"
+      ]
+    }
+  ]
+}

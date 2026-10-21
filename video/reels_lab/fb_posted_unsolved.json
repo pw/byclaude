@@ -1,4 +1,76 @@
 {
+ "beaumont": {
+  "fb_published_at": "2026-10-15T15:45:40+00:00",
+  "fb_video_id": "2174926793060539"
+ },
+ "brianshaffer": {
+  "fb_published_at": "2026-10-18T01:45:38+00:00",
+  "fb_video_id": "1812424320078937"
+ },
+ "circleville": {
+  "fb_published_at": "2026-10-13T15:45:38+00:00",
+  "fb_video_id": "1625358059030945"
+ },
+ "dorothyarnold": {
+  "fb_published_at": "2026-10-20T15:45:33+00:00",
+  "fb_video_id": "3655666491258945"
+ },
+ "hessdalen": {
+  "fb_published_at": "2026-10-18T15:45:37+00:00",
+  "fb_video_id": "1094749976508084"
+ },
+ "isdal": {
+  "fb_published_at": "2026-10-12T15:45:28+00:00",
+  "fb_video_id": "1129087859818772"
+ },
+ "jamison": {
+  "fb_published_at": "2026-10-19T01:45:34+00:00",
+  "fb_video_id": "2191701985564194"
+ },
+ "maryceleste": {
+  "fb_published_at": "2026-10-16T15:45:34+00:00",
+  "fb_video_id": "1761333614920760"
+ },
+ "maxheadroom": {
+  "fb_published_at": "2026-10-17T15:45:44+00:00",
+  "fb_video_id": "2977743665910032"
+ },
+ "roanoke": {
+  "fb_published_at": "2026-10-17T01:45:28+00:00",
+  "fb_video_id": "1127776936389864"
+ },
+ "sodder": {
+  "fb_published_at": "2026-10-15T01:45:39+00:00",
+  "fb_video_id": "1590293279071901"
+ },
+ "springfieldthree": {
+  "fb_published_at": "2026-10-16T01:45:32+00:00",
+  "fb_video_id": "1085860727599083"
+ },
+ "taoshum": {
+  "fb_published_at": "2026-10-19T15:45:39+00:00",
+  "fb_video_id": "1843520673762144"
+ },
+ "valentich": {
+  "fb_published_at": "2026-10-12T01:45:27+00:00",
+  "fb_video_id": "2224940581780229"
+ },
+ "vela": {
+  "fb_published_at": "2026-10-13T01:45:27+00:00",
+  "fb_video_id": "3054374861565856"
+ },
+ "voynich": {
+  "fb_published_at": "2026-10-20T01:45:32+00:00",
+  "fb_video_id": "1007630475700614"
+ },
+ "watcher": {
+  "fb_published_at": "2026-10-14T01:45:37+00:00",
+  "fb_video_id": "1484544913656360"
+ },
+ "wowsignal": {
+  "fb_published_at": "2026-10-14T15:45:33+00:00",
+  "fb_video_id": "2394506278035884"
+ },
  "wychelm": {
   "fb_published_at": "2026-10-11T22:11:55+00:00",
   "fb_video_id": "1662361272076978"

@@ -1,0 +1,101 @@
+{
+  "title": "We Cannot See You",
+  "subtitle": "Amelia Earhart & Fred Noonan · Pacific Ocean, 1937",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the open central Pacific Ocean in July 1937, vast grey-blue swells and hazy tropical light, 1930s period detail, melancholy and uncanny, cinematic wide composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "July second, nineteen thirty-seven. Amelia Earhart and her navigator, Fred Noonan, left New Guinea for tiny Howland Island.",
+      "cap": "PACIFIC · 1937",
+      "img": "A twin-engine silver 1930s airliner-style monoplane seen small and distant from behind, climbing away over a dark tropical coastline into a hazy morning sky above the open Pacific, no markings visible, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "A Coast Guard ship waited off Howland, listening. Earhart radioed: we must be on you, but cannot see you.",
+      "cap": "\"WE CANNOT\nSEE YOU\"",
+      "amber": true,
+      "img": "The dim radio room of a 1930s ship at dawn, a brass-and-bakelite radio receiver with glowing dials, a headset resting on a wooden desk beside a blank logbook and a pencil, grey light through a porthole, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "About an hour later, one of her last messages. A line of position. No reference point.",
+      "cap": "LAST\nMESSAGE",
+      "img": "A tiny flat sandy island seen from far out at sea under a hazy morning sky, a lone ship anchored offshore trailing a thin column of dark smoke, vast empty ocean, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "The search found no trace of the plane, or of either of them.",
+      "cap": "NO\nTRACE",
+      "img": "A 1930s naval vessel small on an immense empty grey Pacific under low cloud, wide aerial view, endless swells, searching, no people visible."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Nearly ninety years on, the plane has never been found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "A remote uninhabited tropical atoll at dusk, a shallow lagoon and a reef edge with surf, dense dark scrub, a pale empty beach, the open Pacific beyond, quiet and unresolved, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "On July 2, 1937, Earhart and navigator Fred Noonan took off from Lae, New Guinea, bound for Howland Island, a small US island in the central Pacific",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amelia_Earhart",
+        "https://www.history.com/this-day-in-history/july-2/amelia-earhart-disappears"
+      ]
+    },
+    {
+      "claim": "US Coast Guard cutter Itasca was stationed off Howland Island to provide radio/navigation support",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amelia_Earhart",
+        "https://www.history.com/this-day-in-history/july-2/amelia-earhart-disappears",
+        "https://www.docsteach.org/documents/document/earhart-radio-log"
+      ]
+    },
+    {
+      "claim": "At 7:42 a.m. Earhart radioed 'We must be on you, but cannot see you' (Itasca radio log)",
+      "sources": [
+        "https://www.docsteach.org/documents/document/earhart-radio-log",
+        "https://tighar.org/Projects/Earhart/Research/ResearchPapers/first24hours.html"
+      ]
+    },
+    {
+      "claim": "At 8:43 a.m. (about an hour later) the last message heard by Itasca gave a line of position 157-337, 'running north and south', with no reference point",
+      "sources": [
+        "https://www.docsteach.org/documents/document/earhart-radio-log",
+        "https://en.wikipedia.org/wiki/Amelia_Earhart",
+        "https://www.history.com/this-day-in-history/july-2/amelia-earhart-disappears"
+      ]
+    },
+    {
+      "claim": "Navy and Coast Guard search ended July 19, 1937, finding no physical evidence of Earhart, Noonan or the Electra",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amelia_Earhart",
+        "https://www.history.com/this-day-in-history/july-2/amelia-earhart-disappears"
+      ]
+    },
+    {
+      "claim": "Leading theories: ran out of fuel and crashed at sea (US government conclusion, most historians); landed on Gardner Island/Nikumaroro to the south(east) and died as castaways. Neither proven",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amelia_Earhart",
+        "https://www.history.com/articles/amelia-earhart-disappearance-theories"
+      ]
+    },
+    {
+      "claim": "Plane never found as of Oct 2026: Deep Sea Vision's Jan 2024 sonar target was confirmed a rock formation (Nov 2024); the ALI/Purdue Taraia Object survey on Nikumaroro (Oct 2026) had NOT identified the object as of Oct 16, 2026",
+      "sources": [
+        "https://www.nbcnews.com/news/us-news/image-believed-show-amelia-earharts-plane-was-rock-formation-not-crash-rcna181578",
+        "https://www.flyingmag.com/sonar-image-once-thought-proof-of-missing-earhart-plane-is-actually-a-rock-formation/",
+        "https://www.purdue.edu/newsroom/2026/Q4/earhart-expedition-update-weather-prevents-shore-work-for-third-straight-day-crew-to-extend-trip/",
+        "https://www.cbsnews.com/news/amelia-earhart-plane-search-nikumaroro-expedition/"
+      ]
+    }
+  ]
+}

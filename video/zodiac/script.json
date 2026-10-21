@@ -1,0 +1,96 @@
+{
+  "title": "The Letters",
+  "subtitle": "The Zodiac ciphers · Northern California, 1969",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a late-1960s San Francisco newspaper office at night, wooden desks, manual typewriters, paper and envelopes, green-shaded lamps, cold blue-grey window light with fog outside, melancholy and uncanny, period 1969 detail, cinematic composition, fine film grain. Single image, not a collage, no text, no legible writing, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Northern California, nineteen sixty-nine. Three newspapers received letters from a killer, each holding one third of a code.",
+      "cap": "CALIFORNIA · 1969",
+      "img": "Three plain white envelopes lying on a cluttered late-1960s newspaper desk under a green-shaded lamp, a typewriter and an ashtray beside them, night, the addresses turned away and unreadable, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "He demanded they print it. Within about a week, a schoolteacher and his wife in Salinas had broken it.",
+      "cap": "BROKEN\nIN A WEEK",
+      "amber": true,
+      "img": "A kitchen table in a modest 1969 California home at night, sheets of graph paper covered in faint pencil grids and blurred illegible marks, a pencil and a cup of coffee, warm lamp light, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Months later came a second code. Three hundred and forty symbols. It stayed unsolved for fifty-one years.",
+      "cap": "340 SYMBOLS",
+      "img": "A single greeting-card-sized sheet of paper pinned to a corkboard in a dim newspaper office, covered in tiny blurred illegible hand-drawn marks, shallow focus, cold window light, dust in the air, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "In twenty twenty, three amateur codebreakers finally cracked it. It did not contain his name.",
+      "cap": "NO NAME",
+      "amber": true,
+      "img": "An old yellowed sheet of paper with blurred illegible marks lying beside a modern laptop glowing in a dark room at night, the screen showing only soft abstract light, quiet and still, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Two shorter codes have never been confirmed solved. And the writer has never been officially identified.",
+      "cap": "NEVER\nIDENTIFIED",
+      "amber": true,
+      "img": "An empty late-1960s newspaper office at night, rows of silent typewriters on wooden desks, a single lamp left on, fog pressing against tall dark windows, cold and unresolved, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "On July 31, 1969 three nearly identical letters went to the San Francisco Chronicle, San Francisco Examiner and Vallejo Times-Herald, each enclosing one third of a 408-symbol cipher, with a demand that it be printed",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Zodiac_Killer",
+        "https://www.history.com/articles/the-zodiac-ciphers-what-we-know"
+      ]
+    },
+    {
+      "claim": "The 408 cipher was broken within about a week (Aug 1969) by Donald Harden, a Salinas schoolteacher, and his wife Bettye",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Zodiac_Killer",
+        "https://www.history.com/articles/the-zodiac-ciphers-what-we-know",
+        "https://www.theregister.com/2011/07/25/zodiac_cipher_cracker/"
+      ]
+    },
+    {
+      "claim": "The 340-symbol cipher was mailed to the Chronicle on November 8, 1969 and went unsolved for 51 years",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Zodiac_Killer",
+        "https://www.theregister.com/2020/12/12/zodiac_killers_cipher_solved/",
+        "https://www.history.com/articles/the-zodiac-ciphers-what-we-know"
+      ]
+    },
+    {
+      "claim": "Z340 was decrypted in December 2020 by private citizens David Oranchak, Sam Blake and Jarl Van Eycke; FBI acknowledged it; the message does not name the killer",
+      "sources": [
+        "https://www.theregister.com/2020/12/12/zodiac_killers_cipher_solved/",
+        "https://www.history.com/articles/the-zodiac-ciphers-what-we-know",
+        "https://en.wikipedia.org/wiki/Zodiac_Killer"
+      ]
+    },
+    {
+      "claim": "The two shorter ciphers (Z13, April 1970; Z32, June 1970) have no confirmed solution",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Zodiac_Killer",
+        "https://www.boxentriq.com/code-breaking/zodiac-ciphers"
+      ]
+    },
+    {
+      "claim": "The killer has never been identified; the case remains open (SFPD reopened 2006; FBI called it ongoing in 2020); 2025-26 independent claims unconfirmed by any agency",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Zodiac_Killer",
+        "https://www.theregister.com/2020/12/12/zodiac_killers_cipher_solved/",
+        "https://www.yahoo.com/news/us/articles/zodiac-killer-shot-cab-driver-214558880.html",
+        "https://en.wikipedia.org/wiki/Zodiac_Killer_suspects"
+      ]
+    }
+  ]
+}

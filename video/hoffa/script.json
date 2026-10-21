@@ -1,0 +1,111 @@
+{
+  "title": "Home by Four",
+  "subtitle": "Jimmy Hoffa · Bloomfield Township, Michigan, 1975",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a suburban Detroit roadside restaurant parking lot in summer 1975, flat asphalt, 1970s sedans, hazy humid light, faded 1970s colour film tones, melancholy and uncanny, cinematic wide composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Bloomfield Township, Michigan. July thirtieth, nineteen seventy-five. Jimmy Hoffa, former president of the Teamsters, drove to the Machus Red Fox restaurant for a two o'clock meeting.",
+      "cap": "MICHIGAN · 1975",
+      "img": "A low 1970s suburban roadside restaurant seen across a sunlit asphalt parking lot on a hot summer afternoon, a few parked 1970s sedans, heat haze, no signage, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Around two-fifteen, he called his wife from a pay phone. No one had shown up. He said he'd be home by four, to grill steaks.",
+      "cap": "HOME BY 4",
+      "amber": true,
+      "img": "A 1970s outdoor pay phone mounted on a metal post at the edge of a suburban parking lot, the handset hanging still on its cord, bright hazy summer afternoon light, no people, no text."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "He never came home. His car was found in the parking lot.",
+      "cap": "HE NEVER\nCAME HOME",
+      "img": "A single large 1970s sedan parked alone in a suburban restaurant parking lot in grey early-morning light, dew on the windshield, empty spaces all around, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Searches in Michigan and New Jersey found nothing. His body has never been found.",
+      "cap": "BODY NEVER\nFOUND",
+      "amber": true,
+      "img": "An empty asphalt parking lot at dusk, faded painted lines, long shadows stretching from a row of young trees, a vacant parking space in the foreground, still and quiet, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "No one has ever been charged. The F B I says the case is still open.",
+      "cap": "CASE STILL\nOPEN",
+      "img": "A suburban restaurant parking lot at night under a single sodium streetlamp, orange light pooling on empty asphalt, darkness beyond, unresolved, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Hoffa disappeared July 30, 1975, from the Machus Red Fox restaurant in Bloomfield Township, Michigan, where he had gone for a 2 p.m. meeting",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jimmy_Hoffa",
+        "https://spectrumlocalnews.com/nc/triad/ap-top-news/2022/07/21/events-in-disappearance-of-former-teamsters-head-jimmy-hoffa",
+        "https://www.foxnews.com/us/jimmy-hoffa-family-marks-51-years-iconic-disappearance"
+      ]
+    },
+    {
+      "claim": "Hoffa was a former president of the Teamsters union",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jimmy_Hoffa",
+        "https://spectrumlocalnews.com/nc/triad/ap-top-news/2022/07/21/events-in-disappearance-of-former-teamsters-head-jimmy-hoffa"
+      ]
+    },
+    {
+      "claim": "Around 2:15 p.m. he called his wife Josephine from a pay phone and said no one had shown up for the meeting",
+      "sources": [
+        "https://spectrumlocalnews.com/nc/triad/ap-top-news/2022/07/21/events-in-disappearance-of-former-teamsters-head-jimmy-hoffa",
+        "https://en.wikipedia.org/wiki/Jimmy_Hoffa",
+        "https://www.biography.com/crime/jimmy-hoffa-disappearance-where-buried"
+      ]
+    },
+    {
+      "claim": "He told his wife he would be home by 4 p.m. to grill steaks",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jimmy_Hoffa",
+        "https://www.biography.com/crime/jimmy-hoffa-disappearance-where-buried"
+      ]
+    },
+    {
+      "claim": "He never returned home; his car was found in the restaurant parking lot",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jimmy_Hoffa",
+        "https://spectrumlocalnews.com/nc/triad/ap-top-news/2022/07/21/events-in-disappearance-of-former-teamsters-head-jimmy-hoffa",
+        "https://www.cbsnews.com/detroit/news/jimmy-hoffa-disappearance-50-years/"
+      ]
+    },
+    {
+      "claim": "FBI searches in Michigan (Milford Township 2006, Oakland Township 2013) and New Jersey (2022, land under a bridge / former landfill) found nothing; body never found; declared legally dead 1982",
+      "sources": [
+        "https://spectrumlocalnews.com/nc/triad/ap-top-news/2022/07/21/events-in-disappearance-of-former-teamsters-head-jimmy-hoffa",
+        "https://www.cbsnews.com/detroit/news/jimmy-hoffa-disappearance-50-years/",
+        "https://www.foxnews.com/us/jimmy-hoffa-family-marks-51-years-iconic-disappearance",
+        "https://en.wikipedia.org/wiki/Jimmy_Hoffa"
+      ]
+    },
+    {
+      "claim": "No one has ever been charged / no arrests (2002: Oakland County prosecutor said evidence insufficient to charge)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jimmy_Hoffa",
+        "https://www.cbsnews.com/detroit/news/jimmy-hoffa-disappearance-50-years/",
+        "https://spectrumlocalnews.com/nc/triad/ap-top-news/2022/07/21/events-in-disappearance-of-former-teamsters-head-jimmy-hoffa"
+      ]
+    },
+    {
+      "claim": "As of July 2025-2026 the FBI Detroit Field Office says the case remains open and it is pursuing credible leads",
+      "sources": [
+        "https://www.fbi.gov/contact-us/field-offices/detroit/news/fbi-detroit-marks-50th-anniversary-of-james-jimmy-hoffas-disappearance-with-continued-commitment-to-missing-persons-investigations",
+        "https://www.washingtonexaminer.com/news/justice/3488297/fbi-tips-solve-jimmy-hoffa-case-50-years-disappearance/",
+        "https://www.foxnews.com/us/jimmy-hoffa-family-marks-51-years-iconic-disappearance"
+      ]
+    }
+  ]
+}

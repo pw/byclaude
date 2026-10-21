@@ -1,0 +1,96 @@
+{
+  "title": "Eight Letters",
+  "subtitle": "The Shugborough inscription · Staffordshire, England, 1750s",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the gardens of an 18th-century English country estate in Staffordshire, damp parkland, yew trees, weathered classical stone, low mist, cold grey-green light, melancholy and uncanny, cinematic wide composition, fine film grain. Single image, not a collage, no text, no letters, no inscriptions, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vo": "Shugborough Hall, Staffordshire, England. In the mid-seventeen-hundreds, a stone monument was raised in its gardens.",
+      "cap": "ENGLAND · 1750s",
+      "img": "A lichen-stained classical stone monument with a rustic arch standing alone among dark yew trees in an English country estate garden at dusk, low mist over damp grass, still and silent.",
+      "vtype": "still"
+    },
+    {
+      "id": "B02",
+      "vo": "Beneath a carved scene of shepherds at a tomb, eight letters. O, U, O, S, V, A, V, V. And below them, a D and an M.",
+      "cap": "O U O S\nV A V V",
+      "amber": true,
+      "img": "A close view of a blank weathered stone tablet set into an old garden monument, its surface worn smooth and stained by centuries of rain, soft grey evening light, moss in the joints.",
+      "vtype": "still"
+    },
+    {
+      "id": "B03",
+      "vo": "The carving copies a painting by Nicolas Poussin. But in mirror image.",
+      "cap": "IN MIRROR\nIMAGE",
+      "img": "A still dark pond in an English estate garden at twilight reflecting a pale stone arch upside down in the black water, yew hedges, faint mist, uncanny symmetry.",
+      "vtype": "still"
+    },
+    {
+      "id": "B04",
+      "vo": "In two thousand four, two veterans of Bletchley Park, Britain's wartime codebreakers, took on the letters. No conclusive answer emerged.",
+      "cap": "BLETCHLEY\nPARK · 2004",
+      "img": "An old wooden desk by a rain-streaked window at night with a brass lamp, scattered blank index cards and a magnifying glass, a cold cup of tea, quiet and patient, no people.",
+      "vtype": "still"
+    },
+    {
+      "id": "B05",
+      "vo": "Theories include Latin initials, a private love message, even later graffiti. No reading has ever been accepted.",
+      "cap": "NO ACCEPTED\nREADING",
+      "amber": true,
+      "img": "The lone stone monument seen from far across a misty English parkland at dawn, bare trees and wet grass, a single crow on the lawn, quiet and unresolved.",
+      "vtype": "still"
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The Shepherd's Monument stands in the grounds of Shugborough Hall, Staffordshire, England; built sometime between 1748 and 1756 (commissioned c.1748 by Thomas Anson)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shugborough_inscription",
+        "https://www.discoveryuk.com/?p=23611942",
+        "https://en.wikipedia.org/wiki/Shepherd%27s_Monument"
+      ]
+    },
+    {
+      "claim": "Beneath a relief of shepherds at a tomb (Poussin's Shepherds of Arcadia), the letters O U O S V A V V, with D and M at either end of the lower line",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shugborough_inscription",
+        "https://www.discoveryuk.com/?p=23611942",
+        "https://www.birminghampost.co.uk/news/regional-affairs/200-year-old-mystery-shugborough-code-solved-8319385"
+      ]
+    },
+    {
+      "claim": "The relief, carved by Peter Scheemakers, copies Poussin's painting but in mirror image (reversed)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shepherd%27s_Monument",
+        "https://en.wikipedia.org/wiki/Shugborough_inscription",
+        "https://www.discoveryuk.com/?p=23611942"
+      ]
+    },
+    {
+      "claim": "In 2004 former Bletchley Park codebreakers (Oliver and Sheila Lawn) studied the inscription; no conclusive answer emerged",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shugborough_inscription",
+        "https://mshanks.com/2004/11/27/more-fantasy-archaeology/",
+        "https://www.discoveryuk.com/?p=23611942"
+      ]
+    },
+    {
+      "claim": "Proposed explanations include Latin initialisms (e.g. Stonor, Massey), a romantic/love message (Sheila Lawn), and early-19th-century graffiti/initials (A. J. Morton); none generally accepted",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shugborough_inscription",
+        "https://www.historynewsnetwork.org/article/136198",
+        "https://www.discoveryuk.com/?p=23611942",
+        "https://www.birminghampost.co.uk/news/regional-affairs/200-year-old-mystery-shugborough-code-solved-8319385"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of 2026: never satisfactorily explained; no generally accepted solution",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shugborough_inscription",
+        "https://www.discoveryuk.com/?p=23611942"
+      ]
+    }
+  ]
+}

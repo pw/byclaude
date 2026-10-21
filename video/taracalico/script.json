@@ -1,0 +1,106 @@
+{
+ "title": "Tara Calico",
+ "subtitle": "Belen, New Mexico · 1988",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, the high desert of central New Mexico in the late 1980s, flat mesa, two-lane highway, juniper and dry grass, pale washed-out sunlight and dusty amber tones, melancholy and quiet, cinematic wide composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces, no children, no photographs.",
+ "beats": [
+  {
+   "id": "B01",
+   "vo": "Belen, New Mexico. September twentieth, nineteen eighty-eight. Nineteen-year-old Tara Calico left home at nine-thirty for a bike ride on Highway forty-seven.",
+   "cap": "NEW MEXICO · 1988",
+   "img": "A long empty two-lane desert highway running north across flat high-desert mesa in the clear morning light, a narrow paved shoulder, dry grass and scattered juniper, distant blue mountains, no vehicles.",
+   "vtype": "still"
+  },
+  {
+   "id": "B02",
+   "vo": "She asked her mother to pick her up if she wasn't home by noon.",
+   "cap": "HOME BY\nNOON",
+   "amber": true,
+   "img": "A quiet suburban front porch in a small New Mexico town at late morning, an empty bicycle rack beside the door, harsh sun, long shadow of a porch post, a wall clock visible through a screen door, no people.",
+   "vtype": "still"
+  },
+  {
+   "id": "B03",
+   "vo": "Witnesses saw an older pickup truck following close behind her. No one saw what happened next. Neither Tara nor her bicycle was ever found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true,
+   "img": "The empty shoulder of a desert highway at midday, faint thin tire marks in the dust at the edge of the pavement, a barbed-wire fence and open mesa beyond, heat haze, nothing else.",
+   "vtype": "still"
+  },
+  {
+   "id": "B04",
+   "vo": "In nineteen eighty-nine, a Polaroid found in Florida was thought by some to show her. Its identification was never confirmed.",
+   "cap": "THE POLAROID\nNEVER CONFIRMED",
+   "img": "A plain manila case file folder lying closed on a worn wooden desk under a single desk lamp at night, a magnifying loupe beside it, nothing visible on the folder, dim and quiet.",
+   "vtype": "still"
+  },
+  {
+   "id": "B05",
+   "vo": "In twenty twenty-three, the sheriff sent the case to prosecutors. No one has ever been charged.",
+   "cap": "NO ONE\nCHARGED",
+   "amber": true,
+   "img": "The same empty desert highway at dusk, stretching north toward dark mountains under a deep violet sky, the last light on the pavement, still and unresolved.",
+   "vtype": "still"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Tara Calico, 19, of Belen/Rio Communities NM, left home around 9:30 a.m. on Sept 20, 1988 for a bike ride on NM Highway 47",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Disappearance_of_Tara_Calico",
+    "https://www.abqjournal.com/news/after-37-years-tara-calico-mystery-focuses-on-mine-shaft/648284",
+    "https://www.kob.com/new-mexico/4-investigates-new-leads-in-the-tara-calico-case/",
+    "https://www.missingkids.org/new-poster/NCMC/2041079/1"
+   ]
+  },
+  {
+   "claim": "She told her mother to come look for her if she was not home by noon",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Disappearance_of_Tara_Calico",
+    "https://www.abqjournal.com/news/after-37-years-tara-calico-mystery-focuses-on-mine-shaft/648284",
+    "https://www.kob.com/new-mexico/4-investigates-new-leads-in-the-tara-calico-case/"
+   ]
+  },
+  {
+   "claim": "Witnesses reported an older pickup truck (possibly a 1950s Ford with camper shell) following closely behind her",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Disappearance_of_Tara_Calico",
+    "https://www.abqjournal.com/news/after-37-years-tara-calico-mystery-focuses-on-mine-shaft/648284",
+    "https://www.kob.com/new-mexico/4-investigates-new-leads-in-the-tara-calico-case/"
+   ]
+  },
+  {
+   "claim": "Neither Tara nor her bicycle has ever been found",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Disappearance_of_Tara_Calico",
+    "https://www.abqjournal.com/news/after-37-years-tara-calico-mystery-focuses-on-mine-shaft/648284",
+    "https://www.missingkids.org/new-poster/NCMC/2041079/1"
+   ]
+  },
+  {
+   "claim": "In June 1989 a Polaroid found in a parking lot in Port St. Joe, Florida was believed by her mother/others to show her; analyses (Scotland Yard, FBI, Los Alamos) conflicted or were inconclusive; identification never established",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Disappearance_of_Tara_Calico",
+    "https://www.abqjournal.com/news/after-37-years-tara-calico-mystery-focuses-on-mine-shaft/648284"
+   ]
+  },
+  {
+   "claim": "June 2023: Valencia County Sheriff sent the case file to the 13th Judicial District Attorney for possible charges; suspects' identities sealed",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Disappearance_of_Tara_Calico",
+    "https://www.krqe.com/news/new-mexico/new-details-on-tara-calico-case-expected-to-be-revealed-tuesday/",
+    "https://www.newsnationnow.com/missing/authorities-working-charges-decades-old-case/",
+    "https://www.kob.com/new-mexico/4-investigates-new-leads-in-the-tara-calico-case/"
+   ]
+  },
+  {
+   "claim": "As of Sept 2025 and Jan 2026 reporting, no charges filed (case not declined); still listed missing by NCMEC",
+   "sources": [
+    "https://www.abqjournal.com/news/after-37-years-tara-calico-mystery-focuses-on-mine-shaft/648284",
+    "https://www.thecoldcases.com/p/the-disappearance-of-tara-calico",
+    "https://www.missingkids.org/new-poster/NCMC/2041079/1"
+   ]
+  }
+ ]
+}

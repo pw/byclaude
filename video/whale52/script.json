@@ -1,0 +1,96 @@
+{
+  "title": "The Loneliest Whale",
+  "subtitle": "The 52-hertz whale · North Pacific, 1989",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the remote open North Pacific Ocean in the late 1980s and 1990s, cold steel-blue and grey water under heavy overcast, deep dark swells, melancholy and uncanny, cinematic wide composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "The North Pacific, nineteen eighty-nine. Navy hydrophones, built to hear submarines, picked up a whale call at fifty-two hertz.",
+      "cap": "PACIFIC · 1989",
+      "img": "A deep underwater view of the dark open North Pacific, a lone cable-mounted hydrophone listening device on the seafloor slope, faint blue-grey light filtering from far above, vast and silent."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Too high for a blue whale. Too high for a fin whale.",
+      "cap": "52 HERTZ",
+      "amber": true,
+      "img": "A vast dark grey ocean surface from just above the swell at dusk, a faint distant spout of mist rising far off on the horizon, no animal clearly visible, cold and lonely."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Woods Hole scientists tracked it for twelve years, from nineteen ninety-two to two thousand four.",
+      "cap": "TRACKED\n12 YEARS",
+      "img": "A dim 1990s oceanographic research room at night, an old computer monitor glowing with a green sound spectrogram, headphones resting beside reels of magnetic tape, rain on a dark window, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "It matched no known species. The press called it the loneliest whale in the world.",
+      "cap": "MATCHED\nNO SPECIES",
+      "img": "An empty, endless grey North Pacific seen from high above under heavy overcast, long rolling swells, no ship, no land, no animal, melancholy and immense."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Theories include a hybrid, or an unusual body. The singer has never been identified.",
+      "cap": "NEVER\nIDENTIFIED",
+      "amber": true,
+      "img": "A deep blue-black underwater void in the open ocean, faint shafts of light fading into darkness, the suggestion of a vast shape far below just beyond visibility, unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The 52 Hz call was first detected in 1989 by US Navy (SOSUS) Cold War surveillance hydrophones built to monitor submarines, in the North Pacific",
+      "sources": [
+        "https://en.wikipedia.org/wiki/52-hertz_whale",
+        "https://www.scientificamerican.com/podcast/episode/inside-the-nail-biting-quest-to-find-the-loneliest-whale/",
+        "https://www.mentalfloss.com/article/648247/52-hertz-loneliest-whale-documentary"
+      ]
+    },
+    {
+      "claim": "52 Hz is above typical blue whale (10-39 Hz) and fin whale (~20 Hz) call frequencies; its movements resemble those of a whale (blue whale-like tracks)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/52-hertz_whale",
+        "https://www.mentalfloss.com/article/648247/52-hertz-loneliest-whale-documentary",
+        "https://www.dogonews.com/2015/2/25/the-quest-to-seek-out-52-hertz-aka-worlds-loneliest-whale"
+      ]
+    },
+    {
+      "claim": "Woods Hole Oceanographic Institution team (Watkins et al.) tracked the calls over twelve years (paper: 'Twelve years of tracking 52-Hz whale calls from a unique source in the North Pacific', Deep-Sea Research I, 2004); detected each year roughly Aug-Dec/Feb, ranging from the Aleutian/Kodiak Islands to the California coast",
+      "sources": [
+        "https://en.wikipedia.org/wiki/52-hertz_whale",
+        "https://www.mentalfloss.com/article/648247/52-hertz-loneliest-whale-documentary",
+        "https://www.sciencedirect.com/science/article/abs/pii/S0967063704001682"
+      ]
+    },
+    {
+      "claim": "Species not identified (call matches no known species); popularly nicknamed the 'loneliest whale (in the world)' by the press after 2004 coverage — a nickname, not a scientific finding",
+      "sources": [
+        "https://en.wikipedia.org/wiki/52-hertz_whale",
+        "https://www.scientificamerican.com/podcast/episode/inside-the-nail-biting-quest-to-find-the-loneliest-whale/",
+        "https://www.forbes.com/sites/scotttravers/2025/02/01/the-52-hertz-whale-is-the-loneliest-animal-in-the-world-heres-what-we-know/"
+      ]
+    },
+    {
+      "claim": "Theories include a blue-fin hybrid or a malformed individual; later recordings (2010 onward, incl. 2021 documentary) suggest more than one whale may call near 52 Hz; the animal has never been seen/visually confirmed",
+      "sources": [
+        "https://en.wikipedia.org/wiki/52-hertz_whale",
+        "https://www.scientificamerican.com/podcast/episode/inside-the-nail-biting-quest-to-find-the-loneliest-whale/",
+        "https://www.mentalfloss.com/article/648247/52-hertz-loneliest-whale-documentary"
+      ]
+    },
+    {
+      "claim": "Still unidentified as of 2025-2026 (no confirmed sighting or identification reported)",
+      "sources": [
+        "https://www.forbes.com/sites/scotttravers/2025/02/01/the-52-hertz-whale-is-the-loneliest-animal-in-the-world-heres-what-we-know/",
+        "https://dailygalaxy.com/2026/06/scientists-tracking-whale-unknown-species/",
+        "https://en.wikipedia.org/wiki/52-hertz_whale"
+      ]
+    }
+  ]
+}

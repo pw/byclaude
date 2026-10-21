@@ -1,0 +1,90 @@
+{
+  "title": "The Black Dahlia",
+  "subtitle": "Los Angeles, 1947",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, 1940s Los Angeles in the winter of 1947, period cars, stucco and wood, overcast grey light with deep noir shadows, melancholy and uncanny, cinematic composition, fine film grain. Single image, not a collage, no text, no signage, no readable writing, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Los Angeles, January nineteen forty-seven. Elizabeth Short, twenty-two, from Medford, Massachusetts, was found murdered in a vacant lot.",
+      "cap": "LOS ANGELES · 1947",
+      "img": "A quiet 1940s Los Angeles residential street at grey dawn, modest stucco bungalows, tall palm trees silhouetted against an overcast sky, a 1940s sedan parked at the curb, empty sidewalk, still and melancholy."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Days later, a newspaper received an envelope. Inside: her birth certificate, her photographs, her address book. Wiped with gasoline.",
+      "cap": "HER BIRTH\nCERTIFICATE",
+      "amber": true,
+      "img": "A worn manila envelope lying open on a cluttered 1940s newspaper office desk beside a black typewriter, a small leather address book and loose blank papers beside it, a desk lamp casting warm light in a dim room, no readable writing."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Then letters, signed Black Dahlia Avenger. One promised to surrender. No one came.",
+      "cap": "BLACK DAHLIA\nAVENGER",
+      "img": "An empty 1940s city street corner at ten in the morning under hazy light, a closed storefront doorway, long shadows on the sidewalk, a lone lamppost, waiting and deserted."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Police traced the names in her address book. Over the years, hundreds of people confessed. None held up.",
+      "cap": "HUNDREDS\nCONFESSED",
+      "amber": true,
+      "img": "A 1940s police detective office at night, a wooden desk piled with manila case folders and a black rotary telephone, a green-shaded lamp, cigarette smoke hanging in the air, venetian blind shadows on the wall, empty chair."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Nearly eighty years on, no one has ever been charged with her murder.",
+      "cap": "NO ONE\nCHARGED",
+      "amber": true,
+      "img": "A tall dark steel filing cabinet with one drawer slightly open in a dim archive room, dust in a shaft of pale light from a high window, rows of shelves fading into shadow, quiet and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Elizabeth Short, 22, born in Boston and raised in Medford, Massachusetts, was found murdered in a vacant lot in Leimert Park, Los Angeles, on January 15, 1947",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Black_Dahlia",
+        "https://www.oxygen.com/crime-news/who-was-black-dahlia-murder-victim-elizabeth-short",
+        "https://lamag.com/crimeinla/what-is-lapd-hiding-new-petition-demands-release-of-secret-black-dahlia-records/"
+      ]
+    },
+    {
+      "claim": "Days later (c. Jan 24, 1947) an envelope addressed to the Los Angeles Examiner and other papers arrived containing her birth certificate, photographs, business cards and an address book; it had been cleaned with gasoline",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Black_Dahlia",
+        "https://www.oxygen.com/crime-news/who-was-black-dahlia-murder-victim-elizabeth-short",
+        "https://www.biography.com/crime/a56717869/black-dahlia-murder-mystery",
+        "https://www.deseret.com/u-s-world/2024/1/16/24040316/77-years-later-black-dahlia/"
+      ]
+    },
+    {
+      "claim": "Letters followed signed 'Black Dahlia Avenger'; one (Jan 26) promised to turn himself in on Jan 29; he never appeared",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Black_Dahlia",
+        "https://www.oxygen.com/crime-news/who-was-black-dahlia-murder-victim-elizabeth-short",
+        "https://www.biography.com/crime/a56717869/black-dahlia-murder-mystery"
+      ]
+    },
+    {
+      "claim": "Police traced the names in the address book; over the years more than 500 people confessed, none deemed credible",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Black_Dahlia",
+        "https://www.oxygen.com/crime-news/who-was-black-dahlia-murder-victim-elizabeth-short",
+        "https://www.biography.com/crime/a56717869/black-dahlia-murder-mystery"
+      ]
+    },
+    {
+      "claim": "No one was ever charged; the case remains unsolved as of May 2026",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Black_Dahlia",
+        "https://www.oxygen.com/crime-news/who-was-black-dahlia-murder-victim-elizabeth-short",
+        "https://lamag.com/crimeinla/what-is-lapd-hiding-new-petition-demands-release-of-secret-black-dahlia-records/"
+      ]
+    }
+  ]
+}

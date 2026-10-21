@@ -1,0 +1,96 @@
+{
+  "title": "D. B. Cooper",
+  "subtitle": "Northwest Orient Flight 305 · 1971",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the rain-soaked Pacific Northwest of November 1971 at dusk and night, wet airport tarmac, dark fir forest and grey river, cold blue-grey light, melancholy and uncanny, period 1971 detail, cinematic wide composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Portland, Oregon. November twenty-fourth, nineteen seventy-one. A man who called himself Dan Cooper boarded a flight to Seattle.",
+      "cap": "PORTLAND · 1971",
+      "img": "A rain-wet airport apron at dusk with a 1970s three-engine passenger jet parked beside a portable boarding stair, sodium lamps reflecting on wet tarmac, low grey Pacific Northwest overcast, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "In the air, he passed a note. He said he had a bomb. He asked for two hundred thousand dollars, and four parachutes.",
+      "cap": "$200,000\nFOUR PARACHUTES",
+      "amber": true,
+      "img": "Four packed parachute rigs lying side by side on a bare concrete floor under a single hanging work lamp in an empty 1970s airport hangar, rain-streaked windows, moody shadows, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "In Seattle, the passengers were released, and the money was delivered. The plane took off again, into the night.",
+      "cap": "INTO\nTHE NIGHT",
+      "img": "A 1970s passenger jet climbing away from a rainy runway at night, its lights blurred by drizzle, dark wet tarmac and runway lights in the foreground, cold and quiet, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Somewhere over southwest Washington, the rear stairs came down. When the plane landed in Reno, he was gone.",
+      "cap": "HE WAS GONE",
+      "amber": true,
+      "img": "Looking down from high altitude at night onto a dark rain-soaked forested wilderness, black ridges of fir trees under heavy cloud, a faint river glint far below, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "In nineteen eighty, a boy found some of the money on a bank of the Columbia River. The man has never been identified.",
+      "cap": "NEVER\nIDENTIFIED",
+      "img": "A grey sandy riverbank on a wide calm river under overcast sky, damp driftwood and a small hollow in the sand, misty forested shore beyond, quiet and unresolved, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "On November 24, 1971, a man who bought a ticket as 'Dan Cooper' boarded Northwest Orient Flight 305, a ~30-minute Portland, Oregon to Seattle flight",
+      "sources": [
+        "https://en.wikipedia.org/wiki/D._B._Cooper",
+        "https://www.historylink.org/file/1997",
+        "https://komonews.com/news/local/50-years-ago-this-week-db-cooper-jumped-in-history-and-mystery"
+      ]
+    },
+    {
+      "claim": "In flight he passed a note to a flight attendant saying he had a bomb; demanded $200,000 and four parachutes",
+      "sources": [
+        "https://en.wikipedia.org/wiki/D._B._Cooper",
+        "https://www.historylink.org/file/1997",
+        "https://idahonews.com/news/local/who-was-db-cooper-skyjacking-took-place-between-portland-and-seattle-on-nov-24-1971"
+      ]
+    },
+    {
+      "claim": "In Seattle the passengers were released in exchange for the money and parachutes; the plane took off again at night",
+      "sources": [
+        "https://en.wikipedia.org/wiki/D._B._Cooper",
+        "https://www.cbsnews.com/sanfrancisco/news/fbi-no-longer-actively-investigating-d-b-cooper-case/"
+      ]
+    },
+    {
+      "claim": "He opened the aft door, lowered the rear airstair and parachuted at night over southwest Washington",
+      "sources": [
+        "https://en.wikipedia.org/wiki/D._B._Cooper",
+        "https://www.historylink.org/file/1997"
+      ]
+    },
+    {
+      "claim": "In February 1980 an eight-year-old boy found packets of the ransom money (serials matched) on the Columbia River bank at Tena Bar",
+      "sources": [
+        "https://en.wikipedia.org/wiki/D._B._Cooper",
+        "https://www.historylink.org/file/23059",
+        "https://www.kiro7.com/news/local/46-years-ago-today-boy-finds-5800-d-b-coopers-ransom-money-near-columbia-river/RYDDPLUW4BEBZNY3GJGAREXYOU/",
+        "https://www.cbsnews.com/sanfrancisco/news/fbi-no-longer-actively-investigating-d-b-cooper-case/"
+      ]
+    },
+    {
+      "claim": "The hijacker has never been identified; FBI suspended active investigation July 2016; no identification as of 2026 (Jan 2026 file release, Dec 2025 parachute return, no breakthrough)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/D._B._Cooper",
+        "https://www.cbsnews.com/sanfrancisco/news/fbi-no-longer-actively-investigating-d-b-cooper-case/",
+        "https://cowboystatedaily.com/2026/02/22/fbis-one-in-a-billion-parachute-returns-and-revives-d-b-cooper-mystery/",
+        "https://www.pressherald.com/2026/02/21/fbi-investigated-mainer-in-infamous-1971-airplane-hijacking-case/"
+      ]
+    }
+  ]
+}

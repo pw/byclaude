@@ -1,0 +1,89 @@
+{
+ "title": "Lake Bodom",
+ "subtitle": "Lake Bodom · Espoo, Finland, 1960",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, a quiet lakeshore of birch and pine forest in southern Finland in early summer 1960, pale northern light, cool green-grey tones, melancholy and uncanny, period 1960 detail, cinematic wide composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Lake Bodom, Finland. June, nineteen sixty. Four teenagers pitched a tent on the shore for the night.",
+   "cap": "FINLAND · 1960",
+   "img": "A small canvas camping tent pitched on a grassy lakeshore under birch and pine trees, a calm dark lake beyond, pale early-summer Nordic night light, still and quiet, no people."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "In the early morning, someone attacked the tent from outside. Three of them were killed. One survived.",
+   "cap": "THREE KILLED\nONE SURVIVED",
+   "amber": true,
+   "img": "A small canvas tent still standing on a misty lakeshore at early dawn, its entrance flap hanging open, long grass and birch trunks around it, pale grey light over still water, empty and silent, no people, nothing graphic."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "The weapons were never found. Keys to the motorcycles were missing. The motorcycles were left behind.",
+   "cap": "KEYS GONE\nBIKES LEFT",
+   "img": "Two 1950s motorcycles parked on a dirt forest track beside a lake, ignition empty, dew on the chrome, birch woods and morning mist, abandoned and still, no people."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "In two thousand four, police arrested the survivor. In two thousand five, a court acquitted him.",
+   "cap": "SURVIVOR\nACQUITTED",
+   "img": "An empty wood-panelled Finnish courtroom in the 2000s, rows of empty benches and a raised judges' bench, cold diffuse daylight from tall windows, hushed and formal, no people."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "No one has ever been convicted. More than sixty years on, the killer has never been identified.",
+   "cap": "NEVER\nIDENTIFIED",
+   "amber": true,
+   "img": "A wide view of a calm dark lake at dusk in summer, a forested shoreline and an empty grassy clearing by the water, low mist, melancholy and unresolved, no people."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Lake Bodom, Espoo, Finland, early morning of 5 June 1960 (approx. 4–6 a.m.); four teenagers (two aged 15, two aged 18) camping in a tent on the shore",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lake_Bodom_murders",
+    "https://www.yahoo.com/news/went-camping-quiet-lake-morning-100000877.html",
+    "https://yle.fi/a/3-10780763"
+   ]
+  },
+  {
+   "claim": "The attacker struck the tent from outside; three killed, one (aged 18) survived",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lake_Bodom_murders",
+    "https://mentalfloss.com/article/584241/lake-bodom-murders",
+    "https://allthatsinteresting.com/lake-bodom-murders"
+   ]
+  },
+  {
+   "claim": "Weapons (knife and blunt object) never found; the motorcycle keys were taken while the motorcycles were left behind",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lake_Bodom_murders",
+    "https://mentalfloss.com/article/584241/lake-bodom-murders",
+    "https://allthatsinteresting.com/lake-bodom-murders"
+   ]
+  },
+  {
+   "claim": "The survivor was arrested in March 2004 and acquitted of all charges by Espoo District Court on 7 October 2005; prosecutors did not appeal",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lake_Bodom_murders",
+    "https://blabbermouth.net/news/bodom-lake-murder-suspect-found-not-guilty",
+    "https://www.yahoo.com/news/went-camping-quiet-lake-morning-100000877.html",
+    "https://yle.fi/a/3-10780763"
+   ]
+  },
+  {
+   "claim": "No one has been convicted; perpetrator never identified; no new legal developments found 2024–2026 (People/Yahoo, July 2025: 'no one has been convicted of the killings')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lake_Bodom_murders",
+    "https://www.yahoo.com/news/went-camping-quiet-lake-morning-100000877.html",
+    "https://yle.fi/a/3-10780763"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "title": "The Phaistos Disc",
+ "subtitle": "Phaistos · Crete, 1908",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, ancient Minoan Crete, pale limestone and terracotta clay tones, warm faded ochre and dusty grey light, quiet and uncanny, cinematic composition, fine film grain. Single image showing one scene only, not a collage, not a split panel, no text, no legible writing or symbols, no signage, no people, no faces.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Phaistos, Crete. July, nineteen-oh-eight. Archaeologists at a Minoan palace found a disc of fired clay, about sixteen centimetres across.",
+   "cap": "CRETE · 1908",
+   "img": "A dim stone basement room in the ruins of an ancient Minoan palace, rough limestone walls and earth floor, a small round clay disc lying in the dust in a shaft of pale early-morning light, quiet and still, no people."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "The two faces carry spirals of two hundred and forty-two signs in all. Each one was pressed into the wet clay with a stamp, before firing.",
+   "cap": "242 SIGNS\nIN ALL",
+   "amber": true,
+   "img": "Close view of a round terracotta-coloured clay disc resting on dark cloth, its surface covered in a tight spiral of small abstract stamped impressions, worn and indistinct, nothing legible, soft raking light, shallow depth of field."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "Forty-five different signs. No other disc like it has ever been found.",
+   "cap": "NO OTHER\nLIKE IT",
+   "img": "A single small clay disc alone inside an old glass museum display case in a dark empty gallery, one soft overhead light, the rest of the room in shadow, solitary and still."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "And the stamps that made it have never turned up.",
+   "cap": "STAMPS\nNEVER FOUND",
+   "img": "An empty excavation trench at dusk in the ruins of a Minoan palace on a hillside in southern Crete, scattered stone blocks, a forgotten trowel in the dry earth, olive hills fading in the haze, no people."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "It has been read as a prayer, a hymn, a list. More than a century on, no reading has been accepted.",
+   "cap": "NEVER\nDECIPHERED",
+   "amber": true,
+   "img": "The ruins of an ancient Minoan palace on a hilltop in southern Crete at last light, broad stone terraces and low walls under a vast darkening sky, a wide plain below, silent and unresolved, no people."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Found 3 July 1908 by Italian archaeologists (Luigi Pernier) at the Minoan palace of Phaistos, Crete; fired clay disc about 16 cm in diameter",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Phaistos_Disc",
+    "https://www.worldhistory.org/Phaistos_Disk/",
+    "https://historyskills.com/classroom/ancient-history/phaistos-disc"
+   ]
+  },
+  {
+   "claim": "Both sides impressed with 242 signs in a spiral; signs pressed into soft clay with stamps before firing",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Phaistos_Disc",
+    "https://www.worldhistory.org/Phaistos_Disk/",
+    "https://historyskills.com/classroom/ancient-history/phaistos-disc"
+   ]
+  },
+  {
+   "claim": "45 distinct signs; the disc is unique, the only known example of its kind (similar but not identical signs on the Arkalochori axe)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Phaistos_Disc",
+    "https://www.worldhistory.org/Phaistos_Disk/",
+    "https://historyskills.com/classroom/ancient-history/phaistos-disc"
+   ]
+  },
+  {
+   "claim": "No stamps used to make the disc have been found",
+   "sources": [
+    "https://www.worldhistory.org/Phaistos_Disk/",
+    "https://www.amusingplanet.com/2022/04/the-mysterious-phaistos-disc.html",
+    "https://www.cs.rochester.edu/users/faculty/nelson/courses/csc_cryptography/phaistos_disk/phaistos_disk.html"
+   ]
+  },
+  {
+   "claim": "Proposed readings include a prayer to a goddess (Owens 2024), a hymn to the earth goddess, a court list; none accepted; disc remains undeciphered as of 2026",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Phaistos_Disc_decipherment_claims",
+    "https://www.worldhistory.org/Phaistos_Disk/",
+    "https://greekcitytimes.com/2024/02/09/phaistos-disc-mystery/amp/?p=302373",
+    "https://greekreporter.com/2026/02/01/phaistos-disk-mystery/"
+   ]
+  }
+ ]
+}

@@ -137,6 +137,84 @@
    "topic": "unsolved",
    "kind": "person",
    "origin": "repost"
+  },
+  "zodiac": {
+   "end": "question",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh"
+  },
+  "dbcooper": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh"
+  },
+  "blackdahlia": {
+   "end": "question",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh"
+  },
+  "flannanisles": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh"
+  },
+  "phaistos": {
+   "end": "question",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh"
+  },
+  "flight19": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh"
+  },
+  "taracalico": {
+   "end": "question",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh"
+  },
+  "hoffa": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh"
+  },
+  "whale52": {
+   "end": "question",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh"
+  },
+  "paulawelden": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh"
+  },
+  "lakebodom": {
+   "end": "question",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh"
+  },
+  "shugborough": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh"
+  },
+  "earhart": {
+   "end": "question",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh"
   }
  },
  "byclaude": {
