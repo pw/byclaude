@@ -1,0 +1,47 @@
+{
+ "out": "short-su-phaistos",
+ "kicker": "THE PHAISTOS DISC",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "phaistos",
+   "img": "B01",
+   "vo": "Phaistos, Crete. July, nineteen-oh-eight. Archaeologists at a Minoan palace found a disc of fired clay, about sixteen centimetres across.",
+   "cap": "CRETE \u00b7 1908"
+  },
+  {
+   "src": "phaistos",
+   "img": "B02",
+   "vo": "The two faces carry spirals of two hundred and forty-two signs in all. Each one was pressed into the wet clay with a stamp, before firing.",
+   "cap": "242 SIGNS\nIN ALL",
+   "amber": true
+  },
+  {
+   "src": "phaistos",
+   "img": "B03",
+   "vo": "Forty-five different signs. No other disc like it has ever been found.",
+   "cap": "NO OTHER\nDISC LIKE IT"
+  },
+  {
+   "src": "phaistos",
+   "img": "B04",
+   "vo": "No trace of the stamps that made it has ever been reported.",
+   "cap": "NO STAMPS\nFOUND"
+  },
+  {
+   "src": "phaistos",
+   "img": "B05",
+   "vo": "It has been read as a prayer, a hymn, a list. More than a century on, no reading has been accepted.",
+   "cap": "NEVER\nDECIPHERED",
+   "amber": true
+  },
+  {
+   "vo": "What do you think happened?",
+   "cap": "WHAT DO YOU\nTHINK HAPPENED?",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

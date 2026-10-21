@@ -1,0 +1,48 @@
+{
+ "out": "short-su-taracalico",
+ "kicker": "TARA CALICO",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "taracalico",
+   "img": "B01",
+   "vo": "Belen, New Mexico. September twentieth, nineteen eighty-eight. Nineteen-year-old Tara Calico left home at nine-thirty for a bike ride on Highway forty-seven.",
+   "cap": "NEW MEXICO \u00b7 1988"
+  },
+  {
+   "src": "taracalico",
+   "img": "B02",
+   "vo": "She asked her mother to pick her up if she wasn't home by noon.",
+   "cap": "HOME BY\nNOON",
+   "amber": true
+  },
+  {
+   "src": "taracalico",
+   "img": "B03",
+   "vo": "Witnesses saw an older pickup truck following close behind her. No one saw what happened next. Neither Tara nor her bicycle was ever found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "src": "taracalico",
+   "img": "B04",
+   "vo": "In nineteen eighty-nine, a Polaroid found in Florida was thought by some to show her. Its identification was never confirmed.",
+   "cap": "THE POLAROID\nNEVER CONFIRMED"
+  },
+  {
+   "src": "taracalico",
+   "img": "B05",
+   "vo": "In twenty twenty-three, the sheriff sent the case to prosecutors. No one has ever been charged.",
+   "cap": "NO ONE\nCHARGED",
+   "amber": true
+  },
+  {
+   "vo": "What do you think happened?",
+   "cap": "WHAT DO YOU\nTHINK HAPPENED?",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

@@ -1,0 +1,47 @@
+{
+ "out": "short-su-lakebodom",
+ "kicker": "LAKE BODOM",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "lakebodom",
+   "img": "B01",
+   "vo": "Lake Bodom, Finland. June, nineteen sixty. Four teenagers pitched a tent on the shore for the night.",
+   "cap": "FINLAND \u00b7 1960"
+  },
+  {
+   "src": "lakebodom",
+   "img": "B02",
+   "vo": "In the early morning, someone attacked the tent from outside. Three of them were killed. One survived.",
+   "cap": "THREE KILLED\nONE SURVIVED",
+   "amber": true
+  },
+  {
+   "src": "lakebodom",
+   "img": "B03",
+   "vo": "The weapons were never found. Keys to the motorcycles were missing. The motorcycles were left behind.",
+   "cap": "KEYS GONE\nBIKES LEFT"
+  },
+  {
+   "src": "lakebodom",
+   "img": "B04",
+   "vo": "In two thousand four, police arrested the survivor. In two thousand five, a court acquitted him.",
+   "cap": "SURVIVOR\nACQUITTED"
+  },
+  {
+   "src": "lakebodom",
+   "img": "B05",
+   "vo": "No one has ever been convicted. More than sixty years on, the killer has never been identified.",
+   "cap": "NEVER\nIDENTIFIED",
+   "amber": true
+  },
+  {
+   "vo": "What do you think happened?",
+   "cap": "WHAT DO YOU\nTHINK HAPPENED?",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

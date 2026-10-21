@@ -1,0 +1,47 @@
+{
+ "out": "short-su-dbcooper",
+ "kicker": "D. B. COOPER",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "dbcooper",
+   "img": "B01",
+   "vo": "Portland, Oregon. November twenty-fourth, nineteen seventy-one. A man who called himself Dan Cooper boarded a flight to Seattle.",
+   "cap": "PORTLAND \u00b7 1971"
+  },
+  {
+   "src": "dbcooper",
+   "img": "B02",
+   "vo": "In the air, he passed a note. He said he had a bomb. He asked for two hundred thousand dollars, and four parachutes.",
+   "cap": "$200,000\nFOUR PARACHUTES",
+   "amber": true
+  },
+  {
+   "src": "dbcooper",
+   "img": "B03",
+   "vo": "In Seattle, the passengers were released, and the money was delivered. The plane took off again, into the night.",
+   "cap": "INTO\nTHE NIGHT"
+  },
+  {
+   "src": "dbcooper",
+   "img": "B04",
+   "vo": "Somewhere over southwest Washington, the rear stairs came down. When the plane landed in Reno, he was gone.",
+   "cap": "HE WAS GONE",
+   "amber": true
+  },
+  {
+   "src": "dbcooper",
+   "img": "B05",
+   "vo": "In nineteen eighty, a boy found some of the money on a bank of the Columbia River. The man has never been identified.",
+   "cap": "NEVER\nIDENTIFIED"
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

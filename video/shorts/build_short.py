@@ -153,7 +153,10 @@ def clip(i):
            "-filter_complex", f"[0:v]{zp}[v];[1:a]apad[a]", "-map", "[v]", "-map", "[a]", "-t", str(dur),
            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS), "-crf", "20", "-preset", "medium",
            "-c:a", "aac", "-ar", "48000", "-b:a", "192k", str(out)]
-    subprocess.run(cmd, capture_output=True); return out
+    r = subprocess.run(cmd, capture_output=True)
+    if r.returncode != 0 or not out.exists():
+        raise SystemExit(f"clip {i} ffmpeg failed rc={r.returncode}: {r.stderr.decode()[-400:]}")
+    return out
 
 with ThreadPoolExecutor(max_workers=4) as ex: list(ex.map(clip, range(len(beats))))
 listf = BASE / "concat.txt"; listf.write_text("".join(f"file '{BASE/'clips'/(f'{i:02d}.mp4')}'\n" for i in range(len(beats))))
@@ -164,4 +167,6 @@ af = f"afade=t=in:st=0:d=0.3,afade=t=out:st={max(0.1,total-0.8):.2f}:d=0.8,loudn
 subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(listf), "-vf", vf, "-af", af,
                 "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS), "-crf", "19", "-preset", "medium",
                 "-c:a", "aac", "-ar", "48000", "-b:a", "192k", "-movflags", "+faststart", str(final)], capture_output=True)
+if not final.exists() or final.stat().st_size < 100_000:
+    raise SystemExit(f"FINAL MISSING/TINY: {final}")
 print(f"{spec['out']}: {total:.1f}s -> {final}")

@@ -1,0 +1,47 @@
+{
+ "out": "short-su-earhart",
+ "kicker": "AMELIA EARHART",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "earhart",
+   "img": "B01",
+   "vo": "July second, nineteen thirty-seven. Amelia Earhart and her navigator, Fred Noonan, left New Guinea for tiny Howland Island.",
+   "cap": "PACIFIC \u00b7 1937"
+  },
+  {
+   "src": "earhart",
+   "img": "B02",
+   "vo": "A Coast Guard ship waited off Howland, listening. Earhart radioed: we must be on you, but cannot see you.",
+   "cap": "\"WE CANNOT\nSEE YOU\"",
+   "amber": true
+  },
+  {
+   "src": "earhart",
+   "img": "B03",
+   "vo": "About an hour later, one of her last messages. A line of position. No reference point.",
+   "cap": "ONE OF\nHER LAST"
+  },
+  {
+   "src": "earhart",
+   "img": "B04",
+   "vo": "The search found no trace of the plane, or of either of them.",
+   "cap": "NO\nTRACE"
+  },
+  {
+   "src": "earhart",
+   "img": "B05",
+   "vo": "Nearly ninety years on, the plane has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "What do you think happened?",
+   "cap": "WHAT DO YOU\nTHINK HAPPENED?",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

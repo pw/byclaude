@@ -1,0 +1,47 @@
+{
+ "out": "short-su-hoffa",
+ "kicker": "JIMMY HOFFA",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "hoffa",
+   "img": "B01",
+   "vo": "Bloomfield Township, Michigan. July thirtieth, nineteen seventy-five. Jimmy Hoffa, former president of the Teamsters, drove to the Machus Red Fox restaurant for a two o'clock meeting.",
+   "cap": "MICHIGAN \u00b7 1975"
+  },
+  {
+   "src": "hoffa",
+   "img": "B02",
+   "vo": "Around two-fifteen, he called his wife from a pay phone. No one had shown up. He said he'd be home by four, to grill steaks.",
+   "cap": "HOME BY 4",
+   "amber": true
+  },
+  {
+   "src": "hoffa",
+   "img": "B03",
+   "vo": "He never came home. His car was found in the parking lot.",
+   "cap": "HE NEVER\nCAME HOME"
+  },
+  {
+   "src": "hoffa",
+   "img": "B04",
+   "vo": "Searches in Michigan and New Jersey found nothing. His body has never been found.",
+   "cap": "BODY NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "src": "hoffa",
+   "img": "B05",
+   "vo": "No one has ever been charged. The F B I says the case is still open.",
+   "cap": "CASE STILL\nOPEN"
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

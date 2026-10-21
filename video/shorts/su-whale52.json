@@ -1,0 +1,47 @@
+{
+ "out": "short-su-whale52",
+ "kicker": "THE 52-HERTZ WHALE",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "whale52",
+   "img": "B01",
+   "vo": "The North Pacific, nineteen eighty-nine. Navy hydrophones, built to hear submarines, picked up a whale call at fifty-two hertz.",
+   "cap": "PACIFIC \u00b7 1989"
+  },
+  {
+   "src": "whale52",
+   "img": "B02",
+   "vo": "Too high for a blue whale. Too high for a fin whale.",
+   "cap": "52 HERTZ",
+   "amber": true
+  },
+  {
+   "src": "whale52",
+   "img": "B03",
+   "vo": "Woods Hole scientists tracked it for twelve years, beginning in nineteen ninety-two.",
+   "cap": "TRACKED\n12 YEARS"
+  },
+  {
+   "src": "whale52",
+   "img": "B04",
+   "vo": "It matched no known species. The press called it the loneliest whale in the world.",
+   "cap": "MATCHED\nNO SPECIES"
+  },
+  {
+   "src": "whale52",
+   "img": "B05",
+   "vo": "Theories include a hybrid, or an unusual body. The singer has never been identified.",
+   "cap": "NEVER\nIDENTIFIED",
+   "amber": true
+  },
+  {
+   "vo": "What do you think happened?",
+   "cap": "WHAT DO YOU\nTHINK HAPPENED?",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

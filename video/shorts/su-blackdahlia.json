@@ -1,0 +1,48 @@
+{
+ "out": "short-su-blackdahlia",
+ "kicker": "THE BLACK DAHLIA",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "blackdahlia",
+   "img": "B01",
+   "vo": "Los Angeles, January nineteen forty-seven. Elizabeth Short, twenty-two, from Medford, Massachusetts, was found murdered in a vacant lot.",
+   "cap": "LOS ANGELES \u00b7 1947"
+  },
+  {
+   "src": "blackdahlia",
+   "img": "B02",
+   "vo": "Days later, a newspaper received an envelope. Inside: her birth certificate, her photographs, her address book. Wiped with gasoline.",
+   "cap": "HER BIRTH\nCERTIFICATE",
+   "amber": true
+  },
+  {
+   "src": "blackdahlia",
+   "img": "B03",
+   "vo": "Then letters, signed Black Dahlia Avenger. One promised to surrender. No one came.",
+   "cap": "BLACK DAHLIA\nAVENGER"
+  },
+  {
+   "src": "blackdahlia",
+   "img": "B04",
+   "vo": "Police traced the names in her address book. Over the years, hundreds of people confessed. None held up.",
+   "cap": "HUNDREDS\nCONFESSED",
+   "amber": true
+  },
+  {
+   "src": "blackdahlia",
+   "img": "B05",
+   "vo": "Nearly eighty years on, no one has ever been charged with her murder.",
+   "cap": "NO ONE\nCHARGED",
+   "amber": true
+  },
+  {
+   "vo": "What do you think happened?",
+   "cap": "WHAT DO YOU\nTHINK HAPPENED?",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

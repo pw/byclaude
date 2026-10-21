@@ -1,0 +1,48 @@
+{
+ "out": "short-su-flight19",
+ "kicker": "FLIGHT 19",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "flight19",
+   "img": "B01",
+   "vo": "Fort Lauderdale, December fifth, nineteen forty-five. Five Navy Avenger bombers took off on a training flight. Fourteen men.",
+   "cap": "FLORIDA \u00b7 1945"
+  },
+  {
+   "src": "flight19",
+   "img": "B02",
+   "vo": "The flight leader radioed that his compasses had failed. He believed he was over the Florida Keys.",
+   "cap": "COMPASSES\nFAILED",
+   "amber": true
+  },
+  {
+   "src": "flight19",
+   "img": "B03",
+   "vo": "The radio calls faded into static. They never came back.",
+   "cap": "NEVER\nCAME BACK"
+  },
+  {
+   "src": "flight19",
+   "img": "B04",
+   "vo": "That night, a flying boat with thirteen men went out to search. It was never heard from again.",
+   "cap": "13 MORE\nLOST",
+   "amber": true
+  },
+  {
+   "src": "flight19",
+   "img": "B05",
+   "vo": "The Navy's board recorded causes or reasons unknown. No wreckage of the five bombers has ever been found.",
+   "cap": "CAUSES\nUNKNOWN",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

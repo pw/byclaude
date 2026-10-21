@@ -1,0 +1,47 @@
+{
+ "out": "short-su-shugborough",
+ "kicker": "THE SHUGBOROUGH INSCRIPTION",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "shugborough",
+   "img": "B01",
+   "vo": "Shugborough Hall, Staffordshire, England. In the mid-seventeen-hundreds, a stone monument was raised in its gardens.",
+   "cap": "ENGLAND \u00b7 1700s"
+  },
+  {
+   "src": "shugborough",
+   "img": "B02",
+   "vo": "Beneath a carved scene of shepherds at a tomb, eight letters. O, U, O, S, V, A, V, V. And below them, a D and an M.",
+   "cap": "O U O S\nV A V V",
+   "amber": true
+  },
+  {
+   "src": "shugborough",
+   "img": "B03",
+   "vo": "The carving copies a painting by Nicolas Poussin. But in mirror image.",
+   "cap": "IN MIRROR\nIMAGE"
+  },
+  {
+   "src": "shugborough",
+   "img": "B04",
+   "vo": "In two thousand four, two veterans of Bletchley Park, Britain's wartime codebreakers, took on the letters. No conclusive answer emerged.",
+   "cap": "BLETCHLEY\nPARK \u00b7 2004"
+  },
+  {
+   "src": "shugborough",
+   "img": "B05",
+   "vo": "Theories include Latin initials, a private love message, even later graffiti. No reading has ever been accepted.",
+   "cap": "NO ACCEPTED\nREADING",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

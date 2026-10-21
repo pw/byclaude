@@ -1,0 +1,48 @@
+{
+ "out": "short-su-zodiac",
+ "kicker": "THE ZODIAC LETTERS",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "zodiac",
+   "img": "B01",
+   "vo": "Northern California, nineteen sixty-nine. Three newspapers received letters from a killer, each holding one third of a code.",
+   "cap": "CALIFORNIA \u00b7 1969"
+  },
+  {
+   "src": "zodiac",
+   "img": "B02",
+   "vo": "He demanded they print it. Within about a week, a schoolteacher and his wife in Salinas had broken it.",
+   "cap": "BROKEN\nIN A WEEK",
+   "amber": true
+  },
+  {
+   "src": "zodiac",
+   "img": "B03",
+   "vo": "Months later came a second code. Three hundred and forty symbols. It stayed unsolved for fifty-one years.",
+   "cap": "340 SYMBOLS"
+  },
+  {
+   "src": "zodiac",
+   "img": "B04",
+   "vo": "In twenty twenty, three amateur codebreakers finally cracked it. It did not contain his name.",
+   "cap": "NO NAME",
+   "amber": true
+  },
+  {
+   "src": "zodiac",
+   "img": "B05",
+   "vo": "Two shorter codes have never been confirmed solved. And the writer has never been officially identified.",
+   "cap": "NEVER\nIDENTIFIED",
+   "amber": true
+  },
+  {
+   "vo": "What do you think happened?",
+   "cap": "WHAT DO YOU\nTHINK HAPPENED?",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}
