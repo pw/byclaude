@@ -1,12 +1,112 @@
 {
+ "beaumont": {
+  "fb_published_at": "2026-10-05T14:30:34+00:00",
+  "fb_video_id": "1022146750830863"
+ },
+ "circleville": {
+  "fb_published_at": "2026-10-04T23:30:27+00:00",
+  "fb_video_id": "2271689000319960"
+ },
+ "courrieres": {
+  "fb_published_at": "2026-10-05T23:30:26+00:00",
+  "fb_video_id": "1076399498362106"
+ },
  "dancingplague": {
-  "fb_published_at": "2026-09-26T22:55:15+00:00",
+  "fb_published_at": "2026-09-26 (hand, pre-wiring)",
   "fb_video_id": "1080267891647378",
   "ig_media_id": "18031056452676489",
   "published_at": "2026-09-26T14:31:04+00:00"
  },
+ "deberk": {
+  "fb_published_at": "2026-10-06T14:30:36+00:00",
+  "fb_video_id": "981683007525298"
+ },
+ "devilsfootprints": {
+  "fb_published_at": "2026-10-06T23:30:43+00:00",
+  "fb_video_id": "2257127628414038",
+  "ig_media_id": "18029281037681369",
+  "published_at": "2026-09-26T23:31:10+00:00"
+ },
+ "elisalam": {
+  "fb_published_at": "2026-10-07T14:30:33+00:00",
+  "fb_video_id": "1325465429556627"
+ },
+ "glicomorinaga": {
+  "fb_published_at": "2026-10-07T23:30:38+00:00",
+  "fb_video_id": "1126153629919035"
+ },
+ "gunness": {
+  "fb_published_at": "2026-10-08T14:30:36+00:00",
+  "fb_video_id": "1423742939139936",
+  "ig_media_id": "18019424837928662",
+  "published_at": "2026-09-27T14:30:42+00:00"
+ },
+ "hinterkaifeck": {
+  "fb_published_at": "2026-10-08T23:30:32+00:00",
+  "fb_video_id": "2247309325841243"
+ },
+ "hwaseong": {
+  "fb_published_at": "2026-10-09T14:30:36+00:00",
+  "fb_video_id": "1819679655820252"
+ },
+ "isdal": {
+  "fb_published_at": "2026-10-09T23:30:32+00:00",
+  "fb_video_id": "951378220899718"
+ },
+ "kasparhauser": {
+  "fb_published_at": "2026-10-10T14:30:39+00:00",
+  "fb_video_id": "1126466770338932",
+  "ig_media_id": "18138677233674531",
+  "published_at": "2026-09-27T23:31:00+00:00"
+ },
+ "larsmittank": {
+  "fb_published_at": "2026-10-10T23:30:36+00:00",
+  "fb_video_id": "1107598181708987"
+ },
+ "leprince": {
+  "ig_media_id": "17983308297106006",
+  "published_at": "2026-09-28T14:31:43+00:00"
+ },
+ "oakisland": {
+  "fb_published_at": "2026-10-02T14:30:29+00:00",
+  "fb_video_id": "775608422314462"
+ },
  "pekingman": {
   "ig_media_id": "18106458476261193",
   "published_at": "2026-09-26T04:22:53+00:00"
+ },
+ "somertonman": {
+  "fb_published_at": "2026-10-02T23:30:32+00:00",
+  "fb_video_id": "1097974129477799"
+ },
+ "tunguska": {
+  "ig_media_id": "18560133031073113",
+  "published_at": "2026-09-28T23:30:43+00:00"
+ },
+ "uvb76": {
+  "fb_published_at": "2026-10-03T23:30:36+00:00",
+  "fb_video_id": "2383060672230468"
+ },
+ "wallace": {
+  "ig_media_id": "18113049605112957",
+  "published_at": "2026-09-29T14:31:01+00:00"
+ },
+ "wowsignal": {
+  "fb_published_at": "2026-10-04T14:30:38+00:00",
+  "fb_video_id": "1620017636258851"
+ },
+ "wychelm": {
+  "fb_published_at": "2026-10-03T14:30:54+00:00",
+  "fb_video_id": "1119033270584564",
+  "ig_media_id": "18624872872020614",
+  "published_at": "2026-09-29T23:31:18+00:00"
+ },
+ "yogtze": {
+  "ig_media_id": "17971127829170623",
+  "published_at": "2026-09-30T14:31:13+00:00"
+ },
+ "yubacountyfive": {
+  "fb_published_at": "2026-10-02T04:56:37+00:00",
+  "fb_video_id": "1789141165613131"
  }
 }

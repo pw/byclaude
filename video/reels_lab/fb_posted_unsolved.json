@@ -3,6 +3,10 @@
   "fb_published_at": "2026-10-15T15:45:40+00:00",
   "fb_video_id": "2174926793060539"
  },
+ "blackdahlia": {
+  "fb_published_at": "2026-10-22T15:45:38+00:00",
+  "fb_video_id": "1635715654919849"
+ },
  "brianshaffer": {
   "fb_published_at": "2026-10-18T01:45:38+00:00",
   "fb_video_id": "1812424320078937"
@@ -11,13 +15,25 @@
   "fb_published_at": "2026-10-13T15:45:38+00:00",
   "fb_video_id": "1625358059030945"
  },
+ "dbcooper": {
+  "fb_published_at": "2026-10-21T01:45:42+00:00",
+  "fb_video_id": "2107760293173520"
+ },
  "dorothyarnold": {
   "fb_published_at": "2026-10-20T15:45:33+00:00",
   "fb_video_id": "3655666491258945"
  },
+ "flannanisles": {
+  "fb_published_at": "2026-10-21T15:45:33+00:00",
+  "fb_video_id": "2317902675643519"
+ },
  "hessdalen": {
   "fb_published_at": "2026-10-18T15:45:37+00:00",
   "fb_video_id": "1094749976508084"
+ },
+ "hoffa": {
+  "fb_published_at": "2026-10-23T01:45:34+00:00",
+  "fb_video_id": "29036240556010397"
  },
  "isdal": {
   "fb_published_at": "2026-10-12T15:45:28+00:00",
@@ -74,5 +90,9 @@
  "wychelm": {
   "fb_published_at": "2026-10-11T22:11:55+00:00",
   "fb_video_id": "1662361272076978"
+ },
+ "zodiac": {
+  "fb_published_at": "2026-10-22T01:45:26+00:00",
+  "fb_video_id": "1136402298799721"
  }
 }

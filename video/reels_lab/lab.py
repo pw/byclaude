@@ -90,12 +90,12 @@ def report(age=72, page=None):
         last = rs[-1]
         r = at or last
         out.append(dict(page=pg, name=last["name"] or last["desc"][:24], plays=r["plays"], young=at is None, age=r["age_h"],
-                        watch=r["watch_s"], ret=round(r["watch_s"] / r["len_s"], 2) if r["len_s"] else 0, len=r["len_s"],
+                        watch=r["watch_s"], now=last["plays"], ret=round(r["watch_s"] / r["len_s"], 2) if r["len_s"] else 0, len=r["len_s"],
                         arms=arms.get(pg, {}).get(last["name"] or "", {})))
     out.sort(key=lambda o: -(o["plays"] or 0))
     print(f"plays at {age}h ('*' = younger than {age}h, latest shown) — retention = avg watch / length")
     for o in out:
-        print(f"{o['page']:9} {o['name'][:24]:24} {o['plays']:>6}{'*' if o['young'] else ' '} {o['watch']:>5}s {o['ret']:>5} {o['len']:>5}s  {o['arms']}")
+        print(f"{o['page']:9} {o['name'][:24]:24} {o['plays']:>6}{'*' if o['young'] else ' '} now {o['now'] or 0:>7}{' <- LATE BREAKOUT' if (o['now'] or 0) >= 3*max(o['plays'] or 1, 1) and not o['young'] else ''} {o['watch']:>5}s {o['ret']:>5} {o['len']:>5}s  {o['arms']}")
     allmature = [o for o in out if not o["young"]]
     # reposts get ~0 distribution (2026-10-18) — keep them out of every stat except the origin arm itself
     mature = [o for o in allmature if o["arms"].get("origin") != "repost"]

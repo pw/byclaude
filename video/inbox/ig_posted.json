@@ -1,9 +1,75 @@
 {
+ "friend-price": {
+  "fb_published_at": "2026-09-30T01:31:24+00:00",
+  "fb_video_id": "1403922071302881",
+  "ig_media_id": "18354560797221536",
+  "published_at": "2026-09-30T01:30:45+00:00"
+ },
+ "net-30": {
+  "fb_published_at": "2026-10-02T01:32:23+00:00",
+  "fb_video_id": "3439086682936582",
+  "ig_media_id": "18106915301360619",
+  "published_at": "2026-10-02T01:31:31+00:00"
+ },
+ "no-show": {
+  "fb_published_at": "2026-09-28T01:31:11+00:00",
+  "fb_video_id": "1106190968657119",
+  "ig_media_id": "17903333286352238",
+  "published_at": "2026-09-28T01:30:40+00:00"
+ },
+ "one-star": {
+  "fb_published_at": "2026-10-04T01:31:09+00:00",
+  "fb_video_id": "1544700787686190",
+  "ig_media_id": "18126706027881198",
+  "published_at": "2026-10-04T01:30:39+00:00"
+ },
  "quick-question": {
-  "ig_media_id": "17891927598436970",
-  "published_at": "2026-09-26T07:35:16+00:00",
-  "fb_video_id": "1131539986221582",
   "fb_published_at": "2026-09-26T07:35:18+00:00",
-  "note": "hand-posted by Patrick from the IG app w/ FB share"
+  "fb_video_id": "1131539986221582",
+  "ig_media_id": "17891927598436970",
+  "note": "hand-posted by Patrick from the IG app w/ FB share",
+  "published_at": "2026-09-26T07:35:16+00:00"
+ },
+ "tax-how-much": {
+  "fb_published_at": "2026-10-05T01:31:56+00:00",
+  "fb_video_id": "1085555050992981",
+  "ig_media_id": "18124458997861048",
+  "published_at": "2026-10-05T01:31:22+00:00"
+ },
+ "tax-no-form": {
+  "fb_published_at": "2026-10-07T01:31:41+00:00",
+  "fb_video_id": "1846036990082035",
+  "ig_media_id": "18112919282154785",
+  "published_at": "2026-10-07T01:31:07+00:00"
+ },
+ "tax-profit": {
+  "fb_published_at": "2026-09-27T01:31:29+00:00",
+  "fb_video_id": "1845004783183532",
+  "ig_media_id": "17907881097540908",
+  "published_at": "2026-09-27T01:30:52+00:00"
+ },
+ "tax-quarterly": {
+  "fb_published_at": "2026-10-03T01:31:33+00:00",
+  "fb_video_id": "1638240247747060",
+  "ig_media_id": "18129117307700488",
+  "published_at": "2026-10-03T01:30:57+00:00"
+ },
+ "tax-self-employment": {
+  "fb_published_at": "2026-10-01T01:31:19+00:00",
+  "fb_video_id": "1142669712040521",
+  "ig_media_id": "18113748019963156",
+  "published_at": "2026-10-01T01:30:42+00:00"
+ },
+ "tax-what-counts": {
+  "fb_published_at": "2026-09-29T01:31:14+00:00",
+  "fb_video_id": "2107562003299443",
+  "ig_media_id": "18164434471475213",
+  "published_at": "2026-09-29T01:30:41+00:00"
+ },
+ "worth-it": {
+  "fb_published_at": "2026-10-06T01:32:13+00:00",
+  "fb_video_id": "4548094242129737",
+  "ig_media_id": "18108179618184791",
+  "published_at": "2026-10-06T01:31:49+00:00"
  }
 }
