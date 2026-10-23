@@ -96,14 +96,16 @@ def report(age=72, page=None):
     print(f"plays at {age}h ('*' = younger than {age}h, latest shown) — retention = avg watch / length")
     for o in out:
         print(f"{o['page']:9} {o['name'][:24]:24} {o['plays']:>6}{'*' if o['young'] else ' '} {o['watch']:>5}s {o['ret']:>5} {o['len']:>5}s  {o['arms']}")
-    mature = [o for o in out if not o["young"]]
+    allmature = [o for o in out if not o["young"]]
+    # reposts get ~0 distribution (2026-10-18) — keep them out of every stat except the origin arm itself
+    mature = [o for o in allmature if o["arms"].get("origin") != "repost"]
     for pg in sorted({o["page"] for o in mature}):
         ps = [o["plays"] for o in mature if o["page"] == pg]
         print(f"\n{pg}: n={len(ps)} median {statistics.median(ps)}  p75 {sorted(ps)[int(len(ps)*.75)]}  max {max(ps)}")
     keys = sorted({k for o in mature for k in o["arms"]})
     for k in keys:
         groups = {}
-        for o in mature:
+        for o in (allmature if k == "origin" else mature):
             if k in o["arms"]: groups.setdefault(o["arms"][k], []).append(o["plays"])
         print(f"arm {k}: " + "  ".join(f"{v}: n={len(p)} med {statistics.median(p)}" for v, p in groups.items()))
 
