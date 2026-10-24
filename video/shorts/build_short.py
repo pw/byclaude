@@ -47,7 +47,33 @@ def kicker(d):
     for ch in (spec.get("brand", "BY CLAUDE") + "  ·  " + spec["kicker"]):
         d.text((x, 82), ch, font=f, fill=MUTE); x += d.textlength(ch, font=f) + 3
 
+def compose_bleed(beat, idx):
+    """frame arm (2026-10-24): the 9:16 still fills the screen; scrims carry kicker + caption."""
+    if beat.get("img"):
+        still = Image.open(VID / beat["src"] / "images916" / (beat["img"] + ".png")).convert("RGB")
+        sc = max(W / still.width, H / still.height)
+        still = still.resize((round(still.width * sc), round(still.height * sc)))
+        l, t = (still.width - W) // 2, (still.height - H) // 2
+        img = still.crop((l, t, l + W, t + H))
+        a = np.asarray(img, float)
+        y = np.linspace(0, 1, H)[:, None]
+        shade = 1 - 0.80 * np.clip((y - 0.50) / 0.28, 0, 1)      # bottom scrim under the caption
+        shade = shade * (1 - 0.55 * np.clip((0.12 - y) / 0.12, 0, 1))  # top scrim under the kicker
+        img = Image.fromarray((a * shade[:, :, None]).astype(np.uint8), "RGB")
+        cap_y = int(H * 0.70)
+    else:
+        img = bg_frame(); cap_y = int(H * 0.40)
+    d = ImageDraw.Draw(img); kicker(d)
+    cap = beat.get("cap", "")
+    if cap:
+        f = fit(d, cap, "Anton-Regular.ttf", W - 130, start=130)
+        col = AMBER if beat.get("amber") else INK
+        for ln in cap.split("\n"):
+            d.text((W // 2, cap_y), ln, font=f, fill=col, anchor="ma", stroke_width=3, stroke_fill=(0, 0, 0)); cap_y += int(f.size * 1.04)
+    out = BASE / "frames" / f"{idx:02d}.png"; img.save(out); return out
+
 def compose(beat, idx):
+    if spec.get("frame") == "bleed": return compose_bleed(beat, idx)
     img = bg_frame(); d = ImageDraw.Draw(img); kicker(d)
     cap_y = int(H * 0.40)
     if beat.get("img"):

@@ -29,9 +29,9 @@ Truth floor: "Still unsolved" ending only on genuinely unsolved cases (Phantom o
 | # | arm | values | status |
 |---|-----|--------|--------|
 | 1 | `end` | stamp ("Still unsolved.") vs question ("What do you think happened?" → comments) | launch batch, 13 films, alternating |
-| 2 | `topic` | anomaly (signals, lights, objects, footprints) vs person (disappearance, unidentified dead) | next builds |
+| 2 | `kind` | anomaly (signals, lights, objects, footprints) vs person (disappearance, unidentified dead) | **CALLED 2026-10-24: anomaly** — 451 vs 255 median at 72h (1.77×, n=5 vs 9). Default for new builds: anomaly, or a person case only if it's legend-grade/historic (Mary Celeste 946, Roanoke 550, Flannan 1,180 so far — the person tail is all old group-vanishings; modern true-crime cases sit at the floor 190–313). |
 | 3 | `hook` | "Place, year." open vs strangest-detail-first | |
 | 4 | `length` | ~20 s vs ~35 s | |
 | 5 | `voice` | male (current) vs female narrator | |
 | 6 | `cadence` | 2/day vs 3/day | |
-| 7 | `frame` | 16:9 still in a band (current) vs full-bleed 9:16 still | strong candidate — the band leaves ~70% of the screen dark |
+| 7 | `frame` | 16:9 still in a band (current) vs full-bleed 9:16 still | **OPEN 2026-10-24.** `"frame":"bleed"` in the shorts spec + `_build_images.py <dir> 9:16` (→ `images916/`). First bleed: phaistos, paulawelden, whale52 (interleaved with band taracalico, shugborough, lakebodom; balanced on kind+end). Band originals in `shorts/band_backup/`. Build new films alternating bleed/band until n≥5 each. |

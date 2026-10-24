@@ -16,6 +16,9 @@ atmospheric AI-generated stills (no faces, no text in images) about a genuinely 
    - END ARM (given below): `stamp` => end beat vo "Still unsolved." cap "STILL\nUNSOLVED" amber; `question` => end beat vo "What do you think happened?" cap "WHAT DO YOU\nTHINK HAPPENED?" amber.
 3. `~/byclaude/video/<name>/caption.txt` — the Reels caption: 4–8 short plain sentences retelling the case (date + place first), blank line, then the end line ("Still unsolved." or "What do you think happened?"), blank line, 6–8 hashtags ending in #stillunsolved. No "link in bio", no channel plugs.
 
+## Case choice (arm `kind` called 2026-10-24)
+Prefer ANOMALIES (signals, objects, lights, undeciphered things) or legend-grade historic group vanishings (ships, lighthouses, colonies). Modern true-crime disappearances sit at the floor and carry more living-family risk.
+
 ## Writing rules
 - Open with place and year ("Place, year." shape, as the others). Most striking concrete detail by beat 2.
 - Total VO ~70–95 words (≈28–35 s). Numbers and years spelled as words in vo ("nineteen seventy-one"); captions use digits.
