@@ -172,6 +172,8 @@ import researchPortfolioAiChannelMd from './research/portfolio-ai-channel-2026-0
 import researchWellWaterTrioMd from './research/well-water-trio-2026-04-27.md';
 import researchFzmCliffMd from './research/floodzonemap-canonicalization-cliff-2026-05-13.md';
 import researchOshaDiscretionMapMd from './research/osha-discretion-map-2026-05-15.md';
+import researchCltFaithfulnessMd from './research/clt-faithfulness-2026-10-23.md';
+import researchCltFaithfulnessPage from './research/clt-faithfulness.page.html';
 
 // Audio test (Grok TTS voice comparison) — temporary
 // Test 1 (Marriage Clause untagged_*.mp3) removed 2026-05-17 to free worker bundle headroom.
@@ -12255,6 +12257,15 @@ app.get('/memo/', (c) => new Response(memoIndexHtml(), {
 const researchEntries = [
   // Newest first.
   {
+    slug: 'clt-faithfulness',
+    date: '2026-10-23',
+    title: 'Do cross-layer transcoders skip the model’s real computation? Sparsity, not shortcuts',
+    finding: `A causal test of the claim (Lange et al., ICML 2026) that cross-layer transcoders replace a model&rsquo;s multi-step computation with one-hop shortcuts. Public CLTs on Llama-3.2-1B and Gemma-2-2B do track the real model&rsquo;s response to mid-layer interventions much worse than per-layer transcoders (cos 0.29 vs 0.75; 0.32 vs 0.43). The gap is not cross-layer routing: on Gemma it is sparsity (equal at matched per-layer L0, 0.28 vs 0.29), on Llama the per-layer transcoder&rsquo;s skip connection. Across 28 GPT-2 transcoders, CLTs and per-layer transcoders fall on one faithfulness-vs-L0 curve whatever their training recipe and cross-layer write share (18&ndash;85%). The proposed sum-of-norms fix is the one variant below the curve; a learned skip connection adds about +0.14 to either kind. GPT-2 medium agrees at matched L0.`,
+    method: `Resample-ablate MLP<sub>s</sub>&rsquo;s output; compare every later MLP&rsquo;s response in the real model against a frozen-error replacement model that is bit-exact on clean input. Direction (token cosine) and magnitude (norm ratio), with real-MLP, frozen-MLP and ridge-linear controls on every run, plus a CLT-charitable variant that also swaps the source layer&rsquo;s features. About $400 of single-H100 time.`,
+    followOn: `Interactive version with charts at <a href="/research/clt-faithfulness/charts">/research/clt-faithfulness/charts</a>. Code and results: <a href="https://github.com/pw/clt-faithfulness">github.com/pw/clt-faithfulness</a>. Includes a correction: an interim claim that strong-penalty training makes CLTs uniquely unfaithful was an L0 confound and is retracted in the text.`,
+    md: researchCltFaithfulnessMd,
+  },
+  {
     slug: 'osha-discretion-map-2026-05-15',
     date: '2026-05-15',
     title: 'OSHA’s Discretion Map — regional inspection rates vary 18 pp after NAICS control',
@@ -12343,6 +12354,9 @@ ${items}
     body,
   });
 }
+app.get('/research/clt-faithfulness/charts', (c) => new Response(researchCltFaithfulnessPage, {
+  headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=300' },
+}));
 app.get('/research', (c) => new Response(researchIndexHtml(), {
   headers: {
     'Content-Type': 'text/html; charset=utf-8',

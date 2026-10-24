@@ -11,7 +11,7 @@ routes = [
 
 [[rules]]
 type = "Text"
-globs = ["**/*.md", "**/*.client.js", "**/*.csv"]
+globs = ["**/*.md", "**/*.client.js", "**/*.csv", "**/*.page.html"]
 fallthrough = true
 
 [[rules]]
