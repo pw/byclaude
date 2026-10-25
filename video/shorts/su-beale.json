@@ -1,0 +1,47 @@
+{
+ "out": "short-su-beale",
+ "kicker": "THE BEALE CIPHERS",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "beale",
+   "img": "B01",
+   "vo": "Virginia, eighteen eighty-five. A pamphlet goes on sale for fifty cents. It tells of treasure buried in Bedford County.",
+   "cap": "VIRGINIA \u00b7 1885"
+  },
+  {
+   "src": "beale",
+   "img": "B02",
+   "vo": "Its story: in eighteen twenty-two, a man named Thomas Beale left a locked iron box with an innkeeper. Inside, three messages, written only in numbers.",
+   "cap": "ONLY\nNUMBERS",
+   "amber": true
+  },
+  {
+   "src": "beale",
+   "img": "B03",
+   "vo": "The second was decoded, using the Declaration of Independence as the key. It describes gold, silver, and jewels.",
+   "cap": "DECLARATION\nOF INDEPENDENCE"
+  },
+  {
+   "src": "beale",
+   "img": "B04",
+   "vo": "No record confirms that Beale existed. Many researchers think the pamphlet is a hoax.",
+   "cap": "A HOAX?"
+  },
+  {
+   "src": "beale",
+   "img": "B05",
+   "vo": "But the other two messages, said to give the place and the names, have never been decoded.",
+   "cap": "NEVER\nDECODED",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

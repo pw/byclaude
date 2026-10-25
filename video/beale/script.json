@@ -1,0 +1,88 @@
+{
+  "title": "The Beale Ciphers",
+  "subtitle": "Bedford County · Virginia, 1885",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, rural Virginia in the nineteenth century, muted brown-green and candle-amber tones, melancholy and uncanny, cinematic composition, fine film grain. Single image, not a collage, no text, no legible writing, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Virginia, eighteen eighty-five. A pamphlet goes on sale for fifty cents. It tells of treasure buried in Bedford County.",
+      "cap": "VIRGINIA · 1885",
+      "img": "A wide view over forested Blue Ridge foothills in rural Virginia at dusk, low mist in the hollows, a single dirt road winding into the trees, quiet and remote."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Its story: in eighteen twenty-two, a man named Thomas Beale left a locked iron box with an innkeeper. Inside, three messages, written only in numbers.",
+      "cap": "ONLY\nNUMBERS",
+      "amber": true,
+      "img": "A small old locked iron box resting on a rough wooden table in a dim nineteenth-century inn room, a single candle burning beside it, deep shadows."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "The second was decoded, using the Declaration of Independence as the key. It describes gold, silver, and jewels.",
+      "cap": "DECLARATION\nOF INDEPENDENCE",
+      "img": "Old yellowed paper sheets spread on a wooden desk by candlelight, covered in faded blurred ink marks too indistinct to read, an inkwell and quill, warm low light."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "No record confirms that Beale existed. Many researchers think the pamphlet is a hoax.",
+      "cap": "A HOAX?",
+      "img": "An empty nineteenth-century inn room at night, a guttering candle on a windowsill, a dark wooded hillside visible through old glass, still and uncertain."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "But the other two messages, said to give the place and the names, have never been decoded.",
+      "cap": "NEVER\nDECODED",
+      "amber": true,
+      "img": "A dark forested hillside in the Blue Ridge foothills at night under a faint moon, fallen leaves and bare roots, no path, nothing disturbed, cold and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The Beale Papers pamphlet was published in 1885 (by James B. Ward), sold for fifty cents, and claims treasure is buried in Bedford County, Virginia",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Beale_ciphers",
+        "https://www.discoveryuk.com/mysteries/decoding-the-past-the-enigma-of-the-beale-ciphers/",
+        "https://www.amusingplanet.com/2026/07/the-beale-ciphers.html"
+      ]
+    },
+    {
+      "claim": "Per the pamphlet, in 1822 Thomas J. Beale left a locked iron box with innkeeper Robert Morriss; it contained three ciphertexts written as numbers",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Beale_ciphers",
+        "https://www.discoveryuk.com/mysteries/decoding-the-past-the-enigma-of-the-beale-ciphers/"
+      ]
+    },
+    {
+      "claim": "The second cipher was decoded using the Declaration of Independence as the key; its plaintext describes gold, silver and jewels",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Beale_ciphers",
+        "https://www.discoveryuk.com/mysteries/decoding-the-past-the-enigma-of-the-beale-ciphers/",
+        "https://documents.theblackvault.com/documents/nsa/bealepapers/doc2453995.pdf"
+      ]
+    },
+    {
+      "claim": "No conclusive evidence Thomas Beale existed; many (e.g. Joe Nickell 1982) argue the pamphlet is a hoax / the ciphers 1 and 3 may contain no message",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Beale_ciphers",
+        "https://www.discoveryuk.com/mysteries/decoding-the-past-the-enigma-of-the-beale-ciphers/",
+        "https://eprint.iacr.org/2024/695"
+      ]
+    },
+    {
+      "claim": "Cipher 1 is said to give the location and cipher 3 the names/next of kin; neither has been decoded (no accepted decipherment as of 2026)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Beale_ciphers",
+        "https://www.discoveryuk.com/mysteries/decoding-the-past-the-enigma-of-the-beale-ciphers/",
+        "https://eprint.iacr.org/2024/695",
+        "https://www.amusingplanet.com/2026/07/the-beale-ciphers.html"
+      ]
+    }
+  ]
+}

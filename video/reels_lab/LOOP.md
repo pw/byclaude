@@ -28,7 +28,7 @@ Truth floor: "Still unsolved" ending only on genuinely unsolved cases (Phantom o
 ## Arm queue
 | # | arm | values | status |
 |---|-----|--------|--------|
-| 1 | `end` | stamp ("Still unsolved.") vs question ("What do you think happened?" → comments) | launch batch, 13 films, alternating |
+| 1 | `end` | stamp ("Still unsolved.") vs question ("What do you think happened?" → comments) | **CALLED 2026-10-25: stamp** — 600.5 vs 274 median at 72h (2.19×, n=6 vs 10, fresh only). Holds within kind: anomaly stamp 777 vs question 451; person stamp ~600 vs 313. Default for new builds: stamp (only on genuinely unsolved cases — truth floor). Vela (question) is the breakout, so this is a median call, not a ceiling call. |
 | 2 | `kind` | anomaly (signals, lights, objects, footprints) vs person (disappearance, unidentified dead) | **CALLED 2026-10-24: anomaly** — 451 vs 255 median at 72h (1.77×, n=5 vs 9). Default for new builds: anomaly, or a person case only if it's legend-grade/historic (Mary Celeste 946, Roanoke 550, Flannan 1,180 so far — the person tail is all old group-vanishings; modern true-crime cases sit at the floor 190–313). |
 | 3 | `hook` | "Place, year." open vs strangest-detail-first | |
 | 4 | `length` | ~20 s vs ~35 s | |

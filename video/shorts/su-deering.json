@@ -1,0 +1,47 @@
+{
+ "out": "short-su-deering",
+ "kicker": "THE CARROLL A. DEERING",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "deering",
+   "img": "B01",
+   "vo": "Cape Hatteras, North Carolina. January thirty-first, nineteen twenty-one. A five-masted schooner sits aground on Diamond Shoals, sails still set.",
+   "cap": "HATTERAS \u00b7 1921"
+  },
+  {
+   "src": "deering",
+   "img": "B02",
+   "vo": "The Carroll A. Deering. Her lifeboats were gone. So were the ship's log, the navigation equipment, and the crew's belongings.",
+   "cap": "LIFEBOATS\nGONE",
+   "amber": true
+  },
+  {
+   "src": "deering",
+   "img": "B03",
+   "vo": "In the galley, food appeared laid out for a meal. Rescuers found a cat aboard. Of the crew, there was no sign.",
+   "cap": "THE CREW\nNO SIGN"
+  },
+  {
+   "src": "deering",
+   "img": "B04",
+   "vo": "Five federal departments investigated. Piracy, mutiny, rum-runners, a hurricane. Each was a theory. None was proven.",
+   "cap": "FIVE\nDEPARTMENTS"
+  },
+  {
+   "src": "deering",
+   "img": "B05",
+   "vo": "The crew was never found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

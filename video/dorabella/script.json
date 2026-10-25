@@ -1,0 +1,87 @@
+{
+  "title": "The Dorabella Cipher",
+  "subtitle": "Elgar's note to Dora Penny · England, 1897",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the interior of a late-Victorian English middle-class home in the 1890s, dark wood furniture, oil lamps, cream paper and ink, lace curtains, soft grey English daylight, melancholy and uncanny, cinematic composition, fine film grain. Single image, not a collage, no text, no legible writing, no symbols, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "England, July eighteen ninety-seven. The composer Edward Elgar slipped a short note into his wife's letter to a young friend, Dora Penny.",
+      "cap": "ENGLAND · 1897",
+      "img": "A folded cream letter resting on a dark wooden writing desk beside a brass oil lamp and a steel-nibbed pen in an inkwell, soft summer evening light through a lace-curtained window of a Victorian study, still and quiet."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "It held no words. Just eighty-seven small curved marks, in three lines, turned in different directions.",
+      "cap": "87 CURVED\nMARKS",
+      "amber": true,
+      "img": "Extreme close-up of an aged sheet of cream notepaper with faint indistinct pencil and ink smudges in soft focus, nothing legible, warm lamplight raking across the paper grain, a dried ink blot at one edge."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Dora could make nothing of it. She put it away, and kept it for about forty years.",
+      "cap": "KEPT FOR\n40 YEARS",
+      "img": "A half-open drawer of an old mahogany bureau holding a small bundle of yellowed letters tied with faded ribbon, dust in a shaft of pale afternoon light in a quiet Victorian bedroom."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "In nineteen thirty-seven, she printed a copy in her memoir. The original has since been lost.",
+      "cap": "ORIGINAL\nLOST",
+      "img": "An open hardbound book from the 1930s lying on a window seat, its pages blurred and unreadable, grey English rain on the window glass beyond, muted daylight."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Many have claimed to break it. In two thousand seven, the Elgar Society held a competition. No solution has ever been generally accepted.",
+      "cap": "NO ACCEPTED\nSOLUTION",
+      "amber": true,
+      "img": "An empty Victorian study at dusk, a single sheet of paper alone on the desk under a dimming oil lamp, long shadows across bookshelves, rain-dark garden beyond the window, unresolved and silent."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "In July 1897 (letter dated 14 July) Elgar's note was enclosed with Alice Elgar's letter to Dora Penny, a young friend of the Elgars",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dorabella_Cipher",
+        "https://nautil.us/the-artist-of-the-unbreakable-code-234588",
+        "https://www.discoveryuk.com/?p=23397501"
+      ]
+    },
+    {
+      "claim": "The cipher consists of 87 characters in three lines, made of small curved marks (semicircles/loops) oriented in various directions; no plaintext words",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dorabella_Cipher",
+        "https://nautil.us/the-artist-of-the-unbreakable-code-234588",
+        "https://www.discoveryuk.com/?p=23397501"
+      ]
+    },
+    {
+      "claim": "Dora Penny could not decipher it ('I have never had the slightest idea what message it conveys') and kept it put away for about forty years",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dorabella_Cipher",
+        "https://nautil.us/the-artist-of-the-unbreakable-code-234588"
+      ]
+    },
+    {
+      "claim": "She reproduced it in her 1937 memoir 'Edward Elgar: Memories of a Variation'; the original has been lost",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dorabella_Cipher",
+        "https://www.discoveryuk.com/?p=23397501"
+      ]
+    },
+    {
+      "claim": "Many claimed solutions (Sams 1970, Roberts, Henderson 2011, Packwood 2020, 2024-25 proposals); the Elgar Society's 2007 competition found no satisfactory entry; no solution is generally accepted as of 2025-26",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dorabella_Cipher",
+        "https://nautil.us/the-artist-of-the-unbreakable-code-234588",
+        "https://www.discoveryuk.com/?p=23397501",
+        "https://ciphermysteries.com/?p=63012"
+      ]
+    }
+  ]
+}

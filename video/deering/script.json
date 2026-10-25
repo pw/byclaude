@@ -1,0 +1,120 @@
+{
+  "title": "All Sails Set",
+  "subtitle": "The Carroll A. Deering · Cape Hatteras, 1921",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the stormy winter Atlantic off Cape Hatteras, North Carolina, in January 1921, grey heavy overcast, cold slate-blue sea and white surf, weathered wood and salt-stained canvas of an early 1920s sailing schooner, melancholy and uncanny, cinematic wide composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Cape Hatteras, North Carolina. January thirty-first, nineteen twenty-one. A five-masted schooner sits aground on Diamond Shoals, all sails set.",
+      "cap": "HATTERAS · 1921",
+      "img": "A five-masted wooden schooner from the early 1920s stranded on an offshore sandbar, all sails set and slack, breaking white surf around the hull, grey winter Atlantic under low overcast, seen from far off across the water, eerie and remote."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "The Carroll A. Deering. Her two lifeboats were gone. So were the ship's log, the navigation equipment, and the crew's belongings.",
+      "cap": "LIFEBOATS\nGONE",
+      "amber": true,
+      "img": "Empty wooden davits with ropes hanging loose over the side of a 1920s schooner, grey choppy sea below, salt-stained timber and iron fittings, cold winter light, desolate."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "In the galley, food had been laid out for a meal. Rescuers found a cat aboard. Of the eleven men, there was no sign.",
+      "cap": "ELEVEN MEN\nNO SIGN",
+      "img": "The cramped galley of a 1920s wooden sailing ship, an iron stove, tin plates and a coffee pot set out on a narrow table, grey daylight through a small porthole, damp and silent, melancholy."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Five federal departments investigated. Piracy, mutiny, rum-runners, a hurricane. Each was a theory. None was proven.",
+      "cap": "FIVE\nDEPARTMENTS",
+      "img": "A tall coastal lighthouse on a low windswept sand shore at dusk, its beam faint against a heavy storm sky, dune grass bent by wind, rough grey sea beyond, lonely."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The crew was never found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "Wide grey Atlantic swells breaking over hidden offshore shoals under a darkening winter sky, empty horizon, a thin line of white surf in the distance, cold and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "On January 31, 1921, Coast Guardsman C.P. Brady of the Cape Hatteras station sighted the five-masted schooner Carroll A. Deering aground on Diamond Shoals with all sails set",
+      "sources": [
+        "https://www.nps.gov/caha/learn/historyculture/theghostship.htm",
+        "https://en.wikipedia.org/wiki/Carroll_A._Deering",
+        "https://islandfreepress.org/hatteras-island-features/january-31-marks-the-100th-anniversary-of-the-carroll-a-deering/"
+      ]
+    },
+    {
+      "claim": "Both lifeboats were missing",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Carroll_A._Deering",
+        "https://islandfreepress.org/hatteras-island-features/january-31-marks-the-100th-anniversary-of-the-carroll-a-deering/",
+        "https://www.nps.gov/caha/learn/historyculture/theghostship.htm"
+      ]
+    },
+    {
+      "claim": "The ship's log, navigation equipment and the crew's personal belongings were missing",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Carroll_A._Deering",
+        "https://www.nps.gov/caha/learn/historyculture/theghostship.htm",
+        "https://www.stripes.com/history/2023-01-31/outer-banks-shipwreck-mystery-9003837.html"
+      ]
+    },
+    {
+      "claim": "Food was laid out as if in preparation for a meal",
+      "sources": [
+        "https://www.nps.gov/caha/learn/historyculture/theghostship.htm",
+        "https://en.wikipedia.org/wiki/Carroll_A._Deering",
+        "https://www.stripes.com/history/2023-01-31/outer-banks-shipwreck-mystery-9003837.html"
+      ]
+    },
+    {
+      "claim": "Rescuers found a (six-toed) cat aboard",
+      "sources": [
+        "https://islandfreepress.org/hatteras-island-features/january-31-marks-the-100th-anniversary-of-the-carroll-a-deering/",
+        "https://www.stripes.com/history/2023-01-31/outer-banks-shipwreck-mystery-9003837.html",
+        "https://www.thelog.com/snw/100-years-later-ghost-ship-with-only-a-six-toed-cat-onboard-remains-a-mystery/"
+      ]
+    },
+    {
+      "claim": "Eleven men aboard: Captain W.B. Wormell and a crew of ten",
+      "sources": [
+        "https://islandfreepress.org/hatteras-island-features/january-31-marks-the-100th-anniversary-of-the-carroll-a-deering/",
+        "https://en.wikipedia.org/wiki/Carroll_A._Deering"
+      ]
+    },
+    {
+      "claim": "Five federal departments (Commerce, Treasury, Justice, Navy, State) investigated; closed late 1922 with no official finding",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Carroll_A._Deering",
+        "https://www.yacht.de/en/special/distress-at-sea/ghost-ships-the-eerie-mystery-of-the-carroll-a-deering/",
+        "https://www.nps.gov/caha/learn/historyculture/theghostship.htm"
+      ]
+    },
+    {
+      "claim": "Theories included piracy, mutiny, rum-runners and hurricanes; none was proven",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Carroll_A._Deering",
+        "https://www.nps.gov/caha/learn/historyculture/theghostship.htm",
+        "https://islandfreepress.org/hatteras-island-features/january-31-marks-the-100th-anniversary-of-the-carroll-a-deering/"
+      ]
+    },
+    {
+      "claim": "The crew was never found; no trace of them or the logs recovered; still unsolved (no new finding in 2024-2026 coverage)",
+      "sources": [
+        "https://islandfreepress.org/hatteras-island-features/january-31-marks-the-100th-anniversary-of-the-carroll-a-deering/",
+        "https://www.stripes.com/history/2023-01-31/outer-banks-shipwreck-mystery-9003837.html",
+        "https://www.yacht.de/en/special/distress-at-sea/ghost-ships-the-eerie-mystery-of-the-carroll-a-deering/",
+        "https://en.wikipedia.org/wiki/Carroll_A._Deering"
+      ]
+    }
+  ]
+}

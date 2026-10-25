@@ -251,6 +251,34 @@
    "kind": "person",
    "origin": "fresh",
    "frame": "band"
+  },
+  "dorabella": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh",
+   "frame": "bleed"
+  },
+  "rongorongo": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh",
+   "frame": "bleed"
+  },
+  "deering": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh",
+   "frame": "band"
+  },
+  "beale": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh",
+   "frame": "band"
   }
  },
  "byclaude": {

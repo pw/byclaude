@@ -1,0 +1,96 @@
+{
+  "title": "Rongorongo",
+  "subtitle": "Rapa Nui (Easter Island) · 1864",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a remote windswept volcanic island in the South Pacific, open grassland, dark volcanic stone and weathered wood, low warm or cold natural light, melancholy and reverent, cinematic composition, fine film grain. Single image, not a collage, no text, no signage, no legible glyphs or symbols, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Rapa Nui, Easter Island. In eighteen sixty-four, a missionary wrote of carved wooden tablets in almost every house.",
+      "cap": "RAPA NUI · 1864",
+      "img": "A wide view across a windswept grassy coastal plain on a remote volcanic Pacific island at golden hour, a dark extinct volcanic crater on the horizon, long grass bending in the wind, the open ocean beyond, quiet and vast."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Rows of tiny figures. Each line runs the other way, and the tablet is turned to read it.",
+      "cap": "TURNED\nEVERY LINE",
+      "amber": true,
+      "img": "An extreme close-up of a weathered dark wooden tablet surface in low raking light, shallow carved grooves running in parallel rows, the carvings too worn and out of focus to read, warm wood grain, deep shadow."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "In the eighteen-sixties, slave raids and disease devastated the island. Many who knew the script were lost.",
+      "cap": "RAIDS AND\nDISEASE",
+      "img": "A lone moai statue seen from behind and far away, silhouetted against a grey stormy sea and heavy low clouds at dusk, empty grassland in the foreground, sombre and still."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "About two dozen carved objects survive. In twenty twenty-four, the wood of one was dated to the fourteen hundreds.",
+      "cap": "WOOD FROM\nTHE 1400s",
+      "amber": true,
+      "img": "A single old curved wooden tablet resting alone on dark cloth inside a dimly lit museum display case, a soft beam of light falling across its worn edge, the surface markings indistinct, hushed and reverent."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "One passage may be a lunar calendar. No reading of the script has ever been accepted.",
+      "cap": "NEVER\nDECIPHERED",
+      "amber": true,
+      "img": "A thin crescent moon rising over a dark Pacific ocean seen from the rocky volcanic shoreline of a remote island at night, faint silver light on the waves, vast and silent."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "In 1864 Eugène Eyraud, a French missionary (lay brother), the first outsider to report the tablets, wrote that inscribed wooden tablets were found in nearly every house/hut on Rapa Nui",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rongorongo",
+        "https://www.sciencenewstoday.org/the-undeciphered-rongorongo-script-of-easter-island",
+        "https://imaginarapanui.com/en/rapa-nui-culture/rongorongo/"
+      ]
+    },
+    {
+      "claim": "Texts are in reverse boustrophedon: read one line left to right, then the tablet is turned 180 degrees for the next line",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rongorongo",
+        "https://www.sciencenewstoday.org/the-undeciphered-rongorongo-script-of-easter-island"
+      ]
+    },
+    {
+      "claim": "1862 Peruvian slave raids took ~1,000+ Rapanui including the king and priests; repatriation brought smallpox and the population collapsed; literate elites/priests were kidnapped in the raids or died in the resulting epidemics (loss of literacy is a scholarly inference)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rongorongo",
+        "https://en.wikipedia.org/wiki/Rapa_Nui_language",
+        "https://ebsco.com/research-starters/history/slave-traders-and-easter-island"
+      ]
+    },
+    {
+      "claim": "About two dozen wooden objects bearing rongorongo inscriptions survive, held in museums and collections worldwide",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rongorongo",
+        "https://www.smithsonianmag.com/smart-news/research-reveals-the-natives-of-easter-island-invented-a-written-language-from-scratch-180983793/"
+      ]
+    },
+    {
+      "claim": "Ferrara et al., Scientific Reports 14:2794 (2 Feb 2024): of four tablets held in Rome, one yielded a 'secure mid-fifteenth c. date' (the wood, not necessarily the carving); the other three fall in the 19th century; first European ships arrived in the 1720s (1722)",
+      "sources": [
+        "https://www.nature.com/articles/s41598-024-53063-7",
+        "https://popular-archaeology.com/article/study-suggests-independent-invention-of-writing-on-rapa-nui-easter-island",
+        "https://magazine.unibo.it/en/articles/did-writing-in-rapa-nui-easter-island-appear-before-the-europeans",
+        "https://www.smithsonianmag.com/smart-news/research-reveals-the-natives-of-easter-island-invented-a-written-language-from-scratch-180983793/"
+      ]
+    },
+    {
+      "claim": "Part of one tablet (Mamari) is thought to contain a lunar calendar; no decipherment has been accepted; the script remains undeciphered (2024 sources; no credible decipherment reported 2025–2026)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Decipherment_of_rongorongo",
+        "https://www.smithsonianmag.com/smart-news/research-reveals-the-natives-of-easter-island-invented-a-written-language-from-scratch-180983793/",
+        "https://magazine.unibo.it/en/articles/did-writing-in-rapa-nui-easter-island-appear-before-the-europeans"
+      ]
+    }
+  ]
+}

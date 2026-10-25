@@ -1,0 +1,48 @@
+{
+ "out": "short-su-dorabella",
+ "kicker": "THE DORABELLA CIPHER",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "dorabella",
+   "img": "B01",
+   "vo": "England, July eighteen ninety-seven. The composer Edward Elgar slipped a short note into his wife's letter to the Penny family, meant for a young friend, Dora.",
+   "cap": "ENGLAND \u00b7 1897"
+  },
+  {
+   "src": "dorabella",
+   "img": "B02",
+   "vo": "It held no words. Just eighty-seven small curved marks, in three lines, turned in different directions.",
+   "cap": "87 CURVED\nMARKS",
+   "amber": true
+  },
+  {
+   "src": "dorabella",
+   "img": "B03",
+   "vo": "Dora could make nothing of it. She put it away, and kept it for about forty years.",
+   "cap": "KEPT FOR\n40 YEARS"
+  },
+  {
+   "src": "dorabella",
+   "img": "B04",
+   "vo": "In nineteen thirty-seven, she printed a copy in her memoir. The original is now thought lost.",
+   "cap": "ORIGINAL\nMISSING"
+  },
+  {
+   "src": "dorabella",
+   "img": "B05",
+   "vo": "Many have claimed to break it. In two thousand seven, the Elgar Society held a competition. No solution has ever been generally accepted.",
+   "cap": "NO ACCEPTED\nSOLUTION",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "",
+ "frame": "bleed"
+}
