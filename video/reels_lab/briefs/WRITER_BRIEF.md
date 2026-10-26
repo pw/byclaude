@@ -37,3 +37,8 @@ Prefer ANOMALIES (signals, objects, lights, undeciphered things) or legend-grade
 
 ## Return
 A short report: name, arm, word count of VO, the "still unsolved as of 2026" evidence (with URL), and any claim you softened or dropped. Under 200 words.
+
+## Case selection + first frame (2026-10-26 breakout study, see LOOP.md)
+Prefer cases whose centre is a physical OBJECT / DOCUMENT / SIGNAL / EMPTY PLACE that is itself inexplicable,
+old (ideally pre-1950), no named victim. Beat 1's image = that object, centred, well lit, legible at thumbnail size
+(no near-black landscapes, no generic road/house). Say the impossible thing in line 1 or 2.

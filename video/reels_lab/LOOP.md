@@ -35,3 +35,31 @@ Truth floor: "Still unsolved" ending only on genuinely unsolved cases (Phantom o
 | 5 | `voice` | male (current) vs female narrator | |
 | 6 | `cadence` | 2/day vs 3/day | |
 | 7 | `frame` | 16:9 still in a band (current) vs full-bleed 9:16 still | **OPEN 2026-10-24.** `"frame":"bleed"` in the shorts spec + `_build_images.py <dir> 9:16` (→ `images916/`). First bleed: phaistos, paulawelden, whale52 (interleaved with band taracalico, shugborough, lakebodom; balanced on kind+end). Band originals in `shorts/band_backup/`. Build new films alternating bleed/band until n≥5 each. |
+| 8 | `format` | reel vs PHOTO post (one real photograph + 1–3 sentence caption, no video; Patrick's note b3c16e47) | **OPEN 2026-10-26.** `photo.py` posts 1/day 20:45Z from `photos/` (needs `APPROVED` = passed the blind check, `briefs/PHOTO_BRIEF.md` + `VERIFY_PHOTO_BRIEF.md`); real photos only, PD/CC0/CC BY/CC BY-SA with credit line. Metric = unique viewers at 72h (`post_total_media_view_unique`; reel plays ≈ reel viewers, Vela 49,045 vs 48,732), + reactions/comments/shares. First 7: baychimo, lineara, tunguska, stonespheres, indusseals, cottingley, plainofjars (4 verifier FIXes applied). Read at n≥5 photos (~11-02). |
+
+
+## ★ 2026-10-26 Breakout study (Patrick's steer: "what breaks out" is the main question)
+Top 4 fresh at 72h: Vela 1,599 (→49k), Voynich 1,301, Flannan 1,182, Mary Celeste 946. Floor: modern true crime
+(Jamison 390, Springfield Three 313, Shaffer 255, D.B. Cooper 202, Zodiac 235, Black Dahlia 335).
+What the top 4 share, and the floor lacks:
+1. **The mystery is a THING, not a victim.** A flash on a satellite, a book nobody can read, an empty lighthouse,
+   an empty ship. No named victim, no suspect, no grief. Fame doesn't save a true-crime case (Zodiac, D.B. Cooper
+   are the most famous cases we've made and sit at the floor).
+2. **Old.** All four ≤1979; three are pre-1913. Modern cases (1987–2014) are all ≤451.
+3. **Frame 1 is one legible, centred OBJECT** (contact sheet 10-26: flash-over-sea + consoles, open manuscript,
+   lighthouse rock, sailing ship). Floor first frames are generic scenery (dirt road, a house at night, a near-black
+   valley). The band shows the image at ~1/6 of the screen, so a small or dark first image is close to invisible —
+   another reason the `frame` (full-bleed) arm matters.
+4. **Stakes in the first two lines.** Vela line 2 = "the signature of a nuclear weapon". Voynich line 1 = "no one
+   could read". Flannan = the light went dark. The open asserts the impossibility immediately.
+Not the driver: `end` (Vela was a question), length (27–35 s across both groups), retention (Mary Celeste 0.18).
+Hessdalen / Max Headroom are anomalies at the floor: both have weak, dark first frames and no physical object.
+
+**Case-selection rule from here:** pick cases where the central element is a physical OBJECT, DOCUMENT, SIGNAL or
+EMPTY PLACE that is itself inexplicable, ideally pre-1950, no named victim; first frame = that object, centred and
+legible at thumbnail size; line 1 or 2 states the impossible thing plainly.
+In-shape candidates (not yet made as films): SS Baychimo (ghost ship, 1931–1969), the Joyita (1955, ship found
+empty), USS Cyclops (1918, vanished with 306), Linear A, the Indus script, the Copper Scroll (treasure list,
+treasure never found), the Antikythera mechanism (strange-but-true, mostly explained — no stamp), the stone
+spheres of Costa Rica, the Plain of Jars. The photo arm is posting several of these as stills first; a photo that
+over-performs is a cheap signal for which ones to make as films.
