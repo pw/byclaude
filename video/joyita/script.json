@@ -1,0 +1,88 @@
+{
+  "title": "The Joyita",
+  "subtitle": "South Pacific · 1955",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the open South Pacific Ocean in the mid-1950s, a small white wooden motor vessel, deep blue water and pale tropical sky, faded Kodachrome colour, melancholy and uncanny, vertical 9:16 full-bleed composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "vtype": "still",
+      "id": "B01",
+      "vo": "South Pacific, November nineteen fifty-five. A small ship was found drifting north of Fiji. Everyone aboard was gone.",
+      "cap": "PACIFIC · 1955",
+      "img": "Vertical full-bleed scene: a small 1940s wooden motor vessel, about seventy feet long, white hull and low deckhouse, centred in frame and well lit by clear tropical daylight, listing heavily to one side on a calm deep-blue Pacific, empty decks, no one aboard, the whole boat clearly legible against bright water."
+    },
+    {
+      "vtype": "still",
+      "id": "B02",
+      "vo": "The Joyita had left Samoa five weeks earlier, on a two-day run to Tokelau, with twenty-five people aboard.",
+      "cap": "25 ABOARD",
+      "img": "Vertical full-bleed scene: an empty wooden harbour jetty in Apia at dawn in the 1950s, coconut palms and a calm lagoon, pale gold light, mooring ropes coiled on the planks where a boat had been, no people."
+    },
+    {
+      "vtype": "still",
+      "id": "B03",
+      "vo": "She was found more than six hundred miles off course, partly submerged, kept afloat by the cork lining her hull.",
+      "cap": "600 MILES\nOFF COURSE",
+      "img": "Vertical full-bleed scene: low angle along the waterline of a small white wooden motor vessel, her port rail awash, sea water lapping over the deck, broken deckhouse windows, endless empty blue ocean beyond, hard midday light, no people."
+    },
+    {
+      "vtype": "still",
+      "id": "B04",
+      "vo": "Her radio was tuned to the distress frequency. The clocks had stopped at ten twenty-five. The life rafts were gone.",
+      "cap": "CLOCKS STOPPED\nAT 10:25",
+      "amber": true,
+      "img": "Vertical full-bleed scene: inside a cramped 1950s wheelhouse, an old valve radio set with a glowing dial beside a small round wall clock with stopped hands, salt-stained wood panelling, daylight through a cracked window, no people, no legible text."
+    },
+    {
+      "vtype": "still",
+      "id": "B05",
+      "vo": "No one aboard was ever found. The inquiry called their fate inexplicable on the evidence.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "Vertical full-bleed scene: a vast empty South Pacific at dusk seen from high above, one tiny white boat alone on the darkening water far below, a long pale wake fading, soft violet and amber sky, unresolved and silent."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "MV Joyita found 10 November 1955 drifting north of Fiji (north of Vanua Levu) by the merchant ship Tuvalu, no one aboard",
+      "sources": [
+        "https://en.wikipedia.org/wiki/MV_Joyita",
+        "https://samoaobserver.ws/category/contributors/114355",
+        "https://explorersweb.com/exploration-mysteries-mv-joyita/"
+      ]
+    },
+    {
+      "claim": "Left Apia, Samoa on 3 October 1955 bound for the Tokelau Islands, scheduled arrival 5 October (a two-day run), 25 aboard: 16 crew, 9 passengers",
+      "sources": [
+        "https://en.wikipedia.org/wiki/MV_Joyita",
+        "https://samoaobserver.ws/category/contributors/114355",
+        "https://explorersweb.com/exploration-mysteries-mv-joyita/",
+        "https://matauala.org.nz/joyita-unsolved-mystery"
+      ]
+    },
+    {
+      "claim": "Found more than 600 miles (about 970 km) off her route, partly submerged and listing heavily, kept afloat by cork lining in the hull",
+      "sources": [
+        "https://en.wikipedia.org/wiki/MV_Joyita",
+        "https://explorersweb.com/exploration-mysteries-mv-joyita/"
+      ]
+    },
+    {
+      "claim": "Radio tuned to 2182 kHz, the international marine distress channel; clocks stopped at 10:25; the three Carley liferafts and the dinghy missing",
+      "sources": [
+        "https://en.wikipedia.org/wiki/MV_Joyita",
+        "https://samoaobserver.ws/category/contributors/114355",
+        "https://explorersweb.com/exploration-mysteries-mv-joyita/"
+      ]
+    },
+    {
+      "claim": "No one aboard was ever found; the February 1956 inquiry in Apia found their fate 'inexplicable on the evidence submitted at the inquiry'; no new findings reported as of May 2025",
+      "sources": [
+        "https://en.wikipedia.org/wiki/MV_Joyita",
+        "https://samoaobserver.ws/category/contributors/114355",
+        "https://matauala.org.nz/joyita-unsolved-mystery"
+      ]
+    }
+  ]
+}

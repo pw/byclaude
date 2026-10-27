@@ -16,6 +16,17 @@ across Pages even with a new end beat. This was the "end-arm" signal too (every 
 Rule: ONLY never-posted films go on this Page. `arms.json` carries `origin: fresh|repost`; reposts excluded from arm reads.
 The 4 reposts built 10-17 (devilsfootprints, uvb76, leprince, larsmittank) are in ig_hold.json.
 
+## ★ 2026-10-27 finding: A 3-DAY PAGE-WIDE THROTTLE after the Vela breakout
+Every reel posted 10-23 01:45Z → 10-25 15:45Z got 4–31 plays (hoffa 16, flight19 18, phaistos 4, taracalico 31,
+paulawelden 6), band AND bleed alike, then shugborough (10-26) got 229. Page insights confirm it is the PAGE, not the films:
+`page_total_media_view_unique` ~1,100–1,500/day before → **67 / 62 / 70** for days 10-23..10-25 → 525 on 10-26.
+It began three days after Vela's spike (+1,031 follows on 10-20). Graph API shows nothing (all published, no copyright
+match); cause unknown (likely an automated review of a sudden follower jump). Those 5 carry `excluded` in arms.json and
+`lab.py report` drops them from every stat and prints the list. Consequences: the frame arm lost 2 of its 3 first bleed
+films; and before reading ANY arm, check page-level daily views over the films' posting days — a film inside an outage
+measures the outage. Re-check: if the next breakout is followed by another dead window, this is a pattern (expect it, and
+don't spend the best queued films in the 3 days after a spike).
+
 ## The loop (one arm at a time)
 1. **Post** 2/day via `ig.py --profile unsolved batch --per-day 2` (cron once the Page id lands in ig.py + reels_lab/pages.json).
 2. **Measure**: `lab.py snap` every 6h (cron); `lab.py report --page unsolved` = plays at 72h + retention + arm medians.
@@ -34,7 +45,7 @@ Truth floor: "Still unsolved" ending only on genuinely unsolved cases (Phantom o
 | 4 | `length` | ~20 s vs ~35 s | |
 | 5 | `voice` | male (current) vs female narrator | |
 | 6 | `cadence` | 2/day vs 3/day | |
-| 7 | `frame` | 16:9 still in a band (current) vs full-bleed 9:16 still | **OPEN 2026-10-24.** `"frame":"bleed"` in the shorts spec + `_build_images.py <dir> 9:16` (→ `images916/`). First bleed: phaistos, paulawelden, whale52 (interleaved with band taracalico, shugborough, lakebodom; balanced on kind+end). Band originals in `shorts/band_backup/`. Build new films alternating bleed/band until n≥5 each. |
+| 7 | `frame` | 16:9 still in a band (current) vs full-bleed 9:16 still | **OPEN 2026-10-24.** `"frame":"bleed"` in the shorts spec + `_build_images.py <dir> 9:16` (→ `images916/`). First bleed: phaistos, paulawelden, whale52 (interleaved with band taracalico, shugborough, lakebodom; balanced on kind+end). Band originals in `shorts/band_backup/`. Build new films alternating bleed/band until n≥5 each. **10-27:** phaistos + paulawelden lost to the page throttle (excluded); bleed valid = whale52, dorabella, rongorongo + new joyita, cyclops, copperscroll; band valid = shugborough, lakebodom, deering, beale. Read ~11-01. |
 | 8 | `format` | reel vs PHOTO post (one real photograph + 1–3 sentence caption, no video; Patrick's note b3c16e47) | **OPEN 2026-10-26.** `photo.py` posts 1/day 20:45Z from `photos/` (needs `APPROVED` = passed the blind check, `briefs/PHOTO_BRIEF.md` + `VERIFY_PHOTO_BRIEF.md`); real photos only, PD/CC0/CC BY/CC BY-SA with credit line. Metric = unique viewers at 72h (`post_total_media_view_unique`; reel plays ≈ reel viewers, Vela 49,045 vs 48,732), + reactions/comments/shares. First 7: baychimo, lineara, tunguska, stonespheres, indusseals, cottingley, plainofjars (4 verifier FIXes applied). Read at n≥5 photos (~11-02). |
 
 

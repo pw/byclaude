@@ -1,0 +1,96 @@
+{
+  "title": "The Copper Scroll",
+  "subtitle": "Qumran Cave 3 · 1952",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the Judean desert by the Dead Sea: pale limestone cliffs and caves and an ancient corroded copper scroll, warm low lamplight against dusty ochre and bronze-green, quiet and uncanny, ancient detail, cinematic vertical composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Qumran, nineteen fifty-two. In a cave by the Dead Sea, archaeologists found a scroll made of copper.",
+      "cap": "QUMRAN · 1952",
+      "img": "Two rolled cylinders of ancient corroded copper sheet, green-brown patina, rows of small engraved marks visible along the curled edges, resting centred on a flat pale limestone ledge inside a cave, lit by a warm low lamp from one side, sharp detail, the object filling the middle of a tall vertical frame, dark soft cave wall behind."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "It is a list. Sixty-four hiding places, and the treasure said to lie at nearly all of them.",
+      "cap": "64 HIDING\nPLACES",
+      "amber": true,
+      "img": "Extreme close-up of a curved strip of corroded ancient copper with neat rows of small hand-engraved characters, worn and illegible, green and bronze oxide, raking warm light catching the incised grooves, vertical composition."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "It was sawn into strips to be read. By some estimates, the total runs to tons.",
+      "cap": "BY SOME\nCOUNTS, TONS",
+      "img": "Many narrow curved segments of corroded green copper laid side by side in neat rows on dark cloth on a stone ledge inside a cave, lit from above by a single warm lamp, quiet and exact, vertical composition."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "In the early nineteen-sixties, an expedition dug at some of the sites. It found nothing. No treasure has ever been found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "A dry desert ravine below pale limestone cliffs at dusk, a few old shallow excavation pits and spoil heaps in the gravel, abandoned and empty, long shadows, tall vertical composition."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Temple treasure hidden from Rome, a legend, or a hoax? Scholars still disagree.",
+      "cap": "WAS IT\nREAL?",
+      "amber": true,
+      "img": "A dark cave mouth high in a weathered limestone cliff at dusk, the hazy flat surface of the Dead Sea far below, empty and silent, tall vertical composition."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Found March 1952 by archaeologists at the back of Qumran Cave 3, near the Dead Sea; made of copper (with ~1% tin)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Copper_Scroll",
+        "https://cojs.org/copper_scroll_-3q15-_bargil_-virgil-_pixner-_anchor_bible_dictionary_-ed-_david_noel_freedman-_doubleday-_new_york_1992/"
+      ]
+    },
+    {
+      "claim": "Too brittle to unroll; H. Wright Baker at Manchester sawed it into 23 strips in 1955–56, after which it was read/translated",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Copper_Scroll",
+        "https://cojs.org/copper_scroll_-3q15-_bargil_-virgil-_pixner-_anchor_bible_dictionary_-ed-_david_noel_freedman-_doubleday-_new_york_1992/",
+        "https://www.ncregister.com/blog/the-mystery-of-the-copper-scroll"
+      ]
+    },
+    {
+      "claim": "It lists 64 hiding places of gold, silver and other treasure (63 with gold/silver)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Copper_Scroll",
+        "https://cojs.org/copper_scroll_-3q15-_bargil_-virgil-_pixner-_anchor_bible_dictionary_-ed-_david_noel_freedman-_doubleday-_new_york_1992/",
+        "https://www.ncregister.com/blog/the-mystery-of-the-copper-scroll"
+      ]
+    },
+    {
+      "claim": "Totals vary by translation/estimate (~4,500 talents; estimates 'in tons'; NCRegister ~65 t gold + 26 t silver; others 58–174 t) — hence 'by some estimates, tons'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Copper_Scroll",
+        "https://www.ncregister.com/blog/the-mystery-of-the-copper-scroll",
+        "https://cojs.org/copper_scroll_-3q15-_bargil_-virgil-_pixner-_anchor_bible_dictionary_-ed-_david_noel_freedman-_doubleday-_new_york_1992/"
+      ]
+    },
+    {
+      "claim": "John Allegro's 1962 expedition dug at some listed sites and found nothing; none of the treasure has ever been found (still none as of July 2026)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Copper_Scroll",
+        "https://www.ncregister.com/blog/the-mystery-of-the-copper-scroll",
+        "https://startupfortune.com/a-viral-social-media-post-is-reminding-the-world-that-one-dead-sea-scroll-is-not-scripture-but-a-copper-engraved-inventory-of-billions-in-buried-treasure/"
+      ]
+    },
+    {
+      "claim": "Theories: Second Temple treasure hidden from the Romans, Bar Kokhba hoard, legendary/folklore (Milik), hoax (Gaster); scholars disagree whether it was real",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Copper_Scroll",
+        "https://cojs.org/copper_scroll_-3q15-_bargil_-virgil-_pixner-_anchor_bible_dictionary_-ed-_david_noel_freedman-_doubleday-_new_york_1992/",
+        "https://www.ncregister.com/blog/the-mystery-of-the-copper-scroll"
+      ]
+    }
+  ]
+}

@@ -138,11 +138,16 @@ def report(age=72, page=None):
     allmature = [o for o in out if not o["young"]]
     # reposts get ~0 distribution (2026-10-18) — keep them out of every stat except the origin arm itself
     # photos only ever enter the `format` arm (reel plays ~= reel unique viewers: Vela 49,045 vs 48,732, so the arm compares like with like)
+    # posts inside a PAGE-WIDE distribution outage measure the outage, not the arm (2026-10-27: page media views
+    # ~1,300/day -> ~70/day 10-23..10-25, right after Vela's +1,031 follows) — `excluded` in arms.json, reason printed
+    allmature = [o for o in allmature if not o["arms"].get("excluded")]
     mature = [o for o in allmature if o["arms"].get("origin") != "repost" and not o["photo"]]
     for pg in sorted({o["page"] for o in mature}):
         ps = [o["plays"] for o in mature if o["page"] == pg]
         print(f"\n{pg}: n={len(ps)} median {statistics.median(ps)}  p75 {sorted(ps)[int(len(ps)*.75)]}  max {max(ps)}")
-    keys = sorted({k for o in allmature for k in o["arms"]})
+    keys = sorted({k for o in allmature for k in o["arms"]} - {"excluded"})
+    ex = [o["name"] for o in out if o["arms"].get("excluded")]
+    if ex: print(f"\nexcluded from every stat ({len(ex)}): {', '.join(ex)}")
     for k in keys:
         groups = {}
         for o in (allmature if k == "origin" else [o for o in allmature if o["arms"].get("origin") != "repost"] if k == "format" else mature):

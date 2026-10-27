@@ -194,28 +194,32 @@
    "topic": "unsolved",
    "kind": "anomaly",
    "origin": "fresh",
-   "frame": "bleed"
+   "frame": "bleed",
+   "excluded": "page-throttle 10-23..10-25 (page media views ~1,300/day -> ~70/day, all posts)"
   },
   "flight19": {
    "end": "stamp",
    "topic": "unsolved",
    "kind": "person",
    "origin": "fresh",
-   "frame": "band"
+   "frame": "band",
+   "excluded": "page-throttle 10-23..10-25 (page media views ~1,300/day -> ~70/day, all posts)"
   },
   "taracalico": {
    "end": "question",
    "topic": "unsolved",
    "kind": "person",
    "origin": "fresh",
-   "frame": "band"
+   "frame": "band",
+   "excluded": "page-throttle 10-23..10-25 (page media views ~1,300/day -> ~70/day, all posts)"
   },
   "hoffa": {
    "end": "stamp",
    "topic": "unsolved",
    "kind": "person",
    "origin": "fresh",
-   "frame": "band"
+   "frame": "band",
+   "excluded": "page-throttle 10-23..10-25 (page media views ~1,300/day -> ~70/day, all posts)"
   },
   "whale52": {
    "end": "question",
@@ -229,7 +233,8 @@
    "topic": "unsolved",
    "kind": "person",
    "origin": "fresh",
-   "frame": "bleed"
+   "frame": "bleed",
+   "excluded": "page-throttle 10-23..10-25 (page media views ~1,300/day -> ~70/day, all posts)"
   },
   "lakebodom": {
    "end": "question",
@@ -279,6 +284,27 @@
    "kind": "anomaly",
    "origin": "fresh",
    "frame": "band"
+  },
+  "joyita": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh",
+   "frame": "bleed"
+  },
+  "cyclops": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh",
+   "frame": "bleed"
+  },
+  "copperscroll": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh",
+   "frame": "bleed"
   }
  },
  "byclaude": {

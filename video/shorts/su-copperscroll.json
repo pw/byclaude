@@ -1,0 +1,49 @@
+{
+ "out": "short-su-copperscroll",
+ "kicker": "THE COPPER SCROLL",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "copperscroll",
+   "img": "B01",
+   "vo": "Qumran, nineteen fifty-two. In a cave by the Dead Sea, archaeologists found a scroll made of copper.",
+   "cap": "QUMRAN \u00b7 1952"
+  },
+  {
+   "src": "copperscroll",
+   "img": "B02",
+   "vo": "It is a list. Sixty-four hiding places, and the treasure said to lie at nearly all of them.",
+   "cap": "64 HIDING\nPLACES",
+   "amber": true
+  },
+  {
+   "src": "copperscroll",
+   "img": "B03",
+   "vo": "It was sawn into strips to be read. By some estimates, the total runs to tons.",
+   "cap": "BY SOME\nCOUNTS, TONS"
+  },
+  {
+   "src": "copperscroll",
+   "img": "B04",
+   "vo": "In the early nineteen-sixties, an expedition dug at some of the sites. It found nothing. No treasure has ever been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "src": "copperscroll",
+   "img": "B05",
+   "vo": "Temple treasure hidden from Rome, a legend, or a hoax? Scholars still disagree.",
+   "cap": "WAS IT\nREAL?",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "",
+ "frame": "bleed"
+}

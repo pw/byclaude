@@ -1,0 +1,48 @@
+{
+ "out": "short-su-cyclops",
+ "kicker": "USS CYCLOPS",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "cyclops",
+   "img": "B01",
+   "vo": "March, nineteen eighteen. The Navy coal ship Cyclops left Barbados for Baltimore with about three hundred people aboard. She was never seen again.",
+   "cap": "BARBADOS \u00b7 1918"
+  },
+  {
+   "src": "cyclops",
+   "img": "B02",
+   "vo": "No distress call was ever received. No wreckage was ever found.",
+   "cap": "NO DISTRESS\nCALL",
+   "amber": true
+  },
+  {
+   "src": "cyclops",
+   "img": "B03",
+   "vo": "In her hold, about ten thousand tons of manganese ore, bound for wartime munitions.",
+   "cap": "10,000 TONS\nOF ORE"
+  },
+  {
+   "src": "cyclops",
+   "img": "B04",
+   "vo": "Theories include a storm, a broken hull, or a German submarine. None has been proven.",
+   "cap": "NONE\nPROVEN"
+  },
+  {
+   "src": "cyclops",
+   "img": "B05",
+   "vo": "Often told as a Bermuda Triangle story, she remains one of the largest non-combat losses in US Navy history. Her wreck has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "",
+ "frame": "bleed"
+}

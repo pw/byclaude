@@ -1,0 +1,114 @@
+{
+  "title": "The Cyclops",
+  "subtitle": "USS Cyclops · Atlantic Ocean, 1918",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the open tropical Atlantic Ocean east of the Caribbean in March 1918, a steel World War I-era US Navy coal-carrying collier ship, grey-blue swells under a pale overcast sky, cold steel-grey and muted sea-green tones, melancholy and uncanny, period 1918 maritime detail, vertical 9:16 full-bleed composition, fine film grain. Single image, not a collage, no text, no signage, no hull numbers, no flags with lettering, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "March, nineteen eighteen. The Navy coal ship Cyclops left Barbados for Baltimore with about three hundred people aboard. She was never seen again.",
+      "cap": "BARBADOS · 1918",
+      "img": "A huge grey steel World War I-era navy collier ship seen broadside and centred in a vertical frame on a calm grey-blue Atlantic sea, her long deck lined with a row of tall steel coaling gantries and derrick frames rising high above the hull, two tall masts, a single funnel aft, sharply lit by soft bright overcast daylight, the whole ship clearly legible, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "No distress call was ever received. No wreckage was ever found.",
+      "cap": "NO DISTRESS\nCALL",
+      "amber": true,
+      "img": "An empty expanse of open Atlantic ocean in a vertical frame, long grey swells under a pale overcast sky, nothing on the horizon, a faint band of light on the water, vast and silent."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "In her hold, about ten thousand tons of manganese ore, bound for wartime munitions.",
+      "cap": "10,000 TONS\nOF ORE",
+      "img": "Looking down into the deep open steel cargo hold of a 1918 collier ship, heaped dark grey manganese ore filling it, riveted steel walls, a shaft of pale daylight falling from the open hatch above, vertical composition, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Theories include a storm, a broken hull, or a German submarine. None has been proven.",
+      "cap": "NONE\nPROVEN",
+      "img": "Heavy dark storm clouds over a rough grey Atlantic sea at dusk in a vertical frame, tall breaking swells, a distant curtain of rain, no ship visible, ominous and empty."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Often told as a Bermuda Triangle story, she remains one of the largest non-combat losses in US Navy history. Her wreck has never been found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "The deep blue-black open ocean seen from just below the surface looking down into darkness, faint shafts of light fading into the depths, empty, no wreck visible, vertical composition, quiet and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "USS Cyclops, a 542-ft US Navy collier, departed Barbados on 4 March 1918 bound for Baltimore and was never seen again",
+      "sources": [
+        "https://en.wikipedia.org/wiki/USS_Cyclops_(AC-4)",
+        "https://www.military.com/daily-news/2018/03/14/mystery-vanished-uss-cyclops-still-unsolved-100-years-later.html",
+        "https://www.discoveryuk.com/mysteries/what-happened-to-the-uss-cyclops-and-has-it-been-found/",
+        "https://www.worldatlas.com/oceans/the-shipwrecks-still-missing-at-the-bottom-of-the-sea.html"
+      ]
+    },
+    {
+      "claim": "More than 300 aboard: sources give 306 (Wikipedia, Discovery UK, WorldAtlas) or 309 (Military.com, Fox News); script uses 'over three hundred'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/USS_Cyclops_(AC-4)",
+        "https://www.discoveryuk.com/mysteries/what-happened-to-the-uss-cyclops-and-has-it-been-found/",
+        "https://www.military.com/daily-news/2018/03/14/mystery-vanished-uss-cyclops-still-unsolved-100-years-later.html",
+        "https://www.foxnews.com/us/more-than-100-years-later-the-great-mystery-of-the-vanished-uss-cyclops-remains-unsolved.amp"
+      ]
+    },
+    {
+      "claim": "No distress call was received",
+      "sources": [
+        "https://www.military.com/daily-news/2018/03/14/mystery-vanished-uss-cyclops-still-unsolved-100-years-later.html",
+        "https://www.discoveryuk.com/mysteries/what-happened-to-the-uss-cyclops-and-has-it-been-found/",
+        "https://www.foxnews.com/us/more-than-100-years-later-the-great-mystery-of-the-vanished-uss-cyclops-remains-unsolved.amp"
+      ]
+    },
+    {
+      "claim": "No wreckage/wreck has ever been found or confirmed (as of Sept 2026); a 2024-25 web claim of a find is unverified and unconfirmed by the Navy",
+      "sources": [
+        "https://en.wikipedia.org/wiki/USS_Cyclops_(AC-4)",
+        "https://www.military.com/daily-news/2018/03/14/mystery-vanished-uss-cyclops-still-unsolved-100-years-later.html",
+        "https://www.worldatlas.com/oceans/the-shipwrecks-still-missing-at-the-bottom-of-the-sea.html",
+        "https://indiandefencereview.com/uss-cyclops-disappearance-1918-navy-mystery/"
+      ]
+    },
+    {
+      "claim": "Cargo of roughly 10,000 tons of manganese ore, used to produce munitions",
+      "sources": [
+        "https://en.wikipedia.org/wiki/USS_Cyclops_(AC-4)",
+        "https://www.military.com/daily-news/2018/03/14/mystery-vanished-uss-cyclops-still-unsolved-100-years-later.html",
+        "https://www.discoveryuk.com/mysteries/what-happened-to-the-uss-cyclops-and-has-it-been-found/"
+      ]
+    },
+    {
+      "claim": "Proposed causes include storm, structural failure, and German U-boat action; none proven (Germany denied involvement; cause officially unknown)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/USS_Cyclops_(AC-4)",
+        "https://www.discoveryuk.com/mysteries/what-happened-to-the-uss-cyclops-and-has-it-been-found/",
+        "https://www.marineinsight.com/know-more/the-story-of-uss-cyclops-the-u-s-navy-ship-lost-without-trace/"
+      ]
+    },
+    {
+      "claim": "One of the largest non-combat losses in US Navy history (often called THE largest; NHHC H-Gram 016 and Wikipedia note USS Insurgent, 1800, may be larger, so hedged to 'one of')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/USS_Cyclops_(AC-4)",
+        "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-016/h-016-4.html",
+        "https://www.military.com/daily-news/2018/03/14/mystery-vanished-uss-cyclops-still-unsolved-100-years-later.html"
+      ]
+    },
+    {
+      "claim": "Popularly framed as a Bermuda Triangle case (framing only, not a claim of fact)",
+      "sources": [
+        "https://www.discoveryuk.com/mysteries/what-happened-to-the-uss-cyclops-and-has-it-been-found/",
+        "https://www.thebermudian.com/culture/our-bermuda/mysteries-of-the-bermuda-triangle-fate-of-the-uss-cyclops/"
+      ]
+    }
+  ]
+}

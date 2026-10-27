@@ -1,0 +1,48 @@
+{
+ "out": "short-su-joyita",
+ "kicker": "THE JOYITA",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "joyita",
+   "img": "B01",
+   "vo": "South Pacific, November nineteen fifty-five. A small ship was found drifting north of Fiji. Everyone aboard was gone.",
+   "cap": "PACIFIC \u00b7 1955"
+  },
+  {
+   "src": "joyita",
+   "img": "B02",
+   "vo": "The Joyita had left Samoa five weeks earlier, on a two-day run to Tokelau, with twenty-five people aboard.",
+   "cap": "25 ABOARD"
+  },
+  {
+   "src": "joyita",
+   "img": "B03",
+   "vo": "She was found more than six hundred miles off course, partly submerged, kept afloat by the cork lining her hull.",
+   "cap": "600 MILES\nOFF COURSE"
+  },
+  {
+   "src": "joyita",
+   "img": "B04",
+   "vo": "Her radio was tuned to the distress frequency. The clocks had stopped at ten twenty-five. The life rafts were gone.",
+   "cap": "CLOCKS STOPPED\nAT 10:25",
+   "amber": true
+  },
+  {
+   "src": "joyita",
+   "img": "B05",
+   "vo": "No one aboard was ever found. The inquiry called their fate inexplicable on the evidence.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "",
+ "frame": "bleed"
+}
