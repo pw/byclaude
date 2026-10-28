@@ -42,3 +42,7 @@ A short report: name, arm, word count of VO, the "still unsolved as of 2026" evi
 Prefer cases whose centre is a physical OBJECT / DOCUMENT / SIGNAL / EMPTY PLACE that is itself inexplicable,
 old (ideally pre-1950), no named victim. Beat 1's image = that object, centred, well lit, legible at thumbnail size
 (no near-black landscapes, no generic road/house). Say the impossible thing in line 1 or 2.
+
+## Violence wording (2026-10-28, Lake Bodom died at 3 plays on a healthy page)
+No killing/attack/stabbing verbs in vo, cap or caption. Prefer cases that can be told without them; if a death is
+essential, state it in the plainest passive form once ("no one aboard was ever seen again"), never how.

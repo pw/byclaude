@@ -1,0 +1,48 @@
+{
+ "out": "short-su-rohonc",
+ "kicker": "THE ROHONC CODEX",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "rohonc",
+   "img": "B01",
+   "vo": "Hungary, eighteen thirty-eight. A nobleman gave his library to the Hungarian Academy of Sciences. In it was a small book that no one can read.",
+   "cap": "HUNGARY \u00b7 1838"
+  },
+  {
+   "src": "rohonc",
+   "img": "B02",
+   "vo": "Four hundred and forty-eight pages, written in a script no one has ever identified. Hundreds of different signs.",
+   "cap": "AN UNKNOWN\nSCRIPT",
+   "amber": true
+  },
+  {
+   "src": "rohonc",
+   "img": "B03",
+   "vo": "Among the text, eighty-seven drawings. Christian, Muslim and pagan symbols, side by side.",
+   "cap": "87\nDRAWINGS"
+  },
+  {
+   "src": "rohonc",
+   "img": "B04",
+   "vo": "Its paper was likely made in northern Italy, in the fifteen hundreds. When the writing was added is unknown.",
+   "cap": "PAPER\n1500s",
+   "amber": true
+  },
+  {
+   "src": "rohonc",
+   "img": "B05",
+   "vo": "Some scholars call it a forgery. Others have claimed decipherments. None has ever been widely accepted.",
+   "cap": "NO ACCEPTED\nREADING",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

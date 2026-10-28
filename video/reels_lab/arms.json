@@ -241,7 +241,8 @@
    "topic": "unsolved",
    "kind": "person",
    "origin": "fresh",
-   "frame": "band"
+   "frame": "band",
+   "excluded": "single-video non-distribution: 3 plays in 22h while same-week films got 230-460 and page views were normal (580/664/day); violent-crime content (3 teens killed) — likely a per-video distribution limit, cause unverified"
   },
   "shugborough": {
    "end": "stamp",
@@ -305,6 +306,13 @@
    "kind": "anomaly",
    "origin": "fresh",
    "frame": "bleed"
+  },
+  "waratah": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh",
+   "frame": "band"
   }
  },
  "byclaude": {

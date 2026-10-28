@@ -1,0 +1,103 @@
+{
+  "title": "The Waratah",
+  "subtitle": "SS Waratah · off South Africa, 1909",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the open sea off the southeast coast of South Africa in July 1909, early-1900s steamship era, grey-green water and heavy southern-winter sky, cold steel-grey light, melancholy and uncanny, period maritime detail, cinematic wide composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "South Africa, July nineteen-oh-nine. The Waratah, a big new liner, left Durban for Cape Town. She never arrived.",
+      "cap": "SOUTH AFRICA · 1909",
+      "img": "A large early-1900s steamship with a single tall funnel and two masts, black hull and white upper decks, sailing alone on a grey-green open sea in clear daylight, seen broadside and centred in frame, sharp and well lit, a faint trail of smoke from the funnel, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Two hundred and eleven people were aboard. None was ever seen again.",
+      "cap": "211\nABOARD",
+      "amber": true,
+      "img": "The empty promenade deck of an early-1900s steamship in daylight, polished wooden deck planks, white-painted railings and a row of empty wooden deck chairs, lifeboats in their davits above, grey sea beyond, still and deserted, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Early the next morning, another steamer exchanged lamp signals with her. It was the last confirmed sighting.",
+      "cap": "LAST\nSIGHTING",
+      "img": "A brass signal lamp shining a bright beam from the dark bridge wing of an early-1900s cargo steamer before dawn, across a heaving sea toward the small distant lights of a larger steamship on the horizon, cold blue pre-dawn light, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "One passenger left the ship at Durban. He later cabled his wife that he had thought her top-heavy.",
+      "cap": "LEFT AT\nDURBAN",
+      "img": "A large early-1900s steamship with a single tall funnel moored alongside a quiet stone harbour quay in soft daylight, a lone leather suitcase resting on the empty quay in the foreground, coiled mooring ropes, calm water, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "For decades, searchers combed that coast. One promising wreck turned out to be another ship. The Waratah has never been found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "A wide empty grey ocean off a rugged dark coastline under a heavy overcast sky, long swells rolling toward the horizon, no ship anywhere, cold and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "SS Waratah, Blue Anchor Line passenger-cargo liner (~9,339 GRT), completed October 1908, maiden voyage November 1908; lost on her second voyage, July 1909",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://www.discoveryuk.com/?p=23273709",
+        "https://www.slsa.sa.gov.au/australias-titanic-sinking-of-ss-waratah"
+      ]
+    },
+    {
+      "claim": "Left Durban on the evening of 26 July 1909 bound for Cape Town (due 29 July); never arrived",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://www.slsa.sa.gov.au/australias-titanic-sinking-of-ss-waratah",
+        "https://www.discoveryuk.com/?p=23273709"
+      ]
+    },
+    {
+      "claim": "211 people aboard (92 passengers, 119 crew); none ever seen or heard from again. Figure consistent across sources checked",
+      "sources": [
+        "https://www.slsa.sa.gov.au/australias-titanic-sinking-of-ss-waratah",
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://www.discoveryuk.com/?p=23273709"
+      ]
+    },
+    {
+      "claim": "Early on 27 July 1909 the steamer Clan MacIntyre exchanged signal-lamp messages with Waratah off the Eastern Cape (near the Mbashe River); the last confirmed sighting",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://www.discoveryuk.com/?p=23273709",
+        "https://www.mastermariners.org.au/stories-from-the-past/5144-1909-last-sighting-of-steamer-ss-waratah"
+      ]
+    },
+    {
+      "claim": "Passenger Claude Sawyer disembarked at Durban and cabled his wife 'Thought Waratah top-heavy, landed Durban' (his later reported vision/dream is anecdote and is NOT used)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://www.discoveryuk.com/?p=23273709"
+      ]
+    },
+    {
+      "claim": "Emlyn Brown's searches 1983-2004; a 1999 sonar target that seemed to match was identified by divers in 2001 as the Nailsea Meadow, a WWII wreck; Brown gave up in 2004",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://www.discoveryuk.com/?p=23273709",
+        "https://numa.net/?p=579"
+      ]
+    },
+    {
+      "claim": "Still not found as of 2025-26: a 2025 Journal of Maritime Archaeology paper (rogue-wave hypothesis, Algoa Bay shelf break) states the ship remains undiscovered despite many searches",
+      "sources": [
+        "https://link.springer.com/article/10.1007/s11457-025-09435-9",
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://www.discoveryuk.com/?p=23273709"
+      ]
+    }
+  ]
+}

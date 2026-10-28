@@ -27,6 +27,15 @@ films; and before reading ANY arm, check page-level daily views over the films' 
 measures the outage. Re-check: if the next breakout is followed by another dead window, this is a pattern (expect it, and
 don't spend the best queued films in the 3 days after a spike).
 
+## ★ 2026-10-28 finding: ONE VIDEO CAN DIE ALONE (Lake Bodom)
+Lake Bodom (posted 10-27 01:45Z, band, person, question) got **3 plays in 22h** while the page was healthy
+(`page_total_media_view_unique` 580 / 664 per day) and its neighbours got normal reach (whale52 460, beale 296 in 8h).
+Published, no copyright match, `content_category OTHER`: the API shows nothing. It is the only fresh film with
+violence in the script ("someone attacked the tent… Three of them were killed"). Read: a per-video distribution limit,
+most likely a violence classifier; cause unverified. Excluded from arm reads (it would measure the classifier, not the
+frame). Rule for writers: no killing/attack verbs in vo or caption unless the case can't be told without them, and
+then prefer cases that don't need them. A film under ~20 plays at 12h on a healthy page day = check this first.
+
 ## The loop (one arm at a time)
 1. **Post** 2/day via `ig.py --profile unsolved batch --per-day 2` (cron once the Page id lands in ig.py + reels_lab/pages.json).
 2. **Measure**: `lab.py snap` every 6h (cron); `lab.py report --page unsolved` = plays at 72h + retention + arm medians.

@@ -1,4 +1,8 @@
 {
+ "beale": {
+  "fb_published_at": "2026-10-27T15:45:38+00:00",
+  "fb_video_id": "1693047648921665"
+ },
  "beaumont": {
   "fb_published_at": "2026-10-15T15:45:40+00:00",
   "fb_video_id": "2174926793060539"
@@ -14,6 +18,10 @@
  "circleville": {
   "fb_published_at": "2026-10-13T15:45:38+00:00",
   "fb_video_id": "1625358059030945"
+ },
+ "copperscroll": {
+  "fb_published_at": "2026-10-28T01:45:34+00:00",
+  "fb_video_id": "1748772489545083"
  },
  "dbcooper": {
   "fb_published_at": "2026-10-21T01:45:42+00:00",

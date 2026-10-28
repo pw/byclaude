@@ -1,0 +1,112 @@
+{
+  "title": "The Rohonc Codex",
+  "subtitle": "Hungary, 1838",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a small old handwritten paper codex from the sixteenth century in a dim rare-book reading room, warm lamplight on aged paper, faded brown ink, quiet and uncanny, close cinematic composition, fine film grain. Any handwriting is illegible invented script-like marks, not any real alphabet, no readable words or letters. Single image, not a collage, no signage, no people, no faces, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Hungary, eighteen thirty-eight. A nobleman gave his library to the Hungarian Academy of Sciences. In it was a small book that no one can read.",
+      "cap": "HUNGARY · 1838",
+      "img": "A small old leather-bound codex lying open at the centre of a dark wooden table, both paper pages densely filled with rows of strange unfamiliar handwritten symbols in faded brown ink, warm lamplight falling evenly on the open pages, the book clearly visible and well lit, plain dark background."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Four hundred and forty-eight pages, written in a script no one has ever identified. Hundreds of different signs.",
+      "cap": "AN UNKNOWN\nSCRIPT",
+      "amber": true,
+      "img": "A close-up of an aged paper page covered in neat rows of small angular illegible handwritten glyphs in faded brown ink, no two rows alike, lamplight, shallow depth of field."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Among the text, eighty-seven drawings. Christian, Muslim and pagan symbols, side by side.",
+      "cap": "87\nDRAWINGS",
+      "img": "An open aged paper page with a crude hand-drawn ink illustration of a simple cross, a crescent moon and a rayed sun drawn side by side, rows of illegible glyphs above and below, faded brown ink, lamplight."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Its paper was likely made in northern Italy, in the fifteen hundreds. When the writing was added is unknown.",
+      "cap": "PAPER\n1500s",
+      "amber": true,
+      "img": "A single sheet of old laid paper held up against a window, a faint watermark shape glowing through the paper fibres in soft back light, quiet reading room in shadow behind, no writing visible."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Some scholars call it a forgery. Others have claimed decipherments. None has ever been widely accepted.",
+      "cap": "NO ACCEPTED\nREADING",
+      "amber": true,
+      "img": "The small old codex lying open on an empty reading-room desk at night under a single desk lamp, pages of illegible glyphs, an empty chair pushed back, unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Kept at Rohonc (now Rechnitz, Austria) until 1838, when Gusztáv Batthyány, a local nobleman, donated it with his library to the Hungarian Academy of Sciences, where it is held (Budapest)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rohonc_Codex",
+        "https://www.csmc.uni-hamburg.de/publications/aom/mom/39-en.html",
+        "https://futilitycloset.com/2007/08/04/the-rohonc-codex"
+      ]
+    },
+    {
+      "claim": "Small book, 12 x 10 cm; 448 paper pages (224 leaves)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rohonc_Codex",
+        "https://www.csmc.uni-hamburg.de/publications/aom/mom/39-en.html",
+        "https://www.openculture.com/2026/02/the-rohonc-codex-hungarys-mysterious-manuscript-that-no-one-can-read.html"
+      ]
+    },
+    {
+      "claim": "Written in an unknown, unidentified system of symbols; still unread",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rohonc_Codex",
+        "https://www.openculture.com/2026/02/the-rohonc-codex-hungarys-mysterious-manuscript-that-no-one-can-read.html",
+        "https://futilitycloset.com/2007/08/04/the-rohonc-codex"
+      ]
+    },
+    {
+      "claim": "Hundreds of distinct signs (Némäti 1889 counted 792; Hamburg: ~100 frequent plus several hundred appearing once or twice; estimates vary, Art Newspaper ~150) — phrased only as 'hundreds of different signs'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rohonc_Codex",
+        "https://www.csmc.uni-hamburg.de/publications/aom/mom/39-en.html"
+      ]
+    },
+    {
+      "claim": "87 illustrations mixing Christian, Muslim and pagan symbolism (cross, crescent, sun)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rohonc_Codex",
+        "https://www.csmc.uni-hamburg.de/publications/aom/mom/39-en.html",
+        "https://www.openculture.com/2026/02/the-rohonc-codex-hungarys-mysterious-manuscript-that-no-one-can-read.html"
+      ]
+    },
+    {
+      "claim": "Paper likely Venetian / northern Italian, 16th century (1530s per watermark); date of writing undetermined",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rohonc_Codex",
+        "https://www.csmc.uni-hamburg.de/publications/aom/mom/39-en.html",
+        "https://futilitycloset.com/2007/08/04/the-rohonc-codex"
+      ]
+    },
+    {
+      "claim": "Forgery theory (Sámuel Literáti Nemes, 1796–1842) held by some/many Hungarian scholars, unproven; others consider it genuine",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rohonc_Codex",
+        "https://futilitycloset.com/2007/08/04/the-rohonc-codex",
+        "https://www.openculture.com/2026/02/the-rohonc-codex-hungarys-mysterious-manuscript-that-no-one-can-read.html"
+      ]
+    },
+    {
+      "claim": "Proposed decipherments (Nyíri 1996, Enăchiuc 2002, Singh 2004, Tokai & Király 2018 in Cryptologia; self-published claims incl. 2026) — none widely accepted; Tokai/Király themselves say incomplete",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rohonc_Codex",
+        "https://scienceblogs.de/klausis-krypto-kolumne/2018/06/05/rohonc-codex-top-ten-crypto-mystery-solved-part-2-of-2/?all=1",
+        "https://www.openculture.com/2026/02/the-rohonc-codex-hungarys-mysterious-manuscript-that-no-one-can-read.html"
+      ]
+    }
+  ]
+}

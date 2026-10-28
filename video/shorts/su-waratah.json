@@ -1,0 +1,47 @@
+{
+ "out": "short-su-waratah",
+ "kicker": "THE WARATAH",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "waratah",
+   "img": "B01",
+   "vo": "South Africa, July nineteen-oh-nine. The Waratah, a big new liner, left Durban for Cape Town. She never arrived.",
+   "cap": "SOUTH AFRICA \u00b7 1909"
+  },
+  {
+   "src": "waratah",
+   "img": "B02",
+   "vo": "Two hundred and eleven people were aboard. None was ever seen again.",
+   "cap": "211\nABOARD",
+   "amber": true
+  },
+  {
+   "src": "waratah",
+   "img": "B03",
+   "vo": "Early the next morning, another steamer exchanged lamp signals with her. It was the last confirmed sighting.",
+   "cap": "LAST\nSIGHTING"
+  },
+  {
+   "src": "waratah",
+   "img": "B04",
+   "vo": "One passenger left the ship at Durban. He later cabled his wife that he had thought her top-heavy.",
+   "cap": "LEFT AT\nDURBAN"
+  },
+  {
+   "src": "waratah",
+   "img": "B05",
+   "vo": "For decades, searchers combed that coast. One promising wreck turned out to be another ship. The Waratah has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}
