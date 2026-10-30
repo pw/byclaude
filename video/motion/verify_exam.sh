@@ -14,7 +14,7 @@ ON=$(python3 -c "
 import re,json; h=open('$D/film.html').read(); m=re.search(r'const ON_SCREEN\s*=\s*(\[.*?\]);',h,re.S); print('\n'.join(json.loads(m.group(1))))")
 CAP=$(cat "$D/caption.txt")
 mkdir -p "$D/verify"; cd "$D/verify"
-export CLAUDE_CODE_OAUTH_TOKEN="$(tr -d "[:space:]" < "$HOME/.config/claude/max2.token")"
+export CLAUDE_CODE_OAUTH_TOKEN="$(tr -d "[:space:]" < "$HOME/.config/claude/fleet.token")"
 C="env -u ANTHROPIC_API_KEY /home/exedev/.local/bin/claude -p --model claude-opus-5-5 --dangerously-skip-permissions"
 $C "You are an expert in: $DOMAIN. Solve this multiple-choice practice question the way a careful exam-taker would, showing your work. Use authoritative sources (WebSearch/WebFetch) for any rule you are not certain of. Then answer: is any OTHER option also defensible as correct under a reasonable reading (state rules, edition differences, ambiguous wording)? Is any number or unit in the question inconsistent?
 End with exactly two lines:

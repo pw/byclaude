@@ -7,7 +7,7 @@ ON=$(python3 -c "
 import re,json,sys; h=open('$D/film.html').read(); m=re.search(r'const ON_SCREEN\s*=\s*(\[.*?\]);',h,re.S); print('\n'.join(json.loads(m.group(1))))")
 CAP=$(cat "$D/caption.txt")
 mkdir -p "$D/verify"; cd "$D/verify"
-export CLAUDE_CODE_OAUTH_TOKEN="$(tr -d "[:space:]" < "$HOME/.config/claude/max2.token")"
+export CLAUDE_CODE_OAUTH_TOKEN="$(tr -d "[:space:]" < "$HOME/.config/claude/fleet.token")"
 env -u ANTHROPIC_API_KEY /home/exedev/.local/bin/claude -p --model claude-opus-5-5 --dangerously-skip-permissions "You are a skeptical enrolled-agent-level reviewer. Below is every piece of text that appears on screen in a short Instagram tax explainer for US self-employed people (stylists, groomers, tradespeople), in order, plus its caption. It will be seen by people who may act on it. Your job is to FIND WHAT IS WRONG, not to confirm it.
 
 For every factual claim (rules, rates, thresholds, dates, form names, what is/isn't deductible), check it against IRS.gov (current-year pages; use WebSearch + WebFetch; IRS.gov only as authority). Check the arithmetic of every worked example. Flag: false statements; true-but-misleading universals missing a condition that matters to this audience; outdated figures; anything that tells a specific person what to do; missing 'example' labelling of illustrative numbers. Also flag if the ORDER of the text would mislead a viewer.
