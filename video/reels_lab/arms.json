@@ -313,6 +313,34 @@
    "kind": "person",
    "origin": "fresh",
    "frame": "band"
+  },
+  "baychimo": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh",
+   "frame": "bleed"
+  },
+  "singaporestone": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh",
+   "frame": "band"
+  },
+  "dagapeyeff": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh",
+   "frame": "band"
+  },
+  "lineara": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh",
+   "frame": "bleed"
   }
  },
  "byclaude": {

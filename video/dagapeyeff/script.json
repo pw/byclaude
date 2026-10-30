@@ -1,0 +1,106 @@
+{
+  "title": "The D'Agapeyeff Cipher",
+  "subtitle": "The challenge in Codes and Ciphers · London, 1939",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the interior of a quiet English study in the late 1930s, dark wood desk, cream paper, cloth-bound books, brass desk lamp, soft grey London daylight, melancholy and uncanny, cinematic composition, fine film grain. Single image, not a collage, no text, no legible writing, no legible numbers or digits, no symbols, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "London, nineteen thirty-nine. The cryptographer Alexander d'Agapeyeff published a book called Codes and Ciphers. At the end, he printed a challenge.",
+      "cap": "LONDON · 1939",
+      "img": "An old open 1930s hardbound book lying centred on a dark wooden desk, seen at a low oblique angle, its right-hand page printed with neat rectangular blocks of tiny type in soft focus so nothing is legible, warm brass desk-lamp light falling across it, the book well lit and filling most of the frame."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Rows of numbers, in groups of five. He later reportedly admitted that he no longer knew how he had enciphered it.",
+      "cap": "HE REPORTEDLY\nFORGOT HOW",
+      "amber": true,
+      "img": "Extreme close-up at a steep angle across a yellowed printed book page covered in small neat blocks of type, shallow focus so nothing is legible, a sharpened pencil lying across the page, lamplight raking across the paper grain."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "The challenge was left out of later editions.",
+      "cap": "DROPPED FROM\nLATER EDITIONS",
+      "img": "A row of faded cloth-bound books on a wooden library shelf, one narrow empty gap where a volume is missing, dust drifting in a shaft of pale grey daylight."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Codebreakers have studied it ever since. First by hand, then by computer.",
+      "cap": "BY HAND,\nTHEN BY COMPUTER",
+      "img": "A codebreaker's desk at night covered with loose sheets of squared paper and pencilled grids in soft focus, nothing legible, an eraser and a sharpened pencil, a single desk lamp casting a pool of warm light."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Some think he made a mistake when he enciphered it. No solution has ever been generally accepted.",
+      "cap": "NO ACCEPTED\nSOLUTION",
+      "amber": true,
+      "img": "An old closed hardbound book alone on an empty wooden desk at dusk, the desk lamp dimming, long shadows across bookshelves, a rain-grey window beyond, unresolved and silent."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Alexander d'Agapeyeff, a Russian-born English cryptographer and cartographer, published 'Codes and Ciphers' in 1939 (Oxford University Press, London and New York)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/D%27Agapeyeff_cipher",
+        "https://discovery.nypl.org/research/research-catalog/bib/b13487676",
+        "https://scienceblogs.de/klausis-krypto-kolumne/2017/06/18/a-famous-unsolved-crypto-mystery-the-dagapeyeff-cryptogram/"
+      ]
+    },
+    {
+      "claim": "The book ends with a challenge cipher (p. 158 / last page) printed as rows of five-digit number groups",
+      "sources": [
+        "https://en.wikipedia.org/wiki/D%27Agapeyeff_cipher",
+        "https://scienceblogs.de/klausis-krypto-kolumne/2017/06/18/a-famous-unsolved-crypto-mystery-the-dagapeyeff-cryptogram/",
+        "https://www.futilitycloset.com/2005/11/22/dagapeyeff-cipher/",
+        "https://listverse.com/2007/10/01/top-10-uncracked-codes/"
+      ]
+    },
+    {
+      "claim": "He later reportedly admitted he had forgotten / no longer knew how he had encrypted it (SECONDHAND — no direct quotation found; hedged as 'reportedly')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/D%27Agapeyeff_cipher",
+        "http://elonka.com/UnsolvedCodes.html",
+        "https://listverse.com/2007/10/01/top-10-uncracked-codes/",
+        "https://www.futilitycloset.com/2005/11/22/dagapeyeff-cipher/"
+      ]
+    },
+    {
+      "claim": "The challenge cipher was not included in later editions",
+      "sources": [
+        "https://en.wikipedia.org/wiki/D%27Agapeyeff_cipher",
+        "http://elonka.com/UnsolvedCodes.html",
+        "https://listverse.com/2007/10/01/top-10-uncracked-codes/"
+      ]
+    },
+    {
+      "claim": "Studied since: Shulman in The Cryptogram (1952), Barker in Cryptologia (1978), and decades of manual and computational analysis (Gutenberg frequency search 2021, solver runs 2026)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/D%27Agapeyeff_cipher",
+        "https://ciphermysteries.com/2021/05/01/dagapeyeff-cipher-how-about-a-sorted-frequency-distribution-search-of-project-gutenberg",
+        "https://msgtrail.com/posts/unmasking-the-dagapeyeff-cipher-a-multi-faceted-architecture"
+      ]
+    },
+    {
+      "claim": "Some think the encryption was botched / he made an error enciphering it (a theory)",
+      "sources": [
+        "http://elonka.com/UnsolvedCodes.html",
+        "https://listverse.com/2007/10/01/top-10-uncracked-codes/",
+        "https://ciphermysteries.com/2017/03/05/new-clue-dagapeyeff-challenge-cipher"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of 2026: no generally accepted solution; a March 2026 analysis states 'The D'Agapeyeff Cipher remains unbroken' and no coherent plaintext has been recovered; Feb 2026 'Midpoint Slide' claim is an unverified blog comment",
+      "sources": [
+        "https://msgtrail.com/posts/unmasking-the-dagapeyeff-cipher-a-multi-faceted-architecture",
+        "https://en.wikipedia.org/wiki/D%27Agapeyeff_cipher",
+        "https://scienceblogs.de/klausis-krypto-kolumne/2017/06/18/a-famous-unsolved-crypto-mystery-the-dagapeyeff-cryptogram/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+ "out": "short-su-baychimo",
+ "kicker": "THE BAYCHIMO",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "baychimo",
+   "img": "B01",
+   "vo": "Arctic Alaska, nineteen thirty-one. A cargo ship was abandoned in the ice. People kept reporting her, drifting and empty, for thirty-eight years.",
+   "cap": "ALASKA · 1931"
+  },
+  {
+   "src": "baychimo",
+   "img": "B02",
+   "vo": "The Baychimo belonged to the Hudson's Bay Company. Pack ice trapped her that autumn, her hold full of furs.",
+   "cap": "HOLD FULL\nOF FURS"
+  },
+  {
+   "src": "baychimo",
+   "img": "B03",
+   "vo": "Most of her crew were flown out. The rest watched from shore as a November blizzard swallowed her.",
+   "cap": "MOST OF THE\nCREW FLOWN OUT"
+  },
+  {
+   "src": "baychimo",
+   "img": "B04",
+   "vo": "But hunters and prospectors kept finding her. Some climbed aboard. No one ever brought her in.",
+   "cap": "SOME CLIMBED\nABOARD",
+   "amber": true
+  },
+  {
+   "src": "baychimo",
+   "img": "B05",
+   "vo": "The last reported sighting was in nineteen sixty-nine, frozen in the ice. She has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "",
+ "frame": "bleed"
+}

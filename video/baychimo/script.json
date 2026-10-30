@@ -1,0 +1,109 @@
+{
+ "title": "The Baychimo",
+ "subtitle": "SS Baychimo · Arctic Alaska, 1931–1969",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, the Arctic coast of northern Alaska in the 1930s, white pack ice and frozen sea, an old steel cargo steamer, cold blue-white polar light, faded period colour, melancholy and uncanny, vertical 9:16 full-bleed composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Arctic Alaska, nineteen thirty-one. A cargo ship was abandoned in the ice. People kept reporting her, drifting and empty, for thirty-eight years.",
+   "cap": "ALASKA · 1931",
+   "img": "Vertical full-bleed scene: a 1910s steel cargo steamer with a black hull, one tall black funnel aft and two masts, seen from a low three-quarter angle off the bow, centred in frame and well lit by low golden Arctic sun, held fast in white pack ice, rime frost on her rails and rigging, empty decks, no one aboard, the whole ship clearly legible against pale ice and a clear cold sky."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "The Baychimo belonged to the Hudson's Bay Company. Pack ice trapped her that autumn, her hold full of furs.",
+   "cap": "HOLD FULL\nOF FURS",
+   "img": "Vertical full-bleed scene: inside the cargo hold of an old steel steamer, stacked canvas-wrapped bales of furs and a few loose pelts, riveted steel ribs glazed with frost, a shaft of pale daylight falling through an open hatch above, no people, no legible text."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "Most of her crew were flown out. The rest watched from shore as a November blizzard swallowed her.",
+   "cap": "MOST OF THE\nCREW FLOWN OUT",
+   "img": "Vertical full-bleed scene: a small 1930s single-engine ski-plane parked on a snowy Arctic shore beside a rough hut built from ship timbers, blowing snow, a flat grey horizon of sea ice where a ship had been, dim blue polar daylight, no people."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "But hunters and prospectors kept finding her. Some climbed aboard. No one ever brought her in.",
+   "cap": "SOME CLIMBED\nABOARD",
+   "amber": true,
+   "img": "Vertical full-bleed scene: the snow-covered deck of an abandoned steel cargo steamer in pack ice, a single line of old footprints in the snow leading past a frosted hatch and a rusting winch, a rope ladder hanging over the rail, low winter sun, no people."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "The last reported sighting was in nineteen sixty-nine, frozen in the ice. She has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true,
+   "img": "Vertical full-bleed scene: a vast field of Arctic pack ice at dusk seen from high above, one small dark rust-streaked ship's hull locked in the ice far below, long blue shadows, a faint violet and amber sky, silent and unresolved."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Baychimo was a steel cargo steamer (built 1914 in Sweden as Ångermanelfven) owned by the Hudson's Bay Company from 1921",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Baychimo",
+    "https://www.adn.com/alaska-life/2023/10/29/the-mysterious-fate-of-the-baychimo-the-ghost-ship-that-haunted-the-arctic-for-decades/",
+    "https://www.discoveryuk.com/mysteries/what-happened-to-the-ss-baychimo-and-was-it-really-a-ghost-ship/"
+   ]
+  },
+  {
+   "claim": "Trapped in pack ice off northern Alaska (near Barrow/Point Barrow) in autumn 1931 (dates given vary: late Sept / 1 Oct / 8 Oct), with a cargo of furs in the hold",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Baychimo",
+    "https://www.adn.com/alaska-life/2023/10/29/the-mysterious-fate-of-the-baychimo-the-ghost-ship-that-haunted-the-arctic-for-decades/",
+    "https://explorersweb.com/exploration-mysteries-baychimo-ghost-ship/"
+   ]
+  },
+  {
+   "claim": "Crew flown out: 22 by HBC aircraft on 15 Oct 1931; the captain and remaining crew flown out of Barrow later (Feb 1932); no crew deaths reported",
+   "sources": [
+    "https://www.adn.com/alaska-life/2023/10/29/the-mysterious-fate-of-the-baychimo-the-ghost-ship-that-haunted-the-arctic-for-decades/",
+    "https://www.historicmysteries.com/ss-baychimo/",
+    "https://en.wikipedia.org/wiki/SS_Baychimo",
+    "https://www.amusingplanet.com/2020/12/ss-baychimo-unsinkable-ghost-ship.html"
+   ]
+  },
+  {
+   "claim": "After a blizzard on 24 November 1931 the ship was gone from where she had been held; she was later found afloat miles away, the most valuable furs removed, and abandoned (1931)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Baychimo",
+    "https://www.adn.com/alaska-life/2023/10/29/the-mysterious-fate-of-the-baychimo-the-ghost-ship-that-haunted-the-arctic-for-decades/",
+    "https://explorersweb.com/exploration-mysteries-baychimo-ghost-ship/",
+    "https://www.historicmysteries.com/ss-baychimo/"
+   ]
+  },
+  {
+   "claim": "She was reported drifting for decades: seen by an Inuk hunter and by prospectors/trappers, and boarded several times (Inupiat 1932/1933, schooner crews 1933/1934, 1939 attempt), but never recovered or brought in",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Baychimo",
+    "https://www.adn.com/alaska-life/2023/10/29/the-mysterious-fate-of-the-baychimo-the-ghost-ship-that-haunted-the-arctic-for-decades/",
+    "https://explorersweb.com/exploration-mysteries-baychimo-ghost-ship/",
+    "https://www.discoveryuk.com/mysteries/what-happened-to-the-ss-baychimo-and-was-it-really-a-ghost-ship/"
+   ]
+  },
+  {
+   "claim": "Last reported sighting 1969, frozen in pack ice (between Point Barrow and Icy Cape per most sources), 38 years after she was abandoned",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Baychimo",
+    "https://www.adn.com/alaska-life/2023/10/29/the-mysterious-fate-of-the-baychimo-the-ghost-ship-that-haunted-the-arctic-for-decades/",
+    "https://www.historicmysteries.com/ss-baychimo/",
+    "https://explorersweb.com/exploration-mysteries-baychimo-ghost-ship/"
+   ]
+  },
+  {
+   "claim": "She has never been found (no wreck located as of 2026; 2006 Alaskan search effort found nothing)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Baychimo",
+    "https://explorersweb.com/exploration-mysteries-baychimo-ghost-ship/",
+    "https://www.historicmysteries.com/ss-baychimo/",
+    "https://boingboing.net/2026/01/16/the-ghost-ship-that-drifted-the-arctic-for-38-years.html"
+   ]
+  }
+ ]
+}

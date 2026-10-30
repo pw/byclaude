@@ -1,0 +1,104 @@
+{
+ "title": "Linear A",
+ "subtitle": "Knossos · Crete, 1900",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, ancient Minoan Crete, pale limestone and terracotta clay tones, warm faded ochre and dusty grey light, quiet and uncanny, cinematic vertical 9:16 portrait composition, fine film grain. Single image showing one scene only, not a collage, not a split panel, no text, no legible writing, letters or symbols, no signage, no people, no faces.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Crete, around nineteen hundred. Arthur Evans's excavations found clay tablets in a script he named Linear A. Today we can sound it out. We still cannot read it.",
+   "cap": "CRETE · 1900",
+   "img": "A single small flat rectangular clay tablet, pale terracotta, standing upright and centred on a plain dark stone ledge, lit by soft warm raking light from one side, its surface covered in rows of faint indistinct incised strokes, worn and illegible, nothing readable, the background falling away into soft shadow, vertical portrait framing with the tablet filling the middle of the frame."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "Its sister script, Linear B, used many of the same signs. In nineteen fifty-two, Michael Ventris deciphered it. It was Greek.",
+   "cap": "LINEAR B\nREAD IN 1952",
+   "img": "A narrow dim archive room with tall old wooden shelves holding rows of small broken clay tablets in shallow trays, a single shaft of pale light falling from a high window down the length of the shelves, dust in the air, nothing legible, no people, tall vertical composition."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "Read with those sound values, Linear A's words can be spoken aloud. But they are not Greek.",
+   "cap": "WORDS WE\nCAN SAY",
+   "img": "Extreme close view of the surface of a fired clay tablet in low raking lamplight, shallow incised grooves and cracks catching the light like a tiny landscape, strokes blurred and indistinct, nothing readable, a small clay oil lamp glowing out of focus at the top of the frame, vertical composition."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "They match no language scholars can understand. The Minoan language itself is unknown.",
+   "cap": "NO KNOWN\nLANGUAGE",
+   "amber": true,
+   "img": "A ruined Minoan palace storeroom at dusk, a narrow stone corridor lined with tall ancient clay storage jars, broken limestone walls open to a fading violet sky, deep silence, no people, tall vertical composition looking down the corridor."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "About fourteen hundred inscriptions survive. Decipherments are still claimed. None has been accepted.",
+   "cap": "NONE\nACCEPTED",
+   "amber": true,
+   "img": "The ruins of an ancient Minoan palace on a hillside in Crete at last light, low stone walls and broad steps under a tall darkening sky with the first faint stars, a dark plain and distant mountains below, silent and unresolved, no people, vertical portrait composition with the sky filling the upper half."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Arthur Evans began excavating Knossos, Crete, in March 1900 and found inscribed clay tablets; he distinguished and named the scripts Linear A and Linear B",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Linear_A",
+    "https://en.wikipedia.org/wiki/Linear_B",
+    "https://www.newworldencyclopedia.org/entry/Linear_A",
+    "https://www.ebsco.com/research-starters/anthropology/evans-discovers-cretes-minoan-civilization"
+   ]
+  },
+  {
+   "claim": "Linear A was the script of the Minoans of Bronze Age Crete, in use roughly 1800–1450 BC",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Linear_A",
+    "https://www.newworldencyclopedia.org/entry/Linear_A"
+   ]
+  },
+  {
+   "claim": "Linear B was adapted from Linear A and shares many identical or similar signs; it was deciphered in 1952 by Michael Ventris and records Mycenaean Greek",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Linear_B",
+    "https://www.newworldencyclopedia.org/entry/Linear_A",
+    "https://www.ebsco.com/research-starters/history/arthur-evans"
+   ]
+  },
+  {
+   "claim": "Approximate sound values for Linear A signs are inferred from corresponding Linear B signs, so inscriptions can be pronounced (values provisional)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Linear_A",
+    "https://pursuit.unimelb.edu.au/articles/how-do-you-crack-the-code-to-a-lost-ancient-script",
+    "https://blogs.unimelb.edu.au/3010/?p=4401"
+   ]
+  },
+  {
+   "claim": "Read this way the texts are not Greek and none of the proposed readings lead to a language scholars can understand; the underlying Minoan language is unknown",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Linear_A",
+    "https://pursuit.unimelb.edu.au/articles/how-do-you-crack-the-code-to-a-lost-ancient-script",
+    "https://www.newworldencyclopedia.org/entry/Linear_A"
+   ]
+  },
+  {
+   "claim": "About 1,400 Linear A inscriptions are known (c. 1,427 specimens, ~7,400 sign tokens)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Linear_A",
+    "https://sigla.phis.me/paper.html"
+   ]
+  },
+  {
+   "claim": "Decipherment claims continue (e.g. Tom Di Mino's Semitic reading, June–Aug 2026, not peer-reviewed); none has been accepted by specialists; Linear A remains undeciphered as of 2026",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Linear_A",
+    "https://greekreporter.com/2026/07/30/ai-engineer-claim-decipher-linear-a/",
+    "https://braindetox.kr/en/posts/ai_decodes_linear_a_2026.html",
+    "https://www.cambridge.org/core/books/abs/undeciphered-aegean-scripts/introduction/94538475AD4C442797EEA3313FD5F60A"
+   ]
+  }
+ ]
+}

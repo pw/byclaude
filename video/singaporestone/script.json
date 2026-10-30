@@ -1,0 +1,93 @@
+{
+  "title": "The Singapore Stone",
+  "subtitle": "Mouth of the Singapore River · 1819",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the muddy mouth of a tropical river in Southeast Asia in the early nineteenth century, weathered reddish sandstone, mangroves and dense jungle, humid haze, soft warm-grey light, melancholy and reverent, cinematic composition, fine film grain. Single image, not a collage, no text, no signage, no legible glyphs or symbols, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Singapore, eighteen nineteen. At the river mouth, workers found a great boulder split in two, carved with writing no one could read.",
+      "cap": "SINGAPORE · 1819",
+      "img": "A great weathered reddish sandstone boulder split cleanly into two nearly equal halves that lean slightly toward each other, standing on a muddy riverbank at the mouth of a tropical river, centred in frame and well lit by soft overcast daylight, the flat inner faces covered in rows of worn, shallow, indistinct carved grooves too eroded to read, dense jungle behind, calm brown water in front."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Three metres tall, its halves facing each other. About fifty lines of carved script.",
+      "cap": "ABOUT\n50 LINES",
+      "amber": true,
+      "img": "An extreme close-up of a weathered sandstone surface in low raking light, many shallow carved grooves running in parallel rows inside a raised border, the marks too worn and soft-focused to read, lichen and grit in the hollows, deep shadow."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "In eighteen forty-three, the acting settlement engineer had it blown up, to widen the river mouth and make room for a fort.",
+      "cap": "BLOWN UP\n1843",
+      "amber": true,
+      "img": "A plume of grey smoke and dust drifting over a rocky point at the mouth of a tropical river, broken sandstone blocks scattered on the shore, a few early nineteenth-century wooden sailing boats moored in the still water, heavy grey overcast sky, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "A few pieces were shipped to Calcutta. One came back. It is in Singapore's National Museum.",
+      "cap": "ONE PIECE\nCAME BACK",
+      "img": "A single small broken fragment of reddish sandstone with faint worn carved marks resting alone on dark cloth inside a dimly lit museum display case, a soft beam of light falling across its rough edge, the surface markings indistinct, hushed and reverent."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Scholars have proposed scripts, languages and dates. The inscription has never been fully deciphered.",
+      "cap": "NEVER\nDECIPHERED",
+      "amber": true,
+      "img": "The calm, wide mouth of a tropical river at dusk, an empty rocky point on the bank where something once stood, faint mist over the dark water, mangroves and jungle on the far shore, quiet and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The inscribed boulder was found in June 1819 by labourers clearing jungle at the mouth of the Singapore River (south-east side, near today's Fullerton Hotel), a few months after the British arrived",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Singapore_Stone",
+        "https://www.littledayout.com/singapore-stone-a-mystery-cast-in-stone/",
+        "https://www.roots.gov.sg/stories-landing/stories/the-singapore-story-through-60-objects/networks-through-time/singapore-stone/story",
+        "https://www.xjtlu.edu.cn/en/light-and-wings/explore-by-topic/word-by-word/the-conversation-the-singapore-stone"
+      ]
+    },
+    {
+      "claim": "Sandstone boulder about 3 m high and 3 m wide (c. 10 ft), split into two nearly equal parts facing each other; carried about 50 lines of inscription",
+      "sources": [
+        "https://www.roots.gov.sg/stories-landing/stories/the-singapore-story-through-60-objects/networks-through-time/singapore-stone/story",
+        "https://en.wikipedia.org/wiki/Singapore_Stone",
+        "https://www.xjtlu.edu.cn/en/light-and-wings/explore-by-topic/word-by-word/the-conversation-the-singapore-stone"
+      ]
+    },
+    {
+      "claim": "In 1843 it was blown up on the orders of the acting Settlement Engineer, Captain D. H. Stevenson, to widen the mouth of the Singapore River and make room for Fort Fullerton and its quarters",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Singapore_Stone",
+        "https://eresources.nlb.gov.sg/infopedia/articles/SIP_43_2005-01-26.html",
+        "https://www.littledayout.com/singapore-stone-a-mystery-cast-in-stone/",
+        "https://www.xjtlu.edu.cn/en/light-and-wings/explore-by-topic/word-by-word/the-conversation-the-singapore-stone"
+      ]
+    },
+    {
+      "claim": "Lt-Col James Low salvaged fragments; pieces were sent to the museum in Calcutta (arriving c. 1848); in 1918 one fragment was returned to the Raffles Museum; it is displayed at the National Museum of Singapore; whereabouts of the others unknown",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Singapore_Stone",
+        "https://www.littledayout.com/singapore-stone-a-mystery-cast-in-stone/",
+        "https://www.roots.gov.sg/stories-landing/stories/the-singapore-story-through-60-objects/networks-through-time/singapore-stone/story"
+      ]
+    },
+    {
+      "claim": "Proposed scripts/languages (Kawi/Old Javanese, Sanskrit, Tamil) and dates (10th to 14th century) vary; the inscription remains undeciphered / has never been fully deciphered (as of 2025 scholarship, incl. XJTLU computational reconstruction work)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Singapore_Stone",
+        "https://www.xjtlu.edu.cn/en/light-and-wings/explore-by-topic/word-by-word/the-conversation-the-singapore-stone",
+        "https://www.roots.gov.sg/stories-landing/stories/the-singapore-story-through-60-objects/networks-through-time/singapore-stone/story",
+        "https://scholar.xjtlu.edu.cn/en/publications/the-singapore-stone-documenting-the-origins-destruction-journey-a/",
+        "https://fass.nus.edu.sg/srn/2025/09/17/singapores-pre-colonial-ties-with-india"
+      ]
+    }
+  ]
+}
