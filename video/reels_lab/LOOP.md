@@ -36,6 +36,25 @@ most likely a violence classifier; cause unverified. Excluded from arm reads (it
 frame). Rule for writers: no killing/attack verbs in vo or caption unless the case can't be told without them, and
 then prefer cases that don't need them. A film under ~20 plays at 12h on a healthy page day = check this first.
 
+## ★ 2026-10-31 step-back: a second lone death, and the `end` call dissolved
+- **Baychimo (reel, posted 10-30 15:45Z) got 0 plays at 13h** on the page's best day since the throttle (1,056 unique
+  viewers; dagapeyeff 154 in 3h right after). Published, no copyright match. No violence in the script, so Lake Bodom's
+  "violence classifier" story is now unproven. The one thing Baychimo had: a PHOTO post about the same ship on 10-26.
+  Natural test: the Linear A reel posts 10-31 15:45Z, four days after the Linear A photo. If it dies too, never film a
+  subject the photo arm already posted. Excluded from arm reads. Lone-death rate so far: 2 of ~27 healthy-day films.
+- **`end` re-read over the whole population: stamp 318.5 (n=8) vs question 313 (n=13) = tie.** The 10-25 call rested on
+  three in-shape breakouts that happened to carry a stamp, and every build since 10-25 is stamp (so stamp is also
+  "post-throttle"). Stamp stays the default only because it is the honest line on unsolved cases.
+- **`kind` is really historic-thing vs modern true crime:** post-throttle in-shape PERSON cases (Deering 570, Cyclops 391,
+  Joyita 367) match the anomalies (median 382).
+- **12h already sorts the class:** every breakout was ≥425 at 12h; floor films 185–320.
+- **0 breakouts in 8 healthy post-throttle films** (pre: 4/18). Could be chance (~14%) or a lingering page cap. Watching.
+- **Next test (positive control, adopted from a blind challenger):** rebuild Voynich, Flannan and Mary Celeste as
+  genuinely FRESH films (new script, new stills, new edit) and read at 12h. If ≥2 of 3 reach ≥425, the page isn't capped
+  and the recent picks are weaker. If all 3 sit at the floor, the page is capped or the case rule was overfit, so stop
+  spending on case choice. If the rule were true, 0 breakouts in 8 in-shape films is ~0.4% by chance, not 14%.
+- Owner model + tests: `~/.claude/owner-models/reels-owner.md`.
+
 ## The loop (one arm at a time)
 1. **Post** 2/day via `ig.py --profile unsolved batch --per-day 2` (cron once the Page id lands in ig.py + reels_lab/pages.json).
 2. **Measure**: `lab.py snap` every 6h (cron); `lab.py report --page unsolved` = plays at 72h + retention + arm medians.
@@ -48,7 +67,7 @@ Truth floor: "Still unsolved" ending only on genuinely unsolved cases (Phantom o
 ## Arm queue
 | # | arm | values | status |
 |---|-----|--------|--------|
-| 1 | `end` | stamp ("Still unsolved.") vs question ("What do you think happened?" → comments) | **CALLED 2026-10-25: stamp** — 600.5 vs 274 median at 72h (2.19×, n=6 vs 10, fresh only). Holds within kind: anomaly stamp 777 vs question 451; person stamp ~600 vs 313. Default for new builds: stamp (only on genuinely unsolved cases — truth floor). Vela (question) is the breakout, so this is a median call, not a ceiling call. |
+| 1 | `end` | stamp ("Still unsolved.") vs question ("What do you think happened?" → comments) | **10-31 RE-READ: TIE (318.5 vs 313, n=8 vs 13) — the call below did not hold; stamp kept for honesty only.** Was: CALLED 2026-10-25: stamp — 600.5 vs 274 median at 72h (2.19×, n=6 vs 10, fresh only). Holds within kind: anomaly stamp 777 vs question 451; person stamp ~600 vs 313. Default for new builds: stamp (only on genuinely unsolved cases — truth floor). Vela (question) is the breakout, so this is a median call, not a ceiling call. |
 | 2 | `kind` | anomaly (signals, lights, objects, footprints) vs person (disappearance, unidentified dead) | **CALLED 2026-10-24: anomaly** — 451 vs 255 median at 72h (1.77×, n=5 vs 9). Default for new builds: anomaly, or a person case only if it's legend-grade/historic (Mary Celeste 946, Roanoke 550, Flannan 1,180 so far — the person tail is all old group-vanishings; modern true-crime cases sit at the floor 190–313). |
 | 3 | `hook` | "Place, year." open vs strangest-detail-first | |
 | 4 | `length` | ~20 s vs ~35 s | |

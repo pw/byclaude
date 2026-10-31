@@ -319,7 +319,8 @@
    "topic": "unsolved",
    "kind": "anomaly",
    "origin": "fresh",
-   "frame": "bleed"
+   "frame": "bleed",
+   "excluded": "single-video non-distribution: 0 plays at 13h on the page's best day since the throttle (1,056 viewers 10-30; dagapeyeff 154 in 3h). No violence in script; a same-subject PHOTO post ran 10-26. Cause unverified."
   },
   "singaporestone": {
    "end": "stamp",
