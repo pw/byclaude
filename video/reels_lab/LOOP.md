@@ -55,6 +55,26 @@ then prefer cases that don't need them. A film under ~20 plays at 12h on a healt
   spending on case choice. If the rule were true, 0 breakouts in 8 in-shape films is ~0.4% by chance, not 14%.
 - Owner model + tests: `~/.claude/owner-models/reels-owner.md`.
 
+## ★ 2026-11-01: positive-control remakes built + queued; a truth catch on a live film
+- **Built:** voynich2, flannan2, maryceleste2 (new script wording, new stills, same band/stamp/onyx shape as the originals;
+  `control: remake-of-<orig>` in arms.json) + atalanta (HMS Atalanta 1880, in-shape new case). Queue order (alphabetical
+  after the old `order` list): atalanta 11-01 15:45Z · **flannan2 11-02 01:45Z · maryceleste2 11-02 15:45Z** · singaporestone
+  11-03 01:45Z · **voynich2 11-03 15:45Z** · waratah 11-04 01:45Z. **Read each remake at 12h** (pre-registered: ≥2 of 3 ≥425
+  ⇒ the page isn't capped, recent picks are weaker → refine the case rule; all 3 at the ~200–350 floor ⇒ capped or overfit →
+  stop treating case choice as the lever, study page health).
+- **Rohonc Codex written, then HELD** (ig_hold): a 2018 peer-reviewed partial decipherment (Király & Tokai, *Cryptologia*)
+  endorsed by the field's main scholar ⇒ a "Still unsolved." stamp would overclaim. Not posted.
+- **Truth catch on a LIVE film:** the 10-16 Mary Celeste reel says "There was food on the table" — that's a later
+  invented embellishment (1883 LA Times retelling), not the record. Caption edited via Graph API to drop the line; the VO
+  can't be edited. The remake uses only record facts. **Pre-facts-era films (built before the `facts` field, ~10-11..10-18)
+  never had the sourced gate — the same kind of myth may sit in others.** Audit owed.
+- Blind verifier caught 4 real fixes on flannan2 (eleven days ≠ storm delay; box "broken open" not "torn away"; Muirhead's
+  report ≠ a "verdict"; the oilskins line is an inference) + "proved" on Mary Celeste + "no conclusion" was wrong on Atalanta.
+  The gate keeps earning its keep: 3 of 4 films needed a fix after my own sourcing.
+- Image note: a shared sea grade overrides a "cargo hold" prompt (rendered a deck at sea twice) → per-beat grade, as Voynich B04.
+- **Linear A reel (posted 10-31 15:45Z, 4 days after its photo post) did NOT die:** 205 at ~13h. So the photo-then-reel
+  suppression story for Baychimo is unsupported (n=1). Lone-death cause still unknown. Its retention (0.08) is the page's worst.
+
 ## The loop (one arm at a time)
 1. **Post** 2/day via `ig.py --profile unsolved batch --per-day 2` (cron once the Page id lands in ig.py + reels_lab/pages.json).
 2. **Measure**: `lab.py snap` every 6h (cron); `lab.py report --page unsolved` = plays at 72h + retention + arm medians.

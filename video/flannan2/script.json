@@ -1,0 +1,106 @@
+{
+ "title": "The Flannan Isles Light (2)",
+ "subtitle": "Outer Hebrides, 1900",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, a remote Scottish island lighthouse station in the Outer Hebrides in December 1900, wet grey stone, heavy Atlantic sea, cold blue-grey storm light, melancholy and uncanny, cinematic composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Scotland, December nineteen hundred. On a remote island in the Atlantic, the lighthouse went dark.",
+   "cap": "HEBRIDES · 1900",
+   "img": "Close view of the top of a tall stone lighthouse, its great glass lantern room completely dark and unlit, centred and large in frame against a churning grey storm sky at dusk."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "Storms held the relief boat back until Boxing Day. When it finally landed, no one came down to meet it.",
+   "cap": "NO ONE\nCAME DOWN",
+   "img": "A long empty stone stairway climbing steep wet black cliffs from a small concrete landing, an empty bare flagpole at the top, grey sea foam below, no boat, no figures.",
+   "amber": true
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "The lamps had been cleaned and refilled. One man's oilskins were still inside. Investigators concluded he had gone out without them.",
+   "cap": "LEFT WITHOUT\nOILSKINS",
+   "img": "A single dark oilskin coat hanging alone on an iron hook on a whitewashed stone wall inside a plain lighthouse passage, an empty row of hooks beside it, dim grey window light."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "High on the west cliff, a box of ropes kept a hundred and ten feet above the sea had been smashed open.",
+   "cap": "110 FEET\nABOVE THE SEA",
+   "img": "A narrow rock crevice high on a sheer wet sea cliff, splintered wooden planks and loose coiled rope scattered on the ledge, the grey Atlantic far below, spray in the air.",
+   "amber": true
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "The inquiry blamed an unusually large wave. Not one of the three keepers was ever found.",
+   "cap": "NEVER\nFOUND",
+   "img": "The empty lighthouse station seen from far out at sea in grey winter light, a small dark island under low cloud, the tower unlit, nothing moving.",
+   "amber": true
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Flannan Isles Lighthouse, Eilean Mòr, Outer Hebrides, Scotland; three keepers vanished December 1900",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+    "https://nrscotland.gov.uk/learning-and-events/for-the-safety-of-all-scotlands-lighthouses/the-flannan-islands-lighthouse-a-disappearance/"
+   ]
+  },
+  {
+   "claim": "Steamer Archtor logged the light not lit on 15 December 1900; relief vessel Hesperus delayed by weather, reached the island 26 December (11 days)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+    "https://www.historyhit.com/the-flannan-isle-mystery-when-three-lighthouse-keepers-vanished-overnight/"
+   ]
+  },
+  {
+   "claim": "On arrival no flag on the flagstaff, no provision boxes, none of the keepers there to meet them",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+    "https://www.mentalfloss.com/history/mystery/115-year-old-mystery-flannan-lighthouses-missing-keepers"
+   ]
+  },
+  {
+   "claim": "Lamps cleaned and refilled / trimmed and ready",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+    "https://nrscotland.gov.uk/learning-and-events/for-the-safety-of-all-scotlands-lighthouses/the-flannan-islands-lighthouse-a-disappearance/"
+   ]
+  },
+  {
+   "claim": "One set of oilskins left inside, suggesting one keeper went out without them",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+    "https://www.historyhit.com/the-flannan-isle-mystery-when-three-lighthouse-keepers-vanished-overnight/"
+   ]
+  },
+  {
+   "claim": "Muirhead's report: box of mooring/landing ropes kept in a crevice ~110 ft above sea level at the west landing had been washed away / broken and its contents strewn",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+    "https://www.mentalfloss.com/history/mystery/115-year-old-mystery-flannan-lighthouses-missing-keepers"
+   ]
+  },
+  {
+   "claim": "Official conclusion: swept away by an unexpectedly large sea ('large roller'); no trace of the three men ever found",
+   "sources": [
+    "https://nrscotland.gov.uk/learning-and-events/for-the-safety-of-all-scotlands-lighthouses/the-flannan-islands-lighthouse-a-disappearance/",
+    "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse"
+   ]
+  },
+  {
+   "claim": "Still unexplained as of 2025-26; the dramatic logbook entries sometimes quoted are later fabrications (Mike Dash) and are NOT used here",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+    "https://spookyscotland.net/?p=29649"
+   ]
+  }
+ ],
+ "remake_of": "flannanisles"
+}

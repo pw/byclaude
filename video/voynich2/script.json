@@ -1,0 +1,92 @@
+{
+ "title": "The Voynich Manuscript (2)",
+ "subtitle": "Yale · Beinecke MS 408",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, an early-1400s handwritten vellum codex in a quiet rare-book vault, cool grey daylight mixed with one warm lamp, faded brown ink and muted green and blue pigments, quiet and uncanny, close cinematic composition, fine film grain. Any handwriting is illegible invented script-like marks, not any real alphabet, no readable words. Single image, not a collage, no signage, no people, no faces, no hands.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Yale University keeps a book, six hundred years old, that no one has ever been able to read.",
+   "cap": "YALE · MS 408",
+   "img": "A small medieval vellum codex lying open on a grey foam book cradle in the centre of a dark wooden table, both pages filled with dense rows of looping illegible glyphs and a small faded drawing, lit from above, the book large and centred in frame."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "It is written in an alphabet of its own. Twenty or so letters, page after page, that no one has matched to any known language.",
+   "cap": "AN ALPHABET\nOF ITS OWN",
+   "img": "Extreme close-up of a single line of fluent looping illegible handwritten glyphs in faded brown ink on cream vellum, the curls of the strokes sharp, the rest of the page soft out of focus.",
+   "amber": true
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "It is full of drawings: plants nobody can name, circles like star charts, and pools of water linked by pipes.",
+   "cap": "PLANTS NO ONE\nCAN NAME",
+   "img": "An open vellum page with a faded hand-drawn diagram of round tubs of green-blue water connected by curling pipes, small illegible glyph rows between them, muted pigments, no figures."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "The calfskin it is written on has been carbon dated to the early fourteen hundreds.",
+   "cap": "1404 – 1438",
+   "img": "The worn edge of an aged calfskin vellum page seen very close, its texture, tiny follicle marks and a faint column of faded brown glyphs, cool raking light, shallow depth of field.",
+   "amber": true
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "Wartime codebreakers tried. So have linguists, and computers. No reading has ever been proved.",
+   "cap": "NEVER\nREAD",
+   "img": "The closed small leather codex on an empty grey vault shelf beside a narrow window at dusk, a long shadow across the shelf, quiet and unresolved.",
+   "amber": true
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Held at Yale's Beinecke Rare Book & Manuscript Library as MS 408 (Beinecke MS 408), there since 1969",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Voynich_manuscript",
+    "https://www.britannica.com/topic/Voynich-manuscript"
+   ]
+  },
+  {
+   "claim": "Parchment radiocarbon dated (University of Arizona, 2009) to 1404–1438, i.e. ~600 years old",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Voynich_manuscript",
+    "https://www.medievalists.net/2011/02/mysterious-voynich-manuscript-dates-back-to-the-15th-century/"
+   ]
+  },
+  {
+   "claim": "Written in an undeciphered script ('Voynichese'); a script of 20–25 characters accounts for virtually all the text; it has not been matched to any known language",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Voynich_manuscript",
+    "https://www.britannica.com/topic/Voynich-manuscript"
+   ]
+  },
+  {
+   "claim": "Sections: herbal (plants not clearly identifiable), astronomical (circular diagrams suggestive of astronomy/astrology), balneological (pools/tubs connected by an elaborate network of pipes)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Voynich_manuscript",
+    "https://www.smithsonianmag.com/history/the-voynich-manuscript-may-not-be-written-in-a-lost-language-180985386/"
+   ]
+  },
+  {
+   "claim": "Parchment is calfskin (protein testing 2014)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Voynich_manuscript",
+    "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript"
+   ]
+  },
+  {
+   "claim": "Studied unsuccessfully by WWI/WWII codebreakers incl. William and Elizebeth Friedman, John Tiltman, Prescott Currier; linguists; computational approaches; never demonstrably deciphered, no proposal independently verified",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Voynich_manuscript",
+    "https://www.nbcnews.com/id/wbna41581204"
+   ]
+  }
+ ],
+ "remake_of": "voynich"
+}

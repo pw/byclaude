@@ -1,0 +1,95 @@
+{
+  "title": "The Rohonc Codex",
+  "subtitle": "Hungary, 1838",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a small old paper codex from the sixteenth century in a quiet nineteenth-century library reading room, warm lamplight on yellowed paper, dark brown ink, worn and battered brown leather, muted and uncanny, close cinematic composition, fine film grain. Any writing is invented illegible angular glyphs in dense cramped rows, not any real alphabet, no readable words; no plant or herbal drawings. Single image, not a collage, no signage, no people, no faces, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Hungary, eighteen thirty-eight. A count gave his library to the Academy of Sciences. In it was a small book no one could read.",
+      "cap": "HUNGARY · 1838",
+      "img": "A small battered brown leather-bound book lying open in the exact centre of a plain dark wooden table, brightly lit by a warm lamp from above, its two small yellowed paper pages filled edge to edge with dense rows of tiny angular dark-ink glyphs, the book filling the middle of the frame, background softly out of focus."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Four hundred and forty-eight pages, in a script unlike any known alphabet.",
+      "cap": "448 PAGES",
+      "amber": true,
+      "img": "A close-up of one small yellowed paper page packed with twelve cramped rows of tiny angular invented glyphs in dark brown ink, the rows ending in a neat straight right-hand margin and ragged on the left, warm lamplight, shallow depth of field."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Eighty-seven drawings. Crosses, crescents, suns, and what looks like a gospel story.",
+      "cap": "87 DRAWINGS",
+      "img": "An open yellowed paper page with a simple naive pen-and-ink line drawing of a small walled town with towers on a hill, a plain cross above it, a crescent moon and a rayed sun in the sky, no human figures, a few rows of illegible angular glyphs beneath, warm lamplight."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Its paper was probably made in Venice, around fifteen-thirty. For a century, many scholars dismissed it as a forgery. That was never proven.",
+      "cap": "CALLED\nA FORGERY",
+      "img": "A single loose yellowed paper leaf propped upright in front of a glowing reading lamp so the light shines through it, revealing faint paper chain lines and an indistinct watermark, rows of angular glyphs showing faintly through from behind, dim library shelves beyond."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "In twenty eighteen, two researchers proposed a partial reading: Christian texts, in a code. No complete reading has ever been accepted.",
+      "cap": "NO COMPLETE\nREADING",
+      "amber": true,
+      "img": "The small battered leather codex lying closed on a pile of loose paper sheets covered in illegible pencil grids and tallies, on a reading-room desk at night, one small lamp glowing, long shadows, quiet and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Count Gusztáv Batthyány donated his library (c. 30,000 volumes), including the codex, to the Hungarian Academy of Sciences in 1838; it had been kept at Rohonc (Rechnitz) and its history before that is unknown",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rohonc_Codex",
+        "https://www.psupress.org/sample_chapter/Lang_introduction.pdf",
+        "https://scienceblogs.de/klausis-krypto-kolumne/2018/07/21/the-top-50-unsolved-encrypted-messages-6-the-rohonc-codex/"
+      ]
+    },
+    {
+      "claim": "Small book: 448 paper pages of about 12 x 10 cm, 9-14 rows of symbols per page; no one could read it (undeciphered script, far more symbols than any known alphabet)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rohonc_Codex",
+        "https://scienceblogs.de/klausis-krypto-kolumne/2018/07/21/the-top-50-unsolved-encrypted-messages-6-the-rohonc-codex/",
+        "https://www.psupress.org/sample_chapter/Lang_introduction.pdf"
+      ]
+    },
+    {
+      "claim": "87 illustrations (religious, secular, military scenes); cross, crescent and sun symbols appear; images appear to depict a Gospel-like story",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rohonc_Codex",
+        "https://scienceblogs.de/klausis-krypto-kolumne/2018/07/21/the-top-50-unsolved-encrypted-messages-6-the-rohonc-codex/",
+        "https://www.psupress.org/sample_chapter/Lang_introduction.pdf"
+      ]
+    },
+    {
+      "claim": "Paper is most probably Venetian, watermark dated c. 1529-1540 (dates the paper, not necessarily the writing)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rohonc_Codex",
+        "https://scienceblogs.de/klausis-krypto-kolumne/2018/07/21/the-top-50-unsolved-encrypted-messages-6-the-rohonc-codex/"
+      ]
+    },
+    {
+      "claim": "Forgery theory (Szabó 1866, suspecting Sámuel Literáti Nemes); by the end of the 19th century academia regarded it as a forgery and it was little studied until c. 2000; no evidence links it to Nemes; the forgery claim was never established",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rohonc_Codex",
+        "https://www.psupress.org/sample_chapter/Lang_introduction.pdf"
+      ]
+    },
+    {
+      "claim": "2018: Király & Tokai, 'Cracking the Code of the Rohonc Codex', Cryptologia 42(4):285-315 — a partial decipherment as a code (nomenclator-like) of mostly New Testament/Christian texts; authors say research unfinished, full materials not yet published; endorsed by Benedek Láng but independent evaluation limited; no widely accepted complete translation. Klaus Schmeh keeps it on his unsolved list: 'is it still an unsolved one? That's difficult to say.'",
+      "sources": [
+        "https://scienceblogs.de/klausis-krypto-kolumne/2018/06/05/rohonc-codex-top-ten-crypto-mystery-solved-part-2-of-2/?all=1",
+        "https://ciphermysteries.com/2021/05/22/review-benedek-langs-the-rohonc-code",
+        "https://en.wikipedia.org/wiki/Rohonc_Codex",
+        "https://scienceblogs.de/klausis-krypto-kolumne/2018/07/21/the-top-50-unsolved-encrypted-messages-6-the-rohonc-codex/"
+      ]
+    }
+  ]
+}

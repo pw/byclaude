@@ -1,0 +1,47 @@
+{
+ "out": "short-su-rohonc",
+ "kicker": "THE ROHONC CODEX",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "rohonc",
+   "img": "B01",
+   "vo": "Hungary, eighteen thirty-eight. A count gave his library to the Academy of Sciences. In it was a small book no one could read.",
+   "cap": "HUNGARY \u00b7 1838"
+  },
+  {
+   "src": "rohonc",
+   "img": "B02",
+   "vo": "Four hundred and forty-eight pages, in a script unlike any known alphabet.",
+   "cap": "448 PAGES",
+   "amber": true
+  },
+  {
+   "src": "rohonc",
+   "img": "B03",
+   "vo": "Eighty-seven drawings. Crosses, crescents, suns, and what looks like a gospel story.",
+   "cap": "87 DRAWINGS"
+  },
+  {
+   "src": "rohonc",
+   "img": "B04",
+   "vo": "Its paper was probably made in Venice, around fifteen-thirty. For a century, many scholars dismissed it as a forgery. That was never proven.",
+   "cap": "CALLED\nA FORGERY"
+  },
+  {
+   "src": "rohonc",
+   "img": "B05",
+   "vo": "In twenty eighteen, two researchers proposed a partial reading: Christian texts, in a code. No complete reading has ever been accepted.",
+   "cap": "NO COMPLETE\nREADING",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

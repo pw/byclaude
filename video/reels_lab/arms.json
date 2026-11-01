@@ -342,6 +342,41 @@
    "kind": "anomaly",
    "origin": "fresh",
    "frame": "bleed"
+  },
+  "flannan2": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh",
+   "frame": "band",
+   "format": "reel",
+   "control": "remake-of-flannanisles"
+  },
+  "maryceleste2": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh",
+   "frame": "band",
+   "format": "reel",
+   "control": "remake-of-maryceleste"
+  },
+  "voynich2": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh",
+   "frame": "band",
+   "format": "reel",
+   "control": "remake-of-voynich"
+  },
+  "atalanta": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh",
+   "frame": "band",
+   "format": "reel"
   }
  },
  "byclaude": {

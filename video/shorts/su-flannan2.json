@@ -1,0 +1,48 @@
+{
+ "out": "short-su-flannan2",
+ "kicker": "THE FLANNAN ISLES LIGHT",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "flannan2",
+   "img": "B01",
+   "vo": "Scotland, December nineteen hundred. On a remote island in the Atlantic, the lighthouse went dark.",
+   "cap": "HEBRIDES \u00b7 1900"
+  },
+  {
+   "src": "flannan2",
+   "img": "B02",
+   "vo": "Storms held the relief boat back until Boxing Day. When it finally landed, no one came down to meet it.",
+   "cap": "NO ONE\nCAME DOWN",
+   "amber": true
+  },
+  {
+   "src": "flannan2",
+   "img": "B03",
+   "vo": "The lamps had been cleaned and refilled. One man's oilskins were still inside. Investigators concluded he had gone out without them.",
+   "cap": "LEFT WITHOUT\nOILSKINS"
+  },
+  {
+   "src": "flannan2",
+   "img": "B04",
+   "vo": "High on the west cliff, a box of ropes kept a hundred and ten feet above the sea had been smashed open.",
+   "cap": "110 FEET\nABOVE THE SEA",
+   "amber": true
+  },
+  {
+   "src": "flannan2",
+   "img": "B05",
+   "vo": "The inquiry blamed an unusually large wave. Not one of the three keepers was ever found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

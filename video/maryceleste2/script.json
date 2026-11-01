@@ -1,0 +1,93 @@
+{
+ "title": "The Mary Celeste (2)",
+ "subtitle": "Atlantic Ocean, 1872",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, a two-masted 19th-century merchant brigantine at sea in the North Atlantic in December 1872, grey overcast, long heavy swells, weathered wood, wet canvas, melancholy and uncanny, period maritime detail, cinematic composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "December eighteen seventy-two. A sailing ship was found drifting in the Atlantic with no one aboard.",
+   "cap": "ATLANTIC · 1872",
+   "img": "A two-masted wooden brigantine drifting alone on a grey Atlantic swell, seen broadside and centred, some sails set and some torn and hanging loose, no one on deck, heavy overcast sky."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "She was still seaworthy. Her cargo, seventeen hundred barrels of alcohol, was almost untouched. There was plenty of food and water.",
+   "cap": "1,701\nBARRELS",
+   "img": "The dark interior of a 19th-century wooden ship's cargo hold packed with rows of old oak barrels stacked on their sides, grey daylight falling through an open square hatch above, the barrels filling the frame, no deck, no sea visible.",
+   "amber": true,
+   "note": "generated outside _build_images.py with a hold-only grade (shared sea grade produced a deck at sea)"
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "Ten people had sailed on her: the captain, his wife, their two-year-old daughter and seven crew. The ship's only boat was gone.",
+   "cap": "10 ABOARD\nBOAT GONE",
+   "img": "An empty space across a ship's main hatch where a small boat had been lashed, loose cut lashing ropes trailing on the wet deck, grey sea beyond the rail."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "Her last log entry, nine days earlier, put her off the Azores, nearly four hundred nautical miles from where she was found.",
+   "cap": "LAST LOG\n9 DAYS OLD",
+   "img": "A ship's chalk slate log board with faint illegible chalk marks resting on a wooden chart table beside an old brass oil lamp, a sea chart rolled beside it, dim cabin light.",
+   "amber": true
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "No one has ever proved why they left. Not one of the ten was ever seen again.",
+   "cap": "NEVER\nSEEN AGAIN",
+   "img": "A tiny lone brigantine far away on a vast empty grey Atlantic under low cloud, seen from high above the sea, the ship small and centred.",
+   "amber": true
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Mary Celeste found adrift and unmanned by the Dei Gratia on 4/5 December 1872, midway between the Azores and Portugal",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Celeste",
+    "https://www.britannica.com/topic/Mary-Celeste"
+   ]
+  },
+  {
+   "claim": "Found in a dishevelled but seaworthy condition under partial sail; amply provisioned",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Celeste",
+    "https://www.smithsonianmag.com/smart-news/an-abandoned-merchant-ship-was-discovered-floating-in-the-atlantic-1872-the-mystery-its-crew-never-solved-180985547/"
+   ]
+  },
+  {
+   "claim": "Cargo 1,701 barrels of (denatured) alcohol, largely intact (9 found empty at unloading in Genoa)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Celeste",
+    "https://www.britannica.com/topic/Mary-Celeste"
+   ]
+  },
+  {
+   "claim": "Aboard: Captain Benjamin Briggs, his wife Sarah, daughter Sophia Matilda (b. Oct 1870, aged two) and seven crew = 10; the ship's single lifeboat (a yawl stowed across the main hatch) was missing",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Celeste",
+    "https://www.britannica.com/topic/Mary-Celeste"
+   ]
+  },
+  {
+   "claim": "Last log/slate entry 25 November 1872, off Santa Maria Island in the Azores, nine days before discovery, nearly 400 nautical miles from where she was found",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Celeste",
+    "https://www.britannica.com/topic/Mary-Celeste"
+   ]
+  },
+  {
+   "claim": "None of the ten was ever found; cause of abandonment never established (theories only). NOTE: 'food on the table / meal laid' is a later invented embellishment (1883 LA Times retelling) — NOT used",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Celeste",
+    "https://www.smithsonianmag.com/smart-news/an-abandoned-merchant-ship-was-discovered-floating-in-the-atlantic-1872-the-mystery-its-crew-never-solved-180985547/"
+   ]
+  }
+ ],
+ "remake_of": "maryceleste"
+}

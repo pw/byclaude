@@ -1,0 +1,118 @@
+{
+  "title": "HMS Atalanta",
+  "subtitle": "Bermuda, 1880",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a nineteenth-century Royal Navy wooden sailing ship and the open North Atlantic in winter around 1880, grey-green sea, low overcast sky, cold pale light, melancholy and uncanny, cinematic wide composition, fine film grain. Single image, not a collage, no text, no lettering, no flags with writing, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Bermuda, January eighteen eighty. The training ship Atalanta sailed for England, with about two hundred and eighty aboard.",
+      "cap": "BERMUDA · 1880",
+      "img": "A nineteenth-century three-masted Royal Navy wooden training frigate under full white sail, centred in the frame, seen side-on at a slight angle, black hull with a single white band of gunports, sailing across a grey-green sea under an overcast sky, the whole ship clearly visible and sharp, no people visible."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Most were young trainees. The ship never arrived. None of them was ever seen again.",
+      "cap": "NEVER\nARRIVED",
+      "amber": true,
+      "img": "An empty stone harbour quay in England on a grey winter morning, an empty mooring berth and calm grey water, a bare iron bollard in the foreground, distant empty sea beyond the harbour mouth, no ships, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Wreckage was reported near the Azores. None of it was ever proven to be hers.",
+      "cap": "NEVER\nPROVEN HERS",
+      "img": "A single broken weathered wooden spar and a few loose planks floating on a calm grey open sea, no markings or lettering, overcast light, empty horizon."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "A former crewman said she rolled dangerously. No trace of her was ever found.",
+      "cap": "NO TRACE\nFOUND",
+      "amber": true,
+      "img": "Inside a dim wooden ship's cabin, a brass pendulum clinometer mounted on the panelled bulkhead with its pointer swung far over to one side, a hanging oil lamp tilted at an angle, empty cabin, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Theories include a storm, and a ship too unstable to sail. More than a century on, no wreck has ever been identified.",
+      "cap": "NO WRECK\nFOUND",
+      "amber": true,
+      "img": "A vast empty grey North Atlantic at dusk, long low swells, heavy low clouds, a faint pale break of light on the empty horizon, no ship, unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "HMS Atalanta (ex-HMS Juno, renamed 1878), a Royal Navy training frigate (full-rigged ship), sailed from the Royal Naval Dockyard, Bermuda, on 31 January 1880 bound for England (Falmouth/Portsmouth)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/HMS_Juno_(1844)",
+        "https://www.royalgazette.com/?p=245480",
+        "https://memorials.rmg.co.uk/m6375/",
+        "https://memorialsinportsmouth.co.uk/churches/st_anns/atalanta.htm"
+      ]
+    },
+    {
+      "claim": "About 280 aboard: sources differ — 275 (Royal Gazette/Raine), 281 named on the St Ann's Portsmouth memorial, 284 (1929 NZ press), 290 (Maritimequest); written as 'about two hundred and eighty'",
+      "sources": [
+        "https://memorialsinportsmouth.co.uk/churches/st_anns/atalanta.htm",
+        "https://www.royalgazette.com/?p=245480",
+        "https://en.wikipedia.org/wiki/HMS_Juno_(1844)",
+        "https://www.maritimequest.com/daily_event_archive/2006/jan/31_hms_atlanta.htm"
+      ]
+    },
+    {
+      "claim": "Most aboard were trainees: ordinary seamen under instruction; The Times described 'some 300 lads' who had never been to sea, with only about 11 able seamen",
+      "sources": [
+        "https://memorialsinportsmouth.co.uk/churches/st_anns/atalanta.htm",
+        "https://en.wikipedia.org/wiki/HMS_Juno_(1844)",
+        "https://dawlishchronicles.com/?p=842"
+      ]
+    },
+    {
+      "claim": "The ship never reached England; lost with all aboard, no survivors (presumed foundered c. 12-16 February 1880)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/HMS_Juno_(1844)",
+        "https://memorials.rmg.co.uk/m6375/",
+        "https://dawlishchronicles.com/?p=842",
+        "https://www.maritimequest.com/daily_event_archive/2006/jan/31_hms_atlanta.htm"
+      ]
+    },
+    {
+      "claim": "Wreckage reported near the Azores (gunboat Avon); wreckage found over following months could not be proven/positively identified as Atalanta's",
+      "sources": [
+        "https://en.wikipedia.org/wiki/HMS_Atalanta",
+        "https://www.maritimequest.com/daily_event_archive/2006/jan/31_hms_atlanta.htm",
+        "https://en.wikipedia.org/wiki/HMS_Juno_(1844)",
+        "https://dawlishchronicles.com/?p=842"
+      ]
+    },
+    {
+      "claim": "A former crew member (AS John Varling) testified she was top-heavy and rolled excessively (reported 32 degrees); the Committee of Enquiry could come to no conclusion as to the cause of the loss",
+      "sources": [
+        "https://en.wikipedia.org/wiki/HMS_Juno_(1844)",
+        "https://dawlishchronicles.com/?p=842",
+        "https://memorialsinportsmouth.co.uk/churches/st_anns/atalanta.htm",
+        "https://www.royalgazette.com/?p=245480"
+      ]
+    },
+    {
+      "claim": "Theories (as theories): foundered in a storm/gale crossing her route; inherently unstable design (David F. Raine, 1997, argues instability plus added deadweight)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/HMS_Juno_(1844)",
+        "https://dawlishchronicles.com/?p=842",
+        "https://www.royalgazette.com/?p=245480"
+      ]
+    },
+    {
+      "claim": "No wreck has ever been identified (a sunken hulk sighted off Brittany in Sept 1880 was never confirmed as Atalanta); no 2024-2026 discovery reports found in searches on 2026-11-01",
+      "sources": [
+        "https://en.wikipedia.org/wiki/HMS_Juno_(1844)",
+        "https://en.wikipedia.org/wiki/HMS_Atalanta",
+        "https://www.maritimequest.com/daily_event_archive/2006/jan/31_hms_atlanta.htm"
+      ]
+    }
+  ]
+}
