@@ -1,0 +1,103 @@
+{
+  "title": "STENDEC",
+  "subtitle": "Star Dust's last word · the Andes, 1947",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, August 1947, the high snow-covered Andes in deep winter, heavy grey cloud and blowing snow, cold blue-grey light with faint warm brass tones, period 1940s detail, melancholy and uncanny, cinematic wide composition, fine film grain. Single image, not a collage, no text, no lettering, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Over the Andes, nineteen forty-seven. The airliner Star Dust sent its last message in Morse code. It ended in a word that has never been explained.",
+      "cap": "ANDES · 1947",
+      "img": "A single brass Morse telegraph key mounted on a worn wooden radio operator's desk inside a 1940s piston airliner, centred and sharply lit by a small warm lamp, a bulky valve radio set with round dials behind it, a small cockpit window beyond showing grey cloud and snowy mountain peaks, still and silent."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "S. T. E. N. D. E. C. The operator in Santiago asked again. The same word came back, twice more.",
+      "cap": "STENDEC",
+      "amber": true,
+      "img": "A 1940s airfield radio room at dusk, a large valve radio receiver with glowing dials and a pair of headphones resting on a desk beside a blank paper message pad and a pencil, a window behind showing distant snow-covered Andes peaks under heavy cloud, empty chair, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Star Dust never arrived. In nineteen ninety-eight, climbers found its wreckage high on Mount Tupungato.",
+      "cap": "WRECK FOUND\n1998",
+      "img": "A single weathered aircraft propeller blade and a corroded piece of an old aluminium engine cowling half-buried in glacier ice and snow, high on a vast snowy mountain slope under a grey sky, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "The crash is broadly understood: in thick cloud, the crew descended too soon. No one aboard survived.",
+      "cap": "THE CRASH:\nUNDERSTOOD",
+      "img": "A towering snow-covered Andes peak almost hidden inside dense grey cloud and blowing snow, seen from high in the air, a faint pale gap in the cloud, cold and silent, no aircraft visible."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The word is not. A scrambled 'descent'? A misheard Morse sign-off? Only theories, never confirmed.",
+      "cap": "THE WORD:\nUNEXPLAINED",
+      "amber": true,
+      "img": "The same brass Morse key on an empty wooden desk in near darkness, a single thin beam of cold light falling across it, a dark window behind with faint snowy mountain shapes in cloud, quiet and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Star Dust (BSAA Avro Lancastrian G-AGWH), Buenos Aires to Santiago, lost over the Andes on 2 August 1947; 11 aboard (6 passengers, 5 crew), all died",
+      "sources": [
+        "https://en.wikipedia.org/wiki/1947_BSAA_Avro_Lancastrian_Star_Dust_accident",
+        "https://www.historicmysteries.com/unexplained-mysteries/star-dust/22041/",
+        "https://www.flightsafetyaustralia.com/2022/01/no-place-for-a-hero/",
+        "https://planeandpilotmag.com/a-pilots-last-words-stendec/"
+      ]
+    },
+    {
+      "claim": "Final Morse message sent 17:41, 'ETA SANTIAGO 17.45 HRS STENDEC' (four minutes before planned arrival), received by the radio operator at Santiago (Los Cerrillos) — NOT Mendoza",
+      "sources": [
+        "https://en.wikipedia.org/wiki/1947_BSAA_Avro_Lancastrian_Star_Dust_accident",
+        "https://www.pbs.org/wgbh/nova/vanished/sten_theories.html",
+        "https://flywiththestars.co.uk/Documents/STENDEC.htm",
+        "https://planeandpilotmag.com/a-pilots-last-words-stendec/"
+      ]
+    },
+    {
+      "claim": "The operator did not recognise the word and asked for clarification/repeat; the same word came back twice more (three receptions total). Wikipedia: 'repeated twice in succession'; Horizon/NOVA transcript: 'repeated again twice'",
+      "sources": [
+        "https://www.pbs.org/wgbh/nova/transcripts/2802vanished.html",
+        "https://www.pbs.org/wgbh/nova/vanished/sten_theories.html",
+        "https://www.damninteresting.com/the-star-dust-mystery",
+        "https://planeandpilotmag.com/a-pilots-last-words-stendec/",
+        "https://en.wikipedia.org/wiki/1947_BSAA_Avro_Lancastrian_Star_Dust_accident"
+      ]
+    },
+    {
+      "claim": "Star Dust never arrived; wreckage (Rolls-Royce engine) found by two Argentine climbers on Mount Tupungato in 1998; Argentine Army expedition 2000; DNA identifications by 2002",
+      "sources": [
+        "https://en.wikipedia.org/wiki/1947_BSAA_Avro_Lancastrian_Star_Dust_accident",
+        "https://www.flightsafetyaustralia.com/2022/01/no-place-for-a-hero/",
+        "https://www.historicmysteries.com/unexplained-mysteries/star-dust/22041/",
+        "https://www.damninteresting.com/the-star-dust-mystery"
+      ]
+    },
+    {
+      "claim": "Crash broadly understood: 2000 Argentine investigation attributed it to snowstorm/heavy cloud preventing position correction; Horizon/NOVA: crew began descent in cloud believing they were near Santiago (jet-stream headwind), still short of Tupungato — controlled flight into terrain",
+      "sources": [
+        "https://en.wikipedia.org/wiki/1947_BSAA_Avro_Lancastrian_Star_Dust_accident",
+        "https://www.pbs.org/wgbh/nova/transcripts/2802vanished.html",
+        "https://www.flightsafetyaustralia.com/2022/01/no-place-for-a-hero/",
+        "https://www.historicmysteries.com/unexplained-mysteries/star-dust/22041/"
+      ]
+    },
+    {
+      "claim": "Meaning of STENDEC has never been definitively explained; theories include an anagram of 'DESCENT' and Morse misreadings (e.g. spacing error around the AR sign-off / SCTI AR); none confirmed. Horizon: 'a final riddle which science has been unable to solve'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/1947_BSAA_Avro_Lancastrian_Star_Dust_accident",
+        "https://www.pbs.org/wgbh/nova/vanished/sten_theories.html",
+        "https://www.pbs.org/wgbh/nova/transcripts/2802vanished.html",
+        "https://www.damninteresting.com/the-star-dust-mystery"
+      ]
+    }
+  ]
+}

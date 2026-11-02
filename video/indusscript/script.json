@@ -1,0 +1,128 @@
+{
+  "title": "The Indus Script",
+  "subtitle": "Indus Valley · c. 2600–1900 BCE",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the ancient Bronze Age Indus Valley, sun-baked fired brick, pale carved steatite and dusty clay, warm faded ochre and dusty grey light, quiet and uncanny, cinematic wide composition, fine film grain. Single image showing one scene only, not a collage, not a split panel, no text, no legible writing, letters, signs or symbols, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "The Indus Valley, more than four thousand years ago. People carved small stone seals, most with an animal, and a short row of signs. No one has ever deciphered them.",
+      "cap": "INDUS VALLEY\n2600 BCE",
+      "img": "A single small square carved stone seal, about an inch across, pale cream steatite, standing upright and centred on a plain dark stone ledge, seen at a slight three-quarter angle and lit by soft warm raking light from one side; carved into its face in shallow relief, a bull in side profile with a single long curved horn, and above it a narrow band of worn, eroded marks too shallow and indistinct to read; the seal is large and sharp in the middle of the wide frame, the background falling away into soft dark shadow."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "More than four thousand inscribed objects have been found. The average text is just five signs long.",
+      "cap": "5 SIGNS\nPER TEXT",
+      "img": "Dozens of small square carved stone seals laid out in loose rows on a dusty wooden tray in a dim archaeological storeroom, each bearing a faint worn animal carving, every mark too small and blurred to read, a single shaft of pale light falling across the tray from a high window, dust hanging in the air."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Around four hundred different signs. And no bilingual text, no Rosetta Stone, has ever been found.",
+      "cap": "NO ROSETTA\nSTONE",
+      "amber": true,
+      "img": "The excavated ruins of an ancient fired-brick city on a flat dusty river plain at dusk, low eroded brick walls and narrow empty lanes stretching into the distance, a ruined brick mound rising on the horizon under a hazy ochre sky, silent and abandoned."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Some scholars have argued the signs may not be writing at all.",
+      "cap": "NOT WRITING\nAT ALL?",
+      "img": "An extreme close view of the worn face of a small carved stone seal in low raking lamplight, shallow grooves, chips and cracks catching the light like a tiny desert landscape, the carved strokes blurred and indistinct, nothing readable, deep soft shadow at the edges."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "More than a hundred decipherments have been proposed. None has been accepted.",
+      "cap": "NONE\nACCEPTED",
+      "amber": true,
+      "img": "The broad flat Indus river plain at last light under a vast darkening sky with the first faint stars, a low ruined brick mound on the far horizon, the slow wide river catching a faint silver gleam, empty and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The Indus (Harappan) civilisation flourished c. 2600–1900 BCE (mature phase) in present-day Pakistan and northwest India; its script is c. 4,000+ years old",
+      "sources": [
+        "https://www.livescience.com/archaeology/will-the-indus-valley-script-ever-be-deciphered",
+        "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation",
+        "https://www.worldhistory.org/Indus_Script/"
+      ]
+    },
+    {
+      "claim": "Indus seals are small (most 2–3 cm a side, ~1 inch square), chiefly carved steatite (soapstone), typically with an animal motif and a short text; the 'unicorn' (most likely a bull shown in profile) is the most common motif",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Indus_script",
+        "https://www.worldhistory.org/Indus_Script/",
+        "https://www.harappa.com/content/unicorn-seal",
+        "https://imp-art.org/?p=12006",
+        "https://homes.cs.washington.edu/~rao/ieeeIndus.pdf"
+      ]
+    },
+    {
+      "claim": "The script has not been deciphered; no proposed decipherment has gained acceptance (Live Science, 15 Mar 2026; IGNCA/Culture Ministry conference, Sep 2025: 'no credible breakthrough'); 2024–2026 claims (e.g. Yajnadevam's Sanskrit reading, Academia.edu, not peer-reviewed) are not accepted",
+      "sources": [
+        "https://www.livescience.com/archaeology/will-the-indus-valley-script-ever-be-deciphered",
+        "https://en.wikipedia.org/wiki/Indus_script",
+        "https://vajiramandravi.com/current-affairs/decoding-the-harappan-script-culture-ministrys-global-conference/",
+        "https://list.indology.info/pipermail/indology/2025-March/060322.html"
+      ]
+    },
+    {
+      "claim": "More than 4,000 inscribed objects found (Fairservis 1992; Mahadevan 1977 catalogued 2,906; a 2025 report says ~5,000) — conservative figure used: about 4,000",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Indus_script",
+        "https://hasp.ub.uni-heidelberg.de/journals/ejvs/article/download/620/612/1254",
+        "https://homes.cs.washington.edu/~rao/ieeeIndus.pdf"
+      ]
+    },
+    {
+      "claim": "Average inscription length is about five signs (longest ~17 signs per Rao; 26 per World History Encyclopedia)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Indus_script",
+        "https://homes.cs.washington.edu/~rao/ieeeIndus.pdf",
+        "https://www.livescience.com/archaeology/will-the-indus-valley-script-ever-be-deciphered",
+        "https://www.worldhistory.org/Indus_Script/"
+      ]
+    },
+    {
+      "claim": "Roughly 400 distinct signs: Mahadevan 1977 = 417/419, Parpola 1994 = 425 (some lists 386/398; Wells 676–694 counting variants)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Indus_script",
+        "https://vajiramandravi.com/current-affairs/decoding-the-harappan-script-culture-ministrys-global-conference/",
+        "https://www.harappa.com/blog/indus-concordance-and-tamil-potsherds-now-online",
+        "https://homes.cs.washington.edu/~rao/ieeeIndus.pdf"
+      ]
+    },
+    {
+      "claim": "No bilingual inscription (a 'Rosetta Stone') has been found",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Indus_script",
+        "https://homes.cs.washington.edu/~rao/ieeeIndus.pdf",
+        "https://www.livescience.com/archaeology/will-the-indus-valley-script-ever-be-deciphered",
+        "https://www.worldhistory.org/Indus_Script/"
+      ]
+    },
+    {
+      "claim": "Farmer, Sproat & Witzel (2004, EJVS 11-2) argued the Indus signs are a non-linguistic symbol system, not writing; disputed by Parpola, Vidale and Rao et al. (2009) — presented as a theory",
+      "sources": [
+        "https://hasp.ub.uni-heidelberg.de/journals/ejvs/article/download/620/612/1254",
+        "https://en.wikipedia.org/wiki/Indus_script",
+        "https://bdnews24.com/science/mysterious-indus-script-may-be-genuine-language-after-all",
+        "https://homes.cs.washington.edu/~rao/IndusResponse.html"
+      ]
+    },
+    {
+      "claim": "More than 100 decipherment attempts have been published since the 1920s; Tamil Nadu CM M.K. Stalin announced a $1 million prize on 5 Jan 2025 for a successful decipherment",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Indus_script",
+        "https://scroll.in/latest/1077596/tamil-nadu-announces-1-million-prize-for-deciphering-indus-valley-civilisation-script",
+        "https://www.deccanherald.com/amp/story/india%2Ftamil-nadu%2Fcm-stalin-announces-1-million-prize-for-decoding-indus-valley-script-3342165",
+        "https://www.business-standard.com/india-news/cm-stalin-announces-1-million-prize-for-decoding-indus-valley-script-125010500330_1.html"
+      ]
+    }
+  ]
+}

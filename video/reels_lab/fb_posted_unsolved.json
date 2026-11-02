@@ -1,4 +1,8 @@
 {
+ "atalanta": {
+  "fb_published_at": "2026-11-01T15:45:34+00:00",
+  "fb_video_id": "1440933618172575"
+ },
  "baychimo": {
   "fb_published_at": "2026-10-30T15:45:44+00:00",
   "fb_video_id": "1141873035108368"
@@ -21,7 +25,8 @@
  },
  "circleville": {
   "fb_published_at": "2026-10-13T15:45:38+00:00",
-  "fb_video_id": "1625358059030945"
+  "fb_video_id": "1625358059030945",
+  "deleted": "2026-11-02"
  },
  "copperscroll": {
   "fb_published_at": "2026-10-28T01:45:34+00:00",
@@ -50,6 +55,10 @@
  "dorothyarnold": {
   "fb_published_at": "2026-10-20T15:45:33+00:00",
   "fb_video_id": "3655666491258945"
+ },
+ "flannan2": {
+  "fb_published_at": "2026-11-02T01:45:45+00:00",
+  "fb_video_id": "1026036843844367"
  },
  "flannanisles": {
   "fb_published_at": "2026-10-21T15:45:33+00:00",
@@ -83,6 +92,10 @@
   "fb_published_at": "2026-10-27T01:45:33+00:00",
   "fb_video_id": "1680079856873728"
  },
+ "lineara": {
+  "fb_published_at": "2026-10-31T15:45:33+00:00",
+  "fb_video_id": "1651083606644548"
+ },
  "maryceleste": {
   "fb_published_at": "2026-10-16T15:45:34+00:00",
   "fb_video_id": "1761333614920760"
@@ -102,6 +115,10 @@
  "roanoke": {
   "fb_published_at": "2026-10-17T01:45:28+00:00",
   "fb_video_id": "1127776936389864"
+ },
+ "rongorongo": {
+  "fb_published_at": "2026-11-01T01:45:33+00:00",
+  "fb_video_id": "980698144587921"
  },
  "shugborough": {
   "fb_published_at": "2026-10-26T01:45:41+00:00",

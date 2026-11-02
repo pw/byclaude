@@ -1,0 +1,47 @@
+{
+ "out": "short-su-indusscript",
+ "kicker": "THE INDUS SCRIPT",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "indusscript",
+   "img": "B01",
+   "vo": "The Indus Valley, more than four thousand years ago. People carved small stone seals, most with an animal, and a short row of signs. No one has ever deciphered them.",
+   "cap": "INDUS VALLEY\n2600 BCE"
+  },
+  {
+   "src": "indusscript",
+   "img": "B02",
+   "vo": "More than four thousand inscribed objects have been found. The average text is just five signs long.",
+   "cap": "5 SIGNS\nPER TEXT"
+  },
+  {
+   "src": "indusscript",
+   "img": "B03",
+   "vo": "Around four hundred different signs. And no bilingual text, no Rosetta Stone, has ever been found.",
+   "cap": "NO ROSETTA\nSTONE",
+   "amber": true
+  },
+  {
+   "src": "indusscript",
+   "img": "B04",
+   "vo": "Some scholars have argued the signs may not be writing at all.",
+   "cap": "NOT WRITING\nAT ALL?"
+  },
+  {
+   "src": "indusscript",
+   "img": "B05",
+   "vo": "More than a hundred decipherments have been proposed. None has been accepted.",
+   "cap": "NONE\nACCEPTED",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

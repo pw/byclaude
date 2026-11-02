@@ -75,6 +75,15 @@ then prefer cases that don't need them. A film under ~20 plays at 12h on a healt
 - **Linear A reel (posted 10-31 15:45Z, 4 days after its photo post) did NOT die:** 205 at ~13h. So the photo-then-reel
   suppression story for Baychimo is unsupported (n=1). Lone-death cause still unknown. Its retention (0.08) is the page's worst.
 
+- **2026-11-02 audit of the 12 pre-truth-gate films (VO + live caption vs the record):** no false "still unsolved"
+  ending anywhere. VO errors: Circleville (wrong year 1977→1983, wrong NAME Gilligan→Gillispie, mailbox→box behind a
+  roadside sign) → **post DELETED** (a repost, 21 plays). Caption replaced + a plain "Correction:" line on Springfield
+  Three (only the girls went out; the broken porch-light shade), Max Headroom (two intrusions blended, "fictional" anchor
+  was real, no "largest manhunt"), Watcher (3 children, not 5), Beaumont (phone-number line unsourced; dead "link in bio"
+  removed), Mary Celeste (food-on-table legend). Sodder caption tightened (VO imprecision minor). Clean: vela, roanoke,
+  valentich, isdal, wowsignal. Lesson for the brief: legend embellishments and wrong NAMES are what slipped through before
+  the facts gate; the blind check now exists for exactly this.
+
 ## The loop (one arm at a time)
 1. **Post** 2/day via `ig.py --profile unsolved batch --per-day 2` (cron once the Page id lands in ig.py + reels_lab/pages.json).
 2. **Measure**: `lab.py snap` every 6h (cron); `lab.py report --page unsolved` = plays at 72h + retention + arm medians.
@@ -94,7 +103,7 @@ Truth floor: "Still unsolved" ending only on genuinely unsolved cases (Phantom o
 | 5 | `voice` | male (current) vs female narrator | |
 | 6 | `cadence` | 2/day vs 3/day | |
 | 7 | `frame` | 16:9 still in a band (current) vs full-bleed 9:16 still | **OPEN 2026-10-24.** `"frame":"bleed"` in the shorts spec + `_build_images.py <dir> 9:16` (→ `images916/`). First bleed: phaistos, paulawelden, whale52 (interleaved with band taracalico, shugborough, lakebodom; balanced on kind+end). Band originals in `shorts/band_backup/`. Build new films alternating bleed/band until n≥5 each. **10-27:** phaistos + paulawelden lost to the page throttle (excluded); bleed valid = whale52, dorabella, rongorongo + new joyita, cyclops, copperscroll; band valid = shugborough, lakebodom, deering, beale. Read ~11-01. **10-30:** + bleed baychimo, lineara; + band waratah, singaporestone, dagapeyeff (band valid now 6 incl. lakebodom-excluded → 6 usable: shugborough, deering, beale, waratah, singaporestone, dagapeyeff). Read when the 10-30 films reach 72h (~11-03); the ~11-01 read is on the earlier 6 vs 4. |
-| 8 | `format` | reel vs PHOTO post (one real photograph + 1–3 sentence caption, no video; Patrick's note b3c16e47) | **OPEN 2026-10-26.** `photo.py` posts 1/day 20:45Z from `photos/` (needs `APPROVED` = passed the blind check, `briefs/PHOTO_BRIEF.md` + `VERIFY_PHOTO_BRIEF.md`); real photos only, PD/CC0/CC BY/CC BY-SA with credit line. Metric = unique viewers at 72h (`post_total_media_view_unique`; reel plays ≈ reel viewers, Vela 49,045 vs 48,732), + reactions/comments/shares. First 7: baychimo, lineara, tunguska, stonespheres, indusseals, cottingley, plainofjars (4 verifier FIXes applied). Read at n≥5 photos (~11-02). **10-30:** 4 photos read 0 / 2 / 0 / 0 unique viewers (baychimo 75h, lineara 51h). Instrument is NOT mute: lineara `post_media_view`=3, posts public + published, page healthy (580/707 views/day). Photos get ~no distribution; expect a KILL at n=5. |
+| 8 | `format` | reel vs PHOTO post (one real photograph + 1–3 sentence caption, no video; Patrick's note b3c16e47) | **OPEN 2026-10-26.** `photo.py` posts 1/day 20:45Z from `photos/` (needs `APPROVED` = passed the blind check, `briefs/PHOTO_BRIEF.md` + `VERIFY_PHOTO_BRIEF.md`); real photos only, PD/CC0/CC BY/CC BY-SA with credit line. Metric = unique viewers at 72h (`post_total_media_view_unique`; reel plays ≈ reel viewers, Vela 49,045 vs 48,732), + reactions/comments/shares. First 7: baychimo, lineara, tunguska, stonespheres, indusseals, cottingley, plainofjars (4 verifier FIXes applied). Read at n≥5 photos (~11-02). **10-30:** 4 photos read 0 / 2 / 0 / 0 unique viewers (baychimo 75h, lineara 51h). Instrument is NOT mute: lineara `post_media_view`=3, posts public + published, page healthy (580/707 views/day). Photos get ~no distribution; expect a KILL at n=5. **KILLED 2026-11-02:** all 7 posted, unique viewers 0/2/0/0/1/2/1 (live insights re-read 11-02; instrument non-mute: post_media_view 3/3/2/1 on four of them) vs reels' floor ~200 on the same days. FB gives photo posts on this page no cold reach. Photo cron retired, `photos/` left as-is; photos may still serve as cheap fact-checked research for films, never as a reach test. |
 
 
 ## ★ 2026-10-26 Breakout study (Patrick's steer: "what breaks out" is the main question)

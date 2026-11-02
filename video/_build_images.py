@@ -27,6 +27,9 @@ def run(b):
 stills = [b for b in data["beats"] if b.get("vtype") == "still" and "img" in b]
 print(f"[img:{sys.argv[1]}] {len(stills)} stills -> {imgdir}", flush=True)
 with ThreadPoolExecutor(max_workers=5) as ex:
-    for res in ex.map(run, stills):
-        print(f"[img:{sys.argv[1]}]", res, flush=True)
-print(f"[img:{sys.argv[1]}] done", flush=True)
+        results = list(ex.map(run, stills))
+for res in results:
+    print(f"[img:{sys.argv[1]}]", res, flush=True)
+fails = [r for r in results if not str(r[1]).startswith(("ok", "skip"))]
+print(f"[img:{sys.argv[1]}] done ({len(fails)} failed)", flush=True)
+sys.exit(1 if fails else 0)   # 2026-11-02: all-FAIL used to exit 0 and let the build run on missing stills
