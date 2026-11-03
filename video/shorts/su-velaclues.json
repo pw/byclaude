@@ -1,0 +1,47 @@
+{
+ "out": "short-su-velaclues",
+ "kicker": "THE VELA INCIDENT",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "velaclues",
+   "img": "B01",
+   "vo": "September nineteen seventy-nine. A satellite saw a double flash over the Indian Ocean. Hours later in Puerto Rico, the Arecibo radio telescope recorded a ripple high in the atmosphere.",
+   "cap": "PUERTO RICO \u00b7 1979"
+  },
+  {
+   "src": "velaclues",
+   "img": "B02",
+   "vo": "Moving in an unusual direction. Underwater microphones caught sounds a Navy laboratory linked to a blast at sea.",
+   "cap": "HEARD\nUNDERWATER"
+  },
+  {
+   "src": "velaclues",
+   "img": "B03",
+   "vo": "Weeks later, sheep in Australia were found carrying iodine one thirty-one, a product of nuclear fission.",
+   "cap": "IODINE-131\nIN SHEEP",
+   "amber": true
+  },
+  {
+   "src": "velaclues",
+   "img": "B04",
+   "vo": "In nineteen eighty, a panel for the White House judged it probably not nuclear. Many government scientists disagreed.",
+   "cap": "PROBABLY\nNOT NUCLEAR"
+  },
+  {
+   "src": "velaclues",
+   "img": "B05",
+   "vo": "None of it settled the question. No government has ever confirmed what it was.",
+   "cap": "NEVER\nCONFIRMED",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

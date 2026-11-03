@@ -24,9 +24,9 @@
   "fb_video_id": "1812424320078937"
  },
  "circleville": {
+  "deleted": "2026-11-02",
   "fb_published_at": "2026-10-13T15:45:38+00:00",
-  "fb_video_id": "1625358059030945",
-  "deleted": "2026-11-02"
+  "fb_video_id": "1625358059030945"
  },
  "copperscroll": {
   "fb_published_at": "2026-10-28T01:45:34+00:00",
@@ -100,6 +100,10 @@
   "fb_published_at": "2026-10-16T15:45:34+00:00",
   "fb_video_id": "1761333614920760"
  },
+ "maryceleste2": {
+  "fb_published_at": "2026-11-02T15:45:37+00:00",
+  "fb_video_id": "2473350283074759"
+ },
  "maxheadroom": {
   "fb_published_at": "2026-10-17T15:45:44+00:00",
   "fb_video_id": "2977743665910032"
@@ -123,6 +127,10 @@
  "shugborough": {
   "fb_published_at": "2026-10-26T01:45:41+00:00",
   "fb_video_id": "1667037208350741"
+ },
+ "singaporestone": {
+  "fb_published_at": "2026-11-03T01:45:28+00:00",
+  "fb_video_id": "2126036218280705"
  },
  "sodder": {
   "fb_published_at": "2026-10-15T01:45:39+00:00",

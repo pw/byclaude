@@ -1,0 +1,116 @@
+{
+ "title": "The Flannan Isles Log",
+ "subtitle": "Outer Hebrides, 1900",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, the interior of a remote Scottish island lighthouse keepers' station in December 1900, whitewashed stone walls, dark scrubbed wood, brass and oil-lamp light against cold grey Atlantic window light, quiet and uncanny, cinematic composition, fine film grain. Single image, not a collage, no text, no legible writing, no signage, no people, no faces.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Flannan Isles, Scotland, nineteen hundred. Everyone knows the lighthouse's last log entries. A great storm. A keeper weeping. Then: God is over all.",
+   "cap": "FLANNAN ISLES\n1900",
+   "img": "A thick old leather-bound logbook lying closed and centred on a dark scrubbed wooden desk, a lit brass oil lamp beside it casting warm light, a whitewashed stone wall behind, a small window showing grey sea, the book large and clearly legible as an object in frame, no writing visible."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "None of those words are in the official record. A nineteen sixty-five book printed them, credited to a magazine story from nineteen twenty-nine.",
+   "cap": "NOT IN\nTHE RECORD",
+   "amber": true,
+   "img": "An old ledger lying open on a wooden desk under cold grey window light, its pages blank and pale, a pen laid neatly across them, an unlit oil lamp beside it, still and silent, no writing visible."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "The historian Mike Dash concluded that story was fiction.",
+   "cap": "WRITTEN\nAS FICTION",
+   "img": "A glass inkwell and a dip pen resting beside a loose sheet of blank paper on a dark wooden table, a single candle burning low, a rain-streaked window behind showing a black stormy night sea, no writing visible."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "The official report says the log ends on the thirteenth. A chalk slate runs to the fifteenth: the lamp cleaned, the oil filled.",
+   "cap": "THE LAMP\nCLEANED",
+   "img": "A small framed school slate with faint illegible chalk smudges leaning against a whitewashed stone wall on a shelf, beside a polished brass lighthouse oil lamp and a full oil can, grey morning light from a small window, orderly and quiet, no legible writing."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "The entries were invented. The disappearance was not. The three keepers were never found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true,
+   "img": "A plain lighthouse keepers' room with a bare wooden table and three empty wooden chairs pushed neatly in, nothing on the table, grey Atlantic light through a small deep-set window, the sea faintly visible beyond, still and empty."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Flannan Isles lighthouse (Eilean Mòr, Outer Hebrides, Scotland); three keepers (Ducat, Marshall, McArthur) disappeared December 1900",
+   "sources": [
+    "https://nrscotland.gov.uk/learning-and-events/for-the-safety-of-all-scotlands-lighthouses/the-flannan-islands-lighthouse-a-disappearance/",
+    "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse"
+   ]
+  },
+  {
+   "claim": "The widely circulated 'log entries' (12 Dec severe winds never seen in twenty years; McArthur crying; 13 Dec the men praying; 15 Dec 'Storm ended, sea calm. God is over all.')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+    "https://www.historic-uk.com/HistoryUK/HistoryofScotland/The-Eilean-Mor-Lighthouse-Mystery/",
+    "https://roybainton.com/2018/03/13/the-mystery-of-eilean-mor/"
+   ]
+  },
+  {
+   "claim": "Those entries are not in the official record (NLB published documents / NRS records); fictional later additions per Mike Dash's Fortean Times investigation; 'no evidence they ever existed'",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+    "https://www.history.co.uk/articles/the-flannan-isle-mystery-the-three-lighthouse-keepers-who-vanished",
+    "https://locallorestories.substack.com/p/what-happened-to-the-three-keepers",
+    "https://skeptoid.com/episodes/610"
+   ]
+  },
+  {
+   "claim": "First confirmed appearance in print: Vincent Gaddis, Invisible Horizons (1965), which credited the log text to an article by 'Ernest Fallon' in True Strange Stories, August 1929",
+   "sources": [
+    "https://skeptoid.com/episodes/610",
+    "https://roybainton.com/2018/03/13/the-mystery-of-eilean-mor/"
+   ]
+  },
+  {
+   "claim": "Mike Dash (historian; Fortean Studies 1998, Fortean Times 2017 'True Strange Stories?') concluded 'Fallon' was almost certainly a pseudonym and the True Strange Stories piece was fiction (attributed to John L. Spivak)",
+   "sources": [
+    "https://skeptoid.com/episodes/610",
+    "https://theghostinmymachine.com/2019/06/17/unresolved-what-happened-to-the-lighthouse-keepers-of-eilean-mor-flannan-isles-scotland-disappearance/",
+    "https://www.academia.edu/251736/The_Vanishing_Lighthousemen_of_Eilean_M%C3%B2r"
+   ]
+  },
+  {
+   "claim": "The real keepers' log's last entries were for 13 December; particulars to 9 am on 15 December were noted in chalk on a slate for later transfer",
+   "sources": [
+    "https://nrscotland.gov.uk/learning-and-events/for-the-safety-of-all-scotlands-lighthouses/the-flannan-islands-lighthouse-a-disappearance/",
+    "https://blog.nrscotland.gov.uk/2023/12/12/flannan-isles-lighthouse-keepers-the-disappearance/",
+    "https://roybainton.com/2018/03/13/the-mystery-of-eilean-mor/",
+    "https://skeptoid.com/episodes/610"
+   ]
+  },
+  {
+   "claim": "Slate notes: the lamp was cleaned, the (oil) fountain full / oil fountains and canteens filled",
+   "sources": [
+    "https://nrscotland.gov.uk/learning-and-events/for-the-safety-of-all-scotlands-lighthouses/the-flannan-islands-lighthouse-a-disappearance/",
+    "https://blog.nrscotland.gov.uk/2023/12/12/flannan-isles-lighthouse-keepers-the-disappearance/",
+    "https://theghostinmymachine.com/2019/06/17/unresolved-what-happened-to-the-lighthouse-keepers-of-eilean-mor-flannan-isles-scotland-disappearance/"
+   ]
+  },
+  {
+   "claim": "No trace of the three keepers was ever found; official inquiry (Muirhead, 8 Jan 1901) only inferred a large sea; families 'do not know for sure what happened'; no resolution reported through 2026",
+   "sources": [
+    "https://blog.nrscotland.gov.uk/2023/12/12/flannan-isles-lighthouse-keepers-the-disappearance/",
+    "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+    "https://prod.news.stv.tv/highlands-islands/mystery-of-eilean-mor-lighthouse-keepers-disappearance-as-records-released-for-first-time"
+   ]
+  }
+ ],
+ "sequel_of": [
+  "flannanisles",
+  "flannan2"
+ ]
+}

@@ -84,6 +84,15 @@ then prefer cases that don't need them. A film under ~20 plays at 12h on a healt
   valentich, isdal, wowsignal. Lesson for the brief: legend embellishments and wrong NAMES are what slipped through before
   the facts gate; the blind check now exists for exactly this.
 
+## ★ 2026-11-03: control PASSED — page not capped; subject replicates; SEQUEL arm opened
+- flannan2 518 @12h, maryceleste2 950 @8h (≥2 of 3 ≥425 ⇒ not capped, decided pre-posting). Remakes land 0.66–1.1× of their
+  originals' 12h number: the subject carries the reach, and it carries it AGAIN.
+- Whole-population nulls: subject fame (US search volume) vs 12h plays Spearman 0.24 (n=32); post slot 267 vs 250.
+- **Arm 9 `series` OPENED:** sequel (new true angle on a proven ≥425-at-12h subject; arms.json `"series": "sequel-of-<orig>"`)
+  vs new subject. First sequels: flannanlog (the famous logbook entries were invented later) and velaclues (the other
+  evidence after the 1979 flash). Read each at 12h; call at n≥5 sequels: sequel median ≥1.5× same-period new picks ⇒
+  every winner becomes a series. Proven subjects: vela, voynich, flannanisles, maryceleste, rongorongo, dorabella.
+
 ## The loop (one arm at a time)
 1. **Post** 2/day via `ig.py --profile unsolved batch --per-day 2` (cron once the Page id lands in ig.py + reels_lab/pages.json).
 2. **Measure**: `lab.py snap` every 6h (cron); `lab.py report --page unsolved` = plays at 72h + retention + arm medians.
@@ -103,6 +112,7 @@ Truth floor: "Still unsolved" ending only on genuinely unsolved cases (Phantom o
 | 5 | `voice` | male (current) vs female narrator | |
 | 6 | `cadence` | 2/day vs 3/day | |
 | 7 | `frame` | 16:9 still in a band (current) vs full-bleed 9:16 still | **OPEN 2026-10-24.** `"frame":"bleed"` in the shorts spec + `_build_images.py <dir> 9:16` (→ `images916/`). First bleed: phaistos, paulawelden, whale52 (interleaved with band taracalico, shugborough, lakebodom; balanced on kind+end). Band originals in `shorts/band_backup/`. Build new films alternating bleed/band until n≥5 each. **10-27:** phaistos + paulawelden lost to the page throttle (excluded); bleed valid = whale52, dorabella, rongorongo + new joyita, cyclops, copperscroll; band valid = shugborough, lakebodom, deering, beale. Read ~11-01. **10-30:** + bleed baychimo, lineara; + band waratah, singaporestone, dagapeyeff (band valid now 6 incl. lakebodom-excluded → 6 usable: shugborough, deering, beale, waratah, singaporestone, dagapeyeff). Read when the 10-30 films reach 72h (~11-03); the ~11-01 read is on the earlier 6 vs 4. |
+| 9 | `series` | sequel (new angle on a proven subject) vs new subject | **OPENED 2026-11-03** (see ★ 11-03). |
 | 8 | `format` | reel vs PHOTO post (one real photograph + 1–3 sentence caption, no video; Patrick's note b3c16e47) | **OPEN 2026-10-26.** `photo.py` posts 1/day 20:45Z from `photos/` (needs `APPROVED` = passed the blind check, `briefs/PHOTO_BRIEF.md` + `VERIFY_PHOTO_BRIEF.md`); real photos only, PD/CC0/CC BY/CC BY-SA with credit line. Metric = unique viewers at 72h (`post_total_media_view_unique`; reel plays ≈ reel viewers, Vela 49,045 vs 48,732), + reactions/comments/shares. First 7: baychimo, lineara, tunguska, stonespheres, indusseals, cottingley, plainofjars (4 verifier FIXes applied). Read at n≥5 photos (~11-02). **10-30:** 4 photos read 0 / 2 / 0 / 0 unique viewers (baychimo 75h, lineara 51h). Instrument is NOT mute: lineara `post_media_view`=3, posts public + published, page healthy (580/707 views/day). Photos get ~no distribution; expect a KILL at n=5. **KILLED 2026-11-02:** all 7 posted, unique viewers 0/2/0/0/1/2/1 (live insights re-read 11-02; instrument non-mute: post_media_view 3/3/2/1 on four of them) vs reels' floor ~200 on the same days. FB gives photo posts on this page no cold reach. Photo cron retired, `photos/` left as-is; photos may still serve as cheap fact-checked research for films, never as a reach test. |
 
 

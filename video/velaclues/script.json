@@ -1,0 +1,107 @@
+{
+  "title": "The Other Clues",
+  "subtitle": "The Vela Incident · 1979–1980",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, late 1970s period detail, cold muted blue-grey light, quiet and melancholy, uncanny stillness, cinematic composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "September nineteen seventy-nine. A satellite saw a double flash over the Indian Ocean. Hours later in Puerto Rico, the Arecibo radio telescope recorded a ripple high in the atmosphere.",
+      "cap": "PUERTO RICO · 1979",
+      "img": "The giant Arecibo radio telescope at night seen from the rim: a vast round metal-mesh dish set into a jungle sinkhole, the triangular instrument platform hanging centred above it on cables from tall concrete towers, softly floodlit, faint stars in a clear dark sky, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Moving in an unusual direction. Underwater microphones caught sounds a Navy laboratory linked to a blast at sea.",
+      "cap": "HEARD\nUNDERWATER",
+      "img": "Deep underwater in a dark ocean, a single cylindrical hydrophone sensor suspended on a taut cable, faint grey-blue light filtering down from far above, a soft pressure ripple passing through the still water, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Weeks later, sheep in Australia were found carrying iodine one thirty-one, a product of nuclear fission.",
+      "cap": "IODINE-131\nIN SHEEP",
+      "amber": true,
+      "img": "A small flock of sheep grazing in a pale green paddock under a low grey overcast sky, a wire fence and a lone gum tree, quiet and ordinary, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "In nineteen eighty, a panel for the White House judged it probably not nuclear. Many government scientists disagreed.",
+      "cap": "PROBABLY\nNOT NUCLEAR",
+      "img": "An empty 1980 government conference room, a long wooden table with closed manila folders and a single lit desk lamp, venetian blinds half drawn, chairs pushed in, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "None of it settled the question. No government has ever confirmed what it was.",
+      "cap": "NEVER\nCONFIRMED",
+      "amber": true,
+      "img": "A small twenty-sided 1970s satellite covered in solar cells drifting alone, centred, above the dark curve of the Earth over a night ocean, stars beyond, silent and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "On 22 September 1979 the US satellite Vela 6911 detected a double flash of light over the southern Indian Ocean / South Atlantic (context; the subject of our earlier film)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test",
+        "https://scienceandglobalsecurity.org/archive/2017/11/the_22_september_1979_vela_inc.html"
+      ]
+    },
+    {
+      "claim": "Arecibo Observatory, Puerto Rico, detected an anomalous travelling ionospheric disturbance at the time of the Vela detection, moving in an unusual (northward / southeast-to-northwest) direction",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB190/",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test"
+      ]
+    },
+    {
+      "claim": "Hydroacoustic (underwater sound) signals were recorded; a Naval Research Laboratory study concluded they supported a near-surface nuclear blast, located near the Prince Edward Islands; that study was never declassified",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB190/",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test",
+        "https://scienceandglobalsecurity.org/archive/2018/05/the_22_september_1979_vela_inc_1.html"
+      ]
+    },
+    {
+      "claim": "Iodine-131, a short-lived fission product (half-life ~8 days), was detected in October–November 1979 in the thyroids of sheep from southeastern Australia (Victoria; slaughtered in Melbourne)",
+      "sources": [
+        "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB190/",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test",
+        "https://scienceandglobalsecurity.org/archive/2018/05/the_22_september_1979_vela_inc_1.html",
+        "https://thebulletin.org/2019/09/double-flash-vela-incident/"
+      ]
+    },
+    {
+      "claim": "The 1980 ad hoc panel chaired by Jack Ruina, commissioned by President Carter's science adviser Frank Press (White House Office of Science and Technology Policy), concluded the signal was 'probably not from a nuclear explosion' while not ruling it out",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB190/",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test",
+        "https://thebulletin.org/2019/09/double-flash-vela-incident/"
+      ]
+    },
+    {
+      "claim": "Many US government officials and scientists (DIA, Los Alamos, Naval Research Laboratory) disagreed with the panel and judged a nuclear detonation most probable",
+      "sources": [
+        "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB190/",
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test"
+      ]
+    },
+    {
+      "claim": "No government has ever confirmed what caused the event; parts of the US record remain classified; no new confirmation found 2024-2026 (Explorersweb, 17 Mar 2025: not officially confirmed, no one has claimed responsibility)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test",
+        "https://explorersweb.com/exploration-mysteries-the-vela-incident/"
+      ]
+    }
+  ]
+}
