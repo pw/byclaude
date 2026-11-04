@@ -411,6 +411,24 @@
    "frame": "band",
    "format": "reel",
    "series": "sequel-of-flannanisles"
+  },
+  "rongowood": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "series": "sequel-of-rongorongo"
+  },
+  "celestedoyle": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "series": "sequel-of-maryceleste"
   }
  },
  "byclaude": {

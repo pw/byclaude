@@ -1,0 +1,165 @@
+{
+ "title": "The Mary Celeste and Conan Doyle",
+ "subtitle": "Atlantic Ocean, 1872 · Cornhill Magazine, 1884",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, late-Victorian period detail of the 1870s and 1880s, cold grey daylight, weathered wood, brass and old paper, melancholy and uncanny, cinematic composition, fine film grain, tall vertical frame with one centred subject. Single image, not a collage, no text, no legible writing, no signage, no people, no faces.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "The Atlantic, eighteen seventy-two. The Mary Celeste was found drifting, empty. But the Marie Celeste most people know comes from a young Arthur Conan Doyle.",
+   "cap": "ATLANTIC · 1872",
+   "img": "A two-masted wooden 19th-century brigantine drifting alone on a grey Atlantic swell, seen broadside and centred in the middle third of a tall vertical frame, the whole ship clearly visible and well lit by flat grey daylight, some sails set and some hanging loose, no one on deck, open grey sea above and below."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "In eighteen eighty-four, before Sherlock Holmes, his story ran unsigned, told as a survivor's statement.",
+   "cap": "1884 · FICTION",
+   "amber": true,
+   "img": "A single closed 1880s literary magazine with a plain pale paper cover lying centred on a dark wooden writing desk, a glass inkwell and a dip pen beside it, a brass oil lamp casting warm light across it, the magazine large and clearly readable as an object in the middle third of a tall vertical frame, no writing or title visible on the cover."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "In it, her boats were still aboard. Even the American consul at Gibraltar asked if it was true.",
+   "cap": "TAKEN\nAS FACT",
+   "img": "A small wooden ship's rowing boat hanging neatly in its davits at the side of an old sailing ship, intact and dry, ropes taut and tidy, centred in the middle third of a tall vertical frame, calm grey sea and pale sky behind, orderly and strangely untouched."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "In fact, her only boat was gone. Her cargo was nearly untouched. There was food and water for six months.",
+   "cap": "ONLY BOAT\nGONE",
+   "amber": true,
+   "img": "An empty space on a wet wooden ship's deck across a closed main hatch where a small boat had been lashed, loose cut lashing ropes lying on the planks, centred in the middle third of a tall vertical frame, grey sea beyond the rail, nothing there."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "The story was invented. The empty ship was real. The ten aboard were never found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true,
+   "img": "The empty stern deck of an old wooden sailing ship at dusk, a large ship's wheel standing unattended and centred in the middle third of a tall vertical frame, slack sails above, a vast grey sea fading into low cloud behind, still and deserted."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Mary Celeste found adrift and deserted by the Dei Gratia in December 1872 (4 Dec log date / 5 Dec civil) off the Azores, in the Atlantic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Celeste",
+    "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste",
+    "https://www.history.com/.amp/news/what-happened-to-the-mary-celeste"
+   ]
+  },
+  {
+   "claim": "Arthur Conan Doyle's story 'J. Habakuk Jephson's Statement' spelled the ship 'Marie Celeste'; its popularity made that spelling more common than the real name (a 'persistent error')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Celeste",
+    "https://en.wikipedia.org/wiki/J._Habakuk_Jephson%27s_Statement",
+    "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste",
+    "https://www.lrb.co.uk/v27/n04/thomas-jones/short-cuts",
+    "https://www.thelog.com/news-departments/bizarre-facts-what-happened-to-the-mary-celeste/"
+   ]
+  },
+  {
+   "claim": "Doyle was young when he wrote it (born 22 May 1859; story published January 1884, aged 24 — Wikipedia says '25-year-old ship's surgeon'; we say only 'young')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Celeste",
+    "https://www.maryceleste.net/doyle.htm",
+    "https://www.historyhit.com/?p=1141"
+   ]
+  },
+  {
+   "claim": "Published anonymously (unsigned) in The Cornhill Magazine, January 1884",
+   "sources": [
+    "https://en.wikipedia.org/wiki/J._Habakuk_Jephson%27s_Statement",
+    "https://www.lrb.co.uk/v27/n04/thomas-jones/short-cuts",
+    "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste"
+   ]
+  },
+  {
+   "claim": "Published three years before Sherlock Holmes's first appearance (A Study in Scarlet, 1887)",
+   "sources": [
+    "https://www.lrb.co.uk/v27/n04/thomas-jones/short-cuts",
+    "https://en.wikipedia.org/wiki/A_Study_in_Scarlet"
+   ]
+  },
+  {
+   "claim": "Presented as an eyewitness statement by the 'only survivor' (Dr Jephson); some took it as true",
+   "sources": [
+    "https://en.wikipedia.org/wiki/J._Habakuk_Jephson%27s_Statement",
+    "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste"
+   ]
+  },
+  {
+   "claim": "In the story the derelict's boats were intact: 'The boats were intact and slung upon the davits' (primary text; Wikipedia contrasts with the real missing boat)",
+   "sources": [
+    "https://www.gutenberg.org/cache/epub/294/pg294.txt",
+    "https://en.wikipedia.org/wiki/J._Habakuk_Jephson%27s_Statement",
+    "https://www.maryceleste.net/doyle.htm"
+   ]
+  },
+  {
+   "claim": "Horatio Sprague, U.S. consul at Gibraltar, inquired whether any part of the story might be true / did not realise it was fiction; Doyle received enquiries whether it was true",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Celeste",
+    "https://www.lrb.co.uk/v27/n04/thomas-jones/short-cuts",
+    "https://www.historyhit.com/?p=1141"
+   ]
+  },
+  {
+   "claim": "The real ship's only boat (a yawl stowed across the main hatch) was missing",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Celeste",
+    "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste",
+    "https://www.historyhit.com/?p=1141"
+   ]
+  },
+  {
+   "claim": "Cargo of ~1,700 (1,701) barrels of alcohol largely intact — 9 found empty; cargo 'intact'",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Celeste",
+    "https://www.historyhit.com/?p=1141",
+    "https://www.thelog.com/news-departments/bizarre-facts-what-happened-to-the-mary-celeste/"
+   ]
+  },
+  {
+   "claim": "Six months' supply of food and water aboard, untouched",
+   "sources": [
+    "https://www.historyhit.com/?p=1141",
+    "https://www.thelog.com/news-departments/bizarre-facts-what-happened-to-the-mary-celeste/",
+    "https://www.history.com/.amp/news/what-happened-to-the-mary-celeste"
+   ]
+  },
+  {
+   "claim": "Ten aboard: Captain Briggs, his wife, their two-year-old daughter and seven crew (History.com says eight crew; we follow Wikipedia/RMG)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Celeste",
+    "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste"
+   ]
+  },
+  {
+   "claim": "None of the ten was ever seen or heard from again; cause never established. Unsolved as of 2026: April–May 2026 'solved' coverage (Manchester scale-model ethanol test for Channel 5; UCL item on Sella's 2006 test) shows an alcohol-vapour scare is plausible, not what happened — no new evidence of the crew's fate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mary_Celeste",
+    "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste",
+    "https://www.zmescience.com/science/chemistry/mary-celeste-mystery-solved-finally/",
+    "https://newenglandhistoricalsociety.com/mysterious-disappearance-mary-celeste/"
+   ]
+  },
+  {
+   "claim": "NOT USED / premise correction: the 'half-eaten meals, lukewarm drinks' legend is NOT in Doyle's story (Begg in LRB: 'none of these details appears in the story'; full-text grep of the story finds no meal/tea on the derelict). The untasted-dinner detail appears in an 1883 Los Angeles Times retelling, before Doyle",
+   "sources": [
+    "https://www.lrb.co.uk/v27/n04/thomas-jones/short-cuts",
+    "https://www.gutenberg.org/cache/epub/294/pg294.txt",
+    "https://en.wikipedia.org/wiki/Mary_Celeste"
+   ]
+  }
+ ],
+ "sequel_of": [
+  "maryceleste",
+  "maryceleste2"
+ ]
+}

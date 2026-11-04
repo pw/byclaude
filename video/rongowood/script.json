@@ -1,0 +1,127 @@
+{
+ "title": "The Rongorongo Wood",
+ "subtitle": "Rome · 2024 (Rapa Nui)",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, dark weathered wood and cool grey light, warm low highlights against deep shadow, quiet and reverent, cinematic composition, fine film grain. Single image, not a collage, no text, no signage, no legible glyphs or symbols, no people, no faces.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Twenty twenty-four. The wood of an Easter Island tablet kept in Rome was dated. The tree was cut down around fifteen hundred.",
+   "cap": "2024",
+   "img": "A single small notched wedge-shaped dark wooden tablet standing upright, centred in the middle third of a tall vertical frame, on a plain dark cloth plinth, lit softly and evenly from the front and above so the whole object reads clearly, its surface covered in shallow worn carved grooves too eroded and indistinct to read, warm brown wood grain, plain deep-grey background, quiet and reverent."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "Two centuries before Europeans arrived. If the writing is that old, islanders may have invented it alone. Only a handful of places ever have.",
+   "cap": "BEFORE\nEUROPEANS",
+   "amber": true,
+   "img": "A lone remote volcanic island rising from a calm, completely empty Pacific ocean at dawn, seen from the water, the island centred in the middle third of a tall vertical frame, soft pink and grey light, no ships, no boats, vast and silent."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "But dating the wood is not dating the carving. The authors say so themselves.",
+   "cap": "WOOD,\nNOT CARVING",
+   "amber": true,
+   "img": "A close-up of the cut end of an old dark log showing tight concentric annual tree rings, centred in the middle third of a tall vertical frame, one small neat round sample hole drilled near the outer edge, cool even laboratory light, plain dark background, precise and still."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "And this wood never grew on the island. It may have drifted ashore, or come off a European ship.",
+   "cap": "NEVER GREW\nTHERE",
+   "img": "A single long weathered pale plank of driftwood lying alone on a black volcanic sand beach, centred in the middle third of a tall vertical frame, a low grey Pacific surf behind it, overcast silver light, empty and quiet."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "Fewer than thirty carved objects survive. The script has never been deciphered.",
+   "cap": "NEVER\nDECIPHERED",
+   "amber": true,
+   "img": "A single dark wooden tablet lying alone on a pale stone plinth in an empty, dim gallery, centred in the middle third of a tall vertical frame, one narrow beam of warm light falling across it from above, its carved surface worn and indistinct, deep surrounding shadow, hushed."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Ferrara et al., 'The invention of writing on Rapa Nui (Easter Island). New radiocarbon dates on the Rongorongo script', Scientific Reports 14:2794, published 2 Feb 2024, radiocarbon-dated four rongorongo tablets preserved in Rome",
+   "sources": [
+    "https://www.nature.com/articles/s41598-024-53063-7",
+    "https://europepmc.org/article/PMC/PMC10837134",
+    "https://magazine.unibo.it/en/articles/did-writing-in-rapa-nui-easter-island-appear-before-the-europeans",
+    "https://phys.org/news/2024-02-evidence-independent-written-language-easter.html"
+   ]
+  },
+  {
+   "claim": "One of the four, tablet D 'Échancrée' (French, 'notched'), is from a tree felled around 1500 (paper: felling date 1493–1509 cal AD at 68.3%, including 50±5 years to the outer ring; abstract calls the wood date 'mid-fifteenth c.'); the other three fall in the 18th–19th c.",
+   "sources": [
+    "https://europepmc.org/article/PMC/PMC10837134",
+    "https://languagelog.ldc.upenn.edu/nll/?p=63139",
+    "https://en.wikipedia.org/wiki/Rongorongo_text_D"
+   ]
+  },
+  {
+   "claim": "Europeans first reached Rapa Nui in 1722 (Jacob Roggeveen, Easter Sunday); the tablet D tree was felled about 200 years before Europeans arrived",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Easter_Island",
+    "https://magazine.unibo.it/en/articles/did-writing-in-rapa-nui-easter-island-appear-before-the-europeans",
+    "https://phys.org/news/2024-02-evidence-independent-written-language-easter.html"
+   ]
+  },
+  {
+   "claim": "If the script predates European contact, rongorongo could be one of the few independent inventions of writing in history (others: Mesopotamia, Egypt, China, Mesoamerica) — stated as a possibility, contested",
+   "sources": [
+    "https://europepmc.org/article/PMC/PMC10837134",
+    "https://magazine.unibo.it/en/articles/did-writing-in-rapa-nui-easter-island-appear-before-the-europeans",
+    "https://languagelog.ldc.upenn.edu/nll/?p=63139"
+   ]
+  },
+  {
+   "claim": "Dating the wood is not dating the carving: the authors say the wood's age is a 'terminus post quem' and the inscription 'may be more recent than the wood'",
+   "sources": [
+    "https://europepmc.org/article/PMC/PMC10837134",
+    "https://magazine.unibo.it/en/articles/did-writing-in-rapa-nui-easter-island-appear-before-the-europeans",
+    "https://languagelog.ldc.upenn.edu/nll/?p=63139",
+    "https://en.wikipedia.org/wiki/Rongorongo"
+   ]
+  },
+  {
+   "claim": "Tablet D's wood is Podocarpus latifolius (yellowwood), native to (south)eastern/southern Africa, never grew on Rapa Nui; it may have arrived as driftwood or from a (European) ship",
+   "sources": [
+    "https://europepmc.org/article/PMC/PMC10837134",
+    "https://languagelog.ldc.upenn.edu/nll/?p=63139",
+    "https://phys.org/news/2024-02-evidence-independent-written-language-easter.html",
+    "https://en.wikipedia.org/wiki/Rongorongo_text_D"
+   ]
+  },
+  {
+   "claim": "Some linguists (Gorman & Sproat) argue it has not been demonstrated that rongorongo is a full writing system; Wikipedia: 'appears to be writing or proto-writing'",
+   "sources": [
+    "https://languagelog.ldc.upenn.edu/nll/?p=63139",
+    "https://en.wikipedia.org/wiki/Rongorongo"
+   ]
+  },
+  {
+   "claim": "Fewer than 30 inscribed wooden objects survive (paper: 'fewer than 30'; Wikipedia: 26 commonly accepted texts / two dozen objects)",
+   "sources": [
+    "https://europepmc.org/article/PMC/PMC10837134",
+    "https://en.wikipedia.org/wiki/Rongorongo",
+    "https://languagelog.ldc.upenn.edu/nll/?p=63139"
+   ]
+  },
+  {
+   "claim": "The script remains undeciphered as of late 2026 (Spectator Australia, 10 Oct 2026: 'still undeciphered'); 2025–2026 claimed readings (e.g. an unreviewed 'acoustic notation' preprint) are not accepted by the field",
+   "sources": [
+    "https://www.spectator.com.au/?p=10944487",
+    "https://en.wikipedia.org/wiki/Decipherment_of_rongorongo",
+    "https://languagelog.ldc.upenn.edu/nll/?p=63139",
+    "https://europepmc.org/article/PMC/PMC10837134"
+   ]
+  }
+ ],
+ "sequel_of": [
+  "rongorongo"
+ ]
+}

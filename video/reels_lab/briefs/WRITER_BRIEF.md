@@ -46,3 +46,7 @@ old (ideally pre-1950), no named victim. Beat 1's image = that object, centred, 
 ## Violence wording (2026-10-28, Lake Bodom died at 3 plays on a healthy page)
 No killing/attack/stabbing verbs in vo, cap or caption. Prefer cases that can be told without them; if a death is
 essential, state it in the plainest passive form once ("no one aboard was ever seen again"), never how.
+
+## Frame (arm `frame` called 2026-11-04): BLEED
+Add `"frame": "bleed"` as a top-level key in shorts/su-<name>.json; image prompts render 9:16 vertical
+(`_build_images.py <name> 9:16` → images916/), so compose one centred subject in the middle third.
