@@ -1,0 +1,116 @@
+{
+ "title": "The København",
+ "subtitle": "København · South Atlantic, 1928",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, the open South Atlantic in the southern summer of 1928, late age of sail, slate-blue and grey-green water under pale high light, cold and melancholy and uncanny, period maritime detail, cinematic vertical composition, fine film grain. Single image, not a collage, no text, no signage, no flags, no people, no faces.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "The South Atlantic, December nineteen twenty-eight. The København, then the largest sailing ship in the world, left Buenos Aires for Australia.",
+   "cap": "SOUTH ATLANTIC · 1928",
+   "img": "A huge steel five-masted barque under full sail, dark hull, tall masts carrying tiers of pale square sails, seen broadside and centred in the middle third of a vertical frame on a deep blue-grey open sea in bright clear daylight, every mast and sail sharply legible, white water at the bow, no flags, no lettering on the hull, no people."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "Sixty people were aboard. Forty-five were cadets, most of them teenagers.",
+   "cap": "45\nCADETS",
+   "amber": true,
+   "img": "The empty cadets' quarters below deck on a 1920s sailing ship, two rows of narrow wooden bunks with neatly folded grey wool blankets, small wooden sea chests at their feet, a shaft of soft daylight falling from a deck skylight onto the centre of the floor, vertical composition, still and deserted, no people."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "Eight days out, she radioed a passing steamer that all was well. When it called her again, she did not answer.",
+   "cap": "NO\nANSWER",
+   "img": "A small 1920s ship's wireless room at night, a black-panelled radio telegraph set with softly glowing valves and brass dials centred on a wooden desk, a telegraph key and a pair of headphones resting beside it, a single shaded lamp, an empty chair pushed back, vertical composition, no people, no legible text."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "A search across the South Atlantic lasted months. Reported sightings followed. None was ever confirmed.",
+   "cap": "NONE\nCONFIRMED",
+   "img": "A small 1920s steamship centred far out on a vast grey South Atlantic sea, tiny against long rolling swells under a low pale overcast sky, a thin trail of smoke from her funnel, the horizon around her completely empty, vertical frame, no people."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "No one aboard was ever seen again. Nearly a century later, no wreck has ever been confirmed.",
+   "cap": "NEVER SEEN\nAGAIN",
+   "amber": true,
+   "img": "A wide empty open ocean in late-afternoon light in a vertical frame, long blue-grey swells rolling toward a pale bright band on the horizon, nothing on the water anywhere, vast, silent and unresolved."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "København: Danish five-masted barque, built 1921 by Ramage & Ferguson, Leith, for the East Asiatic Company as a cargo-carrying training ship; at the time the largest sailing ship in the world (yearbook: 'den daværende verdens største sejlskib')",
+   "sources": [
+    "https://tidsskrift.dk/mfs_aarbog/article/download/96402/145248/197278",
+    "https://en.wikipedia.org/wiki/K%C3%B8benhavn_(ship)",
+    "https://lex.dk/K%C3%B8benhavn_-_skoleskib",
+    "https://mastermariners.org.au/stories-from-the-past/5297-kobenhavn-lost-december-1928",
+    "https://cphpost.dk/?p=74448"
+   ]
+  },
+  {
+   "claim": "Final voyage: reached Buenos Aires 17 Nov 1928; sailed in ballast 14 Dec 1928 bound for Australia (Adelaide per the Danish maritime museum yearbook and lex.dk; Melbourne per one secondary source, so the film says only 'Australia')",
+   "sources": [
+    "https://tidsskrift.dk/mfs_aarbog/article/download/96402/145248/197278",
+    "https://en.wikipedia.org/wiki/K%C3%B8benhavn_(ship)",
+    "https://lex.dk/K%C3%B8benhavn_-_skoleskib",
+    "https://threadinburgh.scot/2023/01/21/the-thread-about-the-kobenhavn-the-enigmatic-leith-built-sailing-ship-that-mysteriously-disappeared-in-the-south-atlantic-never-to-be-seen-again/"
+   ]
+  },
+  {
+   "claim": "60 people aboard, 45 of them cadets ('elever'); cadets aged about 15-20. NOTE: English Wikipedia gives 75 (26 crew + 45 cadets); the Danish maritime museum yearbook (Handels- og Søfartsmuseet), lex.dk and the Copenhagen Post all give 60, which we use. 45 cadets is consistent across every source",
+   "sources": [
+    "https://tidsskrift.dk/mfs_aarbog/article/download/96402/145248/197278",
+    "https://lex.dk/K%C3%B8benhavn_-_skoleskib",
+    "https://cphpost.dk/?p=74448",
+    "https://threadinburgh.scot/2023/01/21/the-thread-about-the-kobenhavn-the-enigmatic-leith-built-sailing-ship-that-mysteriously-disappeared-in-the-south-atlantic-never-to-be-seen-again/",
+    "https://ing.dk/artikel/lyt-til-fortaellingen-hviler-45-danske-teenagere-paa-havets-bund-midt-i-atlanten"
+   ]
+  },
+  {
+   "claim": "Last contact: radio exchange with the Norwegian steamer William Blumer, 21-22 Dec 1928 (eight days out); she reported all was well (yearbook: the wind had risen and she was making 11 knots). When the Blumer tried again the following night there was no reply",
+   "sources": [
+    "https://tidsskrift.dk/mfs_aarbog/article/download/96402/145248/197278",
+    "https://en.wikipedia.org/wiki/K%C3%B8benhavn_(ship)",
+    "https://threadinburgh.scot/2023/01/21/the-thread-about-the-kobenhavn-the-enigmatic-leith-built-sailing-ship-that-mysteriously-disappeared-in-the-south-atlantic-never-to-be-seen-again/",
+    "https://cphpost.dk/?p=74448"
+   ]
+  },
+  {
+   "claim": "Search: the East Asiatic Company's motor ship Mexico (from May 1929) plus chartered ships and British naval help searched the South Atlantic for months; called off early September 1929 with nothing found. A maritime inquiry (søforhør, set for 15 Oct 1929) closed the case legally; no source states it established a cause, so the film names no finding",
+   "sources": [
+    "https://tidsskrift.dk/mfs_aarbog/article/download/96402/145248/197278",
+    "https://en.wikipedia.org/wiki/K%C3%B8benhavn_(ship)",
+    "https://lex.dk/K%C3%B8benhavn_-_skoleskib",
+    "https://mastermariners.org.au/stories-from-the-past/5297-kobenhavn-lost-december-1928",
+    "https://threadinburgh.scot/2023/01/21/the-thread-about-the-kobenhavn-the-enigmatic-leith-built-sailing-ship-that-mysteriously-disappeared-in-the-south-atlantic-never-to-be-seen-again/"
+   ]
+  },
+  {
+   "claim": "Reported sightings (Tristan da Cunha, 21 Jan 1929; a 'phantom ship' reported by an Argentine crew 1930; others) were never confirmed; the Tristan sighting was later attributed to the four-masted barque Ponape / a Finnish ship. Used only as 'reported sightings', never as fact",
+   "sources": [
+    "https://tidsskrift.dk/mfs_aarbog/article/download/96402/145248/197278",
+    "https://en.wikipedia.org/wiki/K%C3%B8benhavn_(ship)",
+    "https://cphpost.dk/?p=74448",
+    "https://threadinburgh.scot/2023/01/21/the-thread-about-the-kobenhavn-the-enigmatic-leith-built-sailing-ship-that-mysteriously-disappeared-in-the-south-atlantic-never-to-be-seen-again/"
+   ]
+  },
+  {
+   "claim": "No one aboard was ever seen again; no wreck has ever been confirmed. Reported finds (stern piece off Western Australia, 1935 remains in SW Africa, a 1934 bottle message later shown copied from a novel, an unidentified wreck and 'O'/'D' letters at Tristan da Cunha) have never been confirmed as the København. Ingeniøren Dec 2025: 'man har aldrig fundet den mindste rest af skibet'; Ingeniøren June 2026: divers and researchers have not been able to establish with certainty where she ended",
+   "sources": [
+    "https://tidsskrift.dk/mfs_aarbog/article/download/96402/145248/197278",
+    "https://lex.dk/K%C3%B8benhavn_-_skoleskib",
+    "https://ing.dk/artikel/lyt-til-fortaellingen-hviler-45-danske-teenagere-paa-havets-bund-midt-i-atlanten",
+    "https://ing.dk/artikel/saa-oeboerne-et-spoegelsesskib-nye-foto-kan-loese-100-aarig-gaade-om-dansk-skoleskib",
+    "https://ing.dk/artikel/mystiske-bogstaver-ved-oede-oe-er-de-fra-skoleskibet-koebenhavn",
+    "https://en.wikipedia.org/wiki/K%C3%B8benhavn_(ship)"
+   ]
+  }
+ ]
+}

@@ -429,6 +429,23 @@
    "frame": "bleed",
    "format": "reel",
    "series": "sequel-of-maryceleste"
+  },
+  "doraenigma": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "series": "sequel-of-dorabella"
+  },
+  "kobenhavn": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel"
   }
  },
  "byclaude": {

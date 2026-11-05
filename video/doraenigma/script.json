@@ -1,0 +1,107 @@
+{
+ "title": "The Enigma Variations",
+ "subtitle": "Elgar's hidden theme · London, 1899",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, the interior of an empty late-Victorian London concert hall in 1899, dark wood, gilt and red velvet, gaslight falling into deep shadow, dust in the air, melancholy and uncanny, cinematic composition, fine film grain. Single image, not a collage, no text, no legible writing, no readable musical notes, no symbols, no signage, no people, no faces.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "England, eighteen ninety-seven. Dora Penny received a cipher from Edward Elgar. Two years later, she became a piece of his music.",
+   "cap": "ENGLAND · 1897",
+   "img": "Close view of a small folded cream notecard lying open on a polished walnut writing desk, its marks soft and illegible, a brass inkwell and steel pen beside it, bright warm summer daylight falling across the desk from a window, the card centred and well lit in the middle of the frame, a Victorian study softly blurred behind."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "London, June eighteen ninety-nine. The first performance of his Enigma Variations. Variation ten, called Dorabella, is a portrait of her.",
+   "cap": "VARIATION X\nDORABELLA",
+   "amber": true,
+   "img": "Vertical 9:16 composition. An empty conductor's podium with a wooden baton lying on a closed music stand, centred in the middle third, on the stage of an empty Victorian concert hall, rows of empty orchestra chairs fanning behind it into shadow, a pool of warm gaslight on the podium."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "In the programme, Elgar said that through the whole set, another, larger theme goes, but is not played.",
+   "cap": "A THEME\nNEVER PLAYED",
+   "amber": true,
+   "img": "Vertical 9:16 composition. A single violin lying silent on an empty wooden orchestra chair, centred in the middle third, its bow resting across the seat, a music stand beside it holding blurred blank manuscript paper with no readable notes, one shaft of pale light from high above cutting through dust, the dark empty hall around it."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "He told her he thought she, of all people, would guess it. She never did.",
+   "cap": "SHE NEVER\nGUESSED",
+   "img": "Vertical 9:16 composition. One empty velvet seat in the front row of a dark Victorian concert hall, centred in the middle third, a pair of folded kid gloves and a closed concert programme resting on it, its cover blank and unreadable, warm stage light spilling softly onto the seat, every other seat in shadow."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "Elgar died in nineteen thirty-four without naming it. Dozens of answers have been proposed. None has ever been generally accepted.",
+   "cap": "NONE\nACCEPTED",
+   "amber": true,
+   "img": "Vertical 9:16 composition. A vast empty Victorian concert hall at night seen from the back of the stalls, a single gas lamp still burning at the centre of the bare stage in the middle third of the frame, rows of empty seats and the dark curved galleries around it, silent and unresolved."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Dora Penny (later Mrs Richard Powell) was the young friend of the Elgars who received the Dorabella cipher, enclosed with Alice Elgar's letter of 14 July 1897; she could not decipher it",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dorabella_Cipher",
+    "https://nautil.us/the-artist-of-the-unbreakable-code-234588",
+    "https://www.discoveryuk.com/?p=23397501"
+   ]
+  },
+  {
+   "claim": "Variation X of the Enigma Variations, 'Dorabella' (Intermezzo), is the portrait of Dora Penny; the cipher is named after this nickname",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Enigma_Variations",
+    "https://www.aspenmusicfestival.com/program_notes/view/elgar-variations-on-an-original-theme-op.-36-enigma",
+    "https://en.wikipedia.org/wiki/Dorabella_Cipher"
+   ]
+  },
+  {
+   "claim": "The Enigma Variations were first performed in London on 19 June 1899 (St James's Hall, Hans Richter conducting), two years after the 1897 cipher",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Enigma_Variations",
+    "https://www.aspenmusicfestival.com/program_notes/view/elgar-variations-on-an-original-theme-op.-36-enigma",
+    "https://en.wikipedia.org/wiki/Edward_Elgar"
+   ]
+  },
+  {
+   "claim": "In Charles A. Barry's programme note for the first performance, Elgar wrote: 'The Enigma I will not explain – its \"dark saying\" must be left unguessed ... through and over the whole set another and larger theme \"goes\", but is not played.'",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Enigma_Variations",
+    "https://www.classical-music.com/features/articles/five-theories-unsolved-mystery-elgars-enigma-variations/",
+    "https://www.aspenmusicfestival.com/program_notes/view/elgar-variations-on-an-original-theme-op.-36-enigma",
+    "https://www.indianapolissymphony.org/backstage/program-notes/elgar-variations-on-an-original-theme/"
+   ]
+  },
+  {
+   "claim": "Elgar told Dora Penny he had thought that she, of all people, would guess the enigma ('I thought that you of all people would guess it'); she did not solve it (her 'Auld Lang Syne' suggestion was rejected)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Enigma_Variations",
+    "https://www.classical-music.com/features/articles/five-theories-unsolved-mystery-elgars-enigma-variations/",
+    "https://www.stereophile.com/musicrecordings/175"
+   ]
+  },
+  {
+   "claim": "Elgar died on 23 February 1934 without identifying the hidden theme; he accepted none of the solutions proposed in his lifetime",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Edward_Elgar",
+    "https://en.wikipedia.org/wiki/Enigma_Variations",
+    "https://www.indianapolissymphony.org/backstage/program-notes/elgar-variations-on-an-original-theme/"
+   ]
+  },
+  {
+   "claim": "Dozens of solutions have been proposed (Auld Lang Syne, Rule Britannia, Pathetique, Ein feste Burg, Stabat Mater, Like to the Damask Rose, etc.); none is generally accepted as of 2025-26, the enigma is described as still unsolved (classical-music.com, March 2025)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Enigma_Variations",
+    "https://www.classical-music.com/features/articles/five-theories-unsolved-mystery-elgars-enigma-variations/",
+    "https://www.aspenmusicfestival.com/program_notes/view/elgar-variations-on-an-original-theme-op.-36-enigma",
+    "https://slippedisc.com/2019/04/enigma-variations-solved-oh-not-again/"
+   ]
+  }
+ ]
+}
