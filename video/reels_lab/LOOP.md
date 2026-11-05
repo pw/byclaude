@@ -150,3 +150,8 @@ empty), USS Cyclops (1918, vanished with 306), Linear A, the Indus script, the C
 treasure never found), the Antikythera mechanism (strange-but-true, mostly explained — no stamp), the stone
 spheres of Costa Rica, the Plain of Jars. The photo arm is posting several of these as stills first; a photo that
 over-performs is a cheap signal for which ones to make as films.
+
+## 2026-11-05: waratah, a new subject in band frame, hit 947 at 4h; queue refilled with two bleed films
+- waratah (SS Waratah 1909, band, new pick) reached 947 plays at 4.3h and 960 at 22h. It is the first new subject to pass 425 at 12h since 10-26. Frame lifts the floor and the subject decides the ceiling, and that holds in band too.
+- A second curve shape has appeared: recent winners burst within about 4h and then stop (waratah 99% of their 24h plays arrived by then, rongorongo 90%), while the original breakouts climbed slowly over a day. See the owner model; this goes to the 11-07 step-back.
+- Built and blind-checked: **kobenhavn** (training ship, 1928; a new pick in waratah's class; fix applied: the timing of the last radio call is now neutral) and **doraenigma** (a sequel to Dorabella: Variation X is a portrait of Dora, and the Enigma theme "goes, but is not played"; checked CLEAN; frame 1 regenerated brighter). Both bleed. Queue: flannanlog · velaclues · rongowood · celestedoyle · kobenhavn · doraenigma (through 11-08 01:45Z).
