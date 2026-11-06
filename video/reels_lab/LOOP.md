@@ -155,3 +155,16 @@ over-performs is a cheap signal for which ones to make as films.
 - waratah (SS Waratah 1909, band, new pick) reached 947 plays at 4.3h and 960 at 22h. It is the first new subject to pass 425 at 12h since 10-26. Frame lifts the floor and the subject decides the ceiling, and that holds in band too.
 - A second curve shape has appeared: recent winners burst within about 4h and then stop (waratah 99% of their 24h plays arrived by then, rongorongo 90%), while the original breakouts climbed slowly over a day. See the owner model; this goes to the 11-07 step-back.
 - Built and blind-checked: **kobenhavn** (training ship, 1928; a new pick in waratah's class; fix applied: the timing of the last radio call is now neutral) and **doraenigma** (a sequel to Dorabella: Variation X is a portrait of Dora, and the Enigma theme "goes, but is not played"; checked CLEAN; frame 1 regenerated brighter). Both bleed. Queue: flannanlog · velaclues · rongowood · celestedoyle · kobenhavn · doraenigma (through 11-08 01:45Z).
+
+## 2026-11-06: first sequel reads (one lives, one dies), and two more sequels queued
+- **velaclues** (Vela sequel, band) got **626 plays at ~3h**, above the 425-at-12h bar inside 3 hours. Sequel #1 passed.
+- **flannanlog** (Flannan sequel, band) got **1 play at 13h**, so it is lone death #3, after lakebodom and baychimo. The post was published and copyright-clean, and the page was healthy (1,921 media views on 11-04). It is now `excluded` in arms.json.
+  - Hypothesis tested: Facebook treated it as a near-duplicate of flannan2 (posted 3 days earlier). Instrument: dHash, nearest-frame median Hamming distance over 1 fps frames.
+  - flannanlog vs flannan2 = 73/256. The negative control (unrelated pair, both alive), waratah vs maryceleste2, = 56. **Refuted**: the visual similarity is no higher than between unrelated films. The cause is still unknown.
+  - Base rate is now 3 lone deaths in ~45 healthy-period films (~7%). Sequel arm: read it both with and without flannanlog. Excluding it flatters sequels.
+- Built and blind-checked:
+  - **waratahsearch** (Waratah sequel): the 1999 "found her" announcement, the 2001 dive showing it was the Nailsea Meadow, never found. FIX applied: "he ended his search" → "he said he had no idea where else to look", because one source isn't enough for "ended".
+  - **voynichvellum** (Voynich sequel): the 2009 Tucson dating against the "Voynich faked it" theory. CLEAN, with three reading tweaks applied ("A MODERN FAKE?", "SKIN: 1404–1438", "the ink was not dated"). Frame 1 was regenerated to a centred open codex.
+  - Both are bleed.
+- Spacing risk to watch: waratahsearch posts ~4 days after waratah, voynichvellum ~5.5 days after voynich2. flannanlog died at 3 days. If either dies, spacing becomes the leading hypothesis.
+- Queue: rongowood · celestedoyle · kobenhavn · doraenigma · waratahsearch · voynichvellum (through 11-09 01:45Z).

@@ -1,0 +1,49 @@
+{
+ "out": "short-su-voynichvellum",
+ "kicker": "THE VOYNICH MANUSCRIPT",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "voynichvellum",
+   "img": "B01",
+   "vo": "Tucson, two thousand nine. A lab tests four slivers of vellum from a book that has never been deciphered.",
+   "cap": "TUCSON · 2009"
+  },
+  {
+   "src": "voynichvellum",
+   "img": "B02",
+   "vo": "One theory said the dealer who bought it in nineteen twelve, Wilfrid Voynich, had faked it himself.",
+   "cap": "A MODERN\nFAKE?",
+   "amber": true
+  },
+  {
+   "src": "voynichvellum",
+   "img": "B03",
+   "vo": "The slivers came from four different pages. All four dated the skin to the early fourteen hundreds.",
+   "cap": "SKIN:\n1404 – 1438",
+   "amber": true
+  },
+  {
+   "src": "voynichvellum",
+   "img": "B04",
+   "vo": "That dates the skin, not the writing. But nothing in the inks or paints was out of place for that time.",
+   "cap": "SKIN,\nNOT INK"
+  },
+  {
+   "src": "voynichvellum",
+   "img": "B05",
+   "vo": "A modern fake now looks unlikely. Yet no one has proved what a single word of it says.",
+   "cap": "NOT ONE\nWORD PROVED",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "",
+ "frame": "bleed"
+}

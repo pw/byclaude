@@ -1,0 +1,135 @@
+{
+ "title": "The Search for the Waratah",
+ "subtitle": "SS Waratah · off South Africa, 1909 · the search, 1999–2004",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, the grey sea off the southeast coast of South Africa, early-1900s steamship and late-1990s marine-survey detail, grey-green water, heavy overcast sky and cold steel-grey light, melancholy and uncanny, cinematic composition, fine film grain, tall vertical frame with one centred subject. Single image, not a collage, no text, no legible writing, no signage, no people, no faces.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "South Africa, nineteen ninety-nine. Searchers announced they had found the Waratah, the liner lost ninety years before.",
+   "cap": "SOUTH AFRICA · 1999",
+   "img": "A bright yellow torpedo-shaped sonar towfish with small fins resting in a steel cradle on the wet work deck of a small survey vessel, centred in the middle third of a tall vertical frame and clearly lit by flat grey daylight, a coil of tow cable beside it, grey sea and a distant dark coastline behind, no people."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "She had left Durban in nineteen-oh-nine with two hundred and eleven aboard. None was ever seen again.",
+   "cap": "211\nABOARD",
+   "amber": true,
+   "img": "A large early-1900s steamship with a single tall funnel and two masts, black hull and white upper decks, sailing alone on a grey-green sea, seen broadside and centred in the middle third of a tall vertical frame, sharp and well lit, a faint trail of smoke from the funnel, heavy grey sky above, no people."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "Explorer Emlyn Brown's sonar had found a wreck off that coast whose outline seemed to match.",
+   "cap": "SONAR\nMATCH",
+   "img": "A small converted fishing trawler towing a taut cable from its stern across a long grey swell, centred in the middle third of a tall vertical frame, a rugged dark green coastline far behind under a heavy overcast sky, white wake trailing behind it, no people visible."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "Two years later, a dive reached it. It was another ship: a wartime freighter, lost in nineteen forty-three.",
+   "cap": "WRONG\nSHIP",
+   "amber": true,
+   "img": "The rusted, encrusted steel hull of a mid-century cargo ship resting upright on a dim blue-green seabed, a single bright lamp beam from above lighting its bow, centred in the middle third of a tall vertical frame, fine particles drifting in the water, deep and still."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "In two thousand four, after more than twenty years, he said he had no idea where else to look. The Waratah has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true,
+   "img": "A tiny lone survey boat centred in the middle third of a tall vertical frame on a vast empty grey ocean under a heavy overcast sky, long swells rolling toward a faint dark coastline on the horizon, cold and unresolved, no people visible."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "SS Waratah left Durban on 26 July 1909 bound for Cape Town and never arrived; 211 aboard (92 passengers, 119 crew), none ever seen again",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Waratah",
+    "https://www.slsa.sa.gov.au/australias-titanic-sinking-of-ss-waratah",
+    "https://www.discoveryuk.com/?p=23273709"
+   ]
+  },
+  {
+   "claim": "Lost ninety years before the 1999 announcement (July 1909 -> July 1999); 'liner' = Blue Anchor Line passenger-cargo liner",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Waratah",
+    "https://www.slsa.sa.gov.au/australias-titanic-sinking-of-ss-waratah"
+   ]
+  },
+  {
+   "claim": "In July 1999 (SAHO dates it 14 July 1999) Emlyn Brown announced his team had found the wreck off the Eastern Cape coast; newspapers reported the ship found ~10 km offshore. VO says 'Searchers announced they had found the Waratah'",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Waratah",
+    "https://www.sahistory.org.za/dated-event/discovery-wreck-passenger-liner-ss-waratah",
+    "https://numa.net/?p=579",
+    "https://mg.co.za/article/2004-04-19-the-titanic-of-southern-seas"
+   ]
+  },
+  {
+   "claim": "The wreck was located by sonar scan by Brown's team and its outline seemed to match Waratah (Wikipedia: 'a sonar scan... located a wreck whose outline seemed to match'); off the Transkei / Eastern Cape coast, the same coast she was lost off. NOTE: Nailsea Meadow wiki + SA heritage say the wreck was first found in 1997; the public announcement as Waratah was 1999 — VO says only 'announced' in 1999",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Waratah",
+    "https://www.discoveryuk.com/?p=23273709",
+    "https://en.wikipedia.org/wiki/SS_Nailsea_Meadow"
+   ]
+  },
+  {
+   "claim": "Emlyn Brown is the publicly reported explorer/search director (press + NUMA); 'Explorer' per SAHO 'marine explorer' and Discovery UK 'notable marine explorer'",
+   "sources": [
+    "https://www.discoveryuk.com/?p=23273709",
+    "https://numa.net/?p=579",
+    "https://www.sabcnews.com/sabcnews/?p=224778"
+   ]
+  },
+  {
+   "claim": "In 2001 a dive at the site showed the wreck was not Waratah but another ship (Discovery UK: 'a dive revealed...'; NUMA 17 Jan 2001: 'the submarine dive to the wreck was flawless' but not Waratah; M&G: 'Two years later' they realised it was a WWII transport ship)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Waratah",
+    "https://www.discoveryuk.com/?p=23273709",
+    "https://numa.net/?p=579",
+    "https://mg.co.za/article/2004-04-19-the-titanic-of-southern-seas"
+   ]
+  },
+  {
+   "claim": "The other ship was the Nailsea Meadow, a British cargo steamer (freighter) carrying war materials, lost on 11 May 1943 about 40 miles south of Port St Johns. VO says only 'a wartime freighter, lost in 1943' — no attack verbs. NOTE: NUMA's 2001 page says 1942; uboat.net and Wikipedia both give 11 May 1943, which we follow",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Nailsea_Meadow",
+    "https://www.uboat.net/allies/merchants/ship/2918.html",
+    "https://www.discoveryuk.com/?p=23273709"
+   ]
+  },
+  {
+   "claim": "In 2004, after more than two decades (Wikipedia: 22 years; Discovery UK: 'over two decades'; SABC: 'more than two decades'), Brown said he had exhausted the options and no longer knew where to look. An April 2004 sonar expedition off the Xora/Bashee river mouths (M&G) preceded it",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Waratah",
+    "https://www.discoveryuk.com/?p=23273709",
+    "https://www.sabcnews.com/sabcnews/?p=224778",
+    "https://mg.co.za/article/2004-04-19-the-titanic-of-southern-seas"
+   ]
+  },
+  {
+   "claim": "The Waratah has never been found, as of 2026: Wikipedia 'No wreckage or remains have ever been found'; Discovery UK 'no trace... has ever been found'; SABC 2018 'no success in locating the wreck'; 2025 Journal of Maritime Archaeology paper says it remains undiscovered; Amusing Planet (Jan 2026) says no trace has been found; 2024-26 news search found no confirmed find",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Waratah",
+    "https://www.discoveryuk.com/?p=23273709",
+    "https://link.springer.com/article/10.1007/s11457-025-09435-9",
+    "https://www.amusingplanet.com/2026/01/the-disappearance-of-waratah.html",
+    "https://www.sabcnews.com/sabcnews/?p=224778"
+   ]
+  },
+  {
+   "claim": "NOT USED: '14 expeditions' (SABC 2018 only, single source); 'searched since 1983' (Wikipedia 1983 vs SAHO '18-year search' by 1999 — inconsistent start year); the 2004 verbatim quote 'I now have no idea where to look' (only Wikipedia + its mirror; paraphrased instead)",
+   "sources": [
+    "https://www.sabcnews.com/sabcnews/?p=224778",
+    "https://en.wikipedia.org/wiki/SS_Waratah"
+   ]
+  }
+ ],
+ "sequel_of": [
+  "waratah"
+ ]
+}

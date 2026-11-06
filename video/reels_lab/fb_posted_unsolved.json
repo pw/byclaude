@@ -64,6 +64,10 @@
   "fb_published_at": "2026-10-21T15:45:33+00:00",
   "fb_video_id": "2317902675643519"
  },
+ "flannanlog": {
+  "fb_published_at": "2026-11-05T15:45:52+00:00",
+  "fb_video_id": "1792570008629895"
+ },
  "flight19": {
   "fb_published_at": "2026-10-24T01:45:33+00:00",
   "fb_video_id": "3769680099857046"
@@ -163,6 +167,10 @@
  "vela": {
   "fb_published_at": "2026-10-13T01:45:27+00:00",
   "fb_video_id": "3054374861565856"
+ },
+ "velaclues": {
+  "fb_published_at": "2026-11-06T01:45:42+00:00",
+  "fb_video_id": "1534372635379488"
  },
  "voynich": {
   "fb_published_at": "2026-10-20T01:45:32+00:00",

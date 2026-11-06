@@ -1,0 +1,136 @@
+{
+ "title": "The Voynich Manuscript: the vellum test",
+ "subtitle": "Tucson, 2009 · Beinecke MS 408",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, a quiet modern rare-book conservation laboratory, cool clinical light with one warm lamp, aged cream vellum, faded brown ink and muted green pigment, glass and steel, quiet and uncanny, cinematic composition, fine film grain, tall vertical frame with one centred subject. Any handwriting is illegible invented script-like marks, not any real alphabet, no readable words. Single image, not a collage, no text, no labels, no signage, no people, no faces, no hands.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Tucson, two thousand nine. A lab tests four slivers of vellum from a book that has never been deciphered.",
+   "cap": "TUCSON · 2009",
+   "img": "A thick old vellum codex lying open, large and centred in the middle third of a tall vertical frame, filling most of the frame's width, on a clean white laboratory bench under bright even cool light, its pale pages showing hand-drawn green and brown plant illustrations with no legible writing, a small glass petri dish holding a tiny cut sliver of parchment just in front of it. Nothing else on the bench, uncluttered background softly out of focus."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "One theory said the dealer who bought it in nineteen twelve, Wilfrid Voynich, had faked it himself.",
+   "cap": "A MODERN\nFAKE?",
+   "amber": true,
+   "img": "A small closed medieval codex with a worn limp vellum cover lying centred on a dark wooden bench in the middle third of a tall vertical frame, a brass jeweller's loupe resting beside it, a single warm lamp from above casting a long shadow, the book large and clearly visible, nothing written on the cover."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "The slivers came from four different pages. All four dated the skin to the early fourteen hundreds.",
+   "cap": "SKIN:\n1404 – 1438",
+   "amber": true,
+   "img": "Four tiny strips of aged parchment laid in a neat row, each in its own small clear glass vial standing upright in a steel rack, centred in the middle third of a tall vertical frame on a clean laboratory bench, cool white light, the four strips clearly visible and identical in tone, no labels, no writing."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "That dates the skin, not the writing. But nothing in the inks or paints was out of place for that time.",
+   "cap": "SKIN,\nNOT INK",
+   "img": "Extreme close-up of a small worn patch of muted green and ochre mineral paint on aged cream vellum, part of a hand-painted leaf, centred in the middle third of a tall vertical frame, fine skin texture and pores visible, cool raking light, shallow depth of field. No writing, no letters, no marks resembling script anywhere."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "A modern fake now looks unlikely. Yet no one has proved what a single word of it says.",
+   "cap": "NOT ONE\nWORD PROVED",
+   "amber": true,
+   "img": "A small old vellum codex lying open on a grey foam book cradle centred in the middle third of a tall vertical frame on an otherwise empty bench at night, both pages filled with rows of looping illegible glyphs and a faint drawing of an unknown plant, one lamp overhead, darkness around, still and unresolved."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Radiocarbon dating of the parchment was carried out in 2009 at the University of Arizona's lab in Tucson (team led by Greg Hodgins, UA physics; results announced Feb 2011)",
+   "sources": [
+    "https://www.eurekalert.org/news-releases/624074",
+    "https://www.nbcnews.com/id/wbna41581204",
+    "https://en.wikipedia.org/wiki/Voynich_manuscript",
+    "https://voynich.nu/origin.html"
+   ]
+  },
+  {
+   "claim": "Four samples, each about 1 x 6 mm, cut from four different pages (different bifolios / sections)",
+   "sources": [
+    "https://www.eurekalert.org/news-releases/624074",
+    "https://www.nbcnews.com/id/wbna41581204",
+    "https://voynich.nu/origin.html"
+   ]
+  },
+  {
+   "claim": "Results consistent across all four samples; combined range 1404–1438 at 95% probability (early 15th century)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Voynich_manuscript",
+    "https://voynich.nu/origin.html",
+    "https://www.eurekalert.org/news-releases/624074",
+    "https://www.theregister.com/2011/02/11/voynich_dated/",
+    "https://www.medievalists.net/2011/02/mysterious-voynich-manuscript-dates-back-to-the-15th-century/"
+   ]
+  },
+  {
+   "claim": "The manuscript has never been demonstrably deciphered; no proposed solution independently verified. Unsolved as of 2026: no decipherment accepted by scholars; 2025–26 claims (Naibbe cipher, Cryptologia 2025 / Art Newspaper Jan 2026 — explicitly not a decipherment; unreviewed Zenodo/preprint claims) do not change this",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Voynich_manuscript",
+    "https://yourstory.com/2026/03/voynich-manuscript-unsolved-mystery",
+    "https://www.theartnewspaper.com/2026/01/07/can-a-new-cipher-help-to-explain-the-mysterious-voynich-manuscript"
+   ]
+  },
+  {
+   "claim": "Wilfrid Voynich, a rare/antique book dealer, acquired the manuscript in 1912 (from Jesuit / Collegio Romano holdings, Villa Mondragone near Frascati)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Voynich_manuscript",
+    "https://www.eurekalert.org/news-releases/624074",
+    "https://www.theregister.com/2011/02/11/voynich_dated/"
+   ]
+  },
+  {
+   "claim": "A theory held that Voynich himself fabricated the manuscript (a dealer with means and motive; e.g. inventing the Roger Bacon link to raise its price) — listed as a theory only",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Voynich_manuscript",
+    "https://www.theregister.com/2011/02/11/voynich_dated/",
+    "https://voynich.nu/origin.html"
+   ]
+  },
+  {
+   "claim": "Radiocarbon dating dates the parchment (animal skin), not the ink; the inks could not be carbon dated (Hodgins: sampling ink free of parchment carbon 'currently beyond our abilities'); in principle parchment could sit unused, 'very unusual'",
+   "sources": [
+    "https://www.eurekalert.org/news-releases/624074",
+    "https://voynich.nu/origin.html",
+    "https://en.wikipedia.org/wiki/Voynich_manuscript"
+   ]
+  },
+  {
+   "claim": "McCrone Associates' ink and pigment analysis (alongside the 2009 dating): iron gall ink throughout, mineral pigments with medieval recipes; 'no sign of any constituent that was inconsistent with the radiocarbon dating'; paints 'materials to be expected from that period'; colours consistent with the palette available at the time",
+   "sources": [
+    "https://voynich.nu/origin.html",
+    "https://en.wikipedia.org/wiki/Voynich_manuscript",
+    "https://www.eurekalert.org/news-releases/624074"
+   ]
+  },
+  {
+   "claim": "A modern forgery (incl. by Voynich) is now considered unlikely: Wikipedia — many consider it unlikely; Duffy: dating 'effectively rules out any possibility that the manuscript is a post-medieval forgery'; Register: Voynich-forger idea 'has now been shown to be untrue'; voynich.nu calls the modern-fake theory 'untenable'. We say only 'now looks unlikely'",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Voynich_manuscript",
+    "https://www.theregister.com/2011/02/11/voynich_dated/",
+    "https://voynich.nu/origin.html"
+   ]
+  },
+  {
+   "claim": "NOT USED: 2024 multispectral imaging (Lisa Fagin Davis, 2014 Lazarus Project scans) of folio 1 — attribution of the added lettering/names disputed between sources (Marci vs Sinapius/Tepenec, latter possibly added by Voynich) — dropped as not cleanly sourced",
+   "sources": [
+    "https://www.medievalists.net/2024/09/hidden-secrets-of-the-voynich-manuscript-revealed-through-cutting-edge-scans/",
+    "https://theartnewspaper.com/2024/09/25/voynich-manuscript-scans-reveal-early-decoding-attempt",
+    "https://en.wikipedia.org/wiki/Voynich_manuscript"
+   ]
+  }
+ ],
+ "sequel_of": [
+  "voynich",
+  "voynich2"
+ ]
+}
