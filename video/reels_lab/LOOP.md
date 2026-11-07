@@ -168,3 +168,19 @@ over-performs is a cheap signal for which ones to make as films.
   - Both are bleed.
 - Spacing risk to watch: waratahsearch posts ~4 days after waratah, voynichvellum ~5.5 days after voynich2. flannanlog died at 3 days. If either dies, spacing becomes the leading hypothesis.
 - Queue: rongowood · celestedoyle · kobenhavn · doraenigma · waratahsearch · voynichvellum (through 11-09 01:45Z).
+
+## ★ 2026-11-07 step-back: the subject/sequel story is UNSHOWN; randomized test pre-registered
+- Whole-population curves + a live engagement pull (shares/comments/reactions/replays/retention graph per reel; the
+  snap never recorded these for reels — null ≠ zero). A blind challenger broke my draft model:
+  - The original breakouts started SMALL (Voynich 66 at 4h, Flannan 136 at 2h) and grew 4→22h: expansion after a test,
+    not a pool fixed at upload. "Early plays predict 72h, rho 0.88" was mechanical (10h ≈ 83% of 72h).
+  - Big counts at the first snapshot (≥450 in 2–4h) only exist since ~Nov 1, for series AND fresh films (rongorongo,
+    waratah). Same-period series vs fresh = 5/6 vs 2/6 (p≈0.24); with flannanlog counted, 5/7. Not shown.
+  - Retention as a "leading indicator" (this file's opening section) is not supported: lifetime avg watch is post-hoc and
+    length-bound (per-length rho 0.07). Leading indicator in practice = plays at 4–10h.
+- **Pre-registered test 11-09..11-12:** one series film + one never-tried subject per day, slot by coin flip (series at
+  15:45Z on 11-09/10/11, at 01:45Z on 11-12). PASS = ≥3/4 series ≥425 at first snap ≥14h AND series median ≥2× fresh;
+  FAIL = ≥2/4 fresh ≥425 OR series <1.5× fresh. Dead films count as 0. Side test: 3rd tellings (celestedoyle,
+  voynichvellum) vs 2nd (doraenigma, waratahsearch) for fatigue.
+- Instrument: extra snaps at 05:45Z + 19:45Z (cron) so both slots get a true ~4h read.
+- Owner model: `~/.claude/owner-models/reels-owner.md`.
