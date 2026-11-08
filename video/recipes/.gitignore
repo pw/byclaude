@@ -1,0 +1,11 @@
+# renders and audio are reproducible (and live on R2 renders.pwhite.org/recipes/)
+*.wav
+*.mp4
+*.m4a
+*.png
+*.jpg
+**/frames_r*/
+**/out/
+__pycache__/
+voice/test_*/
+voice/v1_*/

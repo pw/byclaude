@@ -1,0 +1,46 @@
+{
+ "date": "2026-11-08",
+ "runtime": "90.0 s",
+ "runtimeB": "85.8 s",
+ "voiceA": "Rosa",
+ "voiceA_desc": "Designed voice: early-fifties home cook, Italian-American East Coast family, faint accent, slightly husky, wry, unhurried.",
+ "voiceB": "Gus",
+ "voiceB_desc": "Designed voice: mid-forties home cook, warm low slightly gravelly, plain-spoken American, dry and a little conspiratorial.",
+ "names": [
+  {
+   "name": "Receipts",
+   "why": "\"Receipt\" is the old English word for a recipe, and every history beat comes with its receipts (sources). Short, ownable, and it fits the verified-history format."
+  },
+  {
+   "name": "Better Than the Jar",
+   "why": "The promise of episode 1 as a series: pantry shortcuts that beat store-bought. Clear in a feed; narrower if later episodes aren't jar replacements."
+  },
+  {
+   "name": "No-Chop Kitchen",
+   "why": "Your style: big flavor, no knife work. The knife on its day off becomes the recurring gag and the page avatar."
+  }
+ ],
+ "decide": [
+  "<b>Voice:</b> A (Rosa) or B (Gus)? Or neither, and I design more.",
+  "<b>Series and page name:</b> pick one of the three below, or your own.",
+  "<b>\"I like Cento\":</b> the AI voice speaks as the series host in first person. OK, or should it say \"Patrick likes Cento\"?",
+  "<b>The hero line:</b> you said the droplets iridesce. The blind fact-checker flagged \"shimmer\" (cooks read it as the hot-oil cue) and doubted \"rainbow\", so the narration says \"until tiny droplets catch the light\". The picture still shows iridescent droplets. Want \"like a rainbow\" back?",
+  "<b>Length:</b> 90.0 s, of which the history is about 29 s (your four beats). A 60 s cut would keep the hook, Latini and the pizza, and drop the tomato-voyage and nightshade beats.",
+  "<b>Posting:</b> the FB page is yours to create. Nothing is posted anywhere."
+ ],
+ "critique_fixes": [
+  "A code bug had turned every pill label into a stray number (\"3-4 min total\", \"stir halfway\", the timers, \"THE KNIFE HAS THE DAY OFF\"). Fixed; they all show now.",
+  "Hero swirl rebuilt: a visible gold crescent of oil, the arrow drawn on the sauce, the spoon held from the lower right (no longer across the labels), a trail and a spiral arm of oil, then fewer, larger gold droplets with a thin-film rim and a twinkle. The camera pushes toward the oil instead of off the pan, the labels no longer double-expose, and the duplicate third label is gone.",
+  "Captions restyled: brand sans on a soft dark bar, every word readable, the current word highlighted, moved up into the Reels safe zone.",
+  "Layout: \"even better\" no longer hidden by the umbrella, the stamp no longer clipped, the can label fits, pizza leader lines start at their labels, the oil \"target rings\" toned down, and widowed words rebalanced.",
+  "Type: the grey default-sans notes now use the italic serif, and Fraunces' wonky italic \"ll\" is turned off.",
+  "Drawings: two palms rubbing the herbs (with sleeves), the green \"steam\" over the herbs removed, ingredient cards land big on their word and then settle into the grid, the paste is a squeezed ribbon that breaks up and browns, the skillet oil is a gold sheen, and the sauce pour no longer flashes a black pan.",
+  "Order: the LEGEND card now leads, because the narration starts with the sailors.",
+  "Hook: a promise line is on screen from frame 1 (\"2 NO-CHOP MARINARAS, AFTER A LITTLE HISTORY\"), and the tomato is already falling.",
+  "Payoffs: recipe 1 gets a finished-bowl sparkle on \"Done\". The end card shows glossy sauce with oil beads and a row of episode cards.",
+  "Not taken: opening on the oil swirl (your brief asks for a true marinara fact as the hook); cutting the history to about 16 s (your brief asked for 20 to 25 s); a \"Cento\" sticker on screen (the brand stays in the narration only).",
+  "Second blind critique (on the revised cut) caught a few more, now fixed: a mirrored-looking can on the pour, the paste reading as beans (now a smeared patch), the oil highlight looking like a garlic slice, the oil card crossing the seasoning card (the 2\u00d72 grid now holds), the pot handle touching the America card, the plates crowding the caption, the leftover pizza rings, a hard edge at the top of the hero oil, the boil note flashing too briefly, the duplicate \"20-30 s\", right-edge text in the Reels button zone, and the small promise banner (now \"2 NO-CHOP MARINARA RECIPES\").",
+  "Still pushed by the critic and left for you: open on the oil swirl instead of the history hook, cut the history to about 16 s, and merge recipe 2's seven step cards into three. Each one conflicts with the brief or with your recipe as written."
+ ],
+ "transcript_note": "cut A: all 13 lines found (whisper's only misses are spellings: 'Cento' heard as 'sento', 'can's' as 'can'). Cut B: all lines found except that whisper heard 'deadly night shape' in the full mix; B's isolated voice track transcribes 'nightshade' cleanly."
+}
