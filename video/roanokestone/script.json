@@ -1,0 +1,120 @@
+{
+  "title": "The Patch",
+  "subtitle": "John White's map · British Museum, 2012",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, late sixteenth-century Elizabethan subject, faded watercolour reds and blues, cream paper, muted pine-green, river-grey and earth-brown tones, soft quiet light, melancholy and uncanny, cinematic composition, fine film grain, tall vertical frame with one centred subject. Any writing is illegible worn marks, not any real alphabet, no readable words. Single image showing one scene only, not a collage, not a split panel, no text, no labels, no signage, no people, no faces, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "The British Museum, twenty twelve. Researchers lit a four-hundred-year-old map from beneath. John White drew it.",
+      "cap": "BRITISH MUSEUM · 2012",
+      "img": "A single old hand-painted watercolour map on thick cream paper, large and centred in the middle third of a tall vertical frame, lying flat on a glowing white light box in a dark room, lit from beneath so the paper glows warm, faded blue water and green coastline painted on it, one small rectangular paper patch stuck onto the map showing as a slightly darker square in the light. No lettering on the map, nothing else in frame, background falling to black."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Under a small paper patch was a hidden fort, drawn in bright red and blue.",
+      "cap": "A HIDDEN\nFORT",
+      "amber": true,
+      "img": "Extreme close view of a small square paper patch on an old watercolour map, centred in the middle third of a tall vertical frame, glowing from light shining up through it, and through the paper the faint shape of a four-pointed star painted in bright red outlined in bright blue showing beneath, soft warm glow, aged paper fibres visible, no lettering."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "White governed the Roanoke colony. In fifteen ninety, he found it deserted, with one word carved on a post: Croatoan.",
+      "cap": "CROATOAN",
+      "amber": true,
+      "img": "A single weathered wooden palisade post standing centred in the middle third of a tall vertical frame, deep old knife-cut grooves in its grey wood worn smooth and illegible, overgrown grass at its base, an empty clearing and loblolly pines softly out of focus behind it, hazy humid late-summer coastal light."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "He wrote that the settlers had planned to move fifty miles inland. The fort lies where two rivers meet.",
+      "cap": "50 MILES\nINLAND",
+      "img": "A high view of two wide dark rivers meeting at a low wooded point of land, the point centred in the middle third of a tall vertical frame, cypress and pine forest along the banks, early-morning mist lying on the still water, grey-blue light, wild and untouched, no boats, no buildings."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Digs near the spot have found English pottery. Why the fort was covered is unknown. Where the colonists went has never been proved.",
+      "cap": "NEVER\nPROVED",
+      "amber": true,
+      "img": "A single small shard of old yellow-green glazed earthenware pottery lying on dark sandy soil at the bottom of a neat square archaeological excavation pit, the shard centred in the middle third of a tall vertical frame, sharp straight trench walls, soft overcast light, a pine root at the edge, quiet and still."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Core case: the 1587 English colony on Roanoke Island; governor John White left for England in 1587, returned 18 Aug 1590, found the settlement deserted with CROATOAN carved on a palisade post (and CRO on a tree); colonists never found",
+      "sources": [
+        "https://home.nps.gov/fora/learn/education/search-for-the-lost-colony.htm",
+        "https://ncpedia.org/lost-colony",
+        "https://www.britannica.com/print/article/348394"
+      ]
+    },
+    {
+      "claim": "John White drew the 'Virginea Pars' map of the coast (British Museum 1906,0509.1.3, dated 1585-1593 / 1580s) — i.e. more than 400 years old in 2012",
+      "sources": [
+        "https://www.britishmuseum.org/collection/object/P_1906-0509-1-3",
+        "https://www.nbcnews.com/id/wbna47288500",
+        "https://www.firstcolonyfoundation.org/news/hidden-images-revealed-elizabethan-map-america/"
+      ]
+    },
+    {
+      "claim": "In 2012 (announced 3 May 2012) British Museum / First Colony Foundation examination of two paper patches on the map; the northern patch hides a fort symbol visible only when the map is viewed on a light box (lit from below / transmitted light)",
+      "sources": [
+        "https://www.firstcolonyfoundation.org/news/hidden-images-revealed-elizabethan-map-america/",
+        "https://www.nbcnews.com/id/wbna47288500",
+        "https://podcast.history.org/2012/11/26/hidden-symbols-and-invisible-ink/"
+      ]
+    },
+    {
+      "claim": "The hidden symbol is a large 'fort' symbol in bright red and bright blue (a four-pointed / four-sided star)",
+      "sources": [
+        "https://www.firstcolonyfoundation.org/news/hidden-images-revealed-elizabethan-map-america/",
+        "https://www.thehistoryblog.com/archives/date/2013/12/11",
+        "https://podcast.history.org/2012/11/26/hidden-symbols-and-invisible-ink/"
+      ]
+    },
+    {
+      "claim": "The patch covers the head of the Albemarle Sound where the Roanoke and Chowan rivers join (modern Bertie County), inland from Roanoke Island",
+      "sources": [
+        "https://www.firstcolonyfoundation.org/news/hidden-images-revealed-elizabethan-map-america/",
+        "https://www.nbcnews.com/id/wbna47288500"
+      ]
+    },
+    {
+      "claim": "White's 1590 narrative: at his 1587 departure the colonists 'were prepared to remoue from Roanoak 50 miles into the maine'",
+      "sources": [
+        "https://www.constitution.org/primarysources/ronoake.html",
+        "https://www.nbcnews.com/id/wbna47288500",
+        "https://www.ncpedia.org/node/13393"
+      ]
+    },
+    {
+      "claim": "Researchers do not know why the symbol was covered with a patch",
+      "sources": [
+        "https://www.nbcnews.com/id/wbna47288500",
+        "https://podcast.history.org/2012/11/26/hidden-symbols-and-invisible-ink/"
+      ]
+    },
+    {
+      "claim": "First Colony Foundation excavations at 'Site X' near Salmon Creek, Bertie County, found English (Surrey-Hampshire Border ware) pottery; the foundation reads it as a possible trace of some colonists but says there is no 'smoking gun' and finds are mixed with later material",
+      "sources": [
+        "https://www.wunc.org/arts-culture/2015-08-12/what-is-site-x-and-what-does-it-tell-us-about-the-lost-colony",
+        "https://coastalreview.org/2020/10/lost-colony-moved-inland-archaeologists/",
+        "https://archaeology.org/?p=4237"
+      ]
+    },
+    {
+      "claim": "Fate still unresolved as of 2025-2026: Hatteras Island (Horton/Dawson) and Site X (First Colony Foundation) teams claim colonists relocated/assimilated, but reporting notes the evidence is contested and not conclusive",
+      "sources": [
+        "https://www.livescience.com/archaeology/lost-colony-of-roanoke-may-have-assimilated-into-indigenous-society-archaeologist-claims-but-not-everyone-is-convinced",
+        "https://www.whro.org/arts-culture/2025-01-20/new-artifacts-on-hatteras-point-to-the-real-fate-of-the-lost-colony",
+        "https://www.smithsonianmag.com/smart-news/new-evidence-roanoke-colonys-disappearance-180976248/"
+      ]
+    }
+  ],
+  "sequel_of": "roanoke"
+}

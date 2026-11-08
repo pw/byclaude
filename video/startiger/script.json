@@ -1,0 +1,106 @@
+{
+  "title": "Star Tiger",
+  "subtitle": "Star Tiger · North Atlantic, 1948",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the open North Atlantic at night in the late 1940s, moonlit towering cloud and dark sea, cold blue-grey and silver tones with a faint amber glow, melancholy and uncanny, vertical 9:16 full-bleed composition with one centred subject in the middle third, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "The Atlantic, January nineteen forty-eight. A British airliner, the Star Tiger, was flying through the night to Bermuda. It never arrived.",
+      "cap": "ATLANTIC · 1948",
+      "img": "Vertical full-bleed scene: a single 1940s four-engine propeller airliner with a long silver fuselage and twin tail fins, an Avro Tudor, centred in the middle third of the frame and clearly lit by bright moonlight, flying level through a break in towering night clouds high above a dark ocean, propellers blurred, cabin windows faintly glowing amber, the whole aircraft sharply legible against the cloud, no markings, no lettering."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Just after three in the morning, she asked Bermuda for a radio bearing. Nothing more was heard.",
+      "cap": "NOTHING\nMORE HEARD",
+      "amber": true,
+      "img": "Vertical full-bleed scene: inside the dim cockpit radio station of a 1940s airliner at night, an old valve radio receiver with a softly glowing amber dial centred in frame, a brass Morse key and a pair of headphones resting on the small desk, a dark window showing only night cloud, no people, no legible text."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Thirty-one people were aboard. The search found no wreckage. No one aboard was ever seen again.",
+      "cap": "31 ABOARD\nNO WRECKAGE",
+      "img": "Vertical full-bleed scene: a lone 1940s four-engine search aircraft centred in frame, flying low over a vast empty grey Atlantic at first light, long swells and whitecaps below with nothing on the water, cold pale dawn breaking through overcast, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "The official inquiry wrote that no more baffling problem had ever been presented for investigation.",
+      "cap": "NO MORE BAFFLING\nPROBLEM",
+      "img": "Vertical full-bleed scene: a thick closed 1940s government report bound with faded ribbon, centred on a dark wooden table in an empty wood-panelled hearing room, a single brass desk lamp casting warm light across it, rows of empty chairs fading into shadow, no people, no legible text."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Theories include fuel running out, and sabotage. The wreck has never been found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "Vertical full-bleed scene: the calm empty Atlantic at night seen from low above the water, a single shaft of moonlight through a gap in heavy cloud falling on the dark sea in the centre of the frame, nothing on the surface, cold silver and blue-grey, silent and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Star Tiger was a British South American Airways (BSAA) Avro Tudor IV, G-AHNP, lost early on 30 January 1948 on an overnight flight from Santa Maria in the Azores to Bermuda; it never arrived",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance",
+        "https://api.parliament.uk/historic-hansard/commons/1948/feb/02/missing-tudor-iv-aircraft-inquiry",
+        "https://aviation-safety.net/wikibase/336778",
+        "https://www.thequesterfiles.com/disappearance_of_tudor_iv__sta.html"
+      ]
+    },
+    {
+      "claim": "Last contact at about 03:15-03:17 when radio officer requested/acknowledged a radio bearing from Bermuda; nothing more was heard",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance",
+        "https://www.royalgazette.com/?p=198064",
+        "https://www.thequesterfiles.com/disappearance_of_tudor_iv__sta.html"
+      ]
+    },
+    {
+      "claim": "31 people aboard (25 passengers, 6 crew)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance",
+        "https://api.parliament.uk/historic-hansard/commons/1948/feb/02/missing-tudor-iv-aircraft-inquiry",
+        "https://aviation-safety.net/wikibase/336778"
+      ]
+    },
+    {
+      "claim": "Search (26 aircraft, 882 hours, five days per Wikipedia) found no wreckage and no trace of the aircraft or anyone aboard",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance",
+        "https://www.ilgiornale.it/news/triangolo-delle-bermuda-forse-risolto-giallo-due-aerei.html",
+        "https://www.royalgazette.com/?p=198064"
+      ]
+    },
+    {
+      "claim": "Official inquiry (Lord Macmillan, Ministry of Civil Aviation, reported Aug 1948): 'In closing this report it may truly be said that no more baffling problem has ever been presented for investigation' ... 'the fate of Star Tiger must remain an unsolved mystery'",
+      "sources": [
+        "https://www.thequesterfiles.com/disappearance_of_tudor_iv__sta.html",
+        "https://www.royalgazette.com/?p=198064",
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance"
+      ]
+    },
+    {
+      "claim": "Theories include fuel exhaustion (e.g. 2009 Tom Mangold BBC programme) and sabotage (claimed by Don Bennett / Roy Dobson; rejected by investigators) — theories only",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance",
+        "https://www.ilgiornale.it/news/triangolo-delle-bermuda-forse-risolto-giallo-due-aerei.html",
+        "https://planeandpilotmag.com/the-two-missing-planes-that-helped-create-the-bermuda-triangle-theory/",
+        "https://en.wikipedia.org/wiki/BSAA_Star_Ariel_disappearance"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of 2026: no wreck ever found; no 2020-2026 wreck find reported; 2026 coverage still treats it as unsolved",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance",
+        "https://www.slate.fr/culture/mystere-star-tiger-avion-crash-disparition-non-resolus-aviation-bermudes-triangle",
+        "https://myrqdarkmysteries.blogspot.com/2026/05/unsolved-disappearance-of-crew-of-star.html"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "title": "Le Griffon",
+  "subtitle": "Lake Michigan · 1679",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the upper Great Lakes in autumn 1679, a cold freshwater lake with dark pine shorelines, seventeenth-century French wooden sailing craft, grey-green water under pale overcast light, melancholy and uncanny, vertical 9:16 full-bleed composition, fine film grain. Single image, not a collage, no text, no signage, no flags, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Lake Michigan, September sixteen seventy-nine. The Griffon, the first full-sized sailing ship on the upper Great Lakes, sailed from Washington Island for Niagara.",
+      "cap": "LAKE MICHIGAN\n1679",
+      "img": "Vertical full-bleed scene: a small seventeenth-century French wooden sailing barque, two masts with pale square and fore-and-aft sails set, dark tarred hull with a raised stern, a carved wooden figurehead at the bow, centred in the middle third of the frame and well lit by clear autumn daylight on a grey-green lake, the whole ship sharply legible against the bright water, a low dark pine shoreline far behind, no flags, no lettering, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Her cargo was furs. Six men were aboard: her pilot, and five crew.",
+      "cap": "6 MEN\nABOARD",
+      "img": "Vertical full-bleed scene: the dim wooden hold of a seventeenth-century sailing ship, bales of beaver pelts tied with rope stacked high in the centre, a single shaft of pale daylight falling through an open hatch onto them, rough oak beams, still and silent, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "She never reached Niagara. No one aboard was ever seen again.",
+      "cap": "NEVER\nSEEN AGAIN",
+      "amber": true,
+      "img": "Vertical full-bleed scene: a remote rocky island shore at the edge of a vast grey lake at dusk, an empty sheltered cove with dark pines, calm black water and a pale band of light on the horizon, nothing on the water anywhere, cold and uncanny, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "A friar from the expedition blamed a violent storm. La Salle believed his crew sank her, and took the furs. Neither was ever proven.",
+      "cap": "STORM\nOR SABOTAGE?",
+      "img": "Vertical full-bleed scene: a huge autumn storm rolling over a wide freshwater lake, towering dark clouds and steep grey-white waves, wind-driven spray, a faint pale gap of light low on the horizon, no ship, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Wrecks in two lakes have been claimed as hers. None has ever been confirmed. The Griffon has never been found.",
+      "cap": "NEVER\nCONFIRMED",
+      "amber": true,
+      "img": "Vertical full-bleed scene: deep under clear cold green lake water, a shaft of pale light falling onto an empty sandy lakebed with a few scattered dark stones, nothing else, silent and unresolved, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Le Griffon, La Salle's barque, built 1679 above Niagara Falls; called the first full-sized sailing ship on the upper Great Lakes",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Le_Griffon",
+        "https://washingtonisland.com/le-griffon-the-griffin/",
+        "https://975now.com/ixp/691/p/le-griffon-remains-lost/",
+        "https://wisconsinshipwrecks.org/Vessel/Details/252"
+      ]
+    },
+    {
+      "claim": "Sailed 18 September 1679 from Washington Island (entrance to Green Bay, Lake Michigan) bound for the Niagara River",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Le_Griffon",
+        "https://washingtonisland.com/le-griffon-the-griffin/",
+        "https://wisconsinshipwrecks.org/Vessel/Details/252",
+        "https://975now.com/ixp/691/p/le-griffon-remains-lost/"
+      ]
+    },
+    {
+      "claim": "Cargo of furs; aboard were the pilot (Luc) and five crew, six in all",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Le_Griffon",
+        "https://washingtonisland.com/le-griffon-the-griffin/",
+        "https://discovermagazine.com/the-sciences/no-one-has-ever-found-the-le-griffon-shipwreck-despite-the-many-claims"
+      ]
+    },
+    {
+      "claim": "Never arrived; considered lost by end of November 1679; neither ship nor crew ever seen again",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Le_Griffon",
+        "https://wisconsinshipwrecks.org/Vessel/Details/252",
+        "https://975now.com/ixp/691/p/le-griffon-remains-lost/"
+      ]
+    },
+    {
+      "claim": "Hennepin (friar with the expedition) wrote she was lost in a violent storm; La Salle believed the pilot and crew sank her and took the goods; no theory proven",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Le_Griffon",
+        "https://washingtonisland.com/le-griffon-the-griffin/",
+        "https://975now.com/ixp/691/p/le-griffon-remains-lost/"
+      ]
+    },
+    {
+      "claim": "Many wrecks in Lake Michigan and Lake Huron claimed as Le Griffon (incl. Manitoulin 1898, Poverty Island 2001/2013, 2014 bowstem — a tug, 2018); none confirmed; 2022 Michigan state archaeologist: 'The Griffon has not been found'; still unfound July 2026",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Le_Griffon",
+        "https://discovermagazine.com/the-sciences/no-one-has-ever-found-the-le-griffon-shipwreck-despite-the-many-claims",
+        "https://975now.com/ixp/691/p/le-griffon-remains-lost/",
+        "https://wisconsinshipwrecks.org/Vessel/Details/252",
+        "https://www.lenconnect.com/story/news/state/2022/03/09/charlevoix/couple-theory-1679-shipwreck-le-griffon/9425022002"
+      ]
+    }
+  ]
+}

@@ -242,7 +242,7 @@
    "kind": "person",
    "origin": "fresh",
    "frame": "band",
-   "excluded": "single-video non-distribution: 3 plays in 22h while same-week films got 230-460 and page views were normal (580/664/day); violent-crime content (3 teens killed) \u2014 likely a per-video distribution limit, cause unverified"
+   "excluded": "single-video non-distribution: 3 plays in 22h while same-week films got 230-460 and page views were normal (580/664/day); violent-crime content (3 teens killed) — likely a per-video distribution limit, cause unverified"
   },
   "shugborough": {
    "end": "stamp",
@@ -464,7 +464,64 @@
    "origin": "fresh",
    "frame": "bleed",
    "format": "reel",
-   "series": "sequel-of-voynich"
+   "series": "sequel-of-voynich",
+   "test": "series-vs-fresh-1109"
+  },
+  "startiger": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "series-vs-fresh-1109"
+  },
+  "griffon": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "series-vs-fresh-1109"
+  },
+  "upsweep": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "series-vs-fresh-1109"
+  },
+  "ninthlegion": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "series-vs-fresh-1109"
+  },
+  "deeringbottle": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "series-vs-fresh-1109",
+   "series": "sequel-of-deering"
+  },
+  "roanokestone": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "person",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "series-vs-fresh-1109",
+   "series": "sequel-of-roanoke"
   }
  },
  "byclaude": {

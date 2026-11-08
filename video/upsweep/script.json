@@ -1,0 +1,108 @@
+{
+  "title": "Upsweep",
+  "subtitle": "The Upsweep sound · South Pacific, 1991",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the remote deep Pacific Ocean in the early 1990s, cold steel-blue and grey water, deep underwater darkness and heavy overcast, melancholy and uncanny, one centred subject in the middle third of a vertical frame, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "The Pacific, nineteen ninety-one. When NOAA began listening on the Navy's submarine hydrophones, one sound was already there.",
+      "cap": "PACIFIC · 1991",
+      "img": "Deep underwater in the open ocean, a single cylindrical hydrophone listening device hanging on a taut vertical cable, centred in the frame and clearly lit by a soft cool shaft of light from far above, fine particles drifting, deep blue-black water all around, vast and silent."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "A long train of rising tones, each several seconds long. Loud enough to be recorded across the Pacific.",
+      "cap": "RISING\nTONES",
+      "amber": true,
+      "img": "An old early-1990s computer CRT monitor on a metal desk in a dark ocean-acoustics lab, centred in the frame, its screen glowing green with a spectrogram of a repeating row of bright rising diagonal streaks, no numbers, no letters, no text, faint reflections on the curved glass, dim room."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "It became known as Upsweep. It seems to come in seasons, peaking in spring and autumn.",
+      "cap": "SEASONAL",
+      "img": "A neat stack of 1990s magnetic data-tape reels on a grey metal desk, centred in the frame under a single warm desk lamp, blank unlabelled reels, a pair of headphones resting beside them, rain on a dark window behind, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Its source lies, roughly, in the remote South Pacific, between New Zealand and South America. Too steady, researchers said, to be a whale.",
+      "cap": "TOO STEADY\nFOR A WHALE",
+      "img": "Seen from just above the water, an empty, endless South Pacific under heavy grey overcast, long dark swells, no land, no ship, no animal, a faint misty patch of pale light in the centre of the frame where the horizon dissolves, cold and remote."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "It lies near signs of undersea volcanic activity. More than thirty years on, NOAA calls its origin unresolved.",
+      "cap": "ORIGIN\nUNRESOLVED",
+      "amber": true,
+      "img": "Deep underwater, a dark volcanic seamount rising from the seafloor in the centre of the frame, a faint dull-orange glow and thin streams of bubbles at its summit, vast blue-black water around it, the top half fading into darkness, unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The sound was already present when NOAA/PMEL began recording the US Navy's SOSUS hydrophones (built for submarine surveillance) in August 1991 (acquisition began 29 Aug 1991)",
+      "sources": [
+        "https://www.pmel.noaa.gov/acoustics/sounds/upsweep.html",
+        "https://en.wikipedia.org/wiki/Upsweep",
+        "https://pmel.noaa.gov/acoustics/sosus_acq.html",
+        "https://en.wikipedia.org/wiki/SOSUS",
+        "https://www.worldatlas.com/oceans/the-ocean-sounds-scientists-still-can-t-explain.html"
+      ]
+    },
+    {
+      "claim": "It consists of a long train of narrow-band upsweeping (rising) sounds of several seconds each; source level high enough to be recorded throughout the Pacific",
+      "sources": [
+        "https://www.pmel.noaa.gov/acoustics/sounds/upsweep.html",
+        "https://en.wikipedia.org/wiki/Upsweep",
+        "https://www.discoverwildlife.com/environment/weirdest-ocean-noises",
+        "https://www.worldatlas.com/oceans/the-ocean-sounds-scientists-still-can-t-explain.html"
+      ]
+    },
+    {
+      "claim": "Known as 'Upsweep'; appears seasonal, generally peaking in spring and fall (unclear whether source or propagation changes)",
+      "sources": [
+        "https://www.pmel.noaa.gov/acoustics/sounds/upsweep.html",
+        "https://en.wikipedia.org/wiki/Upsweep",
+        "https://www.sciencetimes.com/articles/48915/20240226/upsweep-sounds-unexplained-scary-calls-within-pacific.htm"
+      ]
+    },
+    {
+      "claim": "Source roughly located at 54°S 140°W, a remote region of the South Pacific between New Zealand and South America",
+      "sources": [
+        "https://www.pmel.noaa.gov/acoustics/sounds/upsweep.html",
+        "https://en.wikipedia.org/wiki/Upsweep",
+        "https://www.discoverwildlife.com/environment/weirdest-ocean-noises"
+      ]
+    },
+    {
+      "claim": "Initially attributed to fin whales; researchers dismissed a biological source because the tone has too little variation",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Upsweep",
+        "https://www.nhpr.org/post/mysterious-sounds-depths-sea-sky-overhead",
+        "https://www.discoverwildlife.com/environment/weirdest-ocean-noises"
+      ]
+    },
+    {
+      "claim": "Located near inferred volcanic seismicity (volcanic origin suspected, not established); NOAA states the origin of the sound is unresolved — unchanged as of Nov 2026 (PMEL page live; Wikipedia last edited 31 Oct 2026, no identification; no 2024-2026 report of a source)",
+      "sources": [
+        "https://www.pmel.noaa.gov/acoustics/sounds/upsweep.html",
+        "https://en.wikipedia.org/wiki/Upsweep",
+        "https://www.nhpr.org/post/mysterious-sounds-depths-sea-sky-overhead",
+        "https://www.sciencetimes.com/articles/48915/20240226/upsweep-sounds-unexplained-scary-calls-within-pacific.htm"
+      ]
+    },
+    {
+      "claim": "Overall source level has declined since 1991 (caption only; NOAA's 'still detectable' line dates from a page unchanged since at least 2014, so not used)",
+      "sources": [
+        "https://www.pmel.noaa.gov/acoustics/sounds/upsweep.html",
+        "https://en.wikipedia.org/wiki/Upsweep",
+        "https://www.sciencetimes.com/articles/48915/20240226/upsweep-sounds-unexplained-scary-calls-within-pacific.htm"
+      ]
+    }
+  ]
+}

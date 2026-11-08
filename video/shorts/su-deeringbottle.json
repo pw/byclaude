@@ -1,0 +1,48 @@
+{
+ "out": "short-su-deeringbottle",
+ "kicker": "THE DEERING BOTTLE",
+ "frame": "bleed",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "deeringbottle",
+   "img": "B01",
+   "vo": "Cape Hatteras, North Carolina. April nineteen twenty-one. A fisherman turned in a note he said he found in a bottle. It was about a ghost ship.",
+   "cap": "HATTERAS · 1921"
+  },
+  {
+   "src": "deeringbottle",
+   "img": "B02",
+   "vo": "Ten weeks earlier, the schooner Carroll A. Deering had been found aground offshore, sails still set. Her crew was gone.",
+   "cap": "CREW\nGONE",
+   "amber": true
+  },
+  {
+   "src": "deeringbottle",
+   "img": "B03",
+   "vo": "The note said the Deering had been captured by another boat, and asked the finder to notify headquarters.",
+   "cap": "THE NOTE:\nCAPTURED"
+  },
+  {
+   "src": "deeringbottle",
+   "img": "B04",
+   "vo": "Five federal departments investigated. Handwriting experts concluded the note was forged.",
+   "cap": "FORGED",
+   "amber": true
+  },
+  {
+   "src": "deeringbottle",
+   "img": "B05",
+   "vo": "The fisherman admitted forging it, reportedly hoping for work at the lighthouse. The real crew was never found.",
+   "cap": "NEVER\nFOUND"
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

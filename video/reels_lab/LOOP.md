@@ -102,6 +102,12 @@ then prefer cases that don't need them. A film under ~20 plays at 12h on a healt
   (2024 radiocarbon date of a Rome tablet's wood predates contact). Both bleed ⇒ sequel arm is confounded with frame for
   these two; read sequels against same-period BLEED new picks.
 
+## ★ 2026-11-08: series-vs-fresh test films built (pre-registered 11-07, see owner-models/reels-owner.md)
+- Fresh: startiger · griffon · upsweep · ninthlegion. Series: voynichvellum · deeringbottle (the 1921 hoax bottle) ·
+  roanokestone (the fort symbol under the patch on White's map) · #4 built 11-09. All carry `"test": "series-vs-fresh-1109"`.
+- Read each at its first snap ≥14h. PASS: ≥3/4 series ≥425 AND series median ≥2× fresh. FAIL: ≥2/4 fresh ≥425 OR series <1.5×.
+- Same-week pre-read (not randomized): sequels/remakes 633 vs new 241 median, 6/7 vs 2/7 ≥425.
+
 ## The loop (one arm at a time)
 1. **Post** 2/day via `ig.py --profile unsolved batch --per-day 2` (cron once the Page id lands in ig.py + reels_lab/pages.json).
 2. **Measure**: `lab.py snap` every 6h (cron); `lab.py report --page unsolved` = plays at 72h + retention + arm medians.

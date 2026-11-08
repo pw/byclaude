@@ -1,0 +1,49 @@
+{
+ "out": "short-su-roanokestone",
+ "kicker": "THE ROANOKE MAP",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "roanokestone",
+   "img": "B01",
+   "vo": "The British Museum, twenty twelve. Researchers lit a four-hundred-year-old map from beneath. John White drew it.",
+   "cap": "BRITISH MUSEUM · 2012"
+  },
+  {
+   "src": "roanokestone",
+   "img": "B02",
+   "vo": "Under a small paper patch was a hidden fort symbol, drawn in bright red and blue.",
+   "cap": "A HIDDEN\nFORT SYMBOL",
+   "amber": true
+  },
+  {
+   "src": "roanokestone",
+   "img": "B03",
+   "vo": "White governed the Roanoke colony. In fifteen ninety, he found it deserted, with one word carved on a post: Croatoan.",
+   "cap": "CROATOAN",
+   "amber": true
+  },
+  {
+   "src": "roanokestone",
+   "img": "B04",
+   "vo": "He wrote that the settlers had planned to move fifty miles inland. The symbol sits where the Roanoke and Chowan rivers meet.",
+   "cap": "50 MILES\nINLAND"
+  },
+  {
+   "src": "roanokestone",
+   "img": "B05",
+   "vo": "Digs near that spot have found a few English pottery sherds. Why it was covered is unknown. Where the colonists went has never been proved.",
+   "cap": "NEVER\nPROVED",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "",
+ "frame": "bleed"
+}

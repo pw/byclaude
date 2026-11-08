@@ -1,0 +1,105 @@
+{
+  "title": "The Ninth Legion",
+  "subtitle": "Eboracum (York) · Roman Britain, c. AD 108",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the misty northern frontier of the Roman Empire in the early second century AD, wet open ground and pale weathered stone, cold grey-green light, quiet and melancholy, cinematic vertical composition with one centred subject in the middle third, fine film grain. Single image, not a collage, no text, no lettering, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "York, Roman Britain, around the year one hundred and eight. The Ninth Legion is based here. Then it slips out of the record.",
+      "cap": "YORK · AD 108",
+      "img": "A Roman legionary eagle standard, a gilded bronze eagle with spread wings on top of a tall dark wooden pole, standing alone in the exact centre of the frame in thick grey morning mist on wet open ground, softly lit from one side so the gold glows, the mist swallowing everything behind it."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Its last securely dated trace in Britain is a stone, carved for a new gate in its fortress.",
+      "cap": "LAST TRACE\nIN BRITAIN",
+      "amber": true,
+      "img": "A large rectangular slab of weathered pale limestone set into a rough Roman stone wall, centred in the frame, its carved face worn smooth and completely illegible, no letters or marks, soft raking side light, faint mist, damp stone."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "By one hundred and twenty-two, the Sixth Legion held York.",
+      "cap": "ANOTHER LEGION\nAT YORK",
+      "img": "The massive stone gateway of a Roman legionary fortress, centred, heavy wooden gates closed, wet flagstones leading up to it, low mist, cold early-morning light, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Tiles stamped with the Ninth's name turned up at Nijmegen, in the Netherlands. When they were made is disputed.",
+      "cap": "NIJMEGEN\nTILES",
+      "img": "A small stack of old weathered terracotta Roman roof tiles lying in wet grass on the bank of a wide, slow misty river, centred in the frame, plain tiles with only a faint unreadable rectangular impression, grey diffuse light."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Later lists of Rome's legions leave it out. Lost in Britain? Moved to the Rhine? Sent east? No agreed answer.",
+      "cap": "NO AGREED\nANSWER",
+      "amber": true,
+      "img": "A single tall empty wooden standard pole with nothing on top, standing alone in the centre of the frame on open moorland at dusk, thin mist drifting past, cold fading light, vast empty sky."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Legio IX Hispana was based at the legionary fortress at York (Eboracum) in the early 2nd century AD",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Legio_IX_Hispana",
+        "https://www.historyhit.com/was-the-ninth-legion-destroyed-in-britain/",
+        "https://romaninscriptionsofbritain.org/inscriptions/665"
+      ]
+    },
+    {
+      "claim": "RIB 665, found in King's Square, York, near the Roman south-east gateway, records Trajan building the gate through the agency of the Ninth Legion Hispana; dated AD 107–108 by Trajan's titulature; it is the last securely dated record of the legion in Britain",
+      "sources": [
+        "https://romaninscriptionsofbritain.org/inscriptions/665",
+        "https://en.wikipedia.org/wiki/Legio_IX_Hispana",
+        "https://www.historyhit.com/was-the-ninth-legion-destroyed-in-britain/",
+        "https://www.hoover.org/research/puzzle-romes-lost-legion"
+      ]
+    },
+    {
+      "claim": "By AD 122 legio VI Victrix had replaced the Ninth at York",
+      "sources": [
+        "https://www.historyhit.com/was-the-ninth-legion-destroyed-in-britain/",
+        "https://www.hoover.org/research/puzzle-romes-lost-legion"
+      ]
+    },
+    {
+      "claim": "Tiles stamped by the Ninth Legion were found at Nijmegen (Noviomagus), Netherlands; their dating is disputed (Wikipedia: dated 104–120, with Russell arguing the 80s; History Hit: c. 125; Hoover/Fulford: later in Trajan's reign; Britannia: date the legion left Nijmegen not established)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Legio_IX_Hispana",
+        "https://www.historyhit.com/was-the-ninth-legion-destroyed-in-britain/",
+        "https://www.hoover.org/research/puzzle-romes-lost-legion",
+        "https://resolve.cambridge.org/core/journals/britannia/article/abs/tilestamps-of-the-ninth-legion-found-in-britain/0BA64DE43EFF71D95447545633DECDC4"
+      ]
+    },
+    {
+      "claim": "Later lists of Rome's legions (the column list in Rome, CIL VI 3492, and Cassius Dio's list) do not include IX Hispana",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Legio_IX_Hispana",
+        "https://www.historyhit.com/was-the-ninth-legion-destroyed-in-britain/"
+      ]
+    },
+    {
+      "claim": "Competing theories: lost in Britain/Scotland; transferred to the Low Countries / Rhine delta (Nijmegen); sent east (Bar Kokhba revolt 132–135, Parthian war 161); none established, no consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Legio_IX_Hispana",
+        "https://www.historyhit.com/was-the-ninth-legion-destroyed-in-britain/",
+        "https://www.hoover.org/research/puzzle-romes-lost-legion"
+      ]
+    },
+    {
+      "claim": "Still unresolved as of 2026: no new evidence settling the fate; 2026 coverage (History Hit episode, Simon Elliott's 'Roman Britain's Missing Legion') still presents it as open; Radboud thesis Jan 2025 argues for Nijmegen but does not settle it",
+      "sources": [
+        "https://www.historyhit.com/was-the-ninth-legion-destroyed-in-britain/",
+        "https://access.historyhit.com/the-ninth-mystery-of-the-lost-legion",
+        "https://theses.ubn.ru.nl/handle/123456789/18444",
+        "https://en.wikipedia.org/wiki/Legio_IX_Hispana"
+      ]
+    }
+  ]
+}
