@@ -108,6 +108,14 @@ then prefer cases that don't need them. A film under ~20 plays at 12h on a healt
 - Read each at its first snap ≥14h. PASS: ≥3/4 series ≥425 AND series median ≥2× fresh. FAIL: ≥2/4 fresh ≥425 OR series <1.5×.
 - Same-week pre-read (not randomized): sequels/remakes 633 vs new 241 median, 6/7 vs 2/7 ≥425.
 
+- **11-09:** SERIES #4 = **velasat** (Vela 3rd telling: the satellite as witness: 41 prior double flashes all nuclear, 10 yrs old,
+  EMP sensor dead, bhangmeters disagreed on pulse 2, panel's meteoroid idea, later analysis judged it much less likely).
+  Deviation from "2nd tellings preferred": no proven subject has only one telling left, and dorabella's 2nd just died; Vela is
+  the strongest subject (925 / 715 @12h). Blind check FIX x3 applied (EMP not "one sensor"; dropped an unsourced caption
+  line; added "other evidence pointed to a test" for balance). Queue 11-12 01:45Z, ninthlegion unheld for 15:45Z.
+  Fatigue side test: doraenigma (2nd Dorabella) **82 @16h** (retention 0.08) while celestedoyle (3rd Mary Celeste) passed
+  ⇒ telling NUMBER isn't the variable; subject strength is (Dorabella was the weakest proven, 522 @12h).
+
 ## The loop (one arm at a time)
 1. **Post** 2/day via `ig.py --profile unsolved batch --per-day 2` (cron once the Page id lands in ig.py + reels_lab/pages.json).
 2. **Measure**: `lab.py snap` every 6h (cron); `lab.py report --page unsolved` = plays at 72h + retention + arm medians.
