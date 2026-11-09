@@ -242,7 +242,7 @@
    "kind": "person",
    "origin": "fresh",
    "frame": "band",
-   "excluded": "single-video non-distribution: 3 plays in 22h while same-week films got 230-460 and page views were normal (580/664/day); violent-crime content (3 teens killed) — likely a per-video distribution limit, cause unverified"
+   "excluded": "single-video non-distribution: 3 plays in 22h while same-week films got 230-460 and page views were normal (580/664/day); violent-crime content (3 teens killed) \u2014 likely a per-video distribution limit, cause unverified"
   },
   "shugborough": {
    "end": "stamp",
@@ -522,6 +522,17 @@
    "format": "reel",
    "test": "series-vs-fresh-1109",
    "series": "sequel-of-roanoke"
+  },
+  "velasat": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "kind": "anomaly",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "series-vs-fresh-1109",
+   "series": "sequel-of-vela",
+   "telling": 3
   }
  },
  "byclaude": {

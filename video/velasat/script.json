@@ -1,0 +1,126 @@
+{
+  "title": "The Witness",
+  "subtitle": "The Vela Incident \u00b7 the satellite, 1979",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, late 1970s spacecraft hardware in high Earth orbit, black space, hard white sunlight and the cold blue of the distant Earth, quiet, exact and uncanny, cinematic vertical composition, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "The southern Indian Ocean, nineteen seventy-nine. One American satellite saw a double flash. Vela satellites had seen forty-one before. Every one, a nuclear test.",
+      "cap": "INDIAN OCEAN \u00b7 1979",
+      "img": "A single 1970s Vela nuclear-detection satellite large and close, filling most of the frame width, centred: a squat twenty-sided polyhedron, each flat face covered in dark blue-black rectangular solar cells with thin silver frames, a few short antenna rods sticking out, hard white sunlight raking across its faces against pure black space, the thin blue curve of the Earth far below near the bottom of the frame, sharp and well lit, vertical composition."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "But this witness was ten years old, past its design life. Its radio-pulse sensor had already failed.",
+      "cap": "TEN YEARS\nOLD",
+      "img": "A close view of one face of an old 1970s satellite in orbit, centred: weathered dark solar cells with faded, slightly scorched edges, a small dull dead instrument housing mounted in the middle of the panel, harsh sunlight from one side and deep shadow on the other, black space behind, vertical composition."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Its two light sensors caught the flash. On the second pulse, they disagreed.",
+      "cap": "THE SENSORS\nDISAGREED",
+      "amber": true,
+      "img": "Two small round glass sensor lenses set side by side in the centre of a satellite's metal face, one lens glowing with a bright white reflected flash, the other noticeably dimmer, surrounding dark solar cells, black space beyond, close and centred, vertical composition."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "A panel for the White House suggested a meteoroid had struck the satellite, its debris catching the sun.",
+      "cap": "A METEOROID?",
+      "img": "A tiny bright speck of a meteoroid striking the corner of a 1970s polyhedral satellite covered in solar cells, centred in the frame, a small spray of glittering fragments drifting away and catching hard white sunlight, black space behind, vertical composition."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Later analysis judged a meteoroid much less likely, and other evidence pointed to a test. The United States has never confirmed what its satellite saw.",
+      "cap": "NEVER\nCONFIRMED",
+      "amber": true,
+      "img": "The night side of the Earth seen from very high orbit, centred in the frame, a dark southern ocean in shadow under scattered cloud, a thin glowing blue rim of atmosphere, stars beyond, no satellite visible, vast, silent and unresolved, vertical composition."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "On 22 September 1979 a double flash of light was detected over the southern Indian Ocean / South Atlantic by one US satellite (Vela 6911); other satellites did not detect it",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://scienceandglobalsecurity.org/archive/sgs25wright.pdf",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test"
+      ]
+    },
+    {
+      "claim": "Vela satellites had previously detected 41 double flashes, all caused by (and confirmed as) atmospheric nuclear tests",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://thebulletin.org/2019/09/double-flash-vela-incident/",
+        "https://nuclearweaponarchive.org/Safrica/Vela.html"
+      ]
+    },
+    {
+      "claim": "Vela 6911 (Vela 5B) was launched 23 May 1969, so was about ten years old in September 1979; NSArchive: 'the ten-year-old Vela 6911 satellite, which was already more than two years beyond its' design lifetime",
+      "sources": [
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test",
+        "https://nuclearweaponarchive.org/Safrica/Vela.html",
+        "https://en.wikipedia.org/wiki/Vela_(satellite)",
+        "https://en.wikipedia.org/wiki/Vela_incident"
+      ]
+    },
+    {
+      "claim": "The satellite was operating beyond its design lifetime and its EMP (electromagnetic pulse) sensor had failed / was inoperative",
+      "sources": [
+        "https://scienceandglobalsecurity.org/archive/sgs25wright.pdf",
+        "https://nuclearweaponarchive.org/Safrica/Vela.html",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test"
+      ]
+    },
+    {
+      "claim": "Its two bhangmeters (light sensors) both recorded the double flash, but their amplitudes disagreed during the second pulse; this was the panel's main reason to doubt a nuclear origin",
+      "sources": [
+        "https://scienceandglobalsecurity.org/archive/2017/11/the_22_september_1979_vela_inc.html",
+        "https://scienceandglobalsecurity.org/archive/sgs25wright.pdf",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test",
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://nuclearweaponarchive.org/Safrica/Vela.html"
+      ]
+    },
+    {
+      "claim": "The 1980 Ruina panel (for the White House Office of Science and Technology Policy) suggested a 'zoo' event, possibly a small meteoroid striking the satellite whose debris reflected sunlight into the sensors; it judged the signal 'probably not' nuclear but could not rule it out",
+      "sources": [
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test",
+        "https://thebulletin.org/2019/09/double-flash-vela-incident/",
+        "https://scienceandglobalsecurity.org/archive/2017/11/the_22_september_1979_vela_inc.html",
+        "https://en.wikipedia.org/wiki/Vela_incident"
+      ]
+    },
+    {
+      "claim": "Later analysis (Wright & De Geer, Science & Global Security 2017/2018) found no Vela 'zoo' (unexplained) signal had a light curve like the 22 Sept event and judged a meteoroid collision much less likely, the flash being consistent with a nuclear explosion; Los Alamos, Livermore and NRL scientists had also rejected the zoo conclusion at the time",
+      "sources": [
+        "https://scienceandglobalsecurity.org/archive/sgs25wright.pdf",
+        "https://scienceandglobalsecurity.org/archive/sgs26degeer.pdf",
+        "https://scienceandglobalsecurity.org/archive/2017/11/the_22_september_1979_vela_inc.html",
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test"
+      ]
+    },
+    {
+      "claim": "The United States has never officially confirmed the event was a nuclear explosion; still unresolved as of Jan 2026 (Ynetnews 29 Jan 2026: 'The United States has never formally acknowledged that a nuclear explosion took place'); parts of the record remain classified",
+      "sources": [
+        "https://www.ynetnews.com/magazine/article/bj115zey8bl",
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test"
+      ]
+    },
+    {
+      "claim": "Other evidence pointed to a nuclear test: the Naval Research Laboratory hydroacoustic study, iodine-131 in Australian sheep thyroids, the Arecibo ionospheric disturbance; De Geer & Wright 2018 found the evidence consistent with a nuclear test (blind check 2026-11-09 asked for this balance line)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://scienceandglobalsecurity.org/archive/2018/05/the_22_september_1979_vela_inc_1.html",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test"
+      ]
+    }
+  ]
+}
