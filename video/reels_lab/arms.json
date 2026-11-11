@@ -533,6 +533,46 @@
    "test": "series-vs-fresh-1109",
    "series": "sequel-of-vela",
    "telling": 3
+  },
+  "starariel": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "series-vs-fresh-1113",
+   "kind": "person",
+   "series": "sequel-of-startiger",
+   "telling": 2
+  },
+  "devilsprints": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "series-vs-fresh-1113",
+   "kind": "anomaly"
+  },
+  "bathurst": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "series-vs-fresh-1113",
+   "kind": "person"
+  },
+  "celestehold": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "series-vs-fresh-1113",
+   "kind": "person",
+   "series": "sequel-of-maryceleste",
+   "telling": 4
   }
  },
  "byclaude": {

@@ -1,0 +1,48 @@
+{
+ "out": "short-su-bathurst",
+ "kicker": "BENJAMIN BATHURST",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "bathurst",
+   "img": "B01",
+   "vo": "Perleberg, Prussia, eighteen-oh-nine. A British envoy, Benjamin Bathurst, was heading home from Vienna under a false name.",
+   "cap": "PERLEBERG · 1809"
+  },
+  {
+   "src": "bathurst",
+   "img": "B02",
+   "vo": "Around nine that night, he stepped out while his carriage was readied. No one saw where he went. He was never seen again.",
+   "cap": "NEVER SEEN\nAGAIN",
+   "amber": true
+  },
+  {
+   "src": "bathurst",
+   "img": "B03",
+   "vo": "Three weeks later, his trousers turned up in a nearby wood. In a pocket, a letter to his wife.",
+   "cap": "A LETTER\nTO HIS WIFE"
+  },
+  {
+   "src": "bathurst",
+   "img": "B04",
+   "vo": "Some believed he was robbed. Others blamed French agents. Napoleon said he knew nothing of it.",
+   "cap": "ROBBERY?\nFRENCH AGENTS?"
+  },
+  {
+   "src": "bathurst",
+   "img": "B05",
+   "vo": "In eighteen fifty-two, a skeleton was found beneath a house there. It was never identified as him.",
+   "cap": "NEVER\nIDENTIFIED",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "",
+ "frame": "bleed"
+}

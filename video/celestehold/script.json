@@ -1,0 +1,142 @@
+{
+  "title": "The Sounding Rod",
+  "subtitle": "The Mary Celeste \u00b7 Atlantic Ocean, 1872",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the deck and hold of a two-masted 19th-century merchant brigantine at sea in the North Atlantic in December 1872, flat grey overcast daylight, wet weathered wood, tarred rope, iron and brass fittings, melancholy and uncanny, period maritime detail, cinematic tall vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "The Atlantic, eighteen seventy-two. The men who boarded the empty Mary Celeste found a sounding rod on her deck.",
+      "cap": "ATLANTIC \u00b7 1872",
+      "img": "A single long thin pale silvery iron sounding rod with a coil of tarred rope tied to one end, lying diagonally across the centre of a ship's deck of bleached, sun-washed pale grey wooden planks, the rod large, sharp and well lit in the middle third of a tall vertical frame, bright soft overcast daylight from above, high key, light and legible at thumbnail size, empty deck, the base of a mast and a rail softly behind, vertical composition."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "A tool for measuring water in the hold. Beside it, one of her pumps had been partly taken apart.",
+      "cap": "A PUMP\nTAKEN APART",
+      "img": "An old wooden ship's bilge pump on the deck of a 19th-century brigantine, partly dismantled, its iron handle and a few wooden and brass parts lying loose on the wet planks beside it, centred in the middle third of a tall vertical frame, grey overcast daylight, salt-stained wood, no one present, vertical composition."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Two hatches stood open. Below, about three and a half feet of water. Not enough to sink her.",
+      "cap": "3.5 FEET\nOF WATER",
+      "amber": true,
+      "img": "Looking straight down through an open square wooden cargo hatch on a 19th-century sailing ship, the heavy hatch cover lying on the deck beside it, below in the dim hold the tops of wooden barrels standing in dark still water, grey daylight falling through the opening onto the water, the hatch centred in the middle third of a tall vertical frame, vertical composition."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "One theory: a false reading convinced the captain she was sinking, and they left in the only boat.",
+      "cap": "A FALSE\nREADING?",
+      "img": "A small empty wooden rowing boat, a ship's yawl, alone on a heavy grey Atlantic swell, centred in the middle third of a tall vertical frame, oars shipped, no one visible in or near it, low overcast sky, mist on the water, melancholy, vertical composition."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "She stayed afloat and was brought into Gibraltar. Not one of the ten who sailed on her was ever seen again.",
+      "cap": "NEVER\nSEEN AGAIN",
+      "amber": true,
+      "img": "A two-masted wooden 19th-century brigantine afloat and upright on a calm grey Atlantic sea, seen from astern and slightly to one side, centred in the middle third of a tall vertical frame, some sails set and some hanging loose, her deck empty, flat grey daylight, vast open sea and sky, silent and unresolved, vertical composition."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The Mary Celeste was found adrift and deserted in the Atlantic (between the Azores and Portugal / near the Azores) by the Dei Gratia on 4 December 1872 (5 Dec civil date); Oliver Deveau and John Wright went aboard",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste",
+        "https://www.britannica.com/topic/Mary-Celeste"
+      ]
+    },
+    {
+      "claim": "A (makeshift) sounding rod was found lying/abandoned on the deck; Britannica: discovered on deck, suggesting it had been used just before the ship was abandoned",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.britannica.com/topic/Mary-Celeste",
+        "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste"
+      ]
+    },
+    {
+      "claim": "A sounding rod is a tool for measuring the depth of liquid (water) in a ship's hold",
+      "sources": [
+        "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste",
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.britannica.com/topic/Mary-Celeste"
+      ]
+    },
+    {
+      "claim": "One of the ship's two pumps was partially disassembled / out of order, with the sounding rod nearby (RMG); Deveau testified 'He found one pump out of order, and only used the other on his way to Gibraltar'",
+      "sources": [
+        "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste",
+        "https://maryceleste.net/"
+      ]
+    },
+    {
+      "claim": "The fore hatch and lazarette hatch were open/uncovered, their covers on the deck (main hatch secure) -> 'two hatches stood open'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.americanheritage.com/mystery-mary-celeste",
+        "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste",
+        "https://maryceleste.net/"
+      ]
+    },
+    {
+      "claim": "About three and a half feet (1.1 m) of water in the hold (Britannica: more than 3 feet); significant but not alarming / would not have caused panic for a ship her size -> 'not enough to sink her' (she was found seaworthy and sailed on to Gibraltar)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.americanheritage.com/mystery-mary-celeste",
+        "https://www.britannica.com/topic/Mary-Celeste"
+      ]
+    },
+    {
+      "claim": "Theory (named only as a theory): a faulty/false sounding reading (possibly with a malfunctioning pump) led Captain Briggs to believe the ship was foundering/taking on water rapidly and order her abandoned; Deveau himself suggested this",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.britannica.com/topic/Mary-Celeste"
+      ]
+    },
+    {
+      "claim": "The ship's only boat (a yawl stowed across the main hatch) was missing",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste",
+        "https://www.americanheritage.com/mystery-mary-celeste"
+      ]
+    },
+    {
+      "claim": "She stayed afloat; Deveau and two sailors sailed her to Gibraltar, arriving 13 December 1872",
+      "sources": [
+        "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste",
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://maryceleste.net/"
+      ]
+    },
+    {
+      "claim": "Ten people had sailed on her (Captain Briggs, his wife, their two-year-old daughter and seven crew); none was ever seen again; why they left has never been established. Unsolved as of 2026: May 2026 'may have been cracked' coverage (Channel 5 documentary retesting the alcohol-vapour hypothesis) is a hypothesis test, not a resolution",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste",
+        "https://www.iflscience.com/the-mystery-of-the-mary-celeste-ghost-ship-may-have-been-cracked-83526"
+      ]
+    },
+    {
+      "claim": "Caption only: cargo 1,701 barrels of alcohol, nearly intact (nine found empty on unloading at Genoa); provisions for six months",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.britannica.com/topic/Mary-Celeste",
+        "https://www.americanheritage.com/mystery-mary-celeste"
+      ]
+    },
+    {
+      "claim": "NOT USED: 'food on the table / meal laid' legend (later embellishment, not in the record); compass/binnacle damage and missing chronometer/sextant omitted for length",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.americanheritage.com/mystery-mary-celeste"
+      ]
+    }
+  ]
+}

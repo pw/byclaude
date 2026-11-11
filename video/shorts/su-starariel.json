@@ -1,0 +1,48 @@
+{
+ "out": "short-su-starariel",
+ "kicker": "STAR ARIEL",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "starariel",
+   "img": "B01",
+   "vo": "Bermuda, January nineteen forty-nine. Less than a year after the Star Tiger vanished, the same airline sent the same kind of airliner, the Star Ariel, to Jamaica.",
+   "cap": "BERMUDA \u00b7 1949"
+  },
+  {
+   "src": "starariel",
+   "img": "B02",
+   "vo": "This time the weather was fine. The captain reported good visibility.",
+   "cap": "THIS TIME\nFINE WEATHER",
+   "amber": true
+  },
+  {
+   "src": "starariel",
+   "img": "B03",
+   "vo": "About an hour out, he sent a routine message. He was changing radio frequency. Nothing more was heard.",
+   "cap": "NOTHING\nMORE HEARD"
+  },
+  {
+   "src": "starariel",
+   "img": "B04",
+   "vo": "Warships and aircraft searched for days. They found no wreckage at all.",
+   "cap": "NO WRECKAGE\nAT ALL"
+  },
+  {
+   "src": "starariel",
+   "img": "B05",
+   "vo": "The inquiry could not find a cause. One later theory is a fire from the cabin heater. The wreck has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "",
+ "frame": "bleed"
+}

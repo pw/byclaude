@@ -1,0 +1,149 @@
+{
+  "title": "The Envoy",
+  "subtitle": "Benjamin Bathurst · Perleberg, 1809",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a small Prussian market town in late November around 1809, cold blue-grey frost and dusk tones with warm amber lantern light, quiet, exact and uncanny, vertical 9:16 full-bleed composition with one centred subject in the middle third, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Perleberg, Prussia, eighteen-oh-nine. A British envoy, Benjamin Bathurst, was heading home from Vienna under a false name.",
+      "cap": "PERLEBERG · 1809",
+      "img": "Vertical full-bleed scene: a single old timber-framed German coaching inn on a cobbled street of a small town at night, centred in the middle third of the frame, warm amber light glowing from its ground-floor windows and open doorway, a dark early-1800s travelling carriage waiting in front with two harnessed horses, a horn lantern hanging by the horses' heads lighting them clearly, a light frost on the cobbles and roofs, the inn, carriage and horses bright and sharply legible against the cold blue night, no people, no signage, no lettering."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Around nine that night, he stepped out while his carriage was readied. No one saw where he went. He was never seen again.",
+      "cap": "NEVER SEEN\nAGAIN",
+      "amber": true,
+      "img": "Vertical full-bleed scene: a close view of an empty early-1800s travelling carriage standing in a cobbled inn yard at night, centred, its door hanging open onto a dark empty interior, a single horn lantern set on the frosty cobbles beside the carriage step throwing warm amber light, the edge of a harnessed horse just in frame, beyond it only cold blue darkness, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Three weeks later, his trousers turned up in a nearby wood. In a pocket, a letter to his wife.",
+      "cap": "A LETTER\nTO HIS WIFE",
+      "img": "Vertical full-bleed scene: a pair of old grey early-1800s gentleman's trousers lying on frosty grass among dry pine needles in a small fir wood, centred in the frame, a single folded sheet of old damp paper resting on them, its faint pencil marks completely illegible, pale cold winter daylight through the dark fir trunks, quiet and still, no people, no readable text."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Some believed he was robbed. Others blamed French agents. Napoleon said he knew nothing of it.",
+      "cap": "ROBBERY?\nFRENCH AGENTS?",
+      "img": "Vertical full-bleed scene: an old brick town-gate tower of a small Prussian town at night, centred in the frame, a rutted frosty road passing through its arch and running out into open dark country beyond, one dim lantern glowing on the tower wall, a faint mist over the fields, cold blue-grey with a touch of amber, empty and watchful, no people, no signage."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "In eighteen fifty-two, a skeleton was found beneath a house there. It was never identified as him.",
+      "cap": "NEVER\nIDENTIFIED",
+      "amber": true,
+      "img": "Vertical full-bleed scene: a worn, heavy stone threshold slab lifted and left leaning in the dusty doorway of a half-demolished old timber-framed stable, centred in the frame, broken mortar and rubble around it, dark earth beneath, pale grey daylight falling through the open roof beams, dust hanging in the air, quiet and unresolved, nothing else on the ground, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Benjamin Bathurst (b. 1784), British diplomat, had been sent as envoy to Vienna in 1809; after Austria's defeat he was recalled and travelled north via Berlin towards Hamburg to sail home to England",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Benjamin_Bathurst_(diplomat)",
+        "https://web.archive.org/web/20160327213218/https://www.mikedash.com/extras/forteana/bb/bb-paper",
+        "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Bathurst,_Benjamin",
+        "https://www.gutenberg.org/ebooks/44245"
+      ]
+    },
+    {
+      "claim": "He travelled under a false identity, as a merchant named Koch ('Baron de Koch'), his secretary posing as a courier ('Fischer')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Benjamin_Bathurst_(diplomat)",
+        "https://web.archive.org/web/20160327213218/https://www.mikedash.com/extras/forteana/bb/bb-paper",
+        "https://www.gutenberg.org/ebooks/44245",
+        "https://de.wikipedia.org/wiki/Benjamin_Bathurst"
+      ]
+    },
+    {
+      "claim": "He arrived at Perleberg, Prussia, about midday on 25 November 1809, ordered fresh horses at the post house and dined at the White Swan inn",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Benjamin_Bathurst_(diplomat)",
+        "https://web.archive.org/web/20160327213218/https://www.mikedash.com/extras/forteana/bb/bb-paper",
+        "https://www.gutenberg.org/ebooks/44245",
+        "https://de.wikisource.org/wiki/Das_Verschwinden_des_Lord_Bathurst_in_Perleberg_im_Jahre_1809",
+        "https://de.wikipedia.org/wiki/Benjamin_Bathurst"
+      ]
+    },
+    {
+      "claim": "Departure was set for about 9pm; around then he went out to the carriage being readied (Mayor of Perleberg's report: 'one of the travellers absented himself and returned no more'); no one particularly observed where he went (Baring-Gould; New Pitaval: 'Where he went nobody knows'); Gartenlaube 1891: from that moment Bathurst was not seen again",
+      "sources": [
+        "https://web.archive.org/web/20160327213218/https://www.mikedash.com/extras/forteana/bb/bb-paper",
+        "https://www.gutenberg.org/ebooks/44245",
+        "https://de.wikisource.org/wiki/Das_Verschwinden_des_Lord_Bathurst_in_Perleberg_im_Jahre_1809",
+        "https://en.wikipedia.org/wiki/Benjamin_Bathurst_(diplomat)",
+        "https://de.wikipedia.org/wiki/Benjamin_Bathurst"
+      ]
+    },
+    {
+      "claim": "Searches (river dragged, outhouses, woods, ditches) found no trace of him; he was never seen again",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Benjamin_Bathurst_(diplomat)",
+        "https://web.archive.org/web/20160327213218/https://www.mikedash.com/extras/forteana/bb/bb-paper",
+        "https://www.gutenberg.org/ebooks/44245",
+        "https://de.wikisource.org/wiki/Das_Verschwinden_des_Lord_Bathurst_in_Perleberg_im_Jahre_1809"
+      ]
+    },
+    {
+      "claim": "On 16 December 1809 (three weeks later) two women gathering wood found his trousers/pantaloons in a small wood outside Perleberg (near Quitzow, ~3 miles north)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Benjamin_Bathurst_(diplomat)",
+        "https://web.archive.org/web/20160327213218/https://www.mikedash.com/extras/forteana/bb/bb-paper",
+        "https://www.gutenberg.org/ebooks/44245",
+        "https://de.wikisource.org/wiki/Das_Verschwinden_des_Lord_Bathurst_in_Perleberg_im_Jahre_1809",
+        "https://de.wikipedia.org/wiki/Benjamin_Bathurst"
+      ]
+    },
+    {
+      "claim": "A letter from Bathurst to his wife was found in a pocket of the trousers (The Times, 20 Jan 1810, quoted on Wikipedia: 'a letter in them to his wife'; Baring-Gould: pencil letter to his wife; Gartenlaube 1891: 'einen Brief Bathursts an seine Gattin'). NOTE: 'half-finished/unfinished' rests on Baring-Gould only, so vo says just 'a letter'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Benjamin_Bathurst_(diplomat)",
+        "https://www.gutenberg.org/ebooks/44245",
+        "https://de.wikisource.org/wiki/Das_Verschwinden_des_Lord_Bathurst_in_Perleberg_im_Jahre_1809"
+      ]
+    },
+    {
+      "claim": "Theories: robbery by local people (Prussian commander Klitzing's view; the Schmidt family and inn servants suspected; his manservant's account) vs. seizure by French agents (the Times 1810, the family's belief) — theories only, never proven",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Benjamin_Bathurst_(diplomat)",
+        "https://web.archive.org/web/20160327213218/https://www.mikedash.com/extras/forteana/bb/bb-paper",
+        "https://www.gutenberg.org/ebooks/44245",
+        "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Bathurst,_Benjamin"
+      ]
+    },
+    {
+      "claim": "Napoleon denied involvement (told Mrs Bathurst he knew nothing of it; French government also denied responsibility in Le Moniteur, 29 Jan 1810)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Benjamin_Bathurst_(diplomat)",
+        "https://web.archive.org/web/20160327213218/https://www.mikedash.com/extras/forteana/bb/bb-paper",
+        "https://www.gutenberg.org/ebooks/44245",
+        "https://de.wikipedia.org/wiki/Benjamin_Bathurst"
+      ]
+    },
+    {
+      "claim": "On 15 April 1852 a human skeleton was found beneath the stable threshold of a house being demolished in Perleberg, about 300 paces from the White Swan; Bathurst's sister was shown the skull and would not/could not recognise it as his; no further official inquiry; it was never identified as him",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Benjamin_Bathurst_(diplomat)",
+        "https://web.archive.org/web/20160327213218/https://www.mikedash.com/extras/forteana/bb/bb-paper",
+        "https://www.gutenberg.org/ebooks/44245",
+        "https://de.wikisource.org/wiki/Das_Verschwinden_des_Lord_Bathurst_in_Perleberg_im_Jahre_1809"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of 2026: his fate has never been established and no remains have been identified as his (Wikipedia: sister 'could not conclusively say'; de.wikipedia files it under 'Ungeklärter Kriminalfall'; DNB: 'his death remains a mystery'); 2026 coverage (Britain Untold, 31 May 2026) still presents it as unresolved; no 2024-2026 identification/DNA news found",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Benjamin_Bathurst_(diplomat)",
+        "https://de.wikipedia.org/wiki/Benjamin_Bathurst",
+        "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Bathurst,_Benjamin",
+        "https://www.britainuntold.co.uk/articles/benjamin-bathurst-the-diplomat-who-vanished-in-broad-daylight"
+      ]
+    }
+  ]
+}

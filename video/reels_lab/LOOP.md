@@ -198,3 +198,16 @@ over-performs is a cheap signal for which ones to make as films.
   voynichvellum) vs 2nd (doraenigma, waratahsearch) for fatigue.
 - Instrument: extra snaps at 05:45Z + 19:45Z (cron) so both slots get a true ~4h read.
 - Owner model: `~/.claude/owner-models/reels-owner.md`.
+
+## 2026-11-11: mid-test read; four extension films built (queue now through 11-14)
+- Test reads at first snap ≥14h: fresh startiger **773** (a NEW subject broke out), griffon 282; series voynichvellum 737,
+  deeringbottle 224 @8h and flat. 1/2 vs 1/2 so far. One more fresh ≥425 (upsweep or ninthlegion) ⇒ the 11-09 test FAILS.
+- Built, blind-checked, uploaded (all bleed/stamp, tag `series-vs-fresh-1113`; counted only if the first test ends
+  inconclusive, pre-registered in the owner model): **starariel** (Star Tiger's sister airliner, 1949; FIX ×2: "clear
+  skies" → "fine weather", heater fire = "later theory") 11-13 01:45Z · **devilsprints** (Devon 1855; FIX ×2 + mine: the
+  100-mile claim attributed to one 1855 letter, "mostly in single file", cap "REPORTED ON ROOFTOPS" so the big text doesn't
+  assert what the VO only reports) 15:45Z · **bathurst** (Perleberg 1809; FIX: Napoleon "said he knew nothing of it") 11-14
+  01:45Z · **celestehold** (4th Mary Celeste: the sounding rod, pump, 3.5 ft of water; CLEAN) 15:45Z.
+- Image note: the brighter regen of celestehold B01 drew a rod with a hilt, which reads as a SWORD, and the "bloodstained
+  sword" is a real Mary Celeste legend. Kept the original rod and lifted its exposure (gamma 0.72) instead.
+- Cron env trap hit: `_build_images.py` needs fnm node on PATH AND `source ~/.config/api-keys/keys.env` (KIE_API_KEY).

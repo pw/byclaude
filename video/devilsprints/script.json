@@ -1,0 +1,148 @@
+{
+  "title": "The Devil's Footprints",
+  "subtitle": "The Devil's Footprints · Devon, 1855",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, rural south Devon in deep winter snow in the 1850s, pale dawn and dusk light, cold white and blue-grey tones with a faint warm amber glow, quiet, exact and uncanny, vertical 9:16 full-bleed composition with one centred subject in the middle third, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Devon, England, February eighteen fifty-five. After heavy snow, people woke to lines of small hoof-shaped prints.",
+      "cap": "DEVON · 1855",
+      "img": "Vertical full-bleed scene: a single line of small hoof-shaped prints, each a little U-shaped mark about the size of a palm, pressed cleanly into smooth fresh snow, running from the bottom foreground straight up the centre of the frame toward the whitewashed cob wall and snow-laden thatched roof of one small Devon cottage at dawn, bright clean white snow, pale pink and blue sky, every print sharp and legible, no footprints of people, no animals visible, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Mostly in single file, about four inches long. Reports said they crossed rooftops and high walls.",
+      "cap": "REPORTED ON\nROOFTOPS",
+      "amber": true,
+      "img": "Vertical full-bleed scene: the ridge of a snow-covered Victorian slate cottage roof seen close, centred in the middle third of the frame, a neat single line of small hoof-shaped prints running along the untouched snow on the roof, a brick chimney at one end, bright pale dawn light, cold blue-white sky, no people, no animals."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "They were reported in more than thirty places, on both sides of the Exe estuary. Some said the Devil had walked.",
+      "cap": "BOTH SIDES\nOF THE EXE",
+      "img": "Vertical full-bleed scene: a wide winter estuary at first light, grey still water stretching across the middle of the frame between two low snow-covered shores, a small line of hoof-shaped prints in the snow of the near shore leading to the water's edge in the centre foreground, a distant snowy far bank with a faint church tower, pale cold sky, no boats, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "One letter at the time claimed a trail ran a hundred miles in a night. The farthest anyone is known to have followed one was about five.",
+      "cap": "ABOUT\nFIVE MILES",
+      "img": "Vertical full-bleed scene: a long single line of small hoof-shaped prints meandering away across a broad snow-covered Devon field from the foreground up the centre of the frame, growing tiny in the distance where it reaches a dark hedgerow and a gate under a pale winter sky, bright snow, long soft shadows, no people, no animals."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Donkeys, wood mice, a runaway balloon, a hoax. All remain theories. None explains every mark.",
+      "cap": "NEVER\nEXPLAINED",
+      "amber": true,
+      "img": "Vertical full-bleed scene: a quiet snow-covered country lane in south Devon at dusk, the line of small hoof-shaped prints running up the centre of the lane between low snowy hedges, softening and blurring where the snow begins to thaw, a single bare oak tree against a cold blue-grey sky with a faint amber glow on the horizon, silent and unresolved, no people, no animals."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The prints appeared in south/east Devon, England, around the Exe estuary, on the night of 8-9 February 1855 (and possibly one or two later nights), after a heavy snowfall",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Devil%27s_Footprints",
+        "https://www.discoveryuk.com/mysteries/the-mystery-of-the-devils-footprints/",
+        "https://mysteriousbritain.co.uk/?p=62",
+        "https://theghostinmymachine.com/2017/12/11/unresolved-the-devils-footprints-the-great-devon-mystery-of-1855/"
+      ]
+    },
+    {
+      "claim": "The marks were hoof-like (likened to a donkey's shoe / cloven hoof in contemporary reports; Weekly Dispatch 18 Feb 1855 reprinted in Bell's Life in Sydney 26 May 1855: 'closely resembled that of a donkey's shoe')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Devil%27s_Footprints",
+        "https://trove.nla.gov.au/newspaper/article/59760254",
+        "https://www.discoveryuk.com/mysteries/the-mystery-of-the-devils-footprints/"
+      ]
+    },
+    {
+      "claim": "Most prints were about 4 inches long and ran mostly in single file (ILN 24 Feb 1855: about four inches long, in a single line)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Devil%27s_Footprints",
+        "https://theghostinmymachine.com/2017/12/11/unresolved-the-devils-footprints-the-great-devon-mystery-of-1855/",
+        "https://www.historicalblindness.com/episodes//blind-spot-tracking-the-devil-in-devon"
+      ]
+    },
+    {
+      "claim": "Reports said the prints crossed rooftops and high walls (Weekly Dispatch 18 Feb 1855: 'on the tops of houses and narrow walls, in gardens and court-yards, enclosed by high walls'; the ILN 'South Devon' letter of 24 Feb 1855 reported rooftops) — phrased as REPORTED because the rooftop claim rests on few witnesses",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Devil%27s_Footprints",
+        "https://trove.nla.gov.au/newspaper/article/59760254",
+        "https://www.historicmysteries.com/?p=40179",
+        "https://www.historicalblindness.com/episodes//blind-spot-tracking-the-devil-in-devon"
+      ]
+    },
+    {
+      "claim": "Marks were reported from more than 30 places, almost all in south Devon (Dash 1994)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Devil%27s_Footprints",
+        "https://www.historicalblindness.com/episodes//blind-spot-tracking-the-devil-in-devon",
+        "https://www.Wikipedia.org/wiki/Devil%27s_Footprints"
+      ]
+    },
+    {
+      "claim": "Hoofmarks were found on both sides of the Exe estuary (Exmouth/Topsham/Lympstone on the east, Dawlish/Teignmouth on the west; The Times 16 Feb 1855); Dash: 'All we can say with certainty is that hoofmarks were found on both sides of the Exe estuary' — we do NOT claim a trail crossed the water",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Devil%27s_Footprints",
+        "https://www.historicmysteries.com/?p=40179",
+        "https://www.discoveryuk.com/mysteries/the-mystery-of-the-devils-footprints/"
+      ]
+    },
+    {
+      "claim": "Some attributed the marks to the Devil/Satan and the subject was raised from the pulpit (Weekly Dispatch: 'The superstitious go so far as to believe that they are the marks of Satan himself... the subject has been descanted on from the pulpit'; The Times 16 Feb 1855 noted the same)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Devil%27s_Footprints",
+        "https://trove.nla.gov.au/newspaper/article/59760254",
+        "https://www.historicmysteries.com/?p=40179",
+        "https://www.discoveryuk.com/mysteries/the-mystery-of-the-devils-footprints/"
+      ]
+    },
+    {
+      "claim": "The 'hundred miles' figure traces to a letter signed 'South Devon' in the Illustrated London News, 24 Feb 1855 ('the actual progress must have exceeded a hundred miles'); later legend made it one trail in one night; investigators doubt it",
+      "sources": [
+        "https://www.historicmysteries.com/?p=40179",
+        "https://en.wikipedia.org/wiki/Devil%27s_Footprints",
+        "https://mysteriousbritain.co.uk/?p=62"
+      ]
+    },
+    {
+      "claim": "Mike Dash (Fortean Studies 1, 1994) found the farthest any party is shown to have followed one trail was about five miles (a Dawlish party), and that the marks meandered rather than forming one line",
+      "sources": [
+        "https://www.historicmysteries.com/?p=40179",
+        "https://www.historicalblindness.com/episodes//blind-spot-tracking-the-devil-in-devon"
+      ]
+    },
+    {
+      "claim": "Proposed explanations, all theories only: donkeys/ponies and wood mice and hoaxes (Dash 1994), a runaway experimental balloon from Devonport trailing shackles on its ropes (Geoffrey Household via 'Major Carter'), plus badger (Owen) and kangaroo (Musgrave)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Devil%27s_Footprints",
+        "https://www.discoveryuk.com/mysteries/the-mystery-of-the-devils-footprints/",
+        "https://www.historicalblindness.com/episodes//blind-spot-tracking-the-devil-in-devon",
+        "https://www.historicmysteries.com/?p=40179"
+      ]
+    },
+    {
+      "claim": "No explanation accounts for every mark: Dash admitted his combination 'cannot explain all the reported marks' and 'the mystery remains'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Devil%27s_Footprints",
+        "https://www.historicmysteries.com/?p=40179",
+        "https://www.discoveryuk.com/mysteries/the-mystery-of-the-devils-footprints/"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of 2026: no explanation is accepted; a 2024 TV claim (Weird Britain, BLAZE: an escaped big cat) was presented only as 'probably the most plausible' theory; 2025 coverage still treats it as unexplained",
+      "sources": [
+        "https://uk.news.yahoo.com/mystery-devils-footprints-appeared-snow-064221161.html",
+        "https://www.discoveryuk.com/mysteries/the-mystery-of-the-devils-footprints/",
+        "https://en.wikipedia.org/wiki/Devil%27s_Footprints",
+        "https://www.mentalfloss.com/article/75045/ongoing-mystery-devils-footprints"
+      ]
+    }
+  ]
+}

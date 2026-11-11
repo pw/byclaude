@@ -1,0 +1,118 @@
+{
+  "title": "Star Ariel",
+  "subtitle": "Star Ariel · Bermuda to Jamaica, 1949",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the open Atlantic seen from high altitude on a clear morning in the late 1940s, bright sunlit calm blue sea under a cloudless sky, pale blue, silver and soft gold tones, serene and uncanny, vertical 9:16 full-bleed composition with one centred subject in the middle third, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Bermuda, January nineteen forty-nine. Less than a year after the Star Tiger vanished, the same airline sent the same kind of airliner, the Star Ariel, to Jamaica.",
+      "cap": "BERMUDA · 1949",
+      "img": "Vertical full-bleed scene: a single 1940s four-engine propeller airliner with a long polished silver fuselage, straight wings and twin tail fins, an Avro Tudor type, large and centred in the middle third of the frame, seen from slightly above and to the side in bright morning sunlight, flying level high over a calm sunlit blue ocean far below, propellers blurred, the whole aircraft sharp and clearly legible, no livery, no markings, no lettering, no registration letters."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "This time the weather was fine. The captain reported good visibility.",
+      "cap": "THIS TIME\nFINE WEATHER",
+      "amber": true,
+      "img": "Vertical full-bleed scene: the view forward through the framed windscreen of a 1940s airliner cockpit at high altitude, a flawless cloudless pale-blue sky and a calm glittering ocean far below centred in the glass, the top edge of a worn instrument panel with round analogue dials along the bottom of the frame, bright clean morning light, no people, no legible text."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "About an hour out, he sent a routine message. He was changing radio frequency. Nothing more was heard.",
+      "cap": "NOTHING\nMORE HEARD",
+      "img": "Vertical full-bleed scene: inside the radio station of a 1940s airliner in daylight, an old valve radio receiver with a large round tuning dial centred in frame, its pointer mid-turn, a brass Morse key and a pair of headphones resting on the small desk beside it, a small window showing bright empty blue sky, no people, no legible text."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Warships and aircraft searched for days. They found no wreckage at all.",
+      "cap": "NO WRECKAGE\nAT ALL",
+      "img": "Vertical full-bleed scene: a lone grey 1940s battleship small and centred in the middle of a vast empty sunlit Atlantic, seen from high above, its long white wake trailing behind it, nothing else anywhere on the calm blue water, hazy horizon, no people, no markings."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The inquiry could not find a cause. One later theory is a fire from the cabin heater. The wreck has never been found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "Vertical full-bleed scene: the calm empty open ocean seen from low above the water under a clear sky, a single bright patch of sunlight glittering on the gentle swell in the centre of the frame, nothing on the surface, vast, quiet and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Star Ariel (G-AGRE), a British South American Airways Avro Tudor IV (Mk IVB), left Kindley Field, Bermuda at 08:41 on 17 January 1949 for Kingston, Jamaica, and never arrived",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Ariel_disappearance",
+        "https://api.parliament.uk/historic-hansard/commons/1949/jan/19/missing-bsaa-aircraft",
+        "https://api.parliament.uk/historic-hansard/lords/1949/jan/19/loss-of-the-star-ariel",
+        "https://planeandpilotmag.com/the-two-missing-planes-that-helped-create-the-bermuda-triangle-theory/",
+        "https://aviation-safety.net/wikibase/336483"
+      ]
+    },
+    {
+      "claim": "Same airline (BSAA) and same aircraft type (Tudor IV) as Star Tiger, lost 30 January 1948, i.e. less than a year earlier (MCA 1948-49 report: 'almost exactly a year after')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Ariel_disappearance",
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance",
+        "https://flywiththestars.co.uk/Documents/MCA%201948-49.htm",
+        "https://planeandpilotmag.com/the-two-missing-planes-that-helped-create-the-bermuda-triangle-theory/"
+      ]
+    },
+    {
+      "claim": "Weather was good / clear: Wikipedia 'excellent', no cloud above 10,000 ft on a route flown at 18,000 ft; report 'no weather complications at all'; Plane & Pilot 'calm, clear skies'; History.com 'the pilot reported fine weather conditions'; captain reported 'flying in good visibility at 18,000 ft'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Ariel_disappearance",
+        "https://thequesterfiles.com/tudor_iv__star_ariel__--_the_q.html",
+        "https://planeandpilotmag.com/the-two-missing-planes-that-helped-create-the-bermuda-triangle-theory/",
+        "https://www.history.com/articles/mh370-missing-passenger-flights-mysteries"
+      ]
+    },
+    {
+      "claim": "About an hour after departure (09:42, departure 08:41) the captain sent a routine message: over 30°N at 09:37, changing frequency to MRX; no further message was received",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Ariel_disappearance",
+        "https://thequesterfiles.com/tudor_iv__star_ariel__--_the_q.html",
+        "https://planeandpilotmag.com/the-two-missing-planes-that-helped-create-the-bermuda-triangle-theory/",
+        "https://www.history.com/articles/mh370-missing-passenger-flights-mysteries"
+      ]
+    },
+    {
+      "claim": "Search by aircraft and a US Navy task force (USS Missouri and others, dozens of ships) ran until 23 January (about six days) and found no wreckage, debris or oil slick",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Ariel_disappearance",
+        "https://thequesterfiles.com/tudor_iv__star_ariel__--_the_q.html",
+        "https://planeandpilotmag.com/the-two-missing-planes-that-helped-create-the-bermuda-triangle-theory/",
+        "https://www.history.com/articles/mh370-missing-passenger-flights-mysteries"
+      ]
+    },
+    {
+      "claim": "The inquiry found no cause: report (Air Commodore Vernon Brown, Dec 1949) 'the cause of the accident is unknown'; MCA 1948-49 annual report 'impossible at the Inquiry to find any definite cause'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Ariel_disappearance",
+        "https://flywiththestars.co.uk/Documents/MCA%201948-49.htm",
+        "https://thequesterfiles.com/tudor_iv__star_ariel__--_the_q.html",
+        "https://api.parliament.uk/historic-hansard/lords/1949/mar/01/future-use-of-tudor-iv-aircraft"
+      ]
+    },
+    {
+      "claim": "Theory (theory only): cabin heater beneath the cockpit floor could have caused a fire/explosion (former BSAA pilots Don Mackintosh and Peter Duffey, 2009)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Ariel_disappearance",
+        "https://planeandpilotmag.com/the-two-missing-planes-that-helped-create-the-bermuda-triangle-theory/"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of 2026: wreck never found; no 2024-2026 wreck find reported (searches 2026-11-11); History.com (updated July 2026) still lists it among unsolved missing flights",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Ariel_disappearance",
+        "https://www.history.com/articles/mh370-missing-passenger-flights-mysteries",
+        "https://planeandpilotmag.com/the-two-missing-planes-that-helped-create-the-bermuda-triangle-theory/"
+      ]
+    }
+  ]
+}
