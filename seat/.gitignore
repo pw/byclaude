@@ -1,1 +1,5 @@
 __pycache__/
+rain/frames*/
+rain/film*/
+rain/*.mp4
+rain/*.log
