@@ -1,0 +1,130 @@
+{
+  "title": "Flight 19",
+  "subtitle": "Flight 19 · off Florida, 1945",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the open Atlantic Ocean off Florida in December 1945, from bright winter afternoon into dusk and night, deep navy, slate-blue, silver and pale gold tones, quiet and uncanny, vertical 9:16 full-bleed composition with one centred subject in the middle third, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Off Florida, December nineteen forty-five. Five Navy torpedo bombers, fourteen men, flew a routine training flight. None came back.",
+      "cap": "OFF FLORIDA · 1945",
+      "img": "Vertical full-bleed scene: a single 1940s single-engine US Navy torpedo bomber, a TBM Avenger type with a deep barrel-shaped fuselage, broad mid-mounted wings, a long glazed canopy and a small rear turret, painted dark glossy navy blue, large and centred in the middle third of the frame, seen from slightly above and to the side, flying level in bright afternoon sunlight over a bright glittering blue sea far below, propeller blurred, the whole aircraft sharp and clearly legible at thumbnail size, canopy glass reflecting the sky with no crew visible, no markings, no insignia, no numbers, no lettering."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Their leader radioed: \"Both of my compasses are out.\" He was sure he was over the Keys.",
+      "cap": "BOTH COMPASSES\nOUT",
+      "amber": true,
+      "img": "Vertical full-bleed scene: a round 1940s liquid-filled aircraft magnetic compass mounted on the frame of a cockpit canopy, centred in the middle third, its card swung off and tilted between headings, bright afternoon sun glinting on its glass dome and worn black housing, beyond the canopy a bright sea scattered with small low islands of pale sand and green scrub far below, no people, no hands, no legible numbers or letters."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Among his last messages: \"When the first plane drops below ten gallons, we all go down together.\"",
+      "cap": "WE ALL GO\nDOWN TOGETHER",
+      "img": "Vertical full-bleed scene: a single round 1940s aircraft fuel gauge set in a worn dark instrument panel, centred in the middle third, its needle resting just above the bottom of the dial, the last orange light of a winter dusk falling across the glass through the canopy, beyond it a darkening rough sea with whitecaps under heavy cloud, plain dial face, no legible numbers or letters, no people, no hands."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Thirteen men went searching in a flying boat. Minutes later, a tanker reported a burst of flames, and a pool of oil.",
+      "cap": "A BURST\nOF FLAMES",
+      "img": "Vertical full-bleed scene: a lone 1940s oil tanker small and centred in the middle third on a dark heaving sea at night, a single searchlight beam from its bridge sweeping low across the water, a broad smooth sheen of oil on the swell catching the light around it, a faint orange glow fading on the low clouds above the horizon, no people, no markings, no lettering."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Hundreds of ships and planes searched for five days. The Navy's finding: cause unknown. No wreckage has ever been identified.",
+      "cap": "NEVER\nIDENTIFIED",
+      "amber": true,
+      "img": "Vertical full-bleed scene: looking straight down from high above onto a vast empty open ocean in bright morning sunlight, deep blue water with long gentle swells and a few small whitecaps, the small dark cross-shaped shadow of an unseen search aircraft falling on the water in the centre of the frame, nothing else on the surface, vast, quiet and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "5 December 1945: five US Navy TBM Avenger torpedo bombers (Flight 19) took off from NAS Fort Lauderdale at 14:10 on a routine navigation/bombing training flight ('Navigation Problem No. 1') over the Bahamas, off Florida, with 14 men (six Navy, eight Marines)",
+      "sources": [
+        "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-057/h-057-4.html",
+        "https://en.wikipedia.org/wiki/Flight_19",
+        "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19",
+        "https://www.history.com/this-day-in-history/december-5/aircraft-squadron-lost-in-the-bermuda-triangle"
+      ]
+    },
+    {
+      "claim": "None came back: 'neither the aircraft nor the 14 men ... were ever seen again' (NHHC); 'No trace of the bodies or aircraft was ever found' (History.com)",
+      "sources": [
+        "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-057/h-057-4.html",
+        "https://www.history.com/this-day-in-history/december-5/aircraft-squadron-lost-in-the-bermuda-triangle",
+        "https://en.wikipedia.org/wiki/Flight_19"
+      ]
+    },
+    {
+      "claim": "The leader, Lt. Charles C. Taylor (FT-28), radioed 'Both my compasses are out and I am trying to find Fort Lauderdale, Florida ... I am sure I'm in the Keys but I don't know how far down' (radio record as quoted by NHHC, Wikipedia and History.com). Only the first sentence is quoted in VO.",
+      "sources": [
+        "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-057/h-057-4.html",
+        "https://en.wikipedia.org/wiki/Flight_19",
+        "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19"
+      ]
+    },
+    {
+      "claim": "Among Taylor's last (garbled) messages: 'All planes close up tight ... we'll have to ditch unless landfall ... when the first plane drops below ten gallons, we all go down together.' (NHHC: 'The last garbled messages'; Wikipedia gives the same wording, last heard ~18:20, other reports 19:04). VO says 'Among his last messages' to avoid claiming it was the very last.",
+      "sources": [
+        "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-057/h-057-4.html",
+        "https://en.wikipedia.org/wiki/Flight_19"
+      ]
+    },
+    {
+      "claim": "A PBM-5 Mariner flying boat ('Training 49', BuNo 59225) with 13 men took off from NAS Banana River at 19:27 to search; last radio call 19:30; never heard from again / never returned",
+      "sources": [
+        "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-057/h-057-4.html",
+        "https://en.wikipedia.org/wiki/Flight_19",
+        "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19"
+      ]
+    },
+    {
+      "claim": "Minutes later the tanker SS Gaines Mills reported: 'At 1950, observed a burst of flames, apparently an explosion, leaping flames 100 feet high and burning for ten minutes ... At present passing through a big pool of oil' (NHHC); Wikipedia quotes the same report; History.com: a passing merchant ship 'spotted a fireball and found evidence of an oil slick'. 19:27 takeoff to 19:50 = ~23 minutes. VO states only what the ship reported.",
+      "sources": [
+        "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-057/h-057-4.html",
+        "https://en.wikipedia.org/wiki/Flight_19",
+        "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19",
+        "https://skeptoid.com/episodes/4417"
+      ]
+    },
+    {
+      "claim": "Search: 'Over the next five days, a massive search was conducted at sea and overland Florida' and 'one of the largest air and sea searches in history' (NHHC); 'more than 300 boats and aircraft' over five days (History.com); 'hundreds of ships and aircraft combed thousands of square miles' (History.com This Day). Square-mile figures vary by source (200,000-300,000) and are not used.",
+      "sources": [
+        "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-057/h-057-4.html",
+        "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19",
+        "https://www.history.com/this-day-in-history/december-5/aircraft-squadron-lost-in-the-bermuda-triangle"
+      ]
+    },
+    {
+      "claim": "Navy finding: the board originally blamed the leader; after his mother's petition the record was amended to 'cause unknown' ('The cause of the accident remains unknown', NHHC; History.com renders it 'causes or reasons unknown')",
+      "sources": [
+        "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-057/h-057-4.html",
+        "https://en.wikipedia.org/wiki/Flight_19",
+        "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19"
+      ]
+    },
+    {
+      "claim": "No wreckage of Flight 19 has ever been identified: 'No confirmed trace of the planes or the 14 pilots and aircrewmen aboard has ever been found' (NHHC; also no confirmed trace of the PBM). The five Avengers found off Fort Lauderdale in 1991 (tail codes FT-241, FT-87 etc.) were shown not to be Flight 19 (FT-3, FT-28, FT-36, FT-81, FT-117); other finds (1986, 1992, 2015) also unconfirmed or other aircraft.",
+      "sources": [
+        "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-057/h-057-4.html",
+        "https://en.wikipedia.org/wiki/Flight_19",
+        "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19",
+        "https://www.upi.com/Archives/1991/06/04/Lost-Squadron-remains-lost/4646676008000/"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of November 2026: no 2024-2026 identification or wreck find reported (web searches 2026-11-12); History.com article (updated 6 March 2025) and NHHC H-gram both state no wreckage was ever confirmed",
+      "sources": [
+        "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19",
+        "https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-057/h-057-4.html",
+        "https://en.wikipedia.org/wiki/Flight_19"
+      ]
+    }
+  ]
+}

@@ -211,3 +211,18 @@ over-performs is a cheap signal for which ones to make as films.
 - Image note: the brighter regen of celestehold B01 drew a rod with a hilt, which reads as a SWORD, and the "bloodstained
   sword" is a real Mary Celeste legend. Kept the original rod and lifted its exposure (gamma 0.72) instead.
 - Cron env trap hit: `_build_images.py` needs fnm node on PATH AND `source ~/.config/api-keys/keys.env` (KIE_API_KEY).
+
+## 2026-11-12: test 6 of 8 read; four ordinary films built (queue now through 11-16)
+- Test reads (first snap >=14h unless noted): series voynichvellum 737, deeringbottle 225, roanokestone **481 @13h** (passes),
+  velasat 193 @3h (read 18Z; velaclues had 626 at 3h, so this one looks weak). Fresh startiger 773, griffon 282, upsweep 199,
+  ninthlegion posts 15:45Z today (read 06Z 11-13). Series 2/3 >=425, fresh 1/3. PASS needs velasat >=425 AND ninthlegion low;
+  FAIL needs ninthlegion >=425; anything else is inconclusive and the 11-13/14 extension films count.
+- Built, blind-checked, uploaded (bleed/stamp, NOT in the test): **oiseaublanc** (L'Oiseau Blanc 1927, new subject in Star Tiger's
+  class; CLEAN) 11-15 01:45Z · **waratahsawyer** (3rd Waratah: Claude Sawyer's inquiry testimony; FIX x2: other passengers also left
+  at Durban, so "A passenger" not "One passenger"; the three sword dreams were in ONE night) 15:45Z · **flight19lost** (a new film on
+  Flight 19; the original died in the 10-23 throttle so the subject never had a fair read; FIX: quote to the Navy wording "Both of
+  my compasses are out") 11-16 01:45Z · **voynichletter** (4th Voynich: Marci's letter, 600 ducats, Kircher; CLEAN) 15:45Z.
+- KILLED at the writer's truth gate: **Bouvet Island lifeboat**. A 1960 Soviet publication records a Slava-9 shore party stranded
+  there in Nov 1958 and lifted off by helicopter; Mike Dash (the case's main historian) calls it a credible solution. No stamp, no film.
+- Image trap: a film `grade` that names "an ocean liner" makes every beat draw one, even a "no ship" beat, and it drew a FOUR-funnel
+  liner (the Waratah had one). waratahsawyer B05 was generated without the grade. For "empty sea" beats, keep the vessel out of the grade.

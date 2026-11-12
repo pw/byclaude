@@ -1,0 +1,130 @@
+{
+  "title": "L'Oiseau Blanc",
+  "subtitle": "L'Oiseau Blanc · Paris to New York, 1927",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the open North Atlantic sea and its coast under a pale dawn sky in the late 1920s, soft pearl white, silver and pale gold tones, quiet and uncanny, vertical 9:16 full-bleed composition with one centred subject in the middle third, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Paris, May nineteen twenty-seven. Twelve days before Lindbergh, a white biplane took off to fly non-stop to New York.",
+      "cap": "PARIS · 1927",
+      "img": "Vertical full-bleed scene: one white 1920s single-engine biplane with two stacked wings, a wooden propeller and an open cockpit, large and centred in the middle third of the frame, seen from slightly to the side and below, flying level and well lit by low dawn sunlight against a pale pearl-and-gold dawn sky over calm grey-blue water far below, the whole aircraft sharp and clearly legible at thumbnail size, plain white fabric and paint, no markings, no insignia, no emblem, no lettering, no registration, no visible pilot, no people, no faces."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Soon after take-off, it dropped its landing gear to save weight. It was meant to land on the water at New York.",
+      "cap": "NO LANDING\nGEAR",
+      "amber": true,
+      "img": "Vertical full-bleed scene: a detached 1920s biplane undercarriage, two large wire-spoked wheels with fabric-covered hubs joined by a steel axle and V-shaped struts, centred in the middle third of the frame, tumbling slowly through pale empty dawn air, lit by soft low sunlight, sharp and clearly legible, a faint hazy coastline far below, nothing else in the sky, no people, no text."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "It was seen leaving the French coast. A Paris newspaper reported it had arrived. It never did.",
+      "cap": "NEVER\nARRIVED",
+      "img": "Vertical full-bleed scene: tall pale chalk sea cliffs at the edge of a calm grey sea at dawn seen from out over the water, and high above the open sea a single small white biplane centred in the middle third of the frame, heading away from the land toward an empty horizon, soft pearl and gold light, mist on the water, no buildings, no boats, no people, no text."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "People in Newfoundland and Maine reported hearing an engine. None of it was ever confirmed.",
+      "cap": "NEVER\nCONFIRMED",
+      "img": "Vertical full-bleed scene: a dense pale fog bank rolling in over a dark rocky shoreline lined with spruce trees at dawn, a soft diffuse bright glow in the fog centred in the middle third of the frame, the grey sea calm in the foreground, empty, hushed and uncanny, no aircraft visible, no buildings, no people, no text."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Decades of searches have found no confirmed wreckage. The only piece known is the landing gear it dropped.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "Vertical full-bleed scene: the calm empty open North Atlantic seen from low above the water under a pale dawn sky, a single bright patch of early sunlight glittering on the gentle swell in the centre of the frame, nothing on the surface, a thin mist on the horizon, vast, quiet and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "L'Oiseau Blanc, a white Levasseur PL.8 single-engine biplane flown by Charles Nungesser and François Coli, took off from Le Bourget, Paris at about 05:17-05:18 on 8 May 1927 to fly non-stop to New York (Orteig Prize attempt)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L%27Oiseau_Blanc",
+        "https://tighar.org/Projects/PMG/PMG.html",
+        "https://explorersweb.com/?p=109426",
+        "https://www.museeairespace.fr/wp-content/uploads/sites/2/2024/07/Press-kit-ENG.pdf"
+      ]
+    },
+    {
+      "claim": "Twelve days before Lindbergh: Lindbergh took off from Roosevelt Field, New York on 20 May 1927",
+      "sources": [
+        "https://www.upi.com/amp/Archives/1927/05/20/Lindbergh-takes-off-from-New-York-in-effort-to-fly-solo-to-Paris/7837481072011/",
+        "https://britannica.com/topic/Spirit-of-Saint-Louis",
+        "https://blog.genealogybank.com/?p=7195",
+        "https://en.wikipedia.org/wiki/L%27Oiseau_Blanc"
+      ]
+    },
+    {
+      "claim": "The undercarriage was jettisoned soon after take-off (over Gonesse) to save weight; the plan was a water landing at New York, in front of the Statue of Liberty (fuselage made watertight)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L%27Oiseau_Blanc",
+        "https://migflug.com/afterburner/l-oiseau-blanc-nungesser-coli-white-bird-1927-disappearance/",
+        "https://www.techno-science.net/fr/definitions/l-oiseau-blanc",
+        "https://www.nationalgeographic.com/adventure/article/130509-charles-lindbergh-transatlantic-flight-white-bird-bernard-decre-safran-aviation",
+        "https://explorersweb.com/?p=109426"
+      ]
+    },
+    {
+      "claim": "Seen leaving the French coast: the military escort left it over Étretat (06:48), the last sighting regarded as certain; later reports over the Channel (HMS H50 log) and Ireland (Dungarvan, Carrigaholt) exist but are less certain — film says only 'seen leaving the French coast'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L%27Oiseau_Blanc",
+        "https://explorersweb.com/?p=109426",
+        "https://migflug.com/afterburner/l-oiseau-blanc-nungesser-coli-white-bird-1927-disappearance/",
+        "https://www.techno-science.net/fr/definitions/l-oiseau-blanc"
+      ]
+    },
+    {
+      "claim": "A Paris newspaper (La Presse, evening paper) printed a false report that the aviators had arrived in New York; it was denied and crowds turned on the paper's offices",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L%27Oiseau_Blanc",
+        "https://www.herodote.net/9_mai_1927-evenement-19270509.php",
+        "https://tighar.org/Projects/PMG/intro.html",
+        "https://migflug.com/afterburner/l-oiseau-blanc-nungesser-coli-white-bird-1927-disappearance/"
+      ]
+    },
+    {
+      "claim": "Later witness reports (unconfirmed, presented as reports): residents of Harbour Grace and St Mary's, Newfoundland reported a sputtering aircraft on 9 May; hermit Anson Berry in Maine reported hearing an erratic engine; TIGHAR found no hard evidence",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L%27Oiseau_Blanc",
+        "https://explorersweb.com/?p=109426",
+        "https://tighar.org/Projects/PMG/PMG.html",
+        "https://migflug.com/afterburner/l-oiseau-blanc-nungesser-coli-white-bird-1927-disappearance/"
+      ]
+    },
+    {
+      "claim": "Decades of searches found no confirmed wreckage: 1927 naval/air searches; TIGHAR's 20 Maine expeditions from 1985 ('no hard evidence'); NUMA Gull Pond 1992; Bernard Decré's sonar/magnetometer searches off Saint-Pierre (2009-2010s) unsuccessful; 'The wreck has never been found' (Sep 2026)",
+      "sources": [
+        "https://tighar.org/Projects/PMG/PMG.html",
+        "https://www.nationalgeographic.com/adventure/article/130509-charles-lindbergh-transatlantic-flight-white-bird-bernard-decre-safran-aviation",
+        "https://en.wikipedia.org/wiki/L%27Oiseau_Blanc",
+        "https://www.techno-science.net/fr/definitions/l-oiseau-blanc",
+        "https://migflug.com/afterburner/l-oiseau-blanc-nungesser-coli-white-bird-1927-disappearance/"
+      ]
+    },
+    {
+      "claim": "The jettisoned landing gear is the only confirmed surviving part of the aircraft and is held by the Musée de l'Air et de l'Espace at Le Bourget",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L%27Oiseau_Blanc",
+        "https://www.museeairespace.fr/wp-content/uploads/sites/2/2024/07/Press-kit-ENG.pdf",
+        "https://www.museeairespace.fr/wp-content/uploads/sites/2/2024/07/DPMuseeAirEspace2024-BD.pdf",
+        "https://www.techno-science.net/fr/definitions/l-oiseau-blanc"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of November 2026: no confirmed wreck find or identification reported 2024-2026 (searches 2026-11-12); MigFlug (28 Sep 2026) 'The wreck has never been found'; Explorersweb (6 Nov 2025) recounts no find",
+      "sources": [
+        "https://migflug.com/afterburner/l-oiseau-blanc-nungesser-coli-white-bird-1927-disappearance/",
+        "https://explorersweb.com/?p=109426",
+        "https://en.wikipedia.org/wiki/L%27Oiseau_Blanc"
+      ]
+    }
+  ]
+}

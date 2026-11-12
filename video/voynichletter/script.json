@@ -1,0 +1,133 @@
+{
+  "title": "The Voynich Letter",
+  "subtitle": "The Voynich Manuscript · the letter from Prague, 1660s",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a seventeenth-century scholar's study in Prague, a dark oak writing desk in warm candlelight mixed with soft window daylight, aged cream paper, red wax, worn calfskin bindings, faded brown ink, quiet and uncanny, vertical 9:16 full-bleed composition with one centred subject in the middle third, fine film grain. Any handwriting is faint illegible script-like marks, not any real alphabet, no readable words. Single image, not a collage, no text, no labels, no signage, no people, no faces, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Prague, the sixteen-sixties. A scholar sends a book no one can read to Rome. His letter is still with it.",
+      "cap": "PRAGUE · 1660s",
+      "img": "Vertical full-bleed scene: a single folded seventeenth-century letter of thick aged cream paper, its red wax seal cracked and broken open, lying on top of an old closed calfskin-bound codex with worn edges, both large and centred in the middle third of the frame on a dark oak writing desk, warm candlelight and soft window daylight falling on the seal and the paper, the folded letter and the book sharp and clearly legible as objects, the letter's few visible lines of handwriting faint illegible marks, no readable words."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "It was for Athanasius Kircher, who claimed to read Egyptian hieroglyphs. The letter says only he could read it.",
+      "cap": "SENT TO\nKIRCHER",
+      "img": "Vertical full-bleed scene: an old calfskin codex wrapped for a long journey in oiled cloth and tied with leather straps, a folded sealed letter tucked under the straps on top, centred on the oak desk, a brass seal stamp and a stick of red sealing wax beside it, a tall window behind showing pale morning light over distant terracotta rooftops, no people, no legible writing."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "It says Emperor Rudolf the Second was said to have paid six hundred ducats for it.",
+      "cap": "600\nDUCATS",
+      "amber": true,
+      "img": "Vertical full-bleed scene: a small heap of old hand-struck gold coins spilling from a worn leather purse beside the corner of a closed calfskin codex, centred on the oak desk, warm candlelight glinting on the gold, the coin faces worn smooth with no legible inscriptions, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "And that it was thought to be Roger Bacon's work. The writer would not vouch for that.",
+      "cap": "ROGER\nBACON?",
+      "img": "Vertical full-bleed scene: a knotted rope cord of a medieval friar's habit coiled across the closed calfskin codex in the centre of the oak desk, an unlit candle and a quill in an inkwell beside it, cool grey window light and long soft shadows, quiet and doubtful, no people, no legible writing."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Its previous owner had written to Kircher too, and tried until he died. No reading from Kircher is on record.",
+      "cap": "NO READING\nON RECORD",
+      "amber": true,
+      "img": "Vertical full-bleed scene: the old codex lying open in the centre of the oak desk, its pages covered in faint illegible invented script and small coloured drawings of plants, the folded letter with its broken red seal resting beside it, a candle burned down to a stub with a thin curl of smoke, an empty wooden chair pushed back, dim late light, still and unanswered, no people, no readable words."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Johannes Marcus Marci (Jan Marek Marci) of Prague sent the manuscript to Athanasius Kircher in Rome with a Latin cover letter dated 19 August 1665 or 1666 (date read either way across sources: voynich.nu/NYRB 1665; Beinecke says sent in 1666; Wikipedia '1665 [or 1666]'). We say only 'the sixteen-sixties' / '1660s'.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Voynich_manuscript",
+        "https://www.voynich.nu/letters.html",
+        "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript",
+        "https://www.nybooks.com/articles/2017/04/20/voynich-manuscript-secret-knowledge-or-hoax/"
+      ]
+    },
+    {
+      "claim": "Marci was a scholar (physician; rector of Charles University in Prague)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Voynich_manuscript",
+        "https://www.nybooks.com/articles/2017/04/20/voynich-manuscript-secret-knowledge-or-hoax/"
+      ]
+    },
+    {
+      "claim": "The letter is still with the manuscript: found inside the covers / still attached when Voynich acquired it in 1912; now kept at the Beinecke as MS 408A, 'still preserved with the manuscript'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Voynich_manuscript",
+        "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript",
+        "https://www.voynich.nu/letters.html",
+        "https://www.nybooks.com/articles/2017/04/20/voynich-manuscript-secret-knowledge-or-hoax/"
+      ]
+    },
+    {
+      "claim": "Kircher, a Jesuit scholar at the Collegio Romano in Rome, claimed to have deciphered Egyptian hieroglyphs (Oedipus Aegyptiacus, 1652-54; his readings are now regarded as wrong)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Voynich_manuscript",
+        "https://en.wikipedia.org/wiki/Athanasius_Kircher",
+        "https://publicdomainreview.org/essay/athanasius-kircher-and-the-hieroglyphic-sphinx"
+      ]
+    },
+    {
+      "claim": "The letter says Marci sent it to Kircher 'for I was convinced that it could be read by no one except yourself'; NYRB: Marci wanted Kircher to decipher it",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Voynich_manuscript",
+        "https://www.nybooks.com/articles/2017/04/20/voynich-manuscript-secret-knowledge-or-hoax/",
+        "https://www.voynich.nu/letters.html"
+      ]
+    },
+    {
+      "claim": "The letter reports (hearsay, via 'Dr. Raphael', i.e. Raphael Mnishovsky, d. 1644) that the book belonged to Emperor Rudolf II, who gave the bearer 600 ducats for it. Kept as 'it says ... was said to have paid'; only possibly matching record is a 1599 purchase of books from Carl Widemann for 600 florins (unproven)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Voynich_manuscript",
+        "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript",
+        "https://www.nybooks.com/articles/2017/04/20/voynich-manuscript-secret-knowledge-or-hoax/",
+        "https://ceur-ws.org/Vol-3313/paper16.pdf"
+      ]
+    },
+    {
+      "claim": "The letter says the author was believed to be Roger Bacon, the English (13th-century Franciscan) friar; Marci adds 'On this point I suspend judgement' (= the writer would not vouch for it). The Bacon attribution is now largely discredited / called 'pure speculation' by the Beinecke",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Voynich_manuscript",
+        "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript",
+        "https://www.nybooks.com/articles/2017/04/20/voynich-manuscript-secret-knowledge-or-hoax/",
+        "https://www.voynich.nu/history.html"
+      ]
+    },
+    {
+      "claim": "The previous owner, Prague alchemist Georg Baresch (Barschius), bequeathed it to Marci; he had written to Kircher too (letter of 21 April 1639, and an earlier one c.1637), sending copied samples of the script; Marci's letter says he 'devoted unflagging toil' to deciphering it and 'relinquished hope only with his life'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Voynich_manuscript",
+        "https://www.voynich.nu/letters.html",
+        "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript"
+      ]
+    },
+    {
+      "claim": "No reading/decipherment from Kircher is on record: Wikipedia 'whether Kircher answered the request or not is not known'; in 1639 Kircher told Moretus he had 'not yet been successful in interpreting it' (NYRB: 'tried unsuccessfully to decipher the text'); later 1666-67 inquiries on Marci's behalf got no recorded answer",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Voynich_manuscript",
+        "https://www.voynich.nu/letters.html",
+        "https://www.nybooks.com/articles/2017/04/20/voynich-manuscript-secret-knowledge-or-hoax/"
+      ]
+    },
+    {
+      "claim": "Still undeciphered as of November 2026: Beinecke 'cryptographic approaches have failed to decipher the text'; Wikipedia 'never been demonstrably deciphered'; 2026 coverage of the Layfield & Davis binding-order study (Digital Medievalist, 2026) still calls it undeciphered; 2025-26 claims (Naibbe cipher, explicitly not a decipherment; Zenodo preprints and forum 'solutions') are unaccepted (searches 2026-11-12)",
+      "sources": [
+        "https://beinecke.library.yale.edu/collections/highlights/voynich-manuscript",
+        "https://en.wikipedia.org/wiki/Voynich_manuscript",
+        "https://www.livescience.com/archaeology/undeciphered-voynich-manuscript-may-have-been-bound-out-of-order-study-finds",
+        "https://www.smithsonianmag.com/smart-news/this-mysterious-medieval-manuscript-has-stumped-scholars-for-well-over-a-century-could-its-pages-have-been-bound-out-of-order-this-whole-time-180989737/",
+        "https://www.theartnewspaper.com/2026/01/07/can-a-new-cipher-help-to-explain-the-mysterious-voynich-manuscript"
+      ]
+    }
+  ]
+}

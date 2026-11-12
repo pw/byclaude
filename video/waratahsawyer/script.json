@@ -1,0 +1,133 @@
+{
+ "title": "The Man Who Left the Waratah",
+ "subtitle": "SS Waratah · Durban, 1909 · Claude Sawyer's testimony, London, 1910",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Desaturated documentary still, an Edwardian steam ocean liner off the coast of South Africa in July 1909, early-1900s maritime detail, grey-green water and cold southern-winter light, steel-grey, brass and weathered black tones, melancholy and uncanny, vertical 9:16 full-bleed composition with one centred subject in the middle third, fine film grain. Single image, not a collage, no text, no legible writing, no signage, no people, no faces.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Durban, July nineteen-oh-nine. A passenger left the liner Waratah here. She sailed on without him. No one aboard was ever seen again.",
+   "cap": "DURBAN · 1909",
+   "img": "Vertical full-bleed scene: a single worn leather steamer trunk with brass corners and buckled leather straps standing alone on the stone quay of a harbour, large and centred in the middle third of the frame, sharp and brightly lit by clear winter morning sunlight; behind it, filling the upper frame, the tall black hull, white upper decks and single buff funnel of a large early-1900s steamship moored alongside, a few coiled mooring ropes on the quay, calm water, no people, no labels, no lettering, no name on the hull."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "His name was Claude Sawyer. He told the inquiry he had dreamed of a man with a long sword, three times in one night.",
+   "cap": "A LONG\nSWORD",
+   "amber": true,
+   "img": "Vertical full-bleed scene: a small first-class cabin aboard an early-1900s ocean liner at night, an empty brass-framed berth with rumpled white sheets, a round brass porthole centred in the middle third showing a pale moonlit sea, a small brass lamp glowing low on a mahogany washstand, polished wood panelling, quiet and uncanny, no people, no figure, no sword, no legible text."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "He said she rolled heavily, and was slow to come back upright. He thought her top-heavy.",
+   "cap": "ROLLED\nHEAVILY",
+   "img": "Vertical full-bleed scene: the empty dining saloon of an early-1900s ocean liner in grey daylight, long tables with white cloths and rows of fixed swivel chairs, a brass chandelier hanging centred in the middle third and swung visibly off vertical as the ship heels, a row of portholes tilted with grey sea and sky showing at a slant, no people, no legible text."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "He also said he dreamed she was struck by a great wave, and disappeared.",
+   "cap": "STRUCK BY\nA WAVE",
+   "img": "Vertical full-bleed scene: a large early-1900s steamship with a single tall funnel seen from ahead, centred in the middle third of the frame, her bow rising into a huge grey breaking wave with white water pouring over the forecastle, heavy dark storm sky, wind-blown spray, cold steel-grey light, no people visible, no markings."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "The inquiry judged she probably capsized in a storm, but could not say how. She has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true,
+   "img": "Vertical full-bleed seascape: bare open sea with long grey-green swells and a single pale shaft of light falling on the bare water in the middle third of the frame, a faint rugged coastline low on the horizon, heavy clearing winter clouds above. Only water, sky and distant land.",
+   "img_note": "2026-11-12: generated WITHOUT the film grade (the grade names an ocean liner and kept drawing a four-funnel ship; the Waratah had one funnel). Standalone style suffix used instead."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "SS Waratah (Blue Anchor Line liner, completed 1908) called at Durban and left on 26 July 1909 for Cape Town; never arrived; 211 aboard, none ever seen again (VO: 'No one aboard was ever seen again' — people, not the ship, which Clan MacIntyre sighted on 27 July)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Waratah",
+    "https://www.slsa.sa.gov.au/australias-titanic-sinking-of-ss-waratah",
+    "https://www.discoveryuk.com/?p=23273709"
+   ]
+  },
+  {
+   "claim": "Claude Sawyer, a passenger on the voyage from Australia, left the ship at Durban although booked to Cape Town (his telegram: 'Booked Cape Town, thought Waratah top-heavy, landed Durban'); she sailed on without him",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Waratah",
+    "https://www.discoveryuk.com/?p=23273709",
+    "https://paperspast.natlib.govt.nz/newspapers/WC19110203.2.12",
+    "http://koombanadays.com/ch04/ctn/kd04sb023.html"
+   ]
+  },
+  {
+   "claim": "Sawyer testified at the Board of Trade inquiry (Caxton Hall, Westminster, London; sitting of 16 December 1910, before Mr J. Dickinson)",
+   "sources": [
+    "https://paperspast.natlib.govt.nz/newspapers/EP19101217.2.60",
+    "https://paperspast.natlib.govt.nz/newspapers/TDN19101219.2.29",
+    "https://paperspast.natlib.govt.nz/newspapers/WC19110203.2.12",
+    "https://en.wikipedia.org/wiki/SS_Waratah"
+   ]
+  },
+  {
+   "claim": "He told the inquiry he dreamed three times that he saw a man with a long sword (press cable 16 Dec 1910, reprinted widely; the longer London report quotes him: 'I saw a man with a long sword in a peculiar dress... I saw it three times most distinctly', three or four days before reaching Durban). Attributed in VO as his account. The bloodied detail and the sword hand (left vs right varies) are NOT used",
+   "sources": [
+    "https://paperspast.natlib.govt.nz/newspapers/ME19101217.2.31",
+    "https://paperspast.natlib.govt.nz/newspapers/TDN19101219.2.29",
+    "https://paperspast.natlib.govt.nz/newspapers/EP19101217.2.60",
+    "https://paperspast.natlib.govt.nz/newspapers/WC19110203.2.12",
+    "https://www.discoveryuk.com/?p=23273709"
+   ]
+  },
+  {
+   "claim": "He testified the Waratah rolled heavily after leaving Adelaide, had a jerky roll and was slow in recovering; he considered her top-heavy (VO: 'rolled heavily, and was slow to come back upright. He thought her top-heavy.'). Injured passengers and the '45 degree' roll are NOT used",
+   "sources": [
+    "https://paperspast.natlib.govt.nz/newspapers/ME19101217.2.31",
+    "https://paperspast.natlib.govt.nz/newspapers/TDN19101219.2.29",
+    "https://paperspast.natlib.govt.nz/newspapers/TC19101219.2.30",
+    "https://www.discoveryuk.com/?p=23273709"
+   ]
+  },
+  {
+   "claim": "He also told the inquiry he dreamed the Waratah was struck by a roller (a great wave) and disappeared (cable: 'struck by a roller and disappeared'; London report quotes: 'one big roller came over her bow and she rolled over on her starboard side and disappeared')",
+   "sources": [
+    "https://paperspast.natlib.govt.nz/newspapers/ME19101217.2.31",
+    "https://paperspast.natlib.govt.nz/newspapers/EP19101217.2.60",
+    "https://paperspast.natlib.govt.nz/newspapers/TDN19101219.2.29",
+    "https://paperspast.natlib.govt.nz/newspapers/WC19110203.2.12"
+   ]
+  },
+  {
+   "claim": "The inquiry's judgment (22-23 Feb 1911) found her properly equipped, manned and stowed, with sufficient stability and seaworthy; she was lost in a storm and probably capsized, 'but the chain of circumstances remains undetermined' (VO: 'judged she probably capsized in a storm, but could not say how'). NOTE: Wikipedia instead says the inquiry 'was unable to make any conclusions'; the contemporary reports of the judgment are followed, phrased as 'probably' + 'could not say how'",
+   "sources": [
+    "https://paperspast.natlib.govt.nz/newspapers/OG19110224.2.11",
+    "https://paperspast.natlib.govt.nz/newspapers/ODT19110225.2.30",
+    "https://paperspast.natlib.govt.nz/newspapers/ME19110224.2.62",
+    "https://sahistory.org.za/node/11336"
+   ]
+  },
+  {
+   "claim": "Still unsolved / never found as of November 2026: Wikipedia 'No wreckage or remains have ever been found'; 2025 Journal of Maritime Archaeology paper says she remains undiscovered; Amusing Planet (Jan 2026) no trace found; searches 2026-11-12 for 2024-26 wreck finds returned none",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Waratah",
+    "https://link.springer.com/article/10.1007/s11457-025-09435-9",
+    "https://www.amusingplanet.com/2026/01/the-disappearance-of-waratah.html",
+    "https://www.discoveryuk.com/?p=23273709"
+   ]
+  },
+  {
+   "claim": "NOT USED: John Bull (Jan 1910) 'spectral figure in his cabin' version and the blood-soaked rag (gore + differs from his sworn wording); the claim he raced to the telegraph office (Wikipedia says unsupported; telegram sent from Cape Town); passenger Ebsworth's 'a warning' remark (single report); the 45-degree roll and injuries (single cable / injury rule)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SS_Waratah",
+    "https://paperspast.natlib.govt.nz/newspapers/WC19110203.2.12",
+    "https://paperspast.natlib.govt.nz/newspapers/TDN19101219.2.29"
+   ]
+  }
+ ],
+ "sequel_of": [
+  "waratah",
+  "waratahsearch"
+ ]
+}
