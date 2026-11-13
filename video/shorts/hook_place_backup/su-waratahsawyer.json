@@ -1,0 +1,48 @@
+{
+ "out": "short-su-waratahsawyer",
+ "kicker": "THE SS WARATAH",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "waratahsawyer",
+   "img": "B01",
+   "vo": "Durban, July nineteen-oh-nine. A passenger left the liner Waratah here. She sailed on without him. No one aboard was ever seen again.",
+   "cap": "DURBAN · 1909"
+  },
+  {
+   "src": "waratahsawyer",
+   "img": "B02",
+   "vo": "His name was Claude Sawyer. He told the inquiry he had dreamed of a man with a long sword, three times in one night.",
+   "cap": "A LONG\nSWORD",
+   "amber": true
+  },
+  {
+   "src": "waratahsawyer",
+   "img": "B03",
+   "vo": "He said she rolled heavily, and was slow to come back upright. He thought her top-heavy.",
+   "cap": "ROLLED\nHEAVILY"
+  },
+  {
+   "src": "waratahsawyer",
+   "img": "B04",
+   "vo": "He also said he dreamed she was struck by a great wave, and disappeared.",
+   "cap": "STRUCK BY\nA WAVE"
+  },
+  {
+   "src": "waratahsawyer",
+   "img": "B05",
+   "vo": "The inquiry judged she probably capsized in a storm, but could not say how. She has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "",
+ "frame": "bleed"
+}

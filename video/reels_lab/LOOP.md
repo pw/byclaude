@@ -130,7 +130,7 @@ Truth floor: "Still unsolved" ending only on genuinely unsolved cases (Phantom o
 |---|-----|--------|--------|
 | 1 | `end` | stamp ("Still unsolved.") vs question ("What do you think happened?" → comments) | **10-31 RE-READ: TIE (318.5 vs 313, n=8 vs 13) — the call below did not hold; stamp kept for honesty only.** Was: CALLED 2026-10-25: stamp — 600.5 vs 274 median at 72h (2.19×, n=6 vs 10, fresh only). Holds within kind: anomaly stamp 777 vs question 451; person stamp ~600 vs 313. Default for new builds: stamp (only on genuinely unsolved cases — truth floor). Vela (question) is the breakout, so this is a median call, not a ceiling call. |
 | 2 | `kind` | anomaly (signals, lights, objects, footprints) vs person (disappearance, unidentified dead) | **CALLED 2026-10-24: anomaly** — 451 vs 255 median at 72h (1.77×, n=5 vs 9). Default for new builds: anomaly, or a person case only if it's legend-grade/historic (Mary Celeste 946, Roanoke 550, Flannan 1,180 so far — the person tail is all old group-vanishings; modern true-crime cases sit at the floor 190–313). |
-| 3 | `hook` | "Place, year." open vs strangest-detail-first | |
+| 3 | `hook` | "Place, year." open vs strangest-detail-first | **OPENED 2026-11-13** (see 2026-11-13 section). Per-film coin flip; `"hook": "place"\|"detail"` in arms.json. Call at n>=5 each by the usual rule. |
 | 4 | `length` | ~20 s vs ~35 s | |
 | 5 | `voice` | male (current) vs female narrator | |
 | 6 | `cadence` | 2/day vs 3/day | |
@@ -226,3 +226,20 @@ over-performs is a cheap signal for which ones to make as films.
   there in Nov 1958 and lifted off by helicopter; Mike Dash (the case's main historian) calls it a credible solution. No stamp, no film.
 - Image trap: a film `grade` that names "an ocean liner" makes every beat draw one, even a "no ship" beat, and it drew a FOUR-funnel
   liner (the Waratah had one). waratahsawyer B05 was generated without the grade. For "empty sea" beats, keep the vessel out of the grade.
+
+## 2026-11-13: series-vs-fresh test FAILED (sequel is not a lever); `hook` arm opened
+- Final reads at first snap >=14h: series voynichvellum 737, deeringbottle 225, roanokestone 488, velasat 313 (2/4 >=425,
+  median 400.5). Fresh startiger 773, griffon 282, upsweep 199, ninthlegion 325 @13h and flat (1/4, median ~303).
+  Ratio 1.32x < 1.5x, so the pre-registered FAIL holds whatever ninthlegion's 14h snap says. Making a sequel does not by
+  itself lift a film; a strong subject does, new or old (Star Tiger 773 fresh; Deering's sequel 225, Vela's 3rd telling 313).
+  The 11-13/14 extension films are ordinary films now (their `test` tag is kept as a label only).
+- Every film so far opens the same way ("Place, year. ..." with a PLACE · YEAR card), so the opening has never varied.
+  The first pool is set within 2-4h, which is when the opening is all a scroller meets. **`hook` arm opened:** `detail` =
+  beat 1 says the strange thing first and the big text is that thing; place and year follow in the same beat. Nothing else
+  changes (same facts, images, length +/-2 s).
+- Coin flip (seed 'hook-arm-2026-11-13') over the 7 queued films: detail = devilsprints, celestehold, waratahsawyer,
+  voynichletter; place = bathurst, oiseaublanc, flight19lost. The four were rebuilt (beat 1 only), blind-checked (FIX x2:
+  Voynich "no one can read" -> "no one has been able to read" + card NEVER DECIPHERED; Mary Celeste pump "Beside it" ->
+  "Nearby"), re-uploaded and the served bytes matched. Place originals in `shorts/hook_place_backup/`.
+- Subject variance is large (200-800), so read medians AND the share >=425; keep flipping a coin for each new film until
+  n>=5 each (~11-19). starariel (posted 11-13 01:45Z, 206 @3h) is untagged: it predates the arm.

@@ -23,7 +23,7 @@ Use the stamp ending unless told otherwise. It is a claim; the case must be genu
 Prefer ANOMALIES (signals, objects, lights, undeciphered things) or legend-grade historic group vanishings (ships, lighthouses, colonies). Modern true-crime disappearances sit at the floor and carry more living-family risk.
 
 ## Writing rules
-- Open with place and year ("Place, year." shape, as the others). Most striking concrete detail by beat 2.
+- Opening (arm `hook`, open since 2026-11-13; the brief you are given says which): `place` = open with place and year ("Place, year." shape), most striking concrete detail by beat 2. `detail` = beat 1 opens with the strange thing itself in one short plain sentence and its cap is that thing (not PLACE · YEAR); place and year follow inside beat 1. No brief given: write `place`.
 - Total VO ~70–95 words (≈28–35 s). Numbers and years spelled as words in vo ("nineteen seventy-one"); captions use digits.
 - Captions (cap): 1–3 words per line, max 2 lines, ALL CAPS, the beat's single strongest fact.
 - Register: quiet, exact, never sensational. No gore, no description of injuries or bodies. No invented dialogue, no speculation presented as fact. Name competing theories only as theories.

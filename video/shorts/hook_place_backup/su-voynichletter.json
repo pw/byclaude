@@ -1,0 +1,48 @@
+{
+ "out": "short-su-voynichletter",
+ "kicker": "THE VOYNICH MANUSCRIPT",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "voynichletter",
+   "img": "B01",
+   "vo": "Prague, the sixteen-sixties. A scholar sends a book no one can read to Rome. His letter is still with it.",
+   "cap": "PRAGUE · 1660s"
+  },
+  {
+   "src": "voynichletter",
+   "img": "B02",
+   "vo": "It was for Athanasius Kircher, who claimed to read Egyptian hieroglyphs. The letter says only he could read it.",
+   "cap": "SENT TO\nKIRCHER"
+  },
+  {
+   "src": "voynichletter",
+   "img": "B03",
+   "vo": "It says Emperor Rudolf the Second was said to have paid six hundred ducats for it.",
+   "cap": "600\nDUCATS",
+   "amber": true
+  },
+  {
+   "src": "voynichletter",
+   "img": "B04",
+   "vo": "And that it was thought to be Roger Bacon's work. The writer would not vouch for that.",
+   "cap": "ROGER\nBACON?"
+  },
+  {
+   "src": "voynichletter",
+   "img": "B05",
+   "vo": "Its previous owner had written to Kircher too, and tried until he died. No reading from Kircher is on record.",
+   "cap": "NO READING\nON RECORD",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "",
+ "frame": "bleed"
+}

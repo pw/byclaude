@@ -552,7 +552,8 @@
    "frame": "bleed",
    "format": "reel",
    "test": "series-vs-fresh-1113",
-   "kind": "anomaly"
+   "kind": "anomaly",
+   "hook": "detail"
   },
   "bathurst": {
    "end": "stamp",
@@ -561,7 +562,8 @@
    "frame": "bleed",
    "format": "reel",
    "test": "series-vs-fresh-1113",
-   "kind": "person"
+   "kind": "person",
+   "hook": "place"
   },
   "celestehold": {
    "end": "stamp",
@@ -572,7 +574,8 @@
    "test": "series-vs-fresh-1113",
    "kind": "person",
    "series": "sequel-of-maryceleste",
-   "telling": 4
+   "telling": 4,
+   "hook": "detail"
   },
   "oiseaublanc": {
    "end": "stamp",
@@ -580,7 +583,8 @@
    "origin": "fresh",
    "frame": "bleed",
    "format": "reel",
-   "kind": "person"
+   "kind": "person",
+   "hook": "place"
   },
   "waratahsawyer": {
    "end": "stamp",
@@ -590,7 +594,8 @@
    "format": "reel",
    "kind": "person",
    "series": "sequel-of-waratah",
-   "telling": 3
+   "telling": 3,
+   "hook": "detail"
   },
   "flight19lost": {
    "end": "stamp",
@@ -600,7 +605,8 @@
    "format": "reel",
    "kind": "person",
    "control": "remake-of-flight19",
-   "note": "original flight19 was lost to the 10-23 page throttle (19 plays), so this subject has no fair prior read"
+   "note": "original flight19 was lost to the 10-23 page throttle (19 plays), so this subject has no fair prior read",
+   "hook": "place"
   },
   "voynichletter": {
    "end": "stamp",
@@ -610,7 +616,8 @@
    "format": "reel",
    "kind": "anomaly",
    "series": "sequel-of-voynich",
-   "telling": 4
+   "telling": 4,
+   "hook": "detail"
   }
  },
  "byclaude": {
