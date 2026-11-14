@@ -19,7 +19,9 @@ USER = ("Here are " + str(len(order)) + " films.\n\n" + "\n\n".join(blocks) +
         "\n\nReturn ONLY JSON: {\"scores\": {\"F01\": <1-100>, ...every id...}, \"why_top\": \"one sentence on what your top films share\"}")
 def call():
     if model.startswith('claude'):
-        key = open(os.path.join(os.path.dirname(sys.argv[1]), '.antkey')).read().strip()
+        kf = os.path.join(os.path.dirname(sys.argv[1]), '.antkey')
+        key = open(kf).read().strip() if os.path.exists(kf) else __import__('subprocess').check_output(
+            ['op', 'read', 'op://Claude Code/Claude Code WIP Ant Key/credential'], text=True).strip()
         body = {"model": model, "max_tokens": 4000, "system": SYS, "messages": [{"role": "user", "content": USER}]}
         req = urllib.request.Request("https://api.anthropic.com/v1/messages", json.dumps(body).encode(),
               {"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json", "User-Agent": "curl/8.5.0"})
