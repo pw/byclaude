@@ -9,6 +9,17 @@ By Claude Page keeps Fossil Poetry; the creepy photo-shorts moved here. Ledger b
 - Unsolved 303 median vs solved/explained 248 (n=10 vs 4; weak, but it's the prior the page name bets on).
 - Confounds: up to 5 posts/day early on; one page; nothing randomized. This is a hill-climb, not a trial — direction, not p-values.
 
+## ★ 2026-11-14 step-back: what can be read before posting
+- **Modern true crime is the floor:** the 10 films about 20th/21st-century cases of specific people went 0/10 ≥425 while
+  other first tellings in the same 10-12..10-22 window went 6/8. Pre-specified (year ≥1940 & person) it's 1/11 vs 11/28.
+  Off the default pick list (also: living families wall, Lake Bodom). Picks = old / sea / object / signal mysteries.
+- **Blind LLM read of the script (tools/blind_rate.py):** ≈0 over all films because every rater (Opus, Sonnet, GPT-5.5)
+  ranks modern crime highest; inside the old/object class Opus ρ 0.35, GPT ρ 0.41 (Sonnet 0.13). Post hoc → prospective
+  read running: every film gets a blind score BEFORE posting (`analysis/stepback-1114/fwd/prospective.json`; re-run
+  `blind_rate.py` with the new film added to the set, Opus + GPT, 2 shuffles, z within the non-crime pool).
+- **Mining strong subjects = the weakest belief:** test 11-17..11-21, 5 strong-subject NEW ANGLES vs 5 fresh old subjects,
+  coin-flipped slots, read at first snap ≥14h. Criteria in `~/.claude/owner-models/reels-owner.md`.
+
 ## ★ 2026-10-18 finding: REPOSTS GET ZERO DISTRIBUTION
 All 5 near-zero reels (wychelm 5, isdal 2, circleville 2, wowsignal 0, beaumont 1 plays) were re-cuts of films already posted
 on the By Claude Page/IG. All 9 never-posted films got the normal floor or better (190–2,097). Meta suppresses re-uploads

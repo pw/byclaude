@@ -1,0 +1,87 @@
+plays at 72h ('*' = younger than 72h, latest shown) — retention = avg watch / length
+unsolved  maryceleste2               1735  now    1738   9.0s  0.25  36.1s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel', 'control': 'remake-of-maryceleste'}
+unsolved  vela                       1599  now   49090 <- LATE BREAKOUT  12.4s  0.45  27.4s  {'end': 'question', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  voynich                    1301  now    1311  16.8s  0.56  30.0s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  flannanisles               1182  now    1189   9.5s  0.27  34.8s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  waratah                     968  now     970   7.7s  0.23  34.2s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  maryceleste                 946  now    1006   5.1s  0.18  28.8s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  waratahsearch               923  now     925  11.2s   0.3  36.8s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel', 'series': 'sequel-of-waratah'}
+unsolved  startiger                   801  now     807   8.7s  0.26  33.5s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel', 'test': 'series-vs-fresh-1109'}
+unsolved  voynichvellum               791  now     795   8.3s  0.25  33.2s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel', 'series': 'sequel-of-voynich', 'test': 'series-vs-fresh-1109'}
+unsolved  velaclues                   779  now     779  11.6s  0.29  40.3s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'band', 'format': 'reel', 'series': 'sequel-of-vela'}
+unsolved  flannan2                    729  now     729   8.1s  0.23  35.1s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel', 'control': 'remake-of-flannanisles'}
+unsolved  voynich2                    633  now     634   9.6s  0.27  35.5s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'band', 'format': 'reel', 'control': 'remake-of-voynich'}
+unsolved  rongorongo                  609  now     617   7.8s  0.22  36.1s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel'}
+unsolved  deering                     572  now     582   8.7s  0.23  38.1s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  dorabella                   558  now     558  10.2s  0.26  39.3s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel'}
+unsolved  roanoke                     550  now     561   9.9s  0.29  33.6s  {'end': 'question', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  rongowood                   540  now     540   9.5s  0.28  34.5s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel', 'series': 'sequel-of-rongorongo'}
+unsolved  celestedoyle                534  now     534   7.1s  0.19  37.4s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel', 'series': 'sequel-of-maryceleste'}
+unsolved  roanokestone                508* now     508  10.9s  0.27  40.0s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel', 'test': 'series-vs-fresh-1109', 'series': 'sequel-of-roanoke'}
+unsolved  whale52                     468  now     470  10.5s  0.36  29.1s  {'end': 'question', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel'}
+unsolved  taoshum                     451  now     458  14.8s   0.4  37.4s  {'end': 'question', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  cyclops                     391  now     393   8.8s  0.23  37.7s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel'}
+unsolved  jamison                     390  now     411  11.9s  0.39  30.4s  {'end': 'question', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  joyita                      384  now     386   8.2s  0.22  36.8s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel'}
+unsolved  beale                       382  now     391   6.7s  0.17  39.0s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  velasat                     346* now     346   8.5s  0.21  40.3s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel', 'test': 'series-vs-fresh-1109', 'series': 'sequel-of-vela', 'telling': 3}
+unsolved  copperscroll                341  now     345  10.3s  0.31  33.6s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel'}
+unsolved  blackdahlia                 335  now     337   8.6s  0.23  38.0s  {'end': 'question', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  ninthlegion                 332* now     332   6.5s  0.19  34.8s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel', 'test': 'series-vs-fresh-1109'}
+unsolved  springfieldthree            313  now     348   7.3s  0.25  29.4s  {'end': 'question', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  griffon                     298  now     298   8.4s  0.22  37.4s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel', 'test': 'series-vs-fresh-1109'}
+unsolved  brianshaffer                255  now     267   9.5s  0.31  30.4s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  hessdalen                   253  now     260   9.4s  0.25  37.4s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  singaporestone              253  now     255  13.9s  0.38  36.5s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  indusscript                 241  now     241   4.1s  0.12  34.2s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  maxheadroom                 235  now     245   9.6s   0.3  32.3s  {'end': 'question', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  zodiac                      235  now     235   7.1s   0.2  35.1s  {'end': 'question', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  shugborough                 230  now     237   7.2s  0.18  40.0s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  deeringbottle               228  now     228   4.9s  0.13  37.4s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel', 'test': 'series-vs-fresh-1109', 'series': 'sequel-of-deering'}
+unsolved  valentich                   219  now     238   8.4s   0.3  28.4s  {'end': 'question', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  lineara                     219  now     221   3.4s  0.08  40.0s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel'}
+unsolved  stendec                     218  now     218   6.8s  0.17  39.0s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  watcher                     212  now     238   9.1s  0.34  26.8s  {'end': 'question', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  dorothyarnold               211  now     212   8.4s  0.31  27.5s  {'end': 'question', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  starariel                   211* now     211   5.8s  0.16  35.8s  {'end': 'stamp', 'topic': 'unsolved', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel', 'test': 'series-vs-fresh-1113', 'kind': 'person', 'series': 'sequel-of-startiger', 'telling': 2}
+unsolved  kobenhavn                   207  now     207   5.0s  0.14  36.1s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel'}
+unsolved  dbcooper                    202  now     202   8.0s  0.21  38.1s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  upsweep                     201* now     201   6.4s  0.16  40.6s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel', 'test': 'series-vs-fresh-1109'}
+unsolved  devilsprints                197* now     197   5.8s  0.14  40.0s  {'end': 'stamp', 'topic': 'unsolved', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel', 'test': 'series-vs-fresh-1113', 'kind': 'anomaly', 'hook': 'detail'}
+unsolved  atalanta                    196  now     196   6.5s   0.2  32.9s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  dagapeyeff                  195  now     196   8.9s  0.27  32.9s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  sodder                      190  now     217   9.8s  0.29  33.6s  {'end': 'question', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel'}
+unsolved  doraenigma                   85  now      85   3.5s  0.09  39.6s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'bleed', 'format': 'reel', 'series': 'sequel-of-dorabella'}
+unsolved  taracalico                   32  now      40   6.7s  0.18  38.0s  {'end': 'question', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'excluded': 'page-throttle 10-23..10-25 (page media views ~1,300/day -> ~70/day, all posts)', 'format': 'reel'}
+unsolved  flight19                     19  now      19   7.4s  0.23  32.6s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'excluded': 'page-throttle 10-23..10-25 (page media views ~1,300/day -> ~70/day, all posts)', 'format': 'reel'}
+unsolved  hoffa                        16  now      17  11.2s  0.32  35.2s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'excluded': 'page-throttle 10-23..10-25 (page media views ~1,300/day -> ~70/day, all posts)', 'format': 'reel'}
+unsolved  paulawelden                   7  now      11  11.3s   0.3  37.1s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'bleed', 'excluded': 'page-throttle 10-23..10-25 (page media views ~1,300/day -> ~70/day, all posts)', 'format': 'reel'}
+unsolved  wychelm                       4  now      21 <- LATE BREAKOUT  17.1s   0.3  57.9s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'repost', 'frame': 'band', 'format': 'reel'}
+unsolved  phaistos                      4  now       6   4.1s  0.11  35.8s  {'end': 'question', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'bleed', 'excluded': 'page-throttle 10-23..10-25 (page media views ~1,300/day -> ~70/day, all posts)', 'format': 'reel'}
+unsolved  lakebodom                     4  now       7   3.7s  0.11  34.2s  {'end': 'question', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'excluded': 'single-video non-distribution: 3 plays in 22h while same-week films got 230-460 and page views were normal (580/664/day); violent-crime content (3 teens killed) — likely a per-video distribution limit, cause unverified', 'format': 'reel'}
+unsolved  isdal                         2  now      22 <- LATE BREAKOUT   0.6s  0.02  33.9s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'repost', 'frame': 'band', 'format': 'reel'}
+unsolved  circleville                   2  now      21 <- LATE BREAKOUT   4.0s  0.13  31.3s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'repost', 'frame': 'band', 'format': 'reel'}
+unsolved  lineara                       2  now       2 PHOTO  reactions/comments/shares (0, 0, 0)
+unsolved  cottingley                    2  now       2 PHOTO  reactions/comments/shares (0, 0, 0)
+unsolved  plainofjars                   2  now       0 PHOTO  reactions/comments/shares (0, 0, 0)
+unsolved  beaumont                      1  now      27 <- LATE BREAKOUT   4.8s  0.14  33.6s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'repost', 'frame': 'band', 'format': 'reel'}
+unsolved  baychimo                      1  now       2  37.8s  0.99  38.0s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'fresh', 'frame': 'bleed', 'excluded': "single-video non-distribution: 0 plays at 13h on the page's best day since the throttle (1,056 viewers 10-30; dagapeyeff 154 in 3h). No violence in script; a same-subject PHOTO post ran 10-26. Cause unverified.", 'format': 'reel'}
+unsolved  indusseals                    1  now       1 PHOTO  reactions/comments/shares (0, 0, 0)
+unsolved  flannanlog                    1  now       2  27.6s  0.69  40.0s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'person', 'origin': 'fresh', 'frame': 'band', 'format': 'reel', 'series': 'sequel-of-flannanisles', 'excluded': 'single-video non-distribution: 1 play at 13h (post published, copyright clean, page 1,921 views 11-04; velaclues posted 10h later got 626 in ~3h). 3rd Flannan film in 5 days. Visual near-duplicate hypothesis TESTED and refuted: dHash nearest-frame median vs flannan2 73/256, while unrelated waratah vs maryceleste2 = 56. Cause unverified.'}
+unsolved  wowsignal                     0  now      20 <- LATE BREAKOUT   0.0s   0.0  30.0s  {'end': 'stamp', 'topic': 'unsolved', 'kind': 'anomaly', 'origin': 'repost', 'frame': 'band', 'format': 'reel'}
+unsolved  baychimo                      0  now       0 PHOTO  reactions/comments/shares (0, 0, 0)
+unsolved  tunguska                      0  now       0 PHOTO  reactions/comments/shares (0, 0, 0)
+unsolved  stonespheres                  0  now       0 PHOTO  reactions/comments/shares (0, 0, 0)
+
+unsolved: n=47 median 382  p75 633  max 1735
+
+excluded from every stat (8): taracalico, flight19, hoffa, paulawelden, phaistos, lakebodom, baychimo, flannanlog
+arm control: remake-of-maryceleste: n=1 med 1735  remake-of-flannanisles: n=1 med 729  remake-of-voynich: n=1 med 633
+arm end: stamp: n=34 med 387.5  question: n=13 med 313
+arm format: reel: n=47 med 382  photo: n=7 med 1
+arm frame: band: n=31 med 313  bleed: n=16 med 429.5
+arm kind: person: n=26 med 359.5  anomaly: n=21 med 382
+arm origin: fresh: n=47 med 382  repost: n=5 med 2
+arm series: sequel-of-waratah: n=1 med 923  sequel-of-voynich: n=1 med 791  sequel-of-vela: n=1 med 779  sequel-of-rongorongo: n=1 med 540  sequel-of-maryceleste: n=1 med 534  sequel-of-deering: n=1 med 228  sequel-of-dorabella: n=1 med 85
+arm test: series-vs-fresh-1109: n=4 med 544.5
+arm topic: unsolved: n=47 med 382

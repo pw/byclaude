@@ -20,7 +20,10 @@ atmospheric AI-generated stills (no faces, no text in images) about a genuinely 
 Use the stamp ending unless told otherwise. It is a claim; the case must be genuinely unsolved.
 
 ## Case choice (arm `kind` called 2026-10-24)
-Prefer ANOMALIES (signals, objects, lights, undeciphered things) or legend-grade historic group vanishings (ships, lighthouses, colonies). Modern true-crime disappearances sit at the floor and carry more living-family risk.
+Prefer ANOMALIES (signals, objects, lights, undeciphered things) or legend-grade historic group vanishings (ships, lighthouses, colonies). Modern true-crime disappearances sit at the floor and carry more living-family risk. (2026-11-14: 0/10 such films reached 425 while 6/8 others in the same weeks did — don't pick them by default.)
+Don't trust your own sense of "what grabs a stranger": three blind LLM raters all ranked modern human disappearances
+highest, which is exactly the class that fails here. Within the old/sea/object class, every finished script gets a blind
+score before posting (`tools/blind_rate.py`, see LOOP.md 2026-11-14).
 
 ## Writing rules
 - Opening (arm `hook`, open since 2026-11-13; the brief you are given says which): `place` = open with place and year ("Place, year." shape), most striking concrete detail by beat 2. `detail` = beat 1 opens with the strange thing itself in one short plain sentence and its cap is that thing (not PLACE · YEAR); place and year follow inside beat 1. No brief given: write `place`.
