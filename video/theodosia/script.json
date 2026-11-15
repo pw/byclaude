@@ -1,0 +1,109 @@
+{
+  "title": "The Patriot",
+  "subtitle": "Theodosia Burr Alston · Georgetown, South Carolina, 1812",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the Carolina coast in the winter of 1812, grey Atlantic water, low salt marsh and sand dunes, cold slate-blue and pewter light with faint warm lantern accents, early nineteenth-century period detail, melancholy and uncanny, vertical composition with one centred subject in the middle third, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Georgetown, South Carolina. The last day of eighteen twelve. The schooner Patriot sailed for New York.",
+      "cap": "SOUTH CAROLINA · 1812",
+      "img": "A small two-masted wooden schooner moored alone at a weathered wharf on a wide tidal river at pale overcast winter dusk, sails furled, one warm lantern glowing on deck, the hull clearly lit and centred in the middle third of a vertical frame, marsh grass and still grey water around it, early 1800s, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Aboard: Theodosia Burr Alston, Aaron Burr's daughter, the governor's wife. She never reached New York.",
+      "cap": "AARON BURR'S\nDAUGHTER",
+      "img": "Inside a small wood-panelled ship's cabin, a lit brass lantern on a narrow writing desk beside a closed leather travelling trunk and a folded wool shawl, centred in the middle third of a vertical frame, warm lantern light against cold blue light from a small round window, early 1800s, no people, no papers."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Neither the ship nor anyone aboard was ever found. Two days out, a storm was logged off the Carolina coast.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "A vast empty winter Atlantic under a dark storm front, heavy grey swells, a single pale break of light in the clouds centred in the middle third of a vertical frame, cold and desolate, no vessel, no land, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Later came stories of pirates, of wreckers luring ships ashore, of confessions. None was ever proven.",
+      "cap": "NONE\nPROVEN",
+      "img": "A single old iron lantern glowing on top of a dark sand dune above a barren winter beach at night, wind-bent dune grass, faint white surf below, the lantern centred in the middle third of a vertical frame, quiet and ominous, no people, no animals."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "In eighteen sixty-nine, a woman's portrait turned up on the Outer Banks. Some say it is her. It has never been confirmed.",
+      "cap": "NEVER\nCONFIRMED",
+      "amber": true,
+      "img": "An ornate gilt picture frame seen from behind, its bare canvas back and wooden stretcher facing the viewer, leaning against the weathered plank wall of an old beach cottage, pale winter light from a small window with sand dunes outside, the frame centred in the middle third of a vertical frame, no visible painting, no faces, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Theodosia Burr Alston sailed from Georgetown, South Carolina on December 31, 1812 aboard the schooner Patriot, bound for New York to see her father Aaron Burr (recently returned from Europe)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Theodosia_Burr_Alston",
+        "https://schistory.org/?p=2796",
+        "https://gardenandgun.com/whatever-happened-to-theodosia-burr-alston-ihamilton-is-most-mysterious-southerner",
+        "https://www.biography.com/history-culture/a71798069/theodosia-burr-ship-disappearance"
+      ]
+    },
+    {
+      "claim": "She was Aaron Burr's daughter; her husband Joseph Alston had just become governor of South Carolina (sworn in December 1812)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Theodosia_Burr_Alston",
+        "https://schistory.org/?p=2796",
+        "https://gardenandgun.com/whatever-happened-to-theodosia-burr-alston-ihamilton-is-most-mysterious-southerner",
+        "https://library.ecu.edu/specialcollections/?p=12206",
+        "https://www.biography.com/history-culture/a71798069/theodosia-burr-ship-disappearance"
+      ]
+    },
+    {
+      "claim": "She never reached New York; neither the Patriot nor anyone aboard was ever found / heard from again",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Theodosia_Burr_Alston",
+        "https://www.biography.com/history-culture/a71798069/theodosia-burr-ship-disappearance",
+        "https://gardenandgun.com/whatever-happened-to-theodosia-burr-alston-ihamilton-is-most-mysterious-southerner",
+        "https://schistory.org/?p=2796"
+      ]
+    },
+    {
+      "claim": "Logbooks of British blockading ships record a severe storm off the Carolina coast beginning January 2, 1813 (two days after departure); Burr believed she was lost in a storm. Storm loss is the leading theory, not an established cause.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Theodosia_Burr_Alston",
+        "https://www.biography.com/history-culture/a71798069/theodosia-burr-ship-disappearance",
+        "https://library.ecu.edu/specialcollections/?p=12206"
+      ]
+    },
+    {
+      "claim": "Later stories of pirates, of Outer Banks wreckers ('bankers') luring ships ashore with false lights, and of pirate confessions circulated; none was verified/proven (Burr rejected them; Gayarre's 1872 'confession' was a novel)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Theodosia_Burr_Alston",
+        "https://library.ecu.edu/specialcollections/?p=12206",
+        "https://gardenandgun.com/whatever-happened-to-theodosia-burr-alston-ihamilton-is-most-mysterious-southerner",
+        "https://www.biography.com/history-culture/a71798069/theodosia-burr-ship-disappearance"
+      ]
+    },
+    {
+      "claim": "In 1869 Dr. William G. Pool received a portrait of an unknown woman at Nags Head on the Outer Banks; some identify it as Theodosia, but the identification has never been confirmed (now at Yale's Lewis Walpole Library)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Theodosia_Burr_Alston",
+        "https://library.ecu.edu/specialcollections/?p=12206",
+        "https://gardenandgun.com/whatever-happened-to-theodosia-burr-alston-ihamilton-is-most-mysterious-southerner",
+        "https://www.biography.com/history-culture/a71798069/theodosia-burr-ship-disappearance"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of 2026: Biography.com (published July 2, 2026) states 'neither the vessel nor any of its passengers has ever been found'; no wreck identification found in 2024-2026 searches",
+      "sources": [
+        "https://www.biography.com/history-culture/a71798069/theodosia-burr-ship-disappearance",
+        "https://en.wikipedia.org/wiki/Theodosia_Burr_Alston"
+      ]
+    }
+  ]
+}

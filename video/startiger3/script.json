@@ -1,0 +1,115 @@
+{
+  "title": "Twenty Thousand Feet",
+  "subtitle": "The Star Tiger · Atlantic, 1948",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the open North Atlantic at night in the late 1940s, low broken cloud over a dark wind-torn sea, cold blue-grey and gunmetal tones with a faint warm amber lamp glow, melancholy and uncanny, vertical 9:16 full-bleed composition with one centred subject in the middle third, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Every hourly report gave her height as twenty thousand feet. The Star Tiger, a British airliner, over the Atlantic, nineteen forty-eight.",
+      "cap": "EVERY REPORT:\n20,000 FEET",
+      "img": "Vertical full-bleed scene: a single round 1940s aircraft altimeter dial, black face with pale needles and plain unnumbered luminous tick marks, centred in the middle third of the frame and sharply lit by a small amber panel lamp, set into a dark riveted cockpit instrument panel at night, beyond it a windscreen showing only black sea and low cloud, no people, no legible text or numbers."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "The inquiry called it an error for two thousand: her planned height, below the cloud, out of the worst winds.",
+      "cap": "MEANT TO BE\n2,000 FEET",
+      "amber": true,
+      "img": "Vertical full-bleed scene: the dark heaving North Atlantic at night seen from low above the waves, a ceiling of ragged cloud pressing down close overhead, a thin band of open air between sea and cloud, wind tearing white spray off the crests, one faint moonlit patch on the water centred in the middle third, no aircraft, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "An hour ahead, a second airliner found the wind far stronger than forecast. It was blown more than sixty miles off course.",
+      "cap": "OVER 60 MILES\nOFF COURSE",
+      "img": "Vertical full-bleed scene: a 1940s navigator's chart table at night, a paper ocean chart with one straight pencilled course line and a second pencil line veering away from it, brass dividers and a bubble sextant resting centred in the middle third, lit by a small hooded lamp, no people, no legible text or numbers."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "It landed safely. The Star Tiger, an hour behind, was never seen again.",
+      "cap": "NEVER\nSEEN AGAIN",
+      "img": "Vertical full-bleed scene: a lonely late-1940s island airfield at the edge of the dark sea before dawn, two rows of small amber runway lights converging to the centre of the frame, palm silhouettes and an empty night sky above, waiting, no aircraft, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The inquiry could not say exactly how high she was when her radio went silent.",
+      "cap": "HEIGHT\nUNKNOWN",
+      "amber": true,
+      "img": "Vertical full-bleed scene: the empty Atlantic at night from just above the black water, low cloud overhead, a single faint pale gap in the cloud centred in the middle third with nothing beneath it on the calm surface, cold and unresolved, no aircraft, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Star Tiger was a British South American Airways (BSAA) Avro Tudor IV airliner, G-AHNP, lost over the Atlantic on 30 January 1948 on a flight from Santa Maria (Azores) to Bermuda",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance",
+        "https://asn.flightsafety.org/reports/1948/19480130_G-AHNP_Tudor.pdf",
+        "https://aviation-safety.net/wikibase/336778"
+      ]
+    },
+    {
+      "claim": "In her hourly position reports Star Tiger consistently gave her height as 20,000 feet; the Court called this 'obviously an error for 2,000 feet' (carelessness in transmission or an error in coding) [Report para. 108]",
+      "sources": [
+        "https://asn.flightsafety.org/reports/1948/19480130_G-AHNP_Tudor.pdf",
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance",
+        "https://www.bermuda-attractions.com/bermuda2_00009e.htm"
+      ]
+    },
+    {
+      "claim": "The flight was planned at 2,000 ft throughout; the height was chosen as giving a less adverse wind component than any other and it took the aircraft below cloud base [Report para. 104]; Wikipedia: McMillan decided to fly at no more than 2,000 ft 'so as to avoid the worst winds'",
+      "sources": [
+        "https://asn.flightsafety.org/reports/1948/19480130_G-AHNP_Tudor.pdf",
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance",
+        "https://www.bermuda-attractions.com/bermuda2_00009e.htm"
+      ]
+    },
+    {
+      "claim": "A BSAA Avro Lancastrian (G-AGWL, Capt. Griffin) took off from Santa Maria about an hour ahead (14:22 vs 15:34 GMT) on the same route [Report paras. 104, 107]",
+      "sources": [
+        "https://asn.flightsafety.org/reports/1948/19480130_G-AHNP_Tudor.pdf",
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance"
+      ]
+    },
+    {
+      "claim": "At 01:26 the Lancastrian's astral fix showed it had been carried about 68 miles (Wikipedia: 60 mi) off track in the preceding hour; its navigator calculated a wind of ~48 knots where the Azores forecast said 'light and variable' and Bermuda's forecasts said 20-25 knots — 'double that force' [Report paras. 110-111]. VO says 'more than sixty miles' and 'far stronger than forecast'",
+      "sources": [
+        "https://asn.flightsafety.org/reports/1948/19480130_G-AHNP_Tudor.pdf",
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance"
+      ]
+    },
+    {
+      "claim": "The Lancastrian touched down at Kindley Field, Bermuda at 04:11 GMT 'having had an uneventful crossing'; 'Star Tiger was never seen again' [Report para. 107]",
+      "sources": [
+        "https://asn.flightsafety.org/reports/1948/19480130_G-AHNP_Tudor.pdf",
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance"
+      ]
+    },
+    {
+      "claim": "Star Tiger, one hour behind, had also been taken off course by the change of wind [Report para. 112; Wikipedia: navigator Ellison's ~02:00 fix showed they too had been blown off course]",
+      "sources": [
+        "https://asn.flightsafety.org/reports/1948/19480130_G-AHNP_Tudor.pdf",
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance"
+      ]
+    },
+    {
+      "claim": "The Court found it 'impossible to say with certainty at what height the aircraft was flying at the time when communications ceased' [Report para. 108]; last communication 03:17 GMT, no distress message",
+      "sources": [
+        "https://asn.flightsafety.org/reports/1948/19480130_G-AHNP_Tudor.pdf",
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of November 2026: the wreck has never been found; no 2024-2026 wreck find or official resolution reported; the inquiry concluded the fate of Star Tiger 'must remain an unsolved mystery'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BSAA_Star_Tiger_disappearance",
+        "https://asn.flightsafety.org/reports/1948/19480130_G-AHNP_Tudor.pdf",
+        "https://boingboing.net/2026/06/29/post-star-tiger-sent-its-last-radio-message-at-3-17-a-m.html"
+      ]
+    }
+  ]
+}

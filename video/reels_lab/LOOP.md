@@ -127,6 +127,22 @@ then prefer cases that don't need them. A film under ~20 plays at 12h on a healt
   Fatigue side test: doraenigma (2nd Dorabella) **82 @16h** (retention 0.08) while celestedoyle (3rd Mary Celeste) passed
   ⇒ telling NUMBER isn't the variable; subject strength is (Dorabella was the weakest proven, 522 @12h).
 
+## 2026-11-15: mining-vs-fresh test, films 1-4 built (posts 11-17/18)
+- Plan + coin flips: `analysis/mining-test-1117.json` (seed 'mining-test-2026-11-15'). Repeats = flannanisles, vela, startiger
+  (days 1-3, shuffled) then waratah, maryceleste (days 4-5, shuffled). Deviation from a pure shuffle, on purpose: Waratah and
+  Mary Celeste each had a film on 11-14/15, so they go last (>=5 days' gap) to give mining a fair read. Voynich left out (5 tellings).
+  Fresh = theodosia, dodecahedron, fawcett, naronic, amberroom. Slot and hook by coin flip: hook came out 8 place / 2 detail,
+  fresh got 4 of 5 early slots (slot showed no effect 11-03: 267 vs 250).
+- Built, blind-checked, uploaded (bytes match), queued: **theodosia** (CLEAN) 11-17 01:45Z · **startiger3** (the 20,000 ft
+  position reports; FIX x3 so the film no longer reads as if she flew at 20,000) 15:45Z · **dodecahedron** (FIX: "mostly from"
+  north-western Europe) 11-18 01:45Z · **vela4** (Carter's diary + 25 sampling sorties; CLEAN, every quote checked) 15:45Z.
+- Blind scores recorded BEFORE posting (`tools/prospective_score.py`, seeds 21/22, pool 53): dodecahedron +0.72 (#16),
+  theodosia -0.06, vela4 -0.55, startiger3 -1.25 (#48). The helper reproduces the 11-14 scores exactly from seeds 11/12.
+- `tools/make.sh <name> [images]` = stills then short with the cron env set. Order: text blind check runs while stills render,
+  build once after fixes.
+- Still to build: 11-16 fawcett + flannan angle + naronic + maryceleste angle; 11-17 waratah angle + amberroom (cap $5/day = 4 films).
+- After 11-21: open `length` (about 15 s, one object) and a Page first-comment arm. Not before: they would sit inside the test.
+
 ## The loop (one arm at a time)
 1. **Post** 2/day via `ig.py --profile unsolved batch --per-day 2` (cron once the Page id lands in ig.py + reels_lab/pages.json).
 2. **Measure**: `lab.py snap` every 6h (cron); `lab.py report --page unsolved` = plays at 72h + retention + arm medians.

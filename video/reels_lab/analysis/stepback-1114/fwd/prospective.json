@@ -7,7 +7,11 @@
   "oiseaublanc": -0.18,
   "waratahsawyer": 0.23,
   "flight19lost": 1.76,
-  "voynichletter": -1.51
+  "voynichletter": -1.51,
+  "theodosia": -0.06,
+  "startiger3": -1.25,
+  "dodecahedron": 0.72,
+  "vela4": -0.55
  },
  "all": {
   "cyclops": 0.59,
@@ -59,5 +63,20 @@
   "maxheadroom": 1.61,
   "oiseaublanc": -0.18,
   "ninthlegion": -0.15
- }
+ },
+ "batches": [
+  {
+   "seeds": [
+    "21",
+    "22"
+   ],
+   "films": [
+    "theodosia",
+    "startiger3",
+    "dodecahedron",
+    "vela4"
+   ],
+   "pool_n": 53
+  }
+ ]
 }

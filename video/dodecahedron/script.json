@@ -1,0 +1,124 @@
+{
+  "title": "The Roman Dodecahedron",
+  "subtitle": "Norton Disney · Lincolnshire, 2023",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Moody documentary still-life photography, Roman-era archaeological finds at an excavation in the rural English countryside, dark damp earth and soft overcast daylight, muted green-brown, umber and grey palette, aged bronze with verdigris patina, quiet and uncanny, cinematic composition for a vertical 9:16 frame with one centred subject in the middle third, fine film grain. Single image, not a collage, no text, no signage, no people, no faces, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Norton Disney, Lincolnshire, twenty twenty-three. Volunteers found, in a Roman pit, a hollow bronze object with twelve faces.",
+      "cap": "LINCOLNSHIRE · 2023",
+      "img": "Close-up still life, centred in the middle of a vertical frame: a hollow cast-bronze twelve-sided solid about the size of a fist, each flat pentagonal face pierced by a circular hole, the holes of different diameters, a small round knob on each of its twenty corners, green-brown patina, resting on dark damp earth at the bottom of an excavation trench, soft even overcast daylight, the object sharp and well lit against the dark soil, legible at a glance."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "A round hole in every face, the holes of different sizes. A small knob on every corner. Complete, with no sign of wear.",
+      "cap": "12 FACES\n12 HOLES",
+      "amber": true,
+      "img": "Extreme close-up centred in the middle of a vertical frame: a hollow cast-bronze twelve-sided solid about the size of a fist, each flat pentagonal face pierced by a circular hole, the holes of different diameters, a small round knob on each of its twenty corners, green-brown patina; one pentagonal face turned toward the viewer with its circular hole sharp in focus, neighbouring faces showing smaller and larger holes, the small round corner knobs catching soft light, dark earth background."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Around a hundred and thirty are known, mostly from north-western Europe. None from Roman Italy.",
+      "cap": "NONE FROM\nITALY",
+      "img": "Three similar objects of different sizes standing together on dark excavated soil, centred in the middle of a vertical frame, each one a hollow cast-bronze twelve-sided solid about the size of a fist, each flat pentagonal face pierced by a circular hole, the holes of different diameters, a small round knob on each of its twenty corners, green-brown patina, soft overcast daylight, a blurred grassy trench edge above."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "The first on record turned up in Hertfordshire in seventeen thirty-nine. No Roman text or picture mentions them.",
+      "cap": "NEVER\nMENTIONED",
+      "img": "A misty ploughed English field at dawn, low hedgerow and bare trees on the horizon, and in the centre of the vertical frame, half buried in a furrow of dark earth, a hollow cast-bronze twelve-sided solid about the size of a fist, each flat pentagonal face pierced by a circular hole, the holes of different diameters, a small round knob on each of its twenty corners, green-brown patina, pale cold light."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Theories include a knitting tool, a measuring device, a religious object. Their purpose has never been established.",
+      "cap": "PURPOSE\nUNKNOWN",
+      "amber": true,
+      "img": "Centred in the middle of a vertical frame: a hollow cast-bronze twelve-sided solid about the size of a fist, each flat pentagonal face pierced by a circular hole, the holes of different diameters, a small round knob on each of its twenty corners, green-brown patina, alone on dark earth in dim low light, a single shaft of pale light passing through its holes and casting small circles of light of different sizes onto the soil around it, quiet and unresolved."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Found in summer (June) 2023 by the Norton Disney History and Archaeology Group during a community dig at Potter Hill, Norton Disney, Lincolnshire, in the fill of a Roman (sand-quarrying) pit",
+      "sources": [
+        "https://www.aru.ac.uk/news/roman-dodecahedra-still-remain-a-mystery",
+        "https://the-past.com/?p=98590",
+        "https://www.thehistoryblog.com/archives/69265",
+        "https://en.wikipedia.org/wiki/Roman_dodecahedron"
+      ]
+    },
+    {
+      "claim": "Roman dodecahedra are hollow, cast copper-alloy (bronze) objects with twelve flat pentagonal faces; Norton Disney example is copper alloy with tin and lead, ~8 cm across",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roman_dodecahedron",
+        "https://www.aru.ac.uk/news/roman-dodecahedra-still-remain-a-mystery",
+        "https://exarc.net/sites/default/files/2026-05/A%20Functional%20Reassessment%20of%20Roman%20Dodecahedra%20as%20Tools%20for%20Forming%20Standardised%20Wax%20Objects%20_%20The%20EXARC%20Journal.pdf"
+      ]
+    },
+    {
+      "claim": "Each face has a circular hole, holes of different sizes; a knob/ball at each corner (vertex)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roman_dodecahedron",
+        "https://www.thehistoryblog.com/archives/69265",
+        "https://exarc.net/sites/default/files/2026-05/A%20Functional%20Reassessment%20of%20Roman%20Dodecahedra%20as%20Tools%20for%20Forming%20Standardised%20Wax%20Objects%20_%20The%20EXARC%20Journal.pdf",
+        "https://thedebrief.org/mysterious-roman-dodecahedrons-have-baffled-researchers-for-centuries-these-theories-could-help-solve-the-mystery/"
+      ]
+    },
+    {
+      "claim": "Norton Disney example is complete/undamaged with no evidence of wear",
+      "sources": [
+        "https://www.aru.ac.uk/news/roman-dodecahedra-still-remain-a-mystery",
+        "https://www.thehistoryblog.com/archives/69265",
+        "https://thedebrief.org/mysterious-roman-dodecahedrons-have-baffled-researchers-for-centuries-these-theories-could-help-solve-the-mystery/"
+      ]
+    },
+    {
+      "claim": "Around 130 known (over 100), found in the north-western provinces (Britain, France, Germany, Belgium, Netherlands, Switzerland, Austria, Hungary, Luxembourg); none found in Italy",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roman_dodecahedron",
+        "https://www.aru.ac.uk/news/roman-dodecahedra-still-remain-a-mystery",
+        "https://the-past.com/?p=98590",
+        "https://thedebrief.org/mysterious-roman-dodecahedrons-have-baffled-researchers-for-centuries-these-theories-could-help-solve-the-mystery/",
+        "https://exarc.net/sites/default/files/2026-05/A%20Functional%20Reassessment%20of%20Roman%20Dodecahedra%20as%20Tools%20for%20Forming%20Standardised%20Wax%20Objects%20_%20The%20EXARC%20Journal.pdf"
+      ]
+    },
+    {
+      "claim": "First recorded example: found in a field (Hagdale) at Aston, Hertfordshire, exhibited to the Society of Antiquaries of London on 28 June 1739",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roman_dodecahedron",
+        "https://thedebrief.org/mysterious-roman-dodecahedrons-have-baffled-researchers-for-centuries-these-theories-could-help-solve-the-mystery/"
+      ]
+    },
+    {
+      "claim": "No mention of dodecahedra in any surviving Roman text, inscription or picture",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roman_dodecahedron",
+        "https://www.aru.ac.uk/news/roman-dodecahedra-still-remain-a-mystery",
+        "https://www.thehistoryblog.com/archives/69265",
+        "https://exarc.net/sites/default/files/2026-05/A%20Functional%20Reassessment%20of%20Roman%20Dodecahedra%20as%20Tools%20for%20Forming%20Standardised%20Wax%20Objects%20_%20The%20EXARC%20Journal.pdf"
+      ]
+    },
+    {
+      "claim": "Proposed theories (theories only) include a knitting tool, a measuring/range-finding instrument, a religious or ritual object; ~50 theories published",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roman_dodecahedron",
+        "https://thedebrief.org/mysterious-roman-dodecahedrons-have-baffled-researchers-for-centuries-these-theories-could-help-solve-the-mystery/",
+        "https://www.aru.ac.uk/news/roman-dodecahedra-still-remain-a-mystery"
+      ]
+    },
+    {
+      "claim": "Purpose not established as of 2026: a May 2026 peer-reviewed EXARC Journal paper states their function 'remains undocumented in contemporary sources and unresolved archaeologically' and offers its own wax-forming idea only as a hypothesis; Nov 2025 Current Archaeology piece: 'their purpose remains obscure'",
+      "sources": [
+        "https://exarc.net/sites/default/files/2026-05/A%20Functional%20Reassessment%20of%20Roman%20Dodecahedra%20as%20Tools%20for%20Forming%20Standardised%20Wax%20Objects%20_%20The%20EXARC%20Journal.pdf",
+        "https://the-past.com/?p=98590",
+        "https://en.wikipedia.org/wiki/Roman_dodecahedron"
+      ]
+    }
+  ]
+}

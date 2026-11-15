@@ -1,0 +1,116 @@
+{
+  "title": "The President's Diary",
+  "subtitle": "The Vela Incident · south of Africa, 1979",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, autumn 1979, cold grey-blue light with a single warm lamp tone where a lamp is present, quiet, exact and uncanny, cinematic vertical composition, one centred subject in the middle third of the frame, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "The sea south of Africa, nineteen seventy-nine. An American satellite saw a double flash, the signature of a nuclear test.",
+      "cap": "SOUTH OF AFRICA\n1979",
+      "img": "A vast empty grey ocean seen from high above at dusk, and centred in the middle third of the frame a single brilliant white flash of light bursting just above the water, lighting the underside of low cloud and casting a bright reflection across the waves, cold sub-Antarctic sea, sharp and well lit, vertical composition."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "That day, President Carter wrote in his diary: either South Africa, Israel using a ship at sea, or nothing.",
+      "cap": "“OR\nNOTHING”",
+      "amber": true,
+      "img": "A closed, worn dark-brown leather-bound diary lying on a polished wooden desk, centred in the middle third of the frame, a fountain pen resting across its cover, lit by a single brass desk lamp from one side, the rest of the room falling into soft shadow, late 1970s, close and well lit, plain unmarked cover, vertical composition."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Air Force planes flew twenty-five sorties there, sampling the air. They found no fallout.",
+      "cap": "25 FLIGHTS\nNO FALLOUT",
+      "img": "A large grey four-engine 1970s military jet aircraft with no markings, seen from slightly below and behind, flying low over a cold grey ocean beneath heavy overcast, centred in the middle third of the frame, a small sampling pod under one wing, mist and spray far below, vast empty sea to every horizon, vertical composition."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Five months later, he wrote of a growing belief among his scientists that Israel had conducted a test.",
+      "cap": "A GROWING\nBELIEF",
+      "img": "A diary lying open on a wooden desk at night, centred in the middle third of the frame, its two cream pages blank in the warm pool of a brass desk lamp, an uncapped fountain pen beside it, a tall window behind showing a dark winter night, quiet and still, vertical composition."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Publicly, a White House panel called it probably not nuclear. The diary stayed private until twenty-ten. No government has confirmed a test.",
+      "cap": "NEVER\nCONFIRMED",
+      "amber": true,
+      "img": "A long empty polished conference table in a dim 1970s government meeting room, a single thick bound report with a plain unmarked grey cover lying closed in the centre of the table under one hanging lamp, rows of empty leather chairs, venetian blinds drawn, centred in the middle third of the frame, vertical composition."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "On 22 September 1979 (00:53 UTC) the US satellite Vela 6911 recorded a double flash of light, located at about 47S 40E between the Crozet and Prince Edward Islands, i.e. in the ocean south(-east) of Africa; ynet: 'off the coast of South Africa'; Carter's diary: 'in the region of South Africa'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test",
+        "https://www.ynetnews.com/magazine/article/bj115zey8bl"
+      ]
+    },
+    {
+      "claim": "A double flash is the characteristic signature of an atmospheric nuclear explosion; the 41 earlier Vela double flashes were all nuclear tests",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://thebulletin.org/2019/09/double-flash-vela-incident/",
+        "https://nuclearweaponarchive.org/Safrica/Vela.html"
+      ]
+    },
+    {
+      "claim": "Carter's diary entry dated 22 September 1979: 'There was indication of a nuclear explosion in the region of South Africa—either South Africa, Israel using a ship at sea, or nothing.' (VO quotes the last clause verbatim)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://thebulletin.org/2019/09/double-flash-vela-incident/",
+        "https://www.timesofisrael.com/did-the-carter-administration-cover-up-a-1979-israeli-nuclear-test/",
+        "https://skeptoid.com/episodes/592"
+      ]
+    },
+    {
+      "claim": "US Air Force WC-135B aircraft flew 25 air-sampling sorties over the southern Indian Ocean (22 Sept–29 Oct 1979, 230.4 hours) and found no fresh fission products / no radioactive debris (NSArchive: AFTAC air sampling 'had been unproductive')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://skeptoid.com/episodes/592",
+        "https://www.universetoday.com/articles/remembering-the-vela-incident",
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test",
+        "https://www.ynetnews.com/magazine/article/bj115zey8bl"
+      ]
+    },
+    {
+      "claim": "Carter's diary, 27 February 1980 (about five months later): 'We have a growing belief among our scientists that the Israelis did indeed conduct a nuclear test explosion in the ocean near the southern end of Africa.' This is a diary statement of belief, not a confirmation",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://thebulletin.org/2019/09/double-flash-vela-incident/",
+        "https://www.timesofisrael.com/did-the-carter-administration-cover-up-a-1979-israeli-nuclear-test/",
+        "https://www.ynetnews.com/magazine/article/bj115zey8bl"
+      ]
+    },
+    {
+      "claim": "The 1980 Ruina panel convened for the White House (OSTP) concluded the signal was 'probably not' from a nuclear explosion; this was the public position",
+      "sources": [
+        "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2016-12-06/vela-incident-south-atlantic-mystery-flash-september-1979-raised-questions-about-nuclear-test",
+        "https://thebulletin.org/2019/09/double-flash-vela-incident/",
+        "https://en.wikipedia.org/wiki/Vela_incident"
+      ]
+    },
+    {
+      "claim": "Carter's diary was published in 2010 as 'White House Diary'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://skeptoid.com/episodes/592",
+        "https://www.ynetnews.com/magazine/article/bj115zey8bl"
+      ]
+    },
+    {
+      "claim": "No government has confirmed a test as of Nov 2026: ynet (29 Jan 2026) 'The United States has never formally acknowledged that a nuclear explosion took place', 'Israel has never commented publicly on the event', 'South Africa has consistently denied responsibility'; US position moved to 'inconclusive'; no 2024–2026 confirmation found in searches on 2026-11-15",
+      "sources": [
+        "https://www.ynetnews.com/magazine/article/bj115zey8bl",
+        "https://en.wikipedia.org/wiki/Vela_incident",
+        "https://thebulletin.org/2019/09/double-flash-vela-incident/"
+      ]
+    }
+  ]
+}

@@ -618,6 +618,54 @@
    "series": "sequel-of-voynich",
    "telling": 4,
    "hook": "detail"
+  },
+  "theodosia": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "mining-vs-fresh-1117",
+   "kind": "person",
+   "hook": "place",
+   "arm": "fresh"
+  },
+  "startiger3": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "mining-vs-fresh-1117",
+   "kind": "person",
+   "hook": "detail",
+   "arm": "repeat",
+   "series": "sequel-of-startiger",
+   "telling": 3
+  },
+  "dodecahedron": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "mining-vs-fresh-1117",
+   "kind": "anomaly",
+   "hook": "place",
+   "arm": "fresh"
+  },
+  "vela4": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "mining-vs-fresh-1117",
+   "kind": "anomaly",
+   "hook": "place",
+   "arm": "repeat",
+   "series": "sequel-of-vela",
+   "telling": 4
   }
  },
  "byclaude": {

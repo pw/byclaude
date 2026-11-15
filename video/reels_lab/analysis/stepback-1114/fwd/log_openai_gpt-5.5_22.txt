@@ -1,0 +1,1 @@
+openai/gpt-5.5 22 63 missing [] | The top films share instantly graspable, high-stakes hooks—famous disappearances, murders, hijackings, eerie last messages, or children/families in danger—with a clean unresolved payoff that a cold viewer can understand in seconds.
