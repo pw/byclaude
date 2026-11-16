@@ -1,0 +1,48 @@
+{
+ "out": "short-su-flannanrelief",
+ "kicker": "FLANNAN ISLES",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "flannanrelief",
+   "img": "B01",
+   "vo": "The ship fired a rocket. No one answered. The Flannan Isles lighthouse, in Scotland's Outer Hebrides. Boxing Day, nineteen hundred.",
+   "cap": "NO ONE\nANSWERED"
+  },
+  {
+   "src": "flannanrelief",
+   "img": "B02",
+   "vo": "The relief keeper, Joseph Moore, went ashore alone. He found the entrance gate closed. The outer door, closed.",
+   "cap": "THE GATE\nCLOSED"
+  },
+  {
+   "src": "flannanrelief",
+   "img": "B03",
+   "vo": "Inside, he wrote, the fire was not lighted for some days. The beds were empty, just as they left them in the early morning.",
+   "cap": "FIRE OUT\nFOR DAYS",
+   "amber": true
+  },
+  {
+   "src": "flannanrelief",
+   "img": "B04",
+   "vo": "He did not search further. He wrote that he knew only too well something serious had occurred.",
+   "cap": "SOMETHING\nSERIOUS"
+  },
+  {
+   "src": "flannanrelief",
+   "img": "B05",
+   "vo": "That night, Moore and three men from the ship lit the light again. James Ducat, Thomas Marshall and Donald McArthur were never found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "",
+ "frame": "bleed"
+}

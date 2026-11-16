@@ -1,0 +1,48 @@
+{
+ "out": "short-su-naronic",
+ "kicker": "SS NARONIC",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "naronic",
+   "img": "B01",
+   "vo": "Liverpool, eighteen ninety-three. The White Star steamer Naronic sailed for New York, with seventy-four people aboard.",
+   "cap": "LIVERPOOL · 1893"
+  },
+  {
+   "src": "naronic",
+   "img": "B02",
+   "vo": "She never arrived. Three weeks later, two of her lifeboats were found adrift in the Atlantic.",
+   "cap": "TWO LIFEBOATS\nADRIFT",
+   "amber": true
+  },
+  {
+   "src": "naronic",
+   "img": "B03",
+   "vo": "One upside down. One half full of water. No one in either.",
+   "cap": "NO ONE\nIN EITHER"
+  },
+  {
+   "src": "naronic",
+   "img": "B04",
+   "vo": "Messages in bottles turned up. One claimed an iceberg, in a blinding snowstorm. None of the names could be matched to anyone aboard.",
+   "cap": "MESSAGES\nIN BOTTLES"
+  },
+  {
+   "src": "naronic",
+   "img": "B05",
+   "vo": "The cause was never determined. Her wreck has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "",
+ "frame": "bleed"
+}

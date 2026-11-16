@@ -1,0 +1,142 @@
+{
+  "title": "The Relief Keeper",
+  "subtitle": "Flannan Isles · Outer Hebrides, 1900",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, a remote Victorian lighthouse station on a steep rocky island in the Outer Hebrides of Scotland in December 1900, whitewashed stone, wet grey rock, heavy Atlantic sea, cold blue-grey winter light, melancholy and uncanny, period 1900 detail, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no legible writing, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "The ship fired a rocket. No one answered. The Flannan Isles lighthouse, in Scotland's Outer Hebrides. Boxing Day, nineteen hundred.",
+      "cap": "NO ONE\nANSWERED",
+      "img": "A single bright red signal rocket trailing sparks high into a dark winter dusk sky above a small stone lighthouse on the summit of a steep rocky island, the lighthouse lantern dark and unlit, grey Atlantic swell below, the rocket and tower centred in the middle of the frame, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "The relief keeper, Joseph Moore, went ashore alone. He found the entrance gate closed. The outer door, closed.",
+      "cap": "THE GATE\nCLOSED",
+      "img": "A closed iron entrance gate in a low whitewashed stone wall, a plain white lighthouse keepers' building with a shut wooden door behind it, wet flagstones, wind-flattened grass, heavy grey December sky, the gate centred in the frame, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Inside, he wrote, the fire was not lighted for some days. The beds were empty, just as they left them in the early morning.",
+      "cap": "FIRE OUT\nFOR DAYS",
+      "amber": true,
+      "img": "A cold black cast-iron kitchen range in a plain Victorian lighthouse keepers' kitchen, grey dead ash in the open grate, no flame, an iron kettle on the hob, a scrubbed wooden table edge in the foreground, cold grey window light, the range centred in the frame, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "He did not search further. He wrote that he knew only too well something serious had occurred.",
+      "cap": "SOMETHING\nSERIOUS",
+      "img": "Looking down a long steep stone stairway from a high rocky island toward a small concrete sea landing far below, a small dark steamship waiting offshore on a grey heaving sea, low winter cloud, the stairway running down the centre of the frame, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "That night, Moore and three men from the ship lit the light again. James Ducat, Thomas Marshall and Donald McArthur were never found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "A stone lighthouse tower on a dark rocky island at night, its lantern lit, a single pale beam reaching out over a black stormy Atlantic sea, the tower centred in the frame, rain in the air, lonely and unresolved, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Flannan Isles lighthouse is on Eilean Mòr, Flannan Isles, Outer Hebrides, Scotland; the relief vessel Hesperus reached it on 26 December 1900 (Boxing Day)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+        "https://blog.nrscotland.gov.uk/2023/12/12/flannan-isles-lighthouse-keepers-the-disappearance/",
+        "https://www.historyhit.com/the-flannan-isle-mystery-when-three-lighthouse-keepers-vanished-overnight/"
+      ]
+    },
+    {
+      "claim": "The Hesperus fired a rocket (and sounded horn/whistle) on arrival and got no response — Master's telegram 26 Dec 1900: 'Fired a rocket but, as no response was made, managed to land Moore'",
+      "sources": [
+        "https://www.nlb.org.uk/history/flannan-isles/",
+        "https://blog.nrscotland.gov.uk/2023/12/12/flannan-isles-lighthouse-keepers-the-disappearance/",
+        "https://www.mentalfloss.com/history/mystery/115-year-old-mystery-flannan-lighthouses-missing-keepers",
+        "https://www.historyhit.com/the-flannan-isle-mystery-when-three-lighthouse-keepers-vanished-overnight/"
+      ]
+    },
+    {
+      "claim": "Joseph Moore, the relief keeper, was put ashore alone",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+        "https://www.historyhit.com/the-flannan-isle-mystery-when-three-lighthouse-keepers-vanished-overnight/",
+        "https://blog.nrscotland.gov.uk/2023/12/12/flannan-isles-lighthouse-keepers-the-disappearance/"
+      ]
+    },
+    {
+      "claim": "Moore found the entrance gate closed and the (main) door closed — Moore's letter of 28 Dec 1900: 'on coming to the entrance gate I found it closed'",
+      "sources": [
+        "https://www.nlb.org.uk/history/flannan-isles/",
+        "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+        "https://www.historyhit.com/the-flannan-isle-mystery-when-three-lighthouse-keepers-vanished-overnight/",
+        "https://johnknifton.com/2022/03/17/the-flannan-isle-disappearances-2/"
+      ]
+    },
+    {
+      "claim": "Moore's letter: 'the fire was not lighted for some days' (kitchen fireplace cold)",
+      "sources": [
+        "https://www.nlb.org.uk/history/flannan-isles/",
+        "https://theghostinmymachine.com/2019/06/17/unresolved-what-happened-to-the-lighthouse-keepers-of-eilean-mor-flannan-isles-scotland-disappearance/",
+        "https://johnknifton.com/2022/03/17/the-flannan-isle-disappearances-2/",
+        "https://www.whodoyouthinkyouaremagazine.com/news/flannan-isles-lighthouse-mystery-letter"
+      ]
+    },
+    {
+      "claim": "Moore's letter: 'found the beds empty just as they left them in the early morning'",
+      "sources": [
+        "https://www.nlb.org.uk/history/flannan-isles/",
+        "https://www.whodoyouthinkyouaremagazine.com/news/flannan-isles-lighthouse-mystery-letter",
+        "https://johnknifton.com/2022/03/17/the-flannan-isle-disappearances-2/"
+      ]
+    },
+    {
+      "claim": "Moore's letter: 'I did not take time to search further, for I only too well knew something serious had occurred'; he returned to the landing and reported to the ship",
+      "sources": [
+        "https://www.nlb.org.uk/history/flannan-isles/",
+        "https://theghostinmymachine.com/2019/06/17/unresolved-what-happened-to-the-lighthouse-keepers-of-eilean-mor-flannan-isles-scotland-disappearance/",
+        "https://blog.nrscotland.gov.uk/2023/12/12/flannan-isles-lighthouse-keepers-the-disappearance/",
+        "https://www.historyhit.com/the-flannan-isle-mystery-when-three-lighthouse-keepers-vanished-overnight/"
+      ]
+    },
+    {
+      "claim": "Moore 'lighted the light in the proper time that night and every night since'; the Master left Moore, the buoymaster and two seamen on the island 'to keep the light burning'",
+      "sources": [
+        "https://www.nlb.org.uk/history/flannan-isles/",
+        "https://blog.nrscotland.gov.uk/2023/12/12/flannan-isles-lighthouse-keepers-the-disappearance/",
+        "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+        "https://www.mentalfloss.com/history/mystery/115-year-old-mystery-flannan-lighthouses-missing-keepers"
+      ]
+    },
+    {
+      "claim": "The three keepers were James Ducat, Thomas Marshall and Donald McArthur; no trace of them was ever found",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse",
+        "https://nrscotland.gov.uk/learning-and-events/for-the-safety-of-all-scotlands-lighthouses/the-flannan-islands-lighthouse-a-disappearance/",
+        "https://blog.nrscotland.gov.uk/2023/12/12/flannan-isles-lighthouse-keepers-the-disappearance/"
+      ]
+    },
+    {
+      "claim": "(caption) Moore's letter is dated 28 December 1900 (two days after landing) and went on public display for the first time in 2026 at the National Records of Scotland (exhibition 3 Aug–25 Sep 2026)",
+      "sources": [
+        "https://www.nlb.org.uk/history/flannan-isles/",
+        "https://nrscotland.gov.uk/latest-news/flannan-isles-disappearance-among-records-going-on-display/",
+        "https://www.whodoyouthinkyouaremagazine.com/news/flannan-isles-lighthouse-mystery-letter"
+      ]
+    },
+    {
+      "claim": "Still unexplained as of 2026: the June 2026 coverage of Moore's letter presents no new solution; families 'do not know for sure what happened'; official inquiry only inferred a large wave",
+      "sources": [
+        "https://www.whodoyouthinkyouaremagazine.com/news/flannan-isles-lighthouse-mystery-letter",
+        "https://nrscotland.gov.uk/latest-news/flannan-isles-disappearance-among-records-going-on-display/",
+        "https://blog.nrscotland.gov.uk/2023/12/12/flannan-isles-lighthouse-keepers-the-disappearance/",
+        "https://en.wikipedia.org/wiki/Flannan_Isles_Lighthouse"
+      ]
+    }
+  ]
+}

@@ -666,6 +666,54 @@
    "arm": "repeat",
    "series": "sequel-of-vela",
    "telling": 4
+  },
+  "fawcett": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "mining-vs-fresh-1117",
+   "kind": "person",
+   "hook": "place",
+   "arm": "fresh"
+  },
+  "flannanrelief": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "mining-vs-fresh-1117",
+   "kind": "person",
+   "hook": "detail",
+   "arm": "repeat",
+   "series": "sequel-of-flannanisles",
+   "telling": 4
+  },
+  "naronic": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "mining-vs-fresh-1117",
+   "kind": "person",
+   "hook": "place",
+   "arm": "fresh"
+  },
+  "celestebarrels": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "mining-vs-fresh-1117",
+   "kind": "person",
+   "hook": "place",
+   "arm": "repeat",
+   "series": "sequel-of-maryceleste",
+   "telling": 5
   }
  },
  "byclaude": {

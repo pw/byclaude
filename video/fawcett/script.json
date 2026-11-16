@@ -1,0 +1,104 @@
+{
+  "title": "Percy Fawcett",
+  "subtitle": "The Lost City of Z · Mato Grosso, Brazil, 1925",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the dense tropical rainforest and slow brown rivers of Mato Grosso, Brazil, in the mid-1920s, humid green-grey light, period 1920s expedition gear, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Mato Grosso, Brazil, nineteen twenty-five. Percy Fawcett, his son Jack and Raleigh Rimell went into the forest, looking for a lost city he called Z.",
+      "cap": "BRAZIL · 1925",
+      "img": "An old brass explorer's compass resting open on a folded, weathered canvas map case on a rough wooden supply crate, centred and well lit by warm late-afternoon sun, a wall of dense tropical rainforest softly out of focus behind, no writing visible, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "He had left word. If they did not return, no one should come looking.",
+      "cap": "SEND NO\nRESCUE",
+      "amber": true,
+      "img": "A narrow footpath leading straight into a dense green tropical rainforest, centred, the trail vanishing into deep shadow between giant tree trunks and hanging vines, shafts of hazy light, still and silent, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "On May twenty-ninth, he wrote to his wife from Dead Horse Camp. You need have no fear of any failure.",
+      "cap": "DEAD HORSE\nCAMP",
+      "img": "A single folded sheet of old paper covered in faint illegible handwriting, no readable words, beside a fountain pen on a worn canvas camp table in a small jungle clearing, centred, lit by a glowing oil lantern at dusk, hammock ropes and dark forest behind, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "It was the last word from any of them. None of the three was ever found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "An abandoned jungle campsite at dawn, centred, a cold fire ring of stones, an empty canvas hammock slung between two trees, mist drifting through dense rainforest, quiet and deserted, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Searchers went in anyway. Later, bones were said to be his. Scientists in London found they were not.",
+      "cap": "NOT HIS\nBONES",
+      "amber": true,
+      "img": "A wide slow brown river bend at dusk between unbroken walls of dark tropical rainforest, centred, mist on the water, a pale fading sky, vast and unresolved, no boats, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "In 1925 Percy Fawcett set out into Mato Grosso, Brazil (from Cuiabá) with his son Jack and Jack's friend Raleigh Rimell, seeking a lost city he called 'Z'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Percy_Fawcett",
+        "https://www.nationalgeographic.com/history/article/percy-fawcett-search-lost-city-of-z",
+        "https://www.history.com/articles/explorer-percy-fawcett-disappears-in-the-amazon"
+      ]
+    },
+    {
+      "claim": "Fawcett left instructions that if the expedition did not return, no rescue should be sent",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Percy_Fawcett",
+        "https://www.discoveryuk.com/mysteries/what-happened-to-colonel-percy-fawcett-and-the-lost-city-of-z/"
+      ]
+    },
+    {
+      "claim": "His last letter, to his wife (Nina), was dated 29 May 1925 from Dead Horse Camp and included the line 'You need have no fear of any failure'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Percy_Fawcett",
+        "https://www.history.com/articles/explorer-percy-fawcett-disappears-in-the-amazon"
+      ]
+    },
+    {
+      "claim": "That letter was the last communication from the party; none of the three was ever found",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Percy_Fawcett",
+        "https://www.history.com/articles/explorer-percy-fawcett-disappears-in-the-amazon",
+        "https://www.nationalgeographic.com/history/article/percy-fawcett-search-lost-city-of-z"
+      ]
+    },
+    {
+      "claim": "Search expeditions followed regardless (Dyott 1928 first; many later)",
+      "sources": [
+        "https://www.history.com/articles/explorer-percy-fawcett-disappears-in-the-amazon",
+        "https://www.discoveryuk.com/mysteries/what-happened-to-colonel-percy-fawcett-and-the-lost-city-of-z/",
+        "https://www.nationalgeographic.com/history/article/percy-fawcett-search-lost-city-of-z"
+      ]
+    },
+    {
+      "claim": "Bones obtained by Orlando Villas-Bôas (1951) were presented as Fawcett's; the Royal Anthropological Institute in London examined them (Cave report 24 Oct 1951) and found conclusively they were not his",
+      "sources": [
+        "https://therai.org.uk/archives-and-manuscripts/archive-contents/fawcett-papers-a69/",
+        "https://en.wikipedia.org/wiki/Percy_Fawcett",
+        "https://www.nationalgeographic.com/history/article/percy-fawcett-search-lost-city-of-z",
+        "https://content.time.com/time/subscriber/article/0,33009,814702-1,00.html"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of 2026: History.com (updated 3 Sep 2026) says the cause of the disappearance remains a mystery; 2025 centenary coverage reports no new evidence",
+      "sources": [
+        "https://www.history.com/articles/explorer-percy-fawcett-disappears-in-the-amazon",
+        "https://www.nationalgeographic.com/history/article/percy-fawcett-search-lost-city-of-z",
+        "https://www.echolive.ie/nostalgia/arid-41606914.html"
+      ]
+    }
+  ]
+}

@@ -143,6 +143,19 @@ then prefer cases that don't need them. A film under ~20 plays at 12h on a healt
 - Still to build: 11-16 fawcett + flannan angle + naronic + maryceleste angle; 11-17 waratah angle + amberroom (cap $5/day = 4 films).
 - After 11-21: open `length` (about 15 s, one object) and a Page first-comment arm. Not before: they would sit inside the test.
 
+## 2026-11-16: mining-vs-fresh test, films 5-8 built (posts 11-19/20)
+- **fawcett** (F, place; CLEAN) 11-19 01:45Z · **flannanrelief** (R, 4th Flannan, detail hook: Joseph Moore's own letter of
+  28 Dec 1900 + the Hesperus telegram, the letter shown publicly for the first time Aug-Sep 2026; FIX x2: Moore AND three men
+  from the ship lit the light; the OUTER door was closed, the kitchen door open) 15:45Z · **naronic** (F, place; FIX: the bottle
+  names "could not be matched" rather than "matched no one", one note was signed only "T.") 11-20 01:45Z · **celestebarrels**
+  (R, 5th Mary Celeste: the nine empty red-oak barrels + the vapour-flash theory, 2006 UCL and Apr-2026 Manchester tests;
+  CLEAN, red oak is thinly sourced (Smithsonian 2007, Skeptoid), kept) 15:45Z.
+- Each: Opus writer with sources -> blind Opus fact-check (never saw script.json) -> stills looked at -> built -> uploaded,
+  served sha256 = local -> blind reach score BEFORE posting (seeds 31/32, pool 57): flannanrelief +0.70 (#15), fawcett +0.69
+  (#17), celestebarrels -0.12, naronic -0.14. Spend ~$4 (20 stills + TTS).
+- Gotcha: `prospective_score.py rate` needs `source ~/.config/api-keys/keys.env` first (GPT seats read OPENROUTER_API_KEY).
+- Still to build 11-17: waratah angle (R, place) + amberroom (F, place), for 11-21.
+
 ## The loop (one arm at a time)
 1. **Post** 2/day via `ig.py --profile unsolved batch --per-day 2` (cron once the Page id lands in ig.py + reels_lab/pages.json).
 2. **Measure**: `lab.py snap` every 6h (cron); `lab.py report --page unsolved` = plays at 72h + retention + arm medians.

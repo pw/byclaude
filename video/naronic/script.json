@@ -1,0 +1,159 @@
+{
+  "title": "Two Lifeboats",
+  "subtitle": "SS Naronic · North Atlantic, 1893",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the open North Atlantic in winter in the 1890s, heavy grey overcast over a cold heaving sea, gunmetal and slate-blue tones with faint pale light, melancholy and uncanny, period nineteenth-century detail, vertical 9:16 full-bleed composition with one centred subject in the middle third, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Liverpool, eighteen ninety-three. The White Star steamer Naronic sailed for New York, with seventy-four people aboard.",
+      "cap": "LIVERPOOL · 1893",
+      "img": "Vertical full-bleed scene: a single black-hulled 1890s cargo steamship with one tall buff funnel topped in black and two masts, seen bow-on and centred in the middle third, steaming out of a grey winter river mouth into a cold open sea, smoke trailing, low heavy overcast, pale light on the wet hull, no legible name on the hull, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "She never arrived. Three weeks later, two of her lifeboats were found adrift in the Atlantic.",
+      "cap": "TWO LIFEBOATS\nADRIFT",
+      "amber": true,
+      "img": "Vertical full-bleed scene: a single empty wooden nineteenth-century ship's lifeboat drifting alone on a heaving grey North Atlantic, centred in the middle third and lit by a pale break in the overcast, white spray on the swell around it, vast empty sea to the horizon, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "One upside down. One half full of water. No one in either.",
+      "cap": "NO ONE\nIN EITHER",
+      "img": "Vertical full-bleed scene: an overturned wooden lifeboat floating keel-up on the dark grey Atlantic, its pale weathered hull and keel centred in the middle third, cold flat winter light, low swell, mist on the horizon, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Messages in bottles turned up. One claimed an iceberg, in a blinding snowstorm. None of the names could be matched to anyone aboard.",
+      "cap": "MESSAGES\nIN BOTTLES",
+      "img": "Vertical full-bleed scene: a single old corked green glass bottle with a rolled paper note inside, lying on wet dark sand at the tideline, centred in the middle third and sharply lit by low grey daylight, foam edging the sand, the paper blank with no legible writing, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "The cause was never determined. Her wreck has never been found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "Vertical full-bleed scene: the empty North Atlantic in winter from just above the water, a heavy grey sky with one faint pale gap centred in the middle third, a few small distant pieces of floating ice, nothing else on the calm dark surface, cold and unresolved, no ship, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "SS Naronic, a White Star Line cargo (livestock) steamer, left Liverpool on 11 February 1893 bound for New York",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Naronic",
+        "https://www.whitestarhistory.com/naronic",
+        "https://maritimequest.com/daily_event_archive/2012/02_feb/11_ss_naronic.htm",
+        "https://oceanlinersmagazine.com/2016/05/25/naronic-the-ship-that-disappeared/"
+      ]
+    },
+    {
+      "claim": "74 people were aboard (split given variously: Wikipedia 60 crew + 14 returning cattlemen; Ocean Liners 50 crew + 24 cattlemen; MaritimeQuest 'seventy-four men'; whitestarhistory '74 crew'). VO/caption use only the agreed total, 74 people",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Naronic",
+        "https://maritimequest.com/daily_event_archive/2012/02_feb/11_ss_naronic.htm",
+        "https://oceanlinersmagazine.com/2016/05/25/naronic-the-ship-that-disappeared/",
+        "https://www.whitestarhistory.com/naronic",
+        "https://spookyvalley.web.app/events/1893-ss-naronic-disappearance/"
+      ]
+    },
+    {
+      "claim": "She never arrived / was never seen again after leaving the Mersey",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Naronic",
+        "https://oceanlinersmagazine.com/2016/05/25/naronic-the-ship-that-disappeared/",
+        "https://www.whitestarhistory.com/naronic"
+      ]
+    },
+    {
+      "claim": "On 4 March 1893 (three weeks after sailing) the British steamer Coventry (Capt. Wilson) passed two Naronic lifeboats in the open Atlantic (approx. 42N 46W; Wikipedia: ~500 miles east of Halifax)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Naronic",
+        "https://maritimequest.com/daily_event_archive/2012/02_feb/11_ss_naronic.htm",
+        "https://mail.old-merseytimes.co.uk/NARONIC.html"
+      ]
+    },
+    {
+      "claim": "The first boat (2 am) was capsized / drifting bottom upwards; the second (2 pm, ~12 hours later) was swamped / 'half filled with water and abandoned'",
+      "sources": [
+        "https://mail.old-merseytimes.co.uk/NARONIC.html",
+        "https://en.wikipedia.org/wiki/SS_Naronic",
+        "https://maritimequest.com/daily_event_archive/2012/02_feb/11_ss_naronic.htm",
+        "https://www.whitestarhistory.com/naronic"
+      ]
+    },
+    {
+      "claim": "Both lifeboats were empty (no one in either)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Naronic",
+        "https://www.whitestarhistory.com/naronic",
+        "https://spookyvalley.web.app/events/1893-ss-naronic-disappearance/",
+        "https://mail.old-merseytimes.co.uk/NARONIC.html"
+      ]
+    },
+    {
+      "claim": "At least four messages in bottles claiming to be from Naronic were found (two in the US, two in the UK) and washed ashore over following months",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Naronic",
+        "https://maritimequest.com/daily_event_archive/2012/02_feb/11_ss_naronic.htm",
+        "https://www.whitestarhistory.com/naronic",
+        "https://oceanlinersmagazine.com/2016/05/25/naronic-the-ship-that-disappeared/"
+      ]
+    },
+    {
+      "claim": "One bottle message said the ship had been 'struck by an iceberg in a blinding snowstorm'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Naronic",
+        "https://www.whitestarhistory.com/naronic",
+        "https://www.throughouthistory.com/?p=4995"
+      ]
+    },
+    {
+      "claim": "The names signed on the bottle messages did not match anyone on Naronic's manifest/crew list",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Naronic",
+        "https://www.whitestarhistory.com/naronic"
+      ]
+    },
+    {
+      "claim": "The Board of Trade inquiry (Liverpool, 1893) did not accept the bottle messages as genuine / dismissed them as hoaxes",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Naronic",
+        "https://www.whitestarhistory.com/naronic",
+        "https://spookyvalley.web.app/events/1893-ss-naronic-disappearance/"
+      ]
+    },
+    {
+      "claim": "Ice (iceberg/pack ice) and storm/heavy weather are theories, not established; others include capsizing, a derelict, chemical cargo. Only ice and storm named in VO",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Naronic",
+        "https://maritimequest.com/daily_event_archive/2012/02_feb/11_ss_naronic.htm",
+        "https://spookyvalley.web.app/events/1893-ss-naronic-disappearance/",
+        "https://mail.old-merseytimes.co.uk/NARONIC.html"
+      ]
+    },
+    {
+      "claim": "The inquiry could not determine the cause ('the probable cause of the loss of the vessel remains a matter of speculation'; 'no specific cause could be determined')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Naronic",
+        "https://spookyvalley.web.app/events/1893-ss-naronic-disappearance/",
+        "https://maritimequest.com/daily_event_archive/2012/02_feb/11_ss_naronic.htm"
+      ]
+    },
+    {
+      "claim": "The wreck has never been found; no discovery reported in 2024-2026 searches (16 Nov 2026)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Naronic",
+        "https://spookyvalley.web.app/events/1893-ss-naronic-disappearance/",
+        "https://maritimequest.com/daily_event_archive/2012/02_feb/11_ss_naronic.htm",
+        "https://www.whitestarhistory.com/naronic"
+      ]
+    }
+  ]
+}

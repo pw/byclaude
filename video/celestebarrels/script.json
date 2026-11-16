@@ -1,0 +1,127 @@
+{
+  "title": "Nine Empty Barrels",
+  "subtitle": "The Mary Celeste · Atlantic Ocean, 1872",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the cargo hold of a two-masted 19th-century merchant brigantine at sea in December 1872, dim timber interior, grey daylight falling through an open hatch, oak barrels with iron hoops, wet weathered wood, melancholy and uncanny, period maritime detail, cinematic tall vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "The Atlantic, eighteen seventy-two. The Mary Celeste was found drifting, empty, with seventeen hundred and one barrels of alcohol aboard.",
+      "cap": "ATLANTIC · 1872",
+      "img": "Rows of large wooden oak barrels with iron hoops stacked tightly in the dim cargo hold of a 19th-century sailing ship, a soft shaft of grey daylight falling from an open hatch above onto the centre barrels, well lit, still and silent, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "When she was unloaded, nine of those barrels were empty.",
+      "cap": "NINE\nEMPTY",
+      "amber": true,
+      "img": "A single old oak barrel with iron hoops standing alone in the centre of an emptied wooden ship's hold, its bung hole open, the wood dry and pale, grey daylight from a hatch above, stark and quiet, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "The rest were white oak. Those nine were red oak, a more porous wood.",
+      "cap": "RED OAK",
+      "img": "Close view of two curved barrel staves side by side on a wet wooden plank, one pale tight-grained white oak, one reddish open-grained red oak with visible pores, iron hoop nearby, grey daylight, centred, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "One theory: vapour from the leaks filled the hold, and a sudden flash frightened everyone into the only boat.",
+      "cap": "ONE THEORY:\nA FLASH",
+      "img": "The dim cargo hold of a 19th-century sailing ship seen from the ladder, rows of oak barrels below, a faint shimmering haze hanging in the air above them, a pale cold flicker of light at the far end, uneasy and quiet, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "In two thousand six, a chemist tested the idea in a model hold. A wave of flame swept through. Nothing was scorched. A possible answer, not a proven one.",
+      "cap": "NOTHING\nSCORCHED",
+      "amber": true,
+      "img": "Clean unmarked oak barrels in the hold of a 19th-century sailing ship beneath an open hatch, grey daylight on smooth unburned wood, no soot, no damage, calm and unresolved, centred, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The Mary Celeste was found adrift and deserted in the Atlantic (between the Azores and Portugal) by the Dei Gratia in early December 1872 (4/5 Dec)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.britannica.com/topic/Mary-Celeste",
+        "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste"
+      ]
+    },
+    {
+      "claim": "Her cargo was 1,701 barrels of (denatured/industrial) alcohol, New York to Genoa",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.marineinsight.com/the-mystery-of-the-mary-celeste-ghost-ship/",
+        "https://www.britannica.com/topic/Mary-Celeste"
+      ]
+    },
+    {
+      "claim": "When the cargo was unloaded (in Genoa), 9 of the 1,701 barrels were found empty (Wikipedia: 'In Genoa, 9 of the 1,701 barrels of alcohol were found empty, through seepage or minor damage'; maryceleste.net: 'When the ship was unloaded, the cargo was found to contain nine empty barrels')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://maryceleste.net/barrel.htm",
+        "https://www.marineinsight.com/the-mystery-of-the-mary-celeste-ghost-ship/"
+      ]
+    },
+    {
+      "claim": "The other barrels were white oak; the nine empty ones were red oak, a more porous wood likely to leak (maryceleste.net: 'All of those many barrels were of white oak, except for those nine, which were of red oak'; Marine Insight: 'those nine empty barrels were made of red oak and not white oak like the others. Red oak is a more porous wood')",
+      "sources": [
+        "https://maryceleste.net/barrel.htm",
+        "https://www.marineinsight.com/the-mystery-of-the-mary-celeste-ghost-ship/"
+      ]
+    },
+    {
+      "claim": "THEORY (named only as theory): alcohol vapour from leaking barrels built up in the hold and an explosion/flash, or the fear of one, led the captain to abandon ship in the only boat (Cobb, Putman 1910, New York World 1913 porous barrels; Sella 2006; Manchester 2026)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.chemistryworld.com/news/chemists-think-they-know-what-happened-on-board-the-mary-celeste/4023228.article",
+        "https://www.marineinsight.com/invisible-explosion-explains-why-famous-mary-celeste-ghost-ship-crew-jumped-overboard"
+      ]
+    },
+    {
+      "claim": "The ship's single boat (a yawl) was missing; ten people aboard (Captain Briggs, his wife, their two-year-old daughter, seven crew)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste",
+        "https://www.britannica.com/topic/Mary-Celeste"
+      ]
+    },
+    {
+      "claim": "2006: UCL chemist Andrea Sella, for Channel Five, built a model hold with paper cartons/cubes for barrels and set off a butane explosion: 'a spectacular wave of flame, but behind it was relatively cool air. No soot was left behind and there was no burning or scorching.' (VO says 'a chemist tested the idea in a model hold' - butane, not alcohol, so no fuel named)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.marineinsight.com/invisible-explosion-explains-why-famous-mary-celeste-ghost-ship-crew-jumped-overboard",
+        "https://www.ucl.ac.uk/news/2006/may/solved-mystery-mary-celeste",
+        "https://maryceleste.net/denature.htm"
+      ]
+    },
+    {
+      "claim": "Caption only: in 2026 Univ. of Manchester chemists Jack Rowbotham and Frank Mair repeated it for a Channel 5 documentary with a wooden model ship and ethanol; the explosion left no signs of damage; presented as 'a very convincing case as to what may have happened' (not proof)",
+      "sources": [
+        "https://www.chemistryworld.com/news/chemists-think-they-know-what-happened-on-board-the-mary-celeste/4023228.article",
+        "https://www.marineinsight.com/invisible-explosion-explains-why-famous-mary-celeste-ghost-ship-crew-jumped-overboard",
+        "https://en.wikipedia.org/wiki/Mary_Celeste"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of 2026: none of the ten was ever seen again; the explosion idea is a hypothesis with no direct evidence (no sign of fire found aboard; boarding party reported no fumes) - the April 2026 Manchester demonstration is described as what 'may have happened'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://www.chemistryworld.com/news/chemists-think-they-know-what-happened-on-board-the-mary-celeste/4023228.article",
+        "https://www.marineinsight.com/the-mystery-of-the-mary-celeste-ghost-ship/"
+      ]
+    },
+    {
+      "claim": "NOT USED: 'food on the table' legend; the 300/450-gallon leak figures (sources disagree); the 13°C flashpoint/battened-hatches narrative (secondary reporting only)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mary_Celeste",
+        "https://maryceleste.net/denature.htm"
+      ]
+    }
+  ]
+}

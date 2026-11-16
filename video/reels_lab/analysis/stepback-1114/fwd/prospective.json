@@ -11,7 +11,11 @@
   "theodosia": -0.06,
   "startiger3": -1.25,
   "dodecahedron": 0.72,
-  "vela4": -0.55
+  "vela4": -0.55,
+  "fawcett": 0.69,
+  "flannanrelief": 0.7,
+  "naronic": -0.14,
+  "celestebarrels": -0.12
  },
  "all": {
   "cyclops": 0.59,
@@ -77,6 +81,19 @@
     "vela4"
    ],
    "pool_n": 53
+  },
+  {
+   "seeds": [
+    "31",
+    "32"
+   ],
+   "films": [
+    "fawcett",
+    "flannanrelief",
+    "naronic",
+    "celestebarrels"
+   ],
+   "pool_n": 57
   }
  ]
 }
