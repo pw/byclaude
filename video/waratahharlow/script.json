@@ -1,0 +1,163 @@
+{
+  "title": "SS Waratah — what the Harlow saw",
+  "subtitle": "Two flashes off the South African coast · 27 July 1909",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Desaturated documentary still, the open Indian Ocean off the coast of South Africa in 1909, cold winter dusk and night, slate-blue and smoke-grey with small warm lamp glows, long heavy swell, period early-1900s steamships, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "South Africa, July nineteen-oh-nine. One evening, the steamer Harlow saw a ship behind her, pouring smoke.",
+      "cap": "SOUTH AFRICA · 1909",
+      "img": "A distant early-1900s steamship alone on the horizon at dusk, centred, a tall column of dark smoke streaming from her single funnel into a fading amber and slate-blue sky, two tiny white masthead lights and one small red sidelight just lit, a long heavy swell in the foreground catching the last light, dark-but-not-black sea, clear silhouette legible at thumbnail size, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "After dark, her lights. Then two great flashes, seconds apart. When they cleared, the lights were gone.",
+      "cap": "TWO\nFLASHES",
+      "amber": true,
+      "img": "Two tall pale flashes of light rising into the night sky from just beyond the horizon of a dark open sea, centred, lighting the undersides of low clouds and glinting on the swell, no ship visible, no flames on the water, eerie and still, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "The Harlow's officers put it down to bush fires ashore. In Durban next day, the captain reported nothing.",
+      "cap": "NOT\nREPORTED",
+      "img": "A thin faint line of orange bush-fire glow along a distant dark hilly shoreline at night, seen across a wide black-blue sea, centred in the frame, smoke haze lit from below under low cloud, calm and far away, no ships, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Two months later, the captain heard a liner was missing: the Waratah, out of Durban the night before, with two hundred and eleven aboard.",
+      "cap": "211\nABOARD",
+      "img": "A single old brass ship's signal lamp, unlit and cold, resting on a wet wooden deck rail of an early-1900s steamer, centred and well lit by flat grey dawn light, beads of sea spray on the brass, an empty grey sea behind softly out of focus, no writing, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "He became sure he had seen her. The Waratah's owners doubted it. The Waratah has never been found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "A vast empty ocean under a pale overcast dawn, centred, a long slow swell rolling toward a flat horizon, nothing on the water, no ship, no wreckage, quiet and unresolved, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "SS Waratah, a Blue Anchor Line passenger liner (completed 1908), left Durban on the evening of 26 July 1909 for Cape Town and never arrived; 211 aboard (92 passengers, 119 crew), none ever seen again. VO: 'a liner ... out of Durban the night before [the Harlow's sighting on the evening of 27 July], with two hundred and eleven aboard'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://www.slsa.sa.gov.au/australias-titanic-sinking-of-ss-waratah",
+        "https://www.discoveryuk.com/?p=23273709",
+        "https://www.amusingplanet.com/2026/01/the-disappearance-of-waratah.html"
+      ]
+    },
+    {
+      "claim": "Setting: off the coast of South Africa (Natal / Eastern Cape coast, between Durban and East London) in July 1909; the Harlow's sighting was on the evening of 27 July 1909, roughly 180 miles from Durban",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://paperspast.natlib.govt.nz/newspapers/WH19090921.2.40",
+        "https://paperspast.natlib.govt.nz/newspapers/EP19091102.2.49",
+        "https://www.discoveryuk.com/?p=23273709"
+      ]
+    },
+    {
+      "claim": "The Harlow was a steamer (a Harrison Line tramp freighter, Captain Albert John Bruce) heading up the coast to Durban; that evening her people saw a steamer behind/astern of them giving off a 'tremendous amount of smoke' / 'smoking fiercely' (Wikipedia: smoke astern ~5:30 pm; Lloyd's Manila agent: smoking vessel sighted 7:30 pm — times vary, so VO says only 'one evening')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://www.discoveryuk.com/?p=23273709",
+        "https://www.slsa.sa.gov.au/australias-titanic-sinking-of-ss-waratah",
+        "https://paperspast.natlib.govt.nz/newspapers/OW19091103.2.160",
+        "https://paperspast.natlib.govt.nz/newspapers/MEX19091030.2.22.7.2",
+        "https://paperspast.natlib.govt.nz/newspapers/NA19101223.2.3"
+      ]
+    },
+    {
+      "claim": "After dark they could see that ship's lights (two masthead lights and a red sidelight); then two flashes a few seconds apart; when it cleared, all her lights had disappeared ('two flashes... then nothing'). Described in 1909 reports as explosions; VO says only 'flashes'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://paperspast.natlib.govt.nz/newspapers/OW19091103.2.160",
+        "https://paperspast.natlib.govt.nz/newspapers/MEX19091030.2.22.7.2",
+        "https://paperspast.natlib.govt.nz/newspapers/NA19101223.2.3",
+        "https://www.discoveryuk.com/?p=23273709",
+        "https://www.slsa.sa.gov.au/australias-titanic-sinking-of-ss-waratah",
+        "https://www.amusingplanet.com/2026/01/the-disappearance-of-waratah.html"
+      ]
+    },
+    {
+      "claim": "The Harlow's officers (chief officer per the Manila letter; Wikipedia: captain, chief mate and chief engineer) concluded the flashes were probably bush fires on the coast (VO: 'The Harlow's officers put it down to bush fires ashore')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://paperspast.natlib.govt.nz/newspapers/OW19091103.2.160",
+        "https://paperspast.natlib.govt.nz/newspapers/MEX19091030.2.22.7.2",
+        "https://paperspast.natlib.govt.nz/newspapers/EP19091102.2.49",
+        "https://www.amusingplanet.com/2026/01/the-disappearance-of-waratah.html"
+      ]
+    },
+    {
+      "claim": "The Harlow reached Durban the next day (28 July, stayed to 31 July) and no one aboard mentioned the incident there; the captain did not report it until he heard the Waratah was overdue",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://paperspast.natlib.govt.nz/newspapers/WDT19090925.2.13.8",
+        "https://paperspast.natlib.govt.nz/newspapers/EP19091102.2.49"
+      ]
+    },
+    {
+      "claim": "Two months later (heard a few days before / on reaching Manila; the Harlow arrived at Manila ~19 September 1909; Wikipedia: two months later at Cavite, Philippines) the captain learned the Waratah was missing (VO: 'Two months later, the captain heard a liner was missing')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://paperspast.natlib.govt.nz/newspapers/OW19091103.2.160",
+        "https://paperspast.natlib.govt.nz/newspapers/NA19101223.2.3",
+        "https://paperspast.natlib.govt.nz/newspapers/EP19091029.2.71",
+        "https://paperspast.natlib.govt.nz/newspapers/WDT19090925.2.13.8"
+      ]
+    },
+    {
+      "claim": "Captain Bruce became convinced the ship he saw was the Waratah; he repeated it to the Board of Trade inquiry in London (Dec 1910), concluding the Waratah blew up (VO: 'He became sure he had seen her')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://paperspast.natlib.govt.nz/newspapers/EP19101219.2.61",
+        "https://paperspast.natlib.govt.nz/newspapers/OW19091103.2.160",
+        "https://www.discoveryuk.com/?p=23273709"
+      ]
+    },
+    {
+      "claim": "Her owners (Lund's Blue Anchor Line) could not reconcile the Harlow captain's story with the Waratah's known position (Clan MacIntyre had her ~51 miles ahead that morning) and believed he saw a bush fire (VO: 'Her owners doubted it')",
+      "sources": [
+        "https://paperspast.natlib.govt.nz/newspapers/OW19091103.2.160",
+        "https://paperspast.natlib.govt.nz/newspapers/WDT19090925.2.13.8",
+        "https://paperspast.natlib.govt.nz/newspapers/EP19101219.2.62",
+        "https://paperspast.natlib.govt.nz/newspapers/EP19091102.2.49"
+      ]
+    },
+    {
+      "claim": "NOT IN VO, context: the inquiry's judgment (Feb 1911) said there was only conflicting and indirect evidence, dismissed the theory of an explosion of bunker coal, and held she probably capsized in a storm, chain of circumstances undetermined; Wikipedia: the inquiry held the evening sightings could not all have been Waratah",
+      "sources": [
+        "https://paperspast.natlib.govt.nz/newspapers/TDN19110224.2.26",
+        "https://paperspast.natlib.govt.nz/newspapers/GRA19110224.2.66",
+        "https://paperspast.natlib.govt.nz/newspapers/MEX19110224.2.25.2.1",
+        "https://paperspast.natlib.govt.nz/newspapers/OG19110224.2.11",
+        "https://en.wikipedia.org/wiki/SS_Waratah"
+      ]
+    },
+    {
+      "claim": "Still never found as of November 2026: Wikipedia 'No wreckage or remains have ever been found'; Amusing Planet (20 Jan 2026) 'No trace of the ship has ever been found'; 2025 Journal of Maritime Archaeology paper (Pons, rogue-wave hypothesis) treats the wreck as undiscovered; searches on 2026-11-17 for 2024-26 wreck-find news returned none (the 1999 'find' was the Nailsea Meadow)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://www.amusingplanet.com/2026/01/the-disappearance-of-waratah.html",
+        "https://link.springer.com/article/10.1007/s11457-025-09435-9",
+        "https://www.discoveryuk.com/?p=23273709"
+      ]
+    },
+    {
+      "claim": "NOT USED: 'flames 300 ft high' / '3000 ft flash' (heights vary between accounts); 'all aboard killed instantly' (crew opinion, violence rule); exact times (5:30 vs 7:30 pm) and distances (5-6 vs 12-14 miles vary); the Guelph 'T-A-H' sighting and the Sabine/Wakefield searches (kept for possible separate films); Cavite vs Manila (VO avoids the place)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Waratah",
+        "https://paperspast.natlib.govt.nz/newspapers/OW19091103.2.160",
+        "https://paperspast.natlib.govt.nz/newspapers/NA19101223.2.3",
+        "https://www.discoveryuk.com/?p=23273709"
+      ]
+    }
+  ]
+}

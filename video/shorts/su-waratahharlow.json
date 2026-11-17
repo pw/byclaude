@@ -1,0 +1,48 @@
+{
+ "out": "short-su-waratahharlow",
+ "kicker": "SS WARATAH",
+ "frame": "bleed",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "waratahharlow",
+   "img": "B01",
+   "vo": "South Africa, July nineteen-oh-nine. One evening, the steamer Harlow saw a ship behind her, pouring smoke.",
+   "cap": "SOUTH AFRICA \u00b7 1909"
+  },
+  {
+   "src": "waratahharlow",
+   "img": "B02",
+   "vo": "After dark, her lights. Then two great flashes, seconds apart. When they cleared, the lights were gone.",
+   "cap": "TWO\nFLASHES",
+   "amber": true
+  },
+  {
+   "src": "waratahharlow",
+   "img": "B03",
+   "vo": "The Harlow's officers put it down to bush fires ashore. In Durban next day, the captain reported nothing.",
+   "cap": "NOT\nREPORTED"
+  },
+  {
+   "src": "waratahharlow",
+   "img": "B04",
+   "vo": "Two months later, the captain heard a liner was missing: the Waratah, out of Durban the night before, with two hundred and eleven aboard.",
+   "cap": "211\nABOARD"
+  },
+  {
+   "src": "waratahharlow",
+   "img": "B05",
+   "vo": "He became sure he had seen her. The Waratah's owners doubted it. The Waratah has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

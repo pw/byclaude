@@ -15,7 +15,9 @@
   "fawcett": 0.69,
   "flannanrelief": 0.7,
   "naronic": -0.14,
-  "celestebarrels": -0.12
+  "celestebarrels": -0.12,
+  "waratahharlow": -0.23,
+  "amberroom": 1.01
  },
  "all": {
   "cyclops": 0.59,
@@ -94,6 +96,17 @@
     "celestebarrels"
    ],
    "pool_n": 57
+  },
+  {
+   "seeds": [
+    "41",
+    "42"
+   ],
+   "films": [
+    "waratahharlow",
+    "amberroom"
+   ],
+   "pool_n": 59
   }
  ]
 }

@@ -156,6 +156,18 @@ then prefer cases that don't need them. A film under ~20 plays at 12h on a healt
 - Gotcha: `prospective_score.py rate` needs `source ~/.config/api-keys/keys.env` first (GPT seats read OPENROUTER_API_KEY).
 - Still to build 11-17: waratah angle (R, place) + amberroom (F, place), for 11-21.
 
+## 2026-11-17: mining-vs-fresh test, films 9-10 built (posts 11-21); the test is fully built
+- **waratahharlow** (R, 4th Waratah, place hook: the steamer Harlow's two flashes on the evening of 27 Jul 1909, lights
+  gone; her captain became sure he'd seen the Waratah, the owners doubted it) 11-21 01:45Z · **amberroom** (F, place;
+  Tsarskoye Selo 1941 → Königsberg → lost early 1945; CLEAN) 15:45Z.
+- Blind fact-check on waratahharlow: FIX x3 applied ("no one aboard mentioned it" → "the captain reported nothing", cap
+  NOT REPORTED; "Weeks later" → "Two months later"; "Her owners" → "The Waratah's owners", since "her" could read as the
+  Harlow's). The checker confirmed the framing never asserts the Harlow saw the Waratah.
+- Stills: first renders of B03 (bush fire) and B05 (empty sea) put a liner in frame despite "no ships"; a liner against
+  fire would imply the cause. Regenerated with an explicit "absolutely no ships" clause; rejects in waratahharlow/rejected/.
+- Blind reach scores before posting (seeds 41/42, pool 59): amberroom +1.01 (#10), waratahharlow -0.23 (#35).
+- Served sha256 = local for both; ig.py dry-run order: startiger3 → … → celestebarrels → waratahharlow → amberroom.
+
 ## The loop (one arm at a time)
 1. **Post** 2/day via `ig.py --profile unsolved batch --per-day 2` (cron once the Page id lands in ig.py + reels_lab/pages.json).
 2. **Measure**: `lab.py snap` every 6h (cron); `lab.py report --page unsolved` = plays at 72h + retention + arm medians.

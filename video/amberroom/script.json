@@ -1,0 +1,137 @@
+{
+  "title": "The Amber Room",
+  "subtitle": "Catherine Palace, 1716 · Königsberg, 1945",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, 1940s wartime era, rich honey-amber and old-gold highlights against cold grey-blue shadows, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Tsarskoye Selo, Russia, nineteen forty-one. A palace room walled in carved amber, a gift from Prussia in seventeen sixteen.",
+      "cap": "RUSSIA · 1941",
+      "img": "A single tall wall panel of carved, polished honey-coloured amber mosaic set in an ornate gilded rococo frame, centred and filling the middle of the frame, glowing warmly as if lit from within by soft golden candlelight, rich amber, gold and cream tones, bright and clearly legible, an eighteenth-century palace interior softly out of focus around it, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "It was taken down by German forces in thirty-six hours and sent to Königsberg Castle.",
+      "cap": "36 HOURS",
+      "amber": true,
+      "img": "One open wooden shipping crate packed with straw, a few loose pieces of carved amber panelling glowing inside, centred on the parquet floor of a stripped, empty palace hall with bare walls where panels once hung, pale grey autumn light from tall windows, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "It was displayed, then packed into crates. In early nineteen forty-five, the trail ends.",
+      "cap": "THE TRAIL\nENDS",
+      "amber": true,
+      "img": "A row of sealed, unmarked wooden crates standing in a vaulted medieval brick castle hall in winter, centred, a single oil lantern on the floor throwing warm light on the nearest crate, cold blue shadows and frost on the high window, no markings, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Some believe it burned. Some, that it went by ship, or into a bunker. None is proven.",
+      "cap": "NONE\nPROVEN",
+      "img": "A lone 1940s steam cargo ship, small and dark, centred far out on a flat grey winter Baltic sea at dusk, a thin trail of smoke, low heavy clouds, cold and silent, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "One mosaic surfaced in Germany in nineteen ninety-seven. The room in the palace today is a copy. The original was never found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "An empty ornate gilded frame hanging alone on a bare, pale plaster palace wall, centred, a faint darker outline on the wall where a panel once hung, dim warm amber light falling from one side, quiet and still, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The Amber Room was given by King Frederick William I of Prussia to Peter the Great of Russia in 1716",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amber_Room",
+        "https://www.history.com/articles/amber-room-mystery",
+        "https://www.historyhit.com/facts-about-the-lost-amber-room/",
+        "https://enigmatruecrime.com/2026/08/20/amber-room-lost-treasure/"
+      ]
+    },
+    {
+      "claim": "It was later installed at the Catherine Palace at Tsarskoye Selo, outside St Petersburg, and was there in 1941",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amber_Room",
+        "https://www.history.com/articles/amber-room-mystery",
+        "https://www.historyhit.com/facts-about-the-lost-amber-room/"
+      ]
+    },
+    {
+      "claim": "The room was panelled in carved amber (with gold leaf, mosaics and mirrors)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amber_Room",
+        "https://enigmatruecrime.com/2026/08/20/amber-room-lost-treasure/",
+        "https://notesfrompoland.com/2025/08/14/polish-researchers-obtain-permission-to-search-potential-site-of-amber-room-missing-since-wwii/"
+      ]
+    },
+    {
+      "claim": "In autumn 1941 German forces (Army Group North) dismantled it within 36 hours and transported it to Königsberg (Castle)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amber_Room",
+        "https://www.history.com/articles/amber-room-mystery",
+        "https://www.historyhit.com/facts-about-the-lost-amber-room/",
+        "https://notesfrompoland.com/2025/08/14/polish-researchers-obtain-permission-to-search-potential-site-of-amber-room-missing-since-wwii/"
+      ]
+    },
+    {
+      "claim": "It was reassembled and displayed in Königsberg Castle",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amber_Room",
+        "https://www.history.com/articles/amber-room-mystery",
+        "https://www.historyhit.com/facts-about-the-lost-amber-room/",
+        "https://orbk.net/en/unknown-horizons/will-the-amber-room-be-found-by-2040/"
+      ]
+    },
+    {
+      "claim": "It was later dismantled again and crated (1943–44; boxed up in the castle, ready for transport, before the Red Army took the city in April 1945); the panels were last seen in January 1945 and documentation of its location ends at Königsberg in 1945",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amber_Room",
+        "https://www.history.com/articles/amber-room-mystery",
+        "https://www.historyhit.com/facts-about-the-lost-amber-room/",
+        "https://enigmatruecrime.com/2026/08/20/amber-room-lost-treasure/"
+      ]
+    },
+    {
+      "claim": "Theories (unproven): destroyed by fire in Königsberg in April 1945 (Soviet report; Scott-Clark & Levy; Brumfield); taken out by ship (Wilhelm Gustloff claims; the steamer Karlsruhe, wreck found by Polish divers in 2020 with no Amber Room evidence); hidden in a bunker (Mamerki; Dziemiany permit 2025)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amber_Room",
+        "https://www.history.com/articles/amber-room-mystery",
+        "https://www.historyhit.com/facts-about-the-lost-amber-room/",
+        "https://notesfrompoland.com/2025/08/14/polish-researchers-obtain-permission-to-search-potential-site-of-amber-room-missing-since-wwii/",
+        "https://orbk.net/en/unknown-horizons/will-the-amber-room-be-found-by-2040/"
+      ]
+    },
+    {
+      "claim": "In 1997 one of the room's original Florentine stone mosaics surfaced in Germany (Bremen); it and a chest of drawers were returned to Russia in April 2000",
+      "sources": [
+        "https://www.rferl.org/a/1084757.html",
+        "https://plone.unige.ch/art-adr/cases-affaires/sammlung-101-city-of-bremen-kunsthalle-bremen-and-russia-1",
+        "https://en.wikipedia.org/wiki/Amber_Room",
+        "https://enigmatruecrime.com/2026/08/20/amber-room-lost-treasure/"
+      ]
+    },
+    {
+      "claim": "The room in the Catherine Palace today is a reconstruction, begun 1979 and completed/unveiled in 2003",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amber_Room",
+        "https://www.historyhit.com/facts-about-the-lost-amber-room/",
+        "https://enigmatruecrime.com/2026/08/20/amber-room-lost-treasure/"
+      ]
+    },
+    {
+      "claim": "The original has never been found: still lost as of 2026 — Aug 2025 Polish permit at Dziemiany was for drilling/survey only with the link a hypothesis; Aug 2026 and Oct 2026 pieces report no confirmed discovery; 'found' headlines (e.g. YouTube 'found in an old mine') are unconfirmed",
+      "sources": [
+        "https://enigmatruecrime.com/2026/08/20/amber-room-lost-treasure/",
+        "https://orbk.net/en/unknown-horizons/will-the-amber-room-be-found-by-2040/",
+        "https://notesfrompoland.com/2025/08/14/polish-researchers-obtain-permission-to-search-potential-site-of-amber-room-missing-since-wwii/",
+        "https://www.history.com/articles/amber-room-mystery"
+      ]
+    }
+  ]
+}

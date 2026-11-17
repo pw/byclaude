@@ -714,6 +714,30 @@
    "arm": "repeat",
    "series": "sequel-of-maryceleste",
    "telling": 5
+  },
+  "waratahharlow": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "mining-vs-fresh-1117",
+   "hook": "place",
+   "kind": "person",
+   "arm": "repeat",
+   "series": "sequel-of-waratah",
+   "telling": 4
+  },
+  "amberroom": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "mining-vs-fresh-1117",
+   "hook": "place",
+   "kind": "anomaly",
+   "arm": "fresh"
   }
  },
  "byclaude": {
