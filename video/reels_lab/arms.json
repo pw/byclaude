@@ -738,6 +738,50 @@
    "hook": "place",
    "kind": "anomaly",
    "arm": "fresh"
+  },
+  "honjo": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "length-1122",
+   "length": "long",
+   "hook": "detail",
+   "kind": "anomaly"
+  },
+  "cleopatra": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "length-1122",
+   "length": "short",
+   "hook": "detail",
+   "kind": "anomaly"
+  },
+  "cambyses": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "length-1122",
+   "length": "long",
+   "hook": "place",
+   "kind": "person"
+  },
+  "crownjewels": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "length-1122",
+   "length": "short",
+   "hook": "detail",
+   "kind": "anomaly"
   }
  },
  "byclaude": {

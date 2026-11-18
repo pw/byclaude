@@ -1,0 +1,80 @@
+{
+  "title": "Cleopatra's Tomb",
+  "subtitle": "Alexandria · 30 B.C.",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, the ancient ruins of Ptolemaic Alexandria on the Mediterranean, warm sandstone and old-gold highlights against cool sea-green and blue-grey shadows, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no inscriptions, no hieroglyphs, no signage, no statues, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Cleopatra's tomb has never been found. She built it in Alexandria, and in thirty B.C. was buried there with Mark Antony.",
+      "cap": "NEVER\nFOUND",
+      "img": "A single massive sealed doorway of an ancient Greek-Egyptian royal mausoleum, tall smooth limestone blocks and a heavy closed bronze door with plain studded panels, centred and filling the middle of the frame, lit warmly from one side by low golden evening light, rich sandstone, bronze and old-gold tones, bright and clearly legible, drifting sand at its threshold, plain uncarved stone with no inscriptions, no statues, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Much of her royal quarter now lies under the sea.",
+      "cap": "UNDER\nTHE SEA",
+      "amber": true,
+      "img": "A single fallen granite column lying on a pale sandy seabed in still green-blue Mediterranean water, centred, a few worn cut stone blocks scattered softly out of focus around it, soft shafts of sunlight slanting down from the surface above, quiet and still, no statues, no carvings, no divers, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Ancient sources say Cleopatra had a tomb/monument built for herself, near a temple of Isis, in the royal grounds of Alexandria (Plutarch, Antony 74; Cassius Dio 51.8: 'her tomb which she was constructing in the royal grounds'); it was unfinished at her death",
+      "sources": [
+        "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony*.html",
+        "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/51*.html",
+        "https://www.history.com/articles/cleopatras-tomb",
+        "https://en.wikipedia.org/wiki/Tomb_of_Antony_and_Cleopatra"
+      ]
+    },
+    {
+      "claim": "In 30 B.C. Cleopatra and Mark Antony were buried together in that tomb (Plutarch, Antony 86: Caesar ordered 'her body should be buried with that of Antony'; Dio 51.15: 'buried in the same tomb')",
+      "sources": [
+        "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony*.html",
+        "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/51*.html",
+        "https://www.history.com/articles/cleopatras-tomb",
+        "https://en.wikipedia.org/wiki/Cleopatra"
+      ]
+    },
+    {
+      "claim": "The tomb has never been found (as of 2026): History.com (published 7 May 2026, updated 14 May 2026) says the burial place 'remains undiscovered'; Franck Goddio: 'no evidence to date of that mausoleum'; Wikipedia: 'has not been discovered'; Sept 2025 Taposiris Magna port finds were not the tomb; July/Aug 2026 coverage reports no confirmed discovery; no Oct–Nov 2026 announcement found",
+      "sources": [
+        "https://www.history.com/articles/cleopatras-tomb",
+        "https://en.wikipedia.org/wiki/Tomb_of_Antony_and_Cleopatra",
+        "https://www.cbsnews.com/news/egypt-ancient-harbor-discovered-in-quest-for-queen-cleopatra-lost-tomb/",
+        "https://historycollection.com/cleopatra-tomb-update-taposiris-magna-discovery/",
+        "https://scope.scholastic.com/issues/2025-26/030126/the-search-for-cleopatras-tomb.html"
+      ]
+    },
+    {
+      "claim": "Much of Alexandria's ancient royal quarter (Portus Magnus, the island of Antirhodos and its palace) slid beneath the sea after earthquakes and tidal waves, notably AD 365; mapped underwater by Franck Goddio's team since 1992",
+      "sources": [
+        "https://www.franckgoddio.org/projects/sunken-civilizations/alexandria/",
+        "https://archive.archaeology.org/9903/abstracts/map.html",
+        "https://www.cbsnews.com/pictures/exploring-cleopatras-sunken-palace",
+        "https://www.history.com/articles/cleopatras-tomb"
+      ]
+    },
+    {
+      "claim": "(caption) Much of the rest of the ancient city lies beneath modern Alexandria",
+      "sources": [
+        "https://www.cealex.org/?p=8984",
+        "https://www.smithsonianmag.com/issues/2007/april/alexandria.php",
+        "https://antiquities.bibalex.org/Attachments/images/file/The%20City%20of%20Alexandria-EN.pdf"
+      ]
+    },
+    {
+      "claim": "(caption) Kathleen Martínez has searched for years at Taposiris Magna, about 30 miles west of Alexandria, believing the tomb is there; in 2025 her team with Robert Ballard reported a submerged ancient harbour offshore; most Egyptologists hold the queen was buried in Alexandria; the theory remains unproven",
+      "sources": [
+        "https://www.cbsnews.com/news/egypt-ancient-harbor-discovered-in-quest-for-queen-cleopatra-lost-tomb/",
+        "https://www.nationalgeographic.com/history/article/cleopatra-tomb-port-taposiris-magna",
+        "https://en.wikipedia.org/wiki/Kathleen_Mart%C3%ADnez",
+        "https://en.wikipedia.org/wiki/Tomb_of_Antony_and_Cleopatra"
+      ]
+    }
+  ]
+}

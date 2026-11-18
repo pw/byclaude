@@ -1,0 +1,29 @@
+{
+ "out": "short-su-cleopatra",
+ "kicker": "CLEOPATRA'S TOMB",
+ "frame": "bleed",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "cleopatra",
+   "img": "B01",
+   "vo": "Cleopatra's tomb has never been found. She built it in Alexandria, and in thirty B.C. was buried there with Mark Antony.",
+   "cap": "NEVER\nFOUND"
+  },
+  {
+   "src": "cleopatra",
+   "img": "B02",
+   "vo": "Much of her royal quarter now lies under the sea.",
+   "cap": "UNDER\nTHE SEA",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

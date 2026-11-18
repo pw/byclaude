@@ -1,0 +1,126 @@
+{
+  "title": "The Lost Army",
+  "subtitle": "The Army of Cambyses · Western Desert, Egypt, c. 525 BC",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, the empty Western Desert of ancient Egypt, sun-bleached gold and ochre sand against pale cold blue sky and shadow, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Thebes, Egypt, around five hundred twenty-five B.C. Herodotus writes that a Persian king sent fifty thousand men toward Siwa.",
+      "cap": "EGYPT · c.525 BC",
+      "img": "One towering golden sand dune with a sharp knife-edge crest, centred and filling the middle of the frame, a thin veil of sand blowing off the crest in the wind, a vast empty sea of smaller dunes receding below, bright clear late-afternoon sunlight, warm gold against a pale blue sky, clearly legible, no footprints, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "They never arrived, he says. And never came back.",
+      "cap": "NEVER\nCAME BACK",
+      "amber": true,
+      "img": "A small distant cluster of green date palms, centred on the far horizon, beyond a long stretch of smooth untouched golden dunes, heat haze shimmering over the sand, hard bright sun, no tracks, no footprints, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "He heard it from the oasis. As the men ate, a great south wind rose, and buried them in sand.",
+      "cap": "A WIND FROM\nTHE SOUTH",
+      "img": "A towering wall of blowing sand and dust rolling across the desert toward the viewer, centred, filling the middle of the frame, a dark coppery-orange front with the sun a dim pale disc behind it, the dunes in front still lit, ominous and silent, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "His is the only account. A claimed find, in two thousand nine, was never confirmed.",
+      "cap": "THE ONLY\nACCOUNT",
+      "img": "A single rolled ancient papyrus scroll tied with a faded cord, resting alone on rippled golden sand, centred, lit by low warm sunlight with a long soft shadow, the scroll closed with no writing visible, empty dunes softly out of focus behind, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "One Egyptologist argues there was no storm. Only a defeat, and a story to cover it. No trace has ever been confirmed.",
+      "cap": "NO TRACE\nCONFIRMED",
+      "amber": true,
+      "img": "An endless field of smooth wind-rippled dunes at dusk, centred on one long untouched dune crest catching the last pale gold light, deep blue shadow in the troughs, a single faint star above, empty, still and unresolved, no footprints, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Herodotus (Histories 3.25–26) says Cambyses detached about fifty thousand men from his army and sent them from Thebes against the Ammonians (the oracle of Zeus-Amun), identified with the Siwa Oasis in Egypt's Western Desert",
+      "sources": [
+        "https://cts.perseids.org/read/greekLit/tlg0016/tlg001/perseus-eng2/3.25.1-3.26.3",
+        "https://lexundria.com/hdt/3.26/mcly",
+        "https://en.wikipedia.org/wiki/Lost_Army_of_Cambyses",
+        "https://www.nbcnews.com/id/wbna33791672",
+        "https://www.biblicalarchaeology.org/daily/ancient-cultures/ancient-near-eastern-world/were-50000-soldiers-buried-by-a-sandstorm/"
+      ]
+    },
+    {
+      "claim": "Date: around 525 BC (some sources give c. 524 BC; Herodotus gives no year — hence 'around' in VO and 'c.' in the cap)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lost_Army_of_Cambyses",
+        "https://www.tehrantimes.com/news/209177/Cambyses-lost-army-in-Egypt-true-or-false",
+        "https://www.ancient-origins.net/news-history-archaeology/has-mystery-lost-persian-army-finally-been-solved-001778"
+      ]
+    },
+    {
+      "claim": "Per Herodotus, the army never reached the Ammonians and never returned (VO attributes this to Herodotus)",
+      "sources": [
+        "https://cts.perseids.org/read/greekLit/tlg0016/tlg001/perseus-eng2/3.25.1-3.26.3",
+        "https://lexundria.com/hdt/3.26/mcly",
+        "https://en.wikipedia.org/wiki/Lost_Army_of_Cambyses"
+      ]
+    },
+    {
+      "claim": "Herodotus reports this as what the Ammonians themselves say: about midway between their country and the Oasis, while the Persians were breakfasting, a great and violent south wind arose and buried them in sand",
+      "sources": [
+        "https://cts.perseids.org/read/greekLit/tlg0016/tlg001/perseus-eng2/3.25.1-3.26.3",
+        "https://lexundria.com/hdt/3.26/mcly",
+        "https://www.biblicalarchaeology.org/daily/ancient-cultures/ancient-near-eastern-world/were-50000-soldiers-buried-by-a-sandstorm/",
+        "https://en.wikipedia.org/wiki/Lost_Army_of_Cambyses"
+      ]
+    },
+    {
+      "claim": "Herodotus's is the only ancient account of the army's loss",
+      "sources": [
+        "https://www.tehrantimes.com/news/209177/Cambyses-lost-army-in-Egypt-true-or-false",
+        "https://www.historyskills.com/classroom/ancient-history/cambyses-lost-army",
+        "https://en.wikipedia.org/wiki/Lost_Army_of_Cambyses"
+      ]
+    },
+    {
+      "claim": "Explorers have searched for the army for more than a century (since the 19th century; e.g. Wingate 1933, Chafetz 1983–84)",
+      "sources": [
+        "https://www.biblicalarchaeology.org/daily/ancient-cultures/ancient-near-eastern-world/were-50000-soldiers-buried-by-a-sandstorm/",
+        "https://www.sciencedaily.com/releases/2014/06/140619095824.htm",
+        "https://en.wikipedia.org/wiki/Lost_Army_of_Cambyses"
+      ]
+    },
+    {
+      "claim": "In November 2009 the Castiglioni brothers announced bones, weapons and jewellery near Siwa as the army's remains; presented in a documentary, not a journal; Zahi Hawass/SCA rejected it (no excavation permit); SCA promised an investigation with no published follow-up; never confirmed",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lost_Army_of_Cambyses",
+        "https://www.tehrantimes.com/news/209177/Cambyses-lost-army-in-Egypt-true-or-false",
+        "https://www.ancient-origins.net/news-history-archaeology/has-mystery-lost-persian-army-finally-been-solved-001778",
+        "https://www.thehistoryblog.com/archives/3905",
+        "https://www.nbcnews.com/id/wbna33791672"
+      ]
+    },
+    {
+      "claim": "Theory (Leiden Egyptologist Olaf Kaper, 2014): no sandstorm; the army was defeated by the rebel Petubastis III, and Darius I attributed the defeat to natural forces",
+      "sources": [
+        "https://www.sciencedaily.com/releases/2014/06/140619095824.htm",
+        "https://m.phys.org/news/2014-06-egyptologist-unravels-ancient-mystery.html",
+        "https://www.biblicalarchaeology.org/daily/ancient-cultures/ancient-near-eastern-world/were-50000-soldiers-buried-by-a-sandstorm/",
+        "https://www.ancient-origins.net/news-history-archaeology/has-mystery-lost-persian-army-finally-been-solved-001778"
+      ]
+    },
+    {
+      "claim": "No trace of the army has been confirmed as of Nov 2026: searches for 2024–2026 news found no new discovery; latest claims are the disputed 2009 one; Chafetz tumuli bones dated ~1,000 years too early",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lost_Army_of_Cambyses",
+        "https://www.ancient-origins.net/news-history-archaeology/has-mystery-lost-persian-army-finally-been-solved-001778",
+        "https://www.biblicalarchaeology.org/daily/ancient-cultures/ancient-near-eastern-world/were-50000-soldiers-buried-by-a-sandstorm/"
+      ]
+    }
+  ]
+}

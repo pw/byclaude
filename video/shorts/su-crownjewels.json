@@ -1,0 +1,29 @@
+{
+ "out": "short-su-crownjewels",
+ "kicker": "THE IRISH CROWN JEWELS",
+ "frame": "bleed",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "crownjewels",
+   "img": "B01",
+   "vo": "The safe was unlocked, not forced. The jewel case inside was empty.",
+   "cap": "NOT\nFORCED"
+  },
+  {
+   "src": "crownjewels",
+   "img": "B02",
+   "vo": "Ireland's Crown Jewels. Dublin Castle, nineteen-oh-seven. They were never found. No one was ever charged.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

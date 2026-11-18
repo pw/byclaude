@@ -168,6 +168,20 @@ then prefer cases that don't need them. A film under ~20 plays at 12h on a healt
 - Blind reach scores before posting (seeds 41/42, pool 59): amberroom +1.01 (#10), waratahharlow -0.23 (#35).
 - Served sha256 = local for both; ig.py dry-run order: startiger3 → … → celestebarrels → waratahharlow → amberroom.
 
+## 2026-11-18: LENGTH arm opened early by building batch 1 (posts 11-22/23, after the mining test)
+- Pre-registered in `analysis/length-test-1122.json` (seed 'length-test-2026-11-18'): short = 2 stills + end, VO 26-34
+  words (~13-15 s) vs long = house 5 stills (~35 s). Read = plays at first snap >=14h; call by the usual rule at n>=5 each;
+  harm check: short <0.67x long at n>=5 => drop short. Continue coin-flipped pairs until n=5 each.
+- Batch 1: **honjo** (L, detail; Honjo Masamune, handed in Dec 1945, passed to "Sgt. Coldy Bimore" Jan 1946; CLEAN) 11-22
+  01:45Z · **cleopatra** (S, detail; tomb never found, royal quarter under the sea; CLEAN, 12.7 s) 15:45Z · **cambyses**
+  (L, place; Herodotus's lost army; FIX x3: the army is now Herodotus's account from line 1) 11-23 01:45Z · **crownjewels**
+  (S, detail; Dublin Castle 1907, safe found unlocked, not forced; CLEAN, no suspect named, 14.3 s) 15:45Z.
+- honjo B01 regenerated: first render had the sword small and dark on a desk; frame 1 must read at thumbnail size.
+- Blind reach scores before posting (seeds 51/52, pool 63): cambyses +0.50, honjo +0.40, cleopatra -0.20, crownjewels
+  -1.04. The rater reads text, so it scores short scripts lower; if shorts win, that also counts against the rater.
+- Context for the read: since 11-14 every film except celestehold stalled at ~180-225 plays by 4-8h while the page stayed
+  healthy (408-1,591 viewers/day 11-03..11-16). The floor is sagging; format is the lever the model says can move it.
+
 ## The loop (one arm at a time)
 1. **Post** 2/day via `ig.py --profile unsolved batch --per-day 2` (cron once the Page id lands in ig.py + reels_lab/pages.json).
 2. **Measure**: `lab.py snap` every 6h (cron); `lab.py report --page unsolved` = plays at 72h + retention + arm medians.

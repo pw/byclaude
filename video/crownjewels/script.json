@@ -1,0 +1,104 @@
+{
+  "title": "The Irish Crown Jewels",
+  "subtitle": "Office of Arms, Dublin Castle · 1907",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, Edwardian era 1907, the interior of an old government office library in a castle, dark wood, brass and green-black iron, cold grey daylight with small cold glints of gemstone light, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "The safe was unlocked, not forced. The jewel case inside was empty.",
+      "cap": "NOT\nFORCED",
+      "img": "A small free-standing Edwardian iron safe with its heavy door standing slightly ajar, centred in the middle of the frame and filling it, a brass key in the lock, inside an open dark leather jewel case with fitted blue velvet hollows, completely empty, lit clearly by soft daylight from a tall window to one side, dark green and brass tones against cold grey shadow, bright and legible, a book-lined Edwardian office library softly out of focus behind, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Ireland's Crown Jewels. Dublin Castle, nineteen-oh-seven. They were never found. No one was ever charged.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "A single eight-pointed star brooch of brilliant-cut diamonds with a small red cross on a green shamrock at its centre, lying alone on dark blue velvet, centred and filling the middle of the frame, catching one thin beam of cold light so the diamonds glint, everything around it falling into deep shadow, quiet and still, no people, no lettering."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The jewels (Irish Crown Jewels: the star and badge regalia of the Grand Master of the Order of St Patrick, plus five knights' gold collars) were discovered missing on 6 July 1907 at Dublin Castle",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Irish_Crown_Jewels",
+        "https://dublincastle.ie/?p=8844",
+        "https://www.irishtimes.com/culture/the-mystery-of-the-missing-crown-jewels-1.1055099",
+        "https://www.nationalgeographic.com/culture/article/ireland-crown-jewels-heist-unsolved-mystery"
+      ]
+    },
+    {
+      "claim": "They were kept in a free-standing safe in the library of the Office of Arms (Bedford Tower), Dublin Castle",
+      "sources": [
+        "https://dublincastle.ie/?p=8844",
+        "https://en.wikipedia.org/wiki/Irish_Crown_Jewels",
+        "https://www.irishtimes.com/culture/the-mystery-of-the-missing-crown-jewels-1.1055099"
+      ]
+    },
+    {
+      "claim": "On 6 July the safe was found closed but unlocked, and the case that held the jewels was empty",
+      "sources": [
+        "https://dublincastle.ie/?p=8844",
+        "https://www.mentalfloss.com/crime/irish-crown-jewels-theft-gay-scandal",
+        "https://explorersweb.com/the-shackleton-family-secret-did-ernests-brother-steal-the-irish-crown-jewels/"
+      ]
+    },
+    {
+      "claim": "The safe had not been forced (opened by a key; no trace of forced entry)",
+      "sources": [
+        "https://www.mentalfloss.com/crime/irish-crown-jewels-theft-gay-scandal",
+        "https://edwardianpromenade.com/crime/the-theft-of-the-irish-crown-jewels",
+        "https://explorersweb.com/the-shackleton-family-secret-did-ernests-brother-steal-the-irish-crown-jewels/",
+        "https://comeheretome.com/2012/09/17/the-mystery-of-the-irish-crown-jewels-theft/",
+        "https://historybytheyard.co.uk/irish_crown_jewels.htm",
+        "https://www.nationalgeographic.com/culture/article/ireland-crown-jewels-heist-unsolved-mystery"
+      ]
+    },
+    {
+      "claim": "The Grand Master's star was of diamonds (Brazilian brilliants); the badge carried an emerald trefoil and ruby cross",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Irish_Crown_Jewels",
+        "https://www.nationalgeographic.com/culture/article/ireland-crown-jewels-heist-unsolved-mystery"
+      ]
+    },
+    {
+      "claim": "The loss was discovered four days before King Edward VII and Queen Alexandra's visit to Dublin",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Irish_Crown_Jewels",
+        "https://www.irishtimes.com/culture/the-mystery-of-the-missing-crown-jewels-1.1055099",
+        "https://www.irishcentral.com/roots/history/the-unsolved-mystery-of-the-irish-crown-jewels"
+      ]
+    },
+    {
+      "claim": "The jewels have never been recovered/found",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Irish_Crown_Jewels",
+        "https://dublincastle.ie/?p=8844",
+        "https://www.irishtimes.com/culture/the-mystery-of-the-missing-crown-jewels-1.1055099",
+        "https://www.irishcentral.com/roots/history/the-unsolved-mystery-of-the-irish-crown-jewels"
+      ]
+    },
+    {
+      "claim": "No one was ever charged or prosecuted for the theft",
+      "sources": [
+        "https://historybytheyard.co.uk/irish_crown_jewels.htm",
+        "https://www.mentalfloss.com/crime/irish-crown-jewels-theft-gay-scandal",
+        "https://www.irishtimes.com/ireland/2025/10/26/louvre-heist-thieves-take-note-irish-crown-jewels-were-never-found-and-culprits-never-caught",
+        "https://explorersweb.com/the-shackleton-family-secret-did-ernests-brother-steal-the-irish-crown-jewels/"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of 2026: Irish Times (26 Oct 2025) 'Irish crown jewels were never found and culprits never caught'; IrishCentral (updated 6 Jul 2026) 'have never been found'; Explorersweb (31 Aug 2026) retells it as unsolved; no recovery or charge reported 2024–2026",
+      "sources": [
+        "https://www.irishtimes.com/ireland/2025/10/26/louvre-heist-thieves-take-note-irish-crown-jewels-were-never-found-and-culprits-never-caught",
+        "https://www.irishcentral.com/roots/history/the-unsolved-mystery-of-the-irish-crown-jewels",
+        "https://explorersweb.com/the-shackleton-family-secret-did-ernests-brother-steal-the-irish-crown-jewels/",
+        "https://www.newstalk.com/podcasts/newstalk-daily/the-irish-crown-jewels-irelands-greatest-unsolved-heist"
+      ]
+    }
+  ]
+}

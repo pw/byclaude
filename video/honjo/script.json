@@ -1,0 +1,144 @@
+{
+  "title": "The Honjo Masamune",
+  "subtitle": "Mejiro, Tokyo · 1945–46",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, Japan in the post-war winter of 1945 to 1946, polished steel and warm lamp-gold highlights against cold grey-blue shadows, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "One of Japan's most celebrated swords was last seen at a Tokyo police station. Nineteen forty-six.",
+      "cap": "LAST SEEN:\nA POLICE STATION",
+      "img": "A single long, gently curved Japanese sword blade of polished steel, large and filling the middle third of the frame, held upright and slightly angled on a simple dark wooden sword stand, a faint misty wavy temper line along its edge, the steel gleaming bright silver under one warm lamp, clearly legible at small size, in a bare small 1940s police station room with a cold grey plaster wall softly out of focus behind, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "The Honjo Masamune, made by the smith Masamune around thirteen hundred. Named a National Treasure in nineteen thirty-nine.",
+      "cap": "NATIONAL\nTREASURE",
+      "amber": true,
+      "img": "An old Japanese sword in a plain black lacquered scabbard resting on a low two-tier wooden sword stand, centred, inside a dim traditional storehouse with dark timber walls and paper screens, a single shaft of pale gold light falling across the lacquer, plain fittings with no crests or markings, quiet and reverent, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "In December nineteen forty-five, under occupation orders, the Tokugawa family handed it in to police, with thirteen others.",
+      "cap": "14 SWORDS",
+      "img": "A row of long swords, each wrapped in plain pale cloth, laid side by side on a bare wooden bench in a small post-war Tokyo police station, centred, cold winter light from a frosted window, a single paper-shaded lamp, worn floorboards, no markings, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "In January, police passed the swords to an American soldier recorded as Sergeant Coldy Bimore. No one by that name has ever been identified.",
+      "cap": "NEVER\nIDENTIFIED",
+      "amber": true,
+      "img": "A lone 1940s US Army jeep parked, empty, outside a small wooden Japanese police station on a narrow Tokyo street in winter dusk, centred, its headlights on, light snow on the road, one warm window glowing, cold blue shadows, no people, no signage."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Some believe it was destroyed. Some, that it went to America. It has never been found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "An empty open wooden sword box lined with faded silk, a long curved sword-shaped hollow still pressed into the lining, centred on a dark table, dim cold light from one side, a little dust, quiet and still, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The Honjo Masamune is a katana attributed to the smith Goro Nyudo Masamune (c. 1264–1343, active roughly 1288–1328), i.e. made around the turn of the fourteenth century",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Honjo_Masamune",
+        "https://esovitae.com/the-honjo-masamune-sword/",
+        "https://www.discoveryuk.com/mysteries/what-happened-to-the-masamune-sword-and-was-it-ever-found/"
+      ]
+    },
+    {
+      "claim": "It is one of Japan's most celebrated swords: 'one of the best known of the swords created by Masamune... among the finest Japanese swords ever made'; 'the most famous lost sword in Japanese history'; 'among the greatest lost treasures of the world'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Honjo_Masamune",
+        "https://esovitae.com/the-honjo-masamune-sword/",
+        "https://www.historicmysteries.com/history/honjo-masamune/24392/"
+      ]
+    },
+    {
+      "claim": "It was designated a National Treasure (Kokuho) in 1939 under the prewar 1929 law (27 May 1939); it is not listed under the postwar 1950 system because its whereabouts have been unknown since 1946",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Honjo_Masamune",
+        "https://esovitae.com/the-honjo-masamune-sword/",
+        "https://www.historicmysteries.com/history/honjo-masamune/24392/",
+        "https://boingboing.net/2026/06/19/japans-greatest-sword-was-surrendered-to-a-us-sergeant-in-1946-nobody-knows-where-it-is.html"
+      ]
+    },
+    {
+      "claim": "It was held for centuries by the Tokugawa (passed shogun to shogun through the Edo period); last known owner Tokugawa Iemasa (d. 1963)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Honjo_Masamune",
+        "https://esovitae.com/the-honjo-masamune-sword/",
+        "https://www.historicmysteries.com/history/honjo-masamune/24392/"
+      ]
+    },
+    {
+      "claim": "Under the Allied occupation, swords had to be surrendered (SCAPIN 181, Sept 1945; collection through local police stations)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Honjo_Masamune",
+        "https://esovitae.com/the-honjo-masamune-sword/",
+        "https://historycollection.com/one-japans-prized-possessions-went-missing-wwii-never-found/2/"
+      ]
+    },
+    {
+      "claim": "In December 1945 Tokugawa Iemasa turned in the Honjo Masamune and 13 other heirloom swords (14 in all) to the police station at Mejiro, Tokyo",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Honjo_Masamune",
+        "https://www.discoveryuk.com/mysteries/what-happened-to-the-masamune-sword-and-was-it-ever-found/",
+        "https://historycollection.com/one-japans-prized-possessions-went-missing-wwii-never-found/2/",
+        "https://esovitae.com/the-honjo-masamune-sword/"
+      ]
+    },
+    {
+      "claim": "In January 1946 (receipt dated 18 January 1946) the Mejiro police gave the swords to a man recorded as 'Sgt. Coldy Bimore', usually given as of the Foreign Liquidations Commission of AFWESPAC (one account says 7th Cavalry, so the unit is left out of the film); the name may be a garbled phonetic spelling",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Honjo_Masamune",
+        "https://esovitae.com/the-honjo-masamune-sword/",
+        "https://www.discoveryuk.com/mysteries/what-happened-to-the-masamune-sword-and-was-it-ever-found/",
+        "https://www.historicmysteries.com/history/honjo-masamune/24392/"
+      ]
+    },
+    {
+      "claim": "No soldier by that name has ever been identified ('No serviceman by that name has ever been identified'; 'there was no Sgt. Coldy Bimore working for AFWESPAC'; 'no one named Coldy Bimore in that regiment'; 'Neither the sergeant nor the sword has been identified or located since')",
+      "sources": [
+        "https://esovitae.com/the-honjo-masamune-sword/",
+        "https://www.discoveryuk.com/mysteries/what-happened-to-the-masamune-sword-and-was-it-ever-found/",
+        "https://www.historicmysteries.com/history/honjo-masamune/24392/",
+        "https://boingboing.net/2026/06/19/japans-greatest-sword-was-surrendered-to-a-us-sergeant-in-1946-nobody-knows-where-it-is.html"
+      ]
+    },
+    {
+      "claim": "'Last seen at a Tokyo police station, 1946': the last documented custody is the Mejiro police handover in January 1946; no credible sighting since",
+      "sources": [
+        "https://esovitae.com/the-honjo-masamune-sword/",
+        "https://en.wikipedia.org/wiki/Honjo_Masamune",
+        "https://www.discoveryuk.com/mysteries/what-happened-to-the-masamune-sword-and-was-it-ever-found/"
+      ]
+    },
+    {
+      "claim": "Theories (unproven): destroyed with the mass of confiscated swords (melted/dumped); or taken to the United States and held privately",
+      "sources": [
+        "https://esovitae.com/the-honjo-masamune-sword/",
+        "https://historycollection.com/one-japans-prized-possessions-went-missing-wwii-never-found/2/",
+        "https://www.historicmysteries.com/history/honjo-masamune/24392/",
+        "https://www.thedailybeast.com/is-this-famous-samurai-sword-missing-in-america"
+      ]
+    },
+    {
+      "claim": "Still not found as of 2026: Boing Boing (June 2026) 'nobody knows where it is'; EsoVitae (May 2026) no credible sighting since 1946; Toukenza (April 2026) location remains unknown as of 2026; Japanese Wikipedia '1945年、連合軍に接収され、以後所在不明'. The 2014 Masamune news concerned a different blade (Shimazu Masamune)",
+      "sources": [
+        "https://boingboing.net/2026/06/19/japans-greatest-sword-was-surrendered-to-a-us-sergeant-in-1946-nobody-knows-where-it-is.html",
+        "https://esovitae.com/the-honjo-masamune-sword/",
+        "https://toukenza.jp/en/column/honjo-masamune-lost-sword",
+        "https://ja.wikipedia.org/wiki/%E6%AD%A3%E5%AE%97",
+        "https://en.wikipedia.org/wiki/Honjo_Masamune"
+      ]
+    }
+  ]
+}
