@@ -21,7 +21,7 @@ She had forgotten the sound. Not the horn — the horn she'd have remembered —
 
 There are eleven cars and maybe forty people. She counts the people because counting is what she does when she doesn't want to be doing what she's doing. Two families with the specific exhaustion of the last day of a school trip. A crew of four in the orange rain gear of a road job, going home. An older couple sharing a newspaper by the section. A woman about her age, alone, with a dog that is being very good and knows it. Nobody she knows. She checks this twice, the second time more carefully, and finds that the second check was the one that mattered.
 
-She takes a seat inside, by the window on the port side, and then stands up again eight minutes out because the inside seating has always made her sick and eight years was not long enough to change that. The upper deck is empty except for the smokers, who have gone to the back, and a boy of about twelve who is standing at the very front with his arms out, getting rained on, and whose parents have evidently decided this is a phase he needs to get through on his own.
+She takes a seat inside, by the window on the port side, and then stands up again eight minutes out because the inside seating has always made her sick and she can think of no reason it would have stopped. The upper deck is empty except for the smokers, who have gone to the back, and a boy of about twelve who is standing at the very front with his arms out, getting rained on, and whose parents have evidently decided this is a phase he needs to get through on his own.
 
 She stands at the rail. Anacortes goes small behind them, and then the refinery, and then there is just the water.
 
@@ -67,7 +67,7 @@ The Tillicum dock is the same dock. She'd known that too. She had been at the do
 
 She looks up now.
 
-Tillicum Bay at ten past seven on a wet evening in May is the Bay she left at eighteen, with adjustments. The post office is the same. The General is the same and has a new sign that is trying to look like the old sign. The bookstore is dark in the front and lit in the back, one yellow window at the far end where the press is, which means Maren Halvorson is at the layout table at seven in the evening the way she was at the layout table at seven in the evening when Cora was fifteen and reshelving poetry for four dollars an hour. The Salt House is closed — she can see the chairs up on the tables through the window. The marina has more boats. The oyster company at the north end has a new building, low and gray with a metal roof, and lights on, and a truck outside, and beyond it the racks are all under, the tide being where it is, so there's just the water, and the buoys, and a skiff tied off and riding, and nothing on the flat to say what the flat is for.
+Tillicum Bay at half past seven on a wet evening in May is the Bay she left at eighteen, with adjustments. The post office is the same. The General is the same and has a new sign that is trying to look like the old sign. The bookstore is dark in the front and lit in the back, one yellow window at the far end where the press is, which means Maren Halvorson is at the layout table at seven in the evening the way she was at the layout table at seven in the evening when Cora was fifteen and reshelving poetry for four dollars an hour. The Salt House is closed — she can see the chairs up on the tables through the window. The marina has more boats. The oyster company at the north end has a new building, low and gray with a metal roof, and lights on, and a truck outside, and beyond it the racks are all under, the tide being where it is, so there's just the water, and the buoys, and a skiff tied off and riding, and nothing on the flat to say what the flat is for.
 
 She'd known the town would be the same. She had not known she'd be able to see all of it at once from the dock. She had spent eight years remembering it as bigger. That's the thing that gets you, she thinks. Not the changes. The scale.
 
@@ -125,7 +125,7 @@ She sits down at the table in her wet clothes. She should change. She should tur
 
 *Anacortes* goes.
 
-Then, from the bus, from six hours ago, what she'd typed and forgotten: *Going*. It sends now, too, out of order, so that on Inés's phone in Boston it will arrive after the arrival, as if Cora had gotten there and then decided to.
+Then, from Sea-Tac, from six hours ago, what she'd typed and forgotten: *Landed*. It sends now, too, out of order, so that on Inés's phone in Boston she will have reached Anacortes and then come down out of the air.
 
 She watches it go. She thinks about typing *here*. She types *here*. She looks at it. It's the right word — she's a professional; she knows the right word when she's typed it — and she deletes it anyway, because *here* is a claim, and she would like to be in the house one full night before she starts making claims.
 
