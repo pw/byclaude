@@ -2,17 +2,70 @@
  "registered": "2026-11-18T05:05Z",
  "seed": "length-test-2026-11-18",
  "arm": "length",
- "values": {"short": "~15 s total: 2 content stills + end beat, VO 26-34 words incl. 'Still unsolved.' One object, one impossible thing.",
-            "long": "house shape ~30-38 s: 5 content stills + end beat, VO 70-95 words"},
+ "values": {
+  "short": "~15 s total: 2 content stills + end beat, VO 26-34 words incl. 'Still unsolved.' One object, one impossible thing.",
+  "long": "house shape ~30-38 s: 5 content stills + end beat, VO 70-95 words"
+ },
  "why": "Avg watch is ~8 s of ~35 s (retention ~0.22). Our model says the floor is set by format not case; a film people finish and rewatch may get expanded. Cheapest format change we have.",
  "read": "plays at first snap >=14h (dead film = 0, noted); secondary avg watch s and 72h plays. Page-level daily views checked over the posting days before reading.",
  "call": "usual rule: one value leads by >=1.5x median at n>=5 each -> default; n>=8 each with no lead -> tie. Batch 1 = 2+2 (below); continue coin-flipped pairs until n=5 each.",
  "harm_check": "if short films run <0.67x long at n>=5, short is dropped (it can lose, and we'd see it).",
  "films": [
-  {"slot": "11-22 01:45Z", "subject": "honjo", "length": "long", "hook": "detail"},
-  {"slot": "11-22 15:45Z", "subject": "cleopatra", "length": "short", "hook": "detail"},
-  {"slot": "11-23 01:45Z", "subject": "cambyses", "length": "long", "hook": "place"},
-  {"slot": "11-23 15:45Z", "subject": "crownjewels", "length": "short", "hook": "detail"}
+  {
+   "slot": "11-22 01:45Z",
+   "subject": "honjo",
+   "length": "long",
+   "hook": "detail"
+  },
+  {
+   "slot": "11-22 15:45Z",
+   "subject": "cleopatra",
+   "length": "short",
+   "hook": "detail"
+  },
+  {
+   "slot": "11-23 01:45Z",
+   "subject": "cambyses",
+   "length": "long",
+   "hook": "place"
+  },
+  {
+   "slot": "11-23 15:45Z",
+   "subject": "crownjewels",
+   "length": "short",
+   "hook": "detail"
+  }
  ],
- "note": "all four fresh, in-shape (old object / empty place, no named victim). Both shorts drew hook=detail by the coin; hook is read across all films, not inside this batch."
+ "note": "all four fresh, in-shape (old object / empty place, no named victim). Both shorts drew hook=detail by the coin; hook is read across all films, not inside this batch.",
+ "batch2": {
+  "registered": "2026-11-19T05:10Z",
+  "seed": "length-test-2026-11-19-batch2",
+  "films": [
+   {
+    "slot": "11-24 01:45Z",
+    "subject": "ivanlibrary",
+    "length": "long",
+    "hook": "place"
+   },
+   {
+    "slot": "11-24 15:45Z",
+    "subject": "fabergeeggs",
+    "length": "short",
+    "hook": "detail"
+   },
+   {
+    "slot": "11-25 01:45Z",
+    "subject": "genghistomb",
+    "length": "long",
+    "hook": "detail"
+   },
+   {
+    "slot": "11-25 15:45Z",
+    "subject": "gardner",
+    "length": "short",
+    "hook": "detail"
+   }
+  ],
+  "note": "all four fresh, in-shape (lost object / never-found place, no named victim). Subjects chosen before the flip."
+ }
 }

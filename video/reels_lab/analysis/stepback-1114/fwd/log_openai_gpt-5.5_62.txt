@@ -1,0 +1,1 @@
+openai/gpt-5.5 62 77 missing [] | The top films combine instant-recognition subjects or modern true-crime stakes with a simple, eerie hook in the first seconds and a clean unanswered ending: vanished people, notorious killers, impossible escapes, or a final message that still has no solution.

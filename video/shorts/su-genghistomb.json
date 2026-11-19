@@ -1,0 +1,49 @@
+{
+ "out": "short-su-genghistomb",
+ "kicker": "THE TOMB OF GENGHIS KHAN",
+ "frame": "bleed",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "genghistomb",
+   "img": "B01",
+   "vo": "Even its guardians could no longer find this grave. Genghis Khan's. Buried in secret, Mongolia, twelve twenty-seven.",
+   "cap": "GUARDIANS\nCOULDN'T FIND IT"
+  },
+  {
+   "src": "genghistomb",
+   "img": "B02",
+   "vo": "So wrote a Persian historian some eighty years later. The Khan, he said, chose the spot beneath a lone tree.",
+   "cap": "A LONE\nTREE",
+   "amber": true
+  },
+  {
+   "src": "genghistomb",
+   "img": "B03",
+   "vo": "Then a forest grew so thick that no one could tell which tree it was.",
+   "cap": "A FOREST\nGREW"
+  },
+  {
+   "src": "genghistomb",
+   "img": "B04",
+   "vo": "The land around his sacred mountain became the Great Taboo, closed to outsiders for seven centuries.",
+   "cap": "THE GREAT\nTABOO",
+   "amber": true
+  },
+  {
+   "src": "genghistomb",
+   "img": "B05",
+   "vo": "In twenty ten, ten thousand volunteers searched satellite images. Their map led to fifty-five ancient sites. Not his grave.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

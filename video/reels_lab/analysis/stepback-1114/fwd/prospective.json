@@ -21,7 +21,11 @@
   "honjo": 0.4,
   "cleopatra": -0.2,
   "cambyses": 0.5,
-  "crownjewels": -1.04
+  "crownjewels": -1.04,
+  "ivanlibrary": -0.4,
+  "fabergeeggs": 0.11,
+  "genghistomb": 0.85,
+  "gardner": 0.93
  },
  "all": {
   "cyclops": 0.59,
@@ -124,6 +128,19 @@
     "crownjewels"
    ],
    "pool_n": 63
+  },
+  {
+   "seeds": [
+    "61",
+    "62"
+   ],
+   "films": [
+    "ivanlibrary",
+    "fabergeeggs",
+    "genghistomb",
+    "gardner"
+   ],
+   "pool_n": 67
   }
  ]
 }

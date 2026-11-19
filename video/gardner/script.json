@@ -1,0 +1,98 @@
+{
+  "title": "The Gardner Museum Theft",
+  "subtitle": "Isabella Stewart Gardner Museum, Boston · 1990",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, the interior of an old Venetian-palazzo-style art museum gallery, faded silk-damask walls, carved dark wood, terracotta tile and antique gilt, warm gold against deep green and blue-grey shadow, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no paintings, no artworks inside frames, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "The empty frames still hang on the walls. Boston's Gardner Museum, nineteen ninety: thirteen works taken in one night.",
+      "cap": "EMPTY\nFRAMES",
+      "img": "A single large ornate antique gilded picture frame hanging empty on a wall of faded green patterned silk damask, centred and filling the middle of the frame, nothing inside it but the bare fabric of the wall, its carved gold mouldings lit clearly and warmly by soft daylight from a tall window to one side, rich gold against deep green, bright and legible, the edge of a dark carved wooden cabinet softly out of focus below, no painting, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "None has ever been recovered. No one was ever charged.",
+      "cap": "NEVER\nRECOVERED",
+      "amber": true,
+      "img": "The same kind of ornate gilded frame, empty, seen across a darkened old palazzo-style museum gallery at night, centred in the middle of the frame, one thin shaft of cold moonlight from a high window falling across a worn terracotta tile floor and touching the gold of the empty frame, everything else in deep blue-green shadow, a carved wooden chair standing alone beneath it, quiet and still, no painting, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "In the early hours of 18 March 1990 thieves stole 13 works of art from the Isabella Stewart Gardner Museum in Boston (one night: admitted 1:24 a.m., left about 81 minutes later)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft",
+        "https://www.history.com/articles/historys-biggest-art-heist-remains-unsolved",
+        "https://www.pbs.org/newshour/arts/what-to-know-about-the-worlds-largest-art-heist-from-a-boston-museum",
+        "https://www.wcvb.com/article/gardner-museum-stolen-art-10-million-reward-36-years/70772960"
+      ]
+    },
+    {
+      "claim": "The empty frames of the stolen paintings still hang on the museum's walls (AP, 26 Apr 2026: 'The empty gilded frames of the missing paintings still hang in the museum today'; AP photo of an empty frame in the Dutch Room dated 9 Apr 2026; the Dutch Room stays open during its restoration, and its restored empty frame was returned to the wall in March 2025)",
+      "sources": [
+        "https://www.pbs.org/newshour/arts/what-to-know-about-the-worlds-largest-art-heist-from-a-boston-museum",
+        "https://www.ksat.com/gallery/news/2026/04/26/inside-the-worlds-largest-art-heist-when-over-500m-of-paintings-were-stolen-from-a-boston-museum/",
+        "https://www.cbsnews.com/boston/news/boston-isabella-stewart-gardner-museum-theft",
+        "https://www.boston25news.com/news/local/35th-anniversary-gardner-heist-museum-prepares-stolen-arts-return/XNLE53JATBGGZO7FPSX5UTH6MU/",
+        "https://www.cbsnews.com/boston/news/gardner-museum-boston-dutch-room-renovation",
+        "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft"
+      ]
+    },
+    {
+      "claim": "(caption) The museum has chosen to leave the empty frames in place in the hope the works return (museum: 'We have chosen to display them'; the will-forbids-it explanation is a 'long uncorrected mistake'); Holly Salmon: 'We are just waiting for them to come back.' [blind check FIX 2026-11-19]",
+      "sources": [
+        "https://www.cbsnews.com/boston/news/boston-isabella-stewart-gardner-museum-theft",
+        "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft",
+        "https://www.history.com/articles/historys-biggest-art-heist-remains-unsolved",
+        "https://artdaily.com/news/167640/Empty-frames-and-other-oddities-from-the-unsolved-Gardner-Museum-heist"
+      ]
+    },
+    {
+      "claim": "None of the 13 works has been recovered (as of 2026: WCVB 18 Mar 2026, AP 26 Apr 2026; no recovery reported through Nov 2026)",
+      "sources": [
+        "https://www.wcvb.com/article/gardner-museum-stolen-art-10-million-reward-36-years/70772960",
+        "https://www.pbs.org/newshour/arts/what-to-know-about-the-worlds-largest-art-heist-from-a-boston-museum",
+        "https://www.bostonglobe.com/2026/03/17/metro/new-book-sheds-light-on-gardner-museum-heist/",
+        "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft"
+      ]
+    },
+    {
+      "claim": "No one has ever been charged with the theft (no arrests; the statute of limitations on the theft has expired; AP Apr 2026 reports no charges; Boston Globe Mar 2025: no one charged)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft",
+        "https://www.pbs.org/newshour/arts/what-to-know-about-the-worlds-largest-art-heist-from-a-boston-museum",
+        "https://www.bostonglobe.com/2025/03/18/metro/gardner-museum-heist-thieves-rembrandt-reward/",
+        "https://www.boston25news.com/news/local/isabella-stewart-gardner-museum-marks-36-year-since-art-heist/Y2MOZQMCJFGLPFGAR5K4PDZSDY"
+      ]
+    },
+    {
+      "claim": "(caption) Two men dressed as police officers talked their way into the museum",
+      "sources": [
+        "https://www.pbs.org/newshour/arts/what-to-know-about-the-worlds-largest-art-heist-from-a-boston-museum",
+        "https://www.history.com/articles/historys-biggest-art-heist-remains-unsolved",
+        "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft"
+      ]
+    },
+    {
+      "claim": "(caption) The stolen works include Vermeer's The Concert and Rembrandt's The Storm on the Sea of Galilee, his only known seascape",
+      "sources": [
+        "https://www.history.com/articles/historys-biggest-art-heist-remains-unsolved",
+        "https://en.wikipedia.org/wiki/The_Storm_on_the_Sea_of_Galilee",
+        "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft"
+      ]
+    },
+    {
+      "claim": "(caption) The museum's reward for information leading to the works' safe return is $10 million (doubled from $5M in 2017, later extended; still offered March 2026)",
+      "sources": [
+        "https://www.wcvb.com/article/gardner-museum-stolen-art-10-million-reward-36-years/70772960",
+        "https://www.pbs.org/newshour/arts/what-to-know-about-the-worlds-largest-art-heist-from-a-boston-museum",
+        "https://www.bostonglobe.com/2025/03/18/metro/gardner-museum-heist-thieves-rembrandt-reward/",
+        "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft"
+      ]
+    }
+  ]
+}

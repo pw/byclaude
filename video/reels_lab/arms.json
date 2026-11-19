@@ -782,6 +782,50 @@
    "length": "short",
    "hook": "detail",
    "kind": "anomaly"
+  },
+  "ivanlibrary": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "length-1122",
+   "length": "long",
+   "hook": "place",
+   "kind": "anomaly"
+  },
+  "fabergeeggs": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "length-1122",
+   "length": "short",
+   "hook": "detail",
+   "kind": "anomaly"
+  },
+  "genghistomb": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "length-1122",
+   "length": "long",
+   "hook": "detail",
+   "kind": "anomaly"
+  },
+  "gardner": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "length-1122",
+   "length": "short",
+   "hook": "detail",
+   "kind": "anomaly"
   }
  },
  "byclaude": {

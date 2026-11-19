@@ -1,0 +1,122 @@
+{
+  "title": "The Lost Library of Ivan the Terrible",
+  "subtitle": "Moscow Kremlin · 1584",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, underground vaults beneath a sixteenth-century Moscow fortress, old whitewashed brick and white stone, warm lantern-gold highlights against cold grey-blue shadow, dust and silence, melancholy and uncanny, cinematic vertical composition with one centred subject in the middle third, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Moscow, fifteen eighty-four. Ivan the Terrible dies. Legend says his library lay hidden beneath the Kremlin.",
+      "cap": "MOSCOW · 1584",
+      "img": "Close view: ONE heavy iron-bound wooden chest, large and filling the middle of the frame, its lid thrown open, packed with thick old leather-bound manuscripts with worn brass clasps and gilt spines, lit warmly and brightly from a single oil lantern beside it so the books glow gold, the chest standing in a low vaulted brick cellar that falls into soft shadow behind, rich warm tones, clearly legible at thumbnail size, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Greek and Latin manuscripts, said to have come from Constantinople with a Byzantine princess, in fourteen seventy-two.",
+      "cap": "FROM\nCONSTANTINOPLE",
+      "amber": true,
+      "img": "A single open illuminated parchment codex with faded gold leaf borders and dense unreadable handwritten columns, resting centred on a dark carved wooden lectern, one warm candle beside it, deep shadow all around, rich gold and dark red tones, no legible words, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "A list reported in the eighteen-hundreds named all one hundred forty-two books of Livy's history of Rome. Only thirty-five survive.",
+      "cap": "142 BOOKS\nOF LIVY",
+      "amber": true,
+      "img": "A tall dim stack of many ancient scrolls and old leather-bound volumes piled on a stone ledge, centred, most of them crumbled or charred at the edges, a few intact ones catching pale cold light from a narrow slit window, dust motes in the air, no readable writing, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "The list is lost, and may be a forgery. In nineteen thirty-three, an archaeologist dug beneath a Kremlin tower. He found passages. No books.",
+      "cap": "DUG UNDER\nTHE KREMLIN",
+      "img": "A narrow arched white-stone passage underground, centred, receding into darkness, a wooden ladder and a few old shovels and a 1930s carbide lamp resting at the near end casting a pool of warm light on damp stone, loose earth on the floor, empty, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Some say it burned. Some, that it never existed. No trace has ever been found.",
+      "cap": "NO TRACE\nFOUND",
+      "amber": true,
+      "img": "A single empty iron-bound wooden chest standing open and bare, centred in a dark vaulted brick cellar, its inside empty but for dust, one thin shaft of cold grey light falling across it from above, quiet and still, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Legend: Ivan IV (Ivan the Terrible) had a great library, the 'Liberia/Libereya', said to be hidden in secret chambers beneath the Moscow Kremlin; Ivan died in 1584 and the library's fate became unknown after his death (its existence itself is disputed)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Library_of_Ivan_the_Terrible",
+        "https://www.gw2ru.com/history/67541-forever-lost-how-russians-hunt-for-ivan-the-terribles-library",
+        "https://bookriot.com/lost-golden-library/",
+        "https://englishpluspodcast.com/the-lost-library-of-ivan-the-terrible-russias-greatest-vanished-treasure-close-reading/"
+      ]
+    },
+    {
+      "claim": "Legend (not documented) says the Greek/Latin/Byzantine manuscripts came from Constantinople via Rome as the dowry of Sophia Palaiologina, niece of the last Byzantine emperor, who married Ivan III (Ivan IV's grandfather) in 1472; the dowry story is unverified and B. L. Fonkich doubted it",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Library_of_Ivan_the_Terrible",
+        "https://ru.wikipedia.org/wiki/Библиотека_Ивана_Грозного",
+        "https://www.gw2ru.com/history/67541-forever-lost-how-russians-hunt-for-ivan-the-terribles-library",
+        "https://bookriot.com/lost-golden-library/",
+        "https://englishpluspodcast.com/the-lost-library-of-ivan-the-terrible-russias-greatest-vanished-treasure-close-reading/"
+      ]
+    },
+    {
+      "claim": "In the 19th century (1819 or 1822 per different sources) Professor Christoph Dabelow of Dorpat reported a list of the library's manuscripts naming 142 books of Livy's History of Rome; only 35 of Livy's books survive today",
+      "sources": [
+        "https://www.gw2ru.com/history/67541-forever-lost-how-russians-hunt-for-ivan-the-terribles-library",
+        "https://bookriot.com/lost-golden-library/",
+        "https://ru.wikipedia.org/wiki/Библиотека_Ивана_Грозного",
+        "https://en.wikipedia.org/wiki/Livy"
+      ]
+    },
+    {
+      "claim": "The original Dabelow list was never produced or found (only a later copy published by Klossius in 1834); historians such as Belokurov considered it a forgery",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Library_of_Ivan_the_Terrible",
+        "https://ru.wikipedia.org/wiki/Библиотека_Ивана_Грозного",
+        "https://bookriot.com/lost-golden-library/",
+        "https://www.gw2ru.com/history/67541-forever-lost-how-russians-hunt-for-ivan-the-terribles-library"
+      ]
+    },
+    {
+      "claim": "Searches over the centuries: a 1601 Vatican-tasked mission, Peter the Great's era (1724 search after Konon Osipov's report of a vault with chests), 19th-century searches under the tsars (Thraemer, commissioned by Alexander III), Soviet-era Kremlin digs; Vologda and Alexandrov also searched, nothing found",
+      "sources": [
+        "https://ru.wikipedia.org/wiki/Библиотека_Ивана_Грозного",
+        "https://en.wikipedia.org/wiki/Library_of_Ivan_the_Terrible",
+        "https://www.themoscowtimes.com/archive/wanted-ivan-the-terribles-library",
+        "https://www.gw2ru.com/history/67541-forever-lost-how-russians-hunt-for-ivan-the-terribles-library"
+      ]
+    },
+    {
+      "claim": "Archaeologist Ignatius Stelletskii began digging under the Kremlin's Arsenal tower on 1 December 1933 (Kremlin permission); work stopped in 1934–35; he found a white-stone passage / old underground structures but not the library",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ignatius_Stelletskii",
+        "https://ru.wikipedia.org/wiki/Библиотека_Ивана_Грозного",
+        "https://www.ancient-history-sites.com/?p=169909",
+        "https://bookriot.com/lost-golden-library/",
+        "https://en.wikipedia.org/wiki/Library_of_Ivan_the_Terrible"
+      ]
+    },
+    {
+      "claim": "Theories (unproven): destroyed in Moscow's fires (1547, 1571, 1626; Zabelin favoured 1571) or the Time of Troubles; or it never existed as described (Belokurov 1898; Filyushkin of St Petersburg State University)",
+      "sources": [
+        "https://www.gw2ru.com/history/67541-forever-lost-how-russians-hunt-for-ivan-the-terribles-library",
+        "https://ru.wikipedia.org/wiki/Библиотека_Ивана_Грозного",
+        "https://bookriot.com/lost-golden-library/"
+      ]
+    },
+    {
+      "claim": "Still not found as of 2026: May 2026 essay says its fate is unknown and excavations have failed; March 2025 Vologda Kremlin hidden-passage find revived talk but no books; no report of discovery 2024–2026",
+      "sources": [
+        "https://englishpluspodcast.com/the-lost-library-of-ivan-the-terrible-russias-greatest-vanished-treasure-close-reading/",
+        "https://rg.ru/2025/03/25/reg-szfo/kak-projti-v-biblioteku-ivana-groznogo.html",
+        "https://www.gw2ru.com/history/67541-forever-lost-how-russians-hunt-for-ivan-the-terribles-library",
+        "https://bookriot.com/lost-golden-library/"
+      ]
+    }
+  ]
+}

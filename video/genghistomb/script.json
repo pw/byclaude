@@ -1,0 +1,130 @@
+{
+  "title": "The Tomb of Genghis Khan",
+  "subtitle": "Burkhan Khaldun, Mongolia · 1227",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, the larch-forested mountains of northeastern Mongolia, deep larch green and pale gold light against cold blue-grey mist, quiet, ancient and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Even its guardians could no longer find this grave. Genghis Khan's. Buried in secret, Mongolia, twelve twenty-seven.",
+      "cap": "GUARDIANS\nCOULDN'T FIND IT",
+      "img": "One ancient gnarled larch tree, large and centred in the middle of the frame, standing in a dense northern forest on a Mongolian mountainside, a bright shaft of golden morning sunlight falling directly onto its trunk and branches so it glows warm gold against the cooler green-blue forest behind, mist between the trunks, bright and clearly legible at thumbnail size, no people, no animals, no buildings, no grave markers."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "So wrote a Persian historian some eighty years later. The Khan, he said, chose the spot beneath a lone tree.",
+      "cap": "A LONE\nTREE",
+      "amber": true,
+      "img": "One broad, lush, solitary tree standing alone in the centre of a wide open grassy plain at the foot of rolling forested hills, warm low sunlight on its leaves, long soft shadow on the grass, big pale sky, quiet and still, no people, no animals."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Then a forest grew so thick that no one could tell which tree it was.",
+      "cap": "A FOREST\nGREW",
+      "img": "Inside a very dense old larch forest, countless straight trunks crowded together in every direction, centred composition looking deep into the trees with no path and no clearing, cool blue-grey mist, thin beams of pale light falling between the trunks onto moss and fallen needles, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "The land around his sacred mountain became the Great Taboo, closed to outsiders for seven centuries.",
+      "cap": "THE GREAT\nTABOO",
+      "amber": true,
+      "img": "A broad, dark, forested mountain rising in the centre of the frame under a cold grey-blue sky, its rounded summit bare and touched by pale gold light, larch forest and mist on its lower slopes, a wide empty river valley in the foreground with no road, no buildings, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "In twenty ten, ten thousand volunteers searched satellite images. Their map led to fifty-five ancient sites. Not his grave.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "A high top-down aerial view of endless forested mountain ridges and folded valleys of larch forest stretching to every edge, one small pale grassy clearing in the exact centre of the frame catching the light, soft morning mist pooled in the valleys, no roads, no buildings, no people."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Genghis Khan died in 1227 (on campaign against the Western Xia; August 1227 in most accounts); his remains were reportedly taken to Mongolia and buried secretly and without markings; the details of the funeral and burial were not made public; burial place listed as unknown",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Genghis_Khan",
+        "https://en.wikipedia.org/wiki/Mausoleum_of_Genghis_Khan",
+        "https://en.wikipedia.org/wiki/Burial_place_of_Genghis_Khan"
+      ]
+    },
+    {
+      "claim": "Rashid al-Din (Persian historian and vizier of the Ilkhanate) wrote in his Jami' al-tawarikh, completed sometime between 1306 and 1311, i.e. about eighty years after 1227 ('writing in the early 1300s')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jami%27_al-tawarikh",
+        "https://rsaa.org.uk/blog/the-burial-place-of-genghis-khan/",
+        "https://www.discoveryuk.com/mysteries/what-happened-to-the-tomb-of-genghis-khan/"
+      ]
+    },
+    {
+      "claim": "Rashid al-Din reports that Genghis Khan, while out hunting, dismounted beneath a lone tree and said the place was suitable for his burial site; the princes and commanders chose that site per his order (Thackston trans., Compendium of Chronicles p. 264: 'he spied a lone tree growing by itself... \"This place,\" he said, \"is suitable for my burial site. Mark it well.\"'; also p. 84)",
+      "sources": [
+        "https://archive.org/download/rashiduddin-thackston/Rashiduddin%20Thackston_djvu.txt",
+        "https://scfh.ru/en/papers/the-place-of-our-last-dwelling-should-be-here/",
+        "https://rsaa.org.uk/blog/the-burial-place-of-genghis-khan/"
+      ]
+    },
+    {
+      "claim": "Rashid al-Din reports that a forest then grew so thick that the original tree and the burial site could no longer be recognised (Thackston p. 84: 'so many trees sprang up in that plain that it became a forest so thick that it is absolutely impossible to recognize the original tree, and no one knows which it is'; Nesterov quoting Rashid: 'this first tree and the burial place cannot be identified')",
+      "sources": [
+        "https://archive.org/download/rashiduddin-thackston/Rashiduddin%20Thackston_djvu.txt",
+        "https://scfh.ru/en/papers/the-place-of-our-last-dwelling-should-be-here/"
+      ]
+    },
+    {
+      "claim": "Rashid al-Din reports that even the guardians could no longer find the site (Thackston p. 264: 'Even those who have long served as guardians of the reservation can no longer find their way there'; Nesterov: 'Even the old forest guards protecting this place cannot find the way to it'). The film attributes this to the historian in beat 2 ('So wrote a Persian historian').",
+      "sources": [
+        "https://archive.org/download/rashiduddin-thackston/Rashiduddin%20Thackston_djvu.txt",
+        "https://scfh.ru/en/papers/the-place-of-our-last-dwelling-should-be-here/"
+      ]
+    },
+    {
+      "claim": "Burkhan Khaldun was Genghis Khan's sacred mountain (he prayed/sacrificed to it, per the Secret History); it is now a UNESCO World Heritage site (2015) and its locality is believed, unconfirmed, to be his burial place",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Burkhan_Khaldun",
+        "https://www.livescience.com/where-is-genghis-khan-buried",
+        "https://www.nationalgeographic.com/history/article/genghis-khan-tomb-location"
+      ]
+    },
+    {
+      "claim": "The area around Burkhan Khaldun became the Ikh Khorig, the 'Great Taboo' (about 240 km2), off limits to everyone except the imperial family and its hereditary Darkhad/Uriankhai guardians, kept closed for about seven hundred years (1227 until 1924); then a Soviet-era restricted area",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ikh_Khorig",
+        "https://en.wikipedia.org/wiki/Burial_place_of_Genghis_Khan",
+        "https://www.livescience.com/archaeology/call-it-genghis-khans-final-victory-why-the-tomb-of-the-disturber-of-the-universe-remains-hidden-after-800-years",
+        "https://en.wikipedia.org/wiki/Genghis_Khan"
+      ]
+    },
+    {
+      "claim": "Valley of the Khans project (Albert Yu-Min Lin, UC San Diego / National Geographic): crowdsourced satellite search launched June 10, 2010; over 10,000 online volunteers; 55 archaeologically significant sites positively identified; 'not a single burial of the Mongolian imperial family has been identified'; no Genghis Khan tomb",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4280225",
+        "https://www.foxnews.com/science/what-10k-volunteers-looking-for-genghis-khans-tomb-discovered.print",
+        "https://www.livescience.com/archaeology/call-it-genghis-khans-final-victory-why-the-tomb-of-the-disturber-of-the-universe-remains-hidden-after-800-years",
+        "https://en.wikipedia.org/wiki/Burial_place_of_Genghis_Khan"
+      ]
+    },
+    {
+      "claim": "Stories that a river was diverted over the grave or that horses trampled the ground flat are legends/folklore, not established history ('folkloric legend', 'other tales'; 'We have no idea how much of that is true'; 'evidenced nowhere')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Burial_place_of_Genghis_Khan",
+        "https://www.livescience.com/archaeology/call-it-genghis-khans-final-victory-why-the-tomb-of-the-disturber-of-the-universe-remains-hidden-after-800-years",
+        "https://wesleybaker.com/journal/genghis-khan-grave"
+      ]
+    },
+    {
+      "claim": "Still not found as of 2026: Live Science (26 Sep 2026) 'zero trace of Genghis Khan'; IFLScience (11 Jun 2026) 'his tomb remains undiscovered'; National Geographic (1 Oct 2025) 'an unsolved mystery'; the March 2026 Kazakhstan DNA study (Jochi-linked Golden Horde burials) is not a find of the tomb",
+      "sources": [
+        "https://www.livescience.com/archaeology/call-it-genghis-khans-final-victory-why-the-tomb-of-the-disturber-of-the-universe-remains-hidden-after-800-years",
+        "https://iflscience.com/genghis-khans-tomb-has-never-been-found-nearly-800-years-after-his-death-and-many-people-are-too-scared-to-look-83780",
+        "https://www.nationalgeographic.com/history/article/genghis-khan-tomb-location",
+        "https://greekreporter.com/2026/03/07/dna-evidence-genghis-khan-lost-tomb/"
+      ]
+    }
+  ]
+}

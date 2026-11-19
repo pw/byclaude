@@ -1,0 +1,29 @@
+{
+ "out": "short-su-gardner",
+ "kicker": "THE GARDNER MUSEUM THEFT",
+ "frame": "bleed",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed \u2014 calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "gardner",
+   "img": "B01",
+   "vo": "The empty frames still hang on the walls. Boston's Gardner Museum, nineteen ninety: thirteen works taken in one night.",
+   "cap": "EMPTY\nFRAMES"
+  },
+  {
+   "src": "gardner",
+   "img": "B02",
+   "vo": "None has ever been recovered. No one was ever charged.",
+   "cap": "NEVER\nRECOVERED",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

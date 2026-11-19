@@ -1,0 +1,96 @@
+{
+  "title": "The Lost Fabergé Eggs",
+  "subtitle": "Imperial Russia · after 1917",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, late-nineteenth-century Imperial Russian goldsmith's work on an old worn wooden workbench in a dim back room, warm old-gold and sapphire-blue glints against deep blue-black shadow, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no hallmarks, no people, no faces, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "A scrap dealer bought it for its gold. It was a lost Imperial Fabergé egg, found in twenty twelve.",
+      "cap": "BOUGHT\nAS SCRAP",
+      "img": "A small reeded yellow-gold egg about the size of a hen's egg, standing on a gold three-legged stand with lion-paw feet, hung with tiny gold leaf festoons and set with oval blue sapphire cabochons and small diamond bows, centred and filling the middle of the frame, sitting on a worn wooden workbench among dull tarnished scrap metal (bent brass spoons, an old candlestick, a small set of scales) softly out of focus around it, lit clearly by a single warm lamp so the gold glows, bright and legible at small size, the background falling softly into shadow, no people, no hands, no lettering."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Of fifty made for the tsars, at least six are still missing.",
+      "cap": "SIX STILL\nMISSING",
+      "amber": true,
+      "img": "An open antique fitted presentation case lined with faded dark blue velvet, its single egg-shaped hollow completely empty, centred and filling the middle of the frame on a worn wooden bench, one thin cold beam of light falling across the empty hollow, deep shadow all around, quiet and still, no egg, no people, no hands, no lettering."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Fifty Imperial Easter eggs were made by the House of Fabergé for the Russian tsars (Alexander III and Nicholas II), 1885 to 1916; two more were planned for 1917 but never delivered (52 commissioned)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fabergé_egg",
+        "https://www.futura-sciences.com/en/a-us-scrap-metal-dealer-nearly-melted-down-a-gold-egg-he-had-bought-for-about-14000-it-was-a-lost-faberge-imperial-egg_902574/",
+        "https://www.historyhit.com/the-mystery-of-the-missing-faberge-imperial-easter-eggs/",
+        "https://apollo-magazine.com/?p=86831"
+      ]
+    },
+    {
+      "claim": "At least six Imperial eggs are still missing as of 2026. Counts differ by source: six (Wikipedia: 44 of 50 delivered survive; History Hit; Boing Boing 15 Jul 2026; Futura-Sciences 11 Nov 2026) or seven (New York Loan 2026, citing Fabergé; Apollo 2014: 43 of 50 accounted for). 'At least six' is true under every current count; the VO avoids a single exact number",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fabergé_egg",
+        "https://boingboing.net/2026/07/15/faberge-egg.html",
+        "https://www.futura-sciences.com/en/a-us-scrap-metal-dealer-nearly-melted-down-a-gold-egg-he-had-bought-for-about-14000-it-was-a-lost-faberge-imperial-egg_902574/",
+        "https://www.historyhit.com/the-mystery-of-the-missing-faberge-imperial-easter-eggs/",
+        "https://newyorkloan.com/the-7-missing-faberge-imperial-eggs-mystery-value-provenance/"
+      ]
+    },
+    {
+      "claim": "The Third Imperial Egg was made by Fabergé in 1887 for Tsar Alexander III, an Easter gift to Empress Maria Feodorovna: a reeded gold egg on a gold lion-paw stand with sapphires and diamonds, holding a Vacheron Constantin lady's watch",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Third_Imperial_Egg",
+        "https://www.thejewelleryeditor.com/jewellery/article/royal-treasure-saved-from-the-scrapheap-an-imperial-faberge-easter-egg-lost-for-over-a-century-will-go-on-display-for-four-days-only-this-easter/",
+        "https://www.themoscowtimes.com/2014/04/07/imperial-faberge-egg-on-display-for-first-time-in-more-than-century-a33721"
+      ]
+    },
+    {
+      "claim": "The egg was confiscated after the 1917 revolution and held by the Soviet state; the last record of it in Russia was a 1922 inventory, after which it was lost ('lost after the Russian Revolution')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Third_Imperial_Egg",
+        "https://apollo-magazine.com/?p=86831",
+        "https://www.futura-sciences.com/en/a-us-scrap-metal-dealer-nearly-melted-down-a-gold-egg-he-had-bought-for-about-14000-it-was-a-lost-faberge-imperial-egg_902574/",
+        "https://www.themoscowtimes.com/2014/04/07/imperial-faberge-egg-on-display-for-first-time-in-more-than-century-a33721"
+      ]
+    },
+    {
+      "claim": "(caption) It sold at Parke-Bernet, New York, in 1964 for $2,450 without any mention of Fabergé",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Third_Imperial_Egg",
+        "https://www.futura-sciences.com/en/a-us-scrap-metal-dealer-nearly-melted-down-a-gold-egg-he-had-bought-for-about-14000-it-was-a-lost-faberge-imperial-egg_902574/"
+      ]
+    },
+    {
+      "claim": "A scrap metal dealer in the American Midwest bought it at a market for about $14,000 ($13,302) intending to sell it for its scrap/gold value (to be melted down); buyers thought he had overpriced it ('bought it for its gold', 'BOUGHT AS SCRAP')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Third_Imperial_Egg",
+        "https://www.thejewelleryeditor.com/jewellery/article/royal-treasure-saved-from-the-scrapheap-an-imperial-faberge-easter-egg-lost-for-over-a-century-will-go-on-display-for-four-days-only-this-easter/",
+        "https://www.themoscowtimes.com/2014/04/07/imperial-faberge-egg-on-display-for-first-time-in-more-than-century-a33721",
+        "https://apollo-magazine.com/?p=86831",
+        "https://www.futura-sciences.com/en/a-us-scrap-metal-dealer-nearly-melted-down-a-gold-egg-he-had-bought-for-about-14000-it-was-a-lost-faberge-imperial-egg_902574/"
+      ]
+    },
+    {
+      "claim": "(caption) An internet search for the egg and 'Vacheron Constantin' led him to the London jeweller Wartski, which confirmed the egg's identity in 2012; it was shown in London in April 2014 and sold to a private collector",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Third_Imperial_Egg",
+        "https://en.wikipedia.org/wiki/Fabergé_egg",
+        "https://www.thejewelleryeditor.com/jewellery/article/royal-treasure-saved-from-the-scrapheap-an-imperial-faberge-easter-egg-lost-for-over-a-century-will-go-on-display-for-four-days-only-this-easter/",
+        "https://apollo-magazine.com/?p=86831"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of 2026: Boing Boing (15 Jul 2026) 'Six of the tsars' jeweled Fabergé eggs have never been found'; Futura-Sciences (11 Nov 2026) says the count of missing imperial eggs stands at six; New York Loan (2026) says seven remain unlocated; no recovery of a missing Imperial egg reported 2024-2026",
+      "sources": [
+        "https://boingboing.net/2026/07/15/faberge-egg.html",
+        "https://www.futura-sciences.com/en/a-us-scrap-metal-dealer-nearly-melted-down-a-gold-egg-he-had-bought-for-about-14000-it-was-a-lost-faberge-imperial-egg_902574/",
+        "https://newyorkloan.com/the-7-missing-faberge-imperial-eggs-mystery-value-provenance/"
+      ]
+    }
+  ]
+}

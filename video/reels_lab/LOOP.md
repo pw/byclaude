@@ -309,3 +309,22 @@ over-performs is a cheap signal for which ones to make as films.
   "Nearby"), re-uploaded and the served bytes matched. Place originals in `shorts/hook_place_backup/`.
 - Subject variance is large (200-800), so read medians AND the share >=425; keep flipping a coin for each new film until
   n>=5 each (~11-19). starariel (posted 11-13 01:45Z, 206 @3h) is untagged: it predates the arm.
+
+## 2026-11-19: length batch 2 built (posts 11-24/25); first-pool finding
+- Coin flip (seed 'length-test-2026-11-19-batch2', in `analysis/length-test-1122.json` `batch2`): **ivanlibrary** (L, place;
+  CLEAN, legend marked as legend, Livy list "reported", "may be a forgery") 11-24 01:45Z · **fabergeeggs** (S, detail, 12.1 s;
+  FIX: the scrap-dealer egg is now "a lost Imperial Fabergé egg, found in twenty twelve" so no one reads it as one of the six
+  still missing) 15:45Z · **genghistomb** (L, detail; CLEAN + optional exactness "Their map led to fifty-five ancient sites")
+  11-25 01:45Z · **gardner** (S, detail, 13.8 s; FIX caption: the museum CHOSE to leave the frames, the will story is a myth
+  per the museum) 15:45Z. After batch 2: n=4 short / 4 long; one more pair reaches n=5 each.
+- Stills: ivanlibrary B01 (chests tiny in a dark vault) and genghistomb B01 (near-black forest) regenerated for thumbnail
+  legibility; rejects in <film>/rejected/. ig.py unsolved `order` list extended (films() sorts alphabetically otherwise).
+- Blind reach scores before posting (seeds 61/62, pool 67): gardner +0.93 (#13), genghistomb +0.85 (#17), fabergeeggs +0.11,
+  ivanlibrary -0.40.
+- **First-pool finding:** every film gets a ~200-play first pool by ~4h, back to 11-04 (stendec 213, kobenhavn 201, griffon
+  196...); what changed is EXPANSION past it. Hits (>=425 at 14h): 6/16 (10-25..11-03), 8/19 (11-04..11-13), **1/9 since 11-14**
+  (p~0.07 vs 40%). Page viewers 385-435/day 11-16..19 = two films x ~200; follows +0/day for 4 days. Business Account Quality
+  shows no issues (Mac Chrome, 11-19), and the first pool is intact, so this is not a page restriction: the in-pool response
+  stopped earning expansion. Avg watch since 11-14 is 4.4-7.7 s vs 8-12 s on expanded films: consistent with the length arm.
+- Hook read (first snap >=14h): detail 541/220/198/205/180 (med 205, n=5) vs place 224/193/223/186/202/226 (med 212, n=6):
+  no lead; not callable until n>=8 each, but it is not a lever worth a slot.
