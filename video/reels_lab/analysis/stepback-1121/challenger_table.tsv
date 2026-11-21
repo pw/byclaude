@@ -1,0 +1,79 @@
+post_utc	film	plays_first_read(~4h; ~2h for 15:42 films before 11-07)	plays_72h	avg_watch_s	length_s	kind	series/control	excluded
+2026-10-11T22:12	wychelm	0	4	31.4	57.9	person		repost
+2026-10-12T01:42	valentich	196	219	9.4	28.4	person		
+2026-10-12T15:42	isdal	0	2	22.2	33.9	person		repost
+2026-10-13T01:42	vela	238	1519	22.4	27.4	anomaly		
+2026-10-13T15:42	circleville	1	2	22.1	31.3	anomaly		repost
+2026-10-14T01:42	watcher	198	212	10.1	26.8	person		
+2026-10-14T15:42	wowsignal	0	0	24.1	30.0	anomaly		repost
+2026-10-15T01:42	sodder	184	190	12.0	33.6	person		
+2026-10-15T15:42	beaumont	0	1	23.8	33.6	person		repost
+2026-10-16T01:42	springfieldthree	261	313	8.8	29.4	person		
+2026-10-16T15:42	maryceleste	165	944	5.9	28.8	person		
+2026-10-17T01:42	roanoke	213	526	10.2	33.6	person		
+2026-10-17T15:42	maxheadroom	112	234	9.6	32.3	anomaly		
+2026-10-18T01:42	brianshaffer	196	255	9.5	30.4	person		
+2026-10-18T15:42	hessdalen	194	253	9.3	37.4	anomaly		
+2026-10-19T01:42	jamison	223	389	11.6	30.4	person		
+2026-10-19T15:42	taoshum	24	445	14.9	37.4	anomaly		
+2026-10-20T01:42	voynich	66	1299	16.7	30.0	anomaly		
+2026-10-20T15:42	dorothyarnold	186	211	8.4	27.5	person		
+2026-10-21T01:42	dbcooper	191	202	8.0	38.1	person		
+2026-10-21T15:42	flannanisles	136	1182	9.5	34.8	person		
+2026-10-22T01:42	zodiac	229	235	7.1	35.1	person		
+2026-10-22T15:42	blackdahlia	154	335	8.5	38.0	person		
+2026-10-23T01:42	hoffa	12	16	11.1	35.2	person		page-throttle 10-23..10-25 (page media v
+2026-10-24T01:42	flight19	17	18	7.4	32.6	person		page-throttle 10-23..10-25 (page media v
+2026-10-24T15:42	phaistos	1	4	3.7	35.8	anomaly		page-throttle 10-23..10-25 (page media v
+2026-10-25T01:42	taracalico	30	32	7.3	38.0	person		page-throttle 10-23..10-25 (page media v
+2026-10-25T15:42	paulawelden	4	7	7.6	37.1	person		page-throttle 10-23..10-25 (page media v
+2026-10-26T01:42	shugborough	12	230	7.4	40.0	anomaly		
+2026-10-26T15:42	whale52	116	467	10.5	29.1	anomaly		
+2026-10-27T01:42	lakebodom	0	4	3.3	34.2	person		single-video non-distribution: 3 plays i
+2026-10-27T15:42	beale	155	382	6.7	39.0	anomaly		
+2026-10-28T01:42	copperscroll	234	341	10.4	33.6	anomaly		
+2026-10-28T15:42	cyclops	83	391	8.9	37.7	person		
+2026-10-29T01:42	deering	229	571	8.5	38.1	person		
+2026-10-29T15:42	dorabella	339	558	10.2	39.3	anomaly		
+2026-10-30T01:42	joyita	205	379	8.2	36.8	person		
+2026-10-30T15:42	baychimo	0	1	36.7	38.0	anomaly		single-video non-distribution: 0 plays a
+2026-10-31T01:42	dagapeyeff	176	195	8.9	32.9	anomaly		
+2026-10-31T15:42	lineara	76	219	3.4	40.0	anomaly		
+2026-11-01T01:42	rongorongo	545	609	7.9	36.1	anomaly		
+2026-11-01T15:42	atalanta	190	196	6.5	32.9	person		
+2026-11-02T01:42	flannan2	334	729	8.1	35.1	person	remake-of-flannanisles	
+2026-11-02T15:42	maryceleste2	661	1735	9.0	36.1	person	remake-of-maryceleste	
+2026-11-03T01:42	singaporestone	213	253	13.9	36.5	anomaly		
+2026-11-03T15:42	voynich2	465	633	9.6	35.5	anomaly	remake-of-voynich	
+2026-11-04T01:42	waratah	947	968	7.7	34.2	person		
+2026-11-04T15:42	stendec	136	218	6.8	39.0	anomaly		
+2026-11-05T01:42	indusscript	192	241	4.1	34.2	anomaly		
+2026-11-05T15:42	flannanlog	0	1	14.3	40.0	person	sequel-of-flannanisles	single-video non-distribution: 1 play at
+2026-11-06T01:42	velaclues	635	777	11.6	40.3	anomaly	sequel-of-vela	
+2026-11-06T15:42	rongowood	479	540	9.5	34.5	anomaly	sequel-of-rongorongo	
+2026-11-07T01:42	celestedoyle	207	532	7.1	37.4	person	sequel-of-maryceleste	
+2026-11-07T15:42	kobenhavn	201	207	5.0	36.1	person		
+2026-11-08T01:42	doraenigma	49	85	3.5	39.6	anomaly	sequel-of-dorabella	
+2026-11-08T15:42	waratahsearch	157	923	11.2	36.8	person	sequel-of-waratah	
+2026-11-09T01:42	startiger	696	800	8.6	33.5	person		
+2026-11-09T15:42	voynichvellum	534	790	8.2	33.2	anomaly	sequel-of-voynich	
+2026-11-10T01:42	griffon	197	298	8.4	37.4	person		
+2026-11-10T15:42	deeringbottle	214	228	4.9	37.4	person	sequel-of-deering	
+2026-11-11T01:42	upsweep	197	201	6.4	40.6	anomaly		
+2026-11-11T15:42	roanokestone	439	508	10.9	40.0	person	sequel-of-roanoke	
+2026-11-12T01:42	velasat	204	347	8.5	40.3	anomaly	sequel-of-vela	
+2026-11-12T15:42	ninthlegion	308	332	6.5	34.8	person		
+2026-11-13T01:42	starariel	206	211	5.8	35.8	person	sequel-of-startiger	
+2026-11-13T15:42	devilsprints	139	220	6.2	40.0	anomaly		
+2026-11-14T01:42	bathurst	212	224	7.3	36.4	person		
+2026-11-14T15:42	celestehold	524	540	7.7	35.5	person	sequel-of-maryceleste	
+2026-11-15T01:42	oiseaublanc	188	193	6.4	34.8	person		
+2026-11-15T15:42	waratahsawyer	143	198	5.9	34.9	person	sequel-of-waratah	
+2026-11-16T01:42	flight19lost	206	223	4.4	39.9	person	remake-of-flight19	
+2026-11-16T15:42	voynichletter	83	180	4.9	35.2	anomaly	sequel-of-voynich	
+2026-11-17T01:42	theodosia	176	186	6.8	37.0	person		
+2026-11-17T15:42	startiger3	203	206	4.6	35.2	person	sequel-of-startiger	
+2026-11-18T01:42	dodecahedron	199	203	7.8	39.0	anomaly		
+2026-11-18T15:42	vela4	224	229	5.5	39.3	anomaly	sequel-of-vela	
+2026-11-19T01:42	fawcett	195	197	5.0	35.5	person		
+2026-11-19T15:42	flannanrelief	179	201	4.6	38.6	person	sequel-of-flannanisles	

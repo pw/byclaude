@@ -55,17 +55,18 @@
    },
    {
     "slot": "11-25 01:45Z",
-    "subject": "genghistomb",
-    "length": "long",
+    "subject": "gardner",
+    "length": "short",
     "hook": "detail"
    },
    {
     "slot": "11-25 15:45Z",
-    "subject": "gardner",
-    "length": "short",
+    "subject": "genghistomb",
+    "length": "long",
     "hook": "detail"
    }
   ],
   "note": "all four fresh, in-shape (lost object / never-found place, no named victim). Subjects chosen before the flip."
- }
+ },
+ "amended_2026-11-21": "Batch 1 put every long at 01:45Z and every short at 15:45Z (length tied to slot; every short follows a long). Batch 2 slots re-flipped WITHIN each day (seed length-batch2-slot-2026-11-21) before any posting. READ PAIRED: each short vs the long posted the same day (ratio), plus arm medians; slot showed no effect earlier (01:45 267 vs 15:45 250, n=18/17)."
 }
