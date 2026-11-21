@@ -27,6 +27,10 @@
   "fb_published_at": "2026-10-18T01:45:38+00:00",
   "fb_video_id": "1812424320078937"
  },
+ "celestebarrels": {
+  "fb_published_at": "2026-11-20T15:45:48+00:00",
+  "fb_video_id": "1682423589946993"
+ },
  "celestedoyle": {
   "fb_published_at": "2026-11-07T01:45:43+00:00",
   "fb_video_id": "2232566497301898"
@@ -84,6 +88,10 @@
   "fb_published_at": "2026-10-20T15:45:33+00:00",
   "fb_video_id": "3655666491258945"
  },
+ "fawcett": {
+  "fb_published_at": "2026-11-19T01:45:55+00:00",
+  "fb_video_id": "2613347769144060"
+ },
  "flannan2": {
   "fb_published_at": "2026-11-02T01:45:45+00:00",
   "fb_video_id": "1026036843844367"
@@ -95,6 +103,10 @@
  "flannanlog": {
   "fb_published_at": "2026-11-05T15:45:52+00:00",
   "fb_video_id": "1792570008629895"
+ },
+ "flannanrelief": {
+  "fb_published_at": "2026-11-19T15:45:39+00:00",
+  "fb_video_id": "1153778574282438"
  },
  "flight19": {
   "fb_published_at": "2026-10-24T01:45:33+00:00",
@@ -155,6 +167,10 @@
  "maxheadroom": {
   "fb_published_at": "2026-10-17T15:45:44+00:00",
   "fb_video_id": "2977743665910032"
+ },
+ "naronic": {
+  "fb_published_at": "2026-11-20T01:45:43+00:00",
+  "fb_video_id": "2337744730336073"
  },
  "ninthlegion": {
   "fb_published_at": "2026-11-12T15:45:38+00:00",
@@ -244,6 +260,10 @@
   "fb_published_at": "2026-10-13T01:45:27+00:00",
   "fb_video_id": "3054374861565856"
  },
+ "vela4": {
+  "fb_published_at": "2026-11-18T15:45:51+00:00",
+  "fb_video_id": "1731651311903761"
+ },
  "velaclues": {
   "fb_published_at": "2026-11-06T01:45:42+00:00",
   "fb_video_id": "1534372635379488"
@@ -271,6 +291,10 @@
  "waratah": {
   "fb_published_at": "2026-11-04T01:45:27+00:00",
   "fb_video_id": "1111269798287447"
+ },
+ "waratahharlow": {
+  "fb_published_at": "2026-11-21T01:45:50+00:00",
+  "fb_video_id": "953648234434638"
  },
  "waratahsawyer": {
   "fb_published_at": "2026-11-15T15:45:43+00:00",
