@@ -1,0 +1,66 @@
+{
+  "title": "The Long Delayed Echoes",
+  "subtitle": "Oslo, Norway · 1927",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, a 1920s Norwegian amateur radio operator's world at night, warm amber valve-glow against deep cold blue-black night, quiet, lonely and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no lettering, no numbers on dials, no people, no faces, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Oslo, nineteen twenty-seven. A Dutch radio signal arrived, then arrived again, three seconds later.",
+      "cap": "OSLO · 1927",
+      "img": "Close view of a 1920s home-built shortwave radio receiver filling most of the width of the frame: a dark polished wooden cabinet with three glowing vacuum valves standing on top and two plain round black dials on its front, a pair of old headphones resting beside it, centred on a worn wooden desk, the warm amber glow of the valves lighting the wood and dials brightly so the set reads clearly at small size, a frosted window with deep blue night softly out of focus behind, no people, no hands, no lettering, no numbers, no markings."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Radio circles the Earth in a seventh of a second. The cause is still unknown.",
+      "cap": "CAUSE\nUNKNOWN",
+      "amber": true,
+      "img": "A single long wire radio aerial strung between two tall wooden poles on a snowy hillside above a dark Norwegian fjord at night, centred in the frame, the wire faintly catching cold light, a vast clear starry night sky above, dark water and dark hills below, quiet and still, no aurora, no people, no buildings, no lettering."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "In 1927 (end of summer), Jørgen Hals, a Norwegian civil engineer and radio amateur, at his home near Oslo, listening to the Dutch shortwave station PCJJ at Eindhoven, heard besides the principal signal a weaker echo about three seconds later ('A Dutch radio signal arrived, then arrived again, three seconds later'; 'OSLO · 1927')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Long_delayed_echo",
+        "https://mn.uio.no/fysikk/english/people/aca/sverre/articles/lde.html",
+        "https://www.space.com/astronomy/earth/what-causes-mysterious-long-delayed-radio-echoes-in-earths-atmosphere"
+      ]
+    },
+    {
+      "claim": "The usual radio echo goes round the Earth in about 1/7 of a second (Hals: 'the usual echo, which goes round the earth with an interval of about 1/7 second'); light/radio travels ~300,000 km/s and the Earth's circumference is ~40,000 km = ~0.13 s",
+      "sources": [
+        "https://mn.uio.no/fysikk/english/people/aca/sverre/articles/lde.html",
+        "https://en.wikipedia.org/wiki/Long_delayed_echo",
+        "https://en.wikipedia.org/wiki/Earth"
+      ]
+    },
+    {
+      "claim": "(caption) Hals wrote to physicist Carl Størmer; Størmer's account appeared in Nature in 1928; Balthasar van der Pol arranged test transmissions from PCJJ with the Oslo group from early 1928, and echoes were observed, e.g. on 11 October 1928 simultaneously in Oslo and Eindhoven",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Long_delayed_echo",
+        "https://mn.uio.no/fysikk/english/people/aca/sverre/articles/lde.html",
+        "https://titan.uio.no/blogg/sverre-holm/2015/radio-ghosts-have-haunted-airwaves-nearly-century.html"
+      ]
+    },
+    {
+      "claim": "(caption) Long delayed echoes have been heard sporadically from 1927 up to the present day; proposed explanations include ionospheric/magnetospheric ducting and mode conversion, none confirmed",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Long_delayed_echo",
+        "https://www.space.com/astronomy/earth/what-causes-mysterious-long-delayed-radio-echoes-in-earths-atmosphere",
+        "https://mn.uio.no/fysikk/english/people/aca/sverre/articles/lde.html"
+      ]
+    },
+    {
+      "claim": "Still unexplained as of 2026: Space.com (Micah Hanks, 27 Oct 2026) 'The exact cause of this unusual phenomenon ... remains unknown'; Sverre Holm (University of Oslo): LDEs are 'still not properly explained'; Wikipedia lists LDE under unsolved problems in physics",
+      "sources": [
+        "https://www.space.com/astronomy/earth/what-causes-mysterious-long-delayed-radio-echoes-in-earths-atmosphere",
+        "https://mn.uio.no/fysikk/english/people/aca/sverre/articles/lde.html",
+        "https://en.wikipedia.org/wiki/Long_delayed_echo"
+      ]
+    }
+  ]
+}

@@ -25,7 +25,9 @@
   "ivanlibrary": -0.4,
   "fabergeeggs": 0.11,
   "genghistomb": 0.85,
-  "gardner": 0.93
+  "gardner": 0.93,
+  "kingjohn": 0.04,
+  "longechoes": -0.86
  },
  "all": {
   "cyclops": 0.59,
@@ -141,6 +143,17 @@
     "gardner"
    ],
    "pool_n": 67
+  },
+  {
+   "seeds": [
+    "71",
+    "72"
+   ],
+   "films": [
+    "kingjohn",
+    "longechoes"
+   ],
+   "pool_n": 69
   }
  ]
 }

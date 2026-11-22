@@ -337,3 +337,14 @@ over-performs is a cheap signal for which ones to make as films.
   stopped earning expansion. Avg watch since 11-14 is 4.4-7.7 s vs 8-12 s on expanded films: consistent with the length arm.
 - Hook read (first snap >=14h): detail 541/220/198/205/180 (med 205, n=5) vs place 224/193/223/186/202/226 (med 212, n=6):
   no lead; not callable until n>=8 each, but it is not a lever worth a slot.
+
+## 2026-11-22: length batch 3 built (posts 11-26) -> n=5 short / 5 long
+- Slot coin flip by reels-owner (seed 'length-test-2026-11-22-batch3'): **kingjohn** (L, place; King John's baggage train lost
+  crossing the Wash, Oct 1216; FIX x4: B02 now quotes Roger of Wendover "the land opened in the middle of the water, and
+  whirlpools swallowed everything" (the incoming tide is the modern explanation, not his words), the 2024 Walpole dig is
+  "approved" (no report it happened), "None of it has ever been found"; 35.2 s, 93 words) 11-26 01:45Z · **longechoes** (S, place;
+  Hals's 1927 long-delayed radio echoes, PCJJ Eindhoven, ~3 s vs 1/7 s round the Earth; CLEAN; Space.com 27 Oct 2026 "exact
+  cause remains unknown"; 13.8 s, 31 words) 15:45Z. Hooks flipped per film (python random seeded 'hook-batch3-<name>'): both place.
+- Stills: longechoes B01 regenerated (radio set too small at thumbnail size); reject in longechoes/rejected/.
+- Blind reach scores (record-only, seeds 71/72, pool 69): kingjohn +0.04 (#32), longechoes -0.86 (#56).
+- After 11-26 the length arm is at n=5 each: read paired (short vs same-day long) + arm medians at first snap >=14h.

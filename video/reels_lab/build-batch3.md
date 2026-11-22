@@ -1,0 +1,11 @@
+# Still Unsolved length batch 3 build log (2026-11-22)
+- 04:53Z step 0: read batch-2 procedure (809011f, briefs, LOOP 11-18/19, make.sh, upload.sh, ig.py order)
+- 04:58Z step 1: subjects = kingjohn (LONG, King John's baggage train lost in the Wash 1216; unsolved per Wikipedia + 2024 dig + Dec 2025) and longechoes (SHORT, 1927 Hals long-delayed radio echoes; Space.com 27 Oct 2026 'cause remains unknown'). Hooks: python random seeded hook-batch3-<name> -> kingjohn place, longechoes place
+- 04:58Z step 2: script.json + shorts/su-*.json + caption.txt written myself (VO longechoes 31 words, kingjohn 91)
+- 05:00Z step 3: blind checks (fresh Opus seats, VERIFY_BRIEF only): longechoes CLEAN; kingjohn FIX x4 applied (B02 VO now quotes Wendover 'land opened... whirlpools' not 'tide rushed in', cap THE LAND OPENED; 2024 dig 'approved' not 'dug' in VO + caption; 'None of it has ever been found')
+- 05:02Z step 4: 7 stills generated + looked at; longechoes B01 regenerated (set too small for thumbnail; reject in longechoes/rejected/), others kept (cart, whirlpool chest, crown in mud, fen ditch, empty trench; aerial on fjord)
+- 05:05Z step 5a: built (xAI TTS, whisper-verified, no VERIFY-FAIL): longechoes 13.83 s / 31 VO words; kingjohn 35.18 s / 93 VO words; contact sheets looked at
+- 05:06Z step 5b: uploaded to R2 byclaude-video; served bytes+sha256 match local (longechoes 4,747,579 e2af4fad..., kingjohn 13,244,955 7cf84e00...)
+- 05:06Z step 6: captions_unsolved.json + arms.json (unsolved: length long/short, hook place, frame bleed, end stamp, kind anomaly, origin fresh, test length-1122) + ig.py order; dry-run unposted order: cleopatra, cambyses, crownjewels, ivanlibrary, fabergeeggs, gardner, genghistomb, kingjohn, longechoes (=> kingjohn 11-26 01:45Z, longechoes 11-26 15:45Z at 2/day)
+- 05:06Z step 7: batch3 recorded in analysis/length-test-1122.json
+- 05:07Z step 8: prospective blind score (seeds 71/72, record-only; rater retired as pick filter): kingjohn 0.04 longechoes -0.86 pool 69

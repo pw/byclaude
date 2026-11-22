@@ -826,6 +826,28 @@
    "length": "short",
    "hook": "detail",
    "kind": "anomaly"
+  },
+  "kingjohn": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "length-1122",
+   "length": "long",
+   "hook": "place",
+   "kind": "anomaly"
+  },
+  "longechoes": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "test": "length-1122",
+   "length": "short",
+   "hook": "place",
+   "kind": "anomaly"
   }
  },
  "byclaude": {

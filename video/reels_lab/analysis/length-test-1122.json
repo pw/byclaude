@@ -68,5 +68,25 @@
   ],
   "note": "all four fresh, in-shape (lost object / never-found place, no named victim). Subjects chosen before the flip."
  },
- "amended_2026-11-21": "Batch 1 put every long at 01:45Z and every short at 15:45Z (length tied to slot; every short follows a long). Batch 2 slots re-flipped WITHIN each day (seed length-batch2-slot-2026-11-21) before any posting. READ PAIRED: each short vs the long posted the same day (ratio), plus arm medians; slot showed no effect earlier (01:45 267 vs 15:45 250, n=18/17)."
+ "amended_2026-11-21": "Batch 1 put every long at 01:45Z and every short at 15:45Z (length tied to slot; every short follows a long). Batch 2 slots re-flipped WITHIN each day (seed length-batch2-slot-2026-11-21) before any posting. READ PAIRED: each short vs the long posted the same day (ratio), plus arm medians; slot showed no effect earlier (01:45 267 vs 15:45 250, n=18/17).",
+ "batch3": {
+  "registered": "2026-11-22T05:06Z",
+  "seed": "length-test-2026-11-22-batch3",
+  "films": [
+   {
+    "slot": "11-26 01:45Z",
+    "subject": "kingjohn",
+    "length": "long",
+    "hook": "place"
+   },
+   {
+    "slot": "11-26 15:45Z",
+    "subject": "longechoes",
+    "length": "short",
+    "hook": "place"
+   }
+  ],
+  "hook_seeds": "python random.Random('hook-batch3-<name>').choice(['place','detail']): kingjohn place, longechoes place",
+  "note": "both fresh, in-shape (lost treasure in an empty drained marsh, 1216; unexplained 1927 radio echoes), no named victim. Subjects chosen before the hook flip; slot coin flip (long 01:45 / short 15:45) done by reels-owner. After batch 3: n=5 short / 5 long -> callable by the usual rule (paired read: each short vs the same-day long)."
+ }
 }

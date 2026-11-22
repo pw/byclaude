@@ -1,0 +1,117 @@
+{
+  "title": "King John's Lost Treasure",
+  "subtitle": "The Wash, England · 1216",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, the flat tidal estuary and fens of eastern England, medieval, cold pewter-grey and sea-green light with dull old-gold glints, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "The Wash, England. October, twelve sixteen. King John's baggage train set out across the estuary at low tide.",
+      "cap": "THE WASH · 1216",
+      "img": "One heavy medieval wooden cart with large spoked wheels, loaded with iron-bound wooden treasure chests, standing alone in the centre of the frame on wide wet glistening tidal sand flats at low tide, soft pale morning light falling on the cart and chests so they read clearly at small size, shallow channels of water reflecting a pale grey sky, a flat horizon, no horses, no people, no lettering."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "A chronicler wrote that the land opened in the middle of the water, and whirlpools swallowed everything.",
+      "cap": "THE LAND\nOPENED",
+      "amber": true,
+      "img": "Brown muddy tidal water swirling in slow eddies and small whirlpools across a flat estuary, one iron-bound wooden chest half sunk in the swirling water in the exact centre of the frame, cold grey light, low dark sky, no people, no horses, no lettering."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Many historians think at least one crown was lost. Days later, the king died.",
+      "cap": "AT LEAST\nONE CROWN",
+      "img": "A simple medieval gold crown with low fleur-de-lis points and a few dull uncut gemstones, lying half buried in smooth grey estuary mud and silt, centred and filling the middle of the frame, one soft cold beam of light catching the gold, wet mud glistening around it, no people, no hands, no lettering."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "The marsh was drained for farming long ago. The old estuary is dry land now, miles from the sea.",
+      "cap": "NOW\nFARMLAND",
+      "amber": true,
+      "img": "Flat dark ploughed fenland fields stretching to a low horizon, a long straight drainage ditch of still water running from the foreground to the centre of the frame, a huge pale dawn sky, faint mist over the fields, no buildings, no people, no vehicles."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Some doubt much was lost at all. In twenty twenty-four, a new dig was approved. None of it has ever been found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "A single long empty archaeological trench cut neatly into dark fen soil in the middle of a flat field, centred in the frame, taut string lines along its edges and one small trowel resting on the spoil heap, overcast pale light, flat fields to the horizon, no people, no lettering."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "In October 1216 (the party set out from King's Lynn on 12 October), King John's baggage train crossed the tidal estuaries of the Wash by a route usable only at low tide and was overtaken by the incoming tide ('set out across the estuary at low tide'; 'THE WASH · 1216')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lost_jewels_of_John,_King_of_England",
+        "https://au.news.yahoo.com/excavation-looks-solve-mystery-king-195317946.html",
+        "https://justhistoryposts.com/2025/12/09/a-brief-moment-of-history-king-john-and-the-lost-crown-jewels/",
+        "https://www.heritagedaily.com/2024/03/archaeologists-search-for-king-johns-lost-treasure/151213"
+      ]
+    },
+    {
+      "claim": "The chronicler Roger of Wendover wrote that 'the land opened in the middle of the water and caused whirlpools which sucked in every thing', including carts, wagons, baggage horses, money and valuable vessels (VO quotes him, not the modern tide explanation; blind check 11-22)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lost_jewels_of_John,_King_of_England",
+        "https://justhistoryposts.com/2025/12/09/a-brief-moment-of-history-king-john-and-the-lost-crown-jewels/",
+        "https://historyhit.com/the-miserable-last-days-of-king-john",
+        "https://historicalragbag.com/2020/06/22/king-john-his-treasure-and-the-wash/"
+      ]
+    },
+    {
+      "claim": "Many historians think at least one crown was lost ('at least one crown was lost during the incident' per many historians; History Hit: 'It seems quite likely that John lost at least one crown in the accident')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lost_jewels_of_John,_King_of_England",
+        "https://historyhit.com/the-miserable-last-days-of-king-john"
+      ]
+    },
+    {
+      "claim": "King John died of dysentery at Newark on the night of 18/19 October 1216, days after the loss",
+      "sources": [
+        "https://au.news.yahoo.com/excavation-looks-solve-mystery-king-195317946.html",
+        "https://www.heritagedaily.com/2024/03/archaeologists-search-for-king-johns-lost-treasure/151213",
+        "https://justhistoryposts.com/2025/12/09/a-brief-moment-of-history-king-john-and-the-lost-crown-jewels/",
+        "https://en.wikipedia.org/wiki/Lost_jewels_of_John,_King_of_England"
+      ]
+    },
+    {
+      "claim": "Much of what was estuary and salt marsh has been reclaimed over the centuries for farming; the likely area (Walpole Marsh) is about 8 km from today's coastline; King's Lynn, on the coast in John's time, is now inland ('drained for farming', 'dry land now, miles from the sea', 'NOW FARMLAND')",
+      "sources": [
+        "https://au.news.yahoo.com/excavation-looks-solve-mystery-king-195317946.html",
+        "https://www.heritagedaily.com/2024/03/archaeologists-search-for-king-johns-lost-treasure/151213",
+        "https://justhistoryposts.com/2025/12/09/a-brief-moment-of-history-king-john-and-the-lost-crown-jewels/"
+      ]
+    },
+    {
+      "claim": "Some historians doubt that much (or any) treasure was lost: regalia were present at Henry III's coronation days later; the contents are highly disputed; Ralph of Coggeshall's account is more sober ('lost some bits of his chapel')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lost_jewels_of_John,_King_of_England",
+        "https://historyhit.com/the-miserable-last-days-of-king-john",
+        "https://www.britainexpress.com/heritage-travel-article.htm?travel=9778"
+      ]
+    },
+    {
+      "claim": "In 2024 a new dig by the West Norfolk and King's Lynn Archaeological Society was approved/planned (trenches, field walking, metal detecting) near Walpole Marsh (Walpole St Andrew) as a planning condition of a solar farm ('In 2024, a new dig was approved'; blind check 11-22: coverage describes it as planned, not reported done); earlier WNKLAS dig at Tydd St Giles 2016 found only minor medieval material",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lost_jewels_of_John,_King_of_England",
+        "https://au.news.yahoo.com/excavation-looks-solve-mystery-king-195317946.html",
+        "https://www.heritagedaily.com/2024/03/archaeologists-search-for-king-johns-lost-treasure/151213",
+        "https://greekreporter.com/2024/03/28/king-john-lost-treasure/",
+        "https://www.lincsonline.co.uk/spalding/news/one-in-a-million-chance-of-finding-king-john-s-treasure-wi-9362067"
+      ]
+    },
+    {
+      "claim": "Nothing has been found / still unsolved as of 2026: 'No treasures or items of royal regalia have since been recovered' (Wikipedia, re the 2021/22 Sutton Bridge detector claim); historian Paul Richards 2024: 'Nothing's ever been found'; justhistoryposts Dec 2025 still asks 'Has the treasure been found?' with only an unexcavated claim; no 2025-2026 find reported",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lost_jewels_of_John,_King_of_England",
+        "https://au.news.yahoo.com/excavation-looks-solve-mystery-king-195317946.html",
+        "https://justhistoryposts.com/2025/12/09/a-brief-moment-of-history-king-john-and-the-lost-crown-jewels/"
+      ]
+    }
+  ]
+}
