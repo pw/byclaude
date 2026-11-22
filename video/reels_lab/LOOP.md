@@ -182,6 +182,15 @@ then prefer cases that don't need them. A film under ~20 plays at 12h on a healt
 - Context for the read: since 11-14 every film except celestehold stalled at ~180-225 plays by 4-8h while the page stayed
   healthy (408-1,591 viewers/day 11-03..11-16). The floor is sagging; format is the lever the model says can move it.
 
+## 2026-11-22: mining-vs-fresh VERDICT = FAIL (2 v 2 hits), a clean tie inside every day; blind rater retired
+- Hits >=425: fresh naronic 526, amberroom 479 · repeat celestebarrels 503, waratahharlow 448. Floor: theodosia 186, dodecahedron 203,
+  fawcett 198 · startiger3 206, vela4 229, flannanrelief 202. Same-day repeat/fresh ratios 1.11, 1.13, 1.02, 0.96, 0.94.
+- Per the pre-registered rule mining drops to <=1 in 4 slots. Real reading: the DAY set the level (3 cold days, 2 hot days, both films
+  together every time); 4th/5th tellings showed no penalty, so the telling fade was the date.
+- `tools/prospective_score.py` RETIRED as a pick filter: Spearman 0.06 (n=17); within-day pair picks 2/5. Class rule stays.
+- Next: length reads 11-23..11-27 (batch 3 pair built 11-22 for 11-26: long 01:45Z, short 15:45Z, seed
+  'length-test-2026-11-22-batch3'). After length: hot-day bonus film arm (owner-models Ideas 11-22).
+
 ## The loop (one arm at a time)
 1. **Post** 2/day via `ig.py --profile unsolved batch --per-day 2` (cron once the Page id lands in ig.py + reels_lab/pages.json).
 2. **Measure**: `lab.py snap` every 6h (cron); `lab.py report --page unsolved` = plays at 72h + retention + arm medians.
