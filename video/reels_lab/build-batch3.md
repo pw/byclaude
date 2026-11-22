@@ -9,3 +9,4 @@
 - 05:06Z step 6: captions_unsolved.json + arms.json (unsolved: length long/short, hook place, frame bleed, end stamp, kind anomaly, origin fresh, test length-1122) + ig.py order; dry-run unposted order: cleopatra, cambyses, crownjewels, ivanlibrary, fabergeeggs, gardner, genghistomb, kingjohn, longechoes (=> kingjohn 11-26 01:45Z, longechoes 11-26 15:45Z at 2/day)
 - 05:06Z step 7: batch3 recorded in analysis/length-test-1122.json
 - 05:07Z step 8: prospective blind score (seeds 71/72, record-only; rater retired as pick filter): kingjohn 0.04 longechoes -0.86 pool 69
+- 05:08Z step 9: committed + pushed byclaude d245b46, FeelBetterBot.com ig.py fbcbb98
