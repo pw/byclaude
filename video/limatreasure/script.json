@@ -1,0 +1,123 @@
+{
+  "title": "The Treasure of Lima",
+  "subtitle": "Cocos Island, Costa Rica · 1820",
+  "voice": "Ara",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, a remote rain-forested Pacific island of black volcanic cliffs, waterfalls and dark sand coves, early nineteenth century, deep jungle green and storm-grey light with warm old-gold glints, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Lima, Peru. Eighteen twenty. The story goes that the city's riches were loaded onto one ship, among them a life-size Virgin of solid gold.",
+      "cap": "LIMA · 1820",
+      "img": "A life-size solid gold statue of the Virgin Mary seen from directly behind, standing upright alone in the exact centre of the frame on a plain stone base on wet dark volcanic sand, her head and shoulders covered by a long sculpted gold veil and robe falling in deep folds, warm low light catching the polished gold so the figure reads clearly at small size, a dark green jungle edge and a grey sea softly out of focus beyond her, no face visible, no child, no people, no hands, no lettering."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Its captain, it is said, sailed instead for Cocos Island, off Costa Rica, and buried it there.",
+      "cap": "COCOS\nISLAND",
+      "amber": true,
+      "img": "One heavy iron-bound wooden treasure chest with its lid closed, half buried in dark sand at the foot of the jungle in a lonely island cove, centred and filling the middle of the frame, soft grey storm light on the wood and iron, a tall green cliff with one thin white waterfall behind, calm grey sea at the edge, no ship, no people, no lettering."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "More than three hundred expeditions have searched the island since. None found the treasure.",
+      "cap": "300\nEXPEDITIONS",
+      "img": "A single rusted old iron shovel standing upright in red-brown mud in the exact centre of the frame, on a narrow path climbing into dense dripping rainforest on a steep island slope, mist hanging between giant ferns and palm trunks, soft rain light falling on the shovel so it reads clearly, no people, no hands, no lettering."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "One man, August Gissler, searched there for nearly twenty years. He found a few gold coins.",
+      "cap": "A FEW\nGOLD COINS",
+      "amber": true,
+      "img": "The dark mouth of an old hand-dug tunnel cut into a red-brown earth bank beneath tangled jungle roots, centred in the frame, three small worn gold coins lying in the wet mud at its entrance catching one faint beam of light, ferns and dripping vines around the opening, no people, no hands, no lettering."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Some historians doubt it happened. Costa Rica now forbids treasure hunting there. The gold, if it existed, has never been found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "A steep green uninhabited island seen from the sea, centred in the frame, black volcanic cliffs with white waterfalls falling straight into the ocean, low clouds over its summit, calm dark grey water in the foreground, pale cold dawn light, no boats, no people, no buildings."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Legend (marked 'the story goes'): around 1820, with Lima, Peru, on the edge of revolt during the wars of independence, the city's wealth was supposedly loaded for safekeeping onto one ship, the Mary Dear ('LIMA · 1820'; caption 'to keep them from revolution'). NatGeo dates the siege to 1821; Wikipedia, Explorersweb and Tico Times all give 1820. No contemporary Spanish record confirms it (Tico Times), hence the legend framing.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Treasure_of_Lima",
+        "https://en.wikipedia.org/wiki/Cocos_Island",
+        "https://explorersweb.com/exploration-mysteries-the-treasure-of-lima/",
+        "https://ticotimes.net/2026/04/12/the-mystery-of-costa-ricas-cocos-island-and-the-lost-treasure-legend"
+      ]
+    },
+    {
+      "claim": "Legend: the treasure reputedly included a life-size solid gold statue of the Virgin Mary (Wikipedia: 'two life-size solid gold statues of Mary holding the baby Jesus'; NatGeo and Tico Times: 'a life-size gold statue of Mary'; Explorersweb: a seven-foot solid gold statue)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Treasure_of_Lima",
+        "https://www.nationalgeographic.com/history/article/treasure-of-lima-lost-gold-cocos-island",
+        "https://ticotimes.net/2026/04/12/the-mystery-of-costa-ricas-cocos-island-and-the-lost-treasure-legend",
+        "https://explorersweb.com/exploration-mysteries-the-treasure-of-lima/"
+      ]
+    },
+    {
+      "claim": "Legend (marked 'it is said'): the ship's captain, William Thompson, took the treasure instead and allegedly buried it on Cocos Island, which lies about 550 km southwest of the Costa Rican mainland ('off Costa Rica'). Violent parts of the legend deliberately left out.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Treasure_of_Lima",
+        "https://en.wikipedia.org/wiki/Cocos_Island",
+        "https://www.nationalgeographic.com/history/article/treasure-of-lima-lost-gold-cocos-island",
+        "https://ticotimes.net/2026/04/12/the-mystery-of-costa-ricas-cocos-island-and-the-lost-treasure-legend"
+      ]
+    },
+    {
+      "claim": "More than 300 expeditions have searched Cocos Island for treasure; none succeeded in finding the Treasure of Lima (Cocos Island wiki: 'over 300 expeditions'; NatGeo: 'More than 300 expeditions'; Explorersweb: 300, all unsuccessful; CoinsWeekly says about 500)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cocos_Island",
+        "https://www.nationalgeographic.com/history/article/treasure-of-lima-lost-gold-cocos-island",
+        "https://explorersweb.com/exploration-mysteries-the-treasure-of-lima/",
+        "https://en.wikipedia.org/wiki/Treasure_of_Lima",
+        "https://coinsweekly.com/?p=56425"
+      ]
+    },
+    {
+      "claim": "August Gissler, a German treasure hunter, lived on and searched Cocos Island from 1889 to 1908 ('nearly twenty years'; Cocos wiki: 'most of the period from 1889 to 1908') and found only a few gold coins (Gissler wiki: 'never found more than six gold coins'; Cocos wiki: 'only found a few gold coins'; Tico Times: 'found almost nothing'). CoinsWeekly dissents (left 1903, ~15 years), so the VO says 'searched there', not 'lived there'.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/August_Gissler",
+        "https://en.wikipedia.org/wiki/Cocos_Island",
+        "https://en.wikipedia.org/wiki/Treasure_of_Lima",
+        "https://explorersweb.com/exploration-mysteries-the-treasure-of-lima/",
+        "https://ticotimes.net/2026/04/12/the-mystery-of-costa-ricas-cocos-island-and-the-lost-treasure-legend"
+      ]
+    },
+    {
+      "claim": "Some historians doubt the story ever happened: Tico Times (Apr 2026): some historians consider it fictional or exaggerated because no contemporary Spanish records confirm it; Explorersweb: the stories may have been 'a ploy to trick naval authorities'; Wikipedia notes the Lima version appears in print only by 1929 and that Costa Rica believes no treasure exists on the island",
+      "sources": [
+        "https://ticotimes.net/2026/04/12/the-mystery-of-costa-ricas-cocos-island-and-the-lost-treasure-legend",
+        "https://explorersweb.com/exploration-mysteries-the-treasure-of-lima/",
+        "https://en.wikipedia.org/wiki/Treasure_of_Lima"
+      ]
+    },
+    {
+      "claim": "Costa Rica now forbids treasure hunting on Cocos Island (national park since 1978; Cocos wiki: 'Treasure hunting is strictly prohibited by the Costa Rican government and permits are not being issued'; Tico Times 2026: 'any kind of digging or excavation on Cocos Island is entirely prohibited'; Explorersweb: banned in 1994; CoinsWeekly: 'strictly prohibited')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cocos_Island",
+        "https://ticotimes.net/2026/04/12/the-mystery-of-costa-ricas-cocos-island-and-the-lost-treasure-legend",
+        "https://explorersweb.com/exploration-mysteries-the-treasure-of-lima/",
+        "https://coinsweekly.com/?p=56425",
+        "https://en.wikipedia.org/wiki/Treasure_of_Lima"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of Nov 2026: Tico Times (12 Apr 2026): 'The treasure, if it ever existed, was never recovered'; NatGeo (dated 15 Sep 2026): location unknown; Wikipedia: 'None succeeded in finding the treasure'. The recurring '$200 million treasure found on Cocos Island' story (Q Costa Rica, dated 10 Nov 2016) is credited to Worldnewsdailyreport and tagged satire ('We will make up any story to make you laugh') - not a find. No 2024-2026 recovery reported.",
+      "sources": [
+        "https://ticotimes.net/2026/04/12/the-mystery-of-costa-ricas-cocos-island-and-the-lost-treasure-legend",
+        "https://www.nationalgeographic.com/history/article/treasure-of-lima-lost-gold-cocos-island",
+        "https://en.wikipedia.org/wiki/Treasure_of_Lima",
+        "https://qcostarica.com/200-million-dollar-treasure-found-off-costa-ricas-pacific-coast"
+      ]
+    }
+  ]
+}

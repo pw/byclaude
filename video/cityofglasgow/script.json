@@ -1,0 +1,128 @@
+{
+  "title": "The City of Glasgow",
+  "subtitle": "Liverpool, England · 1854",
+  "voice": "Ara",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, the open grey North Atlantic in winter, 1854, cold slate-blue and pewter light with dark iron and pale weathered canvas tones, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Liverpool, England. March, eighteen fifty-four. The iron steamship City of Glasgow sailed for Philadelphia with more than four hundred people aboard.",
+      "cap": "LIVERPOOL · 1854",
+      "img": "One 1850s iron-hulled screw steamship with a dark hull, a clipper bow, a single tall black funnel and three masts carrying partly set pale canvas sails, standing broadside-on in the exact centre of the frame on a calm grey sea, soft pale winter light falling on the hull and sails so the ship reads clearly at small size, a faint wisp of smoke from the funnel, low overcast sky, no name or lettering on the hull, no flags, no people visible."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Most were emigrants in steerage. She never arrived, and no word of her ever came.",
+      "cap": "NEVER\nARRIVED",
+      "amber": true,
+      "img": "An empty 1850s steerage deck below decks: two rows of plain wooden bunks with folded grey wool blankets, one small battered leather travelling trunk standing alone in the centre of the aisle, dim warm light from a single hanging oil lantern, curved iron hull ribs overhead, no people, no lettering."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "That month, her sister ship met icebergs and wide fields of ice. Other ships called it the worst in years. Ice is one theory. Only a theory.",
+      "cap": "A THEORY:\nICE",
+      "img": "One tall jagged white iceberg standing in the centre of the frame on a dark grey sea, a broad field of broken pale floe ice spreading across the water in front of it, cold blue dusk light catching the ice so it reads clearly, low heavy clouds, no ships, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "In May, her owners accepted she was lost. No one aboard was ever seen again.",
+      "cap": "NO ONE\nSEEN AGAIN",
+      "amber": true,
+      "img": "The empty open North Atlantic at dusk, long slow grey swells running to a flat horizon, one shaft of pale light breaking through heavy cloud and falling on the water in the exact centre of the frame, no ships, no wreckage, no birds, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Wreckage was reported more than once. None was ever proven hers. Her wreck has never been found.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "One single weathered, broken wooden plank floating alone on a dark grey North Atlantic swell in the exact centre of the frame, pale cold light catching its wet edge so it reads clearly at small size, empty sea to a misty horizon, no ship, no wreck, no other debris, no people, no lettering."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "On 1 March 1854 the Inman Line (Liverpool and Philadelphia Steam Ship Co.) iron-hulled screw steamship City of Glasgow (built 1850 by Tod & Macgregor, Glasgow; three-masted barque rig, one screw) left Liverpool for Philadelphia ('Liverpool, England. March, eighteen fifty-four'; 'iron steamship'; 'LIVERPOOL · 1854')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_City_of_Glasgow_(1850)",
+        "https://www.rmg.co.uk/collections/objects/rmgc-object-140209",
+        "https://maritimequest.com/daily_event_archive/2006/march/01_ss_city_of_glasgow.htm",
+        "https://en.wikipedia.org/wiki/Inman_Line",
+        "https://norwayheritage.com/p_ship.asp?sh=cigla"
+      ]
+    },
+    {
+      "claim": "About 480 people were aboard (RMG: 'left Liverpool for Philadelphia, with 480 people on board'; Wikipedia lead, MaritimeQuest, History Daily, History Collection all give 480). Counts vary: Wikipedia's body gives 430 (61 cabin, 293 steerage, 73 crew, which does not sum); an early 1854 Liverpool report said 'more than three hundred'. VO/caption now say 'more than four hundred' (blind check 11-23: Wikipedia's own breakdown sums to 427; every count above 400 except the early 'more than three hundred' report).",
+      "sources": [
+        "https://www.rmg.co.uk/collections/objects/rmgc-object-140209",
+        "https://en.wikipedia.org/wiki/SS_City_of_Glasgow_(1850)",
+        "https://maritimequest.com/daily_event_archive/2006/march/01_ss_city_of_glasgow.htm",
+        "https://www.historydaily.com/a-transatlantic-steamship-vanishes-at-sea/",
+        "https://historycollection.com/18-maritime-disasters-other-than-the-titanic/7/",
+        "https://old-merseytimes.co.uk/cityofglasgow.html"
+      ]
+    },
+    {
+      "claim": "Most aboard were emigrants in steerage: 293 steerage passengers (Wikipedia); 'the 480 on board, including 293 emigrants' (MaritimeQuest) — a majority under either total ('Most were emigrants in steerage')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_City_of_Glasgow_(1850)",
+        "https://maritimequest.com/daily_event_archive/2006/march/01_ss_city_of_glasgow.htm"
+      ]
+    },
+    {
+      "claim": "She never arrived and no word of her was ever received after she left Liverpool (RMG: 'was never heard of again'; History Collection: 'never seen nor heard from again'; MaritimeQuest: in early April, over five weeks after she sailed, there was no word of her)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_City_of_Glasgow_(1850)",
+        "https://www.rmg.co.uk/collections/objects/rmgc-object-140209",
+        "https://historycollection.com/18-maritime-disasters-other-than-the-titanic/7/",
+        "https://maritimequest.com/daily_event_archive/2006/march/01_ss_city_of_glasgow.htm"
+      ]
+    },
+    {
+      "claim": "Her sister ship City of Manchester met many icebergs and ice fields on 8 March 1854, ice greater than seen in many years (Wikipedia); a contemporary Liverpool report says ice was seen farther south than usual and the City of Manchester had 'much difficulty' getting through it ('That month, her sister ship met icebergs and ice fields worse than in many years') [blind check 11-23: 'worse than in many years' was other ships' report, not the Manchester's; VO now 'Other ships called it the worst in years']",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_City_of_Glasgow_(1850)",
+        "https://old-merseytimes.co.uk/cityofglasgow.html"
+      ]
+    },
+    {
+      "claim": "Ice is a theory, not established: RMG 'She may have been the victim of the unusual amount of ice in the North Atlantic that year'; History Daily: experts think she 'likely struck an iceberg'; Wikipedia: 'Her fate remains a mystery'; an 1854 captain thought she had broken her propeller in ice ('Ice is one theory. Only a theory.')",
+      "sources": [
+        "https://www.rmg.co.uk/collections/objects/rmgc-object-140209",
+        "https://www.historydaily.com/a-transatlantic-steamship-vanishes-at-sea/",
+        "https://en.wikipedia.org/wiki/SS_City_of_Glasgow_(1850)",
+        "https://old-merseytimes.co.uk/cityofglasgow.html"
+      ]
+    },
+    {
+      "claim": "In May 1854 she was accepted as lost with all aboard (Wikipedia: accepted as lost by end of May; MaritimeQuest: in May William Inman admitted she was lost with all on board; History Collection: declared lost in May 1854; Inman Line: lost 'with all hands', 'no survivors') ('In May, her owners accepted she was lost. No one aboard was ever seen again.')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_City_of_Glasgow_(1850)",
+        "https://maritimequest.com/daily_event_archive/2006/march/01_ss_city_of_glasgow.htm",
+        "https://historycollection.com/18-maritime-disasters-other-than-the-titanic/7/",
+        "https://en.wikipedia.org/wiki/Inman_Line"
+      ]
+    },
+    {
+      "claim": "Wreckage was reported more than once but none was proven to be hers: a hull found by the Mary Morris was identified as the Shannon / judged not to be her; the Baldaur's 21 April distressed-ship sighting was judged unlikely to be her; a bow section bearing the name washed ashore near Campbeltown in Oct 1854, but another, smaller vessel named City of Glasgow had sailed from the Clyde that month (Wikipedia: 'may be related'); History Collection: several wrecks suspected, each ruled out ('Wreckage was reported more than once. None was ever proven hers.')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_City_of_Glasgow_(1850)",
+        "https://maritimequest.com/daily_event_archive/2006/march/01_ss_city_of_glasgow.htm",
+        "https://historycollection.com/18-maritime-disasters-other-than-the-titanic/7/"
+      ]
+    },
+    {
+      "claim": "Her wreck has never been found / still unsolved as of Nov 2026: Wikipedia 'Her fate remains a mystery'; History Collection 'No trace of its wreckage has ever been found'; History Daily (2024) describes her as still missing; web searches for 2024–2026 wreck finds/identifications return none (only unrelated finds: City of Hobart, SS Nantes, Le Lyonnais)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_City_of_Glasgow_(1850)",
+        "https://historycollection.com/18-maritime-disasters-other-than-the-titanic/7/",
+        "https://www.historydaily.com/a-transatlantic-steamship-vanishes-at-sea/",
+        "https://maritimequest.com/daily_event_archive/2006/march/01_ss_city_of_glasgow.htm"
+      ]
+    }
+  ]
+}

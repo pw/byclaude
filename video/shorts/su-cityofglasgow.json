@@ -1,0 +1,49 @@
+{
+ "out": "short-su-cityofglasgow",
+ "kicker": "THE CITY OF GLASGOW",
+ "frame": "bleed",
+ "voice": "Ara",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "cityofglasgow",
+   "img": "B01",
+   "vo": "Liverpool, England. March, eighteen fifty-four. The iron steamship City of Glasgow sailed for Philadelphia with more than four hundred people aboard.",
+   "cap": "LIVERPOOL · 1854"
+  },
+  {
+   "src": "cityofglasgow",
+   "img": "B02",
+   "vo": "Most were emigrants in steerage. She never arrived, and no word of her ever came.",
+   "cap": "NEVER\nARRIVED",
+   "amber": true
+  },
+  {
+   "src": "cityofglasgow",
+   "img": "B03",
+   "vo": "That month, her sister ship met icebergs and wide fields of ice. Other ships called it the worst in years. Ice is one theory. Only a theory.",
+   "cap": "A THEORY:\nICE"
+  },
+  {
+   "src": "cityofglasgow",
+   "img": "B04",
+   "vo": "In May, her owners accepted she was lost. No one aboard was ever seen again.",
+   "cap": "NO ONE\nSEEN AGAIN",
+   "amber": true
+  },
+  {
+   "src": "cityofglasgow",
+   "img": "B05",
+   "vo": "Wreckage was reported more than once. None was ever proven hers. Her wreck has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

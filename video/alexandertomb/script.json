@@ -1,0 +1,128 @@
+{
+  "title": "The Lost Tomb of Alexander the Great",
+  "subtitle": "Alexandria, Egypt · c. 280 BC",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, the ancient harbour city of Alexandria in Egypt, Hellenistic and Roman era, warm worn-gold and pale limestone tones in deep shadow with cool sea-blue dusk light, quiet, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no inscriptions, no people, no faces, no statues, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Alexandria, Egypt. Around two hundred eighty B.C., Alexander the Great was laid to rest here, in a coffin of gold.",
+      "cap": "ALEXANDRIA · EGYPT",
+      "img": "One ancient Greek-style rectangular sarcophagus of hammered gold with a low gabled lid and simple carved rosettes and leaf borders, no figures, no face, no lettering, standing alone in the exact centre of the frame on a low stone platform in a dim limestone burial chamber, a warm beam of lamplight falling on the gold so it glows and reads clearly at small size, dark stone walls fading to shadow, dust in the air, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "That tomb has been lost for more than fifteen hundred years.",
+      "cap": "LOST FOR\n1,500+ YEARS",
+      "amber": true,
+      "img": "A massive ancient stone tomb doorway sealed shut with heavy fitted limestone blocks, half buried in drifted sand and rubble, centred in the frame, one thin shaft of pale light falling across the sealed blocks from above, deep shadow all around, no carvings, no lettering, no people."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Julius Caesar came to see him. Augustus laid a golden crown on the body.",
+      "cap": "CAESAR\nCAME TO SEE",
+      "img": "A delicate ancient golden wreath crown of thin hammered gold leaves resting alone on a dark polished stone slab, centred and filling the middle of the frame, a few scattered dried flower petals beside it, one soft warm beam of light catching the gold leaves, black shadow behind, no people, no hands, no lettering."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Around the year four hundred, a preacher asked, where is the tomb of Alexander? Even his own people, he said, did not know.",
+      "cap": "WHERE IS\nTHE TOMB?",
+      "amber": true,
+      "img": "A wide empty crossroads of two ancient colonnaded stone streets at dusk, broken columns and fallen limestone blocks along both sides, the paving worn and dusted with sand, a single empty square plinth standing in the very centre of the crossing, a cool sea-blue sky with the last warm light low on the horizon, no buildings intact, no people, no statues, no lettering."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Over a hundred and forty official searches have failed. Theories point beneath the city, to the desert, even to Venice.",
+      "cap": "140+\nSEARCHES",
+      "amber": true,
+      "img": "A single deep rectangular archaeological excavation pit in a quiet city garden among tall palm trees, centred in the frame, ancient pale limestone blocks exposed in its walls and still dark groundwater at the bottom, taut string lines along its edges and one wooden ladder leaning inside, soft overcast dusk light, no people, no lettering."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Alexander's body was taken by Ptolemy (I) to Egypt (first Memphis) and moved to Alexandria in the late 4th or early 3rd century BC (Pausanias credits Ptolemy II, c. 280 BC) ('Around two hundred eighty B.C., ... laid to rest here'; 'ALEXANDRIA · EGYPT'). Strabo 17.1.8: the body was 'given sepulture in Alexandria'. [blind check 11-23: moved to Alexandria under Ptolemy I or II, c. 280 BC, certainly by 274 BC; VO now 'Around two hundred eighty B.C.']",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
+        "https://www.thecollector.com/locating-tomb-alexader-the-great/",
+        "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/17A1*.html"
+      ]
+    },
+    {
+      "claim": "The coffin Ptolemy laid him in at Alexandria was gold (Strabo: 'the one wherein Ptolemy laid it was made of gold'; later replaced by one of glass after a Ptolemy took the gold, c. 89 BC); Diodorus describes a coffin of hammered gold ('in a coffin of gold') [blind check 11-23: moved to Alexandria under Ptolemy I or II, c. 280 BC, certainly by 274 BC; VO now 'Around two hundred eighty B.C.']",
+      "sources": [
+        "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/17A1*.html",
+        "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great"
+      ]
+    },
+    {
+      "claim": "The tomb has been lost for more than 1,500 years: it vanishes from the historical record in the 4th century AD per TheCollector; John Chrysostom c. 400 said even his own people did not know it; Cartledge (Live Science 2025): 'It disappears from mention around A.D. 500' (so 'more than fifteen hundred years' holds on either dating; 'LOST FOR 1,500+ YEARS')",
+      "sources": [
+        "https://www.thecollector.com/locating-tomb-alexader-the-great/",
+        "https://www.livescience.com/archaeology/was-alexander-the-great-eaten-by-sharks-inside-the-wild-theories-for-what-happened-to-the-iconic-rulers-body",
+        "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great"
+      ]
+    },
+    {
+      "claim": "The tomb stood in Alexandria for centuries: from its move there (c. 300/280 BC) through Septimius Severus sealing it (199 AD) to the last recorded visit, by Caracalla in 215 AD (caption: 'For centuries his tomb stood in the city')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
+        "https://www.thecollector.com/locating-tomb-alexader-the-great/"
+      ]
+    },
+    {
+      "claim": "Julius Caesar visited the tomb (48 BC) ('Julius Caesar came to see him'; 'CAESAR CAME TO SEE')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
+        "https://www.thecollector.com/locating-tomb-alexader-the-great/",
+        "https://www.livescience.com/archaeology/was-alexander-the-great-eaten-by-sharks-inside-the-wild-theories-for-what-happened-to-the-iconic-rulers-body"
+      ]
+    },
+    {
+      "claim": "Augustus had the sarcophagus and body brought out, placed a golden crown on it and strewed flowers (Suetonius, Augustus 18) ('Augustus laid a golden crown on the body')",
+      "sources": [
+        "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Augustus*.html",
+        "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great"
+      ]
+    },
+    {
+      "claim": "John Chrysostom, Homily 26 on 2 Corinthians (c. 400 AD): 'where is the tomb of Alexander? show it me ...' and 'his tomb even his own people know not' ('Around the year four hundred, a preacher asked ... Even his own people, he said, did not know'; 'WHERE IS THE TOMB?')",
+      "sources": [
+        "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_I/Volume_XII/Homilies_on_Second_Corinthians/Homily_XXVI",
+        "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
+        "https://www.thecollector.com/locating-tomb-alexader-the-great/"
+      ]
+    },
+    {
+      "claim": "Egypt's Supreme Council of Antiquities officially recognises over 140 search attempts; National Geographic: 'Records exist of more than 140 officially sanctioned excavations, all of which failed' ('Over a hundred and forty official searches have failed'; '140+ SEARCHES')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
+        "https://www.nationalgeographic.com/culture/article/lost-tomb-alexander-great"
+      ]
+    },
+    {
+      "claim": "Theories (named only as theories): beneath modern Alexandria (Limneos-Papakosta at Shallalat Gardens; Saunders: Mazarita district; Hawass: Shatby); the desert (Souvaltzi's 1995 Siwa Oasis claim, widely rejected; de Vartavan 2024: Eastern Desert); Venice (Andrew Chugg: the relics venerated as St Mark) ('beneath the city, to the desert, even to Venice')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great",
+        "https://www.thecollector.com/locating-tomb-alexader-the-great/",
+        "https://www.livescience.com/archaeology/was-alexander-the-great-eaten-by-sharks-inside-the-wild-theories-for-what-happened-to-the-iconic-rulers-body",
+        "https://www.jpost.com/archaeology/archaeology-around-the-world/article-840951"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of Nov 2026: Live Science (31 Jan 2025) 'Hundreds have hunted for the tomb, to no avail'; Jerusalem Post (6 Feb 2025) exact location 'remain[s] elusive'; National Geographic 'his tomb has yet to be found'; GreekReporter explainers of 7 Oct 2026 and 6 Nov 2026 ('One of History's Greatest Mysteries', 'Most Plausible Scenarios') still treat it as unlocated (page bodies walled to our fetchers; read via search snippets only); Israel Hayom 20 May 2026 headline is a question ('Has ... been found?'), body walled; the 2026 Amphipolis/Kasta news is a restoration, not an identification. No credible confirmed discovery found.",
+      "sources": [
+        "https://www.livescience.com/archaeology/was-alexander-the-great-eaten-by-sharks-inside-the-wild-theories-for-what-happened-to-the-iconic-rulers-body",
+        "https://www.jpost.com/archaeology/archaeology-around-the-world/article-840951",
+        "https://www.nationalgeographic.com/culture/article/lost-tomb-alexander-great",
+        "https://greekreporter.com/2026/11/06/alexander-the-great-tomb-claims/",
+        "https://www.foxnews.com/travel/colossal-tomb-tied-alexander-great-revealed-officials-unique-magnificent"
+      ]
+    }
+  ]
+}

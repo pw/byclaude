@@ -348,3 +348,23 @@ over-performs is a cheap signal for which ones to make as films.
 - Stills: longechoes B01 regenerated (radio set too small at thumbnail size); reject in longechoes/rejected/.
 - Blind reach scores (record-only, seeds 71/72, pool 69): kingjohn +0.04 (#32), longechoes -0.86 (#56).
 - After 11-26 the length arm is at n=5 each: read paired (short vs same-day long) + arm medians at first snap >=14h.
+
+## 2026-11-23: voice batch 1 built (posts 11-27..11-29), the `voice` arm starts
+- Pre-registered in `analysis/voice-test-1127.json` (within-day pairs, slots by coin flip). Six fresh subjects chosen and ordered
+  BEFORE assignment, then given to slots in that order: **alexandertomb** (male/Atlas, place; lost tomb of Alexander, Alexandria;
+  CLEAN + exactness "around two hundred eighty B.C."; 34.7 s) 11-27 01:45Z · **ghostblimp** (female/Ara, place; Navy blimp L-8,
+  Aug 1942, came down empty in Daly City, crew never named; CLEAN; 36.6 s) 15:45Z · **cityofglasgow** (female, place; Inman
+  steamship, Liverpool 1 Mar 1854; FIX x2: "worst in years" was OTHER ships' ice report, head count now "more than four hundred";
+  37.6 s) 11-28 01:45Z · **cascajal** (male, place; Cascajal Block, 62 undeciphered signs; CLEAN; 32.8 s) 15:45Z · **anghiari**
+  (male, DETAIL "seek, and you shall find"; Leonardo's lost Battle of Anghiari; CLEAN; 36.0 s) 11-29 01:45Z · **limatreasure**
+  (female, place; Treasure of Lima, legend marked as legend; CLEAN; 37.6 s) 15:45Z. All LONG / bleed / stamp / fresh.
+- Ara works through build_short.py unchanged (spec "voice": "Ara"); median F0 ~195-247 Hz vs Atlas ~138-155 Hz. Ara said
+  "Still unresolved" on the END beat's first take in 2 of 3 films; the whisper verify caught it and the retry was right. Watch
+  this on every female film: the end stamp is the claim.
+- Stills: cascajal B03 (rendered an Olmec colossal head), ghostblimp B01 (blimp small) + B02 (smoke column over the slick),
+  cityofglasgow B05 (a sunken wreck under "her wreck has never been found") regenerated; rejects in <film>/rejected/.
+- Writers: six fresh Opus writer seats in parallel (WRITER_BRIEF + kingjohn as house example), not hand-written as in batch 3.
+- Blind reach scores (record-only, seeds 81/82, pool 75): ghostblimp +1.72 (#3), alexandertomb +0.73, limatreasure +0.13,
+  anghiari -0.01, cityofglasgow -1.12, cascajal -1.76. Note the pairs: day 1 M +0.73 / F +1.72, day 2 F -1.12 / M -1.76,
+  day 3 M -0.01 / F +0.13: the rater leans female-slot subjects by ~+0.6 on average, so read the voice result as paired ratios
+  and keep this imbalance in mind (subjects were fixed before slots; it is chance, not selection).

@@ -27,7 +27,13 @@
   "genghistomb": 0.85,
   "gardner": 0.93,
   "kingjohn": 0.04,
-  "longechoes": -0.86
+  "longechoes": -0.86,
+  "alexandertomb": 0.73,
+  "ghostblimp": 1.72,
+  "cityofglasgow": -1.12,
+  "cascajal": -1.76,
+  "anghiari": -0.01,
+  "limatreasure": 0.13
  },
  "all": {
   "cyclops": 0.59,
@@ -154,6 +160,21 @@
     "longechoes"
    ],
    "pool_n": 69
+  },
+  {
+   "seeds": [
+    "81",
+    "82"
+   ],
+   "films": [
+    "alexandertomb",
+    "ghostblimp",
+    "cityofglasgow",
+    "cascajal",
+    "anghiari",
+    "limatreasure"
+   ],
+   "pool_n": 75
   }
  ]
 }

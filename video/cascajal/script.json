@@ -1,0 +1,141 @@
+{
+  "title": "The Cascajal Block",
+  "subtitle": "Veracruz, Mexico · late 1990s",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, the humid tropical lowlands of southern Veracruz, ancient Olmec, deep jade-green and wet red-earth tones with warm low amber light, quiet and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Veracruz, Mexico. The late nineteen-nineties. Road builders found a stone slab in a pile of debris, carved with sixty-two signs.",
+      "cap": "VERACRUZ · 1990s",
+      "img": "One heavy greenish-grey serpentine stone slab, roughly the size of a legal pad and a hand's width thick, standing upright in the exact centre of the frame on a heap of loose red clay rubble and broken gravel, its slightly hollowed front face covered in neat horizontal rows of small shallow carved abstract signs (little ovals, boxes, rounded blobs, simple plant-like and fish-like outlines, none of them letters or numbers), soft warm low light raking across the face so every carved sign reads clearly at small size, damp earth glistening, a pale hazy sky behind, no machinery, no people, no hands, no lettering."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "It may be the oldest writing in the Americas, nearly three thousand years old.",
+      "cap": "THE OLDEST\nWRITING?",
+      "amber": true,
+      "img": "A broad low grassy earthen mound rising out of morning mist in the centre of the frame, in flat green tropical lowlands, a few tall palms and dark rainforest edge on either side, warm pale gold dawn light breaking through haze, wet grass glistening, ancient and quiet, no buildings, no people, no lettering."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "The signs run in rows, and some repeat. No other text in this script has ever been found.",
+      "cap": "ONE OF\nA KIND",
+      "img": "A close, flat, face-on view of one side of a rectangular greenish serpentine stone slab lying flat on red earth, the flat slab surface filling the centre of the frame, neat horizontal rows of small shallow incised abstract signs (simple ovals, boxes, rounded blobs, a stylised ear-of-maize shape, a small fish-like outline, several shapes repeating), none of them letters or numbers, one low beam of warm light raking across so the grooves cast fine shadows, faint dust in the cuts. It is a flat tablet, not a sculpture: no head, no face, no statue, no figure, no hands, no lettering."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "Its face may have been carved, erased, and carved again. Some doubt it is writing at all. Others question where it was found.",
+      "cap": "WRITING\nAT ALL?",
+      "amber": true,
+      "img": "A raw red-earth gravel pit cut into the side of a low mound in tropical lowland, broad bulldozer tread marks across the churned ground, one loose heap of clay, broken stone and gravel debris standing in the centre of the frame, overcast flat humid light, green vegetation at the edges, empty, no machinery, no vehicles, no people, no lettering."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Twenty years after it was published, no one has deciphered it.",
+      "cap": "NEVER\nDECIPHERED",
+      "amber": true,
+      "img": "A greenish serpentine stone slab with rows of small faint carved abstract signs (no letters, no numbers) lying face-up on a low flat rock in the exact centre of a small forest clearing at dusk, the last warm amber light falling across its carved face, dark rainforest closing in around it, a few drifting motes in the air, still and silent, no people, no hands, no lettering."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "The Cascajal Block was found by road builders in a pile of debris beside a destroyed area at Lomas de Tacamichapa, Veracruz, Mexico, in the late 1990s (Englehardt et al. and SNExplores give 1999; 'Veracruz, Mexico. The late nineteen-nineties. Road builders found a stone slab in a pile of debris'; 'VERACRUZ · 1990s')",
+      "sources": [
+        "https://www.eurekalert.org/news-releases/566247",
+        "https://archive2.news.brown.edu/1987-2007/2006-07/06-021.html",
+        "https://en.wikipedia.org/wiki/Cascajal_Block",
+        "https://www.snexplores.org/article/oldest-writing-new-world"
+      ]
+    },
+    {
+      "claim": "It is a slab of serpentine (about 36 x 21 x 13 cm, ~11.5-12 kg / 26 lb) bearing 62 incised signs ('carved with sixty-two signs')",
+      "sources": [
+        "https://www.eurekalert.org/news-releases/566247",
+        "https://archive2.news.brown.edu/1987-2007/2006-07/06-021.html",
+        "https://www.scientificamerican.com/article/stone-etchings-represent/",
+        "https://en.wikipedia.org/wiki/Cascajal_Block"
+      ]
+    },
+    {
+      "claim": "Published in Science (15 September 2006, Rodríguez Martínez et al.) and proposed as the earliest/oldest writing in the New World / the Americas; SNExplores: 'may be the oldest evidence of writing ever found in the Americas' ('It may be the oldest writing in the Americas'; 'THE OLDEST WRITING?')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cascajal_Block",
+        "https://www.eurekalert.org/news-releases/566247",
+        "https://www.snexplores.org/article/oldest-writing-new-world",
+        "https://www.scientificamerican.com/article/stone-etchings-represent/"
+      ]
+    },
+    {
+      "claim": "Dated, from pottery and figurine fragments in the debris (not the stone itself), to the San Lorenzo phase ending about 900 BCE; about 2,900 years old / nearly 3,000 years old ('nearly three thousand years old'; caption 'around 900 BCE, dated by pottery found with it')",
+      "sources": [
+        "https://www.nbcnews.com/id/wbna14834538",
+        "https://www.snexplores.org/article/oldest-writing-new-world",
+        "https://archive2.news.brown.edu/1987-2007/2006-07/06-021.html",
+        "https://en.wikipedia.org/wiki/Cascajal_Block"
+      ]
+    },
+    {
+      "claim": "Found near the old Olmec centre of San Lorenzo (NBC: near San Lorenzo; Englehardt et al.: less than 20 km from San Lorenzo)",
+      "sources": [
+        "https://www.nbcnews.com/id/wbna14834538",
+        "https://www.cambridge.org/core/product/42B1EB580DAA062892886EA04F115046/core-reader"
+      ]
+    },
+    {
+      "claim": "The signs run in horizontal rows (unusual: other Mesoamerican scripts run in vertical columns) and some signs repeat, up to three or four times; 28 distinct signs ('The signs run in rows, and some repeat')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cascajal_Block",
+        "https://www.snexplores.org/article/oldest-writing-new-world",
+        "https://www.eurekalert.org/news-releases/566247",
+        "https://www.nbcnews.com/id/wbna14834538"
+      ]
+    },
+    {
+      "claim": "It is unique: no other example of this script / Olmec text on such a slab has been found; the evidence for the script rests solely on this one block ('No other text in this script has ever been found'; 'ONE OF A KIND')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cascajal_Block",
+        "https://en.wikipedia.org/wiki/Olmec_hieroglyphs",
+        "https://www.thearchaeologist.org/blog/the-olmec-cascajal-block-is-this-the-oldest-writing-in-the-americas"
+      ]
+    },
+    {
+      "claim": "The text face is concave while other sides are convex, so the team believes it was carved and erased repeatedly (NBC: 'likely inscribed and erased several times') ('Its face may have been carved, erased, and carved again')",
+      "sources": [
+        "https://archive2.news.brown.edu/1987-2007/2006-07/06-021.html",
+        "https://www.nbcnews.com/id/wbna14834538"
+      ]
+    },
+    {
+      "claim": "Some scholars doubt it is writing at all (e.g. Freidel and Reilly read it as an arrangement of ritual objects, not a script; SNExplores: 'some researchers doubt the stone shows writing') ('Some doubt it is writing at all'; 'WRITING AT ALL?')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cascajal_Block",
+        "https://www.snexplores.org/article/oldest-writing-new-world",
+        "https://en.wikipedia.org/wiki/Olmec_hieroglyphs"
+      ]
+    },
+    {
+      "claim": "Others question its context and dating because it was found in bulldozer debris, not by systematic excavation (Bruhns and Kelker, Science letter March 2007; Englehardt et al.: 'lack of secure archaeological context', doubts linger on authenticity, dating and affiliation) ('Others question where it was found')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cascajal_Block",
+        "https://www.cambridge.org/core/product/42B1EB580DAA062892886EA04F115046/core-reader",
+        "https://www.eurekalert.org/news-releases/566247"
+      ]
+    },
+    {
+      "claim": "Never deciphered / still unsolved as of 2026: Houston 'we don't know what it says' (Wikipedia); Englehardt et al. (Ancient Mesoamerica 2020) call the script 'undeciphered'; April 2026 article: no 'Olmec Rosetta Stone', any reading is a guess; May 2026 article: still to be determined whether the glyphs are language; no decipherment reported 2024-2026. 2006 publication + 20 = 2026 ('Twenty years after it was published, no one has deciphered it'; 'NEVER DECIPHERED')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cascajal_Block",
+        "https://www.cambridge.org/core/product/42B1EB580DAA062892886EA04F115046/core-reader",
+        "https://www.thearchaeologist.org/blog/the-olmec-cascajal-block-is-this-the-oldest-writing-in-the-americas",
+        "https://foro3d.com/en/2026/mayo/el-bloque-de-casajal-y-la-escritura-olmeca-mas-antigua.html"
+      ]
+    }
+  ]
+}

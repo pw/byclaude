@@ -848,6 +848,78 @@
    "length": "short",
    "hook": "place",
    "kind": "anomaly"
+  },
+  "alexandertomb": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "length": "long",
+   "kind": "anomaly",
+   "hook": "place",
+   "voice": "male",
+   "test": "voice-1127"
+  },
+  "ghostblimp": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "length": "long",
+   "kind": "person",
+   "hook": "place",
+   "voice": "female",
+   "test": "voice-1127"
+  },
+  "cityofglasgow": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "length": "long",
+   "kind": "person",
+   "hook": "place",
+   "voice": "female",
+   "test": "voice-1127"
+  },
+  "cascajal": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "length": "long",
+   "kind": "anomaly",
+   "hook": "place",
+   "voice": "male",
+   "test": "voice-1127"
+  },
+  "anghiari": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "length": "long",
+   "kind": "anomaly",
+   "hook": "detail",
+   "voice": "male",
+   "test": "voice-1127"
+  },
+  "limatreasure": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "length": "long",
+   "kind": "anomaly",
+   "hook": "place",
+   "voice": "female",
+   "test": "voice-1127"
   }
  },
  "byclaude": {

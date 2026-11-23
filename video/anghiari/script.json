@@ -1,0 +1,123 @@
+{
+  "title": "Leonardo's Lost Battle",
+  "subtitle": "Palazzo Vecchio, Florence · 1505",
+  "voice": "onyx",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, the vast frescoed interior of a Renaissance council hall in a Florentine palace, sixteenth-century, warm dusty ochre, faded terracotta and old-green tones in soft high window light, quiet and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no lettering, no signage, no people, no faces, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "Two words on a painted flag: seek, and you shall find. In the Florence hall where, in fifteen oh five, Leonardo da Vinci began a battle.",
+      "cap": "SEEK AND YOU\nSHALL FIND",
+      "img": "Close view of one small painted green banner on a long wooden pole, part of a faded sixteenth-century fresco of a cavalry battle on a plaster wall, the green banner centred and well lit by a soft beam of window light so it reads clearly at small size, the banner cloth blank with no letters or symbols, around it only blurred faded painted lances and dusty sky tones, fine cracks in the old plaster, no faces, no people, no lettering."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "He never finished it. Decades later, Vasari remade the hall and painted his own battles on its walls.",
+      "cap": "LEONARDO'S\nLOST BATTLE",
+      "amber": true,
+      "img": "A vast empty Renaissance council hall seen from floor level, its towering long wall covered edge to edge with faded painted battle frescoes too distant to make out any figures, a gilded coffered ceiling above, one tall shaft of dusty window light falling on the centre of the wall, empty stone floor, no people, no faces, no lettering."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "Some read the flag as a clue: Leonardo's work, hidden behind a new wall.",
+      "cap": "A HIDDEN\nWALL",
+      "img": "A cutaway view through an old masonry wall: a newer brick wall faced with fresco plaster in front, a narrow dark gap of a few centimetres, and behind it an older rough plaster wall bearing a few faint patches of ochre and black pigment, centred and lit by a thin cold beam, dust motes in the gap, no figures painted, no people, no lettering."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "In twenty eleven, a camera was slipped behind the fresco. Its team reported a gap, and black pigment like Leonardo's.",
+      "cap": "A CAMERA\nIN THE WALL",
+      "amber": true,
+      "img": "One slim black endoscope cable entering a single small neat hole in an old frescoed plaster wall, the hole and cable centred in the frame and sharply lit by a small work lamp, faded painted colour and fine cracks around the hole, the rest of the wall soft and dim, no hands, no people, no lettering."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Others disputed it. The search was halted, and some argue he never painted the wall.",
+      "cap": "SEARCH\nHALTED",
+      "amber": true,
+      "img": "Empty metal restoration scaffolding standing against a towering faded fresco wall in a dim Renaissance hall, a single unlit work lamp hanging from the top rail at the centre of the frame, dust sheets folded on the planks, pale late light from a high window, no people, no faces, no lettering."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Vasari's Battle of Marciano (Scannagallo) fresco in the Hall of the Five Hundred, Palazzo Vecchio, Florence, carries the words 'Cerca trova' ('seek and you shall find' / 'he who seeks, finds') on a small green flag/banner in its upper part, about 12 m up ('Two words on a painted flag: seek, and you shall find'; 'They hang in the Florence hall'; cap 'SEEK AND YOU SHALL FIND')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Battle_of_Anghiari_(Leonardo)",
+        "https://www.finestresullarte.info/en/news-focus/more-on-the-battle-of-anghiari-the-search-finds-hoax",
+        "https://www.mprnews.org/story/2012/03/12/lost-mural-leonardo-da-vinci",
+        "https://www.nationalgeographic.com/news/2012/3/120312-leonardo-da-vinci-mural-lost-painting-florence-science-world/"
+      ]
+    },
+    {
+      "claim": "Florence commissioned Leonardo (1503/1504) to paint the Battle of Anghiari in the great council hall (Salone dei Cinquecento); he began painting in 1505 (his own note dated 6 June 1505) and left it unfinished when he left for Milan in 1506 ('in fifteen oh five, Leonardo da Vinci began a battle'; 'He never finished it')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Battle_of_Anghiari_(Leonardo)",
+        "https://www.mprnews.org/story/2012/03/12/lost-mural-leonardo-da-vinci",
+        "https://www.finestresullarte.info/en/works-and-artists/the-battle-of-anghiari-leonardo-da-vinci-s-masterpiece-that-was-never-painted"
+      ]
+    },
+    {
+      "claim": "Decades later (remodel 1555-1572 under Cosimo I; frescoes 1562/63-1565) Giorgio Vasari restructured the hall and painted his own battle frescoes, incl. the Battle of Scannagallo/Marciano, on its walls; Leonardo's work was lost in that renovation ('Decades later, Vasari remade the hall and painted his own battles on its walls'; cap 'LEONARDO'S LOST BATTLE')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Battle_of_Anghiari_(Leonardo)",
+        "https://www.finestresullarte.info/en/works-and-artists/the-battle-of-anghiari-leonardo-da-vinci-s-masterpiece-that-was-never-painted",
+        "https://www.nationalgeographic.com/news/2012/3/120312-leonardo-da-vinci-mural-lost-painting-florence-science-world/"
+      ]
+    },
+    {
+      "claim": "Some (notably the researcher behind the search) read the flag's motto as a clue/hint from Vasari that Leonardo's work survives behind a newer (curtain/false) wall he built in front of it; a rival reading ties it to the Florentine exiles at Scannagallo and Dante (stated as a theory only: 'Some read the flag as a clue'; cap 'A HIDDEN WALL')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Battle_of_Anghiari_(Leonardo)",
+        "https://www.nationalgeographic.com/news/2012/3/120312-leonardo-da-vinci-mural-lost-painting-florence-science-world/",
+        "https://www.finestresullarte.info/en/news-focus/more-on-the-battle-of-anghiari-the-search-finds-hoax"
+      ]
+    },
+    {
+      "claim": "In late 2011 (Oct/Dec 2011) the team put an endoscopic camera through small openings in restored areas/cracks of Vasari's fresco; they reported (announced 12 March 2012) a hollow gap behind it and black material chemically similar to the brown/black glazes in Leonardo's Mona Lisa and St John the Baptist ('a tiny camera was slipped behind the fresco. The team reported a gap, and black pigment like Leonardo's'; deliberately avoids 'drilled' vs 'cracks' dispute between sources)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Battle_of_Anghiari_(Leonardo)",
+        "https://www.nationalgeographic.com/news/2012/3/120312-leonardo-da-vinci-mural-lost-painting-florence-science-world/",
+        "https://www.mprnews.org/story/2012/03/12/lost-mural-leonardo-da-vinci",
+        "https://www.cbsnews.com/news/from-the-archives-looking-for-the-lost-leonardo-60-minutes-2019-05-26/"
+      ]
+    },
+    {
+      "claim": "The pigment finding was disputed: an art historian said it 'was not in fact the same one used by Leonardo in the Mona Lisa'; the Opificio delle Pietre Dure found the samples were common masonry materials; even 2012 coverage noted other Florentine artists used the same paint ('Others disputed it')",
+      "sources": [
+        "https://ansa.it/english/news/2020/10/08/leonardo-didnt-paint-battle-of-anghiari-in-florence_f908d625-66d3-4fb8-b80a-1af2cf4c9ab0.html",
+        "https://www.finestresullarte.info/en/works-and-artists/the-battle-of-anghiari-leonardo-da-vinci-s-masterpiece-that-was-never-painted",
+        "https://www.mprnews.org/story/2012/03/12/lost-mural-leonardo-da-vinci"
+      ]
+    },
+    {
+      "claim": "The search was halted in 2012 (summer 2012 authorities refused new drilling; discontinued by September 2012 amid conflict among the parties) ('The search was halted'; cap 'SEARCH HALTED')",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Battle_of_Anghiari_(Leonardo)",
+        "https://www.cbsnews.com/news/from-the-archives-looking-for-the-lost-leonardo-60-minutes-2019-05-26/",
+        "https://www.finestresullarte.info/en/works-and-artists/the-battle-of-anghiari-leonardo-da-vinci-s-masterpiece-that-was-never-painted"
+      ]
+    },
+    {
+      "claim": "In October 2020 art historians (book/studies presented at the Uffizi) argued Leonardo never painted the battle on that wall ('some argue he never painted the wall at all'); the search's leader still says he is certain it is there",
+      "sources": [
+        "https://ansa.it/english/news/2020/10/08/leonardo-didnt-paint-battle-of-anghiari-in-florence_f908d625-66d3-4fb8-b80a-1af2cf4c9ab0.html",
+        "https://en.wikipedia.org/wiki/The_Battle_of_Anghiari_(Leonardo)",
+        "https://www.finestresullarte.info/en/works-and-artists/the-battle-of-anghiari-leonardo-da-vinci-s-masterpiece-that-was-never-painted"
+      ]
+    },
+    {
+      "claim": "Still unsolved as of Nov 2026: no new probe, find or official resolution found in 2023-2026 searches; Wikipedia records no development after the 2020 'never painted' studies; a 2025 scholarly volume (Evidence and Obsession, Sillabe) reconsiders the question rather than settling it; no painting has been found behind the wall",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Battle_of_Anghiari_(Leonardo)",
+        "https://flore.unifi.it/handle/2158/1426156",
+        "https://ansa.it/english/news/2020/10/08/leonardo-didnt-paint-battle-of-anghiari-in-florence_f908d625-66d3-4fb8-b80a-1af2cf4c9ab0.html"
+      ]
+    }
+  ]
+}

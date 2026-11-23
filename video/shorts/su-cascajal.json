@@ -1,0 +1,49 @@
+{
+ "out": "short-su-cascajal",
+ "kicker": "THE CASCAJAL BLOCK",
+ "frame": "bleed",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "cascajal",
+   "img": "B01",
+   "vo": "Veracruz, Mexico. The late nineteen-nineties. Road builders found a stone slab in a pile of debris, carved with sixty-two signs.",
+   "cap": "VERACRUZ · 1990s"
+  },
+  {
+   "src": "cascajal",
+   "img": "B02",
+   "vo": "It may be the oldest writing in the Americas, nearly three thousand years old.",
+   "cap": "THE OLDEST\nWRITING?",
+   "amber": true
+  },
+  {
+   "src": "cascajal",
+   "img": "B03",
+   "vo": "The signs run in rows, and some repeat. No other text in this script has ever been found.",
+   "cap": "ONE OF\nA KIND"
+  },
+  {
+   "src": "cascajal",
+   "img": "B04",
+   "vo": "Its face may have been carved, erased, and carved again. Some doubt it is writing at all. Others question where it was found.",
+   "cap": "WRITING\nAT ALL?",
+   "amber": true
+  },
+  {
+   "src": "cascajal",
+   "img": "B05",
+   "vo": "Twenty years after it was published, no one has deciphered it.",
+   "cap": "NEVER\nDECIPHERED",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

@@ -1,0 +1,47 @@
+{
+ "registered": "2026-11-23T05:00Z",
+ "seed": "voice-test-2026-11-23",
+ "arm": "voice",
+ "values": {
+  "male": "xAI grok TTS 'Atlas' (the house voice; spec voice 'onyx' maps to it)",
+  "female": "xAI grok TTS 'Ara', same script style, same pacing"
+ },
+ "why": "Model 11-19/22: the first pool (~200 plays) is unchanged since 11-04; what stopped is EXPANSION past it, and expanded films had higher in-pool watch (8-12 s vs 4-8 s). The narrator is the whole sound of the film and has never varied. Cheap format arm.",
+ "design": "within-day pairs (challenger's design, adopted 11-21): one male + one female per day, slot by coin flip (this file's seed). Subjects chosen by the builder BEFORE looking at the voice assignment where possible; length = house LONG shape (length arm not yet called) unless the length call on 11-27 says otherwise for later batches.",
+ "read": "plays at first snap >=14h (dead = 0, noted) + avg watch s; paired ratio female/male per day; page daily viewers checked over the posting days.",
+ "call": "usual rule: one value leads by >=1.5x median at n>=5 each -> default; n>=8 each no lead -> tie. Batch 1 = 3 pairs; continue pairs to n=5.",
+ "harm_check": "female <0.67x male at n>=5 -> dropped (and vice versa).",
+ "films": [
+  {
+   "slot": "11-27 01:45Z",
+   "voice": "male",
+   "subject": "alexandertomb"
+  },
+  {
+   "slot": "11-27 15:45Z",
+   "voice": "female",
+   "subject": "ghostblimp"
+  },
+  {
+   "slot": "11-28 01:45Z",
+   "voice": "female",
+   "subject": "cityofglasgow"
+  },
+  {
+   "slot": "11-28 15:45Z",
+   "voice": "male",
+   "subject": "cascajal"
+  },
+  {
+   "slot": "11-29 01:45Z",
+   "voice": "male",
+   "subject": "anghiari"
+  },
+  {
+   "slot": "11-29 15:45Z",
+   "voice": "female",
+   "subject": "limatreasure"
+  }
+ ],
+ "subjects_note": "Six subjects chosen and ordered by the builder 2026-11-23 BEFORE assignment, then assigned in chosen order to the pre-registered slots (build-voice1.md step 1). All LONG, bleed, stamp, origin fresh; hooks seeded 'hook-voice1-<name>'."
+}

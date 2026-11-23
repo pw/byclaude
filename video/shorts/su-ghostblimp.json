@@ -1,0 +1,49 @@
+{
+ "out": "short-su-ghostblimp",
+ "kicker": "THE GHOST BLIMP",
+ "frame": "bleed",
+ "voice": "Ara",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "ghostblimp",
+   "img": "B01",
+   "vo": "San Francisco Bay, August, nineteen forty-two. A Navy blimp lifted off on patrol with two officers aboard. Hours later, it came down empty.",
+   "cap": "SAN FRANCISCO · 1942"
+  },
+  {
+   "src": "ghostblimp",
+   "img": "B02",
+   "vo": "Near the Farallon Islands, they radioed that they were investigating an oil slick. They never radioed again.",
+   "cap": "AN OIL\nSLICK",
+   "amber": true
+  },
+  {
+   "src": "ghostblimp",
+   "img": "B03",
+   "vo": "The airship drifted ashore and came to rest in a street in Daly City. The gondola door was open.",
+   "cap": "DOOR\nOPEN",
+   "amber": true
+  },
+  {
+   "src": "ghostblimp",
+   "img": "B04",
+   "vo": "The parachutes, the life raft, and a briefcase of classified papers were still aboard. The radio worked.",
+   "cap": "STILL\nABOARD"
+  },
+  {
+   "src": "ghostblimp",
+   "img": "B05",
+   "vo": "Searchers found no trace of either man. What happened to them has never been established.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

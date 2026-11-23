@@ -1,0 +1,188 @@
+{
+  "title": "The Ghost Blimp",
+  "subtitle": "San Francisco Bay · 1942",
+  "voice": "Ara",
+  "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+  "grade": "Muted documentary still, the cold foggy Pacific coast off San Francisco, 1940s wartime, pewter-grey and sea-fog blue light with faint dull silver glints, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces, no hands.",
+  "beats": [
+    {
+      "id": "B01",
+      "vtype": "still",
+      "vo": "San Francisco Bay, August, nineteen forty-two. A Navy blimp lifted off on patrol with two officers aboard. Hours later, it came down empty.",
+      "cap": "SAN FRANCISCO · 1942",
+      "img": "A close view of one 1940s silver-grey navy patrol blimp, its long envelope and compact enclosed gondola filling the middle third of the frame from edge to edge, floating alone above a calm grey ocean, soft pale morning light falling on the envelope and gondola so they read clearly at small size, thin sea fog low on the water, a pale overcast sky, no markings, no numbers, no lettering, no insignia, no people."
+    },
+    {
+      "id": "B02",
+      "vtype": "still",
+      "vo": "Near the Farallon Islands, they radioed that they were investigating an oil slick. They never radioed again.",
+      "cap": "AN OIL\nSLICK",
+      "amber": true,
+      "img": "A wide dark oil slick with a faint rainbow sheen spreading across a calm grey ocean, the iridescent slick centred in the frame, jagged rocky islands small and low on the far horizon, cold diffuse light, no smoke, no fire, no boats, no aircraft, no people, no lettering."
+    },
+    {
+      "id": "B03",
+      "vtype": "still",
+      "vo": "The airship drifted ashore and came to rest in a street in Daly City. The gondola door was open.",
+      "cap": "DOOR\nOPEN",
+      "amber": true,
+      "img": "Close view of the side of a small 1940s airship gondola, its narrow metal door hanging open in the centre of the frame, the cabin behind it dark and empty, grey fabric of the sagging envelope just visible above, thick soft fog behind, flat cold light on the riveted grey metal, no markings, no numbers, no lettering, no people."
+    },
+    {
+      "id": "B04",
+      "vtype": "still",
+      "vo": "The parachutes, the life raft, and a briefcase of classified papers were still aboard. The radio worked.",
+      "cap": "STILL\nABOARD",
+      "img": "Inside a cramped empty 1940s airship gondola, a canvas parachute pack, a folded rubber life raft and a worn leather briefcase resting together on a metal bench in the centre of the frame, an old radio set beside them with one softly glowing valve light, pale fog-light falling through a small window onto them, no seated figure, no markings, no numbers, no lettering, no people."
+    },
+    {
+      "id": "B05",
+      "vtype": "still",
+      "vo": "Searchers found no trace of either man. What happened to them has never been established.",
+      "cap": "NEVER\nFOUND",
+      "amber": true,
+      "img": "A vast calm empty grey ocean under a low ceiling of fog, a cluster of jagged dark rocky islands small in the exact centre of the frame, one pale break in the clouds lighting the water around them, no boats, no aircraft, no people, no lettering."
+    }
+  ],
+  "facts": [
+    {
+      "claim": "On 16 August 1942 the US Navy blimp L-8 lifted off from Treasure Island, San Francisco Bay, at about 6 a.m. (6:03 per Navy board/most accounts; Mental Floss says 5:30-6) on a patrol",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L-8",
+        "https://www.historynet.com/mystery-of-the-ghost-blimp/",
+        "https://sfmuseum.org/hist8/blimp.html",
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery"
+      ]
+    },
+    {
+      "claim": "Two officers were aboard (Lt. Ernest DeWitt Cody and Ensign Charles Adams; not named in the film); a third man was ordered off before takeoff",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L-8",
+        "https://www.historynet.com/mystery-of-the-ghost-blimp/",
+        "https://sfmuseum.org/hist8/blimp.html",
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery"
+      ]
+    },
+    {
+      "claim": "Near the Farallon Islands the crew radioed that they were investigating a (suspicious) oil slick",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L-8",
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery",
+        "https://www.historynet.com/mystery-of-the-ghost-blimp/",
+        "https://www.historicmysteries.com/l-8-blimp-mystery/",
+        "https://migflug.com/afterburner/ghost-blimp-l-8-1942-vanished-crew-mystery/"
+      ]
+    },
+    {
+      "claim": "No further radio message was received after the oil-slick report; no distress call was sent (times differ: 7:38/7:42/7:50, so no time is stated)",
+      "sources": [
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery",
+        "https://www.historynet.com/mystery-of-the-ghost-blimp/",
+        "https://en.wikipedia.org/wiki/L-8",
+        "https://www.historicmysteries.com/l-8-blimp-mystery/",
+        "https://migflug.com/afterburner/ghost-blimp-l-8-1942-vanished-crew-mystery/"
+      ]
+    },
+    {
+      "claim": "Hours later (around 11:15-11:30 a.m.) the airship drifted ashore, briefly touched down on a beach (Ocean Beach, near Fort Funston), then came to rest in a street (Bellevue Avenue) in Daly City",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L-8",
+        "https://www.historynet.com/mystery-of-the-ghost-blimp/",
+        "https://sfmuseum.org/hist8/blimp.html",
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery",
+        "https://migflug.com/afterburner/ghost-blimp-l-8-1942-vanished-crew-mystery/"
+      ]
+    },
+    {
+      "claim": "It came down with no one aboard: the gondola/cabin was empty",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L-8",
+        "https://www.historynet.com/mystery-of-the-ghost-blimp/",
+        "https://sfmuseum.org/hist8/blimp.html",
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery",
+        "https://migflug.com/afterburner/ghost-blimp-l-8-1942-vanished-crew-mystery/"
+      ]
+    },
+    {
+      "claim": "The gondola door was open",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L-8",
+        "https://www.historynet.com/mystery-of-the-ghost-blimp/",
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery",
+        "https://www.historicmysteries.com/l-8-blimp-mystery/",
+        "https://migflug.com/afterburner/ghost-blimp-l-8-1942-vanished-crew-mystery/"
+      ]
+    },
+    {
+      "claim": "The parachutes were still aboard",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L-8",
+        "https://www.historynet.com/mystery-of-the-ghost-blimp/",
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery",
+        "https://www.historicmysteries.com/l-8-blimp-mystery/",
+        "https://migflug.com/afterburner/ghost-blimp-l-8-1942-vanished-crew-mystery/"
+      ]
+    },
+    {
+      "claim": "The life raft was still aboard",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L-8",
+        "https://www.historynet.com/mystery-of-the-ghost-blimp/",
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery",
+        "https://www.historicmysteries.com/l-8-blimp-mystery/",
+        "https://migflug.com/afterburner/ghost-blimp-l-8-1942-vanished-crew-mystery/"
+      ]
+    },
+    {
+      "claim": "A briefcase of classified material was still aboard",
+      "sources": [
+        "https://www.historynet.com/mystery-of-the-ghost-blimp/",
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery"
+      ]
+    },
+    {
+      "claim": "The radio was in working order",
+      "sources": [
+        "https://www.historynet.com/mystery-of-the-ghost-blimp/",
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery",
+        "https://www.historicmysteries.com/l-8-blimp-mystery/",
+        "https://migflug.com/afterburner/ghost-blimp-l-8-1942-vanished-crew-mystery/"
+      ]
+    },
+    {
+      "claim": "Searches (air, land and sea) found no trace of either man; they were never found; declared legally dead a year later",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L-8",
+        "https://www.historynet.com/mystery-of-the-ghost-blimp/",
+        "https://sfmuseum.org/hist8/blimp.html",
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery",
+        "https://migflug.com/afterburner/ghost-blimp-l-8-1942-vanished-crew-mystery/"
+      ]
+    },
+    {
+      "claim": "What happened has never been established: Navy officials said they could not explain it; the Navy board found no definite evidence ('strong presumption' only); case classed '100% Unknown/Undetermined'; still unexplained in 2025 (Mental Floss, 24 Apr 2025) and 2026 (Migflug, 29 Jul 2026: 'nobody knows what happened to them'); 2024-2026 searches found no solution or identification",
+      "sources": [
+        "https://sfmuseum.org/hist8/blimp.html",
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery",
+        "https://www.historynet.com/mystery-of-the-ghost-blimp/",
+        "https://migflug.com/afterburner/ghost-blimp-l-8-1942-vanished-crew-mystery/",
+        "https://www.historicmysteries.com/l-8-blimp-mystery/"
+      ]
+    },
+    {
+      "claim": "Newspapers nicknamed L-8 the 'Ghost Blimp'",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L-8",
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery"
+      ]
+    },
+    {
+      "claim": "Sources DIFFER on life jackets (Mental Floss: none found; HistoryNet/Historic Mysteries: two of three missing) and on departure/radio times: not used in vo/cap/caption",
+      "sources": [
+        "https://www.mentalfloss.com/history/mystery/l-8-ghost-blimp-mystery",
+        "https://www.historynet.com/mystery-of-the-ghost-blimp/",
+        "https://www.historicmysteries.com/l-8-blimp-mystery/"
+      ]
+    }
+  ]
+}
