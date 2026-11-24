@@ -25,3 +25,4 @@
 - 05:23Z step 8: subjects + motion_model line filled into analysis/opening-test-1130.json.
 - 05:25Z clips backed up to R2 byclaude-video (precedent: film dirs commit only script.json + caption.txt; the paid clips are not reproducible, so they live next to the films): motion-flordelamar-B01-kling25-a.mp4 458e6991..., motion-pekingfossils-B01-kling25-a.mp4 6bbe8c86..., motion-pekingfossils-B01-kling25-b.mp4 (rejected) 98d59e67...; served sha256 = local. Local copies stay in <film>/motion/ (spec references them).
 - 05:26Z SPEND (wall $5): kie 467.28 -> 237.28 credits = 230 = $1.15 for 23 gpt-image stills (20 + 3 regens, $0.05 each); fal 6.354 -> 5.304 = $1.05 for 3 Kling 2.5 Turbo Pro 5 s clips ($0.35 each, 1 rejected); OpenRouter only for TTS + transcription verify (24 + 24 calls, pennies). Total ~= $2.25.
+- 05:22Z step 9: committed + pushed byclaude c7cd46b, FeelBetterBot.com ig.py ffa0630.
