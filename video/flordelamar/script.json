@@ -1,0 +1,126 @@
+{
+ "title": "The Flor de la Mar",
+ "subtitle": "Strait of Malacca, off Sumatra · 1511",
+ "voice": "Ara",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Muted documentary still, the tropical Strait of Malacca off the coast of Sumatra, early sixteenth century, grey-green sea and low jungle coastline under humid storm-grey light with warm old-gold glints, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces, no hands.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "The Strait of Malacca. Fifteen eleven. The Portuguese carrack Flor de la Mar set sail, carrying the treasure taken from the Sultan of Malacca's palace.",
+   "cap": "MALACCA · 1511",
+   "img": "One tall early-sixteenth-century Portuguese carrack under full sail, seen side-on and alone in the exact centre of the frame, high wooden castles fore and aft, three masts with pale weathered square sails catching warm low late-afternoon sun so the ship reads clearly at small size, slow glassy swells of the warm tropical sea moving around her hull, a faint green coastline low on the horizon, empty decks, plain sails with no emblems. No people, no faces, no hands, no flags or lettering."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "Off the coast of Sumatra, a storm drove her aground.",
+   "cap": "OFF\nSUMATRA",
+   "amber": true,
+   "img": "A violent tropical storm over shallow coastal water, centred on one long line of white breakers smashing over a hidden sandbar in the middle third of the frame, dark rain squalls and a low black sky, a dim jungle-covered shoreline behind, no ship, no wreckage. No people, no faces, no hands, no flags or lettering."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "Her commander, Afonso de Albuquerque, escaped on a raft. Hundreds of men were lost.",
+   "cap": "ON A\nRAFT",
+   "img": "A small rough raft of lashed timber spars and planks drifting alone on calm grey water in the exact centre of the frame, ropes trailing in the sea, pale overcast morning light just after a storm, mist over the water, a faint low coastline far behind, nothing else on the raft. No people, no faces, no hands, no flags or lettering."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "Portugal, Malaysia and Indonesia have all claimed what she carried. Treasure hunters have announced finds. None has been confirmed.",
+   "cap": "NONE\nCONFIRMED",
+   "amber": true,
+   "img": "A heavy rusted iron grapnel anchor and a coil of old wet rope resting on the worn deck boards at the bow of a small wooden search boat, centred in the frame, calm grey-green tropical water beyond the rail, soft hazy light, no other boats. No people, no faces, no hands, no flags or lettering."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "Five centuries on, the ship and her treasure have never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true,
+   "img": "A wide calm empty strait at dawn, still grey-green water under thin mist, one soft pool of pale gold sunlight lying on the surface in the exact centre of the frame, a low dark-green Sumatran coastline along the far horizon, no boats, no buildings. No people, no faces, no hands, no flags or lettering."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The Flor de la Mar (Flor do Mar) was a Portuguese carrack (nau) built in Lisbon and in service from 1502, about nine years old when lost ('Portuguese carrack').",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flor_de_la_Mar",
+    "https://www.heritagedaily.com/2022/05/flor-de-la-mar-the-lost-treasure-ship/143632",
+    "https://www.ancient-origins.net/node/6236"
+   ]
+  },
+  {
+   "claim": "The Portuguese under Afonso de Albuquerque captured Malacca in 1511 ('MALACCA · 1511').",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Capture_of_Malacca_(1511)",
+    "https://ebsco.com/research-starters/history/melaka-falls-portuguese",
+    "https://en.wikipedia.org/wiki/Flor_de_la_Mar"
+   ]
+  },
+  {
+   "claim": "Leaving Malacca in late 1511, she carried treasure taken from the Sultan of Malacca's palace (Wikipedia: treasure looted from the Sultan of Malacca's palace; HeritageDaily: treasure from the fallen sultanate of Malacca; Ancient Origins: loot from Malacca; Grunge: 'the treasures of Malacca'). Sources disagree on the exact loss date (Wikipedia/DiscoveryUK: night of 20 Nov 1511; Ancient Origins: left in Nov, probably sank a month later), so vo/caption give only the year 1511. No contents or modern dollar value stated (DiscoveryUK calls the large estimates 'likely exaggerated').",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flor_de_la_Mar",
+    "https://www.heritagedaily.com/2022/05/flor-de-la-mar-the-lost-treasure-ship/143632",
+    "https://www.ancient-origins.net/node/6236",
+    "https://grunge.com/730908/the-real-reason-we-cant-find-the-lost-treasure-of-shipwrecked-flor-de-la-mar",
+    "https://discoveryuk.com/?p=23046461"
+   ]
+  },
+  {
+   "claim": "Off the coast of Sumatra a storm drove her aground (Wikipedia, HeritageDaily, DiscoveryUK, Grunge: storm onto shoals; Ancient Origins: storm, 'wrecked on a beach'). 'Aground' chosen to cover both shoals and beach; 'reef' not used.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flor_de_la_Mar",
+    "https://www.heritagedaily.com/2022/05/flor-de-la-mar-the-lost-treasure-ship/143632",
+    "https://discoveryuk.com/?p=23046461",
+    "https://grunge.com/730908/the-real-reason-we-cant-find-the-lost-treasure-of-shipwrecked-flor-de-la-mar",
+    "https://www.ancient-origins.net/node/6236"
+   ]
+  },
+  {
+   "claim": "Her commander Afonso de Albuquerque survived on an improvised raft (Wikipedia; HeritageDaily: 'Albuquerque was able to survive by using an improvised raft'); hundreds of men were lost (Wikipedia: more than 400; Grunge: 400 died; DiscoveryUK: only Albuquerque and a few others survived).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flor_de_la_Mar",
+    "https://www.heritagedaily.com/2022/05/flor-de-la-mar-the-lost-treasure-ship/143632",
+    "https://grunge.com/730908/the-real-reason-we-cant-find-the-lost-treasure-of-shipwrecked-flor-de-la-mar",
+    "https://discoveryuk.com/?p=23046461"
+   ]
+  },
+  {
+   "claim": "Portugal, Indonesia and Malaysia have all claimed rights to the wreck/treasure (Wikipedia: all claim salvage rights; Grunge: 'Portugal, Indonesia, and Malaysia have all claimed the rights to whatever treasure the lost carrack contains').",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flor_de_la_Mar",
+    "https://grunge.com/730908/the-real-reason-we-cant-find-the-lost-treasure-of-shipwrecked-flor-de-la-mar"
+   ]
+  },
+  {
+   "claim": "Treasure hunters have announced finds, none confirmed: Robert Marx's 1992 claim was not substantiated and his project was shut down (Ancient Origins, DiscoveryUK, Grunge: 'None of these finds have been confirmed'); a 2014 salvage-company claim of a sighting in the Java Sea (The Star, 7 Apr 2014) was hedged 'may have' and never verified.",
+   "sources": [
+    "https://grunge.com/730908/the-real-reason-we-cant-find-the-lost-treasure-of-shipwrecked-flor-de-la-mar",
+    "https://www.ancient-origins.net/node/6236",
+    "https://discoveryuk.com/?p=23046461",
+    "https://www.thestar.com.my/news/nation/2014/04/07/drones-may-have-found-treasure-ship-sunken-portuguese-galleon-sighted-in-java-sea"
+   ]
+  },
+  {
+   "claim": "Still unsolved as of Nov 2026: the wreck and treasure have never been found (Wikipedia: 'still lies undiscovered'; Grunge: 'to this day, the ship and its vast fortune have never been found'; Ancient Origins: 'still considered to be lost'; Greek Reporter, 22 Apr 2026: 'Despite the dozens of expeditions over the years, the wreck has never been found'). No 2024-2026 confirmed discovery found in news search.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flor_de_la_Mar",
+    "https://grunge.com/730908/the-real-reason-we-cant-find-the-lost-treasure-of-shipwrecked-flor-de-la-mar",
+    "https://www.ancient-origins.net/node/6236",
+    "https://greekreporter.com/2026/04/22/lost-gold-treasure-flor-de-la-mar-shipwreck/"
+   ]
+  },
+  {
+   "claim": "BLIND CHECK 2026-11-24: CLEAN (checked: storm drove her onto shoals off Timia Point, Sumatra, night of 20 Nov 1511; Albuquerque on a raft, >400 lost; Portugal/Indonesia/Malaysia claims; 1992 Marx claim unconfirmed; no 2025-26 discovery).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flor_de_la_Mar",
+    "https://www.heritagedaily.com/2022/05/flor-de-la-mar-the-lost-treasure-ship/143632"
+   ]
+  }
+ ]
+}

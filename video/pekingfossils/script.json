@@ -1,0 +1,159 @@
+{
+ "title": "The Lost Peking Man Fossils",
+ "subtitle": "Peking (Beijing), China · 1941",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Muted documentary still, northern China in the bitter winter of 1941, wartime, cold slate-grey and pale bone tones with warm old-lamp amber accents, quiet, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no lettering, no people, no faces, no soldiers, no hands.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Two wooden boxes of fossil skulls, half a million years old. Peking, China, nineteen forty-one.",
+   "cap": "TWO BOXES\nOF FOSSILS",
+   "img": "Two old dark-wood military footlockers with iron corner fittings and rope handles standing side by side in the exact centre of the frame on a worn wooden floor of a dim storeroom, the nearer lid propped open to show neat bundles wrapped in white cotton and gauze inside, a single shaft of pale winter window light falling across both chests with fine dust drifting slowly in the beam so they read clearly at small size, plain unmarked lids, bare plaster wall behind, no lettering, no stencils, no people, no hands."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "The remains of about forty early humans, each skull wrapped in cotton and gauze.",
+   "cap": "ABOUT 40\nINDIVIDUALS",
+   "amber": true,
+   "img": "A pale ochre fossil skullcap of an early human, smooth and intact with a heavy brow ridge, resting alone in the exact centre of the frame on a folded square of white cotton and loose medical gauze on an old wooden laboratory bench, lit softly from the side by a small brass desk lamp with a warm glow, the background dim shelves out of focus, clean and scholarly, no damage, no gore, no lower jaw, no lettering, no labels, no people, no hands."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "With war closing in, U.S. Marines were to take them to a ship on the coast, bound for New York.",
+   "cap": "BOUND FOR\nNEW YORK",
+   "img": "An empty wooden pier at a cold northern Chinese port at grey winter dusk, the weathered planks leading straight to the centre of the frame where a single iron mooring bollard stands with a coil of rope, flat grey sea beyond with slow low waves and thin sea mist, no ship at the pier, the horizon empty, no people, no soldiers, no vehicles, no flags, no lettering."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "Then came Pearl Harbor. The boxes never reached the ship, and were never seen again.",
+   "cap": "NEVER SEEN\nAGAIN",
+   "amber": true,
+   "img": "The dusty plank floor of an empty brick harbour warehouse in winter, two clean rectangular outlines in the dust in the exact centre of the frame where two chests once stood, nothing on them, a high barred window letting in one cold shaft of grey light onto the outlines with dust drifting in the beam, bare walls, the far doors closed, no boxes, no people, no lettering."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "One lead: a Marine said he found a box of bones near that port in nineteen forty-seven. The likely spots are now built over. Only casts of them remain.",
+   "cap": "ONE\nLEAD",
+   "amber": true,
+   "img": "A wide empty asphalt lot at dusk beside low grey warehouses in a coastal Chinese port town, a single shallow rain puddle in the exact centre of the frame reflecting the pale evening sky, faint mist low over the ground, one distant sodium lamp beginning to glow, no cars, no people, no signs, no lettering, no markings on the asphalt."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "In 1941, with Japan at war in China, the Peking Man fossils were packed into two wooden crates/footlockers for shipment to the United States ('Two wooden boxes of fossil skulls'; cap 'TWO BOXES OF FOSSILS'; '1941': packing reported in Nov 1941 (Archaeology, Science History Institute), footlockers left the college 4 Dec 1941 (Wikipedia); some accounts say September) (caption: 'In late 1941')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Peking_Man",
+    "https://archive.archaeology.org/0603/abstracts/letter.html",
+    "https://sciencehistory.org/stories/disappearing-pod/parking-lot-or-peking-lot/",
+    "https://www.psychologytoday.com/gb/blog/how-think-neandertal/201912/what-is-the-second-greatest-mystery-in-anthropology",
+    "https://explorersweb.com/how-the-remains-of-peking-man-the-original-missing-link-vanished-in-the-fog-of-war/"
+   ]
+  },
+  {
+   "claim": "The fossils included skulls ('boxes of fossil skulls'); the first skull(cap) was found in 1929 by Pei Wenzhong, and further skullcaps by 1936; Hu Chengzhi described wrapping each skull before packing them into the two crates",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Peking_Man",
+    "https://archive.archaeology.org/0603/abstracts/letter.html",
+    "https://sciencehistory.org/stories/disappearing-pod/parking-lot-or-peking-lot/",
+    "https://www.discovermagazine.com/planet-earth/the-peking-man-and-other-lost-treasures-that-science-wants-back"
+   ]
+  },
+  {
+   "claim": "Peking Man is roughly half a million years old ('half a million years old': 'at least 500,000 years old' (Psychology Today); 'half a million years underground' (Science History Institute))",
+   "sources": [
+    "https://www.psychologytoday.com/gb/blog/how-think-neandertal/201912/what-is-the-second-greatest-mystery-in-anthropology",
+    "https://sciencehistory.org/stories/disappearing-pod/parking-lot-or-peking-lot/"
+   ]
+  },
+  {
+   "claim": "The fossils were in Peking (Beijing), at Peking Union Medical College, when packed ('Peking, China')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Peking_Man",
+    "https://archive.archaeology.org/0603/abstracts/letter.html",
+    "https://www.psychologytoday.com/gb/blog/how-think-neandertal/201912/what-is-the-second-greatest-mystery-in-anthropology",
+    "https://sciencehistory.org/stories/disappearing-pod/parking-lot-or-peking-lot/"
+   ]
+  },
+  {
+   "claim": "The fossils represent about forty individuals ('roughly forty men, women, and children'; 'as many as 40 individuals'; 'about 40 Peking Man individuals') from the Zhoukoudian cave (Dragon Bone Hill), about 30 miles / ~50 km southwest of Beijing (cap 'ABOUT 40 INDIVIDUALS'); Peking Man is an early human, Homo erectus",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Peking_Man",
+    "https://sciencehistory.org/stories/disappearing-pod/parking-lot-or-peking-lot/",
+    "https://english.beijing.gov.cn/latest/news/202307/t20230719_3165902.html",
+    "https://explorersweb.com/how-the-remains-of-peking-man-the-original-missing-link-vanished-in-the-fog-of-war/"
+   ]
+  },
+  {
+   "claim": "Each skull was wrapped in lens paper, cotton and medical gauze before packing (Hu Chengzhi's 1977 letter); Pei Wenzhong oversaw packing in cotton ('Each skull was wrapped in cotton and gauze')",
+   "sources": [
+    "https://archive.archaeology.org/0603/abstracts/letter.html",
+    "https://explorersweb.com/how-the-remains-of-peking-man-the-original-missing-link-vanished-in-the-fog-of-war/",
+    "https://www.psychologytoday.com/gb/blog/how-think-neandertal/201912/what-is-the-second-greatest-mystery-in-anthropology",
+    "https://sciencehistory.org/stories/disappearing-pod/parking-lot-or-peking-lot/"
+   ]
+  },
+  {
+   "claim": "With the Japanese threat (war closing in), the fossils were to be sent to the US / New York (American Museum of Natural History) for safekeeping, escorted by U.S. Marines to the SS President Harrison at the coastal port of Qinhuangdao ('U.S. Marines were to take them to a ship on the coast, bound for New York'; cap 'BOUND FOR NEW YORK')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Peking_Man",
+    "https://archive.archaeology.org/0603/abstracts/letter.html",
+    "https://www.scientificamerican.com/blog/observations/report-from-former-u-s-marine-hints-at-whereabouts-of-long-lost-peking-man-fossils/",
+    "https://sciencehistory.org/stories/disappearing-pod/parking-lot-or-peking-lot/",
+    "https://www.psychologytoday.com/gb/blog/how-think-neandertal/201912/what-is-the-second-greatest-mystery-in-anthropology",
+    "https://explorersweb.com/how-the-remains-of-peking-man-the-original-missing-link-vanished-in-the-fog-of-war/"
+   ]
+  },
+  {
+   "claim": "Pearl Harbor (7/8 Dec 1941) came as the fossils were awaiting shipment; the fossils never reached/were never loaded on the ship, and were never seen again ('Then came Pearl Harbor. The boxes never reached the ship, and were never seen again.'). Route and last custodian are disputed between sources, so the script says only that they never reached the ship.",
+   "sources": [
+    "https://sciencehistory.org/stories/disappearing-pod/parking-lot-or-peking-lot/",
+    "https://www.psychologytoday.com/gb/blog/how-think-neandertal/201912/what-is-the-second-greatest-mystery-in-anthropology",
+    "https://explorersweb.com/how-the-remains-of-peking-man-the-original-missing-link-vanished-in-the-fog-of-war/",
+    "https://www.ibtimes.co.uk/peking-man-bones-that-were-discovered-90-years-ago-went-missing-during-wwii-1649823",
+    "https://en.wikipedia.org/wiki/Peking_Man"
+   ]
+  },
+  {
+   "claim": "LEAD (presented as a lead): a former U.S. Marine (Richard Bowen, not named in the film) said that in 1947, stationed at Qinhuangdao (Camp Holcomb), he found a box of bones while digging a foxhole and reburied it; researchers place the likely spot under a parking lot/roadway/warehouse ('One lead: a Marine said that in 1947, near that port, he found a box of bones. The spot is now paved over.')",
+   "sources": [
+    "https://www.scientificamerican.com/blog/observations/report-from-former-u-s-marine-hints-at-whereabouts-of-long-lost-peking-man-fossils/",
+    "https://sciencehistory.org/stories/disappearing-pod/parking-lot-or-peking-lot/",
+    "https://explorersweb.com/how-the-remains-of-peking-man-the-original-missing-link-vanished-in-the-fog-of-war/",
+    "https://en.wikipedia.org/wiki/Peking_Man"
+   ]
+  },
+  {
+   "claim": "Franz Weidenreich's plaster casts survive (AMNH) and are what researchers study; the original fossils were lost ('Only casts remain'; cap 'ONLY CASTS REMAIN'). Note: four teeth from earlier digs are in Uppsala, separate from the lost shipment; the cast line refers to the lost collection.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Peking_Man",
+    "https://sciencehistory.org/stories/disappearing-pod/parking-lot-or-peking-lot/",
+    "https://explorersweb.com/how-the-remains-of-peking-man-the-original-missing-link-vanished-in-the-fog-of-war/",
+    "https://www.scientificamerican.com/blog/observations/report-from-former-u-s-marine-hints-at-whereabouts-of-long-lost-peking-man-fossils/"
+   ]
+  },
+  {
+   "claim": "Still unsolved as of 2026: the fossils have never been found (Boing Boing, 16 July 2026: 'The Peking Man fossils vanished in 1941 and are still missing'; Wikipedia: footlockers still missing; searches incl. rewards and a 2006 government search committee found nothing); caption 'Rewards and searches have turned up nothing' (Archaeology: searches 'nothing turned up'; Wikipedia/Explorersweb: cash rewards offered)",
+   "sources": [
+    "https://boingboing.net/2026/07/16/peking-man-lost-fossils.html",
+    "https://en.wikipedia.org/wiki/Peking_Man",
+    "https://explorersweb.com/how-the-remains-of-peking-man-the-original-missing-link-vanished-in-the-fog-of-war/",
+    "https://www.smithsonianmag.com/science-nature/the-mystery-of-the-missing-hominid-fossils-1985559/",
+    "https://www.grunge.com/737003/the-real-reason-we-cant-find-the-lost-peking-man-fossils/",
+    "https://archive.archaeology.org/0603/abstracts/letter.html"
+   ]
+  },
+  {
+   "claim": "BLIND CHECK 2026-11-24 (FIX applied): 'The spot is now paved over' -> 'The likely spots are now built over' (2012 search narrowed Bowen's spot to three guesses: under a warehouse, a parking area and a roadway); 'Only casts remain' -> 'Only casts of them remain' (four original teeth are at Uppsala and post-1949 finds exist, so 'only casts' must refer to the lost fossils); beat-5 cap 'ONLY CASTS / REMAIN' -> 'ONE / LEAD' for the same reason.",
+   "sources": [
+    "https://www.scientificamerican.com/blog/observations/report-from-former-u-s-marine-hints-at-whereabouts-of-long-lost-peking-man-fossils/",
+    "https://en.wikipedia.org/wiki/Peking_Man"
+   ]
+  }
+ ]
+}

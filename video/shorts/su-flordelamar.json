@@ -1,0 +1,50 @@
+{
+ "out": "short-su-flordelamar",
+ "kicker": "THE FLOR DE LA MAR",
+ "frame": "bleed",
+ "voice": "Ara",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "flordelamar",
+   "img": "B01",
+   "vo": "The Strait of Malacca. Fifteen eleven. The Portuguese carrack Flor de la Mar set sail, carrying the treasure taken from the Sultan of Malacca's palace.",
+   "cap": "MALACCA · 1511",
+   "motion": "flordelamar/motion/B01-kling25-a.mp4"
+  },
+  {
+   "src": "flordelamar",
+   "img": "B02",
+   "vo": "Off the coast of Sumatra, a storm drove her aground.",
+   "cap": "OFF\nSUMATRA",
+   "amber": true
+  },
+  {
+   "src": "flordelamar",
+   "img": "B03",
+   "vo": "Her commander, Afonso de Albuquerque, escaped on a raft. Hundreds of men were lost.",
+   "cap": "ON A\nRAFT"
+  },
+  {
+   "src": "flordelamar",
+   "img": "B04",
+   "vo": "Portugal, Malaysia and Indonesia have all claimed what she carried. Treasure hunters have announced finds. None has been confirmed.",
+   "cap": "NONE\nCONFIRMED",
+   "amber": true
+  },
+  {
+   "src": "flordelamar",
+   "img": "B05",
+   "vo": "Five centuries on, the ship and her treasure have never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

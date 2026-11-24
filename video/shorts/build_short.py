@@ -94,6 +94,26 @@ def compose(beat, idx):
     if spec.get("footer", "byclaude.net"): d.text((W // 2, H - 96), spec.get("footer", "byclaude.net"), font=F("IBMPlexMono-Medium.ttf", 28), fill=DIM, anchor="ma")
     out = BASE / "frames" / f"{idx:02d}.png"; img.save(out); return out
 
+def motion_overlay(beat, idx):
+    """opening arm (2026-11-24): for a beat with "motion": <mp4>, the picture comes from that clip and this RGBA
+    layer goes over it: the same bleed scrims (as black with alpha = 1 - shade) + kicker + caption, drawn with the
+    same calls as compose_bleed, so the typography is identical to a still beat; only the picture moves."""
+    y = np.linspace(0, 1, H)[:, None]
+    shade = 1 - 0.80 * np.clip((y - 0.50) / 0.28, 0, 1)
+    shade = shade * (1 - 0.55 * np.clip((0.12 - y) / 0.12, 0, 1))
+    alpha = np.repeat(np.round(255 * (1 - shade)), W, axis=1).astype(np.uint8)
+    layer = np.zeros((H, W, 4), np.uint8); layer[:, :, 3] = alpha
+    img = Image.fromarray(layer, "RGBA")
+    txt = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(txt); kicker(d)
+    cap = beat.get("cap", ""); cap_y = int(H * 0.70)
+    if cap:
+        f = fit(d, cap, "Anton-Regular.ttf", W - 130, start=130)
+        col = AMBER if beat.get("amber") else INK
+        for ln in cap.split("\n"):
+            d.text((W // 2, cap_y), ln, font=f, fill=col, anchor="ma", stroke_width=3, stroke_fill=(0, 0, 0)); cap_y += int(f.size * 1.04)
+    img = Image.alpha_composite(img, txt)
+    out = BASE / "frames" / f"{idx:02d}-overlay.png"; img.save(out); return out
+
 def tts(beat, idx):
     out = BASE / "audio" / f"{idx:02d}.mp3"
     # 2026-09-26: xAI began 404ing the legacy OpenAI voice name "onyx"; it had been resolving to Atlas
@@ -168,6 +188,8 @@ durs = {}
 with ThreadPoolExecutor(max_workers=6) as ex:
     for idx, dur in ex.map(lambda a: tts(*a), [(b, i) for i, b in enumerate(beats)]): durs[idx] = dur
 for i, b in enumerate(beats): compose(b, i)
+for i, b in enumerate(beats):
+    if b.get("motion"): motion_overlay(b, i)
 
 TAIL = 0.35; FPS = 30
 def clip(i):
@@ -184,7 +206,33 @@ def clip(i):
         raise SystemExit(f"clip {i} ffmpeg failed rc={r.returncode}: {r.stderr.decode()[-400:]}")
     return out
 
-with ThreadPoolExecutor(max_workers=4) as ex: list(ex.map(clip, range(len(beats))))
+def motion_clip(i):
+    """a beat with "motion": the clip (scaled/cropped to W x H) is slowed evenly to fill the beat's audio + TAIL
+    (never sped up; a short remainder holds the last frame) with framerate= blending the in-between frames (plain
+    fps= duplicated ~30% of frames at x1.85 = visible stutter on water; minterpolate mci looked the same but risks
+    warping), the overlay from motion_overlay() on top."""
+    dur = durs[i] + TAIL
+    src = Path(beats[i]["motion"]).expanduser()
+    if not src.is_absolute(): src = VID / src
+    cd = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(src)],
+                              capture_output=True, text=True).stdout.strip())
+    slow = max(1.0, dur / cd)
+    out = BASE / "clips" / f"{i:02d}.mp4"
+    fc = (f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,"
+          f"setpts={slow:.5f}*(PTS-STARTPTS),framerate=fps={FPS},tpad=stop_mode=clone:stop_duration={dur:.2f}[m];"
+          f"[m][1:v]overlay=0:0,format=yuv420p[v];[2:a]apad[a]")
+    cmd = ["ffmpeg", "-y", "-an", "-i", str(src), "-loop", "1", "-i", str(BASE / "frames" / f"{i:02d}-overlay.png"),
+           "-i", str(BASE / "audio" / f"{i:02d}.mp3"),
+           "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-t", str(dur),
+           "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS), "-crf", "20", "-preset", "medium",
+           "-c:a", "aac", "-ar", "48000", "-b:a", "192k", str(out)]
+    r = subprocess.run(cmd, capture_output=True)
+    if r.returncode != 0 or not out.exists():
+        raise SystemExit(f"motion clip {i} ffmpeg failed rc={r.returncode}: {r.stderr.decode()[-400:]}")
+    print(f"[motion] beat {i}: {src.name} {cd:.2f}s slowed x{slow:.2f} to {dur:.2f}s", flush=True)
+    return out
+
+with ThreadPoolExecutor(max_workers=4) as ex: list(ex.map(lambda i: motion_clip(i) if beats[i].get("motion") else clip(i), range(len(beats))))
 listf = BASE / "concat.txt"; listf.write_text("".join(f"file '{BASE/'clips'/(f'{i:02d}.mp4')}'\n" for i in range(len(beats))))
 total = sum(durs[i] + TAIL for i in range(len(beats)))
 final = SH / (spec["out"] + ".mp4")

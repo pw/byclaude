@@ -25,6 +25,8 @@ def run(b):
     return (b['id'], 'ok' if ok else f"FAIL: {r.stdout[-200:]} {r.stderr[-200:]}")
 
 stills = [b for b in data["beats"] if b.get("vtype") == "still" and "img" in b]
+if not stills:  # 2026-11-24: a script.json without vtype "still" used to print "0 stills ... done (0 failed)" and exit 0
+    print(f"[img:{sys.argv[1]}] NO STILL BEATS (need vtype \"still\" + img)", flush=True); sys.exit(2)
 print(f"[img:{sys.argv[1]}] {len(stills)} stills -> {imgdir}", flush=True)
 with ThreadPoolExecutor(max_workers=5) as ex:
         results = list(ex.map(run, stills))

@@ -1,0 +1,49 @@
+{
+ "out": "short-su-justjudges",
+ "kicker": "THE JUST JUDGES",
+ "frame": "bleed",
+ "voice": "Ara",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "justjudges",
+   "img": "B01",
+   "vo": "Ghent, Belgium. April, nineteen thirty-four. Overnight, a panel of Van Eyck's Ghent Altarpiece vanished from Saint Bavo's Cathedral.",
+   "cap": "GHENT · 1934"
+  },
+  {
+   "src": "justjudges",
+   "img": "B02",
+   "vo": "It was called the Just Judges. A second panel, Saint John the Baptist, went with it.",
+   "cap": "THE JUST\nJUDGES",
+   "amber": true
+  },
+  {
+   "src": "justjudges",
+   "img": "B03",
+   "vo": "Then came thirteen ransom letters, signed only D, U, A, asking one million Belgian francs.",
+   "cap": "13\nLETTERS"
+  },
+  {
+   "src": "justjudges",
+   "img": "B04",
+   "vo": "As proof, Saint John was returned, through luggage storage at Brussels North station. The Just Judges never came back.",
+   "cap": "SAINT JOHN\nRETURNED",
+   "amber": true
+  },
+  {
+   "src": "justjudges",
+   "img": "B05",
+   "vo": "More than ninety years on, the case file is still open. A copy hangs in its place.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

@@ -920,6 +920,58 @@
    "hook": "place",
    "voice": "female",
    "test": "voice-1127"
+  },
+  "caravaggio": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "length": "long",
+   "kind": "anomaly",
+   "hook": "place",
+   "voice": "male",
+   "test": "opening-1130",
+   "opening": "still"
+  },
+  "flordelamar": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "length": "long",
+   "kind": "anomaly",
+   "hook": "place",
+   "voice": "female",
+   "test": "opening-1130",
+   "opening": "motion"
+  },
+  "justjudges": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "length": "long",
+   "kind": "anomaly",
+   "hook": "place",
+   "voice": "female",
+   "test": "opening-1130",
+   "opening": "still"
+  },
+  "pekingfossils": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "length": "long",
+   "kind": "anomaly",
+   "hook": "detail",
+   "voice": "male",
+   "test": "opening-1130",
+   "opening": "motion"
   }
  },
  "byclaude": {

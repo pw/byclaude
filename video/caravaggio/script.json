@@ -1,0 +1,121 @@
+{
+ "title": "The Stolen Caravaggio",
+ "subtitle": "Oratory of San Lorenzo, Palermo · 1969",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Muted documentary still, the interior of a small Baroque oratory in Palermo decorated with white stucco garlands and scrolls, late 1960s, warm candlelit amber against cool grey shadow and old marble, quiet melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces, no hands, no figures, no paintings of figures.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Palermo, Sicily. October, nineteen sixty-nine. Above the altar of the Oratory of San Lorenzo hung Caravaggio's Nativity, nearly nine feet tall.",
+   "cap": "PALERMO · 1969",
+   "img": "The altar wall of a small Baroque oratory seen straight on, centred in the frame: a tall ornate carved frame above a marble altar, the canvas inside it completely lost in deep plain shadow with nothing depicted on it, surrounded by white stucco garlands, scrolls and drapery ornament with no figures, one lit candle burning on the altar casting warm amber light upward so the frame and stucco read clearly, cool grey darkness at the edges, no people, no faces, no statues of people, no lettering."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "One night, thieves cut the canvas from its frame and took it away.",
+   "cap": "CUT FROM\nITS FRAME",
+   "amber": true,
+   "img": "An empty old wooden painting stretcher standing upright in the exact centre of the frame inside a dim stucco chapel, thin ragged strips of cut canvas still hanging from its inner edges, the large rectangle in the middle open and empty so the pale wall shows through, cold grey dawn light from a high window falling across it, dust drifting in the light, no people, no hands, no tools, no lettering."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "The FBI named it one of its top ten art crimes.",
+   "cap": "FBI\nTOP TEN",
+   "img": "The tall old wooden entrance door of a small Baroque oratory seen from inside at night, closed, centred in the frame, plain white stucco walls with garland ornament around it, a thin line of cold blue streetlight showing at the edges and under the door, the interior dark and empty, a bare marble floor in front, no people, no figures, no lettering."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "Over the years, investigators were told it was burned. Hidden in a barn. Sold abroad. None of it led to the painting.",
+   "cap": "DEAD\nENDS",
+   "amber": true,
+   "img": "An empty patch of bare marble floor in the middle of a dim Baroque oratory, centred, one shaft of pale light falling from a high window onto the floor with fine dust drifting slowly in the beam, nothing in the light, white stucco walls fading into darkness around it, no objects, no people, no figures, no lettering."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "Today a copy hangs in its place. The original has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true,
+   "img": "Close view of the top of a marble altar in a dim Baroque oratory, centred, two lit candles in brass holders standing either side, warm amber light on the white stucco behind, only the plain lower edge of a heavy gilded frame visible at the very top of the frame, no painting visible, no figures, no faces, no people, no lettering."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The painting (Caravaggio's Nativity with Saint Francis and Saint Lawrence) was stolen from the Oratory of San Lorenzo in Palermo, Sicily, on the night of 17-18 October 1969, where it hung above the altar ('PALERMO · 1969', 'October, nineteen sixty-nine'). Art Newspaper analysis notes it may have gone between 12 and 18 Oct (last seen at mass on the 12th); all sources agree on October 1969. Painting date (1600 vs 1609) deliberately left out: disputed.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nativity_with_Saint_Francis_and_Saint_Lawrence",
+    "https://www.ilpost.it/2026/08/18/furto-nativita-caravaggio/",
+    "https://www.finestresullarte.info/en/works-and-artists/caravaggio-s-nativity-the-masterpiece-painted-in-rome-sent-to-palermo-and-stolen-in-1969",
+    "https://en.wikipedia.org/wiki/Oratory_of_San_Lorenzo",
+    "https://www.theartnewspaper.com/analysis/it-s-50-years-since-caravaggio-s-nativity-was-stolen-in-palermo-have-the-police-been-chasing-red-herrings-all-this-time"
+   ]
+  },
+  {
+   "claim": "Size 268 x 197 cm, i.e. about 8.8 ft tall ('nearly nine feet tall'); Art Newspaper: 'about 3 x 2 metres'.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nativity_with_Saint_Francis_and_Saint_Lawrence",
+    "https://www.ilpost.it/2026/08/18/furto-nativita-caravaggio/",
+    "https://www.finestresullarte.info/en/works-and-artists/caravaggio-s-nativity-the-masterpiece-painted-in-rome-sent-to-palermo-and-stolen-in-1969",
+    "https://www.theartnewspaper.com/analysis/it-s-50-years-since-caravaggio-s-nativity-was-stolen-in-palermo-have-the-police-been-chasing-red-herrings-all-this-time"
+   ]
+  },
+  {
+   "claim": "The thieves (two, per Wikipedia/Il Post) cut the canvas from its frame and took it; Il Post: cut along the edges with a box cutter, leaving the empty stretcher; Oratory wiki: the original stretcher from which it was cut still hangs in an antechamber.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nativity_with_Saint_Francis_and_Saint_Lawrence",
+    "https://www.ilpost.it/2026/08/18/furto-nativita-caravaggio/",
+    "https://www.theartnewspaper.com/analysis/it-s-50-years-since-caravaggio-s-nativity-was-stolen-in-palermo-have-the-police-been-chasing-red-herrings-all-this-time",
+    "https://en.wikipedia.org/wiki/Oratory_of_San_Lorenzo"
+   ]
+  },
+  {
+   "claim": "The FBI lists the theft among its Top Ten Art Crimes (Wikipedia: listed 2005; Il Post 2026: among the FBI's ten most notable unsolved art thefts).",
+   "sources": [
+    "https://www.fbi.gov/investigate/violent-crime/art-theft/fbi-top-ten-art-crimes",
+    "https://en.wikipedia.org/wiki/Nativity_with_Saint_Francis_and_Saint_Lawrence",
+    "https://www.ilpost.it/2026/08/18/furto-nativita-caravaggio/",
+    "https://en.wikipedia.org/wiki/Oratory_of_San_Lorenzo"
+   ]
+  },
+  {
+   "claim": "Over the years investigators were told conflicting stories of its fate: burned/destroyed (Art Newspaper; Il Post 'other accounts claim it was destroyed by fire'), kept in a barn/stable and eaten by animals (Art Newspaper: barn; Il Post: stable), sold to a dealer in Switzerland (Wikipedia, Art Newspaper, Il Post). None led to recovery: Il Post says the Swiss account is not considered reliable and that we still don't know who took it, where it is, or whether it was destroyed; the 2018 Swiss lead found nothing. Informants and alleged buyers deliberately not named.",
+   "sources": [
+    "https://www.theartnewspaper.com/analysis/it-s-50-years-since-caravaggio-s-nativity-was-stolen-in-palermo-have-the-police-been-chasing-red-herrings-all-this-time",
+    "https://www.ilpost.it/2026/08/18/furto-nativita-caravaggio/",
+    "https://en.wikipedia.org/wiki/Nativity_with_Saint_Francis_and_Saint_Lawrence",
+    "https://www.theartnewspaper.com/2018/06/15/lost-art-has-caravaggios-long-missing-nativity-been-found"
+   ]
+  },
+  {
+   "claim": "A copy now hangs in its place above the altar: a replica made by Factum Arte, commissioned by Sky, installed December 2015 (Art Newspaper says 2016, so the VO gives no year).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nativity_with_Saint_Francis_and_Saint_Lawrence",
+    "https://factumfoundation.org/our-projects/digital-restorations/caravaggios-nativity-with-saint-francis-and-saint-lawrence/",
+    "https://news.artnet.com/art-world/stolen-caravaggio-replaced-replica-391166",
+    "https://www.ilpost.it/2026/08/18/furto-nativita-caravaggio/",
+    "https://www.finestresullarte.info/en/works-and-artists/caravaggio-s-nativity-the-masterpiece-painted-in-rome-sent-to-palermo-and-stolen-in-1969"
+   ]
+  },
+  {
+   "claim": "Still unsolved as of Nov 2026: Il Post (18 Aug 2026): never recovered, 'non sappiamo chi abbia sottratto la tela, né dove si trovi o se sia stata distrutta'; Finestre sull'Arte: never found, no sure leads; Wikipedia: still missing; Art Newspaper (Dec 2024, Pistoletto homage) treats it as still stolen. No 2024-2026 recovery reported.",
+   "sources": [
+    "https://www.ilpost.it/2026/08/18/furto-nativita-caravaggio/",
+    "https://www.finestresullarte.info/en/works-and-artists/caravaggio-s-nativity-the-masterpiece-painted-in-rome-sent-to-palermo-and-stolen-in-1969",
+    "https://en.wikipedia.org/wiki/Nativity_with_Saint_Francis_and_Saint_Lawrence",
+    "https://www.theartnewspaper.com/2024/12/30/michelangelo-pistoletto-unveils-his-own-version-of-stolen-caravaggio-masterpiece-in-sicily"
+   ]
+  },
+  {
+   "claim": "BLIND CHECK 2026-11-24: CLEAN; optional exactness applied: 'The FBI counts it among its top ten art crimes' -> 'The FBI named it one of its top ten art crimes' (FBI Top Ten Art Crimes list announced 15 Nov 2005; the live FBI page 403'd the checker).",
+   "sources": [
+    "https://www.fbi.gov/news/stories/2005/november/topten_art111505",
+    "https://en.wikipedia.org/wiki/Nativity_with_Saint_Francis_and_Saint_Lawrence"
+   ]
+  }
+ ]
+}

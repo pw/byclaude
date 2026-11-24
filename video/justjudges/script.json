@@ -1,0 +1,141 @@
+{
+ "title": "The Just Judges",
+ "subtitle": "Saint Bavo's Cathedral, Ghent · 1934",
+ "voice": "Ara",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Muted documentary still, dim old Gothic church interiors of grey stone and dark oak in Belgium, the nineteen-thirties, cold stone grey and deep shadow with warm candle-gold light, hushed and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no paintings or painted figures, no people, no faces, no hands.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Ghent, Belgium. April, nineteen thirty-four. Overnight, a panel of Van Eyck's Ghent Altarpiece vanished from Saint Bavo's Cathedral.",
+   "cap": "GHENT · 1934",
+   "img": "Inside a small Gothic stone side chapel of a great cathedral at night, centred in the middle of the frame an ornate carved dark oak altarpiece frame standing on a stone altar with one tall rectangular opening in its lower left that is completely empty, showing only bare dark wood behind it, the rest of the frame closed with plain unpainted oak shutters, one single tall candle burning on the altar below the empty opening and lighting it warmly so the empty space reads clearly at small size, pointed stained-glass-less window tracery dim in the background, no paintings, no figures, no faces, no people, no lettering."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "It was called the Just Judges. A second panel, Saint John the Baptist, went with it.",
+   "cap": "THE JUST\nJUDGES",
+   "amber": true,
+   "img": "The bare back of a single old oak panel painting standing upright and centred in the frame against a cold grey stone wall, the reverse side only, dark aged wood grain with vertical boards, old iron fixing marks and a worn edge, lit from one side by soft warm candlelight so its rectangular shape reads clearly, a cool stone floor below, no painted surface visible, no figures, no faces, no people, no hands, no lettering."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "Then came thirteen ransom letters, signed only D, U, A, asking one million Belgian francs.",
+   "cap": "13\nLETTERS",
+   "img": "A small stack of old folded paper letters and plain envelopes tied with a faded ribbon, lying alone in the centre of a dark oak desk, one envelope on top sealed with dark red wax, a single candle flame burning just behind them so their edges glow, the paper blank with no legible writing, deep shadow around, no people, no hands, no lettering."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "As proof, Saint John was returned, through luggage storage at Brussels North station. The Just Judges never came back.",
+   "cap": "SAINT JOHN\nRETURNED",
+   "amber": true,
+   "img": "One large flat rectangular parcel wrapped in brown paper and tied with string, resting upright and alone on a worn wooden storage shelf in the centre of the frame, a small blank paper claim tag hanging from the string, dim nineteen-thirties interior with dark wooden shelving fading into shadow, one soft overhead lamp falling on the parcel so it reads clearly, no people, no hands, no faces, no signage, no lettering."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "More than ninety years on, the case file is still open. A copy hangs in its place.",
+   "cap": "NEVER\nFOUND",
+   "amber": true,
+   "img": "A tall empty Gothic cathedral nave of pale grey stone at dawn, seen down its centre aisle, one long shaft of cold early light falling from a high window across the middle of the frame with fine dust drifting slowly in the beam, rows of dark wooden chairs empty, a distant dim side chapel, no people, no faces, no paintings visible, no lettering."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "On the night of 10 April 1934 ('April 1934', 'overnight') the Just Judges panel of the Ghent Altarpiece (by Van Eyck) was stolen from Saint Bavo's Cathedral, Ghent, Belgium; the theft was discovered the morning of 11 April (Visit Gent: the lock of the Vijd chapel door, where the altarpiece stood, was found forced).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Just_Judges",
+    "https://www.vrt.be/vrtnws/en/2024/04/10/the-mystery-of-the-disappearance-of-the-just-judges-90-years-on/",
+    "https://www.mentalfloss.com/article/546749/enduring-mystery-ghent-altarpiece-worlds-most-stolen-painting",
+    "https://visit.gent.be/nl/de-rechtvaardige-rechters-vermist",
+    "https://en.wikipedia.org/wiki/Ghent_Altarpiece"
+   ]
+  },
+  {
+   "claim": "Two panels were taken: the Just Judges and Saint John the Baptist (a grisaille that had been the Just Judges' reverse until the panels were sawn apart in the 19th century).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ghent_Altarpiece",
+    "https://www.vrt.be/vrtnws/en/2024/04/10/the-mystery-of-the-disappearance-of-the-just-judges-90-years-on/",
+    "https://www.mentalfloss.com/article/546749/enduring-mystery-ghent-altarpiece-worlds-most-stolen-painting",
+    "https://visit.gent.be/nl/de-rechtvaardige-rechters-vermist",
+    "https://en.wikipedia.org/wiki/The_Just_Judges"
+   ]
+  },
+  {
+   "claim": "Ransom letters followed, addressed to the Bishop of Ghent (Visit Gent: Bishop Coppieters; Wikipedia: demand made of the Bishop of Ghent); thirteen letters (Mental Floss: 13 ransom letters; Visit Gent: copies of 'dertien afpersingsbrieven'; Wikipedia says 'at least 11' letters exchanged), signed with the initials D.U.A. (VRT 2024, VRT 2026, Mental Floss, Visit Gent).",
+   "sources": [
+    "https://www.mentalfloss.com/article/546749/enduring-mystery-ghent-altarpiece-worlds-most-stolen-painting",
+    "https://visit.gent.be/nl/de-rechtvaardige-rechters-vermist",
+    "https://www.vrt.be/vrtnws/en/2024/04/10/the-mystery-of-the-disappearance-of-the-just-judges-90-years-on/",
+    "https://www.vrt.be/vrtnws/nl/2026/01/06/mysteriejagers-lam-gods-thomas-vanderveken.consumer/",
+    "https://en.wikipedia.org/wiki/The_Just_Judges"
+   ]
+  },
+  {
+   "claim": "The ransom demanded was one million Belgian francs.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Just_Judges",
+    "https://www.mentalfloss.com/article/546749/enduring-mystery-ghent-altarpiece-worlds-most-stolen-painting",
+    "https://visit.gent.be/nl/de-rechtvaardige-rechters-vermist"
+   ]
+  },
+  {
+   "claim": "As proof, the extortionist returned the Saint John the Baptist panel via the luggage depot/locker at Brussels-North station (a claim ticket was sent with a letter).",
+   "sources": [
+    "https://www.vrt.be/vrtnws/en/2024/04/10/the-mystery-of-the-disappearance-of-the-just-judges-90-years-on/",
+    "https://www.vrt.be/vrtnws/nl/2026/01/06/mysteriejagers-lam-gods-thomas-vanderveken.consumer/",
+    "https://visit.gent.be/nl/de-rechtvaardige-rechters-vermist",
+    "https://www.mentalfloss.com/article/546749/enduring-mystery-ghent-altarpiece-worlds-most-stolen-painting",
+    "https://en.wikipedia.org/wiki/The_Just_Judges"
+   ]
+  },
+  {
+   "claim": "The Just Judges panel was never returned or recovered; 'no trace' (Visit Gent); still untraceable as of January 2026 (VRT); house searches in early 2025 also found nothing (VRT 2026).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Just_Judges",
+    "https://en.wikipedia.org/wiki/Ghent_Altarpiece",
+    "https://www.vrt.be/vrtnws/en/2024/04/10/the-mystery-of-the-disappearance-of-the-just-judges-90-years-on/",
+    "https://www.vrt.be/vrtnws/nl/2026/01/06/mysteriejagers-lam-gods-thomas-vanderveken.consumer/",
+    "https://visit.gent.be/nl/de-rechtvaardige-rechters-vermist",
+    "https://www.mentalfloss.com/article/546749/enduring-mystery-ghent-altarpiece-worlds-most-stolen-painting"
+   ]
+  },
+  {
+   "claim": "The judicial file is still open as of 2026 (VRT 7 Jan 2026: the dossier is still open and tips are still taken seriously; VRT 2024: 'the investigation is still ongoing'; Artnet: a detective at Ghent police is assigned to the case). 'More than ninety years on' = 1934 to 2026 (92 years).",
+   "sources": [
+    "https://www.vrt.be/vrtnws/nl/2026/01/06/mysteriejagers-lam-gods-thomas-vanderveken.consumer/",
+    "https://www.vrt.be/vrtnws/en/2024/04/10/the-mystery-of-the-disappearance-of-the-just-judges-90-years-on/",
+    "https://news.artnet.com/art-world/the-hunt-missing-panel-ghent-altarpiece-2447194"
+   ]
+  },
+  {
+   "claim": "A copy by restorer Jef Van der Veken hangs in the altarpiece in place of the lost panel (Wikipedia gives 1945; Mental Floss says painted 1939 - so no year is stated in the film).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Just_Judges",
+    "https://en.wikipedia.org/wiki/Ghent_Altarpiece",
+    "https://en.wikipedia.org/wiki/Jef_Van_der_Veken",
+    "https://www.mentalfloss.com/article/546749/enduring-mystery-ghent-altarpiece-worlds-most-stolen-painting",
+    "https://news.artnet.com/art-world/the-hunt-missing-panel-ghent-altarpiece-2447194"
+   ]
+  },
+  {
+   "claim": "Still unsolved as of Nov 2026: VRT (7 Jan 2026) says the panel 'is tot vandaag dus nog steeds onvindbaar' and the case file remains open; VRT 2024 (90th anniversary): still missing, investigation ongoing; no 2024-2026 report of a recovery found. Theories (destroyed; held privately; hidden locally) are not stated as fact. The presumed thief usually named is deliberately NOT named (house rule: never charged).",
+   "sources": [
+    "https://www.vrt.be/vrtnws/nl/2026/01/06/mysteriejagers-lam-gods-thomas-vanderveken.consumer/",
+    "https://www.vrt.be/vrtnws/en/2024/04/10/the-mystery-of-the-disappearance-of-the-just-judges-90-years-on/",
+    "https://en.wikipedia.org/wiki/The_Just_Judges"
+   ]
+  },
+  {
+   "claim": "BLIND CHECK 2026-11-24: CLEAN (checked: 13 letters, D.U.A., 1 million francs, Brussels-North luggage receipt; Saint John a separate panel since the 1894 sawing; case still open per Wikipedia + VRT 2024; Mental Floss says closed 1937, newer sources outweigh).",
+   "sources": [
+    "https://visit.gent.be/en/disappearance-just-judges-panel",
+    "https://www.vrt.be/vrtnws/nl/2024/04/08/rechtvaardige-rechters-vermist-van-eyck-gestolen/"
+   ]
+  }
+ ]
+}

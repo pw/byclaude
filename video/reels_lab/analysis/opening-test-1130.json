@@ -1,0 +1,43 @@
+{
+ "registered": "2026-11-24T05:00Z",
+ "seed": "opening-test-2026-11-24",
+ "arm": "opening",
+ "values": {
+  "motion": "beat 0 is a real ~5 s image-to-video clip made from the film's own B01 still (subtle true motion: fog, water, light, drift; no new objects, nothing that adds a claim), narration over it; beats 1+ unchanged",
+  "still": "house opening: B01 still with the slow zoompan"
+ },
+ "why": "Length pairs 1-2 (11-22/23): short/long 0.75 and 0.88, and avg watch is the same ~4-8 s at 13 s or 35 s. People leave at the opening whatever comes after. Model 11-19: the first pool (~200) is unchanged since 11-04, expansion stopped because in-pool watch fell. Every film since 11-14 opens on a still with a word card. The first 2 s is the remaining untested format lever.",
+ "design": "within-day pairs, CROSSED with the voice arm so voice reaches n=5 (its pairs 4-5) while opening starts (n=2 each). Voice and opening drawn independently from this seed. Known imbalance in this batch: both motion films drew the 15:45Z slot (slot showed no effect 11-03: 267 vs 250); the next opening batch puts motion at 01:45Z on purpose to balance. Length = house LONG unless the length call (~11-27) says short.",
+ "read": "plays at first snap >=14h + avg watch s + retention; paired ratio motion/still per day; page daily video views over the posting days. Secondary: 3-s view share if the API exposes it.",
+ "call": "usual rule: >=1.5x median at n>=5 each -> default; n>=8 each no lead -> tie. Continue pairs (motion slot counterbalanced) to n=5.",
+ "harm_check": "motion <0.67x still at n>=5 -> drop motion.",
+ "spend": "image-to-video <=$0.60/clip; whole day <= $5 wall. Do NOT draw OpenRouter beyond TTS (shared balance ~$7 that FBB fallback and small sites ride).",
+ "films": [
+  {
+   "slot": "11-30 01:45Z",
+   "voice": "male",
+   "opening": "still",
+   "subject": "caravaggio"
+  },
+  {
+   "slot": "11-30 15:45Z",
+   "voice": "female",
+   "opening": "motion",
+   "subject": "flordelamar"
+  },
+  {
+   "slot": "12-01 01:45Z",
+   "voice": "female",
+   "opening": "still",
+   "subject": "justjudges"
+  },
+  {
+   "slot": "12-01 15:45Z",
+   "voice": "male",
+   "opening": "motion",
+   "subject": "pekingfossils"
+  }
+ ],
+ "subjects_note": "Four subjects chosen by the builder 2026-11-24 BEFORE assignment, ordered by seeded shuffle random.Random('order-opening1'), then mapped in order onto the pre-registered slots (build-opening1.md step 1). All LONG, bleed, stamp, origin fresh, kind anomaly; hooks seeded 'hook-opening1-<name>' (pekingfossils detail, rest place).",
+ "motion_model": "fal.ai fal-ai/kling-video/v2.5-turbo/pro/image-to-video, 5 s (5.04 s, 1080x1920, 24 fps) from the exact B01 still, $0.35/clip (3 clips made incl. 1 rejected = $1.05). build_short.py slows the clip evenly to fill beat 0 (flordelamar x1.85, pekingfossils x1.28) with framerate= blending; overlay (scrims, kicker, caption) identical to a still beat. Read: flordelamar = clear in-scene motion (swells, ship drifting); pekingfossils = mostly a slow 3D camera push with faint dust (the weaker motion opening) - note this when reading pair 2."
+}
