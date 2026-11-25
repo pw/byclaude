@@ -1,0 +1,127 @@
+{
+ "title": "The Bell of Dhammazedi",
+ "subtitle": "Yangon, Myanmar · 1608",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Muted documentary still, the wide muddy tidal river at Yangon in Lower Burma, early seventeenth century, brown-gold water and low green banks under warm humid haze with soft pale light and old-bronze glints, quiet melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no flags, no people, no faces, no hands, no figures, no animals, no fire, no smoke.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "A giant bell has been lost in a river for four centuries. Cast in fourteen eighty-four for Myanmar's Shwedagon Pagoda, it was said to be the largest bell ever made.",
+   "cap": "A BELL IN\nTHE RIVER",
+   "img": "The wide brown river at Yangon seen from low above the water, the current moving steadily from left to right, in the exact centre of the frame one broad slow swirl of an eddy turning on the muddy surface, catching soft pale-gold morning light so its curved ripples read clearly, warm humid haze over the water, a low flat green far bank as a thin line near the top, the frame bright and evenly lit, nothing visible beneath the surface. No people, no faces, no hands, no figures, no animals, no birds, no boats with crew, no flags, no text, no lettering, no fire, no smoke."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "In sixteen oh eight, Portuguese mercenary Filipe de Brito seized it, to melt down for cannons.",
+   "cap": "TAKEN\nIN 1608",
+   "amber": true,
+   "img": "A colossal ancient dark bronze temple bell, far taller than a doorway, resting upright on a massive raft of heavy lashed timbers at a muddy riverbank, centred in the frame, its surface worn and dull green-brown with faint raised bands and no lettering, thick ropes coiled on the timbers, brown river water lapping at the raft edges, a distant golden pagoda spire small and hazy on a hill behind, warm humid early-seventeenth-century light. No people, no faces, no hands, no figures, no animals, no birds, no boats with crew, no flags, no text, no lettering, no fire, no smoke."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "Where the Yangon and Bago rivers meet, the vessel carrying it sank under the weight.",
+   "cap": "IT\nSANK",
+   "img": "The broad meeting of two wide muddy rivers under a heavy grey-gold sky, centred in the frame a few loose broken timbers and a snapped length of rope turning in a swirl of brown water where something heavy has just gone under, a ring of disturbed ripples spreading outward from the centre, low green banks far off, soft diffuse light, the scene bright enough to read clearly. No people, no faces, no hands, no figures, no animals, no birds, no boats with crew, no flags, no text, no lettering, no fire, no smoke."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "Divers have searched for decades. In twenty fourteen, a team claimed to have found it. The claim was never proven.",
+   "cap": "CLAIM\nUNPROVEN",
+   "amber": true,
+   "img": "Underwater in a murky brown river, a single weighted rope line hanging straight down through the centre of the frame into cloudy silt-filled water, a soft shaft of greenish-gold daylight filtering down from the surface above, fine particles of sediment drifting in the light, the bottom lost in brown haze, nothing found, no objects on the riverbed. No people, no faces, no hands, no figures, no animals, no birds, no boats with crew, no flags, no text, no lettering, no fire, no smoke."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "It may lie beneath deep mud. The bell has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true,
+   "img": "The surface of the wide brown river at Yangon at dusk, calm, the current sliding slowly past, in the exact centre of the frame one small ring of ripples spreading on the water and catching the last warm amber light, the water around it dull bronze and grey, a hazy low far bank near the top, the frame softly lit, nothing visible beneath the surface. No people, no faces, no hands, no figures, no animals, no birds, no boats with crew, no flags, no text, no lettering, no fire, no smoke."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The bell was cast in 1484 by order of King Dhammazedi (Mon ruler of Hanthawaddy/Bago) and presented to the Shwedagon Pagoda in Dagon, today's Yangon, Myanmar ('Cast in fourteen eighty-four for Myanmar's Shwedagon Pagoda'). Wikipedia: cast 5 February 1484; DVB 2014: commissioned 1484; Malorie's Adventures (Oct 2026): cast 1484, hung at Shwedagon. Fox/AP gives only 'late 15th century'; one source says 1490, so only the year 1484 (majority) is used.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Great_Bell_of_Dhammazedi",
+    "https://english.dvb.no/renewed-search-underway-for-the-fabled-dhammazedi-bell/",
+    "https://www.maloriesadventures.com/blog/the-great-bell-of-dhammazedi-sank-in-1608-and-nobody-has-found-it-since/",
+    "https://www.foxnews.com/world/under-cloud-of-myth-and-mystery-myanmar-divers-resume-search-for-the-worlds-largest-bell"
+   ]
+  },
+  {
+   "claim": "Said to be the largest bell ever made ('giant bell', 'said to be the largest bell ever made'): Wikipedia List of heaviest bells: 'the largest bell to have existed in recorded history'; DVB: 'reputedly the world's largest bell'; Fox/AP headline: 'the world's largest bell'. Weight left out of VO deliberately: sources give 270 t (DVB, Fox/AP), 294 t (Wikipedia, from 180,000 viss) and 'nearly 300 tonnes' (Nation).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_heaviest_bells",
+    "https://english.dvb.no/renewed-search-underway-for-the-fabled-dhammazedi-bell/",
+    "https://www.foxnews.com/world/under-cloud-of-myth-and-mystery-myanmar-divers-resume-search-for-the-worlds-largest-bell",
+    "https://www.nationthailand.com/international/30243337"
+   ]
+  },
+  {
+   "claim": "In 1608 the Portuguese mercenary Filipe de Brito e Nicote (ruler of Syriam/Thanlyin) had the bell taken from the Shwedagon to be melted down and made into cannons ('seized it, to melt down for cannons'). Wikipedia: de Brito and his men took it, to be 'melted down and made into cannons'; DVB: 'Portuguese warlord and mercenary', 1608, wanted it melted down to make cannons; Fox/AP: 'Portuguese mercenary Philip de Brito', to be melted down and made into cannons; Malorie's Adventures: 1608, needed metal for cannons. (Wikipedia: his men rolled it down the hill onto a raft; elephants hauled it.)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Great_Bell_of_Dhammazedi",
+    "https://english.dvb.no/renewed-search-underway-for-the-fabled-dhammazedi-bell/",
+    "https://www.foxnews.com/world/under-cloud-of-myth-and-mystery-myanmar-divers-resume-search-for-the-worlds-largest-bell",
+    "https://www.maloriesadventures.com/blog/the-great-bell-of-dhammazedi-sank-in-1608-and-nobody-has-found-it-since/"
+   ]
+  },
+  {
+   "claim": "It sank where the Yangon and Bago rivers meet, the vessel carrying it going down under the weight. Wikipedia: at the confluence of the Bago and Yangon rivers off Monkey Point the raft broke up, 'the load proved too heavy'; DVB: sank under its own weight while transported by boat, at the confluence of the Pegu (Bago) and Rangoon (Yangon) rivers; Fox/AP: a 'rickety vessel' sank under the weight where the Yangon and Bago rivers meet Pazundaung Creek; Malorie's: confluence of the Bago and Yangon rivers. Sources disagree raft vs boat, so the VO says 'the vessel carrying it'. Claim that it also dragged down de Brito's flagship (Wikipedia, Malorie's) left out.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Great_Bell_of_Dhammazedi",
+    "https://english.dvb.no/renewed-search-underway-for-the-fabled-dhammazedi-bell/",
+    "https://www.foxnews.com/world/under-cloud-of-myth-and-mystery-myanmar-divers-resume-search-for-the-worlds-largest-bell",
+    "https://www.maloriesadventures.com/blog/the-great-bell-of-dhammazedi-sank-in-1608-and-nobody-has-found-it-since/"
+   ]
+  },
+  {
+   "claim": "Divers have searched for decades ('Divers have searched for decades'): DVB 2014: earlier attempts since the 1980s failed; Nation (Sep 2014): searches in 1997, 1998, 1999 and 2014; Wikipedia: 2000 Hatcher plan, 115 sonar dives, 2010 Damien Lay survey, 2014 search.",
+   "sources": [
+    "https://english.dvb.no/renewed-search-underway-for-the-fabled-dhammazedi-bell/",
+    "https://www.nationthailand.com/international/30243337",
+    "https://en.wikipedia.org/wiki/Great_Bell_of_Dhammazedi"
+   ]
+  },
+  {
+   "claim": "In 2014 a team claimed to have found it; nothing was raised ('In twenty fourteen, a team claimed to have found it. Nothing was raised.'). Wikipedia: in August 2014 San Linn claimed the bell had been found, 'these claims were found to be false, and searches for the bell continue'; Nation (15 Sep 2014): dive-team leader confirmed his team never found the bell, only a shipwreck, info officer: 'the bell has not been discovered yet'; Malorie's (Oct 2026): the expedition found only old barges and unrelated wreckage. Searcher named only in facts, not in VO.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Great_Bell_of_Dhammazedi",
+    "https://www.nationthailand.com/international/30243337",
+    "https://english.dvb.no/mp-bell-search-was-a-national-shenanigan-burma-myanmar/",
+    "https://www.maloriesadventures.com/blog/the-great-bell-of-dhammazedi-sank-in-1608-and-nobody-has-found-it-since/"
+   ]
+  },
+  {
+   "claim": "It may lie beneath deep mud ('It may lie beneath deep mud'): Wikipedia: may be buried under up to 25 ft (7.6 m) of mud; DVB 2014: silt layers make recovery very difficult; other accounts: some 8 m of sediment. Kept as 'may'.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Great_Bell_of_Dhammazedi",
+    "https://english.dvb.no/renewed-search-underway-for-the-fabled-dhammazedi-bell/",
+    "https://en.wikipedia.org/wiki/List_of_heaviest_bells"
+   ]
+  },
+  {
+   "claim": "Still unsolved as of Nov 2026: Malorie's Adventures (dated 16 Oct 2026): 'sank in 1608 and nobody has found it since', nothing recovered; Wikipedia (Great Bell of Dhammazedi, current): has not been found, searches continue; Wikipedia List of heaviest bells (current): 'remains buried to this day', disqualified until recovered. Searches for 2024-2026 news found no recovery or confirmed find; the only 'found' claim (Aug 2014) was not substantiated.",
+   "sources": [
+    "https://www.maloriesadventures.com/blog/the-great-bell-of-dhammazedi-sank-in-1608-and-nobody-has-found-it-since/",
+    "https://en.wikipedia.org/wiki/Great_Bell_of_Dhammazedi",
+    "https://en.wikipedia.org/wiki/List_of_heaviest_bells",
+    "https://www.nationthailand.com/international/30243337"
+   ]
+  },
+  {
+   "claim": "BLIND CHECK 2026-11-25: FIX applied. Checker: 'claimed... Nothing was raised' reads as if the bell was found and simply left there; the 2014 team (leader announced 26 Aug 2014) offered no evidence, the search was called off, an MP called it a 'national shenanigan'. Checker proposed 'The claim proved false.'; builder used the more conservative 'The claim was never proven.' (sources show it unsubstantiated, not disproved), cap NOTHING RAISED -> CLAIM UNPROVEN, caption mirrored. Checked hardest: cast 1484 for Shwedagon; de Brito seized it 1608 to melt for cannon; sank where the Bago and Yangon rivers meet; no 2025-26 recovery (dated pages were 2014 articles with current header dates).",
+   "sources": [
+    "https://english.dvb.no/mp-bell-search-was-a-national-shenanigan-burma-myanmar/",
+    "https://en.wikipedia.org/wiki/Great_Bell_of_Dhammazedi",
+    "https://www.bangkokpost.com/world/442505/myanmar-mp-says-dhammazedi-bell-search-a-national-shenanigan"
+   ]
+  }
+ ]
+}

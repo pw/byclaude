@@ -1,0 +1,50 @@
+{
+ "out": "short-su-alarictomb",
+ "kicker": "THE TOMB OF ALARIC",
+ "frame": "bleed",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "alarictomb",
+   "img": "B01",
+   "vo": "Calabria. Four hundred and ten. Alaric, king of the Visigoths, had just taken Rome. Within months, he died near Cosenza.",
+   "cap": "CALABRIA · 410",
+   "motion": "alarictomb/motion/B01-kling25-a.mp4"
+  },
+  {
+   "src": "alarictomb",
+   "img": "B02",
+   "vo": "Jordanes, a historian writing more than a century later, said his people turned the river Busento aside, and buried him in its bed with many treasures.",
+   "cap": "BURIED IN\nTHE RIVERBED",
+   "amber": true
+  },
+  {
+   "src": "alarictomb",
+   "img": "B03",
+   "vo": "Then they let the river flow back.",
+   "cap": "THE RIVER\nRETURNED"
+  },
+  {
+   "src": "alarictomb",
+   "img": "B04",
+   "vo": "Diggers searched the river in seventeen forty-five, and in the nineteen-thirties. Neither found it.",
+   "cap": "DUG IN\n1745",
+   "amber": true
+  },
+  {
+   "src": "alarictomb",
+   "img": "B05",
+   "vo": "In twenty fifteen, Cosenza announced a search with radar and drones. Italy's culture ministry said there was no evidence. The grave has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

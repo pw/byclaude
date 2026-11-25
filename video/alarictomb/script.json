@@ -1,0 +1,129 @@
+{
+ "title": "The Tomb of Alaric",
+ "subtitle": "The Busento river, Cosenza, Calabria · 410",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Muted documentary still, a quiet stony river valley in the hills of Calabria with pale round riverbed stones, clear shallow water and dark green wooded slopes, timeless late-antique atmosphere, soft silver and old-gold light against cool grey-green shadow, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces, no hands, no figures, no animals.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Calabria. Four hundred and ten. Alaric, king of the Visigoths, had just taken Rome. Within months, he died near Cosenza.",
+   "cap": "CALABRIA · 410",
+   "img": "A clear shallow river running over smooth pale grey and ochre stones in a quiet green valley in Calabria, the moving water centred in the frame and flowing straight toward the viewer, soft white ripples and small rapids catching warm low afternoon light so the current reads clearly, gentle mist drifting low over the water, wooded hills softly out of focus behind, no buildings, no bridges, no people, no animals, no lettering."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "Jordanes, a historian writing more than a century later, said his people turned the river Busento aside, and buried him in its bed with many treasures.",
+   "cap": "BURIED IN\nTHE RIVERBED",
+   "amber": true,
+   "img": "A dry riverbed of pale wet stones in a narrow wooded valley, the river turned aside and running in a shallow side channel along the left edge, in the exact centre of the frame a single freshly dug empty pit in the gravel of the old bed with damp dark earth at its rim, nothing inside it, soft grey evening light with low mist over the stones, no people, no tools, no objects, no lettering."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "Then they let the river flow back.",
+   "cap": "THE RIVER\nRETURNED",
+   "img": "A river flowing back into its stony bed in a quiet wooded valley, the water spreading smoothly over pale round stones in the centre of the frame, a wide gentle sheet of moving clear water with soft ripples and a few small eddies catching cool silver dusk light, thin mist drifting just above the surface, dark green trees on both banks, no people, no animals, no lettering."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "Diggers searched the river in seventeen forty-five, and in the nineteen-thirties. Neither found it.",
+   "cap": "DUG IN\n1745",
+   "amber": true,
+   "img": "An old abandoned excavation trench cut into a gravel riverbank beside a slow shallow river, centred in the frame, rough timber planks bracing its sides, the bottom holding only wet stones and still water, a weathered wooden ladder leaning against one wall, pale overcast light and soft mist over the river behind, wooded hills fading into haze, no people, no hands, no tools in use, no lettering."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "In twenty fifteen, Cosenza announced a search with radar and drones. Italy's culture ministry said there was no evidence. The grave has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true,
+   "img": "Two calm rivers meeting in a wide stony confluence at blue dusk, the joined water flowing slowly through the centre of the frame, soft mist lying low over the surface, the meeting point of the two currents clearly visible as a gentle seam of ripples in the middle third, pale stones along both banks, dark wooded hills under a fading violet sky, no buildings, no bridges, no statues, no people, no lettering."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Alaric, king of the Visigoths, took Rome on 24 August 410 (three days of looting), then marched south into Calabria (Bruttium) intending to cross to Sicily and Africa; his ships were wrecked in the Strait of Messina ('CALABRIA · 410', 'had just taken Rome'). Wording 'taken Rome' chosen over 'sacked'.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sack_of_Rome_(410)",
+    "https://en.wikipedia.org/wiki/Alaric_I",
+    "https://archive.org/stream/gothichistoryofj00jorduoft/gothichistoryofj00jorduoft_djvu.txt"
+   ]
+  },
+  {
+   "claim": "Alaric died of illness at Consentia (modern Cosenza) within months of taking Rome: Sack of Rome (410) wiki 'died of illness at Consentia in late 410, mere months after the sack'; Alaric I wiki 'during the early months of 411 ... took ill and died at Consentia'; Jordanes Getica 158 places the death in Bruttium before the burial at Consentia. Death year (410 vs 411) disputed, so the VO says 'within months' and the year 410 is tied to the capture of Rome and his presence in Calabria, not to the death.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sack_of_Rome_(410)",
+    "https://en.wikipedia.org/wiki/Alaric_I",
+    "https://archive.org/stream/gothichistoryofj00jorduoft/gothichistoryofj00jorduoft_djvu.txt"
+   ]
+  },
+  {
+   "claim": "Jordanes wrote the Getica about 551 AD (sixth century), i.e. more than a century after 410, and is the only source for Alaric's death and burial; his reliability is long debated (Mediaeval Sophia: 'L'unica fonte che ci narra la sua morte e sepoltura è Jordanes, sull'attendibilità del quale si è lungamente dibattuto').",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jordanes",
+    "https://mediaevalsophia.net/_fascicoli/17/09%20Roma.pdf"
+   ]
+  },
+  {
+   "claim": "Jordanes' account (Getica XXX.158, Mierow translation): 'turning from its course the river Busentus near the city of Consentia ... they led a band of captives into the midst of its bed to dig out a place for his grave. In the depths of this pit they buried Alaric, together with many treasures, and then turned the waters back into their channel.' Told in the VO as Jordanes' account ('said'). Jordanes' next sentence (the fate of the diggers) deliberately LEFT OUT, per brief.",
+   "sources": [
+    "https://archive.org/stream/gothichistoryofj00jorduoft/gothichistoryofj00jorduoft_djvu.txt",
+    "https://mediaevalsophia.net/_fascicoli/17/09%20Roma.pdf",
+    "https://en.wikipedia.org/wiki/Busento",
+    "https://en.wikipedia.org/wiki/Alaric_I"
+   ]
+  },
+  {
+   "claim": "Searches: in 1745 Ettore Capecelatro, governor of Cosenza, set more than a hundred workers digging at the Busento-Crati confluence; work stopped on the fifth day without result (Mediaeval Sophia); Ancient Origins: a huge mid-18th-century project, 'nothing was found'. In 1937 a dig along the Busento a few km from Cosenza reached eight metres and turned up only some bones (Mediaeval Sophia, citing Cronaca di Calabria 9 May 1937); Himmler visited the search (IBTimes: 1937; Corriere della Calabria: 1938) -> VO says 'the nineteen-thirties'. 'Neither found it' = neither found the tomb. Nazi/Himmler angle deliberately left out.",
+   "sources": [
+    "https://mediaevalsophia.net/_fascicoli/17/09%20Roma.pdf",
+    "https://www.ancient-origins.net/node/4229",
+    "https://www.ibtimes.co.uk/finding-king-alarics-tomb-search-750m-worth-treasure-1526545",
+    "https://www.corrieredellacalabria.it/2024/08/25/alarico-quarantanni-di-ipotesi-se-il-cilento-ruba-il-tesoro-a-cosenza/"
+   ]
+  },
+  {
+   "claim": "In October 2015 Cosenza (mayor Mario Occhiuto, with local/provincial authorities) announced an official search for the tomb using drones and ground-penetrating radar (IBTimes 31 Oct 2015: drones, ground-penetrating radar, infrared, electromagnetic tools, five candidate sites; Corriere della Calabria 2024: 'droni e georadar' announced in 2015; Ancient Origins 18 Oct 2015).",
+   "sources": [
+    "https://www.ibtimes.co.uk/finding-king-alarics-tomb-search-750m-worth-treasure-1526545",
+    "https://www.corrieredellacalabria.it/2024/08/25/alarico-quarantanni-di-ipotesi-se-il-cilento-ruba-il-tesoro-a-cosenza/",
+    "https://www.ancient-origins.net/node/4229"
+   ]
+  },
+  {
+   "claim": "Italy's culture ministry turned the dig down citing no evidence: Corriere della Calabria (25 Aug 2024): the following year minister Franceschini rejected it citing 'la mancanza assoluta della benché minima evidenza'; Blitz Quotidiano (17 Nov 2016): 'per il Ministero dei beni culturali è solo leggenda', a flat no to publicly funded digs, 'nessuna prova archeologica è stata rinvenuta fino ad oggi'.",
+   "sources": [
+    "https://www.corrieredellacalabria.it/2024/08/25/alarico-quarantanni-di-ipotesi-se-il-cilento-ruba-il-tesoro-a-cosenza/",
+    "https://archivio.blitzquotidiano.it/cronaca-italia/tesoro-di-alarico-esiste-hitler-lo-cercava-ma-per-il-mibact-e-solo-leggenda-2588352"
+   ]
+  },
+  {
+   "claim": "The Busento flows through Cosenza and joins the Crati in the centre of the city.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Busento",
+    "https://mediaevalsophia.net/_fascicoli/17/09%20Roma.pdf"
+   ]
+  },
+  {
+   "claim": "Still unsolved as of Nov 2026: Gazzetta del Sud (13 Jul 2025): 'Il tesoro di Alarico? Mai trovato.'; Corriere della Calabria (25 Aug 2024): location still a mystery, the loot 'found' only by AI renderings; Futura Sciences (17 May 2024): 'Alaric reste pour l'heure introuvable'; Wikipedia Busento: 'The king's grave and its fabulous treasure have never been found.' Searches for 2025-2026 news found no discovery reported. Note: a 2024 rival theory places the grave on the Bussento in Cilento, which only widens the unknown.",
+   "sources": [
+    "https://cosenza.gazzettadelsud.it/articoli/societa/2025/07/13/cosenza-alarico-e-la-leggenda-dimenticata-il-brand-territoriale-in-soffitta-0885848a-07be-471c-a8db-ba5318082efa/",
+    "https://www.corrieredellacalabria.it/2024/08/25/alarico-quarantanni-di-ipotesi-se-il-cilento-ruba-il-tesoro-a-cosenza/",
+    "https://www.futura-sciences.com/sciences/actualites/histoire-mystere-tombe-alaric-homme-fait-tomber-rome-son-tresor-inestimable-113438/",
+    "https://en.wikipedia.org/wiki/Busento"
+   ]
+  },
+  {
+   "claim": "BLIND CHECK 2026-11-25: CLEAN (checked hardest: 1745 Capecelatro dig at the Busento-Crati confluence stopped on day five, 1937 dig along the Busento found nothing (Roma, Mediaeval Sophia 17, 2015); 2015 radar/drone search announced, MiBACT Nov 2016 'solo leggenda' / 'non c'e alcun indizio' (so the undated ministry line, read after 2015, is true); LaC News24 16 Nov 2025 'tutto resta sospeso', Soprintendenza calls every hypothesis unverified; no 2026 find).",
+   "sources": [
+    "https://mediaevalsophia.net/_fascicoli/17/09%20Roma.pdf",
+    "https://archivio.blitzquotidiano.it/cronaca-italia/tesoro-di-alarico-esiste-hitler-lo-cercava-ma-per-il-mibact-e-solo-leggenda-2588352",
+    "https://www.lacnews24.it/cultura/alla-ricerca-di-alarico-il-geologo-cosentino-che-sfida-secoli-di-leggenda-la-tomba-sotto-il-centro-storico-di-cosenza-qzhq3hh8"
+   ]
+  }
+ ]
+}

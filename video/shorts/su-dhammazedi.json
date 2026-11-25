@@ -1,0 +1,50 @@
+{
+ "out": "short-su-dhammazedi",
+ "kicker": "THE BELL OF DHAMMAZEDI",
+ "frame": "bleed",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "dhammazedi",
+   "img": "B01",
+   "vo": "A giant bell has been lost in a river for four centuries. Cast in fourteen eighty-four for Myanmar's Shwedagon Pagoda, it was said to be the largest bell ever made.",
+   "cap": "A BELL IN\nTHE RIVER",
+   "motion": "dhammazedi/motion/B01-kling25-a.mp4"
+  },
+  {
+   "src": "dhammazedi",
+   "img": "B02",
+   "vo": "In sixteen oh eight, Portuguese mercenary Filipe de Brito seized it, to melt down for cannons.",
+   "cap": "TAKEN\nIN 1608",
+   "amber": true
+  },
+  {
+   "src": "dhammazedi",
+   "img": "B03",
+   "vo": "Where the Yangon and Bago rivers meet, the vessel carrying it sank under the weight.",
+   "cap": "IT\nSANK"
+  },
+  {
+   "src": "dhammazedi",
+   "img": "B04",
+   "vo": "Divers have searched for decades. In twenty fourteen, a team claimed to have found it. The claim was never proven.",
+   "cap": "CLAIM\nUNPROVEN",
+   "amber": true
+  },
+  {
+   "src": "dhammazedi",
+   "img": "B05",
+   "vo": "It may lie beneath deep mud. The bell has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": ""
+}

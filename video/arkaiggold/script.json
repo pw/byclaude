@@ -1,0 +1,174 @@
+{
+ "title": "The Loch Arkaig Gold",
+ "subtitle": "Loch Arkaig, Scottish Highlands · 1746",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Muted documentary still, a remote Scottish Highland glen of dark freshwater lochs, birch and Scots pine woods, mossy boulders and heather, mid-eighteenth century, cool silver-grey and deep moss green with warm old-gold glints, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no flags, no people, no faces, no hands, no figures, no animals, no birds, no fire, no smoke.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Scottish Highlands, seventeen forty-six. Weeks after Culloden, two French ships landed gold on the west coast for the Jacobite cause.",
+   "cap": "WEST COAST · 1746",
+   "img": "A long still Highland freshwater loch at dawn seen from its shore, one small round island thick with dark Scots pines sitting alone in the exact centre of the frame on the water, soft white mist drifting low across the dark glassy surface around it, wooded hillsides of birch and pine on both shores fading into the haze, pale gold morning light breaking over the hills and lighting the mist and the island so it reads clearly at small size, no boats, no buildings, no people, no animals, no birds, no lettering."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "The rising was already lost. Seven caskets came ashore. One was stolen almost at once.",
+   "cap": "7 CASKETS\nOF GOLD",
+   "amber": true,
+   "img": "Seven small dark wooden caskets bound with iron bands, lids shut, set in a short row on a rocky pebble shore at the edge of a grey sea loch, centred in the middle third of the frame, cool overcast light with a faint warm gleam on the iron, low mist over the water and dark wooded hills behind, no gold visible, no ship, no people, no hands, no animals, no lettering."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "The other six were carried inland and hidden near Loch Arkaig. Only a few men knew where.",
+   "cap": "HIDDEN\nINLAND",
+   "img": "A narrow old stony path winding up through a wood of moss-covered birch and Scots pine in a Highland glen, one huge moss-covered boulder standing beside the path in the exact centre of the frame, thin mist hanging between the trunks, soft grey-green light falling on the boulder so it reads clearly, ferns and heather around it, no people, no animals, no objects, no lettering."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "Some reached Bonnie Prince Charlie in France. Over the rest, his followers accused one another.",
+   "cap": "ACCUSATIONS",
+   "amber": true,
+   "img": "A single folded old paper letter closed with an unbroken dark red wax seal, lying alone on a rough wooden table in the exact centre of the frame inside a dim stone room, cool grey light from a small deep window falling across it so it reads clearly, no writing visible, a plain stone wall softly out of focus behind, no candle, no people, no hands, no lettering."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "Gold coins later turned up in nearby woods. Some say the rest was gone long ago. If it is still there, it has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true,
+   "img": "One small worn gold coin half sunk in green moss and fallen birch leaves on a woodland floor, centred in the frame, its face worn smooth with no legible design or lettering, one soft beam of pale light catching the gold, a still grey loch glimpsed faintly through the trees far behind, no people, no hands, no animals, no other coins, no lettering."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Place/year: the gold was hidden near Loch Arkaig in the Scottish Highlands in 1746 ('LOCH ARKAIG · 1746'). The ships themselves landed on the west coast at Loch nan Uamh / Arisaig, about 20 miles away, so the VO does not say the ships reached Loch Arkaig.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Loch_Arkaig_treasure",
+    "https://www.undiscoveredscotland.co.uk/speanbridge/locharkaig/index.html",
+    "https://coast.scot/stories/the-jacobite-gold-at-loch-arkaig/",
+    "https://www.ancient-origins.net/node/7848"
+   ]
+  },
+  {
+   "claim": "'Weeks after Culloden': the battle was 16 April 1746; the ships arrived after it. Landing dates disagree (Spink 29 Apr, Wikipedia 30 Apr, West Highland Museum 3 May, Ancient Origins 10 May), so the VO says only 'weeks after'. Coast.scot: 'a couple of weeks after'; WHM: 'two weeks after'.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Loch_Arkaig_treasure",
+    "https://coast.scot/stories/the-jacobite-gold-at-loch-arkaig/",
+    "https://westhighlandmuseum.org.uk/?p=1944",
+    "https://spink.com/media/view?id=572",
+    "https://www.ancient-origins.net/node/7848"
+   ]
+  },
+  {
+   "claim": "Two French ships, the Mars and the Bellona (Bellone), brought money to fund the Jacobite cause; it is described as Spanish money (Wikipedia, Hidden Scotland 'funds and supplies from France and Spain', coast.scot 'Spain sent money'), in Louis d'or (Spink, WHM). VO says only 'gold for the Jacobite cause'. Amount deliberately not given: sources disagree (1,200,000 livres per Wikipedia/Express/Ancient Origins; 36,000 louis d'or per WHM; GBP 35,000 per Spink).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Loch_Arkaig_treasure",
+    "https://hiddenscotland.com/stories/the-lost-jacobite-gold",
+    "https://westhighlandmuseum.org.uk/?p=1944",
+    "https://spink.com/media/view?id=572",
+    "https://www.ancient-origins.net/node/7848",
+    "https://coast.scot/stories/the-jacobite-gold-at-loch-arkaig/"
+   ]
+  },
+  {
+   "claim": "'The rising was already lost': the money arrived after the Jacobite defeat at Culloden.",
+   "sources": [
+    "https://coast.scot/stories/the-jacobite-gold-at-loch-arkaig/",
+    "https://en.wikipedia.org/wiki/Loch_Arkaig_treasure",
+    "https://hiddenscotland.com/stories/the-lost-jacobite-gold",
+    "https://scottishdailyexpress.co.uk/lifestyle/hidden-gem-highland-loch-treasure-33503936"
+   ]
+  },
+  {
+   "claim": "Seven caskets of gold came ashore; one was stolen almost at once (Wikipedia: stolen by men of a named clan chief, deliberately not named; Hidden Scotland: 'One was almost immediately stolen'; Express 2024: seven caskets, one stolen).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Loch_Arkaig_treasure",
+    "https://hiddenscotland.com/stories/the-lost-jacobite-gold",
+    "https://scottishdailyexpress.co.uk/lifestyle/hidden-gem-highland-loch-treasure-33503936"
+   ]
+  },
+  {
+   "claim": "The other six were carried inland (about 20 miles overland per Ancient Origins) and hidden/buried near Loch Arkaig.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Loch_Arkaig_treasure",
+    "https://www.ancient-origins.net/node/7848",
+    "https://coast.scot/stories/the-jacobite-gold-at-loch-arkaig/",
+    "https://scottishdailyexpress.co.uk/lifestyle/hidden-gem-highland-loch-treasure-33503936"
+   ]
+  },
+  {
+   "claim": "'Only a few men knew where': coast.scot: hiding place known 'only to a few trusted Jacobite supporters'; Wikipedia/Ancient Origins: Murray of Broughton knew the secret, then it passed to Lochiel and then to Cluny Macpherson. Names deliberately left out of VO.",
+   "sources": [
+    "https://coast.scot/stories/the-jacobite-gold-at-loch-arkaig/",
+    "https://en.wikipedia.org/wiki/Loch_Arkaig_treasure",
+    "https://www.ancient-origins.net/node/7848"
+   ]
+  },
+  {
+   "claim": "Some of the money reached Bonnie Prince Charlie in France (he escaped to France in Sept 1746); Spink/Downer: about GBP 6,000 was dug up, carried to London and sent on as notes to the Prince in France.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Loch_Arkaig_treasure",
+    "https://scottishdailyexpress.co.uk/lifestyle/hidden-gem-highland-loch-treasure-33503936",
+    "https://spink.com/media/view?id=572",
+    "https://www.ancient-origins.net/node/7848"
+   ]
+  },
+  {
+   "claim": "'Over the rest, his followers accused one another': coast.scot: survivors 'accused those who knew the secret of theft and embezzlement'; Hidden Scotland: 'Fingers were pointed', chiefs accused of misappropriating it; Wikipedia/Ancient Origins: claims and counter-claims, Charles accused Cluny of embezzlement. No individual named or accused in VO/caption; Archibald Cameron's 1753 return and execution deliberately left out (violence).",
+   "sources": [
+    "https://coast.scot/stories/the-jacobite-gold-at-loch-arkaig/",
+    "https://hiddenscotland.com/stories/the-lost-jacobite-gold",
+    "https://en.wikipedia.org/wiki/Loch_Arkaig_treasure",
+    "https://www.ancient-origins.net/node/7848"
+   ]
+  },
+  {
+   "claim": "Gold coins later turned up in nearby woods: Clan Cameron records mention French gold coins found buried in nearby woods in the 1850s ('later'; caption '1850s').",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Loch_Arkaig_treasure",
+    "https://coast.scot/stories/the-jacobite-gold-at-loch-arkaig/",
+    "https://www.ancient-origins.net/node/7848"
+   ]
+  },
+  {
+   "claim": "'Some say the rest was gone long ago': Spink (Martyn Downer, 2020) says the rest had 'already been pilfered or given away in the Highlands' and 'it isn't there'; Sunday Telegraph 2 Aug 2020 'There's no gold in them thar hills after all'; Hidden Scotland: Cluny told Charles it had all been used. Softened to 'gone' (covers spent, taken, given away).",
+   "sources": [
+    "https://spink.com/media/view?id=572",
+    "https://www.pressreader.com/uk/the-sunday-telegraph/20200802/282419876589479",
+    "https://hiddenscotland.com/stories/the-lost-jacobite-gold"
+   ]
+  },
+  {
+   "claim": "'If it is still there, it has never been found': Undiscovered Scotland: 'the hiding place, it is said, has never been found'; coast.scot: 'If the treasure is there, it is still to be discovered'; WHM: 'the gold has not been found'; Ancient Origins: bulk still unlocated.",
+   "sources": [
+    "https://www.undiscoveredscotland.co.uk/speanbridge/locharkaig/index.html",
+    "https://coast.scot/stories/the-jacobite-gold-at-loch-arkaig/",
+    "https://westhighlandmuseum.org.uk/?p=1944",
+    "https://www.ancient-origins.net/node/7848",
+    "https://hiddenscotland.com/stories/the-lost-jacobite-gold"
+   ]
+  },
+  {
+   "claim": "Still unsolved as of Nov 2026: Scottish Daily Express (20 Aug 2024) says the haul 'seems to have disappeared' and may still be around Loch Arkaig; no 2024-2026 report of the hoard being found (searched Nov 2026: only unrelated Culloden projectile finds, Univ. of Glasgow / NTS Oct 2025). Undiscovered Scotland (current page) and coast.scot still describe it as never found. Caveat: Spink/Downer (2020) claims 'the mystery has been solved, it isn't there' (i.e. spent/taken, not found) — hence the 'if it is still there' phrasing.",
+   "sources": [
+    "https://scottishdailyexpress.co.uk/lifestyle/hidden-gem-highland-loch-treasure-33503936",
+    "https://www.undiscoveredscotland.co.uk/speanbridge/locharkaig/index.html",
+    "https://coast.scot/stories/the-jacobite-gold-at-loch-arkaig/",
+    "https://www.gla.ac.uk/schools/humanities/research/archaeologyresearch/latestnews/archiveofnews/2025/headline_1226972_en.html",
+    "https://spink.com/media/view?id=572"
+   ]
+  },
+  {
+   "claim": "BLIND CHECK 2026-11-25: FIX applied. With 'Loch Arkaig' + the place cap on beat 1, a viewer reads that the ships sailed into Loch Arkaig, an inland freshwater loch; the Mars and Bellona landed the gold at Loch nan Uamh, Arisaig, 30 Apr 1746 and the six caskets were carried to Arkaig later. Beat 1 vo -> 'Scottish Highlands, seventeen forty-six. Weeks after Culloden, two French ships landed gold on the west coast for the Jacobite cause.', cap LOCH ARKAIG · 1746 -> WEST COAST · 1746, beat 3 'near the loch' -> 'near Loch Arkaig'. caption.txt already said 'Scotland's west coast' (unchanged). Ending kept as worded per checker (Spink/Downer 2020 'solved' claim is covered by 'Some say the rest was gone long ago'). Checked: 7 caskets, one stolen by Barrisdale's men; ~GBP 6,000 reached Charles; Cluny accused; French coins in nearby woods 1850s; no 2025-26 find.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Loch_Arkaig_treasure",
+    "https://spink.com/media/view?id=572"
+   ]
+  }
+ ]
+}

@@ -39,5 +39,43 @@
   }
  ],
  "subjects_note": "Four subjects chosen by the builder 2026-11-24 BEFORE assignment, ordered by seeded shuffle random.Random('order-opening1'), then mapped in order onto the pre-registered slots (build-opening1.md step 1). All LONG, bleed, stamp, origin fresh, kind anomaly; hooks seeded 'hook-opening1-<name>' (pekingfossils detail, rest place).",
- "motion_model": "fal.ai fal-ai/kling-video/v2.5-turbo/pro/image-to-video, 5 s (5.04 s, 1080x1920, 24 fps) from the exact B01 still, $0.35/clip (3 clips made incl. 1 rejected = $1.05). build_short.py slows the clip evenly to fill beat 0 (flordelamar x1.85, pekingfossils x1.28) with framerate= blending; overlay (scrims, kicker, caption) identical to a still beat. Read: flordelamar = clear in-scene motion (swells, ship drifting); pekingfossils = mostly a slow 3D camera push with faint dust (the weaker motion opening) - note this when reading pair 2."
+ "motion_model": "fal.ai fal-ai/kling-video/v2.5-turbo/pro/image-to-video, 5 s (5.04 s, 1080x1920, 24 fps) from the exact B01 still, $0.35/clip (3 clips made incl. 1 rejected = $1.05). build_short.py slows the clip evenly to fill beat 0 (flordelamar x1.85, pekingfossils x1.28) with framerate= blending; overlay (scrims, kicker, caption) identical to a still beat. Read: flordelamar = clear in-scene motion (swells, ship drifting); pekingfossils = mostly a slow 3D camera push with faint dust (the weaker motion opening) - note this when reading pair 2.",
+ "batch2": {
+  "registered": "2026-11-25T05:00Z",
+  "seed": "opening-test-2026-11-25-batch2",
+  "design": "two within-day pairs, motion at 01:45Z both days (counterbalances batch 1, where both motion films drew 15:45Z). Voice = house male (Atlas) on all four: the voice arm reaches n=5 with batch 1, so it is no longer crossed. LONG (length call due ~11-27; read so far long ahead: pair ratios short/long 0.75, 0.88, 0.45). After this batch: motion n=4, still n=4; one more pair reaches n=5.",
+  "motion_rule": "each motion clip must show real IN-SCENE motion (water, fog, light, cloth, dust that reads on a phone), not mainly a camera push; pick subjects whose B01 naturally holds something that moves. If a clip is mostly camera push, regenerate once (<= $0.60/clip), else note it.",
+  "films": [
+   {
+    "slot": "12-02 01:45Z",
+    "voice": "male",
+    "opening": "motion",
+    "subject": "dhammazedi",
+    "hook": "detail"
+   },
+   {
+    "slot": "12-02 15:45Z",
+    "voice": "male",
+    "opening": "still",
+    "subject": "mahoganyship",
+    "hook": "place"
+   },
+   {
+    "slot": "12-03 01:45Z",
+    "voice": "male",
+    "opening": "motion",
+    "subject": "alarictomb",
+    "hook": "place"
+   },
+   {
+    "slot": "12-03 15:45Z",
+    "voice": "male",
+    "opening": "still",
+    "subject": "arkaiggold",
+    "hook": "place"
+   }
+  ],
+  "subjects_note": "Four subjects chosen by the builder 2026-11-25 ~04:53Z BEFORE assignment (class: lost object / lost treasure / lost tomb / vanished ship; all with a natural moving element in the first image: river current, sand + surf, river, loch mist), status-checked 2024-26 (none found/recovered). Alphabetical [alarictomb, arkaiggold, dhammazedi, mahoganyship] shuffled by random.Random('order-opening2') -> dhammazedi, mahoganyship, alarictomb, arkaiggold, mapped in order onto the slots. Hooks random.Random('hook-opening2-<name>'): dhammazedi detail, rest place. kind anomaly x4 (lost object/treasure/tomb/ship; no named victim at the centre). See build-opening2.md step 1.",
+  "motion_model": "fal.ai fal-ai/kling-video/v2.5-turbo/pro/image-to-video, 5 s (5.04 s, 1076x1920, 24 fps) from the exact B01 still, $0.35/clip, 2 clips, 0 rejected = $0.70. Prompts open 'Static locked-off camera, no zoom, no push, no pan' and name only the water's own motion. build_short slows the clip evenly to fill beat 0 (dhammazedi x2.11 to 10.65 s, alarictomb x1.73 to 8.73 s; framerate= blending). Read (frames + Farneback flow, median px per 4 frames, static box vs water box; build-opening2.md): dhammazedi = locked camera (static 0.01 px), the centred eddy turns and the current runs left to right (water 1.37 px): clear IN-SCENE motion, the strongest motion opening so far. alarictomb = locked camera (static 0.02 px), shallow rapids churn over the stones and mist drifts (water 0.35 px, consec-diff 1.89): real in-scene motion but small-amplitude, and the busiest water sits in the darkened lower third under the bleed scrim, so on a phone it reads as a gently moving river rather than an obvious movement. For comparison batch 1: flordelamar static 0.07 / water 1.13 (in-scene); pekingfossils static 0.64 / water 0.79 (camera push). Both batch-2 clips meet the motion_rule; note alarictomb as the subtler one when reading pair 4."
+ }
 }

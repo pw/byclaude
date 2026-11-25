@@ -972,6 +972,58 @@
    "voice": "male",
    "test": "opening-1130",
    "opening": "motion"
+  },
+  "dhammazedi": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "length": "long",
+   "kind": "anomaly",
+   "hook": "detail",
+   "voice": "male",
+   "test": "opening-1130",
+   "opening": "motion"
+  },
+  "mahoganyship": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "length": "long",
+   "kind": "anomaly",
+   "hook": "place",
+   "voice": "male",
+   "test": "opening-1130",
+   "opening": "still"
+  },
+  "alarictomb": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "length": "long",
+   "kind": "anomaly",
+   "hook": "place",
+   "voice": "male",
+   "test": "opening-1130",
+   "opening": "motion"
+  },
+  "arkaiggold": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "bleed",
+   "format": "reel",
+   "length": "long",
+   "kind": "anomaly",
+   "hook": "place",
+   "voice": "male",
+   "test": "opening-1130",
+   "opening": "still"
   }
  },
  "byclaude": {

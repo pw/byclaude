@@ -1,0 +1,119 @@
+{
+ "title": "The Mahogany Ship",
+ "subtitle": "Warrnambool, Victoria, Australia · 1836",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "Muted documentary still, a windswept coast of tall pale sand dunes above grey Southern Ocean surf in south-west Victoria, Australia, nineteenth century, pale gold sand, cold blue-grey sea and sky with warm low sun, melancholy and uncanny, cinematic vertical composition with one centred subject, fine film grain. Single image, not a collage, no text, no signage, no people, no faces, no hands.",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "Warrnambool, Australia. Eighteen thirty-six. The story goes that stranded whalers, walking home along the coast, saw an old wreck high in the dunes.",
+   "cap": "WARRNAMBOOL · 1836",
+   "img": "One tall smooth pale sand dune standing alone in the exact centre of the frame, wind blowing a long bright veil of fine sand off its sharp crest, warm low afternoon sun lighting the sand gold so the dune reads clearly at small size, white surf rolling in on a grey-blue sea beyond, marram grass bending on the lower slopes, empty beach, no wreck, no boats, no people, no animals, no birds, no lettering."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "Its timber, they said, was dark like mahogany, very hard, and unlike any wood they knew.",
+   "cap": "DARK AS\nMAHOGANY",
+   "amber": true,
+   "img": "Close view of a single weathered plank of very dark red-brown timber with deep fine grain, lying half sunk in pale wind-rippled sand in the centre of the frame, low warm light raking across the wood so its dark colour and grain read clearly, a thin stream of sand drifting over one end, soft grey sky and dune edge out of focus behind, no ship, no people, no hands, no lettering."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "Over thirty accounts followed, into the eighteen-eighties. Then, it is said, the drifting sand covered it.",
+   "cap": "LAST SEEN\n1880s",
+   "img": "A broad smooth face of a high coastal sand dune in the centre of the frame, sand slipping and streaming down its slope in soft rivulets, the surface covered in fine wind ripples, nothing visible beneath, pale overcast light with a faint warm glow, grey sea glimpsed at the edge, no wreck, no people, no animals, no lettering."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "In nineteen ninety-two, Victoria offered a quarter of a million dollars to whoever found it. The reward was withdrawn, unclaimed.",
+   "cap": "$250,000\nREWARD",
+   "amber": true,
+   "img": "A single long old iron probing rod standing upright in the crest of a pale sand dune in the exact centre of the frame, its tip driven deep into the sand, a small hollow dug around its base, wind-bent marram grass nearby, cold clear light and a wide grey sea behind, no people, no hands, no tools lying about, no lettering."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "Some say it was a Portuguese caravel. Others doubt it ever existed. It has never been found.",
+   "cap": "NEVER\nFOUND",
+   "amber": true,
+   "img": "The long line of empty coastal sand dunes at dusk seen from the beach, one tall dune centred catching the last pale light, fine sand lifting off its crest, foam from the grey surf sliding across wet sand in the foreground, a deep blue evening sky with the first faint stars, no wreck, no boats, no people, no animals, no lettering."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Place and year, framed as story ('The story goes', 'WARRNAMBOOL · 1836'): the legend dates to 1836, when survivors of a capsized whaling boat walking back along the coast toward Port Fairy reportedly saw a large wreck high in the sand dunes between Warrnambool and Port Fairy, Victoria, Australia. Sources differ on the men (two whaleboat survivors per Victorian Government/Australian Traveller; three 'marooned seal hunters' per Australian Geographic), so VO says only 'stranded whalers'. Wikipedia notes researcher Jenny Fawcett calls this 1836 'Hopkins River Incident' a foundation myth and that the earliest documented account is an 1847 Portland newspaper; hence the legend framing.",
+   "sources": [
+    "https://web.archive.org/web/20130927092538/http://www.dpcd.vic.gov.au/heritage/maritime/shipwrecks/shipwreck-stories/mahogany-ship",
+    "https://www.greatoceanroadauthority.vic.gov.au/Stay-and-Explore/The-Historic-Shipwreck-Trail/Mahogany-Ship-1836-not-found",
+    "https://australiangeographic.com.au/?p=337716",
+    "https://australiantraveller.com/australia/074-search-the-hills-for-the-mahogany-ship",
+    "https://en.wikipedia.org/wiki/Mahogany_Ship"
+   ]
+  },
+  {
+   "claim": "Reported (VO 'they said'): the wreck was described as built of dark timber resembling mahogany, which gave it its name, and its hull design was reported as unlike the vessels on that coast (Victorian Government: 'dark timber, possibly mahogany, and the ship's hull design were vastly different from the vessels which sailed the local waters'; GORA: 'unusually dark timber resembling mahogany'; Wikipedia: Mason in 1876 described dark timber like cedar or mahogany, and reports of 'unconventional design'). Wikipedia also notes Mason later said he did not think it was mahogany, hence 'like mahogany', not 'mahogany'.",
+   "sources": [
+    "https://web.archive.org/web/20130927092538/http://www.dpcd.vic.gov.au/heritage/maritime/shipwrecks/shipwreck-stories/mahogany-ship",
+    "https://www.greatoceanroadauthority.vic.gov.au/Stay-and-Explore/The-Historic-Shipwreck-Trail/Mahogany-Ship-1836-not-found",
+    "https://australiangeographic.com.au/?p=337716",
+    "https://en.wikipedia.org/wiki/Mahogany_Ship"
+   ]
+  },
+  {
+   "claim": "More than 30 other accounts of the wreck were recorded until the 1880s; no reported sightings since the 1880s (Victorian Government). It vanished in the 1880s, 'supposedly swallowed up by the dunes' (Australian Geographic); Dunderdale's 1898 telling, quoted by Wikipedia: 'has since been covered by the drifting sand'. VO hedged 'it is said'.",
+   "sources": [
+    "https://web.archive.org/web/20130927092538/http://www.dpcd.vic.gov.au/heritage/maritime/shipwrecks/shipwreck-stories/mahogany-ship",
+    "https://australiangeographic.com.au/?p=337716",
+    "https://en.wikipedia.org/wiki/Mahogany_Ship"
+   ]
+  },
+  {
+   "claim": "In 1992 the State Government of Victoria offered a reward of A$250,000 (a quarter of a million dollars) to anyone who could locate the wreck; the offer was withdrawn in 1993 without money having been paid (Wikipedia; Australian Geographic gives the $250,000 reward; search results for Victorian Collections record the same 1992 offer withdrawn a year later).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mahogany_Ship",
+    "https://australiangeographic.com.au/?p=337716",
+    "https://victoriancollections.net.au/items/680869111a04860dbb7ec2a7"
+   ]
+  },
+  {
+   "claim": "Theories named only as theories: a Portuguese caravel (Kenneth McIntyre, 1977), Spanish or Dutch ship, convict-built vessel; some think it is only a local legend or never existed (Victorian Government: 'Many others believe it is nothing more than an interesting local legend ... no solid evidence of the wreck at all'; Wikipedia: 'no conclusive evidence such a wreck exists'; Australian Geographic: another explanation is that the wreck never existed; ABC 2024: 'what evidence is there that this wreck ever existed?').",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mahogany_Ship",
+    "https://web.archive.org/web/20130927092538/http://www.dpcd.vic.gov.au/heritage/maritime/shipwrecks/shipwreck-stories/mahogany-ship",
+    "https://australiangeographic.com.au/?p=337716",
+    "https://www.greatoceanroadauthority.vic.gov.au/Stay-and-Explore/The-Historic-Shipwreck-Trail/Mahogany-Ship-1836-not-found",
+    "https://www.abc.net.au/listen/programs/nightlife/mahogany-ship/104668878"
+   ]
+  },
+  {
+   "claim": "Searched for since 1890 (first organised search, Wikipedia) and 'for more than 160 years' (Victorian Government), including drilling and ground-penetrating radar (Wikipedia; Australian Geographic) - caption only. Wood tested from the dunes has been eucalyptus, Australian timber, or white oak likely from another wreck (Wikipedia; Victorian Government; Australian Geographic).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mahogany_Ship",
+    "https://web.archive.org/web/20130927092538/http://www.dpcd.vic.gov.au/heritage/maritime/shipwrecks/shipwreck-stories/mahogany-ship",
+    "https://australiangeographic.com.au/?p=337716"
+   ]
+  },
+  {
+   "claim": "Still unsolved as of Nov 2026: The Standard (Warrnambool), 6 Feb 2026, 'Mystery of the Mahogany Ship: could it be hidden in plain sight?' describes 'new clues that bring it closer to discovery' (i.e. not found); Great Ocean Road Authority: 'no verified remains of the Mahogany Ship have ever been discovered'; ABC Nightlife (30 Nov 2024) asks what evidence there is that it ever existed; Wikipedia: no conclusive evidence it exists. No 2024-2026 find reported.",
+   "sources": [
+    "https://www.standard.net.au/story/9136468/mystery-of-the-mahogany-ship-could-it-be-hidden-in-plain-sight/",
+    "https://www.greatoceanroadauthority.vic.gov.au/Stay-and-Explore/The-Historic-Shipwreck-Trail/Mahogany-Ship-1836-not-found",
+    "https://www.abc.net.au/listen/programs/nightlife/mahogany-ship/104668878",
+    "https://en.wikipedia.org/wiki/Mahogany_Ship"
+   ]
+  },
+  {
+   "claim": "BLIND CHECK 2026-11-25: FIX applied. 'its shape unlike any ship on that coast' had no source; primary accounts describe the timber as dark brown, very hard and unfamiliar to the observers (Johns 2005) -> 'dark like mahogany, very hard, and unlike any wood they knew' (vo + caption). Checked hardest: 1836 whalers' story hedged as 'the story goes' (GORA: foundation myth); ~40 primary sources, sightings 1836-c.1881 ('over thirty', 'LAST SEEN 1880s'); A$250,000 reward 1992, withdrawn 1993 unclaimed; caravel theory as theory; no 2025-26 find.",
+   "sources": [
+    "https://www.scubadoctor.com.au/downloads/the_mahogany_ship_story_2005.pdf",
+    "https://www.greatoceanroadauthority.vic.gov.au/Stay-and-Explore/The-Historic-Shipwreck-Trail/Mahogany-Ship-1836-not-found",
+    "https://en.wikipedia.org/wiki/Mahogany_Ship"
+   ]
+  }
+ ]
+}
