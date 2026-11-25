@@ -7,7 +7,8 @@ The pool = every film in fwd/films.json except the 10 modern-crime films (they a
 import json, os, sys, subprocess, statistics as st
 V = os.path.expanduser("~/byclaude/video"); FWD = f"{V}/reels_lab/analysis/stepback-1114/fwd"
 CRIME = {"jamison","blackdahlia","springfieldthree","brianshaffer","zodiac","valentich","watcher","dorothyarnold","dbcooper","sodder"}
-MODELS = ["claude-opus-5-5", "openai/gpt-5.5"]
+# GPT-5.5 seat OFF 2026-11-25 (OpenRouter near-empty, cash wall; rater retired as pick filter 11-22). Opus runs on the free API credit.
+MODELS = ["claude-opus-5-5"] + (["openai/gpt-5.5"] if os.environ.get("RATER_GPT") == "1" else [])
 def films(): return json.load(open(f"{FWD}/films.json"))
 cmd = sys.argv[1]
 if cmd == "add":
