@@ -1,0 +1,48 @@
+{
+ "out": "short-su-pdandree",
+ "kicker": "ANDRÉE'S ARCTIC BALLOON",
+ "frame": "band",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "pdandree",
+   "img": "B01",
+   "vo": "This photograph waited thirty-three years in the ice. Nils Strindberg took it in July, eighteen ninety-seven, after their balloon came down.",
+   "cap": "33 YEARS\nIN THE ICE",
+   "amber": true
+  },
+  {
+   "src": "pdandree",
+   "img": "B02",
+   "vo": "Three days earlier, three Swedes lifted off from Svalbard, hoping to fly over the North Pole.",
+   "cap": "SVALBARD · 1897"
+  },
+  {
+   "src": "pdandree",
+   "img": "B03",
+   "vo": "They camped by the wreck a week, then set out on foot for land.",
+   "cap": "SET OUT\nON FOOT"
+  },
+  {
+   "src": "pdandree",
+   "img": "B04",
+   "vo": "In October, the drifting ice brought them to White Island. Within days, their diaries stop.",
+   "cap": "THE DIARIES\nSTOP",
+   "amber": true
+  },
+  {
+   "src": "pdandree",
+   "img": "B05",
+   "vo": "In nineteen thirty, sealers found their camp, and the men came home to Stockholm. Why they died is still debated: illness from bear meat, cold, or something else.",
+   "cap": "STOCKHOLM · 1930"
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "archive images · public domain"
+}

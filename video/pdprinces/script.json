@@ -1,0 +1,203 @@
+{
+ "title": "The Princes in the Tower",
+ "subtitle": "Tower of London · 1483",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "real public-domain archival images (see images_source)",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "The Tower of London, fourteen eighty-three. Two brothers were lodged inside: Edward, twelve, already proclaimed king, and Richard, nine.",
+   "cap": "THE TOWER · 1483",
+   "img": "B01",
+   "picture": "PAINTING by Paul Delaroche, \"Edward V and the Duke of York in the Tower\", 1831 (Wallace Collection): the two boys sitting close on a great curtained bed, one holding a book, a small dog looking toward the door."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "Through that summer, the boys were seen less and less behind these walls. Then not at all.",
+   "cap": "THEN NOT\nAT ALL",
+   "amber": true,
+   "img": "B02",
+   "picture": "Photochrom print of the Tower of London, about 1890-1900 (Library of Congress): the White Tower rising behind the outer walls, trees, a road with carriages in front."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "Their uncle had taken the throne, as Richard the Third, painted here a century later.",
+   "cap": "RICHARD III",
+   "img": "B03",
+   "picture": "Portrait of Richard III, late 16th century, National Portrait Gallery, London (painted about a century after his death; inscription RICARDVS III ANG REX)."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "In sixteen seventy-four, workmen at the Tower found the bones of two children under a staircase. Charles the Second had them laid in Westminster Abbey.",
+   "cap": "WESTMINSTER\nABBEY",
+   "amber": true,
+   "img": "B04",
+   "picture": "Photochrom print of Westminster Abbey, about 1890-1900 (Library of Congress)."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "The bones were examined in nineteen thirty-three, and never DNA tested. These faces are a painter's guess.",
+   "cap": "NEVER\nDNA-TESTED",
+   "amber": true,
+   "img": "B05",
+   "picture": "PAINTING by John Everett Millais, \"The Princes in the Tower\", 1878: the two boys in black standing together at the foot of a dark stair."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "In 1483 Edward V (born 2 Nov 1470, so 12) and his brother Richard, Duke of York (born 17 Aug 1473, so 9 when he joined him in June 1483) were lodged in the Tower of London; Edward had been proclaimed king on his father's death (9 April 1483) and was never crowned",
+   "sources": [
+    "https://westminster-abbey.org/abbey-commemorations/royals/edward-v-richard-duke-of-york",
+    "https://en.wikipedia.org/wiki/Princes_in_the_Tower",
+    "https://www.hrp.org.uk/tower-of-london/history-and-stories/the-princes-in-the-tower/"
+   ]
+  },
+  {
+   "claim": "Their uncle Richard, Duke of Gloucester, took the throne as Richard III after Edward was declared deposed on 25 June 1483",
+   "sources": [
+    "https://westminster-abbey.org/abbey-commemorations/royals/edward-v-richard-duke-of-york",
+    "https://en.wikipedia.org/wiki/Princes_in_the_Tower"
+   ]
+  },
+  {
+   "claim": "The boys were seen less and less (Mancini: withdrawn into the inner apartments, seen behind bars and windows) and there are no recorded sightings of either after the summer of 1483",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Princes_in_the_Tower",
+    "https://www.hrp.org.uk/tower-of-london/history-and-stories/the-princes-in-the-tower/",
+    "https://www.nationalgeographic.com/history/article/king-richard-iii-murder-cold-case-evidence"
+   ]
+  },
+  {
+   "claim": "In 1674 workmen at the Tower found the bones of two children under a staircase (the Abbey says 'under a staircase in the White Tower'; HRP notes the exact spot is debated, so the film says only 'at the Tower')",
+   "sources": [
+    "https://westminster-abbey.org/abbey-commemorations/royals/edward-v-richard-duke-of-york",
+    "https://www.hrp.org.uk/blog/charles-ii-and-the-discovery-of-the-princes-in-the-tower-in-1674/",
+    "https://en.wikipedia.org/wiki/Princes_in_the_Tower"
+   ]
+  },
+  {
+   "claim": "The bones were brought to Westminster Abbey by order of Charles II and placed in a white marble urn designed by Christopher Wren (Latin inscription dated 1678; film gives no urn year because sources differ)",
+   "sources": [
+    "https://westminster-abbey.org/abbey-commemorations/royals/edward-v-richard-duke-of-york",
+    "https://en.wikipedia.org/wiki/Princes_in_the_Tower",
+    "https://www.hrp.org.uk/blog/charles-ii-and-the-discovery-of-the-princes-in-the-tower-in-1674/"
+   ]
+  },
+  {
+   "claim": "The urn was opened and the bones examined in July 1933 (Tanner, Wright, Northcroft); remaining bones were of two young children; sex was not established",
+   "sources": [
+    "https://westminster-abbey.org/abbey-commemorations/royals/edward-v-richard-duke-of-york",
+    "https://en.wikipedia.org/wiki/Princes_in_the_Tower",
+    "https://sparkypus.com/2020/05/14/recent-investigations-regarding-the-fate-of-the-princes-in-the-tower-by-l-e-tanner-and-william-wright-1933-2/"
+   ]
+  },
+  {
+   "claim": "The bones have never been DNA tested; requests to disturb them were refused (Elizabeth II never granted approval); whose they are has not been proven",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Princes_in_the_Tower",
+    "https://www.nationalgeographic.com/history/article/king-richard-iii-murder-cold-case-evidence",
+    "https://retrospectjournal.com/?p=6938"
+   ]
+  },
+  {
+   "claim": "Still unresolved as of 2026: Feb 2025 National Geographic says only that King Charles 'could' allow a new investigation; March 2026 coverage still treats the bones as contested and untested; no test or identification reported",
+   "sources": [
+    "https://www.nationalgeographic.com/history/article/king-richard-iii-murder-cold-case-evidence",
+    "https://trevsmagazine.uk/2026/03/11/the-cold-case-of-the-princes-in-the-tower-philippa-langley-visits-durham",
+    "https://en.wikipedia.org/wiki/Princes_in_the_Tower"
+   ]
+  },
+  {
+   "claim": "B01 is Paul Delaroche's painting 'Edward V and the Duke of York in the Tower', 1831, Wallace Collection; B05 is Millais's 'The Princes in the Tower', 1878 (Royal Holloway) — both imagined scenes, hence 'these faces are a painter's guess'",
+   "sources": [
+    "https://artuk.org/discover/artworks/edward-v-and-the-duke-of-york-in-the-tower-209284",
+    "https://artsandculture.google.com/asset/edward-v-and-the-duke-of-york-in-the-tower-0099/_wE67KFW47X82w",
+    "https://en.wikipedia.org/wiki/The_Princes_in_the_Tower_(painting)",
+    "https://www.victorianweb.org/painting/millais/paintings/61.html"
+   ]
+  },
+  {
+   "claim": "B03 is the NPG 148 portrait of Richard III, unknown artist, late 16th century (about a century after his death in 1485)",
+   "sources": [
+    "https://batch.artuk.org/discover/artworks/king-richard-iii-158127",
+    "https://npgshop.org.uk/products/king-richard-iii-npg-148-print",
+    "https://www.worldhistory.org/image/11721/richard-iii-of-england-national-portrait-gallery"
+   ]
+  }
+ ],
+ "images_source": [
+  {
+   "img": "B01",
+   "commons_file": "File:Edward V and the Duke of York in the Tower, by Hippolyte (Paul) Delaroche, France, 1831, oil on canvas - Wallace Collection - London, UK - DSC06218.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AEdward_V_and_the_Duke_of_York_in_the_Tower%2C_by_Hippolyte_%28Paul%29_Delaroche%2C_France%2C_1831%2C_oil_on_canvas_-_Wallace_Collection_-_London%2C_UK_-_DSC06218.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Edward_V_and_the_Duke_of_York_in_the_Tower%2C_by_Hippolyte_%28Paul%29_Delaroche%2C_France%2C_1831%2C_oil_on_canvas_-_Wallace_Collection_-_London%2C_UK_-_DSC06218.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Daderot",
+   "date": "1831",
+   "kind": "painting (photo of)",
+   "depicts": "Paul Delaroche, Edward V and the Duke of York in the Tower, 1831, oil on canvas, Wallace Collection",
+   "orig_size": "3579x3006"
+  },
+  {
+   "img": "B02",
+   "commons_file": "File:The Tower, London, England-LCCN2002696927.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AThe_Tower%2C_London%2C_England-LCCN2002696927.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/The_Tower%2C_London%2C_England-LCCN2002696927.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Photochrom Print Collection",
+   "date": "between 1890 and 1900date QS:P571,+1500-00-00T00:00:00Z/6,P1",
+   "kind": "photochrom print",
+   "depicts": "the Tower of London, c.1890-1900 (Detroit Publishing / Photoglob, Library of Congress)",
+   "orig_size": "3702x2716"
+  },
+  {
+   "img": "B03",
+   "commons_file": "File:King Richard III from NPG.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AKing_Richard_III_from_NPG.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/King_Richard_III_from_NPG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "anonymous",
+   "date": "late 16th centurydate QS:P571,+1550-00-00T00:00:00Z/7 [1]",
+   "kind": "painting",
+   "depicts": "portrait of King Richard III, late 16th century, National Portrait Gallery, London",
+   "orig_size": "2400x3443"
+  },
+  {
+   "img": "B04",
+   "commons_file": "File:Westminster Abbey, London, England-LCCN2002696931.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AWestminster_Abbey%2C_London%2C_England-LCCN2002696931.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Westminster_Abbey%2C_London%2C_England-LCCN2002696931.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Photochrom Print Collection",
+   "date": "between 1890 and 1900date QS:P571,+1500-00-00T00:00:00Z/6,P1",
+   "kind": "photochrom print",
+   "depicts": "Westminster Abbey, c.1890-1900 (Library of Congress)",
+   "orig_size": "3607x2654"
+  },
+  {
+   "img": "B05",
+   "commons_file": "File:The Princes in the Tower by John Everett Millais (1878).png",
+   "url": "https://commons.wikimedia.org/wiki/File%3AThe_Princes_in_the_Tower_by_John_Everett_Millais_%281878%29.png",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/The_Princes_in_the_Tower_by_John_Everett_Millais_%281878%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "John Everett Millais",
+   "date": "1878date QS:P571,+1878-00-00T00:00:00Z/9",
+   "kind": "painting",
+   "depicts": "John Everett Millais, The Princes in the Tower, 1878",
+   "orig_size": "1830x3037"
+  }
+ ],
+ "images_note": "Real archival images from Wikimedia Commons, licence read from the Commons API extmetadata (LicenseShortName) on 2026-11-26; PD/CC0 only. Processing: crop to a 4:3..16:9 band + Lanczos resize only (no AI, no colourisation, no upscaler model). Crop boxes in ~/byclaude/video/reels_lab/build-archival1.md.",
+ "blind_checks": "11-26 blind fact-check: CLEAN (Richard III picture = NPG 148 late 16th c., so 'a century later' holds). Blind image check: CLEAN; caption.txt now 'public domain or CC0' (B01 Delaroche photo is CC0)."
+}

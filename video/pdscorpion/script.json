@@ -1,0 +1,208 @@
+{
+ "title": "The Loss of USS Scorpion",
+ "subtitle": "The Atlantic · 1968",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "real public-domain archival images (see images_source)",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "The Atlantic, May nineteen sixty-eight. The nuclear submarine Scorpion was heading home to Norfolk, Virginia.",
+   "cap": "USS SCORPION",
+   "img": "B01",
+   "picture": "US Navy photograph, 22 August 1960: USS Scorpion on the surface off New London, Connecticut, her sail with \"589\" standing out of grey water."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "Ninety-nine men were aboard. Her last message came on May twenty-first. She was due on the twenty-seventh. She never arrived.",
+   "cap": "SHE NEVER\nARRIVED",
+   "img": "B02",
+   "picture": "US Navy photograph (dated 1965 on Commons, uploader's note says entering Norfolk; unverified, so place/date not stated): Scorpion under way on the surface with a line of crewmen standing on deck."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "The search went on for months. In the Azores, deep-diving gear was readied to help.",
+   "cap": "AZORES · 1968",
+   "img": "B03",
+   "picture": "US Navy photograph, July 1968, Azores (National Archives 428-GX-K-50608): a man bending over the hatch of a small yellow deep-diving submersible \"prepared to aid in the search for USS Scorpion\"."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "In late October, the research ship Mizar found her, southwest of the Azores, almost two miles down.",
+   "cap": "ALMOST 2\nMILES DOWN",
+   "amber": true,
+   "img": "B04",
+   "picture": "US Navy photograph of the wreck: Scorpion's sail lying on the ocean floor, debris around it, probably taken when Mizar located her in October 1968 (original print dated 30 January 1969). About 10,000 feet down."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "A Navy court of inquiry said the certain cause could not be ascertained. An explosion, a torpedo, a battery fault: all remain theories.",
+   "cap": "NO CERTAIN\nCAUSE",
+   "amber": true,
+   "img": "B05",
+   "picture": "US Navy photograph, August 1986: a stern section of the wreck on the sea floor (blue deep-sea light), taken on a later Navy survey."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "USS Scorpion (SSN-589) was a US nuclear-powered attack submarine; in May 1968, returning from the Mediterranean, she was crossing the Atlantic bound for her home port of Norfolk, Virginia ('The Atlantic, May 1968... heading home to Norfolk, Virginia')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/USS_Scorpion_(SSN-589)",
+    "https://www.warhistoryonline.com/war-articles/uss-scorpion-disappearance-mystery.html",
+    "https://webharvest.gov/peth04/20041017005029/http:/www.history.navy.mil/danfs/s/scorpion.htm"
+   ]
+  },
+  {
+   "claim": "99 men were aboard; all were lost ('Ninety-nine men were aboard'; '99 MEN ABOARD'; caption 'lost with all 99 men aboard')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/USS_Scorpion_(SSN-589)",
+    "https://navylog.navymemorial.org/uss-scorpion",
+    "https://wearethemighty.com/mighty-history/what-happened-to-the-uss-scorpion",
+    "https://nationalsecurityjournal.org/nuclear-attack-submarine-uss-scorpion-sank-in-1968-with-99-men-aboard-and-the-u-s-navy-still-does-not-know-why/"
+   ]
+  },
+  {
+   "claim": "Her last message/position report came on 21 May 1968 (Wikipedia: radio attempts from shortly before midnight 20 May to after midnight 21 May; DANFS + Navy Memorial: on 21 May she reported her position; WATM: 'The last anyone heard from the sub was on May 21, 1968')",
+   "sources": [
+    "https://webharvest.gov/peth04/20041017005029/http:/www.history.navy.mil/danfs/s/scorpion.htm",
+    "https://navylog.navymemorial.org/uss-scorpion",
+    "https://wearethemighty.com/mighty-history/what-happened-to-the-uss-scorpion",
+    "https://en.wikipedia.org/wiki/USS_Scorpion_(SSN-589)"
+   ]
+  },
+  {
+   "claim": "She was due at Norfolk on 27 May 1968 (Wikipedia: 'expected to arrive ... 27 May at 1300'; War History Online: 'expected arrival of May 27') and never arrived; reported overdue six days after the last report",
+   "sources": [
+    "https://en.wikipedia.org/wiki/USS_Scorpion_(SSN-589)",
+    "https://www.warhistoryonline.com/war-articles/uss-scorpion-disappearance-mystery.html",
+    "https://webharvest.gov/peth04/20041017005029/http:/www.history.navy.mil/danfs/s/scorpion.htm",
+    "https://wearethemighty.com/mighty-history/what-happened-to-the-uss-scorpion"
+   ]
+  },
+  {
+   "claim": "B03 picture: July 1968, Azores Islands, Ocean Systems Inc. deep-diving equipment 'prepared to aid in the search for USS Scorpion' (US Navy photo 428-GX-K-50608, PH1 Milton, National Archives) ('Deep-diving equipment was readied in the Azores to join the search'; 'AZORES · 1968')",
+   "sources": [
+    "https://commons.wikimedia.org/wiki/File:428-GX-K-50608_(26907876976).jpg",
+    "https://www.flickr.com/photo.gne?id=26907876976"
+   ]
+  },
+  {
+   "claim": "At the end of October 1968 the research ship USNS Mizar located sections of the hull about 400 miles (nautical) southwest of the Azores, roughly 9,800 ft (Wikipedia) / more than 10,000 ft (DANFS, Navy Memorial) down, i.e. almost two miles ('In late October... Mizar found her... about four hundred miles southwest of the Azores, almost two miles down'; 'ALMOST 2 MILES DOWN')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/USS_Scorpion_(SSN-589)",
+    "https://webharvest.gov/peth04/20041017005029/http:/www.history.navy.mil/danfs/s/scorpion.htm",
+    "https://navylog.navymemorial.org/uss-scorpion",
+    "https://nationalsecurityjournal.org/nuclear-attack-submarine-uss-scorpion-sank-in-1968-with-99-men-aboard-and-the-u-s-navy-still-does-not-know-why/"
+   ]
+  },
+  {
+   "claim": "The 1968-69 Navy court of inquiry found that 'the certain cause of the loss of Scorpion cannot be ascertained from any evidence now available' (findings released 31 January 1969); its classified 'most probable' cause (an external explosion) was not treated as certain ('said the certain cause could not be ascertained'; 'NO CERTAIN CAUSE')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/USS_Scorpion_(SSN-589)",
+    "https://www.19fortyfive.com/?p=178476",
+    "https://www.usni.org/magazines/proceedings/1998-07/why-they-called-scorpion-scrapiron",
+    "https://wearethemighty.com/mighty-history/what-happened-to-the-uss-scorpion"
+   ]
+  },
+  {
+   "claim": "Proposed causes include an explosion (external to the hull, per the court's classified most-probable finding), a torpedo malfunction (hot run / Mark 37 torpedo battery), a battery problem (hydrogen explosion during battery charge or via trash disposal unit flooding); none has been established ('An explosion, a torpedo, a battery fault: all remain theories')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/USS_Scorpion_(SSN-589)",
+    "https://www.19fortyfive.com/?p=178476",
+    "https://www.iusscaa.org/articles/brucerule/pdfs/why_the_scorpion_was_lost_updated_august_2018.pdf",
+    "https://nationalsecurityjournal.org/nuclear-attack-submarine-uss-scorpion-sank-in-1968-with-99-men-aboard-and-the-u-s-navy-still-does-not-know-why/",
+    "https://webharvest.gov/peth04/20041017005029/http:/www.history.navy.mil/danfs/s/scorpion.htm"
+   ]
+  },
+  {
+   "claim": "Still unresolved as of 2026: the Navy maintains the cause is unknown and rejected calls (2012) to reopen the investigation; National Security Journal, 25 May 2026: the Navy 'still does not know why'; 'No definitive explanation has ever been established'",
+   "sources": [
+    "https://nationalsecurityjournal.org/nuclear-attack-submarine-uss-scorpion-sank-in-1968-with-99-men-aboard-and-the-u-s-navy-still-does-not-know-why/",
+    "https://en.wikipedia.org/wiki/USS_Scorpion_(SSN-589)",
+    "https://www.warhistoryonline.com/war-articles/uss-scorpion-disappearance-mystery.html"
+   ]
+  },
+  {
+   "claim": "The search went on for months (May 1968 until the hull was found by Mizar in late October 1968); in July 1968 deep-diving equipment was readied in the Azores to aid the search (B03 photo record, National Archives 428-GX-K-50608)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/USS_Scorpion_(SSN-589)",
+    "https://commons.wikimedia.org/wiki/File:428-GX-K-50608_(26907876976).jpg",
+    "https://www.usni.org/magazines/proceedings/1998-07/why-they-called-scorpion-scrapiron"
+   ]
+  }
+ ],
+ "images_source": [
+  {
+   "img": "B01",
+   "commons_file": "File:NH 97214 USS Scorpion (SSN-589) (cropped).tif",
+   "url": "https://commons.wikimedia.org/wiki/File%3ANH_97214_USS_Scorpion_%28SSN-589%29_%28cropped%29.tif",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/NH_97214_USS_Scorpion_%28SSN-589%29_%28cropped%29.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "United States Navy",
+   "date": "1960-08-22",
+   "kind": "photograph",
+   "depicts": "USS Scorpion (SSN-589) on the surface off New London, Connecticut, 22 Aug 1960 (US Navy NH 97214)",
+   "orig_size": "5673x4514"
+  },
+  {
+   "img": "B02",
+   "commons_file": "File:Scorpion1967.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AScorpion1967.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Scorpion1967.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "פרסומי צי ארצות הברית",
+   "date": "1965",
+   "kind": "photograph",
+   "depicts": "USS Scorpion under way on the surface, crewmen on deck (US Navy; Commons date 1965)",
+   "orig_size": "767x408"
+  },
+  {
+   "img": "B03",
+   "commons_file": "File:428-GX-K-50608 (26907876976).jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3A428-GX-K-50608_%2826907876976%29.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/428-GX-K-50608_%2826907876976%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "National Museum of the U.S. Navy",
+   "date": "2016-05-10 11:10",
+   "kind": "photograph",
+   "depicts": "Azores, July 1968: deep-diving submersible prepared to aid the search for USS Scorpion (US Navy, National Archives 428-GX-K-50608)",
+   "orig_size": "1074x1344"
+  },
+  {
+   "img": "B04",
+   "commons_file": "File:Sail Scorpion.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3ASail_Scorpion.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Sail_Scorpion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "unknown",
+   "date": "USN 1136 October 1968 January 1969 Oktober 1968 Januar 1969 ",
+   "kind": "photograph",
+   "depicts": "the sail of the sunken Scorpion on the ocean floor, probably Oct 1968 (USNS Mizar; print dated 30 Jan 1969; USN 1136656)",
+   "orig_size": "740x591"
+  },
+  {
+   "img": "B05",
+   "commons_file": "File:USS Scorpion (SSN-589) H97221k.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AUSS_Scorpion_%28SSN-589%29_H97221k.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/USS_Scorpion_%28SSN-589%29_H97221k.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "unknown",
+   "date": "1986-08",
+   "kind": "photograph",
+   "depicts": "stern section of the sunken Scorpion, Aug 1986 (US Navy NH 97221-KN)",
+   "orig_size": "740x515"
+  }
+ ],
+ "images_note": "Real archival images from Wikimedia Commons, licence read from the Commons API extmetadata (LicenseShortName) on 2026-11-26; PD/CC0 only. Processing: crop to a 4:3..16:9 band + Lanczos resize only (no AI, no colourisation, no upscaler model). Crop boxes in ~/byclaude/video/reels_lab/build-archival1.md.",
+ "blind_checks": "11-26 blind fact-check: FIX: B03 'Deep-diving equipment was readied in the Azores to join the search.' + 'AZORES · 1968' read as the May search -> 'The search went on for months. In the Azores, deep-diving gear was readied to help.' (BENT from the checker's 'presumed lost' replacement: the NARA record of the picture itself dates it July 1968, 'prepared to aid in the search', so the true line over the true picture was kept with the months made explicit); '400 miles' -> dropped from vo, 'nautical' added in caption. Blind image check: FIX: B01 1960 photo under May 1968 narration (kept: cap 'USS SCORPION' carries no year, it is the real boat; logged), B02 '99 MEN ABOARD' over a mid-1960s crew -> cap 'SHE NEVER ARRIVED'."
+}

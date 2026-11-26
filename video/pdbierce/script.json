@@ -1,0 +1,223 @@
+{
+ "title": "The Disappearance of Ambrose Bierce",
+ "subtitle": "Mexico · 1913",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "real public-domain archival images (see images_source)",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "At seventy-one, Ambrose Bierce, the writer they called Bitter Bierce, set out for revolutionary Mexico. He never came home.",
+   "cap": "NEVER\nCAME HOME",
+   "amber": true,
+   "img": "B01",
+   "picture": "Photograph of Ambrose Bierce dated 7 October 1892: seated, three-quarter length, thick swept-back hair and moustache, looking straight at the camera. (Landscape crop on his face and upper body.)"
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "He reportedly went to travel with Pancho Villa's army as an observer.",
+   "cap": "PANCHO VILLA",
+   "img": "B02",
+   "picture": "Photograph, 1914 (Bain News Service, Library of Congress): General Pancho Villa on horseback, riding toward the camera at the head of his riders, dust, a wagon behind. (Commons category: Battle of Ojinaga, January 1914.)"
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "His last known letter is dated Chihuahua, December twenty-sixth, nineteen thirteen. He was leaving, it said, for an unknown destination.",
+   "cap": "AN UNKNOWN\nDESTINATION",
+   "amber": true,
+   "img": "B03",
+   "picture": "Photograph, 1913 (Library of Congress): Villa's troops passing through Chihuahua: horsemen in a city street watched by a crowd."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "After that, nothing certain. Some say he was at Ojinaga, on the border, in January nineteen fourteen. Others say Sierra Mojada, or Marfa, Texas.",
+   "cap": "OJINAGA · 1914",
+   "img": "B04",
+   "picture": "Photograph, 1914 (Library of Congress): \"Federalists at Ojinaga, watching advance of rebels\": Mexican federal soldiers standing on high ground, one with binoculars."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "Civil War veteran, author of The Devil's Dictionary. Where and when he died has never been established.",
+   "cap": "FATE\nUNKNOWN",
+   "amber": true,
+   "img": "B05",
+   "picture": "Photograph of Bierce, published no later than 1911: older, seated, holding rolled papers, looking at the camera."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Bierce (born 24 June 1842) was 71 when he left Washington, D.C., in October 1913 on a journey that led toward revolutionary Mexico ('At seventy-one ... set out for revolutionary Mexico'); 'set out for' used instead of 'went into' because some doubt he ever crossed",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ambrose_Bierce",
+    "https://lithub.com/no-one-knows-why-ambrose-bierce-disappeared-but-here-are-some-theories/",
+    "https://www.mentalfloss.com/literature/authors/ambrose-bierce-disappearance-mystery",
+    "https://www.todayifoundout.com/?p=31011"
+   ]
+  },
+  {
+   "claim": "He was known as 'Bitter Bierce'",
+   "sources": [
+    "https://www.mentalfloss.com/literature/authors/ambrose-bierce-disappearance-mystery",
+    "https://www.todayifoundout.com/?p=31011",
+    "https://explorersweb.com/exploration-mysteries-the-disappearance-of-ambrose-bierce/"
+   ]
+  },
+  {
+   "claim": "He never returned ('He never came home'; Mental Floss: he never returned)",
+   "sources": [
+    "https://www.mentalfloss.com/literature/authors/ambrose-bierce-disappearance-mystery",
+    "https://en.wikipedia.org/wiki/Ambrose_Bierce",
+    "https://lithub.com/no-one-knows-why-ambrose-bierce-disappeared-but-here-are-some-theories/"
+   ]
+  },
+  {
+   "claim": "He reportedly joined / meant to travel with Pancho Villa's army as an observer (Wikipedia: 'joined Pancho Villa's army as an observer'; Lit Hub same; hedged with 'reportedly')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ambrose_Bierce",
+    "https://lithub.com/no-one-knows-why-ambrose-bierce-disappeared-but-here-are-some-theories/",
+    "https://www.mentalfloss.com/literature/authors/ambrose-bierce-disappearance-mystery"
+   ]
+  },
+  {
+   "claim": "His last known letter, to Blanche Partington, is dated Chihuahua, 26 December 1913, and reads 'As to me, I leave here tomorrow for an unknown destination' (VO paraphrases; the letter itself is known only second-hand, which is why VO says 'last known')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ambrose_Bierce",
+    "https://lithub.com/no-one-knows-why-ambrose-bierce-disappeared-but-here-are-some-theories/",
+    "https://www.todayifoundout.com/?p=31011"
+   ]
+  },
+  {
+   "claim": "No confirmed sightings after the last letter ('After that, nothing certain')",
+   "sources": [
+    "https://www.todayifoundout.com/?p=31011",
+    "https://en.wikipedia.org/wiki/Ambrose_Bierce",
+    "https://explorersweb.com/exploration-mysteries-the-disappearance-of-ambrose-bierce/"
+   ]
+  },
+  {
+   "claim": "Theory: he was with Villa's army at Ojinaga, on the US border opposite Presidio, Texas, in January 1914 (one soldier reported seeing him with the army before the battle of 10/11 January 1914, not after)",
+   "sources": [
+    "https://www.todayifoundout.com/?p=31011",
+    "https://www.mentalfloss.com/literature/authors/ambrose-bierce-disappearance-mystery",
+    "https://donswaim.com/ojinaga.bierce.html",
+    "https://en.wikipedia.org/wiki/Battle_of_Ojinaga"
+   ]
+  },
+  {
+   "claim": "Theory: Sierra Mojada, Coahuila (local oral tradition recorded by priest James Lienert)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ambrose_Bierce",
+    "https://lithub.com/no-one-knows-why-ambrose-bierce-disappeared-but-here-are-some-theories/",
+    "https://www.mentalfloss.com/literature/authors/ambrose-bierce-disappearance-mystery",
+    "https://www.todayifoundout.com/?p=31011"
+   ]
+  },
+  {
+   "claim": "Theory: an ill American calling himself 'Ambrosia' died of pneumonia 17 January 1914 and was buried at Marfa, Texas",
+   "sources": [
+    "https://lithub.com/no-one-knows-why-ambrose-bierce-disappeared-but-here-are-some-theories/",
+    "https://www.todayifoundout.com/?p=31011"
+   ]
+  },
+  {
+   "claim": "Civil War veteran (9th Indiana Infantry, 1861-1866) and author of The Devil's Dictionary",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ambrose_Bierce",
+    "https://www.mentalfloss.com/literature/authors/ambrose-bierce-disappearance-mystery",
+    "https://explorersweb.com/exploration-mysteries-the-disappearance-of-ambrose-bierce/"
+   ]
+  },
+  {
+   "claim": "The date and place of his death have never been established; fate remains a mystery as of 2026 (Wikipedia: 'Bierce's ultimate fate remains a mystery'; 2025 coverage still treats it as unsolved: Astonishing Legends Jan 2025, Reader's Digest list updated 2025)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ambrose_Bierce",
+    "https://www.mentalfloss.com/literature/authors/ambrose-bierce-disappearance-mystery",
+    "https://lithub.com/no-one-knows-why-ambrose-bierce-disappeared-but-here-are-some-theories/",
+    "https://astonishinglegends.com/al-podcasts/2025/01/18/ep-301-the-mysterious-disappearance-of-ambrose-bierce",
+    "https://www.rd.com/list/mysterious-disappearances-no-one-can-explain/"
+   ]
+  },
+  {
+   "claim": "Caption only: some doubt he ever entered Mexico (the trip as a ruse; Partington's Grand Canyon suicide theory)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ambrose_Bierce",
+    "https://lithub.com/no-one-knows-why-ambrose-bierce-disappeared-but-here-are-some-theories/",
+    "https://explorersweb.com/exploration-mysteries-the-disappearance-of-ambrose-bierce/"
+   ]
+  }
+ ],
+ "images_source": [
+  {
+   "img": "B01",
+   "commons_file": "File:Ambrose Bierce 1892-10-07.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AAmbrose_Bierce_1892-10-07.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Ambrose_Bierce_1892-10-07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Unknown authorUnknown author",
+   "date": "1892-10-07",
+   "kind": "photograph",
+   "depicts": "Ambrose Bierce, seated portrait, 7 Oct 1892",
+   "orig_size": "905x1222"
+  },
+  {
+   "img": "B02",
+   "commons_file": "File:Pancho Villa Riding 1914.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3APancho_Villa_Riding_1914.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Pancho_Villa_Riding_1914.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Bain News Service",
+   "date": "1914",
+   "kind": "photograph",
+   "depicts": "General Pancho Villa on horseback with his riders, 1914 (Bain News Service; Commons cat. Battle of Ojinaga, Jan 1914)",
+   "orig_size": "1067x714"
+  },
+  {
+   "img": "B03",
+   "commons_file": "File:Mexican War- Villa's troops passing through Chihuahua LCCN2017645057.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AMexican_War-_Villa%27s_troops_passing_through_Chihuahua_LCCN2017645057.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mexican_War-_Villa%27s_troops_passing_through_Chihuahua_LCCN2017645057.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Miscellaneous Items in High Demand, PPOC, Library of Congress",
+   "date": "1913",
+   "kind": "photograph",
+   "depicts": "Villa's troops passing through Chihuahua, 1913 (Library of Congress)",
+   "orig_size": "1536x1091"
+  },
+  {
+   "img": "B04",
+   "commons_file": "File:Mexico, Federalists at Ojinaga, watching advance of rebels LCCN97508907.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AMexico%2C_Federalists_at_Ojinaga%2C_watching_advance_of_rebels_LCCN97508907.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Mexico%2C_Federalists_at_Ojinaga%2C_watching_advance_of_rebels_LCCN97508907.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Miscellaneous Items in High Demand, PPOC, Library of Congress",
+   "date": "1914",
+   "kind": "photograph",
+   "depicts": "Federal soldiers at Ojinaga watching the advance of the rebels, 1914 (Library of Congress)",
+   "orig_size": "4096x3279"
+  },
+  {
+   "img": "B05",
+   "commons_file": "File:Portrait of Ambrose Bierce.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3APortrait_of_Ambrose_Bierce.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Portrait_of_Ambrose_Bierce.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "not stated",
+   "date": "no later than 1911",
+   "kind": "photograph",
+   "depicts": "Ambrose Bierce, seated portrait, published no later than 1911",
+   "orig_size": "817x1201"
+  }
+ ],
+ "images_note": "Real archival images from Wikimedia Commons, licence read from the Commons API extmetadata (LicenseShortName) on 2026-11-26; PD/CC0 only. Processing: crop to a 4:3..16:9 band + Lanczos resize only (no AI, no colourisation, no upscaler model). Crop boxes in ~/byclaude/video/reels_lab/build-archival1.md.",
+ "blind_checks": "11-26 blind fact-check: CLEAN. Blind image check: CLEAN (optional: 1892 portrait under 'At seventy-one' - kept, standard portrait use, no year on cap)."
+}

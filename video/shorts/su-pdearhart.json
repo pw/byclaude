@@ -1,0 +1,48 @@
+{
+ "out": "short-su-pdearhart",
+ "kicker": "EARHART'S LAST FLIGHT",
+ "frame": "band",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "beats": [
+  {
+   "src": "pdearhart",
+   "img": "B01",
+   "vo": "This plane has never been found. In July nineteen thirty-seven, Amelia Earhart flew it out over the Pacific, and vanished.",
+   "cap": "THIS PLANE\nNEVER FOUND",
+   "amber": true
+  },
+  {
+   "src": "pdearhart",
+   "img": "B02",
+   "vo": "Weeks earlier, on the world flight. Her navigator, Fred Noonan, climbs aboard.",
+   "cap": "NAVIGATOR\nFRED NOONAN"
+  },
+  {
+   "src": "pdearhart",
+   "img": "B03",
+   "vo": "The longest leg: New Guinea to Howland Island, a speck of coral in the open Pacific.",
+   "cap": "HOWLAND\nISLAND"
+  },
+  {
+   "src": "pdearhart",
+   "img": "B04",
+   "vo": "A Coast Guard ship waited offshore. Its log records her voice: we must be on you, but cannot see you.",
+   "cap": "\"CANNOT\nSEE YOU\"",
+   "amber": true
+  },
+  {
+   "src": "pdearhart",
+   "img": "B05",
+   "vo": "She never landed. Some think the fuel ran out. Others look here, to Nikumaroro, where a twenty twenty-six search found nothing conclusive.",
+   "cap": "NIKUMARORO"
+  },
+  {
+   "vo": "Still unsolved.",
+   "cap": "STILL\nUNSOLVED",
+   "amber": true
+  }
+ ],
+ "brand": "STILL UNSOLVED",
+ "footer": "archive images · public domain"
+}

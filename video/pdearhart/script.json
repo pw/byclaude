@@ -1,0 +1,204 @@
+{
+ "title": "Amelia Earhart's Last Flight",
+ "subtitle": "Central Pacific · 1937",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "real public-domain archival images (see images_source)",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "This plane has never been found. In July nineteen thirty-seven, Amelia Earhart flew it out over the Pacific, and vanished.",
+   "cap": "THIS PLANE\nNEVER FOUND",
+   "amber": true,
+   "img": "B01",
+   "picture": "NASA archive photograph: Amelia Earhart standing in front of the Lockheed Electra in which she disappeared (registration NR16020 on the wing), circa 1936-37."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "Weeks earlier, on the world flight. Her navigator, Fred Noonan, climbs aboard.",
+   "cap": "NAVIGATOR\nFRED NOONAN",
+   "img": "B02",
+   "picture": "Photograph, 6 or 7 June 1937 (Dutch archive, Spaarnestad): Earhart in flying overalls standing by her Electra, smiling, Fred Noonan climbing in at the cabin door; taken during the world flight, about four weeks before the end. (Do not state the place unless you verify it; probably Paramaribo, Suriname.)"
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "The longest leg: New Guinea to Howland Island, a speck of coral in the open Pacific.",
+   "cap": "HOWLAND\nISLAND",
+   "img": "B03",
+   "picture": "Photograph from the International Space Station, 2004 (NASA): Howland Island, a tiny pale sliver in deep blue ocean. MODERN: no 1937 in its cap."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "A Coast Guard ship waited offshore. Its log records her voice: we must be on you, but cannot see you.",
+   "cap": "\"CANNOT\nSEE YOU\"",
+   "amber": true,
+   "img": "B04",
+   "picture": "Photograph, 23 January 1937 (US National Archives): the small camp on Howland Island (\"Itascatown\") with the US flag, low buildings on flat coral, months before her flight."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "She never landed. Some think the fuel ran out. Others look here, to Nikumaroro, where a twenty twenty-six search found nothing conclusive.",
+   "cap": "NIKUMARORO",
+   "img": "B05",
+   "picture": "Modern photograph of the lagoon entrance at Nikumaroro (formerly Gardner Island): turquoise water, beach, palms. MODERN: no past year in its cap."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The Lockheed Electra 10E shown (registration NR16020) is the aircraft in which Earhart disappeared in July 1937; it has never been found ('This plane has never been found'; 'THIS PLANE NEVER FOUND')",
+   "sources": [
+    "https://commons.wikimedia.org/wiki/File:Amelia_Earhart_-_GPN-2002-000211_(restored).jpg",
+    "https://en.wikipedia.org/wiki/Amelia_Earhart",
+    "https://www.nationalgeographic.com/history/article/amelia-earhart-plane-nikumaroro-taraia-object"
+   ]
+  },
+  {
+   "claim": "On 2 July 1937 Earhart and navigator Fred Noonan took off from Lae, New Guinea, in the Electra, bound for Howland Island in the central Pacific, and disappeared ('In July 1937 ... flew it out over the Pacific, and vanished')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Amelia_Earhart",
+    "https://www.history.com/this-day-in-history/july-2/amelia-earhart-disappears",
+    "https://en.wikipedia.org/wiki/Fred_Noonan"
+   ]
+  },
+  {
+   "claim": "Fred Noonan was her navigator; the B02 photograph (6 or 7 June 1937) shows Noonan climbing into the Electra during the world flight, weeks before 2 July ('Weeks earlier, on the world flight'). Place deliberately not stated (Commons description says Parnamerim/Natal, Brazil; unverified)",
+   "sources": [
+    "https://commons.wikimedia.org/wiki/File:Amerikaanse_pilote,_vliegenier_Amelia_Earhart_(1897-1937)_in_vliegoverall_bij_een_vliegtuig,_SFA005001551.jpg",
+    "https://en.wikipedia.org/wiki/Fred_Noonan",
+    "https://en.wikipedia.org/wiki/Amelia_Earhart"
+   ]
+  },
+  {
+   "claim": "Lae to Howland (about 2,556 miles) was the longest leg of the round-the-world flight; Howland is a small, flat, low coral island (about 6,500 ft long, 10 ft high) in the central Pacific ('The longest leg'; 'a speck of coral in the open Pacific')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Amelia_Earhart",
+    "https://en.wikipedia.org/wiki/Howland_Island",
+    "https://www.fws.gov/refuge/howland-island",
+    "https://www.history.com/this-day-in-history/july-2/amelia-earhart-disappears"
+   ]
+  },
+  {
+   "claim": "The US Coast Guard cutter Itasca was stationed off Howland Island as a radio/navigation link; its radio log (Bellarts papers, National Archives) records Earhart at about 07:42: 'We must be on you but cannot see you, but gas is running low' (VO quotes only 'we must be on you, but cannot see you'; cap 'CANNOT SEE YOU' is a verbatim fragment)",
+   "sources": [
+    "https://www.docsteach.org/documents/document/earhart-radio-log",
+    "https://tighar.org/Projects/Earhart/Archives/Research/Bulletins/37_ItascaLogs/pos2page2.html",
+    "https://en.wikipedia.org/wiki/Amelia_Earhart",
+    "https://www.history.com/this-day-in-history/july-2/amelia-earhart-disappears"
+   ]
+  },
+  {
+   "claim": "She never landed at Howland; the Navy/Coast Guard search (ended 19 July 1937), the costliest and most intensive US air-and-sea search to that time, found no physical evidence of Earhart, Noonan or the Electra (caption)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Amelia_Earhart",
+    "https://www.history.com/this-day-in-history/july-2/amelia-earhart-disappears"
+   ]
+  },
+  {
+   "claim": "Theories (neither proven): the plane ran out of fuel and went into the ocean (US government conclusion, many researchers; Nauticos); or Earhart and Noonan reached Gardner Island, now Nikumaroro, and died there as castaways ('Some think the fuel ran out. Others look here, to Nikumaroro')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Amelia_Earhart",
+    "https://www.history.com/articles/amelia-earhart-disappearance-theories",
+    "https://www.nationalgeographic.com/history/article/amelia-earhart-plane-nikumaroro-taraia-object"
+   ]
+  },
+  {
+   "claim": "In October 2026 a Purdue University / Archaeological Legacy Institute expedition to Nikumaroro investigated the lagoon 'Taraia Object' and found no evidence of the Electra; the object was judged natural (trees / concretized coral sand); a ~30-inch steel tube recovered is still being studied; Purdue says the search continues ('a twenty twenty-six search found no evidence of the plane')",
+   "sources": [
+    "https://www.purdue.edu/newsroom/2026/Q4/search-for-amelia-earharts-plane-continues-after-taraia-object-expedition-on-nikumaroro-rules-out-latest-hypothesis",
+    "https://www.nationalgeographic.com/history/article/amelia-earhart-plane-nikumaroro-taraia-object",
+    "https://www.flyingmag.com/expedition-finds-no-evidence-of-amelia-earharts-electra-at-nikumaroro/",
+    "https://www.newsweek.com/amelia-earhart-search-setback-expedition-rules-out-taraia-object-theory-12586588"
+   ]
+  },
+  {
+   "claim": "Still unsolved as of Nov 2026: Deep Sea Vision's 2024 sonar target was a rock formation; the Oct 2026 Taraia expedition ruled out its object; NatGeo (19 Oct 2026) says Earhart's fate remains unresolved; no later find reported",
+   "sources": [
+    "https://www.nationalgeographic.com/history/article/amelia-earhart-plane-nikumaroro-taraia-object",
+    "https://www.nbcnews.com/news/us-news/image-believed-show-amelia-earharts-plane-was-rock-formation-not-crash-rcna181578",
+    "https://www.purdue.edu/newsroom/2026/Q4/search-for-amelia-earharts-plane-continues-after-taraia-object-expedition-on-nikumaroro-rules-out-latest-hypothesis"
+   ]
+  },
+  {
+   "claim": "All five images are public domain (NASA/Smithsonian GPN-2002-000211; Spaarnestad SFA005001551; NASA ISS008-E-18272; US National Archives 80-CF-79868-5; Angela K. Kepler, released PD) (caption image sentence)",
+   "sources": [
+    "https://commons.wikimedia.org/wiki/File:Amelia_Earhart_-_GPN-2002-000211_(restored).jpg",
+    "https://commons.wikimedia.org/wiki/File:ISS008-E-18272_-_View_of_Howland_Island.jpg",
+    "https://commons.wikimedia.org/wiki/File:Nikumaroro_Lagoon_Entrance_AKK.jpg"
+   ]
+  }
+ ],
+ "images_source": [
+  {
+   "img": "B01",
+   "commons_file": "File:Amelia Earhart - GPN-2002-000211 (restored).jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AAmelia_Earhart_-_GPN-2002-000211_%28restored%29.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Amelia_Earhart_-_GPN-2002-000211_%28restored%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Smithsonian Institution",
+   "date": "",
+   "kind": "photograph",
+   "depicts": "Amelia Earhart standing in front of the Lockheed Electra (NR16020) in which she disappeared (NASA)",
+   "orig_size": "2991x2367"
+  },
+  {
+   "img": "B02",
+   "commons_file": "File:Amerikaanse pilote, vliegenier Amelia Earhart (1897-1937) in vliegoverall bij een vliegtuig, SFA005001551.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AAmerikaanse_pilote%2C_vliegenier_Amelia_Earhart_%281897-1937%29_in_vliegoverall_bij_een_vliegtuig%2C_SFA005001551.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Amerikaanse_pilote%2C_vliegenier_Amelia_Earhart_%281897-1937%29_in_vliegoverall_bij_een_vliegtuig%2C_SFA005001551.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Unknown authorUnknown author",
+   "date": "6 June 1937 or 7 June 1937.[1]",
+   "kind": "photograph",
+   "depicts": "Earhart in flying overalls by her Electra, Fred Noonan climbing in, 6 or 7 June 1937 (Spaarnestad/Nationaal Archief)",
+   "orig_size": "3380x2081"
+  },
+  {
+   "img": "B03",
+   "commons_file": "File:ISS010-E-9288 - View of Howland Island.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AISS010-E-9288_-_View_of_Howland_Island.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/ISS010-E-9288_-_View_of_Howland_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+   "date": "2004-12-03 18:55:49",
+   "kind": "photograph (modern, 2004)",
+   "depicts": "Howland Island from the International Space Station (NASA)",
+   "orig_size": "3032x2064"
+  },
+  {
+   "img": "B04",
+   "commons_file": "File:View of Camp on Howland Island - 80-CF-79868-7 (1937-01-23).jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AView_of_Camp_on_Howland_Island_-_80-CF-79868-7_%281937-01-23%29.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/View_of_Camp_on_Howland_Island_-_80-CF-79868-7_%281937-01-23%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "L.A.B. Pearl Harbor",
+   "date": "1937-01-23",
+   "kind": "photograph",
+   "depicts": "the camp 'Itascatown' on Howland Island with the US flag, 23 Jan 1937 (US National Archives)",
+   "orig_size": "2862x2239"
+  },
+  {
+   "img": "B05",
+   "commons_file": "File:Nikumaroro Lagoon Entrance AKK new.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3ANikumaroro_Lagoon_Entrance_AKK_new.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Nikumaroro_Lagoon_Entrance_AKK_new.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Angela K. Kepler (cleaned up by Rvdude007)",
+   "date": "2017-02-27",
+   "kind": "photograph (modern)",
+   "depicts": "the western entrance to Nikumaroro's lagoon (formerly Gardner Island)",
+   "orig_size": "5150x3450"
+  }
+ ],
+ "images_note": "Real archival images from Wikimedia Commons, licence read from the Commons API extmetadata (LicenseShortName) on 2026-11-26; PD/CC0 only. Processing: crop to a 4:3..16:9 band + Lanczos resize only (no AI, no colourisation, no upscaler model). Crop boxes in ~/byclaude/video/reels_lab/build-archival1.md.",
+ "blind_checks": "11-26 blind fact-check: FIX 'found no evidence of the plane' -> vo 'found nothing conclusive', caption 'no conclusive evidence' (Purdue release: a steel tube still being studied). Blind image check: CLEAN (B02 = Natal, Brazil, 6/7 Jun 1937 per record; not stated in film). Kicker shortened to EARHART'S LAST FLIGHT (width)."
+}

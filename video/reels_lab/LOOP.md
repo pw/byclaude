@@ -372,3 +372,21 @@ over-performs is a cheap signal for which ones to make as films.
 - reels-owner note 11-23: first length pair (honjo L 263 / cleopatra S 193 @~13h) had near-identical avg watch (7.7 s vs 7.5 s).
   If that holds across the length pairs, viewers leave in the opening seconds regardless of length, which points the arm after
   voice at the OPENING (motion / first frame / first line), not duration.
+
+## 2026-11-26: `imagery` arm opened: ARCHIVAL (real public-domain images) vs AI stills, in a THIRD daily slot
+- Why: owner model 11-22 says the day sets the level and only FORMAT can move a film inside a day; the length pairs show
+  viewers leave at the same second whatever the length, so the opening frame is the lever. A real photograph (the actual
+  balloon on the ice, the actual sub) is the biggest opening change we can make, and it costs $0 in images while kie.ai is
+  empty under the 11-24 cash wall (kie 1.28 credits; ask c886ec1b withdrawn pending this read).
+- Pre-registered `analysis/archival-test-1127.json`: one archival film/day at **21:45Z**, 11-26..11-30 (n=5), each vs the
+  MEDIAN of the same day's two AI films at 72h. Call: median ratio ≥1.5 win / ≤0.67 lose / else tie (a tie is still good
+  news: free images at equal reach). Harm watch: does the third film cut the other two (AI 72h median vs 11-21..11-25 +
+  page daily viewers). Confounds: fixed 21:45Z slot, band frame (archival images are landscape), always male voice.
+- Films (Opus builder, `build-archival1.md`): pdbierce 11-26 · pdandree 11-27 · pdscorpion 11-28 · pdprinces 11-29 ·
+  pdearhart 11-30. 25 images, every licence PD/CC0 read from the Commons API (no CC BY/BY-SA); each image depicts what its
+  beat says; footer "archive images · public domain". Slocum dropped (best Spray photo has no PD tag). Blind fact + image
+  checks: 6/10 clean, fixes applied (Earhart 2026 search "nothing conclusive"; Scorpion search months-long, "99 men" cap off
+  the crew photo; Andrée 1930 exhibition photo captioned Stockholm · 1930).
+- Plumbing: `ig.py batch --slot3` posts only `reels_lab/slot3.json` (in file order); the normal 01:45/15:45 batch skips those
+  names (controls run both ways). New cron `45 21 * * *`. `_build_images.py` now sets NO_OPENAI_FALLBACK=1: an empty kie
+  balance fails the build instead of silently switching to OpenAI direct (shared generator honours the env; tested with a dead key).

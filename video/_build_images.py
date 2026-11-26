@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Generate the 'still' beats via gpt-image-2 (kie.ai backend). Usage: python3 build_images.py <dir>"""
-import json, subprocess, sys
+import json, os, subprocess, sys
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 
@@ -19,8 +19,9 @@ def run(b):
     if out.exists() and out.stat().st_size > 50000:
         return (b['id'], 'skip (exists)')
     prompt = b["img"] + VERT + " " + grade
+    # NO_OPENAI_FALLBACK: an empty kie.ai balance must FAIL the build, not quietly bill OpenAI direct (2026-11-26)
     r = subprocess.run(["node", str(GEN), prompt, "--ratio", RATIO, "--out", str(out)],
-                       capture_output=True, text=True)
+                       capture_output=True, text=True, env={**os.environ, "NO_OPENAI_FALLBACK": "1"})
     ok = out.exists() and out.stat().st_size > 50000
     return (b['id'], 'ok' if ok else f"FAIL: {r.stdout[-200:]} {r.stderr[-200:]}")
 

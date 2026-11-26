@@ -1,0 +1,50 @@
+{
+ "test": "archival-1127",
+ "registered": "2026-11-26T05:2xZ by reels-owner (before any archival film was built or posted)",
+ "question": "Does a film built ONLY from real public-domain archival images (photographs, period paintings, the real document) get more or less reach than our AI-still films posted the same day?",
+ "why_now": "Owner model 11-22: the day sets the level and only FORMAT arms are left as levers; length arm shows viewers leave in the opening seconds whatever the length. Archival imagery is a format change aimed at the opening (the real ship, the real page). It also costs $0 in images while kie.ai is empty under the 11-24 cash wall (ask c886ec1b open).",
+ "design": "A THIRD daily slot at 21:45Z (US afternoon; the existing slots are 01:45Z and 15:45Z and keep their pre-registered voice/opening pairs untouched). One archival film per day, 2026-11-26..2026-11-30 (n=5). Each archival film is compared with the MEDIAN of the same day's two AI-still films (UTC posting date).",
+ "films": "5 fresh subjects never filmed on Still Unsolved or By Claude, chosen before order; names prefixed 'pd'. Order = random.Random('archival-order-1127').shuffle over the alphabetical list. Same house shape otherwise: Atlas/onyx voice, long (~33-40 s), stamp end, old/sea/object/empty-place class.",
+ "metric": "plays at 72h (lab.py report). Ratio r_d = archival / median(AI films of day d).",
+ "call_rule": "median r >= 1.5 at n=5 -> archival WINS: make archival the default wherever the record has free images. median r <= 0.67 -> archival LOSES: back to AI stills. Otherwise TIE: still useful (free images at equal reach); keep as an option when image money is short.",
+ "harm_watch": "Third film per day could cut the other two. Compare the AI films' 72h median on 11-26..11-30 with 11-21..11-25 (2/day) and page_total_media_view_unique per day. If the AI median drops below 0.67x of the prior 5 days AND page daily viewers do not rise, stop the third slot early.",
+ "known_confounds": [
+  "slot: archival is always 21:45Z (all three slots are US waking hours)",
+  "frame: archival films may use band (16:9 photographs) while AI films are bleed (frame arm read tie: band 313 vs bleed 280.5)",
+  "subject: different subjects in every comparison (day effect dominates, model point 2)",
+  "voice: AI days 11-27..11-29 carry the voice arm (male/female); archival is always male",
+  "AI days: 11-26 length pair 4, 11-27..11-29 voice pairs, 11-30 opening pair 1 (one motion film)"
+ ],
+ "slots": {
+  "2026-11-26T21:45Z": {
+   "name": "pdbierce",
+   "subject": "Ambrose Bierce, vanished in revolutionary Mexico, 1913/14 (fate and place of death never established)"
+  },
+  "2026-11-27T21:45Z": {
+   "name": "pdandree",
+   "subject": "Andree's Arctic balloon expedition, 1897 (how the three men died is still debated)"
+  },
+  "2026-11-28T21:45Z": {
+   "name": "pdscorpion",
+   "subject": "USS Scorpion (SSN-589), lost 1968 (wreck found; cause of loss officially never determined)"
+  },
+  "2026-11-29T21:45Z": {
+   "name": "pdprinces",
+   "subject": "The Princes in the Tower, 1483 (fate never established; the 1674 bones never DNA-tested)"
+  },
+  "2026-11-30T21:45Z": {
+   "name": "pdearhart",
+   "subject": "Amelia Earhart and Fred Noonan, 1937 (the Electra and the two fliers never found)"
+  }
+ },
+ "status": "registered; 5 films built + blind-checked 11-26 (build-archival1.md); posting 21:45Z 11-26..11-30 via ig.py batch --slot3",
+ "subjects_note": "Chosen 2026-11-26 ~05:10Z BEFORE the shuffle: pdandree, pdbierce, pdearhart, pdprinces (shortlist 1,3,4,5) + pdscorpion (first alternate). Slocum (#2) dropped on criterion (c): the only real high-res photograph of the Spray on Commons (Sydney 1896, ANMM) is tagged 'Flickr-no known copyright restrictions' with no PD tag (not allowed); everything else allowed is a 685 px photo, one portrait and line drawings from his 1900 book, so no arresting true B01. Order = random.Random('archival-order-1127').shuffle(sorted(names)).",
+ "films_built": {
+  "pdbierce": "41.1 s",
+  "pdandree": "37.1 s",
+  "pdscorpion": "38.4 s",
+  "pdprinces": "38.7 s",
+  "pdearhart": "37.0 s"
+ },
+ "date_shift": "2026-11-26 ~06:45Z, BEFORE any archival film posted: dates moved one day earlier (11-27..12-01 -> 11-26..11-30) because the new 21:45Z cron fires tonight; order unchanged. 11-26 AI films = kingjohn (L) + longechoes (S), the length arm's pair 4; 11-27..11-29 = voice pairs; 11-30 = opening pair 1."
+}

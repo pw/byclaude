@@ -1,0 +1,216 @@
+{
+ "title": "Andrée's Arctic Balloon",
+ "subtitle": "Svalbard and the Arctic pack ice · 1897",
+ "voice": "onyx",
+ "voice_instructions": "Measured, quiet, a little hushed — calm and unhurried, but with a touch more forward energy than a long documentary; the cold voice of something that read the whole file. Never sensational. Small pauses.",
+ "grade": "real public-domain archival images (see images_source)",
+ "beats": [
+  {
+   "id": "B01",
+   "vtype": "still",
+   "vo": "This photograph waited thirty-three years in the ice. Nils Strindberg took it in July, eighteen ninety-seven, after their balloon came down.",
+   "cap": "33 YEARS\nIN THE ICE",
+   "amber": true,
+   "img": "B01",
+   "picture": "Nils Strindberg's own photograph of the balloon Örnen down on the pack ice, July 1897: the huge dark half-deflated balloon, the gondola on its side, two small figures standing beside it. One of the frames recovered with the bodies in 1930 and developed then."
+  },
+  {
+   "id": "B02",
+   "vtype": "still",
+   "vo": "Three days earlier, three Swedes lifted off from Svalbard, hoping to fly over the North Pole.",
+   "cap": "SVALBARD · 1897",
+   "img": "B02",
+   "picture": "Photograph by Alexis Machuron of the balloon lifting off from Danes Island (Danskøya), Svalbard, 11 July 1897: dark balloon rising over water, mountains behind."
+  },
+  {
+   "id": "B03",
+   "vtype": "still",
+   "vo": "They camped by the wreck a week, then set out on foot for land.",
+   "cap": "SET OUT\nON FOOT",
+   "img": "B03",
+   "picture": "Strindberg photograph of the camp at the landing site on the pack ice, 1897: a tent, the boat, one man standing on a box raising a flag, another man walking away in the foreground."
+  },
+  {
+   "id": "B04",
+   "vtype": "still",
+   "vo": "In October, the drifting ice brought them to White Island. Within days, their diaries stop.",
+   "cap": "THE DIARIES\nSTOP",
+   "amber": true,
+   "img": "B04",
+   "picture": "A MODERN photograph (2011) of the rocky shore of Kvitøya (White Island), driftwood, sea ice and fog beyond: near where the last camp was found in 1930."
+  },
+  {
+   "id": "B05",
+   "vtype": "still",
+   "vo": "In nineteen thirty, sealers found their camp, and the men came home to Stockholm. Why they died is still debated: illness from bear meat, cold, or something else.",
+   "cap": "STOCKHOLM · 1930",
+   "img": "B05",
+   "picture": "Photograph from 1930, Stockholm: schoolchildren at an exhibition at Liljevalchs looking at finds from the expedition (the canvas boat's frame in front of them)."
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The expedition was Swedish: S. A. Andrée, Nils Strindberg and Knut Frænkel, three Swedes, in the hydrogen balloon Örnen (the Eagle), aiming to fly over the North Pole ('three Swedes', 'hoping to fly over the North Pole')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andr%C3%A9e%27s_Arctic_balloon_expedition",
+    "https://svalbardmuseum.no/en/the-andre-expedition",
+    "https://oceanwide-expeditions.com/blog/the-flight-of-the-ornen-andree-s-1897-arctic-balloon-expedition"
+   ]
+  },
+  {
+   "claim": "Launch from Danes Island (Danskøya), Svalbard, on 11 July 1897 ('lifted off from Svalbard', 'SVALBARD · 1897'); the B02 photograph (Commons 'Andree.launch.02.png') is credited to Alexis Machuron, dated 1897-07-11",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andr%C3%A9e%27s_Arctic_balloon_expedition",
+    "https://svalbardmuseum.no/en/the-andre-expedition",
+    "https://oceanwide-expeditions.com/blog/the-flight-of-the-ornen-andree-s-1897-arctic-balloon-expedition",
+    "https://commons.wikimedia.org/wiki/File:Andree.launch.02.png"
+   ]
+  },
+  {
+   "claim": "The balloon came down on the pack ice on 14 July 1897, about three days after launch (11 July) ('three days earlier', 'came down on the Arctic ice'; Svalbard Museum: 'after just 65 hours aloft')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andr%C3%A9e%27s_Arctic_balloon_expedition",
+    "https://oceanwide-expeditions.com/blog/the-flight-of-the-ornen-andree-s-1897-arctic-balloon-expedition",
+    "https://svalbardmuseum.no/en/the-andre-expedition"
+   ]
+  },
+  {
+   "claim": "Strindberg photographed the balloon after landing (B01 'Örnen omedelbart efter landningen på isflaket den 14 juli 1897'); his exposed film was recovered on Kvitøya in 1930 and developed in Stockholm in 1930 by John Hertzberg (KTH), 33 years after it was taken ('waited thirty-three years in the ice', '33 YEARS IN THE ICE'; Svalbard Museum: 'The films could be developed despite years under ice and snow'; 1930 press: 'Thirty-three-year-old films successfully developed')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andr%C3%A9e%27s_Arctic_balloon_expedition",
+    "https://en.wikipedia.org/wiki/Nils_Strindberg",
+    "https://svalbardmuseum.no/en/the-andre-expedition",
+    "https://www.nationalgeographic.com/premium/article/balloonists-disappear-north-pole-photographs",
+    "https://digitaltmuseum.se/021016299923/ornen-omedelbart-efter-landningen-pa-isflaket-den-14-juli-1897-framtagning",
+    "https://paperspast.natlib.govt.nz/newspapers/ESD19301105.2.101"
+   ]
+  },
+  {
+   "claim": "They spent about a week at the landing site, then set out on foot over the drifting ice on 22 July toward Franz Josef Land, later toward Sjuøyane ('camped by the wreck a week, then set out on foot for land'; B03 shows the camp at the landing site)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andr%C3%A9e%27s_Arctic_balloon_expedition",
+    "https://svalbardmuseum.no/en/the-andre-expedition",
+    "https://oceanwide-expeditions.com/blog/the-flight-of-the-ornen-andree-s-1897-arctic-balloon-expedition"
+   ]
+  },
+  {
+   "claim": "In early October 1897 the drifting ice brought them to Kvitøya (White Island): from 12 September they drifted on a floe toward Kvitøya, the floe broke up on 2 October, and they landed about 5 October; Strindberg's diary ends 7 October and Andrée's 8 October ('Within days, their diaries stop')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andr%C3%A9e%27s_Arctic_balloon_expedition",
+    "https://svalbardmuseum.no/en/the-andre-expedition",
+    "https://ki.se/index%2ephp/en/node/1065477"
+   ]
+  },
+  {
+   "claim": "Norwegian sealers of the Bratvaag (Gunnar Horn's expedition) found the last camp on Kvitøya on 5 August 1930 (some sources: 6 August); the sealer Isbjørn found more, including the tin box with Strindberg's film, on 5 September 1930 ('Sealers found their camp in nineteen thirty', 'FOUND · 1930')",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andr%C3%A9e%27s_Arctic_balloon_expedition",
+    "https://svalbardmuseum.no/en/the-andre-expedition",
+    "https://oceanwide-expeditions.com/blog/the-flight-of-the-ornen-andree-s-1897-arctic-balloon-expedition",
+    "https://en.wikipedia.org/wiki/Bratvaag_Expedition"
+   ]
+  },
+  {
+   "claim": "B05: schoolchildren at a 1930 exhibition of the Kvitøya finds at Liljevalchs konsthall, Stockholm (Wikipedia/Commons caption)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andr%C3%A9e%27s_Arctic_balloon_expedition",
+    "https://commons.wikimedia.org/wiki/File:Andree.schoolchildren.png"
+   ]
+  },
+  {
+   "claim": "Why all three died is still debated: theories include trichinosis/illness from undercooked polar bear meat (Tryde 1952), hypothermia/cold and exhaustion (Kjellström), and others (vitamin A, carbon monoxide, lead, botulism, scurvy); Svalbard Museum: 'The cause remains a mystery'; National Geographic: 'The causes of the men's deaths are still unknown'",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andr%C3%A9e%27s_Arctic_balloon_expedition",
+    "https://svalbardmuseum.no/en/the-andre-expedition",
+    "https://www.nationalgeographic.com/premium/article/balloonists-disappear-north-pole-photographs",
+    "https://oceanwide-expeditions.com/blog/the-flight-of-the-ornen-andree-s-1897-arctic-balloon-expedition"
+   ]
+  },
+  {
+   "claim": "Still unresolved as of 2026: TV4 (2 July 2024) on Bea Uusma's 2024 Kvitøya expedition: 'exakt vad som hände är än idag inte känt'; Karolinska Institutet podcast Medicinvetarna #200 (published 17 June 2026) still frames it as an open mystery ('Inom bara några dagar var alla tre döda'); no definitive finding reported 2024-2026",
+   "sources": [
+    "https://www.tv4.se/artikel/4b5xzodWgiynXs8reqnxC7/unik-polarexpedition-kan-loesa-127-arig-gata-kan-vara-30-isbjoernar-pa",
+    "https://ki.se/index%2ephp/en/node/1065477",
+    "https://svalbardmuseum.no/en/the-andre-expedition"
+   ]
+  },
+  {
+   "claim": "In 1930 the men's remains were brought home to Stockholm (gunboat Svensksund; funeral from Storkyrkan 5 Oct 1930); the 1930 B05 photo shows schoolchildren at the Liljevalchs exhibition of the finds ('In nineteen thirty, sealers found their camp, and the men came home to Stockholm'; cap 'STOCKHOLM · 1930'; added after blind image check 11-26)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Andr%C3%A9e%27s_Arctic_balloon_expedition",
+    "https://commons.wikimedia.org/wiki/File:Funeral_of_Salomon_August_Andr%C3%A9e.png",
+    "https://commons.wikimedia.org/wiki/File:Vor_40_Jahren_flog_der_Forscher_Andree_dem_Pol_entgegen_und_blieb_33_Jahre_lang_,_Bestanddeelnr_158-0558.jpg",
+    "https://commons.wikimedia.org/wiki/File:Andree.schoolchildren.png"
+   ]
+  }
+ ],
+ "images_source": [
+  {
+   "img": "B01",
+   "commons_file": "File:Eagle-crashed.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AEagle-crashed.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Eagle-crashed.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Nils Strindberg",
+   "date": "1897",
+   "kind": "photograph",
+   "depicts": "the balloon Örnen down on the pack ice, July 1897, two men by the gondola (Nils Strindberg; film developed 1930)",
+   "orig_size": "2656x1624"
+  },
+  {
+   "img": "B02",
+   "commons_file": "File:Andree.launch.02.png",
+   "url": "https://commons.wikimedia.org/wiki/File%3AAndree.launch.02.png",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Andree.launch.02.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Alexis Machuron",
+   "date": "1897-07-11",
+   "kind": "photograph",
+   "depicts": "the balloon lifting off from Danes Island, Svalbard, 11 July 1897 (Alexis Machuron)",
+   "orig_size": "919x602"
+  },
+  {
+   "img": "B03",
+   "commons_file": "File:Andree.crash.site.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AAndree.crash.site.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Andree.crash.site.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "Nils Strindberg",
+   "date": "",
+   "kind": "photograph",
+   "depicts": "the camp at the landing site on the pack ice, 1897 (Nils Strindberg)",
+   "orig_size": "1398x1050"
+  },
+  {
+   "img": "B04",
+   "commons_file": "File:Kvitoya.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File%3AKvitoya.jpg",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Kvitoya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "RichardNeill",
+   "date": "2011-08-17 14:09:53",
+   "kind": "photograph (modern, 2011)",
+   "depicts": "the rocky shore of Kvitøya (White Island), near the Andrée monument",
+   "orig_size": "5184x3456"
+  },
+  {
+   "img": "B05",
+   "commons_file": "File:Andree.schoolchildren.png",
+   "url": "https://commons.wikimedia.org/wiki/File%3AAndree.schoolchildren.png",
+   "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Andree.schoolchildren.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "licence": "Public domain",
+   "licence_url": "",
+   "author": "unknown",
+   "date": "",
+   "kind": "photograph",
+   "depicts": "1930, Stockholm: schoolchildren at the Liljevalchs exhibition looking at finds from the expedition (the boat)",
+   "orig_size": "2701x1896"
+  }
+ ],
+ "images_note": "Real archival images from Wikimedia Commons, licence read from the Commons API extmetadata (LicenseShortName) on 2026-11-26; PD/CC0 only. Processing: crop to a 4:3..16:9 band + Lanczos resize only (no AI, no colourisation, no upscaler model). Crop boxes in ~/byclaude/video/reels_lab/build-archival1.md.",
+ "blind_checks": "11-26 blind fact-check: CLEAN (optional theory list widened, applied). Blind image check: FIX: B05 'FOUND · 1930' over a 1930 Stockholm exhibition photo reads as the discovery scene -> cap 'STOCKHOLM · 1930' + vo 'and the men came home to Stockholm'; caption.txt says the 1930 picture shows the finds on show in Stockholm and 'public domain or CC0'. Footer kept ('public domain' for a CC0 image = public-domain dedication; bent, see log)."
+}

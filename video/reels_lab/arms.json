@@ -1024,6 +1024,71 @@
    "voice": "male",
    "test": "opening-1130",
    "opening": "still"
+  },
+  "pdbierce": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "band",
+   "format": "reel",
+   "length": "long",
+   "kind": "person",
+   "hook": "detail",
+   "voice": "male",
+   "imagery": "archival",
+   "test": "archival-1127"
+  },
+  "pdandree": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "band",
+   "format": "reel",
+   "length": "long",
+   "kind": "person",
+   "hook": "detail",
+   "voice": "male",
+   "imagery": "archival",
+   "test": "archival-1127"
+  },
+  "pdscorpion": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "band",
+   "format": "reel",
+   "length": "long",
+   "kind": "person",
+   "hook": "place",
+   "voice": "male",
+   "imagery": "archival",
+   "test": "archival-1127"
+  },
+  "pdprinces": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "band",
+   "format": "reel",
+   "length": "long",
+   "kind": "person",
+   "hook": "place",
+   "voice": "male",
+   "imagery": "archival",
+   "test": "archival-1127"
+  },
+  "pdearhart": {
+   "end": "stamp",
+   "topic": "unsolved",
+   "origin": "fresh",
+   "frame": "band",
+   "format": "reel",
+   "length": "long",
+   "kind": "person",
+   "hook": "detail",
+   "voice": "male",
+   "imagery": "archival",
+   "test": "archival-1127"
   }
  },
  "byclaude": {
