@@ -1,0 +1,11 @@
+{
+ "flordelamar": {
+  "status": "NOT CREATED (POST /ab_tests -> code 1 unknown error x6; token lacks pages_manage_engagement, minting one needs Patrick's account verify)",
+  "drafts": {
+   "flordelamarS": "1939446970768752",
+   "flordelamar": "1031661952528994"
+  },
+  "plan": "still (control) vs motion, 2026-11-30T15:45Z, 14400 s, REELS_PLAYS",
+  "created": "2026-11-27"
+ }
+}

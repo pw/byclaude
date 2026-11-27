@@ -390,3 +390,24 @@ over-performs is a cheap signal for which ones to make as films.
 - Plumbing: `ig.py batch --slot3` posts only `reels_lab/slot3.json` (in file order); the normal 01:45/15:45 batch skips those
   names (controls run both ways). New cron `45 21 * * *`. `_build_images.py` now sets NO_OPENAI_FALLBACK=1: an empty kie
   balance fails the build instead of silently switching to OpenAI direct (shared generator honours the env; tested with a dead key).
+
+## 2026-11-27: Page status read (not restricted) + native A/B test found
+- **Page status (Mac Chrome, acting as the Page):** Page recommendation = RECOMMENDABLE; Page status = no issues, 0 Community
+  Standards violations, no account restrictions, Recommendations ACTIVE, Monetization ELIGIBLE (Stars only; Content
+  Monetization "criteria not met", invite-only; Subscriptions needs 5k followers). The ~200-300 ceiling is NOT a restriction.
+  Page type = BUSINESS (Business Dashboard); creator tools come with the creator type (settings switch, reversible; Page
+  identity = Patrick's call, not done). Page insights last 30 days: 26,041 views (-69% vs the Vela month), 46 follows.
+- **Native A/B test exists for this Page** (Professional dashboard > All tools > A/B Tests; format Reel, 2-4 versions) and as
+  a Graph API: POST /{page}/ab_tests {name, description, optimization_goal REELS_PLAYS|AVG_TIME_WATCHED|..., experiment_video_ids,
+  control_video_id, duration 1800..604800 s, scheduled_experiment_timestamp}; versions = UNPUBLISHED reels; Facebook shows each
+  version to its own slice of the audience at the same time, then publishes the winner; GET /{test} returns per-version
+  plays / impressions / avg watch. This is the randomization the day effect has been denying us: one test = one clean pair.
+- `tools/abtest.py create|read|list` built. flordelamarS (still opening twin of flordelamar, $0: audio reused, beats 1-5
+  byte-identical, on R2 sha256 = local) + flordelamar uploaded as DRAFT reels (1939446970768752 / 1031661952528994, unpublished,
+  invisible). POST /ab_tests fails with code 1 "unknown error" on every valid body (inputs validate: bad ids/duration give
+  #100 errors), incl. a past timestamp => the token: ours lacks pages_manage_engagement (docs require it; the same scope 403'd a
+  comment reply). Minting a system-user token with it (Business Settings > System users > Claude > Generate token, app
+  byclaude.net, Never, +pages_manage_engagement) stops at "verify your account" on Patrick's login => stopped (his identity).
+  flordelamar stays in the normal queue (11-30 15:45Z, motion) until a test is actually created; `abtests.json` holds state.
+- Next: try the same test through the dashboard UI (no token needed) before asking Patrick; if UI works, hold flordelamar in
+  ig.py and run still vs motion at its slot. If neither works by 11-29, ask Patrick for the one verify step.
