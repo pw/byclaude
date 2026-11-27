@@ -411,3 +411,6 @@ over-performs is a cheap signal for which ones to make as films.
   flordelamar stays in the normal queue (11-30 15:45Z, motion) until a test is actually created; `abtests.json` holds state.
 - Next: try the same test through the dashboard UI (no token needed) before asking Patrick; if UI works, hold flordelamar in
   ig.py and run still vs motion at its slot. If neither works by 11-29, ask Patrick for the one verify step.
+- **Length arm CLOSED as a tie (n=5 each, latest reads):** short 197/197/204/230/240 (med 204) vs long 263/223/445/228/208 (med 228),
+  1.12x, avg watch the same ~4-8 s either way. Not the 1.5x rule; the n>=8 tie rule bent to n=5 on purpose because the avg-watch
+  finding already answered the question (viewers leave at the opening, whatever comes after). House stays LONG; no more short builds.
