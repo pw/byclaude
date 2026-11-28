@@ -1,4 +1,8 @@
 {
+ "alexandertomb": {
+  "fb_published_at": "2026-11-27T01:45:40+00:00",
+  "fb_video_id": "1878552576496567"
+ },
  "amberroom": {
   "fb_published_at": "2026-11-21T15:45:40+00:00",
   "fb_video_id": "1665266628678699"
@@ -51,6 +55,10 @@
   "deleted": "2026-11-02",
   "fb_published_at": "2026-10-13T15:45:38+00:00",
   "fb_video_id": "1625358059030945"
+ },
+ "cityofglasgow": {
+  "fb_published_at": "2026-11-28T01:45:36+00:00",
+  "fb_video_id": "29770505292573264"
  },
  "cleopatra": {
   "fb_published_at": "2026-11-22T15:45:34+00:00",
@@ -144,6 +152,10 @@
   "fb_published_at": "2026-11-25T15:45:41+00:00",
   "fb_video_id": "1122891460498644"
  },
+ "ghostblimp": {
+  "fb_published_at": "2026-11-27T15:45:41+00:00",
+  "fb_video_id": "1163184626258989"
+ },
  "griffon": {
   "fb_published_at": "2026-11-10T01:45:39+00:00",
   "fb_video_id": "1129884792734436"
@@ -196,6 +208,10 @@
   "fb_published_at": "2026-10-31T15:45:33+00:00",
   "fb_video_id": "1651083606644548"
  },
+ "longechoes": {
+  "fb_published_at": "2026-11-26T15:45:33+00:00",
+  "fb_video_id": "1109759561896174"
+ },
  "maryceleste": {
   "fb_published_at": "2026-10-16T15:45:34+00:00",
   "fb_video_id": "1761333614920760"
@@ -223,6 +239,14 @@
  "paulawelden": {
   "fb_published_at": "2026-10-25T15:45:39+00:00",
   "fb_video_id": "1849813716363549"
+ },
+ "pdandree": {
+  "fb_published_at": "2026-11-27T21:45:37+00:00",
+  "fb_video_id": "2378931002647622"
+ },
+ "pdbierce": {
+  "fb_published_at": "2026-11-26T21:45:34+00:00",
+  "fb_video_id": "2113709199333966"
  },
  "phaistos": {
   "fb_published_at": "2026-10-24T15:45:35+00:00",

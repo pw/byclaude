@@ -1,11 +1,23 @@
 {
  "flordelamar": {
-  "status": "NOT CREATED (POST /ab_tests -> code 1 unknown error x6; token lacks pages_manage_engagement, minting one needs Patrick's account verify)",
-  "drafts": {
+  "status": "SCHEDULED via the Professional dashboard UI (no token needed) 2026-11-28 ~05:10Z; read with tools/abtest.py read / list",
+  "test_id": "1420410037830843",
+  "start": "2026-11-30T15:45:00Z",
+  "duration": "6 hours",
+  "key_metric": "Views",
+  "tiebreaker": "Version A (still)",
+  "versions": {
+   "A_still_control": "2371452866941748",
+   "B_motion": "1655206206403130"
+  },
+  "title_both": "The lost treasure ship of 1511 (the UI requires a title; identical on both so the video is the only variable; house posts carry no title)",
+  "description_both": "captions_unsolved.json flordelamar (606 chars, identical)",
+  "slot": "replaces the normal 11-30 15:45Z post: skip_runs.json ['2026-11-30T15'] + flordelamar in ig_hold.json (queue order otherwise unchanged)",
+  "old_api_drafts_unused": {
    "flordelamarS": "1939446970768752",
    "flordelamar": "1031661952528994"
   },
-  "plan": "still (control) vs motion, 2026-11-30T15:45Z, 14400 s, REELS_PLAYS",
-  "created": "2026-11-27"
+  "read": "per-version plays, 3-s views, avg_time_watched from GET /{page}/ab_tests; read at end (~21:45Z 11-30) and the published winner at 72h. Opening arm counts this as one paired comparison (motion vs still, same audience, same moment).",
+  "created": "2026-11-28"
  }
 }

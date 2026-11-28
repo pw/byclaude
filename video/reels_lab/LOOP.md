@@ -414,3 +414,14 @@ over-performs is a cheap signal for which ones to make as films.
 - **Length arm CLOSED as a tie (n=5 each, latest reads):** short 197/197/204/230/240 (med 204) vs long 263/223/445/228/208 (med 228),
   1.12x, avg watch the same ~4-8 s either way. Not the 1.5x rule; the n>=8 tie rule bent to n=5 on purpose because the avg-watch
   finding already answered the question (viewers leave at the opening, whatever comes after). House stays LONG; no more short builds.
+
+## 2026-11-28 (step-back tick)
+- Native A/B test WORKS through the Professional dashboard UI (facebook.com/professional_dashboard/ab_testing, acting as the Page):
+  upload 2-4 versions, title REQUIRED (warning: titles improve distribution), description, schedule, key metric, 30 min..24 h.
+  flordelamar: test 1420410037830843, 2026-11-30T15:45:00Z, 6 h, Views, A = still (2371452866941748, control/tiebreak),
+  B = motion (1655206206403130). The normal 11-30 15:45Z run posts nothing (skip_runs.json, new in ig.py batch); flordelamar is in
+  ig_hold.json. Read with `tools/abtest.py list` (per-version plays, 3-s views, avg_time_watched).
+- READ RULE CHANGE: medians are floor-bound (most films sit at ~200), so arms are called on HIT RATE (12h plays >= 400), paired within
+  day, plus native A/B tests where possible. 1h snaps added (02:45/16:45/22:45Z) for the pre-registered watch-gate test
+  (analysis/watch-gate-1h.json).
+- Voice pair 1: alexandertomb (male) 205 floor vs ghostblimp (female) 551 at ~8h (hit). n=1.

@@ -1,0 +1,11 @@
+{
+ "registered": "2026-11-28T05:20Z",
+ "claim": "seed-pool average watch seconds gates expansion",
+ "why": "11-28 step-back: early avg watch AUC 0.90 since 11-05, but the blind challenger showed it is near-circular (every hit's early snap was already after expansion; expanded audiences watch ~1.6 s longer; pre-expansion watch AUC only 0.64). A snapshot at ~1h after each post, before expansion, settles it.",
+ "instrument": "lab.py snap at 02:45Z, 16:45Z, 22:45Z (posts 01:45/15:45/21:45Z) = watch at ~1h",
+ "rule": "films longer than 30 s, not yet expanded at the 1h snap (plays < 260): predict HIT (plays >= 400 at first snap >= 12h) iff avg watch at 1h >= 7.3 s (threshold fitted on pre-11-13 films, fixed now)",
+ "score_after": "the next 30 eligible films (~mid-December)",
+ "pass": "AUC of 1h avg watch >= 0.75 AND the 7.3 s rule beats always-floor accuracy",
+ "fail": "AUC < 0.65 -> watch is a consequence of expansion, not its gate; stop reading arms on watch",
+ "meanwhile": "arms are read on HIT RATE (plays >= 400 at 12h), paired within day; medians are floor-bound"
+}
